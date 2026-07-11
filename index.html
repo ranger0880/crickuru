@@ -1,0 +1,1603 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CricKuru is a premium global cricket community for players, teams, matches, profiles, and competitive cricket experiences."
+    />
+    <meta property="og:title" content="CricKuru - Play. Compete. Become Legendary." />
+    <meta
+      property="og:description"
+      content="Build your cricket identity, create your team, compete with your community and enter a new world of cricket."
+    />
+    <meta name="theme-color" content="#05070B" />
+    <title>CricKuru - Play. Compete. Become Legendary.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              night: "#05070B",
+              midnight: "#080D16",
+              gold: "#F4B942",
+              crimson: "#B71932",
+              stadium: "#F5F7FA",
+              cyan: "#22D3EE",
+            },
+            fontFamily: {
+              display: ["Barlow Condensed", "Impact", "sans-serif"],
+              body: ["Inter", "system-ui", "sans-serif"],
+            },
+            opacity: {
+              6: "0.06",
+              7: "0.07",
+              8: "0.08",
+              10: "0.1",
+              11: "0.11",
+              12: "0.12",
+              13: "0.13",
+              14: "0.14",
+              15: "0.15",
+              16: "0.16",
+              18: "0.18",
+              22: "0.22",
+              24: "0.24",
+              25: "0.25",
+              26: "0.26",
+              28: "0.28",
+              30: "0.3",
+              32: "0.32",
+              34: "0.34",
+              35: "0.35",
+              38: "0.38",
+              40: "0.4",
+              42: "0.42",
+              45: "0.45",
+              46: "0.46",
+              48: "0.48",
+              50: "0.5",
+              54: "0.54",
+              55: "0.55",
+              58: "0.58",
+              60: "0.6",
+              62: "0.62",
+              64: "0.64",
+              66: "0.66",
+              68: "0.68",
+              70: "0.7",
+              72: "0.72",
+              74: "0.74",
+              76: "0.76",
+              78: "0.78",
+              80: "0.8",
+              82: "0.82",
+              84: "0.84",
+              88: "0.88",
+              90: "0.9",
+              95: "0.95",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      :root {
+        --night: #05070b;
+        --midnight: #080d16;
+        --gold: #f4b942;
+        --crimson: #b71932;
+        --stadium: #f5f7fa;
+        --cyan: #22d3ee;
+        color-scheme: dark;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--night);
+        color: var(--stadium);
+        font-family: "Inter", system-ui, sans-serif;
+        overflow-x: hidden;
+      }
+
+      body::selection,
+      ::selection {
+        background: rgba(244, 185, 66, 0.9);
+        color: #05070b;
+      }
+
+      body::-webkit-scrollbar {
+        width: 11px;
+      }
+
+      body::-webkit-scrollbar-track {
+        background: #030407;
+      }
+
+      body::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, var(--gold), rgba(183, 25, 50, 0.9));
+        border: 3px solid #030407;
+        border-radius: 999px;
+      }
+
+      a,
+      button {
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      a:focus-visible,
+      button:focus-visible {
+        outline: 2px solid var(--gold);
+        outline-offset: 4px;
+      }
+
+      .font-display {
+        font-family: "Barlow Condensed", Impact, sans-serif;
+        letter-spacing: 0;
+      }
+
+      .page-grain::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: 60;
+        pointer-events: none;
+        opacity: 0.12;
+        mix-blend-mode: screen;
+        background-image:
+          radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.08) 0 1px, transparent 1px),
+          radial-gradient(circle at 70% 40%, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px);
+        background-size: 38px 38px, 53px 53px;
+      }
+
+      .hero-scene {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+        background:
+          radial-gradient(circle at 22% 17%, rgba(34, 211, 238, 0.12), transparent 22%),
+          radial-gradient(circle at 80% 16%, rgba(244, 185, 66, 0.13), transparent 20%),
+          radial-gradient(circle at 75% 62%, rgba(183, 25, 50, 0.21), transparent 34%),
+          linear-gradient(180deg, #05070b 0%, #080d16 42%, #05070b 100%);
+      }
+
+      .hero-scene::before {
+        content: "";
+        position: absolute;
+        inset: -12% -8%;
+        background:
+          linear-gradient(102deg, transparent 0 7%, rgba(245, 247, 250, 0.13) 8%, transparent 16%),
+          linear-gradient(78deg, transparent 0 73%, rgba(245, 247, 250, 0.14) 78%, transparent 88%),
+          radial-gradient(ellipse at 50% 74%, rgba(245, 247, 250, 0.09), transparent 24%),
+          radial-gradient(ellipse at 50% 84%, rgba(244, 185, 66, 0.15), transparent 26%);
+        filter: blur(0.2px);
+        opacity: 0.88;
+        transform: translate3d(var(--parallax-x, 0px), var(--parallax-y, 0px), 0);
+        transition: transform 0.5s ease-out;
+      }
+
+      .hero-scene::after {
+        content: "";
+        position: absolute;
+        left: -10%;
+        right: -10%;
+        bottom: 7%;
+        height: 32%;
+        background:
+          repeating-linear-gradient(
+            90deg,
+            rgba(245, 247, 250, 0.08) 0 4px,
+            transparent 4px 21px
+          ),
+          linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.62) 45%, rgba(0, 0, 0, 0.95));
+        clip-path: polygon(0 30%, 100% 16%, 100% 100%, 0 100%);
+        opacity: 0.46;
+      }
+
+      .stadium-rim {
+        position: absolute;
+        left: 50%;
+        bottom: 10%;
+        width: min(1200px, 120vw);
+        height: 330px;
+        transform: translateX(-50%);
+        border-radius: 50% 50% 0 0 / 64% 64% 0 0;
+        border-top: 1px solid rgba(245, 247, 250, 0.14);
+        background:
+          radial-gradient(ellipse at center, rgba(245, 247, 250, 0.11), transparent 42%),
+          linear-gradient(180deg, rgba(245, 247, 250, 0.05), transparent 60%);
+        opacity: 0.74;
+      }
+
+      .pitch-lines {
+        position: absolute;
+        left: 50%;
+        bottom: -5%;
+        width: min(860px, 96vw);
+        height: 280px;
+        transform: translateX(-50%) perspective(520px) rotateX(62deg);
+        transform-origin: bottom;
+        border: 1px solid rgba(244, 185, 66, 0.38);
+        border-bottom: 0;
+        background:
+          linear-gradient(90deg, transparent 49.5%, rgba(245, 247, 250, 0.2) 50%, transparent 50.5%),
+          repeating-linear-gradient(90deg, rgba(244, 185, 66, 0.1) 0 1px, transparent 1px 80px);
+        box-shadow: 0 -20px 70px rgba(244, 185, 66, 0.12);
+        opacity: 0.72;
+      }
+
+      .fog-layer {
+        position: absolute;
+        inset: 20% -18% 2%;
+        background:
+          radial-gradient(ellipse at 30% 52%, rgba(245, 247, 250, 0.11), transparent 38%),
+          radial-gradient(ellipse at 72% 48%, rgba(245, 247, 250, 0.09), transparent 34%),
+          linear-gradient(180deg, transparent, rgba(245, 247, 250, 0.07), transparent);
+        filter: blur(20px);
+        animation: fogDrift 19s ease-in-out infinite alternate;
+        opacity: 0.7;
+      }
+
+      .batter-silhouette {
+        position: absolute;
+        right: clamp(0rem, 8vw, 8rem);
+        bottom: 7%;
+        width: clamp(210px, 29vw, 420px);
+        height: clamp(330px, 48vw, 620px);
+        opacity: 0.62;
+        filter: drop-shadow(0 0 48px rgba(244, 185, 66, 0.13));
+        transform: translate3d(calc(var(--cursor-x, 0px) * 0.55), calc(var(--cursor-y, 0px) * 0.55), 0);
+        transition: transform 0.45s ease-out;
+      }
+
+      .batter-silhouette .head {
+        position: absolute;
+        top: 8%;
+        left: 48%;
+        width: 23%;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: #020305;
+        box-shadow: inset 8px -8px 0 rgba(245, 247, 250, 0.04);
+      }
+
+      .batter-silhouette .body {
+        position: absolute;
+        top: 28%;
+        left: 42%;
+        width: 25%;
+        height: 35%;
+        border-radius: 46% 42% 38% 36%;
+        background: #020305;
+        transform: rotate(-9deg);
+      }
+
+      .batter-silhouette .front-leg,
+      .batter-silhouette .back-leg,
+      .batter-silhouette .front-arm,
+      .batter-silhouette .back-arm,
+      .batter-silhouette .bat {
+        position: absolute;
+        background: #020305;
+        transform-origin: top center;
+      }
+
+      .batter-silhouette .front-leg {
+        width: 9%;
+        height: 35%;
+        left: 49%;
+        top: 59%;
+        border-radius: 999px;
+        transform: rotate(-16deg);
+      }
+
+      .batter-silhouette .back-leg {
+        width: 9%;
+        height: 35%;
+        left: 60%;
+        top: 58%;
+        border-radius: 999px;
+        transform: rotate(20deg);
+      }
+
+      .batter-silhouette .front-arm {
+        width: 7%;
+        height: 28%;
+        left: 35%;
+        top: 32%;
+        border-radius: 999px;
+        transform: rotate(42deg);
+      }
+
+      .batter-silhouette .back-arm {
+        width: 7%;
+        height: 26%;
+        left: 58%;
+        top: 31%;
+        border-radius: 999px;
+        transform: rotate(-45deg);
+      }
+
+      .batter-silhouette .bat {
+        width: 7%;
+        height: 52%;
+        left: 24%;
+        top: 4%;
+        border-radius: 999px 999px 12px 12px;
+        transform: rotate(-38deg);
+        box-shadow: 0 0 32px rgba(244, 185, 66, 0.08);
+      }
+
+      .cricket-ball {
+        position: absolute;
+        width: clamp(68px, 8vw, 126px);
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background:
+          radial-gradient(circle at 34% 28%, rgba(255, 168, 168, 0.42), transparent 21%),
+          radial-gradient(circle at 74% 72%, rgba(47, 0, 8, 0.58), transparent 38%),
+          linear-gradient(135deg, #c42339, #67101d 64%, #32050c);
+        box-shadow:
+          0 0 36px rgba(183, 25, 50, 0.52),
+          0 28px 60px rgba(0, 0, 0, 0.46);
+        overflow: hidden;
+        will-change: transform;
+      }
+
+      .cricket-ball::before,
+      .cricket-ball::after {
+        content: "";
+        position: absolute;
+        inset: 12%;
+        border: 2px solid rgba(245, 247, 250, 0.62);
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-radius: 50%;
+        transform: rotate(32deg);
+      }
+
+      .cricket-ball::after {
+        inset: 18%;
+        border-style: dashed;
+        opacity: 0.68;
+        transform: rotate(32deg) scaleX(0.78);
+      }
+
+      .particle {
+        position: absolute;
+        width: var(--size);
+        height: var(--size);
+        left: var(--left);
+        top: var(--top);
+        border-radius: 999px;
+        background: rgba(245, 247, 250, var(--alpha));
+        filter: blur(1px);
+        animation: particleDrift var(--duration) ease-in-out infinite alternate;
+        animation-delay: var(--delay);
+        transform: translate3d(calc(var(--cursor-x, 0px) * var(--depth)), calc(var(--cursor-y, 0px) * var(--depth)), 0);
+      }
+
+      .gold-divider {
+        height: 2px;
+        width: min(240px, 48vw);
+        background: linear-gradient(90deg, transparent, var(--gold), rgba(34, 211, 238, 0.7), transparent);
+        transform-origin: left;
+        box-shadow: 0 0 28px rgba(244, 185, 66, 0.34);
+      }
+
+      .shine-button {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .shine-button::after {
+        content: "";
+        position: absolute;
+        inset: -40% auto -40% -70%;
+        width: 55%;
+        transform: rotate(22deg);
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.46), transparent);
+        animation: buttonShine 3.8s ease-in-out infinite;
+      }
+
+      .glass {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.045));
+        border: 1px solid rgba(245, 247, 250, 0.15);
+        box-shadow: 0 28px 80px rgba(0, 0, 0, 0.42);
+        backdrop-filter: blur(18px);
+      }
+
+      .funk-tab {
+        background:
+          radial-gradient(circle at 20% 10%, rgba(244, 185, 66, 0.19), transparent 24%),
+          linear-gradient(135deg, rgba(255, 255, 255, 0.095), rgba(255, 255, 255, 0.035));
+      }
+
+      .score-tile {
+        background:
+          linear-gradient(135deg, rgba(244, 185, 66, 0.15), rgba(183, 25, 50, 0.12)),
+          rgba(255, 255, 255, 0.045);
+      }
+
+      .route-bg {
+        min-height: 100vh;
+        background:
+          radial-gradient(circle at 14% 18%, rgba(244, 185, 66, 0.18), transparent 28%),
+          radial-gradient(circle at 78% 14%, rgba(34, 211, 238, 0.11), transparent 26%),
+          radial-gradient(circle at 72% 72%, rgba(183, 25, 50, 0.18), transparent 34%),
+          linear-gradient(180deg, #05070b, #080d16 52%, #05070b);
+      }
+
+      .mobile-menu {
+        background:
+          radial-gradient(circle at 18% 18%, rgba(244, 185, 66, 0.18), transparent 26%),
+          radial-gradient(circle at 82% 52%, rgba(183, 25, 50, 0.22), transparent 34%),
+          rgba(5, 7, 11, 0.96);
+        backdrop-filter: blur(22px);
+      }
+
+      @keyframes fogDrift {
+        from {
+          transform: translate3d(-2%, 1%, 0) scale(1);
+        }
+        to {
+          transform: translate3d(3%, -1%, 0) scale(1.04);
+        }
+      }
+
+      @keyframes particleDrift {
+        from {
+          opacity: calc(var(--alpha) * 0.55);
+          translate: 0 0;
+        }
+        to {
+          opacity: var(--alpha);
+          translate: var(--drift-x) var(--drift-y);
+        }
+      }
+
+      @keyframes buttonShine {
+        0%,
+        38% {
+          left: -70%;
+        }
+        68%,
+        100% {
+          left: 125%;
+        }
+      }
+
+      @media (max-width: 900px) {
+        .batter-silhouette {
+          right: 50%;
+          transform: translateX(50%);
+          opacity: 0.22;
+          width: 300px;
+          height: 450px;
+          bottom: 15%;
+        }
+
+        .hero-scene::after {
+          opacity: 0.28;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .particle:nth-child(n + 13) {
+          display: none;
+        }
+
+        .pitch-lines {
+          bottom: -10%;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.001ms !important;
+          animation-iteration-count: 1 !important;
+          scroll-behavior: auto !important;
+          transition-duration: 0.001ms !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <noscript>CricKuru needs JavaScript enabled to show the landing page.</noscript>
+
+    <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/react-router-dom@6.30.1/dist/umd/react-router-dom.production.min.js"></script>
+    <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
+    <script src="https://unpkg.com/lucide-react@0.468.0/dist/umd/lucide-react.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.26.4/babel.min.js"></script>
+
+    <script type="text/babel">
+      const { useEffect, useMemo, useRef, useState } = React;
+      const {
+        BrowserRouter,
+        Link,
+        NavLink,
+        Route,
+        Routes,
+        useLocation,
+        useNavigate,
+      } = ReactRouterDOM;
+      const MotionLib = window.Motion || {};
+      const motion = MotionLib.motion || new Proxy({}, { get: (_, tag) => tag });
+      const AnimatePresence = MotionLib.AnimatePresence || React.Fragment;
+      const useReducedMotion = MotionLib.useReducedMotion || (() => false);
+
+      const CricLinks = {
+        matches: "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
+        members: "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/members",
+      };
+
+      const fallbackIcons = {
+        ArrowRight: (props) => <SvgIcon {...props}><path d="M5 12h14" /><path d="m13 5 7 7-7 7" /></SvgIcon>,
+        CalendarDays: (props) => <SvgIcon {...props}><path d="M8 2v4" /><path d="M16 2v4" /><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M3 10h18" /><path d="M8 14h.01" /><path d="M12 14h.01" /><path d="M16 14h.01" /><path d="M8 18h.01" /><path d="M12 18h.01" /></SvgIcon>,
+        ChevronDown: (props) => <SvgIcon {...props}><path d="m6 9 6 6 6-6" /></SvgIcon>,
+        CircleUserRound: (props) => <SvgIcon {...props}><path d="M18 20a6 6 0 0 0-12 0" /><circle cx="12" cy="10" r="4" /><circle cx="12" cy="12" r="10" /></SvgIcon>,
+        ExternalLink: (props) => <SvgIcon {...props}><path d="M15 3h6v6" /><path d="M10 14 21 3" /><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /></SvgIcon>,
+        LogIn: (props) => <SvgIcon {...props}><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" /><path d="M10 17l5-5-5-5" /><path d="M15 12H3" /></SvgIcon>,
+        Menu: (props) => <SvgIcon {...props}><path d="M4 6h16" /><path d="M4 12h16" /><path d="M4 18h16" /></SvgIcon>,
+        Mouse: (props) => <SvgIcon {...props}><rect x="5" y="2" width="14" height="20" rx="7" /><path d="M12 6v4" /></SvgIcon>,
+        Play: (props) => <SvgIcon {...props}><polygon points="6 3 20 12 6 21 6 3" /></SvgIcon>,
+        Shield: (props) => <SvgIcon {...props}><path d="M20 13c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V5l8-3 8 3v8Z" /></SvgIcon>,
+        Sparkles: (props) => <SvgIcon {...props}><path d="m12 3-1.9 5.8L4 11l6.1 2.2L12 19l1.9-5.8L20 11l-6.1-2.2L12 3Z" /><path d="M5 3v4" /><path d="M3 5h4" /><path d="M19 17v4" /><path d="M17 19h4" /></SvgIcon>,
+        Swords: (props) => <SvgIcon {...props}><path d="m14.5 17.5 3 3 3-3-3-3" /><path d="m3 3 8.5 8.5" /><path d="m11.5 6.5 2-2L21 12l-2 2" /><path d="m3 21 8.5-8.5" /><path d="m6.5 11.5-2 2L12 21l2-2" /></SvgIcon>,
+        Trophy: (props) => <SvgIcon {...props}><path d="M8 21h8" /><path d="M12 17v4" /><path d="M7 4h10v5a5 5 0 0 1-10 0V4Z" /><path d="M5 9a3 3 0 0 1-3-3V5h5" /><path d="M19 9a3 3 0 0 0 3-3V5h-5" /></SvgIcon>,
+        Users: (props) => <SvgIcon {...props}><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></SvgIcon>,
+        X: (props) => <SvgIcon {...props}><path d="M18 6 6 18" /><path d="m6 6 12 12" /></SvgIcon>,
+      };
+
+      function SvgIcon({ children, className = "", size = 20, ...props }) {
+        return (
+          <svg
+            viewBox="0 0 24 24"
+            width={size}
+            height={size}
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className={className}
+            aria-hidden="true"
+            {...props}
+          >
+            {children}
+          </svg>
+        );
+      }
+
+      const Icon = { ...fallbackIcons, ...(window.LucideReact || {}) };
+
+      const navItems = [
+        { label: "Home", path: "/" },
+        { label: "Arena", path: "/arena" },
+        { label: "Teams", path: "/teams" },
+        { label: "Players", path: "/players" },
+        { label: "Tournaments", path: "/tournaments" },
+        { label: "Community", path: "/community" },
+      ];
+
+      const ease = [0.22, 1, 0.36, 1];
+
+      function useCursorParallax() {
+        const [point, setPoint] = useState({ x: 0, y: 0 });
+
+        useEffect(() => {
+          const isTouch = window.matchMedia("(pointer: coarse)").matches;
+          if (isTouch) return undefined;
+
+          const onMove = (event) => {
+            const x = ((event.clientX / window.innerWidth) - 0.5) * 14;
+            const y = ((event.clientY / window.innerHeight) - 0.5) * 14;
+            setPoint({ x, y });
+            document.documentElement.style.setProperty("--cursor-x", `${x}px`);
+            document.documentElement.style.setProperty("--cursor-y", `${y}px`);
+            document.documentElement.style.setProperty("--parallax-x", `${x * -0.35}px`);
+            document.documentElement.style.setProperty("--parallax-y", `${y * -0.2}px`);
+          };
+
+          window.addEventListener("pointermove", onMove, { passive: true });
+          return () => window.removeEventListener("pointermove", onMove);
+        }, []);
+
+        return point;
+      }
+
+      function ScrollToTop() {
+        const location = useLocation();
+
+        useEffect(() => {
+          if (!location.hash) {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }
+        }, [location.pathname]);
+
+        return null;
+      }
+
+      function PageLoader() {
+        const [show, setShow] = useState(true);
+
+        useEffect(() => {
+          const timeout = window.setTimeout(() => setShow(false), 720);
+          return () => window.clearTimeout(timeout);
+        }, []);
+
+        return (
+          <AnimatePresence>
+            {show && (
+              <motion.div
+                className="fixed inset-0 z-[100] grid place-items-center bg-night"
+                initial={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.65, ease }}
+                aria-hidden="true"
+              >
+                <motion.div
+                  className="font-display text-5xl font-black tracking-normal"
+                  initial={{ opacity: 0, y: 18, filter: "blur(12px)" }}
+                  animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                  transition={{ duration: 0.7, ease }}
+                >
+                  <span className="text-white">CRIC</span><span className="text-gold">KURU</span>
+                </motion.div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        );
+      }
+
+      function Logo({ onClick }) {
+        return (
+          <Link
+            to="/"
+            onClick={onClick}
+            aria-label="CricKuru home"
+            className="group flex items-center gap-3"
+          >
+            <span className="relative grid h-10 w-10 place-items-center rounded-full border border-gold/40 bg-white/5 shadow-[0_0_35px_rgba(244,185,66,0.18)]">
+              <span className="absolute h-6 w-6 rounded-full border-2 border-crimson/90">
+                <span className="absolute left-1/2 top-0 h-full w-px -translate-x-1/2 rotate-[28deg] bg-white/70" />
+              </span>
+            </span>
+            <span className="font-display text-3xl font-black leading-none">
+              <span className="text-white">CRIC</span><span className="text-gold">KURU</span>
+            </span>
+          </Link>
+        );
+      }
+
+      function Navbar() {
+        const [scrolled, setScrolled] = useState(false);
+        const [open, setOpen] = useState(false);
+        const location = useLocation();
+
+        useEffect(() => {
+          const onScroll = () => setScrolled(window.scrollY > 24);
+          onScroll();
+          window.addEventListener("scroll", onScroll, { passive: true });
+          return () => window.removeEventListener("scroll", onScroll);
+        }, []);
+
+        useEffect(() => {
+          setOpen(false);
+        }, [location.pathname]);
+
+        return (
+          <>
+            <header
+              className={`fixed left-0 right-0 top-0 z-50 transition-all duration-500 ${
+                scrolled
+                  ? "border-b border-gold/25 bg-night/78 shadow-2xl shadow-black/35 backdrop-blur-xl"
+                  : "border-b border-transparent bg-transparent"
+              }`}
+            >
+              <nav
+                className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8"
+                aria-label="Primary navigation"
+              >
+                <Logo />
+                <div className="hidden items-center gap-1 lg:flex">
+                  {navItems.map((item) => (
+                    <NavLink
+                      key={item.path}
+                      to={item.path}
+                      className={({ isActive }) =>
+                        `rounded-full px-4 py-2 text-sm font-semibold uppercase tracking-[0.16em] transition ${
+                          isActive
+                            ? "bg-white/10 text-gold"
+                            : "text-white/72 hover:bg-white/8 hover:text-white"
+                        }`
+                      }
+                    >
+                      {item.label}
+                    </NavLink>
+                  ))}
+                </div>
+                <div className="hidden items-center gap-3 lg:flex">
+                  <Link
+                    to="/login"
+                    className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/15 px-5 text-sm font-bold uppercase tracking-[0.16em] text-white/82 transition hover:border-gold/50 hover:text-gold"
+                  >
+                    <Icon.LogIn size={17} /> Login
+                  </Link>
+                  <Link
+                    to="/login"
+                    className="shine-button inline-flex min-h-11 items-center gap-2 rounded-full bg-gold px-5 text-sm font-black uppercase tracking-[0.15em] text-night shadow-[0_0_36px_rgba(244,185,66,0.28)] transition hover:scale-[1.03]"
+                  >
+                    Join CricKuru <Icon.ArrowRight size={17} />
+                  </Link>
+                </div>
+                <button
+                  className="grid h-12 w-12 place-items-center rounded-full border border-white/15 bg-white/5 text-white lg:hidden"
+                  type="button"
+                  aria-label="Open menu"
+                  aria-expanded={open}
+                  onClick={() => setOpen(true)}
+                >
+                  <Icon.Menu size={24} />
+                </button>
+              </nav>
+            </header>
+
+            <AnimatePresence>
+              {open && <MobileMenu onClose={() => setOpen(false)} />}
+            </AnimatePresence>
+          </>
+        );
+      }
+
+      function MobileMenu({ onClose }) {
+        return (
+          <motion.div
+            className="mobile-menu fixed inset-0 z-[80] px-6 py-6 lg:hidden"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.34, ease }}
+          >
+            <div className="flex items-center justify-between">
+              <Logo onClick={onClose} />
+              <button
+                className="grid h-12 w-12 place-items-center rounded-full border border-white/15 bg-white/5 text-white"
+                type="button"
+                aria-label="Close menu"
+                onClick={onClose}
+              >
+                <Icon.X size={24} />
+              </button>
+            </div>
+            <div className="mt-12 grid gap-3">
+              {navItems.map((item, index) => (
+                <motion.div
+                  key={item.path}
+                  initial={{ opacity: 0, y: 18 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.05, duration: 0.48, ease }}
+                >
+                  <Link
+                    to={item.path}
+                    onClick={onClose}
+                    className="flex min-h-14 items-center justify-between rounded-[8px] border border-white/12 bg-white/[0.045] px-5 font-display text-3xl font-black uppercase text-white"
+                  >
+                    {item.label}
+                    <Icon.ArrowRight className="text-gold" size={22} />
+                  </Link>
+                </motion.div>
+              ))}
+              <Link
+                to="/login"
+                onClick={onClose}
+                className="shine-button mt-4 inline-flex min-h-14 items-center justify-center gap-2 rounded-full bg-gold px-6 text-sm font-black uppercase tracking-[0.18em] text-night"
+              >
+                Join CricKuru <Icon.ArrowRight size={18} />
+              </Link>
+            </div>
+          </motion.div>
+        );
+      }
+
+      function LandingPage() {
+        useCursorParallax();
+
+        return (
+          <main className="page-grain min-h-screen bg-night">
+            <HeroSection />
+            <IdentitySection />
+            <CricHeroesSection />
+            <Footer />
+          </main>
+        );
+      }
+
+      function HeroSection() {
+        return (
+          <section className="relative min-h-screen overflow-hidden pt-20" aria-labelledby="hero-title">
+            <div className="hero-scene" aria-hidden="true">
+              <div className="stadium-rim" />
+              <StadiumLights />
+              <div className="fog-layer" />
+              <div className="pitch-lines" />
+              <FloatingParticles />
+              <BatterSilhouette />
+              <AnimatedCricketBall />
+            </div>
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_48%,transparent,rgba(5,7,11,0.44)_40%,rgba(5,7,11,0.88)_88%)]" />
+            <div className="relative z-10 mx-auto flex min-h-[calc(100vh-5rem)] max-w-7xl items-center px-5 py-12 sm:px-8">
+              <div className="grid w-full items-center gap-8 lg:grid-cols-[minmax(0,1fr)_420px]">
+                <HeroContent />
+                <FeaturedMatchCard />
+              </div>
+            </div>
+            <ScrollIndicator />
+          </section>
+        );
+      }
+
+      function StadiumLights() {
+        return (
+          <div className="absolute inset-x-0 top-0 h-72" aria-hidden="true">
+            <div className="absolute left-[6%] top-0 h-28 w-64 rotate-[-10deg] rounded-b-full bg-white/10 blur-2xl" />
+            <div className="absolute right-[7%] top-0 h-28 w-72 rotate-[12deg] rounded-b-full bg-gold/12 blur-2xl" />
+            <div className="absolute left-[16%] top-16 h-[440px] w-24 origin-top -rotate-[18deg] bg-gradient-to-b from-white/18 to-transparent blur-xl" />
+            <div className="absolute right-[19%] top-14 h-[450px] w-28 origin-top rotate-[18deg] bg-gradient-to-b from-gold/18 to-transparent blur-xl" />
+          </div>
+        );
+      }
+
+      function FloatingParticles() {
+        const particles = useMemo(
+          () =>
+            Array.from({ length: 24 }, (_, index) => ({
+              id: index,
+              left: `${(index * 41) % 100}%`,
+              top: `${14 + ((index * 29) % 70)}%`,
+              size: `${2 + (index % 5)}px`,
+              alpha: (0.18 + (index % 5) * 0.08).toFixed(2),
+              duration: `${11 + (index % 7) * 2}s`,
+              delay: `${index * -0.47}s`,
+              driftX: `${index % 2 ? 34 : -28}px`,
+              driftY: `${-22 - (index % 6) * 7}px`,
+              depth: (0.08 + (index % 6) * 0.04).toFixed(2),
+            })),
+          []
+        );
+
+        return (
+          <div className="absolute inset-0" aria-hidden="true">
+            {particles.map((particle) => (
+              <span
+                key={particle.id}
+                className="particle"
+                style={{
+                  "--left": particle.left,
+                  "--top": particle.top,
+                  "--size": particle.size,
+                  "--alpha": particle.alpha,
+                  "--duration": particle.duration,
+                  "--delay": particle.delay,
+                  "--drift-x": particle.driftX,
+                  "--drift-y": particle.driftY,
+                  "--depth": particle.depth,
+                }}
+              />
+            ))}
+          </div>
+        );
+      }
+
+      function BatterSilhouette() {
+        return (
+          <div className="batter-silhouette" aria-hidden="true">
+            <div className="bat" />
+            <div className="head" />
+            <div className="body" />
+            <div className="front-arm" />
+            <div className="back-arm" />
+            <div className="front-leg" />
+            <div className="back-leg" />
+          </div>
+        );
+      }
+
+      function AnimatedCricketBall() {
+        const reduceMotion = useReducedMotion();
+
+        return (
+          <motion.div
+            className="cricket-ball right-[4%] top-[18%] z-[3] sm:right-[12%]"
+            initial={{ x: 0, y: 0, scale: 0.82, rotate: 0 }}
+            animate={
+              reduceMotion
+                ? { opacity: 0.74 }
+                : {
+                    x: [-4, -120, -210, -70],
+                    y: [0, 90, 190, 48],
+                    scale: [0.82, 1, 1.15, 0.92],
+                    rotate: [0, 150, 315, 420],
+                  }
+            }
+            transition={{
+              duration: 16,
+              repeat: Infinity,
+              repeatType: "mirror",
+              ease: "easeInOut",
+            }}
+            aria-label="Slow moving cricket ball"
+          />
+        );
+      }
+
+      function HeroContent() {
+        const navigate = useNavigate();
+        const location = useLocation();
+
+        const scrollToIdentity = () => {
+          const scroll = () =>
+            document.getElementById("identity")?.scrollIntoView({ behavior: "smooth", block: "start" });
+          if (location.pathname !== "/") {
+            navigate("/");
+            window.setTimeout(scroll, 120);
+          } else {
+            scroll();
+          }
+        };
+
+        return (
+          <motion.div
+            className="max-w-4xl text-center lg:text-left"
+            initial="hidden"
+            animate="show"
+            variants={{
+              hidden: {},
+              show: { transition: { staggerChildren: 0.18, delayChildren: 0.25 } },
+            }}
+          >
+            <Reveal>
+              <p className="mb-5 text-xs font-extrabold uppercase tracking-[0.38em] text-cyan/90">
+                THE GLOBAL CRICKET COMMUNITY
+              </p>
+            </Reveal>
+            <Reveal y={54}>
+              <h1
+                id="hero-title"
+                className="font-display text-[clamp(3.25rem,9vw,7.4rem)] font-black uppercase leading-[0.86] text-white"
+              >
+                Cricket Is More
+                <span className="block">Than a Game.</span>
+                <span className="block">
+                  It Is Your{" "}
+                  <span className="bg-gradient-to-r from-gold via-white to-gold bg-clip-text text-transparent drop-shadow-[0_0_24px_rgba(244,185,66,0.22)]">
+                    Legacy.
+                  </span>
+                </span>
+              </h1>
+            </Reveal>
+            <Reveal>
+              <div className="gold-divider mx-auto my-7 lg:mx-0" />
+            </Reveal>
+            <Reveal>
+              <p className="mx-auto max-w-2xl text-lg leading-8 text-white/76 sm:text-xl lg:mx-0">
+                Build your player identity, create your team, compete with your community and enter a new world of cricket.
+              </p>
+            </Reveal>
+            <Reveal>
+              <p className="mt-4 font-display text-2xl font-bold uppercase text-gold">
+                Play. Compete. Become Legendary.
+              </p>
+            </Reveal>
+            <Reveal>
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
+                <button
+                  type="button"
+                  onClick={() => navigate("/arena")}
+                  className="shine-button inline-flex min-h-14 items-center justify-center gap-3 rounded-full bg-gold px-7 text-sm font-black uppercase tracking-[0.18em] text-night shadow-[0_0_46px_rgba(244,185,66,0.32)] transition hover:scale-[1.03]"
+                  aria-label="Enter the CricKuru Arena"
+                >
+                  Enter the Arena <Icon.ArrowRight size={19} />
+                </button>
+                <button
+                  type="button"
+                  onClick={scrollToIdentity}
+                  className="inline-flex min-h-14 items-center justify-center gap-3 rounded-full border border-gold/35 bg-white/8 px-7 text-sm font-black uppercase tracking-[0.18em] text-white backdrop-blur-xl transition hover:border-gold hover:bg-gold/10 hover:text-gold"
+                  aria-label="Explore CricKuru sections"
+                >
+                  Explore CricKuru <Icon.ChevronDown size={19} />
+                </button>
+              </div>
+            </Reveal>
+            <Reveal>
+              <p className="mt-5 text-sm font-semibold uppercase tracking-[0.2em] text-white/54">
+                Home of the founding team - Kurukshetra Warriors
+              </p>
+            </Reveal>
+          </motion.div>
+        );
+      }
+
+      function Reveal({ children, y = 34 }) {
+        return (
+          <motion.div
+            variants={{
+              hidden: { opacity: 0, y, filter: "blur(14px)" },
+              show: { opacity: 1, y: 0, filter: "blur(0px)" },
+            }}
+            transition={{ duration: 1.05, ease }}
+          >
+            {children}
+          </motion.div>
+        );
+      }
+
+      function FeaturedMatchCard() {
+        return (
+          <motion.aside
+            className="glass relative mx-auto mt-6 w-full max-w-sm rounded-[8px] p-5 lg:ml-auto lg:mt-48"
+            initial={{ opacity: 0, y: 36, filter: "blur(10px)" }}
+            animate={{ opacity: 1, y: [0, -10, 0], filter: "blur(0px)" }}
+            transition={{ opacity: { duration: 0.8, delay: 1.2 }, y: { duration: 7, repeat: Infinity, ease: "easeInOut" } }}
+            aria-label="Featured community match preview"
+          >
+            <div className="mb-5 flex items-center justify-between">
+              <p className="text-[0.68rem] font-black uppercase tracking-[0.24em] text-gold">
+                Featured Community Match
+              </p>
+              <span className="flex items-center gap-2 rounded-full border border-crimson/45 bg-crimson/12 px-3 py-1 text-[0.62rem] font-black uppercase tracking-[0.16em] text-white/80">
+                <span className="h-2 w-2 rounded-full bg-crimson shadow-[0_0_12px_rgba(183,25,50,0.9)]" />
+                Archive
+              </span>
+            </div>
+
+            <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3">
+              <TeamScore initials="KW" team="Kurukshetra Warriors" score="233/7" />
+              <span className="font-display text-xl font-black text-white/40">VS</span>
+              <TeamScore initials="DS" team="Divino Strikers" score="221/9" align="right" />
+            </div>
+
+            <div className="mt-5 rounded-[8px] border border-gold/18 bg-night/55 p-4">
+              <p className="font-display text-2xl font-black uppercase text-white">Warriors won by 12 runs</p>
+              <p className="mt-2 text-sm text-white/62">Player of the match: Kurukshetra Warriors standout performer</p>
+            </div>
+            <a
+              href={CricLinks.matches}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-5 inline-flex w-full min-h-11 items-center justify-center gap-2 rounded-full border border-white/12 bg-white/7 text-sm font-bold uppercase tracking-[0.16em] text-white/84 transition hover:border-gold/60 hover:text-gold"
+            >
+              Open Matches <Icon.ExternalLink size={16} />
+            </a>
+          </motion.aside>
+        );
+      }
+
+      function TeamScore({ initials, team, score, align = "left" }) {
+        return (
+          <div className={align === "right" ? "text-right" : "text-left"}>
+            <div className={`mb-2 flex items-center gap-2 ${align === "right" ? "justify-end" : ""}`}>
+              <span className="grid h-10 w-10 place-items-center rounded-full border border-gold/35 bg-gold/10 font-display text-xl font-black text-gold">
+                {initials}
+              </span>
+            </div>
+            <p className="text-xs font-bold uppercase tracking-[0.12em] text-white/54">{team}</p>
+            <p className="font-display text-4xl font-black text-white">{score}</p>
+          </div>
+        );
+      }
+
+      function ScrollIndicator() {
+        const [hidden, setHidden] = useState(false);
+
+        useEffect(() => {
+          const onScroll = () => setHidden(window.scrollY > 90);
+          window.addEventListener("scroll", onScroll, { passive: true });
+          return () => window.removeEventListener("scroll", onScroll);
+        }, []);
+
+        return (
+          <motion.div
+            className="pointer-events-none absolute bottom-6 left-1/2 z-20 hidden -translate-x-1/2 flex-col items-center gap-3 text-center md:flex"
+            animate={{ opacity: hidden ? 0 : 1 }}
+            transition={{ duration: 0.35 }}
+            aria-hidden="true"
+          >
+            <Icon.Mouse className="text-white/62" size={23} />
+            <p className="text-[0.65rem] font-black uppercase tracking-[0.3em] text-white/58">Scroll to Enter</p>
+            <motion.span
+              className="h-12 w-px bg-gradient-to-b from-gold to-transparent"
+              animate={{ y: [0, 12, 0] }}
+              transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
+            />
+          </motion.div>
+        );
+      }
+
+      function IdentitySection() {
+        const features = [
+          {
+            icon: Icon.CircleUserRound,
+            title: "Build Your Player Profile",
+            text: "Create a digital cricket identity, track performances and unlock achievements.",
+          },
+          {
+            icon: Icon.Shield,
+            title: "Create Your Team",
+            text: "Build a squad, manage players and represent your community.",
+          },
+          {
+            icon: Icon.Trophy,
+            title: "Enter CricKuru Arena",
+            text: "Play browser-based cricket challenges and climb the global leaderboard.",
+          },
+        ];
+
+        return (
+          <section
+            id="identity"
+            className="relative overflow-hidden bg-[linear-gradient(180deg,#05070B,#080D16_52%,#05070B)] px-5 py-24 sm:px-8"
+            aria-labelledby="identity-title"
+          >
+            <div className="absolute inset-0 opacity-80" aria-hidden="true">
+              <div className="absolute left-[-8%] top-24 h-80 w-80 rounded-full bg-gold/10 blur-3xl" />
+              <div className="absolute right-[-10%] top-10 h-96 w-96 rounded-full bg-crimson/14 blur-3xl" />
+            </div>
+            <div className="relative mx-auto max-w-7xl">
+              <motion.div
+                className="max-w-3xl"
+                initial={{ opacity: 0, y: 28 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.35 }}
+                transition={{ duration: 0.8, ease }}
+              >
+                <p className="text-xs font-black uppercase tracking-[0.32em] text-cyan/90">CricKuru Platform</p>
+                <h2 id="identity-title" className="mt-4 font-display text-5xl font-black uppercase leading-none text-white sm:text-7xl">
+                  Your Cricket Identity Starts Here
+                </h2>
+                <div className="gold-divider mt-7" />
+              </motion.div>
+
+              <div className="mt-12 grid gap-5 md:grid-cols-3">
+                {features.map((feature, index) => (
+                  <motion.article
+                    key={feature.title}
+                    className="glass rounded-[8px] p-6 transition hover:-translate-y-1 hover:border-gold/35"
+                    initial={{ opacity: 0, y: 34 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.25 }}
+                    transition={{ duration: 0.78, delay: index * 0.12, ease }}
+                  >
+                    <div className="mb-8 grid h-14 w-14 place-items-center rounded-[8px] border border-gold/30 bg-gold/10 text-gold">
+                      <feature.icon size={26} />
+                    </div>
+                    <h3 className="font-display text-3xl font-black uppercase text-white">{feature.title}</h3>
+                    <p className="mt-4 leading-7 text-white/66">{feature.text}</p>
+                  </motion.article>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+      }
+
+      function CricHeroesSection() {
+        const [tab, setTab] = useState("matches");
+        const tabs = [
+          { id: "matches", label: "Matches", icon: Icon.CalendarDays },
+          { id: "members", label: "Members", icon: Icon.Users },
+          { id: "pulse", label: "Team Pulse", icon: Icon.Sparkles },
+        ];
+
+        return (
+          <section className="relative overflow-hidden bg-night px-5 py-24 sm:px-8" aria-labelledby="cricheroes-title">
+            <div className="absolute inset-0" aria-hidden="true">
+              <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold/35 to-transparent" />
+              <div className="absolute left-1/2 top-32 h-[520px] w-[760px] -translate-x-1/2 rounded-full bg-cyan/6 blur-3xl" />
+            </div>
+            <div className="relative mx-auto max-w-7xl">
+              <div className="grid gap-8 lg:grid-cols-[0.82fr_1.18fr] lg:items-end">
+                <div>
+                  <p className="text-xs font-black uppercase tracking-[0.32em] text-gold">Kurukshetra Warriors</p>
+                  <h2 id="cricheroes-title" className="mt-4 font-display text-5xl font-black uppercase leading-none text-white sm:text-7xl">
+                    Matches and Members, CricHeroes Style
+                  </h2>
+                  <p className="mt-6 max-w-xl text-lg leading-8 text-white/66">
+                    A bold CricKuru showcase for the founding team, connected to the official CricHeroes match and member pages.
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-3 lg:justify-end" role="tablist" aria-label="Kurukshetra Warriors tabs">
+                  {tabs.map((item) => (
+                    <button
+                      key={item.id}
+                      type="button"
+                      role="tab"
+                      aria-selected={tab === item.id}
+                      onClick={() => setTab(item.id)}
+                      className={`funk-tab inline-flex min-h-12 items-center gap-2 rounded-full border px-5 text-sm font-black uppercase tracking-[0.16em] transition ${
+                        tab === item.id
+                          ? "border-gold/60 text-gold shadow-[0_0_34px_rgba(244,185,66,0.18)]"
+                          : "border-white/12 text-white/64 hover:border-white/25 hover:text-white"
+                      }`}
+                    >
+                      <item.icon size={17} /> {item.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <div className="mt-10">
+                <AnimatePresence mode="wait">
+                  {tab === "matches" && <MatchesPanel key="matches" />}
+                  {tab === "members" && <MembersPanel key="members" />}
+                  {tab === "pulse" && <PulsePanel key="pulse" />}
+                </AnimatePresence>
+              </div>
+            </div>
+          </section>
+        );
+      }
+
+      function PanelShell({ children }) {
+        return (
+          <motion.div
+            initial={{ opacity: 0, y: 24, filter: "blur(10px)" }}
+            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            exit={{ opacity: 0, y: -16, filter: "blur(10px)" }}
+            transition={{ duration: 0.45, ease }}
+          >
+            {children}
+          </motion.div>
+        );
+      }
+
+      function MatchesPanel() {
+        const matches = [
+          {
+            tag: "Featured",
+            title: "Kurukshetra Warriors vs Divino Strikers",
+            score: "233/7 - 221/9",
+            result: "Warriors won by 12 runs",
+            tone: "Gold finish",
+          },
+          {
+            tag: "CricHeroes",
+            title: "Official Match Feed",
+            score: "All scorecards",
+            result: "View complete match history on CricHeroes",
+            tone: "Verified source",
+          },
+          {
+            tag: "Arena",
+            title: "Community Rivalries",
+            score: "Tabs ready",
+            result: "Use this panel for upcoming, recent and tournament match groups",
+            tone: "Funky tabs",
+          },
+        ];
+
+        return (
+          <PanelShell>
+            <div className="grid gap-5 lg:grid-cols-[1.05fr_0.95fr]">
+              <div className="grid gap-5 md:grid-cols-3 lg:grid-cols-1">
+                {matches.map((match) => (
+                  <article key={match.title} className="score-tile rounded-[8px] border border-white/12 p-5">
+                    <div className="mb-4 flex items-center justify-between gap-3">
+                      <span className="rounded-full bg-gold/12 px-3 py-1 text-[0.65rem] font-black uppercase tracking-[0.18em] text-gold">
+                        {match.tag}
+                      </span>
+                      <span className="text-[0.65rem] font-bold uppercase tracking-[0.18em] text-white/42">{match.tone}</span>
+                    </div>
+                    <h3 className="font-display text-3xl font-black uppercase leading-none text-white">{match.title}</h3>
+                    <p className="mt-4 font-display text-4xl font-black text-gold">{match.score}</p>
+                    <p className="mt-2 text-sm font-semibold text-white/68">{match.result}</p>
+                  </article>
+                ))}
+              </div>
+              <div className="glass rounded-[8px] p-6">
+                <div className="flex items-center gap-3">
+                  <div className="grid h-14 w-14 place-items-center rounded-[8px] bg-crimson/14 text-crimson">
+                    <Icon.Swords size={28} />
+                  </div>
+                  <div>
+                    <p className="text-xs font-black uppercase tracking-[0.22em] text-white/48">Official Source</p>
+                    <h3 className="font-display text-3xl font-black uppercase text-white">CricHeroes Matchbook</h3>
+                  </div>
+                </div>
+                <p className="mt-6 leading-8 text-white/68">
+                  The official Kurukshetra Warriors match page is linked here so fans can open the full scorecards, match history and CricHeroes details without any fake sync.
+                </p>
+                <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                  <a
+                    href={CricLinks.matches}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="shine-button inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-gold px-5 text-sm font-black uppercase tracking-[0.16em] text-night"
+                  >
+                    Open Matches <Icon.ExternalLink size={16} />
+                  </a>
+                  <a
+                    href={CricLinks.members}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/15 bg-white/7 px-5 text-sm font-black uppercase tracking-[0.16em] text-white transition hover:border-gold/55 hover:text-gold"
+                  >
+                    Open Members <Icon.ExternalLink size={16} />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </PanelShell>
+        );
+      }
+
+      function MembersPanel() {
+        const memberTiles = [
+          { initials: "KW", role: "Official Squad", label: "CricHeroes roster" },
+          { initials: "BAT", role: "Batting Unit", label: "Open member page" },
+          { initials: "ALL", role: "All-rounders", label: "Verified profiles" },
+          { initials: "BWL", role: "Bowling Unit", label: "Team members" },
+        ];
+
+        return (
+          <PanelShell>
+            <div className="grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
+              <div className="glass rounded-[8px] p-6">
+                <p className="text-xs font-black uppercase tracking-[0.26em] text-cyan">Members</p>
+                <h3 className="mt-3 font-display text-5xl font-black uppercase leading-none text-white">Warriors Roster Wall</h3>
+                <p className="mt-5 leading-8 text-white/68">
+                  The official player list stays on CricHeroes. This CricKuru panel is designed to showcase verified player profiles once the final member names are added.
+                </p>
+                <a
+                  href={CricLinks.members}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-7 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-gold px-6 text-sm font-black uppercase tracking-[0.16em] text-night transition hover:scale-[1.03]"
+                >
+                  Open Official Members <Icon.ExternalLink size={16} />
+                </a>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-2">
+                {memberTiles.map((member, index) => (
+                  <motion.article
+                    key={member.role}
+                    className="relative overflow-hidden rounded-[8px] border border-white/12 bg-white/[0.045] p-5"
+                    initial={{ opacity: 0, y: 18 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.08, duration: 0.42, ease }}
+                  >
+                    <div className="absolute right-[-24px] top-[-24px] h-24 w-24 rounded-full bg-gold/10 blur-2xl" />
+                    <div className="grid h-16 w-16 place-items-center rounded-[8px] border border-gold/28 bg-gold/10 font-display text-2xl font-black text-gold">
+                      {member.initials}
+                    </div>
+                    <h4 className="mt-6 font-display text-3xl font-black uppercase text-white">{member.role}</h4>
+                    <p className="mt-2 text-sm font-semibold uppercase tracking-[0.16em] text-white/46">{member.label}</p>
+                  </motion.article>
+                ))}
+              </div>
+            </div>
+          </PanelShell>
+        );
+      }
+
+      function PulsePanel() {
+        const pulses = [
+          ["Legacy", "Founding team energy with global platform ambition."],
+          ["Competition", "Match cards, score previews and arena-first navigation."],
+          ["Community", "Players, teams, tournaments and fans in one premium identity."],
+        ];
+
+        return (
+          <PanelShell>
+            <div className="grid gap-5 md:grid-cols-3">
+              {pulses.map(([title, text]) => (
+                <article key={title} className="glass rounded-[8px] p-6">
+                  <p className="font-display text-5xl font-black uppercase text-gold">{title}</p>
+                  <p className="mt-4 leading-8 text-white/68">{text}</p>
+                </article>
+              ))}
+            </div>
+          </PanelShell>
+        );
+      }
+
+      function PlaceholderPage({ title, kicker, description, icon: PageIcon }) {
+        return (
+          <main className="route-bg page-grain px-5 pb-16 pt-32 sm:px-8">
+            <section className="mx-auto max-w-7xl">
+              <motion.div
+                className="grid min-h-[68vh] items-center gap-10 lg:grid-cols-[0.95fr_1.05fr]"
+                initial={{ opacity: 0, y: 26 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.75, ease }}
+              >
+                <div>
+                  <p className="text-xs font-black uppercase tracking-[0.32em] text-gold">{kicker}</p>
+                  <h1 className="mt-5 font-display text-6xl font-black uppercase leading-none text-white sm:text-8xl">{title}</h1>
+                  <div className="gold-divider my-7" />
+                  <p className="max-w-2xl text-lg leading-8 text-white/68">{description}</p>
+                  <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                    <Link
+                      to="/"
+                      className="shine-button inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-gold px-6 text-sm font-black uppercase tracking-[0.16em] text-night"
+                    >
+                      Back Home <Icon.ArrowRight size={16} />
+                    </Link>
+                    <a
+                      href={CricLinks.matches}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/15 bg-white/7 px-6 text-sm font-black uppercase tracking-[0.16em] text-white transition hover:border-gold/55 hover:text-gold"
+                    >
+                      CricHeroes <Icon.ExternalLink size={16} />
+                    </a>
+                  </div>
+                </div>
+                <div className="glass rounded-[8px] p-8">
+                  <div className="grid h-24 w-24 place-items-center rounded-[8px] border border-gold/30 bg-gold/10 text-gold">
+                    <PageIcon size={46} />
+                  </div>
+                  <div className="mt-10 grid gap-4">
+                    {["Premium dark UI", "Route ready", "CricKuru visual system"].map((item) => (
+                      <div key={item} className="flex items-center justify-between rounded-[8px] border border-white/10 bg-white/[0.045] p-4">
+                        <span className="font-bold text-white/78">{item}</span>
+                        <span className="h-2 w-2 rounded-full bg-gold shadow-[0_0_18px_rgba(244,185,66,0.8)]" />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+            </section>
+          </main>
+        );
+      }
+
+      function Footer() {
+        return (
+          <footer className="border-t border-white/10 bg-[#030407] px-5 py-10 sm:px-8">
+            <div className="mx-auto flex max-w-7xl flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+              <Logo />
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href={CricLinks.matches}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/12 px-4 text-sm font-bold text-white/70 transition hover:border-gold/50 hover:text-gold"
+                >
+                  Matches <Icon.ExternalLink size={15} />
+                </a>
+                <a
+                  href={CricLinks.members}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/12 px-4 text-sm font-bold text-white/70 transition hover:border-gold/50 hover:text-gold"
+                >
+                  Members <Icon.ExternalLink size={15} />
+                </a>
+              </div>
+              <p className="text-sm text-white/45">&copy; 2026 CricKuru. Built for crickuru.com.</p>
+            </div>
+          </footer>
+        );
+      }
+
+      function App() {
+        return (
+          <BrowserRouter>
+            <ScrollToTop />
+            <PageLoader />
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<LandingPage />} />
+              <Route
+                path="/arena"
+                element={
+                  <PlaceholderPage
+                    title="CricKuru Arena"
+                    kicker="Browser Cricket Challenges"
+                    description="The Arena route is ready for cricket games, score challenges and leaderboards. The landing CTA already points here."
+                    icon={Icon.Trophy}
+                  />
+                }
+              />
+              <Route
+                path="/teams"
+                element={
+                  <PlaceholderPage
+                    title="Teams"
+                    kicker="Build Your Squad"
+                    description="A polished team hub placeholder for squads, captains, communities and team-management workflows."
+                    icon={Icon.Shield}
+                  />
+                }
+              />
+              <Route
+                path="/players"
+                element={
+                  <PlaceholderPage
+                    title="Players"
+                    kicker="Cricket Identity"
+                    description="A premium player-profile route prepared for stats, badges, match roles and individual cricket journeys."
+                    icon={Icon.CircleUserRound}
+                  />
+                }
+              />
+              <Route
+                path="/tournaments"
+                element={
+                  <PlaceholderPage
+                    title="Tournaments"
+                    kicker="Compete Globally"
+                    description="A tournament route ready for fixtures, brackets, seasons and community competitions."
+                    icon={Icon.Swords}
+                  />
+                }
+              />
+              <Route
+                path="/community"
+                element={
+                  <PlaceholderPage
+                    title="Community"
+                    kicker="Global Cricket Network"
+                    description="A community route prepared for fans, clubs, match discussions and CricKuru social moments."
+                    icon={Icon.Users}
+                  />
+                }
+              />
+              <Route
+                path="/login"
+                element={
+                  <PlaceholderPage
+                    title="Join CricKuru"
+                    kicker="Account Access"
+                    description="A login and signup-intent route with the same premium visual system, ready for authentication later."
+                    icon={Icon.LogIn}
+                  />
+                }
+              />
+              <Route
+                path="*"
+                element={
+                  <PlaceholderPage
+                    title="Page Not Found"
+                    kicker="CricKuru"
+                    description="This page is not available yet. Use the navigation to return to the CricKuru experience."
+                    icon={Icon.Sparkles}
+                  />
+                }
+              />
+            </Routes>
+          </BrowserRouter>
+        );
+      }
+
+      ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+    </script>
+  </body>
+</html>
