@@ -537,7 +537,7 @@
     <script src="https://unpkg.com/@babel/standalone@7.26.4/babel.min.js"></script>
 
     <script type="text/babel">
-      const { useEffect, useMemo, useRef, useState } = React;
+      const { useEffect, useMemo, useReducer, useRef, useState } = React;
       const {
         BrowserRouter,
         Link,
@@ -1427,6 +1427,1488 @@
         );
       }
 
+      const ARENA_MODES = {
+        super: { label: "Super Over", overs: 1, balls: 6 },
+        quick: { label: "Quick Match", overs: 2, balls: 12 },
+        five: { label: "Five-Over Clash", overs: 5, balls: 30 },
+      };
+
+      const ARENA_DIFFICULTIES = {
+        rookie: { label: "Rookie", aiSkill: 58, aiMemory: 2, mistake: 0.22, timing: -12, aggression: -0.05 },
+        pro: { label: "Professional", aiSkill: 72, aiMemory: 4, mistake: 0.12, timing: 0, aggression: 0.04 },
+        legend: { label: "Legend", aiSkill: 84, aiMemory: 6, mistake: 0.06, timing: 10, aggression: 0.1 },
+      };
+
+      const PITCHES = {
+        balanced: { label: "Balanced pitch", bounce: 1, pace: 1, swing: 1, spin: 1, timing: 0, boundary: 0 },
+        batting: { label: "Batting pitch", bounce: 0.92, pace: 1.04, swing: 0.82, spin: 0.86, timing: 7, boundary: 0.08 },
+        green: { label: "Green pitch", bounce: 1.08, pace: 1.08, swing: 1.22, spin: 0.78, timing: -6, boundary: -0.05 },
+        dry: { label: "Dry turning pitch", bounce: 0.95, pace: 0.9, swing: 0.8, spin: 1.24, timing: -4, boundary: -0.03 },
+        slow: { label: "Slow pitch", bounce: 0.84, pace: 0.84, swing: 0.9, spin: 1.08, timing: -7, boundary: -0.07 },
+      };
+
+      const FIELD_PRESETS = {
+        attacking: { label: "Attacking", catch: 0.09, boundary: 0.03, singles: -0.04, zone: "Close catchers" },
+        balanced: { label: "Balanced", catch: 0.03, boundary: 0, singles: 0, zone: "Classic ring" },
+        defensive: { label: "Defensive", catch: -0.04, boundary: -0.08, singles: 0.08, zone: "Deep sweepers" },
+        offTrap: { label: "Off-side trap", catch: 0.06, boundary: -0.03, singles: -0.01, zone: "Extra cover packed" },
+        legTrap: { label: "Leg-side trap", catch: 0.06, boundary: -0.03, singles: -0.01, zone: "Midwicket loaded" },
+        boundary: { label: "Boundary protection", catch: -0.02, boundary: -0.12, singles: 0.1, zone: "Riders back" },
+      };
+
+      const LINE_OPTIONS = ["Wide outside off", "Outside off", "Off stump", "Middle stump", "Leg stump", "Down leg side"];
+      const LENGTH_OPTIONS = ["Yorker", "Full", "Good length", "Back of a length", "Short", "Bouncer"];
+      const PACE_OPTIONS = ["Slower", "Normal", "Fast", "Maximum effort"];
+      const FLIGHT_OPTIONS = ["Flat", "Normal", "Flighted", "Very slow"];
+      const SHOT_DIRECTIONS = ["Off side", "Straight", "Leg side", "Behind square", "Defensive"];
+      const SHOT_TYPES = ["Block", "Drive", "Cut", "Pull", "Sweep", "Lofted drive", "Slog", "Leave"];
+      const FOOTWORK_OPTIONS = ["Front foot", "Back foot", "Advance down the pitch"];
+      const AGGRESSION_OPTIONS = ["Defensive", "Balanced", "Aggressive"];
+
+      const BOWLER_TYPES = {
+        fast: {
+          label: "Fast bowler",
+          variations: ["Straight delivery", "Outswing", "Inswing", "Bouncer", "Yorker", "Cross-seam", "Slower ball"],
+          paceOptions: PACE_OPTIONS,
+        },
+        swing: {
+          label: "Swing bowler",
+          variations: ["Outswing", "Inswing", "Off cutter", "Leg cutter", "Slower ball", "Yorker", "Straight delivery"],
+          paceOptions: PACE_OPTIONS,
+        },
+        medium: {
+          label: "Medium pacer",
+          variations: ["Straight delivery", "Off cutter", "Leg cutter", "Slower ball", "Cross-seam", "Yorker", "Bouncer"],
+          paceOptions: PACE_OPTIONS,
+        },
+        offspin: {
+          label: "Off spinner",
+          variations: ["Off break", "Arm ball", "Top spinner", "Carrom ball", "Flighted off break", "Quicker one", "Flipper"],
+          paceOptions: FLIGHT_OPTIONS,
+        },
+        legspin: {
+          label: "Leg spinner",
+          variations: ["Leg break", "Googly", "Top spinner", "Flipper", "Flighted leg break", "Slider", "Very slow leg break"],
+          paceOptions: FLIGHT_OPTIONS,
+        },
+      };
+
+      const ARENA_CONFIG = {
+        maxWickets: 5,
+        timingCycleMs: 1540,
+        accuracyCycleMs: 1320,
+        aiMemoryLength: 6,
+        xp: { win: 80, boundary: 12, six: 20, wicket: 24, dot: 7, perfect: 10, complete: 30 },
+      };
+
+      const DOT_BALL = "\u2022";
+
+      const ARENA_PLAYERS = [
+        { id: "arjun", name: "Arjun Rana", role: "Batsman", type: "batter", power: 78, timing: 82, technique: 80, footwork: 76, defence: 71, paceHandling: 79, spinHandling: 74, composure: 77 },
+        { id: "veer", name: "Veer Pratap", role: "Opener", type: "batter", power: 72, timing: 86, technique: 83, footwork: 81, defence: 76, paceHandling: 82, spinHandling: 72, composure: 80 },
+        { id: "kabir", name: "Kabir Sethi", role: "Power hitter", type: "batter", power: 90, timing: 73, technique: 70, footwork: 68, defence: 58, paceHandling: 76, spinHandling: 69, composure: 71 },
+        { id: "ishaan", name: "Ishaan Mehra", role: "Anchor", type: "batter", power: 66, timing: 84, technique: 87, footwork: 82, defence: 84, paceHandling: 75, spinHandling: 82, composure: 86 },
+        { id: "dev", name: "Dev Malik", role: "All-rounder", type: "allrounder", power: 75, timing: 76, technique: 74, footwork: 72, defence: 70, paceHandling: 72, spinHandling: 78, composure: 75, pace: 78, accuracy: 73, swing: 69, spin: 42, variation: 74, control: 72, stamina: 82 },
+        { id: "samar", name: "Samar Gill", role: "All-rounder", type: "allrounder", power: 70, timing: 74, technique: 75, footwork: 76, defence: 73, paceHandling: 70, spinHandling: 81, composure: 78, pace: 56, accuracy: 76, swing: 45, spin: 78, variation: 80, control: 78, stamina: 80 },
+        { id: "ranvijay", name: "Ranvijay Chauhan", role: "Fast bowler", type: "bowler", pace: 90, accuracy: 72, swing: 66, spin: 20, variation: 70, control: 72, stamina: 84, composure: 76 },
+        { id: "daksh", name: "Daksh Oberoi", role: "Swing bowler", type: "bowler", pace: 82, accuracy: 80, swing: 86, spin: 25, variation: 73, control: 79, stamina: 80, composure: 78 },
+        { id: "naman", name: "Naman Kohli", role: "Medium pacer", type: "bowler", pace: 74, accuracy: 84, swing: 72, spin: 35, variation: 78, control: 83, stamina: 82, composure: 81 },
+        { id: "rudra", name: "Rudra Vyas", role: "Off spinner", type: "bowler", pace: 48, accuracy: 81, swing: 20, spin: 88, variation: 82, control: 84, stamina: 76, composure: 80 },
+        { id: "yash", name: "Yash Bedi", role: "Leg spinner", type: "bowler", pace: 44, accuracy: 74, swing: 18, spin: 92, variation: 89, control: 75, stamina: 74, composure: 77 },
+        { id: "omkar", name: "Omkar Singh", role: "Wicketkeeper-batsman", type: "keeper", power: 74, timing: 80, technique: 79, footwork: 78, defence: 75, paceHandling: 77, spinHandling: 80, composure: 82 },
+      ];
+
+      const AI_BATTERS = [
+        { id: "anchor", name: "CricKuru Anchor", style: "Anchor", power: 70, timing: 78, technique: 82, footwork: 78, defence: 84, paceHandling: 76, spinHandling: 78, composure: 86 },
+        { id: "aggressor", name: "CricKuru Aggressor", style: "Aggressor", power: 88, timing: 75, technique: 72, footwork: 70, defence: 60, paceHandling: 79, spinHandling: 73, composure: 72 },
+        { id: "finisher", name: "CricKuru Finisher", style: "Finisher", power: 84, timing: 81, technique: 77, footwork: 76, defence: 68, paceHandling: 80, spinHandling: 80, composure: 88 },
+      ];
+
+      const AI_BOWLER = { id: "ai-bowler", name: "CricKuru AI Bowler", pace: 80, accuracy: 78, swing: 74, spin: 76, variation: 82, control: 80, stamina: 82, composure: 78 };
+
+      function clamp(value, min, max) {
+        return Math.max(min, Math.min(max, value));
+      }
+
+      function weightedPick(weightMap) {
+        const entries = Object.entries(weightMap).filter(([, value]) => value > 0);
+        const total = entries.reduce((sum, [, value]) => sum + value, 0);
+        let cursor = Math.random() * total;
+        for (const [key, value] of entries) {
+          cursor -= value;
+          if (cursor <= 0) return key;
+        }
+        return entries[0]?.[0] || "dot";
+      }
+
+      function formatOvers(legalBalls) {
+        return `${Math.floor(legalBalls / 6)}.${legalBalls % 6}`;
+      }
+
+      function runRate(runs, legalBalls) {
+        return legalBalls ? ((runs / legalBalls) * 6).toFixed(2) : "0.00";
+      }
+
+      function getMeterValue(start, cycleMs) {
+        if (!start) return 0;
+        const elapsed = (performance.now() - start) % cycleMs;
+        const half = cycleMs / 2;
+        return elapsed <= half ? (elapsed / half) * 100 : 100 - ((elapsed - half) / half) * 100;
+      }
+
+      function timingFromValue(value) {
+        const diff = Math.abs(value - 50);
+        if (diff <= 6) return { label: "Perfect", score: 1, tone: "text-gold" };
+        if (diff <= 14) return { label: "Good", score: 0.78, tone: "text-cyan" };
+        if (value < 50 && diff <= 26) return { label: "Early", score: 0.48, tone: "text-white/70" };
+        if (value > 50 && diff <= 26) return { label: "Late", score: 0.48, tone: "text-white/70" };
+        return { label: value < 50 ? "Very Early" : "Very Late", score: 0.18, tone: "text-crimson" };
+      }
+
+      function accuracyFromValue(value) {
+        const diff = Math.abs(value - 52);
+        if (diff <= 7) return { label: "Perfect", score: 1, tone: "text-gold" };
+        if (diff <= 16) return { label: "Good", score: 0.78, tone: "text-cyan" };
+        if (diff <= 28) return { label: "Slight error", score: 0.52, tone: "text-white/70" };
+        if (diff <= 40) return { label: "Poor", score: 0.28, tone: "text-crimson" };
+        return { label: "Wild", score: 0.08, tone: "text-crimson" };
+      }
+
+      function describeDelivery(delivery) {
+        return `${delivery.variation}, ${delivery.length.toLowerCase()}, ${delivery.line.toLowerCase()}, ${delivery.pace.toLowerCase()}`;
+      }
+
+      function deliveryIsSpin(delivery) {
+        return /break|googly|spinner|flipper|arm|carrom|flighted|slider/i.test(delivery.variation);
+      }
+
+      function variationMovement(variation) {
+        if (/out/i.test(variation)) return "away";
+        if (/in/i.test(variation)) return "inward";
+        if (/googly|leg break|off break|carrom|flipper|top spinner|arm/i.test(variation)) return "spin";
+        if (/slower|cutter/i.test(variation)) return "variation";
+        return "straight";
+      }
+
+      function calculateDeliveryQuality({ delivery, accuracy, bowler, pitch, context }) {
+        const isSpin = deliveryIsSpin(delivery);
+        const paceBoost = /Fast|Maximum/.test(delivery.pace) ? 5 : /Slower|Very slow|Flighted/.test(delivery.pace) ? -1 : 2;
+        const movementSkill = isSpin ? bowler.spin || 50 : Math.max(bowler.swing || 50, bowler.variation || 50);
+        const base = ((bowler.accuracy || 70) * 0.32 + (bowler.control || 70) * 0.26 + movementSkill * 0.23 + (bowler.composure || 70) * 0.12 + (bowler.stamina || 72) * 0.07) / 100;
+        const pitchHelp = isSpin ? pitch.spin : pitch.swing;
+        const setupBonus = context?.previousSimilar ? -0.04 : context?.sequenceTrap ? 0.06 : 0;
+        return clamp(base * accuracy.score * pitchHelp + paceBoost / 100 + setupBonus, 0.05, 1.25);
+      }
+
+      function calculateShotQuality({ shot, timing, batter, pitch, context }) {
+        const powerShots = ["Slog", "Lofted drive", "Pull"];
+        const skillBase = ((batter.timing || 74) * 0.25 + (batter.technique || 74) * 0.22 + (batter.footwork || 74) * 0.18 + (batter.composure || 74) * 0.16 + (powerShots.includes(shot.shotType) ? batter.power || 74 : batter.defence || 72) * 0.19) / 100;
+        const aggressionBoost = shot.aggression === "Aggressive" ? 0.08 : shot.aggression === "Defensive" ? -0.03 : 0.02;
+        const confidence = context?.confidence || 0;
+        return clamp(skillBase * timing.score + aggressionBoost + pitch.timing / 100 + confidence, 0.03, 1.28);
+      }
+
+      function calculateTacticalMatchup({ delivery, shot }) {
+        let score = 0.5;
+        const line = delivery.line;
+        const length = delivery.length;
+        const type = shot.shotType;
+        const footwork = shot.footwork;
+        const direction = shot.direction;
+        const movement = variationMovement(delivery.variation);
+        const spin = deliveryIsSpin(delivery);
+
+        if (length === "Full" && ["Drive", "Lofted drive", "Block"].includes(type)) score += 0.22;
+        if (line.includes("Outside off") && ["Drive", "Cut", "Leave"].includes(type)) score += 0.14;
+        if (length === "Good length" && ["Block", "Drive"].includes(type)) score += 0.1;
+        if (["Short", "Bouncer", "Back of a length"].includes(length) && ["Pull", "Cut"].includes(type)) score += 0.24;
+        if (length === "Yorker" && ["Block", "Drive"].includes(type)) score += 0.14;
+        if (spin && ["Sweep", "Cut", "Lofted drive"].includes(type)) score += 0.18;
+        if (footwork === "Front foot" && ["Full", "Yorker", "Good length"].includes(length)) score += 0.12;
+        if (footwork === "Back foot" && ["Short", "Bouncer", "Back of a length"].includes(length)) score += 0.14;
+        if (footwork === "Advance down the pitch" && spin) score += 0.14;
+        if (direction === "Straight" && ["Off stump", "Middle stump"].includes(line)) score += 0.08;
+
+        if (["Short", "Bouncer"].includes(length) && ["Drive", "Sweep"].includes(type)) score -= 0.25;
+        if (length === "Yorker" && ["Slog", "Cut", "Pull"].includes(type)) score -= 0.28;
+        if (length === "Full" && type === "Pull") score -= 0.24;
+        if (line === "Wide outside off" && direction === "Leg side") score -= 0.22;
+        if (line === "Down leg side" && direction === "Off side") score -= 0.16;
+        if (movement === "away" && ["Slog", "Drive"].includes(type) && direction !== "Straight") score -= 0.12;
+        if (movement === "inward" && type === "Slog") score -= 0.14;
+        if (type === "Leave" && ["Off stump", "Middle stump", "Leg stump"].includes(line)) score -= 0.45;
+        if (type === "Leave" && ["Wide outside off", "Down leg side"].includes(line)) score += 0.26;
+        return clamp(score, 0.05, 1.05);
+      }
+
+      function calculatePressureModifier({ innings, target, maxBalls, difficulty }) {
+        if (!target) return 0;
+        const ballsLeft = Math.max(1, maxBalls - innings.legalBalls);
+        const runsRequired = Math.max(0, target - innings.runs);
+        const requiredRate = (runsRequired / ballsLeft) * 6;
+        const pressure = requiredRate > 12 ? 0.12 : requiredRate > 9 ? 0.07 : requiredRate > 6 ? 0.03 : -0.02;
+        return pressure + ARENA_DIFFICULTIES[difficulty].aggression;
+      }
+
+      function resolveBallOutcome({ delivery, shot, timing, accuracy, batter, bowler, pitch, field, innings, target, maxBalls, difficulty, isAiBatting }) {
+        const fieldMod = FIELD_PRESETS[field] || FIELD_PRESETS.balanced;
+        const deliveryQuality = calculateDeliveryQuality({ delivery, accuracy, bowler, pitch, context: delivery.context });
+        const shotQuality = calculateShotQuality({ shot, timing, batter, pitch, context: { confidence: innings.confidence || 0 } });
+        const tacticalMatchup = calculateTacticalMatchup({ delivery, shot });
+        const pressureModifier = calculatePressureModifier({ innings, target, maxBalls, difficulty });
+        const poorAccuracy = accuracy.score < 0.32;
+        const lineExtra = delivery.line === "Wide outside off" || delivery.line === "Down leg side";
+
+        if (poorAccuracy && Math.random() < (lineExtra ? 0.55 : 0.22)) {
+          const noBall = /Bouncer|Maximum effort|Full toss/i.test(delivery.length + delivery.pace) && Math.random() < 0.32;
+          return buildOutcome({
+            code: noBall ? "Nb" : "Wd",
+            runs: 1,
+            legal: false,
+            wicket: false,
+            title: noBall ? "NO-BALL! The bowler oversteps." : "WIDE! The radar slips.",
+            detail: noBall ? "Poor accuracy created an illegal delivery." : "Line drifted outside the playable corridor.",
+            delivery, shot, timing, accuracy, deliveryQuality, shotQuality, tacticalMatchup, pressureModifier,
+          });
+        }
+
+        const riskShot = ["Slog", "Lofted drive", "Pull", "Sweep"].includes(shot.shotType) ? 0.08 : 0;
+        const defensive = shot.aggression === "Defensive" || shot.shotType === "Block";
+        const wicketWeight = clamp(0.08 + (deliveryQuality - shotQuality) * 0.3 + (0.55 - tacticalMatchup) * 0.32 + pressureModifier * 0.22 + riskShot + fieldMod.catch - (defensive ? 0.06 : 0), 0.012, 0.56);
+        const boundaryWeight = clamp(0.08 + (shotQuality - deliveryQuality) * 0.34 + (tacticalMatchup - 0.52) * 0.28 + pitch.boundary + fieldMod.boundary + (shot.aggression === "Aggressive" ? 0.1 : 0), 0.015, 0.62);
+        const singleWeight = clamp(0.24 + fieldMod.singles + (shot.aggression === "Defensive" ? 0.05 : 0), 0.08, 0.48);
+        const dotWeight = clamp(0.28 + (deliveryQuality - shotQuality) * 0.18 - fieldMod.singles, 0.05, 0.62);
+        const twoWeight = clamp(0.14 + (tacticalMatchup - 0.5) * 0.12, 0.04, 0.28);
+        const threeWeight = clamp(0.03 + (shot.direction === "Behind square" ? 0.03 : 0), 0.01, 0.09);
+        const sixWeight = clamp(boundaryWeight * (["Slog", "Lofted drive", "Pull"].includes(shot.shotType) ? 0.45 : 0.12), 0.005, 0.3);
+
+        const pick = weightedPick({
+          wicket: wicketWeight,
+          dot: dotWeight,
+          one: singleWeight,
+          two: twoWeight,
+          three: threeWeight,
+          four: boundaryWeight,
+          six: sixWeight,
+        });
+
+        if (pick === "wicket") {
+          const wicketType = chooseWicketType(delivery, shot, timing, tacticalMatchup);
+          return buildOutcome({
+            code: "W",
+            runs: 0,
+            legal: true,
+            wicket: true,
+            wicketType,
+            title: `${wicketType.toUpperCase()}! ${wicketLine(wicketType)}`,
+            detail: `Delivery quality ${Math.round(deliveryQuality * 100)} beat shot quality ${Math.round(shotQuality * 100)}.`,
+            delivery, shot, timing, accuracy, deliveryQuality, shotQuality, tacticalMatchup, pressureModifier,
+          });
+        }
+
+        const runs = { dot: 0, one: 1, two: 2, three: 3, four: 4, six: 6 }[pick] || 0;
+        const code = runs === 0 ? DOT_BALL : String(runs);
+        const title = runs === 0
+          ? dotBallLine(delivery, shot)
+          : runs === 4
+            ? "FOUR! " + boundaryLine(delivery, shot, false)
+            : runs === 6
+              ? "SIX! " + boundaryLine(delivery, shot, true)
+              : `${runs} run${runs > 1 ? "s" : ""}. Smart cricket under the lights.`;
+        return buildOutcome({
+          code, runs, legal: true, wicket: false, title,
+          detail: `Matchup ${Math.round(tacticalMatchup * 100)} + ${timing.label.toLowerCase()} timing shaped the result.`,
+          delivery, shot, timing, accuracy, deliveryQuality, shotQuality, tacticalMatchup, pressureModifier,
+        });
+      }
+
+      function buildOutcome(payload) {
+        const tactical = [
+          `Delivery: ${describeDelivery(payload.delivery)}`,
+          `Shot: ${payload.shot.footwork}, ${payload.shot.aggression.toLowerCase()} ${payload.shot.shotType.toLowerCase()} to ${payload.shot.direction.toLowerCase()}`,
+          `Timing/accuracy: ${payload.timing.label} / ${payload.accuracy.label}`,
+          `Matchup: ${Math.round(payload.tacticalMatchup * 100)} tactical score`,
+          `Result: ${payload.code}`,
+        ];
+        return { ...payload, tactical };
+      }
+
+      function chooseWicketType(delivery, shot, timing, matchup) {
+        if (shot.footwork === "Advance down the pitch" && deliveryIsSpin(delivery) && timing.score < 0.55) return "Stumped";
+        if (variationMovement(delivery.variation) === "away" && shot.shotType !== "Block") return "Caught behind";
+        if (variationMovement(delivery.variation) === "inward" && timing.score < 0.55) return "LBW";
+        if (["Yorker", "Good length"].includes(delivery.length) && matchup < 0.42) return "Bowled";
+        return weightedPick({ Caught: 0.44, Bowled: 0.24, LBW: 0.2, "Caught behind": 0.12 });
+      }
+
+      function wicketLine(type) {
+        return {
+          Bowled: "Straight through the gate.",
+          LBW: "Pinned in front by a ruthless line.",
+          Caught: "A skier hangs in the night and the fielder settles under it.",
+          "Caught behind": "A thin edge carries to the keeper.",
+          Stumped: "The batter advances and cannot get back.",
+        }[type] || "The pressure tells.";
+      }
+
+      function dotBallLine(delivery, shot) {
+        if (shot.shotType === "Leave") return "Left alone. No damage, no run.";
+        if (delivery.length === "Yorker") return "Dug out at the toes for a dot.";
+        if (variationMovement(delivery.variation) === "away") return "Beaten outside off by late movement.";
+        return "Dot ball. The bowler wins that tactical exchange.";
+      }
+
+      function boundaryLine(delivery, shot, six) {
+        if (shot.shotType === "Pull") return six ? "A dangerous short ball disappears over midwicket." : "Pulled hard behind square.";
+        if (shot.shotType === "Cut") return "Carved through the off side with sharp hands.";
+        if (shot.shotType === "Lofted drive") return "Lofted cleanly into the golden seats.";
+        if (shot.shotType === "Slog") return "High-risk power pays off.";
+        return "Driven with a clean face through the ring.";
+      }
+
+      function chooseAiDelivery(state) {
+        const difficulty = ARENA_DIFFICULTIES[state.setup.difficulty];
+        const recentShots = state.aiMemory.userShots.slice(-difficulty.aiMemory);
+        const favoriteShot = mostCommon(recentShots.map((item) => item.shotType)) || "Drive";
+        const favoriteDirection = mostCommon(recentShots.map((item) => item.direction)) || "Straight";
+        const advances = recentShots.filter((item) => item.footwork === "Advance down the pitch").length;
+        const attacks = recentShots.filter((item) => item.aggression === "Aggressive").length;
+        const ballsLeft = state.maxBalls - currentInnings(state).legalBalls;
+        const defendingHighRate = state.target && (state.target - currentInnings(state).runs) / Math.max(1, ballsLeft) > 1.6;
+        let line = "Off stump";
+        let length = "Good length";
+        let variation = "Outswing";
+        let pace = "Normal";
+
+        if (favoriteShot === "Drive") {
+          length = "Short";
+          line = "Outside off";
+          variation = "Off cutter";
+        }
+        if (favoriteShot === "Pull") {
+          length = "Full";
+          variation = "Slower ball";
+        }
+        if (favoriteShot === "Slog" || attacks >= 2) {
+          length = Math.random() < 0.5 ? "Yorker" : "Bouncer";
+          variation = Math.random() < 0.5 ? "Slower ball" : "Cross-seam";
+          line = favoriteDirection === "Leg side" ? "Wide outside off" : "Middle stump";
+        }
+        if (advances >= 2) {
+          length = "Yorker";
+          line = "Wide outside off";
+          variation = "Inswing";
+        }
+        if (defendingHighRate) {
+          length = "Yorker";
+          line = "Wide outside off";
+          variation = "Slower ball";
+        }
+        if (Math.random() < difficulty.mistake) {
+          length = LENGTH_OPTIONS[Math.floor(Math.random() * LENGTH_OPTIONS.length)];
+          line = LINE_OPTIONS[Math.floor(Math.random() * LINE_OPTIONS.length)];
+        }
+        if (Math.random() < 0.18) {
+          variation = ["Outswing", "Inswing", "Leg cutter", "Straight delivery", "Slower ball"][Math.floor(Math.random() * 5)];
+        }
+
+        return { variation, line, length, pace, field: defendingHighRate ? "boundary" : attacks >= 2 ? "defensive" : "balanced", bowlerType: "swing", context: { sequenceTrap: recentShots.length >= 2 && favoriteShot === mostCommon(recentShots.map((item) => item.shotType)) } };
+      }
+
+      function chooseAiShot(delivery, state) {
+        const difficulty = ARENA_DIFFICULTIES[state.setup.difficulty];
+        const personality = state.aiPersonality || AI_BATTERS[1];
+        const innings = currentInnings(state);
+        const pressure = calculatePressureModifier({ innings, target: state.target, maxBalls: state.maxBalls, difficulty: state.setup.difficulty });
+        let shotType = "Drive";
+        let direction = "Straight";
+        let footwork = "Front foot";
+        let aggression = personality.style === "Aggressor" ? "Aggressive" : personality.style === "Anchor" ? "Balanced" : "Balanced";
+
+        if (["Short", "Bouncer", "Back of a length"].includes(delivery.length)) {
+          shotType = delivery.line.includes("off") || delivery.line.includes("Outside") ? "Cut" : "Pull";
+          footwork = "Back foot";
+          direction = shotType === "Cut" ? "Off side" : "Leg side";
+        } else if (delivery.length === "Yorker") {
+          shotType = "Block";
+          footwork = "Front foot";
+          aggression = "Defensive";
+        } else if (deliveryIsSpin(delivery)) {
+          shotType = Math.random() < 0.55 ? "Sweep" : "Lofted drive";
+          footwork = shotType === "Lofted drive" ? "Advance down the pitch" : "Front foot";
+          direction = shotType === "Sweep" ? "Leg side" : "Straight";
+        } else if (delivery.line === "Wide outside off") {
+          shotType = Math.random() < 0.45 ? "Leave" : "Cut";
+          direction = "Off side";
+        }
+
+        if (pressure > 0.08 || personality.style === "Finisher") aggression = "Aggressive";
+        if (Math.random() < difficulty.mistake) {
+          shotType = SHOT_TYPES[Math.floor(Math.random() * (SHOT_TYPES.length - 1))];
+          direction = SHOT_DIRECTIONS[Math.floor(Math.random() * SHOT_DIRECTIONS.length)];
+          footwork = FOOTWORK_OPTIONS[Math.floor(Math.random() * FOOTWORK_OPTIONS.length)];
+        }
+
+        const timingRoll = clamp(50 + (Math.random() * 32 - 16) + difficulty.timing, 0, 100);
+        return { shotType, direction, footwork, aggression, timing: timingFromValue(timingRoll) };
+      }
+
+      function mostCommon(values) {
+        const counts = values.filter(Boolean).reduce((acc, value) => ({ ...acc, [value]: (acc[value] || 0) + 1 }), {});
+        return Object.entries(counts).sort((a, b) => b[1] - a[1])[0]?.[0];
+      }
+
+      function currentInnings(state) {
+        return state.innings[state.inningsIndex] || state.innings[0];
+      }
+
+      function createBlankInnings({ battingSide, team, striker, bowler }) {
+        return {
+          battingSide,
+          team,
+          runs: 0,
+          wickets: 0,
+          legalBalls: 0,
+          recent: [],
+          confidence: 0,
+          batter: { name: striker.name, runs: 0, balls: 0, fours: 0, sixes: 0, out: false },
+          bowler: { name: bowler.name, legalBalls: 0, runs: 0, wickets: 0, dots: 0, wides: 0, noBalls: 0 },
+        };
+      }
+
+      function loadArenaProgress() {
+        try {
+          const stored = JSON.parse(localStorage.getItem("crickuruArenaProgress")) || {};
+          const defaults = defaultArenaProgress();
+          return {
+            ...defaults,
+            ...stored,
+            batting: { ...defaults.batting, ...(stored.batting || {}), shots: { ...defaults.batting.shots, ...((stored.batting || {}).shots || {}) } },
+            bowling: { ...defaults.bowling, ...(stored.bowling || {}), deliveries: { ...defaults.bowling.deliveries, ...((stored.bowling || {}).deliveries || {}) } },
+            achievements: stored.achievements || defaults.achievements,
+          };
+        } catch {
+          return defaultArenaProgress();
+        }
+      }
+
+      function defaultArenaProgress() {
+        return {
+          matches: 0,
+          wins: 0,
+          losses: 0,
+          ties: 0,
+          xp: 0,
+          level: 1,
+          streak: 0,
+          bestStreak: 0,
+          batting: { runs: 0, balls: 0, fours: 0, sixes: 0, highest: 0, perfect: 0, shots: {} },
+          bowling: { legalBalls: 0, runs: 0, wickets: 0, dots: 0, wides: 0, noBalls: 0, bestWickets: 0, deliveries: {} },
+          achievements: [],
+        };
+      }
+
+      function saveArenaProgress(progress) {
+        localStorage.setItem("crickuruArenaProgress", JSON.stringify(progress));
+      }
+
+      function awardProgress(progress, outcome, userRole, matchResult) {
+        const next = typeof structuredClone === "function" ? structuredClone(progress) : JSON.parse(JSON.stringify(progress));
+        let xp = 2;
+        if (outcome?.timing?.label === "Perfect") xp += ARENA_CONFIG.xp.perfect;
+        if (outcome?.runs === 4) xp += ARENA_CONFIG.xp.boundary;
+        if (outcome?.runs === 6) xp += ARENA_CONFIG.xp.six;
+        if (outcome?.wicket && userRole === "bowl") xp += ARENA_CONFIG.xp.wicket;
+        if (outcome?.code === DOT_BALL && userRole === "bowl") xp += ARENA_CONFIG.xp.dot;
+        if (matchResult) {
+          next.matches += 1;
+          if (matchResult.type === "win") {
+            next.wins += 1;
+            next.streak += 1;
+            xp += ARENA_CONFIG.xp.win;
+          } else if (matchResult.type === "loss") {
+            next.losses += 1;
+            next.streak = 0;
+          } else {
+            next.ties += 1;
+          }
+          next.bestStreak = Math.max(next.bestStreak, next.streak);
+        }
+        if (userRole === "bat" && outcome) {
+          next.batting.runs += outcome.runs || 0;
+          if (outcome.legal) next.batting.balls += 1;
+          if (outcome.runs === 4) next.batting.fours += 1;
+          if (outcome.runs === 6) next.batting.sixes += 1;
+          if (outcome.timing?.label === "Perfect") next.batting.perfect += 1;
+          const shotName = outcome.shot?.shotType || "Unknown";
+          next.batting.shots[shotName] = (next.batting.shots[shotName] || 0) + 1;
+        }
+        if (userRole === "bowl" && outcome) {
+          if (outcome.legal) next.bowling.legalBalls += 1;
+          next.bowling.runs += outcome.runs || 0;
+          if (outcome.wicket) next.bowling.wickets += 1;
+          if (outcome.code === DOT_BALL) next.bowling.dots += 1;
+          if (outcome.code === "Wd") next.bowling.wides += 1;
+          if (outcome.code === "Nb") next.bowling.noBalls += 1;
+          const deliveryName = outcome.delivery?.variation || "Unknown";
+          next.bowling.deliveries[deliveryName] = (next.bowling.deliveries[deliveryName] || 0) + 1;
+        }
+        next.xp += xp;
+        next.level = Math.max(1, Math.floor(next.xp / 250) + 1);
+        const earned = achievementList(next, outcome, matchResult);
+        next.achievements = Array.from(new Set([...(next.achievements || []), ...earned]));
+        saveArenaProgress(next);
+        return next;
+      }
+
+      function achievementList(progress, outcome, matchResult) {
+        const list = [];
+        if ((outcome?.runs || 0) >= 4) list.push("First Boundary");
+        if (outcome?.runs === 6) list.push("Six Machine");
+        if (outcome?.delivery?.length === "Yorker" && outcome?.wicket) list.push("Yorker King");
+        if (outcome?.wicket && outcome?.deliveryQuality > 0.9) list.push("Unplayable");
+        if (matchResult?.lastBallWin) list.push("Last-Ball Hero");
+        if (matchResult?.type === "win") list.push("Super Over Champion");
+        return list;
+      }
+
+      const initialArenaSetup = {
+        mode: "super",
+        difficulty: "pro",
+        userTeam: "Kurukshetra Warriors",
+        opponent: "CricKuru XI",
+        pitch: "balanced",
+        bowlerType: "swing",
+        batterId: "veer",
+        bowlerId: "daksh",
+      };
+
+      function arenaInitialState() {
+        return {
+          phase: "menu",
+          setup: initialArenaSetup,
+          maxBalls: ARENA_MODES.super.balls,
+          pitch: PITCHES.balanced,
+          toss: null,
+          tossChoice: null,
+          inningsIndex: 0,
+          innings: [],
+          target: null,
+          aiPersonality: AI_BATTERS[1],
+          battingSelection: { direction: "Straight", shotType: "Drive", footwork: "Front foot", aggression: "Balanced" },
+          bowlingSelection: { bowlerType: "swing", variation: "Outswing", line: "Off stump", length: "Good length", pace: "Normal", field: "balanced" },
+          currentDelivery: null,
+          currentShot: null,
+          meterStart: null,
+          lastOutcome: null,
+          afterBallPhase: null,
+          aiMemory: { userShots: [], userBalls: [], outcomes: [] },
+          commentary: { title: "Welcome to CricKuru Arena.", detail: "Choose a match mode, win the toss and out-think the AI." },
+          progress: loadArenaProgress(),
+          settings: { sound: true, music: false, effects: 0.45, crowd: 0.35, slowMo: true, shake: true, reducedFx: false },
+          result: null,
+        };
+      }
+
+      function arenaReducer(state, action) {
+        if (action.type === "MERGE") return { ...state, ...action.patch };
+        if (action.type === "SETUP") return { ...state, setup: { ...state.setup, [action.key]: action.value } };
+        if (action.type === "BATTING") return { ...state, battingSelection: { ...state.battingSelection, [action.key]: action.value } };
+        if (action.type === "BOWLING") {
+          if (action.key === "bowlerType") {
+            const bowlerType = BOWLER_TYPES[action.value];
+            return {
+              ...state,
+              bowlingSelection: {
+                ...state.bowlingSelection,
+                bowlerType: action.value,
+                variation: bowlerType.variations[0],
+                pace: bowlerType.paceOptions[1],
+              },
+            };
+          }
+          return { ...state, bowlingSelection: { ...state.bowlingSelection, [action.key]: action.value } };
+        }
+        if (action.type === "SETTINGS") return { ...state, settings: { ...state.settings, [action.key]: action.value } };
+        if (action.type === "RESET") return arenaInitialState();
+        return state;
+      }
+
+      function useArenaAudio(settings) {
+        const contextRef = useRef(null);
+        const play = (type) => {
+          if (!settings.sound || settings.effects <= 0) return;
+          const AudioContext = window.AudioContext || window.webkitAudioContext;
+          if (!AudioContext) return;
+          const context = contextRef.current || new AudioContext();
+          contextRef.current = context;
+          const oscillator = context.createOscillator();
+          const gain = context.createGain();
+          const tones = {
+            release: [220, 0.04],
+            hit: [420, 0.08],
+            edge: [760, 0.06],
+            wicket: [120, 0.18],
+            four: [520, 0.12],
+            six: [660, 0.16],
+            win: [760, 0.24],
+          };
+          const [freq, duration] = tones[type] || [300, 0.06];
+          oscillator.frequency.value = freq;
+          oscillator.type = type === "wicket" ? "sawtooth" : "sine";
+          gain.gain.value = settings.effects * 0.18;
+          oscillator.connect(gain).connect(context.destination);
+          oscillator.start();
+          gain.gain.exponentialRampToValueAtTime(0.001, context.currentTime + duration);
+          oscillator.stop(context.currentTime + duration + 0.02);
+        };
+        return play;
+      }
+
+      function useArenaMatch() {
+        const [state, dispatch] = useReducer(arenaReducer, undefined, arenaInitialState);
+        const playSound = useArenaAudio(state.settings);
+
+        const selectedBatter = ARENA_PLAYERS.find((player) => player.id === state.setup.batterId) || ARENA_PLAYERS[0];
+        const selectedBowler = ARENA_PLAYERS.find((player) => player.id === state.setup.bowlerId) || ARENA_PLAYERS[7];
+        const mode = ARENA_MODES[state.setup.mode];
+
+        const startToss = () => {
+          const pitch = state.setup.pitch === "random"
+            ? Object.values(PITCHES)[Math.floor(Math.random() * Object.values(PITCHES).length)]
+            : PITCHES[state.setup.pitch] || PITCHES.balanced;
+          const tossWinner = Math.random() < 0.5 ? "human" : "ai";
+          const aiChoice = chooseAiTossChoice(pitch, state.setup.difficulty, state.setup.mode);
+          dispatch({
+            type: "MERGE",
+            patch: {
+              phase: "toss",
+              pitch,
+              maxBalls: mode.balls,
+              toss: { winner: tossWinner, coin: Math.random() < 0.5 ? "Heads" : "Tails", aiChoice },
+              commentary: { title: "Coin in the air.", detail: `${pitch.label}: swing ${pitch.swing.toFixed(2)}, spin ${pitch.spin.toFixed(2)}, timing ${pitch.timing >= 0 ? "+" : ""}${pitch.timing}.` },
+            },
+          });
+        };
+
+        const startMatch = (choice) => {
+          const humanChoice = state.toss?.winner === "human" ? choice : null;
+          const finalChoice = humanChoice || state.toss?.aiChoice || "bat";
+          const firstBattingSide = state.toss?.winner === "human" ? (finalChoice === "bat" ? "human" : "ai") : (finalChoice === "bat" ? "ai" : "human");
+          const innings = createBlankInnings({
+            battingSide: firstBattingSide,
+            team: firstBattingSide === "human" ? state.setup.userTeam : state.setup.opponent,
+            striker: firstBattingSide === "human" ? selectedBatter : state.aiPersonality,
+            bowler: firstBattingSide === "human" ? AI_BOWLER : selectedBowler,
+          });
+          dispatch({
+            type: "MERGE",
+            patch: {
+              phase: "inningsIntro",
+              tossChoice: finalChoice,
+              inningsIndex: 0,
+              innings: [innings],
+              target: null,
+              bowlingSelection: {
+                ...state.bowlingSelection,
+                bowlerType: state.setup.bowlerType,
+                variation: BOWLER_TYPES[state.setup.bowlerType].variations[0],
+                pace: BOWLER_TYPES[state.setup.bowlerType].paceOptions[1],
+              },
+              commentary: {
+                title: `${innings.team} will bat first.`,
+                detail: `${ARENA_MODES[state.setup.mode].label}: ${ARENA_MODES[state.setup.mode].overs} over${ARENA_MODES[state.setup.mode].overs > 1 ? "s" : ""} per side.`,
+              },
+            },
+          });
+        };
+
+        const startBallSelection = () => {
+          dispatch({ type: "MERGE", patch: { phase: "awaitingSelection", afterBallPhase: null, currentDelivery: null, currentShot: null } });
+        };
+
+        const startHumanBattingDelivery = () => {
+          const delivery = chooseAiDelivery(state);
+          playSound("release");
+          dispatch({
+            type: "MERGE",
+            patch: {
+              phase: "awaitingTiming",
+              currentDelivery: delivery,
+              meterStart: performance.now(),
+              commentary: { title: "AI bowler is in.", detail: "Read the length and press Space or Play Shot in the timing window." },
+            },
+          });
+        };
+
+        const playHumanShot = () => {
+          if (state.phase !== "awaitingTiming") return;
+          const timing = timingFromValue(getMeterValue(state.meterStart, ARENA_CONFIG.timingCycleMs));
+          const innings = currentInnings(state);
+          const shot = { ...state.battingSelection };
+          const outcome = resolveBallOutcome({
+            delivery: state.currentDelivery,
+            shot,
+            timing,
+            accuracy: { label: "AI release", score: clamp(ARENA_DIFFICULTIES[state.setup.difficulty].aiSkill / 92, 0.48, 0.94) },
+            batter: selectedBatter,
+            bowler: AI_BOWLER,
+            pitch: state.pitch,
+            field: state.currentDelivery.field,
+            innings,
+            target: state.target,
+            maxBalls: state.maxBalls,
+            difficulty: state.setup.difficulty,
+            isAiBatting: false,
+          });
+          commitOutcome(outcome, "bat");
+        };
+
+        const startHumanBowlingDelivery = () => {
+          const delivery = { ...state.bowlingSelection, context: {} };
+          const aiShot = chooseAiShot(delivery, state);
+          playSound("release");
+          dispatch({
+            type: "MERGE",
+            patch: {
+              phase: "deliveryRunning",
+              currentDelivery: delivery,
+              currentShot: aiShot,
+              meterStart: performance.now(),
+              commentary: { title: "Lock the release point.", detail: "Stop the meter in the gold zone for maximum control." },
+            },
+          });
+        };
+
+        const stopBowlingAccuracy = () => {
+          if (state.phase !== "deliveryRunning") return;
+          const accuracy = accuracyFromValue(getMeterValue(state.meterStart, ARENA_CONFIG.accuracyCycleMs));
+          const innings = currentInnings(state);
+          const outcome = resolveBallOutcome({
+            delivery: state.currentDelivery,
+            shot: { direction: state.currentShot.direction, shotType: state.currentShot.shotType, footwork: state.currentShot.footwork, aggression: state.currentShot.aggression },
+            timing: state.currentShot.timing,
+            accuracy,
+            batter: state.aiPersonality,
+            bowler: selectedBowler,
+            pitch: state.pitch,
+            field: state.currentDelivery.field,
+            innings,
+            target: state.target,
+            maxBalls: state.maxBalls,
+            difficulty: state.setup.difficulty,
+            isAiBatting: true,
+          });
+          commitOutcome(outcome, "bowl");
+        };
+
+        const commitOutcome = (outcome, userRole) => {
+          const next = applyOutcomeToState(state, outcome, userRole);
+          playSound(outcome.wicket ? "wicket" : outcome.runs === 6 ? "six" : outcome.runs === 4 ? "four" : outcome.runs > 0 ? "hit" : "edge");
+          dispatch({ type: "MERGE", patch: next });
+        };
+
+        const continueAfterBall = () => {
+          if (state.afterBallPhase === "inningsComplete") {
+            dispatch({ type: "MERGE", patch: { phase: "inningsComplete" } });
+            return;
+          }
+          if (state.afterBallPhase === "matchComplete") {
+            dispatch({ type: "MERGE", patch: { phase: "matchComplete" } });
+            playSound("win");
+            return;
+          }
+          if (state.afterBallPhase === "overComplete") {
+            dispatch({ type: "MERGE", patch: { phase: "overComplete" } });
+            return;
+          }
+          startBallSelection();
+        };
+
+        const startSecondInnings = () => {
+          const first = state.innings[0];
+          const secondSide = first.battingSide === "human" ? "ai" : "human";
+          const second = createBlankInnings({
+            battingSide: secondSide,
+            team: secondSide === "human" ? state.setup.userTeam : state.setup.opponent,
+            striker: secondSide === "human" ? selectedBatter : state.aiPersonality,
+            bowler: secondSide === "human" ? AI_BOWLER : selectedBowler,
+          });
+          dispatch({
+            type: "MERGE",
+            patch: {
+              phase: "inningsIntro",
+              inningsIndex: 1,
+              innings: [first, second],
+              target: first.runs + 1,
+              commentary: { title: `${second.team} need ${first.runs + 1}.`, detail: "The chase is live. Every legal ball now has pressure attached." },
+            },
+          });
+        };
+
+        const resetMatch = () => {
+          const fresh = arenaInitialState();
+          dispatch({ type: "MERGE", patch: { ...fresh, progress: loadArenaProgress() } });
+        };
+
+        return {
+          state,
+          dispatch,
+          selectedBatter,
+          selectedBowler,
+          startToss,
+          startMatch,
+          startBallSelection,
+          startHumanBattingDelivery,
+          playHumanShot,
+          startHumanBowlingDelivery,
+          stopBowlingAccuracy,
+          continueAfterBall,
+          startSecondInnings,
+          resetMatch,
+        };
+      }
+
+      function chooseAiTossChoice(pitch, difficulty, mode) {
+        if (difficulty === "legend" && (pitch.green || pitch.swing > 1.15)) return "bowl";
+        if (mode === "super") return Math.random() < 0.55 ? "bowl" : "bat";
+        if (pitch.boundary > 0.03) return "bat";
+        return Math.random() < 0.5 ? "bat" : "bowl";
+      }
+
+      function applyOutcomeToState(state, outcome, userRole) {
+        const innings = currentInnings(state);
+        const updated = { ...innings };
+        updated.runs += outcome.runs || 0;
+        updated.confidence = clamp((updated.confidence || 0) + (outcome.runs >= 4 ? 0.04 : outcome.wicket ? -0.04 : outcome.runs > 0 ? 0.01 : -0.01), -0.12, 0.14);
+        if (outcome.legal) {
+          updated.legalBalls += 1;
+          updated.batter.balls += 1;
+          updated.bowler.legalBalls += 1;
+        }
+        if (outcome.code === "Wd") updated.bowler.wides += 1;
+        if (outcome.code === "Nb") updated.bowler.noBalls += 1;
+        updated.batter.runs += outcome.runs || 0;
+        updated.bowler.runs += outcome.runs || 0;
+        if (outcome.code === DOT_BALL) updated.bowler.dots += 1;
+        if (outcome.runs === 4) updated.batter.fours += 1;
+        if (outcome.runs === 6) updated.batter.sixes += 1;
+        if (outcome.wicket) {
+          updated.wickets += 1;
+          updated.bowler.wickets += 1;
+          updated.batter.out = true;
+        }
+        updated.recent = [...updated.recent.slice(-11), outcome.code];
+        const inningsList = [...state.innings];
+        inningsList[state.inningsIndex] = updated;
+
+        const maxed = updated.legalBalls >= state.maxBalls || updated.wickets >= ARENA_CONFIG.maxWickets;
+        const chased = Boolean(state.target && updated.runs >= state.target);
+        const matchDone = state.inningsIndex === 1 && (maxed || chased);
+        const firstDone = state.inningsIndex === 0 && maxed;
+        const overDone = outcome.legal && updated.legalBalls > 0 && updated.legalBalls % 6 === 0 && !maxed && !chased;
+        const result = matchDone ? calculateMatchResult(state, inningsList) : null;
+        const progress = awardProgress(state.progress, outcome, userRole, result);
+        const aiMemory = {
+          userShots: userRole === "bat" ? [...state.aiMemory.userShots.slice(-(ARENA_CONFIG.aiMemoryLength - 1)), outcome.shot] : state.aiMemory.userShots,
+          userBalls: userRole === "bowl" ? [...state.aiMemory.userBalls.slice(-(ARENA_CONFIG.aiMemoryLength - 1)), outcome.delivery] : state.aiMemory.userBalls,
+          outcomes: [...state.aiMemory.outcomes.slice(-(ARENA_CONFIG.aiMemoryLength - 1)), outcome.code],
+        };
+
+        return {
+          innings: inningsList,
+          phase: "ballResult",
+          afterBallPhase: matchDone ? "matchComplete" : firstDone ? "inningsComplete" : overDone ? "overComplete" : "awaitingSelection",
+          lastOutcome: outcome,
+          aiMemory,
+          progress,
+          result,
+          commentary: { title: outcome.title, detail: outcome.detail },
+        };
+      }
+
+      function calculateMatchResult(state, inningsList) {
+        const first = inningsList[0];
+        const second = inningsList[1];
+        const humanBatFirst = first.battingSide === "human";
+        const humanRuns = humanBatFirst ? first.runs : second.runs;
+        const aiRuns = humanBatFirst ? second.runs : first.runs;
+        if (humanRuns === aiRuns) {
+          return { type: "tie", title: "Match tied.", margin: "Another Super Over awaits.", winner: "Tie", playerOfMatch: "Shared honours" };
+        }
+        const humanWin = humanRuns > aiRuns;
+        const winnerTeam = humanWin ? state.setup.userTeam : state.setup.opponent;
+        const margin = humanBatFirst === humanWin
+          ? `${Math.abs(humanRuns - aiRuns)} run${Math.abs(humanRuns - aiRuns) === 1 ? "" : "s"}`
+          : `${ARENA_CONFIG.maxWickets - second.wickets} wicket${ARENA_CONFIG.maxWickets - second.wickets === 1 ? "" : "s"}`;
+        return {
+          type: humanWin ? "win" : "loss",
+          title: `${winnerTeam} won by ${margin}.`,
+          margin,
+          winner: winnerTeam,
+          playerOfMatch: pickPlayerOfMatch(state, inningsList),
+          lastBallWin: second.legalBalls >= state.maxBalls && Math.abs(humanRuns - aiRuns) <= 1,
+        };
+      }
+
+      function pickPlayerOfMatch(state, inningsList) {
+        const humanInnings = inningsList.find((item) => item.battingSide === "human");
+        const aiInnings = inningsList.find((item) => item.battingSide === "ai");
+        if ((humanInnings?.batter.runs || 0) >= (aiInnings?.batter.runs || 0)) return humanInnings?.batter.name || "Warrior Batter";
+        return aiInnings?.batter.name || "CricKuru XI batter";
+      }
+
+      function ArenaPage() {
+        const arena = useArenaMatch();
+        const { state, dispatch } = arena;
+        const innings = currentInnings(state);
+        const isHumanBatting = innings?.battingSide === "human";
+        const [helpOpen, setHelpOpen] = useState(false);
+        const [devOpen, setDevOpen] = useState(false);
+
+        useEffect(() => {
+          const onKeyDown = (event) => {
+            if (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === "d") {
+              event.preventDefault();
+              setDevOpen((value) => !value);
+              return;
+            }
+            if (state.phase !== "awaitingSelection" && state.phase !== "awaitingTiming" && state.phase !== "deliveryRunning") return;
+            const key = event.key.toLowerCase();
+            if (isHumanBatting) {
+              const directionKeys = { a: "Off side", d: "Leg side", w: "Straight", s: "Defensive", q: "Behind square" };
+              const footworkKeys = { "1": "Front foot", "2": "Back foot", "3": "Advance down the pitch" };
+              if (directionKeys[key]) dispatch({ type: "BATTING", key: "direction", value: directionKeys[key] });
+              if (footworkKeys[key]) dispatch({ type: "BATTING", key: "footwork", value: footworkKeys[key] });
+              if (event.code === "Space") {
+                event.preventDefault();
+                state.phase === "awaitingTiming" ? arena.playHumanShot() : arena.startHumanBattingDelivery();
+              }
+            } else {
+              if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+                const index = LINE_OPTIONS.indexOf(state.bowlingSelection.line);
+                const next = clamp(index + (event.key === "ArrowRight" ? 1 : -1), 0, LINE_OPTIONS.length - 1);
+                dispatch({ type: "BOWLING", key: "line", value: LINE_OPTIONS[next] });
+              }
+              if (event.key === "ArrowUp" || event.key === "ArrowDown") {
+                const index = LENGTH_OPTIONS.indexOf(state.bowlingSelection.length);
+                const next = clamp(index + (event.key === "ArrowDown" ? 1 : -1), 0, LENGTH_OPTIONS.length - 1);
+                dispatch({ type: "BOWLING", key: "length", value: LENGTH_OPTIONS[next] });
+              }
+              const variationIndex = Number(key) - 1;
+              const variations = BOWLER_TYPES[state.bowlingSelection.bowlerType].variations;
+              if (variationIndex >= 0 && variations[variationIndex]) dispatch({ type: "BOWLING", key: "variation", value: variations[variationIndex] });
+              if (event.code === "Space") {
+                event.preventDefault();
+                state.phase === "deliveryRunning" ? arena.stopBowlingAccuracy() : arena.startHumanBowlingDelivery();
+              }
+            }
+          };
+          window.addEventListener("keydown", onKeyDown);
+          return () => window.removeEventListener("keydown", onKeyDown);
+        }, [state, isHumanBatting]);
+
+        return (
+          <main className="route-bg page-grain min-h-screen px-4 pb-12 pt-24 sm:px-6">
+            <section className="mx-auto max-w-7xl">
+              <ArenaHeader progress={state.progress} onHelp={() => setHelpOpen(true)} state={state} dispatch={dispatch} />
+              {state.phase === "menu" && <ArenaMenu arena={arena} />}
+              {state.phase === "toss" && <TossScreen arena={arena} />}
+              {state.phase === "inningsIntro" && <InningsIntro arena={arena} />}
+              {["awaitingSelection", "awaitingTiming", "deliveryRunning", "ballResult", "overComplete"].includes(state.phase) && (
+                <ArenaGameplay arena={arena} />
+              )}
+              {state.phase === "inningsComplete" && <InningsTransition arena={arena} />}
+              {state.phase === "matchComplete" && <MatchResult arena={arena} />}
+              {helpOpen && <ArenaHelp onClose={() => setHelpOpen(false)} />}
+              {devOpen && <DevPanel state={state} />}
+            </section>
+          </main>
+        );
+      }
+
+      function ArenaHeader({ progress, onHelp, state, dispatch }) {
+        return (
+          <div className="mb-6 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.32em] text-gold">CricKuru Arena</p>
+              <h1 className="font-display text-5xl font-black uppercase leading-none text-white sm:text-7xl">Tactical Cricket Duel</h1>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <button type="button" onClick={onHelp} className="min-h-11 rounded-full border border-white/15 bg-white/7 px-5 text-sm font-black uppercase tracking-[0.14em] text-white/80 hover:border-gold/50 hover:text-gold">
+                Controls
+              </button>
+              <button type="button" onClick={() => dispatch({ type: "SETTINGS", key: "sound", value: !state.settings.sound })} className="min-h-11 rounded-full border border-white/15 bg-white/7 px-5 text-sm font-black uppercase tracking-[0.14em] text-white/80 hover:border-gold/50 hover:text-gold">
+                Sound {state.settings.sound ? "On" : "Off"}
+              </button>
+              <div className="glass rounded-full px-5 py-3 text-sm font-bold text-white/70">
+                Level <span className="text-gold">{progress.level}</span> | XP <span className="text-cyan">{progress.xp}</span>
+              </div>
+            </div>
+          </div>
+        );
+      }
+
+      function ArenaMenu({ arena }) {
+        const { state, dispatch, startToss, selectedBatter, selectedBowler } = arena;
+        const batterOptions = ARENA_PLAYERS.filter((player) => ["batter", "allrounder", "keeper"].includes(player.type));
+        const bowlerOptions = ARENA_PLAYERS.filter((player) => ["bowler", "allrounder"].includes(player.type));
+
+        return (
+          <motion.div className="grid gap-5 lg:grid-cols-[0.9fr_1.1fr]" initial={{ opacity: 0, y: 26 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.65, ease }}>
+            <div className="glass rounded-[8px] p-6">
+              <h2 className="font-display text-5xl font-black uppercase text-white">Match Setup</h2>
+              <p className="mt-3 leading-7 text-white/64">Choose your format, pitch, difficulty and Warriors before the toss.</p>
+              <div className="mt-7 grid gap-5">
+                <OptionGroup label="Game mode" value={state.setup.mode} options={Object.entries(ARENA_MODES).map(([value, item]) => ({ value, label: item.label }))} onChange={(value) => dispatch({ type: "SETUP", key: "mode", value })} />
+                <OptionGroup label="Difficulty" value={state.setup.difficulty} options={Object.entries(ARENA_DIFFICULTIES).map(([value, item]) => ({ value, label: item.label }))} onChange={(value) => dispatch({ type: "SETUP", key: "difficulty", value })} />
+                <OptionGroup label="Pitch" value={state.setup.pitch} options={[...Object.entries(PITCHES).map(([value, item]) => ({ value, label: item.label })), { value: "random", label: "Random pitch" }]} onChange={(value) => dispatch({ type: "SETUP", key: "pitch", value })} />
+                <OptionGroup label="Bowler type" value={state.setup.bowlerType} options={Object.entries(BOWLER_TYPES).map(([value, item]) => ({ value, label: item.label }))} onChange={(value) => dispatch({ type: "SETUP", key: "bowlerType", value })} />
+              </div>
+              <button type="button" onClick={startToss} className="shine-button mt-8 inline-flex min-h-14 w-full items-center justify-center gap-3 rounded-full bg-gold px-7 text-sm font-black uppercase tracking-[0.18em] text-night">
+                Start Toss <Icon.Play size={18} />
+              </button>
+            </div>
+            <div className="grid gap-5">
+              <div className="glass rounded-[8px] p-6">
+                <p className="text-xs font-black uppercase tracking-[0.24em] text-cyan">Team Sheet</p>
+                <div className="mt-5 grid gap-4 md:grid-cols-2">
+                  <PlayerSelect label="Starting batter" value={state.setup.batterId} players={batterOptions} onChange={(value) => dispatch({ type: "SETUP", key: "batterId", value })} />
+                  <PlayerSelect label="Starting bowler" value={state.setup.bowlerId} players={bowlerOptions} onChange={(value) => dispatch({ type: "SETUP", key: "bowlerId", value })} />
+                </div>
+              </div>
+              <div className="grid gap-5 md:grid-cols-2">
+                <PlayerCard player={selectedBatter} title="Selected Batter" stats={["power", "timing", "technique", "composure"]} />
+                <PlayerCard player={selectedBowler} title="Selected Bowler" stats={["pace", "accuracy", "swing", "spin"]} />
+              </div>
+            </div>
+          </motion.div>
+        );
+      }
+
+      function OptionGroup({ label, value, options, onChange }) {
+        return (
+          <div>
+            <p className="mb-2 text-xs font-black uppercase tracking-[0.2em] text-white/48">{label}</p>
+            <div className="flex flex-wrap gap-2">
+              {options.map((option) => (
+                <button key={option.value} type="button" onClick={() => onChange(option.value)} className={`min-h-11 rounded-full border px-4 text-sm font-bold transition ${value === option.value ? "border-gold/70 bg-gold/14 text-gold" : "border-white/12 bg-white/6 text-white/68 hover:border-white/28 hover:text-white"}`}>
+                  {option.label}
+                </button>
+              ))}
+            </div>
+          </div>
+        );
+      }
+
+      function PlayerSelect({ label, value, players, onChange }) {
+        return (
+          <label className="block">
+            <span className="mb-2 block text-xs font-black uppercase tracking-[0.2em] text-white/48">{label}</span>
+            <select value={value} onChange={(event) => onChange(event.target.value)} className="min-h-12 w-full rounded-[8px] border border-white/12 bg-night px-4 text-white">
+              {players.map((player) => <option key={player.id} value={player.id}>{player.name} - {player.role}</option>)}
+            </select>
+          </label>
+        );
+      }
+
+      function PlayerCard({ player, title, stats }) {
+        return (
+          <article className="glass rounded-[8px] p-5">
+            <p className="text-xs font-black uppercase tracking-[0.2em] text-gold">{title}</p>
+            <h3 className="mt-2 font-display text-3xl font-black uppercase text-white">{player.name}</h3>
+            <p className="text-sm font-semibold text-white/48">{player.role}</p>
+            <div className="mt-5 grid gap-3">
+              {stats.map((stat) => (
+                <div key={stat}>
+                  <div className="mb-1 flex justify-between text-xs uppercase tracking-[0.15em] text-white/50"><span>{stat}</span><span>{player[stat] || 50}</span></div>
+                  <div className="h-2 rounded-full bg-white/8"><div className="h-full rounded-full bg-gradient-to-r from-gold to-cyan" style={{ width: `${player[stat] || 50}%` }} /></div>
+                </div>
+              ))}
+            </div>
+          </article>
+        );
+      }
+
+      function TossScreen({ arena }) {
+        const { state, startMatch } = arena;
+        const humanWon = state.toss?.winner === "human";
+        return (
+          <motion.div className="glass mx-auto max-w-3xl rounded-[8px] p-8 text-center" initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }}>
+            <motion.div className="mx-auto grid h-28 w-28 place-items-center rounded-full border-4 border-gold bg-gradient-to-br from-gold to-crimson font-display text-4xl font-black text-night shadow-[0_0_60px_rgba(244,185,66,0.28)]" animate={{ rotateY: [0, 720], y: [0, -18, 0] }} transition={{ duration: 1.4, ease }}>
+              {state.toss?.coin?.[0]}
+            </motion.div>
+            <h2 className="mt-7 font-display text-5xl font-black uppercase text-white">{humanWon ? "You won the toss" : "CricKuru XI won the toss"}</h2>
+            <p className="mt-3 text-white/64">{state.pitch.label}. {humanWon ? "Choose your first move." : `AI chooses to ${state.toss?.aiChoice} first.`}</p>
+            <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+              {humanWon ? (
+                <>
+                  <button type="button" onClick={() => startMatch("bat")} className="shine-button min-h-12 rounded-full bg-gold px-7 text-sm font-black uppercase tracking-[0.16em] text-night">Bat First</button>
+                  <button type="button" onClick={() => startMatch("bowl")} className="min-h-12 rounded-full border border-white/15 bg-white/8 px-7 text-sm font-black uppercase tracking-[0.16em] text-white hover:border-gold/60 hover:text-gold">Bowl First</button>
+                </>
+              ) : (
+                <button type="button" onClick={() => startMatch()} className="shine-button min-h-12 rounded-full bg-gold px-7 text-sm font-black uppercase tracking-[0.16em] text-night">Enter the Arena</button>
+              )}
+            </div>
+          </motion.div>
+        );
+      }
+
+      function InningsIntro({ arena }) {
+        const { state, startBallSelection } = arena;
+        const innings = currentInnings(state);
+        return (
+          <motion.div className="glass mx-auto max-w-4xl rounded-[8px] p-8" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }}>
+            <p className="text-xs font-black uppercase tracking-[0.26em] text-cyan">Innings {state.inningsIndex + 1}</p>
+            <h2 className="mt-3 font-display text-6xl font-black uppercase leading-none text-white">{innings.team} batting</h2>
+            <div className="gold-divider my-6" />
+            <p className="text-lg leading-8 text-white/68">{state.target ? `${innings.team} need ${state.target} to win.` : "Set the tone. The first innings decides the chase."}</p>
+            <button type="button" onClick={startBallSelection} className="shine-button mt-8 min-h-14 rounded-full bg-gold px-8 text-sm font-black uppercase tracking-[0.18em] text-night">First Delivery</button>
+          </motion.div>
+        );
+      }
+
+      function ArenaGameplay({ arena }) {
+        const { state } = arena;
+        const innings = currentInnings(state);
+        const isHumanBatting = innings.battingSide === "human";
+        return (
+          <div className="grid gap-5 xl:grid-cols-[1fr_340px]">
+            <div className="grid gap-5">
+              <MatchScoreboard state={state} />
+              <StadiumGameScene state={state} isHumanBatting={isHumanBatting} />
+              {state.phase === "overComplete" ? <OverCompleteCard arena={arena} /> : isHumanBatting ? <BattingControls arena={arena} /> : <BowlingControls arena={arena} />}
+            </div>
+            <div className="grid gap-5 content-start">
+              <CommentaryPanel state={state} />
+              <FieldMap field={isHumanBatting ? state.currentDelivery?.field || "balanced" : state.bowlingSelection.field} />
+              <ProgressPanel progress={state.progress} />
+            </div>
+          </div>
+        );
+      }
+
+      function MatchScoreboard({ state }) {
+        const innings = currentInnings(state);
+        const required = state.target ? Math.max(0, state.target - innings.runs) : null;
+        const ballsLeft = state.maxBalls - innings.legalBalls;
+        return (
+          <div className="glass rounded-[8px] p-4">
+            <div className="grid gap-3 md:grid-cols-5">
+              <ScoreStat label="Batting" value={innings.team} />
+              <ScoreStat label="Score" value={`${innings.runs}/${innings.wickets}`} highlight />
+              <ScoreStat label="Overs" value={`${formatOvers(innings.legalBalls)} / ${formatOvers(state.maxBalls)}`} />
+              <ScoreStat label="Run Rate" value={runRate(innings.runs, innings.legalBalls)} />
+              <ScoreStat label={state.target ? "Need" : "Target"} value={state.target ? `${required} from ${ballsLeft}` : "Set"} highlight={Boolean(state.target)} />
+            </div>
+            <div className="mt-4 grid gap-3 md:grid-cols-3">
+              <p className="rounded-[8px] bg-white/[0.045] p-3 text-sm text-white/65">Striker: <span className="font-bold text-white">{innings.batter.name}</span> {innings.batter.runs}({innings.batter.balls})</p>
+              <p className="rounded-[8px] bg-white/[0.045] p-3 text-sm text-white/65">Bowler: <span className="font-bold text-white">{innings.bowler.name}</span> {formatOvers(innings.bowler.legalBalls)}-{innings.bowler.runs}-{innings.bowler.wickets}</p>
+              <RecentBalls balls={innings.recent} />
+            </div>
+          </div>
+        );
+      }
+
+      function ScoreStat({ label, value, highlight }) {
+        return (
+          <div className="rounded-[8px] border border-white/10 bg-white/[0.04] p-3">
+            <p className="text-[0.65rem] font-black uppercase tracking-[0.2em] text-white/42">{label}</p>
+            <p className={`mt-1 font-display text-2xl font-black uppercase ${highlight ? "text-gold" : "text-white"}`}>{value}</p>
+          </div>
+        );
+      }
+
+      function RecentBalls({ balls }) {
+        return (
+          <div className="flex items-center gap-2 rounded-[8px] bg-white/[0.045] p-3">
+            <span className="text-xs font-black uppercase tracking-[0.16em] text-white/40">Recent</span>
+            <div className="flex flex-wrap gap-1">
+              {(balls.length ? balls : ["-"]).map((ball, index) => (
+                <span key={`${ball}-${index}`} className={`grid h-7 min-w-7 place-items-center rounded-full px-2 text-xs font-black ${ball === "W" ? "bg-crimson text-white" : ball === "4" || ball === "6" ? "bg-gold text-night" : "bg-white/10 text-white/72"}`}>{ball}</span>
+              ))}
+            </div>
+          </div>
+        );
+      }
+
+      function StadiumGameScene({ state, isHumanBatting }) {
+        const outcome = state.lastOutcome;
+        const dramatic = outcome?.runs === 6 || outcome?.wicket;
+        return (
+          <div className={`relative min-h-[360px] overflow-hidden rounded-[8px] border border-white/12 bg-[radial-gradient(circle_at_50%_0%,rgba(244,185,66,0.14),transparent_24%),linear-gradient(180deg,#080D16,#05070B)] ${dramatic && state.settings.shake ? "animate-pulse" : ""}`}>
+            <div className="absolute inset-x-0 top-0 h-28 bg-[radial-gradient(circle_at_20%_0%,rgba(245,247,250,0.18),transparent_26%),radial-gradient(circle_at_78%_0%,rgba(244,185,66,0.2),transparent_24%)]" />
+            <div className="absolute inset-x-0 top-16 h-20 opacity-45" style={{ background: "repeating-linear-gradient(90deg, rgba(245,247,250,.14) 0 5px, transparent 5px 22px)" }} />
+            <div className="absolute bottom-8 left-1/2 h-56 w-[min(760px,88vw)] -translate-x-1/2 rounded-[50%] border border-gold/20 bg-[radial-gradient(ellipse_at_center,rgba(244,185,66,0.2),rgba(8,13,22,0.45)_45%,transparent_70%)]" />
+            <div className="absolute bottom-10 left-1/2 h-64 w-28 -translate-x-1/2 rounded-full border border-gold/35 bg-gradient-to-b from-[#b68a3c] to-[#4d3517] shadow-[0_0_42px_rgba(244,185,66,0.16)]" />
+            <div className="absolute bottom-28 left-1/2 h-16 w-16 -translate-x-1/2 rounded-full border border-white/20 bg-white/8" />
+            <PlayerSilhouette className="absolute bottom-24 left-[28%]" label={isHumanBatting ? "AI Bowler" : "Your Bowler"} />
+            <PlayerSilhouette className="absolute bottom-20 right-[27%] scale-110" label={isHumanBatting ? "You Bat" : "AI Bat"} bat />
+            <motion.div className="absolute h-4 w-4 rounded-full bg-crimson shadow-[0_0_22px_rgba(183,25,50,0.9)]" animate={state.phase === "awaitingTiming" || state.phase === "deliveryRunning" ? { left: ["29%", "52%", "71%"], bottom: ["42%", "35%", "30%"] } : { left: "52%", bottom: "35%" }} transition={{ duration: 1.2, repeat: state.phase === "awaitingTiming" || state.phase === "deliveryRunning" ? Infinity : 0, ease: "easeInOut" }} />
+            {outcome && (
+              <motion.div className="absolute left-1/2 top-8 w-[min(520px,88%)] -translate-x-1/2 rounded-[8px] border border-gold/30 bg-night/82 p-4 text-center backdrop-blur-xl" initial={{ opacity: 0, y: -18 }} animate={{ opacity: 1, y: 0 }}>
+                <p className="font-display text-4xl font-black uppercase text-gold">{outcome.code === DOT_BALL ? "Dot" : outcome.code}</p>
+                <p className="text-sm font-semibold text-white/76">{outcome.title}</p>
+              </motion.div>
+            )}
+          </div>
+        );
+      }
+
+      function PlayerSilhouette({ className, label, bat }) {
+        return (
+          <div className={`${className} text-center`}>
+            <div className="relative mx-auto h-28 w-16">
+              {bat && <span className="absolute -right-4 top-6 h-24 w-2 rotate-[-28deg] rounded-full bg-gold/70" />}
+              <span className="absolute left-1/2 top-0 h-8 w-8 -translate-x-1/2 rounded-full bg-black" />
+              <span className="absolute left-1/2 top-8 h-12 w-9 -translate-x-1/2 rounded-full bg-black" />
+              <span className="absolute bottom-0 left-5 h-12 w-3 -rotate-12 rounded-full bg-black" />
+              <span className="absolute bottom-0 right-5 h-12 w-3 rotate-12 rounded-full bg-black" />
+            </div>
+            <p className="mt-2 text-[0.65rem] font-black uppercase tracking-[0.16em] text-white/50">{label}</p>
+          </div>
+        );
+      }
+
+      function BattingControls({ arena }) {
+        const { state, dispatch, startHumanBattingDelivery, playHumanShot, continueAfterBall } = arena;
+        return (
+          <div className="glass rounded-[8px] p-5">
+            <div className="mb-4 flex flex-col justify-between gap-3 sm:flex-row sm:items-center">
+              <div>
+                <p className="text-xs font-black uppercase tracking-[0.24em] text-gold">Batting controls</p>
+                <h3 className="font-display text-3xl font-black uppercase text-white">Pick the shot, then time it</h3>
+              </div>
+              {state.phase === "awaitingTiming" && <TimingMeter start={state.meterStart} cycle={ARENA_CONFIG.timingCycleMs} type="timing" />}
+            </div>
+            <div className="grid gap-4 lg:grid-cols-4">
+              <ControlGroup label="Direction" options={SHOT_DIRECTIONS} value={state.battingSelection.direction} onChange={(value) => dispatch({ type: "BATTING", key: "direction", value })} />
+              <ControlGroup label="Shot type" options={SHOT_TYPES} value={state.battingSelection.shotType} onChange={(value) => dispatch({ type: "BATTING", key: "shotType", value })} />
+              <ControlGroup label="Footwork" options={FOOTWORK_OPTIONS} value={state.battingSelection.footwork} onChange={(value) => dispatch({ type: "BATTING", key: "footwork", value })} />
+              <ControlGroup label="Aggression" options={AGGRESSION_OPTIONS} value={state.battingSelection.aggression} onChange={(value) => dispatch({ type: "BATTING", key: "aggression", value })} />
+            </div>
+            <ActionRow phase={state.phase} startLabel="Start AI Delivery" actionLabel="Play Shot" onStart={startHumanBattingDelivery} onAction={playHumanShot} onContinue={continueAfterBall} />
+          </div>
+        );
+      }
+
+      function BowlingControls({ arena }) {
+        const { state, dispatch, startHumanBowlingDelivery, stopBowlingAccuracy, continueAfterBall } = arena;
+        const bowlerType = BOWLER_TYPES[state.bowlingSelection.bowlerType];
+        const variations = bowlerType.variations;
+        return (
+          <div className="glass rounded-[8px] p-5">
+            <div className="mb-4 flex flex-col justify-between gap-3 sm:flex-row sm:items-center">
+              <div>
+                <p className="text-xs font-black uppercase tracking-[0.24em] text-gold">Bowling controls</p>
+                <h3 className="font-display text-3xl font-black uppercase text-white">Set the trap, then nail accuracy</h3>
+              </div>
+              {state.phase === "deliveryRunning" && <TimingMeter start={state.meterStart} cycle={ARENA_CONFIG.accuracyCycleMs} type="accuracy" />}
+            </div>
+            <div className="grid gap-4 lg:grid-cols-5">
+              <ControlGroup label="Bowler type" options={Object.keys(BOWLER_TYPES)} value={state.bowlingSelection.bowlerType} labelFor={(value) => BOWLER_TYPES[value].label} onChange={(value) => dispatch({ type: "BOWLING", key: "bowlerType", value })} />
+              <ControlGroup label="Variation" options={variations} value={state.bowlingSelection.variation} onChange={(value) => dispatch({ type: "BOWLING", key: "variation", value })} />
+              <ControlGroup label="Line" options={LINE_OPTIONS} value={state.bowlingSelection.line} onChange={(value) => dispatch({ type: "BOWLING", key: "line", value })} />
+              <ControlGroup label="Length" options={LENGTH_OPTIONS} value={state.bowlingSelection.length} onChange={(value) => dispatch({ type: "BOWLING", key: "length", value })} />
+              <ControlGroup label="Pace / flight" options={bowlerType.paceOptions} value={state.bowlingSelection.pace} onChange={(value) => dispatch({ type: "BOWLING", key: "pace", value })} />
+            </div>
+            <div className="mt-4">
+              <ControlGroup label="Field preset" options={Object.keys(FIELD_PRESETS)} value={state.bowlingSelection.field} labelFor={(value) => FIELD_PRESETS[value].label} onChange={(value) => dispatch({ type: "BOWLING", key: "field", value })} />
+            </div>
+            <ActionRow phase={state.phase} startLabel="Lock Delivery" actionLabel="Stop Accuracy" onStart={startHumanBowlingDelivery} onAction={stopBowlingAccuracy} onContinue={continueAfterBall} />
+          </div>
+        );
+      }
+
+      function ControlGroup({ label, options, value, onChange, labelFor }) {
+        return (
+          <div>
+            <p className="mb-2 text-[0.65rem] font-black uppercase tracking-[0.18em] text-white/42">{label}</p>
+            <div className="flex max-h-40 flex-wrap gap-2 overflow-auto pr-1">
+              {options.map((option) => (
+                <button key={option} type="button" onClick={() => onChange(option)} className={`min-h-11 rounded-full border px-3 text-xs font-black uppercase tracking-[0.08em] transition ${value === option ? "border-gold/70 bg-gold/16 text-gold" : "border-white/12 bg-white/6 text-white/62 hover:border-white/25 hover:text-white"}`}>
+                  {labelFor ? labelFor(option) : option}
+                </button>
+              ))}
+            </div>
+          </div>
+        );
+      }
+
+      function TimingMeter({ start, cycle, type }) {
+        const [value, setValue] = useState(0);
+        useEffect(() => {
+          const id = window.setInterval(() => setValue(getMeterValue(start, cycle)), 32);
+          return () => window.clearInterval(id);
+        }, [start, cycle]);
+        return (
+          <div className="w-full max-w-xs">
+            <div className="mb-1 flex justify-between text-[0.65rem] font-black uppercase tracking-[0.16em] text-white/42"><span>{type === "timing" ? "Timing" : "Accuracy"}</span><span>{Math.round(value)}</span></div>
+            <div className="relative h-4 overflow-hidden rounded-full bg-white/10">
+              <span className="absolute left-[44%] top-0 h-full w-[16%] bg-gold/35" />
+              <span className="absolute top-0 h-full w-1 rounded-full bg-white shadow-[0_0_16px_rgba(255,255,255,.8)]" style={{ left: `${value}%` }} />
+            </div>
+          </div>
+        );
+      }
+
+      function ActionRow({ phase, startLabel, actionLabel, onStart, onAction, onContinue }) {
+        return (
+          <div className="mt-5 flex flex-col gap-3 sm:flex-row">
+            {phase === "awaitingSelection" && <button type="button" onClick={onStart} className="shine-button min-h-13 rounded-full bg-gold px-7 text-sm font-black uppercase tracking-[0.16em] text-night">{startLabel}</button>}
+            {(phase === "awaitingTiming" || phase === "deliveryRunning") && <button type="button" onClick={onAction} className="shine-button min-h-13 rounded-full bg-gold px-7 text-sm font-black uppercase tracking-[0.16em] text-night">{actionLabel}</button>}
+            {phase === "ballResult" && <button type="button" onClick={onContinue} className="min-h-13 rounded-full border border-gold/40 bg-white/8 px-7 text-sm font-black uppercase tracking-[0.16em] text-gold">Continue</button>}
+          </div>
+        );
+      }
+
+      function CommentaryPanel({ state }) {
+        const outcome = state.lastOutcome;
+        return (
+          <aside className="glass rounded-[8px] p-5">
+            <p className="text-xs font-black uppercase tracking-[0.24em] text-cyan">Commentary</p>
+            <h3 className="mt-3 font-display text-3xl font-black uppercase text-white">{state.commentary.title}</h3>
+            <p className="mt-3 text-sm leading-7 text-white/66">{state.commentary.detail}</p>
+            {outcome && (
+              <div className="mt-5 rounded-[8px] border border-white/10 bg-night/58 p-4">
+                <p className="text-xs font-black uppercase tracking-[0.18em] text-gold">Tactical breakdown</p>
+                <ul className="mt-3 grid gap-2 text-sm text-white/68">
+                  {outcome.tactical.map((item) => <li key={item}>{item}</li>)}
+                </ul>
+              </div>
+            )}
+          </aside>
+        );
+      }
+
+      function FieldMap({ field }) {
+        const preset = FIELD_PRESETS[field] || FIELD_PRESETS.balanced;
+        const positions = [[50, 12], [30, 25], [70, 25], [20, 55], [80, 55], [35, 78], [65, 78], [50, 50]];
+        return (
+          <div className="glass rounded-[8px] p-5">
+            <p className="text-xs font-black uppercase tracking-[0.24em] text-gold">Field: {preset.label}</p>
+            <div className="relative mx-auto mt-4 aspect-square max-w-[230px] rounded-full border border-gold/30 bg-[radial-gradient(circle,rgba(244,185,66,.16),rgba(255,255,255,.04)_45%,transparent_68%)]">
+              {positions.map(([left, top], index) => <span key={index} className="absolute h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/70" style={{ left: `${left}%`, top: `${top}%` }} />)}
+              <span className="absolute left-1/2 top-1/2 h-10 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gold/80" />
+            </div>
+            <p className="mt-4 text-sm text-white/60">{preset.zone}. Catch {preset.catch >= 0 ? "+" : ""}{Math.round(preset.catch * 100)}%, boundary {preset.boundary >= 0 ? "+" : ""}{Math.round(preset.boundary * 100)}%.</p>
+          </div>
+        );
+      }
+
+      function ProgressPanel({ progress }) {
+        const strikeRate = progress.batting.balls ? ((progress.batting.runs / progress.batting.balls) * 100).toFixed(1) : "0.0";
+        const economy = progress.bowling.legalBalls ? ((progress.bowling.runs / progress.bowling.legalBalls) * 6).toFixed(2) : "0.00";
+        return (
+          <div className="glass rounded-[8px] p-5">
+            <p className="text-xs font-black uppercase tracking-[0.24em] text-gold">Guest Progress</p>
+            <div className="mt-4 grid grid-cols-2 gap-3 text-sm">
+              <MiniStat label="W-L-T" value={`${progress.wins}-${progress.losses}-${progress.ties}`} />
+              <MiniStat label="Streak" value={progress.streak} />
+              <MiniStat label="Runs" value={progress.batting.runs} />
+              <MiniStat label="SR" value={strikeRate} />
+              <MiniStat label="Wickets" value={progress.bowling.wickets} />
+              <MiniStat label="Economy" value={economy} />
+            </div>
+            <p className="mt-4 text-xs leading-6 text-white/48">Saved locally for guest users. Hostinger backend can replace this later for logged-in leaderboards.</p>
+          </div>
+        );
+      }
+
+      function MiniStat({ label, value }) {
+        return <div className="rounded-[8px] bg-white/[0.045] p-3"><p className="text-[0.65rem] font-black uppercase tracking-[0.16em] text-white/38">{label}</p><p className="font-display text-2xl font-black text-white">{value}</p></div>;
+      }
+
+      function OverCompleteCard({ arena }) {
+        const innings = currentInnings(arena.state);
+        return (
+          <div className="glass rounded-[8px] p-6 text-center">
+            <p className="text-xs font-black uppercase tracking-[0.24em] text-gold">Over Complete</p>
+            <h3 className="font-display text-5xl font-black uppercase text-white">{innings.runs}/{innings.wickets} after {formatOvers(innings.legalBalls)}</h3>
+            <button type="button" onClick={arena.startBallSelection} className="shine-button mt-5 min-h-12 rounded-full bg-gold px-7 text-sm font-black uppercase tracking-[0.16em] text-night">Next Over</button>
+          </div>
+        );
+      }
+
+      function InningsTransition({ arena }) {
+        const first = arena.state.innings[0];
+        return (
+          <motion.div className="glass mx-auto max-w-4xl rounded-[8px] p-8 text-center" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }}>
+            <p className="text-xs font-black uppercase tracking-[0.26em] text-cyan">Innings complete</p>
+            <h2 className="mt-3 font-display text-6xl font-black uppercase text-white">{first.team} made {first.runs}/{first.wickets}</h2>
+            <p className="mt-4 text-lg text-white/68">Target: <span className="font-black text-gold">{first.runs + 1}</span>. Top batter: {first.batter.name} {first.batter.runs}({first.batter.balls}).</p>
+            <button type="button" onClick={arena.startSecondInnings} className="shine-button mt-8 min-h-14 rounded-full bg-gold px-8 text-sm font-black uppercase tracking-[0.18em] text-night">Start Chase</button>
+          </motion.div>
+        );
+      }
+
+      function MatchResult({ arena }) {
+        const { state, resetMatch } = arena;
+        const first = state.innings[0];
+        const second = state.innings[1];
+        const result = state.result;
+        return (
+          <motion.div className="grid gap-5 lg:grid-cols-[1fr_0.8fr]" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }}>
+            <div className="glass rounded-[8px] p-8">
+              <p className="text-xs font-black uppercase tracking-[0.26em] text-gold">Match Result</p>
+              <h2 className="mt-3 font-display text-6xl font-black uppercase leading-none text-white">{result?.title || "Match complete"}</h2>
+              <p className="mt-5 text-lg text-white/68">Player of the match: <span className="text-gold">{result?.playerOfMatch}</span></p>
+              <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                <MiniStat label={first.team} value={`${first.runs}/${first.wickets}`} />
+                <MiniStat label={second.team} value={`${second.runs}/${second.wickets}`} />
+              </div>
+              <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+                <button type="button" onClick={resetMatch} className="shine-button min-h-12 rounded-full bg-gold px-7 text-sm font-black uppercase tracking-[0.16em] text-night">Rematch</button>
+                <Link to="/" className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/15 bg-white/8 px-7 text-sm font-black uppercase tracking-[0.16em] text-white hover:border-gold/60 hover:text-gold">Return Home</Link>
+                <button type="button" onClick={() => navigator.share?.({ title: "CricKuru Arena", text: result?.title, url: window.location.href })} className="min-h-12 rounded-full border border-white/15 bg-white/8 px-7 text-sm font-black uppercase tracking-[0.16em] text-white hover:border-gold/60 hover:text-gold">Share Result</button>
+              </div>
+            </div>
+            <ProgressPanel progress={state.progress} />
+          </motion.div>
+        );
+      }
+
+      function ArenaHelp({ onClose }) {
+        return (
+          <div className="fixed inset-0 z-[90] grid place-items-center bg-black/72 p-4 backdrop-blur-sm">
+            <div className="glass max-h-[86vh] w-full max-w-3xl overflow-auto rounded-[8px] p-6">
+              <div className="flex items-center justify-between gap-4">
+                <h2 className="font-display text-4xl font-black uppercase text-white">Arena Controls</h2>
+                <button type="button" onClick={onClose} className="grid h-11 w-11 place-items-center rounded-full border border-white/15 bg-white/8"><Icon.X size={20} /></button>
+              </div>
+              <div className="mt-5 grid gap-4 md:grid-cols-2">
+                <HelpBlock title="Batting" lines={["A/D/W/Q/S choose direction", "1/2/3 choose footwork", "Pick shot type and aggression", "Space starts delivery, then Space plays shot"]} />
+                <HelpBlock title="Bowling" lines={["Arrow keys move line and length", "1-7 select variation", "Space locks delivery", "Space again stops accuracy meter"]} />
+              </div>
+            </div>
+          </div>
+        );
+      }
+
+      function HelpBlock({ title, lines }) {
+        return <div className="rounded-[8px] border border-white/10 bg-white/[0.045] p-4"><p className="font-display text-3xl font-black uppercase text-gold">{title}</p><ul className="mt-3 grid gap-2 text-sm text-white/68">{lines.map((line) => <li key={line}>{line}</li>)}</ul></div>;
+      }
+
+      function DevPanel({ state }) {
+        const outcome = state.lastOutcome;
+        return (
+          <div className="fixed bottom-4 right-4 z-[95] max-h-[70vh] w-[min(420px,92vw)] overflow-auto rounded-[8px] border border-cyan/40 bg-night/95 p-4 text-xs text-white shadow-2xl">
+            <p className="mb-3 font-black uppercase tracking-[0.2em] text-cyan">Developer Panel</p>
+            <pre className="whitespace-pre-wrap">{JSON.stringify({
+              phase: state.phase,
+              aiDelivery: state.currentDelivery,
+              aiShot: state.currentShot,
+              deliveryQuality: outcome?.deliveryQuality,
+              shotQuality: outcome?.shotQuality,
+              tacticalMatchup: outcome?.tacticalMatchup,
+              pressureModifier: outcome?.pressureModifier,
+              outcome: outcome?.code,
+              aiMemory: state.aiMemory,
+            }, null, 2)}</pre>
+          </div>
+        );
+      }
+
       function PlaceholderPage({ title, kicker, description, icon: PageIcon }) {
         return (
           <main className="route-bg page-grain px-5 pb-16 pt-32 sm:px-8">
@@ -1519,14 +3001,7 @@
               <Route path="/" element={<LandingPage />} />
               <Route
                 path="/arena"
-                element={
-                  <PlaceholderPage
-                    title="CricKuru Arena"
-                    kicker="Browser Cricket Challenges"
-                    description="The Arena route is ready for cricket games, score challenges and leaderboards. The landing CTA already points here."
-                    icon={Icon.Trophy}
-                  />
-                }
+                element={<ArenaPage />}
               />
               <Route
                 path="/teams"
