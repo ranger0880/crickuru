@@ -13,6 +13,14 @@ Use this when Hostinger AI credits are finished. This site is a standalone React
    `C:\Users\Admin\Documents\Cricket website\.htaccess`
 6. Save both files and open `https://crickuru.com`.
 
+If Hostinger created WordPress, the site may keep loading `index.php`. In that case, either rename `index.php` to `index-wp-backup.php`, or make sure `.htaccess` includes:
+
+```apache
+DirectoryIndex index.html index.php
+```
+
+Also make sure the files are not trapped inside a nested folder after extracting the ZIP. `index.html` must be directly inside `public_html`.
+
 ## Why `.htaccess` Is Included
 
 The landing page uses routes like `/arena`, `/teams`, `/players`, `/tournaments`, `/community`, and `/login`. The `.htaccess` file makes those routes load the React page correctly when someone refreshes the browser.
