@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="CricKuru is a premium global cricket community for players, teams, matches, profiles, and competitive cricket experiences."
+      content="CricKuru is the premium home of Kurukshetra Warriors, with official CricHeroes links, a playable cricket arena, meme generator, and Kuru Coin launch teaser."
     />
-    <meta property="og:title" content="CricKuru - Play. Compete. Become Legendary." />
+    <meta property="og:title" content="CricKuru - Kurukshetra Warriors Cricket Hub" />
     <meta
       property="og:description"
-      content="Build your cricket identity, create your team, compete with your community and enter a new world of cricket."
+      content="Official Warriors links, CricKuru Arena, viral cricket memes, and the Kurukshetra meme coin launching soon."
     />
     <meta name="theme-color" content="#05070B" />
-    <title>CricKuru - Play. Compete. Become Legendary.</title>
+    <title>CricKuru - Kurukshetra Warriors Cricket Hub</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -677,10 +677,8 @@
       const navItems = [
         { label: "Home", path: "/" },
         { label: "Arena", path: "/arena" },
-        { label: "Teams", path: "/teams" },
-        { label: "Players", path: "/players" },
-        { label: "Tournaments", path: "/tournaments" },
-        { label: "Community", path: "/community" },
+        { label: "Memes", path: "/memes" },
+        { label: "Kuru Coin", path: "/coin" },
       ];
 
       const ease = [0.22, 1, 0.36, 1];
@@ -820,20 +818,6 @@
                     </NavLink>
                   ))}
                 </div>
-                <div className="hidden items-center gap-3 lg:flex">
-                  <Link
-                    to="/login"
-                    className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/15 px-5 text-sm font-bold uppercase tracking-[0.16em] text-white/82 transition hover:border-gold/50 hover:text-gold"
-                  >
-                    <Icon.LogIn size={17} /> Login
-                  </Link>
-                  <Link
-                    to="/login"
-                    className="shine-button inline-flex min-h-11 items-center gap-2 rounded-full bg-gold px-5 text-sm font-black uppercase tracking-[0.15em] text-night shadow-[0_0_36px_rgba(244,185,66,0.28)] transition hover:scale-[1.03]"
-                  >
-                    Join CricKuru <Icon.ArrowRight size={17} />
-                  </Link>
-                </div>
                 <button
                   className="grid h-12 w-12 place-items-center rounded-full border border-white/15 bg-white/5 text-white lg:hidden"
                   type="button"
@@ -891,13 +875,6 @@
                   </Link>
                 </motion.div>
               ))}
-              <Link
-                to="/login"
-                onClick={onClose}
-                className="shine-button mt-4 inline-flex min-h-14 items-center justify-center gap-2 rounded-full bg-gold px-6 text-sm font-black uppercase tracking-[0.18em] text-night"
-              >
-                Join CricKuru <Icon.ArrowRight size={18} />
-              </Link>
             </div>
           </motion.div>
         );
@@ -909,7 +886,6 @@
         return (
           <main className="page-grain min-h-screen bg-night">
             <HeroSection />
-            <IdentitySection />
             <CricHeroesSection />
             <Footer />
           </main>
@@ -1038,9 +1014,9 @@
         const navigate = useNavigate();
         const location = useLocation();
 
-        const scrollToIdentity = () => {
+        const scrollToTeamHub = () => {
           const scroll = () =>
-            document.getElementById("identity")?.scrollIntoView({ behavior: "smooth", block: "start" });
+            document.getElementById("team-hub")?.scrollIntoView({ behavior: "smooth", block: "start" });
           if (location.pathname !== "/") {
             navigate("/");
             window.setTimeout(scroll, 120);
@@ -1084,12 +1060,12 @@
             </Reveal>
             <Reveal>
               <p className="mx-auto max-w-2xl text-lg leading-8 text-white/76 sm:text-xl lg:mx-0">
-                Build your player identity, create your team, compete with your community and enter a new world of cricket.
+                Follow Kurukshetra Warriors match info, open the official CricHeroes team pages and play the CricKuru Arena.
               </p>
             </Reveal>
             <Reveal>
               <p className="mt-4 font-display text-2xl font-bold uppercase text-gold">
-                Play. Compete. Become Legendary.
+                Watch. Play. Share the Madness.
               </p>
             </Reveal>
             <Reveal>
@@ -1104,11 +1080,11 @@
                 </button>
                 <button
                   type="button"
-                  onClick={scrollToIdentity}
+                  onClick={scrollToTeamHub}
                   className="inline-flex min-h-14 items-center justify-center gap-3 rounded-full border border-gold/35 bg-white/8 px-7 text-sm font-black uppercase tracking-[0.18em] text-white backdrop-blur-xl transition hover:border-gold hover:bg-gold/10 hover:text-gold"
-                  aria-label="Explore CricKuru sections"
+                  aria-label="View Kurukshetra Warriors team info"
                 >
-                  Explore CricKuru <Icon.ChevronDown size={19} />
+                  Warriors Info <Icon.ChevronDown size={19} />
                 </button>
               </div>
             </Reveal>
@@ -1217,83 +1193,15 @@
         );
       }
 
-      function IdentitySection() {
-        const features = [
-          {
-            icon: Icon.CircleUserRound,
-            title: "Build Your Player Profile",
-            text: "Create a digital cricket identity, track performances and unlock achievements.",
-          },
-          {
-            icon: Icon.Shield,
-            title: "Create Your Team",
-            text: "Build a squad, manage players and represent your community.",
-          },
-          {
-            icon: Icon.Trophy,
-            title: "Enter CricKuru Arena",
-            text: "Play browser-based cricket challenges and climb the global leaderboard.",
-          },
-        ];
-
-        return (
-          <section
-            id="identity"
-            className="relative overflow-hidden bg-[linear-gradient(180deg,#05070B,#080D16_52%,#05070B)] px-5 py-24 sm:px-8"
-            aria-labelledby="identity-title"
-          >
-            <div className="absolute inset-0 opacity-80" aria-hidden="true">
-              <div className="absolute left-[-8%] top-24 h-80 w-80 rounded-full bg-gold/10 blur-3xl" />
-              <div className="absolute right-[-10%] top-10 h-96 w-96 rounded-full bg-crimson/14 blur-3xl" />
-            </div>
-            <div className="relative mx-auto max-w-7xl">
-              <motion.div
-                className="max-w-3xl"
-                initial={{ opacity: 0, y: 28 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.35 }}
-                transition={{ duration: 0.8, ease }}
-              >
-                <p className="text-xs font-black uppercase tracking-[0.32em] text-cyan/90">CricKuru Platform</p>
-                <h2 id="identity-title" className="mt-4 font-display text-5xl font-black uppercase leading-none text-white sm:text-7xl">
-                  Your Cricket Identity Starts Here
-                </h2>
-                <div className="gold-divider mt-7" />
-              </motion.div>
-
-              <div className="mt-12 grid gap-5 md:grid-cols-3">
-                {features.map((feature, index) => (
-                  <motion.article
-                    key={feature.title}
-                    className="glass rounded-[8px] p-6 transition hover:-translate-y-1 hover:border-gold/35"
-                    initial={{ opacity: 0, y: 34 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, amount: 0.25 }}
-                    transition={{ duration: 0.78, delay: index * 0.12, ease }}
-                  >
-                    <div className="mb-8 grid h-14 w-14 place-items-center rounded-[8px] border border-gold/30 bg-gold/10 text-gold">
-                      <feature.icon size={26} />
-                    </div>
-                    <h3 className="font-display text-3xl font-black uppercase text-white">{feature.title}</h3>
-                    <p className="mt-4 leading-7 text-white/66">{feature.text}</p>
-                  </motion.article>
-                ))}
-              </div>
-            </div>
-          </section>
-        );
-      }
-
       function CricHeroesSection() {
         const [tab, setTab] = useState("matches");
         const tabs = [
           { id: "matches", label: "Matches", icon: Icon.CalendarDays },
           { id: "members", label: "Members", icon: Icon.Users },
-          { id: "pulse", label: "Team Pulse", icon: Icon.Sparkles },
         ];
 
         return (
-          <section className="relative overflow-hidden bg-night px-5 py-24 sm:px-8" aria-labelledby="cricheroes-title">
+          <section id="team-hub" className="relative overflow-hidden bg-night px-5 py-24 sm:px-8" aria-labelledby="cricheroes-title">
             <div className="absolute inset-0" aria-hidden="true">
               <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold/35 to-transparent" />
               <div className="absolute left-1/2 top-32 h-[520px] w-[760px] -translate-x-1/2 rounded-full bg-cyan/6 blur-3xl" />
@@ -1303,10 +1211,10 @@
                 <div>
                   <p className="text-xs font-black uppercase tracking-[0.32em] text-gold">Kurukshetra Warriors</p>
                   <h2 id="cricheroes-title" className="mt-4 font-display text-5xl font-black uppercase leading-none text-white sm:text-7xl">
-                    Matches and Members, CricHeroes Style
+                    Official Team Info
                   </h2>
                   <p className="mt-6 max-w-xl text-lg leading-8 text-white/66">
-                    A bold CricKuru showcase for the founding team, connected to the official CricHeroes match and member pages.
+                    Follow Kurukshetra Warriors on CricHeroes for real matches, squad members and team activity.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-3 lg:justify-end" role="tablist" aria-label="Kurukshetra Warriors tabs">
@@ -1333,7 +1241,6 @@
                 <AnimatePresence mode="wait">
                   {tab === "matches" && <MatchesPanel key="matches" />}
                   {tab === "members" && <MembersPanel key="members" />}
-                  {tab === "pulse" && <PulsePanel key="pulse" />}
                 </AnimatePresence>
               </div>
             </div>
@@ -1483,27 +1390,6 @@
         );
       }
 
-      function PulsePanel() {
-        const pulses = [
-          ["Legacy", "Founding team energy with global platform ambition."],
-          ["Competition", "Match cards, score previews and arena-first navigation."],
-          ["Community", "Players, teams, tournaments and fans in one premium identity."],
-        ];
-
-        return (
-          <PanelShell>
-            <div className="grid gap-5 md:grid-cols-3">
-              {pulses.map(([title, text]) => (
-                <article key={title} className="glass rounded-[8px] p-6">
-                  <p className="font-display text-5xl font-black uppercase text-gold">{title}</p>
-                  <p className="mt-4 leading-8 text-white/68">{text}</p>
-                </article>
-              ))}
-            </div>
-          </PanelShell>
-        );
-      }
-
       const ARENA_MODES = {
         super: { label: "Super Over", overs: 1, balls: 6 },
         quick: { label: "Quick Match", overs: 2, balls: 12 },
@@ -1569,6 +1455,17 @@
           paceOptions: FLIGHT_OPTIONS,
         },
       };
+
+      const COMPACT_MODE_OPTIONS = ["super", "quick"];
+      const COMPACT_DIFFICULTY_OPTIONS = ["rookie", "pro"];
+      const COMPACT_PITCH_OPTIONS = ["balanced", "batting", "green"];
+      const COMPACT_BAT_DIRECTIONS = ["Straight", "Off side", "Leg side", "Defensive"];
+      const COMPACT_SHOT_TYPES = ["Block", "Drive", "Pull", "Slog"];
+      const COMPACT_FOOTWORK = ["Front foot", "Back foot"];
+      const COMPACT_AGGRESSION = ["Balanced", "Aggressive"];
+      const COMPACT_LINES = ["Outside off", "Off stump", "Middle stump", "Leg stump"];
+      const COMPACT_LENGTHS = ["Yorker", "Full", "Good length", "Short"];
+      const COMPACT_FIELDS = ["attacking", "balanced", "defensive", "boundary"];
 
       const ARENA_CONFIG = {
         maxWickets: 5,
@@ -2463,17 +2360,17 @@
               }
             } else {
               if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
-                const index = LINE_OPTIONS.indexOf(state.bowlingSelection.line);
-                const next = clamp(index + (event.key === "ArrowRight" ? 1 : -1), 0, LINE_OPTIONS.length - 1);
-                dispatch({ type: "BOWLING", key: "line", value: LINE_OPTIONS[next] });
+                const index = COMPACT_LINES.indexOf(state.bowlingSelection.line);
+                const next = clamp(index + (event.key === "ArrowRight" ? 1 : -1), 0, COMPACT_LINES.length - 1);
+                dispatch({ type: "BOWLING", key: "line", value: COMPACT_LINES[next] });
               }
               if (event.key === "ArrowUp" || event.key === "ArrowDown") {
-                const index = LENGTH_OPTIONS.indexOf(state.bowlingSelection.length);
-                const next = clamp(index + (event.key === "ArrowDown" ? 1 : -1), 0, LENGTH_OPTIONS.length - 1);
-                dispatch({ type: "BOWLING", key: "length", value: LENGTH_OPTIONS[next] });
+                const index = COMPACT_LENGTHS.indexOf(state.bowlingSelection.length);
+                const next = clamp(index + (event.key === "ArrowDown" ? 1 : -1), 0, COMPACT_LENGTHS.length - 1);
+                dispatch({ type: "BOWLING", key: "length", value: COMPACT_LENGTHS[next] });
               }
               const variationIndex = Number(key) - 1;
-              const variations = BOWLER_TYPES[state.bowlingSelection.bowlerType].variations;
+              const variations = BOWLER_TYPES[state.bowlingSelection.bowlerType].variations.slice(0, 4);
               if (variationIndex >= 0 && variations[variationIndex]) dispatch({ type: "BOWLING", key: "variation", value: variations[variationIndex] });
               if (event.code === "Space") {
                 event.preventDefault();
@@ -2535,12 +2432,12 @@
           <motion.div className="grid gap-5 lg:grid-cols-[0.9fr_1.1fr]" initial={{ opacity: 0, y: 26 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.65, ease }}>
             <div className="glass rounded-[8px] p-6">
               <h2 className="font-display text-5xl font-black uppercase text-white">Match Setup</h2>
-              <p className="mt-3 leading-7 text-white/64">Choose your format, pitch, difficulty and Warriors before the toss.</p>
+              <p className="mt-3 leading-7 text-white/64">Pick a fast format and play. The Arena now keeps choices short so the game fits every screen.</p>
               <div className="mt-7 grid gap-5">
-                <OptionGroup label="Game mode" value={state.setup.mode} options={Object.entries(ARENA_MODES).map(([value, item]) => ({ value, label: item.label }))} onChange={(value) => dispatch({ type: "SETUP", key: "mode", value })} />
-                <OptionGroup label="Difficulty" value={state.setup.difficulty} options={Object.entries(ARENA_DIFFICULTIES).map(([value, item]) => ({ value, label: item.label }))} onChange={(value) => dispatch({ type: "SETUP", key: "difficulty", value })} />
-                <OptionGroup label="Pitch" value={state.setup.pitch} options={[...Object.entries(PITCHES).map(([value, item]) => ({ value, label: item.label })), { value: "random", label: "Random pitch" }]} onChange={(value) => dispatch({ type: "SETUP", key: "pitch", value })} />
-                <OptionGroup label="Bowler type" value={state.setup.bowlerType} options={Object.entries(BOWLER_TYPES).map(([value, item]) => ({ value, label: item.label }))} onChange={(value) => dispatch({ type: "SETUP", key: "bowlerType", value })} />
+                <OptionGroup label="Game mode" value={state.setup.mode} options={COMPACT_MODE_OPTIONS.map((value) => ({ value, label: ARENA_MODES[value].label }))} onChange={(value) => dispatch({ type: "SETUP", key: "mode", value })} />
+                <OptionGroup label="Difficulty" value={state.setup.difficulty} options={COMPACT_DIFFICULTY_OPTIONS.map((value) => ({ value, label: ARENA_DIFFICULTIES[value].label }))} onChange={(value) => dispatch({ type: "SETUP", key: "difficulty", value })} />
+                <OptionGroup label="Pitch" value={state.setup.pitch} options={COMPACT_PITCH_OPTIONS.map((value) => ({ value, label: PITCHES[value].label }))} onChange={(value) => dispatch({ type: "SETUP", key: "pitch", value })} />
+                <OptionGroup label="Bowler type" value={state.setup.bowlerType} options={Object.entries(BOWLER_TYPES).slice(0, 3).map(([value, item]) => ({ value, label: item.label }))} onChange={(value) => dispatch({ type: "SETUP", key: "bowlerType", value })} />
               </div>
               <button type="button" onClick={startToss} className="shine-button mt-8 inline-flex min-h-14 w-full items-center justify-center gap-3 rounded-full bg-gold px-7 text-sm font-black uppercase tracking-[0.18em] text-night">
                 Start Toss <Icon.Play size={18} />
@@ -2650,7 +2547,7 @@
         const innings = currentInnings(state);
         const isHumanBatting = innings.battingSide === "human";
         return (
-          <div className="grid gap-5 xl:grid-cols-[1fr_340px]">
+          <div className="grid gap-4 2xl:grid-cols-[minmax(0,1fr)_320px]">
             <div className="grid gap-5">
               <MatchScoreboard state={state} />
               <StadiumGameScene state={state} isHumanBatting={isHumanBatting} />
@@ -2713,7 +2610,7 @@
         const outcome = state.lastOutcome;
         const dramatic = outcome?.runs === 6 || outcome?.wicket;
         return (
-          <div className={`relative min-h-[360px] overflow-hidden rounded-[8px] border border-white/12 bg-[radial-gradient(circle_at_50%_0%,rgba(244,185,66,0.14),transparent_24%),linear-gradient(180deg,#080D16,#05070B)] ${dramatic && state.settings.shake ? "animate-pulse" : ""}`}>
+          <div className={`relative min-h-[260px] overflow-hidden rounded-[8px] border border-white/12 bg-[radial-gradient(circle_at_50%_0%,rgba(244,185,66,0.14),transparent_24%),linear-gradient(180deg,#080D16,#05070B)] sm:min-h-[320px] lg:min-h-[360px] ${dramatic && state.settings.shake ? "animate-pulse" : ""}`}>
             <div className="absolute inset-x-0 top-0 h-28 bg-[radial-gradient(circle_at_20%_0%,rgba(245,247,250,0.18),transparent_26%),radial-gradient(circle_at_78%_0%,rgba(244,185,66,0.2),transparent_24%)]" />
             <div className="absolute inset-x-0 top-16 h-20 opacity-45" style={{ background: "repeating-linear-gradient(90deg, rgba(245,247,250,.14) 0 5px, transparent 5px 22px)" }} />
             <div className="absolute bottom-8 left-1/2 h-56 w-[min(760px,88vw)] -translate-x-1/2 rounded-[50%] border border-gold/20 bg-[radial-gradient(ellipse_at_center,rgba(244,185,66,0.2),rgba(8,13,22,0.45)_45%,transparent_70%)]" />
@@ -2758,11 +2655,11 @@
               </div>
               {state.phase === "awaitingTiming" && <TimingMeter start={state.meterStart} cycle={ARENA_CONFIG.timingCycleMs} type="timing" />}
             </div>
-            <div className="grid gap-4 lg:grid-cols-4">
-              <ControlGroup label="Direction" options={SHOT_DIRECTIONS} value={state.battingSelection.direction} onChange={(value) => dispatch({ type: "BATTING", key: "direction", value })} />
-              <ControlGroup label="Shot type" options={SHOT_TYPES} value={state.battingSelection.shotType} onChange={(value) => dispatch({ type: "BATTING", key: "shotType", value })} />
-              <ControlGroup label="Footwork" options={FOOTWORK_OPTIONS} value={state.battingSelection.footwork} onChange={(value) => dispatch({ type: "BATTING", key: "footwork", value })} />
-              <ControlGroup label="Aggression" options={AGGRESSION_OPTIONS} value={state.battingSelection.aggression} onChange={(value) => dispatch({ type: "BATTING", key: "aggression", value })} />
+            <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+              <ControlGroup label="Direction" options={COMPACT_BAT_DIRECTIONS} value={state.battingSelection.direction} onChange={(value) => dispatch({ type: "BATTING", key: "direction", value })} />
+              <ControlGroup label="Shot type" options={COMPACT_SHOT_TYPES} value={state.battingSelection.shotType} onChange={(value) => dispatch({ type: "BATTING", key: "shotType", value })} />
+              <ControlGroup label="Footwork" options={COMPACT_FOOTWORK} value={state.battingSelection.footwork} onChange={(value) => dispatch({ type: "BATTING", key: "footwork", value })} />
+              <ControlGroup label="Aggression" options={COMPACT_AGGRESSION} value={state.battingSelection.aggression} onChange={(value) => dispatch({ type: "BATTING", key: "aggression", value })} />
             </div>
             <ActionRow phase={state.phase} startLabel="Start AI Delivery" actionLabel="Play Shot" onStart={startHumanBattingDelivery} onAction={playHumanShot} onContinue={continueAfterBall} />
           </div>
@@ -2772,7 +2669,8 @@
       function BowlingControls({ arena }) {
         const { state, dispatch, startHumanBowlingDelivery, stopBowlingAccuracy, continueAfterBall } = arena;
         const bowlerType = BOWLER_TYPES[state.bowlingSelection.bowlerType];
-        const variations = bowlerType.variations;
+        const variations = bowlerType.variations.slice(0, 4);
+        const paceOptions = bowlerType.paceOptions.slice(0, 3);
         return (
           <div className="glass rounded-[8px] p-5">
             <div className="mb-4 flex flex-col justify-between gap-3 sm:flex-row sm:items-center">
@@ -2782,15 +2680,15 @@
               </div>
               {state.phase === "deliveryRunning" && <TimingMeter start={state.meterStart} cycle={ARENA_CONFIG.accuracyCycleMs} type="accuracy" />}
             </div>
-            <div className="grid gap-4 lg:grid-cols-5">
-              <ControlGroup label="Bowler type" options={Object.keys(BOWLER_TYPES)} value={state.bowlingSelection.bowlerType} labelFor={(value) => BOWLER_TYPES[value].label} onChange={(value) => dispatch({ type: "BOWLING", key: "bowlerType", value })} />
+            <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+              <ControlGroup label="Bowler type" options={Object.keys(BOWLER_TYPES).slice(0, 3)} value={state.bowlingSelection.bowlerType} labelFor={(value) => BOWLER_TYPES[value].label} onChange={(value) => dispatch({ type: "BOWLING", key: "bowlerType", value })} />
               <ControlGroup label="Variation" options={variations} value={state.bowlingSelection.variation} onChange={(value) => dispatch({ type: "BOWLING", key: "variation", value })} />
-              <ControlGroup label="Line" options={LINE_OPTIONS} value={state.bowlingSelection.line} onChange={(value) => dispatch({ type: "BOWLING", key: "line", value })} />
-              <ControlGroup label="Length" options={LENGTH_OPTIONS} value={state.bowlingSelection.length} onChange={(value) => dispatch({ type: "BOWLING", key: "length", value })} />
-              <ControlGroup label="Pace / flight" options={bowlerType.paceOptions} value={state.bowlingSelection.pace} onChange={(value) => dispatch({ type: "BOWLING", key: "pace", value })} />
+              <ControlGroup label="Line" options={COMPACT_LINES} value={state.bowlingSelection.line} onChange={(value) => dispatch({ type: "BOWLING", key: "line", value })} />
+              <ControlGroup label="Length" options={COMPACT_LENGTHS} value={state.bowlingSelection.length} onChange={(value) => dispatch({ type: "BOWLING", key: "length", value })} />
+              <ControlGroup label="Pace" options={paceOptions} value={state.bowlingSelection.pace} onChange={(value) => dispatch({ type: "BOWLING", key: "pace", value })} />
             </div>
             <div className="mt-4">
-              <ControlGroup label="Field preset" options={Object.keys(FIELD_PRESETS)} value={state.bowlingSelection.field} labelFor={(value) => FIELD_PRESETS[value].label} onChange={(value) => dispatch({ type: "BOWLING", key: "field", value })} />
+              <ControlGroup label="Field preset" options={COMPACT_FIELDS} value={state.bowlingSelection.field} labelFor={(value) => FIELD_PRESETS[value].label} onChange={(value) => dispatch({ type: "BOWLING", key: "field", value })} />
             </div>
             <ActionRow phase={state.phase} startLabel="Lock Delivery" actionLabel="Stop Accuracy" onStart={startHumanBowlingDelivery} onAction={stopBowlingAccuracy} onContinue={continueAfterBall} />
           </div>
@@ -2955,7 +2853,7 @@
               </div>
               <div className="mt-5 grid gap-4 md:grid-cols-2">
                 <HelpBlock title="Batting" lines={["A/D/W/Q/S choose direction", "1/2/3 choose footwork", "Pick shot type and aggression", "Space starts delivery, then Space plays shot"]} />
-                <HelpBlock title="Bowling" lines={["Arrow keys move line and length", "1-7 select variation", "Space locks delivery", "Space again stops accuracy meter"]} />
+                <HelpBlock title="Bowling" lines={["Arrow keys move line and length", "1-4 select variation", "Space locks delivery", "Space again stops accuracy meter"]} />
               </div>
             </div>
           </div>
@@ -2983,6 +2881,160 @@
               aiMemory: state.aiMemory,
             }, null, 2)}</pre>
           </div>
+        );
+      }
+
+      const MEME_TEMPLATES = [
+        "When the bowler says it is just a friendly match and then bowls a yorker first ball.",
+        "Me after edging one to slip: pitch had demons.",
+        "Kurukshetra Warriors when the chase needs 18 off 6: say less.",
+        "That one teammate who brings full celebration energy for a single.",
+        "POV: You called it a warm-up and the captain made a full batting order.",
+        "When your cover drive finally beats point and you start walking like prime form arrived.",
+      ];
+
+      function MemeGeneratorPage() {
+        const [topic, setTopic] = useState("last ball six");
+        const [memeText, setMemeText] = useState(MEME_TEMPLATES[0]);
+        const [style, setStyle] = useState("Warrior Roast");
+
+        const generateMeme = () => {
+          const ideas = [
+            `When ${topic || "the match"} becomes serious and Kurukshetra Warriors enter final-over mode.`,
+            `Nobody: Absolutely nobody: Me explaining why ${topic || "that wicket"} was part of the plan.`,
+            `CricKuru fans after ${topic || "one clean boundary"}: we are winning the tournament.`,
+            `That feeling when ${topic || "your cricket logic"} turns into a viral dressing-room story.`,
+            `Kurukshetra Warriors group chat after ${topic || "a clutch moment"}: delete nothing, screenshot everything.`,
+          ];
+          setMemeText(ideas[Math.floor(Math.random() * ideas.length)]);
+        };
+
+        const downloadMeme = () => {
+          const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+            <defs>
+              <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#05070B"/>
+                <stop offset="0.55" stop-color="#080D16"/>
+                <stop offset="1" stop-color="#B71932"/>
+              </linearGradient>
+            </defs>
+            <rect width="1080" height="1080" fill="url(#bg)"/>
+            <circle cx="845" cy="190" r="120" fill="#F4B942" opacity="0.2"/>
+            <circle cx="245" cy="810" r="190" fill="#22D3EE" opacity="0.1"/>
+            <text x="80" y="120" fill="#F4B942" font-family="Impact, Arial" font-size="58">CRICKURU MEMES</text>
+            <text x="80" y="210" fill="#F5F7FA" font-family="Impact, Arial" font-size="88">KURUKSHETRA</text>
+            <text x="80" y="302" fill="#F4B942" font-family="Impact, Arial" font-size="88">WARRIORS</text>
+            <foreignObject x="80" y="400" width="920" height="420">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Impact, Arial; font-size: 62px; line-height: 1.08; color: white; text-transform: uppercase; text-shadow: 0 5px 0 #000;">
+                ${memeText.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")}
+              </div>
+            </foreignObject>
+            <text x="80" y="990" fill="#F5F7FA" opacity="0.7" font-family="Arial" font-size="34">crickuru.com</text>
+          </svg>`;
+          const blob = new Blob([svg], { type: "image/svg+xml" });
+          const url = URL.createObjectURL(blob);
+          const link = document.createElement("a");
+          link.href = url;
+          link.download = "crickuru-meme.svg";
+          link.click();
+          URL.revokeObjectURL(url);
+        };
+
+        return (
+          <main className="route-bg page-grain min-h-screen px-5 pb-16 pt-28 sm:px-8">
+            <section className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+              <motion.div className="glass rounded-[8px] p-6 sm:p-8" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }}>
+                <p className="text-xs font-black uppercase tracking-[0.32em] text-gold">CricKuru Meme Lab</p>
+                <h1 className="mt-4 font-display text-6xl font-black uppercase leading-none text-white sm:text-8xl">Viral Cricket Meme Generator</h1>
+                <p className="mt-5 max-w-2xl text-lg leading-8 text-white/66">
+                  Create meme text or a shareable Kurukshetra Warriors meme image for cricket banter, match days and group chats.
+                </p>
+                <div className="mt-8 grid gap-4">
+                  <label className="block">
+                    <span className="mb-2 block text-xs font-black uppercase tracking-[0.2em] text-white/48">Meme topic</span>
+                    <input
+                      value={topic}
+                      onChange={(event) => setTopic(event.target.value)}
+                      className="min-h-12 w-full rounded-[8px] border border-white/12 bg-night px-4 text-white outline-none focus:border-gold"
+                      placeholder="last ball six, dropped catch, yorker, rivalry..."
+                    />
+                  </label>
+                  <OptionGroup
+                    label="Style"
+                    value={style}
+                    options={["Warrior Roast", "Dressing Room", "Fan Hype"].map((value) => ({ value, label: value }))}
+                    onChange={setStyle}
+                  />
+                  <textarea
+                    value={memeText}
+                    onChange={(event) => setMemeText(event.target.value)}
+                    rows="5"
+                    className="w-full rounded-[8px] border border-white/12 bg-night p-4 text-white outline-none focus:border-gold"
+                  />
+                  <div className="flex flex-col gap-3 sm:flex-row">
+                    <button type="button" onClick={generateMeme} className="shine-button min-h-12 rounded-full bg-gold px-6 text-sm font-black uppercase tracking-[0.16em] text-night">
+                      Generate Meme Text
+                    </button>
+                    <button type="button" onClick={downloadMeme} className="min-h-12 rounded-full border border-white/15 bg-white/8 px-6 text-sm font-black uppercase tracking-[0.16em] text-white hover:border-gold/60 hover:text-gold">
+                      Download Meme Image
+                    </button>
+                  </div>
+                </div>
+              </motion.div>
+              <motion.div className="relative overflow-hidden rounded-[8px] border border-gold/28 bg-[radial-gradient(circle_at_78%_12%,rgba(244,185,66,0.22),transparent_28%),linear-gradient(145deg,#05070B,#080D16_48%,#B71932)] p-6 shadow-[0_30px_100px_rgba(0,0,0,.45)]" initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }}>
+                <div className="absolute right-[-60px] top-[-60px] h-48 w-48 rounded-full bg-gold/14 blur-3xl" />
+                <div className="relative aspect-square rounded-[8px] border border-white/12 bg-black/24 p-6">
+                  <p className="font-display text-4xl font-black uppercase text-gold">CricKuru Memes</p>
+                  <p className="mt-6 font-display text-[clamp(2.8rem,7vw,5.6rem)] font-black uppercase leading-[0.92] text-white drop-shadow-[0_6px_0_rgba(0,0,0,.7)]">
+                    Kurukshetra Warriors
+                  </p>
+                  <p className="mt-8 font-display text-[clamp(2rem,5vw,4rem)] font-black uppercase leading-none text-white">
+                    {memeText}
+                  </p>
+                  <p className="absolute bottom-6 left-6 text-sm font-black uppercase tracking-[0.22em] text-white/58">crickuru.com</p>
+                </div>
+              </motion.div>
+            </section>
+          </main>
+        );
+      }
+
+      function CoinPage() {
+        return (
+          <main className="route-bg page-grain min-h-screen overflow-hidden px-5 pb-16 pt-28 sm:px-8">
+            <section className="relative mx-auto max-w-7xl">
+              <div className="absolute left-1/2 top-10 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-gold/12 blur-3xl" aria-hidden="true" />
+              <motion.div className="relative grid gap-8 lg:grid-cols-[1fr_0.85fr] lg:items-center" initial={{ opacity: 0, y: 26 }} animate={{ opacity: 1, y: 0 }}>
+                <div className="glass rounded-[8px] p-6 sm:p-8">
+                  <p className="text-xs font-black uppercase tracking-[0.32em] text-cyan">Launching Soon</p>
+                  <h1 className="mt-4 font-display text-6xl font-black uppercase leading-none text-white sm:text-8xl">
+                    Kurukshetra Meme Coin
+                  </h1>
+                  <p className="mt-5 max-w-2xl text-lg leading-8 text-white/68">
+                    A community-first meme coin concept inspired by Kurukshetra Warriors cricket energy. Built for fans, memes and match-day culture.
+                  </p>
+                  <div className="mt-8 grid gap-4 sm:grid-cols-3">
+                    <MiniStat label="Team" value="Warriors" />
+                    <MiniStat label="Ticker" value="$KURU" />
+                    <MiniStat label="Status" value="Soon" />
+                  </div>
+                  <div className="mt-8 rounded-[8px] border border-gold/24 bg-gold/8 p-4">
+                    <p className="text-sm leading-7 text-white/70">
+                      No token sale is live yet. This page is only a launch teaser for the Kurukshetra Warriors community.
+                    </p>
+                  </div>
+                </div>
+                <div className="relative mx-auto grid aspect-square w-full max-w-md place-items-center rounded-full border border-gold/35 bg-[radial-gradient(circle,#F4B942_0_22%,#B71932_23%_38%,#080D16_39%_100%)] shadow-[0_0_100px_rgba(244,185,66,.22)]">
+                  <div className="grid h-[72%] w-[72%] place-items-center rounded-full border-4 border-night bg-gold text-center text-night shadow-2xl">
+                    <div>
+                      <p className="font-display text-7xl font-black uppercase leading-none">$KURU</p>
+                      <p className="mt-2 text-xs font-black uppercase tracking-[0.25em]">Kurukshetra Warriors</p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </section>
+          </main>
         );
       }
 
@@ -3081,59 +3133,20 @@
                 element={<ArenaPage />}
               />
               <Route
-                path="/teams"
-                element={
-                  <PlaceholderPage
-                    title="Teams"
-                    kicker="Build Your Squad"
-                    description="A polished team hub placeholder for squads, captains, communities and team-management workflows."
-                    icon={Icon.Shield}
-                  />
-                }
+                path="/memes"
+                element={<MemeGeneratorPage />}
               />
               <Route
-                path="/players"
-                element={
-                  <PlaceholderPage
-                    title="Players"
-                    kicker="Cricket Identity"
-                    description="A premium player-profile route prepared for stats, badges, match roles and individual cricket journeys."
-                    icon={Icon.CircleUserRound}
-                  />
-                }
+                path="/meme"
+                element={<MemeGeneratorPage />}
               />
               <Route
-                path="/tournaments"
-                element={
-                  <PlaceholderPage
-                    title="Tournaments"
-                    kicker="Compete Globally"
-                    description="A tournament route ready for fixtures, brackets, seasons and community competitions."
-                    icon={Icon.Swords}
-                  />
-                }
+                path="/coin"
+                element={<CoinPage />}
               />
               <Route
-                path="/community"
-                element={
-                  <PlaceholderPage
-                    title="Community"
-                    kicker="Global Cricket Network"
-                    description="A community route prepared for fans, clubs, match discussions and CricKuru social moments."
-                    icon={Icon.Users}
-                  />
-                }
-              />
-              <Route
-                path="/login"
-                element={
-                  <PlaceholderPage
-                    title="Join CricKuru"
-                    kicker="Account Access"
-                    description="A login and signup-intent route with the same premium visual system, ready for authentication later."
-                    icon={Icon.LogIn}
-                  />
-                }
+                path="/kurukshetra-coin"
+                element={<CoinPage />}
               />
               <Route
                 path="*"
