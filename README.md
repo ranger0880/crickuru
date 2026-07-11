@@ -1,5 +1,7 @@
 # CricKuru
 
+Official website and cricket platform for CricKuru and Kurukshetra Warriors.
+
 Premium landing page for `crickuru.com`.
 
 ## Files
