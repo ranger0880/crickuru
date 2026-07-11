@@ -531,26 +531,103 @@
 
     <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/react-router-dom@6.30.1/dist/umd/react-router-dom.production.min.js"></script>
     <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
-    <script src="https://unpkg.com/lucide-react@0.468.0/dist/umd/lucide-react.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone@7.26.4/babel.min.js"></script>
 
     <script type="text/babel">
-      const { useEffect, useMemo, useReducer, useRef, useState } = React;
-      const {
-        BrowserRouter,
-        Link,
-        NavLink,
-        Route,
-        Routes,
-        useLocation,
-        useNavigate,
-      } = ReactRouterDOM;
+      const { useContext, useEffect, useMemo, useReducer, useRef, useState } = React;
       const MotionLib = window.Motion || {};
       const motion = MotionLib.motion || new Proxy({}, { get: (_, tag) => tag });
       const AnimatePresence = MotionLib.AnimatePresence || React.Fragment;
       const useReducedMotion = MotionLib.useReducedMotion || (() => false);
+
+      const RouterContext = React.createContext(null);
+
+      function normalizePath(pathname, basename = "/") {
+        const cleanBase = basename === "/" ? "" : basename.replace(/\/$/, "");
+        let path = pathname || "/";
+        if (cleanBase && path.startsWith(cleanBase)) {
+          path = path.slice(cleanBase.length) || "/";
+        }
+        return path.startsWith("/") ? path : `/${path}`;
+      }
+
+      function BrowserRouter({ basename = "/", children }) {
+        const [pathname, setPathname] = useState(() => normalizePath(window.location.pathname, basename));
+
+        useEffect(() => {
+          const onPopState = () => setPathname(normalizePath(window.location.pathname, basename));
+          window.addEventListener("popstate", onPopState);
+          return () => window.removeEventListener("popstate", onPopState);
+        }, [basename]);
+
+        const navigate = (to) => {
+          if (!to || to.startsWith("http")) {
+            window.location.href = to;
+            return;
+          }
+          const cleanBase = basename === "/" ? "" : basename.replace(/\/$/, "");
+          const target = to.startsWith("/") ? to : `/${to}`;
+          window.history.pushState({}, "", `${cleanBase}${target}`);
+          setPathname(normalizePath(window.location.pathname, basename));
+        };
+
+        return <RouterContext.Provider value={{ basename, pathname, navigate }}>{children}</RouterContext.Provider>;
+      }
+
+      function useRouter() {
+        return useContext(RouterContext) || { basename: "/", pathname: "/", navigate: () => {} };
+      }
+
+      function useLocation() {
+        const router = useRouter();
+        return { pathname: router.pathname, hash: window.location.hash, search: window.location.search };
+      }
+
+      function useNavigate() {
+        return useRouter().navigate;
+      }
+
+      function Link({ to, onClick, children, ...props }) {
+        const router = useRouter();
+        const cleanBase = router.basename === "/" ? "" : router.basename.replace(/\/$/, "");
+        const href = typeof to === "string" && to.startsWith("/") ? `${cleanBase}${to}` : to;
+        return (
+          <a
+            href={href}
+            onClick={(event) => {
+              onClick?.(event);
+              if (event.defaultPrevented || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
+              if (typeof to === "string" && to.startsWith("/")) {
+                event.preventDefault();
+                router.navigate(to);
+              }
+            }}
+            {...props}
+          >
+            {children}
+          </a>
+        );
+      }
+
+      function NavLink({ to, className, children, ...props }) {
+        const router = useRouter();
+        const isActive = router.pathname === to;
+        const resolvedClassName = typeof className === "function" ? className({ isActive }) : className;
+        return <Link to={to} className={resolvedClassName} {...props}>{children}</Link>;
+      }
+
+      function Routes({ children }) {
+        const router = useRouter();
+        const routeList = React.Children.toArray(children);
+        const exact = routeList.find((child) => child.props.path === router.pathname);
+        const fallback = routeList.find((child) => child.props.path === "*");
+        return (exact || fallback)?.props.element || null;
+      }
+
+      function Route() {
+        return null;
+      }
 
       const CricLinks = {
         matches: "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
