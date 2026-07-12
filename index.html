@@ -555,7 +555,8 @@
         if (cleanBase && path.startsWith(cleanBase)) {
           path = path.slice(cleanBase.length) || "/";
         }
-        return path.startsWith("/") ? path : `/${path}`;
+        path = path.startsWith("/") ? path : `/${path}`;
+        return path.length > 1 ? path.replace(/\/+$/, "") : path;
       }
 
       function BrowserRouter({ basename = "/", children }) {
