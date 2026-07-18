@@ -2704,71 +2704,350 @@
       }
 
       function ArenaPage() {
-        const arena = useArenaMatch();
-        const { state, dispatch } = arena;
-        const innings = currentInnings(state);
-        const isHumanBatting = innings?.battingSide === "human";
-        const [helpOpen, setHelpOpen] = useState(false);
-        const [devOpen, setDevOpen] = useState(false);
+        return <KidsArenaPage />;
+      }
 
-        useEffect(() => {
-          const onKeyDown = (event) => {
-            if (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === "d") {
-              event.preventDefault();
-              setDevOpen((value) => !value);
-              return;
-            }
-            if (state.phase !== "awaitingSelection" && state.phase !== "awaitingTiming" && state.phase !== "deliveryRunning") return;
-            const key = event.key.toLowerCase();
-            if (isHumanBatting) {
-              const directionKeys = { a: "Off side", d: "Leg side", w: "Straight", s: "Defensive", q: "Behind square" };
-              const footworkKeys = { "1": "Front foot", "2": "Back foot", "3": "Advance down the pitch" };
-              if (directionKeys[key]) dispatch({ type: "BATTING", key: "direction", value: directionKeys[key] });
-              if (footworkKeys[key]) dispatch({ type: "BATTING", key: "footwork", value: footworkKeys[key] });
-              if (event.code === "Space") {
-                event.preventDefault();
-                state.phase === "awaitingTiming" ? arena.playHumanShot() : arena.startHumanBattingDelivery();
-              }
+      const KIDS_ARENA_MAX_BALLS = 6;
+      const KIDS_ARENA_MAX_WICKETS = 2;
+      const KIDS_ARENA_BOWL_TARGET = 18;
+
+      const kidsBatOptions = [
+        { id: "defend", label: "Defend", hint: "Safe shot", color: "cyan" },
+        { id: "hit", label: "Hit", hint: "Good runs", color: "gold" },
+        { id: "big", label: "Big Hit", hint: "Six chance", color: "crimson" },
+      ];
+
+      const kidsBowlOptions = [
+        { id: "straight", label: "Straight", hint: "Safe ball", color: "cyan" },
+        { id: "swing", label: "Swing", hint: "Wicket try", color: "gold" },
+        { id: "surprise", label: "Surprise", hint: "Risky ball", color: "crimson" },
+      ];
+
+      function kidsArenaInitialState() {
+        return {
+          step: "toss",
+          tossPick: "Heads",
+          tossResult: "",
+          tossWinner: "",
+          role: "",
+          score: 0,
+          opponentScore: 0,
+          wickets: 0,
+          balls: 0,
+          lastPlay: "",
+          message: "Pick heads or tails, then toss the coin.",
+          log: [],
+          complete: false,
+        };
+      }
+
+      function KidsArenaPage() {
+        const [game, setGame] = useState(kidsArenaInitialState);
+
+        const resetGame = () => setGame(kidsArenaInitialState());
+
+        const pickToss = (pick) => {
+          setGame((current) => ({ ...current, tossPick: pick, message: `You picked ${pick}. Toss the coin.` }));
+        };
+
+        const tossCoin = () => {
+          const tossResult = Math.random() < 0.5 ? "Heads" : "Tails";
+          const won = tossResult === game.tossPick;
+          setGame((current) => ({
+            ...current,
+            step: "choice",
+            tossResult,
+            tossWinner: won ? "You" : "CricKuru Bot",
+            message: won ? "You won the toss. Choose batting or bowling." : "Bot won the toss. For practice, you still choose batting or bowling.",
+          }));
+        };
+
+        const chooseRole = (role) => {
+          setGame((current) => ({
+            ...current,
+            step: "play",
+            role,
+            score: 0,
+            opponentScore: 0,
+            wickets: 0,
+            balls: 0,
+            lastPlay: "",
+            complete: false,
+            log: [],
+            message: role === "bat" ? "Batting time. Tap one shot for each ball." : `Bowling time. Keep the bot under ${KIDS_ARENA_BOWL_TARGET} runs.`,
+          }));
+        };
+
+        const finishText = (next) => {
+          if (next.role === "bat") {
+            if (next.score >= 20) return "Amazing batting. You made a huge score.";
+            if (next.score >= 12) return "Good batting. The Warriors crowd is happy.";
+            return "Nice try. Play again and go for more runs.";
+          }
+          if (next.opponentScore < KIDS_ARENA_BOWL_TARGET && next.wickets >= 1) return "Great bowling. You beat the bot.";
+          if (next.opponentScore < KIDS_ARENA_BOWL_TARGET) return "Good control. You kept the bot quiet.";
+          return "The bot scored fast. Try more straight balls.";
+        };
+
+        const playBall = (option) => {
+          if (game.complete || game.step !== "play") return;
+
+          const isBatting = game.role === "bat";
+          const roll = Math.random();
+          let runs = 0;
+          let wicket = false;
+          let lastPlay = "";
+
+          if (isBatting) {
+            if (option.id === "defend") {
+              runs = roll < 0.14 ? 0 : roll < 0.72 ? 1 : 2;
+              wicket = roll > 0.95;
+            } else if (option.id === "hit") {
+              runs = roll < 0.16 ? 0 : roll < 0.42 ? 1 : roll < 0.7 ? 2 : roll < 0.92 ? 4 : 6;
+              wicket = roll > 0.96;
             } else {
-              if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
-                const index = COMPACT_LINES.indexOf(state.bowlingSelection.line);
-                const next = clamp(index + (event.key === "ArrowRight" ? 1 : -1), 0, COMPACT_LINES.length - 1);
-                dispatch({ type: "BOWLING", key: "line", value: COMPACT_LINES[next] });
-              }
-              if (event.key === "ArrowUp" || event.key === "ArrowDown") {
-                const index = COMPACT_LENGTHS.indexOf(state.bowlingSelection.length);
-                const next = clamp(index + (event.key === "ArrowDown" ? 1 : -1), 0, COMPACT_LENGTHS.length - 1);
-                dispatch({ type: "BOWLING", key: "length", value: COMPACT_LENGTHS[next] });
-              }
-              const variationIndex = Number(key) - 1;
-              const variations = BOWLER_TYPES[state.bowlingSelection.bowlerType].variations.slice(0, 4);
-              if (variationIndex >= 0 && variations[variationIndex]) dispatch({ type: "BOWLING", key: "variation", value: variations[variationIndex] });
-              if (event.code === "Space") {
-                event.preventDefault();
-                state.phase === "deliveryRunning" ? arena.stopBowlingAccuracy() : arena.startHumanBowlingDelivery();
-              }
+              runs = roll < 0.16 ? 0 : roll < 0.32 ? 2 : roll < 0.58 ? 4 : roll < 0.84 ? 6 : 0;
+              wicket = roll > 0.84;
             }
-          };
-          window.addEventListener("keydown", onKeyDown);
-          return () => window.removeEventListener("keydown", onKeyDown);
-        }, [state, isHumanBatting]);
+            lastPlay = wicket ? `${option.label}: Wicket` : `${option.label}: ${runs} run${runs === 1 ? "" : "s"}`;
+          } else {
+            if (option.id === "straight") {
+              runs = roll < 0.26 ? 0 : roll < 0.68 ? 1 : roll < 0.9 ? 2 : 4;
+              wicket = roll > 0.93;
+            } else if (option.id === "swing") {
+              runs = roll < 0.2 ? 0 : roll < 0.54 ? 1 : roll < 0.75 ? 2 : roll < 0.9 ? 4 : 0;
+              wicket = roll > 0.86;
+            } else {
+              runs = roll < 0.2 ? 0 : roll < 0.42 ? 1 : roll < 0.62 ? 4 : roll < 0.8 ? 6 : 0;
+              wicket = roll > 0.8;
+            }
+            lastPlay = wicket ? `${option.label}: Wicket` : `${option.label}: Bot scored ${runs}`;
+          }
+
+          setGame((current) => {
+            const balls = current.balls + 1;
+            const wickets = current.wickets + (wicket ? 1 : 0);
+            const score = isBatting ? current.score + runs : current.score;
+            const opponentScore = isBatting ? current.opponentScore : current.opponentScore + runs;
+            const complete = balls >= KIDS_ARENA_MAX_BALLS || wickets >= KIDS_ARENA_MAX_WICKETS;
+            const next = { ...current, balls, wickets, score, opponentScore, lastPlay, complete };
+            return {
+              ...next,
+              message: complete ? finishText(next) : wicket ? "Big moment. The wicket fell." : "Good ball. Pick the next move.",
+              log: [lastPlay, ...current.log].slice(0, 4),
+            };
+          });
+        };
 
         return (
-          <main className="route-bg page-grain min-h-screen px-4 pb-12 pt-24 sm:px-6">
-            <section className="mx-auto max-w-7xl">
-              <ArenaHeader progress={state.progress} onHelp={() => setHelpOpen(true)} state={state} dispatch={dispatch} />
-              {state.phase === "menu" && <ArenaMenu arena={arena} />}
-              {state.phase === "toss" && <TossScreen arena={arena} />}
-              {state.phase === "inningsIntro" && <InningsIntro arena={arena} />}
-              {["awaitingSelection", "awaitingTiming", "deliveryRunning", "ballResult", "overComplete"].includes(state.phase) && (
-                <ArenaGameplay arena={arena} />
-              )}
-              {state.phase === "inningsComplete" && <InningsTransition arena={arena} />}
-              {state.phase === "matchComplete" && <MatchResult arena={arena} />}
-              {helpOpen && <ArenaHelp onClose={() => setHelpOpen(false)} />}
-              {devOpen && <DevPanel state={state} />}
+          <main className="route-bg page-grain min-h-screen px-3 pb-5 pt-[5.5rem] sm:px-5 sm:pt-24">
+            <section className="mx-auto flex min-h-[calc(100vh-6rem)] max-w-5xl flex-col gap-3">
+              <KidsArenaHeader step={game.step} />
+              <div className="grid flex-1 gap-3 lg:grid-cols-[minmax(0,1fr)_280px]">
+                <div className="grid gap-3">
+                  {game.step === "toss" && <KidsTossCard game={game} onPick={pickToss} onToss={tossCoin} />}
+                  {game.step === "choice" && <KidsRoleCard game={game} onChoose={chooseRole} onReset={resetGame} />}
+                  {game.step === "play" && <KidsPlayCard game={game} onPlay={playBall} onReset={resetGame} />}
+                </div>
+                <KidsHowToCard role={game.role} step={game.step} />
+              </div>
             </section>
           </main>
+        );
+      }
+
+      function KidsArenaHeader({ step }) {
+        const items = [
+          ["toss", "1 Toss"],
+          ["choice", "2 Bat/Bowl"],
+          ["play", "3 Play"],
+        ];
+
+        return (
+          <div className="rounded-[8px] border border-white/10 bg-night/78 p-3 backdrop-blur-xl">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="text-xs font-black uppercase tracking-[0.26em] text-gold">CricKuru Arena</p>
+                <h1 className="font-display text-4xl font-black uppercase leading-none text-white sm:text-6xl">Kids Cricket Game</h1>
+              </div>
+              <div className="grid grid-cols-3 gap-2">
+                {items.map(([id, label]) => (
+                  <span key={id} className={`rounded-full border px-3 py-2 text-center text-[0.65rem] font-black uppercase tracking-[0.12em] ${step === id ? "border-gold/60 bg-gold/14 text-gold" : "border-white/12 bg-white/5 text-white/48"}`}>
+                    {label}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        );
+      }
+
+      function KidsTossCard({ game, onPick, onToss }) {
+        return (
+          <motion.div className="glass grid min-h-[58vh] content-center gap-5 rounded-[8px] p-4 text-center sm:p-6" initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }}>
+            <div className="mx-auto grid h-24 w-24 place-items-center rounded-full border-4 border-gold bg-gradient-to-br from-gold to-crimson font-display text-3xl font-black text-night shadow-[0_0_50px_rgba(244,185,66,0.22)]">
+              {game.tossPick[0]}
+            </div>
+            <div>
+              <h2 className="font-display text-5xl font-black uppercase leading-none text-white">Toss Time</h2>
+              <p className="mx-auto mt-3 max-w-lg text-base leading-7 text-white/65">{game.message}</p>
+            </div>
+            <div className="mx-auto grid w-full max-w-md grid-cols-2 gap-3">
+              {["Heads", "Tails"].map((pick) => (
+                <button key={pick} type="button" onClick={() => onPick(pick)} className={`min-h-14 rounded-[8px] border text-lg font-black uppercase tracking-[0.12em] ${game.tossPick === pick ? "border-gold bg-gold text-night" : "border-white/12 bg-white/7 text-white"}`}>
+                  {pick}
+                </button>
+              ))}
+            </div>
+            <button type="button" onClick={onToss} className="shine-button mx-auto min-h-14 w-full max-w-md rounded-full bg-gold px-6 text-sm font-black uppercase tracking-[0.18em] text-night">
+              Toss Coin
+            </button>
+          </motion.div>
+        );
+      }
+
+      function KidsRoleCard({ game, onChoose, onReset }) {
+        return (
+          <motion.div className="glass grid min-h-[58vh] content-center gap-5 rounded-[8px] p-4 text-center sm:p-6" initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }}>
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.26em] text-cyan">{game.tossResult} - {game.tossWinner} won</p>
+              <h2 className="mt-3 font-display text-5xl font-black uppercase leading-none text-white">Choose Your Turn</h2>
+              <p className="mx-auto mt-3 max-w-lg text-base leading-7 text-white/65">{game.message}</p>
+            </div>
+            <div className="mx-auto grid w-full max-w-xl gap-3 sm:grid-cols-2">
+              <button type="button" onClick={() => onChoose("bat")} className="min-h-24 rounded-[8px] border border-gold/45 bg-gold/14 p-4 text-left text-gold">
+                <span className="font-display text-4xl font-black uppercase">Batting</span>
+                <span className="mt-2 block text-sm font-bold text-white/70">Tap shots and score in 6 balls.</span>
+              </button>
+              <button type="button" onClick={() => onChoose("bowl")} className="min-h-24 rounded-[8px] border border-cyan/45 bg-cyan/10 p-4 text-left text-cyan">
+                <span className="font-display text-4xl font-black uppercase">Bowling</span>
+                <span className="mt-2 block text-sm font-bold text-white/70">Tap deliveries and stop the bot.</span>
+              </button>
+            </div>
+            <button type="button" onClick={onReset} className="mx-auto min-h-11 rounded-full border border-white/15 bg-white/7 px-5 text-sm font-black uppercase tracking-[0.14em] text-white/72">
+              Toss Again
+            </button>
+          </motion.div>
+        );
+      }
+
+      function KidsPlayCard({ game, onPlay, onReset }) {
+        const isBatting = game.role === "bat";
+        const options = isBatting ? kidsBatOptions : kidsBowlOptions;
+        const resultLine = isBatting
+          ? `You scored ${game.score}/${game.wickets} in ${game.balls} ball${game.balls === 1 ? "" : "s"}.`
+          : `Bot scored ${game.opponentScore}/${game.wickets}. Target: under ${KIDS_ARENA_BOWL_TARGET}.`;
+
+        return (
+          <motion.div className="grid gap-3" initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }}>
+            <div className="glass rounded-[8px] p-3 sm:p-4">
+              <div className="grid gap-2 sm:grid-cols-4">
+                <KidsScore label="Mode" value={isBatting ? "Bat" : "Bowl"} />
+                <KidsScore label="Balls" value={`${game.balls}/${KIDS_ARENA_MAX_BALLS}`} />
+                <KidsScore label={isBatting ? "Runs" : "Bot"} value={isBatting ? game.score : game.opponentScore} highlight />
+                <KidsScore label="Wickets" value={`${game.wickets}/${KIDS_ARENA_MAX_WICKETS}`} />
+              </div>
+            </div>
+
+            <KidsMiniField game={game} />
+
+            <div className="glass rounded-[8px] p-3 sm:p-4">
+              <div className="mb-3 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <p className="text-xs font-black uppercase tracking-[0.22em] text-gold">{game.complete ? "Over finished" : "Tap one button"}</p>
+                  <h2 className="font-display text-3xl font-black uppercase text-white sm:text-4xl">{game.complete ? "Game Result" : isBatting ? "Choose a Shot" : "Choose a Ball"}</h2>
+                </div>
+                <p className="rounded-[8px] border border-white/10 bg-night/55 px-3 py-2 text-sm font-bold text-white/70">{resultLine}</p>
+              </div>
+
+              <p className="mb-3 rounded-[8px] border border-white/10 bg-white/[0.035] p-3 text-sm font-semibold leading-6 text-white/68">
+                {game.message}
+              </p>
+
+              {game.complete ? (
+                <div className="grid gap-3 sm:grid-cols-2">
+                  <button type="button" onClick={onReset} className="shine-button min-h-14 rounded-full bg-gold px-6 text-sm font-black uppercase tracking-[0.18em] text-night">Play Again</button>
+                  <a href={CricLinks.matches} target="_blank" rel="noreferrer" className="inline-flex min-h-14 items-center justify-center rounded-full border border-white/15 bg-white/7 px-6 text-sm font-black uppercase tracking-[0.18em] text-white/72">Real Matches</a>
+                </div>
+              ) : (
+                <div className="grid grid-cols-3 gap-2">
+                  {options.map((option) => <KidsArenaButton key={option.id} option={option} onClick={() => onPlay(option)} />)}
+                </div>
+              )}
+            </div>
+          </motion.div>
+        );
+      }
+
+      function KidsMiniField({ game }) {
+        const ballProgress = `${Math.min(94, 8 + game.balls * 14)}%`;
+        return (
+          <div className="relative min-h-[210px] overflow-hidden rounded-[8px] border border-white/12 bg-[radial-gradient(circle_at_50%_0%,rgba(244,185,66,0.16),transparent_28%),linear-gradient(180deg,#080D16,#05070B)] sm:min-h-[260px]">
+            <div className="absolute inset-x-0 bottom-5 mx-auto h-40 w-[88%] rounded-[50%] border border-gold/20 bg-[radial-gradient(ellipse_at_center,rgba(244,185,66,0.18),rgba(8,13,22,0.55)_48%,transparent_72%)]" />
+            <div className="absolute bottom-12 left-1/2 h-36 w-20 -translate-x-1/2 rounded-full border border-gold/35 bg-gradient-to-b from-[#b68a3c] to-[#4d3517]" />
+            <div className="absolute bottom-24 left-[20%] text-center">
+              <div className="mx-auto h-16 w-9 rounded-full bg-black" />
+              <p className="mt-2 text-[0.6rem] font-black uppercase tracking-[0.14em] text-white/48">Bowler</p>
+            </div>
+            <div className="absolute bottom-20 right-[18%] text-center">
+              <div className="mx-auto h-20 w-10 rounded-full bg-black" />
+              <span className="absolute right-1 top-2 h-20 w-2 rotate-[-28deg] rounded-full bg-gold/70" />
+              <p className="mt-2 text-[0.6rem] font-black uppercase tracking-[0.14em] text-white/48">Batter</p>
+            </div>
+            <motion.div className="absolute bottom-[42%] h-4 w-4 rounded-full bg-crimson shadow-[0_0_20px_rgba(183,25,50,0.9)]" animate={{ left: ballProgress }} transition={{ duration: 0.35, ease: "easeOut" }} />
+            <div className="absolute left-3 right-3 top-3 rounded-[8px] border border-white/10 bg-night/72 p-3 text-center backdrop-blur">
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-white/42">Last ball</p>
+              <p className="font-display text-3xl font-black uppercase text-white">{game.lastPlay || "Ready"}</p>
+            </div>
+          </div>
+        );
+      }
+
+      function KidsArenaButton({ option, onClick }) {
+        const tones = {
+          gold: "border-gold/50 bg-gold/14 text-gold",
+          cyan: "border-cyan/50 bg-cyan/10 text-cyan",
+          crimson: "border-crimson/50 bg-crimson/12 text-crimson",
+        };
+        return (
+          <button type="button" onClick={onClick} className={`min-h-20 rounded-[8px] border p-2 text-center ${tones[option.color] || tones.gold}`}>
+            <span className="block font-display text-2xl font-black uppercase leading-none sm:text-3xl">{option.label}</span>
+            <span className="mt-1 block text-[0.65rem] font-bold uppercase tracking-[0.08em] text-white/58">{option.hint}</span>
+          </button>
+        );
+      }
+
+      function KidsScore({ label, value, highlight }) {
+        return (
+          <div className="rounded-[8px] border border-white/10 bg-white/[0.04] p-3 text-center">
+            <p className="text-[0.62rem] font-black uppercase tracking-[0.16em] text-white/42">{label}</p>
+            <p className={`font-display text-3xl font-black uppercase ${highlight ? "text-gold" : "text-white"}`}>{value}</p>
+          </div>
+        );
+      }
+
+      function KidsHowToCard({ step, role }) {
+        const lines = step === "toss"
+          ? ["Pick Heads or Tails.", "Tap Toss Coin.", "Next choose Batting or Bowling."]
+          : step === "choice"
+            ? ["Batting means score runs.", "Bowling means stop the bot.", "Both games use big tap buttons."]
+            : role === "bat"
+              ? ["Tap Defend for safety.", "Tap Hit for boundaries.", "Tap Big Hit for sixes but more risk."]
+              : ["Tap Straight for control.", "Tap Swing for wickets.", "Tap Surprise for risk and reward."];
+
+        return (
+          <aside className="glass rounded-[8px] p-4 lg:sticky lg:top-24 lg:self-start">
+            <p className="text-xs font-black uppercase tracking-[0.24em] text-cyan">How to play</p>
+            <h2 className="mt-2 font-display text-3xl font-black uppercase text-white">No keyboard needed</h2>
+            <div className="mt-4 grid gap-2">
+              {lines.map((line, index) => (
+                <div key={line} className="flex gap-3 rounded-[8px] border border-white/10 bg-white/[0.035] p-3">
+                  <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-gold font-black text-night">{index + 1}</span>
+                  <p className="text-sm font-semibold leading-6 text-white/68">{line}</p>
+                </div>
+              ))}
+            </div>
+          </aside>
         );
       }
 
