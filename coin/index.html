@@ -971,8 +971,8 @@
         return (
           <main className="page-grain min-h-screen bg-night">
             <HeroSection />
-            <CricHeroesSection />
             <LiveMatchIntelSection />
+            <CricHeroesSection />
             <Footer />
           </main>
         );
@@ -1100,9 +1100,9 @@
         const navigate = useNavigate();
         const location = useLocation();
 
-        const scrollToTeamHub = () => {
+        const scrollToLiveIntel = () => {
           const scroll = () =>
-            document.getElementById("team-hub")?.scrollIntoView({ behavior: "smooth", block: "start" });
+            document.getElementById("live-intel")?.scrollIntoView({ behavior: "smooth", block: "start" });
           if (location.pathname !== "/") {
             navigate("/");
             window.setTimeout(scroll, 120);
@@ -1166,11 +1166,11 @@
                 </button>
                 <button
                   type="button"
-                  onClick={scrollToTeamHub}
+                  onClick={scrollToLiveIntel}
                   className="inline-flex min-h-14 items-center justify-center gap-3 rounded-full border border-gold/35 bg-white/8 px-7 text-sm font-black uppercase tracking-[0.18em] text-white backdrop-blur-xl transition hover:border-gold hover:bg-gold/10 hover:text-gold"
-                  aria-label="View Kurukshetra Warriors team info"
+                  aria-label="View live Kurukshetra Warriors match updates"
                 >
-                  Warriors Info <Icon.ChevronDown size={19} />
+                  Live Updates <Icon.ChevronDown size={19} />
                 </button>
               </div>
             </Reveal>
@@ -1198,33 +1198,58 @@
       }
 
       function FeaturedMatchCard() {
+        const { loading, data } = useLiveCricketFeed();
+        const latestMatch = data.matches?.[0];
+        const topPlayer = data.players?.find((player) => player.performance?.awards > 0) || data.players?.[0];
+        const topRival = data.opponents?.[0];
+
         return (
           <motion.aside
             className="glass relative mx-auto mt-6 w-full max-w-sm rounded-[8px] p-5 lg:ml-auto lg:mt-48"
             initial={{ opacity: 0, y: 36, filter: "blur(10px)" }}
             animate={{ opacity: 1, y: [0, -10, 0], filter: "blur(0px)" }}
             transition={{ opacity: { duration: 0.8, delay: 1.2 }, y: { duration: 7, repeat: Infinity, ease: "easeInOut" } }}
-            aria-label="Featured community match preview"
+            aria-label="Live CricHeroes match and player preview"
           >
             <div className="mb-5 flex items-center justify-between">
               <p className="text-[0.68rem] font-black uppercase tracking-[0.24em] text-gold">
-                Featured Community Match
+                Top Live Dashboard
               </p>
-              <span className="flex items-center gap-2 rounded-full border border-crimson/45 bg-crimson/12 px-3 py-1 text-[0.62rem] font-black uppercase tracking-[0.16em] text-white/80">
-                <span className="h-2 w-2 rounded-full bg-crimson shadow-[0_0_12px_rgba(183,25,50,0.9)]" />
-                Archive
+              <span className="flex items-center gap-2 rounded-full border border-gold/45 bg-gold/12 px-3 py-1 text-[0.62rem] font-black uppercase tracking-[0.16em] text-gold">
+                <span className="h-2 w-2 rounded-full bg-gold shadow-[0_0_12px_rgba(244,185,66,0.9)]" />
+                {loading ? "Syncing" : "CricHeroes"}
               </span>
             </div>
 
-            <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3">
-              <TeamScore initials="KW" team="Kurukshetra Warriors" score="233/7" />
-              <span className="font-display text-xl font-black text-white/40">VS</span>
-              <TeamScore initials="DS" team="Divino Strikers" score="221/9" align="right" />
-            </div>
+            {latestMatch ? (
+              <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3">
+                <TeamScore initials="KW" team={data.team?.name || "Kurukshetra Warriors"} score={latestMatch.ourScore} />
+                <span className="font-display text-xl font-black text-white/40">VS</span>
+                <TeamScore initials={initialsFromName(latestMatch.opponent)} team={latestMatch.opponent} score={latestMatch.opponentScore} align="right" />
+              </div>
+            ) : (
+              <div className="rounded-[8px] border border-gold/18 bg-night/55 p-4">
+                <p className="font-display text-3xl font-black uppercase text-white">CricHeroes feed ready</p>
+                <p className="mt-2 text-sm text-white/62">Upload the latest data file to show match updates here.</p>
+              </div>
+            )}
 
-            <div className="mt-5 rounded-[8px] border border-gold/18 bg-night/55 p-4">
-              <p className="font-display text-2xl font-black uppercase text-white">Warriors won by 12 runs</p>
-              <p className="mt-2 text-sm text-white/62">Player of the match: Kurukshetra Warriors standout performer</p>
+            <div className="mt-5 grid gap-3">
+              <HeroLiveTile
+                label="Match Updates"
+                title={latestMatch?.resultText || "Waiting for latest score"}
+                detail={latestMatch ? `${formatFeedDate(latestMatch.date)} - ${latestMatch.venue || latestMatch.city || "CricHeroes"}` : "Sync data/crickuru-live.json"}
+              />
+              <HeroLiveTile
+                label="Player Tracker"
+                title={topPlayer?.name || "Warriors roster"}
+                detail={topPlayer?.badges?.slice(0, 3).join(" / ") || "Badges update from synced performance"}
+              />
+              <HeroLiveTile
+                label="Rival Form"
+                title={topRival?.name || "Opponent teams"}
+                detail={topRival ? `${topRival.lastResult} - ${topRival.lastScore || "score pending"}` : "Opponent cards update after sync"}
+              />
             </div>
             <a
               href={CricLinks.matches}
@@ -1235,6 +1260,16 @@
               Open Matches <Icon.ExternalLink size={16} />
             </a>
           </motion.aside>
+        );
+      }
+
+      function HeroLiveTile({ label, title, detail }) {
+        return (
+          <div className="rounded-[8px] border border-white/10 bg-night/55 p-3">
+            <p className="text-[0.62rem] font-black uppercase tracking-[0.18em] text-cyan">{label}</p>
+            <p className="mt-1 font-display text-2xl font-black uppercase leading-none text-white">{title}</p>
+            <p className="mt-2 text-xs font-semibold leading-5 text-white/55">{detail}</p>
+          </div>
         );
       }
 
