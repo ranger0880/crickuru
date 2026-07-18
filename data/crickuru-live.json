@@ -1,0 +1,3038 @@
+{
+  "schemaVersion": 1,
+  "source": "CricHeroes public team pages",
+  "syncedAt": "2026-07-18T03:27:57.437Z",
+  "team": {
+    "id": 8626734,
+    "name": "Kurukshetra Warriors",
+    "logo": "https://media.cricheroes.in/team_logo/1762512503647_wRP4JMDmyQMi.jpg",
+    "city": "Greater Noida",
+    "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors",
+    "matchesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
+    "membersUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/members"
+  },
+  "summary": {
+    "matches": 12,
+    "wins": 3,
+    "losses": 9,
+    "winRate": 25,
+    "latestResult": "Kurukshetra Warriors won by 14 runs",
+    "latestOpponent": "Fabulous XI"
+  },
+  "matches": [
+    {
+      "id": 26132337,
+      "status": "past",
+      "date": "2026-07-15T00:56:42.000Z",
+      "matchType": "Limited Overs",
+      "ballType": "TENNIS",
+      "overs": 20,
+      "venue": "Mid On Cricket Ground",
+      "city": "Greater Noida",
+      "opponentId": 11466367,
+      "opponent": "Fabulous XI",
+      "opponentLogo": "https://media.cricheroes.in/team_logo/1772783471899_CeW7kbynwAWZ.jpeg",
+      "ourScore": "269/6",
+      "opponentScore": "255/10",
+      "ourRunRate": "13.45",
+      "opponentRunRate": "13.42",
+      "result": "win",
+      "resultText": "Kurukshetra Warriors won by 14 runs",
+      "toss": "Fabulous XI won the toss and elected to field",
+      "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
+      "awards": {
+        "playerOfMatch": 5823563,
+        "fielderOfMatch": 9382549,
+        "bestBatter": 28790413,
+        "bestBowler": 9382549
+      }
+    },
+    {
+      "id": 25214310,
+      "status": "past",
+      "date": "2026-06-02T01:03:10.000Z",
+      "matchType": "Limited Overs",
+      "ballType": "TENNIS",
+      "overs": 20,
+      "venue": "M2 Cricket Ground By Daksh",
+      "city": "Greater Noida",
+      "opponentId": 8163475,
+      "opponent": "Divino Dominators",
+      "opponentLogo": "https://media.cricheroes.in/team_logo/1738502698417_Ei9MbOG4dL03.jpeg",
+      "ourScore": "229/10",
+      "opponentScore": "232/7",
+      "ourRunRate": "13.74",
+      "opponentRunRate": "13.78",
+      "result": "loss",
+      "resultText": "Divino Dominators won by 3 wickets",
+      "toss": "Kurukshetra Warriors won the toss and elected to bat",
+      "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
+      "awards": {
+        "playerOfMatch": 11536802,
+        "fielderOfMatch": 6818401,
+        "bestBatter": 11536802,
+        "bestBowler": 6818401
+      }
+    },
+    {
+      "id": 24878263,
+      "status": "past",
+      "date": "2026-05-22T15:13:00.000Z",
+      "matchType": "Limited Overs",
+      "ballType": "TENNIS",
+      "overs": 20,
+      "venue": "PlayZone - MasterBlaster (Greater Noida)",
+      "city": "Greater Noida",
+      "opponentId": 12274222,
+      "opponent": "The Core XI",
+      "opponentLogo": "https://media.cricheroes.in/team_logo/1769750343315_XAojF4f4I2XS.jpg",
+      "ourScore": "162/10",
+      "opponentScore": "249/8",
+      "ourRunRate": "9.72",
+      "opponentRunRate": "12.45",
+      "result": "loss",
+      "resultText": "The Core XI won by 87 runs",
+      "toss": "The Core XI won the toss and elected to bat",
+      "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
+      "awards": {
+        "playerOfMatch": 14689673,
+        "fielderOfMatch": 5584447,
+        "bestBatter": 14689673,
+        "bestBowler": 21511769
+      }
+    },
+    {
+      "id": 23817201,
+      "status": "past",
+      "date": "2026-04-10T01:43:22.000Z",
+      "matchType": "Limited Overs",
+      "ballType": "TENNIS",
+      "overs": 18,
+      "venue": "LEGEND 2 By KUNDAN",
+      "city": "Greater Noida",
+      "opponentId": 12081810,
+      "opponent": "Elite warriors 11",
+      "opponentLogo": "https://media.cricheroes.in/team_logo/1768485003790_6dq5EJWHvsG7.jpeg",
+      "ourScore": "145/10",
+      "opponentScore": "164/9",
+      "ourRunRate": "8.61",
+      "opponentRunRate": "9.11",
+      "result": "loss",
+      "resultText": "Elite warriors 11 won by 19 runs",
+      "toss": "Elite warriors 11 won the toss and elected to bat",
+      "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
+      "awards": {
+        "playerOfMatch": 6197041,
+        "fielderOfMatch": 0,
+        "bestBatter": 42908623,
+        "bestBowler": 34183562
+      }
+    },
+    {
+      "id": 23554204,
+      "status": "past",
+      "date": "2026-04-01T01:46:12.000Z",
+      "matchType": "Limited Overs",
+      "ballType": "TENNIS",
+      "overs": 20,
+      "venue": "LEGEND 3 By KUNDAN",
+      "city": "Greater Noida",
+      "opponentId": 2899173,
+      "opponent": "Star Sport Cricket Club",
+      "opponentLogo": "https://media.cricheroes.in/team_logo/1729965513809_5gJkdPobgZlN.jpeg",
+      "ourScore": "195/10",
+      "opponentScore": "200/6",
+      "ourRunRate": "10.54",
+      "opponentRunRate": "13.19",
+      "result": "loss",
+      "resultText": "Star Sport Cricket Club won by 4 wickets",
+      "toss": "Star Sport Cricket Club won the toss and elected to field",
+      "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
+      "awards": {
+        "playerOfMatch": 7993637,
+        "fielderOfMatch": 0,
+        "bestBatter": 7993637,
+        "bestBowler": 28685755
+      }
+    },
+    {
+      "id": 23378722,
+      "status": "past",
+      "date": "2026-03-25T01:26:01.000Z",
+      "matchType": "Limited Overs",
+      "ballType": "TENNIS",
+      "overs": 20,
+      "venue": "LEGEND 3 By KUNDAN",
+      "city": "Greater Noida",
+      "opponentId": 11199619,
+      "opponent": "Ace Power XI",
+      "opponentLogo": "https://media.cricheroes.in/team_logo/1761913880117_xVJWgIFRW4kk.jpeg",
+      "ourScore": "233/7",
+      "opponentScore": "234/5",
+      "ourRunRate": "11.65",
+      "opponentRunRate": "11.90",
+      "result": "loss",
+      "resultText": "Ace Power XI won by 5 wickets",
+      "toss": "Ace Power XI won the toss and elected to field",
+      "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
+      "awards": {
+        "playerOfMatch": 42405943,
+        "fielderOfMatch": 0,
+        "bestBatter": 42405943,
+        "bestBowler": 42429999
+      }
+    },
+    {
+      "id": 23143469,
+      "status": "past",
+      "date": "2026-03-18T01:29:13.000Z",
+      "matchType": "Limited Overs",
+      "ballType": "TENNIS",
+      "overs": 20,
+      "venue": "M2 Cricket Ground By Daksh (Greater Noida)",
+      "city": "Greater Noida",
+      "opponentId": 10577831,
+      "opponent": "Gully Cricket Club (GCC)",
+      "opponentLogo": "https://media.cricheroes.in/team_logo/1776763349315_vu2cCKbivrYL.jpeg",
+      "ourScore": "269/3",
+      "opponentScore": "266/10",
+      "ourRunRate": "18.55",
+      "opponentRunRate": "13.76",
+      "result": "win",
+      "resultText": "Kurukshetra Warriors won by 7 wickets",
+      "toss": "Gully Cricket Club (GCC) won the toss and elected to bat",
+      "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
+      "awards": {
+        "playerOfMatch": 28790413,
+        "fielderOfMatch": 0,
+        "bestBatter": 28790413,
+        "bestBowler": 7367912
+      }
+    },
+    {
+      "id": 23084704,
+      "status": "past",
+      "date": "2026-03-14T01:50:46.000Z",
+      "matchType": "Limited Overs",
+      "ballType": "TENNIS",
+      "overs": 20,
+      "venue": "Legend Cricket Ground 1 (Greater Noida)",
+      "city": "Greater Noida",
+      "opponentId": 12604411,
+      "opponent": "Strikers 11",
+      "opponentLogo": "https://media.cricheroes.in/default/teamintital/S.png",
+      "ourScore": "181/7",
+      "opponentScore": "185/7",
+      "ourRunRate": "9.05",
+      "opponentRunRate": "10.37",
+      "result": "loss",
+      "resultText": "Strikers 11 won by 3 wickets",
+      "toss": "Kurukshetra Warriors won the toss and elected to bat",
+      "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
+      "awards": {
+        "playerOfMatch": 4530389,
+        "fielderOfMatch": 0,
+        "bestBatter": 45765702,
+        "bestBowler": 34183562
+      }
+    },
+    {
+      "id": 23046803,
+      "status": "past",
+      "date": "2026-03-11T01:43:51.000Z",
+      "matchType": "Limited Overs",
+      "ballType": "TENNIS",
+      "overs": 20,
+      "venue": "M2 Cricket Ground By Daksh",
+      "city": "Greater Noida",
+      "opponentId": 7838698,
+      "opponent": "Techie Cricket Club",
+      "opponentLogo": "https://media.cricheroes.in/team_logo/1728061382026_agYaDjN6t6NG.jpeg",
+      "ourScore": "277/8",
+      "opponentScore": "279/5",
+      "ourRunRate": "13.85",
+      "opponentRunRate": "14.68",
+      "result": "loss",
+      "resultText": "Techie Cricket Club won by 4 wickets",
+      "toss": "Kurukshetra Warriors won the toss and elected to bat",
+      "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
+      "awards": {
+        "playerOfMatch": 10287744,
+        "fielderOfMatch": 0,
+        "bestBatter": 10287744,
+        "bestBowler": 145048
+      }
+    },
+    {
+      "id": 22937264,
+      "status": "past",
+      "date": "2026-03-07T03:07:52.000Z",
+      "matchType": "Limited Overs",
+      "ballType": "TENNIS",
+      "overs": 10,
+      "venue": "M2 Cricket Ground By Daksh (Greater Noida)",
+      "city": "Greater Noida",
+      "opponentId": 385484,
+      "opponent": "MIGHTY HEROES",
+      "opponentLogo": "https://media.cricheroes.in/team_logo/1630331659672_6RwS87ubP4We.jpeg",
+      "ourScore": "149/1",
+      "opponentScore": "146/3",
+      "ourRunRate": "15.68",
+      "opponentRunRate": "14.60",
+      "result": "win",
+      "resultText": "Kurukshetra Warriors won by 9 wickets",
+      "toss": "MIGHTY HEROES won the toss and elected to bat",
+      "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
+      "awards": {
+        "playerOfMatch": 1257282,
+        "fielderOfMatch": 0,
+        "bestBatter": 1257282,
+        "bestBowler": 25455261
+      }
+    },
+    {
+      "id": 22865500,
+      "status": "past",
+      "date": "2026-03-07T01:37:27.000Z",
+      "matchType": "Limited Overs",
+      "ballType": "TENNIS",
+      "overs": 20,
+      "venue": "M2 Cricket Ground By Daksh (Greater Noida)",
+      "city": "Greater Noida",
+      "opponentId": 385484,
+      "opponent": "MIGHTY HEROES",
+      "opponentLogo": "https://media.cricheroes.in/team_logo/1630331659672_6RwS87ubP4We.jpeg",
+      "ourScore": "99/10",
+      "opponentScore": "105/2",
+      "ourRunRate": "8.03",
+      "opponentRunRate": "9.69",
+      "result": "loss",
+      "resultText": "MIGHTY HEROES won by 8 wickets",
+      "toss": "Kurukshetra Warriors won the toss and elected to bat",
+      "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
+      "awards": {
+        "playerOfMatch": 2798901,
+        "fielderOfMatch": 0,
+        "bestBatter": 3780112,
+        "bestBowler": 2798901
+      }
+    },
+    {
+      "id": 22742510,
+      "status": "past",
+      "date": "2026-02-28T01:41:56.000Z",
+      "matchType": "Limited Overs",
+      "ballType": "TENNIS",
+      "overs": 20,
+      "venue": "County cricket Complex(CQ)",
+      "city": "Greater Noida",
+      "opponentId": 324638,
+      "opponent": "Ace Panthers",
+      "opponentLogo": "https://media.cricheroes.in/team_logo/1559651159219_jSlSG619DJTt.jpg",
+      "ourScore": "118/8",
+      "opponentScore": "194/9",
+      "ourRunRate": "7.96",
+      "opponentRunRate": "9.70",
+      "result": "loss",
+      "resultText": "Ace Panthers won by 76 runs",
+      "toss": "Ace Panthers won the toss and elected to bat",
+      "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
+      "awards": {
+        "playerOfMatch": 2786229,
+        "fielderOfMatch": 0,
+        "bestBatter": 2934634,
+        "bestBowler": 2786229
+      }
+    }
+  ],
+  "players": [
+    {
+      "id": 28790413,
+      "name": "Praveen Pratapgarh",
+      "photo": "https://media.cricheroes.in/user_profile/1780864997429_9o5IzA0i3jGm.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Destroyer",
+      "batterCategoryInfo": "One who mostly deals in boundaries. Tap here to know more.",
+      "bowlerCategory": "Economist",
+      "bowlerCategoryInfo": "This bowler delivers tight spells and seizes wickets at regular intervals.",
+      "badges": [
+        "Form Batter",
+        "Match Winner",
+        "Pro",
+        "Verified",
+        "Destroyer",
+        "Economist"
+      ],
+      "performance": {
+        "playerOfMatch": 1,
+        "fielderOfMatch": 0,
+        "bestBatter": 2,
+        "bestBowler": 0,
+        "recentAwards": [
+          {
+            "label": "Best Batter",
+            "matchId": 26132337,
+            "opponent": "Fabulous XI",
+            "date": "2026-07-15T00:56:42.000Z"
+          },
+          {
+            "label": "Player of the Match",
+            "matchId": 23143469,
+            "opponent": "Gully Cricket Club (GCC)",
+            "date": "2026-03-18T01:29:13.000Z"
+          },
+          {
+            "label": "Best Batter",
+            "matchId": 23143469,
+            "opponent": "Gully Cricket Club (GCC)",
+            "date": "2026-03-18T01:29:13.000Z"
+          }
+        ],
+        "awards": 3
+      }
+    },
+    {
+      "id": 6818401,
+      "name": "Kunvar prashant",
+      "photo": "https://media.cricheroes.in/user_profile/1738040185345_44AWc8yYQ3Xd.jpeg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Hard Hitter",
+      "batterCategoryInfo": "One who deals in boundaries more than singles. Tap here to know more.",
+      "bowlerCategory": "Economist",
+      "bowlerCategoryInfo": "This bowler delivers tight spells and seizes wickets at regular intervals.",
+      "badges": [
+        "Strike Bowler",
+        "Pro",
+        "Verified",
+        "Hard Hitter",
+        "Economist"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 1,
+        "bestBatter": 0,
+        "bestBowler": 1,
+        "recentAwards": [
+          {
+            "label": "Fielder of the Match",
+            "matchId": 25214310,
+            "opponent": "Divino Dominators",
+            "date": "2026-06-02T01:03:10.000Z"
+          },
+          {
+            "label": "Best Bowler",
+            "matchId": 25214310,
+            "opponent": "Divino Dominators",
+            "date": "2026-06-02T01:03:10.000Z"
+          }
+        ],
+        "awards": 2
+      }
+    },
+    {
+      "id": 34183562,
+      "name": "Rohit Saini",
+      "photo": "https://media.cricheroes.in/user_profile/1738946054649_ElVa3yXH1zkQ.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "Classicist",
+      "batterCategoryInfo": "One who likes to rotate strikes more than scoring big shots. Tap here to know more.",
+      "bowlerCategory": "Wildcard",
+      "bowlerCategoryInfo": "This bowler fearlessly trading runs for wickets, one can take a chance on this bowler.",
+      "badges": [
+        "Strike Bowler",
+        "Verified",
+        "Classicist",
+        "Wildcard"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 2,
+        "recentAwards": [
+          {
+            "label": "Best Bowler",
+            "matchId": 23817201,
+            "opponent": "Elite warriors 11",
+            "date": "2026-04-10T01:43:22.000Z"
+          },
+          {
+            "label": "Best Bowler",
+            "matchId": 23084704,
+            "opponent": "Strikers 11",
+            "date": "2026-03-14T01:50:46.000Z"
+          }
+        ],
+        "awards": 2
+      }
+    },
+    {
+      "id": 1257282,
+      "name": "Sunny Bansal",
+      "photo": "https://media.cricheroes.in/user_profile/1768059656318_FcDWz8vhJEUM.jpeg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Hard Hitter",
+      "batterCategoryInfo": "One who deals in boundaries more than singles. Tap here to know more.",
+      "bowlerCategory": "Aspirant",
+      "bowlerCategoryInfo": "This bowler may carry incredible potential and skills but may need more game time.",
+      "badges": [
+        "Form Batter",
+        "Match Winner",
+        "Pro",
+        "Verified",
+        "Hard Hitter",
+        "Aspirant"
+      ],
+      "performance": {
+        "playerOfMatch": 1,
+        "fielderOfMatch": 0,
+        "bestBatter": 1,
+        "bestBowler": 0,
+        "recentAwards": [
+          {
+            "label": "Player of the Match",
+            "matchId": 22937264,
+            "opponent": "MIGHTY HEROES",
+            "date": "2026-03-07T03:07:52.000Z"
+          },
+          {
+            "label": "Best Batter",
+            "matchId": 22937264,
+            "opponent": "MIGHTY HEROES",
+            "date": "2026-03-07T03:07:52.000Z"
+          }
+        ],
+        "awards": 2
+      }
+    },
+    {
+      "id": 45765702,
+      "name": "Amit Kumar",
+      "photo": "https://media.cricheroes.in/user_profile/default_user_profile_m.png?v=45765702",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "",
+      "batterCategoryInfo": "",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Form Batter",
+        "Pro",
+        "Verified"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 1,
+        "bestBowler": 0,
+        "recentAwards": [
+          {
+            "label": "Best Batter",
+            "matchId": 23084704,
+            "opponent": "Strikers 11",
+            "date": "2026-03-14T01:50:46.000Z"
+          }
+        ],
+        "awards": 1
+      }
+    },
+    {
+      "id": 25455261,
+      "name": "Deepak Rajput",
+      "photo": "https://media.cricheroes.in/user_profile/1774534535600_ZmitULCbzuLQ.jpeg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Destroyer",
+      "batterCategoryInfo": "One who mostly deals in boundaries. Tap here to know more.",
+      "bowlerCategory": "Economist",
+      "bowlerCategoryInfo": "This bowler delivers tight spells and seizes wickets at regular intervals.",
+      "badges": [
+        "Strike Bowler",
+        "Pro",
+        "Verified",
+        "Destroyer",
+        "Economist"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 1,
+        "recentAwards": [
+          {
+            "label": "Best Bowler",
+            "matchId": 22937264,
+            "opponent": "MIGHTY HEROES",
+            "date": "2026-03-07T03:07:52.000Z"
+          }
+        ],
+        "awards": 1
+      }
+    },
+    {
+      "id": 5584447,
+      "name": "Pushpendra Singh",
+      "photo": "https://media.cricheroes.in/user_profile/1784274579140_yztlEesJF4F4.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Hard Hitter",
+      "batterCategoryInfo": "One who deals in boundaries more than singles. Tap here to know more.",
+      "bowlerCategory": "Economist",
+      "bowlerCategoryInfo": "This bowler delivers tight spells and seizes wickets at regular intervals.",
+      "badges": [
+        "Pro",
+        "Verified",
+        "Hard Hitter",
+        "Economist"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 1,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [
+          {
+            "label": "Fielder of the Match",
+            "matchId": 24878263,
+            "opponent": "The Core XI",
+            "date": "2026-05-22T15:13:00.000Z"
+          }
+        ],
+        "awards": 1
+      }
+    },
+    {
+      "id": 7367912,
+      "name": "Sagar",
+      "photo": "https://media.cricheroes.in/user_profile/1738834110194_IpLNLr7RBhuc.jpeg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Classicist",
+      "batterCategoryInfo": "One who likes to rotate strikes more than scoring big shots. Tap here to know more.",
+      "bowlerCategory": "Wildcard",
+      "bowlerCategoryInfo": "This bowler fearlessly trading runs for wickets, one can take a chance on this bowler.",
+      "badges": [
+        "Strike Bowler",
+        "Pro",
+        "Verified",
+        "Classicist",
+        "Wildcard"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 1,
+        "recentAwards": [
+          {
+            "label": "Best Bowler",
+            "matchId": 23143469,
+            "opponent": "Gully Cricket Club (GCC)",
+            "date": "2026-03-18T01:29:13.000Z"
+          }
+        ],
+        "awards": 1
+      }
+    },
+    {
+      "id": 42908623,
+      "name": "Santino Bathla",
+      "photo": "https://media.cricheroes.in/user_profile/1759047526994_T1MRvZaBCaLj.jpeg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "",
+      "batterCategoryInfo": "",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Form Batter",
+        "Verified"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 1,
+        "bestBowler": 0,
+        "recentAwards": [
+          {
+            "label": "Best Batter",
+            "matchId": 23817201,
+            "opponent": "Elite warriors 11",
+            "date": "2026-04-10T01:43:22.000Z"
+          }
+        ],
+        "awards": 1
+      }
+    },
+    {
+      "id": 5823563,
+      "name": "Vivek S",
+      "photo": "https://media.cricheroes.in/user_profile/1779329221637_sAQlz8HY2Dv7.jpeg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Destroyer",
+      "batterCategoryInfo": "One who mostly deals in boundaries. Tap here to know more.",
+      "bowlerCategory": "Wildcard",
+      "bowlerCategoryInfo": "This bowler fearlessly trading runs for wickets, one can take a chance on this bowler.",
+      "badges": [
+        "Match Winner",
+        "Pro",
+        "Verified",
+        "Destroyer",
+        "Wildcard"
+      ],
+      "performance": {
+        "playerOfMatch": 1,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [
+          {
+            "label": "Player of the Match",
+            "matchId": 26132337,
+            "opponent": "Fabulous XI",
+            "date": "2026-07-15T00:56:42.000Z"
+          }
+        ],
+        "awards": 1
+      }
+    },
+    {
+      "id": 29139731,
+      "name": "Ankit Kulshreshtha",
+      "photo": "https://media.cricheroes.in/user_profile/1740294522665_Df5f30t9RYkX.jpeg",
+      "skill": "ALL",
+      "isVerified": true,
+      "isCaptain": true,
+      "isAdmin": true,
+      "isPro": true,
+      "batterCategory": "Accumulator",
+      "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
+      "bowlerCategory": "Aspirant",
+      "bowlerCategoryInfo": "This bowler may carry incredible potential and skills but may need more game time.",
+      "badges": [
+        "Captain",
+        "Pro",
+        "Verified",
+        "Accumulator",
+        "Aspirant"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 24060649,
+      "name": "(JATIN 18 )",
+      "photo": "https://media.cricheroes.in/user_profile/1779929755336_a5Q8leoGXzHO.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "Destroyer",
+      "batterCategoryInfo": "One who mostly deals in boundaries. Tap here to know more.",
+      "bowlerCategory": "Aspirant",
+      "bowlerCategoryInfo": "This bowler may carry incredible potential and skills but may need more game time.",
+      "badges": [
+        "Verified",
+        "Destroyer",
+        "Aspirant"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 14456617,
+      "name": "Abhinav S",
+      "photo": "https://media.cricheroes.in/user_profile/1767670821678_9qV9ACudTzjj.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Hard Hitter",
+      "batterCategoryInfo": "One who deals in boundaries more than singles. Tap here to know more.",
+      "bowlerCategory": "Aspirant",
+      "bowlerCategoryInfo": "This bowler may carry incredible potential and skills but may need more game time.",
+      "badges": [
+        "Pro",
+        "Verified",
+        "Hard Hitter",
+        "Aspirant"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 660901,
+      "name": "Abhishek",
+      "photo": "https://media.cricheroes.in/user_profile/1738888711123_OthCOxWBTH5P.jpeg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Steady Batter",
+      "batterCategoryInfo": "One who likes to build innings slowly and hold on to one end. Tap here to know more.",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Pro",
+        "Verified",
+        "Steady Batter"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 6670236,
+      "name": "Abhishek Tyagi",
+      "photo": "https://media.cricheroes.in/user_profile/1757177598329_KAgpnvFQxPsd.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Accumulator",
+      "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Pro",
+        "Verified",
+        "Accumulator"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 17290794,
+      "name": "AbhiT9",
+      "photo": "https://media.cricheroes.in/user_profile/1780239095065_KpRTRvXaKw7R.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Hard Hitter",
+      "batterCategoryInfo": "One who deals in boundaries more than singles. Tap here to know more.",
+      "bowlerCategory": "Wildcard",
+      "bowlerCategoryInfo": "This bowler fearlessly trading runs for wickets, one can take a chance on this bowler.",
+      "badges": [
+        "Pro",
+        "Verified",
+        "Hard Hitter",
+        "Wildcard"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 32839075,
+      "name": "Aditya Kapoor",
+      "photo": "https://media.cricheroes.in/user_profile/1760225113511_xXdpxXWOzF5d.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Accumulator",
+      "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
+      "bowlerCategory": "Wildcard",
+      "bowlerCategoryInfo": "This bowler fearlessly trading runs for wickets, one can take a chance on this bowler.",
+      "badges": [
+        "Pro",
+        "Verified",
+        "Accumulator",
+        "Wildcard"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 35922775,
+      "name": "Akash Mehra",
+      "photo": "https://media.cricheroes.in/default/user_profile.png",
+      "skill": "",
+      "isVerified": false,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "",
+      "batterCategoryInfo": "",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 8770695,
+      "name": "Aman 26",
+      "photo": "https://media.cricheroes.in/user_profile/1750647894024_1SYaJrdU2hQe.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Destroyer",
+      "batterCategoryInfo": "One who mostly deals in boundaries. Tap here to know more.",
+      "bowlerCategory": "Aspirant",
+      "bowlerCategoryInfo": "This bowler may carry incredible potential and skills but may need more game time.",
+      "badges": [
+        "Pro",
+        "Verified",
+        "Destroyer",
+        "Aspirant"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 32339035,
+      "name": "Anand Divino",
+      "photo": "https://media.cricheroes.in/default/user_profile.png",
+      "skill": "BAT",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "",
+      "batterCategoryInfo": "",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Verified"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 32445623,
+      "name": "Anil Kumar",
+      "photo": "https://media.cricheroes.in/user_profile/1729962018753_6VZvwLIXJ014.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "Destroyer",
+      "batterCategoryInfo": "One who mostly deals in boundaries. Tap here to know more.",
+      "bowlerCategory": "Wildcard",
+      "bowlerCategoryInfo": "This bowler fearlessly trading runs for wickets, one can take a chance on this bowler.",
+      "badges": [
+        "Verified",
+        "Destroyer",
+        "Wildcard"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 16794809,
+      "name": "Ankur Saxena",
+      "photo": "https://media.cricheroes.in/user_profile/1711766173439_OTGrt8k9LiBq.jpeg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Classicist",
+      "batterCategoryInfo": "One who likes to rotate strikes more than scoring big shots. Tap here to know more.",
+      "bowlerCategory": "Aspirant",
+      "bowlerCategoryInfo": "This bowler may carry incredible potential and skills but may need more game time.",
+      "badges": [
+        "Pro",
+        "Verified",
+        "Classicist",
+        "Aspirant"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 35924851,
+      "name": "Anshul",
+      "photo": "https://media.cricheroes.in/user_profile/1739558117690_vBGDijFpx8Qy.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "Classicist",
+      "batterCategoryInfo": "One who likes to rotate strikes more than scoring big shots. Tap here to know more.",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Verified",
+        "Classicist"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 16841846,
+      "name": "Anuj Kamboj",
+      "photo": "https://media.cricheroes.in/user_profile/1668321396576_Ql76kFA41THz.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "",
+      "batterCategoryInfo": "",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Verified"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 35520834,
+      "name": "Anurag Snooker Ace Divino",
+      "photo": "https://media.cricheroes.in/default/user_profile.png",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "",
+      "batterCategoryInfo": "",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Verified"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 32339142,
+      "name": "Arjun Singh",
+      "photo": "https://media.cricheroes.in/user_profile/1760430583261_cYxBxKy6aRMv.jpeg",
+      "skill": "BOWL",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "Accumulator",
+      "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
+      "bowlerCategory": "Aspirant",
+      "bowlerCategoryInfo": "This bowler may carry incredible potential and skills but may need more game time.",
+      "badges": [
+        "Verified",
+        "Accumulator",
+        "Aspirant"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 35521864,
+      "name": "Arvind",
+      "photo": "https://media.cricheroes.in/default/user_profile.png",
+      "skill": "ALL",
+      "isVerified": false,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "",
+      "batterCategoryInfo": "",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 32339143,
+      "name": "Bhupender Singh",
+      "photo": "https://media.cricheroes.in/user_profile/1784054816929_zcjCDYqrj823.jpg",
+      "skill": "ALL",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": true,
+      "isPro": true,
+      "batterCategory": "Classicist",
+      "batterCategoryInfo": "One who likes to rotate strikes more than scoring big shots. Tap here to know more.",
+      "bowlerCategory": "Wildcard",
+      "bowlerCategoryInfo": "This bowler fearlessly trading runs for wickets, one can take a chance on this bowler.",
+      "badges": [
+        "Pro",
+        "Verified",
+        "Classicist",
+        "Wildcard"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 28790353,
+      "name": "Bikesh Singh",
+      "photo": "https://media.cricheroes.in/user_profile/1739886934749_o2KJ9tj3I5i9.jpeg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "Hard Hitter",
+      "batterCategoryInfo": "One who deals in boundaries more than singles. Tap here to know more.",
+      "bowlerCategory": "Aspirant",
+      "bowlerCategoryInfo": "This bowler may carry incredible potential and skills but may need more game time.",
+      "badges": [
+        "Verified",
+        "Hard Hitter",
+        "Aspirant"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 42768139,
+      "name": "CA Arvind Sharma",
+      "photo": "https://media.cricheroes.in/user_profile/1760441026186_0usugnyiZL1l.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Destroyer",
+      "batterCategoryInfo": "One who mostly deals in boundaries. Tap here to know more.",
+      "bowlerCategory": "Aspirant",
+      "bowlerCategoryInfo": "This bowler may carry incredible potential and skills but may need more game time.",
+      "badges": [
+        "Pro",
+        "Verified",
+        "Destroyer",
+        "Aspirant"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 35530566,
+      "name": "Chunky Kanwal",
+      "photo": "https://media.cricheroes.in/user_profile/1737014884239_QSbjjwTGTUhI.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "",
+      "batterCategoryInfo": "",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Verified"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 36678751,
+      "name": "Deepanshu Tyagi",
+      "photo": "https://media.cricheroes.in/user_profile/1738754599486_RkTgIFyzYWw8.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "Accumulator",
+      "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
+      "bowlerCategory": "Aspirant",
+      "bowlerCategoryInfo": "This bowler may carry incredible potential and skills but may need more game time.",
+      "badges": [
+        "Verified",
+        "Accumulator",
+        "Aspirant"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 33842914,
+      "name": "Dheeraj",
+      "photo": "https://media.cricheroes.in/user_profile/1764406973914_MHvZVFSxQodI.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "Steady Batter",
+      "batterCategoryInfo": "One who likes to build innings slowly and hold on to one end. Tap here to know more.",
+      "bowlerCategory": "Aspirant",
+      "bowlerCategoryInfo": "This bowler may carry incredible potential and skills but may need more game time.",
+      "badges": [
+        "Verified",
+        "Steady Batter",
+        "Aspirant"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 36322348,
+      "name": "Digvijay Rautela",
+      "photo": "https://media.cricheroes.in/user_profile/1759599731635_xlWIGUmZ6fSX.jpeg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "Accumulator",
+      "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
+      "bowlerCategory": "Aspirant",
+      "bowlerCategoryInfo": "This bowler may carry incredible potential and skills but may need more game time.",
+      "badges": [
+        "Verified",
+        "Accumulator",
+        "Aspirant"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 42949155,
+      "name": "Dileep Bisht Uncle",
+      "photo": "https://media.cricheroes.in/default/user_profile.png",
+      "skill": "BAT",
+      "isVerified": false,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "",
+      "batterCategoryInfo": "",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 20892696,
+      "name": "Dilip Kumar",
+      "photo": "https://media.cricheroes.in/user_profile/1766403941278_YeMMqV3omT25.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "Hard Hitter",
+      "batterCategoryInfo": "One who deals in boundaries more than singles. Tap here to know more.",
+      "bowlerCategory": "Wildcard",
+      "bowlerCategoryInfo": "This bowler fearlessly trading runs for wickets, one can take a chance on this bowler.",
+      "badges": [
+        "Verified",
+        "Hard Hitter",
+        "Wildcard"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 35520437,
+      "name": "Dr Nitish Yogacharya",
+      "photo": "https://media.cricheroes.in/user_profile/1759194009193_LyQmdOxPPN44.jpg",
+      "skill": "BOWL",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "",
+      "batterCategoryInfo": "",
+      "bowlerCategory": "Aspirant",
+      "bowlerCategoryInfo": "This bowler may carry incredible potential and skills but may need more game time.",
+      "badges": [
+        "Verified",
+        "Aspirant"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 17650224,
+      "name": "Gaurav Bhardwaj",
+      "photo": "https://media.cricheroes.in/default/user_profile.png",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "Accumulator",
+      "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Verified",
+        "Accumulator"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 1205294,
+      "name": "Gaurav Yogi",
+      "photo": "https://media.cricheroes.in/user_profile/1759466264052_Y0HzeNsHNfx3.jpeg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Classicist",
+      "batterCategoryInfo": "One who likes to rotate strikes more than scoring big shots. Tap here to know more.",
+      "bowlerCategory": "Aspirant",
+      "bowlerCategoryInfo": "This bowler may carry incredible potential and skills but may need more game time.",
+      "badges": [
+        "Pro",
+        "Verified",
+        "Classicist",
+        "Aspirant"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 42921491,
+      "name": "Himanshu Patel",
+      "photo": "https://media.cricheroes.in/user_profile/1768118793417_dNWsA4SILGdd.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Accumulator",
+      "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
+      "bowlerCategory": "Aspirant",
+      "bowlerCategoryInfo": "This bowler may carry incredible potential and skills but may need more game time.",
+      "badges": [
+        "Pro",
+        "Verified",
+        "Accumulator",
+        "Aspirant"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 3789993,
+      "name": "jitin",
+      "photo": "https://media.cricheroes.in/user_profile/1762428823607_iEDxDF7oEW2L.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "",
+      "batterCategoryInfo": "",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Verified"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 32952715,
+      "name": "Kamal",
+      "photo": "https://media.cricheroes.in/user_profile/1760668447703_XOqpNucLl1Bf.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Classicist",
+      "batterCategoryInfo": "One who likes to rotate strikes more than scoring big shots. Tap here to know more.",
+      "bowlerCategory": "Aspirant",
+      "bowlerCategoryInfo": "This bowler may carry incredible potential and skills but may need more game time.",
+      "badges": [
+        "Pro",
+        "Verified",
+        "Classicist",
+        "Aspirant"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 36735791,
+      "name": "Kamal Sachdeva",
+      "photo": "https://media.cricheroes.in/user_profile/1740260183356_3aG9l9bpg1dH.jpeg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "",
+      "batterCategoryInfo": "",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Pro",
+        "Verified"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 13677587,
+      "name": "Kuldeep Patwal",
+      "photo": "https://media.cricheroes.in/user_profile/1758255711270_w1MRkDJEvcdn.jpeg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Accumulator",
+      "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
+      "bowlerCategory": "Wildcard",
+      "bowlerCategoryInfo": "This bowler fearlessly trading runs for wickets, one can take a chance on this bowler.",
+      "badges": [
+        "Pro",
+        "Verified",
+        "Accumulator",
+        "Wildcard"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 43325563,
+      "name": "Kundan Sharma",
+      "photo": "https://media.cricheroes.in/user_profile/1760856365065_pt8UhC6FBxa6.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Accumulator",
+      "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Pro",
+        "Verified",
+        "Accumulator"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 27920430,
+      "name": "Manish Kumar",
+      "photo": "https://media.cricheroes.in/default/user_profile.png",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "",
+      "batterCategoryInfo": "",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Verified"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 1170659,
+      "name": "Manvendra",
+      "photo": "https://media.cricheroes.in/user_profile/1740230693514_qwocCmpw72t9.jpeg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "",
+      "batterCategoryInfo": "",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Verified"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 3480929,
+      "name": "Mohit Saini",
+      "photo": "https://media.cricheroes.in/user_profile/1580984904210_yhx3tNl7I6wR.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Accumulator",
+      "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Pro",
+        "Verified",
+        "Accumulator"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 43867977,
+      "name": "Nitesh Danu",
+      "photo": "https://media.cricheroes.in/user_profile/default_user_profile_m.png?v=43867977",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "Hard Hitter",
+      "batterCategoryInfo": "One who deals in boundaries more than singles. Tap here to know more.",
+      "bowlerCategory": "Aspirant",
+      "bowlerCategoryInfo": "This bowler may carry incredible potential and skills but may need more game time.",
+      "badges": [
+        "Verified",
+        "Hard Hitter",
+        "Aspirant"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 14807973,
+      "name": "Nitish Bhardwaj",
+      "photo": "https://media.cricheroes.in/user_profile/1745742748259_pEWQ7NtWRtOG.jpeg",
+      "skill": "BAT,WK",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "Destroyer",
+      "batterCategoryInfo": "One who mostly deals in boundaries. Tap here to know more.",
+      "bowlerCategory": "Aspirant",
+      "bowlerCategoryInfo": "This bowler may carry incredible potential and skills but may need more game time.",
+      "badges": [
+        "Verified",
+        "Destroyer",
+        "Aspirant"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 13004911,
+      "name": "Pranav",
+      "photo": "https://media.cricheroes.in/user_profile/1739197021671_GkJgbJmCegMl.jpeg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "Classicist",
+      "batterCategoryInfo": "One who likes to rotate strikes more than scoring big shots. Tap here to know more.",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Verified",
+        "Classicist"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 13683210,
+      "name": "Pranay",
+      "photo": "https://media.cricheroes.in/default/user_profile.png",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "Hard Hitter",
+      "batterCategoryInfo": "One who deals in boundaries more than singles. Tap here to know more.",
+      "bowlerCategory": "Aspirant",
+      "bowlerCategoryInfo": "This bowler may carry incredible potential and skills but may need more game time.",
+      "badges": [
+        "Verified",
+        "Hard Hitter",
+        "Aspirant"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 36586541,
+      "name": "Rahul Handa",
+      "photo": "https://media.cricheroes.in/user_profile/1760455125263_2Azjo1OfDz2W.jpeg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "Classicist",
+      "batterCategoryInfo": "One who likes to rotate strikes more than scoring big shots. Tap here to know more.",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Verified",
+        "Classicist"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 28272339,
+      "name": "Rishabh Sikka",
+      "photo": "https://media.cricheroes.in/user_profile/1762503515941_J42QqAXZjyc7.jpeg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Classicist",
+      "batterCategoryInfo": "One who likes to rotate strikes more than scoring big shots. Tap here to know more.",
+      "bowlerCategory": "Aspirant",
+      "bowlerCategoryInfo": "This bowler may carry incredible potential and skills but may need more game time.",
+      "badges": [
+        "Pro",
+        "Verified",
+        "Classicist",
+        "Aspirant"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 29990166,
+      "name": "Rohit Nair",
+      "photo": "https://media.cricheroes.in/user_profile/1760201483001_YKs73L8RDf1H.jpeg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Accumulator",
+      "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
+      "bowlerCategory": "Economist",
+      "bowlerCategoryInfo": "This bowler delivers tight spells and seizes wickets at regular intervals.",
+      "badges": [
+        "Pro",
+        "Verified",
+        "Accumulator",
+        "Economist"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 14490405,
+      "name": "Rohit Pathania",
+      "photo": "https://media.cricheroes.in/user_profile/1775648334786_Bk5a4gl8djMV.jpeg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Classicist",
+      "batterCategoryInfo": "One who likes to rotate strikes more than scoring big shots. Tap here to know more.",
+      "bowlerCategory": "Wildcard",
+      "bowlerCategoryInfo": "This bowler fearlessly trading runs for wickets, one can take a chance on this bowler.",
+      "badges": [
+        "Pro",
+        "Verified",
+        "Classicist",
+        "Wildcard"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 38849787,
+      "name": "Rx 100",
+      "photo": "https://media.cricheroes.in/user_profile/1758352451627_hkqCJHTbjYDu.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "Destroyer",
+      "batterCategoryInfo": "One who mostly deals in boundaries. Tap here to know more.",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Verified",
+        "Destroyer"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 22785662,
+      "name": "Sabal Vashishth",
+      "photo": "https://media.cricheroes.in/user_profile/1751521607520_NYVeNS4DuysS.jpeg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Destroyer",
+      "batterCategoryInfo": "One who mostly deals in boundaries. Tap here to know more.",
+      "bowlerCategory": "Wildcard",
+      "bowlerCategoryInfo": "This bowler fearlessly trading runs for wickets, one can take a chance on this bowler.",
+      "badges": [
+        "Pro",
+        "Verified",
+        "Destroyer",
+        "Wildcard"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 43868532,
+      "name": "Sahil Sethi",
+      "photo": "https://media.cricheroes.in/user_profile/default_user_profile_m.png?v=43868532",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "",
+      "batterCategoryInfo": "",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Verified"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 32339036,
+      "name": "Sandeep Kumar Gagneja",
+      "photo": "https://media.cricheroes.in/user_profile/1739172932426_wmDcWZAAXZSB.jpg",
+      "skill": "BOWL",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "Classicist",
+      "batterCategoryInfo": "One who likes to rotate strikes more than scoring big shots. Tap here to know more.",
+      "bowlerCategory": "Aspirant",
+      "bowlerCategoryInfo": "This bowler may carry incredible potential and skills but may need more game time.",
+      "badges": [
+        "Verified",
+        "Classicist",
+        "Aspirant"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 16796807,
+      "name": "Sanjeev Rajput",
+      "photo": "https://media.cricheroes.in/user_profile/1759476844689_Y6wVQLsAElQX.jpeg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Accumulator",
+      "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
+      "bowlerCategory": "Aspirant",
+      "bowlerCategoryInfo": "This bowler may carry incredible potential and skills but may need more game time.",
+      "badges": [
+        "Pro",
+        "Verified",
+        "Accumulator",
+        "Aspirant"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 4756235,
+      "name": "Satish Das",
+      "photo": "https://media.cricheroes.in/user_profile/1755354756884_0DEJMY4MBYQG.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Steady Batter",
+      "batterCategoryInfo": "One who likes to build innings slowly and hold on to one end. Tap here to know more.",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Pro",
+        "Verified",
+        "Steady Batter"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 35928395,
+      "name": "Shashi",
+      "photo": "https://media.cricheroes.in/user_profile/1758229927892_SrKx5KPFGF92.jpeg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "",
+      "batterCategoryInfo": "",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Verified"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 28784704,
+      "name": "Sumant Zutshi",
+      "photo": "https://media.cricheroes.in/user_profile/1737177043642_oMCWh5fExVke.jpg",
+      "skill": "BAT",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "Accumulator",
+      "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Verified",
+        "Accumulator"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 645946,
+      "name": "Suneel Siwal",
+      "photo": "https://media.cricheroes.in/user_profile/1774670641951_DB3xaM3qqmnv.jpeg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Accumulator",
+      "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
+      "bowlerCategory": "Wildcard",
+      "bowlerCategoryInfo": "This bowler fearlessly trading runs for wickets, one can take a chance on this bowler.",
+      "badges": [
+        "Pro",
+        "Verified",
+        "Accumulator",
+        "Wildcard"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 36670967,
+      "name": "Sunil Panwar",
+      "photo": "https://media.cricheroes.in/user_profile/1738753485366_HYd2viWNSWc2.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "",
+      "batterCategoryInfo": "",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Verified"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 51199656,
+      "name": "Tushar Raj",
+      "photo": "https://media.cricheroes.in/user_profile/default_user_profile_m.png?v=51199656",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "",
+      "batterCategoryInfo": "",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Verified"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 32421879,
+      "name": "Uday Dubey",
+      "photo": "https://media.cricheroes.in/user_profile/1762193097866_Bf1NjyDQh9cM.jpeg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Classicist",
+      "batterCategoryInfo": "One who likes to rotate strikes more than scoring big shots. Tap here to know more.",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Pro",
+        "Verified",
+        "Classicist"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 1319201,
+      "name": "Vijay Kandwal",
+      "photo": "https://media.cricheroes.in/user_profile/1765024665925_xZHpizTKc7VW.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Destroyer",
+      "batterCategoryInfo": "One who mostly deals in boundaries. Tap here to know more.",
+      "bowlerCategory": "Wildcard",
+      "bowlerCategoryInfo": "This bowler fearlessly trading runs for wickets, one can take a chance on this bowler.",
+      "badges": [
+        "Pro",
+        "Verified",
+        "Destroyer",
+        "Wildcard"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 655435,
+      "name": "Vikas Balyan",
+      "photo": "https://media.cricheroes.in/user_profile/1649006656456_R9taTt5Q8etp.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "Hard Hitter",
+      "batterCategoryInfo": "One who deals in boundaries more than singles. Tap here to know more.",
+      "bowlerCategory": "Wildcard",
+      "bowlerCategoryInfo": "This bowler fearlessly trading runs for wickets, one can take a chance on this bowler.",
+      "badges": [
+        "Verified",
+        "Hard Hitter",
+        "Wildcard"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 32373767,
+      "name": "Vinay",
+      "photo": "https://media.cricheroes.in/user_profile/1739191078155_4pmYbE8N45P1.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "Hard Hitter",
+      "batterCategoryInfo": "One who deals in boundaries more than singles. Tap here to know more.",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Verified",
+        "Hard Hitter"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 32339130,
+      "name": "Vipul Bhardwaj Tower 4 Divino",
+      "photo": "https://media.cricheroes.in/default/user_profile.png",
+      "skill": "BAT",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "",
+      "batterCategoryInfo": "",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Verified"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 32160851,
+      "name": "Vishal",
+      "photo": "https://media.cricheroes.in/user_profile/1723707606377_CmwmyuKPV5zp.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "",
+      "batterCategoryInfo": "",
+      "bowlerCategory": "Aspirant",
+      "bowlerCategoryInfo": "This bowler may carry incredible potential and skills but may need more game time.",
+      "badges": [
+        "Verified",
+        "Aspirant"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 32567950,
+      "name": "Vishal Tomar",
+      "photo": "https://media.cricheroes.in/user_profile/1758779400404_vwmCNuQgM4ve.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Destroyer",
+      "batterCategoryInfo": "One who mostly deals in boundaries. Tap here to know more.",
+      "bowlerCategory": "Spearhead",
+      "bowlerCategoryInfo": "This bowler has the highest chances of taking wickets while keeping runs under control.",
+      "badges": [
+        "Pro",
+        "Verified",
+        "Destroyer",
+        "Spearhead"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 35922777,
+      "name": "Vivek",
+      "photo": "https://media.cricheroes.in/default/user_profile.png",
+      "skill": "",
+      "isVerified": false,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "",
+      "batterCategoryInfo": "",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 4353555,
+      "name": "Vivek Jaiswal",
+      "photo": "https://media.cricheroes.in/user_profile/1579766241422_cV4rhLh421Vn.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "batterCategory": "Accumulator",
+      "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Verified",
+        "Accumulator"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    },
+    {
+      "id": 23240150,
+      "name": "Yogendra Singh",
+      "photo": "https://media.cricheroes.in/user_profile/1781263448354_014IZud6VcKu.jpg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "batterCategory": "Accumulator",
+      "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
+      "bowlerCategory": "Aspirant",
+      "bowlerCategoryInfo": "This bowler may carry incredible potential and skills but may need more game time.",
+      "badges": [
+        "Pro",
+        "Verified",
+        "Accumulator",
+        "Aspirant"
+      ],
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      }
+    }
+  ],
+  "opponents": [
+    {
+      "id": 385484,
+      "name": "MIGHTY HEROES",
+      "logo": "https://media.cricheroes.in/team_logo/1630331659672_6RwS87ubP4We.jpeg",
+      "matches": 2,
+      "winsAgainstUs": 1,
+      "lossesAgainstUs": 1,
+      "lastScore": "105/2",
+      "lastResult": "Beat Warriors",
+      "lastPlayed": "2026-03-07T01:37:27.000Z",
+      "awards": [
+        {
+          "playerId": 2798901,
+          "label": "Player of the Match",
+          "opponent": "MIGHTY HEROES",
+          "matchId": 22865500,
+          "date": "2026-03-07T01:37:27.000Z"
+        },
+        {
+          "playerId": 3780112,
+          "label": "Best Batter",
+          "opponent": "MIGHTY HEROES",
+          "matchId": 22865500,
+          "date": "2026-03-07T01:37:27.000Z"
+        },
+        {
+          "playerId": 2798901,
+          "label": "Best Bowler",
+          "opponent": "MIGHTY HEROES",
+          "matchId": 22865500,
+          "date": "2026-03-07T01:37:27.000Z"
+        }
+      ],
+      "badges": [
+        "Danger Side",
+        "Award Threat",
+        "Repeat Rival"
+      ]
+    },
+    {
+      "id": 8163475,
+      "name": "Divino Dominators",
+      "logo": "https://media.cricheroes.in/team_logo/1738502698417_Ei9MbOG4dL03.jpeg",
+      "matches": 1,
+      "winsAgainstUs": 1,
+      "lossesAgainstUs": 0,
+      "lastScore": "232/7",
+      "lastResult": "Beat Warriors",
+      "lastPlayed": "2026-06-02T01:03:10.000Z",
+      "awards": [
+        {
+          "playerId": 11536802,
+          "label": "Player of the Match",
+          "opponent": "Divino Dominators",
+          "matchId": 25214310,
+          "date": "2026-06-02T01:03:10.000Z"
+        },
+        {
+          "playerId": 11536802,
+          "label": "Best Batter",
+          "opponent": "Divino Dominators",
+          "matchId": 25214310,
+          "date": "2026-06-02T01:03:10.000Z"
+        }
+      ],
+      "badges": [
+        "Danger Side",
+        "Award Threat"
+      ]
+    },
+    {
+      "id": 12274222,
+      "name": "The Core XI",
+      "logo": "https://media.cricheroes.in/team_logo/1769750343315_XAojF4f4I2XS.jpg",
+      "matches": 1,
+      "winsAgainstUs": 1,
+      "lossesAgainstUs": 0,
+      "lastScore": "249/8",
+      "lastResult": "Beat Warriors",
+      "lastPlayed": "2026-05-22T15:13:00.000Z",
+      "awards": [
+        {
+          "playerId": 14689673,
+          "label": "Player of the Match",
+          "opponent": "The Core XI",
+          "matchId": 24878263,
+          "date": "2026-05-22T15:13:00.000Z"
+        },
+        {
+          "playerId": 14689673,
+          "label": "Best Batter",
+          "opponent": "The Core XI",
+          "matchId": 24878263,
+          "date": "2026-05-22T15:13:00.000Z"
+        },
+        {
+          "playerId": 21511769,
+          "label": "Best Bowler",
+          "opponent": "The Core XI",
+          "matchId": 24878263,
+          "date": "2026-05-22T15:13:00.000Z"
+        }
+      ],
+      "badges": [
+        "Danger Side",
+        "Award Threat"
+      ]
+    },
+    {
+      "id": 12081810,
+      "name": "Elite warriors 11",
+      "logo": "https://media.cricheroes.in/team_logo/1768485003790_6dq5EJWHvsG7.jpeg",
+      "matches": 1,
+      "winsAgainstUs": 1,
+      "lossesAgainstUs": 0,
+      "lastScore": "164/9",
+      "lastResult": "Beat Warriors",
+      "lastPlayed": "2026-04-10T01:43:22.000Z",
+      "awards": [
+        {
+          "playerId": 6197041,
+          "label": "Player of the Match",
+          "opponent": "Elite warriors 11",
+          "matchId": 23817201,
+          "date": "2026-04-10T01:43:22.000Z"
+        }
+      ],
+      "badges": [
+        "Danger Side",
+        "Award Threat"
+      ]
+    },
+    {
+      "id": 2899173,
+      "name": "Star Sport Cricket Club",
+      "logo": "https://media.cricheroes.in/team_logo/1729965513809_5gJkdPobgZlN.jpeg",
+      "matches": 1,
+      "winsAgainstUs": 1,
+      "lossesAgainstUs": 0,
+      "lastScore": "200/6",
+      "lastResult": "Beat Warriors",
+      "lastPlayed": "2026-04-01T01:46:12.000Z",
+      "awards": [
+        {
+          "playerId": 7993637,
+          "label": "Player of the Match",
+          "opponent": "Star Sport Cricket Club",
+          "matchId": 23554204,
+          "date": "2026-04-01T01:46:12.000Z"
+        },
+        {
+          "playerId": 7993637,
+          "label": "Best Batter",
+          "opponent": "Star Sport Cricket Club",
+          "matchId": 23554204,
+          "date": "2026-04-01T01:46:12.000Z"
+        },
+        {
+          "playerId": 28685755,
+          "label": "Best Bowler",
+          "opponent": "Star Sport Cricket Club",
+          "matchId": 23554204,
+          "date": "2026-04-01T01:46:12.000Z"
+        }
+      ],
+      "badges": [
+        "Danger Side",
+        "Award Threat"
+      ]
+    },
+    {
+      "id": 11199619,
+      "name": "Ace Power XI",
+      "logo": "https://media.cricheroes.in/team_logo/1761913880117_xVJWgIFRW4kk.jpeg",
+      "matches": 1,
+      "winsAgainstUs": 1,
+      "lossesAgainstUs": 0,
+      "lastScore": "234/5",
+      "lastResult": "Beat Warriors",
+      "lastPlayed": "2026-03-25T01:26:01.000Z",
+      "awards": [
+        {
+          "playerId": 42405943,
+          "label": "Player of the Match",
+          "opponent": "Ace Power XI",
+          "matchId": 23378722,
+          "date": "2026-03-25T01:26:01.000Z"
+        },
+        {
+          "playerId": 42405943,
+          "label": "Best Batter",
+          "opponent": "Ace Power XI",
+          "matchId": 23378722,
+          "date": "2026-03-25T01:26:01.000Z"
+        },
+        {
+          "playerId": 42429999,
+          "label": "Best Bowler",
+          "opponent": "Ace Power XI",
+          "matchId": 23378722,
+          "date": "2026-03-25T01:26:01.000Z"
+        }
+      ],
+      "badges": [
+        "Danger Side",
+        "Award Threat"
+      ]
+    },
+    {
+      "id": 12604411,
+      "name": "Strikers 11",
+      "logo": "https://media.cricheroes.in/default/teamintital/S.png",
+      "matches": 1,
+      "winsAgainstUs": 1,
+      "lossesAgainstUs": 0,
+      "lastScore": "185/7",
+      "lastResult": "Beat Warriors",
+      "lastPlayed": "2026-03-14T01:50:46.000Z",
+      "awards": [
+        {
+          "playerId": 4530389,
+          "label": "Player of the Match",
+          "opponent": "Strikers 11",
+          "matchId": 23084704,
+          "date": "2026-03-14T01:50:46.000Z"
+        }
+      ],
+      "badges": [
+        "Danger Side",
+        "Award Threat"
+      ]
+    },
+    {
+      "id": 7838698,
+      "name": "Techie Cricket Club",
+      "logo": "https://media.cricheroes.in/team_logo/1728061382026_agYaDjN6t6NG.jpeg",
+      "matches": 1,
+      "winsAgainstUs": 1,
+      "lossesAgainstUs": 0,
+      "lastScore": "279/5",
+      "lastResult": "Beat Warriors",
+      "lastPlayed": "2026-03-11T01:43:51.000Z",
+      "awards": [
+        {
+          "playerId": 10287744,
+          "label": "Player of the Match",
+          "opponent": "Techie Cricket Club",
+          "matchId": 23046803,
+          "date": "2026-03-11T01:43:51.000Z"
+        },
+        {
+          "playerId": 10287744,
+          "label": "Best Batter",
+          "opponent": "Techie Cricket Club",
+          "matchId": 23046803,
+          "date": "2026-03-11T01:43:51.000Z"
+        },
+        {
+          "playerId": 145048,
+          "label": "Best Bowler",
+          "opponent": "Techie Cricket Club",
+          "matchId": 23046803,
+          "date": "2026-03-11T01:43:51.000Z"
+        }
+      ],
+      "badges": [
+        "Danger Side",
+        "Award Threat"
+      ]
+    },
+    {
+      "id": 324638,
+      "name": "Ace Panthers",
+      "logo": "https://media.cricheroes.in/team_logo/1559651159219_jSlSG619DJTt.jpg",
+      "matches": 1,
+      "winsAgainstUs": 1,
+      "lossesAgainstUs": 0,
+      "lastScore": "194/9",
+      "lastResult": "Beat Warriors",
+      "lastPlayed": "2026-02-28T01:41:56.000Z",
+      "awards": [
+        {
+          "playerId": 2786229,
+          "label": "Player of the Match",
+          "opponent": "Ace Panthers",
+          "matchId": 22742510,
+          "date": "2026-02-28T01:41:56.000Z"
+        },
+        {
+          "playerId": 2934634,
+          "label": "Best Batter",
+          "opponent": "Ace Panthers",
+          "matchId": 22742510,
+          "date": "2026-02-28T01:41:56.000Z"
+        },
+        {
+          "playerId": 2786229,
+          "label": "Best Bowler",
+          "opponent": "Ace Panthers",
+          "matchId": 22742510,
+          "date": "2026-02-28T01:41:56.000Z"
+        }
+      ],
+      "badges": [
+        "Danger Side",
+        "Award Threat"
+      ]
+    },
+    {
+      "id": 11466367,
+      "name": "Fabulous XI",
+      "logo": "https://media.cricheroes.in/team_logo/1772783471899_CeW7kbynwAWZ.jpeg",
+      "matches": 1,
+      "winsAgainstUs": 0,
+      "lossesAgainstUs": 1,
+      "lastScore": "255/10",
+      "lastResult": "Lost to Warriors",
+      "lastPlayed": "2026-07-15T00:56:42.000Z",
+      "awards": [
+        {
+          "playerId": 9382549,
+          "label": "Fielder of the Match",
+          "opponent": "Fabulous XI",
+          "matchId": 26132337,
+          "date": "2026-07-15T00:56:42.000Z"
+        },
+        {
+          "playerId": 9382549,
+          "label": "Best Bowler",
+          "opponent": "Fabulous XI",
+          "matchId": 26132337,
+          "date": "2026-07-15T00:56:42.000Z"
+        }
+      ],
+      "badges": [
+        "Award Threat"
+      ]
+    },
+    {
+      "id": 10577831,
+      "name": "Gully Cricket Club (GCC)",
+      "logo": "https://media.cricheroes.in/team_logo/1776763349315_vu2cCKbivrYL.jpeg",
+      "matches": 1,
+      "winsAgainstUs": 0,
+      "lossesAgainstUs": 1,
+      "lastScore": "266/10",
+      "lastResult": "Lost to Warriors",
+      "lastPlayed": "2026-03-18T01:29:13.000Z",
+      "awards": [],
+      "badges": []
+    }
+  ],
+  "opponentAwards": [
+    {
+      "playerId": 9382549,
+      "label": "Fielder of the Match",
+      "opponent": "Fabulous XI",
+      "matchId": 26132337,
+      "date": "2026-07-15T00:56:42.000Z"
+    },
+    {
+      "playerId": 9382549,
+      "label": "Best Bowler",
+      "opponent": "Fabulous XI",
+      "matchId": 26132337,
+      "date": "2026-07-15T00:56:42.000Z"
+    },
+    {
+      "playerId": 11536802,
+      "label": "Player of the Match",
+      "opponent": "Divino Dominators",
+      "matchId": 25214310,
+      "date": "2026-06-02T01:03:10.000Z"
+    },
+    {
+      "playerId": 11536802,
+      "label": "Best Batter",
+      "opponent": "Divino Dominators",
+      "matchId": 25214310,
+      "date": "2026-06-02T01:03:10.000Z"
+    },
+    {
+      "playerId": 14689673,
+      "label": "Player of the Match",
+      "opponent": "The Core XI",
+      "matchId": 24878263,
+      "date": "2026-05-22T15:13:00.000Z"
+    },
+    {
+      "playerId": 14689673,
+      "label": "Best Batter",
+      "opponent": "The Core XI",
+      "matchId": 24878263,
+      "date": "2026-05-22T15:13:00.000Z"
+    },
+    {
+      "playerId": 21511769,
+      "label": "Best Bowler",
+      "opponent": "The Core XI",
+      "matchId": 24878263,
+      "date": "2026-05-22T15:13:00.000Z"
+    },
+    {
+      "playerId": 6197041,
+      "label": "Player of the Match",
+      "opponent": "Elite warriors 11",
+      "matchId": 23817201,
+      "date": "2026-04-10T01:43:22.000Z"
+    },
+    {
+      "playerId": 7993637,
+      "label": "Player of the Match",
+      "opponent": "Star Sport Cricket Club",
+      "matchId": 23554204,
+      "date": "2026-04-01T01:46:12.000Z"
+    },
+    {
+      "playerId": 7993637,
+      "label": "Best Batter",
+      "opponent": "Star Sport Cricket Club",
+      "matchId": 23554204,
+      "date": "2026-04-01T01:46:12.000Z"
+    },
+    {
+      "playerId": 28685755,
+      "label": "Best Bowler",
+      "opponent": "Star Sport Cricket Club",
+      "matchId": 23554204,
+      "date": "2026-04-01T01:46:12.000Z"
+    },
+    {
+      "playerId": 42405943,
+      "label": "Player of the Match",
+      "opponent": "Ace Power XI",
+      "matchId": 23378722,
+      "date": "2026-03-25T01:26:01.000Z"
+    },
+    {
+      "playerId": 42405943,
+      "label": "Best Batter",
+      "opponent": "Ace Power XI",
+      "matchId": 23378722,
+      "date": "2026-03-25T01:26:01.000Z"
+    },
+    {
+      "playerId": 42429999,
+      "label": "Best Bowler",
+      "opponent": "Ace Power XI",
+      "matchId": 23378722,
+      "date": "2026-03-25T01:26:01.000Z"
+    },
+    {
+      "playerId": 4530389,
+      "label": "Player of the Match",
+      "opponent": "Strikers 11",
+      "matchId": 23084704,
+      "date": "2026-03-14T01:50:46.000Z"
+    },
+    {
+      "playerId": 10287744,
+      "label": "Player of the Match",
+      "opponent": "Techie Cricket Club",
+      "matchId": 23046803,
+      "date": "2026-03-11T01:43:51.000Z"
+    },
+    {
+      "playerId": 10287744,
+      "label": "Best Batter",
+      "opponent": "Techie Cricket Club",
+      "matchId": 23046803,
+      "date": "2026-03-11T01:43:51.000Z"
+    },
+    {
+      "playerId": 145048,
+      "label": "Best Bowler",
+      "opponent": "Techie Cricket Club",
+      "matchId": 23046803,
+      "date": "2026-03-11T01:43:51.000Z"
+    },
+    {
+      "playerId": 2798901,
+      "label": "Player of the Match",
+      "opponent": "MIGHTY HEROES",
+      "matchId": 22865500,
+      "date": "2026-03-07T01:37:27.000Z"
+    },
+    {
+      "playerId": 3780112,
+      "label": "Best Batter",
+      "opponent": "MIGHTY HEROES",
+      "matchId": 22865500,
+      "date": "2026-03-07T01:37:27.000Z"
+    },
+    {
+      "playerId": 2798901,
+      "label": "Best Bowler",
+      "opponent": "MIGHTY HEROES",
+      "matchId": 22865500,
+      "date": "2026-03-07T01:37:27.000Z"
+    },
+    {
+      "playerId": 2786229,
+      "label": "Player of the Match",
+      "opponent": "Ace Panthers",
+      "matchId": 22742510,
+      "date": "2026-02-28T01:41:56.000Z"
+    },
+    {
+      "playerId": 2934634,
+      "label": "Best Batter",
+      "opponent": "Ace Panthers",
+      "matchId": 22742510,
+      "date": "2026-02-28T01:41:56.000Z"
+    },
+    {
+      "playerId": 2786229,
+      "label": "Best Bowler",
+      "opponent": "Ace Panthers",
+      "matchId": 22742510,
+      "date": "2026-02-28T01:41:56.000Z"
+    }
+  ]
+}

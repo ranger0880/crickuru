@@ -641,6 +641,84 @@
         members: "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/members",
       };
 
+      const liveFeedFallback = {
+        schemaVersion: 1,
+        source: "CricKuru local feed",
+        syncedAt: "",
+        team: {
+          name: "Kurukshetra Warriors",
+          logo: "",
+          city: "Greater Noida",
+          matchesUrl: CricLinks.matches,
+          membersUrl: CricLinks.members,
+        },
+        summary: { matches: 0, wins: 0, losses: 0, winRate: 0, latestResult: "", latestOpponent: "" },
+        matches: [],
+        players: [],
+        opponents: [],
+      };
+
+      function assetUrl(path) {
+        const cleanBase = window.location.hostname.endsWith("github.io") ? "/crickuru" : "";
+        return `${cleanBase}${path.startsWith("/") ? path : `/${path}`}`;
+      }
+
+      function useLiveCricketFeed() {
+        const [state, setState] = useState({ loading: true, error: "", data: liveFeedFallback });
+
+        useEffect(() => {
+          let cancelled = false;
+
+          const loadFeed = async () => {
+            try {
+              const response = await fetch(assetUrl(`/data/crickuru-live.json?v=${Date.now()}`), { cache: "no-store" });
+              if (!response.ok) throw new Error(`Live feed returned ${response.status}`);
+              const data = await response.json();
+              if (!cancelled) setState({ loading: false, error: "", data: { ...liveFeedFallback, ...data } });
+            } catch (error) {
+              if (!cancelled) {
+                setState((current) => ({
+                  loading: false,
+                  error: error.message || "Live feed unavailable",
+                  data: current.data || liveFeedFallback,
+                }));
+              }
+            }
+          };
+
+          loadFeed();
+          const interval = window.setInterval(loadFeed, 5 * 60 * 1000);
+          return () => {
+            cancelled = true;
+            window.clearInterval(interval);
+          };
+        }, []);
+
+        return state;
+      }
+
+      function formatFeedDate(value) {
+        if (!value) return "Waiting for sync";
+        const date = new Date(value);
+        if (Number.isNaN(date.getTime())) return value;
+        return new Intl.DateTimeFormat("en-IN", {
+          day: "2-digit",
+          month: "short",
+          year: "numeric",
+          hour: "2-digit",
+          minute: "2-digit",
+        }).format(date);
+      }
+
+      function initialsFromName(name = "KW") {
+        return name
+          .split(/\s+/)
+          .filter(Boolean)
+          .slice(0, 2)
+          .map((part) => part[0]?.toUpperCase())
+          .join("") || "KW";
+      }
+
       const fallbackIcons = {
         ArrowRight: (props) => <SvgIcon {...props}><path d="M5 12h14" /><path d="m13 5 7 7-7 7" /></SvgIcon>,
         CalendarDays: (props) => <SvgIcon {...props}><path d="M8 2v4" /><path d="M16 2v4" /><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M3 10h18" /><path d="M8 14h.01" /><path d="M12 14h.01" /><path d="M16 14h.01" /><path d="M8 18h.01" /><path d="M12 18h.01" /></SvgIcon>,
@@ -894,6 +972,7 @@
           <main className="page-grain min-h-screen bg-night">
             <HeroSection />
             <CricHeroesSection />
+            <LiveMatchIntelSection />
             <Footer />
           </main>
         );
@@ -1394,6 +1473,256 @@
               </div>
             </div>
           </PanelShell>
+        );
+      }
+
+      function LiveMatchIntelSection() {
+        const { loading, error, data } = useLiveCricketFeed();
+        const matches = data.matches || [];
+        const players = data.players || [];
+        const opponents = data.opponents || [];
+        const latestMatch = matches[0];
+        const visiblePlayers = players.slice(0, 6);
+        const visibleOpponents = opponents.slice(0, 4);
+        const hasFeed = Boolean(matches.length || players.length || opponents.length);
+
+        return (
+          <section id="live-intel" className="relative overflow-hidden bg-[linear-gradient(180deg,#05070B,#080D16_54%,#05070B)] px-5 py-24 sm:px-8" aria-labelledby="live-intel-title">
+            <div className="absolute inset-0" aria-hidden="true">
+              <div className="absolute left-[-10%] top-24 h-96 w-96 rounded-full bg-gold/8 blur-3xl" />
+              <div className="absolute right-[-8%] bottom-12 h-96 w-96 rounded-full bg-cyan/8 blur-3xl" />
+            </div>
+            <div className="relative mx-auto max-w-7xl">
+              <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+                <div>
+                  <p className="text-xs font-black uppercase tracking-[0.32em] text-cyan">Live CricHeroes Intelligence</p>
+                  <h2 id="live-intel-title" className="mt-4 font-display text-5xl font-black uppercase leading-none text-white sm:text-7xl">
+                    Match Updates, Player Badges and Rival Form
+                  </h2>
+                  <p className="mt-6 max-w-2xl text-lg leading-8 text-white/66">
+                    CricKuru reads the synced CricHeroes feed, then updates Warriors performance badges and opponent cards from the latest match data.
+                  </p>
+                </div>
+                <div className="glass rounded-[8px] p-5">
+                  <div className="grid gap-3 sm:grid-cols-3">
+                    <LiveStat label="Synced matches" value={data.summary?.matches || matches.length || "-"} />
+                    <LiveStat label="Warriors wins" value={data.summary?.wins ?? "-"} />
+                    <LiveStat label="Win rate" value={data.summary?.winRate != null ? `${data.summary.winRate}%` : "-"} />
+                  </div>
+                  <div className="mt-4 flex flex-col gap-3 text-sm text-white/58 sm:flex-row sm:items-center sm:justify-between">
+                    <span>{loading ? "Syncing CricHeroes feed..." : `Last sync: ${formatFeedDate(data.syncedAt)}`}</span>
+                    <a href={data.team?.matchesUrl || CricLinks.matches} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 font-black uppercase tracking-[0.16em] text-gold">
+                      CricHeroes <Icon.ExternalLink size={15} />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {!hasFeed ? (
+                <LiveFeedEmpty loading={loading} error={error} />
+              ) : (
+                <div className="mt-10 grid gap-5 xl:grid-cols-[1.05fr_0.95fr]">
+                  <div className="grid gap-5">
+                    {latestMatch && <LatestLiveMatchCard match={latestMatch} team={data.team} />}
+                    <div className="glass rounded-[8px] p-5">
+                      <div className="mb-5 flex items-center justify-between gap-3">
+                        <div>
+                          <p className="text-xs font-black uppercase tracking-[0.24em] text-white/45">Recent scorecards</p>
+                          <h3 className="font-display text-3xl font-black uppercase text-white">CricHeroes Match Pulse</h3>
+                        </div>
+                        {error && <span className="rounded-full border border-crimson/35 bg-crimson/10 px-3 py-1 text-xs font-bold text-crimson">Using last feed</span>}
+                      </div>
+                      <div className="grid gap-3">
+                        {matches.slice(0, 4).map((match) => <LiveMatchRow key={match.id} match={match} />)}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="grid gap-5">
+                    <div className="glass rounded-[8px] p-5">
+                      <p className="text-xs font-black uppercase tracking-[0.24em] text-gold">Warriors badges</p>
+                      <h3 className="mt-2 font-display text-3xl font-black uppercase text-white">Player Performance Wall</h3>
+                      <div className="mt-5 grid gap-3 sm:grid-cols-2">
+                        {visiblePlayers.map((player) => <PlayerBadgeCard key={player.id} player={player} />)}
+                      </div>
+                    </div>
+                    <div className="glass rounded-[8px] p-5">
+                      <p className="text-xs font-black uppercase tracking-[0.24em] text-cyan">Opponent cards</p>
+                      <h3 className="mt-2 font-display text-3xl font-black uppercase text-white">Rival Form Tracker</h3>
+                      <div className="mt-5 grid gap-3">
+                        {visibleOpponents.map((opponent) => <OpponentIntelCard key={opponent.id} opponent={opponent} />)}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+          </section>
+        );
+      }
+
+      function LiveFeedEmpty({ loading, error }) {
+        return (
+          <div className="mt-10 rounded-[8px] border border-white/12 bg-white/[0.045] p-8 text-center">
+            <p className="font-display text-4xl font-black uppercase text-white">{loading ? "Syncing CricHeroes" : "Live Feed Ready"}</p>
+            <p className="mx-auto mt-4 max-w-2xl leading-8 text-white/62">
+              {error
+                ? "The live JSON feed could not load yet. Upload data/crickuru-live.json with the latest synced output and this section will update automatically."
+                : "Add CricHeroes sync data to data/crickuru-live.json and this section will show match updates, player badges and opponent performance."}
+            </p>
+          </div>
+        );
+      }
+
+      function LiveStat({ label, value }) {
+        return (
+          <div className="rounded-[8px] border border-white/10 bg-white/[0.04] p-3">
+            <p className="text-[0.65rem] font-black uppercase tracking-[0.18em] text-white/40">{label}</p>
+            <p className="mt-1 font-display text-3xl font-black uppercase text-white">{value}</p>
+          </div>
+        );
+      }
+
+      function LatestLiveMatchCard({ match, team }) {
+        const resultTone = match.result === "win" ? "text-gold" : match.result === "loss" ? "text-crimson" : "text-cyan";
+        return (
+          <article className="relative overflow-hidden rounded-[8px] border border-gold/24 bg-[radial-gradient(circle_at_82%_12%,rgba(244,185,66,0.18),transparent_30%),rgba(255,255,255,0.045)] p-5">
+            <div className="absolute right-[-42px] top-[-42px] h-40 w-40 rounded-full bg-gold/10 blur-3xl" />
+            <div className="relative flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <p className="text-xs font-black uppercase tracking-[0.24em] text-gold">Latest CricHeroes match</p>
+                <h3 className="mt-2 font-display text-4xl font-black uppercase leading-none text-white">
+                  {team?.name || "Kurukshetra Warriors"} vs {match.opponent}
+                </h3>
+                <p className="mt-3 text-sm font-semibold text-white/50">{formatFeedDate(match.date)} - {match.venue || match.city || "CricHeroes"}</p>
+              </div>
+              <span className={`rounded-full border border-white/12 bg-night/72 px-4 py-2 text-sm font-black uppercase tracking-[0.16em] ${resultTone}`}>
+                {match.result}
+              </span>
+            </div>
+            <div className="relative mt-6 grid gap-3 sm:grid-cols-[1fr_auto_1fr] sm:items-center">
+              <LiveScoreBlock logo={team?.logo} name={team?.name || "Kurukshetra Warriors"} score={match.ourScore} runRate={match.ourRunRate} />
+              <span className="hidden font-display text-2xl font-black text-white/28 sm:block">VS</span>
+              <LiveScoreBlock logo={match.opponentLogo} name={match.opponent} score={match.opponentScore} runRate={match.opponentRunRate} align="right" />
+            </div>
+            <p className="relative mt-5 rounded-[8px] border border-white/10 bg-night/55 p-4 font-display text-3xl font-black uppercase text-white">
+              {match.resultText}
+            </p>
+          </article>
+        );
+      }
+
+      function LiveScoreBlock({ logo, name, score, runRate, align = "left" }) {
+        return (
+          <div className={align === "right" ? "text-right" : "text-left"}>
+            <div className={`mb-2 flex items-center gap-3 ${align === "right" ? "justify-end" : ""}`}>
+              <LiveAvatar src={logo} name={name} />
+              <p className="max-w-[12rem] text-xs font-black uppercase tracking-[0.14em] text-white/54">{name}</p>
+            </div>
+            <p className="font-display text-5xl font-black text-white">{score || "-"}</p>
+            {runRate && <p className="text-xs font-bold uppercase tracking-[0.16em] text-white/42">RR {runRate}</p>}
+          </div>
+        );
+      }
+
+      function LiveMatchRow({ match }) {
+        return (
+          <article className="flex flex-col gap-3 rounded-[8px] border border-white/10 bg-white/[0.035] p-4 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.2em] text-white/42">{formatFeedDate(match.date)}</p>
+              <h4 className="mt-1 font-display text-2xl font-black uppercase text-white">vs {match.opponent}</h4>
+              <p className="text-sm text-white/54">{match.venue || match.city}</p>
+            </div>
+            <div className="text-left sm:text-right">
+              <p className="font-display text-3xl font-black text-gold">{match.ourScore} - {match.opponentScore}</p>
+              <p className="text-sm font-semibold text-white/60">{match.resultText}</p>
+            </div>
+          </article>
+        );
+      }
+
+      function PlayerBadgeCard({ player }) {
+        const awards = player.performance?.awards || 0;
+        const primaryBadges = (player.badges || []).slice(0, 4);
+        return (
+          <article className="rounded-[8px] border border-white/10 bg-white/[0.035] p-4">
+            <div className="flex items-center gap-3">
+              <LiveAvatar src={player.photo} name={player.name} />
+              <div className="min-w-0">
+                <h4 className="truncate font-display text-2xl font-black uppercase text-white">{player.name}</h4>
+                <p className="text-xs font-bold uppercase tracking-[0.16em] text-white/42">{player.skill || "Warriors squad"}</p>
+              </div>
+            </div>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {primaryBadges.length ? primaryBadges.map((badge) => <BadgePill key={badge} label={badge} />) : <BadgePill label="Roster" />}
+            </div>
+            <div className="mt-4 grid grid-cols-3 gap-2 text-center">
+              <LiveTinyStat label="Awards" value={awards} />
+              <LiveTinyStat label="POM" value={player.performance?.playerOfMatch || 0} />
+              <LiveTinyStat label="BAT" value={player.performance?.bestBatter || 0} />
+            </div>
+          </article>
+        );
+      }
+
+      function OpponentIntelCard({ opponent }) {
+        return (
+          <article className="rounded-[8px] border border-white/10 bg-white/[0.035] p-4">
+            <div className="flex items-center justify-between gap-3">
+              <div className="flex min-w-0 items-center gap-3">
+                <LiveAvatar src={opponent.logo} name={opponent.name} />
+                <div className="min-w-0">
+                  <h4 className="truncate font-display text-2xl font-black uppercase text-white">{opponent.name}</h4>
+                  <p className="text-xs font-bold uppercase tracking-[0.16em] text-white/42">{opponent.lastResult}</p>
+                </div>
+              </div>
+              <p className="font-display text-3xl font-black text-gold">{opponent.lastScore || "-"}</p>
+            </div>
+            <div className="mt-4 grid grid-cols-3 gap-2 text-center">
+              <LiveTinyStat label="Games" value={opponent.matches || 0} />
+              <LiveTinyStat label="Beat KW" value={opponent.winsAgainstUs || 0} />
+              <LiveTinyStat label="Lost" value={opponent.lossesAgainstUs || 0} />
+            </div>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {(opponent.badges || ["Opponent"]).slice(0, 3).map((badge) => <BadgePill key={badge} label={badge} />)}
+            </div>
+          </article>
+        );
+      }
+
+      function LiveTinyStat({ label, value }) {
+        return (
+          <div className="rounded-[8px] bg-night/55 p-2">
+            <p className="text-[0.6rem] font-black uppercase tracking-[0.14em] text-white/38">{label}</p>
+            <p className="font-display text-2xl font-black text-white">{value}</p>
+          </div>
+        );
+      }
+
+      function BadgePill({ label }) {
+        const text = String(label || "Badge");
+        const lower = text.toLowerCase();
+        const tone = lower.includes("danger") || lower.includes("lost")
+          ? "border-crimson/35 bg-crimson/10 text-crimson"
+          : lower.includes("bowler") || lower.includes("economist") || lower.includes("spearhead") || lower.includes("wildcard")
+            ? "border-cyan/35 bg-cyan/10 text-cyan"
+            : "border-gold/35 bg-gold/10 text-gold";
+
+        return <span className={`rounded-full border px-3 py-1 text-[0.62rem] font-black uppercase tracking-[0.14em] ${tone}`}>{text}</span>;
+      }
+
+      function LiveAvatar({ src, name }) {
+        const [failed, setFailed] = useState(false);
+        const showImage = src && !failed && !String(src).includes("default/user_profile.png");
+
+        return (
+          <span className="grid h-12 w-12 shrink-0 place-items-center overflow-hidden rounded-full border border-gold/30 bg-gold/10 font-display text-xl font-black text-gold">
+            {showImage ? (
+              <img src={src} alt="" className="h-full w-full object-cover" loading="lazy" onError={() => setFailed(true)} />
+            ) : (
+              initialsFromName(name)
+            )}
+          </span>
         );
       }
 
