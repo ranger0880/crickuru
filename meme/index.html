@@ -568,6 +568,16 @@
         }
       }
     </style>
+    <script>
+      (() => {
+        if (window.location.protocol !== "file:") return;
+        const path = window.location.pathname.replace(/\\/g, "/");
+        const routeFile = /\/(arena|coin|kurukshetra-coin|meme|memes)\/index\.html$/i.test(path);
+        const assetPath = routeFile ? "../assets/" : "assets/";
+        document.documentElement.style.setProperty("--stadium-vip-bg", `url("${assetPath}stadium-vip-warriors.png")`);
+        document.documentElement.style.setProperty("--cricket-ball-cursor", `url("${assetPath}red-leather-cricket-ball-cursor.svg") 18 18`);
+      })();
+    </script>
   </head>
 
   <body>
