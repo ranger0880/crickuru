@@ -106,6 +106,8 @@
         --crimson: #b71932;
         --stadium: #f5f7fa;
         --cyan: #22d3ee;
+        --stadium-vip-bg: url("/assets/stadium-vip-warriors.png");
+        --cricket-ball-cursor: url("/assets/red-leather-cricket-ball-cursor.svg") 18 18;
         color-scheme: dark;
       }
 
@@ -120,10 +122,26 @@
       body {
         margin: 0;
         min-height: 100vh;
-        background: var(--night);
+        background:
+          linear-gradient(180deg, rgba(5, 7, 11, 0.72), rgba(5, 7, 11, 0.92)),
+          var(--stadium-vip-bg) center top / cover fixed no-repeat,
+          var(--night);
         color: var(--stadium);
+        cursor: var(--cricket-ball-cursor), auto;
         font-family: "Inter", system-ui, sans-serif;
         overflow-x: hidden;
+      }
+
+      a,
+      button,
+      [role="button"],
+      summary {
+        cursor: var(--cricket-ball-cursor), pointer;
+      }
+
+      input,
+      textarea {
+        cursor: text;
       }
 
       body::selection,
@@ -181,9 +199,12 @@
         inset: 0;
         overflow: hidden;
         background:
+          linear-gradient(90deg, rgba(5, 7, 11, 0.88) 0%, rgba(5, 7, 11, 0.28) 46%, rgba(5, 7, 11, 0.74) 100%),
+          linear-gradient(180deg, rgba(5, 7, 11, 0.26) 0%, rgba(5, 7, 11, 0.6) 72%, #05070b 100%),
           radial-gradient(circle at 22% 17%, rgba(34, 211, 238, 0.12), transparent 22%),
           radial-gradient(circle at 80% 16%, rgba(244, 185, 66, 0.13), transparent 20%),
           radial-gradient(circle at 75% 62%, rgba(183, 25, 50, 0.21), transparent 34%),
+          var(--stadium-vip-bg) center center / cover no-repeat,
           linear-gradient(180deg, #05070b 0%, #080d16 42%, #05070b 100%);
       }
 
@@ -445,12 +466,21 @@
           rgba(255, 255, 255, 0.045);
       }
 
+      .stadium-page-bg {
+        background:
+          linear-gradient(180deg, rgba(5, 7, 11, 0.38) 0%, rgba(5, 7, 11, 0.78) 46%, #05070b 100%),
+          var(--stadium-vip-bg) center top / cover fixed no-repeat,
+          #05070b;
+      }
+
       .route-bg {
         min-height: 100vh;
         background:
+          linear-gradient(180deg, rgba(5, 7, 11, 0.7), rgba(5, 7, 11, 0.86)),
           radial-gradient(circle at 14% 18%, rgba(244, 185, 66, 0.18), transparent 28%),
           radial-gradient(circle at 78% 14%, rgba(34, 211, 238, 0.11), transparent 26%),
           radial-gradient(circle at 72% 72%, rgba(183, 25, 50, 0.18), transparent 34%),
+          var(--stadium-vip-bg) center top / cover fixed no-repeat,
           linear-gradient(180deg, #05070b, #080d16 52%, #05070b);
       }
 
@@ -494,6 +524,15 @@
       }
 
       @media (max-width: 900px) {
+        body,
+        .route-bg {
+          background-attachment: scroll;
+        }
+
+        .hero-scene {
+          background-position: center top;
+        }
+
         .batter-silhouette {
           right: 50%;
           transform: translateX(50%);
@@ -969,7 +1008,7 @@
         useCursorParallax();
 
         return (
-          <main className="page-grain min-h-screen bg-night">
+          <main className="stadium-page-bg page-grain min-h-screen">
             <HeroSection />
             <LiveMatchIntelSection />
             <CricHeroesSection />
@@ -1322,7 +1361,7 @@
         ];
 
         return (
-          <section id="team-hub" className="relative overflow-hidden bg-night px-5 py-24 sm:px-8" aria-labelledby="cricheroes-title">
+          <section id="team-hub" className="relative overflow-hidden bg-night/82 px-5 py-24 sm:px-8" aria-labelledby="cricheroes-title">
             <div className="absolute inset-0" aria-hidden="true">
               <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold/35 to-transparent" />
               <div className="absolute left-1/2 top-32 h-[520px] w-[760px] -translate-x-1/2 rounded-full bg-cyan/6 blur-3xl" />
