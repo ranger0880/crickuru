@@ -597,6 +597,23 @@
       const useReducedMotion = MotionLib.useReducedMotion || (() => false);
 
       const RouterContext = React.createContext(null);
+      const localRouteFiles = {
+        "/": "index.html",
+        "/arena": "arena/index.html",
+        "/memes": "memes/index.html",
+        "/meme": "meme/index.html",
+        "/coin": "coin/index.html",
+        "/kurukshetra-coin": "kurukshetra-coin/index.html",
+      };
+
+      function isLocalFilePreview() {
+        return window.location.protocol === "file:";
+      }
+
+      function localPreviewPrefix() {
+        const path = decodeURIComponent(window.location.pathname).replace(/\\/g, "/");
+        return /\/(arena|coin|kurukshetra-coin|meme|memes)\/index\.html$/i.test(path) ? "../" : "";
+      }
 
       function normalizePath(pathname, basename = "/") {
         const cleanBase = basename === "/" ? "" : basename.replace(/\/$/, "");
@@ -608,11 +625,24 @@
         return path.length > 1 ? path.replace(/\/+$/, "") : path;
       }
 
+      function currentRoutePath(basename = "/") {
+        if (!isLocalFilePreview()) return normalizePath(window.location.pathname, basename);
+        const path = decodeURIComponent(window.location.pathname).replace(/\\/g, "/").toLowerCase();
+        const routeMatch = path.match(/\/(arena|coin|kurukshetra-coin|meme|memes)\/index\.html$/);
+        return routeMatch ? `/${routeMatch[1]}` : "/";
+      }
+
+      function localFileHref(to) {
+        if (!isLocalFilePreview() || typeof to !== "string" || !to.startsWith("/")) return "";
+        const route = localRouteFiles[normalizePath(to, "/")] || localRouteFiles["/"];
+        return `${localPreviewPrefix()}${route}`;
+      }
+
       function BrowserRouter({ basename = "/", children }) {
-        const [pathname, setPathname] = useState(() => normalizePath(window.location.pathname, basename));
+        const [pathname, setPathname] = useState(() => currentRoutePath(basename));
 
         useEffect(() => {
-          const onPopState = () => setPathname(normalizePath(window.location.pathname, basename));
+          const onPopState = () => setPathname(currentRoutePath(basename));
           window.addEventListener("popstate", onPopState);
           return () => window.removeEventListener("popstate", onPopState);
         }, [basename]);
@@ -624,8 +654,12 @@
           }
           const cleanBase = basename === "/" ? "" : basename.replace(/\/$/, "");
           const target = to.startsWith("/") ? to : `/${to}`;
+          if (isLocalFilePreview()) {
+            setPathname(normalizePath(target, "/"));
+            return;
+          }
           window.history.pushState({}, "", `${cleanBase}${target}`);
-          setPathname(normalizePath(window.location.pathname, basename));
+          setPathname(currentRoutePath(basename));
         };
 
         return <RouterContext.Provider value={{ basename, pathname, navigate }}>{children}</RouterContext.Provider>;
@@ -647,7 +681,7 @@
       function Link({ to, onClick, children, ...props }) {
         const router = useRouter();
         const cleanBase = router.basename === "/" ? "" : router.basename.replace(/\/$/, "");
-        const href = typeof to === "string" && to.startsWith("/") ? `${cleanBase}${to}` : to;
+        const href = localFileHref(to) || (typeof to === "string" && to.startsWith("/") ? `${cleanBase}${to}` : to);
         return (
           <a
             href={href}
@@ -708,6 +742,10 @@
       };
 
       function assetUrl(path) {
+        if (isLocalFilePreview()) {
+          const cleanPath = path.startsWith("/") ? path.slice(1) : path;
+          return `${localPreviewPrefix()}${cleanPath}`;
+        }
         const cleanBase = window.location.hostname.endsWith("github.io") ? "/crickuru" : "";
         return `${cleanBase}${path.startsWith("/") ? path : `/${path}`}`;
       }
