@@ -4039,51 +4039,194 @@ const RouterContext = React.createContext(null);
         "When your cover drive finally beats point and you start walking like prime form arrived.",
       ];
 
+      const MEME_OPENERS = [
+        (topic) => `When ${topic} enters the match`,
+        (topic) => `Me pretending ${topic} was always part of the plan`,
+        (topic) => `The team chat after ${topic}`,
+        (topic) => `Opposition after underestimating ${topic}`,
+        (topic) => `That one teammate explaining ${topic}`,
+        (topic) => `Kurukshetra Warriors when ${topic} becomes the storyline`,
+        (topic) => `Scoreboard watching ${topic}`,
+        (topic) => `Fans replaying ${topic} for the tenth time`,
+        (topic) => `Captain changing the field because of ${topic}`,
+        (topic) => `Cameraman catching our reaction to ${topic}`,
+      ];
+
+      const MEME_STYLE_PUNCHLINES = {
+        "Warrior Roast": [
+          "and suddenly the excuse department opened 24/7.",
+          "confidence went from net session to World Cup final.",
+          "even the drinks break needed a review.",
+          "the celebration arrived before the ball did.",
+          "everyone remembered a fake injury at the same time.",
+        ],
+        "Dressing Room": [
+          "and the dressing room turned into a strategy podcast.",
+          "someone started shadow batting with full seriousness.",
+          "the scorer asked for silence like it was a final.",
+          "every kit bag became a whiteboard for tactics.",
+          "the captain said calm down and then shouted first.",
+        ],
+        "Fan Hype": [
+          "and the fan section immediately booked the trophy parade.",
+          "the group chat declared a new cricket era.",
+          "every replay looked better than a movie trailer.",
+          "CricKuru nation started typing in all caps.",
+          "the whole timeline became Kurukshetra Warriors edits.",
+        ],
+      };
+
+      function normalizeMemeTopic(value) {
+        return String(value || "the clutch cricket moment").replace(/\s+/g, " ").trim() || "the clutch cricket moment";
+      }
+
+      function generateMemeBatch(topic, style) {
+        const cleanTopic = normalizeMemeTopic(topic);
+        const punchlines = MEME_STYLE_PUNCHLINES[style] || MEME_STYLE_PUNCHLINES["Warrior Roast"];
+        return MEME_OPENERS.flatMap((opener) => punchlines.map((punchline) => `${opener(cleanTopic)} ${punchline}`)).slice(0, 50);
+      }
+
+      function escapeSvgText(value) {
+        return String(value || "")
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;");
+      }
+
+      function wrapMemeText(value, maxChars = 22, maxLines = 6) {
+        const words = String(value || "").replace(/\s+/g, " ").trim().split(" ").filter(Boolean);
+        const lines = [];
+        let current = "";
+
+        words.forEach((word) => {
+          const pieces = word.length > maxChars ? word.match(new RegExp(`.{1,${maxChars}}`, "g")) || [word] : [word];
+          pieces.forEach((piece) => {
+            const next = current ? `${current} ${piece}` : piece;
+            if (next.length > maxChars && current) {
+              lines.push(current);
+              current = piece;
+            } else {
+              current = next;
+            }
+          });
+        });
+
+        if (current) lines.push(current);
+        if (lines.length <= maxLines) return lines;
+        const compacted = lines.slice(0, maxLines);
+        compacted[maxLines - 1] = `${compacted[maxLines - 1].replace(/\.*$/, "")}...`;
+        return compacted;
+      }
+
+      function buildMemeImageSvg({ text, topic, style }) {
+        const textLines = wrapMemeText(String(text || MEME_TEMPLATES[0]).toUpperCase(), 22, 6);
+        const topicLines = wrapMemeText(normalizeMemeTopic(topic).toUpperCase(), 30, 2);
+        const fontSize = textLines.length > 5 ? 64 : textLines.length > 3 ? 74 : 88;
+        const lineHeight = Math.round(fontSize * 1.04);
+        const startY = textLines.length > 4 ? 498 : 548;
+        const memeTspans = textLines
+          .map((line, index) => `<tspan x="80" y="${startY + index * lineHeight}">${escapeSvgText(line)}</tspan>`)
+          .join("");
+        const topicTspans = topicLines
+          .map((line, index) => `<tspan x="80" y="${374 + index * 34}">${escapeSvgText(line)}</tspan>`)
+          .join("");
+
+        return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+          <defs>
+            <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#05070B"/>
+              <stop offset="0.48" stop-color="#080D16"/>
+              <stop offset="1" stop-color="#B71932"/>
+            </linearGradient>
+            <radialGradient id="shine" cx="30%" cy="20%" r="78%">
+              <stop offset="0" stop-color="#F4B942" stop-opacity="0.36"/>
+              <stop offset="1" stop-color="#F4B942" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="1080" height="1080" fill="url(#bg)"/>
+          <rect width="1080" height="1080" fill="url(#shine)"/>
+          <circle cx="866" cy="206" r="146" fill="#F4B942" opacity="0.16"/>
+          <circle cx="220" cy="856" r="230" fill="#22D3EE" opacity="0.11"/>
+          <g transform="translate(742 94)">
+            <circle cx="132" cy="132" r="104" fill="#B71932"/>
+            <circle cx="96" cy="82" r="36" fill="#F9A8A8" opacity="0.22"/>
+            <path d="M78 36 C142 86 151 171 96 228" fill="none" stroke="#F5F7FA" stroke-width="9" stroke-linecap="round" opacity="0.72"/>
+            <path d="M166 35 C111 93 113 169 180 229" fill="none" stroke="#F5F7FA" stroke-width="9" stroke-linecap="round" opacity="0.55"/>
+            <path d="M82 63 C138 110 142 159 102 203" fill="none" stroke="#F5F7FA" stroke-width="4" stroke-dasharray="12 14" opacity="0.62"/>
+          </g>
+          <text x="80" y="118" fill="#F4B942" font-family="Impact, Arial Black, Arial, sans-serif" font-size="58" letter-spacing="1">CRICKURU MEMES</text>
+          <text x="80" y="208" fill="#F5F7FA" font-family="Impact, Arial Black, Arial, sans-serif" font-size="88">KURUKSHETRA</text>
+          <text x="80" y="300" fill="#F4B942" font-family="Impact, Arial Black, Arial, sans-serif" font-size="88">WARRIORS</text>
+          <rect x="78" y="332" width="558" height="94" rx="22" fill="#05070B" opacity="0.66" stroke="#F4B942" stroke-opacity="0.34"/>
+          <text x="104" y="356" fill="#22D3EE" font-family="Arial, sans-serif" font-size="23" font-weight="800" letter-spacing="5">${escapeSvgText(String(style || "Warrior Roast").toUpperCase())}</text>
+          <text fill="#F5F7FA" opacity="0.72" font-family="Arial, sans-serif" font-size="28" font-weight="800">${topicTspans}</text>
+          <text fill="#FFFFFF" font-family="Impact, Arial Black, Arial, sans-serif" font-size="${fontSize}" stroke="#000000" stroke-width="9" paint-order="stroke" letter-spacing="0">${memeTspans}</text>
+          <rect x="80" y="922" width="920" height="2" fill="#F4B942" opacity="0.4"/>
+          <text x="80" y="984" fill="#F5F7FA" opacity="0.78" font-family="Arial, sans-serif" font-size="34" font-weight="800">crickuru.com</text>
+          <text x="722" y="984" fill="#F4B942" opacity="0.9" font-family="Arial, sans-serif" font-size="34" font-weight="800">MAKE IT VIRAL</text>
+        </svg>`;
+      }
+
+      function svgDataUrl(svg) {
+        return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
+      }
+
+      function downloadBlob(filename, content, type) {
+        const blob = new Blob([content], { type });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = filename;
+        link.click();
+        URL.revokeObjectURL(url);
+      }
+
       function MemeGeneratorPage() {
         const [topic, setTopic] = useState("last ball six");
         const [memeText, setMemeText] = useState(MEME_TEMPLATES[0]);
         const [style, setStyle] = useState("Warrior Roast");
+        const [memeBatch, setMemeBatch] = useState(() => generateMemeBatch("last ball six", "Warrior Roast"));
+        const [selectedMemeIndex, setSelectedMemeIndex] = useState(0);
+        const memeSvg = useMemo(() => buildMemeImageSvg({ text: memeText, topic, style }), [memeText, topic, style]);
+        const memeImageUrl = useMemo(() => svgDataUrl(memeSvg), [memeSvg]);
 
         const generateMeme = () => {
-          const ideas = [
-            `When ${topic || "the match"} becomes serious and Kurukshetra Warriors enter final-over mode.`,
-            `Nobody: Absolutely nobody: Me explaining why ${topic || "that wicket"} was part of the plan.`,
-            `CricKuru fans after ${topic || "one clean boundary"}: we are winning the tournament.`,
-            `That feeling when ${topic || "your cricket logic"} turns into a viral dressing-room story.`,
-            `Kurukshetra Warriors group chat after ${topic || "a clutch moment"}: delete nothing, screenshot everything.`,
-          ];
-          setMemeText(ideas[Math.floor(Math.random() * ideas.length)]);
+          const nextBatch = generateMemeBatch(topic, style);
+          const nextIndex = Math.floor(Math.random() * nextBatch.length);
+          setMemeBatch(nextBatch);
+          setSelectedMemeIndex(nextIndex);
+          setMemeText(nextBatch[nextIndex]);
+        };
+
+        const generateMemePack = () => {
+          const nextBatch = generateMemeBatch(topic, style);
+          setMemeBatch(nextBatch);
+          setSelectedMemeIndex(0);
+          setMemeText(nextBatch[0]);
+        };
+
+        const handleStyleChange = (nextStyle) => {
+          const nextBatch = generateMemeBatch(topic, nextStyle);
+          setStyle(nextStyle);
+          setMemeBatch(nextBatch);
+          setSelectedMemeIndex(0);
+          setMemeText(nextBatch[0]);
         };
 
         const downloadMeme = () => {
-          const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
-            <defs>
-              <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#05070B"/>
-                <stop offset="0.55" stop-color="#080D16"/>
-                <stop offset="1" stop-color="#B71932"/>
-              </linearGradient>
-            </defs>
-            <rect width="1080" height="1080" fill="url(#bg)"/>
-            <circle cx="845" cy="190" r="120" fill="#F4B942" opacity="0.2"/>
-            <circle cx="245" cy="810" r="190" fill="#22D3EE" opacity="0.1"/>
-            <text x="80" y="120" fill="#F4B942" font-family="Impact, Arial" font-size="58">CRICKURU MEMES</text>
-            <text x="80" y="210" fill="#F5F7FA" font-family="Impact, Arial" font-size="88">KURUKSHETRA</text>
-            <text x="80" y="302" fill="#F4B942" font-family="Impact, Arial" font-size="88">WARRIORS</text>
-            <foreignObject x="80" y="400" width="920" height="420">
-              <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Impact, Arial; font-size: 62px; line-height: 1.08; color: white; text-transform: uppercase; text-shadow: 0 5px 0 #000;">
-                ${memeText.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")}
-              </div>
-            </foreignObject>
-            <text x="80" y="990" fill="#F5F7FA" opacity="0.7" font-family="Arial" font-size="34">crickuru.com</text>
-          </svg>`;
-          const blob = new Blob([svg], { type: "image/svg+xml" });
-          const url = URL.createObjectURL(blob);
-          const link = document.createElement("a");
-          link.href = url;
-          link.download = "crickuru-meme.svg";
-          link.click();
-          URL.revokeObjectURL(url);
+          const suffix = selectedMemeIndex >= 0 ? String(selectedMemeIndex + 1).padStart(2, "0") : "custom";
+          downloadBlob(`crickuru-meme-${suffix}.svg`, memeSvg, "image/svg+xml");
+        };
+
+        const downloadMemePack = () => {
+          const packText = [
+            `CricKuru 50 meme pack`,
+            `Topic: ${normalizeMemeTopic(topic)}`,
+            `Style: ${style}`,
+            "",
+            ...memeBatch.map((item, index) => `${index + 1}. ${item}`),
+          ].join("\n");
+          downloadBlob("crickuru-50-memes.txt", packText, "text/plain");
         };
 
         return (
@@ -4111,7 +4254,7 @@ const RouterContext = React.createContext(null);
                     label="Style"
                     value={style}
                     options={["Warrior Roast", "Dressing Room", "Fan Hype"].map((value) => ({ value, label: value }))}
-                    onChange={setStyle}
+                    onChange={handleStyleChange}
                   />
                   <label className="block" htmlFor="meme-copy">
                     <span className="mb-2 block text-xs font-black uppercase tracking-[0.2em] text-white/48">Meme text</span>
@@ -4119,34 +4262,70 @@ const RouterContext = React.createContext(null);
                       id="meme-copy"
                       name="meme-copy"
                       value={memeText}
-                      onChange={(event) => setMemeText(event.target.value)}
+                      onChange={(event) => {
+                        setMemeText(event.target.value);
+                        setSelectedMemeIndex(-1);
+                      }}
                       rows="5"
                       className="w-full rounded-[8px] border border-white/12 bg-night p-4 text-white outline-none focus:border-gold"
                     />
                   </label>
-                  <div className="flex flex-col gap-3 sm:flex-row">
-                    <button type="button" onClick={generateMeme} className="shine-button min-h-12 rounded-full bg-gold px-6 text-sm font-black uppercase tracking-[0.16em] text-night">
-                      Generate Meme Text
+                  <div className="grid gap-3 sm:grid-cols-2">
+                    <button type="button" onClick={generateMeme} className="shine-button inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-gold px-6 text-sm font-black uppercase tracking-[0.16em] text-night">
+                      <Icon.Sparkles size={17} /> Generate One
+                    </button>
+                    <button type="button" onClick={generateMemePack} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-cyan/40 bg-cyan/10 px-6 text-sm font-black uppercase tracking-[0.16em] text-cyan hover:border-cyan/70 hover:text-white">
+                      <Icon.Sparkles size={17} /> Make 50 Memes
                     </button>
                     <button type="button" onClick={downloadMeme} className="min-h-12 rounded-full border border-white/15 bg-white/8 px-6 text-sm font-black uppercase tracking-[0.16em] text-white hover:border-gold/60 hover:text-gold">
                       Download Meme Image
                     </button>
+                    <button type="button" onClick={downloadMemePack} className="min-h-12 rounded-full border border-white/15 bg-white/8 px-6 text-sm font-black uppercase tracking-[0.16em] text-white hover:border-cyan/60 hover:text-cyan">
+                      Download 50 Text
+                    </button>
                   </div>
                 </div>
               </motion.div>
-              <motion.div className="relative overflow-hidden rounded-[8px] border border-gold/28 bg-[radial-gradient(circle_at_78%_12%,rgba(244,185,66,0.22),transparent_28%),linear-gradient(145deg,#05070B,#080D16_48%,#B71932)] p-6 shadow-[0_30px_100px_rgba(0,0,0,.45)]" initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }}>
-                <div className="absolute right-[-60px] top-[-60px] h-48 w-48 rounded-full bg-gold/14 blur-3xl" />
-                <div className="relative aspect-square rounded-[8px] border border-white/12 bg-black/24 p-6">
-                  <p className="font-display text-4xl font-black uppercase text-gold">CricKuru Memes</p>
-                  <p className="mt-6 font-display text-[clamp(2.8rem,7vw,5.6rem)] font-black uppercase leading-[0.92] text-white drop-shadow-[0_6px_0_rgba(0,0,0,.7)]">
-                    Kurukshetra Warriors
-                  </p>
-                  <p className="mt-8 font-display text-[clamp(2rem,5vw,4rem)] font-black uppercase leading-none text-white">
-                    {memeText}
-                  </p>
-                  <p className="absolute bottom-6 left-6 text-sm font-black uppercase tracking-[0.22em] text-white/58">crickuru.com</p>
-                </div>
-              </motion.div>
+              <div className="grid gap-6">
+                <motion.div className="relative overflow-hidden rounded-[8px] border border-gold/28 bg-[radial-gradient(circle_at_78%_12%,rgba(244,185,66,0.22),transparent_28%),linear-gradient(145deg,#05070B,#080D16_48%,#B71932)] p-4 shadow-[0_30px_100px_rgba(0,0,0,.45)] sm:p-6" initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }}>
+                  <div className="absolute right-[-60px] top-[-60px] h-48 w-48 rounded-full bg-gold/14 blur-3xl" />
+                  <div className="relative aspect-square rounded-[8px] border border-white/12 bg-black/24 p-2">
+                    <img src={memeImageUrl} alt="Generated CricKuru meme image preview" className="h-full w-full rounded-[8px] object-cover" />
+                  </div>
+                </motion.div>
+                <motion.div className="glass rounded-[8px] p-5" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.08 }}>
+                  <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+                    <div>
+                      <p className="text-xs font-black uppercase tracking-[0.24em] text-cyan">50 Meme Pack</p>
+                      <h2 className="mt-2 font-display text-4xl font-black uppercase text-white">Tap Any Meme To Turn It Into Image</h2>
+                    </div>
+                    <span className="rounded-full border border-gold/30 bg-gold/10 px-4 py-2 text-xs font-black uppercase tracking-[0.16em] text-gold">
+                      {memeBatch.length} ready
+                    </span>
+                  </div>
+                  <div className="meme-pack-grid mt-5 grid gap-3 overflow-auto pr-1 sm:grid-cols-2" aria-label="Generated 50 CricKuru meme ideas">
+                    {memeBatch.map((item, index) => (
+                      <button
+                        key={`${item}-${index}`}
+                        type="button"
+                        aria-pressed={selectedMemeIndex === index}
+                        onClick={() => {
+                          setSelectedMemeIndex(index);
+                          setMemeText(item);
+                        }}
+                        className={`meme-pack-card min-h-[8rem] rounded-[8px] border p-4 text-left transition ${
+                          selectedMemeIndex === index
+                            ? "border-gold/70 bg-gold/12 text-white"
+                            : "border-white/10 bg-white/[0.045] text-white/68 hover:border-white/25 hover:text-white"
+                        }`}
+                      >
+                        <span className="mb-2 block text-xs font-black uppercase tracking-[0.18em] text-gold">Meme {String(index + 1).padStart(2, "0")}</span>
+                        <span className="meme-pack-copy block text-sm font-semibold leading-6">{item}</span>
+                      </button>
+                    ))}
+                  </div>
+                </motion.div>
+              </div>
             </section>
           </main>
         );

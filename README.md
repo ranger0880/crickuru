@@ -41,6 +41,10 @@ GitHub Actions also runs `.github/workflows/sync-india-matches.yml` every 15 min
 
 The `/players` route displays the synced Kurukshetra Warriors roster as mobile-friendly performance cards with impact scores, role badges, awards and recent CricHeroes highlights.
 
+## Meme Forge
+
+The `/memes` route can generate one cricket meme, create a 50-meme caption pack from the selected topic and style, preview the selected meme as a branded CricKuru image, and download either the SVG image or the full text pack.
+
 ## Warriors Data
 
 The `/warriors` route displays the full public Kurukshetra Warriors CricHeroes feed from `data/crickuru-live.json`, including team profile fields, match scorecards, roster signals, awards, opponents, source links and sync timing.

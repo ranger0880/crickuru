@@ -545,6 +545,22 @@
         animation-play-state: paused;
       }
 
+      .meme-pack-grid {
+        max-height: min(620px, 64vh);
+        scrollbar-color: rgba(244, 185, 66, 0.8) rgba(255, 255, 255, 0.08);
+      }
+
+      .meme-pack-card {
+        container-type: inline-size;
+      }
+
+      .meme-pack-copy {
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+      }
+
       .stadium-page-bg {
         background:
           linear-gradient(180deg, rgba(5, 7, 11, 0.38) 0%, rgba(5, 7, 11, 0.78) 46%, #05070b 100%),
