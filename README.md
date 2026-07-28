@@ -45,6 +45,10 @@ The `/players` route displays the synced Kurukshetra Warriors roster as mobile-f
 
 The `/memes` route can generate one cricket meme, create a 50-meme caption pack from the selected topic and style, preview the selected meme as a branded CricKuru image, and download either the SVG image or the full text pack.
 
+## Analytics
+
+The site includes the Google Analytics Google tag for measurement ID `G-9YYM5LZ3GV`. The build script also allows the required Google Analytics endpoints in the generated Hostinger CSP.
+
 ## Warriors Data
 
 The `/warriors` route displays the full public Kurukshetra Warriors CricHeroes feed from `data/crickuru-live.json`, including team profile fields, match scorecards, roster signals, awards, opponents, source links and sync timing.

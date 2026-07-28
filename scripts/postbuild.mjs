@@ -38,13 +38,14 @@ function renderHtaccess() {
       return `'sha256-${crypto.createHash("sha256").update(stringifyJsonLd(routePath)).digest("base64")}'`;
     }),
   );
+  const inlineScriptHashes = new Set([...jsonLdHashes, ...hashInlineScripts(template)]);
   const csp = [
     "default-src 'self'",
-    `script-src 'self' https://pagead2.googlesyndication.com https://fundingchoicesmessages.google.com ${[...jsonLdHashes].join(" ")}`,
+    `script-src 'self' https://www.googletagmanager.com https://pagead2.googlesyndication.com https://fundingchoicesmessages.google.com ${[...inlineScriptHashes].join(" ")}`,
     "style-src 'self' 'unsafe-inline'",
     "font-src 'self'",
-    "img-src 'self' data: blob: https://media.cricheroes.in https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://tpc.googlesyndication.com",
-    "connect-src 'self' https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://fundingchoicesmessages.google.com",
+    "img-src 'self' data: blob: https://media.cricheroes.in https://www.google-analytics.com https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://tpc.googlesyndication.com",
+    "connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://region2.google-analytics.com https://stats.g.doubleclick.net https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://fundingchoicesmessages.google.com",
     "frame-src 'self' https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://pagead2.googlesyndication.com",
     "manifest-src 'self'",
     "base-uri 'self'",
@@ -90,6 +91,20 @@ function renderHtaccess() {
     "</IfModule>",
     "",
   ].join("\n");
+}
+
+function hashInlineScripts(html) {
+  const hashes = [];
+  const scriptPattern = /<script\b(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/gi;
+  let match = scriptPattern.exec(html);
+  while (match) {
+    const scriptContent = match[1];
+    if (scriptContent.trim()) {
+      hashes.push(`'sha256-${crypto.createHash("sha256").update(scriptContent).digest("base64")}'`);
+    }
+    match = scriptPattern.exec(html);
+  }
+  return hashes;
 }
 
 function writeText(outputPath, content) {
