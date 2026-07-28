@@ -10,6 +10,19 @@ const PAGES = {
   recent: "https://www.cricbuzz.com/cricket-match/live-scores/recent-matches",
 };
 
+const TEAM_PAGES = [
+  {
+    status: "upcoming",
+    url: "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+    sourceScope: "india-team",
+  },
+  {
+    status: "recent",
+    url: "https://www.cricbuzz.com/cricket-team/india/2/results",
+    sourceScope: "india-team",
+  },
+];
+
 const LEVELS = [
   { id: "international", label: "International", order: 1 },
   { id: "league", label: "League / IPL", order: 2 },
@@ -84,7 +97,7 @@ const INDIA_TERMS = [
   "uttarakhand",
 ];
 
-async function fetchPage(status, url) {
+async function fetchPage(status, url, options = {}) {
   const response = await fetch(url, {
     headers: {
       accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
@@ -106,11 +119,12 @@ async function fetchPage(status, url) {
 
   const html = await response.text();
   const flightText = extractFlightText(html);
-  const matchesLists = extractAllJsonValues(flightText, "matchesList");
+  const entries = options.sourceScope === "india-team"
+    ? extractTeamMatchEntries(flightText)
+    : extractAllJsonValues(flightText, "matchesList").flatMap((list) => list?.matches || []);
 
-  return matchesLists
-    .flatMap((list) => list?.matches || [])
-    .map((entry) => normalizeCricbuzzMatch(entry, status, url))
+  return entries
+    .map((entry) => normalizeCricbuzzMatch(entry, status, url, options))
     .filter(Boolean);
 }
 
@@ -142,6 +156,12 @@ function extractAllJsonValues(text, key) {
   }
 
   return values;
+}
+
+function extractTeamMatchEntries(text) {
+  return extractAllJsonValues(text, "teamMatchesData")
+    .flatMap((groups) => groups || [])
+    .flatMap((group) => group?.matchDetailsMap?.match || []);
 }
 
 function extractJsonValue(text, key, startAt = 0) {
@@ -189,13 +209,13 @@ function extractJsonValue(text, key, startAt = 0) {
   return null;
 }
 
-function normalizeCricbuzzMatch(entry, pageStatus, listUrl) {
+function normalizeCricbuzzMatch(entry, pageStatus, listUrl, options = {}) {
   const match = entry?.match || entry;
   const info = match?.matchInfo || entry?.matchInfo;
   if (!info?.matchId) return null;
 
   const status = statusForMatch(info, pageStatus);
-  const level = levelForMatch(info);
+  const level = levelForMatch(info, options);
   const title = clean(`${info.team1?.teamName || "Team 1"} vs ${info.team2?.teamName || "Team 2"}, ${info.matchDesc || ""}`);
   const startTime = normalizeTimestamp(info.startDate);
 
@@ -206,6 +226,7 @@ function normalizeCricbuzzMatch(entry, pageStatus, listUrl) {
     level,
     levelLabel: LEVELS.find((item) => item.id === level)?.label || level,
     sourceType: info.matchType || "",
+    sourceScope: options.sourceScope || "global",
     title,
     series: clean(info.seriesName || ""),
     teams: [
@@ -231,10 +252,11 @@ function statusForMatch(info, pageStatus) {
   return pageStatus;
 }
 
-function levelForMatch(info) {
+function levelForMatch(info, options = {}) {
   const text = searchableInfo(info);
   if (/\bwomen\b|\bwpl\b|\bindw\b/.test(text)) return "women";
   if (/\bipl\b|indian premier league|league/.test(text)) return "league";
+  if (options.sourceScope === "india-team") return "international";
   if (clean(info.matchType).toLowerCase() === "international") return "international";
   return "domestic";
 }
@@ -362,10 +384,13 @@ async function writeFeed(feed) {
 
 async function main() {
   const previous = await readPreviousFeed();
-  const settled = await Promise.allSettled(Object.entries(PAGES).map(([status, url]) => fetchPage(status, url)));
+  const settled = await Promise.allSettled([
+    ...Object.entries(PAGES).map(([status, url]) => fetchPage(status, url)),
+    ...TEAM_PAGES.map((page) => fetchPage(page.status, page.url, { sourceScope: page.sourceScope })),
+  ]);
   const failures = settled.filter((result) => result.status === "rejected").map((result) => result.reason?.message || String(result.reason));
   const fetched = settled.flatMap((result) => result.status === "fulfilled" ? result.value : []);
-  const relevant = uniqueMatches(fetched.filter(isIndiaRelevant));
+  const relevant = uniqueMatches(fetched.filter((match) => match.sourceScope === "india-team" || isIndiaRelevant(match)));
 
   if (!relevant.length && failures.length && previous) {
     await writeFeed({
@@ -386,7 +411,7 @@ async function main() {
 
   const feed = {
     schemaVersion: 1,
-    source: "Cricbuzz public match pages",
+    source: "Cricbuzz public match pages and India team schedule/results",
     sourceStatus: failures.length ? "partial" : "fresh",
     syncedAt: new Date().toISOString(),
     summary: {

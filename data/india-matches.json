@@ -1,27 +1,2882 @@
 {
   "schemaVersion": 1,
-  "source": "Cricbuzz public match pages",
+  "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-07-28T15:31:35.682Z",
+  "syncedAt": "2026-07-28T15:43:57.607Z",
   "summary": {
     "live": 0,
-    "recent": 0,
-    "upcoming": 0,
-    "total": 0
+    "recent": 10,
+    "upcoming": 36,
+    "total": 46
   },
-  "all": [],
+  "all": [
+    {
+      "id": "upcoming-163013",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "Sri Lanka vs India, 1st Test",
+      "series": "India tour of Sri Lanka 2026",
+      "teams": [
+        {
+          "name": "Sri Lanka",
+          "shortName": "SL",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "15 Aug 2026, 10:00 am",
+      "time": "",
+      "place": "Galle International Stadium, Galle",
+      "overview": "Match starts at Aug 15, 04:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163013",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-08-15T04:30:00.000Z",
+      "rawId": 163013
+    },
+    {
+      "id": "upcoming-163017",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "Sri Lanka vs India, 2nd Test",
+      "series": "India tour of Sri Lanka 2026",
+      "teams": [
+        {
+          "name": "Sri Lanka",
+          "shortName": "SL",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "23 Aug 2026, 10:00 am",
+      "time": "",
+      "place": "Sinhalese Sports Club, Colombo",
+      "overview": "Match starts at Aug 23, 04:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-08-23T04:30:00.000Z",
+      "rawId": 163017
+    },
+    {
+      "id": "upcoming-151532",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs West Indies, 1st ODI",
+      "series": "West Indies tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "27 Sept 2026, 02:00 pm",
+      "time": "",
+      "place": "Greenfield International Stadium, Thiruvananthapuram",
+      "overview": "Match starts at Sep 27, 08:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151532",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-09-27T08:30:00.000Z",
+      "rawId": 151532
+    },
+    {
+      "id": "upcoming-151543",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs West Indies, 2nd ODI",
+      "series": "West Indies tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "30 Sept 2026, 02:00 pm",
+      "time": "",
+      "place": "Barsapara Cricket Stadium, Guwahati",
+      "overview": "Match starts at Sep 30, 08:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151543",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-09-30T08:30:00.000Z",
+      "rawId": 151543
+    },
+    {
+      "id": "upcoming-151554",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs West Indies, 3rd ODI",
+      "series": "West Indies tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "03 Oct 2026, 02:00 pm",
+      "time": "",
+      "place": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
+      "overview": "Match starts at Oct 03, 08:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151554",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-03T08:30:00.000Z",
+      "rawId": 151554
+    },
+    {
+      "id": "upcoming-151565",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs West Indies, 1st T20I",
+      "series": "West Indies tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "06 Oct 2026, 07:00 pm",
+      "time": "",
+      "place": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "overview": "Match starts at Oct 06, 13:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151565",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-06T13:30:00.000Z",
+      "rawId": 151565
+    },
+    {
+      "id": "upcoming-151576",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs West Indies, 2nd T20I",
+      "series": "West Indies tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "09 Oct 2026, 07:00 pm",
+      "time": "",
+      "place": "JSCA International Stadium Complex, Ranchi",
+      "overview": "Match starts at Oct 09, 13:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151576",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-09T13:30:00.000Z",
+      "rawId": 151576
+    },
+    {
+      "id": "upcoming-151587",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs West Indies, 3rd T20I",
+      "series": "West Indies tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 07:00 pm",
+      "time": "",
+      "place": "Holkar Stadium, Indore",
+      "overview": "Match starts at Oct 11, 13:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151587",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-11T13:30:00.000Z",
+      "rawId": 151587
+    },
+    {
+      "id": "upcoming-151598",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs West Indies, 4th T20I",
+      "series": "West Indies tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "14 Oct 2026, 07:00 pm",
+      "time": "",
+      "place": "Rajiv Gandhi International Stadium, Hyderabad",
+      "overview": "Match starts at Oct 14, 13:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151598",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-14T13:30:00.000Z",
+      "rawId": 151598
+    },
+    {
+      "id": "upcoming-151602",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs West Indies, 5th T20I",
+      "series": "West Indies tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "17 Oct 2026, 07:00 pm",
+      "time": "",
+      "place": "M.Chinnaswamy Stadium, Bengaluru",
+      "overview": "Match starts at Oct 17, 13:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151602",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-17T13:30:00.000Z",
+      "rawId": 151602
+    },
+    {
+      "id": "upcoming-161190",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "New Zealand vs India, 1st T20I",
+      "series": "India tour of New Zealand 2026",
+      "teams": [
+        {
+          "name": "New Zealand",
+          "shortName": "NZ",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "22 Oct 2026, 12:30 pm",
+      "time": "",
+      "place": "Hagley Oval, Christchurch",
+      "overview": "Match starts at Oct 22, 07:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/161190",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-22T07:00:00.000Z",
+      "rawId": 161190
+    },
+    {
+      "id": "upcoming-161201",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "New Zealand vs India, 2nd T20I",
+      "series": "India tour of New Zealand 2026",
+      "teams": [
+        {
+          "name": "New Zealand",
+          "shortName": "NZ",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "24 Oct 2026, 12:30 pm",
+      "time": "",
+      "place": "Hagley Oval, Christchurch",
+      "overview": "Match starts at Oct 24, 07:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/161201",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-24T07:00:00.000Z",
+      "rawId": 161201
+    },
+    {
+      "id": "upcoming-161212",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "New Zealand vs India, 3rd T20I",
+      "series": "India tour of New Zealand 2026",
+      "teams": [
+        {
+          "name": "New Zealand",
+          "shortName": "NZ",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "27 Oct 2026, 12:30 pm",
+      "time": "",
+      "place": "Sky Stadium, Wellington",
+      "overview": "Match starts at Oct 27, 07:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/161212",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-27T07:00:00.000Z",
+      "rawId": 161212
+    },
+    {
+      "id": "upcoming-161223",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "New Zealand vs India, 4th T20I",
+      "series": "India tour of New Zealand 2026",
+      "teams": [
+        {
+          "name": "New Zealand",
+          "shortName": "NZ",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "30 Oct 2026, 12:30 pm",
+      "time": "",
+      "place": "Eden Park, Auckland",
+      "overview": "Match starts at Oct 30, 07:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/161223",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-30T07:00:00.000Z",
+      "rawId": 161223
+    },
+    {
+      "id": "upcoming-161234",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "New Zealand vs India, 5th T20I",
+      "series": "India tour of New Zealand 2026",
+      "teams": [
+        {
+          "name": "New Zealand",
+          "shortName": "NZ",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "01 Nov 2026, 12:30 pm",
+      "time": "",
+      "place": "Seddon Park, Hamilton",
+      "overview": "Match starts at Nov 01, 07:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/161234",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-11-01T07:00:00.000Z",
+      "rawId": 161234
+    },
+    {
+      "id": "upcoming-161245",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "New Zealand vs India, 1st ODI",
+      "series": "India tour of New Zealand 2026",
+      "teams": [
+        {
+          "name": "New Zealand",
+          "shortName": "NZ",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "04 Nov 2026, 07:30 am",
+      "time": "",
+      "place": "Eden Park, Auckland",
+      "overview": "Match starts at Nov 04, 02:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/161245",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-11-04T02:00:00.000Z",
+      "rawId": 161245
+    },
+    {
+      "id": "upcoming-161256",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "New Zealand vs India, 2nd ODI",
+      "series": "India tour of New Zealand 2026",
+      "teams": [
+        {
+          "name": "New Zealand",
+          "shortName": "NZ",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "07 Nov 2026, 07:30 am",
+      "time": "",
+      "place": "Sky Stadium, Wellington",
+      "overview": "Match starts at Nov 07, 02:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/161256",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-11-07T02:00:00.000Z",
+      "rawId": 161256
+    },
+    {
+      "id": "upcoming-161260",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "New Zealand vs India, 3rd ODI",
+      "series": "India tour of New Zealand 2026",
+      "teams": [
+        {
+          "name": "New Zealand",
+          "shortName": "NZ",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "10 Nov 2026, 07:30 am",
+      "time": "",
+      "place": "Seddon Park, Hamilton",
+      "overview": "Match starts at Nov 10, 02:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/161260",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-11-10T02:00:00.000Z",
+      "rawId": 161260
+    },
+    {
+      "id": "upcoming-161271",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "New Zealand vs India, 4th ODI",
+      "series": "India tour of New Zealand 2026",
+      "teams": [
+        {
+          "name": "New Zealand",
+          "shortName": "NZ",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "13 Nov 2026, 07:30 am",
+      "time": "",
+      "place": "Bay Oval, Mount Maunganui",
+      "overview": "Match starts at Nov 13, 02:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/161271",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-11-13T02:00:00.000Z",
+      "rawId": 161271
+    },
+    {
+      "id": "upcoming-161282",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "New Zealand vs India, 5th ODI",
+      "series": "India tour of New Zealand 2026",
+      "teams": [
+        {
+          "name": "New Zealand",
+          "shortName": "NZ",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "15 Nov 2026, 07:30 am",
+      "time": "",
+      "place": "Bay Oval, Mount Maunganui",
+      "overview": "Match starts at Nov 15, 02:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/161282",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-11-15T02:00:00.000Z",
+      "rawId": 161282
+    },
+    {
+      "id": "upcoming-161285",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "New Zealand vs India, 1st Test",
+      "series": "India tour of New Zealand 2026",
+      "teams": [
+        {
+          "name": "New Zealand",
+          "shortName": "NZ",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "19 Nov 2026, 03:30 am",
+      "time": "",
+      "place": "Basin Reserve, Wellington",
+      "overview": "Match starts at Nov 19, 22:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/161285",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-11-18T22:00:00.000Z",
+      "rawId": 161285
+    },
+    {
+      "id": "upcoming-161296",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "New Zealand vs India, 2nd Test",
+      "series": "India tour of New Zealand 2026",
+      "teams": [
+        {
+          "name": "New Zealand",
+          "shortName": "NZ",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "27 Nov 2026, 03:30 am",
+      "time": "",
+      "place": "Hagley Oval, Christchurch",
+      "overview": "Match starts at Nov 27, 22:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/161296",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-11-26T22:00:00.000Z",
+      "rawId": 161296
+    },
+    {
+      "id": "upcoming-151613",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Sri Lanka, 1st ODI",
+      "series": "Sri Lanka tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Sri Lanka",
+          "shortName": "SL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "13 Dec 2026, 02:00 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Match starts at Dec 13, 08:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151613",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-12-13T08:30:00.000Z",
+      "rawId": 151613
+    },
+    {
+      "id": "upcoming-151624",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Sri Lanka, 2nd ODI",
+      "series": "Sri Lanka tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Sri Lanka",
+          "shortName": "SL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "16 Dec 2026, 02:00 pm",
+      "time": "",
+      "place": "M.Chinnaswamy Stadium, Bengaluru",
+      "overview": "Match starts at Dec 16, 08:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151624",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-12-16T08:30:00.000Z",
+      "rawId": 151624
+    },
+    {
+      "id": "upcoming-151635",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Sri Lanka, 3rd ODI",
+      "series": "Sri Lanka tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Sri Lanka",
+          "shortName": "SL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "19 Dec 2026, 02:00 pm",
+      "time": "",
+      "place": "Narendra Modi Stadium, Ahmedabad",
+      "overview": "Match starts at Dec 19, 08:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151635",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-12-19T08:30:00.000Z",
+      "rawId": 151635
+    },
+    {
+      "id": "upcoming-151646",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Sri Lanka, 1st T20I",
+      "series": "Sri Lanka tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Sri Lanka",
+          "shortName": "SL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "22 Dec 2026, 07:00 pm",
+      "time": "",
+      "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
+      "overview": "Match starts at Dec 22, 13:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151646",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-12-22T13:30:00.000Z",
+      "rawId": 151646
+    },
+    {
+      "id": "upcoming-151657",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Sri Lanka, 2nd T20I",
+      "series": "Sri Lanka tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Sri Lanka",
+          "shortName": "SL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "24 Dec 2026, 07:00 pm",
+      "time": "",
+      "place": "Barabati Stadium, Cuttack",
+      "overview": "Match starts at Dec 24, 13:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151657",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-12-24T13:30:00.000Z",
+      "rawId": 151657
+    },
+    {
+      "id": "upcoming-151668",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Sri Lanka, 3rd T20I",
+      "series": "Sri Lanka tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Sri Lanka",
+          "shortName": "SL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "27 Dec 2026, 07:00 pm",
+      "time": "",
+      "place": "Maharashtra Cricket Association Stadium, Pune",
+      "overview": "Match starts at Dec 27, 13:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151668",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-12-27T13:30:00.000Z",
+      "rawId": 151668
+    },
+    {
+      "id": "upcoming-151679",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Zimbabwe, 1st ODI",
+      "series": "Zimbabwe tour of India, 2027",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Zimbabwe",
+          "shortName": "ZIM",
+          "score": ""
+        }
+      ],
+      "dateLabel": "03 Jan 2027, 02:00 pm",
+      "time": "",
+      "place": "Eden Gardens, Kolkata",
+      "overview": "Match starts at Jan 03, 08:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151679",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2027-01-03T08:30:00.000Z",
+      "rawId": 151679
+    },
+    {
+      "id": "upcoming-151690",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Zimbabwe, 2nd ODI",
+      "series": "Zimbabwe tour of India, 2027",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Zimbabwe",
+          "shortName": "ZIM",
+          "score": ""
+        }
+      ],
+      "dateLabel": "06 Jan 2027, 02:00 pm",
+      "time": "",
+      "place": "Rajiv Gandhi International Stadium, Hyderabad",
+      "overview": "Match starts at Jan 06, 08:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151690",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2027-01-06T08:30:00.000Z",
+      "rawId": 151690
+    },
+    {
+      "id": "upcoming-151701",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Zimbabwe, 3rd ODI",
+      "series": "Zimbabwe tour of India, 2027",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Zimbabwe",
+          "shortName": "ZIM",
+          "score": ""
+        }
+      ],
+      "dateLabel": "09 Jan 2027, 02:00 pm",
+      "time": "",
+      "place": "Wankhede Stadium, Mumbai",
+      "overview": "Match starts at Jan 09, 08:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151701",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2027-01-09T08:30:00.000Z",
+      "rawId": 151701
+    },
+    {
+      "id": "upcoming-151712",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Australia, 1st Test",
+      "series": "Australia tour of India, 2027",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Australia",
+          "shortName": "AUS",
+          "score": ""
+        }
+      ],
+      "dateLabel": "21 Jan 2027, 09:30 am",
+      "time": "",
+      "place": "Vidarbha Cricket Association Stadium, Nagpur",
+      "overview": "Match starts at Jan 21, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151712",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2027-01-21T04:00:00.000Z",
+      "rawId": 151712
+    },
+    {
+      "id": "upcoming-151713",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Australia, 2nd Test",
+      "series": "Australia tour of India, 2027",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Australia",
+          "shortName": "AUS",
+          "score": ""
+        }
+      ],
+      "dateLabel": "29 Jan 2027, 09:30 am",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Match starts at Jan 29, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151713",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2027-01-29T04:00:00.000Z",
+      "rawId": 151713
+    },
+    {
+      "id": "upcoming-151724",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Australia, 3rd Test",
+      "series": "Australia tour of India, 2027",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Australia",
+          "shortName": "AUS",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Feb 2027, 09:00 am",
+      "time": "",
+      "place": "Barsapara Cricket Stadium, Guwahati",
+      "overview": "Match starts at Feb 11, 03:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151724",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2027-02-11T03:30:00.000Z",
+      "rawId": 151724
+    },
+    {
+      "id": "upcoming-151735",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Australia, 4th Test",
+      "series": "Australia tour of India, 2027",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Australia",
+          "shortName": "AUS",
+          "score": ""
+        }
+      ],
+      "dateLabel": "19 Feb 2027, 09:30 am",
+      "time": "",
+      "place": "JSCA International Stadium Complex, Ranchi",
+      "overview": "Match starts at Feb 19, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151735",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2027-02-19T04:00:00.000Z",
+      "rawId": 151735
+    },
+    {
+      "id": "upcoming-151746",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Australia, 5th Test",
+      "series": "Australia tour of India, 2027",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Australia",
+          "shortName": "AUS",
+          "score": ""
+        }
+      ],
+      "dateLabel": "27 Feb 2027, 09:30 am",
+      "time": "",
+      "place": "Narendra Modi Stadium, Ahmedabad",
+      "overview": "Match starts at Feb 27, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151746",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2027-02-27T04:00:00.000Z",
+      "rawId": 151746
+    },
+    {
+      "id": "recent-152720",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Zimbabwe, 3rd T20I",
+      "series": "India tour of Zimbabwe 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "192/5 (20 Ov)"
+        },
+        {
+          "name": "Zimbabwe",
+          "shortName": "ZIM",
+          "score": "157/7 (20 Ov)"
+        }
+      ],
+      "dateLabel": "26 Jul 2026, 04:30 pm",
+      "time": "",
+      "place": "Harare Sports Club, Harare",
+      "overview": "India won by 35 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/152720",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
+      "startTime": "2026-07-26T11:00:00.000Z",
+      "rawId": 152720
+    },
+    {
+      "id": "recent-152709",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Zimbabwe, 2nd T20I",
+      "series": "India tour of Zimbabwe 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "219/5 (20 Ov)"
+        },
+        {
+          "name": "Zimbabwe",
+          "shortName": "ZIM",
+          "score": "129/10 (17 Ov)"
+        }
+      ],
+      "dateLabel": "25 Jul 2026, 04:30 pm",
+      "time": "",
+      "place": "Harare Sports Club, Harare",
+      "overview": "India won by 90 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/152709",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
+      "startTime": "2026-07-25T11:00:00.000Z",
+      "rawId": 152709
+    },
+    {
+      "id": "recent-152698",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "Zimbabwe vs India, 1st T20I",
+      "series": "India tour of Zimbabwe 2026",
+      "teams": [
+        {
+          "name": "Zimbabwe",
+          "shortName": "ZIM",
+          "score": "125/7 (20 Ov)"
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "126/3 (13.2 Ov)"
+        }
+      ],
+      "dateLabel": "23 Jul 2026, 04:30 pm",
+      "time": "",
+      "place": "Harare Sports Club, Harare",
+      "overview": "India won by 7 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/152698",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
+      "startTime": "2026-07-23T11:00:00.000Z",
+      "rawId": 152698
+    },
+    {
+      "id": "recent-129480",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "England vs India, 3rd ODI",
+      "series": "India tour of England, 2026",
+      "teams": [
+        {
+          "name": "England",
+          "shortName": "ENG",
+          "score": "387/3 (50 Ov)"
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "360/7 (50 Ov)"
+        }
+      ],
+      "dateLabel": "19 Jul 2026, 03:30 pm",
+      "time": "",
+      "place": "Lord's, London",
+      "overview": "England won by 27 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129480",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
+      "startTime": "2026-07-19T10:00:00.000Z",
+      "rawId": 129480
+    },
+    {
+      "id": "recent-129469",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs England, 2nd ODI",
+      "series": "India tour of England, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "233/10 (44 Ov)"
+        },
+        {
+          "name": "England",
+          "shortName": "ENG",
+          "score": "235/6 (44 Ov)"
+        }
+      ],
+      "dateLabel": "16 Jul 2026, 05:30 pm",
+      "time": "",
+      "place": "Sophia Gardens, Cardiff",
+      "overview": "England won by 4 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129469",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
+      "startTime": "2026-07-16T12:00:00.000Z",
+      "rawId": 129469
+    },
+    {
+      "id": "recent-129458",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "England vs India, 1st ODI",
+      "series": "India tour of England, 2026",
+      "teams": [
+        {
+          "name": "England",
+          "shortName": "ENG",
+          "score": "258/10 (47 Ov)"
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "262/4 (45.2 Ov)"
+        }
+      ],
+      "dateLabel": "14 Jul 2026, 03:30 pm",
+      "time": "",
+      "place": "Edgbaston, Birmingham",
+      "overview": "India won by 6 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129458",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
+      "startTime": "2026-07-14T10:00:00.000Z",
+      "rawId": 129458
+    },
+    {
+      "id": "recent-129453",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "England vs India, 5th T20I",
+      "series": "India tour of England, 2026",
+      "teams": [
+        {
+          "name": "England",
+          "shortName": "ENG",
+          "score": "257/3 (20 Ov)"
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "201/8 (20 Ov)"
+        }
+      ],
+      "dateLabel": "11 Jul 2026, 07:00 pm",
+      "time": "",
+      "place": "The Rose Bowl, Southampton",
+      "overview": "England won by 56 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129453",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
+      "startTime": "2026-07-11T13:30:00.000Z",
+      "rawId": 129453
+    },
+    {
+      "id": "recent-129447",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs England, 4th T20I",
+      "series": "India tour of England, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "158/7 (20 Ov)"
+        },
+        {
+          "name": "England",
+          "shortName": "ENG",
+          "score": "159/1 (13 Ov)"
+        }
+      ],
+      "dateLabel": "09 Jul 2026, 10:00 pm",
+      "time": "",
+      "place": "County Ground, Bristol",
+      "overview": "England won by 9 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129447",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
+      "startTime": "2026-07-09T16:30:00.000Z",
+      "rawId": 129447
+    },
+    {
+      "id": "recent-129442",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "England vs India, 3rd T20I",
+      "series": "India tour of England, 2026",
+      "teams": [
+        {
+          "name": "England",
+          "shortName": "ENG",
+          "score": "201/7 (20 Ov)"
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "76/10 (11.4 Ov)"
+        }
+      ],
+      "dateLabel": "07 Jul 2026, 10:00 pm",
+      "time": "",
+      "place": "Trent Bridge, Nottingham",
+      "overview": "England won by 125 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129442",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
+      "startTime": "2026-07-07T16:30:00.000Z",
+      "rawId": 129442
+    },
+    {
+      "id": "recent-129420",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs England, 2nd T20I",
+      "series": "India tour of England, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "190/7 (20 Ov)"
+        },
+        {
+          "name": "England",
+          "shortName": "ENG",
+          "score": "191/6 (19 Ov)"
+        }
+      ],
+      "dateLabel": "04 Jul 2026, 07:00 pm",
+      "time": "",
+      "place": "Emirates Old Trafford, Manchester",
+      "overview": "England won by 4 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129420",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
+      "startTime": "2026-07-04T13:30:00.000Z",
+      "rawId": 129420
+    }
+  ],
   "live": [],
-  "upcoming": [],
-  "recent": [],
+  "upcoming": [
+    {
+      "id": "upcoming-163013",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "Sri Lanka vs India, 1st Test",
+      "series": "India tour of Sri Lanka 2026",
+      "teams": [
+        {
+          "name": "Sri Lanka",
+          "shortName": "SL",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "15 Aug 2026, 10:00 am",
+      "time": "",
+      "place": "Galle International Stadium, Galle",
+      "overview": "Match starts at Aug 15, 04:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163013",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-08-15T04:30:00.000Z",
+      "rawId": 163013
+    },
+    {
+      "id": "upcoming-163017",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "Sri Lanka vs India, 2nd Test",
+      "series": "India tour of Sri Lanka 2026",
+      "teams": [
+        {
+          "name": "Sri Lanka",
+          "shortName": "SL",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "23 Aug 2026, 10:00 am",
+      "time": "",
+      "place": "Sinhalese Sports Club, Colombo",
+      "overview": "Match starts at Aug 23, 04:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-08-23T04:30:00.000Z",
+      "rawId": 163017
+    },
+    {
+      "id": "upcoming-151532",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs West Indies, 1st ODI",
+      "series": "West Indies tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "27 Sept 2026, 02:00 pm",
+      "time": "",
+      "place": "Greenfield International Stadium, Thiruvananthapuram",
+      "overview": "Match starts at Sep 27, 08:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151532",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-09-27T08:30:00.000Z",
+      "rawId": 151532
+    },
+    {
+      "id": "upcoming-151543",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs West Indies, 2nd ODI",
+      "series": "West Indies tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "30 Sept 2026, 02:00 pm",
+      "time": "",
+      "place": "Barsapara Cricket Stadium, Guwahati",
+      "overview": "Match starts at Sep 30, 08:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151543",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-09-30T08:30:00.000Z",
+      "rawId": 151543
+    },
+    {
+      "id": "upcoming-151554",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs West Indies, 3rd ODI",
+      "series": "West Indies tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "03 Oct 2026, 02:00 pm",
+      "time": "",
+      "place": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
+      "overview": "Match starts at Oct 03, 08:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151554",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-03T08:30:00.000Z",
+      "rawId": 151554
+    },
+    {
+      "id": "upcoming-151565",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs West Indies, 1st T20I",
+      "series": "West Indies tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "06 Oct 2026, 07:00 pm",
+      "time": "",
+      "place": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "overview": "Match starts at Oct 06, 13:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151565",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-06T13:30:00.000Z",
+      "rawId": 151565
+    },
+    {
+      "id": "upcoming-151576",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs West Indies, 2nd T20I",
+      "series": "West Indies tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "09 Oct 2026, 07:00 pm",
+      "time": "",
+      "place": "JSCA International Stadium Complex, Ranchi",
+      "overview": "Match starts at Oct 09, 13:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151576",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-09T13:30:00.000Z",
+      "rawId": 151576
+    },
+    {
+      "id": "upcoming-151587",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs West Indies, 3rd T20I",
+      "series": "West Indies tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 07:00 pm",
+      "time": "",
+      "place": "Holkar Stadium, Indore",
+      "overview": "Match starts at Oct 11, 13:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151587",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-11T13:30:00.000Z",
+      "rawId": 151587
+    },
+    {
+      "id": "upcoming-151598",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs West Indies, 4th T20I",
+      "series": "West Indies tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "14 Oct 2026, 07:00 pm",
+      "time": "",
+      "place": "Rajiv Gandhi International Stadium, Hyderabad",
+      "overview": "Match starts at Oct 14, 13:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151598",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-14T13:30:00.000Z",
+      "rawId": 151598
+    },
+    {
+      "id": "upcoming-151602",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs West Indies, 5th T20I",
+      "series": "West Indies tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "17 Oct 2026, 07:00 pm",
+      "time": "",
+      "place": "M.Chinnaswamy Stadium, Bengaluru",
+      "overview": "Match starts at Oct 17, 13:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151602",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-17T13:30:00.000Z",
+      "rawId": 151602
+    },
+    {
+      "id": "upcoming-161190",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "New Zealand vs India, 1st T20I",
+      "series": "India tour of New Zealand 2026",
+      "teams": [
+        {
+          "name": "New Zealand",
+          "shortName": "NZ",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "22 Oct 2026, 12:30 pm",
+      "time": "",
+      "place": "Hagley Oval, Christchurch",
+      "overview": "Match starts at Oct 22, 07:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/161190",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-22T07:00:00.000Z",
+      "rawId": 161190
+    },
+    {
+      "id": "upcoming-161201",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "New Zealand vs India, 2nd T20I",
+      "series": "India tour of New Zealand 2026",
+      "teams": [
+        {
+          "name": "New Zealand",
+          "shortName": "NZ",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "24 Oct 2026, 12:30 pm",
+      "time": "",
+      "place": "Hagley Oval, Christchurch",
+      "overview": "Match starts at Oct 24, 07:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/161201",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-24T07:00:00.000Z",
+      "rawId": 161201
+    },
+    {
+      "id": "upcoming-161212",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "New Zealand vs India, 3rd T20I",
+      "series": "India tour of New Zealand 2026",
+      "teams": [
+        {
+          "name": "New Zealand",
+          "shortName": "NZ",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "27 Oct 2026, 12:30 pm",
+      "time": "",
+      "place": "Sky Stadium, Wellington",
+      "overview": "Match starts at Oct 27, 07:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/161212",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-27T07:00:00.000Z",
+      "rawId": 161212
+    },
+    {
+      "id": "upcoming-161223",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "New Zealand vs India, 4th T20I",
+      "series": "India tour of New Zealand 2026",
+      "teams": [
+        {
+          "name": "New Zealand",
+          "shortName": "NZ",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "30 Oct 2026, 12:30 pm",
+      "time": "",
+      "place": "Eden Park, Auckland",
+      "overview": "Match starts at Oct 30, 07:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/161223",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-30T07:00:00.000Z",
+      "rawId": 161223
+    },
+    {
+      "id": "upcoming-161234",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "New Zealand vs India, 5th T20I",
+      "series": "India tour of New Zealand 2026",
+      "teams": [
+        {
+          "name": "New Zealand",
+          "shortName": "NZ",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "01 Nov 2026, 12:30 pm",
+      "time": "",
+      "place": "Seddon Park, Hamilton",
+      "overview": "Match starts at Nov 01, 07:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/161234",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-11-01T07:00:00.000Z",
+      "rawId": 161234
+    },
+    {
+      "id": "upcoming-161245",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "New Zealand vs India, 1st ODI",
+      "series": "India tour of New Zealand 2026",
+      "teams": [
+        {
+          "name": "New Zealand",
+          "shortName": "NZ",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "04 Nov 2026, 07:30 am",
+      "time": "",
+      "place": "Eden Park, Auckland",
+      "overview": "Match starts at Nov 04, 02:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/161245",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-11-04T02:00:00.000Z",
+      "rawId": 161245
+    },
+    {
+      "id": "upcoming-161256",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "New Zealand vs India, 2nd ODI",
+      "series": "India tour of New Zealand 2026",
+      "teams": [
+        {
+          "name": "New Zealand",
+          "shortName": "NZ",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "07 Nov 2026, 07:30 am",
+      "time": "",
+      "place": "Sky Stadium, Wellington",
+      "overview": "Match starts at Nov 07, 02:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/161256",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-11-07T02:00:00.000Z",
+      "rawId": 161256
+    },
+    {
+      "id": "upcoming-161260",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "New Zealand vs India, 3rd ODI",
+      "series": "India tour of New Zealand 2026",
+      "teams": [
+        {
+          "name": "New Zealand",
+          "shortName": "NZ",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "10 Nov 2026, 07:30 am",
+      "time": "",
+      "place": "Seddon Park, Hamilton",
+      "overview": "Match starts at Nov 10, 02:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/161260",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-11-10T02:00:00.000Z",
+      "rawId": 161260
+    },
+    {
+      "id": "upcoming-161271",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "New Zealand vs India, 4th ODI",
+      "series": "India tour of New Zealand 2026",
+      "teams": [
+        {
+          "name": "New Zealand",
+          "shortName": "NZ",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "13 Nov 2026, 07:30 am",
+      "time": "",
+      "place": "Bay Oval, Mount Maunganui",
+      "overview": "Match starts at Nov 13, 02:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/161271",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-11-13T02:00:00.000Z",
+      "rawId": 161271
+    },
+    {
+      "id": "upcoming-161282",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "New Zealand vs India, 5th ODI",
+      "series": "India tour of New Zealand 2026",
+      "teams": [
+        {
+          "name": "New Zealand",
+          "shortName": "NZ",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "15 Nov 2026, 07:30 am",
+      "time": "",
+      "place": "Bay Oval, Mount Maunganui",
+      "overview": "Match starts at Nov 15, 02:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/161282",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-11-15T02:00:00.000Z",
+      "rawId": 161282
+    },
+    {
+      "id": "upcoming-161285",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "New Zealand vs India, 1st Test",
+      "series": "India tour of New Zealand 2026",
+      "teams": [
+        {
+          "name": "New Zealand",
+          "shortName": "NZ",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "19 Nov 2026, 03:30 am",
+      "time": "",
+      "place": "Basin Reserve, Wellington",
+      "overview": "Match starts at Nov 19, 22:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/161285",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-11-18T22:00:00.000Z",
+      "rawId": 161285
+    },
+    {
+      "id": "upcoming-161296",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "New Zealand vs India, 2nd Test",
+      "series": "India tour of New Zealand 2026",
+      "teams": [
+        {
+          "name": "New Zealand",
+          "shortName": "NZ",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "27 Nov 2026, 03:30 am",
+      "time": "",
+      "place": "Hagley Oval, Christchurch",
+      "overview": "Match starts at Nov 27, 22:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/161296",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-11-26T22:00:00.000Z",
+      "rawId": 161296
+    },
+    {
+      "id": "upcoming-151613",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Sri Lanka, 1st ODI",
+      "series": "Sri Lanka tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Sri Lanka",
+          "shortName": "SL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "13 Dec 2026, 02:00 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Match starts at Dec 13, 08:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151613",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-12-13T08:30:00.000Z",
+      "rawId": 151613
+    },
+    {
+      "id": "upcoming-151624",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Sri Lanka, 2nd ODI",
+      "series": "Sri Lanka tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Sri Lanka",
+          "shortName": "SL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "16 Dec 2026, 02:00 pm",
+      "time": "",
+      "place": "M.Chinnaswamy Stadium, Bengaluru",
+      "overview": "Match starts at Dec 16, 08:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151624",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-12-16T08:30:00.000Z",
+      "rawId": 151624
+    },
+    {
+      "id": "upcoming-151635",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Sri Lanka, 3rd ODI",
+      "series": "Sri Lanka tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Sri Lanka",
+          "shortName": "SL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "19 Dec 2026, 02:00 pm",
+      "time": "",
+      "place": "Narendra Modi Stadium, Ahmedabad",
+      "overview": "Match starts at Dec 19, 08:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151635",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-12-19T08:30:00.000Z",
+      "rawId": 151635
+    },
+    {
+      "id": "upcoming-151646",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Sri Lanka, 1st T20I",
+      "series": "Sri Lanka tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Sri Lanka",
+          "shortName": "SL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "22 Dec 2026, 07:00 pm",
+      "time": "",
+      "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
+      "overview": "Match starts at Dec 22, 13:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151646",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-12-22T13:30:00.000Z",
+      "rawId": 151646
+    },
+    {
+      "id": "upcoming-151657",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Sri Lanka, 2nd T20I",
+      "series": "Sri Lanka tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Sri Lanka",
+          "shortName": "SL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "24 Dec 2026, 07:00 pm",
+      "time": "",
+      "place": "Barabati Stadium, Cuttack",
+      "overview": "Match starts at Dec 24, 13:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151657",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-12-24T13:30:00.000Z",
+      "rawId": 151657
+    },
+    {
+      "id": "upcoming-151668",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Sri Lanka, 3rd T20I",
+      "series": "Sri Lanka tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Sri Lanka",
+          "shortName": "SL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "27 Dec 2026, 07:00 pm",
+      "time": "",
+      "place": "Maharashtra Cricket Association Stadium, Pune",
+      "overview": "Match starts at Dec 27, 13:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151668",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-12-27T13:30:00.000Z",
+      "rawId": 151668
+    },
+    {
+      "id": "upcoming-151679",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Zimbabwe, 1st ODI",
+      "series": "Zimbabwe tour of India, 2027",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Zimbabwe",
+          "shortName": "ZIM",
+          "score": ""
+        }
+      ],
+      "dateLabel": "03 Jan 2027, 02:00 pm",
+      "time": "",
+      "place": "Eden Gardens, Kolkata",
+      "overview": "Match starts at Jan 03, 08:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151679",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2027-01-03T08:30:00.000Z",
+      "rawId": 151679
+    },
+    {
+      "id": "upcoming-151690",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Zimbabwe, 2nd ODI",
+      "series": "Zimbabwe tour of India, 2027",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Zimbabwe",
+          "shortName": "ZIM",
+          "score": ""
+        }
+      ],
+      "dateLabel": "06 Jan 2027, 02:00 pm",
+      "time": "",
+      "place": "Rajiv Gandhi International Stadium, Hyderabad",
+      "overview": "Match starts at Jan 06, 08:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151690",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2027-01-06T08:30:00.000Z",
+      "rawId": 151690
+    },
+    {
+      "id": "upcoming-151701",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Zimbabwe, 3rd ODI",
+      "series": "Zimbabwe tour of India, 2027",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Zimbabwe",
+          "shortName": "ZIM",
+          "score": ""
+        }
+      ],
+      "dateLabel": "09 Jan 2027, 02:00 pm",
+      "time": "",
+      "place": "Wankhede Stadium, Mumbai",
+      "overview": "Match starts at Jan 09, 08:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151701",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2027-01-09T08:30:00.000Z",
+      "rawId": 151701
+    },
+    {
+      "id": "upcoming-151712",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Australia, 1st Test",
+      "series": "Australia tour of India, 2027",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Australia",
+          "shortName": "AUS",
+          "score": ""
+        }
+      ],
+      "dateLabel": "21 Jan 2027, 09:30 am",
+      "time": "",
+      "place": "Vidarbha Cricket Association Stadium, Nagpur",
+      "overview": "Match starts at Jan 21, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151712",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2027-01-21T04:00:00.000Z",
+      "rawId": 151712
+    },
+    {
+      "id": "upcoming-151713",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Australia, 2nd Test",
+      "series": "Australia tour of India, 2027",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Australia",
+          "shortName": "AUS",
+          "score": ""
+        }
+      ],
+      "dateLabel": "29 Jan 2027, 09:30 am",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Match starts at Jan 29, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151713",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2027-01-29T04:00:00.000Z",
+      "rawId": 151713
+    },
+    {
+      "id": "upcoming-151724",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Australia, 3rd Test",
+      "series": "Australia tour of India, 2027",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Australia",
+          "shortName": "AUS",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Feb 2027, 09:00 am",
+      "time": "",
+      "place": "Barsapara Cricket Stadium, Guwahati",
+      "overview": "Match starts at Feb 11, 03:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151724",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2027-02-11T03:30:00.000Z",
+      "rawId": 151724
+    },
+    {
+      "id": "upcoming-151735",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Australia, 4th Test",
+      "series": "Australia tour of India, 2027",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Australia",
+          "shortName": "AUS",
+          "score": ""
+        }
+      ],
+      "dateLabel": "19 Feb 2027, 09:30 am",
+      "time": "",
+      "place": "JSCA International Stadium Complex, Ranchi",
+      "overview": "Match starts at Feb 19, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151735",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2027-02-19T04:00:00.000Z",
+      "rawId": 151735
+    },
+    {
+      "id": "upcoming-151746",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Australia, 5th Test",
+      "series": "Australia tour of India, 2027",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Australia",
+          "shortName": "AUS",
+          "score": ""
+        }
+      ],
+      "dateLabel": "27 Feb 2027, 09:30 am",
+      "time": "",
+      "place": "Narendra Modi Stadium, Ahmedabad",
+      "overview": "Match starts at Feb 27, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151746",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2027-02-27T04:00:00.000Z",
+      "rawId": 151746
+    }
+  ],
+  "recent": [
+    {
+      "id": "recent-152720",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Zimbabwe, 3rd T20I",
+      "series": "India tour of Zimbabwe 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "192/5 (20 Ov)"
+        },
+        {
+          "name": "Zimbabwe",
+          "shortName": "ZIM",
+          "score": "157/7 (20 Ov)"
+        }
+      ],
+      "dateLabel": "26 Jul 2026, 04:30 pm",
+      "time": "",
+      "place": "Harare Sports Club, Harare",
+      "overview": "India won by 35 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/152720",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
+      "startTime": "2026-07-26T11:00:00.000Z",
+      "rawId": 152720
+    },
+    {
+      "id": "recent-152709",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs Zimbabwe, 2nd T20I",
+      "series": "India tour of Zimbabwe 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "219/5 (20 Ov)"
+        },
+        {
+          "name": "Zimbabwe",
+          "shortName": "ZIM",
+          "score": "129/10 (17 Ov)"
+        }
+      ],
+      "dateLabel": "25 Jul 2026, 04:30 pm",
+      "time": "",
+      "place": "Harare Sports Club, Harare",
+      "overview": "India won by 90 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/152709",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
+      "startTime": "2026-07-25T11:00:00.000Z",
+      "rawId": 152709
+    },
+    {
+      "id": "recent-152698",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "Zimbabwe vs India, 1st T20I",
+      "series": "India tour of Zimbabwe 2026",
+      "teams": [
+        {
+          "name": "Zimbabwe",
+          "shortName": "ZIM",
+          "score": "125/7 (20 Ov)"
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "126/3 (13.2 Ov)"
+        }
+      ],
+      "dateLabel": "23 Jul 2026, 04:30 pm",
+      "time": "",
+      "place": "Harare Sports Club, Harare",
+      "overview": "India won by 7 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/152698",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
+      "startTime": "2026-07-23T11:00:00.000Z",
+      "rawId": 152698
+    },
+    {
+      "id": "recent-129480",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "England vs India, 3rd ODI",
+      "series": "India tour of England, 2026",
+      "teams": [
+        {
+          "name": "England",
+          "shortName": "ENG",
+          "score": "387/3 (50 Ov)"
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "360/7 (50 Ov)"
+        }
+      ],
+      "dateLabel": "19 Jul 2026, 03:30 pm",
+      "time": "",
+      "place": "Lord's, London",
+      "overview": "England won by 27 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129480",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
+      "startTime": "2026-07-19T10:00:00.000Z",
+      "rawId": 129480
+    },
+    {
+      "id": "recent-129469",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs England, 2nd ODI",
+      "series": "India tour of England, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "233/10 (44 Ov)"
+        },
+        {
+          "name": "England",
+          "shortName": "ENG",
+          "score": "235/6 (44 Ov)"
+        }
+      ],
+      "dateLabel": "16 Jul 2026, 05:30 pm",
+      "time": "",
+      "place": "Sophia Gardens, Cardiff",
+      "overview": "England won by 4 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129469",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
+      "startTime": "2026-07-16T12:00:00.000Z",
+      "rawId": 129469
+    },
+    {
+      "id": "recent-129458",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "England vs India, 1st ODI",
+      "series": "India tour of England, 2026",
+      "teams": [
+        {
+          "name": "England",
+          "shortName": "ENG",
+          "score": "258/10 (47 Ov)"
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "262/4 (45.2 Ov)"
+        }
+      ],
+      "dateLabel": "14 Jul 2026, 03:30 pm",
+      "time": "",
+      "place": "Edgbaston, Birmingham",
+      "overview": "India won by 6 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129458",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
+      "startTime": "2026-07-14T10:00:00.000Z",
+      "rawId": 129458
+    },
+    {
+      "id": "recent-129453",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "England vs India, 5th T20I",
+      "series": "India tour of England, 2026",
+      "teams": [
+        {
+          "name": "England",
+          "shortName": "ENG",
+          "score": "257/3 (20 Ov)"
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "201/8 (20 Ov)"
+        }
+      ],
+      "dateLabel": "11 Jul 2026, 07:00 pm",
+      "time": "",
+      "place": "The Rose Bowl, Southampton",
+      "overview": "England won by 56 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129453",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
+      "startTime": "2026-07-11T13:30:00.000Z",
+      "rawId": 129453
+    },
+    {
+      "id": "recent-129447",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs England, 4th T20I",
+      "series": "India tour of England, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "158/7 (20 Ov)"
+        },
+        {
+          "name": "England",
+          "shortName": "ENG",
+          "score": "159/1 (13 Ov)"
+        }
+      ],
+      "dateLabel": "09 Jul 2026, 10:00 pm",
+      "time": "",
+      "place": "County Ground, Bristol",
+      "overview": "England won by 9 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129447",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
+      "startTime": "2026-07-09T16:30:00.000Z",
+      "rawId": 129447
+    },
+    {
+      "id": "recent-129442",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "England vs India, 3rd T20I",
+      "series": "India tour of England, 2026",
+      "teams": [
+        {
+          "name": "England",
+          "shortName": "ENG",
+          "score": "201/7 (20 Ov)"
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "76/10 (11.4 Ov)"
+        }
+      ],
+      "dateLabel": "07 Jul 2026, 10:00 pm",
+      "time": "",
+      "place": "Trent Bridge, Nottingham",
+      "overview": "England won by 125 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129442",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
+      "startTime": "2026-07-07T16:30:00.000Z",
+      "rawId": 129442
+    },
+    {
+      "id": "recent-129420",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
+      "title": "India vs England, 2nd T20I",
+      "series": "India tour of England, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "190/7 (20 Ov)"
+        },
+        {
+          "name": "England",
+          "shortName": "ENG",
+          "score": "191/6 (19 Ov)"
+        }
+      ],
+      "dateLabel": "04 Jul 2026, 07:00 pm",
+      "time": "",
+      "place": "Emirates Old Trafford, Manchester",
+      "overview": "England won by 4 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129420",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
+      "startTime": "2026-07-04T13:30:00.000Z",
+      "rawId": 129420
+    }
+  ],
   "rankings": [
     {
       "id": "international",
       "label": "International",
       "order": 1,
       "live": 0,
-      "recent": 0,
-      "upcoming": 0,
-      "total": 0
+      "recent": 10,
+      "upcoming": 36,
+      "total": 46
     },
     {
       "id": "league",
