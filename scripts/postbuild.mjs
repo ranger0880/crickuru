@@ -40,11 +40,12 @@ function renderHtaccess() {
   );
   const csp = [
     "default-src 'self'",
-    `script-src 'self' ${[...jsonLdHashes].join(" ")}`,
+    `script-src 'self' https://pagead2.googlesyndication.com https://fundingchoicesmessages.google.com ${[...jsonLdHashes].join(" ")}`,
     "style-src 'self' 'unsafe-inline'",
     "font-src 'self'",
-    "img-src 'self' data: blob: https://media.cricheroes.in",
-    "connect-src 'self'",
+    "img-src 'self' data: blob: https://media.cricheroes.in https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://tpc.googlesyndication.com",
+    "connect-src 'self' https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://fundingchoicesmessages.google.com",
+    "frame-src 'self' https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://pagead2.googlesyndication.com",
     "manifest-src 'self'",
     "base-uri 'self'",
     "form-action 'self'",
