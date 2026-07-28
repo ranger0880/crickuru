@@ -47,7 +47,7 @@ The `/memes` route can generate one cricket meme, create a 50-meme caption pack 
 
 ## Analytics
 
-The site includes the Google Analytics Google tag for measurement ID `G-9YYM5LZ3GV`. The build script also allows the required Google Analytics endpoints in the generated Hostinger CSP.
+The site includes the Google Analytics Google tag for measurement ID `G-W9LKR0717H`. The build script also allows the required Google Analytics endpoints in the generated Hostinger CSP.
 
 ## Warriors Data
 
