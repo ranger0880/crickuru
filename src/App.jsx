@@ -184,6 +184,54 @@ const RouterContext = React.createContext(null);
         error: "",
         data: indiaMatchesFallback,
       });
+      const ThemeContext = React.createContext({
+        theme: "dark",
+        toggleTheme: () => {},
+      });
+
+      const themeStorageKey = "crickuru-theme";
+
+      function getInitialTheme() {
+        try {
+          const stored = window.localStorage.getItem(themeStorageKey);
+          if (stored === "light" || stored === "dark") return stored;
+          return window.matchMedia?.("(prefers-color-scheme: light)").matches ? "light" : "dark";
+        } catch {
+          return "dark";
+        }
+      }
+
+      function applyTheme(theme) {
+        const root = document.documentElement;
+        root.dataset.theme = theme;
+        root.classList.toggle("theme-light", theme === "light");
+        root.classList.toggle("theme-dark", theme === "dark");
+        root.style.colorScheme = theme;
+      }
+
+      function ThemeProvider({ children }) {
+        const [theme, setTheme] = useState(getInitialTheme);
+
+        useEffect(() => {
+          applyTheme(theme);
+          try {
+            window.localStorage.setItem(themeStorageKey, theme);
+          } catch {
+            // Some private browsing modes block localStorage. The live toggle still works for the session.
+          }
+        }, [theme]);
+
+        const value = useMemo(() => ({
+          theme,
+          toggleTheme: () => setTheme((current) => (current === "light" ? "dark" : "light")),
+        }), [theme]);
+
+        return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>;
+      }
+
+      function useThemeMode() {
+        return useContext(ThemeContext);
+      }
 
       function assetUrl(path) {
         if (isLocalFilePreview()) {
@@ -344,11 +392,13 @@ const RouterContext = React.createContext(null);
         LogIn: (props) => <SvgIcon {...props}><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" /><path d="M10 17l5-5-5-5" /><path d="M15 12H3" /></SvgIcon>,
         History: (props) => <SvgIcon {...props}><path d="M3 12a9 9 0 1 0 3-6.7" /><path d="M3 3v6h6" /><path d="M12 7v5l3 2" /></SvgIcon>,
         Menu: (props) => <SvgIcon {...props}><path d="M4 6h16" /><path d="M4 12h16" /><path d="M4 18h16" /></SvgIcon>,
+        Moon: (props) => <SvgIcon {...props}><path d="M12 3a6 6 0 0 0 8.8 6.9A9 9 0 1 1 12 3Z" /></SvgIcon>,
         Mouse: (props) => <SvgIcon {...props}><rect x="5" y="2" width="14" height="20" rx="7" /><path d="M12 6v4" /></SvgIcon>,
         Play: (props) => <SvgIcon {...props}><polygon points="6 3 20 12 6 21 6 3" /></SvgIcon>,
         Radio: (props) => <SvgIcon {...props}><path d="M4.9 19.1a10 10 0 0 1 0-14.2" /><path d="M7.8 16.2a6 6 0 0 1 0-8.5" /><circle cx="12" cy="12" r="2" /><path d="M16.2 7.8a6 6 0 0 1 0 8.5" /><path d="M19.1 4.9a10 10 0 0 1 0 14.2" /></SvgIcon>,
         Shield: (props) => <SvgIcon {...props}><path d="M20 13c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V5l8-3 8 3v8Z" /></SvgIcon>,
         Sparkles: (props) => <SvgIcon {...props}><path d="m12 3-1.9 5.8L4 11l6.1 2.2L12 19l1.9-5.8L20 11l-6.1-2.2L12 3Z" /><path d="M5 3v4" /><path d="M3 5h4" /><path d="M19 17v4" /><path d="M17 19h4" /></SvgIcon>,
+        Sun: (props) => <SvgIcon {...props}><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></SvgIcon>,
         Swords: (props) => <SvgIcon {...props}><path d="m14.5 17.5 3 3 3-3-3-3" /><path d="m3 3 8.5 8.5" /><path d="m11.5 6.5 2-2L21 12l-2 2" /><path d="m3 21 8.5-8.5" /><path d="m6.5 11.5-2 2L12 21l2-2" /></SvgIcon>,
         Trophy: (props) => <SvgIcon {...props}><path d="M8 21h8" /><path d="M12 17v4" /><path d="M7 4h10v5a5 5 0 0 1-10 0V4Z" /><path d="M5 9a3 3 0 0 1-3-3V5h5" /><path d="M19 9a3 3 0 0 0 3-3V5h-5" /></SvgIcon>,
         Users: (props) => <SvgIcon {...props}><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></SvgIcon>,
@@ -487,6 +537,26 @@ const RouterContext = React.createContext(null);
         );
       }
 
+      function ThemeToggle({ wide = false }) {
+        const { theme, toggleTheme } = useThemeMode();
+        const nextTheme = theme === "light" ? "dark" : "light";
+        const label = `Switch to ${nextTheme} mode`;
+
+        return (
+          <button
+            type="button"
+            className={`theme-toggle inline-flex min-h-12 items-center justify-center gap-3 rounded-full border border-white/15 bg-white/5 px-4 text-sm font-black uppercase tracking-[0.14em] text-white transition hover:border-gold/45 hover:text-gold ${wide ? "w-full" : "w-12 px-0"}`}
+            aria-label={label}
+            aria-pressed={theme === "light"}
+            title={label}
+            onClick={toggleTheme}
+          >
+            {theme === "light" ? <Icon.Sun size={19} /> : <Icon.Moon size={19} />}
+            <span className={wide ? "" : "sr-only"}>{theme === "light" ? "Light" : "Dark"}</span>
+          </button>
+        );
+      }
+
       function Navbar() {
         const [scrolled, setScrolled] = useState(false);
         const [open, setOpen] = useState(false);
@@ -534,15 +604,21 @@ const RouterContext = React.createContext(null);
                     </NavLink>
                   ))}
                 </div>
-                <button
-                  className="grid h-12 w-12 place-items-center rounded-full border border-white/15 bg-white/5 text-white lg:hidden"
-                  type="button"
-                  aria-label="Open menu"
-                  aria-expanded={open}
-                  onClick={() => setOpen(true)}
-                >
-                  <Icon.Menu size={24} />
-                </button>
+                <div className="hidden lg:block">
+                  <ThemeToggle />
+                </div>
+                <div className="flex items-center gap-2 lg:hidden">
+                  <ThemeToggle />
+                  <button
+                    className="grid h-12 w-12 place-items-center rounded-full border border-white/15 bg-white/5 text-white"
+                    type="button"
+                    aria-label="Open menu"
+                    aria-expanded={open}
+                    onClick={() => setOpen(true)}
+                  >
+                    <Icon.Menu size={24} />
+                  </button>
+                </div>
               </nav>
             </header>
 
@@ -572,6 +648,9 @@ const RouterContext = React.createContext(null);
               >
                 <Icon.X size={24} />
               </button>
+            </div>
+            <div className="mt-8">
+              <ThemeToggle wide />
             </div>
             <div className="mt-12 grid gap-3">
               {navItems.map((item, index) => (
@@ -4481,60 +4560,62 @@ const RouterContext = React.createContext(null);
         const routerBasename = window.location.hostname.endsWith("github.io") ? "/crickuru" : "/";
 
         return (
-          <BrowserRouter basename={routerBasename}>
-            <IndiaMatchesProvider>
-              <ScrollToTop />
-              <MetaManager />
-              <IndiaLiveStrip />
-              <Navbar />
-              <Routes>
-                <Route path="/" element={<LandingPage />} />
-                <Route
-                  path="/warriors"
-                  element={<WarriorsDataPage />}
-                />
-                <Route
-                  path="/india-matches"
-                  element={<IndiaMatchesPage />}
-                />
-                <Route
-                  path="/players"
-                  element={<PlayersPage />}
-                />
-                <Route
-                  path="/arena"
-                  element={<ArenaPage />}
-                />
-                <Route
-                  path="/memes"
-                  element={<MemeGeneratorPage />}
-                />
-                <Route
-                  path="/meme"
-                  element={<MemeGeneratorPage />}
-                />
-                <Route
-                  path="/coin"
-                  element={<CoinPage />}
-                />
-                <Route
-                  path="/kurukshetra-coin"
-                  element={<CoinPage />}
-                />
-                <Route
-                  path="*"
-                  element={
-                    <PlaceholderPage
-                      title="Page Not Found"
-                      kicker="CricKuru"
-                      description="This page is not available yet. Use the navigation to return to the CricKuru experience."
-                      icon={Icon.Sparkles}
-                    />
-                  }
-                />
-              </Routes>
-            </IndiaMatchesProvider>
-          </BrowserRouter>
+          <ThemeProvider>
+            <BrowserRouter basename={routerBasename}>
+              <IndiaMatchesProvider>
+                <ScrollToTop />
+                <MetaManager />
+                <IndiaLiveStrip />
+                <Navbar />
+                <Routes>
+                  <Route path="/" element={<LandingPage />} />
+                  <Route
+                    path="/warriors"
+                    element={<WarriorsDataPage />}
+                  />
+                  <Route
+                    path="/india-matches"
+                    element={<IndiaMatchesPage />}
+                  />
+                  <Route
+                    path="/players"
+                    element={<PlayersPage />}
+                  />
+                  <Route
+                    path="/arena"
+                    element={<ArenaPage />}
+                  />
+                  <Route
+                    path="/memes"
+                    element={<MemeGeneratorPage />}
+                  />
+                  <Route
+                    path="/meme"
+                    element={<MemeGeneratorPage />}
+                  />
+                  <Route
+                    path="/coin"
+                    element={<CoinPage />}
+                  />
+                  <Route
+                    path="/kurukshetra-coin"
+                    element={<CoinPage />}
+                  />
+                  <Route
+                    path="*"
+                    element={
+                      <PlaceholderPage
+                        title="Page Not Found"
+                        kicker="CricKuru"
+                        description="This page is not available yet. Use the navigation to return to the CricKuru experience."
+                        icon={Icon.Sparkles}
+                      />
+                    }
+                  />
+                </Routes>
+              </IndiaMatchesProvider>
+            </BrowserRouter>
+          </ThemeProvider>
         );
       }
 createRoot(document.getElementById("root")).render(<App />);
