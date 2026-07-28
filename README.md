@@ -41,6 +41,10 @@ GitHub Actions also runs `.github/workflows/sync-india-matches.yml` every 15 min
 
 The `/players` route displays the synced Kurukshetra Warriors roster as mobile-friendly performance cards with impact scores, role badges, awards and recent CricHeroes highlights.
 
+## Warriors Data
+
+The `/warriors` route displays the full public Kurukshetra Warriors CricHeroes feed from `data/crickuru-live.json`, including team profile fields, match scorecards, roster signals, awards, opponents, source links and sync timing.
+
 ## Files
 
 - `src/` - React app source

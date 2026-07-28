@@ -100,6 +100,28 @@ function scoreFor(match, side) {
   };
 }
 
+function normalizeInnings(innings = []) {
+  return innings.map((inning) => ({
+    inning: inning.inning,
+    startedAt: normalizeDate(inning.inning_start_time),
+    endedAt: normalizeDate(inning.inning_end_time),
+    totalRuns: Number(inning.total_run || 0),
+    totalWickets: Number(inning.total_wicket || 0),
+    totalExtras: Number(inning.total_extra || 0),
+    oversPlayed: inning.overs_played || inning.summary?.over || "",
+    ballsPlayed: Number(inning.balls_played || 0),
+    runRate: inning.summary?.rr || "",
+    score: inning.summary?.score || "",
+    revisedTarget: inning.revised_target || "",
+    revisedOvers: inning.revised_overs || "",
+    leadBy: inning.lead_by || "",
+    trailBy: inning.trail_by || "",
+    declared: Boolean(inning.is_declare),
+    forfeited: Boolean(inning.is_forfeited),
+    followOn: Boolean(inning.is_followon),
+  }));
+}
+
 function buildMatches(rawMatches) {
   return rawMatches.map((match) => {
     const ourSide = Number(match.team_a_id) === TEAM_ID ? "a" : "b";
@@ -114,11 +136,21 @@ function buildMatches(rawMatches) {
       status: match.status,
       state: normalizeMatchState(match.status || match.match_result || match.match_summary?.summary || ""),
       date: normalizeDate(match.match_start_time || match.created_date),
+      endDate: normalizeDate(match.match_end_time),
+      createdAt: normalizeDate(match.created_date),
       matchType: match.match_type,
+      matchCategoryName: match.match_category_name || "",
       ballType: match.ball_type,
       overs: match.overs,
+      balls: Number(match.balls || 0),
+      currentInning: Number(match.current_inning || 0),
+      isSuperOver: Boolean(match.is_super_over),
+      isDL: Boolean(match.is_dl),
+      isVJD: Boolean(match.is_vjd),
       venue: match.ground_name?.trim() || match.city_name || "",
+      venueId: Number(match.ground_id || 0),
       city: match.city_name || "",
+      cityId: Number(match.city_id || 0),
       opponentId: opponent.teamId,
       opponent: opponent.team,
       opponentLogo: opponent.logo,
@@ -129,6 +161,34 @@ function buildMatches(rawMatches) {
       result,
       resultText: match.match_summary?.summary || match.win_by || match.match_result || match.status,
       scoreUpdatedAt: normalizeDate(match.updated_at || match.modified_date || match.created_date || match.match_start_time),
+      winner: match.winning_team || "",
+      tournament: {
+        id: Number(match.tournament_id || 0),
+        name: match.tournament_name || "",
+        categoryId: Number(match.tournament_category_id || 0),
+        roundId: Number(match.tournament_round_id || 0),
+        roundName: match.tournament_round_name || "",
+      },
+      association: {
+        id: Number(match.association_id || 0),
+        yearId: Number(match.association_year_id || 0),
+        name: match.association_name || "",
+        logo: match.association_logo || "",
+      },
+      liveAvailability: {
+        watchLive: Boolean(match.is_watch_live),
+        ticker: Boolean(match.is_ticker),
+        web: Boolean(match.is_live_match_enable_in_web),
+        app: Boolean(match.is_live_match_enable_in_app),
+        matchStreaming: Boolean(match.is_enable_match_streaming),
+        tournamentStreaming: Boolean(match.is_enable_tournament_streaming),
+        videoAnalyst: Boolean(match.is_video_analyst),
+        aiCommentary: Boolean(match.is_having_ai_commentary),
+      },
+      scorecards: {
+        warriors: normalizeInnings(ours.innings),
+        opponent: normalizeInnings(opponent.innings),
+      },
       toss: match.toss_details || "",
       cricHeroesUrl: `${BASE_URL}/matches`,
       awards: {
@@ -194,6 +254,7 @@ function normalizeMembers(rawMembers) {
     isCaptain: Boolean(player.is_captain),
     isAdmin: Boolean(player.is_admin),
     isPro: Boolean(player.is_player_pro),
+    associationTag: player.association_tag || "",
     batterCategory: player.batter_category || "",
     batterCategoryInfo: player.batter_category_info || "",
     bowlerCategory: player.bowler_category || "",
@@ -213,6 +274,34 @@ function normalizeMembers(rawMembers) {
       recentAwards: [],
     },
   }));
+}
+
+function normalizeTeam(rawTeamDetails, rawMembers, players) {
+  const details = rawTeamDetails?.data || {};
+  const memberData = rawMembers?.data || {};
+  const captainId = Number(details.captain_id || memberData.captain_id || 0);
+  const captain = players.find((player) => Number(player.id) === captainId);
+
+  return {
+    id: Number(details.team_id || memberData.team_id || TEAM_ID),
+    name: details.team_name || memberData.name || TEAM_NAME,
+    shortName: memberData.short_name || "",
+    logo: details.logo || memberData.team_logo || memberData.logo || "",
+    city: details.city_name || memberData.city_name || "",
+    cityId: Number(details.city_id || memberData.city_id || 0),
+    createdDate: normalizeDate(details.created_date),
+    isVerified: Boolean(details.is_verified || memberData.is_verified),
+    isActive: Boolean(details.is_active || memberData.is_active),
+    isSecure: Boolean(memberData.is_team_secure),
+    isAssociationTeam: Boolean(memberData.is_association_team),
+    captainId,
+    captainName: captain?.name || "",
+    totalPlayers: Number(memberData.total_team_players || players.length || 0),
+    cricHeroesUrl: BASE_URL,
+    matchesUrl: `${BASE_URL}/matches`,
+    membersUrl: `${BASE_URL}/members`,
+    awardsUrl: details.awards_link || "",
+  };
 }
 
 function addAward(player, label, match) {
@@ -270,6 +359,38 @@ function attachAwards(players, matches) {
   }
 
   return opponentAwards;
+}
+
+function buildAwardsLedger(players, matches) {
+  const byId = new Map(players.map((player) => [Number(player.id), player]));
+  const labels = [
+    { key: "playerOfMatch", text: "Player of the Match" },
+    { key: "fielderOfMatch", text: "Fielder of the Match" },
+    { key: "bestBatter", text: "Best Batter" },
+    { key: "bestBowler", text: "Best Bowler" },
+  ];
+
+  return matches.flatMap((match) => {
+    return labels
+      .map((label) => {
+        const playerId = Number(match.awards?.[label.key] || 0);
+        if (!playerId) return null;
+        const player = byId.get(playerId);
+        return {
+          id: `${match.id}-${label.key}`,
+          label: label.text,
+          playerId,
+          playerName: player?.name || "Opponent player",
+          playerPhoto: player?.photo || "",
+          side: player ? "Kurukshetra Warriors" : match.opponent,
+          matchId: match.id,
+          opponent: match.opponent,
+          result: match.result,
+          date: match.date,
+        };
+      })
+      .filter(Boolean);
+  }).sort((a, b) => matchTime(b) - matchTime(a));
 }
 
 function buildOpponents(matches, opponentAwards) {
@@ -342,6 +463,61 @@ function summarize(matches, liveMatches, upcomingMatches, recentMatches) {
   };
 }
 
+function countBy(items, getValue) {
+  const counts = new Map();
+  for (const item of items) {
+    const value = getValue(item);
+    if (!value) continue;
+    counts.set(value, (counts.get(value) || 0) + 1);
+  }
+  return [...counts.entries()]
+    .map(([name, count]) => ({ name, count }))
+    .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
+}
+
+function scoreNumber(value) {
+  const match = String(value || "").match(/\d+/);
+  return match ? Number(match[0]) : 0;
+}
+
+function buildMemberSummary(players) {
+  return {
+    total: players.length,
+    verified: players.filter((player) => player.isVerified).length,
+    pro: players.filter((player) => player.isPro).length,
+    captains: players.filter((player) => player.isCaptain).length,
+    admins: players.filter((player) => player.isAdmin).length,
+    skills: countBy(players, (player) => player.skill || "Unlisted"),
+    batterCategories: countBy(players, (player) => player.batterCategory),
+    bowlerCategories: countBy(players, (player) => player.bowlerCategory),
+    badges: countBy(players.flatMap((player) => player.badges || []), (badge) => badge),
+  };
+}
+
+function buildMatchInsights(matches) {
+  const ourScores = matches.map((match) => scoreNumber(match.ourScore)).filter(Boolean);
+  const opponentScores = matches.map((match) => scoreNumber(match.opponentScore)).filter(Boolean);
+  const highestFor = matches.reduce((best, match) => scoreNumber(match.ourScore) > scoreNumber(best?.ourScore) ? match : best, null);
+  const highestAgainst = matches.reduce((best, match) => scoreNumber(match.opponentScore) > scoreNumber(best?.opponentScore) ? match : best, null);
+
+  return {
+    total: matches.length,
+    completed: matches.filter((match) => ["win", "loss", "past"].includes(match.result)).length,
+    superOvers: matches.filter((match) => match.isSuperOver).length,
+    dlMatches: matches.filter((match) => match.isDL).length,
+    vjdMatches: matches.filter((match) => match.isVJD).length,
+    averageFor: ourScores.length ? Math.round(ourScores.reduce((sum, score) => sum + score, 0) / ourScores.length) : 0,
+    averageAgainst: opponentScores.length ? Math.round(opponentScores.reduce((sum, score) => sum + score, 0) / opponentScores.length) : 0,
+    highestFor: highestFor ? { score: highestFor.ourScore, opponent: highestFor.opponent, date: highestFor.date } : null,
+    highestAgainst: highestAgainst ? { score: highestAgainst.opponentScore, opponent: highestAgainst.opponent, date: highestAgainst.date } : null,
+    matchTypes: countBy(matches, (match) => match.matchType),
+    ballTypes: countBy(matches, (match) => match.ballType),
+    venues: countBy(matches, (match) => match.venue || match.city),
+    cities: countBy(matches, (match) => match.city),
+    tournaments: countBy(matches, (match) => match.tournament?.name),
+  };
+}
+
 async function main() {
   const [matchesText, membersText] = await Promise.all([
     fetchFlightText(`${BASE_URL}/matches`),
@@ -355,29 +531,37 @@ async function main() {
   const matches = buildMatches(rawMatches);
   const { liveMatches, upcomingMatches, recentMatches } = splitMatches(matches);
   const players = normalizeMembers(rawMembers);
+  const team = normalizeTeam(teamDetails, rawMembers, players);
   const opponentAwards = attachAwards(players, recentMatches);
   const opponents = buildOpponents(recentMatches, opponentAwards);
+  const awardLedger = buildAwardsLedger(players, recentMatches);
 
   const feed = {
     schemaVersion: 1,
     source: "CricHeroes public team pages",
     syncedAt: new Date().toISOString(),
-    team: {
-      id: TEAM_ID,
-      name: teamDetails?.data?.team_name || TEAM_NAME,
-      logo: teamDetails?.data?.logo || rawMembers?.data?.logo || "",
-      city: teamDetails?.data?.city_name || rawMembers?.data?.city_name || "",
-      cricHeroesUrl: BASE_URL,
-      matchesUrl: `${BASE_URL}/matches`,
-      membersUrl: `${BASE_URL}/members`,
+    dataInventory: {
+      teamProfile: true,
+      matches: matches.length,
+      liveMatches: liveMatches.length,
+      upcomingMatches: upcomingMatches.length,
+      recentMatches: recentMatches.length,
+      players: players.length,
+      opponents: opponents.length,
+      awards: awardLedger.length,
+      sourcePages: [BASE_URL, `${BASE_URL}/matches`, `${BASE_URL}/members`],
     },
+    team,
     summary: summarize(matches, liveMatches, upcomingMatches, recentMatches),
+    memberSummary: buildMemberSummary(players),
+    matchInsights: buildMatchInsights(recentMatches),
     matches: [...liveMatches, ...upcomingMatches, ...recentMatches],
     liveMatches,
     upcomingMatches,
     recentMatches,
     players: players.sort((a, b) => b.performance.awards - a.performance.awards || Number(b.isCaptain) - Number(a.isCaptain)),
     opponents,
+    awardLedger,
     opponentAwards,
   };
 

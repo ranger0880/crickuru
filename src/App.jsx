@@ -7,6 +7,7 @@ import "./styles.css";
 const RouterContext = React.createContext(null);
       const localRouteFiles = {
         "/": "index.html",
+        "/warriors": "warriors/index.html",
         "/arena": "arena/index.html",
         "/players": "players/index.html",
         "/memes": "memes/index.html",
@@ -22,7 +23,7 @@ const RouterContext = React.createContext(null);
 
       function localPreviewPrefix() {
         const path = decodeURIComponent(window.location.pathname).replace(/\\/g, "/");
-        return /\/(arena|coin|kurukshetra-coin|meme|memes)\/index\.html$/i.test(path) ? "../" : "";
+        return /\/(arena|coin|kurukshetra-coin|india-matches|meme|memes|players|warriors)\/index\.html$/i.test(path) ? "../" : "";
       }
 
       function normalizePath(pathname, basename = "/") {
@@ -38,7 +39,7 @@ const RouterContext = React.createContext(null);
       function currentRoutePath(basename = "/") {
         if (!isLocalFilePreview()) return normalizePath(window.location.pathname, basename);
         const path = decodeURIComponent(window.location.pathname).replace(/\\/g, "/").toLowerCase();
-        const routeMatch = path.match(/\/(arena|coin|kurukshetra-coin|meme|memes)\/index\.html$/);
+        const routeMatch = path.match(/\/(arena|coin|kurukshetra-coin|india-matches|meme|memes|players|warriors)\/index\.html$/);
         return routeMatch ? `/${routeMatch[1]}` : "/";
       }
 
@@ -130,6 +131,7 @@ const RouterContext = React.createContext(null);
       }
 
       const CricLinks = {
+        profile: "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors",
         matches: "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
         members: "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/members",
       };
@@ -142,16 +144,21 @@ const RouterContext = React.createContext(null);
           name: "Kurukshetra Warriors",
           logo: "",
           city: "Greater Noida",
+          cricHeroesUrl: CricLinks.profile,
           matchesUrl: CricLinks.matches,
           membersUrl: CricLinks.members,
         },
+        dataInventory: { teamProfile: false, matches: 0, liveMatches: 0, upcomingMatches: 0, recentMatches: 0, players: 0, opponents: 0, awards: 0, sourcePages: [] },
         summary: { matches: 0, live: 0, wins: 0, losses: 0, winRate: 0, liveOpponent: "", liveScore: "", liveStatus: "", latestResult: "", latestOpponent: "", upcoming: 0, nextOpponent: "", nextMatchDate: "", nextMatchVenue: "" },
+        memberSummary: { total: 0, verified: 0, pro: 0, captains: 0, admins: 0, skills: [], batterCategories: [], bowlerCategories: [], badges: [] },
+        matchInsights: { total: 0, completed: 0, averageFor: 0, averageAgainst: 0, highestFor: null, highestAgainst: null, matchTypes: [], ballTypes: [], venues: [], cities: [], tournaments: [] },
         matches: [],
         liveMatches: [],
         upcomingMatches: [],
         recentMatches: [],
         players: [],
         opponents: [],
+        awardLedger: [],
       };
 
       const indiaMatchesFallback = {
@@ -372,6 +379,7 @@ const RouterContext = React.createContext(null);
 
       const navItems = [
         { label: "Home", path: "/" },
+        { label: "Warriors", path: "/warriors" },
         { label: "India", path: "/india-matches" },
         { label: "Players", path: "/players" },
         { label: "Arena", path: "/arena" },
@@ -1498,6 +1506,424 @@ const RouterContext = React.createContext(null);
             : "border-gold/35 bg-gold/10 text-gold";
 
         return <span className={`rounded-full border px-3 py-1 text-[0.62rem] font-black uppercase tracking-[0.14em] ${tone}`}>{text}</span>;
+      }
+
+      const warriorsDataTabs = [
+        { id: "overview", label: "Overview" },
+        { id: "matches", label: "Matches" },
+        { id: "roster", label: "Roster" },
+        { id: "awards", label: "Awards" },
+        { id: "opponents", label: "Opponents" },
+      ];
+
+      function WarriorsDataPage() {
+        const { loading, error, data } = useLiveCricketFeed();
+        const [activeTab, setActiveTab] = useState("overview");
+        const team = data.team || liveFeedFallback.team;
+        const inventory = data.dataInventory || liveFeedFallback.dataInventory;
+        const matches = asArray(data.matches);
+        const recentMatches = asArray(data.recentMatches).length ? asArray(data.recentMatches) : matches;
+        const players = asArray(data.players);
+        const opponents = asArray(data.opponents);
+        const awards = asArray(data.awardLedger);
+        const sourcePages = asArray(inventory.sourcePages);
+        const syncText = loading ? "Syncing CricHeroes" : `Updated ${formatFeedDate(data.syncedAt)}`;
+
+        return (
+          <main className="route-bg page-grain min-h-screen px-5 pb-16 pt-36 sm:px-8">
+            <section className="mx-auto max-w-7xl">
+              <div className="grid gap-8 lg:grid-cols-[0.92fr_1.08fr] lg:items-end">
+                <motion.div className="min-w-0" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease }}>
+                  <p className="text-xs font-black uppercase tracking-[0.32em] text-cyan">CricHeroes Team Feed</p>
+                  <h1 className="mt-4 max-w-full font-display text-5xl font-black uppercase leading-none text-white sm:text-7xl lg:text-8xl">
+                    <span className="block">Warriors</span>
+                    <span className="block">Data Vault</span>
+                  </h1>
+                  <p className="mt-6 max-w-full text-lg leading-8 text-white/68 sm:max-w-2xl">
+                    Every public Kurukshetra Warriors signal currently available from CricHeroes is pulled into this page: team profile, matches, scorecards, roster, awards and opponent form.
+                  </p>
+                  <div className="mt-6 flex flex-wrap gap-3 text-xs font-black uppercase tracking-[0.16em]">
+                    <span className="rounded-full border border-gold/30 bg-gold/10 px-4 py-2 text-gold">{syncText}</span>
+                    {error && <span className="rounded-full border border-crimson/35 bg-crimson/10 px-4 py-2 text-crimson">Using saved feed</span>}
+                    <a
+                      href={assetUrl("/data/crickuru-live.json")}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/[0.045] px-4 py-2 text-white/64 transition hover:border-gold/40 hover:text-gold"
+                    >
+                      Raw JSON <Icon.ExternalLink size={14} />
+                    </a>
+                  </div>
+                </motion.div>
+
+                <div className="min-w-0 rounded-[8px] border border-white/12 bg-white/[0.045] p-5">
+                  <div className="flex flex-col gap-5 xl:flex-row xl:items-center xl:justify-between">
+                    <div className="flex min-w-0 items-center gap-4">
+                      <LiveAvatar src={team.logo} name={team.name || "Kurukshetra Warriors"} />
+                      <div className="min-w-0">
+                        <p className="text-xs font-black uppercase tracking-[0.18em] text-gold">{team.city || "Greater Noida"}</p>
+                        <h2 className="max-w-full font-display text-2xl font-black uppercase leading-none text-white sm:text-4xl">
+                          {String(team.name || "Kurukshetra Warriors").split(/\s+/).filter(Boolean).map((word, index) => (
+                            <span key={`${word}-${index}`} className="block sm:inline">
+                              {index > 0 && <span className="hidden sm:inline"> </span>}{word}
+                            </span>
+                          ))}
+                        </h2>
+                        <p className="mt-1 text-sm font-semibold text-white/50">Captain {team.captainName || "listed on CricHeroes"}</p>
+                      </div>
+                    </div>
+                    <a
+                      href={team.cricHeroesUrl || CricLinks.profile}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-gold px-5 text-sm font-black uppercase tracking-[0.14em] text-night transition hover:scale-[1.03]"
+                    >
+                      Official Profile <Icon.ExternalLink size={15} />
+                    </a>
+                  </div>
+                  <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-4">
+                    <LiveStat label="Matches" value={inventory.matches || matches.length || "-"} />
+                    <LiveStat label="Players" value={inventory.players || players.length || "-"} />
+                    <LiveStat label="Opponents" value={inventory.opponents || opponents.length || "-"} />
+                    <LiveStat label="Awards" value={inventory.awards || awards.length || "-"} />
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-10 flex gap-2 overflow-x-auto pb-2" role="tablist" aria-label="Kurukshetra Warriors CricHeroes data sections">
+                {warriorsDataTabs.map((item) => (
+                  <button
+                    key={item.id}
+                    type="button"
+                    role="tab"
+                    aria-selected={activeTab === item.id}
+                    onClick={() => setActiveTab(item.id)}
+                    className={`shrink-0 rounded-full border px-4 py-2 text-xs font-black uppercase tracking-[0.14em] transition ${
+                      activeTab === item.id
+                        ? "border-gold/60 bg-gold/12 text-gold"
+                        : "border-white/12 bg-white/[0.045] text-white/58 hover:border-white/25 hover:text-white"
+                    }`}
+                  >
+                    {item.label}
+                  </button>
+                ))}
+              </div>
+
+              <section className="mt-6" aria-live="polite">
+                {activeTab === "overview" && <WarriorsOverviewPanel data={data} sourcePages={sourcePages} />}
+                {activeTab === "matches" && <WarriorsMatchesPanel matches={matches} awards={awards} />}
+                {activeTab === "roster" && <WarriorsRosterPanel players={players} memberSummary={data.memberSummary} />}
+                {activeTab === "awards" && <WarriorsAwardsPanel awards={awards} />}
+                {activeTab === "opponents" && <WarriorsOpponentsPanel opponents={opponents} />}
+              </section>
+            </section>
+          </main>
+        );
+      }
+
+      function WarriorsOverviewPanel({ data, sourcePages }) {
+        const team = data.team || liveFeedFallback.team;
+        const summary = data.summary || liveFeedFallback.summary;
+        const memberSummary = data.memberSummary || liveFeedFallback.memberSummary;
+        const insights = data.matchInsights || liveFeedFallback.matchInsights;
+        const uniqueSourcePages = [...new Set([team.cricHeroesUrl || CricLinks.profile, ...sourcePages].filter(Boolean))];
+
+        return (
+          <div className="grid gap-5 xl:grid-cols-[0.95fr_1.05fr]">
+            <div className="grid gap-5">
+              <article className="rounded-[8px] border border-white/12 bg-white/[0.045] p-5">
+                <p className="text-xs font-black uppercase tracking-[0.22em] text-cyan">Team profile</p>
+                <div className="mt-5 grid gap-3 sm:grid-cols-2">
+                  <DataFact label="CricHeroes ID" value={team.id || "8626734"} />
+                  <DataFact label="Captain" value={team.captainName || "Available on CricHeroes"} />
+                  <DataFact label="Created" value={formatFeedDate(team.createdDate)} />
+                  <DataFact label="City" value={team.city || "Greater Noida"} />
+                  <DataFact label="Active" value={team.isActive ? "Yes" : "Not marked"} />
+                  <DataFact label="Secure team" value={team.isSecure ? "Yes" : "Not marked"} />
+                </div>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {team.isVerified && <BadgePill label="Verified team" />}
+                  {team.isActive && <BadgePill label="Active" />}
+                  {team.isSecure && <BadgePill label="Secure roster" />}
+                  {team.isAssociationTeam && <BadgePill label="Association team" />}
+                </div>
+              </article>
+
+              <article className="rounded-[8px] border border-white/12 bg-white/[0.045] p-5">
+                <p className="text-xs font-black uppercase tracking-[0.22em] text-gold">Public source pages</p>
+                <div className="mt-4 grid gap-3">
+                  {uniqueSourcePages.map((url) => (
+                    <a
+                      key={url}
+                      href={url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center justify-between gap-3 rounded-[8px] border border-white/10 bg-night/55 p-3 text-sm font-semibold text-white/64 transition hover:border-gold/35 hover:text-gold"
+                    >
+                      <span className="break-all">{url}</span>
+                      <Icon.ExternalLink size={15} />
+                    </a>
+                  ))}
+                </div>
+              </article>
+            </div>
+
+            <div className="grid gap-5">
+              <article className="rounded-[8px] border border-white/12 bg-white/[0.045] p-5">
+                <p className="text-xs font-black uppercase tracking-[0.22em] text-cyan">Match intelligence</p>
+                <div className="mt-5 grid grid-cols-2 gap-3 lg:grid-cols-4">
+                  <LiveStat label="Wins" value={summary.wins ?? "-"} />
+                  <LiveStat label="Losses" value={summary.losses ?? "-"} />
+                  <LiveStat label="Win rate" value={summary.winRate ? `${summary.winRate}%` : "0%"} />
+                  <LiveStat label="Live now" value={summary.live ?? "0"} />
+                </div>
+                <div className="mt-5 grid gap-3 sm:grid-cols-2">
+                  <DataFact label="Average score for" value={insights.averageFor || "-"} />
+                  <DataFact label="Average against" value={insights.averageAgainst || "-"} />
+                  <DataFact label="Highest Warriors score" value={insights.highestFor ? `${insights.highestFor.score} vs ${insights.highestFor.opponent}` : "-"} />
+                  <DataFact label="Highest conceded" value={insights.highestAgainst ? `${insights.highestAgainst.score} vs ${insights.highestAgainst.opponent}` : "-"} />
+                </div>
+              </article>
+
+              <div className="grid gap-5 md:grid-cols-2">
+                <CountList title="Player skills" items={memberSummary.skills} />
+                <CountList title="Batter types" items={memberSummary.batterCategories} />
+                <CountList title="Bowler types" items={memberSummary.bowlerCategories} />
+                <CountList title="Venues" items={insights.venues} />
+              </div>
+            </div>
+          </div>
+        );
+      }
+
+      function WarriorsMatchesPanel({ matches, awards }) {
+        if (!matches.length) {
+          return <DataEmpty title="No matches in the feed" description="The CricHeroes match list will appear here after the next successful sync." />;
+        }
+
+        return (
+          <div className="grid gap-4">
+            {matches.map((match) => (
+              <WarriorsMatchDataCard
+                key={`${match.id}-${match.state}`}
+                match={match}
+                awards={awards.filter((award) => Number(award.matchId) === Number(match.id))}
+              />
+            ))}
+          </div>
+        );
+      }
+
+      function WarriorsMatchDataCard({ match, awards }) {
+        const resultTone = match.result === "win" ? "text-gold" : match.result === "loss" ? "text-crimson" : "text-cyan";
+
+        return (
+          <article className="rounded-[8px] border border-white/12 bg-white/[0.045] p-5">
+            <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+              <div>
+                <p className="text-xs font-black uppercase tracking-[0.2em] text-white/42">{formatFeedDate(match.date)} - {match.venue || match.city || "CricHeroes"}</p>
+                <h2 className="mt-2 font-display text-4xl font-black uppercase leading-none text-white">Warriors vs {match.opponent}</h2>
+                <p className={`mt-3 font-display text-3xl font-black uppercase ${resultTone}`}>{match.resultText || match.status || match.result}</p>
+              </div>
+              <div className="grid gap-2 text-left lg:text-right">
+                <p className="font-display text-4xl font-black text-gold">{match.ourScore || "-"} / {match.opponentScore || "-"}</p>
+                <p className="text-xs font-black uppercase tracking-[0.16em] text-white/44">{match.matchType || "Match"} - {match.ballType || "Ball"} - {match.overs || "-"} overs</p>
+              </div>
+            </div>
+
+            <div className="mt-5 grid gap-3 md:grid-cols-2">
+              <ScorecardMiniList label="Warriors innings" innings={match.scorecards?.warriors} fallback={match.ourScore} />
+              <ScorecardMiniList label={`${match.opponent || "Opponent"} innings`} innings={match.scorecards?.opponent} fallback={match.opponentScore} />
+            </div>
+
+            <div className="mt-5 grid gap-3 md:grid-cols-3">
+              <DataFact label="Toss" value={match.toss || "Not listed"} />
+              <DataFact label="Winner" value={match.winner || "Not listed"} />
+              <DataFact label="Score checked" value={formatFeedDate(match.scoreUpdatedAt || match.date)} />
+            </div>
+
+            {awards.length > 0 && (
+              <div className="mt-5 flex flex-wrap gap-2">
+                {awards.map((award) => <BadgePill key={award.id} label={`${award.label}: ${award.playerName}`} />)}
+              </div>
+            )}
+          </article>
+        );
+      }
+
+      function ScorecardMiniList({ label, innings, fallback }) {
+        const rows = asArray(innings);
+        return (
+          <div className="rounded-[8px] border border-white/10 bg-night/55 p-4">
+            <p className="text-xs font-black uppercase tracking-[0.16em] text-white/42">{label}</p>
+            {rows.length ? (
+              <div className="mt-3 grid gap-2">
+                {rows.map((inning, index) => (
+                  <div key={`${label}-${index}`} className="flex items-center justify-between gap-3 text-sm">
+                    <span className="font-semibold text-white/64">Innings {inning.inning || index + 1}</span>
+                    <span className="font-display text-2xl font-black text-white">{inning.score || fallback || "-"}</span>
+                    <span className="text-right text-xs font-bold uppercase tracking-[0.14em] text-white/38">RR {inning.runRate || "-"}</span>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <p className="mt-3 font-display text-2xl font-black text-white">{fallback || "-"}</p>
+            )}
+          </div>
+        );
+      }
+
+      function WarriorsRosterPanel({ players, memberSummary }) {
+        if (!players.length) {
+          return <DataEmpty title="No players in the feed" description="The CricHeroes member list will appear here after the next successful sync." />;
+        }
+
+        const displayPlayers = players
+          .map((player) => ({ ...player, impact: playerImpactScore(player), role: playerRoleLabel(player) }))
+          .sort((a, b) => Number(b.isCaptain) - Number(a.isCaptain) || b.impact - a.impact || a.name.localeCompare(b.name));
+
+        return (
+          <div className="grid gap-5">
+            <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
+              <LiveStat label="Total" value={memberSummary?.total || players.length} />
+              <LiveStat label="Verified" value={memberSummary?.verified || 0} />
+              <LiveStat label="Pro" value={memberSummary?.pro || 0} />
+              <LiveStat label="Admins" value={memberSummary?.admins || 0} />
+            </div>
+            <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+              {displayPlayers.map((player, index) => <WarriorsRosterDataCard key={player.id || player.name} player={player} rank={index + 1} />)}
+            </div>
+          </div>
+        );
+      }
+
+      function WarriorsRosterDataCard({ player, rank }) {
+        return (
+          <article className="rounded-[8px] border border-white/12 bg-white/[0.045] p-4">
+            <div className="flex items-start justify-between gap-3">
+              <div className="flex min-w-0 items-center gap-3">
+                <LiveAvatar src={player.photo} name={player.name} />
+                <div className="min-w-0">
+                  <p className="text-[0.62rem] font-black uppercase tracking-[0.18em] text-gold">Roster #{rank}</p>
+                  <h2 className="truncate font-display text-3xl font-black uppercase text-white">{player.name}</h2>
+                  <p className="mt-1 text-xs font-bold uppercase tracking-[0.14em] text-white/44">{player.role}</p>
+                </div>
+              </div>
+              <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full border border-white/10 bg-night/60 font-display text-xl font-black text-white">{player.impact}</span>
+            </div>
+            <div className="mt-4 grid grid-cols-4 gap-2 text-center">
+              <LiveTinyStat label="POM" value={player.performance?.playerOfMatch || 0} />
+              <LiveTinyStat label="BAT" value={player.performance?.bestBatter || 0} />
+              <LiveTinyStat label="BWL" value={player.performance?.bestBowler || 0} />
+              <LiveTinyStat label="FLD" value={player.performance?.fielderOfMatch || 0} />
+            </div>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {(player.badges?.length ? player.badges : ["Roster"]).slice(0, 6).map((badge) => <BadgePill key={badge} label={badge} />)}
+              {player.associationTag && <BadgePill label={player.associationTag} />}
+            </div>
+          </article>
+        );
+      }
+
+      function WarriorsAwardsPanel({ awards }) {
+        if (!awards.length) {
+          return <DataEmpty title="No awards in the feed" description="CricHeroes award records will appear after they are present on the public match cards." />;
+        }
+
+        return (
+          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+            {awards.map((award) => (
+              <article key={award.id} className="rounded-[8px] border border-white/12 bg-white/[0.045] p-4">
+                <div className="flex items-center gap-3">
+                  <LiveAvatar src={award.playerPhoto} name={award.playerName} />
+                  <div className="min-w-0">
+                    <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan">{award.label}</p>
+                    <h2 className="truncate font-display text-3xl font-black uppercase text-white">{award.playerName}</h2>
+                    <p className="text-sm font-semibold text-white/50">{award.side}</p>
+                  </div>
+                </div>
+                <div className="mt-4 grid gap-2 text-sm text-white/58">
+                  <p>vs {award.opponent}</p>
+                  <p>{formatFeedDate(award.date)}</p>
+                </div>
+                <div className="mt-4">
+                  <BadgePill label={award.result || "match award"} />
+                </div>
+              </article>
+            ))}
+          </div>
+        );
+      }
+
+      function WarriorsOpponentsPanel({ opponents }) {
+        if (!opponents.length) {
+          return <DataEmpty title="No opponents in the feed" description="Opponent cards are built automatically from completed CricHeroes matches." />;
+        }
+
+        return (
+          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+            {opponents.map((opponent) => (
+              <article key={opponent.id || opponent.name} className="rounded-[8px] border border-white/12 bg-white/[0.045] p-5">
+                <div className="flex items-center gap-3">
+                  <LiveAvatar src={opponent.logo} name={opponent.name} />
+                  <div className="min-w-0">
+                    <p className="text-xs font-black uppercase tracking-[0.18em] text-gold">Rival #{opponent.matches || 1}</p>
+                    <h2 className="truncate font-display text-3xl font-black uppercase text-white">{opponent.name}</h2>
+                    <p className="text-sm font-semibold text-white/50">{opponent.lastResult || "Recorded opponent"}</p>
+                  </div>
+                </div>
+                <div className="mt-5 grid grid-cols-3 gap-2 text-center">
+                  <LiveTinyStat label="Games" value={opponent.matches || 0} />
+                  <LiveTinyStat label="Beat KW" value={opponent.winsAgainstUs || 0} />
+                  <LiveTinyStat label="Lost" value={opponent.lossesAgainstUs || 0} />
+                </div>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {(opponent.badges?.length ? opponent.badges : ["Opponent"]).map((badge) => <BadgePill key={badge} label={badge} />)}
+                </div>
+                <p className="mt-4 text-sm font-semibold text-white/52">Last score: {opponent.lastScore || "-"}</p>
+              </article>
+            ))}
+          </div>
+        );
+      }
+
+      function CountList({ title, items }) {
+        const rows = asArray(items).slice(0, 6);
+        return (
+          <article className="rounded-[8px] border border-white/12 bg-white/[0.045] p-4">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-gold">{title}</p>
+            {rows.length ? (
+              <div className="mt-4 grid gap-2">
+                {rows.map((item) => (
+                  <div key={item.name} className="flex items-center justify-between gap-3 rounded-[8px] bg-night/55 px-3 py-2">
+                    <span className="truncate text-sm font-semibold text-white/70">{item.name}</span>
+                    <span className="font-display text-2xl font-black text-white">{item.count}</span>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <p className="mt-4 text-sm leading-6 text-white/52">Waiting for CricHeroes data.</p>
+            )}
+          </article>
+        );
+      }
+
+      function DataFact({ label, value }) {
+        return (
+          <div className="rounded-[8px] border border-white/10 bg-night/55 p-3">
+            <p className="text-[0.62rem] font-black uppercase tracking-[0.16em] text-white/38">{label}</p>
+            <p className="mt-1 text-sm font-bold text-white/78">{value || "-"}</p>
+          </div>
+        );
+      }
+
+      function DataEmpty({ title, description }) {
+        return (
+          <div className="rounded-[8px] border border-white/12 bg-white/[0.045] p-8 text-center">
+            <p className="font-display text-4xl font-black uppercase text-white">{title}</p>
+            <p className="mx-auto mt-3 max-w-2xl leading-7 text-white/62">{description}</p>
+          </div>
+        );
       }
 
       const playerFilterTabs = [
@@ -4063,6 +4489,10 @@ const RouterContext = React.createContext(null);
               <Navbar />
               <Routes>
                 <Route path="/" element={<LandingPage />} />
+                <Route
+                  path="/warriors"
+                  element={<WarriorsDataPage />}
+                />
                 <Route
                   path="/india-matches"
                   element={<IndiaMatchesPage />}

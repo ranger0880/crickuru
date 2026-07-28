@@ -1,15 +1,41 @@
 {
   "schemaVersion": 1,
   "source": "CricHeroes public team pages",
-  "syncedAt": "2026-07-28T15:50:35.939Z",
+  "syncedAt": "2026-07-28T16:04:04.784Z",
+  "dataInventory": {
+    "teamProfile": true,
+    "matches": 12,
+    "liveMatches": 0,
+    "upcomingMatches": 0,
+    "recentMatches": 12,
+    "players": 77,
+    "opponents": 11,
+    "awards": 39,
+    "sourcePages": [
+      "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors",
+      "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
+      "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/members"
+    ]
+  },
   "team": {
     "id": 8626734,
     "name": "Kurukshetra Warriors",
+    "shortName": "",
     "logo": "https://media.cricheroes.in/team_logo/1762512503647_wRP4JMDmyQMi.jpg",
     "city": "Greater Noida",
+    "cityId": 4770,
+    "createdDate": "2025-01-09T08:58:09.000Z",
+    "isVerified": false,
+    "isActive": true,
+    "isSecure": true,
+    "isAssociationTeam": false,
+    "captainId": 29139731,
+    "captainName": "Ankit Kulshreshtha",
+    "totalPlayers": 77,
     "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors",
     "matchesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
-    "membersUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/members"
+    "membersUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/members",
+    "awardsUrl": ""
   },
   "summary": {
     "matches": 12,
@@ -27,17 +53,235 @@
     "nextMatchDate": "",
     "nextMatchVenue": ""
   },
+  "memberSummary": {
+    "total": 77,
+    "verified": 73,
+    "pro": 36,
+    "captains": 1,
+    "admins": 2,
+    "skills": [
+      {
+        "name": "Unlisted",
+        "count": 66
+      },
+      {
+        "name": "BAT",
+        "count": 4
+      },
+      {
+        "name": "ALL",
+        "count": 3
+      },
+      {
+        "name": "BOWL",
+        "count": 3
+      },
+      {
+        "name": "BAT,WK",
+        "count": 1
+      }
+    ],
+    "batterCategories": [
+      {
+        "name": "Accumulator",
+        "count": 17
+      },
+      {
+        "name": "Classicist",
+        "count": 13
+      },
+      {
+        "name": "Destroyer",
+        "count": 12
+      },
+      {
+        "name": "Hard Hitter",
+        "count": 11
+      },
+      {
+        "name": "Steady Batter",
+        "count": 3
+      }
+    ],
+    "bowlerCategories": [
+      {
+        "name": "Aspirant",
+        "count": 24
+      },
+      {
+        "name": "Wildcard",
+        "count": 14
+      },
+      {
+        "name": "Economist",
+        "count": 5
+      },
+      {
+        "name": "Spearhead",
+        "count": 1
+      }
+    ],
+    "badges": [
+      {
+        "name": "Verified",
+        "count": 73
+      },
+      {
+        "name": "Pro",
+        "count": 36
+      },
+      {
+        "name": "Aspirant",
+        "count": 24
+      },
+      {
+        "name": "Accumulator",
+        "count": 17
+      },
+      {
+        "name": "Wildcard",
+        "count": 14
+      },
+      {
+        "name": "Classicist",
+        "count": 13
+      },
+      {
+        "name": "Destroyer",
+        "count": 12
+      },
+      {
+        "name": "Hard Hitter",
+        "count": 11
+      },
+      {
+        "name": "Economist",
+        "count": 5
+      },
+      {
+        "name": "Form Batter",
+        "count": 4
+      },
+      {
+        "name": "Strike Bowler",
+        "count": 4
+      },
+      {
+        "name": "Match Winner",
+        "count": 3
+      },
+      {
+        "name": "Steady Batter",
+        "count": 3
+      },
+      {
+        "name": "Captain",
+        "count": 1
+      },
+      {
+        "name": "Spearhead",
+        "count": 1
+      }
+    ]
+  },
+  "matchInsights": {
+    "total": 12,
+    "completed": 12,
+    "superOvers": 0,
+    "dlMatches": 0,
+    "vjdMatches": 0,
+    "averageFor": 194,
+    "averageAgainst": 209,
+    "highestFor": {
+      "score": "277/8",
+      "opponent": "Techie Cricket Club",
+      "date": "2026-03-11T01:43:51.000Z"
+    },
+    "highestAgainst": {
+      "score": "279/5",
+      "opponent": "Techie Cricket Club",
+      "date": "2026-03-11T01:43:51.000Z"
+    },
+    "matchTypes": [
+      {
+        "name": "Limited Overs",
+        "count": 12
+      }
+    ],
+    "ballTypes": [
+      {
+        "name": "TENNIS",
+        "count": 12
+      }
+    ],
+    "venues": [
+      {
+        "name": "M2 Cricket Ground By Daksh (Greater Noida)",
+        "count": 3
+      },
+      {
+        "name": "LEGEND 3 By KUNDAN",
+        "count": 2
+      },
+      {
+        "name": "M2 Cricket Ground By Daksh",
+        "count": 2
+      },
+      {
+        "name": "County cricket Complex(CQ)",
+        "count": 1
+      },
+      {
+        "name": "LEGEND 2 By KUNDAN",
+        "count": 1
+      },
+      {
+        "name": "Legend Cricket Ground 1 (Greater Noida)",
+        "count": 1
+      },
+      {
+        "name": "Mid On Cricket Ground",
+        "count": 1
+      },
+      {
+        "name": "PlayZone - MasterBlaster (Greater Noida)",
+        "count": 1
+      }
+    ],
+    "cities": [
+      {
+        "name": "Greater Noida",
+        "count": 12
+      }
+    ],
+    "tournaments": [
+      {
+        "name": "PlayZone - Tennis Cricket ",
+        "count": 1
+      }
+    ]
+  },
   "matches": [
     {
       "id": 26132337,
       "status": "past",
       "state": "past",
       "date": "2026-07-15T00:56:42.000Z",
+      "endDate": "2026-07-14T22:01:52.000Z",
+      "createdAt": "2026-07-14T13:00:13.000Z",
       "matchType": "Limited Overs",
+      "matchCategoryName": "",
       "ballType": "TENNIS",
       "overs": 20,
+      "balls": 0,
+      "currentInning": 2,
+      "isSuperOver": false,
+      "isDL": false,
+      "isVJD": false,
       "venue": "Mid On Cricket Ground",
+      "venueId": 1013526,
       "city": "Greater Noida",
+      "cityId": 4770,
       "opponentId": 11466367,
       "opponent": "Fabulous XI",
       "opponentLogo": "https://media.cricheroes.in/team_logo/1772783471899_CeW7kbynwAWZ.jpeg",
@@ -48,6 +292,74 @@
       "result": "win",
       "resultText": "Kurukshetra Warriors won by 14 runs",
       "scoreUpdatedAt": "2026-07-14T13:00:13.000Z",
+      "winner": "Kurukshetra Warriors",
+      "tournament": {
+        "id": 0,
+        "name": "",
+        "categoryId": 0,
+        "roundId": 0,
+        "roundName": ""
+      },
+      "association": {
+        "id": 0,
+        "yearId": 0,
+        "name": "",
+        "logo": ""
+      },
+      "liveAvailability": {
+        "watchLive": false,
+        "ticker": false,
+        "web": true,
+        "app": true,
+        "matchStreaming": false,
+        "tournamentStreaming": false,
+        "videoAnalyst": false,
+        "aiCommentary": false
+      },
+      "scorecards": {
+        "warriors": [
+          {
+            "inning": 1,
+            "startedAt": "2026-07-15T00:56:42.000Z",
+            "endedAt": "2026-07-15T02:05:47.000Z",
+            "totalRuns": 269,
+            "totalWickets": 6,
+            "totalExtras": 16,
+            "oversPlayed": "20.0",
+            "ballsPlayed": 0,
+            "runRate": "13.45",
+            "score": "269/6",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ],
+        "opponent": [
+          {
+            "inning": 2,
+            "startedAt": "2026-07-15T02:14:42.000Z",
+            "endedAt": "2026-07-15T03:31:49.000Z",
+            "totalRuns": 255,
+            "totalWickets": 10,
+            "totalExtras": 14,
+            "oversPlayed": "19.0",
+            "ballsPlayed": 0,
+            "runRate": "13.42",
+            "score": "255/10",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ]
+      },
       "toss": "Fabulous XI won the toss and elected to field",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -62,11 +374,21 @@
       "status": "past",
       "state": "past",
       "date": "2026-06-02T01:03:10.000Z",
+      "endDate": "2026-06-01T21:59:51.000Z",
+      "createdAt": "2026-06-02T00:51:09.000Z",
       "matchType": "Limited Overs",
+      "matchCategoryName": "",
       "ballType": "TENNIS",
       "overs": 20,
+      "balls": 0,
+      "currentInning": 2,
+      "isSuperOver": false,
+      "isDL": false,
+      "isVJD": false,
       "venue": "M2 Cricket Ground By Daksh",
+      "venueId": 785200,
       "city": "Greater Noida",
+      "cityId": 4770,
       "opponentId": 8163475,
       "opponent": "Divino Dominators",
       "opponentLogo": "https://media.cricheroes.in/team_logo/1738502698417_Ei9MbOG4dL03.jpeg",
@@ -77,6 +399,74 @@
       "result": "loss",
       "resultText": "Divino Dominators won by 3 wickets",
       "scoreUpdatedAt": "2026-06-02T00:51:09.000Z",
+      "winner": "Divino Dominators",
+      "tournament": {
+        "id": 0,
+        "name": "",
+        "categoryId": 0,
+        "roundId": 0,
+        "roundName": ""
+      },
+      "association": {
+        "id": 0,
+        "yearId": 0,
+        "name": "",
+        "logo": ""
+      },
+      "liveAvailability": {
+        "watchLive": false,
+        "ticker": false,
+        "web": true,
+        "app": true,
+        "matchStreaming": false,
+        "tournamentStreaming": false,
+        "videoAnalyst": false,
+        "aiCommentary": false
+      },
+      "scorecards": {
+        "warriors": [
+          {
+            "inning": 1,
+            "startedAt": "2026-06-02T01:03:10.000Z",
+            "endedAt": "2026-06-02T02:11:59.000Z",
+            "totalRuns": 229,
+            "totalWickets": 10,
+            "totalExtras": 20,
+            "oversPlayed": "16.4",
+            "ballsPlayed": 0,
+            "runRate": "13.74",
+            "score": "229/10",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ],
+        "opponent": [
+          {
+            "inning": 2,
+            "startedAt": "2026-06-02T02:19:15.000Z",
+            "endedAt": "2026-06-02T03:29:49.000Z",
+            "totalRuns": 232,
+            "totalWickets": 7,
+            "totalExtras": 12,
+            "oversPlayed": "16.5",
+            "ballsPlayed": 0,
+            "runRate": "13.78",
+            "score": "232/7",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ]
+      },
       "toss": "Kurukshetra Warriors won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -91,11 +481,21 @@
       "status": "past",
       "state": "past",
       "date": "2026-05-22T15:13:00.000Z",
+      "endDate": "2026-05-22T12:36:52.000Z",
+      "createdAt": "2026-05-20T12:55:38.000Z",
       "matchType": "Limited Overs",
+      "matchCategoryName": "",
       "ballType": "TENNIS",
       "overs": 20,
+      "balls": 0,
+      "currentInning": 2,
+      "isSuperOver": false,
+      "isDL": false,
+      "isVJD": false,
       "venue": "PlayZone - MasterBlaster (Greater Noida)",
+      "venueId": 263254,
       "city": "Greater Noida",
+      "cityId": 4770,
       "opponentId": 12274222,
       "opponent": "The Core XI",
       "opponentLogo": "https://media.cricheroes.in/team_logo/1769750343315_XAojF4f4I2XS.jpg",
@@ -106,6 +506,74 @@
       "result": "loss",
       "resultText": "The Core XI won by 87 runs",
       "scoreUpdatedAt": "2026-05-20T12:55:38.000Z",
+      "winner": "The Core XI",
+      "tournament": {
+        "id": 1585820,
+        "name": "PlayZone - Tennis Cricket ",
+        "categoryId": 0,
+        "roundId": 3067255,
+        "roundName": "League Matches"
+      },
+      "association": {
+        "id": 0,
+        "yearId": 0,
+        "name": "",
+        "logo": ""
+      },
+      "liveAvailability": {
+        "watchLive": false,
+        "ticker": false,
+        "web": true,
+        "app": true,
+        "matchStreaming": false,
+        "tournamentStreaming": false,
+        "videoAnalyst": false,
+        "aiCommentary": false
+      },
+      "scorecards": {
+        "warriors": [
+          {
+            "inning": 2,
+            "startedAt": "2026-05-22T17:01:57.000Z",
+            "endedAt": "2026-05-22T18:06:49.000Z",
+            "totalRuns": 162,
+            "totalWickets": 10,
+            "totalExtras": 14,
+            "oversPlayed": "16.4",
+            "ballsPlayed": 0,
+            "runRate": "9.72",
+            "score": "162/10",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ],
+        "opponent": [
+          {
+            "inning": 1,
+            "startedAt": "2026-05-22T15:16:23.000Z",
+            "endedAt": "2026-05-22T16:51:38.000Z",
+            "totalRuns": 249,
+            "totalWickets": 8,
+            "totalExtras": 29,
+            "oversPlayed": "20.0",
+            "ballsPlayed": 0,
+            "runRate": "12.45",
+            "score": "249/8",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ]
+      },
       "toss": "The Core XI won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -120,11 +588,21 @@
       "status": "past",
       "state": "past",
       "date": "2026-04-10T01:43:22.000Z",
+      "endDate": "2026-04-09T22:27:27.000Z",
+      "createdAt": "2026-04-10T01:34:06.000Z",
       "matchType": "Limited Overs",
+      "matchCategoryName": "",
       "ballType": "TENNIS",
       "overs": 18,
+      "balls": 0,
+      "currentInning": 2,
+      "isSuperOver": false,
+      "isDL": false,
+      "isVJD": false,
       "venue": "LEGEND 2 By KUNDAN",
+      "venueId": 1114203,
       "city": "Greater Noida",
+      "cityId": 4770,
       "opponentId": 12081810,
       "opponent": "Elite warriors 11",
       "opponentLogo": "https://media.cricheroes.in/team_logo/1768485003790_6dq5EJWHvsG7.jpeg",
@@ -135,6 +613,74 @@
       "result": "loss",
       "resultText": "Elite warriors 11 won by 19 runs",
       "scoreUpdatedAt": "2026-04-10T01:34:06.000Z",
+      "winner": "Elite warriors 11",
+      "tournament": {
+        "id": 0,
+        "name": "",
+        "categoryId": 0,
+        "roundId": 0,
+        "roundName": ""
+      },
+      "association": {
+        "id": 0,
+        "yearId": 0,
+        "name": "",
+        "logo": ""
+      },
+      "liveAvailability": {
+        "watchLive": false,
+        "ticker": false,
+        "web": true,
+        "app": true,
+        "matchStreaming": false,
+        "tournamentStreaming": false,
+        "videoAnalyst": false,
+        "aiCommentary": false
+      },
+      "scorecards": {
+        "warriors": [
+          {
+            "inning": 2,
+            "startedAt": "2026-04-10T02:54:54.000Z",
+            "endedAt": "2026-04-10T03:57:24.000Z",
+            "totalRuns": 145,
+            "totalWickets": 10,
+            "totalExtras": 16,
+            "oversPlayed": "16.5",
+            "ballsPlayed": 0,
+            "runRate": "8.61",
+            "score": "145/10",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ],
+        "opponent": [
+          {
+            "inning": 1,
+            "startedAt": "2026-04-10T01:43:22.000Z",
+            "endedAt": "2026-04-10T02:46:47.000Z",
+            "totalRuns": 164,
+            "totalWickets": 9,
+            "totalExtras": 12,
+            "oversPlayed": "18.0",
+            "ballsPlayed": 0,
+            "runRate": "9.11",
+            "score": "164/9",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ]
+      },
       "toss": "Elite warriors 11 won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -149,11 +695,21 @@
       "status": "past",
       "state": "past",
       "date": "2026-04-01T01:46:12.000Z",
+      "endDate": "2026-03-31T22:41:43.000Z",
+      "createdAt": "2026-03-30T09:09:12.000Z",
       "matchType": "Limited Overs",
+      "matchCategoryName": "",
       "ballType": "TENNIS",
       "overs": 20,
+      "balls": 0,
+      "currentInning": 2,
+      "isSuperOver": false,
+      "isDL": false,
+      "isVJD": false,
       "venue": "LEGEND 3 By KUNDAN",
+      "venueId": 642160,
       "city": "Greater Noida",
+      "cityId": 4770,
       "opponentId": 2899173,
       "opponent": "Star Sport Cricket Club",
       "opponentLogo": "https://media.cricheroes.in/team_logo/1729965513809_5gJkdPobgZlN.jpeg",
@@ -164,6 +720,74 @@
       "result": "loss",
       "resultText": "Star Sport Cricket Club won by 4 wickets",
       "scoreUpdatedAt": "2026-03-30T09:09:12.000Z",
+      "winner": "Star Sport Cricket Club",
+      "tournament": {
+        "id": 0,
+        "name": "",
+        "categoryId": 0,
+        "roundId": 0,
+        "roundName": ""
+      },
+      "association": {
+        "id": 0,
+        "yearId": 0,
+        "name": "",
+        "logo": ""
+      },
+      "liveAvailability": {
+        "watchLive": false,
+        "ticker": false,
+        "web": true,
+        "app": true,
+        "matchStreaming": false,
+        "tournamentStreaming": false,
+        "videoAnalyst": false,
+        "aiCommentary": false
+      },
+      "scorecards": {
+        "warriors": [
+          {
+            "inning": 1,
+            "startedAt": "2026-04-01T01:46:12.000Z",
+            "endedAt": "2026-04-01T03:04:56.000Z",
+            "totalRuns": 195,
+            "totalWickets": 10,
+            "totalExtras": 11,
+            "oversPlayed": "18.3",
+            "ballsPlayed": 0,
+            "runRate": "10.54",
+            "score": "195/10",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ],
+        "opponent": [
+          {
+            "inning": 2,
+            "startedAt": "2026-04-01T03:06:51.000Z",
+            "endedAt": "2026-04-01T04:11:39.000Z",
+            "totalRuns": 200,
+            "totalWickets": 6,
+            "totalExtras": 8,
+            "oversPlayed": "15.1",
+            "ballsPlayed": 0,
+            "runRate": "13.19",
+            "score": "200/6",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ]
+      },
       "toss": "Star Sport Cricket Club won the toss and elected to field",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -178,11 +802,21 @@
       "status": "past",
       "state": "past",
       "date": "2026-03-25T01:26:01.000Z",
+      "endDate": "2026-03-24T22:37:53.000Z",
+      "createdAt": "2026-03-24T07:31:38.000Z",
       "matchType": "Limited Overs",
+      "matchCategoryName": "",
       "ballType": "TENNIS",
       "overs": 20,
+      "balls": 0,
+      "currentInning": 2,
+      "isSuperOver": false,
+      "isDL": false,
+      "isVJD": false,
       "venue": "LEGEND 3 By KUNDAN",
+      "venueId": 642160,
       "city": "Greater Noida",
+      "cityId": 4770,
       "opponentId": 11199619,
       "opponent": "Ace Power XI",
       "opponentLogo": "https://media.cricheroes.in/team_logo/1761913880117_xVJWgIFRW4kk.jpeg",
@@ -193,6 +827,74 @@
       "result": "loss",
       "resultText": "Ace Power XI won by 5 wickets",
       "scoreUpdatedAt": "2026-03-24T07:31:38.000Z",
+      "winner": "Ace Power XI",
+      "tournament": {
+        "id": 0,
+        "name": "",
+        "categoryId": 0,
+        "roundId": 0,
+        "roundName": ""
+      },
+      "association": {
+        "id": 0,
+        "yearId": 0,
+        "name": "",
+        "logo": ""
+      },
+      "liveAvailability": {
+        "watchLive": false,
+        "ticker": false,
+        "web": true,
+        "app": true,
+        "matchStreaming": false,
+        "tournamentStreaming": false,
+        "videoAnalyst": false,
+        "aiCommentary": false
+      },
+      "scorecards": {
+        "warriors": [
+          {
+            "inning": 1,
+            "startedAt": "2026-03-25T01:27:18.000Z",
+            "endedAt": "2026-03-25T02:53:50.000Z",
+            "totalRuns": 233,
+            "totalWickets": 7,
+            "totalExtras": 24,
+            "oversPlayed": "20.0",
+            "ballsPlayed": 0,
+            "runRate": "11.65",
+            "score": "233/7",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ],
+        "opponent": [
+          {
+            "inning": 2,
+            "startedAt": "2026-03-25T02:55:39.000Z",
+            "endedAt": "2026-03-25T04:07:45.000Z",
+            "totalRuns": 234,
+            "totalWickets": 5,
+            "totalExtras": 15,
+            "oversPlayed": "19.4",
+            "ballsPlayed": 0,
+            "runRate": "11.90",
+            "score": "234/5",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ]
+      },
       "toss": "Ace Power XI won the toss and elected to field",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -207,11 +909,21 @@
       "status": "past",
       "state": "past",
       "date": "2026-03-18T01:29:13.000Z",
+      "endDate": "2026-03-17T22:04:58.000Z",
+      "createdAt": "2026-03-15T04:41:11.000Z",
       "matchType": "Limited Overs",
+      "matchCategoryName": "",
       "ballType": "TENNIS",
       "overs": 20,
+      "balls": 0,
+      "currentInning": 2,
+      "isSuperOver": false,
+      "isDL": false,
+      "isVJD": false,
       "venue": "M2 Cricket Ground By Daksh (Greater Noida)",
+      "venueId": 685999,
       "city": "Greater Noida",
+      "cityId": 4770,
       "opponentId": 10577831,
       "opponent": "Gully Cricket Club (GCC)",
       "opponentLogo": "https://media.cricheroes.in/team_logo/1776763349315_vu2cCKbivrYL.jpeg",
@@ -222,6 +934,74 @@
       "result": "win",
       "resultText": "Kurukshetra Warriors won by 7 wickets",
       "scoreUpdatedAt": "2026-03-15T04:41:11.000Z",
+      "winner": "Kurukshetra Warriors",
+      "tournament": {
+        "id": 0,
+        "name": "",
+        "categoryId": 0,
+        "roundId": 0,
+        "roundName": ""
+      },
+      "association": {
+        "id": 0,
+        "yearId": 0,
+        "name": "",
+        "logo": ""
+      },
+      "liveAvailability": {
+        "watchLive": false,
+        "ticker": false,
+        "web": true,
+        "app": true,
+        "matchStreaming": false,
+        "tournamentStreaming": false,
+        "videoAnalyst": false,
+        "aiCommentary": false
+      },
+      "scorecards": {
+        "warriors": [
+          {
+            "inning": 2,
+            "startedAt": "2026-03-18T02:45:49.000Z",
+            "endedAt": "2026-03-18T03:34:57.000Z",
+            "totalRuns": 269,
+            "totalWickets": 3,
+            "totalExtras": 7,
+            "oversPlayed": "14.3",
+            "ballsPlayed": 0,
+            "runRate": "18.55",
+            "score": "269/3",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ],
+        "opponent": [
+          {
+            "inning": 1,
+            "startedAt": "2026-03-18T01:29:13.000Z",
+            "endedAt": "2026-03-18T02:43:23.000Z",
+            "totalRuns": 266,
+            "totalWickets": 10,
+            "totalExtras": 16,
+            "oversPlayed": "19.2",
+            "ballsPlayed": 0,
+            "runRate": "13.76",
+            "score": "266/10",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ]
+      },
       "toss": "Gully Cricket Club (GCC) won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -236,11 +1016,21 @@
       "status": "past",
       "state": "past",
       "date": "2026-03-14T01:50:46.000Z",
+      "endDate": "2026-03-13T23:01:31.000Z",
+      "createdAt": "2026-03-13T05:51:49.000Z",
       "matchType": "Limited Overs",
+      "matchCategoryName": "",
       "ballType": "TENNIS",
       "overs": 20,
+      "balls": 0,
+      "currentInning": 2,
+      "isSuperOver": false,
+      "isDL": false,
+      "isVJD": false,
       "venue": "Legend Cricket Ground 1 (Greater Noida)",
+      "venueId": 510942,
       "city": "Greater Noida",
+      "cityId": 4770,
       "opponentId": 12604411,
       "opponent": "Strikers 11",
       "opponentLogo": "https://media.cricheroes.in/default/teamintital/S.png",
@@ -251,6 +1041,74 @@
       "result": "loss",
       "resultText": "Strikers 11 won by 3 wickets",
       "scoreUpdatedAt": "2026-03-13T05:51:49.000Z",
+      "winner": "Strikers 11",
+      "tournament": {
+        "id": 0,
+        "name": "",
+        "categoryId": 0,
+        "roundId": 0,
+        "roundName": ""
+      },
+      "association": {
+        "id": 0,
+        "yearId": 0,
+        "name": "",
+        "logo": ""
+      },
+      "liveAvailability": {
+        "watchLive": false,
+        "ticker": false,
+        "web": true,
+        "app": true,
+        "matchStreaming": false,
+        "tournamentStreaming": false,
+        "videoAnalyst": false,
+        "aiCommentary": false
+      },
+      "scorecards": {
+        "warriors": [
+          {
+            "inning": 1,
+            "startedAt": "2026-03-14T01:50:46.000Z",
+            "endedAt": "2026-03-14T03:10:09.000Z",
+            "totalRuns": 181,
+            "totalWickets": 7,
+            "totalExtras": 16,
+            "oversPlayed": "20.0",
+            "ballsPlayed": 0,
+            "runRate": "9.05",
+            "score": "181/7",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ],
+        "opponent": [
+          {
+            "inning": 2,
+            "startedAt": "2026-03-14T03:14:00.000Z",
+            "endedAt": "2026-03-14T04:31:30.000Z",
+            "totalRuns": 185,
+            "totalWickets": 7,
+            "totalExtras": 21,
+            "oversPlayed": "17.5",
+            "ballsPlayed": 0,
+            "runRate": "10.37",
+            "score": "185/7",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ]
+      },
       "toss": "Kurukshetra Warriors won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -265,11 +1123,21 @@
       "status": "past",
       "state": "past",
       "date": "2026-03-11T01:43:51.000Z",
+      "endDate": "2026-03-10T22:47:37.000Z",
+      "createdAt": "2026-03-11T01:43:03.000Z",
       "matchType": "Limited Overs",
+      "matchCategoryName": "",
       "ballType": "TENNIS",
       "overs": 20,
+      "balls": 0,
+      "currentInning": 2,
+      "isSuperOver": false,
+      "isDL": false,
+      "isVJD": false,
       "venue": "M2 Cricket Ground By Daksh",
+      "venueId": 785200,
       "city": "Greater Noida",
+      "cityId": 4770,
       "opponentId": 7838698,
       "opponent": "Techie Cricket Club",
       "opponentLogo": "https://media.cricheroes.in/team_logo/1728061382026_agYaDjN6t6NG.jpeg",
@@ -280,6 +1148,74 @@
       "result": "loss",
       "resultText": "Techie Cricket Club won by 4 wickets",
       "scoreUpdatedAt": "2026-03-11T01:43:03.000Z",
+      "winner": "Techie Cricket Club",
+      "tournament": {
+        "id": 0,
+        "name": "",
+        "categoryId": 0,
+        "roundId": 0,
+        "roundName": ""
+      },
+      "association": {
+        "id": 0,
+        "yearId": 0,
+        "name": "",
+        "logo": ""
+      },
+      "liveAvailability": {
+        "watchLive": false,
+        "ticker": false,
+        "web": true,
+        "app": true,
+        "matchStreaming": false,
+        "tournamentStreaming": false,
+        "videoAnalyst": false,
+        "aiCommentary": false
+      },
+      "scorecards": {
+        "warriors": [
+          {
+            "inning": 1,
+            "startedAt": "2026-03-11T01:43:51.000Z",
+            "endedAt": "2026-03-11T03:00:09.000Z",
+            "totalRuns": 277,
+            "totalWickets": 8,
+            "totalExtras": 15,
+            "oversPlayed": "20.0",
+            "ballsPlayed": 0,
+            "runRate": "13.85",
+            "score": "277/8",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ],
+        "opponent": [
+          {
+            "inning": 2,
+            "startedAt": "2026-03-11T03:07:06.000Z",
+            "endedAt": "2026-03-11T04:17:32.000Z",
+            "totalRuns": 279,
+            "totalWickets": 5,
+            "totalExtras": 11,
+            "oversPlayed": "19.0",
+            "ballsPlayed": 0,
+            "runRate": "14.68",
+            "score": "279/5",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ]
+      },
       "toss": "Kurukshetra Warriors won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -294,11 +1230,21 @@
       "status": "past",
       "state": "past",
       "date": "2026-03-07T03:07:52.000Z",
+      "endDate": "2026-03-06T22:52:30.000Z",
+      "createdAt": "2026-03-07T03:07:32.000Z",
       "matchType": "Limited Overs",
+      "matchCategoryName": "",
       "ballType": "TENNIS",
       "overs": 10,
+      "balls": 0,
+      "currentInning": 2,
+      "isSuperOver": false,
+      "isDL": false,
+      "isVJD": false,
       "venue": "M2 Cricket Ground By Daksh (Greater Noida)",
+      "venueId": 685999,
       "city": "Greater Noida",
+      "cityId": 4770,
       "opponentId": 385484,
       "opponent": "MIGHTY HEROES",
       "opponentLogo": "https://media.cricheroes.in/team_logo/1630331659672_6RwS87ubP4We.jpeg",
@@ -309,6 +1255,74 @@
       "result": "win",
       "resultText": "Kurukshetra Warriors won by 9 wickets",
       "scoreUpdatedAt": "2026-03-07T03:07:32.000Z",
+      "winner": "Kurukshetra Warriors",
+      "tournament": {
+        "id": 0,
+        "name": "",
+        "categoryId": 0,
+        "roundId": 0,
+        "roundName": ""
+      },
+      "association": {
+        "id": 0,
+        "yearId": 0,
+        "name": "",
+        "logo": ""
+      },
+      "liveAvailability": {
+        "watchLive": false,
+        "ticker": false,
+        "web": true,
+        "app": true,
+        "matchStreaming": false,
+        "tournamentStreaming": false,
+        "videoAnalyst": false,
+        "aiCommentary": false
+      },
+      "scorecards": {
+        "warriors": [
+          {
+            "inning": 2,
+            "startedAt": "2026-03-07T03:46:20.000Z",
+            "endedAt": "2026-03-07T04:22:29.000Z",
+            "totalRuns": 149,
+            "totalWickets": 1,
+            "totalExtras": 17,
+            "oversPlayed": "9.3",
+            "ballsPlayed": 0,
+            "runRate": "15.68",
+            "score": "149/1",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ],
+        "opponent": [
+          {
+            "inning": 1,
+            "startedAt": "2026-03-07T03:07:52.000Z",
+            "endedAt": "2026-03-07T03:42:22.000Z",
+            "totalRuns": 146,
+            "totalWickets": 3,
+            "totalExtras": 6,
+            "oversPlayed": "10.0",
+            "ballsPlayed": 0,
+            "runRate": "14.60",
+            "score": "146/3",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ]
+      },
       "toss": "MIGHTY HEROES won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -323,11 +1337,21 @@
       "status": "past",
       "state": "past",
       "date": "2026-03-07T01:37:27.000Z",
+      "endDate": "2026-03-06T21:33:01.000Z",
+      "createdAt": "2026-03-03T06:09:46.000Z",
       "matchType": "Limited Overs",
+      "matchCategoryName": "",
       "ballType": "TENNIS",
       "overs": 20,
+      "balls": 0,
+      "currentInning": 2,
+      "isSuperOver": false,
+      "isDL": false,
+      "isVJD": false,
       "venue": "M2 Cricket Ground By Daksh (Greater Noida)",
+      "venueId": 685999,
       "city": "Greater Noida",
+      "cityId": 4770,
       "opponentId": 385484,
       "opponent": "MIGHTY HEROES",
       "opponentLogo": "https://media.cricheroes.in/team_logo/1630331659672_6RwS87ubP4We.jpeg",
@@ -338,6 +1362,74 @@
       "result": "loss",
       "resultText": "MIGHTY HEROES won by 8 wickets",
       "scoreUpdatedAt": "2026-03-03T06:09:46.000Z",
+      "winner": "MIGHTY HEROES",
+      "tournament": {
+        "id": 0,
+        "name": "",
+        "categoryId": 0,
+        "roundId": 0,
+        "roundName": ""
+      },
+      "association": {
+        "id": 0,
+        "yearId": 0,
+        "name": "",
+        "logo": ""
+      },
+      "liveAvailability": {
+        "watchLive": false,
+        "ticker": false,
+        "web": true,
+        "app": true,
+        "matchStreaming": false,
+        "tournamentStreaming": false,
+        "videoAnalyst": false,
+        "aiCommentary": false
+      },
+      "scorecards": {
+        "warriors": [
+          {
+            "inning": 1,
+            "startedAt": "2026-03-07T01:37:27.000Z",
+            "endedAt": "2026-03-07T02:24:46.000Z",
+            "totalRuns": 99,
+            "totalWickets": 10,
+            "totalExtras": 9,
+            "oversPlayed": "12.2",
+            "ballsPlayed": 0,
+            "runRate": "8.03",
+            "score": "99/10",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ],
+        "opponent": [
+          {
+            "inning": 2,
+            "startedAt": "2026-03-07T02:32:38.000Z",
+            "endedAt": "2026-03-07T03:03:00.000Z",
+            "totalRuns": 105,
+            "totalWickets": 2,
+            "totalExtras": 6,
+            "oversPlayed": "10.5",
+            "ballsPlayed": 0,
+            "runRate": "9.69",
+            "score": "105/2",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ]
+      },
       "toss": "Kurukshetra Warriors won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -352,11 +1444,21 @@
       "status": "past",
       "state": "past",
       "date": "2026-02-28T01:41:56.000Z",
+      "endDate": "2026-02-27T22:34:10.000Z",
+      "createdAt": "2026-02-26T11:23:36.000Z",
       "matchType": "Limited Overs",
+      "matchCategoryName": "",
       "ballType": "TENNIS",
       "overs": 20,
+      "balls": 0,
+      "currentInning": 2,
+      "isSuperOver": false,
+      "isDL": false,
+      "isVJD": false,
       "venue": "County cricket Complex(CQ)",
+      "venueId": 1000339,
       "city": "Greater Noida",
+      "cityId": 4770,
       "opponentId": 324638,
       "opponent": "Ace Panthers",
       "opponentLogo": "https://media.cricheroes.in/team_logo/1559651159219_jSlSG619DJTt.jpg",
@@ -367,6 +1469,74 @@
       "result": "loss",
       "resultText": "Ace Panthers won by 76 runs",
       "scoreUpdatedAt": "2026-02-26T11:23:36.000Z",
+      "winner": "Ace Panthers",
+      "tournament": {
+        "id": 0,
+        "name": "",
+        "categoryId": 0,
+        "roundId": 0,
+        "roundName": ""
+      },
+      "association": {
+        "id": 0,
+        "yearId": 0,
+        "name": "",
+        "logo": ""
+      },
+      "liveAvailability": {
+        "watchLive": false,
+        "ticker": false,
+        "web": true,
+        "app": true,
+        "matchStreaming": false,
+        "tournamentStreaming": false,
+        "videoAnalyst": false,
+        "aiCommentary": false
+      },
+      "scorecards": {
+        "warriors": [
+          {
+            "inning": 2,
+            "startedAt": "2026-02-28T02:56:55.000Z",
+            "endedAt": "2026-02-28T04:04:09.000Z",
+            "totalRuns": 118,
+            "totalWickets": 8,
+            "totalExtras": 28,
+            "oversPlayed": "14.5",
+            "ballsPlayed": 0,
+            "runRate": "7.96",
+            "score": "118/8",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ],
+        "opponent": [
+          {
+            "inning": 1,
+            "startedAt": "2026-02-28T01:41:56.000Z",
+            "endedAt": "2026-02-28T02:54:54.000Z",
+            "totalRuns": 194,
+            "totalWickets": 9,
+            "totalExtras": 6,
+            "oversPlayed": "20.0",
+            "ballsPlayed": 0,
+            "runRate": "9.70",
+            "score": "194/9",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ]
+      },
       "toss": "Ace Panthers won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -385,11 +1555,21 @@
       "status": "past",
       "state": "past",
       "date": "2026-07-15T00:56:42.000Z",
+      "endDate": "2026-07-14T22:01:52.000Z",
+      "createdAt": "2026-07-14T13:00:13.000Z",
       "matchType": "Limited Overs",
+      "matchCategoryName": "",
       "ballType": "TENNIS",
       "overs": 20,
+      "balls": 0,
+      "currentInning": 2,
+      "isSuperOver": false,
+      "isDL": false,
+      "isVJD": false,
       "venue": "Mid On Cricket Ground",
+      "venueId": 1013526,
       "city": "Greater Noida",
+      "cityId": 4770,
       "opponentId": 11466367,
       "opponent": "Fabulous XI",
       "opponentLogo": "https://media.cricheroes.in/team_logo/1772783471899_CeW7kbynwAWZ.jpeg",
@@ -400,6 +1580,74 @@
       "result": "win",
       "resultText": "Kurukshetra Warriors won by 14 runs",
       "scoreUpdatedAt": "2026-07-14T13:00:13.000Z",
+      "winner": "Kurukshetra Warriors",
+      "tournament": {
+        "id": 0,
+        "name": "",
+        "categoryId": 0,
+        "roundId": 0,
+        "roundName": ""
+      },
+      "association": {
+        "id": 0,
+        "yearId": 0,
+        "name": "",
+        "logo": ""
+      },
+      "liveAvailability": {
+        "watchLive": false,
+        "ticker": false,
+        "web": true,
+        "app": true,
+        "matchStreaming": false,
+        "tournamentStreaming": false,
+        "videoAnalyst": false,
+        "aiCommentary": false
+      },
+      "scorecards": {
+        "warriors": [
+          {
+            "inning": 1,
+            "startedAt": "2026-07-15T00:56:42.000Z",
+            "endedAt": "2026-07-15T02:05:47.000Z",
+            "totalRuns": 269,
+            "totalWickets": 6,
+            "totalExtras": 16,
+            "oversPlayed": "20.0",
+            "ballsPlayed": 0,
+            "runRate": "13.45",
+            "score": "269/6",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ],
+        "opponent": [
+          {
+            "inning": 2,
+            "startedAt": "2026-07-15T02:14:42.000Z",
+            "endedAt": "2026-07-15T03:31:49.000Z",
+            "totalRuns": 255,
+            "totalWickets": 10,
+            "totalExtras": 14,
+            "oversPlayed": "19.0",
+            "ballsPlayed": 0,
+            "runRate": "13.42",
+            "score": "255/10",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ]
+      },
       "toss": "Fabulous XI won the toss and elected to field",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -414,11 +1662,21 @@
       "status": "past",
       "state": "past",
       "date": "2026-06-02T01:03:10.000Z",
+      "endDate": "2026-06-01T21:59:51.000Z",
+      "createdAt": "2026-06-02T00:51:09.000Z",
       "matchType": "Limited Overs",
+      "matchCategoryName": "",
       "ballType": "TENNIS",
       "overs": 20,
+      "balls": 0,
+      "currentInning": 2,
+      "isSuperOver": false,
+      "isDL": false,
+      "isVJD": false,
       "venue": "M2 Cricket Ground By Daksh",
+      "venueId": 785200,
       "city": "Greater Noida",
+      "cityId": 4770,
       "opponentId": 8163475,
       "opponent": "Divino Dominators",
       "opponentLogo": "https://media.cricheroes.in/team_logo/1738502698417_Ei9MbOG4dL03.jpeg",
@@ -429,6 +1687,74 @@
       "result": "loss",
       "resultText": "Divino Dominators won by 3 wickets",
       "scoreUpdatedAt": "2026-06-02T00:51:09.000Z",
+      "winner": "Divino Dominators",
+      "tournament": {
+        "id": 0,
+        "name": "",
+        "categoryId": 0,
+        "roundId": 0,
+        "roundName": ""
+      },
+      "association": {
+        "id": 0,
+        "yearId": 0,
+        "name": "",
+        "logo": ""
+      },
+      "liveAvailability": {
+        "watchLive": false,
+        "ticker": false,
+        "web": true,
+        "app": true,
+        "matchStreaming": false,
+        "tournamentStreaming": false,
+        "videoAnalyst": false,
+        "aiCommentary": false
+      },
+      "scorecards": {
+        "warriors": [
+          {
+            "inning": 1,
+            "startedAt": "2026-06-02T01:03:10.000Z",
+            "endedAt": "2026-06-02T02:11:59.000Z",
+            "totalRuns": 229,
+            "totalWickets": 10,
+            "totalExtras": 20,
+            "oversPlayed": "16.4",
+            "ballsPlayed": 0,
+            "runRate": "13.74",
+            "score": "229/10",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ],
+        "opponent": [
+          {
+            "inning": 2,
+            "startedAt": "2026-06-02T02:19:15.000Z",
+            "endedAt": "2026-06-02T03:29:49.000Z",
+            "totalRuns": 232,
+            "totalWickets": 7,
+            "totalExtras": 12,
+            "oversPlayed": "16.5",
+            "ballsPlayed": 0,
+            "runRate": "13.78",
+            "score": "232/7",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ]
+      },
       "toss": "Kurukshetra Warriors won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -443,11 +1769,21 @@
       "status": "past",
       "state": "past",
       "date": "2026-05-22T15:13:00.000Z",
+      "endDate": "2026-05-22T12:36:52.000Z",
+      "createdAt": "2026-05-20T12:55:38.000Z",
       "matchType": "Limited Overs",
+      "matchCategoryName": "",
       "ballType": "TENNIS",
       "overs": 20,
+      "balls": 0,
+      "currentInning": 2,
+      "isSuperOver": false,
+      "isDL": false,
+      "isVJD": false,
       "venue": "PlayZone - MasterBlaster (Greater Noida)",
+      "venueId": 263254,
       "city": "Greater Noida",
+      "cityId": 4770,
       "opponentId": 12274222,
       "opponent": "The Core XI",
       "opponentLogo": "https://media.cricheroes.in/team_logo/1769750343315_XAojF4f4I2XS.jpg",
@@ -458,6 +1794,74 @@
       "result": "loss",
       "resultText": "The Core XI won by 87 runs",
       "scoreUpdatedAt": "2026-05-20T12:55:38.000Z",
+      "winner": "The Core XI",
+      "tournament": {
+        "id": 1585820,
+        "name": "PlayZone - Tennis Cricket ",
+        "categoryId": 0,
+        "roundId": 3067255,
+        "roundName": "League Matches"
+      },
+      "association": {
+        "id": 0,
+        "yearId": 0,
+        "name": "",
+        "logo": ""
+      },
+      "liveAvailability": {
+        "watchLive": false,
+        "ticker": false,
+        "web": true,
+        "app": true,
+        "matchStreaming": false,
+        "tournamentStreaming": false,
+        "videoAnalyst": false,
+        "aiCommentary": false
+      },
+      "scorecards": {
+        "warriors": [
+          {
+            "inning": 2,
+            "startedAt": "2026-05-22T17:01:57.000Z",
+            "endedAt": "2026-05-22T18:06:49.000Z",
+            "totalRuns": 162,
+            "totalWickets": 10,
+            "totalExtras": 14,
+            "oversPlayed": "16.4",
+            "ballsPlayed": 0,
+            "runRate": "9.72",
+            "score": "162/10",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ],
+        "opponent": [
+          {
+            "inning": 1,
+            "startedAt": "2026-05-22T15:16:23.000Z",
+            "endedAt": "2026-05-22T16:51:38.000Z",
+            "totalRuns": 249,
+            "totalWickets": 8,
+            "totalExtras": 29,
+            "oversPlayed": "20.0",
+            "ballsPlayed": 0,
+            "runRate": "12.45",
+            "score": "249/8",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ]
+      },
       "toss": "The Core XI won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -472,11 +1876,21 @@
       "status": "past",
       "state": "past",
       "date": "2026-04-10T01:43:22.000Z",
+      "endDate": "2026-04-09T22:27:27.000Z",
+      "createdAt": "2026-04-10T01:34:06.000Z",
       "matchType": "Limited Overs",
+      "matchCategoryName": "",
       "ballType": "TENNIS",
       "overs": 18,
+      "balls": 0,
+      "currentInning": 2,
+      "isSuperOver": false,
+      "isDL": false,
+      "isVJD": false,
       "venue": "LEGEND 2 By KUNDAN",
+      "venueId": 1114203,
       "city": "Greater Noida",
+      "cityId": 4770,
       "opponentId": 12081810,
       "opponent": "Elite warriors 11",
       "opponentLogo": "https://media.cricheroes.in/team_logo/1768485003790_6dq5EJWHvsG7.jpeg",
@@ -487,6 +1901,74 @@
       "result": "loss",
       "resultText": "Elite warriors 11 won by 19 runs",
       "scoreUpdatedAt": "2026-04-10T01:34:06.000Z",
+      "winner": "Elite warriors 11",
+      "tournament": {
+        "id": 0,
+        "name": "",
+        "categoryId": 0,
+        "roundId": 0,
+        "roundName": ""
+      },
+      "association": {
+        "id": 0,
+        "yearId": 0,
+        "name": "",
+        "logo": ""
+      },
+      "liveAvailability": {
+        "watchLive": false,
+        "ticker": false,
+        "web": true,
+        "app": true,
+        "matchStreaming": false,
+        "tournamentStreaming": false,
+        "videoAnalyst": false,
+        "aiCommentary": false
+      },
+      "scorecards": {
+        "warriors": [
+          {
+            "inning": 2,
+            "startedAt": "2026-04-10T02:54:54.000Z",
+            "endedAt": "2026-04-10T03:57:24.000Z",
+            "totalRuns": 145,
+            "totalWickets": 10,
+            "totalExtras": 16,
+            "oversPlayed": "16.5",
+            "ballsPlayed": 0,
+            "runRate": "8.61",
+            "score": "145/10",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ],
+        "opponent": [
+          {
+            "inning": 1,
+            "startedAt": "2026-04-10T01:43:22.000Z",
+            "endedAt": "2026-04-10T02:46:47.000Z",
+            "totalRuns": 164,
+            "totalWickets": 9,
+            "totalExtras": 12,
+            "oversPlayed": "18.0",
+            "ballsPlayed": 0,
+            "runRate": "9.11",
+            "score": "164/9",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ]
+      },
       "toss": "Elite warriors 11 won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -501,11 +1983,21 @@
       "status": "past",
       "state": "past",
       "date": "2026-04-01T01:46:12.000Z",
+      "endDate": "2026-03-31T22:41:43.000Z",
+      "createdAt": "2026-03-30T09:09:12.000Z",
       "matchType": "Limited Overs",
+      "matchCategoryName": "",
       "ballType": "TENNIS",
       "overs": 20,
+      "balls": 0,
+      "currentInning": 2,
+      "isSuperOver": false,
+      "isDL": false,
+      "isVJD": false,
       "venue": "LEGEND 3 By KUNDAN",
+      "venueId": 642160,
       "city": "Greater Noida",
+      "cityId": 4770,
       "opponentId": 2899173,
       "opponent": "Star Sport Cricket Club",
       "opponentLogo": "https://media.cricheroes.in/team_logo/1729965513809_5gJkdPobgZlN.jpeg",
@@ -516,6 +2008,74 @@
       "result": "loss",
       "resultText": "Star Sport Cricket Club won by 4 wickets",
       "scoreUpdatedAt": "2026-03-30T09:09:12.000Z",
+      "winner": "Star Sport Cricket Club",
+      "tournament": {
+        "id": 0,
+        "name": "",
+        "categoryId": 0,
+        "roundId": 0,
+        "roundName": ""
+      },
+      "association": {
+        "id": 0,
+        "yearId": 0,
+        "name": "",
+        "logo": ""
+      },
+      "liveAvailability": {
+        "watchLive": false,
+        "ticker": false,
+        "web": true,
+        "app": true,
+        "matchStreaming": false,
+        "tournamentStreaming": false,
+        "videoAnalyst": false,
+        "aiCommentary": false
+      },
+      "scorecards": {
+        "warriors": [
+          {
+            "inning": 1,
+            "startedAt": "2026-04-01T01:46:12.000Z",
+            "endedAt": "2026-04-01T03:04:56.000Z",
+            "totalRuns": 195,
+            "totalWickets": 10,
+            "totalExtras": 11,
+            "oversPlayed": "18.3",
+            "ballsPlayed": 0,
+            "runRate": "10.54",
+            "score": "195/10",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ],
+        "opponent": [
+          {
+            "inning": 2,
+            "startedAt": "2026-04-01T03:06:51.000Z",
+            "endedAt": "2026-04-01T04:11:39.000Z",
+            "totalRuns": 200,
+            "totalWickets": 6,
+            "totalExtras": 8,
+            "oversPlayed": "15.1",
+            "ballsPlayed": 0,
+            "runRate": "13.19",
+            "score": "200/6",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ]
+      },
       "toss": "Star Sport Cricket Club won the toss and elected to field",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -530,11 +2090,21 @@
       "status": "past",
       "state": "past",
       "date": "2026-03-25T01:26:01.000Z",
+      "endDate": "2026-03-24T22:37:53.000Z",
+      "createdAt": "2026-03-24T07:31:38.000Z",
       "matchType": "Limited Overs",
+      "matchCategoryName": "",
       "ballType": "TENNIS",
       "overs": 20,
+      "balls": 0,
+      "currentInning": 2,
+      "isSuperOver": false,
+      "isDL": false,
+      "isVJD": false,
       "venue": "LEGEND 3 By KUNDAN",
+      "venueId": 642160,
       "city": "Greater Noida",
+      "cityId": 4770,
       "opponentId": 11199619,
       "opponent": "Ace Power XI",
       "opponentLogo": "https://media.cricheroes.in/team_logo/1761913880117_xVJWgIFRW4kk.jpeg",
@@ -545,6 +2115,74 @@
       "result": "loss",
       "resultText": "Ace Power XI won by 5 wickets",
       "scoreUpdatedAt": "2026-03-24T07:31:38.000Z",
+      "winner": "Ace Power XI",
+      "tournament": {
+        "id": 0,
+        "name": "",
+        "categoryId": 0,
+        "roundId": 0,
+        "roundName": ""
+      },
+      "association": {
+        "id": 0,
+        "yearId": 0,
+        "name": "",
+        "logo": ""
+      },
+      "liveAvailability": {
+        "watchLive": false,
+        "ticker": false,
+        "web": true,
+        "app": true,
+        "matchStreaming": false,
+        "tournamentStreaming": false,
+        "videoAnalyst": false,
+        "aiCommentary": false
+      },
+      "scorecards": {
+        "warriors": [
+          {
+            "inning": 1,
+            "startedAt": "2026-03-25T01:27:18.000Z",
+            "endedAt": "2026-03-25T02:53:50.000Z",
+            "totalRuns": 233,
+            "totalWickets": 7,
+            "totalExtras": 24,
+            "oversPlayed": "20.0",
+            "ballsPlayed": 0,
+            "runRate": "11.65",
+            "score": "233/7",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ],
+        "opponent": [
+          {
+            "inning": 2,
+            "startedAt": "2026-03-25T02:55:39.000Z",
+            "endedAt": "2026-03-25T04:07:45.000Z",
+            "totalRuns": 234,
+            "totalWickets": 5,
+            "totalExtras": 15,
+            "oversPlayed": "19.4",
+            "ballsPlayed": 0,
+            "runRate": "11.90",
+            "score": "234/5",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ]
+      },
       "toss": "Ace Power XI won the toss and elected to field",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -559,11 +2197,21 @@
       "status": "past",
       "state": "past",
       "date": "2026-03-18T01:29:13.000Z",
+      "endDate": "2026-03-17T22:04:58.000Z",
+      "createdAt": "2026-03-15T04:41:11.000Z",
       "matchType": "Limited Overs",
+      "matchCategoryName": "",
       "ballType": "TENNIS",
       "overs": 20,
+      "balls": 0,
+      "currentInning": 2,
+      "isSuperOver": false,
+      "isDL": false,
+      "isVJD": false,
       "venue": "M2 Cricket Ground By Daksh (Greater Noida)",
+      "venueId": 685999,
       "city": "Greater Noida",
+      "cityId": 4770,
       "opponentId": 10577831,
       "opponent": "Gully Cricket Club (GCC)",
       "opponentLogo": "https://media.cricheroes.in/team_logo/1776763349315_vu2cCKbivrYL.jpeg",
@@ -574,6 +2222,74 @@
       "result": "win",
       "resultText": "Kurukshetra Warriors won by 7 wickets",
       "scoreUpdatedAt": "2026-03-15T04:41:11.000Z",
+      "winner": "Kurukshetra Warriors",
+      "tournament": {
+        "id": 0,
+        "name": "",
+        "categoryId": 0,
+        "roundId": 0,
+        "roundName": ""
+      },
+      "association": {
+        "id": 0,
+        "yearId": 0,
+        "name": "",
+        "logo": ""
+      },
+      "liveAvailability": {
+        "watchLive": false,
+        "ticker": false,
+        "web": true,
+        "app": true,
+        "matchStreaming": false,
+        "tournamentStreaming": false,
+        "videoAnalyst": false,
+        "aiCommentary": false
+      },
+      "scorecards": {
+        "warriors": [
+          {
+            "inning": 2,
+            "startedAt": "2026-03-18T02:45:49.000Z",
+            "endedAt": "2026-03-18T03:34:57.000Z",
+            "totalRuns": 269,
+            "totalWickets": 3,
+            "totalExtras": 7,
+            "oversPlayed": "14.3",
+            "ballsPlayed": 0,
+            "runRate": "18.55",
+            "score": "269/3",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ],
+        "opponent": [
+          {
+            "inning": 1,
+            "startedAt": "2026-03-18T01:29:13.000Z",
+            "endedAt": "2026-03-18T02:43:23.000Z",
+            "totalRuns": 266,
+            "totalWickets": 10,
+            "totalExtras": 16,
+            "oversPlayed": "19.2",
+            "ballsPlayed": 0,
+            "runRate": "13.76",
+            "score": "266/10",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ]
+      },
       "toss": "Gully Cricket Club (GCC) won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -588,11 +2304,21 @@
       "status": "past",
       "state": "past",
       "date": "2026-03-14T01:50:46.000Z",
+      "endDate": "2026-03-13T23:01:31.000Z",
+      "createdAt": "2026-03-13T05:51:49.000Z",
       "matchType": "Limited Overs",
+      "matchCategoryName": "",
       "ballType": "TENNIS",
       "overs": 20,
+      "balls": 0,
+      "currentInning": 2,
+      "isSuperOver": false,
+      "isDL": false,
+      "isVJD": false,
       "venue": "Legend Cricket Ground 1 (Greater Noida)",
+      "venueId": 510942,
       "city": "Greater Noida",
+      "cityId": 4770,
       "opponentId": 12604411,
       "opponent": "Strikers 11",
       "opponentLogo": "https://media.cricheroes.in/default/teamintital/S.png",
@@ -603,6 +2329,74 @@
       "result": "loss",
       "resultText": "Strikers 11 won by 3 wickets",
       "scoreUpdatedAt": "2026-03-13T05:51:49.000Z",
+      "winner": "Strikers 11",
+      "tournament": {
+        "id": 0,
+        "name": "",
+        "categoryId": 0,
+        "roundId": 0,
+        "roundName": ""
+      },
+      "association": {
+        "id": 0,
+        "yearId": 0,
+        "name": "",
+        "logo": ""
+      },
+      "liveAvailability": {
+        "watchLive": false,
+        "ticker": false,
+        "web": true,
+        "app": true,
+        "matchStreaming": false,
+        "tournamentStreaming": false,
+        "videoAnalyst": false,
+        "aiCommentary": false
+      },
+      "scorecards": {
+        "warriors": [
+          {
+            "inning": 1,
+            "startedAt": "2026-03-14T01:50:46.000Z",
+            "endedAt": "2026-03-14T03:10:09.000Z",
+            "totalRuns": 181,
+            "totalWickets": 7,
+            "totalExtras": 16,
+            "oversPlayed": "20.0",
+            "ballsPlayed": 0,
+            "runRate": "9.05",
+            "score": "181/7",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ],
+        "opponent": [
+          {
+            "inning": 2,
+            "startedAt": "2026-03-14T03:14:00.000Z",
+            "endedAt": "2026-03-14T04:31:30.000Z",
+            "totalRuns": 185,
+            "totalWickets": 7,
+            "totalExtras": 21,
+            "oversPlayed": "17.5",
+            "ballsPlayed": 0,
+            "runRate": "10.37",
+            "score": "185/7",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ]
+      },
       "toss": "Kurukshetra Warriors won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -617,11 +2411,21 @@
       "status": "past",
       "state": "past",
       "date": "2026-03-11T01:43:51.000Z",
+      "endDate": "2026-03-10T22:47:37.000Z",
+      "createdAt": "2026-03-11T01:43:03.000Z",
       "matchType": "Limited Overs",
+      "matchCategoryName": "",
       "ballType": "TENNIS",
       "overs": 20,
+      "balls": 0,
+      "currentInning": 2,
+      "isSuperOver": false,
+      "isDL": false,
+      "isVJD": false,
       "venue": "M2 Cricket Ground By Daksh",
+      "venueId": 785200,
       "city": "Greater Noida",
+      "cityId": 4770,
       "opponentId": 7838698,
       "opponent": "Techie Cricket Club",
       "opponentLogo": "https://media.cricheroes.in/team_logo/1728061382026_agYaDjN6t6NG.jpeg",
@@ -632,6 +2436,74 @@
       "result": "loss",
       "resultText": "Techie Cricket Club won by 4 wickets",
       "scoreUpdatedAt": "2026-03-11T01:43:03.000Z",
+      "winner": "Techie Cricket Club",
+      "tournament": {
+        "id": 0,
+        "name": "",
+        "categoryId": 0,
+        "roundId": 0,
+        "roundName": ""
+      },
+      "association": {
+        "id": 0,
+        "yearId": 0,
+        "name": "",
+        "logo": ""
+      },
+      "liveAvailability": {
+        "watchLive": false,
+        "ticker": false,
+        "web": true,
+        "app": true,
+        "matchStreaming": false,
+        "tournamentStreaming": false,
+        "videoAnalyst": false,
+        "aiCommentary": false
+      },
+      "scorecards": {
+        "warriors": [
+          {
+            "inning": 1,
+            "startedAt": "2026-03-11T01:43:51.000Z",
+            "endedAt": "2026-03-11T03:00:09.000Z",
+            "totalRuns": 277,
+            "totalWickets": 8,
+            "totalExtras": 15,
+            "oversPlayed": "20.0",
+            "ballsPlayed": 0,
+            "runRate": "13.85",
+            "score": "277/8",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ],
+        "opponent": [
+          {
+            "inning": 2,
+            "startedAt": "2026-03-11T03:07:06.000Z",
+            "endedAt": "2026-03-11T04:17:32.000Z",
+            "totalRuns": 279,
+            "totalWickets": 5,
+            "totalExtras": 11,
+            "oversPlayed": "19.0",
+            "ballsPlayed": 0,
+            "runRate": "14.68",
+            "score": "279/5",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ]
+      },
       "toss": "Kurukshetra Warriors won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -646,11 +2518,21 @@
       "status": "past",
       "state": "past",
       "date": "2026-03-07T03:07:52.000Z",
+      "endDate": "2026-03-06T22:52:30.000Z",
+      "createdAt": "2026-03-07T03:07:32.000Z",
       "matchType": "Limited Overs",
+      "matchCategoryName": "",
       "ballType": "TENNIS",
       "overs": 10,
+      "balls": 0,
+      "currentInning": 2,
+      "isSuperOver": false,
+      "isDL": false,
+      "isVJD": false,
       "venue": "M2 Cricket Ground By Daksh (Greater Noida)",
+      "venueId": 685999,
       "city": "Greater Noida",
+      "cityId": 4770,
       "opponentId": 385484,
       "opponent": "MIGHTY HEROES",
       "opponentLogo": "https://media.cricheroes.in/team_logo/1630331659672_6RwS87ubP4We.jpeg",
@@ -661,6 +2543,74 @@
       "result": "win",
       "resultText": "Kurukshetra Warriors won by 9 wickets",
       "scoreUpdatedAt": "2026-03-07T03:07:32.000Z",
+      "winner": "Kurukshetra Warriors",
+      "tournament": {
+        "id": 0,
+        "name": "",
+        "categoryId": 0,
+        "roundId": 0,
+        "roundName": ""
+      },
+      "association": {
+        "id": 0,
+        "yearId": 0,
+        "name": "",
+        "logo": ""
+      },
+      "liveAvailability": {
+        "watchLive": false,
+        "ticker": false,
+        "web": true,
+        "app": true,
+        "matchStreaming": false,
+        "tournamentStreaming": false,
+        "videoAnalyst": false,
+        "aiCommentary": false
+      },
+      "scorecards": {
+        "warriors": [
+          {
+            "inning": 2,
+            "startedAt": "2026-03-07T03:46:20.000Z",
+            "endedAt": "2026-03-07T04:22:29.000Z",
+            "totalRuns": 149,
+            "totalWickets": 1,
+            "totalExtras": 17,
+            "oversPlayed": "9.3",
+            "ballsPlayed": 0,
+            "runRate": "15.68",
+            "score": "149/1",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ],
+        "opponent": [
+          {
+            "inning": 1,
+            "startedAt": "2026-03-07T03:07:52.000Z",
+            "endedAt": "2026-03-07T03:42:22.000Z",
+            "totalRuns": 146,
+            "totalWickets": 3,
+            "totalExtras": 6,
+            "oversPlayed": "10.0",
+            "ballsPlayed": 0,
+            "runRate": "14.60",
+            "score": "146/3",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ]
+      },
       "toss": "MIGHTY HEROES won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -675,11 +2625,21 @@
       "status": "past",
       "state": "past",
       "date": "2026-03-07T01:37:27.000Z",
+      "endDate": "2026-03-06T21:33:01.000Z",
+      "createdAt": "2026-03-03T06:09:46.000Z",
       "matchType": "Limited Overs",
+      "matchCategoryName": "",
       "ballType": "TENNIS",
       "overs": 20,
+      "balls": 0,
+      "currentInning": 2,
+      "isSuperOver": false,
+      "isDL": false,
+      "isVJD": false,
       "venue": "M2 Cricket Ground By Daksh (Greater Noida)",
+      "venueId": 685999,
       "city": "Greater Noida",
+      "cityId": 4770,
       "opponentId": 385484,
       "opponent": "MIGHTY HEROES",
       "opponentLogo": "https://media.cricheroes.in/team_logo/1630331659672_6RwS87ubP4We.jpeg",
@@ -690,6 +2650,74 @@
       "result": "loss",
       "resultText": "MIGHTY HEROES won by 8 wickets",
       "scoreUpdatedAt": "2026-03-03T06:09:46.000Z",
+      "winner": "MIGHTY HEROES",
+      "tournament": {
+        "id": 0,
+        "name": "",
+        "categoryId": 0,
+        "roundId": 0,
+        "roundName": ""
+      },
+      "association": {
+        "id": 0,
+        "yearId": 0,
+        "name": "",
+        "logo": ""
+      },
+      "liveAvailability": {
+        "watchLive": false,
+        "ticker": false,
+        "web": true,
+        "app": true,
+        "matchStreaming": false,
+        "tournamentStreaming": false,
+        "videoAnalyst": false,
+        "aiCommentary": false
+      },
+      "scorecards": {
+        "warriors": [
+          {
+            "inning": 1,
+            "startedAt": "2026-03-07T01:37:27.000Z",
+            "endedAt": "2026-03-07T02:24:46.000Z",
+            "totalRuns": 99,
+            "totalWickets": 10,
+            "totalExtras": 9,
+            "oversPlayed": "12.2",
+            "ballsPlayed": 0,
+            "runRate": "8.03",
+            "score": "99/10",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ],
+        "opponent": [
+          {
+            "inning": 2,
+            "startedAt": "2026-03-07T02:32:38.000Z",
+            "endedAt": "2026-03-07T03:03:00.000Z",
+            "totalRuns": 105,
+            "totalWickets": 2,
+            "totalExtras": 6,
+            "oversPlayed": "10.5",
+            "ballsPlayed": 0,
+            "runRate": "9.69",
+            "score": "105/2",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ]
+      },
       "toss": "Kurukshetra Warriors won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -704,11 +2732,21 @@
       "status": "past",
       "state": "past",
       "date": "2026-02-28T01:41:56.000Z",
+      "endDate": "2026-02-27T22:34:10.000Z",
+      "createdAt": "2026-02-26T11:23:36.000Z",
       "matchType": "Limited Overs",
+      "matchCategoryName": "",
       "ballType": "TENNIS",
       "overs": 20,
+      "balls": 0,
+      "currentInning": 2,
+      "isSuperOver": false,
+      "isDL": false,
+      "isVJD": false,
       "venue": "County cricket Complex(CQ)",
+      "venueId": 1000339,
       "city": "Greater Noida",
+      "cityId": 4770,
       "opponentId": 324638,
       "opponent": "Ace Panthers",
       "opponentLogo": "https://media.cricheroes.in/team_logo/1559651159219_jSlSG619DJTt.jpg",
@@ -719,6 +2757,74 @@
       "result": "loss",
       "resultText": "Ace Panthers won by 76 runs",
       "scoreUpdatedAt": "2026-02-26T11:23:36.000Z",
+      "winner": "Ace Panthers",
+      "tournament": {
+        "id": 0,
+        "name": "",
+        "categoryId": 0,
+        "roundId": 0,
+        "roundName": ""
+      },
+      "association": {
+        "id": 0,
+        "yearId": 0,
+        "name": "",
+        "logo": ""
+      },
+      "liveAvailability": {
+        "watchLive": false,
+        "ticker": false,
+        "web": true,
+        "app": true,
+        "matchStreaming": false,
+        "tournamentStreaming": false,
+        "videoAnalyst": false,
+        "aiCommentary": false
+      },
+      "scorecards": {
+        "warriors": [
+          {
+            "inning": 2,
+            "startedAt": "2026-02-28T02:56:55.000Z",
+            "endedAt": "2026-02-28T04:04:09.000Z",
+            "totalRuns": 118,
+            "totalWickets": 8,
+            "totalExtras": 28,
+            "oversPlayed": "14.5",
+            "ballsPlayed": 0,
+            "runRate": "7.96",
+            "score": "118/8",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ],
+        "opponent": [
+          {
+            "inning": 1,
+            "startedAt": "2026-02-28T01:41:56.000Z",
+            "endedAt": "2026-02-28T02:54:54.000Z",
+            "totalRuns": 194,
+            "totalWickets": 9,
+            "totalExtras": 6,
+            "oversPlayed": "20.0",
+            "ballsPlayed": 0,
+            "runRate": "9.70",
+            "score": "194/9",
+            "revisedTarget": "",
+            "revisedOvers": "",
+            "leadBy": "",
+            "trailBy": "",
+            "declared": false,
+            "forfeited": false,
+            "followOn": false
+          }
+        ]
+      },
       "toss": "Ace Panthers won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -739,6 +2845,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Destroyer",
       "batterCategoryInfo": "One who mostly deals in boundaries. Tap here to know more.",
       "bowlerCategory": "Economist",
@@ -788,6 +2895,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Hard Hitter",
       "batterCategoryInfo": "One who deals in boundaries more than singles. Tap here to know more.",
       "bowlerCategory": "Economist",
@@ -830,6 +2938,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "Classicist",
       "batterCategoryInfo": "One who likes to rotate strikes more than scoring big shots. Tap here to know more.",
       "bowlerCategory": "Wildcard",
@@ -871,6 +2980,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Hard Hitter",
       "batterCategoryInfo": "One who deals in boundaries more than singles. Tap here to know more.",
       "bowlerCategory": "Aspirant",
@@ -914,6 +3024,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "",
       "batterCategoryInfo": "",
       "bowlerCategory": "",
@@ -948,6 +3059,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Destroyer",
       "batterCategoryInfo": "One who mostly deals in boundaries. Tap here to know more.",
       "bowlerCategory": "Economist",
@@ -984,6 +3096,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Hard Hitter",
       "batterCategoryInfo": "One who deals in boundaries more than singles. Tap here to know more.",
       "bowlerCategory": "Economist",
@@ -1019,6 +3132,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Classicist",
       "batterCategoryInfo": "One who likes to rotate strikes more than scoring big shots. Tap here to know more.",
       "bowlerCategory": "Wildcard",
@@ -1055,6 +3169,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "",
       "batterCategoryInfo": "",
       "bowlerCategory": "",
@@ -1088,6 +3203,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Destroyer",
       "batterCategoryInfo": "One who mostly deals in boundaries. Tap here to know more.",
       "bowlerCategory": "Wildcard",
@@ -1124,6 +3240,7 @@
       "isCaptain": true,
       "isAdmin": true,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Accumulator",
       "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
       "bowlerCategory": "Aspirant",
@@ -1153,6 +3270,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "Destroyer",
       "batterCategoryInfo": "One who mostly deals in boundaries. Tap here to know more.",
       "bowlerCategory": "Aspirant",
@@ -1180,6 +3298,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Hard Hitter",
       "batterCategoryInfo": "One who deals in boundaries more than singles. Tap here to know more.",
       "bowlerCategory": "Aspirant",
@@ -1208,6 +3327,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Steady Batter",
       "batterCategoryInfo": "One who likes to build innings slowly and hold on to one end. Tap here to know more.",
       "bowlerCategory": "",
@@ -1235,6 +3355,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Accumulator",
       "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
       "bowlerCategory": "",
@@ -1262,6 +3383,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Hard Hitter",
       "batterCategoryInfo": "One who deals in boundaries more than singles. Tap here to know more.",
       "bowlerCategory": "Wildcard",
@@ -1290,6 +3412,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Accumulator",
       "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
       "bowlerCategory": "Wildcard",
@@ -1318,6 +3441,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "",
       "batterCategoryInfo": "",
       "bowlerCategory": "",
@@ -1341,6 +3465,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Destroyer",
       "batterCategoryInfo": "One who mostly deals in boundaries. Tap here to know more.",
       "bowlerCategory": "Aspirant",
@@ -1369,6 +3494,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "",
       "batterCategoryInfo": "",
       "bowlerCategory": "",
@@ -1394,6 +3520,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "Destroyer",
       "batterCategoryInfo": "One who mostly deals in boundaries. Tap here to know more.",
       "bowlerCategory": "Wildcard",
@@ -1421,6 +3548,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Classicist",
       "batterCategoryInfo": "One who likes to rotate strikes more than scoring big shots. Tap here to know more.",
       "bowlerCategory": "Aspirant",
@@ -1449,6 +3577,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "Classicist",
       "batterCategoryInfo": "One who likes to rotate strikes more than scoring big shots. Tap here to know more.",
       "bowlerCategory": "",
@@ -1475,6 +3604,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "",
       "batterCategoryInfo": "",
       "bowlerCategory": "",
@@ -1500,6 +3630,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "",
       "batterCategoryInfo": "",
       "bowlerCategory": "",
@@ -1525,6 +3656,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "Accumulator",
       "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
       "bowlerCategory": "Aspirant",
@@ -1552,6 +3684,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "",
       "batterCategoryInfo": "",
       "bowlerCategory": "",
@@ -1575,6 +3708,7 @@
       "isCaptain": false,
       "isAdmin": true,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Classicist",
       "batterCategoryInfo": "One who likes to rotate strikes more than scoring big shots. Tap here to know more.",
       "bowlerCategory": "Wildcard",
@@ -1603,6 +3737,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "Hard Hitter",
       "batterCategoryInfo": "One who deals in boundaries more than singles. Tap here to know more.",
       "bowlerCategory": "Aspirant",
@@ -1630,6 +3765,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Destroyer",
       "batterCategoryInfo": "One who mostly deals in boundaries. Tap here to know more.",
       "bowlerCategory": "Aspirant",
@@ -1658,6 +3794,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "",
       "batterCategoryInfo": "",
       "bowlerCategory": "",
@@ -1683,6 +3820,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "Accumulator",
       "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
       "bowlerCategory": "Aspirant",
@@ -1710,6 +3848,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "Steady Batter",
       "batterCategoryInfo": "One who likes to build innings slowly and hold on to one end. Tap here to know more.",
       "bowlerCategory": "Aspirant",
@@ -1737,6 +3876,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "Accumulator",
       "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
       "bowlerCategory": "Aspirant",
@@ -1764,6 +3904,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "",
       "batterCategoryInfo": "",
       "bowlerCategory": "",
@@ -1787,6 +3928,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "Hard Hitter",
       "batterCategoryInfo": "One who deals in boundaries more than singles. Tap here to know more.",
       "bowlerCategory": "Wildcard",
@@ -1814,6 +3956,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "",
       "batterCategoryInfo": "",
       "bowlerCategory": "Aspirant",
@@ -1840,6 +3983,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "Accumulator",
       "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
       "bowlerCategory": "",
@@ -1866,6 +4010,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Classicist",
       "batterCategoryInfo": "One who likes to rotate strikes more than scoring big shots. Tap here to know more.",
       "bowlerCategory": "Aspirant",
@@ -1894,6 +4039,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Accumulator",
       "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
       "bowlerCategory": "Aspirant",
@@ -1922,6 +4068,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "",
       "batterCategoryInfo": "",
       "bowlerCategory": "",
@@ -1947,6 +4094,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Classicist",
       "batterCategoryInfo": "One who likes to rotate strikes more than scoring big shots. Tap here to know more.",
       "bowlerCategory": "Aspirant",
@@ -1975,6 +4123,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "",
       "batterCategoryInfo": "",
       "bowlerCategory": "",
@@ -2001,6 +4150,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Accumulator",
       "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
       "bowlerCategory": "Wildcard",
@@ -2029,6 +4179,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Accumulator",
       "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
       "bowlerCategory": "",
@@ -2056,6 +4207,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "",
       "batterCategoryInfo": "",
       "bowlerCategory": "",
@@ -2081,6 +4233,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "",
       "batterCategoryInfo": "",
       "bowlerCategory": "",
@@ -2106,6 +4259,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Accumulator",
       "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
       "bowlerCategory": "",
@@ -2133,6 +4287,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "Hard Hitter",
       "batterCategoryInfo": "One who deals in boundaries more than singles. Tap here to know more.",
       "bowlerCategory": "Aspirant",
@@ -2160,6 +4315,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "Destroyer",
       "batterCategoryInfo": "One who mostly deals in boundaries. Tap here to know more.",
       "bowlerCategory": "Aspirant",
@@ -2187,6 +4343,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "Classicist",
       "batterCategoryInfo": "One who likes to rotate strikes more than scoring big shots. Tap here to know more.",
       "bowlerCategory": "",
@@ -2213,6 +4370,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "Hard Hitter",
       "batterCategoryInfo": "One who deals in boundaries more than singles. Tap here to know more.",
       "bowlerCategory": "Aspirant",
@@ -2240,6 +4398,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "Classicist",
       "batterCategoryInfo": "One who likes to rotate strikes more than scoring big shots. Tap here to know more.",
       "bowlerCategory": "",
@@ -2266,6 +4425,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Classicist",
       "batterCategoryInfo": "One who likes to rotate strikes more than scoring big shots. Tap here to know more.",
       "bowlerCategory": "Aspirant",
@@ -2294,6 +4454,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Accumulator",
       "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
       "bowlerCategory": "Economist",
@@ -2322,6 +4483,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Classicist",
       "batterCategoryInfo": "One who likes to rotate strikes more than scoring big shots. Tap here to know more.",
       "bowlerCategory": "Wildcard",
@@ -2350,6 +4512,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "Destroyer",
       "batterCategoryInfo": "One who mostly deals in boundaries. Tap here to know more.",
       "bowlerCategory": "",
@@ -2376,6 +4539,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Destroyer",
       "batterCategoryInfo": "One who mostly deals in boundaries. Tap here to know more.",
       "bowlerCategory": "Wildcard",
@@ -2404,6 +4568,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "",
       "batterCategoryInfo": "",
       "bowlerCategory": "",
@@ -2429,6 +4594,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "Classicist",
       "batterCategoryInfo": "One who likes to rotate strikes more than scoring big shots. Tap here to know more.",
       "bowlerCategory": "Aspirant",
@@ -2456,6 +4622,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Accumulator",
       "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
       "bowlerCategory": "Aspirant",
@@ -2484,6 +4651,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Steady Batter",
       "batterCategoryInfo": "One who likes to build innings slowly and hold on to one end. Tap here to know more.",
       "bowlerCategory": "",
@@ -2511,6 +4679,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "",
       "batterCategoryInfo": "",
       "bowlerCategory": "",
@@ -2536,6 +4705,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "Accumulator",
       "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
       "bowlerCategory": "",
@@ -2562,6 +4732,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Accumulator",
       "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
       "bowlerCategory": "Wildcard",
@@ -2590,6 +4761,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "",
       "batterCategoryInfo": "",
       "bowlerCategory": "",
@@ -2615,6 +4787,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "",
       "batterCategoryInfo": "",
       "bowlerCategory": "",
@@ -2640,6 +4813,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Classicist",
       "batterCategoryInfo": "One who likes to rotate strikes more than scoring big shots. Tap here to know more.",
       "bowlerCategory": "",
@@ -2667,6 +4841,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Destroyer",
       "batterCategoryInfo": "One who mostly deals in boundaries. Tap here to know more.",
       "bowlerCategory": "Wildcard",
@@ -2695,6 +4870,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "Hard Hitter",
       "batterCategoryInfo": "One who deals in boundaries more than singles. Tap here to know more.",
       "bowlerCategory": "Wildcard",
@@ -2722,6 +4898,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "Hard Hitter",
       "batterCategoryInfo": "One who deals in boundaries more than singles. Tap here to know more.",
       "bowlerCategory": "",
@@ -2748,6 +4925,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "",
       "batterCategoryInfo": "",
       "bowlerCategory": "",
@@ -2773,6 +4951,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "",
       "batterCategoryInfo": "",
       "bowlerCategory": "Aspirant",
@@ -2799,6 +4978,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Destroyer",
       "batterCategoryInfo": "One who mostly deals in boundaries. Tap here to know more.",
       "bowlerCategory": "Spearhead",
@@ -2827,6 +5007,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "",
       "batterCategoryInfo": "",
       "bowlerCategory": "",
@@ -2850,6 +5031,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
+      "associationTag": "",
       "batterCategory": "Accumulator",
       "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
       "bowlerCategory": "",
@@ -2876,6 +5058,7 @@
       "isCaptain": false,
       "isAdmin": false,
       "isPro": true,
+      "associationTag": "",
       "batterCategory": "Accumulator",
       "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
       "bowlerCategory": "Aspirant",
@@ -3247,6 +5430,476 @@
       "lastPlayed": "2026-03-18T01:29:13.000Z",
       "awards": [],
       "badges": []
+    }
+  ],
+  "awardLedger": [
+    {
+      "id": "26132337-playerOfMatch",
+      "label": "Player of the Match",
+      "playerId": 5823563,
+      "playerName": "Vijay k",
+      "playerPhoto": "https://media.cricheroes.in/user_profile/1779329221637_sAQlz8HY2Dv7.jpeg",
+      "side": "Kurukshetra Warriors",
+      "matchId": 26132337,
+      "opponent": "Fabulous XI",
+      "result": "win",
+      "date": "2026-07-15T00:56:42.000Z"
+    },
+    {
+      "id": "26132337-fielderOfMatch",
+      "label": "Fielder of the Match",
+      "playerId": 9382549,
+      "playerName": "Opponent player",
+      "playerPhoto": "",
+      "side": "Fabulous XI",
+      "matchId": 26132337,
+      "opponent": "Fabulous XI",
+      "result": "win",
+      "date": "2026-07-15T00:56:42.000Z"
+    },
+    {
+      "id": "26132337-bestBatter",
+      "label": "Best Batter",
+      "playerId": 28790413,
+      "playerName": "Praveen Pratapgarh",
+      "playerPhoto": "https://media.cricheroes.in/user_profile/1780864997429_9o5IzA0i3jGm.jpg",
+      "side": "Kurukshetra Warriors",
+      "matchId": 26132337,
+      "opponent": "Fabulous XI",
+      "result": "win",
+      "date": "2026-07-15T00:56:42.000Z"
+    },
+    {
+      "id": "26132337-bestBowler",
+      "label": "Best Bowler",
+      "playerId": 9382549,
+      "playerName": "Opponent player",
+      "playerPhoto": "",
+      "side": "Fabulous XI",
+      "matchId": 26132337,
+      "opponent": "Fabulous XI",
+      "result": "win",
+      "date": "2026-07-15T00:56:42.000Z"
+    },
+    {
+      "id": "25214310-playerOfMatch",
+      "label": "Player of the Match",
+      "playerId": 11536802,
+      "playerName": "Opponent player",
+      "playerPhoto": "",
+      "side": "Divino Dominators",
+      "matchId": 25214310,
+      "opponent": "Divino Dominators",
+      "result": "loss",
+      "date": "2026-06-02T01:03:10.000Z"
+    },
+    {
+      "id": "25214310-fielderOfMatch",
+      "label": "Fielder of the Match",
+      "playerId": 6818401,
+      "playerName": "Kunvar prashant",
+      "playerPhoto": "https://media.cricheroes.in/user_profile/1738040185345_44AWc8yYQ3Xd.jpeg",
+      "side": "Kurukshetra Warriors",
+      "matchId": 25214310,
+      "opponent": "Divino Dominators",
+      "result": "loss",
+      "date": "2026-06-02T01:03:10.000Z"
+    },
+    {
+      "id": "25214310-bestBatter",
+      "label": "Best Batter",
+      "playerId": 11536802,
+      "playerName": "Opponent player",
+      "playerPhoto": "",
+      "side": "Divino Dominators",
+      "matchId": 25214310,
+      "opponent": "Divino Dominators",
+      "result": "loss",
+      "date": "2026-06-02T01:03:10.000Z"
+    },
+    {
+      "id": "25214310-bestBowler",
+      "label": "Best Bowler",
+      "playerId": 6818401,
+      "playerName": "Kunvar prashant",
+      "playerPhoto": "https://media.cricheroes.in/user_profile/1738040185345_44AWc8yYQ3Xd.jpeg",
+      "side": "Kurukshetra Warriors",
+      "matchId": 25214310,
+      "opponent": "Divino Dominators",
+      "result": "loss",
+      "date": "2026-06-02T01:03:10.000Z"
+    },
+    {
+      "id": "24878263-playerOfMatch",
+      "label": "Player of the Match",
+      "playerId": 14689673,
+      "playerName": "Opponent player",
+      "playerPhoto": "",
+      "side": "The Core XI",
+      "matchId": 24878263,
+      "opponent": "The Core XI",
+      "result": "loss",
+      "date": "2026-05-22T15:13:00.000Z"
+    },
+    {
+      "id": "24878263-fielderOfMatch",
+      "label": "Fielder of the Match",
+      "playerId": 5584447,
+      "playerName": "Pushpendra Singh",
+      "playerPhoto": "https://media.cricheroes.in/user_profile/1784274579140_yztlEesJF4F4.jpg",
+      "side": "Kurukshetra Warriors",
+      "matchId": 24878263,
+      "opponent": "The Core XI",
+      "result": "loss",
+      "date": "2026-05-22T15:13:00.000Z"
+    },
+    {
+      "id": "24878263-bestBatter",
+      "label": "Best Batter",
+      "playerId": 14689673,
+      "playerName": "Opponent player",
+      "playerPhoto": "",
+      "side": "The Core XI",
+      "matchId": 24878263,
+      "opponent": "The Core XI",
+      "result": "loss",
+      "date": "2026-05-22T15:13:00.000Z"
+    },
+    {
+      "id": "24878263-bestBowler",
+      "label": "Best Bowler",
+      "playerId": 21511769,
+      "playerName": "Opponent player",
+      "playerPhoto": "",
+      "side": "The Core XI",
+      "matchId": 24878263,
+      "opponent": "The Core XI",
+      "result": "loss",
+      "date": "2026-05-22T15:13:00.000Z"
+    },
+    {
+      "id": "23817201-playerOfMatch",
+      "label": "Player of the Match",
+      "playerId": 6197041,
+      "playerName": "Opponent player",
+      "playerPhoto": "",
+      "side": "Elite warriors 11",
+      "matchId": 23817201,
+      "opponent": "Elite warriors 11",
+      "result": "loss",
+      "date": "2026-04-10T01:43:22.000Z"
+    },
+    {
+      "id": "23817201-bestBatter",
+      "label": "Best Batter",
+      "playerId": 42908623,
+      "playerName": "Santino Bathla",
+      "playerPhoto": "https://media.cricheroes.in/user_profile/1759047526994_T1MRvZaBCaLj.jpeg",
+      "side": "Kurukshetra Warriors",
+      "matchId": 23817201,
+      "opponent": "Elite warriors 11",
+      "result": "loss",
+      "date": "2026-04-10T01:43:22.000Z"
+    },
+    {
+      "id": "23817201-bestBowler",
+      "label": "Best Bowler",
+      "playerId": 34183562,
+      "playerName": "Rohit Saini",
+      "playerPhoto": "https://media.cricheroes.in/user_profile/1738946054649_ElVa3yXH1zkQ.jpg",
+      "side": "Kurukshetra Warriors",
+      "matchId": 23817201,
+      "opponent": "Elite warriors 11",
+      "result": "loss",
+      "date": "2026-04-10T01:43:22.000Z"
+    },
+    {
+      "id": "23554204-playerOfMatch",
+      "label": "Player of the Match",
+      "playerId": 7993637,
+      "playerName": "Opponent player",
+      "playerPhoto": "",
+      "side": "Star Sport Cricket Club",
+      "matchId": 23554204,
+      "opponent": "Star Sport Cricket Club",
+      "result": "loss",
+      "date": "2026-04-01T01:46:12.000Z"
+    },
+    {
+      "id": "23554204-bestBatter",
+      "label": "Best Batter",
+      "playerId": 7993637,
+      "playerName": "Opponent player",
+      "playerPhoto": "",
+      "side": "Star Sport Cricket Club",
+      "matchId": 23554204,
+      "opponent": "Star Sport Cricket Club",
+      "result": "loss",
+      "date": "2026-04-01T01:46:12.000Z"
+    },
+    {
+      "id": "23554204-bestBowler",
+      "label": "Best Bowler",
+      "playerId": 28685755,
+      "playerName": "Opponent player",
+      "playerPhoto": "",
+      "side": "Star Sport Cricket Club",
+      "matchId": 23554204,
+      "opponent": "Star Sport Cricket Club",
+      "result": "loss",
+      "date": "2026-04-01T01:46:12.000Z"
+    },
+    {
+      "id": "23378722-playerOfMatch",
+      "label": "Player of the Match",
+      "playerId": 42405943,
+      "playerName": "Opponent player",
+      "playerPhoto": "",
+      "side": "Ace Power XI",
+      "matchId": 23378722,
+      "opponent": "Ace Power XI",
+      "result": "loss",
+      "date": "2026-03-25T01:26:01.000Z"
+    },
+    {
+      "id": "23378722-bestBatter",
+      "label": "Best Batter",
+      "playerId": 42405943,
+      "playerName": "Opponent player",
+      "playerPhoto": "",
+      "side": "Ace Power XI",
+      "matchId": 23378722,
+      "opponent": "Ace Power XI",
+      "result": "loss",
+      "date": "2026-03-25T01:26:01.000Z"
+    },
+    {
+      "id": "23378722-bestBowler",
+      "label": "Best Bowler",
+      "playerId": 42429999,
+      "playerName": "Opponent player",
+      "playerPhoto": "",
+      "side": "Ace Power XI",
+      "matchId": 23378722,
+      "opponent": "Ace Power XI",
+      "result": "loss",
+      "date": "2026-03-25T01:26:01.000Z"
+    },
+    {
+      "id": "23143469-playerOfMatch",
+      "label": "Player of the Match",
+      "playerId": 28790413,
+      "playerName": "Praveen Pratapgarh",
+      "playerPhoto": "https://media.cricheroes.in/user_profile/1780864997429_9o5IzA0i3jGm.jpg",
+      "side": "Kurukshetra Warriors",
+      "matchId": 23143469,
+      "opponent": "Gully Cricket Club (GCC)",
+      "result": "win",
+      "date": "2026-03-18T01:29:13.000Z"
+    },
+    {
+      "id": "23143469-bestBatter",
+      "label": "Best Batter",
+      "playerId": 28790413,
+      "playerName": "Praveen Pratapgarh",
+      "playerPhoto": "https://media.cricheroes.in/user_profile/1780864997429_9o5IzA0i3jGm.jpg",
+      "side": "Kurukshetra Warriors",
+      "matchId": 23143469,
+      "opponent": "Gully Cricket Club (GCC)",
+      "result": "win",
+      "date": "2026-03-18T01:29:13.000Z"
+    },
+    {
+      "id": "23143469-bestBowler",
+      "label": "Best Bowler",
+      "playerId": 7367912,
+      "playerName": "Sagar",
+      "playerPhoto": "https://media.cricheroes.in/user_profile/1738834110194_IpLNLr7RBhuc.jpeg",
+      "side": "Kurukshetra Warriors",
+      "matchId": 23143469,
+      "opponent": "Gully Cricket Club (GCC)",
+      "result": "win",
+      "date": "2026-03-18T01:29:13.000Z"
+    },
+    {
+      "id": "23084704-playerOfMatch",
+      "label": "Player of the Match",
+      "playerId": 4530389,
+      "playerName": "Opponent player",
+      "playerPhoto": "",
+      "side": "Strikers 11",
+      "matchId": 23084704,
+      "opponent": "Strikers 11",
+      "result": "loss",
+      "date": "2026-03-14T01:50:46.000Z"
+    },
+    {
+      "id": "23084704-bestBatter",
+      "label": "Best Batter",
+      "playerId": 45765702,
+      "playerName": "Amit Kumar",
+      "playerPhoto": "https://media.cricheroes.in/user_profile/default_user_profile_m.png?v=45765702",
+      "side": "Kurukshetra Warriors",
+      "matchId": 23084704,
+      "opponent": "Strikers 11",
+      "result": "loss",
+      "date": "2026-03-14T01:50:46.000Z"
+    },
+    {
+      "id": "23084704-bestBowler",
+      "label": "Best Bowler",
+      "playerId": 34183562,
+      "playerName": "Rohit Saini",
+      "playerPhoto": "https://media.cricheroes.in/user_profile/1738946054649_ElVa3yXH1zkQ.jpg",
+      "side": "Kurukshetra Warriors",
+      "matchId": 23084704,
+      "opponent": "Strikers 11",
+      "result": "loss",
+      "date": "2026-03-14T01:50:46.000Z"
+    },
+    {
+      "id": "23046803-playerOfMatch",
+      "label": "Player of the Match",
+      "playerId": 10287744,
+      "playerName": "Opponent player",
+      "playerPhoto": "",
+      "side": "Techie Cricket Club",
+      "matchId": 23046803,
+      "opponent": "Techie Cricket Club",
+      "result": "loss",
+      "date": "2026-03-11T01:43:51.000Z"
+    },
+    {
+      "id": "23046803-bestBatter",
+      "label": "Best Batter",
+      "playerId": 10287744,
+      "playerName": "Opponent player",
+      "playerPhoto": "",
+      "side": "Techie Cricket Club",
+      "matchId": 23046803,
+      "opponent": "Techie Cricket Club",
+      "result": "loss",
+      "date": "2026-03-11T01:43:51.000Z"
+    },
+    {
+      "id": "23046803-bestBowler",
+      "label": "Best Bowler",
+      "playerId": 145048,
+      "playerName": "Opponent player",
+      "playerPhoto": "",
+      "side": "Techie Cricket Club",
+      "matchId": 23046803,
+      "opponent": "Techie Cricket Club",
+      "result": "loss",
+      "date": "2026-03-11T01:43:51.000Z"
+    },
+    {
+      "id": "22937264-playerOfMatch",
+      "label": "Player of the Match",
+      "playerId": 1257282,
+      "playerName": "Sunny Bansal",
+      "playerPhoto": "https://media.cricheroes.in/user_profile/1768059656318_FcDWz8vhJEUM.jpeg",
+      "side": "Kurukshetra Warriors",
+      "matchId": 22937264,
+      "opponent": "MIGHTY HEROES",
+      "result": "win",
+      "date": "2026-03-07T03:07:52.000Z"
+    },
+    {
+      "id": "22937264-bestBatter",
+      "label": "Best Batter",
+      "playerId": 1257282,
+      "playerName": "Sunny Bansal",
+      "playerPhoto": "https://media.cricheroes.in/user_profile/1768059656318_FcDWz8vhJEUM.jpeg",
+      "side": "Kurukshetra Warriors",
+      "matchId": 22937264,
+      "opponent": "MIGHTY HEROES",
+      "result": "win",
+      "date": "2026-03-07T03:07:52.000Z"
+    },
+    {
+      "id": "22937264-bestBowler",
+      "label": "Best Bowler",
+      "playerId": 25455261,
+      "playerName": "Deepak Rajput",
+      "playerPhoto": "https://media.cricheroes.in/user_profile/1774534535600_ZmitULCbzuLQ.jpeg",
+      "side": "Kurukshetra Warriors",
+      "matchId": 22937264,
+      "opponent": "MIGHTY HEROES",
+      "result": "win",
+      "date": "2026-03-07T03:07:52.000Z"
+    },
+    {
+      "id": "22865500-playerOfMatch",
+      "label": "Player of the Match",
+      "playerId": 2798901,
+      "playerName": "Opponent player",
+      "playerPhoto": "",
+      "side": "MIGHTY HEROES",
+      "matchId": 22865500,
+      "opponent": "MIGHTY HEROES",
+      "result": "loss",
+      "date": "2026-03-07T01:37:27.000Z"
+    },
+    {
+      "id": "22865500-bestBatter",
+      "label": "Best Batter",
+      "playerId": 3780112,
+      "playerName": "Opponent player",
+      "playerPhoto": "",
+      "side": "MIGHTY HEROES",
+      "matchId": 22865500,
+      "opponent": "MIGHTY HEROES",
+      "result": "loss",
+      "date": "2026-03-07T01:37:27.000Z"
+    },
+    {
+      "id": "22865500-bestBowler",
+      "label": "Best Bowler",
+      "playerId": 2798901,
+      "playerName": "Opponent player",
+      "playerPhoto": "",
+      "side": "MIGHTY HEROES",
+      "matchId": 22865500,
+      "opponent": "MIGHTY HEROES",
+      "result": "loss",
+      "date": "2026-03-07T01:37:27.000Z"
+    },
+    {
+      "id": "22742510-playerOfMatch",
+      "label": "Player of the Match",
+      "playerId": 2786229,
+      "playerName": "Opponent player",
+      "playerPhoto": "",
+      "side": "Ace Panthers",
+      "matchId": 22742510,
+      "opponent": "Ace Panthers",
+      "result": "loss",
+      "date": "2026-02-28T01:41:56.000Z"
+    },
+    {
+      "id": "22742510-bestBatter",
+      "label": "Best Batter",
+      "playerId": 2934634,
+      "playerName": "Opponent player",
+      "playerPhoto": "",
+      "side": "Ace Panthers",
+      "matchId": 22742510,
+      "opponent": "Ace Panthers",
+      "result": "loss",
+      "date": "2026-02-28T01:41:56.000Z"
+    },
+    {
+      "id": "22742510-bestBowler",
+      "label": "Best Bowler",
+      "playerId": 2786229,
+      "playerName": "Opponent player",
+      "playerPhoto": "",
+      "side": "Ace Panthers",
+      "matchId": 22742510,
+      "opponent": "Ace Panthers",
+      "result": "loss",
+      "date": "2026-02-28T01:41:56.000Z"
     }
   ],
   "opponentAwards": [

@@ -16,6 +16,18 @@ export const ROUTE_METADATA = [
     jsonLdType: "home",
   },
   {
+    path: "/warriors",
+    canonicalPath: "/warriors",
+    title: "Kurukshetra Warriors CricHeroes Team Data - CricKuru",
+    description:
+      "Explore the public Kurukshetra Warriors CricHeroes feed with team profile details, match scorecards, roster data, award records, opponent form and live updates.",
+    ogType: "website",
+    themeColor: "#05070B",
+    changefreq: "daily",
+    priority: "0.95",
+    jsonLdType: "warriorsData",
+  },
+  {
     path: "/arena",
     canonicalPath: "/arena",
     title: "CricKuru Arena - Play the Kurukshetra Cricket Game",
@@ -267,6 +279,41 @@ function jsonLdForRoute(metadata) {
         creator: {
           "@type": "Organization",
           name: SITE_NAME,
+        },
+      },
+    ];
+  }
+
+  if (metadata.jsonLdType === "warriorsData") {
+    return [
+      basePage,
+      {
+        "@context": "https://schema.org",
+        "@type": "SportsTeam",
+        name: "Kurukshetra Warriors",
+        sport: "Cricket",
+        url: canonicalUrl,
+        sameAs: [
+          "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors",
+          "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
+          "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/members",
+        ],
+        location: {
+          "@type": "Place",
+          name: "Greater Noida",
+        },
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        name: "Kurukshetra Warriors Public CricHeroes Feed",
+        description: metadata.description,
+        url: canonicalUrl,
+        keywords: ["Kurukshetra Warriors", "CricHeroes", "cricket team data", "match scorecards", "player roster"],
+        creator: {
+          "@type": "Organization",
+          name: SITE_NAME,
+          url: SITE_ORIGIN,
         },
       },
     ];
