@@ -1,17 +1,22 @@
 # CricKuru Hostinger Upload
 
-Use this when Hostinger AI credits are finished. This site is a standalone React landing page that you can upload manually.
+Use this when Hostinger AI credits are finished. This site is a bundled production React app that you can upload manually.
 
 ## Fast Upload Method
 
-1. Open Hostinger hPanel.
-2. Go to Websites, choose `crickuru.com`, then open File Manager.
-3. Open the `public_html` folder.
-4. Upload or create `index.html` and paste the full code from this workspace file:
-   `C:\Users\Admin\Documents\Cricket website\index.html`
-5. Upload or create `.htaccess` and paste the full code from:
-   `C:\Users\Admin\Documents\Cricket website\.htaccess`
-6. Save both files and open `https://crickuru.com`.
+1. Run `npm install` if dependencies are not installed yet.
+2. Run `npm run build`.
+3. Open Hostinger hPanel.
+4. Go to Websites, choose `crickuru.com`, then open File Manager.
+5. Open the `public_html` folder.
+6. Upload `crickuru-hostinger-upload.zip`.
+7. Extract it directly inside `public_html`.
+8. Confirm `index.html`, `.htaccess`, `robots.txt`, `sitemap.xml`, `manifest.json`, and `favicon.ico` are directly inside `public_html`.
+9. Open `https://crickuru.com`.
+
+Do not upload the repository root as the live site. Upload the generated ZIP or the contents of `dist/`.
+
+## WordPress Note
 
 If Hostinger created WordPress, the site may keep loading `index.php`. In that case, either rename `index.php` to `index-wp-backup.php`, or make sure `.htaccess` includes:
 
@@ -19,11 +24,9 @@ If Hostinger created WordPress, the site may keep loading `index.php`. In that c
 DirectoryIndex index.html index.php
 ```
 
-Also make sure the files are not trapped inside a nested folder after extracting the ZIP. `index.html` must be directly inside `public_html`.
-
 ## Why `.htaccess` Is Included
 
-The landing page uses routes like `/arena`, `/teams`, `/players`, `/tournaments`, `/community`, and `/login`. The `.htaccess` file makes those routes load the React page correctly when someone refreshes the browser.
+The site uses routes like `/arena`, `/memes`, `/meme`, `/coin`, and `/kurukshetra-coin`. The `.htaccess` file keeps those app routes working on refresh while letting real files such as `robots.txt`, `sitemap.xml`, `manifest.json`, and `favicon.ico` serve with the right MIME types.
 
 ## CricHeroes Links Used
 

@@ -1,11 +1,12 @@
 # Publish crickuru.com with GitHub Pages
 
-The repository is prepared for GitHub Pages using:
+The repository is prepared for GitHub Pages using a production build:
 
 - `CNAME` with `crickuru.com`
 - `.nojekyll`
 - `.github/workflows/pages.yml`
-- `404.html` route fallback
+- Vite-generated `dist/` output
+- `404.html` route fallback generated during build
 
 ## Required GitHub Setting
 
@@ -17,7 +18,7 @@ Set:
 
 - Source: `GitHub Actions`
 
-The workflow will publish the site after the next push or manual workflow run.
+The workflow installs dependencies, runs `npm run build`, and publishes `dist/` after the next push or manual workflow run.
 
 ## Required Hostinger DNS Records
 

@@ -2,7 +2,16 @@
 
 Official website and cricket platform for CricKuru and Kurukshetra Warriors.
 
-Premium landing page for `crickuru.com`.
+Production-built landing page for `crickuru.com`.
+
+## Build
+
+```bash
+npm install
+npm run build
+```
+
+The build writes the deployable static site to `dist/` and refreshes `crickuru-hostinger-upload.zip` for Hostinger File Manager upload.
 
 ## CricKuru Arena
 
@@ -17,10 +26,12 @@ The `/arena` route contains a playable browser cricket duel with:
 
 ## Files
 
-- `index.html` - standalone React landing page
-- `.htaccess` - Hostinger route fallback for React routes
+- `src/` - React app source
+- `index.html` - Vite HTML shell with immediate static first-paint content
+- `.htaccess` - Hostinger MIME, security-header, and route fallback rules
+- `scripts/` - production static-file, metadata, favicon, and ZIP generation
 - `HOSTINGER_UPLOAD_INSTRUCTIONS.md` - manual Hostinger upload guide
-- `crickuru-hostinger-upload.zip` - upload-ready bundle
+- `crickuru-hostinger-upload.zip` - upload-ready production bundle
 
 ## CricHeroes
 

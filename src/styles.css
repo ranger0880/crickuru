@@ -1,0 +1,476 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+        --night: #05070b;
+        --midnight: #080d16;
+        --gold: #f4b942;
+        --crimson: #b71932;
+        --stadium: #f5f7fa;
+        --cyan: #22d3ee;
+        --stadium-vip-bg: url("/assets/stadium-vip-warriors.png");
+        --cricket-ball-cursor: url("/assets/red-leather-cricket-ball-cursor.svg") 18 18;
+        color-scheme: dark;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background:
+          linear-gradient(180deg, rgba(5, 7, 11, 0.72), rgba(5, 7, 11, 0.92)),
+          var(--stadium-vip-bg) center top / cover fixed no-repeat,
+          var(--night);
+        color: var(--stadium);
+        cursor: var(--cricket-ball-cursor), auto;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        overflow-x: hidden;
+      }
+
+      a,
+      button,
+      [role="button"],
+      summary {
+        cursor: var(--cricket-ball-cursor), pointer;
+      }
+
+      input,
+      textarea {
+        cursor: text;
+      }
+
+      body::selection,
+      ::selection {
+        background: rgba(244, 185, 66, 0.9);
+        color: #05070b;
+      }
+
+      body::-webkit-scrollbar {
+        width: 11px;
+      }
+
+      body::-webkit-scrollbar-track {
+        background: #030407;
+      }
+
+      body::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, var(--gold), rgba(183, 25, 50, 0.9));
+        border: 3px solid #030407;
+        border-radius: 999px;
+      }
+
+      a,
+      button {
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      a:focus-visible,
+      button:focus-visible {
+        outline: 2px solid var(--gold);
+        outline-offset: 4px;
+      }
+
+      .font-display {
+        font-family: "Barlow Condensed", Impact, sans-serif;
+        letter-spacing: 0;
+      }
+
+      .page-grain::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: 60;
+        pointer-events: none;
+        opacity: 0.12;
+        mix-blend-mode: screen;
+        background-image:
+          radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.08) 0 1px, transparent 1px),
+          radial-gradient(circle at 70% 40%, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px);
+        background-size: 38px 38px, 53px 53px;
+      }
+
+      .hero-scene {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+        background:
+          linear-gradient(90deg, rgba(5, 7, 11, 0.88) 0%, rgba(5, 7, 11, 0.28) 46%, rgba(5, 7, 11, 0.74) 100%),
+          linear-gradient(180deg, rgba(5, 7, 11, 0.26) 0%, rgba(5, 7, 11, 0.6) 72%, #05070b 100%),
+          radial-gradient(circle at 22% 17%, rgba(34, 211, 238, 0.12), transparent 22%),
+          radial-gradient(circle at 80% 16%, rgba(244, 185, 66, 0.13), transparent 20%),
+          radial-gradient(circle at 75% 62%, rgba(183, 25, 50, 0.21), transparent 34%),
+          var(--stadium-vip-bg) center center / cover no-repeat,
+          linear-gradient(180deg, #05070b 0%, #080d16 42%, #05070b 100%);
+      }
+
+      .hero-scene::before {
+        content: "";
+        position: absolute;
+        inset: -12% -8%;
+        background:
+          linear-gradient(102deg, transparent 0 7%, rgba(245, 247, 250, 0.13) 8%, transparent 16%),
+          linear-gradient(78deg, transparent 0 73%, rgba(245, 247, 250, 0.14) 78%, transparent 88%),
+          radial-gradient(ellipse at 50% 74%, rgba(245, 247, 250, 0.09), transparent 24%),
+          radial-gradient(ellipse at 50% 84%, rgba(244, 185, 66, 0.15), transparent 26%);
+        filter: blur(0.2px);
+        opacity: 0.88;
+        transform: translate3d(var(--parallax-x, 0px), var(--parallax-y, 0px), 0);
+        transition: transform 0.5s ease-out;
+      }
+
+      .hero-scene::after {
+        content: "";
+        position: absolute;
+        left: -10%;
+        right: -10%;
+        bottom: 7%;
+        height: 32%;
+        background:
+          repeating-linear-gradient(
+            90deg,
+            rgba(245, 247, 250, 0.08) 0 4px,
+            transparent 4px 21px
+          ),
+          linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.62) 45%, rgba(0, 0, 0, 0.95));
+        clip-path: polygon(0 30%, 100% 16%, 100% 100%, 0 100%);
+        opacity: 0.46;
+      }
+
+      .stadium-rim {
+        position: absolute;
+        left: 50%;
+        bottom: 10%;
+        width: min(1200px, 120vw);
+        height: 330px;
+        transform: translateX(-50%);
+        border-radius: 50% 50% 0 0 / 64% 64% 0 0;
+        border-top: 1px solid rgba(245, 247, 250, 0.14);
+        background:
+          radial-gradient(ellipse at center, rgba(245, 247, 250, 0.11), transparent 42%),
+          linear-gradient(180deg, rgba(245, 247, 250, 0.05), transparent 60%);
+        opacity: 0.74;
+      }
+
+      .pitch-lines {
+        position: absolute;
+        left: 50%;
+        bottom: -5%;
+        width: min(860px, 96vw);
+        height: 280px;
+        transform: translateX(-50%) perspective(520px) rotateX(62deg);
+        transform-origin: bottom;
+        border: 1px solid rgba(244, 185, 66, 0.38);
+        border-bottom: 0;
+        background:
+          linear-gradient(90deg, transparent 49.5%, rgba(245, 247, 250, 0.2) 50%, transparent 50.5%),
+          repeating-linear-gradient(90deg, rgba(244, 185, 66, 0.1) 0 1px, transparent 1px 80px);
+        box-shadow: 0 -20px 70px rgba(244, 185, 66, 0.12);
+        opacity: 0.72;
+      }
+
+      .fog-layer {
+        position: absolute;
+        inset: 20% -18% 2%;
+        background:
+          radial-gradient(ellipse at 30% 52%, rgba(245, 247, 250, 0.11), transparent 38%),
+          radial-gradient(ellipse at 72% 48%, rgba(245, 247, 250, 0.09), transparent 34%),
+          linear-gradient(180deg, transparent, rgba(245, 247, 250, 0.07), transparent);
+        filter: blur(20px);
+        animation: fogDrift 19s ease-in-out infinite alternate;
+        opacity: 0.7;
+      }
+
+      .batter-silhouette {
+        position: absolute;
+        right: clamp(0rem, 8vw, 8rem);
+        bottom: 7%;
+        width: clamp(210px, 29vw, 420px);
+        height: clamp(330px, 48vw, 620px);
+        opacity: 0.62;
+        filter: drop-shadow(0 0 48px rgba(244, 185, 66, 0.13));
+        transform: translate3d(calc(var(--cursor-x, 0px) * 0.55), calc(var(--cursor-y, 0px) * 0.55), 0);
+        transition: transform 0.45s ease-out;
+      }
+
+      .batter-silhouette .head {
+        position: absolute;
+        top: 8%;
+        left: 48%;
+        width: 23%;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: #020305;
+        box-shadow: inset 8px -8px 0 rgba(245, 247, 250, 0.04);
+      }
+
+      .batter-silhouette .body {
+        position: absolute;
+        top: 28%;
+        left: 42%;
+        width: 25%;
+        height: 35%;
+        border-radius: 46% 42% 38% 36%;
+        background: #020305;
+        transform: rotate(-9deg);
+      }
+
+      .batter-silhouette .front-leg,
+      .batter-silhouette .back-leg,
+      .batter-silhouette .front-arm,
+      .batter-silhouette .back-arm,
+      .batter-silhouette .bat {
+        position: absolute;
+        background: #020305;
+        transform-origin: top center;
+      }
+
+      .batter-silhouette .front-leg {
+        width: 9%;
+        height: 35%;
+        left: 49%;
+        top: 59%;
+        border-radius: 999px;
+        transform: rotate(-16deg);
+      }
+
+      .batter-silhouette .back-leg {
+        width: 9%;
+        height: 35%;
+        left: 60%;
+        top: 58%;
+        border-radius: 999px;
+        transform: rotate(20deg);
+      }
+
+      .batter-silhouette .front-arm {
+        width: 7%;
+        height: 28%;
+        left: 35%;
+        top: 32%;
+        border-radius: 999px;
+        transform: rotate(42deg);
+      }
+
+      .batter-silhouette .back-arm {
+        width: 7%;
+        height: 26%;
+        left: 58%;
+        top: 31%;
+        border-radius: 999px;
+        transform: rotate(-45deg);
+      }
+
+      .batter-silhouette .bat {
+        width: 7%;
+        height: 52%;
+        left: 24%;
+        top: 4%;
+        border-radius: 999px 999px 12px 12px;
+        transform: rotate(-38deg);
+        box-shadow: 0 0 32px rgba(244, 185, 66, 0.08);
+      }
+
+      .cricket-ball {
+        position: absolute;
+        width: clamp(68px, 8vw, 126px);
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background:
+          radial-gradient(circle at 34% 28%, rgba(255, 168, 168, 0.42), transparent 21%),
+          radial-gradient(circle at 74% 72%, rgba(47, 0, 8, 0.58), transparent 38%),
+          linear-gradient(135deg, #c42339, #67101d 64%, #32050c);
+        box-shadow:
+          0 0 36px rgba(183, 25, 50, 0.52),
+          0 28px 60px rgba(0, 0, 0, 0.46);
+        overflow: hidden;
+        will-change: transform;
+      }
+
+      .cricket-ball::before,
+      .cricket-ball::after {
+        content: "";
+        position: absolute;
+        inset: 12%;
+        border: 2px solid rgba(245, 247, 250, 0.62);
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-radius: 50%;
+        transform: rotate(32deg);
+      }
+
+      .cricket-ball::after {
+        inset: 18%;
+        border-style: dashed;
+        opacity: 0.68;
+        transform: rotate(32deg) scaleX(0.78);
+      }
+
+      .particle {
+        position: absolute;
+        width: var(--size);
+        height: var(--size);
+        left: var(--left);
+        top: var(--top);
+        border-radius: 999px;
+        background: rgba(245, 247, 250, var(--alpha));
+        filter: blur(1px);
+        animation: particleDrift var(--duration) ease-in-out infinite alternate;
+        animation-delay: var(--delay);
+        transform: translate3d(calc(var(--cursor-x, 0px) * var(--depth)), calc(var(--cursor-y, 0px) * var(--depth)), 0);
+      }
+
+      .gold-divider {
+        height: 2px;
+        width: min(240px, 48vw);
+        background: linear-gradient(90deg, transparent, var(--gold), rgba(34, 211, 238, 0.7), transparent);
+        transform-origin: left;
+        box-shadow: 0 0 28px rgba(244, 185, 66, 0.34);
+      }
+
+      .shine-button {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .shine-button::after {
+        content: "";
+        position: absolute;
+        inset: -40% auto -40% -70%;
+        width: 55%;
+        transform: rotate(22deg);
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.46), transparent);
+        animation: buttonShine 3.8s ease-in-out infinite;
+      }
+
+      .glass {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.045));
+        border: 1px solid rgba(245, 247, 250, 0.15);
+        box-shadow: 0 28px 80px rgba(0, 0, 0, 0.42);
+        backdrop-filter: blur(18px);
+      }
+
+      .funk-tab {
+        background:
+          radial-gradient(circle at 20% 10%, rgba(244, 185, 66, 0.19), transparent 24%),
+          linear-gradient(135deg, rgba(255, 255, 255, 0.095), rgba(255, 255, 255, 0.035));
+      }
+
+      .score-tile {
+        background:
+          linear-gradient(135deg, rgba(244, 185, 66, 0.15), rgba(183, 25, 50, 0.12)),
+          rgba(255, 255, 255, 0.045);
+      }
+
+      .stadium-page-bg {
+        background:
+          linear-gradient(180deg, rgba(5, 7, 11, 0.38) 0%, rgba(5, 7, 11, 0.78) 46%, #05070b 100%),
+          var(--stadium-vip-bg) center top / cover fixed no-repeat,
+          #05070b;
+      }
+
+      .route-bg {
+        min-height: 100vh;
+        background:
+          linear-gradient(180deg, rgba(5, 7, 11, 0.7), rgba(5, 7, 11, 0.86)),
+          radial-gradient(circle at 14% 18%, rgba(244, 185, 66, 0.18), transparent 28%),
+          radial-gradient(circle at 78% 14%, rgba(34, 211, 238, 0.11), transparent 26%),
+          radial-gradient(circle at 72% 72%, rgba(183, 25, 50, 0.18), transparent 34%),
+          var(--stadium-vip-bg) center top / cover fixed no-repeat,
+          linear-gradient(180deg, #05070b, #080d16 52%, #05070b);
+      }
+
+      .mobile-menu {
+        background:
+          radial-gradient(circle at 18% 18%, rgba(244, 185, 66, 0.18), transparent 26%),
+          radial-gradient(circle at 82% 52%, rgba(183, 25, 50, 0.22), transparent 34%),
+          rgba(5, 7, 11, 0.96);
+        backdrop-filter: blur(22px);
+      }
+
+      @keyframes fogDrift {
+        from {
+          transform: translate3d(-2%, 1%, 0) scale(1);
+        }
+        to {
+          transform: translate3d(3%, -1%, 0) scale(1.04);
+        }
+      }
+
+      @keyframes particleDrift {
+        from {
+          opacity: calc(var(--alpha) * 0.55);
+          translate: 0 0;
+        }
+        to {
+          opacity: var(--alpha);
+          translate: var(--drift-x) var(--drift-y);
+        }
+      }
+
+      @keyframes buttonShine {
+        0%,
+        38% {
+          left: -70%;
+        }
+        68%,
+        100% {
+          left: 125%;
+        }
+      }
+
+      @media (max-width: 900px) {
+        body,
+        .route-bg {
+          background-attachment: scroll;
+        }
+
+        .hero-scene {
+          background-position: center top;
+        }
+
+        .batter-silhouette {
+          right: 50%;
+          transform: translateX(50%);
+          opacity: 0.22;
+          width: 300px;
+          height: 450px;
+          bottom: 15%;
+        }
+
+        .hero-scene::after {
+          opacity: 0.28;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .cricket-ball {
+          width: 54px;
+        }
+
+        .particle:nth-child(n + 13) {
+          display: none;
+        }
+
+        .pitch-lines {
+          bottom: -10%;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.001ms !important;
+          animation-iteration-count: 1 !important;
+          scroll-behavior: auto !important;
+          transition-duration: 0.001ms !important;
+        }
+      }

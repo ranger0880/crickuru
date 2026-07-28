@@ -1,0 +1,22 @@
+{
+  "name": "crickuru",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/prepare-static.mjs && vite build && node scripts/postbuild.mjs && node scripts/package-hostinger.mjs",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "autoprefixer": "latest",
+    "framer-motion": "10.16.4",
+    "postcss": "latest",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "tailwindcss": "3.4.17",
+    "vite": "latest"
+  },
+  "devDependencies": {}
+}

@@ -1,602 +1,10 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="CricKuru is the premium home of Kurukshetra Warriors, with official CricHeroes links, a playable cricket arena, meme generator, and Kuru Coin launch teaser."
-    />
-    <meta property="og:title" content="CricKuru - Kurukshetra Warriors Cricket Hub" />
-    <meta
-      property="og:description"
-      content="Official Warriors links, CricKuru Arena, viral cricket memes, and the Kurukshetra meme coin launching soon."
-    />
-    <meta name="theme-color" content="#05070B" />
-    <title>CricKuru - Kurukshetra Warriors Cricket Hub</title>
+import React, { useContext, useEffect, useMemo, useReducer, useRef, useState } from "react";
+import { createRoot } from "react-dom/client";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { applyRouteMetadata } from "./metadata.js";
+import "./styles.css";
 
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9189221679544057"
-      crossorigin="anonymous"
-    ></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              night: "#05070B",
-              midnight: "#080D16",
-              gold: "#F4B942",
-              crimson: "#B71932",
-              stadium: "#F5F7FA",
-              cyan: "#22D3EE",
-            },
-            fontFamily: {
-              display: ["Barlow Condensed", "Impact", "sans-serif"],
-              body: ["Inter", "system-ui", "sans-serif"],
-            },
-            opacity: {
-              6: "0.06",
-              7: "0.07",
-              8: "0.08",
-              10: "0.1",
-              11: "0.11",
-              12: "0.12",
-              13: "0.13",
-              14: "0.14",
-              15: "0.15",
-              16: "0.16",
-              18: "0.18",
-              22: "0.22",
-              24: "0.24",
-              25: "0.25",
-              26: "0.26",
-              28: "0.28",
-              30: "0.3",
-              32: "0.32",
-              34: "0.34",
-              35: "0.35",
-              38: "0.38",
-              40: "0.4",
-              42: "0.42",
-              45: "0.45",
-              46: "0.46",
-              48: "0.48",
-              50: "0.5",
-              54: "0.54",
-              55: "0.55",
-              58: "0.58",
-              60: "0.6",
-              62: "0.62",
-              64: "0.64",
-              66: "0.66",
-              68: "0.68",
-              70: "0.7",
-              72: "0.72",
-              74: "0.74",
-              76: "0.76",
-              78: "0.78",
-              80: "0.8",
-              82: "0.82",
-              84: "0.84",
-              88: "0.88",
-              90: "0.9",
-              95: "0.95",
-            },
-          },
-        },
-      };
-    </script>
-
-    <style>
-      :root {
-        --night: #05070b;
-        --midnight: #080d16;
-        --gold: #f4b942;
-        --crimson: #b71932;
-        --stadium: #f5f7fa;
-        --cyan: #22d3ee;
-        --stadium-vip-bg: url("/assets/stadium-vip-warriors.png");
-        --cricket-ball-cursor: url("/assets/red-leather-cricket-ball-cursor.svg") 18 18;
-        color-scheme: dark;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
-      body {
-        margin: 0;
-        min-height: 100vh;
-        background:
-          linear-gradient(180deg, rgba(5, 7, 11, 0.72), rgba(5, 7, 11, 0.92)),
-          var(--stadium-vip-bg) center top / cover fixed no-repeat,
-          var(--night);
-        color: var(--stadium);
-        cursor: var(--cricket-ball-cursor), auto;
-        font-family: "Inter", system-ui, sans-serif;
-        overflow-x: hidden;
-      }
-
-      a,
-      button,
-      [role="button"],
-      summary {
-        cursor: var(--cricket-ball-cursor), pointer;
-      }
-
-      input,
-      textarea {
-        cursor: text;
-      }
-
-      body::selection,
-      ::selection {
-        background: rgba(244, 185, 66, 0.9);
-        color: #05070b;
-      }
-
-      body::-webkit-scrollbar {
-        width: 11px;
-      }
-
-      body::-webkit-scrollbar-track {
-        background: #030407;
-      }
-
-      body::-webkit-scrollbar-thumb {
-        background: linear-gradient(180deg, var(--gold), rgba(183, 25, 50, 0.9));
-        border: 3px solid #030407;
-        border-radius: 999px;
-      }
-
-      a,
-      button {
-        -webkit-tap-highlight-color: transparent;
-      }
-
-      a:focus-visible,
-      button:focus-visible {
-        outline: 2px solid var(--gold);
-        outline-offset: 4px;
-      }
-
-      .font-display {
-        font-family: "Barlow Condensed", Impact, sans-serif;
-        letter-spacing: 0;
-      }
-
-      .page-grain::after {
-        content: "";
-        position: fixed;
-        inset: 0;
-        z-index: 60;
-        pointer-events: none;
-        opacity: 0.12;
-        mix-blend-mode: screen;
-        background-image:
-          radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.08) 0 1px, transparent 1px),
-          radial-gradient(circle at 70% 40%, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px);
-        background-size: 38px 38px, 53px 53px;
-      }
-
-      .hero-scene {
-        position: absolute;
-        inset: 0;
-        overflow: hidden;
-        background:
-          linear-gradient(90deg, rgba(5, 7, 11, 0.88) 0%, rgba(5, 7, 11, 0.28) 46%, rgba(5, 7, 11, 0.74) 100%),
-          linear-gradient(180deg, rgba(5, 7, 11, 0.26) 0%, rgba(5, 7, 11, 0.6) 72%, #05070b 100%),
-          radial-gradient(circle at 22% 17%, rgba(34, 211, 238, 0.12), transparent 22%),
-          radial-gradient(circle at 80% 16%, rgba(244, 185, 66, 0.13), transparent 20%),
-          radial-gradient(circle at 75% 62%, rgba(183, 25, 50, 0.21), transparent 34%),
-          var(--stadium-vip-bg) center center / cover no-repeat,
-          linear-gradient(180deg, #05070b 0%, #080d16 42%, #05070b 100%);
-      }
-
-      .hero-scene::before {
-        content: "";
-        position: absolute;
-        inset: -12% -8%;
-        background:
-          linear-gradient(102deg, transparent 0 7%, rgba(245, 247, 250, 0.13) 8%, transparent 16%),
-          linear-gradient(78deg, transparent 0 73%, rgba(245, 247, 250, 0.14) 78%, transparent 88%),
-          radial-gradient(ellipse at 50% 74%, rgba(245, 247, 250, 0.09), transparent 24%),
-          radial-gradient(ellipse at 50% 84%, rgba(244, 185, 66, 0.15), transparent 26%);
-        filter: blur(0.2px);
-        opacity: 0.88;
-        transform: translate3d(var(--parallax-x, 0px), var(--parallax-y, 0px), 0);
-        transition: transform 0.5s ease-out;
-      }
-
-      .hero-scene::after {
-        content: "";
-        position: absolute;
-        left: -10%;
-        right: -10%;
-        bottom: 7%;
-        height: 32%;
-        background:
-          repeating-linear-gradient(
-            90deg,
-            rgba(245, 247, 250, 0.08) 0 4px,
-            transparent 4px 21px
-          ),
-          linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.62) 45%, rgba(0, 0, 0, 0.95));
-        clip-path: polygon(0 30%, 100% 16%, 100% 100%, 0 100%);
-        opacity: 0.46;
-      }
-
-      .stadium-rim {
-        position: absolute;
-        left: 50%;
-        bottom: 10%;
-        width: min(1200px, 120vw);
-        height: 330px;
-        transform: translateX(-50%);
-        border-radius: 50% 50% 0 0 / 64% 64% 0 0;
-        border-top: 1px solid rgba(245, 247, 250, 0.14);
-        background:
-          radial-gradient(ellipse at center, rgba(245, 247, 250, 0.11), transparent 42%),
-          linear-gradient(180deg, rgba(245, 247, 250, 0.05), transparent 60%);
-        opacity: 0.74;
-      }
-
-      .pitch-lines {
-        position: absolute;
-        left: 50%;
-        bottom: -5%;
-        width: min(860px, 96vw);
-        height: 280px;
-        transform: translateX(-50%) perspective(520px) rotateX(62deg);
-        transform-origin: bottom;
-        border: 1px solid rgba(244, 185, 66, 0.38);
-        border-bottom: 0;
-        background:
-          linear-gradient(90deg, transparent 49.5%, rgba(245, 247, 250, 0.2) 50%, transparent 50.5%),
-          repeating-linear-gradient(90deg, rgba(244, 185, 66, 0.1) 0 1px, transparent 1px 80px);
-        box-shadow: 0 -20px 70px rgba(244, 185, 66, 0.12);
-        opacity: 0.72;
-      }
-
-      .fog-layer {
-        position: absolute;
-        inset: 20% -18% 2%;
-        background:
-          radial-gradient(ellipse at 30% 52%, rgba(245, 247, 250, 0.11), transparent 38%),
-          radial-gradient(ellipse at 72% 48%, rgba(245, 247, 250, 0.09), transparent 34%),
-          linear-gradient(180deg, transparent, rgba(245, 247, 250, 0.07), transparent);
-        filter: blur(20px);
-        animation: fogDrift 19s ease-in-out infinite alternate;
-        opacity: 0.7;
-      }
-
-      .batter-silhouette {
-        position: absolute;
-        right: clamp(0rem, 8vw, 8rem);
-        bottom: 7%;
-        width: clamp(210px, 29vw, 420px);
-        height: clamp(330px, 48vw, 620px);
-        opacity: 0.62;
-        filter: drop-shadow(0 0 48px rgba(244, 185, 66, 0.13));
-        transform: translate3d(calc(var(--cursor-x, 0px) * 0.55), calc(var(--cursor-y, 0px) * 0.55), 0);
-        transition: transform 0.45s ease-out;
-      }
-
-      .batter-silhouette .head {
-        position: absolute;
-        top: 8%;
-        left: 48%;
-        width: 23%;
-        aspect-ratio: 1;
-        border-radius: 50%;
-        background: #020305;
-        box-shadow: inset 8px -8px 0 rgba(245, 247, 250, 0.04);
-      }
-
-      .batter-silhouette .body {
-        position: absolute;
-        top: 28%;
-        left: 42%;
-        width: 25%;
-        height: 35%;
-        border-radius: 46% 42% 38% 36%;
-        background: #020305;
-        transform: rotate(-9deg);
-      }
-
-      .batter-silhouette .front-leg,
-      .batter-silhouette .back-leg,
-      .batter-silhouette .front-arm,
-      .batter-silhouette .back-arm,
-      .batter-silhouette .bat {
-        position: absolute;
-        background: #020305;
-        transform-origin: top center;
-      }
-
-      .batter-silhouette .front-leg {
-        width: 9%;
-        height: 35%;
-        left: 49%;
-        top: 59%;
-        border-radius: 999px;
-        transform: rotate(-16deg);
-      }
-
-      .batter-silhouette .back-leg {
-        width: 9%;
-        height: 35%;
-        left: 60%;
-        top: 58%;
-        border-radius: 999px;
-        transform: rotate(20deg);
-      }
-
-      .batter-silhouette .front-arm {
-        width: 7%;
-        height: 28%;
-        left: 35%;
-        top: 32%;
-        border-radius: 999px;
-        transform: rotate(42deg);
-      }
-
-      .batter-silhouette .back-arm {
-        width: 7%;
-        height: 26%;
-        left: 58%;
-        top: 31%;
-        border-radius: 999px;
-        transform: rotate(-45deg);
-      }
-
-      .batter-silhouette .bat {
-        width: 7%;
-        height: 52%;
-        left: 24%;
-        top: 4%;
-        border-radius: 999px 999px 12px 12px;
-        transform: rotate(-38deg);
-        box-shadow: 0 0 32px rgba(244, 185, 66, 0.08);
-      }
-
-      .cricket-ball {
-        position: absolute;
-        width: clamp(68px, 8vw, 126px);
-        aspect-ratio: 1;
-        border-radius: 50%;
-        background:
-          radial-gradient(circle at 34% 28%, rgba(255, 168, 168, 0.42), transparent 21%),
-          radial-gradient(circle at 74% 72%, rgba(47, 0, 8, 0.58), transparent 38%),
-          linear-gradient(135deg, #c42339, #67101d 64%, #32050c);
-        box-shadow:
-          0 0 36px rgba(183, 25, 50, 0.52),
-          0 28px 60px rgba(0, 0, 0, 0.46);
-        overflow: hidden;
-        will-change: transform;
-      }
-
-      .cricket-ball::before,
-      .cricket-ball::after {
-        content: "";
-        position: absolute;
-        inset: 12%;
-        border: 2px solid rgba(245, 247, 250, 0.62);
-        border-left-color: transparent;
-        border-right-color: transparent;
-        border-radius: 50%;
-        transform: rotate(32deg);
-      }
-
-      .cricket-ball::after {
-        inset: 18%;
-        border-style: dashed;
-        opacity: 0.68;
-        transform: rotate(32deg) scaleX(0.78);
-      }
-
-      .particle {
-        position: absolute;
-        width: var(--size);
-        height: var(--size);
-        left: var(--left);
-        top: var(--top);
-        border-radius: 999px;
-        background: rgba(245, 247, 250, var(--alpha));
-        filter: blur(1px);
-        animation: particleDrift var(--duration) ease-in-out infinite alternate;
-        animation-delay: var(--delay);
-        transform: translate3d(calc(var(--cursor-x, 0px) * var(--depth)), calc(var(--cursor-y, 0px) * var(--depth)), 0);
-      }
-
-      .gold-divider {
-        height: 2px;
-        width: min(240px, 48vw);
-        background: linear-gradient(90deg, transparent, var(--gold), rgba(34, 211, 238, 0.7), transparent);
-        transform-origin: left;
-        box-shadow: 0 0 28px rgba(244, 185, 66, 0.34);
-      }
-
-      .shine-button {
-        position: relative;
-        overflow: hidden;
-      }
-
-      .shine-button::after {
-        content: "";
-        position: absolute;
-        inset: -40% auto -40% -70%;
-        width: 55%;
-        transform: rotate(22deg);
-        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.46), transparent);
-        animation: buttonShine 3.8s ease-in-out infinite;
-      }
-
-      .glass {
-        background: linear-gradient(135deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.045));
-        border: 1px solid rgba(245, 247, 250, 0.15);
-        box-shadow: 0 28px 80px rgba(0, 0, 0, 0.42);
-        backdrop-filter: blur(18px);
-      }
-
-      .funk-tab {
-        background:
-          radial-gradient(circle at 20% 10%, rgba(244, 185, 66, 0.19), transparent 24%),
-          linear-gradient(135deg, rgba(255, 255, 255, 0.095), rgba(255, 255, 255, 0.035));
-      }
-
-      .score-tile {
-        background:
-          linear-gradient(135deg, rgba(244, 185, 66, 0.15), rgba(183, 25, 50, 0.12)),
-          rgba(255, 255, 255, 0.045);
-      }
-
-      .stadium-page-bg {
-        background:
-          linear-gradient(180deg, rgba(5, 7, 11, 0.38) 0%, rgba(5, 7, 11, 0.78) 46%, #05070b 100%),
-          var(--stadium-vip-bg) center top / cover fixed no-repeat,
-          #05070b;
-      }
-
-      .route-bg {
-        min-height: 100vh;
-        background:
-          linear-gradient(180deg, rgba(5, 7, 11, 0.7), rgba(5, 7, 11, 0.86)),
-          radial-gradient(circle at 14% 18%, rgba(244, 185, 66, 0.18), transparent 28%),
-          radial-gradient(circle at 78% 14%, rgba(34, 211, 238, 0.11), transparent 26%),
-          radial-gradient(circle at 72% 72%, rgba(183, 25, 50, 0.18), transparent 34%),
-          var(--stadium-vip-bg) center top / cover fixed no-repeat,
-          linear-gradient(180deg, #05070b, #080d16 52%, #05070b);
-      }
-
-      .mobile-menu {
-        background:
-          radial-gradient(circle at 18% 18%, rgba(244, 185, 66, 0.18), transparent 26%),
-          radial-gradient(circle at 82% 52%, rgba(183, 25, 50, 0.22), transparent 34%),
-          rgba(5, 7, 11, 0.96);
-        backdrop-filter: blur(22px);
-      }
-
-      @keyframes fogDrift {
-        from {
-          transform: translate3d(-2%, 1%, 0) scale(1);
-        }
-        to {
-          transform: translate3d(3%, -1%, 0) scale(1.04);
-        }
-      }
-
-      @keyframes particleDrift {
-        from {
-          opacity: calc(var(--alpha) * 0.55);
-          translate: 0 0;
-        }
-        to {
-          opacity: var(--alpha);
-          translate: var(--drift-x) var(--drift-y);
-        }
-      }
-
-      @keyframes buttonShine {
-        0%,
-        38% {
-          left: -70%;
-        }
-        68%,
-        100% {
-          left: 125%;
-        }
-      }
-
-      @media (max-width: 900px) {
-        body,
-        .route-bg {
-          background-attachment: scroll;
-        }
-
-        .hero-scene {
-          background-position: center top;
-        }
-
-        .batter-silhouette {
-          right: 50%;
-          transform: translateX(50%);
-          opacity: 0.22;
-          width: 300px;
-          height: 450px;
-          bottom: 15%;
-        }
-
-        .hero-scene::after {
-          opacity: 0.28;
-        }
-      }
-
-      @media (max-width: 640px) {
-        .particle:nth-child(n + 13) {
-          display: none;
-        }
-
-        .pitch-lines {
-          bottom: -10%;
-        }
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        *,
-        *::before,
-        *::after {
-          animation-duration: 0.001ms !important;
-          animation-iteration-count: 1 !important;
-          scroll-behavior: auto !important;
-          transition-duration: 0.001ms !important;
-        }
-      }
-    </style>
-    <script>
-      (() => {
-        if (window.location.protocol !== "file:") return;
-        const path = window.location.pathname.replace(/\\/g, "/");
-        const routeFile = /\/(arena|coin|kurukshetra-coin|meme|memes)\/index\.html$/i.test(path);
-        const assetPath = routeFile ? "../assets/" : "assets/";
-        document.documentElement.style.setProperty("--stadium-vip-bg", `url("${assetPath}stadium-vip-warriors.png")`);
-        document.documentElement.style.setProperty("--cricket-ball-cursor", `url("${assetPath}red-leather-cricket-ball-cursor.svg") 18 18`);
-      })();
-    </script>
-  </head>
-
-  <body>
-    <div id="root"></div>
-    <noscript>CricKuru needs JavaScript enabled to show the landing page.</noscript>
-
-    <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
-    <script src="https://unpkg.com/@babel/standalone@7.26.4/babel.min.js"></script>
-
-    <script type="text/babel">
-      const { useContext, useEffect, useMemo, useReducer, useRef, useState } = React;
-      const MotionLib = window.Motion || {};
-      const motion = MotionLib.motion || new Proxy({}, { get: (_, tag) => tag });
-      const AnimatePresence = MotionLib.AnimatePresence || React.Fragment;
-      const useReducedMotion = MotionLib.useReducedMotion || (() => false);
-
-      const RouterContext = React.createContext(null);
+const RouterContext = React.createContext(null);
       const localRouteFiles = {
         "/": "index.html",
         "/arena": "arena/index.html",
@@ -891,6 +299,16 @@
         return null;
       }
 
+      function MetaManager() {
+        const location = useLocation();
+
+        useEffect(() => {
+          applyRouteMetadata(location.pathname);
+        }, [location.pathname]);
+
+        return null;
+      }
+
       function PageLoader() {
         const [show, setShow] = useState(true);
 
@@ -1160,7 +578,7 @@
 
         return (
           <motion.div
-            className="cricket-ball right-[4%] top-[18%] z-[3] sm:right-[12%]"
+            className="cricket-ball right-[7%] top-[7%] z-[3] opacity-70 sm:right-[12%] sm:top-[18%] sm:opacity-100"
             initial={{ x: 0, y: 0, scale: 0.82, rotate: 0 }}
             animate={
               reduceMotion
@@ -1205,7 +623,7 @@
             animate="show"
             variants={{
               hidden: {},
-              show: { transition: { staggerChildren: 0.18, delayChildren: 0.25 } },
+              show: { transition: { staggerChildren: 0.08, delayChildren: 0.05 } },
             }}
           >
             <Reveal>
@@ -1274,10 +692,10 @@
         return (
           <motion.div
             variants={{
-              hidden: { opacity: 0, y, filter: "blur(14px)" },
-              show: { opacity: 1, y: 0, filter: "blur(0px)" },
+              hidden: { opacity: 0.01, y },
+              show: { opacity: 1, y: 0 },
             }}
-            transition={{ duration: 1.05, ease }}
+            transition={{ duration: 0.52, ease }}
           >
             {children}
           </motion.div>
@@ -3213,10 +2631,12 @@
       }
 
       function PlayerSelect({ label, value, players, onChange }) {
+        const fieldName = `arena-${label.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`;
+
         return (
-          <label className="block">
+          <label className="block" htmlFor={fieldName}>
             <span className="mb-2 block text-xs font-black uppercase tracking-[0.2em] text-white/48">{label}</span>
-            <select value={value} onChange={(event) => onChange(event.target.value)} className="min-h-12 w-full rounded-[8px] border border-white/12 bg-night px-4 text-white">
+            <select id={fieldName} name={fieldName} value={value} onChange={(event) => onChange(event.target.value)} className="min-h-12 w-full rounded-[8px] border border-white/12 bg-night px-4 text-white">
               {players.map((player) => <option key={player.id} value={player.id}>{player.name} - {player.role}</option>)}
             </select>
           </label>
@@ -3687,9 +3107,11 @@
                   Create meme text or a shareable Kurukshetra Warriors meme image for cricket banter, match days and group chats.
                 </p>
                 <div className="mt-8 grid gap-4">
-                  <label className="block">
+                  <label className="block" htmlFor="meme-topic">
                     <span className="mb-2 block text-xs font-black uppercase tracking-[0.2em] text-white/48">Meme topic</span>
                     <input
+                      id="meme-topic"
+                      name="meme-topic"
                       value={topic}
                       onChange={(event) => setTopic(event.target.value)}
                       className="min-h-12 w-full rounded-[8px] border border-white/12 bg-night px-4 text-white outline-none focus:border-gold"
@@ -3702,12 +3124,17 @@
                     options={["Warrior Roast", "Dressing Room", "Fan Hype"].map((value) => ({ value, label: value }))}
                     onChange={setStyle}
                   />
-                  <textarea
-                    value={memeText}
-                    onChange={(event) => setMemeText(event.target.value)}
-                    rows="5"
-                    className="w-full rounded-[8px] border border-white/12 bg-night p-4 text-white outline-none focus:border-gold"
-                  />
+                  <label className="block" htmlFor="meme-copy">
+                    <span className="mb-2 block text-xs font-black uppercase tracking-[0.2em] text-white/48">Meme text</span>
+                    <textarea
+                      id="meme-copy"
+                      name="meme-copy"
+                      value={memeText}
+                      onChange={(event) => setMemeText(event.target.value)}
+                      rows="5"
+                      className="w-full rounded-[8px] border border-white/12 bg-night p-4 text-white outline-none focus:border-gold"
+                    />
+                  </label>
                   <div className="flex flex-col gap-3 sm:flex-row">
                     <button type="button" onClick={generateMeme} className="shine-button min-h-12 rounded-full bg-gold px-6 text-sm font-black uppercase tracking-[0.16em] text-night">
                       Generate Meme Text
@@ -3861,7 +3288,7 @@
         return (
           <BrowserRouter basename={routerBasename}>
             <ScrollToTop />
-            <PageLoader />
+            <MetaManager />
             <Navbar />
             <Routes>
               <Route path="/" element={<LandingPage />} />
@@ -3900,8 +3327,4 @@
           </BrowserRouter>
         );
       }
-
-      ReactDOM.createRoot(document.getElementById("root")).render(<App />);
-    </script>
-  </body>
-</html>
+createRoot(document.getElementById("root")).render(<App />);

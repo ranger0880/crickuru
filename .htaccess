@@ -1,8 +1,32 @@
+<IfModule mod_mime.c>
+  AddType text/plain .txt
+  AddType application/xml .xml
+  AddType application/json .json
+  AddType application/manifest+json .webmanifest
+  AddType image/x-icon .ico
+</IfModule>
+
+<Files "manifest.json">
+  ForceType application/manifest+json
+</Files>
+
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "accelerometer=(), autoplay=(), camera=(), encrypted-media=(), fullscreen=(self), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'sha256-n74zSg8LuPUTZndy9q/aKA9Bjhl+otLMV+McpIWB7as=' 'sha256-CkpzllhXBRGnWYjxlu677RAFozIXgCeLZk7isG9DZI8=' 'sha256-UKbX6TjE13jLwzf0I0A8NWJJaSv2geWeCDZyL6Bditw=' 'sha256-ca+xh33znf7MpJ7UUL1BQgx+Qso+EIeTq4vMydpno7o=' 'sha256-UosB0AeqxQ/+OHoLOeddsS43Gps2XhfoTL9tO6KmDs8='; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: blob: https://media.cricheroes.in; connect-src 'self'; manifest-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; object-src 'none'; upgrade-insecure-requests"
+</IfModule>
+
 <IfModule mod_rewrite.c>
   DirectoryIndex index.html index.php
   RewriteEngine On
   RewriteBase /
+  RewriteRule ^(robots\.txt|sitemap\.xml|sitemap_index\.xml|manifest\.json|favicon\.ico)$ - [L]
+  RewriteRule ^assets/ - [L]
+  RewriteRule ^data/ - [L]
   RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_URI} !\.[A-Za-z0-9]{2,8}$
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule . /index.html [L]
