@@ -1,0 +1,65 @@
+name: Daily CricHeroes Feed Sync
+
+on:
+  schedule:
+    # 09:00 IST daily. GitHub schedules use UTC.
+    - cron: "30 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  sync-build-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Sync Kurukshetra Warriors CricHeroes feed
+        run: node tools/sync-cricheroes.mjs
+
+      - name: Build production site
+        run: npm run build
+
+      - name: Store refreshed feed in repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/crickuru-live.json crickuru-hostinger-upload.zip
+          if git diff --cached --quiet; then
+            echo "No CricHeroes feed changes to commit."
+          else
+            git commit -m "Sync CricHeroes live feed [skip ci]"
+            git push
+          fi
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload production site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

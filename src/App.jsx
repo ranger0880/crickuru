@@ -143,8 +143,10 @@ const RouterContext = React.createContext(null);
           matchesUrl: CricLinks.matches,
           membersUrl: CricLinks.members,
         },
-        summary: { matches: 0, wins: 0, losses: 0, winRate: 0, latestResult: "", latestOpponent: "" },
+        summary: { matches: 0, wins: 0, losses: 0, winRate: 0, latestResult: "", latestOpponent: "", upcoming: 0, nextOpponent: "", nextMatchDate: "", nextMatchVenue: "" },
         matches: [],
+        upcomingMatches: [],
+        recentMatches: [],
         players: [],
         opponents: [],
       };
@@ -704,7 +706,9 @@ const RouterContext = React.createContext(null);
 
       function FeaturedMatchCard() {
         const { loading, data } = useLiveCricketFeed();
-        const latestMatch = data.matches?.[0];
+        const nextMatch = data.upcomingMatches?.[0];
+        const latestMatch = data.recentMatches?.[0] || data.matches?.[0];
+        const displayMatch = nextMatch || latestMatch;
         const topPlayer = data.players?.find((player) => player.performance?.awards > 0) || data.players?.[0];
         const topRival = data.opponents?.[0];
 
@@ -726,11 +730,11 @@ const RouterContext = React.createContext(null);
               </span>
             </div>
 
-            {latestMatch ? (
+            {displayMatch ? (
               <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3">
-                <TeamScore initials="KW" team={data.team?.name || "Kurukshetra Warriors"} score={latestMatch.ourScore} />
+                <TeamScore initials="KW" team={data.team?.name || "Kurukshetra Warriors"} score={displayMatch.ourScore} />
                 <span className="font-display text-xl font-black text-white/40">VS</span>
-                <TeamScore initials={initialsFromName(latestMatch.opponent)} team={latestMatch.opponent} score={latestMatch.opponentScore} align="right" />
+                <TeamScore initials={initialsFromName(displayMatch.opponent)} team={displayMatch.opponent} score={displayMatch.opponentScore} align="right" />
               </div>
             ) : (
               <div className="rounded-[8px] border border-gold/18 bg-night/55 p-4">
@@ -741,9 +745,9 @@ const RouterContext = React.createContext(null);
 
             <div className="mt-5 grid gap-3">
               <HeroLiveTile
-                label="Match Updates"
-                title={latestMatch?.resultText || "Waiting for latest score"}
-                detail={latestMatch ? `${formatFeedDate(latestMatch.date)} - ${latestMatch.venue || latestMatch.city || "CricHeroes"}` : "Sync data/crickuru-live.json"}
+                label={nextMatch ? "Next Match" : "Match Updates"}
+                title={nextMatch ? `Warriors vs ${nextMatch.opponent}` : latestMatch?.resultText || "Waiting for latest score"}
+                detail={displayMatch ? `${formatFeedDate(displayMatch.date)} - ${displayMatch.venue || displayMatch.city || "CricHeroes"}` : "Sync data/crickuru-live.json"}
               />
               <HeroLiveTile
                 label="Player Tracker"
@@ -1019,9 +1023,12 @@ const RouterContext = React.createContext(null);
       function LiveMatchIntelSection() {
         const { loading, error, data } = useLiveCricketFeed();
         const matches = data.matches || [];
+        const upcomingMatches = data.upcomingMatches || [];
+        const recentMatches = data.recentMatches || matches;
         const players = data.players || [];
         const opponents = data.opponents || [];
-        const latestMatch = matches[0];
+        const nextMatch = upcomingMatches[0];
+        const latestMatch = recentMatches[0] || matches[0];
         const visiblePlayers = players.slice(0, 6);
         const visibleOpponents = opponents.slice(0, 4);
         const hasFeed = Boolean(matches.length || players.length || opponents.length);
@@ -1045,7 +1052,7 @@ const RouterContext = React.createContext(null);
                 </div>
                 <div className="glass rounded-[8px] p-5">
                   <div className="grid gap-3 sm:grid-cols-3">
-                    <LiveStat label="Synced matches" value={data.summary?.matches || matches.length || "-"} />
+                    <LiveStat label="Upcoming" value={data.summary?.upcoming ?? upcomingMatches.length ?? "-"} />
                     <LiveStat label="Warriors wins" value={data.summary?.wins ?? "-"} />
                     <LiveStat label="Win rate" value={data.summary?.winRate != null ? `${data.summary.winRate}%` : "-"} />
                   </div>
@@ -1063,6 +1070,7 @@ const RouterContext = React.createContext(null);
               ) : (
                 <div className="mt-10 grid gap-5 xl:grid-cols-[1.05fr_0.95fr]">
                   <div className="grid gap-5">
+                    {nextMatch && <NextLiveMatchCard match={nextMatch} team={data.team} />}
                     {latestMatch && <LatestLiveMatchCard match={latestMatch} team={data.team} />}
                     <div className="glass rounded-[8px] p-5">
                       <div className="mb-5 flex items-center justify-between gap-3">
@@ -1073,7 +1081,7 @@ const RouterContext = React.createContext(null);
                         {error && <span className="rounded-full border border-crimson/35 bg-crimson/10 px-3 py-1 text-xs font-bold text-crimson">Using last feed</span>}
                       </div>
                       <div className="grid gap-3">
-                        {matches.slice(0, 4).map((match) => <LiveMatchRow key={match.id} match={match} />)}
+                        {recentMatches.slice(0, 4).map((match) => <LiveMatchRow key={match.id} match={match} />)}
                       </div>
                     </div>
                   </div>
@@ -1120,6 +1128,29 @@ const RouterContext = React.createContext(null);
             <p className="text-[0.65rem] font-black uppercase tracking-[0.18em] text-white/40">{label}</p>
             <p className="mt-1 font-display text-3xl font-black uppercase text-white">{value}</p>
           </div>
+        );
+      }
+
+      function NextLiveMatchCard({ match, team }) {
+        return (
+          <article className="relative overflow-hidden rounded-[8px] border border-cyan/24 bg-[radial-gradient(circle_at_82%_12%,rgba(34,211,238,0.16),transparent_30%),rgba(255,255,255,0.045)] p-5">
+            <div className="absolute right-[-42px] top-[-42px] h-40 w-40 rounded-full bg-cyan/10 blur-3xl" />
+            <div className="relative flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <p className="text-xs font-black uppercase tracking-[0.24em] text-cyan">Next scheduled match</p>
+                <h3 className="mt-2 font-display text-4xl font-black uppercase leading-none text-white">
+                  {team?.name || "Kurukshetra Warriors"} vs {match.opponent}
+                </h3>
+                <p className="mt-3 text-sm font-semibold text-white/50">{formatFeedDate(match.date)} - {match.venue || match.city || "CricHeroes"}</p>
+              </div>
+              <span className="rounded-full border border-cyan/35 bg-cyan/10 px-4 py-2 text-sm font-black uppercase tracking-[0.16em] text-cyan">
+                upcoming
+              </span>
+            </div>
+            <p className="relative mt-5 rounded-[8px] border border-white/10 bg-night/55 p-4 font-display text-3xl font-black uppercase text-white">
+              Daily CricHeroes sync checks this fixture and refreshes the site automatically.
+            </p>
+          </article>
         );
       }
 

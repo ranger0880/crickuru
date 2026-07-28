@@ -139,6 +139,30 @@ function buildMatches(rawMatches) {
   });
 }
 
+function matchTime(match) {
+  const time = Date.parse(match.date || "");
+  return Number.isNaN(time) ? 0 : time;
+}
+
+function isUpcomingMatch(match, now = new Date()) {
+  const status = String(match.status || match.result || match.resultText || "").toLowerCase();
+  const scheduledStatus = /scheduled|upcoming|fixture|not started|pending|created/.test(status);
+  const startsAt = matchTime(match);
+  const futureOrToday = startsAt && startsAt >= now.getTime() - 60 * 60 * 1000;
+  return scheduledStatus || Boolean(futureOrToday && !["win", "loss"].includes(match.result));
+}
+
+function splitMatches(matches, now = new Date()) {
+  const upcomingMatches = matches
+    .filter((match) => isUpcomingMatch(match, now))
+    .sort((a, b) => matchTime(a) - matchTime(b));
+  const recentMatches = matches
+    .filter((match) => !isUpcomingMatch(match, now))
+    .sort((a, b) => matchTime(b) - matchTime(a));
+
+  return { upcomingMatches, recentMatches };
+}
+
 function normalizeMembers(rawMembers) {
   const members = Array.isArray(rawMembers?.data?.members) ? rawMembers.data.members : [];
   return members.map((player) => ({
@@ -273,10 +297,11 @@ function buildOpponents(matches, opponentAwards) {
   return [...opponents.values()].sort((a, b) => b.matches - a.matches || b.winsAgainstUs - a.winsAgainstUs);
 }
 
-function summarize(matches) {
+function summarize(matches, upcomingMatches, recentMatches) {
   const wins = matches.filter((match) => match.result === "win").length;
   const losses = matches.filter((match) => match.result === "loss").length;
-  const latest = matches[0];
+  const latest = recentMatches[0];
+  const next = upcomingMatches[0];
 
   return {
     matches: matches.length,
@@ -285,6 +310,10 @@ function summarize(matches) {
     winRate: matches.length ? Math.round((wins / matches.length) * 100) : 0,
     latestResult: latest?.resultText || "",
     latestOpponent: latest?.opponent || "",
+    upcoming: upcomingMatches.length,
+    nextOpponent: next?.opponent || "",
+    nextMatchDate: next?.date || "",
+    nextMatchVenue: next?.venue || next?.city || "",
   };
 }
 
@@ -299,9 +328,10 @@ async function main() {
   const rawMembers = extractJsonValue(membersText, "members", membersText.indexOf("\"teamDetails\"")) || extractJsonValue(membersText, "members");
 
   const matches = buildMatches(rawMatches);
+  const { upcomingMatches, recentMatches } = splitMatches(matches);
   const players = normalizeMembers(rawMembers);
-  const opponentAwards = attachAwards(players, matches);
-  const opponents = buildOpponents(matches, opponentAwards);
+  const opponentAwards = attachAwards(players, recentMatches);
+  const opponents = buildOpponents(recentMatches, opponentAwards);
 
   const feed = {
     schemaVersion: 1,
@@ -316,8 +346,10 @@ async function main() {
       matchesUrl: `${BASE_URL}/matches`,
       membersUrl: `${BASE_URL}/members`,
     },
-    summary: summarize(matches),
-    matches,
+    summary: summarize(matches, upcomingMatches, recentMatches),
+    matches: [...upcomingMatches, ...recentMatches],
+    upcomingMatches,
+    recentMatches,
     players: players.sort((a, b) => b.performance.awards - a.performance.awards || Number(b.isCaptain) - Number(a.isCaptain)),
     opponents,
     opponentAwards,
