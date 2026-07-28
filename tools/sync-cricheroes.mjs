@@ -15,6 +15,27 @@ const HEADERS = {
   "accept-language": "en-US,en;q=0.9",
 };
 
+async function readExistingFeed() {
+  try {
+    return JSON.parse(await fs.readFile(OUTPUT_FILE, "utf8"));
+  } catch {
+    return null;
+  }
+}
+
+function feedWithoutVolatileFields(feed) {
+  if (!feed) return null;
+  return {
+    ...feed,
+    syncedAt: "",
+  };
+}
+
+function hasPublicDataChanged(previousFeed, nextFeed) {
+  if (!previousFeed) return true;
+  return JSON.stringify(feedWithoutVolatileFields(previousFeed)) !== JSON.stringify(feedWithoutVolatileFields(nextFeed));
+}
+
 async function fetchFlightText(url) {
   const response = await fetch(url, { headers: HEADERS });
   if (!response.ok) {
@@ -564,6 +585,13 @@ async function main() {
     awardLedger,
     opponentAwards,
   };
+
+  const previousFeed = await readExistingFeed();
+  if (!hasPublicDataChanged(previousFeed, feed)) {
+    console.log("No public CricHeroes data changes since the last sync.");
+    console.log(`Checked ${matches.length} matches, ${liveMatches.length} live, ${players.length} players, ${opponents.length} opponents.`);
+    return;
+  }
 
   await fs.mkdir(path.dirname(OUTPUT_FILE), { recursive: true });
   await fs.writeFile(OUTPUT_FILE, `${JSON.stringify(feed, null, 2)}\n`, "utf8");
