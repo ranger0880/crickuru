@@ -40,6 +40,18 @@ export const ROUTE_METADATA = [
     jsonLdType: "indiaMatches",
   },
   {
+    path: "/players",
+    canonicalPath: "/players",
+    title: "Kurukshetra Warriors Player Stats and Performance - CricKuru",
+    description:
+      "Explore Kurukshetra Warriors player profiles, CricHeroes roster signals, award counts, role badges, impact scores and recent performance cards.",
+    ogType: "website",
+    themeColor: "#05070B",
+    changefreq: "daily",
+    priority: "0.85",
+    jsonLdType: "players",
+  },
+  {
     path: "/memes",
     canonicalPath: "/memes",
     title: "CricKuru Meme Forge - Cricket Meme Generator",
@@ -255,6 +267,35 @@ function jsonLdForRoute(metadata) {
         creator: {
           "@type": "Organization",
           name: SITE_NAME,
+        },
+      },
+    ];
+  }
+
+  if (metadata.jsonLdType === "players") {
+    return [
+      basePage,
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        name: "Kurukshetra Warriors Player Command Room",
+        description: metadata.description,
+        url: canonicalUrl,
+        isPartOf: {
+          "@type": "WebSite",
+          name: SITE_NAME,
+          url: SITE_ORIGIN,
+        },
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SportsTeam",
+        name: "Kurukshetra Warriors",
+        sport: "Cricket",
+        url: canonicalUrl,
+        location: {
+          "@type": "Place",
+          name: "Greater Noida",
         },
       },
     ];

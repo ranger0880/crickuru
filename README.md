@@ -37,6 +37,10 @@ node tools/sync-india-matches.mjs
 
 GitHub Actions also runs `.github/workflows/sync-india-matches.yml` every 15 minutes, rebuilds the production site, and deploys the refreshed feed to GitHub Pages.
 
+## Players
+
+The `/players` route displays the synced Kurukshetra Warriors roster as mobile-friendly performance cards with impact scores, role badges, awards and recent CricHeroes highlights.
+
 ## Files
 
 - `src/` - React app source

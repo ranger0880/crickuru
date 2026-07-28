@@ -8,6 +8,7 @@ const RouterContext = React.createContext(null);
       const localRouteFiles = {
         "/": "index.html",
         "/arena": "arena/index.html",
+        "/players": "players/index.html",
         "/memes": "memes/index.html",
         "/meme": "meme/index.html",
         "/coin": "coin/index.html",
@@ -372,6 +373,7 @@ const RouterContext = React.createContext(null);
       const navItems = [
         { label: "Home", path: "/" },
         { label: "India", path: "/india-matches" },
+        { label: "Players", path: "/players" },
         { label: "Arena", path: "/arena" },
         { label: "Memes", path: "/memes" },
         { label: "Kuru Coin", path: "/coin" },
@@ -1496,6 +1498,241 @@ const RouterContext = React.createContext(null);
             : "border-gold/35 bg-gold/10 text-gold";
 
         return <span className={`rounded-full border px-3 py-1 text-[0.62rem] font-black uppercase tracking-[0.14em] ${tone}`}>{text}</span>;
+      }
+
+      const playerFilterTabs = [
+        { id: "all", label: "All" },
+        { id: "awards", label: "Award Winners" },
+        { id: "batters", label: "Batters" },
+        { id: "bowlers", label: "Bowlers" },
+        { id: "verified", label: "Verified" },
+      ];
+
+      function PlayersPage() {
+        const { loading, error, data } = useLiveCricketFeed();
+        const [filter, setFilter] = useState("all");
+        const players = useMemo(() => {
+          return asArray(data.players)
+            .map((player) => ({ ...player, impact: playerImpactScore(player), role: playerRoleLabel(player) }))
+            .sort((a, b) => b.impact - a.impact || (b.performance?.awards || 0) - (a.performance?.awards || 0) || a.name.localeCompare(b.name));
+        }, [data.players]);
+        const filteredPlayers = players.filter((player) => playerMatchesFilter(player, filter));
+        const leaders = {
+          impact: players[0],
+          batting: [...players].sort((a, b) => (b.performance?.bestBatter || 0) - (a.performance?.bestBatter || 0) || b.impact - a.impact)[0],
+          bowling: [...players].sort((a, b) => (b.performance?.bestBowler || 0) - (a.performance?.bestBowler || 0) || b.impact - a.impact)[0],
+          fielding: [...players].sort((a, b) => (b.performance?.fielderOfMatch || 0) - (a.performance?.fielderOfMatch || 0) || b.impact - a.impact)[0],
+        };
+        const totalAwards = players.reduce((sum, player) => sum + (player.performance?.awards || 0), 0);
+        const verifiedCount = players.filter((player) => player.isVerified).length;
+
+        return (
+          <main className="route-bg page-grain min-h-screen px-5 pb-16 pt-36 sm:px-8">
+            <section className="mx-auto max-w-7xl">
+              <div className="grid gap-8 lg:grid-cols-[0.92fr_1.08fr] lg:items-end">
+                <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease }}>
+                  <p className="text-xs font-black uppercase tracking-[0.32em] text-gold">Kurukshetra Warriors</p>
+                  <h1 className="mt-4 font-display text-6xl font-black uppercase leading-none text-white sm:text-8xl">
+                    Player Command Room
+                  </h1>
+                  <p className="mt-6 max-w-2xl text-lg leading-8 text-white/68">
+                    A mobile-friendly squad wall powered by the synced CricHeroes roster, recent awards, player roles and performance signals.
+                  </p>
+                  <div className="mt-6 flex flex-wrap gap-3 text-xs font-black uppercase tracking-[0.16em]">
+                    <span className="rounded-full border border-gold/30 bg-gold/10 px-4 py-2 text-gold">
+                      {loading ? "Syncing players" : `${players.length} Warriors`}
+                    </span>
+                    <span className="rounded-full border border-white/12 bg-white/7 px-4 py-2 text-white/58">
+                      Updated {formatFeedDate(data.syncedAt)}
+                    </span>
+                    {error && <span className="rounded-full border border-crimson/35 bg-crimson/10 px-4 py-2 text-crimson">Using saved roster</span>}
+                  </div>
+                </motion.div>
+
+                <div className="grid gap-3 sm:grid-cols-3">
+                  <LiveStat label="Players" value={players.length || "-"} />
+                  <LiveStat label="Awards" value={totalAwards || "-"} />
+                  <LiveStat label="Verified" value={verifiedCount || "-"} />
+                </div>
+              </div>
+
+              <div className="mt-10 grid gap-5 lg:grid-cols-4">
+                <PlayerLeaderCard label="Impact Leader" player={leaders.impact} metric={`${leaders.impact?.impact || 0}/100`} />
+                <PlayerLeaderCard label="Batting Edge" player={leaders.batting} metric={`${leaders.batting?.performance?.bestBatter || 0} BAT`} />
+                <PlayerLeaderCard label="Strike Bowler" player={leaders.bowling} metric={`${leaders.bowling?.performance?.bestBowler || 0} BWL`} />
+                <PlayerLeaderCard label="Field Watch" player={leaders.fielding} metric={`${leaders.fielding?.performance?.fielderOfMatch || 0} FLD`} />
+              </div>
+
+              <div className="mt-10 flex gap-2 overflow-x-auto pb-2" role="tablist" aria-label="Player filters">
+                {playerFilterTabs.map((item) => (
+                  <button
+                    key={item.id}
+                    type="button"
+                    role="tab"
+                    aria-selected={filter === item.id}
+                    onClick={() => setFilter(item.id)}
+                    className={`shrink-0 rounded-full border px-4 py-2 text-xs font-black uppercase tracking-[0.14em] transition ${
+                      filter === item.id
+                        ? "border-gold/60 bg-gold/12 text-gold"
+                        : "border-white/12 bg-white/[0.045] text-white/58 hover:border-white/25 hover:text-white"
+                    }`}
+                  >
+                    {item.label}
+                  </button>
+                ))}
+              </div>
+
+              {filteredPlayers.length ? (
+                <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                  {filteredPlayers.map((player, index) => <PlayerProfileCard key={player.id || player.name} player={player} rank={index + 1} />)}
+                </div>
+              ) : (
+                <div className="mt-8 rounded-[8px] border border-white/12 bg-white/[0.045] p-8 text-center">
+                  <p className="font-display text-4xl font-black uppercase text-white">No players in this filter</p>
+                  <p className="mx-auto mt-3 max-w-2xl leading-7 text-white/62">
+                    The roster will fill automatically when the CricHeroes member feed exposes matching player data.
+                  </p>
+                </div>
+              )}
+
+              <div className="mt-10 flex flex-col gap-4 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:justify-between">
+                <p className="max-w-2xl text-sm leading-7 text-white/54">
+                  Impact is a CricKuru display score based on CricHeroes awards, captain/pro/verified signals and batting/bowling category badges.
+                </p>
+                <a
+                  href={data.team?.membersUrl || CricLinks.members}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-gold/35 bg-gold/10 px-5 text-sm font-black uppercase tracking-[0.16em] text-gold transition hover:border-gold hover:bg-gold/15"
+                >
+                  Official Members <Icon.ExternalLink size={16} />
+                </a>
+              </div>
+            </section>
+          </main>
+        );
+      }
+
+      function PlayerLeaderCard({ label, player, metric }) {
+        return (
+          <article className="rounded-[8px] border border-white/12 bg-white/[0.045] p-4">
+            <p className="text-[0.65rem] font-black uppercase tracking-[0.18em] text-cyan">{label}</p>
+            {player ? (
+              <div className="mt-4 flex items-center justify-between gap-3">
+                <div className="flex min-w-0 items-center gap-3">
+                  <LiveAvatar src={player.photo} name={player.name} />
+                  <div className="min-w-0">
+                    <h2 className="truncate font-display text-2xl font-black uppercase text-white">{player.name}</h2>
+                    <p className="text-xs font-bold uppercase tracking-[0.14em] text-white/42">{player.role}</p>
+                  </div>
+                </div>
+                <p className="font-display text-3xl font-black text-gold">{metric}</p>
+              </div>
+            ) : (
+              <p className="mt-4 font-display text-2xl font-black uppercase text-white">Roster syncing</p>
+            )}
+          </article>
+        );
+      }
+
+      function PlayerProfileCard({ player, rank }) {
+        const awards = player.performance?.awards || 0;
+        const activity = asArray(player.performance?.recentAwards).slice(0, 3);
+        const impact = player.impact || 0;
+
+        return (
+          <article className="relative overflow-hidden rounded-[8px] border border-white/12 bg-[radial-gradient(circle_at_85%_8%,rgba(244,185,66,0.14),transparent_28%),rgba(255,255,255,0.045)] p-5">
+            <div className="absolute right-[-56px] top-[-56px] h-40 w-40 rounded-full bg-cyan/8 blur-3xl" aria-hidden="true" />
+            <div className="relative flex items-start justify-between gap-4">
+              <div className="flex min-w-0 items-center gap-3">
+                <LiveAvatar src={player.photo} name={player.name} />
+                <div className="min-w-0">
+                  <p className="text-[0.62rem] font-black uppercase tracking-[0.18em] text-gold">Rank {rank}</p>
+                  <h2 className="truncate font-display text-3xl font-black uppercase leading-none text-white">{player.name}</h2>
+                  <p className="mt-1 text-xs font-bold uppercase tracking-[0.14em] text-white/44">{player.role}</p>
+                </div>
+              </div>
+              <div
+                className="grid h-16 w-16 shrink-0 place-items-center rounded-full border border-white/12 text-center"
+                style={{ background: `conic-gradient(#F4B942 ${impact * 3.6}deg, rgba(255,255,255,0.08) 0deg)` }}
+                aria-label={`Impact score ${impact} out of 100`}
+              >
+                <span className="grid h-12 w-12 place-items-center rounded-full bg-night font-display text-2xl font-black text-white">{impact}</span>
+              </div>
+            </div>
+
+            <div className="relative mt-5 grid grid-cols-4 gap-2 text-center">
+              <LiveTinyStat label="POM" value={player.performance?.playerOfMatch || 0} />
+              <LiveTinyStat label="BAT" value={player.performance?.bestBatter || 0} />
+              <LiveTinyStat label="BWL" value={player.performance?.bestBowler || 0} />
+              <LiveTinyStat label="FLD" value={player.performance?.fielderOfMatch || 0} />
+            </div>
+
+            <div className="relative mt-5">
+              <div className="flex items-center justify-between text-xs font-black uppercase tracking-[0.14em] text-white/42">
+                <span>Performance charge</span>
+                <span>{awards} awards</span>
+              </div>
+              <div className="mt-2 h-2 overflow-hidden rounded-full bg-white/8">
+                <span className="block h-full rounded-full bg-gradient-to-r from-gold via-cyan to-crimson" style={{ width: `${Math.min(100, Math.max(8, impact))}%` }} />
+              </div>
+            </div>
+
+            <div className="relative mt-5 flex flex-wrap gap-2">
+              {(player.badges?.length ? player.badges : ["Warriors roster"]).slice(0, 5).map((badge) => <BadgePill key={badge} label={badge} />)}
+            </div>
+
+            <div className="relative mt-5 border-t border-white/10 pt-4">
+              <p className="text-[0.65rem] font-black uppercase tracking-[0.18em] text-white/40">Recent impact</p>
+              {activity.length ? (
+                <div className="mt-3 grid gap-2">
+                  {activity.map((award) => (
+                    <div key={`${award.matchId}-${award.label}`} className="flex items-center justify-between gap-3 text-sm">
+                      <span className="font-semibold text-white/76">{award.label}</span>
+                      <span className="truncate text-right text-white/42">vs {award.opponent}</span>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <p className="mt-3 text-sm leading-6 text-white/52">Waiting for the next CricHeroes award entry.</p>
+              )}
+            </div>
+          </article>
+        );
+      }
+
+      function playerImpactScore(player) {
+        const performance = player.performance || {};
+        const raw =
+          (performance.awards || 0) * 12 +
+          (performance.playerOfMatch || 0) * 10 +
+          (performance.bestBatter || 0) * 7 +
+          (performance.bestBowler || 0) * 7 +
+          (performance.fielderOfMatch || 0) * 5 +
+          (player.isCaptain ? 10 : 0) +
+          (player.isPro ? 7 : 0) +
+          (player.isVerified ? 5 : 0) +
+          asArray(player.badges).length * 2;
+        return Math.min(100, Math.max(8, raw));
+      }
+
+      function playerRoleLabel(player) {
+        const batting = cleanMatchText(player.batterCategory);
+        const bowling = cleanMatchText(player.bowlerCategory);
+        if (batting && bowling) return `${batting} / ${bowling}`;
+        if (batting) return batting;
+        if (bowling) return bowling;
+        if (player.skill) return player.skill;
+        if (player.isCaptain) return "Captain";
+        return "Warriors squad";
+      }
+
+      function playerMatchesFilter(player, filter) {
+        if (filter === "awards") return (player.performance?.awards || 0) > 0;
+        if (filter === "batters") return Boolean(player.batterCategory || player.performance?.bestBatter);
+        if (filter === "bowlers") return Boolean(player.bowlerCategory || player.performance?.bestBowler);
+        if (filter === "verified") return Boolean(player.isVerified);
+        return true;
       }
 
       function LiveAvatar({ src, name }) {
@@ -3829,6 +4066,10 @@ const RouterContext = React.createContext(null);
                 <Route
                   path="/india-matches"
                   element={<IndiaMatchesPage />}
+                />
+                <Route
+                  path="/players"
+                  element={<PlayersPage />}
                 />
                 <Route
                   path="/arena"
