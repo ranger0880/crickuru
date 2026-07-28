@@ -144,8 +144,9 @@ const RouterContext = React.createContext(null);
           matchesUrl: CricLinks.matches,
           membersUrl: CricLinks.members,
         },
-        summary: { matches: 0, wins: 0, losses: 0, winRate: 0, latestResult: "", latestOpponent: "", upcoming: 0, nextOpponent: "", nextMatchDate: "", nextMatchVenue: "" },
+        summary: { matches: 0, live: 0, wins: 0, losses: 0, winRate: 0, liveOpponent: "", liveScore: "", liveStatus: "", latestResult: "", latestOpponent: "", upcoming: 0, nextOpponent: "", nextMatchDate: "", nextMatchVenue: "" },
         matches: [],
+        liveMatches: [],
         upcomingMatches: [],
         recentMatches: [],
         players: [],
@@ -209,7 +210,7 @@ const RouterContext = React.createContext(null);
           };
 
           loadFeed();
-          const interval = window.setInterval(loadFeed, 5 * 60 * 1000);
+          const interval = window.setInterval(loadFeed, 60 * 1000);
           return () => {
             cancelled = true;
             window.clearInterval(interval);
@@ -873,9 +874,10 @@ const RouterContext = React.createContext(null);
 
       function FeaturedMatchCard() {
         const { loading, data } = useLiveCricketFeed();
+        const liveMatch = data.liveMatches?.[0];
         const nextMatch = data.upcomingMatches?.[0];
         const latestMatch = data.recentMatches?.[0] || data.matches?.[0];
-        const displayMatch = nextMatch || latestMatch;
+        const displayMatch = liveMatch || nextMatch || latestMatch;
         const topPlayer = data.players?.find((player) => player.performance?.awards > 0) || data.players?.[0];
         const topRival = data.opponents?.[0];
 
@@ -897,6 +899,15 @@ const RouterContext = React.createContext(null);
               </span>
             </div>
 
+            {liveMatch && (
+              <div className="mb-4 rounded-[8px] border border-crimson/35 bg-crimson/12 p-3">
+                <p className="text-[0.62rem] font-black uppercase tracking-[0.18em] text-crimson">Live now</p>
+                <p className="mt-1 text-sm font-semibold leading-6 text-white/78">
+                  {liveMatch.resultText || liveMatch.status || "CricHeroes live score is updating."}
+                </p>
+              </div>
+            )}
+
             {displayMatch ? (
               <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3">
                 <TeamScore initials="KW" team={data.team?.name || "Kurukshetra Warriors"} score={displayMatch.ourScore} />
@@ -912,8 +923,8 @@ const RouterContext = React.createContext(null);
 
             <div className="mt-5 grid gap-3">
               <HeroLiveTile
-                label={nextMatch ? "Next Match" : "Match Updates"}
-                title={nextMatch ? `Warriors vs ${nextMatch.opponent}` : latestMatch?.resultText || "Waiting for latest score"}
+                label={liveMatch ? "Live Match" : nextMatch ? "Next Match" : "Match Updates"}
+                title={liveMatch ? `Warriors vs ${liveMatch.opponent}` : nextMatch ? `Warriors vs ${nextMatch.opponent}` : latestMatch?.resultText || "Waiting for latest score"}
                 detail={displayMatch ? `${formatFeedDate(displayMatch.date)} - ${displayMatch.venue || displayMatch.city || "CricHeroes"}` : "Sync data/crickuru-live.json"}
               />
               <HeroLiveTile
@@ -1190,10 +1201,12 @@ const RouterContext = React.createContext(null);
       function LiveMatchIntelSection() {
         const { loading, error, data } = useLiveCricketFeed();
         const matches = data.matches || [];
+        const liveMatches = data.liveMatches || [];
         const upcomingMatches = data.upcomingMatches || [];
         const recentMatches = data.recentMatches || matches;
         const players = data.players || [];
         const opponents = data.opponents || [];
+        const liveMatch = liveMatches[0];
         const nextMatch = upcomingMatches[0];
         const latestMatch = recentMatches[0] || matches[0];
         const visiblePlayers = players.slice(0, 6);
@@ -1219,12 +1232,12 @@ const RouterContext = React.createContext(null);
                 </div>
                 <div className="glass rounded-[8px] p-5">
                   <div className="grid gap-3 sm:grid-cols-3">
+                    <LiveStat label="Live" value={data.summary?.live ?? liveMatches.length ?? "-"} />
                     <LiveStat label="Upcoming" value={data.summary?.upcoming ?? upcomingMatches.length ?? "-"} />
                     <LiveStat label="Warriors wins" value={data.summary?.wins ?? "-"} />
-                    <LiveStat label="Win rate" value={data.summary?.winRate != null ? `${data.summary.winRate}%` : "-"} />
                   </div>
                   <div className="mt-4 flex flex-col gap-3 text-sm text-white/58 sm:flex-row sm:items-center sm:justify-between">
-                    <span>{loading ? "Syncing CricHeroes feed..." : `Last sync: ${formatFeedDate(data.syncedAt)}`}</span>
+                    <span>{loading ? "Syncing CricHeroes feed..." : `Score feed checked: ${formatFeedDate(data.syncedAt)}`}</span>
                     <a href={data.team?.matchesUrl || CricLinks.matches} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 font-black uppercase tracking-[0.16em] text-gold">
                       CricHeroes <Icon.ExternalLink size={15} />
                     </a>
@@ -1237,6 +1250,7 @@ const RouterContext = React.createContext(null);
               ) : (
                 <div className="mt-10 grid gap-5 xl:grid-cols-[1.05fr_0.95fr]">
                   <div className="grid gap-5">
+                    {liveMatch && <WarriorsLiveNowCard match={liveMatch} team={data.team} />}
                     {nextMatch && <NextLiveMatchCard match={nextMatch} team={data.team} />}
                     {latestMatch && <LatestLiveMatchCard match={latestMatch} team={data.team} />}
                     <div className="glass rounded-[8px] p-5">
@@ -1298,6 +1312,41 @@ const RouterContext = React.createContext(null);
         );
       }
 
+      function WarriorsLiveNowCard({ match, team }) {
+        return (
+          <article className="relative overflow-hidden rounded-[8px] border border-crimson/35 bg-[radial-gradient(circle_at_82%_12%,rgba(183,25,50,0.24),transparent_30%),rgba(255,255,255,0.045)] p-5">
+            <div className="absolute right-[-42px] top-[-42px] h-40 w-40 rounded-full bg-crimson/14 blur-3xl" />
+            <div className="relative flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <p className="text-xs font-black uppercase tracking-[0.24em] text-crimson">Live now from CricHeroes</p>
+                <h3 className="mt-2 font-display text-4xl font-black uppercase leading-none text-white">
+                  {team?.name || "Kurukshetra Warriors"} vs {match.opponent}
+                </h3>
+                <p className="mt-3 text-sm font-semibold text-white/50">
+                  {formatFeedDate(match.date)} - {match.venue || match.city || "CricHeroes"}
+                </p>
+              </div>
+              <span className="rounded-full border border-crimson/35 bg-crimson/12 px-4 py-2 text-sm font-black uppercase tracking-[0.16em] text-crimson">
+                live
+              </span>
+            </div>
+            <div className="relative mt-6 grid gap-3 sm:grid-cols-[1fr_auto_1fr] sm:items-center">
+              <LiveScoreBlock logo={team?.logo} name={team?.name || "Kurukshetra Warriors"} score={match.ourScore} runRate={match.ourRunRate} />
+              <span className="hidden font-display text-2xl font-black text-white/28 sm:block">VS</span>
+              <LiveScoreBlock logo={match.opponentLogo} name={match.opponent} score={match.opponentScore} runRate={match.opponentRunRate} align="right" />
+            </div>
+            <div className="relative mt-5 grid gap-3 sm:grid-cols-[1fr_auto] sm:items-center">
+              <p className="rounded-[8px] border border-white/10 bg-night/55 p-4 font-display text-3xl font-black uppercase text-white">
+                {match.resultText || match.status || "Live score updating"}
+              </p>
+              <p className="text-xs font-bold uppercase tracking-[0.16em] text-white/44">
+                Feed check {formatFeedDate(match.scoreUpdatedAt || match.date)}
+              </p>
+            </div>
+          </article>
+        );
+      }
+
       function NextLiveMatchCard({ match, team }) {
         return (
           <article className="relative overflow-hidden rounded-[8px] border border-cyan/24 bg-[radial-gradient(circle_at_82%_12%,rgba(34,211,238,0.16),transparent_30%),rgba(255,255,255,0.045)] p-5">
@@ -1315,7 +1364,7 @@ const RouterContext = React.createContext(null);
               </span>
             </div>
             <p className="relative mt-5 rounded-[8px] border border-white/10 bg-night/55 p-4 font-display text-3xl font-black uppercase text-white">
-              Daily CricHeroes sync checks this fixture and refreshes the site automatically.
+              CricHeroes sync checks this fixture frequently and refreshes the site automatically.
             </p>
           </article>
         );

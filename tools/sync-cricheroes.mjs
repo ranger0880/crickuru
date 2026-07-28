@@ -107,11 +107,12 @@ function buildMatches(rawMatches) {
     const ours = scoreFor(match, ourSide);
     const opponent = scoreFor(match, opponentSide);
     const winningTeamId = Number(match.winning_team_id || 0);
-    const result = winningTeamId === TEAM_ID ? "win" : winningTeamId ? "loss" : match.status || "scheduled";
+    const result = winningTeamId === TEAM_ID ? "win" : winningTeamId ? "loss" : normalizeMatchState(match.status || "scheduled");
 
     return {
       id: match.match_id,
       status: match.status,
+      state: normalizeMatchState(match.status || match.match_result || match.match_summary?.summary || ""),
       date: normalizeDate(match.match_start_time || match.created_date),
       matchType: match.match_type,
       ballType: match.ball_type,
@@ -127,6 +128,7 @@ function buildMatches(rawMatches) {
       opponentRunRate: opponent.innings?.[0]?.summary?.rr || "",
       result,
       resultText: match.match_summary?.summary || match.win_by || match.match_result || match.status,
+      scoreUpdatedAt: normalizeDate(match.updated_at || match.modified_date || match.created_date || match.match_start_time),
       toss: match.toss_details || "",
       cricHeroesUrl: `${BASE_URL}/matches`,
       awards: {
@@ -139,12 +141,21 @@ function buildMatches(rawMatches) {
   });
 }
 
+function normalizeMatchState(value) {
+  const state = String(value || "").toLowerCase();
+  if (/live|in[_ -]?progress|started|playing|innings|batting|bowling|need|requires|target|drinks|break|stumps|toss/.test(state)) return "live";
+  if (/past|complete|completed|won|lost|draw|abandon|no result|finished/.test(state)) return "past";
+  if (/scheduled|upcoming|fixture|not started|pending|created/.test(state)) return "scheduled";
+  return String(value || "scheduled").toLowerCase();
+}
+
 function matchTime(match) {
   const time = Date.parse(match.date || "");
   return Number.isNaN(time) ? 0 : time;
 }
 
 function isUpcomingMatch(match, now = new Date()) {
+  if (isLiveMatch(match)) return false;
   const status = String(match.status || match.result || match.resultText || "").toLowerCase();
   const scheduledStatus = /scheduled|upcoming|fixture|not started|pending|created/.test(status);
   const startsAt = matchTime(match);
@@ -152,15 +163,24 @@ function isUpcomingMatch(match, now = new Date()) {
   return scheduledStatus || Boolean(futureOrToday && !["win", "loss"].includes(match.result));
 }
 
+function isLiveMatch(match) {
+  const status = String(`${match.state || ""} ${match.status || ""} ${match.result || ""} ${match.resultText || ""}`).toLowerCase();
+  const hasFinalResult = ["win", "loss", "past"].includes(match.result) || /won by|lost by|match tied|no result|abandon|complete/.test(status);
+  return !hasFinalResult && /live|in[_ -]?progress|started|playing|innings|batting|bowling|need|requires|target|drinks|break|stumps|toss/.test(status);
+}
+
 function splitMatches(matches, now = new Date()) {
+  const liveMatches = matches
+    .filter((match) => isLiveMatch(match))
+    .sort((a, b) => matchTime(a) - matchTime(b));
   const upcomingMatches = matches
     .filter((match) => isUpcomingMatch(match, now))
     .sort((a, b) => matchTime(a) - matchTime(b));
   const recentMatches = matches
-    .filter((match) => !isUpcomingMatch(match, now))
+    .filter((match) => !isLiveMatch(match) && !isUpcomingMatch(match, now))
     .sort((a, b) => matchTime(b) - matchTime(a));
 
-  return { upcomingMatches, recentMatches };
+  return { liveMatches, upcomingMatches, recentMatches };
 }
 
 function normalizeMembers(rawMembers) {
@@ -297,17 +317,22 @@ function buildOpponents(matches, opponentAwards) {
   return [...opponents.values()].sort((a, b) => b.matches - a.matches || b.winsAgainstUs - a.winsAgainstUs);
 }
 
-function summarize(matches, upcomingMatches, recentMatches) {
+function summarize(matches, liveMatches, upcomingMatches, recentMatches) {
   const wins = matches.filter((match) => match.result === "win").length;
   const losses = matches.filter((match) => match.result === "loss").length;
+  const live = liveMatches[0];
   const latest = recentMatches[0];
   const next = upcomingMatches[0];
 
   return {
     matches: matches.length,
+    live: liveMatches.length,
     wins,
     losses,
     winRate: matches.length ? Math.round((wins / matches.length) * 100) : 0,
+    liveOpponent: live?.opponent || "",
+    liveScore: live ? `${live.ourScore || "-"} vs ${live.opponentScore || "-"}` : "",
+    liveStatus: live?.resultText || live?.status || "",
     latestResult: latest?.resultText || "",
     latestOpponent: latest?.opponent || "",
     upcoming: upcomingMatches.length,
@@ -328,7 +353,7 @@ async function main() {
   const rawMembers = extractJsonValue(membersText, "members", membersText.indexOf("\"teamDetails\"")) || extractJsonValue(membersText, "members");
 
   const matches = buildMatches(rawMatches);
-  const { upcomingMatches, recentMatches } = splitMatches(matches);
+  const { liveMatches, upcomingMatches, recentMatches } = splitMatches(matches);
   const players = normalizeMembers(rawMembers);
   const opponentAwards = attachAwards(players, recentMatches);
   const opponents = buildOpponents(recentMatches, opponentAwards);
@@ -346,8 +371,9 @@ async function main() {
       matchesUrl: `${BASE_URL}/matches`,
       membersUrl: `${BASE_URL}/members`,
     },
-    summary: summarize(matches, upcomingMatches, recentMatches),
-    matches: [...upcomingMatches, ...recentMatches],
+    summary: summarize(matches, liveMatches, upcomingMatches, recentMatches),
+    matches: [...liveMatches, ...upcomingMatches, ...recentMatches],
+    liveMatches,
     upcomingMatches,
     recentMatches,
     players: players.sort((a, b) => b.performance.awards - a.performance.awards || Number(b.isCaptain) - Number(a.isCaptain)),
@@ -358,7 +384,7 @@ async function main() {
   await fs.mkdir(path.dirname(OUTPUT_FILE), { recursive: true });
   await fs.writeFile(OUTPUT_FILE, `${JSON.stringify(feed, null, 2)}\n`, "utf8");
   console.log(`Wrote ${OUTPUT_FILE}`);
-  console.log(`Synced ${matches.length} matches, ${players.length} players, ${opponents.length} opponents.`);
+  console.log(`Synced ${matches.length} matches, ${liveMatches.length} live, ${players.length} players, ${opponents.length} opponents.`);
 }
 
 main().catch((error) => {

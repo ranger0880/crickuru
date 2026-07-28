@@ -1,9 +1,9 @@
-name: Daily CricHeroes Feed Sync
+name: Kurukshetra Warriors CricHeroes Feed Sync
 
 on:
   schedule:
-    # 09:00 IST daily. GitHub schedules use UTC.
-    - cron: "30 3 * * *"
+    # Frequent public Pages refresh for live-score periods. GitHub schedules use UTC.
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -35,31 +35,44 @@ jobs:
         run: npm ci
 
       - name: Sync Kurukshetra Warriors CricHeroes feed
+        id: sync
         run: node tools/sync-cricheroes.mjs
 
+      - name: Check for CricHeroes feed changes
+        id: changes
+        run: |
+          if git diff --quiet -- data/crickuru-live.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No CricHeroes feed changes."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "CricHeroes feed changed."
+          fi
+
       - name: Build production site
+        if: steps.changes.outputs.changed == 'true'
         run: npm run build
 
       - name: Store refreshed feed in repo
+        if: steps.changes.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/crickuru-live.json crickuru-hostinger-upload.zip
-          if git diff --cached --quiet; then
-            echo "No CricHeroes feed changes to commit."
-          else
-            git commit -m "Sync CricHeroes live feed [skip ci]"
-            git push
-          fi
+          git commit -m "Sync CricHeroes live feed [skip ci]"
+          git push
 
       - name: Setup Pages
+        if: steps.changes.outputs.changed == 'true'
         uses: actions/configure-pages@v5
 
       - name: Upload production site
+        if: steps.changes.outputs.changed == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
       - name: Deploy to GitHub Pages
+        if: steps.changes.outputs.changed == 'true'
         id: deployment
         uses: actions/deploy-pages@v4

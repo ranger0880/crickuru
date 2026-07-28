@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "CricHeroes public team pages",
-  "syncedAt": "2026-07-28T15:20:39.989Z",
+  "syncedAt": "2026-07-28T15:50:35.939Z",
   "team": {
     "id": 8626734,
     "name": "Kurukshetra Warriors",
@@ -13,9 +13,13 @@
   },
   "summary": {
     "matches": 12,
+    "live": 0,
     "wins": 3,
     "losses": 9,
     "winRate": 25,
+    "liveOpponent": "",
+    "liveScore": "",
+    "liveStatus": "",
     "latestResult": "Kurukshetra Warriors won by 14 runs",
     "latestOpponent": "Fabulous XI",
     "upcoming": 0,
@@ -27,6 +31,7 @@
     {
       "id": 26132337,
       "status": "past",
+      "state": "past",
       "date": "2026-07-15T00:56:42.000Z",
       "matchType": "Limited Overs",
       "ballType": "TENNIS",
@@ -42,6 +47,7 @@
       "opponentRunRate": "13.42",
       "result": "win",
       "resultText": "Kurukshetra Warriors won by 14 runs",
+      "scoreUpdatedAt": "2026-07-14T13:00:13.000Z",
       "toss": "Fabulous XI won the toss and elected to field",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -54,6 +60,7 @@
     {
       "id": 25214310,
       "status": "past",
+      "state": "past",
       "date": "2026-06-02T01:03:10.000Z",
       "matchType": "Limited Overs",
       "ballType": "TENNIS",
@@ -69,6 +76,7 @@
       "opponentRunRate": "13.78",
       "result": "loss",
       "resultText": "Divino Dominators won by 3 wickets",
+      "scoreUpdatedAt": "2026-06-02T00:51:09.000Z",
       "toss": "Kurukshetra Warriors won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -81,6 +89,7 @@
     {
       "id": 24878263,
       "status": "past",
+      "state": "past",
       "date": "2026-05-22T15:13:00.000Z",
       "matchType": "Limited Overs",
       "ballType": "TENNIS",
@@ -96,6 +105,7 @@
       "opponentRunRate": "12.45",
       "result": "loss",
       "resultText": "The Core XI won by 87 runs",
+      "scoreUpdatedAt": "2026-05-20T12:55:38.000Z",
       "toss": "The Core XI won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -108,6 +118,7 @@
     {
       "id": 23817201,
       "status": "past",
+      "state": "past",
       "date": "2026-04-10T01:43:22.000Z",
       "matchType": "Limited Overs",
       "ballType": "TENNIS",
@@ -123,6 +134,7 @@
       "opponentRunRate": "9.11",
       "result": "loss",
       "resultText": "Elite warriors 11 won by 19 runs",
+      "scoreUpdatedAt": "2026-04-10T01:34:06.000Z",
       "toss": "Elite warriors 11 won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -135,6 +147,7 @@
     {
       "id": 23554204,
       "status": "past",
+      "state": "past",
       "date": "2026-04-01T01:46:12.000Z",
       "matchType": "Limited Overs",
       "ballType": "TENNIS",
@@ -150,6 +163,7 @@
       "opponentRunRate": "13.19",
       "result": "loss",
       "resultText": "Star Sport Cricket Club won by 4 wickets",
+      "scoreUpdatedAt": "2026-03-30T09:09:12.000Z",
       "toss": "Star Sport Cricket Club won the toss and elected to field",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -162,6 +176,7 @@
     {
       "id": 23378722,
       "status": "past",
+      "state": "past",
       "date": "2026-03-25T01:26:01.000Z",
       "matchType": "Limited Overs",
       "ballType": "TENNIS",
@@ -177,6 +192,7 @@
       "opponentRunRate": "11.90",
       "result": "loss",
       "resultText": "Ace Power XI won by 5 wickets",
+      "scoreUpdatedAt": "2026-03-24T07:31:38.000Z",
       "toss": "Ace Power XI won the toss and elected to field",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -189,6 +205,7 @@
     {
       "id": 23143469,
       "status": "past",
+      "state": "past",
       "date": "2026-03-18T01:29:13.000Z",
       "matchType": "Limited Overs",
       "ballType": "TENNIS",
@@ -204,6 +221,7 @@
       "opponentRunRate": "13.76",
       "result": "win",
       "resultText": "Kurukshetra Warriors won by 7 wickets",
+      "scoreUpdatedAt": "2026-03-15T04:41:11.000Z",
       "toss": "Gully Cricket Club (GCC) won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -216,6 +234,7 @@
     {
       "id": 23084704,
       "status": "past",
+      "state": "past",
       "date": "2026-03-14T01:50:46.000Z",
       "matchType": "Limited Overs",
       "ballType": "TENNIS",
@@ -231,6 +250,7 @@
       "opponentRunRate": "10.37",
       "result": "loss",
       "resultText": "Strikers 11 won by 3 wickets",
+      "scoreUpdatedAt": "2026-03-13T05:51:49.000Z",
       "toss": "Kurukshetra Warriors won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -243,6 +263,7 @@
     {
       "id": 23046803,
       "status": "past",
+      "state": "past",
       "date": "2026-03-11T01:43:51.000Z",
       "matchType": "Limited Overs",
       "ballType": "TENNIS",
@@ -258,6 +279,7 @@
       "opponentRunRate": "14.68",
       "result": "loss",
       "resultText": "Techie Cricket Club won by 4 wickets",
+      "scoreUpdatedAt": "2026-03-11T01:43:03.000Z",
       "toss": "Kurukshetra Warriors won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -270,6 +292,7 @@
     {
       "id": 22937264,
       "status": "past",
+      "state": "past",
       "date": "2026-03-07T03:07:52.000Z",
       "matchType": "Limited Overs",
       "ballType": "TENNIS",
@@ -285,6 +308,7 @@
       "opponentRunRate": "14.60",
       "result": "win",
       "resultText": "Kurukshetra Warriors won by 9 wickets",
+      "scoreUpdatedAt": "2026-03-07T03:07:32.000Z",
       "toss": "MIGHTY HEROES won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -297,6 +321,7 @@
     {
       "id": 22865500,
       "status": "past",
+      "state": "past",
       "date": "2026-03-07T01:37:27.000Z",
       "matchType": "Limited Overs",
       "ballType": "TENNIS",
@@ -312,6 +337,7 @@
       "opponentRunRate": "9.69",
       "result": "loss",
       "resultText": "MIGHTY HEROES won by 8 wickets",
+      "scoreUpdatedAt": "2026-03-03T06:09:46.000Z",
       "toss": "Kurukshetra Warriors won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -324,6 +350,7 @@
     {
       "id": 22742510,
       "status": "past",
+      "state": "past",
       "date": "2026-02-28T01:41:56.000Z",
       "matchType": "Limited Overs",
       "ballType": "TENNIS",
@@ -339,6 +366,7 @@
       "opponentRunRate": "9.70",
       "result": "loss",
       "resultText": "Ace Panthers won by 76 runs",
+      "scoreUpdatedAt": "2026-02-26T11:23:36.000Z",
       "toss": "Ace Panthers won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -349,11 +377,13 @@
       }
     }
   ],
+  "liveMatches": [],
   "upcomingMatches": [],
   "recentMatches": [
     {
       "id": 26132337,
       "status": "past",
+      "state": "past",
       "date": "2026-07-15T00:56:42.000Z",
       "matchType": "Limited Overs",
       "ballType": "TENNIS",
@@ -369,6 +399,7 @@
       "opponentRunRate": "13.42",
       "result": "win",
       "resultText": "Kurukshetra Warriors won by 14 runs",
+      "scoreUpdatedAt": "2026-07-14T13:00:13.000Z",
       "toss": "Fabulous XI won the toss and elected to field",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -381,6 +412,7 @@
     {
       "id": 25214310,
       "status": "past",
+      "state": "past",
       "date": "2026-06-02T01:03:10.000Z",
       "matchType": "Limited Overs",
       "ballType": "TENNIS",
@@ -396,6 +428,7 @@
       "opponentRunRate": "13.78",
       "result": "loss",
       "resultText": "Divino Dominators won by 3 wickets",
+      "scoreUpdatedAt": "2026-06-02T00:51:09.000Z",
       "toss": "Kurukshetra Warriors won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -408,6 +441,7 @@
     {
       "id": 24878263,
       "status": "past",
+      "state": "past",
       "date": "2026-05-22T15:13:00.000Z",
       "matchType": "Limited Overs",
       "ballType": "TENNIS",
@@ -423,6 +457,7 @@
       "opponentRunRate": "12.45",
       "result": "loss",
       "resultText": "The Core XI won by 87 runs",
+      "scoreUpdatedAt": "2026-05-20T12:55:38.000Z",
       "toss": "The Core XI won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -435,6 +470,7 @@
     {
       "id": 23817201,
       "status": "past",
+      "state": "past",
       "date": "2026-04-10T01:43:22.000Z",
       "matchType": "Limited Overs",
       "ballType": "TENNIS",
@@ -450,6 +486,7 @@
       "opponentRunRate": "9.11",
       "result": "loss",
       "resultText": "Elite warriors 11 won by 19 runs",
+      "scoreUpdatedAt": "2026-04-10T01:34:06.000Z",
       "toss": "Elite warriors 11 won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -462,6 +499,7 @@
     {
       "id": 23554204,
       "status": "past",
+      "state": "past",
       "date": "2026-04-01T01:46:12.000Z",
       "matchType": "Limited Overs",
       "ballType": "TENNIS",
@@ -477,6 +515,7 @@
       "opponentRunRate": "13.19",
       "result": "loss",
       "resultText": "Star Sport Cricket Club won by 4 wickets",
+      "scoreUpdatedAt": "2026-03-30T09:09:12.000Z",
       "toss": "Star Sport Cricket Club won the toss and elected to field",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -489,6 +528,7 @@
     {
       "id": 23378722,
       "status": "past",
+      "state": "past",
       "date": "2026-03-25T01:26:01.000Z",
       "matchType": "Limited Overs",
       "ballType": "TENNIS",
@@ -504,6 +544,7 @@
       "opponentRunRate": "11.90",
       "result": "loss",
       "resultText": "Ace Power XI won by 5 wickets",
+      "scoreUpdatedAt": "2026-03-24T07:31:38.000Z",
       "toss": "Ace Power XI won the toss and elected to field",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -516,6 +557,7 @@
     {
       "id": 23143469,
       "status": "past",
+      "state": "past",
       "date": "2026-03-18T01:29:13.000Z",
       "matchType": "Limited Overs",
       "ballType": "TENNIS",
@@ -531,6 +573,7 @@
       "opponentRunRate": "13.76",
       "result": "win",
       "resultText": "Kurukshetra Warriors won by 7 wickets",
+      "scoreUpdatedAt": "2026-03-15T04:41:11.000Z",
       "toss": "Gully Cricket Club (GCC) won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -543,6 +586,7 @@
     {
       "id": 23084704,
       "status": "past",
+      "state": "past",
       "date": "2026-03-14T01:50:46.000Z",
       "matchType": "Limited Overs",
       "ballType": "TENNIS",
@@ -558,6 +602,7 @@
       "opponentRunRate": "10.37",
       "result": "loss",
       "resultText": "Strikers 11 won by 3 wickets",
+      "scoreUpdatedAt": "2026-03-13T05:51:49.000Z",
       "toss": "Kurukshetra Warriors won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -570,6 +615,7 @@
     {
       "id": 23046803,
       "status": "past",
+      "state": "past",
       "date": "2026-03-11T01:43:51.000Z",
       "matchType": "Limited Overs",
       "ballType": "TENNIS",
@@ -585,6 +631,7 @@
       "opponentRunRate": "14.68",
       "result": "loss",
       "resultText": "Techie Cricket Club won by 4 wickets",
+      "scoreUpdatedAt": "2026-03-11T01:43:03.000Z",
       "toss": "Kurukshetra Warriors won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -597,6 +644,7 @@
     {
       "id": 22937264,
       "status": "past",
+      "state": "past",
       "date": "2026-03-07T03:07:52.000Z",
       "matchType": "Limited Overs",
       "ballType": "TENNIS",
@@ -612,6 +660,7 @@
       "opponentRunRate": "14.60",
       "result": "win",
       "resultText": "Kurukshetra Warriors won by 9 wickets",
+      "scoreUpdatedAt": "2026-03-07T03:07:32.000Z",
       "toss": "MIGHTY HEROES won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -624,6 +673,7 @@
     {
       "id": 22865500,
       "status": "past",
+      "state": "past",
       "date": "2026-03-07T01:37:27.000Z",
       "matchType": "Limited Overs",
       "ballType": "TENNIS",
@@ -639,6 +689,7 @@
       "opponentRunRate": "9.69",
       "result": "loss",
       "resultText": "MIGHTY HEROES won by 8 wickets",
+      "scoreUpdatedAt": "2026-03-03T06:09:46.000Z",
       "toss": "Kurukshetra Warriors won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -651,6 +702,7 @@
     {
       "id": 22742510,
       "status": "past",
+      "state": "past",
       "date": "2026-02-28T01:41:56.000Z",
       "matchType": "Limited Overs",
       "ballType": "TENNIS",
@@ -666,6 +718,7 @@
       "opponentRunRate": "9.70",
       "result": "loss",
       "resultText": "Ace Panthers won by 76 runs",
+      "scoreUpdatedAt": "2026-02-26T11:23:36.000Z",
       "toss": "Ace Panthers won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
