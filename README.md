@@ -43,7 +43,7 @@ The `/players` route displays the synced Kurukshetra Warriors roster as mobile-f
 
 ## Meme Forge
 
-The `/memes` route can generate one cricket meme, create a 50-meme caption pack from the selected topic and style, preview the selected meme as a branded CricKuru image, and download either the SVG image or the full text pack.
+The `/memes` route loads a 100-meme vault from `data/meme-bank.json`, generates one cricket meme at a time, previews it as a branded CricKuru SVG with a related cricket-player background scene, and downloads the selected meme image.
 
 ## Analytics
 
