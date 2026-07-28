@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "source": "Cricbuzz public match pages",
+  "sourceStatus": "fresh",
+  "syncedAt": "2026-07-28T15:31:35.682Z",
+  "summary": {
+    "live": 0,
+    "recent": 0,
+    "upcoming": 0,
+    "total": 0
+  },
+  "all": [],
+  "live": [],
+  "upcoming": [],
+  "recent": [],
+  "rankings": [
+    {
+      "id": "international",
+      "label": "International",
+      "order": 1,
+      "live": 0,
+      "recent": 0,
+      "upcoming": 0,
+      "total": 0
+    },
+    {
+      "id": "league",
+      "label": "League / IPL",
+      "order": 2,
+      "live": 0,
+      "recent": 0,
+      "upcoming": 0,
+      "total": 0
+    },
+    {
+      "id": "women",
+      "label": "Women",
+      "order": 3,
+      "live": 0,
+      "recent": 0,
+      "upcoming": 0,
+      "total": 0
+    },
+    {
+      "id": "domestic",
+      "label": "Domestic / State",
+      "order": 4,
+      "live": 0,
+      "recent": 0,
+      "upcoming": 0,
+      "total": 0
+    }
+  ],
+  "errors": []
+}

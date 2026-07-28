@@ -24,6 +24,19 @@ The `/arena` route contains a playable browser cricket duel with:
 - Adaptive AI batting and bowling
 - Scoreboard, innings transition, match result, achievements, and guest progress saving
 
+## India Matches
+
+The `/india-matches` route displays India-linked live, future, and past cricket matches from `data/india-matches.json`.
+The top score strip reads the same feed and checks for updates in the browser every minute.
+
+Refresh the feed locally with:
+
+```bash
+node tools/sync-india-matches.mjs
+```
+
+GitHub Actions also runs `.github/workflows/sync-india-matches.yml` every 15 minutes, rebuilds the production site, and deploys the refreshed feed to GitHub Pages.
+
 ## Files
 
 - `src/` - React app source

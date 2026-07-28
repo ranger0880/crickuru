@@ -12,6 +12,7 @@ const RouterContext = React.createContext(null);
         "/meme": "meme/index.html",
         "/coin": "coin/index.html",
         "/kurukshetra-coin": "kurukshetra-coin/index.html",
+        "/india-matches": "india-matches/index.html",
       };
 
       function isLocalFilePreview() {
@@ -151,6 +152,30 @@ const RouterContext = React.createContext(null);
         opponents: [],
       };
 
+      const indiaMatchesFallback = {
+        schemaVersion: 1,
+        source: "CricKuru India match feed",
+        sourceStatus: "empty",
+        syncedAt: "",
+        summary: { live: 0, recent: 0, upcoming: 0, total: 0 },
+        all: [],
+        live: [],
+        recent: [],
+        upcoming: [],
+        rankings: [
+          { id: "international", label: "International", order: 1, live: 0, recent: 0, upcoming: 0, total: 0 },
+          { id: "league", label: "League / IPL", order: 2, live: 0, recent: 0, upcoming: 0, total: 0 },
+          { id: "women", label: "Women", order: 3, live: 0, recent: 0, upcoming: 0, total: 0 },
+          { id: "domestic", label: "Domestic / State", order: 4, live: 0, recent: 0, upcoming: 0, total: 0 },
+        ],
+      };
+
+      const IndiaMatchesContext = React.createContext({
+        loading: false,
+        error: "",
+        data: indiaMatchesFallback,
+      });
+
       function assetUrl(path) {
         if (isLocalFilePreview()) {
           const cleanPath = path.startsWith("/") ? path.slice(1) : path;
@@ -194,6 +219,49 @@ const RouterContext = React.createContext(null);
         return state;
       }
 
+      function useIndiaMatchesFeed() {
+        const [state, setState] = useState({ loading: true, error: "", data: indiaMatchesFallback });
+
+        useEffect(() => {
+          let cancelled = false;
+
+          const loadFeed = async () => {
+            try {
+              const response = await fetch(assetUrl(`/data/india-matches.json?v=${Date.now()}`), { cache: "no-store" });
+              if (!response.ok) throw new Error(`India matches feed returned ${response.status}`);
+              const data = await response.json();
+              if (!cancelled) setState({ loading: false, error: "", data: { ...indiaMatchesFallback, ...data } });
+            } catch (error) {
+              if (!cancelled) {
+                setState((current) => ({
+                  loading: false,
+                  error: error.message || "India matches feed unavailable",
+                  data: current.data || indiaMatchesFallback,
+                }));
+              }
+            }
+          };
+
+          loadFeed();
+          const interval = window.setInterval(loadFeed, 60 * 1000);
+          return () => {
+            cancelled = true;
+            window.clearInterval(interval);
+          };
+        }, []);
+
+        return state;
+      }
+
+      function IndiaMatchesProvider({ children }) {
+        const feed = useIndiaMatchesFeed();
+        return <IndiaMatchesContext.Provider value={feed}>{children}</IndiaMatchesContext.Provider>;
+      }
+
+      function useIndiaMatches() {
+        return useContext(IndiaMatchesContext);
+      }
+
       function formatFeedDate(value) {
         if (!value) return "Waiting for sync";
         const date = new Date(value);
@@ -205,6 +273,48 @@ const RouterContext = React.createContext(null);
           hour: "2-digit",
           minute: "2-digit",
         }).format(date);
+      }
+
+      function compactFeedDate(value) {
+        if (!value) return "Awaiting schedule";
+        const date = new Date(value);
+        if (Number.isNaN(date.getTime())) return value;
+        return new Intl.DateTimeFormat("en-IN", {
+          day: "2-digit",
+          month: "short",
+          hour: "2-digit",
+          minute: "2-digit",
+        }).format(date);
+      }
+
+      function cleanMatchText(value, fallback = "") {
+        return String(value || fallback)
+          .replace(/&nbsp;/g, " ")
+          .replace(/\s+/g, " ")
+          .trim();
+      }
+
+      function asArray(value) {
+        return Array.isArray(value) ? value : [];
+      }
+
+      function matchTimeLine(match) {
+        const parts = [
+          match.dateLabel || compactFeedDate(match.startTime),
+          match.time,
+          match.place,
+        ].map((part) => cleanMatchText(part)).filter(Boolean);
+        return parts.length ? parts.join(" - ") : "Schedule pending";
+      }
+
+      function matchTitle(match) {
+        return cleanMatchText(match.title || match.series || "India cricket match");
+      }
+
+      function matchTeamLabel(team) {
+        return [cleanMatchText(team?.name || team?.team), cleanMatchText(team?.score || team?.run)]
+          .filter(Boolean)
+          .join(" ");
       }
 
       function initialsFromName(name = "KW") {
@@ -223,9 +333,11 @@ const RouterContext = React.createContext(null);
         CircleUserRound: (props) => <SvgIcon {...props}><path d="M18 20a6 6 0 0 0-12 0" /><circle cx="12" cy="10" r="4" /><circle cx="12" cy="12" r="10" /></SvgIcon>,
         ExternalLink: (props) => <SvgIcon {...props}><path d="M15 3h6v6" /><path d="M10 14 21 3" /><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /></SvgIcon>,
         LogIn: (props) => <SvgIcon {...props}><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" /><path d="M10 17l5-5-5-5" /><path d="M15 12H3" /></SvgIcon>,
+        History: (props) => <SvgIcon {...props}><path d="M3 12a9 9 0 1 0 3-6.7" /><path d="M3 3v6h6" /><path d="M12 7v5l3 2" /></SvgIcon>,
         Menu: (props) => <SvgIcon {...props}><path d="M4 6h16" /><path d="M4 12h16" /><path d="M4 18h16" /></SvgIcon>,
         Mouse: (props) => <SvgIcon {...props}><rect x="5" y="2" width="14" height="20" rx="7" /><path d="M12 6v4" /></SvgIcon>,
         Play: (props) => <SvgIcon {...props}><polygon points="6 3 20 12 6 21 6 3" /></SvgIcon>,
+        Radio: (props) => <SvgIcon {...props}><path d="M4.9 19.1a10 10 0 0 1 0-14.2" /><path d="M7.8 16.2a6 6 0 0 1 0-8.5" /><circle cx="12" cy="12" r="2" /><path d="M16.2 7.8a6 6 0 0 1 0 8.5" /><path d="M19.1 4.9a10 10 0 0 1 0 14.2" /></SvgIcon>,
         Shield: (props) => <SvgIcon {...props}><path d="M20 13c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V5l8-3 8 3v8Z" /></SvgIcon>,
         Sparkles: (props) => <SvgIcon {...props}><path d="m12 3-1.9 5.8L4 11l6.1 2.2L12 19l1.9-5.8L20 11l-6.1-2.2L12 3Z" /><path d="M5 3v4" /><path d="M3 5h4" /><path d="M19 17v4" /><path d="M17 19h4" /></SvgIcon>,
         Swords: (props) => <SvgIcon {...props}><path d="m14.5 17.5 3 3 3-3-3-3" /><path d="m3 3 8.5 8.5" /><path d="m11.5 6.5 2-2L21 12l-2 2" /><path d="m3 21 8.5-8.5" /><path d="m6.5 11.5-2 2L12 21l2-2" /></SvgIcon>,
@@ -258,6 +370,7 @@ const RouterContext = React.createContext(null);
 
       const navItems = [
         { label: "Home", path: "/" },
+        { label: "India", path: "/india-matches" },
         { label: "Arena", path: "/arena" },
         { label: "Memes", path: "/memes" },
         { label: "Kuru Coin", path: "/coin" },
@@ -382,7 +495,7 @@ const RouterContext = React.createContext(null);
         return (
           <>
             <header
-              className={`fixed left-0 right-0 top-0 z-50 transition-all duration-500 ${
+              className={`fixed left-0 right-0 top-9 z-50 transition-all duration-500 ${
                 scrolled
                   ? "border-b border-gold/25 bg-night/78 shadow-2xl shadow-black/35 backdrop-blur-xl"
                   : "border-b border-transparent bg-transparent"
@@ -472,6 +585,60 @@ const RouterContext = React.createContext(null);
         );
       }
 
+      function IndiaLiveStrip() {
+        const { loading, error, data } = useIndiaMatches();
+        const liveMatches = asArray(data.live);
+        const upcomingMatches = asArray(data.upcoming);
+        const recentMatches = asArray(data.recent);
+        const tickerMatches = liveMatches.length ? liveMatches : upcomingMatches.length ? upcomingMatches.slice(0, 3) : recentMatches.slice(0, 3);
+        const repeatedMatches = tickerMatches.length > 1 ? [...tickerMatches, ...tickerMatches] : tickerMatches;
+        const statusLabel = liveMatches.length ? `${liveMatches.length} live` : upcomingMatches.length ? `${upcomingMatches.length} upcoming` : "India feed";
+
+        return (
+          <aside className="fixed left-0 right-0 top-0 z-[70] h-9 border-b border-gold/20 bg-night/95 text-white shadow-xl shadow-black/30 backdrop-blur-xl" aria-label="India live cricket score panel">
+            <div className="mx-auto flex h-full max-w-7xl items-center gap-3 px-3 sm:px-8">
+              <Link
+                to="/india-matches"
+                className="inline-flex h-6 shrink-0 items-center gap-2 rounded-full border border-gold/35 bg-gold/12 px-3 text-[0.64rem] font-black uppercase tracking-[0.16em] text-gold"
+              >
+                <span className={`h-2 w-2 rounded-full ${liveMatches.length ? "bg-crimson shadow-[0_0_12px_rgba(183,25,50,0.9)]" : "bg-gold"}`} />
+                India {loading ? "sync" : statusLabel}
+              </Link>
+              <div className="india-ticker min-w-0 flex-1 overflow-hidden" aria-live="polite">
+                {repeatedMatches.length ? (
+                  <div className={`india-ticker-track flex w-max items-center gap-6 ${repeatedMatches.length < 2 ? "animate-none" : ""}`}>
+                    {repeatedMatches.map((match, index) => (
+                      <IndiaTickerItem key={`${match.id || match.title}-${index}`} match={match} />
+                    ))}
+                  </div>
+                ) : (
+                  <p className="truncate text-xs font-semibold text-white/62">
+                    {error ? "India match feed is using the last saved update." : "No India live match listed right now. Upcoming and recent matches appear in the India tab."}
+                  </p>
+                )}
+              </div>
+              <Link to="/india-matches" className="hidden shrink-0 items-center gap-1 text-[0.64rem] font-black uppercase tracking-[0.16em] text-cyan sm:inline-flex">
+                Open <Icon.ArrowRight size={13} />
+              </Link>
+            </div>
+          </aside>
+        );
+      }
+
+      function IndiaTickerItem({ match }) {
+        const teams = asArray(match.teams).map(matchTeamLabel).filter(Boolean);
+        const scoreText = teams.length ? teams.join(" vs ") : matchTitle(match);
+        return (
+          <Link to="/india-matches" className="inline-flex max-w-[86vw] items-center gap-2 text-xs font-semibold text-white/78 sm:max-w-none">
+            <span className="rounded-full border border-white/12 bg-white/7 px-2 py-0.5 text-[0.58rem] font-black uppercase tracking-[0.14em] text-cyan">
+              {match.statusLabel || match.status || "match"}
+            </span>
+            <span className="truncate">{scoreText}</span>
+            <span className="hidden text-white/42 sm:inline">{match.overview || matchTimeLine(match)}</span>
+          </Link>
+        );
+      }
+
       function LandingPage() {
         useCursorParallax();
 
@@ -487,7 +654,7 @@ const RouterContext = React.createContext(null);
 
       function HeroSection() {
         return (
-          <section className="relative min-h-screen overflow-hidden pt-20" aria-labelledby="hero-title">
+          <section className="relative min-h-screen overflow-hidden pt-32" aria-labelledby="hero-title">
             <div className="hero-scene" aria-hidden="true">
               <div className="stadium-rim" />
               <StadiumLights />
@@ -498,7 +665,7 @@ const RouterContext = React.createContext(null);
               <AnimatedCricketBall />
             </div>
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_48%,transparent,rgba(5,7,11,0.44)_40%,rgba(5,7,11,0.88)_88%)]" />
-            <div className="relative z-10 mx-auto flex min-h-[calc(100vh-5rem)] max-w-7xl items-center px-5 py-12 sm:px-8">
+            <div className="relative z-10 mx-auto flex min-h-[calc(100vh-8rem)] max-w-7xl items-center px-5 py-12 sm:px-8">
               <div className="grid w-full items-center gap-8 lg:grid-cols-[minmax(0,1fr)_420px]">
                 <HeroContent />
                 <FeaturedMatchCard />
@@ -580,7 +747,7 @@ const RouterContext = React.createContext(null);
 
         return (
           <motion.div
-            className="cricket-ball right-[7%] top-[7%] z-[3] opacity-70 sm:right-[12%] sm:top-[18%] sm:opacity-100"
+            className="cricket-ball right-[5%] top-[18%] z-[3] opacity-35 sm:right-[12%] sm:top-[18%] sm:opacity-100"
             initial={{ x: 0, y: 0, scale: 0.82, rotate: 0 }}
             animate={
               reduceMotion
@@ -2376,7 +2543,7 @@ const RouterContext = React.createContext(null);
         };
 
         return (
-          <main className="route-bg page-grain min-h-screen px-3 pb-5 pt-[5.5rem] sm:px-5 sm:pt-24">
+          <main className="route-bg page-grain min-h-screen px-3 pb-5 pt-32 sm:px-5 sm:pt-36">
             <section className="mx-auto flex min-h-[calc(100vh-6rem)] max-w-5xl flex-col gap-3">
               <KidsArenaHeader step={game.step} />
               <div className="grid flex-1 gap-3 lg:grid-cols-[minmax(0,1fr)_280px]">
@@ -3129,7 +3296,7 @@ const RouterContext = React.createContext(null);
         };
 
         return (
-          <main className="route-bg page-grain min-h-screen px-5 pb-16 pt-28 sm:px-8">
+          <main className="route-bg page-grain min-h-screen px-5 pb-16 pt-36 sm:px-8">
             <section className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
               <motion.div className="glass rounded-[8px] p-6 sm:p-8" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }}>
                 <p className="text-xs font-black uppercase tracking-[0.32em] text-gold">CricKuru Meme Lab</p>
@@ -3194,9 +3361,294 @@ const RouterContext = React.createContext(null);
         );
       }
 
+      const indiaStatusTabs = [
+        { id: "live", label: "Live", icon: Icon.Radio },
+        { id: "upcoming", label: "Future", icon: Icon.CalendarDays },
+        { id: "recent", label: "Past", icon: Icon.History },
+      ];
+
+      const indiaLevelTabs = [
+        { id: "all", label: "All Levels" },
+        { id: "international", label: "International" },
+        { id: "league", label: "League / IPL" },
+        { id: "women", label: "Women" },
+        { id: "domestic", label: "State Level" },
+      ];
+
+      function IndiaMatchesPage() {
+        const { loading, error, data } = useIndiaMatches();
+        const [statusTab, setStatusTab] = useState("live");
+        const [levelTab, setLevelTab] = useState("all");
+        const matchesForStatus = asArray(data[statusTab]);
+        const filteredMatches = matchesForStatus.filter((match) => levelTab === "all" || match.level === levelTab);
+        const featureMatch = asArray(data.live)[0] || asArray(data.upcoming)[0] || asArray(data.recent)[0];
+        const rankings = normalizedIndiaRankings(data);
+
+        return (
+          <main className="route-bg page-grain min-h-screen px-5 pb-16 pt-36 sm:px-8">
+            <section className="mx-auto max-w-7xl">
+              <div className="grid gap-8 lg:grid-cols-[0.88fr_1.12fr] lg:items-end">
+                <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease }}>
+                  <p className="text-xs font-black uppercase tracking-[0.32em] text-cyan">India Cricket Feed</p>
+                  <h1 className="mt-4 font-display text-6xl font-black uppercase leading-none text-white sm:text-8xl">
+                    India Match Room
+                  </h1>
+                  <p className="mt-6 max-w-2xl text-lg leading-8 text-white/68">
+                    Track India-linked live scores, completed results and upcoming fixtures across international, league, women and domestic/state cricket.
+                  </p>
+                  <div className="mt-6 flex flex-wrap gap-3 text-xs font-black uppercase tracking-[0.16em]">
+                    <span className="rounded-full border border-gold/30 bg-gold/10 px-4 py-2 text-gold">
+                      {loading ? "Syncing now" : `Updated ${formatFeedDate(data.syncedAt)}`}
+                    </span>
+                    <span className="rounded-full border border-white/12 bg-white/7 px-4 py-2 text-white/58">
+                      {error ? "Using saved feed" : data.sourceStatus || "ready"}
+                    </span>
+                  </div>
+                </motion.div>
+
+                <div className="glass rounded-[8px] p-5">
+                  <div className="grid gap-3 sm:grid-cols-4">
+                    <LiveStat label="Live" value={data.summary?.live ?? asArray(data.live).length} />
+                    <LiveStat label="Future" value={data.summary?.upcoming ?? asArray(data.upcoming).length} />
+                    <LiveStat label="Past" value={data.summary?.recent ?? asArray(data.recent).length} />
+                    <LiveStat label="Levels" value={rankings.length} />
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-10 grid gap-5 xl:grid-cols-[1.05fr_0.95fr]">
+                <div className="grid gap-5">
+                  {featureMatch ? (
+                    <IndiaFeatureMatch match={featureMatch} />
+                  ) : (
+                    <div className="glass rounded-[8px] p-6">
+                      <p className="font-display text-4xl font-black uppercase text-white">No India match listed right now</p>
+                      <p className="mt-3 leading-7 text-white/62">
+                        The automated feed is ready. When a live, recent or upcoming India-linked match is available, it will appear here and in the top panel.
+                      </p>
+                    </div>
+                  )}
+
+                  <div className="glass rounded-[8px] p-5">
+                    <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
+                      <div>
+                        <p className="text-xs font-black uppercase tracking-[0.24em] text-gold">Match filter</p>
+                        <h2 className="mt-2 font-display text-4xl font-black uppercase text-white">Live, Past and Future</h2>
+                      </div>
+                      <div className="flex flex-wrap gap-2" role="tablist" aria-label="India match status">
+                        {indiaStatusTabs.map((item) => (
+                          <button
+                            key={item.id}
+                            type="button"
+                            role="tab"
+                            aria-selected={statusTab === item.id}
+                            onClick={() => setStatusTab(item.id)}
+                            className={`inline-flex min-h-11 items-center gap-2 rounded-full border px-4 text-xs font-black uppercase tracking-[0.14em] transition ${
+                              statusTab === item.id
+                                ? "border-gold/60 bg-gold/12 text-gold"
+                                : "border-white/12 bg-white/[0.045] text-white/62 hover:border-white/25 hover:text-white"
+                            }`}
+                          >
+                            <item.icon size={15} /> {item.label}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="mt-5 flex gap-2 overflow-x-auto pb-1" role="tablist" aria-label="India match level">
+                      {indiaLevelTabs.map((item) => (
+                        <button
+                          key={item.id}
+                          type="button"
+                          role="tab"
+                          aria-selected={levelTab === item.id}
+                          onClick={() => setLevelTab(item.id)}
+                          className={`shrink-0 rounded-full border px-4 py-2 text-xs font-black uppercase tracking-[0.14em] transition ${
+                            levelTab === item.id
+                              ? "border-cyan/60 bg-cyan/10 text-cyan"
+                              : "border-white/12 bg-white/[0.035] text-white/54 hover:border-white/25 hover:text-white"
+                          }`}
+                        >
+                          {item.label}
+                        </button>
+                      ))}
+                    </div>
+
+                    <div className="mt-6 grid gap-3">
+                      {filteredMatches.length ? (
+                        filteredMatches.map((match) => <IndiaMatchCard key={match.id} match={match} />)
+                      ) : (
+                        <div className="rounded-[8px] border border-white/10 bg-night/52 p-5">
+                          <p className="font-display text-3xl font-black uppercase text-white">Nothing in this view</p>
+                          <p className="mt-2 text-sm leading-6 text-white/58">
+                            Try another status or level. The feed refreshes automatically when GitHub Pages rebuilds.
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+
+                <div className="grid gap-5">
+                  <IndiaLevelRankings rankings={rankings} />
+                  <div className="glass rounded-[8px] p-5">
+                    <p className="text-xs font-black uppercase tracking-[0.24em] text-cyan">Update rhythm</p>
+                    <h2 className="mt-2 font-display text-4xl font-black uppercase text-white">Near-Live Scoreboard</h2>
+                    <p className="mt-4 leading-8 text-white/66">
+                      The browser checks the saved site feed every minute. GitHub Actions refreshes the feed on a schedule, so live scores can update without manual publishing.
+                    </p>
+                    <p className="mt-4 rounded-[8px] border border-white/10 bg-white/[0.045] p-4 text-sm leading-7 text-white/56">
+                      Source: {data.source || "public cricket feed"}. For ball-by-ball guaranteed data, connect an official paid cricket data API later.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
+        );
+      }
+
+      function normalizedIndiaRankings(data) {
+        const existing = asArray(data.rankings);
+        return indiaLevelTabs
+          .filter((level) => level.id !== "all")
+          .map((level, index) => {
+            const found = existing.find((item) => item.id === level.id) || {};
+            return {
+              id: level.id,
+              label: found.label || level.label,
+              order: found.order || index + 1,
+              live: found.live || 0,
+              recent: found.recent || 0,
+              upcoming: found.upcoming || 0,
+              total: found.total || 0,
+            };
+          })
+          .sort((a, b) => a.order - b.order);
+      }
+
+      function IndiaFeatureMatch({ match }) {
+        return (
+          <article className="relative overflow-hidden rounded-[8px] border border-gold/24 bg-[radial-gradient(circle_at_88%_12%,rgba(244,185,66,0.2),transparent_34%),rgba(255,255,255,0.05)] p-6">
+            <div className="absolute right-[-56px] top-[-60px] h-44 w-44 rounded-full bg-gold/10 blur-3xl" aria-hidden="true" />
+            <div className="relative flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <p className="text-xs font-black uppercase tracking-[0.24em] text-gold">{match.statusLabel || match.status || "India match"}</p>
+                <h2 className="mt-2 font-display text-5xl font-black uppercase leading-none text-white">{matchTitle(match)}</h2>
+                <p className="mt-3 text-sm font-semibold text-white/52">{matchTimeLine(match)}</p>
+              </div>
+              <span className={levelBadgeClass(match.level)}>
+                {match.levelLabel || match.level || "cricket"}
+              </span>
+            </div>
+            <div className="relative mt-6 grid gap-3 sm:grid-cols-2">
+              {asArray(match.teams).length ? (
+                asArray(match.teams).map((team, index) => <IndiaTeamScore key={`${team.name}-${index}`} team={team} />)
+              ) : (
+                <p className="rounded-[8px] border border-white/10 bg-night/55 p-4 font-display text-3xl font-black uppercase text-white">
+                  Scorecard pending
+                </p>
+              )}
+            </div>
+            <p className="relative mt-5 rounded-[8px] border border-white/10 bg-night/55 p-4 text-base font-bold leading-7 text-white/78">
+              {match.overview || "Match details will update when the public feed posts the next score state."}
+            </p>
+          </article>
+        );
+      }
+
+      function IndiaTeamScore({ team }) {
+        return (
+          <div className="rounded-[8px] border border-white/10 bg-night/55 p-4">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-white/44">{cleanMatchText(team.name || team.team, "Team")}</p>
+            <p className="mt-2 font-display text-4xl font-black uppercase text-white">{cleanMatchText(team.score || team.run, "Yet to bat")}</p>
+          </div>
+        );
+      }
+
+      function IndiaMatchCard({ match }) {
+        return (
+          <article className="rounded-[8px] border border-white/10 bg-white/[0.04] p-4 transition hover:border-gold/35 hover:bg-white/[0.06]">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="rounded-full border border-white/12 bg-night/70 px-3 py-1 text-[0.62rem] font-black uppercase tracking-[0.16em] text-white/55">
+                    {match.statusLabel || match.status}
+                  </span>
+                  <span className={levelBadgeClass(match.level)}>{match.levelLabel || match.level}</span>
+                </div>
+                <h3 className="mt-3 font-display text-3xl font-black uppercase leading-none text-white">{matchTitle(match)}</h3>
+                <p className="mt-2 text-sm font-semibold text-white/50">{matchTimeLine(match)}</p>
+              </div>
+              {match.sourceUrl && (
+                <a
+                  href={match.sourceUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex min-h-10 shrink-0 items-center justify-center gap-2 rounded-full border border-white/12 px-4 text-xs font-black uppercase tracking-[0.14em] text-white/62 transition hover:border-gold/45 hover:text-gold"
+                >
+                  Source <Icon.ExternalLink size={14} />
+                </a>
+              )}
+            </div>
+            <div className="mt-4 grid gap-2 sm:grid-cols-2">
+              {asArray(match.teams).map((team, index) => (
+                <div key={`${team.name}-${index}`} className="rounded-[8px] bg-night/52 p-3">
+                  <p className="text-xs font-bold uppercase tracking-[0.16em] text-white/40">{cleanMatchText(team.name || team.team, `Team ${index + 1}`)}</p>
+                  <p className="mt-1 font-display text-2xl font-black uppercase text-white">{cleanMatchText(team.score || team.run, "Score pending")}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-4 text-sm font-semibold leading-6 text-white/62">{match.overview || match.series || "Match update pending."}</p>
+          </article>
+        );
+      }
+
+      function IndiaLevelRankings({ rankings }) {
+        return (
+          <div className="glass rounded-[8px] p-5">
+            <p className="text-xs font-black uppercase tracking-[0.24em] text-gold">Level ranking</p>
+            <h2 className="mt-2 font-display text-4xl font-black uppercase text-white">International to State</h2>
+            <div className="mt-5 grid gap-3">
+              {rankings.map((level) => (
+                <div key={level.id} className="rounded-[8px] border border-white/10 bg-night/52 p-4">
+                  <div className="flex items-center justify-between gap-3">
+                    <div className="flex items-center gap-3">
+                      <span className="grid h-9 w-9 place-items-center rounded-[8px] border border-gold/24 bg-gold/10 font-display text-xl font-black text-gold">
+                        {level.order}
+                      </span>
+                      <div>
+                        <p className="font-display text-2xl font-black uppercase leading-none text-white">{level.label}</p>
+                        <p className="mt-1 text-xs font-bold uppercase tracking-[0.14em] text-white/38">{level.total} matches tracked</p>
+                      </div>
+                    </div>
+                    <span className="font-display text-3xl font-black text-cyan">{level.live}</span>
+                  </div>
+                  <div className="mt-3 grid grid-cols-3 gap-2 text-center text-xs font-black uppercase tracking-[0.12em]">
+                    <span className="rounded-full bg-crimson/10 px-2 py-1 text-crimson">Live {level.live}</span>
+                    <span className="rounded-full bg-gold/10 px-2 py-1 text-gold">Future {level.upcoming}</span>
+                    <span className="rounded-full bg-white/7 px-2 py-1 text-white/48">Past {level.recent}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        );
+      }
+
+      function levelBadgeClass(level) {
+        const tone = {
+          international: "border-gold/40 bg-gold/10 text-gold",
+          league: "border-cyan/40 bg-cyan/10 text-cyan",
+          women: "border-crimson/45 bg-crimson/10 text-crimson",
+          domestic: "border-white/20 bg-white/8 text-white/68",
+        }[level] || "border-white/20 bg-white/8 text-white/68";
+        return `inline-flex items-center rounded-full border px-3 py-1 text-[0.62rem] font-black uppercase tracking-[0.16em] ${tone}`;
+      }
+
       function CoinPage() {
         return (
-          <main className="route-bg page-grain min-h-screen overflow-hidden px-5 pb-16 pt-28 sm:px-8">
+          <main className="route-bg page-grain min-h-screen overflow-hidden px-5 pb-16 pt-36 sm:px-8">
             <section className="relative mx-auto max-w-7xl">
               <div className="absolute left-1/2 top-10 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-gold/12 blur-3xl" aria-hidden="true" />
               <motion.div className="relative grid gap-8 lg:grid-cols-[1fr_0.85fr] lg:items-center" initial={{ opacity: 0, y: 26 }} animate={{ opacity: 1, y: 0 }}>
@@ -3235,7 +3687,7 @@ const RouterContext = React.createContext(null);
 
       function PlaceholderPage({ title, kicker, description, icon: PageIcon }) {
         return (
-          <main className="route-bg page-grain px-5 pb-16 pt-32 sm:px-8">
+          <main className="route-bg page-grain px-5 pb-16 pt-36 sm:px-8">
             <section className="mx-auto max-w-7xl">
               <motion.div
                 className="grid min-h-[68vh] items-center gap-10 lg:grid-cols-[0.95fr_1.05fr]"
@@ -3318,43 +3770,50 @@ const RouterContext = React.createContext(null);
 
         return (
           <BrowserRouter basename={routerBasename}>
-            <ScrollToTop />
-            <MetaManager />
-            <Navbar />
-            <Routes>
-              <Route path="/" element={<LandingPage />} />
-              <Route
-                path="/arena"
-                element={<ArenaPage />}
-              />
-              <Route
-                path="/memes"
-                element={<MemeGeneratorPage />}
-              />
-              <Route
-                path="/meme"
-                element={<MemeGeneratorPage />}
-              />
-              <Route
-                path="/coin"
-                element={<CoinPage />}
-              />
-              <Route
-                path="/kurukshetra-coin"
-                element={<CoinPage />}
-              />
-              <Route
-                path="*"
-                element={
-                  <PlaceholderPage
-                    title="Page Not Found"
-                    kicker="CricKuru"
-                    description="This page is not available yet. Use the navigation to return to the CricKuru experience."
-                    icon={Icon.Sparkles}
-                  />
-                }
-              />
-            </Routes>
+            <IndiaMatchesProvider>
+              <ScrollToTop />
+              <MetaManager />
+              <IndiaLiveStrip />
+              <Navbar />
+              <Routes>
+                <Route path="/" element={<LandingPage />} />
+                <Route
+                  path="/india-matches"
+                  element={<IndiaMatchesPage />}
+                />
+                <Route
+                  path="/arena"
+                  element={<ArenaPage />}
+                />
+                <Route
+                  path="/memes"
+                  element={<MemeGeneratorPage />}
+                />
+                <Route
+                  path="/meme"
+                  element={<MemeGeneratorPage />}
+                />
+                <Route
+                  path="/coin"
+                  element={<CoinPage />}
+                />
+                <Route
+                  path="/kurukshetra-coin"
+                  element={<CoinPage />}
+                />
+                <Route
+                  path="*"
+                  element={
+                    <PlaceholderPage
+                      title="Page Not Found"
+                      kicker="CricKuru"
+                      description="This page is not available yet. Use the navigation to return to the CricKuru experience."
+                      icon={Icon.Sparkles}
+                    />
+                  }
+                />
+              </Routes>
+            </IndiaMatchesProvider>
           </BrowserRouter>
         );
       }

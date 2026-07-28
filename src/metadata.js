@@ -28,6 +28,18 @@ export const ROUTE_METADATA = [
     jsonLdType: "arena",
   },
   {
+    path: "/india-matches",
+    canonicalPath: "/india-matches",
+    title: "India Live Cricket Scores, Fixtures and Results - CricKuru",
+    description:
+      "Follow India-linked live cricket scores, recent results, future fixtures, and match levels from international cricket to domestic and state-level matches.",
+    ogType: "website",
+    themeColor: "#05070B",
+    changefreq: "daily",
+    priority: "0.9",
+    jsonLdType: "indiaMatches",
+  },
+  {
     path: "/memes",
     canonicalPath: "/memes",
     title: "CricKuru Meme Forge - Cricket Meme Generator",
@@ -212,6 +224,37 @@ function jsonLdForRoute(metadata) {
           "@type": "Offer",
           price: "0",
           priceCurrency: "USD",
+        },
+      },
+    ];
+  }
+
+  if (metadata.jsonLdType === "indiaMatches") {
+    return [
+      basePage,
+      {
+        "@context": "https://schema.org",
+        "@type": "SportsEvent",
+        name: "India Cricket Match Updates",
+        sport: "Cricket",
+        url: canonicalUrl,
+        organizer: {
+          "@type": "Organization",
+          name: SITE_NAME,
+          url: SITE_ORIGIN,
+        },
+        eventStatus: "https://schema.org/EventScheduled",
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        name: "CricKuru India Cricket Match Feed",
+        description: metadata.description,
+        url: canonicalUrl,
+        keywords: ["India cricket", "live scores", "fixtures", "domestic cricket", "state cricket"],
+        creator: {
+          "@type": "Organization",
+          name: SITE_NAME,
         },
       },
     ];
