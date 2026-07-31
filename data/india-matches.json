@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-07-31T16:51:01.924Z",
+  "syncedAt": "2026-07-31T18:21:37.981Z",
   "summary": {
     "live": 1,
     "recent": 10,
@@ -24,18 +24,18 @@
         {
           "name": "Purani Dilli 6",
           "shortName": "PD",
-          "score": "95/3 (10.6 Ov)"
+          "score": "202/4 (19.6 Ov)"
         },
         {
           "name": "Central Delhi Kings",
           "shortName": "CDK",
-          "score": ""
+          "score": "38 (2.5 Ov)"
         }
       ],
       "dateLabel": "31 Jul 2026, 09:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Central Delhi Kings opt to bowl",
+      "overview": "Central Delhi Kings need 165 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168901",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-07-31T15:30:00.000Z",
@@ -1483,18 +1483,18 @@
         {
           "name": "Purani Dilli 6",
           "shortName": "PD",
-          "score": "95/3 (10.6 Ov)"
+          "score": "202/4 (19.6 Ov)"
         },
         {
           "name": "Central Delhi Kings",
           "shortName": "CDK",
-          "score": ""
+          "score": "38 (2.5 Ov)"
         }
       ],
       "dateLabel": "31 Jul 2026, 09:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Central Delhi Kings opt to bowl",
+      "overview": "Central Delhi Kings need 165 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168901",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-07-31T15:30:00.000Z",
