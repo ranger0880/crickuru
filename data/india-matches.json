@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-01T09:32:48.205Z",
+  "syncedAt": "2026-08-01T11:05:33.747Z",
   "summary": {
     "live": 1,
     "recent": 10,
@@ -24,18 +24,18 @@
         {
           "name": "East Delhi Riders",
           "shortName": "EDR",
-          "score": "161/8 (16.6 Ov)"
+          "score": "165/10 (18.1 Ov)"
         },
         {
           "name": "South Delhi Superstarz",
           "shortName": "SDS",
-          "score": ""
+          "score": "113/4 (10.5 Ov)"
         }
       ],
       "dateLabel": "01 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "South Delhi Superstarz opt to bowl",
+      "overview": "South Delhi Superstarz need 53 runs in 55 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168903",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-01T08:00:00.000Z",
@@ -1483,18 +1483,18 @@
         {
           "name": "East Delhi Riders",
           "shortName": "EDR",
-          "score": "161/8 (16.6 Ov)"
+          "score": "165/10 (18.1 Ov)"
         },
         {
           "name": "South Delhi Superstarz",
           "shortName": "SDS",
-          "score": ""
+          "score": "113/4 (10.5 Ov)"
         }
       ],
       "dateLabel": "01 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "South Delhi Superstarz opt to bowl",
+      "overview": "South Delhi Superstarz need 53 runs in 55 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168903",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-01T08:00:00.000Z",
