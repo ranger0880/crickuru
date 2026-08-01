@@ -2,14 +2,45 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-01T21:57:57.840Z",
+  "syncedAt": "2026-08-01T23:01:38.699Z",
   "summary": {
     "live": 0,
-    "recent": 11,
-    "upcoming": 37,
+    "recent": 10,
+    "upcoming": 38,
     "total": 48
   },
   "all": [
+    {
+      "id": "upcoming-168921",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Outer Delhi Warriors vs Central Delhi Kings, 4th Match",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "Outer Delhi Warriors",
+          "shortName": "ODW",
+          "score": ""
+        },
+        {
+          "name": "Central Delhi Kings",
+          "shortName": "CDK",
+          "score": ""
+        }
+      ],
+      "dateLabel": "02 Aug 2026, 01:30 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Match starts at Aug 02, 08:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168921",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-02T08:00:00.000Z",
+      "rawId": 168921
+    },
     {
       "id": "upcoming-169497",
       "status": "upcoming",
@@ -1158,37 +1189,6 @@
       "rawId": 151746
     },
     {
-      "id": "recent-168913",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "West Delhi Lions vs New Delhi Tigers, 3rd Match",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "West Delhi Lions",
-          "shortName": "WDL",
-          "score": "170/5 (19.6 Ov)"
-        },
-        {
-          "name": "New Delhi Tigers",
-          "shortName": "NDT",
-          "score": "151/10 (19.6 Ov)"
-        }
-      ],
-      "dateLabel": "01 Aug 2026, 07:00 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "West Delhi Lions won by 19 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168913",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-01T13:30:00.000Z",
-      "rawId": 168913
-    },
-    {
       "id": "recent-152720",
       "status": "recent",
       "statusLabel": "Past",
@@ -1501,6 +1501,37 @@
   ],
   "live": [],
   "upcoming": [
+    {
+      "id": "upcoming-168921",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Outer Delhi Warriors vs Central Delhi Kings, 4th Match",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "Outer Delhi Warriors",
+          "shortName": "ODW",
+          "score": ""
+        },
+        {
+          "name": "Central Delhi Kings",
+          "shortName": "CDK",
+          "score": ""
+        }
+      ],
+      "dateLabel": "02 Aug 2026, 01:30 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Match starts at Aug 02, 08:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168921",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-02T08:00:00.000Z",
+      "rawId": 168921
+    },
     {
       "id": "upcoming-169497",
       "status": "upcoming",
@@ -2651,37 +2682,6 @@
   ],
   "recent": [
     {
-      "id": "recent-168913",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "West Delhi Lions vs New Delhi Tigers, 3rd Match",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "West Delhi Lions",
-          "shortName": "WDL",
-          "score": "170/5 (19.6 Ov)"
-        },
-        {
-          "name": "New Delhi Tigers",
-          "shortName": "NDT",
-          "score": "151/10 (19.6 Ov)"
-        }
-      ],
-      "dateLabel": "01 Aug 2026, 07:00 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "West Delhi Lions won by 19 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168913",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-01T13:30:00.000Z",
-      "rawId": 168913
-    },
-    {
       "id": "recent-152720",
       "status": "recent",
       "statusLabel": "Past",
@@ -3007,8 +3007,8 @@
       "label": "League / IPL",
       "order": 2,
       "live": 0,
-      "recent": 1,
-      "upcoming": 0,
+      "recent": 0,
+      "upcoming": 1,
       "total": 1
     },
     {
