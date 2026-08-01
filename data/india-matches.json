@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-01T15:09:36.105Z",
+  "syncedAt": "2026-08-01T16:13:21.515Z",
   "summary": {
     "live": 1,
     "recent": 10,
@@ -24,18 +24,18 @@
         {
           "name": "West Delhi Lions",
           "shortName": "WDL",
-          "score": "163/3 (18.4 Ov)"
+          "score": "170/5 (19.6 Ov)"
         },
         {
           "name": "New Delhi Tigers",
           "shortName": "NDT",
-          "score": ""
+          "score": "39/4 (5.4 Ov)"
         }
       ],
       "dateLabel": "01 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "New Delhi Tigers opt to bowl",
+      "overview": "New Delhi Tigers need 132 runs in 86 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168913",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-01T13:30:00.000Z",
@@ -1483,18 +1483,18 @@
         {
           "name": "West Delhi Lions",
           "shortName": "WDL",
-          "score": "163/3 (18.4 Ov)"
+          "score": "170/5 (19.6 Ov)"
         },
         {
           "name": "New Delhi Tigers",
           "shortName": "NDT",
-          "score": ""
+          "score": "39/4 (5.4 Ov)"
         }
       ],
       "dateLabel": "01 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "New Delhi Tigers opt to bowl",
+      "overview": "New Delhi Tigers need 132 runs in 86 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168913",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-01T13:30:00.000Z",
