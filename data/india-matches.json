@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-01T13:58:45.145Z",
+  "syncedAt": "2026-08-01T15:09:36.105Z",
   "summary": {
     "live": 1,
     "recent": 10,
@@ -24,7 +24,7 @@
         {
           "name": "West Delhi Lions",
           "shortName": "WDL",
-          "score": "35/2 (5.1 Ov)"
+          "score": "163/3 (18.4 Ov)"
         },
         {
           "name": "New Delhi Tigers",
@@ -1483,7 +1483,7 @@
         {
           "name": "West Delhi Lions",
           "shortName": "WDL",
-          "score": "35/2 (5.1 Ov)"
+          "score": "163/3 (18.4 Ov)"
         },
         {
           "name": "New Delhi Tigers",
