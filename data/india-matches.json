@@ -2,45 +2,14 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-01T11:05:33.747Z",
+  "syncedAt": "2026-08-01T12:13:03.533Z",
   "summary": {
-    "live": 1,
-    "recent": 10,
+    "live": 0,
+    "recent": 11,
     "upcoming": 36,
     "total": 47
   },
   "all": [
-    {
-      "id": "live-168903",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "East Delhi Riders vs South Delhi Superstarz, 2nd Match",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "East Delhi Riders",
-          "shortName": "EDR",
-          "score": "165/10 (18.1 Ov)"
-        },
-        {
-          "name": "South Delhi Superstarz",
-          "shortName": "SDS",
-          "score": "113/4 (10.5 Ov)"
-        }
-      ],
-      "dateLabel": "01 Aug 2026, 01:30 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "South Delhi Superstarz need 53 runs in 55 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168903",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-01T08:00:00.000Z",
-      "rawId": 168903
-    },
     {
       "id": "upcoming-163013",
       "status": "upcoming",
@@ -1158,6 +1127,37 @@
       "rawId": 151746
     },
     {
+      "id": "recent-168903",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "East Delhi Riders vs South Delhi Superstarz, 2nd Match",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "East Delhi Riders",
+          "shortName": "EDR",
+          "score": "165/10 (18.1 Ov)"
+        },
+        {
+          "name": "South Delhi Superstarz",
+          "shortName": "SDS",
+          "score": "169/6 (18.1 Ov)"
+        }
+      ],
+      "dateLabel": "01 Aug 2026, 01:30 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "South Delhi Superstarz won by 4 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168903",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-01T08:00:00.000Z",
+      "rawId": 168903
+    },
+    {
       "id": "recent-152720",
       "status": "recent",
       "statusLabel": "Past",
@@ -1468,39 +1468,7 @@
       "rawId": 129420
     }
   ],
-  "live": [
-    {
-      "id": "live-168903",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "East Delhi Riders vs South Delhi Superstarz, 2nd Match",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "East Delhi Riders",
-          "shortName": "EDR",
-          "score": "165/10 (18.1 Ov)"
-        },
-        {
-          "name": "South Delhi Superstarz",
-          "shortName": "SDS",
-          "score": "113/4 (10.5 Ov)"
-        }
-      ],
-      "dateLabel": "01 Aug 2026, 01:30 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "South Delhi Superstarz need 53 runs in 55 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168903",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-01T08:00:00.000Z",
-      "rawId": 168903
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "upcoming-163013",
@@ -2621,6 +2589,37 @@
   ],
   "recent": [
     {
+      "id": "recent-168903",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "East Delhi Riders vs South Delhi Superstarz, 2nd Match",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "East Delhi Riders",
+          "shortName": "EDR",
+          "score": "165/10 (18.1 Ov)"
+        },
+        {
+          "name": "South Delhi Superstarz",
+          "shortName": "SDS",
+          "score": "169/6 (18.1 Ov)"
+        }
+      ],
+      "dateLabel": "01 Aug 2026, 01:30 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "South Delhi Superstarz won by 4 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168903",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-01T08:00:00.000Z",
+      "rawId": 168903
+    },
+    {
       "id": "recent-152720",
       "status": "recent",
       "statusLabel": "Past",
@@ -2945,8 +2944,8 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 1,
-      "recent": 0,
+      "live": 0,
+      "recent": 1,
       "upcoming": 0,
       "total": 1
     },
