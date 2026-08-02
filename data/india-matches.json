@@ -2,18 +2,18 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-02T06:36:35.247Z",
+  "syncedAt": "2026-08-02T08:59:43.598Z",
   "summary": {
-    "live": 0,
+    "live": 1,
     "recent": 10,
-    "upcoming": 38,
+    "upcoming": 37,
     "total": 48
   },
   "all": [
     {
-      "id": "upcoming-168921",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-168921",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -35,7 +35,7 @@
       "dateLabel": "02 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Match starts at Aug 02, 08:00 GMT",
+      "overview": "Toss delayed due to wet outfield",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168921",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-02T08:00:00.000Z",
@@ -1499,12 +1499,11 @@
       "rawId": 129420
     }
   ],
-  "live": [],
-  "upcoming": [
+  "live": [
     {
-      "id": "upcoming-168921",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-168921",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -1526,12 +1525,14 @@
       "dateLabel": "02 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Match starts at Aug 02, 08:00 GMT",
+      "overview": "Toss delayed due to wet outfield",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168921",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-02T08:00:00.000Z",
       "rawId": 168921
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-169497",
       "status": "upcoming",
@@ -3006,9 +3007,9 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 0,
+      "live": 1,
       "recent": 0,
-      "upcoming": 1,
+      "upcoming": 0,
       "total": 1
     },
     {
