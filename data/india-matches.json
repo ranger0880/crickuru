@@ -2,18 +2,18 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-03T07:38:26.710Z",
+  "syncedAt": "2026-08-03T10:58:51.451Z",
   "summary": {
-    "live": 0,
+    "live": 1,
     "recent": 10,
-    "upcoming": 38,
+    "upcoming": 37,
     "total": 48
   },
   "all": [
     {
-      "id": "upcoming-168931",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-168931",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -24,18 +24,18 @@
         {
           "name": "West Delhi Lions",
           "shortName": "WDL",
-          "score": ""
+          "score": "180/6 (19.6 Ov)"
         },
         {
           "name": "Purani Dilli 6",
           "shortName": "PD",
-          "score": ""
+          "score": "77/1 (6.6 Ov)"
         }
       ],
       "dateLabel": "03 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Match starts at Aug 03, 08:00 GMT",
+      "overview": "Purani Dilli 6 need 104 runs in 78 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168931",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-03T08:00:00.000Z",
@@ -1499,12 +1499,11 @@
       "rawId": 129420
     }
   ],
-  "live": [],
-  "upcoming": [
+  "live": [
     {
-      "id": "upcoming-168931",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-168931",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -1515,23 +1514,25 @@
         {
           "name": "West Delhi Lions",
           "shortName": "WDL",
-          "score": ""
+          "score": "180/6 (19.6 Ov)"
         },
         {
           "name": "Purani Dilli 6",
           "shortName": "PD",
-          "score": ""
+          "score": "77/1 (6.6 Ov)"
         }
       ],
       "dateLabel": "03 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Match starts at Aug 03, 08:00 GMT",
+      "overview": "Purani Dilli 6 need 104 runs in 78 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168931",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-03T08:00:00.000Z",
       "rawId": 168931
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-169497",
       "status": "upcoming",
@@ -3006,9 +3007,9 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 0,
+      "live": 1,
       "recent": 0,
-      "upcoming": 1,
+      "upcoming": 0,
       "total": 1
     },
     {
