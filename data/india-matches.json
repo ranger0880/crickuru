@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-04T08:09:27.487Z",
+  "syncedAt": "2026-08-04T10:50:19.504Z",
   "summary": {
     "live": 1,
     "recent": 10,
@@ -24,7 +24,7 @@
         {
           "name": "New Delhi Tigers",
           "shortName": "NDT",
-          "score": "10 (0.6 Ov)"
+          "score": "101/2 (10.5 Ov)"
         },
         {
           "name": "Outer Delhi Warriors",
@@ -35,7 +35,7 @@
       "dateLabel": "04 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "New Delhi Tigers opt to bat",
+      "overview": "Match reduced to 15 overs per side due to rain",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168943",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-04T08:00:00.000Z",
@@ -1514,7 +1514,7 @@
         {
           "name": "New Delhi Tigers",
           "shortName": "NDT",
-          "score": "10 (0.6 Ov)"
+          "score": "101/2 (10.5 Ov)"
         },
         {
           "name": "Outer Delhi Warriors",
@@ -1525,7 +1525,7 @@
       "dateLabel": "04 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "New Delhi Tigers opt to bat",
+      "overview": "Match reduced to 15 overs per side due to rain",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168943",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-04T08:00:00.000Z",
