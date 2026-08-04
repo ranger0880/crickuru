@@ -2,18 +2,18 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-04T05:34:33.947Z",
+  "syncedAt": "2026-08-04T08:09:27.487Z",
   "summary": {
-    "live": 0,
+    "live": 1,
     "recent": 10,
-    "upcoming": 38,
+    "upcoming": 37,
     "total": 48
   },
   "all": [
     {
-      "id": "upcoming-168943",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-168943",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -24,7 +24,7 @@
         {
           "name": "New Delhi Tigers",
           "shortName": "NDT",
-          "score": ""
+          "score": "10 (0.6 Ov)"
         },
         {
           "name": "Outer Delhi Warriors",
@@ -35,7 +35,7 @@
       "dateLabel": "04 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Match starts at Aug 04, 08:00 GMT",
+      "overview": "New Delhi Tigers opt to bat",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168943",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-04T08:00:00.000Z",
@@ -1499,12 +1499,11 @@
       "rawId": 129420
     }
   ],
-  "live": [],
-  "upcoming": [
+  "live": [
     {
-      "id": "upcoming-168943",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-168943",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -1515,7 +1514,7 @@
         {
           "name": "New Delhi Tigers",
           "shortName": "NDT",
-          "score": ""
+          "score": "10 (0.6 Ov)"
         },
         {
           "name": "Outer Delhi Warriors",
@@ -1526,12 +1525,14 @@
       "dateLabel": "04 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Match starts at Aug 04, 08:00 GMT",
+      "overview": "New Delhi Tigers opt to bat",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168943",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-04T08:00:00.000Z",
       "rawId": 168943
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-169497",
       "status": "upcoming",
@@ -3006,9 +3007,9 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 0,
+      "live": 1,
       "recent": 0,
-      "upcoming": 1,
+      "upcoming": 0,
       "total": 1
     },
     {
