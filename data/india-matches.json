@@ -2,45 +2,14 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-04T17:22:18.519Z",
+  "syncedAt": "2026-08-04T19:07:47.079Z",
   "summary": {
-    "live": 1,
-    "recent": 11,
+    "live": 0,
+    "recent": 12,
     "upcoming": 37,
     "total": 49
   },
   "all": [
-    {
-      "id": "live-168953",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "South Delhi Superstarz vs West Delhi Lions, 9th Match",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "South Delhi Superstarz",
-          "shortName": "SDS",
-          "score": "160/10 (19.5 Ov)"
-        },
-        {
-          "name": "West Delhi Lions",
-          "shortName": "WDL",
-          "score": "67/2 (7.5 Ov)"
-        }
-      ],
-      "dateLabel": "04 Aug 2026, 07:00 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "West Delhi Lions need 94 runs in 73 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168953",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-04T13:30:00.000Z",
-      "rawId": 168953
-    },
     {
       "id": "upcoming-169497",
       "status": "upcoming",
@@ -1220,6 +1189,37 @@
       "rawId": 166810
     },
     {
+      "id": "recent-168953",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "South Delhi Superstarz vs West Delhi Lions, 9th Match",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "South Delhi Superstarz",
+          "shortName": "SDS",
+          "score": "160/10 (19.5 Ov)"
+        },
+        {
+          "name": "West Delhi Lions",
+          "shortName": "WDL",
+          "score": "164/5 (18.1 Ov)"
+        }
+      ],
+      "dateLabel": "04 Aug 2026, 07:00 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "West Delhi Lions won by 5 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168953",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-04T13:30:00.000Z",
+      "rawId": 168953
+    },
+    {
       "id": "recent-152720",
       "status": "recent",
       "statusLabel": "Past",
@@ -1530,39 +1530,7 @@
       "rawId": 129420
     }
   ],
-  "live": [
-    {
-      "id": "live-168953",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "South Delhi Superstarz vs West Delhi Lions, 9th Match",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "South Delhi Superstarz",
-          "shortName": "SDS",
-          "score": "160/10 (19.5 Ov)"
-        },
-        {
-          "name": "West Delhi Lions",
-          "shortName": "WDL",
-          "score": "67/2 (7.5 Ov)"
-        }
-      ],
-      "dateLabel": "04 Aug 2026, 07:00 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "West Delhi Lions need 94 runs in 73 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168953",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-04T13:30:00.000Z",
-      "rawId": 168953
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "upcoming-169497",
@@ -2745,6 +2713,37 @@
       "rawId": 166810
     },
     {
+      "id": "recent-168953",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "South Delhi Superstarz vs West Delhi Lions, 9th Match",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "South Delhi Superstarz",
+          "shortName": "SDS",
+          "score": "160/10 (19.5 Ov)"
+        },
+        {
+          "name": "West Delhi Lions",
+          "shortName": "WDL",
+          "score": "164/5 (18.1 Ov)"
+        }
+      ],
+      "dateLabel": "04 Aug 2026, 07:00 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "West Delhi Lions won by 5 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168953",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-04T13:30:00.000Z",
+      "rawId": 168953
+    },
+    {
       "id": "recent-152720",
       "status": "recent",
       "statusLabel": "Past",
@@ -3069,8 +3068,8 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 1,
-      "recent": 1,
+      "live": 0,
+      "recent": 2,
       "upcoming": 0,
       "total": 2
     },
