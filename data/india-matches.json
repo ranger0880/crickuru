@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-04T10:50:19.504Z",
+  "syncedAt": "2026-08-04T13:03:54.689Z",
   "summary": {
     "live": 1,
     "recent": 10,
@@ -24,20 +24,20 @@
         {
           "name": "New Delhi Tigers",
           "shortName": "NDT",
-          "score": "101/2 (10.5 Ov)"
+          "score": "156/5 (14.6 Ov)"
         },
         {
           "name": "Outer Delhi Warriors",
           "shortName": "ODW",
-          "score": ""
+          "score": "155/8 (14.5 Ov)"
         }
       ],
       "dateLabel": "04 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Match reduced to 15 overs per side due to rain",
+      "overview": "Outer Delhi Warriors need 1 run in 1 ball - 15 overs game due to rain, DLS target 156",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168943",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores/upcoming-matches",
       "startTime": "2026-08-04T08:00:00.000Z",
       "rawId": 168943
     },
@@ -1514,20 +1514,20 @@
         {
           "name": "New Delhi Tigers",
           "shortName": "NDT",
-          "score": "101/2 (10.5 Ov)"
+          "score": "156/5 (14.6 Ov)"
         },
         {
           "name": "Outer Delhi Warriors",
           "shortName": "ODW",
-          "score": ""
+          "score": "155/8 (14.5 Ov)"
         }
       ],
       "dateLabel": "04 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Match reduced to 15 overs per side due to rain",
+      "overview": "Outer Delhi Warriors need 1 run in 1 ball - 15 overs game due to rain, DLS target 156",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168943",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores/upcoming-matches",
       "startTime": "2026-08-04T08:00:00.000Z",
       "rawId": 168943
     }
