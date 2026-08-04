@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-04T15:35:44.263Z",
+  "syncedAt": "2026-08-04T17:22:18.519Z",
   "summary": {
-    "live": 2,
-    "recent": 10,
+    "live": 1,
+    "recent": 11,
     "upcoming": 37,
     "total": 49
   },
@@ -24,53 +24,22 @@
         {
           "name": "South Delhi Superstarz",
           "shortName": "SDS",
-          "score": "115/6 (13.5 Ov)"
+          "score": "160/10 (19.5 Ov)"
         },
         {
           "name": "West Delhi Lions",
           "shortName": "WDL",
-          "score": ""
+          "score": "67/2 (7.5 Ov)"
         }
       ],
       "dateLabel": "04 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "West Delhi Lions opt to bowl",
+      "overview": "West Delhi Lions need 94 runs in 73 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168953",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-04T13:30:00.000Z",
       "rawId": 168953
-    },
-    {
-      "id": "live-166810",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "IDream Tiruppur Tamizhans vs Dindigul Dragons, 1st Match",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "IDream Tiruppur Tamizhans",
-          "shortName": "ITT",
-          "score": "107/10 (15.4 Ov)"
-        },
-        {
-          "name": "Dindigul Dragons",
-          "shortName": "DGD",
-          "score": ""
-        }
-      ],
-      "dateLabel": "04 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "NPR College Ground, Dindigul",
-      "overview": "Innings Break",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166810",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-04T14:00:00.000Z",
-      "rawId": 166810
     },
     {
       "id": "upcoming-169497",
@@ -1220,6 +1189,37 @@
       "rawId": 151746
     },
     {
+      "id": "recent-166810",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "IDream Tiruppur Tamizhans vs Dindigul Dragons, 1st Match",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "IDream Tiruppur Tamizhans",
+          "shortName": "ITT",
+          "score": "107/10 (15.4 Ov)"
+        },
+        {
+          "name": "Dindigul Dragons",
+          "shortName": "DGD",
+          "score": "111/3 (18.3 Ov)"
+        }
+      ],
+      "dateLabel": "04 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "NPR College Ground, Dindigul",
+      "overview": "Dindigul Dragons won by 7 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166810",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-04T14:00:00.000Z",
+      "rawId": 166810
+    },
+    {
       "id": "recent-152720",
       "status": "recent",
       "statusLabel": "Past",
@@ -1545,53 +1545,22 @@
         {
           "name": "South Delhi Superstarz",
           "shortName": "SDS",
-          "score": "115/6 (13.5 Ov)"
+          "score": "160/10 (19.5 Ov)"
         },
         {
           "name": "West Delhi Lions",
           "shortName": "WDL",
-          "score": ""
+          "score": "67/2 (7.5 Ov)"
         }
       ],
       "dateLabel": "04 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "West Delhi Lions opt to bowl",
+      "overview": "West Delhi Lions need 94 runs in 73 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168953",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-04T13:30:00.000Z",
       "rawId": 168953
-    },
-    {
-      "id": "live-166810",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "IDream Tiruppur Tamizhans vs Dindigul Dragons, 1st Match",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "IDream Tiruppur Tamizhans",
-          "shortName": "ITT",
-          "score": "107/10 (15.4 Ov)"
-        },
-        {
-          "name": "Dindigul Dragons",
-          "shortName": "DGD",
-          "score": ""
-        }
-      ],
-      "dateLabel": "04 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "NPR College Ground, Dindigul",
-      "overview": "Innings Break",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166810",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-04T14:00:00.000Z",
-      "rawId": 166810
     }
   ],
   "upcoming": [
@@ -2745,6 +2714,37 @@
   ],
   "recent": [
     {
+      "id": "recent-166810",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "IDream Tiruppur Tamizhans vs Dindigul Dragons, 1st Match",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "IDream Tiruppur Tamizhans",
+          "shortName": "ITT",
+          "score": "107/10 (15.4 Ov)"
+        },
+        {
+          "name": "Dindigul Dragons",
+          "shortName": "DGD",
+          "score": "111/3 (18.3 Ov)"
+        }
+      ],
+      "dateLabel": "04 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "NPR College Ground, Dindigul",
+      "overview": "Dindigul Dragons won by 7 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166810",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-04T14:00:00.000Z",
+      "rawId": 166810
+    },
+    {
       "id": "recent-152720",
       "status": "recent",
       "statusLabel": "Past",
@@ -3069,8 +3069,8 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 2,
-      "recent": 0,
+      "live": 1,
+      "recent": 1,
       "upcoming": 0,
       "total": 2
     },
