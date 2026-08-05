@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-05T11:30:01.583Z",
+  "syncedAt": "2026-08-05T13:15:20.127Z",
   "summary": {
     "live": 1,
     "recent": 10,
@@ -24,18 +24,18 @@
         {
           "name": "Trichy Grand Cholas",
           "shortName": "TRI",
-          "score": "163/5 (18.2 Ov)"
+          "score": "173/7 (19.6 Ov)"
         },
         {
           "name": "Madurai Panthers",
           "shortName": "MDP",
-          "score": ""
+          "score": "128/7 (15.6 Ov)"
         }
       ],
       "dateLabel": "05 Aug 2026, 03:30 pm",
       "time": "",
       "place": "NPR College Ground, Dindigul",
-      "overview": "Madurai Panthers opt to bowl",
+      "overview": "Madurai Panthers need 46 runs in 24 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166820",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-05T10:00:00.000Z",
@@ -1514,18 +1514,18 @@
         {
           "name": "Trichy Grand Cholas",
           "shortName": "TRI",
-          "score": "163/5 (18.2 Ov)"
+          "score": "173/7 (19.6 Ov)"
         },
         {
           "name": "Madurai Panthers",
           "shortName": "MDP",
-          "score": ""
+          "score": "128/7 (15.6 Ov)"
         }
       ],
       "dateLabel": "05 Aug 2026, 03:30 pm",
       "time": "",
       "place": "NPR College Ground, Dindigul",
-      "overview": "Madurai Panthers opt to bowl",
+      "overview": "Madurai Panthers need 46 runs in 24 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166820",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-05T10:00:00.000Z",
