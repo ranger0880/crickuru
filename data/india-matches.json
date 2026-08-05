@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-05T15:39:01.726Z",
+  "syncedAt": "2026-08-05T17:10:50.192Z",
   "summary": {
     "live": 1,
     "recent": 10,
@@ -29,13 +29,13 @@
         {
           "name": "Chepauk Super Gillies",
           "shortName": "CSG",
-          "score": ""
+          "score": "154/9 (16.5 Ov)"
         }
       ],
       "dateLabel": "05 Aug 2026, 07:30 pm",
       "time": "",
       "place": "NPR College Ground, Dindigul",
-      "overview": "Innings Break",
+      "overview": "Chepauk Super Gillies need 51 runs in 19 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166823",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-05T14:00:00.000Z",
@@ -1519,13 +1519,13 @@
         {
           "name": "Chepauk Super Gillies",
           "shortName": "CSG",
-          "score": ""
+          "score": "154/9 (16.5 Ov)"
         }
       ],
       "dateLabel": "05 Aug 2026, 07:30 pm",
       "time": "",
       "place": "NPR College Ground, Dindigul",
-      "overview": "Innings Break",
+      "overview": "Chepauk Super Gillies need 51 runs in 19 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166823",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-05T14:00:00.000Z",
