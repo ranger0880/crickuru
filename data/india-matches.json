@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-05T13:15:20.127Z",
+  "syncedAt": "2026-08-05T15:39:01.726Z",
   "summary": {
     "live": 1,
     "recent": 10,
@@ -11,35 +11,35 @@
   },
   "all": [
     {
-      "id": "live-166820",
+      "id": "live-166823",
       "status": "live",
       "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
       "sourceScope": "global",
-      "title": "Trichy Grand Cholas vs Madurai Panthers, 2nd Match",
+      "title": "Nellai Royal Kings vs Chepauk Super Gillies, 3rd Match",
       "series": "Tamil Nadu Premier League 2026",
       "teams": [
         {
-          "name": "Trichy Grand Cholas",
-          "shortName": "TRI",
-          "score": "173/7 (19.6 Ov)"
+          "name": "Nellai Royal Kings",
+          "shortName": "NRK",
+          "score": "204/6 (19.6 Ov)"
         },
         {
-          "name": "Madurai Panthers",
-          "shortName": "MDP",
-          "score": "128/7 (15.6 Ov)"
+          "name": "Chepauk Super Gillies",
+          "shortName": "CSG",
+          "score": ""
         }
       ],
-      "dateLabel": "05 Aug 2026, 03:30 pm",
+      "dateLabel": "05 Aug 2026, 07:30 pm",
       "time": "",
       "place": "NPR College Ground, Dindigul",
-      "overview": "Madurai Panthers need 46 runs in 24 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166820",
+      "overview": "Innings Break",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166823",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-05T10:00:00.000Z",
-      "rawId": 166820
+      "startTime": "2026-08-05T14:00:00.000Z",
+      "rawId": 166823
     },
     {
       "id": "upcoming-169497",
@@ -1501,35 +1501,35 @@
   ],
   "live": [
     {
-      "id": "live-166820",
+      "id": "live-166823",
       "status": "live",
       "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
       "sourceScope": "global",
-      "title": "Trichy Grand Cholas vs Madurai Panthers, 2nd Match",
+      "title": "Nellai Royal Kings vs Chepauk Super Gillies, 3rd Match",
       "series": "Tamil Nadu Premier League 2026",
       "teams": [
         {
-          "name": "Trichy Grand Cholas",
-          "shortName": "TRI",
-          "score": "173/7 (19.6 Ov)"
+          "name": "Nellai Royal Kings",
+          "shortName": "NRK",
+          "score": "204/6 (19.6 Ov)"
         },
         {
-          "name": "Madurai Panthers",
-          "shortName": "MDP",
-          "score": "128/7 (15.6 Ov)"
+          "name": "Chepauk Super Gillies",
+          "shortName": "CSG",
+          "score": ""
         }
       ],
-      "dateLabel": "05 Aug 2026, 03:30 pm",
+      "dateLabel": "05 Aug 2026, 07:30 pm",
       "time": "",
       "place": "NPR College Ground, Dindigul",
-      "overview": "Madurai Panthers need 46 runs in 24 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166820",
+      "overview": "Innings Break",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166823",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-05T10:00:00.000Z",
-      "rawId": 166820
+      "startTime": "2026-08-05T14:00:00.000Z",
+      "rawId": 166823
     }
   ],
   "upcoming": [
