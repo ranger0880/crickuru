@@ -2,18 +2,18 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-06T11:41:04.003Z",
+  "syncedAt": "2026-08-06T13:20:59.756Z",
   "summary": {
-    "live": 0,
+    "live": 1,
     "recent": 10,
-    "upcoming": 39,
+    "upcoming": 38,
     "total": 49
   },
   "all": [
     {
-      "id": "upcoming-168973",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-168973",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -24,18 +24,18 @@
         {
           "name": "Outer Delhi Warriors",
           "shortName": "ODW",
-          "score": ""
+          "score": "132/2 (9.6 Ov)"
         },
         {
           "name": "South Delhi Superstarz",
           "shortName": "SDS",
-          "score": ""
+          "score": "43/4 (4.5 Ov)"
         }
       ],
       "dateLabel": "06 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "South Delhi Superstarz opt to bowl",
+      "overview": "South Delhi Superstarz need 90 runs in 31 balls - 10 Overs game due to rain",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168973",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-06T08:00:00.000Z",
@@ -76,10 +76,10 @@
       "id": "upcoming-169497",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-team",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "Sri Lanka XI vs India, 3-Day Warm-up Match",
       "series": "India tour of Sri Lanka 2026",
       "teams": [
@@ -99,7 +99,7 @@
       "place": "Nondescripts Cricket Club Ground, Colombo",
       "overview": "Match starts at Aug 07, 04:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169497",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-07T04:30:00.000Z",
       "rawId": 169497
     },
@@ -1530,12 +1530,11 @@
       "rawId": 129420
     }
   ],
-  "live": [],
-  "upcoming": [
+  "live": [
     {
-      "id": "upcoming-168973",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-168973",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -1546,23 +1545,25 @@
         {
           "name": "Outer Delhi Warriors",
           "shortName": "ODW",
-          "score": ""
+          "score": "132/2 (9.6 Ov)"
         },
         {
           "name": "South Delhi Superstarz",
           "shortName": "SDS",
-          "score": ""
+          "score": "43/4 (4.5 Ov)"
         }
       ],
       "dateLabel": "06 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "South Delhi Superstarz opt to bowl",
+      "overview": "South Delhi Superstarz need 90 runs in 31 balls - 10 Overs game due to rain",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/168973",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-06T08:00:00.000Z",
       "rawId": 168973
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-166833",
       "status": "upcoming",
@@ -1598,10 +1599,10 @@
       "id": "upcoming-169497",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-team",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "Sri Lanka XI vs India, 3-Day Warm-up Match",
       "series": "India tour of Sri Lanka 2026",
       "teams": [
@@ -1621,7 +1622,7 @@
       "place": "Nondescripts Cricket Club Ground, Colombo",
       "overview": "Match starts at Aug 07, 04:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169497",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-07T04:30:00.000Z",
       "rawId": 169497
     },
@@ -3061,16 +3062,16 @@
       "order": 1,
       "live": 0,
       "recent": 10,
-      "upcoming": 37,
-      "total": 47
+      "upcoming": 36,
+      "total": 46
     },
     {
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 0,
+      "live": 1,
       "recent": 0,
-      "upcoming": 2,
+      "upcoming": 1,
       "total": 2
     },
     {
@@ -3088,8 +3089,8 @@
       "order": 4,
       "live": 0,
       "recent": 0,
-      "upcoming": 0,
-      "total": 0
+      "upcoming": 1,
+      "total": 1
     }
   ],
   "errors": []
