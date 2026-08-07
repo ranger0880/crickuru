@@ -34,6 +34,8 @@ const RouterContext = React.createContext(null);
         if (cleanBase && path.startsWith(cleanBase)) {
           path = path.slice(cleanBase.length) || "/";
         }
+        path = path.toLowerCase().replace(/\\/g, "/");
+        if (path.endsWith("/index.html")) path = path.replace(/\/index\.html$/i, "");
         path = path.startsWith("/") ? path : `/${path}`;
         return path.length > 1 ? path.replace(/\/+$/, "") : path;
       }
