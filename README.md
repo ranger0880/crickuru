@@ -12,6 +12,7 @@ npm run build
 ```
 
 The build writes the deployable static site to `dist/` and refreshes `crickuru-hostinger-upload.zip` for Hostinger File Manager upload.
+For automatic GitHub-to-Hostinger publishing, use `HOSTINGER_GITHUB_DEPLOY.md`.
 
 ## CricKuru Arena
 
@@ -60,6 +61,7 @@ The `/warriors` route displays the full public Kurukshetra Warriors CricHeroes f
 - `.htaccess` - Hostinger MIME, security-header, and route fallback rules
 - `scripts/` - production static-file, metadata, favicon, and ZIP generation
 - `HOSTINGER_UPLOAD_INSTRUCTIONS.md` - manual Hostinger upload guide
+- `HOSTINGER_GITHUB_DEPLOY.md` - automatic GitHub Actions deployment guide
 - `crickuru-hostinger-upload.zip` - upload-ready production bundle
 
 ## CricHeroes

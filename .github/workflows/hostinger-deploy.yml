@@ -1,0 +1,76 @@
+name: Deploy CricKuru to Hostinger
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "**/*.md"
+  workflow_dispatch:
+  workflow_run:
+    workflows:
+      - Kurukshetra Warriors CricHeroes Feed Sync
+      - India Cricket Match Feed Sync
+    types:
+      - completed
+
+permissions:
+  contents: read
+
+concurrency:
+  group: hostinger-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    environment:
+      name: hostinger-production
+      url: https://crickuru.com
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build production site
+        run: npm run build
+
+      - name: Check Hostinger secrets
+        id: hostinger_secrets
+        env:
+          HOSTINGER_FTP_SERVER: ${{ secrets.HOSTINGER_FTP_SERVER }}
+          HOSTINGER_FTP_USERNAME: ${{ secrets.HOSTINGER_FTP_USERNAME }}
+          HOSTINGER_FTP_PASSWORD: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
+          HOSTINGER_FTP_DIR: ${{ secrets.HOSTINGER_FTP_DIR }}
+        run: |
+          if [ -n "$HOSTINGER_FTP_SERVER" ] && [ -n "$HOSTINGER_FTP_USERNAME" ] && [ -n "$HOSTINGER_FTP_PASSWORD" ] && [ -n "$HOSTINGER_FTP_DIR" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::warning::Hostinger FTP secrets are not configured yet. Add HOSTINGER_FTP_SERVER, HOSTINGER_FTP_USERNAME, HOSTINGER_FTP_PASSWORD, and HOSTINGER_FTP_DIR in GitHub Actions secrets, then run this workflow again."
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Upload dist to Hostinger public_html
+        if: steps.hostinger_secrets.outputs.ready == 'true'
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.HOSTINGER_FTP_SERVER }}
+          username: ${{ secrets.HOSTINGER_FTP_USERNAME }}
+          password: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: ${{ secrets.HOSTINGER_FTP_DIR }}
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
