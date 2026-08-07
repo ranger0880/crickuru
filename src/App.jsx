@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useMemo, useReducer, useRef, useState } from "react";
+import React, { useCallback, useContext, useEffect, useMemo, useReducer, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { applyRouteMetadata } from "./metadata.js";
@@ -47,6 +47,12 @@ const RouterContext = React.createContext(null);
         return routeMatch ? `/${routeMatch[1]}` : "/";
       }
 
+      function currentRouteSegment(pathname, basename = "/") {
+        const normalized = normalizePath(pathname, basename);
+        if (normalized === "/") return "/";
+        return `/${normalized.replace(/^\/+/, "").split("/")[0]}`;
+      }
+
       function localFileHref(to) {
         if (!isLocalFilePreview() || typeof to !== "string" || !to.startsWith("/")) return "";
         const route = localRouteFiles[normalizePath(to, "/")] || localRouteFiles["/"];
@@ -54,13 +60,24 @@ const RouterContext = React.createContext(null);
       }
 
       function BrowserRouter({ basename = "/", children }) {
-        const [pathname, setPathname] = useState(() => currentRoutePath(basename));
+        const getBrowserPath = useCallback(() => {
+          if (isLocalFilePreview()) return currentRoutePath(basename);
+          return normalizePath(window.location.pathname, basename);
+        }, [basename]);
+
+        const [pathname, setPathname] = useState(() => getBrowserPath());
 
         useEffect(() => {
-          const onPopState = () => setPathname(currentRoutePath(basename));
+          const onPopState = () => setPathname(getBrowserPath());
+          const onLoad = () => setPathname(getBrowserPath());
+          onLoad();
+          window.addEventListener("load", onLoad);
           window.addEventListener("popstate", onPopState);
-          return () => window.removeEventListener("popstate", onPopState);
-        }, [basename]);
+          return () => {
+            window.removeEventListener("load", onLoad);
+            window.removeEventListener("popstate", onPopState);
+          };
+        }, [getBrowserPath]);
 
         const navigate = (to) => {
           if (!to || to.startsWith("http")) {
@@ -74,7 +91,7 @@ const RouterContext = React.createContext(null);
             return;
           }
           window.history.pushState({}, "", `${cleanBase}${target}`);
-          setPathname(currentRoutePath(basename));
+          setPathname(normalizePath(target, basename));
         };
 
         return <RouterContext.Provider value={{ basename, pathname, navigate }}>{children}</RouterContext.Provider>;
@@ -110,7 +127,7 @@ const RouterContext = React.createContext(null);
 
       function NavLink({ to, className, children, ...props }) {
         const router = useRouter();
-        const activePath = router.pathname === "/" ? "/" : `/${router.pathname.replace(/^\/+/, "").split("/")[0]}`;
+        const activePath = currentRouteSegment(router.pathname, router.basename);
         const targetPath = to === "/" ? "/" : `/${to.replace(/^\/+/, "").split("/")[0]}`;
         const isActive = activePath === targetPath;
         const resolvedClassName = typeof className === "function" ? className({ isActive }) : className;
@@ -120,7 +137,7 @@ const RouterContext = React.createContext(null);
       function Routes({ children }) {
         const router = useRouter();
         const routeList = React.Children.toArray(children);
-        const resolvedPath = router.pathname === "/" ? "/" : `/${router.pathname.replace(/^\/+/, "").split("/")[0]}`;
+        const resolvedPath = currentRouteSegment(router.pathname, router.basename);
         const exact = routeList.find((child) => child.props.path === resolvedPath);
         const fallback = routeList.find((child) => child.props.path === "*");
         return (exact || fallback)?.props.element || null;
