@@ -1,4 +1,4 @@
-const SITE_ORIGIN = "https://www.crickuru.com";
+const SITE_ORIGIN = "https://crickuru.com";
 const SITE_NAME = "CricKuru";
 const DEFAULT_IMAGE_PATH = "/assets/stadium-vip-warriors.png";
 
