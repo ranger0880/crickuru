@@ -19,7 +19,7 @@ permissions:
 
 concurrency:
   group: hostinger-production
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   deploy:
