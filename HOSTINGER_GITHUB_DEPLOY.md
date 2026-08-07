@@ -30,7 +30,7 @@ Recommended safer setup:
 
 If you use the default FTP account that starts above the website folder:
 
-- GitHub secret `HOSTINGER_FTP_DIR`: `/public_html/`
+- GitHub secret `HOSTINGER_FTP_DIR`: `public_html/`
 
 ## Step 2 - Add GitHub Secrets
 
@@ -49,9 +49,10 @@ Add these four secrets:
 | `HOSTINGER_FTP_SERVER` | FTP host from Hostinger, usually like `ftp.crickuru.com` or a server IP |
 | `HOSTINGER_FTP_USERNAME` | FTP username from Hostinger |
 | `HOSTINGER_FTP_PASSWORD` | FTP password from Hostinger |
-| `HOSTINGER_FTP_DIR` | `/` if FTP account is rooted at `public_html`, otherwise `/public_html/` |
+| `HOSTINGER_FTP_DIR` | `/` if FTP account is rooted at `public_html`, otherwise `public_html/` |
 
 Do not put quotes around the secret values.
+The workflow also accepts `public_html`, `/public_html`, or `/public_html/` and normalizes it automatically.
 
 ## Step 3 - Run First Deploy
 
