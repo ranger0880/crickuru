@@ -12,8 +12,8 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
-  cancel-in-progress: false
+  group: github-pages-production
+  cancel-in-progress: true
 
 jobs:
   deploy:
@@ -36,6 +36,15 @@ jobs:
 
       - name: Build production site
         run: npm run build
+
+      - name: Write deployment marker
+        run: |
+          {
+            echo "CricKuru GitHub Pages deploy marker"
+            echo "commit=${GITHUB_SHA}"
+            echo "run=${GITHUB_RUN_ID}"
+            echo "deployed_at=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          } > dist/deploy-check.txt
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

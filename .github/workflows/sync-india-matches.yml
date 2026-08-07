@@ -8,18 +8,13 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
-  cancel-in-progress: false
+  group: india-match-feed-sync
+  cancel-in-progress: true
 
 jobs:
-  sync-build-deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  sync-feed:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -37,29 +32,14 @@ jobs:
       - name: Sync India cricket match feed
         run: node tools/sync-india-matches.mjs
 
-      - name: Build production site
-        run: npm run build
-
       - name: Store refreshed India feed in repo
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/india-matches.json crickuru-hostinger-upload.zip
+          git add data/india-matches.json
           if git diff --cached --quiet; then
             echo "No India match feed changes to commit."
           else
-            git commit -m "Sync India cricket match feed [skip ci]"
+            git commit -m "Sync India cricket match feed"
             git push
           fi
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload production site
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4

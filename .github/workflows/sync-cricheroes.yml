@@ -8,18 +8,13 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
-  cancel-in-progress: false
+  group: cricheroes-feed-sync
+  cancel-in-progress: true
 
 jobs:
-  sync-build-deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  sync-feed:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -49,30 +44,11 @@ jobs:
             echo "CricHeroes feed changed."
           fi
 
-      - name: Build production site
-        if: steps.changes.outputs.changed == 'true'
-        run: npm run build
-
       - name: Store refreshed feed in repo
         if: steps.changes.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/crickuru-live.json crickuru-hostinger-upload.zip
-          git commit -m "Sync CricHeroes live feed [skip ci]"
+          git add data/crickuru-live.json
+          git commit -m "Sync CricHeroes live feed"
           git push
-
-      - name: Setup Pages
-        if: steps.changes.outputs.changed == 'true'
-        uses: actions/configure-pages@v5
-
-      - name: Upload production site
-        if: steps.changes.outputs.changed == 'true'
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
-
-      - name: Deploy to GitHub Pages
-        if: steps.changes.outputs.changed == 'true'
-        id: deployment
-        uses: actions/deploy-pages@v4
