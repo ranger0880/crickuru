@@ -110,7 +110,9 @@ const RouterContext = React.createContext(null);
 
       function NavLink({ to, className, children, ...props }) {
         const router = useRouter();
-        const isActive = router.pathname === to;
+        const activePath = router.pathname === "/" ? "/" : `/${router.pathname.replace(/^\/+/, "").split("/")[0]}`;
+        const targetPath = to === "/" ? "/" : `/${to.replace(/^\/+/, "").split("/")[0]}`;
+        const isActive = activePath === targetPath;
         const resolvedClassName = typeof className === "function" ? className({ isActive }) : className;
         return <Link to={to} className={resolvedClassName} {...props}>{children}</Link>;
       }
@@ -118,7 +120,8 @@ const RouterContext = React.createContext(null);
       function Routes({ children }) {
         const router = useRouter();
         const routeList = React.Children.toArray(children);
-        const exact = routeList.find((child) => child.props.path === router.pathname);
+        const resolvedPath = router.pathname === "/" ? "/" : `/${router.pathname.replace(/^\/+/, "").split("/")[0]}`;
+        const exact = routeList.find((child) => child.props.path === resolvedPath);
         const fallback = routeList.find((child) => child.props.path === "*");
         return (exact || fallback)?.props.element || null;
       }
