@@ -98,14 +98,7 @@ const RouterContext = React.createContext(null);
         return (
           <a
             href={href}
-            onClick={(event) => {
-              onClick?.(event);
-              if (event.defaultPrevented || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
-              if (typeof to === "string" && to.startsWith("/")) {
-                event.preventDefault();
-                router.navigate(to);
-              }
-            }}
+            onClick={(event) => onClick?.(event)}
             {...props}
           >
             {children}
