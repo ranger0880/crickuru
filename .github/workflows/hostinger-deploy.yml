@@ -46,6 +46,15 @@ jobs:
       - name: Build production site
         run: npm run build
 
+      - name: Write deployment marker
+        run: |
+          {
+            echo "CricKuru Hostinger deploy marker"
+            echo "commit=${GITHUB_SHA}"
+            echo "run=${GITHUB_RUN_ID}"
+            echo "deployed_at=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          } > dist/deploy-check.txt
+
       - name: Check Hostinger secrets
         id: hostinger_secrets
         env:
