@@ -64,6 +64,18 @@ export const ROUTE_METADATA = [
     jsonLdType: "players",
   },
   {
+    path: "/quiz",
+    canonicalPath: "/quiz",
+    title: "CricKuru Cricket Quiz, Lobby and Leaderboard",
+    description:
+      "Play the CricKuru cricket quiz with 1000 general knowledge and tricky cricket questions, profile registration, powerups, lobby challenges, duels and rotating leaderboards.",
+    ogType: "website",
+    themeColor: "#05070B",
+    changefreq: "daily",
+    priority: "0.88",
+    jsonLdType: "quiz",
+  },
+  {
     path: "/memes",
     canonicalPath: "/memes",
     title: "CricKuru Meme Forge - Cricket Meme Generator",
@@ -344,6 +356,33 @@ function jsonLdForRoute(metadata) {
           "@type": "Place",
           name: "Greater Noida",
         },
+      },
+    ];
+  }
+
+  if (metadata.jsonLdType === "quiz") {
+    return [
+      basePage,
+      {
+        "@context": "https://schema.org",
+        "@type": "Quiz",
+        name: "CricKuru Cricket Quiz",
+        description: metadata.description,
+        url: canonicalUrl,
+        educationalAlignment: "Cricket general knowledge, rules and match awareness",
+        isPartOf: {
+          "@type": "WebSite",
+          name: SITE_NAME,
+          url: SITE_ORIGIN,
+        },
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        name: "CricKuru Quiz Lobby",
+        applicationCategory: "GameApplication",
+        operatingSystem: "Web browser",
+        url: canonicalUrl,
       },
     ];
   }

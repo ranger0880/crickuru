@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useMemo, useReducer, useRef, useState } f
 import { createRoot } from "react-dom/client";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { applyRouteMetadata } from "./metadata.js";
+import QuizPage from "./QuizPage.jsx";
 import "./styles.css";
 
 const RouterContext = React.createContext(null);
@@ -10,6 +11,7 @@ const RouterContext = React.createContext(null);
         "/warriors": "warriors/index.html",
         "/arena": "arena/index.html",
         "/players": "players/index.html",
+        "/quiz": "quiz/index.html",
         "/memes": "memes/index.html",
         "/meme": "meme/index.html",
         "/coin": "coin/index.html",
@@ -23,7 +25,7 @@ const RouterContext = React.createContext(null);
 
       function localPreviewPrefix() {
         const path = decodeURIComponent(window.location.pathname).replace(/\\/g, "/");
-        return /\/(arena|coin|kurukshetra-coin|india-matches|meme|memes|players|warriors)\/index\.html$/i.test(path) ? "../" : "";
+        return /\/(arena|coin|kurukshetra-coin|india-matches|meme|memes|players|quiz|warriors)\/index\.html$/i.test(path) ? "../" : "";
       }
 
       function normalizePath(pathname, basename = "/") {
@@ -39,7 +41,7 @@ const RouterContext = React.createContext(null);
       function currentRoutePath(basename = "/") {
         if (!isLocalFilePreview()) return normalizePath(window.location.pathname, basename);
         const path = decodeURIComponent(window.location.pathname).replace(/\\/g, "/").toLowerCase();
-        const routeMatch = path.match(/\/(arena|coin|kurukshetra-coin|india-matches|meme|memes|players|warriors)\/index\.html$/);
+        const routeMatch = path.match(/\/(arena|coin|kurukshetra-coin|india-matches|meme|memes|players|quiz|warriors)\/index\.html$/);
         return routeMatch ? `/${routeMatch[1]}` : "/";
       }
 
@@ -432,6 +434,7 @@ const RouterContext = React.createContext(null);
         { label: "Warriors", path: "/warriors" },
         { label: "India", path: "/india-matches" },
         { label: "Players", path: "/players" },
+        { label: "Quiz", path: "/quiz" },
         { label: "Arena", path: "/arena" },
         { label: "Memes", path: "/memes" },
         { label: "Kuru Coin", path: "/coin" },
@@ -4791,6 +4794,10 @@ const RouterContext = React.createContext(null);
                   <Route
                     path="/players"
                     element={<PlayersPage />}
+                  />
+                  <Route
+                    path="/quiz"
+                    element={<QuizPage />}
                   />
                   <Route
                     path="/arena"
