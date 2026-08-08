@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-08T03:57:55.193Z",
+  "syncedAt": "2026-08-08T05:10:46.226Z",
   "summary": {
     "live": 1,
     "recent": 10,
@@ -29,13 +29,13 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": ""
+          "score": "27/1 (8.1 Ov)"
         }
       ],
       "dateLabel": "07 Aug 2026, 10:00 am",
       "time": "",
       "place": "Nondescripts Cricket Club Ground, Colombo",
-      "overview": "Day 1: Stumps",
+      "overview": "Day 2: 1st Session - India trail by 336 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169497",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-07T04:30:00.000Z",
@@ -1488,13 +1488,13 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": ""
+          "score": "27/1 (8.1 Ov)"
         }
       ],
       "dateLabel": "07 Aug 2026, 10:00 am",
       "time": "",
       "place": "Nondescripts Cricket Club Ground, Colombo",
-      "overview": "Day 1: Stumps",
+      "overview": "Day 2: 1st Session - India trail by 336 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169497",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-07T04:30:00.000Z",
