@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-09T09:57:04.700Z",
+  "syncedAt": "2026-08-09T10:41:19.989Z",
   "summary": {
     "live": 2,
     "recent": 10,
@@ -29,13 +29,13 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "357/6 (89.6 Ov) & 75 (11.6 Ov)"
+          "score": "357/6 (89.6 Ov) & 119/1 (21.6 Ov)"
         }
       ],
       "dateLabel": "07 Aug 2026, 10:00 am",
       "time": "",
       "place": "Nondescripts Cricket Club Ground, Colombo",
-      "overview": "Day 3: 3rd Session - India need 132 runs",
+      "overview": "Day 3: 3rd Session - India need 88 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169497",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-07T04:30:00.000Z",
@@ -55,18 +55,18 @@
         {
           "name": "New Delhi Tigers",
           "shortName": "NDT",
-          "score": "149/7 (18.6 Ov)"
+          "score": "161/8 (19.6 Ov)"
         },
         {
           "name": "North Delhi Strikers",
           "shortName": "NDS",
-          "score": ""
+          "score": "43 (4.6 Ov)"
         }
       ],
       "dateLabel": "09 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "North Delhi Strikers opt to bowl",
+      "overview": "North Delhi Strikers need 119 runs in 90 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-09T08:00:00.000Z",
@@ -1519,13 +1519,13 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "357/6 (89.6 Ov) & 75 (11.6 Ov)"
+          "score": "357/6 (89.6 Ov) & 119/1 (21.6 Ov)"
         }
       ],
       "dateLabel": "07 Aug 2026, 10:00 am",
       "time": "",
       "place": "Nondescripts Cricket Club Ground, Colombo",
-      "overview": "Day 3: 3rd Session - India need 132 runs",
+      "overview": "Day 3: 3rd Session - India need 88 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169497",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-07T04:30:00.000Z",
@@ -1545,18 +1545,18 @@
         {
           "name": "New Delhi Tigers",
           "shortName": "NDT",
-          "score": "149/7 (18.6 Ov)"
+          "score": "161/8 (19.6 Ov)"
         },
         {
           "name": "North Delhi Strikers",
           "shortName": "NDS",
-          "score": ""
+          "score": "43 (4.6 Ov)"
         }
       ],
       "dateLabel": "09 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "North Delhi Strikers opt to bowl",
+      "overview": "North Delhi Strikers need 119 runs in 90 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-09T08:00:00.000Z",
