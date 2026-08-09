@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-09T06:11:09.160Z",
+  "syncedAt": "2026-08-09T07:17:46.152Z",
   "summary": {
     "live": 1,
     "recent": 10,
@@ -24,7 +24,7 @@
         {
           "name": "Sri Lanka Cricket XI",
           "shortName": "SLCXI",
-          "score": "363/8 (89.6 Ov) & 82/3 (18.5 Ov)"
+          "score": "363/8 (89.6 Ov) & 108/3 (25.2 Ov)"
         },
         {
           "name": "India",
@@ -35,7 +35,7 @@
       "dateLabel": "07 Aug 2026, 10:00 am",
       "time": "",
       "place": "Nondescripts Cricket Club Ground, Colombo",
-      "overview": "Day 3: 1st Session - Sri Lanka Cricket XI lead by 88 runs",
+      "overview": "Day 3: 2nd Session - Sri Lanka Cricket XI lead by 114 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169497",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-07T04:30:00.000Z",
@@ -1483,7 +1483,7 @@
         {
           "name": "Sri Lanka Cricket XI",
           "shortName": "SLCXI",
-          "score": "363/8 (89.6 Ov) & 82/3 (18.5 Ov)"
+          "score": "363/8 (89.6 Ov) & 108/3 (25.2 Ov)"
         },
         {
           "name": "India",
@@ -1494,7 +1494,7 @@
       "dateLabel": "07 Aug 2026, 10:00 am",
       "time": "",
       "place": "Nondescripts Cricket Club Ground, Colombo",
-      "overview": "Day 3: 1st Session - Sri Lanka Cricket XI lead by 88 runs",
+      "overview": "Day 3: 2nd Session - Sri Lanka Cricket XI lead by 114 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169497",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-07T04:30:00.000Z",
