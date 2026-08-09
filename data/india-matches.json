@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-09T09:02:56.341Z",
+  "syncedAt": "2026-08-09T09:57:04.700Z",
   "summary": {
     "live": 2,
     "recent": 10,
@@ -29,13 +29,13 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "357/6 (89.6 Ov)"
+          "score": "357/6 (89.6 Ov) & 75 (11.6 Ov)"
         }
       ],
       "dateLabel": "07 Aug 2026, 10:00 am",
       "time": "",
       "place": "Nondescripts Cricket Club Ground, Colombo",
-      "overview": "Day 3: Innings Break - Sri Lanka Cricket XI lead by 206 runs",
+      "overview": "Day 3: 3rd Session - India need 132 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169497",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-07T04:30:00.000Z",
@@ -55,7 +55,7 @@
         {
           "name": "New Delhi Tigers",
           "shortName": "NDT",
-          "score": "81/4 (10.3 Ov)"
+          "score": "149/7 (18.6 Ov)"
         },
         {
           "name": "North Delhi Strikers",
@@ -1519,13 +1519,13 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "357/6 (89.6 Ov)"
+          "score": "357/6 (89.6 Ov) & 75 (11.6 Ov)"
         }
       ],
       "dateLabel": "07 Aug 2026, 10:00 am",
       "time": "",
       "place": "Nondescripts Cricket Club Ground, Colombo",
-      "overview": "Day 3: Innings Break - Sri Lanka Cricket XI lead by 206 runs",
+      "overview": "Day 3: 3rd Session - India need 132 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169497",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-07T04:30:00.000Z",
@@ -1545,7 +1545,7 @@
         {
           "name": "New Delhi Tigers",
           "shortName": "NDT",
-          "score": "81/4 (10.3 Ov)"
+          "score": "149/7 (18.6 Ov)"
         },
         {
           "name": "North Delhi Strikers",
