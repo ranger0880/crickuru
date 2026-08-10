@@ -2,14 +2,76 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-10T07:47:06.244Z",
+  "syncedAt": "2026-08-10T09:23:54.516Z",
   "summary": {
-    "live": 0,
+    "live": 1,
     "recent": 10,
-    "upcoming": 36,
-    "total": 46
+    "upcoming": 37,
+    "total": 48
   },
   "all": [
+    {
+      "id": "live-169041",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "East Delhi Riders vs West Delhi Lions, 20th Match",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "East Delhi Riders",
+          "shortName": "EDR",
+          "score": "95/5 (14.6 Ov)"
+        },
+        {
+          "name": "West Delhi Lions",
+          "shortName": "WDL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "10 Aug 2026, 01:30 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "West Delhi Lions opt to bowl",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169041",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-10T08:00:00.000Z",
+      "rawId": 169041
+    },
+    {
+      "id": "upcoming-166883",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "SKM Salem Spartans vs Madurai Panthers, 11th Match",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "SKM Salem Spartans",
+          "shortName": "SAL",
+          "score": ""
+        },
+        {
+          "name": "Madurai Panthers",
+          "shortName": "MDP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "10 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "NPR College Ground, Dindigul",
+      "overview": "Match starts at Aug 10, 14:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166883",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-10T14:00:00.000Z",
+      "rawId": 166883
+    },
     {
       "id": "upcoming-163013",
       "status": "upcoming",
@@ -1130,22 +1192,22 @@
       "id": "recent-169497",
       "status": "recent",
       "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
       "title": "Sri Lanka Cricket XI vs India, 3-Day Warm-up Match",
       "series": "India tour of Sri Lanka 2026",
       "teams": [
         {
           "name": "Sri Lanka Cricket XI",
           "shortName": "SLCXI",
-          "score": "363/8 (89.6 Ov) & 200/6 (44.6 Ov)"
+          "score": "363/8 (90 Ov) & 200/6 (45 Ov)"
         },
         {
           "name": "India",
           "shortName": "IND",
-          "score": "357/6 (89.6 Ov) & 214/4 (44.6 Ov)"
+          "score": "357/6 (90 Ov) & 214/4 (45 Ov)"
         }
       ],
       "dateLabel": "07 Aug 2026, 10:00 am",
@@ -1153,7 +1215,7 @@
       "place": "Nondescripts Cricket Club Ground, Colombo",
       "overview": "India won by 6 wkts",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169497",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-08-07T04:30:00.000Z",
       "rawId": 169497
     },
@@ -1437,8 +1499,71 @@
       "rawId": 129442
     }
   ],
-  "live": [],
+  "live": [
+    {
+      "id": "live-169041",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "East Delhi Riders vs West Delhi Lions, 20th Match",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "East Delhi Riders",
+          "shortName": "EDR",
+          "score": "95/5 (14.6 Ov)"
+        },
+        {
+          "name": "West Delhi Lions",
+          "shortName": "WDL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "10 Aug 2026, 01:30 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "West Delhi Lions opt to bowl",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169041",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-10T08:00:00.000Z",
+      "rawId": 169041
+    }
+  ],
   "upcoming": [
+    {
+      "id": "upcoming-166883",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "SKM Salem Spartans vs Madurai Panthers, 11th Match",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "SKM Salem Spartans",
+          "shortName": "SAL",
+          "score": ""
+        },
+        {
+          "name": "Madurai Panthers",
+          "shortName": "MDP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "10 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "NPR College Ground, Dindigul",
+      "overview": "Match starts at Aug 10, 14:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166883",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-10T14:00:00.000Z",
+      "rawId": 166883
+    },
     {
       "id": "upcoming-163013",
       "status": "upcoming",
@@ -2561,22 +2686,22 @@
       "id": "recent-169497",
       "status": "recent",
       "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-team",
       "title": "Sri Lanka Cricket XI vs India, 3-Day Warm-up Match",
       "series": "India tour of Sri Lanka 2026",
       "teams": [
         {
           "name": "Sri Lanka Cricket XI",
           "shortName": "SLCXI",
-          "score": "363/8 (89.6 Ov) & 200/6 (44.6 Ov)"
+          "score": "363/8 (90 Ov) & 200/6 (45 Ov)"
         },
         {
           "name": "India",
           "shortName": "IND",
-          "score": "357/6 (89.6 Ov) & 214/4 (44.6 Ov)"
+          "score": "357/6 (90 Ov) & 214/4 (45 Ov)"
         }
       ],
       "dateLabel": "07 Aug 2026, 10:00 am",
@@ -2584,7 +2709,7 @@
       "place": "Nondescripts Cricket Club Ground, Colombo",
       "overview": "India won by 6 wkts",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169497",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-08-07T04:30:00.000Z",
       "rawId": 169497
     },
@@ -2874,18 +2999,18 @@
       "label": "International",
       "order": 1,
       "live": 0,
-      "recent": 9,
+      "recent": 10,
       "upcoming": 36,
-      "total": 45
+      "total": 46
     },
     {
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 0,
+      "live": 1,
       "recent": 0,
-      "upcoming": 0,
-      "total": 0
+      "upcoming": 1,
+      "total": 2
     },
     {
       "id": "women",
@@ -2901,9 +3026,9 @@
       "label": "Domestic / State",
       "order": 4,
       "live": 0,
-      "recent": 1,
+      "recent": 0,
       "upcoming": 0,
-      "total": 1
+      "total": 0
     }
   ],
   "errors": []
