@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-10T16:23:14.448Z",
+  "syncedAt": "2026-08-10T17:26:06.597Z",
   "summary": {
-    "live": 2,
-    "recent": 10,
+    "live": 1,
+    "recent": 11,
     "upcoming": 36,
     "total": 48
   },
@@ -24,53 +24,22 @@
         {
           "name": "Outer Delhi Warriors",
           "shortName": "ODW",
-          "score": "158/8 (17.4 Ov)"
+          "score": "165/10 (19.1 Ov)"
         },
         {
           "name": "Purani Dilli 6",
           "shortName": "PD",
-          "score": ""
+          "score": "70/2 (7.6 Ov)"
         }
       ],
       "dateLabel": "10 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Purani Dilli 6 opt to bowl",
+      "overview": "Purani Dilli 6 need 96 runs in 72 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169051",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-10T13:30:00.000Z",
       "rawId": 169051
-    },
-    {
-      "id": "live-166883",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Madurai Panthers vs SKM Salem Spartans, 11th Match",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Madurai Panthers",
-          "shortName": "MDP",
-          "score": "195/8 (19.6 Ov)"
-        },
-        {
-          "name": "SKM Salem Spartans",
-          "shortName": "SAL",
-          "score": "64/3 (8.4 Ov)"
-        }
-      ],
-      "dateLabel": "10 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "NPR College Ground, Dindigul",
-      "overview": "SKM Salem Spartans need 132 runs in 68 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166883",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-10T14:00:00.000Z",
-      "rawId": 166883
     },
     {
       "id": "upcoming-163013",
@@ -1189,6 +1158,37 @@
       "rawId": 151746
     },
     {
+      "id": "recent-166883",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Madurai Panthers vs SKM Salem Spartans, 11th Match",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Madurai Panthers",
+          "shortName": "MDP",
+          "score": "195/8 (19.6 Ov)"
+        },
+        {
+          "name": "SKM Salem Spartans",
+          "shortName": "SAL",
+          "score": "159/9 (19.6 Ov)"
+        }
+      ],
+      "dateLabel": "10 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "NPR College Ground, Dindigul",
+      "overview": "Madurai Panthers won by 36 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166883",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-10T14:00:00.000Z",
+      "rawId": 166883
+    },
+    {
       "id": "recent-169497",
       "status": "recent",
       "statusLabel": "Past",
@@ -1514,53 +1514,22 @@
         {
           "name": "Outer Delhi Warriors",
           "shortName": "ODW",
-          "score": "158/8 (17.4 Ov)"
+          "score": "165/10 (19.1 Ov)"
         },
         {
           "name": "Purani Dilli 6",
           "shortName": "PD",
-          "score": ""
+          "score": "70/2 (7.6 Ov)"
         }
       ],
       "dateLabel": "10 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Purani Dilli 6 opt to bowl",
+      "overview": "Purani Dilli 6 need 96 runs in 72 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169051",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-10T13:30:00.000Z",
       "rawId": 169051
-    },
-    {
-      "id": "live-166883",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Madurai Panthers vs SKM Salem Spartans, 11th Match",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Madurai Panthers",
-          "shortName": "MDP",
-          "score": "195/8 (19.6 Ov)"
-        },
-        {
-          "name": "SKM Salem Spartans",
-          "shortName": "SAL",
-          "score": "64/3 (8.4 Ov)"
-        }
-      ],
-      "dateLabel": "10 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "NPR College Ground, Dindigul",
-      "overview": "SKM Salem Spartans need 132 runs in 68 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166883",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-10T14:00:00.000Z",
-      "rawId": 166883
     }
   ],
   "upcoming": [
@@ -2683,6 +2652,37 @@
   ],
   "recent": [
     {
+      "id": "recent-166883",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Madurai Panthers vs SKM Salem Spartans, 11th Match",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Madurai Panthers",
+          "shortName": "MDP",
+          "score": "195/8 (19.6 Ov)"
+        },
+        {
+          "name": "SKM Salem Spartans",
+          "shortName": "SAL",
+          "score": "159/9 (19.6 Ov)"
+        }
+      ],
+      "dateLabel": "10 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "NPR College Ground, Dindigul",
+      "overview": "Madurai Panthers won by 36 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166883",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-10T14:00:00.000Z",
+      "rawId": 166883
+    },
+    {
       "id": "recent-169497",
       "status": "recent",
       "statusLabel": "Past",
@@ -3007,8 +3007,8 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 2,
-      "recent": 0,
+      "live": 1,
+      "recent": 1,
       "upcoming": 0,
       "total": 2
     },
