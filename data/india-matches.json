@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-10T15:16:56.803Z",
+  "syncedAt": "2026-08-10T16:23:14.448Z",
   "summary": {
     "live": 2,
     "recent": 10,
@@ -24,7 +24,7 @@
         {
           "name": "Outer Delhi Warriors",
           "shortName": "ODW",
-          "score": "84/2 (6.5 Ov)"
+          "score": "158/8 (17.4 Ov)"
         },
         {
           "name": "Purani Dilli 6",
@@ -55,18 +55,18 @@
         {
           "name": "Madurai Panthers",
           "shortName": "MDP",
-          "score": "167/5 (17.2 Ov)"
+          "score": "195/8 (19.6 Ov)"
         },
         {
           "name": "SKM Salem Spartans",
           "shortName": "SAL",
-          "score": ""
+          "score": "64/3 (8.4 Ov)"
         }
       ],
       "dateLabel": "10 Aug 2026, 07:30 pm",
       "time": "",
       "place": "NPR College Ground, Dindigul",
-      "overview": "SKM Salem Spartans opt to bowl",
+      "overview": "SKM Salem Spartans need 132 runs in 68 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166883",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-10T14:00:00.000Z",
@@ -1514,7 +1514,7 @@
         {
           "name": "Outer Delhi Warriors",
           "shortName": "ODW",
-          "score": "84/2 (6.5 Ov)"
+          "score": "158/8 (17.4 Ov)"
         },
         {
           "name": "Purani Dilli 6",
@@ -1545,18 +1545,18 @@
         {
           "name": "Madurai Panthers",
           "shortName": "MDP",
-          "score": "167/5 (17.2 Ov)"
+          "score": "195/8 (19.6 Ov)"
         },
         {
           "name": "SKM Salem Spartans",
           "shortName": "SAL",
-          "score": ""
+          "score": "64/3 (8.4 Ov)"
         }
       ],
       "dateLabel": "10 Aug 2026, 07:30 pm",
       "time": "",
       "place": "NPR College Ground, Dindigul",
-      "overview": "SKM Salem Spartans opt to bowl",
+      "overview": "SKM Salem Spartans need 132 runs in 68 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166883",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-10T14:00:00.000Z",
