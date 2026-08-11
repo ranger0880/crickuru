@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-11T09:03:37.842Z",
+  "syncedAt": "2026-08-11T10:11:19.517Z",
   "summary": {
-    "live": 1,
+    "live": 2,
     "recent": 10,
-    "upcoming": 37,
+    "upcoming": 36,
     "total": 48
   },
   "all": [
@@ -18,55 +18,55 @@
       "levelLabel": "League / IPL",
       "sourceType": "league",
       "sourceScope": "global",
-      "title": "Central Delhi Kings vs New Delhi Tigers, 22nd Match",
+      "title": "New Delhi Tigers vs Central Delhi Kings, 22nd Match",
       "series": "Delhi Premier League 2026",
       "teams": [
         {
-          "name": "Central Delhi Kings",
-          "shortName": "CDK",
-          "score": ""
-        },
-        {
           "name": "New Delhi Tigers",
           "shortName": "NDT",
+          "score": "12/1 (0.6 Ov)"
+        },
+        {
+          "name": "Central Delhi Kings",
+          "shortName": "CDK",
           "score": ""
         }
       ],
       "dateLabel": "11 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Toss delayed due to rain",
+      "overview": "18 Overs game due to rain",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169057",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-11T08:00:00.000Z",
       "rawId": 169057
     },
     {
-      "id": "upcoming-166893",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-166893",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
       "sourceScope": "global",
-      "title": "Nellai Royal Kings vs Trichy Grand Cholas, 12th Match",
+      "title": "Trichy Grand Cholas vs Nellai Royal Kings, 12th Match",
       "series": "Tamil Nadu Premier League 2026",
       "teams": [
         {
-          "name": "Nellai Royal Kings",
-          "shortName": "NRK",
-          "score": ""
-        },
-        {
           "name": "Trichy Grand Cholas",
           "shortName": "TRI",
+          "score": "15 (1.6 Ov)"
+        },
+        {
+          "name": "Nellai Royal Kings",
+          "shortName": "NRK",
           "score": ""
         }
       ],
       "dateLabel": "11 Aug 2026, 03:30 pm",
       "time": "",
       "place": "NPR College Ground, Dindigul",
-      "overview": "Match starts at Aug 11, 10:00 GMT",
+      "overview": "Nellai Royal Kings opt to bowl",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166893",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-11T10:00:00.000Z",
@@ -1508,62 +1508,62 @@
       "levelLabel": "League / IPL",
       "sourceType": "league",
       "sourceScope": "global",
-      "title": "Central Delhi Kings vs New Delhi Tigers, 22nd Match",
+      "title": "New Delhi Tigers vs Central Delhi Kings, 22nd Match",
       "series": "Delhi Premier League 2026",
       "teams": [
         {
-          "name": "Central Delhi Kings",
-          "shortName": "CDK",
-          "score": ""
-        },
-        {
           "name": "New Delhi Tigers",
           "shortName": "NDT",
+          "score": "12/1 (0.6 Ov)"
+        },
+        {
+          "name": "Central Delhi Kings",
+          "shortName": "CDK",
           "score": ""
         }
       ],
       "dateLabel": "11 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Toss delayed due to rain",
+      "overview": "18 Overs game due to rain",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169057",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-11T08:00:00.000Z",
       "rawId": 169057
-    }
-  ],
-  "upcoming": [
+    },
     {
-      "id": "upcoming-166893",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-166893",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
       "sourceScope": "global",
-      "title": "Nellai Royal Kings vs Trichy Grand Cholas, 12th Match",
+      "title": "Trichy Grand Cholas vs Nellai Royal Kings, 12th Match",
       "series": "Tamil Nadu Premier League 2026",
       "teams": [
         {
-          "name": "Nellai Royal Kings",
-          "shortName": "NRK",
-          "score": ""
-        },
-        {
           "name": "Trichy Grand Cholas",
           "shortName": "TRI",
+          "score": "15 (1.6 Ov)"
+        },
+        {
+          "name": "Nellai Royal Kings",
+          "shortName": "NRK",
           "score": ""
         }
       ],
       "dateLabel": "11 Aug 2026, 03:30 pm",
       "time": "",
       "place": "NPR College Ground, Dindigul",
-      "overview": "Match starts at Aug 11, 10:00 GMT",
+      "overview": "Nellai Royal Kings opt to bowl",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166893",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-11T10:00:00.000Z",
       "rawId": 166893
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-163013",
       "status": "upcoming",
@@ -3007,9 +3007,9 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 1,
+      "live": 2,
       "recent": 0,
-      "upcoming": 1,
+      "upcoming": 0,
       "total": 2
     },
     {
