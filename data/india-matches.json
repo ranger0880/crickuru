@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-12T11:30:33.730Z",
+  "syncedAt": "2026-08-12T12:32:42.220Z",
   "summary": {
     "live": 1,
     "recent": 10,
@@ -24,18 +24,18 @@
         {
           "name": "Salem Spartans",
           "shortName": "SLST",
-          "score": "152/6 (18.3 Ov)"
+          "score": "182/7 (19.6 Ov)"
         },
         {
           "name": "Chepauk Super Gillies",
           "shortName": "CSG",
-          "score": ""
+          "score": "97/2 (7.6 Ov)"
         }
       ],
       "dateLabel": "12 Aug 2026, 03:30 pm",
       "time": "",
       "place": "NPR College Ground, Dindigul",
-      "overview": "Chepauk Super Gillies opt to bowl",
+      "overview": "Chepauk Super Gillies need 86 runs in 72 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166910",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-12T10:00:00.000Z",
@@ -1576,18 +1576,18 @@
         {
           "name": "Salem Spartans",
           "shortName": "SLST",
-          "score": "152/6 (18.3 Ov)"
+          "score": "182/7 (19.6 Ov)"
         },
         {
           "name": "Chepauk Super Gillies",
           "shortName": "CSG",
-          "score": ""
+          "score": "97/2 (7.6 Ov)"
         }
       ],
       "dateLabel": "12 Aug 2026, 03:30 pm",
       "time": "",
       "place": "NPR College Ground, Dindigul",
-      "overview": "Chepauk Super Gillies opt to bowl",
+      "overview": "Chepauk Super Gillies need 86 runs in 72 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166910",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-12T10:00:00.000Z",
