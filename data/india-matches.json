@@ -2,40 +2,40 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-12T09:20:03.005Z",
+  "syncedAt": "2026-08-12T10:34:44.397Z",
   "summary": {
-    "live": 0,
+    "live": 1,
     "recent": 10,
-    "upcoming": 40,
+    "upcoming": 39,
     "total": 50
   },
   "all": [
     {
-      "id": "upcoming-166910",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-166910",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
       "sourceScope": "global",
-      "title": "Chepauk Super Gillies vs Salem Spartans, 14th Match",
+      "title": "Salem Spartans vs Chepauk Super Gillies, 14th Match",
       "series": "Tamil Nadu Premier League 2026",
       "teams": [
         {
-          "name": "Chepauk Super Gillies",
-          "shortName": "CSG",
-          "score": ""
-        },
-        {
           "name": "Salem Spartans",
           "shortName": "SLST",
+          "score": "61/3 (6.3 Ov)"
+        },
+        {
+          "name": "Chepauk Super Gillies",
+          "shortName": "CSG",
           "score": ""
         }
       ],
       "dateLabel": "12 Aug 2026, 03:30 pm",
       "time": "",
       "place": "NPR College Ground, Dindigul",
-      "overview": "Match starts at Aug 12, 10:00 GMT",
+      "overview": "Chepauk Super Gillies opt to bowl",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166910",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-12T10:00:00.000Z",
@@ -1561,39 +1561,40 @@
       "rawId": 129442
     }
   ],
-  "live": [],
-  "upcoming": [
+  "live": [
     {
-      "id": "upcoming-166910",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-166910",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
       "sourceScope": "global",
-      "title": "Chepauk Super Gillies vs Salem Spartans, 14th Match",
+      "title": "Salem Spartans vs Chepauk Super Gillies, 14th Match",
       "series": "Tamil Nadu Premier League 2026",
       "teams": [
         {
-          "name": "Chepauk Super Gillies",
-          "shortName": "CSG",
-          "score": ""
-        },
-        {
           "name": "Salem Spartans",
           "shortName": "SLST",
+          "score": "61/3 (6.3 Ov)"
+        },
+        {
+          "name": "Chepauk Super Gillies",
+          "shortName": "CSG",
           "score": ""
         }
       ],
       "dateLabel": "12 Aug 2026, 03:30 pm",
       "time": "",
       "place": "NPR College Ground, Dindigul",
-      "overview": "Match starts at Aug 12, 10:00 GMT",
+      "overview": "Chepauk Super Gillies opt to bowl",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166910",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-12T10:00:00.000Z",
       "rawId": 166910
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-163013",
       "status": "upcoming",
@@ -3130,9 +3131,9 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 0,
+      "live": 1,
       "recent": 0,
-      "upcoming": 1,
+      "upcoming": 0,
       "total": 1
     },
     {
