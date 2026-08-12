@@ -2,40 +2,40 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-12T14:06:32.117Z",
+  "syncedAt": "2026-08-12T15:14:52.541Z",
   "summary": {
-    "live": 0,
+    "live": 1,
     "recent": 10,
-    "upcoming": 40,
+    "upcoming": 39,
     "total": 50
   },
   "all": [
     {
-      "id": "upcoming-166913",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-166913",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
       "sourceScope": "global",
-      "title": "Dindigul Dragons vs Siechem Madurai Panthers, 15th Match",
+      "title": "Siechem Madurai Panthers vs Dindigul Dragons, 15th Match",
       "series": "Tamil Nadu Premier League 2026",
       "teams": [
         {
-          "name": "Dindigul Dragons",
-          "shortName": "DGD",
-          "score": ""
-        },
-        {
           "name": "Siechem Madurai Panthers",
           "shortName": "MADURAI",
+          "score": "32 (2.3 Ov)"
+        },
+        {
+          "name": "Dindigul Dragons",
+          "shortName": "DGD",
           "score": ""
         }
       ],
       "dateLabel": "12 Aug 2026, 07:30 pm",
       "time": "",
       "place": "NPR College Ground, Dindigul",
-      "overview": "Match starts at Aug 12, 14:00 GMT",
+      "overview": "Match reduced to 18 overs due to rain",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166913",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-12T14:00:00.000Z",
@@ -1561,39 +1561,40 @@
       "rawId": 129442
     }
   ],
-  "live": [],
-  "upcoming": [
+  "live": [
     {
-      "id": "upcoming-166913",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-166913",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
       "sourceScope": "global",
-      "title": "Dindigul Dragons vs Siechem Madurai Panthers, 15th Match",
+      "title": "Siechem Madurai Panthers vs Dindigul Dragons, 15th Match",
       "series": "Tamil Nadu Premier League 2026",
       "teams": [
         {
-          "name": "Dindigul Dragons",
-          "shortName": "DGD",
-          "score": ""
-        },
-        {
           "name": "Siechem Madurai Panthers",
           "shortName": "MADURAI",
+          "score": "32 (2.3 Ov)"
+        },
+        {
+          "name": "Dindigul Dragons",
+          "shortName": "DGD",
           "score": ""
         }
       ],
       "dateLabel": "12 Aug 2026, 07:30 pm",
       "time": "",
       "place": "NPR College Ground, Dindigul",
-      "overview": "Match starts at Aug 12, 14:00 GMT",
+      "overview": "Match reduced to 18 overs due to rain",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166913",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-12T14:00:00.000Z",
       "rawId": 166913
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-163013",
       "status": "upcoming",
@@ -3130,9 +3131,9 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 0,
+      "live": 1,
       "recent": 0,
-      "upcoming": 1,
+      "upcoming": 0,
       "total": 1
     },
     {
