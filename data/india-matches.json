@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-12T10:34:44.397Z",
+  "syncedAt": "2026-08-12T11:30:33.730Z",
   "summary": {
     "live": 1,
     "recent": 10,
@@ -24,7 +24,7 @@
         {
           "name": "Salem Spartans",
           "shortName": "SLST",
-          "score": "61/3 (6.3 Ov)"
+          "score": "152/6 (18.3 Ov)"
         },
         {
           "name": "Chepauk Super Gillies",
@@ -1576,7 +1576,7 @@
         {
           "name": "Salem Spartans",
           "shortName": "SLST",
-          "score": "61/3 (6.3 Ov)"
+          "score": "152/6 (18.3 Ov)"
         },
         {
           "name": "Chepauk Super Gillies",
