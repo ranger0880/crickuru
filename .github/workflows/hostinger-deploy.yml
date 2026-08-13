@@ -79,6 +79,7 @@ jobs:
           set -euo pipefail
           # Hostinger accounts can expose more than one FTP root. Refresh the
           # known CricKuru web roots so the active domain root receives the build.
+          # This also refreshes the root after a domain is connected in hPanel.
           roots=("" "public_html" "domains/crickuru.com" "domains/crickuru.com/public_html")
           for root in "${roots[@]}"; do
             echo "Refreshing FTP root: /${root}"
