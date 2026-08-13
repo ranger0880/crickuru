@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-13T17:15:05.666Z",
+  "syncedAt": "2026-08-13T18:10:51.430Z",
   "summary": {
-    "live": 2,
-    "recent": 10,
+    "live": 1,
+    "recent": 11,
     "upcoming": 39,
     "total": 51
   },
@@ -29,48 +29,17 @@
         {
           "name": "Purani Dilli 6",
           "shortName": "PD",
-          "score": "33/3 (4.5 Ov)"
+          "score": "98/4 (13.1 Ov)"
         }
       ],
       "dateLabel": "13 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Purani Dilli 6 need 154 runs in 91 balls",
+      "overview": "Purani Dilli 6 need 89 runs in 41 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169081",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-13T13:30:00.000Z",
       "rawId": 169081
-    },
-    {
-      "id": "live-166933",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Trichy Grand Cholas vs IDream Tiruppur Tamizhans, 17th Match",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Trichy Grand Cholas",
-          "shortName": "Trichy",
-          "score": "196/6 (19.6 Ov)"
-        },
-        {
-          "name": "IDream Tiruppur Tamizhans",
-          "shortName": "ITT",
-          "score": "135/2 (14.2 Ov)"
-        }
-      ],
-      "dateLabel": "13 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "NPR College Ground, Dindigul",
-      "overview": "IDream Tiruppur Tamizhans need 62 runs in 34 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166933",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-13T14:00:00.000Z",
-      "rawId": 166933
     },
     {
       "id": "upcoming-163013",
@@ -1282,6 +1251,37 @@
       "rawId": 151746
     },
     {
+      "id": "recent-166933",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Trichy Grand Cholas vs IDream Tiruppur Tamizhans, 17th Match",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Trichy Grand Cholas",
+          "shortName": "Trichy",
+          "score": "196/6 (19.6 Ov)"
+        },
+        {
+          "name": "IDream Tiruppur Tamizhans",
+          "shortName": "ITT",
+          "score": "179/8 (19.6 Ov)"
+        }
+      ],
+      "dateLabel": "13 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "NPR College Ground, Dindigul",
+      "overview": "Trichy Grand Cholas won by 17 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166933",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-13T14:00:00.000Z",
+      "rawId": 166933
+    },
+    {
       "id": "recent-169497",
       "status": "recent",
       "statusLabel": "Past",
@@ -1612,48 +1612,17 @@
         {
           "name": "Purani Dilli 6",
           "shortName": "PD",
-          "score": "33/3 (4.5 Ov)"
+          "score": "98/4 (13.1 Ov)"
         }
       ],
       "dateLabel": "13 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Purani Dilli 6 need 154 runs in 91 balls",
+      "overview": "Purani Dilli 6 need 89 runs in 41 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169081",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-13T13:30:00.000Z",
       "rawId": 169081
-    },
-    {
-      "id": "live-166933",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Trichy Grand Cholas vs IDream Tiruppur Tamizhans, 17th Match",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Trichy Grand Cholas",
-          "shortName": "Trichy",
-          "score": "196/6 (19.6 Ov)"
-        },
-        {
-          "name": "IDream Tiruppur Tamizhans",
-          "shortName": "ITT",
-          "score": "135/2 (14.2 Ov)"
-        }
-      ],
-      "dateLabel": "13 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "NPR College Ground, Dindigul",
-      "overview": "IDream Tiruppur Tamizhans need 62 runs in 34 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166933",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-13T14:00:00.000Z",
-      "rawId": 166933
     }
   ],
   "upcoming": [
@@ -2869,6 +2838,37 @@
   ],
   "recent": [
     {
+      "id": "recent-166933",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Trichy Grand Cholas vs IDream Tiruppur Tamizhans, 17th Match",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Trichy Grand Cholas",
+          "shortName": "Trichy",
+          "score": "196/6 (19.6 Ov)"
+        },
+        {
+          "name": "IDream Tiruppur Tamizhans",
+          "shortName": "ITT",
+          "score": "179/8 (19.6 Ov)"
+        }
+      ],
+      "dateLabel": "13 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "NPR College Ground, Dindigul",
+      "overview": "Trichy Grand Cholas won by 17 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166933",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-13T14:00:00.000Z",
+      "rawId": 166933
+    },
+    {
       "id": "recent-169497",
       "status": "recent",
       "statusLabel": "Past",
@@ -3193,8 +3193,8 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 2,
-      "recent": 0,
+      "live": 1,
+      "recent": 1,
       "upcoming": 0,
       "total": 2
     },
