@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 
 const PROFILE_KEY = "crickuru-quiz-profile-v1";
 const PROFILE_LOCK_KEY = "crickuru-quiz-profile-lock-v1";
-const SCORE_KEY = "crickuru-quiz-scores-v1";
+const SCORE_KEY = "crickuru-quiz-scores-v2";
+const LEGACY_SCORE_KEYS = ["crickuru-quiz-scores-v1"];
 const TWO_MONTHS_MS = 60 * 24 * 60 * 60 * 1000;
 const QUESTION_POOL_SIZE = 10_000;
 const AUTH_API_URL = String(import.meta.env.VITE_AUTH_API_URL || "").replace(/\/+$/, "");
@@ -43,6 +44,11 @@ function QuizPage() {
   useEffect(() => {
     saveScores(scores);
   }, [scores]);
+
+  useEffect(() => {
+    clearLegacyScoreStores();
+    setScores((store) => sanitizeScoreStore(store, profile));
+  }, [profile.id, profile.registered]);
 
   useEffect(() => {
     if (!AUTH_API_URL) return undefined;
@@ -962,11 +968,13 @@ function saveScores(scores) {
 }
 
 function addQuizRecord(store, record) {
-  return { ...store, quizRecords: [record, ...(store.quizRecords || [])].slice(0, 120) };
+  const clean = retainPlayerScoreRecords(store, record.playerId);
+  return { ...clean, quizRecords: [record, ...clean.quizRecords].slice(0, 120) };
 }
 
 function addDuelRecord(store, record) {
-  return { ...store, duelRecords: [record, ...(store.duelRecords || [])].slice(0, 120) };
+  const clean = retainPlayerScoreRecords(store, record.playerId);
+  return { ...clean, duelRecords: [record, ...clean.duelRecords].slice(0, 120) };
 }
 
 function quizRecordFromSession(session, profile) {
@@ -1002,10 +1010,13 @@ function buildLeaderboardRows(store, profile, view) {
   if (!profile.registered) return [];
   const periods = periodKeys();
   const key = periods[view] || periods.monthly;
+  const ownPlayerId = String(profile.id);
   const localRows = view === "duel"
-    ? (store.duelRecords || []).map((record) => ({ ...record, id: record.playerId, score: record.score || 0 }))
+    ? (store.duelRecords || [])
+      .filter((record) => String(record.playerId) === ownPlayerId)
+      .map((record) => ({ ...record, id: record.playerId, score: record.score || 0 }))
     : (store.quizRecords || [])
-      .filter((record) => record.periods?.[view] === key)
+      .filter((record) => String(record.playerId) === ownPlayerId && record.periods?.[view] === key)
       .map((record) => ({ ...record, id: record.playerId }));
 
   const bestByPlayer = new Map();
@@ -1024,6 +1035,33 @@ function buildLeaderboardRows(store, profile, view) {
 function buildLobbyPlayers(profile) {
   if (!profile.registered) return [];
   return [{ ...profile, mood: profile.verified ? "Verified and ready" : "Registered and ready", city: "Kurukshetra" }];
+}
+
+function sanitizeScoreStore(store, profile) {
+  if (!profile?.registered) return emptyScoreStore();
+  return retainPlayerScoreRecords(store, profile.id);
+}
+
+function retainPlayerScoreRecords(store, playerId) {
+  const ownPlayerId = String(playerId || "");
+  const seasonStartedAt = store?.seasonStartedAt || new Date().toISOString();
+  return {
+    seasonStartedAt,
+    quizRecords: (store?.quizRecords || []).filter((record) => String(record.playerId) === ownPlayerId),
+    duelRecords: (store?.duelRecords || []).filter((record) => String(record.playerId) === ownPlayerId),
+  };
+}
+
+function emptyScoreStore() {
+  return { seasonStartedAt: new Date().toISOString(), quizRecords: [], duelRecords: [] };
+}
+
+function clearLegacyScoreStores() {
+  try {
+    LEGACY_SCORE_KEYS.forEach((key) => window.localStorage.removeItem(key));
+  } catch {
+    // Storage may be unavailable in privacy mode; the versioned key still keeps old rows hidden.
+  }
 }
 
 function pickQuestions(count, seed) {
