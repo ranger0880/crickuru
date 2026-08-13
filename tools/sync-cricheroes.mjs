@@ -122,6 +122,31 @@ function extractJsonValue(text, key, startAt = 0) {
   return null;
 }
 
+async function fetchAllTeamMatches() {
+  const matchesById = new Map();
+  const visitedUrls = new Set();
+  let url = `${BASE_URL}/matches`;
+  let firstText = "";
+  let pages = 0;
+
+  while (url && pages < 100 && !visitedUrls.has(url)) {
+    visitedUrls.add(url);
+    const text = await fetchFlightText(url);
+    if (!firstText) firstText = text;
+    const payload = extractJsonValue(text, "matches");
+    for (const match of payload?.data || []) {
+      if (match?.match_id) matchesById.set(Number(match.match_id), match);
+    }
+    pages += 1;
+    const nextPath = payload?.page?.next || "";
+    const query = nextPath.includes("?") ? nextPath.slice(nextPath.indexOf("?")) : "";
+    url = query ? `${BASE_URL}/matches${query}` : "";
+    if (url) await wait(250);
+  }
+
+  return { text: firstText, matches: [...matchesById.values()], pages };
+}
+
 function normalizeDate(value) {
   if (!value) return "";
   const normalized = value.includes("T") ? value : value.replace(" ", "T");
@@ -1176,12 +1201,14 @@ function buildMatchInsights(matches) {
 async function main() {
   const previousFeed = await readExistingFeed();
   let matchesText;
+  let teamMatches;
   let membersText;
   try {
-    [matchesText, membersText] = await Promise.all([
-      fetchFlightText(`${BASE_URL}/matches`),
+    [teamMatches, membersText] = await Promise.all([
+      fetchAllTeamMatches(),
       fetchFlightText(`${BASE_URL}/members`),
     ]);
+    matchesText = teamMatches.text;
   } catch (error) {
     if (previousFeed) {
       console.warn(`CricHeroes is temporarily blocking the public feed (${error.message}); keeping the last complete roster.`);
@@ -1191,7 +1218,7 @@ async function main() {
   }
 
   const teamDetails = extractJsonValue(matchesText, "teamDetails");
-  const rawMatches = extractJsonValue(matchesText, "matches")?.data || [];
+  const rawMatches = teamMatches.matches;
   const rawMembers = extractJsonValue(membersText, "members", membersText.indexOf("\"teamDetails\"")) || extractJsonValue(membersText, "members");
 
   const baseMatches = buildMatches(rawMatches);
@@ -1229,6 +1256,7 @@ async function main() {
     dataInventory: {
       teamProfile: true,
       matches: matches.length,
+      teamMatchPages: teamMatches.pages,
       liveMatches: liveMatches.length,
       upcomingMatches: upcomingMatches.length,
       recentMatches: recentMatches.length,
