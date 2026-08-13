@@ -5241,7 +5241,7 @@ const RouterContext = React.createContext(null);
 
                 <div className="grid gap-5">
                   <IndiaLevelRankings rankings={rankings} />
-                  <div className="glass rounded-[8px] p-5">
+                  <div className="hidden glass rounded-[8px] p-5">
                     <p className="text-xs font-black uppercase tracking-[0.24em] text-cyan">Update rhythm</p>
                     <h2 className="mt-2 font-display text-4xl font-black uppercase text-white">Near-Live Scoreboard</h2>
                     <p className="mt-4 leading-8 text-white/66">
