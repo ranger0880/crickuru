@@ -28,8 +28,6 @@ const bots = [
   { id: "bot-8", name: "Anika Off Spin", skill: 0.67, mood: "Quiz grind", city: "Kolkata" },
 ];
 
-const questionBank = buildQuestionBank();
-
 function QuizPage() {
   const [profile, setProfile] = useState(loadProfile);
   const [profileDraft, setProfileDraft] = useState(() => loadProfile());
@@ -1096,6 +1094,8 @@ const genericWrongAnswers = [
   "A boundary count",
   "A dressing-room call",
 ];
+
+const questionBank = buildQuestionBank();
 
 function rotateWrongs(wrongs, shift = 1) {
   return wrongs.map((_, index) => wrongs[(index + shift) % wrongs.length]);
