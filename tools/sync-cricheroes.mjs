@@ -671,18 +671,20 @@ function noteBattingRows(match, players) {
       const escapedName = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
       const dismissalLine = new RegExp(`${escapedName}\\s+(\\d+)\\s*\\((\\d+)\\)`, "i").exec(text);
       const milestoneLine = new RegExp(`${escapedName}\\s*:\\s*(\\d+)\\s+off\\s+(\\d+)\\s+balls`, "i").exec(text);
-      const score = dismissalLine || milestoneLine;
+      const notOutLine = new RegExp(`${escapedName}\\s+(\\d+)(?=\\s*(?:,|\\)|$))`, "i").exec(text);
+      const score = dismissalLine || milestoneLine || notOutLine;
       if (!score) continue;
+      const balls = dismissalLine || milestoneLine ? Number(score[2]) : 0;
       rows.push({
         teamId: TEAM_ID,
         teamName: TEAM_NAME,
         playerId: Number(player.id),
         playerName: player.name,
         runs: Number(score[1]),
-        balls: Number(score[2]),
+        balls,
         fours: 0,
         sixes: 0,
-        strikeRate: score[2] ? ((Number(score[1]) / Number(score[2])) * 100).toFixed(2) : "0.00",
+        strikeRate: balls ? ((Number(score[1]) / balls) * 100).toFixed(2) : "0.00",
         isOut: false,
       });
     }
