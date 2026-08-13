@@ -697,6 +697,37 @@ function buildRecordLedger(candidates, players) {
   return [...best.values()].sort((a, b) => b.value - a.value || b.date.localeCompare(a.date));
 }
 
+function buildRosterChangeLog(previousPlayers, players, previousChanges = []) {
+  const previousById = new Map((previousPlayers || []).map((player) => [Number(player.id), player]));
+  const currentById = new Map(players.map((player) => [Number(player.id), player]));
+  if (!previousById.size || !currentById.size) return previousChanges;
+
+  const detectedAt = new Date().toISOString();
+  const added = players
+    .filter((player) => !previousById.has(Number(player.id)))
+    .map((player) => ({
+      type: "added",
+      label: "Joined roster",
+      playerId: player.id,
+      playerName: player.name,
+      playerPhoto: player.photo,
+      profileUrl: player.profileUrl,
+      detectedAt,
+    }));
+  const removed = (previousPlayers || [])
+    .filter((player) => !currentById.has(Number(player.id)))
+    .map((player) => ({
+      type: "removed",
+      label: "Left roster",
+      playerId: player.id,
+      playerName: player.name,
+      playerPhoto: player.photo,
+      profileUrl: player.profileUrl,
+      detectedAt,
+    }));
+  return [...added, ...removed, ...(previousChanges || [])].slice(0, 60);
+}
+
 function normalizeMatchState(value) {
   const state = String(value || "").toLowerCase();
   if (/live|in[_ -]?progress|started|playing|innings|batting|bowling|need|requires|target|drinks|break|stumps|toss/.test(state)) return "live";
@@ -1047,6 +1078,7 @@ async function main() {
     console.warn(`Only ${profileCount}/${players.length} player profiles were available; keeping the previous feed.`);
     return;
   }
+  const rosterChangeLog = buildRosterChangeLog(previousFeed?.players || [], players, previousFeed?.rosterChangeLog || []);
   const recordLedger = buildRecordLedger(recordCandidates, players);
   const opponentAwards = attachAwards(players, recentMatches);
   const opponents = buildOpponents(recentMatches, opponentAwards);
@@ -1067,6 +1099,7 @@ async function main() {
       opponents: opponents.length,
       awards: awardLedger.length,
       records: recordLedger.length,
+      rosterChanges: rosterChangeLog.length,
       playerProfiles: players.filter((player) => player.overallStats?.source).length,
       playerRecentMatches: players.reduce((sum, player) => sum + player.recentMatches.length, 0),
       sourcePages: [BASE_URL, `${BASE_URL}/matches`, `${BASE_URL}/members`],
@@ -1085,6 +1118,7 @@ async function main() {
     opponentAwards,
     recordLedger,
     recordHistory: recordCandidates,
+    rosterChangeLog,
   };
 
   if (!hasPublicDataChanged(previousFeed, feed)) {

@@ -178,6 +178,7 @@ const RouterContext = React.createContext(null);
         awardLedger: [],
         recordLedger: [],
         recordHistory: [],
+        rosterChangeLog: [],
         playerStatsUpdatedAt: "",
       };
 
@@ -1638,6 +1639,7 @@ const RouterContext = React.createContext(null);
         const opponents = asArray(data.opponents);
         const awards = asArray(data.awardLedger);
         const records = asArray(data.recordLedger);
+        const rosterChanges = asArray(data.rosterChangeLog);
         const sourcePages = asArray(inventory.sourcePages);
         const syncText = loading ? "Syncing CricHeroes" : `Updated ${formatFeedDate(data.syncedAt)}`;
 
@@ -1724,7 +1726,7 @@ const RouterContext = React.createContext(null);
               <section className="mt-6" aria-live="polite">
                 {activeTab === "overview" && <WarriorsOverviewPanel data={data} sourcePages={sourcePages} />}
                 {activeTab === "matches" && <WarriorsMatchesPanel matches={matches} awards={awards} />}
-                {activeTab === "roster" && <WarriorsRosterPanel players={players} memberSummary={data.memberSummary} />}
+                {activeTab === "roster" && <WarriorsRosterPanel players={players} memberSummary={data.memberSummary} rosterChanges={rosterChanges} />}
                 {activeTab === "awards" && <WarriorsAwardsPanel awards={awards} />}
                 {activeTab === "trophy" && <WarriorsTrophyRoomPanel records={records} updatedAt={data.playerStatsUpdatedAt || data.syncedAt} />}
                 {activeTab === "opponents" && <WarriorsOpponentsPanel opponents={opponents} />}
@@ -1915,7 +1917,7 @@ const RouterContext = React.createContext(null);
         );
       }
 
-      function WarriorsRosterPanel({ players, memberSummary }) {
+      function WarriorsRosterPanel({ players, memberSummary, rosterChanges }) {
         if (!players.length) {
           return <DataEmpty title="No players in the feed" description="The CricHeroes member list will appear here after the next successful sync." />;
         }
@@ -1932,6 +1934,7 @@ const RouterContext = React.createContext(null);
               <LiveStat label="Pro" value={memberSummary?.pro || 0} />
               <LiveStat label="Admins" value={memberSummary?.admins || 0} />
             </div>
+            {rosterChanges.length > 0 && <RosterChangePanel changes={rosterChanges} />}
             <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
               {displayPlayers.map((player, index) => <WarriorsRosterDataCard key={player.id || player.name} player={player} rank={index + 1} />)}
             </div>
@@ -1974,6 +1977,34 @@ const RouterContext = React.createContext(null);
               {player.associationTag && <BadgePill label={player.associationTag} />}
             </div>
           </article>
+        );
+      }
+
+      function RosterChangePanel({ changes }) {
+        return (
+          <section className="rounded-[8px] border border-cyan/20 bg-cyan/[0.045] p-5">
+            <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="text-xs font-black uppercase tracking-[0.22em] text-cyan">Roster watch</p>
+                <h2 className="mt-2 font-display text-3xl font-black uppercase text-white">Recent squad changes</h2>
+              </div>
+              <p className="text-xs font-black uppercase tracking-[0.14em] text-white/38">Checked daily from CricHeroes</p>
+            </div>
+            <div className="mt-4 grid gap-2 md:grid-cols-2">
+              {changes.slice(0, 6).map((change, index) => (
+                <div key={`${change.type}-${change.playerId}-${change.detectedAt}-${index}`} className="flex items-center justify-between gap-3 rounded-[6px] border border-white/8 bg-night/45 px-3 py-3">
+                  <span className="flex min-w-0 items-center gap-3">
+                    <LiveAvatar src={change.playerPhoto} name={change.playerName} />
+                    <span className="min-w-0">
+                      <span className="block truncate font-semibold text-white/82">{change.playerName}</span>
+                      <span className={`block text-xs font-black uppercase tracking-[0.12em] ${change.type === "added" ? "text-cyan" : "text-crimson"}`}>{change.label}</span>
+                    </span>
+                  </span>
+                  <span className="shrink-0 text-right text-xs font-bold text-white/38">{formatFeedDate(change.detectedAt)}</span>
+                </div>
+              ))}
+            </div>
+          </section>
         );
       }
 
@@ -2138,6 +2169,7 @@ const RouterContext = React.createContext(null);
       function PlayersPage() {
         const { loading, error, data } = useLiveCricketFeed();
         const [filter, setFilter] = useState("all");
+        const rosterChanges = asArray(data.rosterChangeLog);
         const players = useMemo(() => {
           return asArray(data.players)
             .map((player) => ({ ...player, impact: playerImpactScore(player), role: playerRoleLabel(player) }))
@@ -2172,6 +2204,9 @@ const RouterContext = React.createContext(null);
                     <span className="rounded-full border border-white/12 bg-white/7 px-4 py-2 text-white/58">
                       Stats updated {formatFeedDate(data.playerStatsUpdatedAt || data.syncedAt)}
                     </span>
+                    <span className="rounded-full border border-cyan/20 bg-cyan/6 px-4 py-2 text-cyan/75">
+                      Roster checked {formatFeedDate(data.syncedAt)}
+                    </span>
                     {error && <span className="rounded-full border border-crimson/35 bg-crimson/10 px-4 py-2 text-crimson">Using saved roster</span>}
                   </div>
                 </motion.div>
@@ -2189,6 +2224,8 @@ const RouterContext = React.createContext(null);
                 <PlayerLeaderCard label="Strike Bowler" player={leaders.bowling} metric={`${leaders.bowling?.stats?.wickets || 0} WKTS`} />
                 <PlayerLeaderCard label="Field Watch" player={leaders.fielding} metric={`${(leaders.fielding?.stats?.catches || 0) + (leaders.fielding?.stats?.stumpings || 0)} FIELD`} />
               </div>
+
+              {rosterChanges.length > 0 && <RosterChangePanel changes={rosterChanges} />}
 
               <div className="mt-10 flex gap-2 overflow-x-auto pb-2" role="tablist" aria-label="Player filters">
                 {playerFilterTabs.map((item) => (
