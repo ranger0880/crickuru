@@ -68,7 +68,7 @@ export const ROUTE_METADATA = [
     canonicalPath: "/quiz",
     title: "CricKuru Cricket Quiz, Lobby and Leaderboard",
     description:
-      "Play the CricKuru cricket quiz with 1000 general knowledge and tricky cricket questions, profile registration, powerups, lobby challenges, duels and rotating leaderboards.",
+      "Play the CricKuru cricket quiz with 10000 general knowledge and tricky cricket questions, profile registration, powerups, lobby challenges, duels and rotating leaderboards.",
     ogType: "website",
     themeColor: "#05070B",
     changefreq: "daily",

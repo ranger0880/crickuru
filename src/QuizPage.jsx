@@ -5,6 +5,7 @@ const PROFILE_KEY = "crickuru-quiz-profile-v1";
 const PROFILE_LOCK_KEY = "crickuru-quiz-profile-lock-v1";
 const SCORE_KEY = "crickuru-quiz-scores-v1";
 const TWO_MONTHS_MS = 60 * 24 * 60 * 60 * 1000;
+const QUESTION_POOL_SIZE = 10_000;
 const AUTH_API_URL = String(import.meta.env.VITE_AUTH_API_URL || "").replace(/\/+$/, "");
 const GOOGLE_CLIENT_ID = String(import.meta.env.VITE_GOOGLE_CLIENT_ID || "");
 
@@ -402,7 +403,7 @@ function QuizPage() {
                 <div>
                   <p className="text-xs font-black uppercase tracking-[0.28em] text-cyan">CricKuru Quiz Lobby</p>
                   <h1 className="mt-2 font-display text-5xl font-black uppercase leading-none text-white sm:text-7xl">
-                    1000 Ball Cricket IQ
+                    10,000 Ball Cricket IQ
                   </h1>
                   <p className="mt-3 max-w-2xl text-sm font-semibold leading-6 text-white/58">
                     General knowledge, tricky rules, score math, fielding calls, famous cricket moments, and quick duels for Kurukshetra Warriors fans.
@@ -654,7 +655,7 @@ function QuizArena({ modeId, setModeId, selectedMode, session, onStart, onAnswer
       {!session ? (
         <div className="mt-6 grid gap-4 lg:grid-cols-3">
           <InfoTile title="Powerups" value="5" detail="Fifty, time, shield, double, hint" />
-          <InfoTile title="Question Pool" value="1000" detail="Rules, math, history and formats" />
+          <InfoTile title="Question Pool" value="10,000" detail="Rules, math, history and formats" />
           <InfoTile title="Selected Mode" value={selectedMode.count} detail={`${selectedMode.seconds}s per ball`} />
         </div>
       ) : session.complete ? (
@@ -1126,13 +1127,13 @@ function buildQuestionBank() {
     );
   }
 
-  for (let i = 0; i < trickyScenarios.length && questions.length < 1000; i += 1) {
+  for (let i = 0; i < trickyScenarios.length && questions.length < QUESTION_POOL_SIZE; i += 1) {
     const item = trickyScenarios[i];
     add(item.question, item.correct, item.wrongs, item.category, item.difficulty, item.explanation);
   }
 
   let variant = 0;
-  while (questions.length < 1000) {
+  while (questions.length < QUESTION_POOL_SIZE) {
     const concept = concepts[variant % concepts.length];
     const cue = variant % 2 === 0 ? "match pressure" : "training";
     add(
@@ -1146,7 +1147,7 @@ function buildQuestionBank() {
     variant += 1;
   }
 
-  return questions.slice(0, 1000).map((question, index) => ({ ...question, id: `crickuru-q-${index + 1}` }));
+  return questions.slice(0, QUESTION_POOL_SIZE).map((question, index) => ({ ...question, id: `crickuru-q-${index + 1}` }));
 }
 
 function makeQuestion(id, question, correct, wrongs, category, difficulty, explanation) {
