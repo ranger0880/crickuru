@@ -259,6 +259,16 @@ const RouterContext = React.createContext(null);
         return `${cleanBase}${path.startsWith("/") ? path : `/${path}`}`;
       }
 
+      function safeImageUrl(value) {
+        try {
+          const url = new URL(String(value || ""), window.location.origin);
+          const allowedHost = url.hostname === window.location.hostname || url.hostname === "media.cricheroes.in";
+          return url.protocol === "https:" && allowedHost ? url.href : "";
+        } catch {
+          return "";
+        }
+      }
+
       function useLiveCricketFeed() {
         const [state, setState] = useState({ loading: true, error: "", data: liveFeedFallback });
 
@@ -2260,12 +2270,13 @@ const RouterContext = React.createContext(null);
 
       function LiveAvatar({ src, name }) {
         const [failed, setFailed] = useState(false);
-        const showImage = src && !failed && !String(src).includes("default/user_profile.png");
+        const safeSrc = safeImageUrl(src);
+        const showImage = safeSrc && !failed && !safeSrc.includes("default/user_profile.png");
 
         return (
           <span className="grid h-12 w-12 shrink-0 place-items-center overflow-hidden rounded-full border border-gold/30 bg-gold/10 font-display text-xl font-black text-gold">
             {showImage ? (
-              <img src={src} alt="" className="h-full w-full object-cover" loading="lazy" onError={() => setFailed(true)} />
+              <img src={safeSrc} alt="" className="h-full w-full object-cover" loading="lazy" referrerPolicy="no-referrer" onError={() => setFailed(true)} />
             ) : (
               initialsFromName(name)
             )}

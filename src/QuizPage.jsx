@@ -31,8 +31,6 @@ const bots = [
 function QuizPage() {
   const [profile, setProfile] = useState(loadProfile);
   const [profileDraft, setProfileDraft] = useState(() => loadProfile());
-  const [otpCode, setOtpCode] = useState("");
-  const [otpInput, setOtpInput] = useState("");
   const [scores, setScores] = useState(loadScores);
   const [leaderboardView, setLeaderboardView] = useState("daily");
   const [modeId, setModeId] = useState("rush");
@@ -87,37 +85,42 @@ function QuizPage() {
     setProfile(nextProfile);
   }
 
-  function requestOtp(event) {
+  function saveLocalProfile(event) {
     event.preventDefault();
-    const cleanName = profileDraft.name.trim() || "Warrior Player";
-    const cleanContact = profileDraft.contact.trim();
-    const code = String(100000 + deterministicNumber(`${cleanName}-${cleanContact}-${Date.now()}`, 899999));
-    setOtpCode(code);
-    setOtpInput("");
+    const cleanName = profileDraft.name
+      .replace(/[\u0000-\u001F\u007F]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, 40) || "Warrior Player";
     updateProfile({
       ...profile,
       name: cleanName,
-      method: profileDraft.method,
-      contact: cleanContact,
+      method: "local",
+      contact: "",
       verified: false,
     });
   }
 
-  function verifyOtp() {
-    if (!otpCode || otpInput.trim() !== otpCode) return;
-    updateProfile({ ...profile, name: profileDraft.name.trim() || profile.name, method: profileDraft.method, contact: profileDraft.contact.trim(), verified: true });
-    setOtpCode("");
-    setOtpInput("");
-  }
-
   function handleAvatarUpload(event) {
     const file = event.target.files?.[0];
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = () => {
-      updateProfile({ ...profile, avatar: String(reader.result || "") });
+    const allowedTypes = new Set(["image/jpeg", "image/png", "image/webp"]);
+    if (!file || !allowedTypes.has(file.type) || file.size > 2 * 1024 * 1024) return;
+
+    const objectUrl = URL.createObjectURL(file);
+    const image = new Image();
+    image.onload = () => {
+      const maxSize = 320;
+      const scale = Math.min(1, maxSize / Math.max(image.width, image.height));
+      const canvas = document.createElement("canvas");
+      canvas.width = Math.max(1, Math.round(image.width * scale));
+      canvas.height = Math.max(1, Math.round(image.height * scale));
+      canvas.getContext("2d")?.drawImage(image, 0, 0, canvas.width, canvas.height);
+      const avatar = canvas.toDataURL("image/webp", 0.82);
+      if (avatar.length <= 450_000) updateProfile({ ...profile, avatar });
+      URL.revokeObjectURL(objectUrl);
     };
-    reader.readAsDataURL(file);
+    image.onerror = () => URL.revokeObjectURL(objectUrl);
+    image.src = objectUrl;
   }
 
   function startQuiz() {
@@ -296,11 +299,7 @@ function QuizPage() {
               profile={profile}
               draft={profileDraft}
               setDraft={setProfileDraft}
-              otpCode={otpCode}
-              otpInput={otpInput}
-              setOtpInput={setOtpInput}
-              onRequestOtp={requestOtp}
-              onVerifyOtp={verifyOtp}
+              onSaveProfile={saveLocalProfile}
               onAvatarUpload={handleAvatarUpload}
             />
             <LobbyPanel players={lobbyPlayers} profile={profile} onChallenge={startDuel} />
@@ -353,13 +352,13 @@ function QuizPage() {
   );
 }
 
-function ProfilePanel({ profile, draft, setDraft, otpCode, otpInput, setOtpInput, onRequestOtp, onVerifyOtp, onAvatarUpload }) {
+function ProfilePanel({ profile, draft, setDraft, onSaveProfile, onAvatarUpload }) {
   return (
     <section className="glass rounded-[8px] p-5">
       <div className="flex items-center gap-4">
         <Avatar profile={profile} size="large" />
         <div>
-          <p className="text-xs font-black uppercase tracking-[0.22em] text-gold">Player Account</p>
+          <p className="text-xs font-black uppercase tracking-[0.22em] text-gold">Local Profile</p>
           <h2 className="font-display text-3xl font-black uppercase text-white">{profile.name}</h2>
           <span className={`mt-1 inline-flex rounded-full border px-3 py-1 text-[0.65rem] font-black uppercase tracking-[0.16em] ${profile.verified ? "border-cyan/45 bg-cyan/10 text-cyan" : "border-white/12 bg-white/7 text-white/48"}`}>
             {profile.verified ? "Verified" : "Guest"}
@@ -367,53 +366,23 @@ function ProfilePanel({ profile, draft, setDraft, otpCode, otpInput, setOtpInput
         </div>
       </div>
 
-      <form className="mt-5 grid gap-3" onSubmit={onRequestOtp}>
+      <form className="mt-5 grid gap-3" onSubmit={onSaveProfile}>
         <input
+          maxLength={40}
+          autoComplete="nickname"
           value={draft.name}
           onChange={(event) => setDraft({ ...draft, name: event.target.value })}
           placeholder="Player name"
           className="min-h-11 rounded-[8px] border border-white/12 bg-night/60 px-3 text-sm font-bold text-white"
         />
-        <select
-          value={draft.method}
-          onChange={(event) => setDraft({ ...draft, method: event.target.value })}
-          className="min-h-11 rounded-[8px] border border-white/12 bg-night/60 px-3 text-sm font-bold text-white"
-        >
-          <option value="phone">Phone number</option>
-          <option value="whatsapp">WhatsApp</option>
-          <option value="gmail">Gmail</option>
-        </select>
-        <input
-          value={draft.contact}
-          onChange={(event) => setDraft({ ...draft, contact: event.target.value })}
-          placeholder={draft.method === "gmail" ? "name@gmail.com" : "+91 phone number"}
-          className="min-h-11 rounded-[8px] border border-white/12 bg-night/60 px-3 text-sm font-bold text-white"
-        />
         <label className="flex min-h-11 items-center justify-center gap-2 rounded-[8px] border border-white/12 bg-white/[0.045] px-3 text-xs font-black uppercase tracking-[0.12em] text-white/68 transition hover:border-gold/40 hover:text-gold">
           <UploadIcon /> Upload Image
-          <input type="file" accept="image/*" className="hidden" onChange={onAvatarUpload} />
+          <input type="file" accept="image/jpeg,image/png,image/webp" className="hidden" onChange={onAvatarUpload} />
         </label>
         <button type="submit" className="shine-button min-h-11 rounded-[8px] bg-gold px-4 text-xs font-black uppercase tracking-[0.15em] text-night">
-          Send OTP
+          Save Profile
         </button>
       </form>
-
-      {otpCode && (
-        <div className="mt-4 rounded-[8px] border border-cyan/25 bg-cyan/10 p-3">
-          <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan">Demo OTP {otpCode}</p>
-          <div className="mt-3 flex gap-2">
-            <input
-              value={otpInput}
-              onChange={(event) => setOtpInput(event.target.value)}
-              placeholder="Enter OTP"
-              className="min-h-10 min-w-0 flex-1 rounded-[8px] border border-white/12 bg-night/60 px-3 text-sm font-bold text-white"
-            />
-            <button type="button" onClick={onVerifyOtp} className="rounded-[8px] bg-cyan px-4 text-xs font-black uppercase tracking-[0.12em] text-night">
-              Verify
-            </button>
-          </div>
-        </div>
-      )}
     </section>
   );
 }
@@ -724,11 +693,26 @@ function Avatar({ profile, size = "normal" }) {
 
 function loadProfile() {
   const stored = readJson(PROFILE_KEY);
-  if (stored?.id) return stored;
+  if (stored?.id) {
+    return {
+      id: String(stored.id),
+      name: String(stored.name || "Guest Warrior").slice(0, 40),
+      method: "local",
+      contact: "",
+      verified: false,
+      avatar:
+        typeof stored.avatar === "string" &&
+        stored.avatar.length <= 450_000 &&
+        /^(data:image\/(?:png|jpeg|webp);base64,)/.test(stored.avatar)
+          ? stored.avatar
+          : "",
+      joinedAt: stored.joinedAt || new Date().toISOString(),
+    };
+  }
   return {
     id: createId("player"),
     name: "Guest Warrior",
-    method: "phone",
+    method: "local",
     contact: "",
     verified: false,
     avatar: "",

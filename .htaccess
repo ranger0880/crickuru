@@ -1,3 +1,5 @@
+Options -Indexes
+
 <IfModule mod_mime.c>
   AddType text/plain .txt
   AddType application/xml .xml
@@ -8,6 +10,14 @@
   AddType image/x-icon .ico
 </IfModule>
 
+<FilesMatch "^(?:\.|.*\.(?:env|ini|log|bak|old|orig|sql|sqlite|conf|config|map))$">
+  Require all denied
+</FilesMatch>
+
+<FilesMatch "^(?:package(?:-lock)?\.json|vite\.config\.js|tailwind\.config\.cjs|postcss\.config\.cjs|README.*|.*\.md)$">
+  Require all denied
+</FilesMatch>
+
 <Files "manifest.json">
   ForceType application/manifest+json
 </Files>
@@ -15,16 +25,30 @@
 <IfModule mod_headers.c>
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
   Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
-  Header always set Permissions-Policy "accelerometer=(), autoplay=(), camera=(), encrypted-media=(), fullscreen=(self), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
-  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'sha256-n74zSg8LuPUTZndy9q/aKA9Bjhl+otLMV+McpIWB7as=' 'sha256-CkpzllhXBRGnWYjxlu677RAFozIXgCeLZk7isG9DZI8=' 'sha256-UKbX6TjE13jLwzf0I0A8NWJJaSv2geWeCDZyL6Bditw=' 'sha256-ca+xh33znf7MpJ7UUL1BQgx+Qso+EIeTq4vMydpno7o=' 'sha256-UosB0AeqxQ/+OHoLOeddsS43Gps2XhfoTL9tO6KmDs8='; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: blob: https://media.cricheroes.in; connect-src 'self'; manifest-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; object-src 'none'; upgrade-insecure-requests"
+  Header always set Cross-Origin-Opener-Policy "same-origin-allow-popups"
+  Header always set Permissions-Policy "accelerometer=(), autoplay=(), camera=(), encrypted-media=(), fullscreen=(self), geolocation=(), microphone=(), payment=(), usb=()"
+  Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; script-src 'self' https://www.googletagmanager.com https://pagead2.googlesyndication.com https://fundingchoicesmessages.google.com https://googleads.g.doubleclick.net; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: blob: https://media.cricheroes.in https://www.google-analytics.com https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://tpc.googlesyndication.com; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://region2.google-analytics.com https://stats.g.doubleclick.net https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://fundingchoicesmessages.google.com; frame-src 'self' https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://pagead2.googlesyndication.com; media-src 'self'; manifest-src 'self'; form-action 'self'; upgrade-insecure-requests"
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType application/json "access plus 0 seconds"
+  ExpiresByType application/javascript "access plus 1 week"
+  ExpiresByType text/css "access plus 1 week"
 </IfModule>
 
 <IfModule mod_rewrite.c>
-  DirectoryIndex index.html index.php
+  DirectoryIndex index.html
   RewriteEngine On
   RewriteBase /
-  RewriteRule ^(robots\.txt|sitemap\.xml|sitemap_index\.xml|manifest\.json|favicon\.ico)$ - [L]
+
+  RewriteRule ^(?:\.git|\.github|node_modules|src|scripts|tools|public|dist)(?:/|$) - [R=404,L]
+  RewriteRule ^(?:wp-admin|wp-content|wp-includes)(?:/|$) - [R=404,L]
+  RewriteRule ^(?:wp-[^/]+\.php|xmlrpc\.php|index\.php)$ - [R=404,L]
+  RewriteRule ^(?:robots\.txt|sitemap\.xml|sitemap_index\.xml|manifest\.json|favicon\.ico)$ - [L]
   RewriteRule ^assets/ - [L]
   RewriteRule ^data/ - [L]
   RewriteRule ^index\.html$ - [L]
