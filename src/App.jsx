@@ -5452,9 +5452,9 @@ const RouterContext = React.createContext(null);
                 {group.map((tournament) => {
                   const selected = tournament.id === activeId;
                   return (
-                    <button key={tournament.id} type="button" onClick={() => onSelect(tournament.id)} aria-pressed={selected} title={`Open ${tournament.series}`} className={`min-h-12 w-[7.2rem] max-w-full min-w-0 overflow-hidden rounded-[7px] border px-2 py-1.5 text-left transition sm:w-[8rem] ${selected ? ring.selectedClass : ring.cardClass}`}>
-                      <span className="block truncate text-[0.56rem] font-black uppercase tracking-[0.06em]">{tournament.series}</span>
-                      <span className="mt-1 block truncate text-[0.5rem] font-bold uppercase tracking-[0.08em] opacity-65">{tournament.total} fixtures</span>
+                    <button key={tournament.id} type="button" onClick={() => onSelect(tournament.id)} aria-pressed={selected} title={`Open ${tournament.series}`} className={`min-h-11 w-[7.2rem] max-w-full min-w-0 overflow-hidden rounded-full border px-3 py-1.5 text-center transition sm:w-[8rem] ${selected ? ring.selectedClass : ring.cardClass}`}>
+                      <span className="block truncate text-[0.55rem] font-black uppercase tracking-[0.06em]">{tournament.series}</span>
+                      <span className="mt-0.5 block truncate text-[0.48rem] font-bold uppercase tracking-[0.08em] opacity-65">{tournament.total} fixtures</span>
                     </button>
                   );
                 })}
