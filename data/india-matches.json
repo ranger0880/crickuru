@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-13T15:15:05.441Z",
+  "syncedAt": "2026-08-13T16:12:51.214Z",
   "summary": {
     "live": 2,
     "recent": 10,
@@ -24,7 +24,7 @@
         {
           "name": "North Delhi Strikers",
           "shortName": "NDS",
-          "score": "68/1 (7.3 Ov)"
+          "score": "168/4 (18.1 Ov)"
         },
         {
           "name": "Purani Dilli 6",
@@ -55,18 +55,18 @@
         {
           "name": "Trichy Grand Cholas",
           "shortName": "Trichy",
-          "score": "136/4 (14.6 Ov)"
+          "score": "196/6 (19.6 Ov)"
         },
         {
           "name": "IDream Tiruppur Tamizhans",
           "shortName": "ITT",
-          "score": ""
+          "score": "8 (1.6 Ov)"
         }
       ],
       "dateLabel": "13 Aug 2026, 07:30 pm",
       "time": "",
       "place": "NPR College Ground, Dindigul",
-      "overview": "IDream Tiruppur Tamizhans opt to bowl",
+      "overview": "IDream Tiruppur Tamizhans need 189 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166933",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-13T14:00:00.000Z",
@@ -1607,7 +1607,7 @@
         {
           "name": "North Delhi Strikers",
           "shortName": "NDS",
-          "score": "68/1 (7.3 Ov)"
+          "score": "168/4 (18.1 Ov)"
         },
         {
           "name": "Purani Dilli 6",
@@ -1638,18 +1638,18 @@
         {
           "name": "Trichy Grand Cholas",
           "shortName": "Trichy",
-          "score": "136/4 (14.6 Ov)"
+          "score": "196/6 (19.6 Ov)"
         },
         {
           "name": "IDream Tiruppur Tamizhans",
           "shortName": "ITT",
-          "score": ""
+          "score": "8 (1.6 Ov)"
         }
       ],
       "dateLabel": "13 Aug 2026, 07:30 pm",
       "time": "",
       "place": "NPR College Ground, Dindigul",
-      "overview": "IDream Tiruppur Tamizhans opt to bowl",
+      "overview": "IDream Tiruppur Tamizhans need 189 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166933",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-13T14:00:00.000Z",
