@@ -4,6 +4,14 @@ import { fileURLToPath } from "node:url";
 
 const OUTPUT_FILE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../data/india-matches.json");
 
+const HEADERS = {
+  accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "accept-language": "en-IN,en;q=0.9",
+  "cache-control": "no-cache",
+  pragma: "no-cache",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0.0.0 Safari/537.36",
+};
+
 const PAGES = {
   live: "https://www.cricbuzz.com/cricket-match/live-scores",
   upcoming: "https://www.cricbuzz.com/cricket-match/live-scores/upcoming-matches",
@@ -85,6 +93,27 @@ const TEAM_PAGES = [
   },
 ];
 
+const DOMESTIC_PAGES = [
+  {
+    status: "live",
+    url: "https://www.cricbuzz.com/cricket-schedule/series/domestic/liveStream",
+    sourceScope: "domestic-global",
+    level: "domestic",
+  },
+  {
+    status: "upcoming",
+    url: "https://www.cricbuzz.com/cricket-schedule/upcoming-series/domestic",
+    sourceScope: "domestic-global",
+    level: "domestic",
+  },
+  {
+    status: "upcoming",
+    url: "https://www.cricbuzz.com/cricket-schedule/series/domestic",
+    sourceScope: "domestic-global",
+    level: "domestic",
+  },
+];
+
 const LEVELS = [
   { id: "international", label: "International", order: 1 },
   { id: "league", label: "League / IPL", order: 2 },
@@ -113,10 +142,27 @@ const INDIA_TERMS = [
   "ipl",
   "wpl",
   "ranji",
+  "ranji trophy",
   "duleep",
   "irani",
   "vijay hazare",
   "syed mushtaq",
+  "syed mushtaq ali",
+  "delhi premier league",
+  "tamil nadu premier league",
+  "tnpl",
+  "karnataka state",
+  "ksca",
+  "maharaja trophy",
+  "up t20",
+  "uttar pradesh t20",
+  "uttarakhand premier league",
+  "bengal pro t20",
+  "saurashtra premier league",
+  "bihar cricket league",
+  "haryana premier league",
+  "odisha cricket league",
+  "chhattisgarh cricket premier league",
   "deodhar",
   "bcci",
   "mumbai indians",
@@ -188,13 +234,59 @@ async function fetchPage(status, url, options = {}) {
 
   const html = await response.text();
   const flightText = extractFlightText(html);
-  const entries = options.sourceScope?.startsWith("india-")
+  const entries = options.teamPage
     ? extractTeamMatchEntries(flightText)
-    : extractAllJsonValues(flightText, "matchesList").flatMap((list) => list?.matches || []);
+    : options.seriesPage
+      ? extractAllJsonValues(flightText, "matchDetailsMap").flatMap((map) => map?.match || [])
+      : extractAllJsonValues(flightText, "matchesList").flatMap((list) => list?.matches || []);
 
   return entries
     .map((entry) => normalizeCricbuzzMatch(entry, status, url, options))
     .filter(Boolean);
+}
+
+async function discoverDomesticSeriesUrls() {
+  const discoveryUrls = [
+    "https://www.cricbuzz.com/cricket-schedule/series/domestic",
+    "https://www.cricbuzz.com/cricket-schedule/upcoming-series/domestic",
+  ];
+  const urls = new Map();
+
+  for (const url of discoveryUrls) {
+    try {
+      const response = await fetch(url, { headers: { ...HEADERS, accept: "text/html,application/xhtml+xml" } });
+      if (!response.ok) continue;
+      const html = await response.text();
+      const regex = /href="(\/cricket-series\/[^\"]+\/matches)"[^>]*title="([^"]*)"/g;
+      let match;
+      while ((match = regex.exec(html))) {
+        const label = clean(`${match[1]} ${match[2]}`).toLowerCase();
+        if (INDIA_TERMS.some((term) => label.includes(term))) {
+          const url = new URL(match[1], "https://www.cricbuzz.com").toString();
+          urls.set(url, clean(match[2]).replace(/\s+Matches\s+.*$/i, ""));
+        }
+      }
+    } catch {
+      // The regular global and team feeds remain available if discovery is blocked.
+    }
+  }
+
+  return [...urls.entries()].map(([url, title]) => ({ url, title }));
+}
+
+async function fetchDomesticSeriesMatches() {
+  const seriesPages = await discoverDomesticSeriesUrls();
+  const settled = await Promise.allSettled(
+    seriesPages.map((page) => fetchPage("upcoming", page.url, { sourceScope: "domestic-series", level: "domestic", seriesPage: true })),
+  );
+  return settled.flatMap((result, index) => {
+    if (result.status !== "fulfilled") return [];
+    const seriesTitle = seriesPages[index].title.toLowerCase();
+    return result.value.filter((match) => {
+      const text = `${match.series} ${match.title}`.toLowerCase();
+      return text.includes(seriesTitle);
+    });
+  });
 }
 
 function extractFlightText(html) {
@@ -456,11 +548,13 @@ async function main() {
   const previous = await readPreviousFeed();
   const settled = await Promise.allSettled([
     ...Object.entries(PAGES).map(([status, url]) => fetchPage(status, url)),
-    ...TEAM_PAGES.map((page) => fetchPage(page.status, page.url, { sourceScope: page.sourceScope, level: page.level })),
+    ...TEAM_PAGES.map((page) => fetchPage(page.status, page.url, { sourceScope: page.sourceScope, level: page.level, teamPage: true })),
+    ...DOMESTIC_PAGES.map((page) => fetchPage(page.status, page.url, { sourceScope: page.sourceScope, level: page.level })),
+    fetchDomesticSeriesMatches(),
   ]);
   const failures = settled.filter((result) => result.status === "rejected").map((result) => result.reason?.message || String(result.reason));
   const fetched = settled.flatMap((result) => result.status === "fulfilled" ? result.value : []);
-  const relevant = uniqueMatches(fetched.filter((match) => match.sourceScope.startsWith("india-") || isIndiaRelevant(match)));
+  const relevant = uniqueMatches(fetched.filter((match) => match.sourceScope.startsWith("india-") || match.sourceScope === "domestic-series" || isIndiaRelevant(match)));
 
   if (!relevant.length && failures.length && previous) {
     await writeFeed({
@@ -488,6 +582,7 @@ async function main() {
       pathways: ["India", "India Women", "India A", "India A Women", "India U19", "India Women U19"],
       globalPages: Object.values(PAGES),
       teamPages: TEAM_PAGES.map((page) => page.url),
+      domesticPages: DOMESTIC_PAGES.map((page) => page.url),
       refreshCadence: "15 minutes",
     },
     summary: {
