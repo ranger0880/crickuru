@@ -10,7 +10,7 @@ const OUTPUT_FILE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "
 const PLAYER_REFRESH_BATCH = 8;
 const RATE_LIMIT_RETRIES = 2;
 // Keep manually verified profile links at the front of the rate-limit-safe refresh queue.
-const PRIORITY_PLAYER_IDS = new Set([5584447]);
+const PRIORITY_PLAYER_IDS = new Set([5584447, 28790413]);
 
 const HEADERS = {
   "user-agent":
