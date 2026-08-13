@@ -5130,10 +5130,10 @@ const RouterContext = React.createContext(null);
                     <p className="text-xs font-black uppercase tracking-[0.24em] text-cyan">Update rhythm</p>
                     <h2 className="mt-2 font-display text-4xl font-black uppercase text-white">Near-Live Scoreboard</h2>
                     <p className="mt-4 leading-8 text-white/66">
-                      The browser checks the saved site feed every minute. GitHub Actions refreshes the public CricHeroes snapshot every five minutes when the source exposes a change.
+                      The browser checks the saved site feed every minute. GitHub Actions refreshes the India match feed every 15 minutes across senior, women’s, A-team and U19 pathways when the source exposes a change.
                     </p>
                     <p className="mt-4 rounded-[8px] border border-white/10 bg-white/[0.045] p-4 text-sm leading-7 text-white/56">
-                      Source: {data.source || "public cricket feed"}. For ball-by-ball guaranteed data, connect an official paid cricket data API later.
+                      Source: {data.source || "public cricket feed"}. Coverage: {asArray(data.coverage?.pathways).length || 0} India pathways plus India-linked live-score pages. For ball-by-ball guaranteed data, connect an official paid cricket data API later.
                     </p>
                   </div>
                 </div>

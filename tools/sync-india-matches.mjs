@@ -14,12 +14,74 @@ const TEAM_PAGES = [
   {
     status: "upcoming",
     url: "https://www.cricbuzz.com/cricket-team/india/2/schedule",
-    sourceScope: "india-team",
+    sourceScope: "india-men",
+    level: "international",
   },
   {
     status: "recent",
     url: "https://www.cricbuzz.com/cricket-team/india/2/results",
-    sourceScope: "india-team",
+    sourceScope: "india-men",
+    level: "international",
+  },
+  {
+    status: "upcoming",
+    url: "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+    sourceScope: "india-women",
+    level: "women",
+  },
+  {
+    status: "recent",
+    url: "https://www.cricbuzz.com/cricket-team/india-women/97/results",
+    sourceScope: "india-women",
+    level: "women",
+  },
+  {
+    status: "upcoming",
+    url: "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
+    sourceScope: "india-a",
+    level: "international",
+  },
+  {
+    status: "recent",
+    url: "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
+    sourceScope: "india-a",
+    level: "international",
+  },
+  {
+    status: "upcoming",
+    url: "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
+    sourceScope: "india-a-women",
+    level: "women",
+  },
+  {
+    status: "recent",
+    url: "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
+    sourceScope: "india-a-women",
+    level: "women",
+  },
+  {
+    status: "upcoming",
+    url: "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
+    sourceScope: "india-u19",
+    level: "international",
+  },
+  {
+    status: "recent",
+    url: "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
+    sourceScope: "india-u19",
+    level: "international",
+  },
+  {
+    status: "upcoming",
+    url: "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/schedule",
+    sourceScope: "india-women-u19",
+    level: "women",
+  },
+  {
+    status: "recent",
+    url: "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
+    sourceScope: "india-women-u19",
+    level: "women",
   },
 ];
 
@@ -39,7 +101,14 @@ const STATUS_LABELS = {
 const INDIA_TERMS = [
   "india",
   "ind ",
+  "ind a",
+  "inda",
   "indw",
+  "indwa",
+  "indu19",
+  "india a",
+  "india women",
+  "india u19",
   "bharat",
   "ipl",
   "wpl",
@@ -119,7 +188,7 @@ async function fetchPage(status, url, options = {}) {
 
   const html = await response.text();
   const flightText = extractFlightText(html);
-  const entries = options.sourceScope === "india-team"
+  const entries = options.sourceScope?.startsWith("india-")
     ? extractTeamMatchEntries(flightText)
     : extractAllJsonValues(flightText, "matchesList").flatMap((list) => list?.matches || []);
 
@@ -253,10 +322,11 @@ function statusForMatch(info, pageStatus) {
 }
 
 function levelForMatch(info, options = {}) {
+  if (options.level) return options.level;
   const text = searchableInfo(info);
-  if (/\bwomen\b|\bwpl\b|\bindw\b/.test(text)) return "women";
+  if (/\bwomen\b|\bwpl\b|\bindw\b|\bindwa\b|\bindia a women\b|\bindia women u19\b/.test(text)) return "women";
   if (/\bipl\b|indian premier league|league/.test(text)) return "league";
-  if (options.sourceScope === "india-team") return "international";
+  if (options.sourceScope?.startsWith("india-")) return "international";
   if (clean(info.matchType).toLowerCase() === "international") return "international";
   return "domestic";
 }
@@ -285,7 +355,7 @@ function formatTeamScore(score) {
 
 function isIndiaRelevant(match) {
   const text = searchableMatch(match);
-  if (/\bindia\b|\bind\b|\bindw\b/.test(text)) return true;
+  if (/\b(?:india|ind|inda|indw|indwa|indu19)\b/.test(text)) return true;
   if (match.level === "league" && /\b(ipl|wpl|mumbai indians|chennai super kings|royal challengers|kolkata knight riders|delhi capitals|sunrisers hyderabad|rajasthan royals|gujarat titans|punjab kings|lucknow super giants)\b/.test(text)) return true;
   if (match.level === "domestic") return INDIA_TERMS.some((term) => text.includes(term));
   return INDIA_TERMS.some((term) => text.includes(term));
@@ -386,11 +456,11 @@ async function main() {
   const previous = await readPreviousFeed();
   const settled = await Promise.allSettled([
     ...Object.entries(PAGES).map(([status, url]) => fetchPage(status, url)),
-    ...TEAM_PAGES.map((page) => fetchPage(page.status, page.url, { sourceScope: page.sourceScope })),
+    ...TEAM_PAGES.map((page) => fetchPage(page.status, page.url, { sourceScope: page.sourceScope, level: page.level })),
   ]);
   const failures = settled.filter((result) => result.status === "rejected").map((result) => result.reason?.message || String(result.reason));
   const fetched = settled.flatMap((result) => result.status === "fulfilled" ? result.value : []);
-  const relevant = uniqueMatches(fetched.filter((match) => match.sourceScope === "india-team" || isIndiaRelevant(match)));
+  const relevant = uniqueMatches(fetched.filter((match) => match.sourceScope.startsWith("india-") || isIndiaRelevant(match)));
 
   if (!relevant.length && failures.length && previous) {
     await writeFeed({
@@ -411,9 +481,15 @@ async function main() {
 
   const feed = {
     schemaVersion: 1,
-    source: "Cricbuzz public match pages and India team schedule/results",
+    source: "Cricbuzz public match pages and India pathway schedules/results",
     sourceStatus: failures.length ? "partial" : "fresh",
     syncedAt: new Date().toISOString(),
+    coverage: {
+      pathways: ["India", "India Women", "India A", "India A Women", "India U19", "India Women U19"],
+      globalPages: Object.values(PAGES),
+      teamPages: TEAM_PAGES.map((page) => page.url),
+      refreshCadence: "15 minutes",
+    },
     summary: {
       live: groups.live.length,
       recent: groups.recent.length,
