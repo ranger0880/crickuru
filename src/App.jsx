@@ -5063,6 +5063,40 @@ const RouterContext = React.createContext(null);
                 </div>
               </div>
 
+              <section className="mt-6 glass rounded-[8px] p-5" aria-labelledby="match-filter-title">
+                <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+                  <div>
+                    <p className="text-xs font-black uppercase tracking-[0.24em] text-gold">Match filter</p>
+                    <h2 id="match-filter-title" className="mt-2 font-display text-4xl font-black uppercase text-white">Choose your match room</h2>
+                  </div>
+                  <p className="max-w-md text-sm leading-6 text-white/52">Set the status and match type first. The selected results appear below the radar and tournament details.</p>
+                </div>
+                <div className="mt-5 grid gap-3 sm:grid-cols-2">
+                  <label className="grid gap-2">
+                    <span className="text-[0.65rem] font-black uppercase tracking-[0.18em] text-white/42">Status</span>
+                    <select
+                      aria-label="India match status"
+                      value={statusTab}
+                      onChange={(event) => setStatusTab(event.target.value)}
+                      className="min-h-11 w-full appearance-none rounded-[8px] border border-gold/35 bg-night px-4 text-xs font-black uppercase tracking-[0.14em] text-gold outline-none transition focus:border-gold focus:ring-2 focus:ring-gold/20"
+                    >
+                      {indiaStatusTabs.map((item) => <option key={item.id} value={item.id} className="bg-night text-white">{item.label}</option>)}
+                    </select>
+                  </label>
+                  <label className="grid gap-2">
+                    <span className="text-[0.65rem] font-black uppercase tracking-[0.18em] text-white/42">Match type</span>
+                    <select
+                      aria-label="India match level"
+                      value={levelTab}
+                      onChange={(event) => setLevelTab(event.target.value)}
+                      className="min-h-11 w-full appearance-none rounded-[8px] border border-cyan/35 bg-night px-4 text-xs font-black uppercase tracking-[0.14em] text-cyan outline-none transition focus:border-cyan focus:ring-2 focus:ring-cyan/20"
+                    >
+                      {indiaLevelTabs.map((item) => <option key={item.id} value={item.id} className="bg-night text-white">{item.label}</option>)}
+                    </select>
+                  </label>
+                </div>
+              </section>
+
               <section className="mt-10 grid gap-5 xl:grid-cols-[1.05fr_0.95fr]" aria-labelledby="important-results-title">
                 <div className="glass rounded-[8px] p-5">
                   <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
@@ -5179,43 +5213,12 @@ const RouterContext = React.createContext(null);
                   )}
 
                   <div className="glass rounded-[8px] p-5">
-                    <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
+                    <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
                       <div>
-                        <p className="text-xs font-black uppercase tracking-[0.24em] text-gold">Match filter</p>
+                        <p className="text-xs font-black uppercase tracking-[0.24em] text-gold">Filtered matches</p>
                         <h2 className="mt-2 font-display text-4xl font-black uppercase text-white">Live, Past and Future</h2>
                       </div>
-                      <div className="grid gap-3 sm:grid-cols-2 lg:min-w-[29rem]">
-                        <label className="grid gap-2">
-                          <span className="text-[0.65rem] font-black uppercase tracking-[0.18em] text-white/42">Status</span>
-                          <select
-                            aria-label="India match status"
-                            value={statusTab}
-                            onChange={(event) => setStatusTab(event.target.value)}
-                            className="min-h-11 w-full appearance-none rounded-[8px] border border-gold/35 bg-night px-4 text-xs font-black uppercase tracking-[0.14em] text-gold outline-none transition focus:border-gold focus:ring-2 focus:ring-gold/20"
-                          >
-                            {indiaStatusTabs.map((item) => (
-                              <option key={item.id} value={item.id} className="bg-night text-white">
-                                {item.label}
-                              </option>
-                            ))}
-                          </select>
-                        </label>
-                        <label className="grid gap-2">
-                          <span className="text-[0.65rem] font-black uppercase tracking-[0.18em] text-white/42">Match type</span>
-                          <select
-                            aria-label="India match level"
-                            value={levelTab}
-                            onChange={(event) => setLevelTab(event.target.value)}
-                            className="min-h-11 w-full appearance-none rounded-[8px] border border-cyan/35 bg-night px-4 text-xs font-black uppercase tracking-[0.14em] text-cyan outline-none transition focus:border-cyan focus:ring-2 focus:ring-cyan/20"
-                          >
-                            {indiaLevelTabs.map((item) => (
-                              <option key={item.id} value={item.id} className="bg-night text-white">
-                                {item.label}
-                              </option>
-                            ))}
-                          </select>
-                        </label>
-                      </div>
+                      <span className="rounded-full border border-white/12 bg-night/55 px-3 py-2 text-[0.62rem] font-black uppercase tracking-[0.14em] text-white/50">{indiaStatusTabs.find((item) => item.id === statusTab)?.label} • {indiaLevelTabs.find((item) => item.id === levelTab)?.label}</span>
                     </div>
 
                     <div className="mt-6 grid gap-3">
