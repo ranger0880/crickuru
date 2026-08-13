@@ -40,14 +40,14 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          cp -R dist /tmp/crickuru-dist
+          publish_dir="$(mktemp -d)"
+          cp -R "$GITHUB_WORKSPACE/dist/." "$publish_dir/"
+          cd "$publish_dir"
+          git init
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git reset --hard HEAD
-          git clean -fdx
-          git switch --orphan hostinger-static
-          git rm -rf .
-          cp -R /tmp/crickuru-dist/. .
           git add -A
           git commit -m "Publish production build"
-          git push --force origin HEAD:hostinger-static
+          git branch -M hostinger-static
+          git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git push --force origin hostinger-static
