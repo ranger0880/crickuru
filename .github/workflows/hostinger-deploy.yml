@@ -58,17 +58,19 @@ jobs:
           server="${server%/}"
           echo "server=$server" >> "$GITHUB_OUTPUT"
 
-      - name: Sync built files to Hostinger
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
-        with:
-          server: ${{ steps.ftp-server.outputs.server }}
-          username: ${{ secrets.HOSTINGER_FTP_USERNAME }}
-          password: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
-          port: 21
-          protocol: ftp
-          local-dir: ./dist/
-          server-dir: /
-          state-name: .crickuru-hostinger-root-sync-state.json
-          dangerous-clean-slate: false
-          timeout: 120000
-          log-level: minimal
+      - name: Upload built files to Hostinger web root
+        env:
+          FTP_SERVER: ${{ steps.ftp-server.outputs.server }}
+          FTP_USERNAME: ${{ secrets.HOSTINGER_FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          while IFS= read -r -d '' file; do
+            relative="${file#dist/}"
+            echo "Uploading $relative"
+            curl --fail --silent --show-error --ftp-pasv --ftp-create-dirs \
+              --connect-timeout 30 --max-time 180 \
+              --user "$FTP_USERNAME:$FTP_PASSWORD" \
+              --upload-file "$file" "ftp://$FTP_SERVER/$relative"
+          done < <(find dist -type f -print0)
