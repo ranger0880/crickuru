@@ -1126,10 +1126,20 @@ function buildMatchInsights(matches) {
 
 async function main() {
   const previousFeed = await readExistingFeed();
-  const [matchesText, membersText] = await Promise.all([
-    fetchFlightText(`${BASE_URL}/matches`),
-    fetchFlightText(`${BASE_URL}/members`),
-  ]);
+  let matchesText;
+  let membersText;
+  try {
+    [matchesText, membersText] = await Promise.all([
+      fetchFlightText(`${BASE_URL}/matches`),
+      fetchFlightText(`${BASE_URL}/members`),
+    ]);
+  } catch (error) {
+    if (previousFeed) {
+      console.warn(`CricHeroes is temporarily blocking the public feed (${error.message}); keeping the last complete roster.`);
+      return;
+    }
+    throw error;
+  }
 
   const teamDetails = extractJsonValue(matchesText, "teamDetails");
   const rawMatches = extractJsonValue(matchesText, "matches")?.data || [];
