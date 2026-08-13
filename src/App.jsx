@@ -216,6 +216,9 @@ const RouterContext = React.createContext(null);
       });
 
       const themeStorageKey = "crickuru-theme";
+      const quizProfileStorageKey = "crickuru-quiz-profile-v1";
+      const onlinePresenceStorageKey = "crickuru-online-presence-v1";
+      const onlinePresenceTtl = 90 * 1000;
 
       function getInitialTheme() {
         try {
@@ -257,6 +260,74 @@ const RouterContext = React.createContext(null);
 
       function useThemeMode() {
         return useContext(ThemeContext);
+      }
+
+      function readQuizProfileForPresence() {
+        try {
+          const profile = JSON.parse(window.localStorage.getItem(quizProfileStorageKey) || "null");
+          return profile?.registered && profile?.id ? profile : null;
+        } catch {
+          return null;
+        }
+      }
+
+      function readOnlinePresence() {
+        try {
+          const stored = JSON.parse(window.localStorage.getItem(onlinePresenceStorageKey) || "[]");
+          return Array.isArray(stored) ? stored : [];
+        } catch {
+          return [];
+        }
+      }
+
+      function useOnlinePlayers() {
+        const guestId = useRef(`guest-${Date.now()}-${Math.random().toString(36).slice(2)}`).current;
+        const [players, setPlayers] = useState([]);
+
+        useEffect(() => {
+          const heartbeat = () => {
+            const now = Date.now();
+            const profile = readQuizProfileForPresence();
+            const current = {
+              id: String(profile?.id || guestId),
+              name: String(profile?.name || "Guest Warrior"),
+              avatar: String(profile?.avatar || ""),
+              updatedAt: now,
+            };
+            const fresh = readOnlinePresence()
+              .filter((player) => player.id !== current.id && now - Number(player.updatedAt) < onlinePresenceTtl)
+              .concat(current);
+            try {
+              window.localStorage.setItem(onlinePresenceStorageKey, JSON.stringify(fresh));
+            } catch {
+              // Keep the current visitor visible even when browser storage is unavailable.
+            }
+            setPlayers(fresh.sort((a, b) => Number(b.updatedAt) - Number(a.updatedAt)));
+          };
+
+          const removeCurrent = () => {
+            const profile = readQuizProfileForPresence();
+            const currentId = String(profile?.id || guestId);
+            const remaining = readOnlinePresence().filter((player) => player.id !== currentId);
+            try {
+              window.localStorage.setItem(onlinePresenceStorageKey, JSON.stringify(remaining));
+            } catch {
+              // Ignore cleanup failures during tab close.
+            }
+          };
+
+          heartbeat();
+          const interval = window.setInterval(heartbeat, 20 * 1000);
+          window.addEventListener("storage", heartbeat);
+          window.addEventListener("beforeunload", removeCurrent);
+          return () => {
+            window.clearInterval(interval);
+            window.removeEventListener("storage", heartbeat);
+            window.removeEventListener("beforeunload", removeCurrent);
+          };
+        }, [guestId]);
+
+        return players;
       }
 
       function assetUrl(path) {
@@ -5734,6 +5805,34 @@ const RouterContext = React.createContext(null);
         );
       }
 
+      function OnlinePlayersBar() {
+        const players = useOnlinePlayers();
+        return (
+          <section className="border-t border-white/10 bg-night/85 px-5 py-5 sm:px-8" aria-label="Players online">
+            <div className="mx-auto flex max-w-7xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+              <div className="flex items-center gap-3">
+                <span className="relative grid h-10 w-10 place-items-center rounded-full border border-cyan/35 bg-cyan/10 text-cyan">
+                  <span className="absolute right-0 top-0 h-2.5 w-2.5 rounded-full bg-cyan shadow-[0_0_14px_rgba(34,211,238,0.8)]" />
+                  <Icon.Users size={18} />
+                </span>
+                <div>
+                  <p className="text-[0.62rem] font-black uppercase tracking-[0.22em] text-cyan">Players online</p>
+                  <p className="mt-1 text-sm font-bold text-white/72">{players.length} live now</p>
+                </div>
+              </div>
+              <div className="flex min-w-0 flex-wrap items-center gap-2" aria-live="polite">
+                {players.slice(0, 10).map((player) => (
+                  <div key={player.id} title={player.name} className="flex items-center gap-2 rounded-full border border-white/12 bg-white/[0.045] px-2 py-1.5">
+                    <LiveAvatar src={player.avatar} name={player.name} />
+                    <span className="max-w-[8rem] truncate text-xs font-bold text-white/72">{player.name}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+      }
+
       function App() {
         const routerBasename = window.location.hostname.endsWith("github.io") ? "/crickuru" : "/";
 
@@ -5799,6 +5898,7 @@ const RouterContext = React.createContext(null);
                     }
                   />
                 </Routes>
+                <OnlinePlayersBar />
               </IndiaMatchesProvider>
             </BrowserRouter>
           </ThemeProvider>
