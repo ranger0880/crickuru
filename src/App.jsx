@@ -2267,6 +2267,7 @@ const RouterContext = React.createContext(null);
         const activity = asArray(player.performance?.recentAwards).slice(0, 3);
         const recentMatches = asArray(player.recentMatches).slice(0, 3);
         const stats = player.stats || {};
+        const hasOverallStats = stats.source === "CricHeroes public player stats";
         const impact = player.impact || 0;
 
         return (
@@ -2291,14 +2292,14 @@ const RouterContext = React.createContext(null);
             </div>
 
             <div className="relative mt-5">
-              <p className="mb-2 text-[0.62rem] font-black uppercase tracking-[0.16em] text-cyan">Overall CricHeroes career</p>
+              <p className="mb-2 text-[0.62rem] font-black uppercase tracking-[0.16em] text-cyan">{hasOverallStats ? "Overall CricHeroes career" : "Overall profile refresh scheduled"}</p>
               <div className="grid grid-cols-4 gap-2 text-center">
-                <LiveTinyStat label="Runs" value={stats.runs || 0} />
-                <LiveTinyStat label="Wkts" value={stats.wickets || 0} />
-                <LiveTinyStat label="Best" value={stats.bestScore || 0} />
-                <LiveTinyStat label="Field" value={(stats.catches || 0) + (stats.stumpings || 0)} />
+                <LiveTinyStat label="Runs" value={hasOverallStats ? stats.runs || 0 : "-"} />
+                <LiveTinyStat label="Wkts" value={hasOverallStats ? stats.wickets || 0 : "-"} />
+                <LiveTinyStat label="Best" value={hasOverallStats ? stats.bestScore || 0 : "-"} />
+                <LiveTinyStat label="Field" value={hasOverallStats ? (stats.catches || 0) + (stats.stumpings || 0) : "-"} />
               </div>
-              <p className="mt-3 text-center text-[0.62rem] font-black uppercase tracking-[0.12em] text-white/38">{stats.matches || stats.matchesTracked || 0} matches | Avg {stats.average || "-"} | SR {stats.strikeRate || "-"}</p>
+              <p className="mt-3 text-center text-[0.62rem] font-black uppercase tracking-[0.12em] text-white/38">{hasOverallStats ? `${stats.matches || 0} matches | Avg ${stats.average || "-"} | SR ${stats.strikeRate || "-"}` : "Profile totals will appear after the next public sync"}</p>
             </div>
 
             <div className="relative mt-4 flex flex-wrap gap-2">
@@ -2357,7 +2358,7 @@ const RouterContext = React.createContext(null);
 
       function playerImpactScore(player) {
         const performance = player.performance || {};
-        const stats = player.stats || {};
+        const stats = player.stats?.source === "CricHeroes public player stats" ? player.stats : {};
         const raw =
           Math.min(25, (stats.runs || 0) / 4) +
           Math.min(20, (stats.wickets || 0) * 5) +
