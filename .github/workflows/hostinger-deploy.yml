@@ -39,12 +39,10 @@ jobs:
           FTP_SERVER: ${{ secrets.HOSTINGER_FTP_SERVER }}
           FTP_USERNAME: ${{ secrets.HOSTINGER_FTP_USERNAME }}
           FTP_PASSWORD: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
-          FTP_DIR: ${{ secrets.HOSTINGER_FTP_DIR }}
         run: |
           test -n "$FTP_SERVER" || (echo "Missing HOSTINGER_FTP_SERVER" && exit 1)
           test -n "$FTP_USERNAME" || (echo "Missing HOSTINGER_FTP_USERNAME" && exit 1)
           test -n "$FTP_PASSWORD" || (echo "Missing HOSTINGER_FTP_PASSWORD" && exit 1)
-          test -n "$FTP_DIR" || (echo "Missing HOSTINGER_FTP_DIR" && exit 1)
 
       - name: Sync built files to Hostinger
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
@@ -55,6 +53,6 @@ jobs:
           port: 21
           protocol: ftp
           local-dir: ./dist/
-          server-dir: ${{ secrets.HOSTINGER_FTP_DIR }}
+          server-dir: public_html/
           dangerous-clean-slate: false
           log-level: minimal
