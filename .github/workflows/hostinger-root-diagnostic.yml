@@ -25,6 +25,9 @@ jobs:
           server="${server%/}"
           roots=("" "public_html" "domains/crickuru.com" "domains/crickuru.com/public_html")
           for root in "${roots[@]}"; do
+            echo "--- Listing: /${root:-}"
+            curl --fail --silent --show-error --ftp-pasv --user "$FTP_USERNAME:$FTP_PASSWORD" \
+              "ftp://$server/${root:+$root/}" | head -200 || true
             url="ftp://$server/${root:+$root/}index.html"
             echo "--- FTP root: /${root:-}" 
             if curl --fail --silent --show-error --ftp-pasv --user "$FTP_USERNAME:$FTP_PASSWORD" "$url" > /tmp/root-index.html; then
