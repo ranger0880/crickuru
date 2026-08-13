@@ -2581,11 +2581,19 @@ const RouterContext = React.createContext(null);
         );
       }
 
+      function playerNeonTheme(impact = 0) {
+        if (impact >= 85) return { label: "Elite form", color: "#ff315a", glow: "rgba(255,49,90,0.72)", soft: "rgba(255,49,90,0.16)" };
+        if (impact >= 70) return { label: "Match ready", color: "#F4B942", glow: "rgba(244,185,66,0.72)", soft: "rgba(244,185,66,0.16)" };
+        if (impact >= 50) return { label: "Building form", color: "#23d5e8", glow: "rgba(35,213,232,0.68)", soft: "rgba(35,213,232,0.14)" };
+        return { label: "Rising form", color: "#6f8cff", glow: "rgba(111,140,255,0.62)", soft: "rgba(111,140,255,0.14)" };
+      }
+
       function PlayerDetailModal({ player, onClose }) {
         const stats = player.stats?.source === "CricHeroes public player stats" ? player.stats : {};
         const warriorsStats = player.warriorsStats || {};
         const recentMatches = asArray(player.recentMatches).slice(0, 5);
         const improvementNotes = playerImprovementNotes(player, stats);
+        const neon = playerNeonTheme(player.impact || 0);
 
         useEffect(() => {
           const onKeyDown = (event) => { if (event.key === "Escape") onClose(); };
@@ -2599,22 +2607,22 @@ const RouterContext = React.createContext(null);
         }, [onClose]);
 
         return (
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }} className="fixed inset-0 z-[90] overflow-y-auto bg-night/85 p-3 backdrop-blur-md sm:p-6" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) onClose(); }}>
-            <motion.section initial={{ opacity: 0, scale: 0.94, y: 22 }} animate={{ opacity: 1, scale: 1, y: 0 }} transition={{ type: "spring", stiffness: 280, damping: 25 }} className="mx-auto max-h-[calc(100vh-1.5rem)] max-w-7xl overflow-y-auto rounded-[10px] border border-white/15 bg-[#090d14] shadow-[0_25px_100px_rgba(0,0,0,0.65)] sm:max-h-[calc(100vh-3rem)]" role="dialog" aria-modal="true" aria-label={`${player.name} full player profile`}>
-              <header className="relative min-h-56 overflow-hidden bg-cover bg-center" style={{ backgroundImage: `url(${assetUrl("/assets/stadium-vip-warriors.png")})` }}>
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }} className="fixed inset-0 z-[90] overflow-y-auto overscroll-contain bg-night/85 p-2 backdrop-blur-md sm:p-4 lg:p-6" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) onClose(); }}>
+            <motion.section initial={{ opacity: 0, scale: 0.94, y: 22 }} animate={{ opacity: 1, scale: 1, y: 0 }} transition={{ type: "spring", stiffness: 280, damping: 25 }} style={{ borderColor: neon.color, boxShadow: `0 0 0 1px ${neon.color}, 0 0 24px ${neon.glow}, 0 25px 100px rgba(0,0,0,0.7)` }} className="mx-auto w-full max-h-[calc(100dvh-1rem)] min-h-0 overflow-y-auto rounded-[10px] border bg-[#090d14] sm:max-h-[calc(100dvh-2rem)] lg:max-h-[calc(100dvh-3rem)]" role="dialog" aria-modal="true" aria-label={`${player.name} full player profile`}>
+              <header className="relative min-h-48 overflow-hidden bg-cover bg-center sm:min-h-56" style={{ backgroundImage: `url(${assetUrl("/assets/stadium-vip-warriors.png")})`, boxShadow: `inset 0 -3px 0 ${neon.color}, inset 0 -12px 28px ${neon.soft}` }}>
                 <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(5,7,11,0.96),rgba(5,7,11,0.58),rgba(5,7,11,0.8))]" />
-                <button type="button" onClick={onClose} aria-label="Close player profile" title="Close player profile" className="absolute right-4 top-4 grid h-11 w-11 place-items-center rounded-full border border-white/20 bg-night/70 text-white transition hover:border-gold hover:text-gold"><Icon.X size={20} /></button>
-                <div className="relative flex min-h-56 items-end gap-4 p-5 sm:p-8">
-                  <LiveAvatar src={player.photo} name={player.name} />
+                <button type="button" onClick={onClose} aria-label="Close player profile" title="Close player profile" className="absolute right-3 top-3 grid h-11 w-11 place-items-center rounded-full border border-white/20 bg-night/70 text-white transition hover:border-gold hover:text-gold sm:right-4 sm:top-4"><Icon.X size={20} /></button>
+                <div className="relative flex min-h-48 items-end gap-3 p-4 sm:min-h-56 sm:gap-4 sm:p-8">
+                  <span className="rounded-full p-1" style={{ boxShadow: `0 0 0 2px ${neon.color}, 0 0 22px ${neon.glow}` }}><LiveAvatar src={player.photo} name={player.name} /></span>
                   <div className="min-w-0">
-                    <p className="text-xs font-black uppercase tracking-[0.22em] text-gold">Full player profile</p>
-                    <h2 className="mt-2 truncate font-display text-4xl font-black uppercase text-white sm:text-6xl">{player.name}</h2>
-                    <p className="mt-2 text-sm font-bold uppercase tracking-[0.14em] text-white/60">{player.role || playerRoleLabel(player)} • {player.impact || 0}/100 performance charge</p>
+                    <p className="text-[0.62rem] font-black uppercase tracking-[0.18em]" style={{ color: neon.color }}>Full player profile • {neon.label}</p>
+                    <h2 className="mt-2 truncate font-display text-3xl font-black uppercase text-white sm:text-6xl">{player.name}</h2>
+                    <p className="mt-2 text-xs font-bold uppercase tracking-[0.12em] text-white/60 sm:text-sm sm:tracking-[0.14em]">{player.role || playerRoleLabel(player)} • {player.impact || 0}/100 performance charge</p>
                   </div>
                 </div>
               </header>
 
-              <div className="grid gap-6 p-5 sm:p-8">
+              <div className="grid gap-5 p-4 sm:gap-6 sm:p-8">
                 <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
                   <LiveStat label="Career matches" value={stats.matches || "-"} />
                   <LiveStat label="Career runs" value={stats.runs || "-"} />
