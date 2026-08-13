@@ -568,6 +568,7 @@ const RouterContext = React.createContext(null);
         Mouse: (props) => <SvgIcon {...props}><rect x="5" y="2" width="14" height="20" rx="7" /><path d="M12 6v4" /></SvgIcon>,
         Play: (props) => <SvgIcon {...props}><polygon points="6 3 20 12 6 21 6 3" /></SvgIcon>,
         Radio: (props) => <SvgIcon {...props}><path d="M4.9 19.1a10 10 0 0 1 0-14.2" /><path d="M7.8 16.2a6 6 0 0 1 0-8.5" /><circle cx="12" cy="12" r="2" /><path d="M16.2 7.8a6 6 0 0 1 0 8.5" /><path d="M19.1 4.9a10 10 0 0 1 0 14.2" /></SvgIcon>,
+        Search: (props) => <SvgIcon {...props}><circle cx="11" cy="11" r="7" /><path d="m20 20-4-4" /></SvgIcon>,
         Shield: (props) => <SvgIcon {...props}><path d="M20 13c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V5l8-3 8 3v8Z" /></SvgIcon>,
         Send: (props) => <SvgIcon {...props}><path d="m22 2-7 20-4-9-9-4Z" /><path d="M22 2 11 13" /></SvgIcon>,
         Sparkles: (props) => <SvgIcon {...props}><path d="m12 3-1.9 5.8L4 11l6.1 2.2L12 19l1.9-5.8L20 11l-6.1-2.2L12 3Z" /><path d="M5 3v4" /><path d="M3 5h4" /><path d="M19 17v4" /><path d="M17 19h4" /></SvgIcon>,
@@ -2316,6 +2317,7 @@ const RouterContext = React.createContext(null);
       function PlayersPage() {
         const { loading, error, data } = useLiveCricketFeed();
         const [filter, setFilter] = useState("all");
+        const [playerQuery, setPlayerQuery] = useState("");
         const [selectedPlayer, setSelectedPlayer] = useState(null);
         const rosterChanges = asArray(data.rosterChangeLog);
         const players = useMemo(() => {
@@ -2323,7 +2325,21 @@ const RouterContext = React.createContext(null);
             .map((player) => ({ ...player, impact: playerImpactScore(player), role: playerRoleLabel(player) }))
             .sort((a, b) => b.impact - a.impact || (b.performance?.awards || 0) - (a.performance?.awards || 0) || a.name.localeCompare(b.name));
         }, [data.players]);
-        const filteredPlayers = players.filter((player) => playerMatchesFilter(player, filter));
+        const normalizedPlayerQuery = playerQuery.trim().toLocaleLowerCase();
+        const filteredPlayers = players.filter((player) => {
+          if (!playerMatchesFilter(player, filter)) return false;
+          if (!normalizedPlayerQuery) return true;
+          return [player.name, player.role, player.skill, player.id]
+            .filter(Boolean)
+            .join(" ")
+            .toLocaleLowerCase()
+            .includes(normalizedPlayerQuery);
+        });
+        const openFirstSearchResult = (event) => {
+          if (event.key !== "Enter" || !filteredPlayers[0]) return;
+          event.preventDefault();
+          setSelectedPlayer(filteredPlayers[0]);
+        };
         const leaders = {
           impact: players[0],
           batting: [...players].sort((a, b) => (playerOverallStats(b).runs || 0) - (playerOverallStats(a).runs || 0) || b.impact - a.impact)[0],
@@ -2383,7 +2399,38 @@ const RouterContext = React.createContext(null);
 
               {rosterChanges.length > 0 && <RosterChangePanel changes={rosterChanges} />}
 
-              <div className="mt-10 flex gap-2 overflow-x-auto pb-2" role="tablist" aria-label="Player filters">
+              <div className="mt-10 grid gap-3 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center">
+                <label className="relative block min-w-0">
+                  <span className="sr-only">Search Warriors players by name</span>
+                  <Icon.Search size={18} className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-cyan" />
+                  <input
+                    type="search"
+                    value={playerQuery}
+                    onChange={(event) => setPlayerQuery(event.target.value)}
+                    onKeyDown={openFirstSearchResult}
+                    placeholder="Search player name"
+                    aria-label="Search Warriors players by name"
+                    autoComplete="off"
+                    className="min-h-12 w-full rounded-full border border-cyan/25 bg-white/[0.06] pl-11 pr-12 text-sm font-semibold text-white outline-none transition placeholder:text-white/38 focus:border-cyan focus:ring-2 focus:ring-cyan/20"
+                  />
+                  {playerQuery && (
+                    <button
+                      type="button"
+                      onClick={() => setPlayerQuery("")}
+                      aria-label="Clear player search"
+                      title="Clear player search"
+                      className="absolute right-2 top-1/2 grid h-8 w-8 -translate-y-1/2 place-items-center rounded-full text-white/48 transition hover:bg-white/10 hover:text-white"
+                    >
+                      <Icon.X size={16} />
+                    </button>
+                  )}
+                </label>
+                <span className="text-xs font-black uppercase tracking-[0.14em] text-white/45 sm:text-right">
+                  {normalizedPlayerQuery ? `${filteredPlayers.length} result${filteredPlayers.length === 1 ? "" : "s"}` : `${players.length} players`}
+                </span>
+              </div>
+
+              <div className="mt-4 flex gap-2 overflow-x-auto pb-2" role="tablist" aria-label="Player filters">
                 {playerFilterTabs.map((item) => (
                   <button
                     key={item.id}
