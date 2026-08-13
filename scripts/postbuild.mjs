@@ -61,6 +61,8 @@ function renderHtaccess() {
     "  AddType application/xml .xml",
     "  AddType application/json .json",
     "  AddType application/manifest+json .webmanifest",
+    "  AddType application/javascript .js",
+    "  AddType text/css .css",
     "  AddType image/x-icon .ico",
     "</IfModule>",
     "",
