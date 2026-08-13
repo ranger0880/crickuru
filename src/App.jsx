@@ -309,6 +309,7 @@ const RouterContext = React.createContext(null);
 
       function useIndiaMatchesFeed() {
         const [state, setState] = useState({ loading: true, error: "", data: indiaMatchesFallback });
+        const liveMode = asArray(state.data.live).length > 0;
 
         useEffect(() => {
           let cancelled = false;
@@ -331,12 +332,12 @@ const RouterContext = React.createContext(null);
           };
 
           loadFeed();
-          const interval = window.setInterval(loadFeed, 60 * 1000);
+          const interval = window.setInterval(loadFeed, liveMode ? 15 * 1000 : 60 * 1000);
           return () => {
             cancelled = true;
             window.clearInterval(interval);
           };
-        }, []);
+        }, [liveMode]);
 
         return state;
       }
@@ -743,7 +744,7 @@ const RouterContext = React.createContext(null);
         const recentMatches = asArray(data.recent);
         const tickerMatches = liveMatches.length ? liveMatches : upcomingMatches.length ? upcomingMatches.slice(0, 3) : recentMatches.slice(0, 3);
         const repeatedMatches = tickerMatches.length > 1 ? [...tickerMatches, ...tickerMatches] : tickerMatches;
-        const statusLabel = liveMatches.length ? `${liveMatches.length} live` : upcomingMatches.length ? `${upcomingMatches.length} upcoming` : "India feed";
+        const statusLabel = liveMatches.length ? `${liveMatches.length} LIVE NOW` : upcomingMatches.length ? `${upcomingMatches.length} upcoming` : "India feed";
 
         return (
           <aside className="fixed left-0 right-0 top-0 z-[70] h-9 border-b border-gold/20 bg-night/95 text-white shadow-xl shadow-black/30 backdrop-blur-xl" aria-label="India live cricket score panel">
@@ -781,7 +782,7 @@ const RouterContext = React.createContext(null);
         const scoreText = teams.length ? teams.join(" vs ") : matchTitle(match);
         return (
           <Link to="/india-matches" className="inline-flex max-w-[86vw] items-center gap-2 text-xs font-semibold text-white/78 sm:max-w-none">
-            <span className="rounded-full border border-white/12 bg-white/7 px-2 py-0.5 text-[0.58rem] font-black uppercase tracking-[0.14em] text-cyan">
+            <span className={`rounded-full border px-2 py-0.5 text-[0.58rem] font-black uppercase tracking-[0.14em] ${match.status === "live" ? "border-crimson/50 bg-crimson/15 text-crimson" : "border-white/12 bg-white/7 text-cyan"}`}>
               {match.statusLabel || match.status || "match"}
             </span>
             <span className="truncate">{scoreText}</span>
@@ -5054,7 +5055,7 @@ const RouterContext = React.createContext(null);
               <div className="mt-10 grid gap-5 xl:grid-cols-[1.05fr_0.95fr]">
                 <div className="grid gap-5">
                   {featureMatch ? (
-                    <IndiaFeatureMatch match={featureMatch} />
+                    <IndiaFeatureMatch match={featureMatch} syncedAt={data.syncedAt} />
                   ) : (
                     <div className="glass rounded-[8px] p-6">
                       <p className="font-display text-4xl font-black uppercase text-white">No India match listed right now</p>
@@ -5106,7 +5107,7 @@ const RouterContext = React.createContext(null);
 
                     <div className="mt-6 grid gap-3">
                       {filteredMatches.length ? (
-                        filteredMatches.map((match) => <IndiaMatchCard key={match.id} match={match} />)
+                        filteredMatches.map((match) => <IndiaMatchCard key={match.id} match={match} syncedAt={data.syncedAt} />)
                       ) : (
                         <div className="rounded-[8px] border border-white/10 bg-night/52 p-5">
                           <p className="font-display text-3xl font-black uppercase text-white">Nothing in this view</p>
@@ -5125,7 +5126,7 @@ const RouterContext = React.createContext(null);
                     <p className="text-xs font-black uppercase tracking-[0.24em] text-cyan">Update rhythm</p>
                     <h2 className="mt-2 font-display text-4xl font-black uppercase text-white">Near-Live Scoreboard</h2>
                     <p className="mt-4 leading-8 text-white/66">
-                      The browser checks the saved site feed every minute. GitHub Actions refreshes the India match feed every 15 minutes across senior, women’s, A-team and U19 pathways when the source exposes a change.
+                      The browser checks the saved site feed every minute normally and every 15 seconds while a match is live. GitHub Actions refreshes the India match feed every 5 minutes across senior, women’s, A-team and U19 pathways when the public source exposes a change.
                     </p>
                     <p className="mt-4 rounded-[8px] border border-white/10 bg-white/[0.045] p-4 text-sm leading-7 text-white/56">
                       Source: {data.source || "public cricket feed"}. Coverage: {asArray(data.coverage?.pathways).length || 0} India pathways plus domestic/state schedule pages and India-linked live-score pages. For ball-by-ball guaranteed data, connect an official paid cricket data API later.
@@ -5157,13 +5158,16 @@ const RouterContext = React.createContext(null);
           .sort((a, b) => a.order - b.order);
       }
 
-      function IndiaFeatureMatch({ match }) {
+      function IndiaFeatureMatch({ match, syncedAt }) {
         return (
           <article className="relative overflow-hidden rounded-[8px] border border-gold/24 bg-[radial-gradient(circle_at_88%_12%,rgba(244,185,66,0.2),transparent_34%),rgba(255,255,255,0.05)] p-6">
             <div className="absolute right-[-56px] top-[-60px] h-44 w-44 rounded-full bg-gold/10 blur-3xl" aria-hidden="true" />
             <div className="relative flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
               <div>
-                <p className="text-xs font-black uppercase tracking-[0.24em] text-gold">{match.statusLabel || match.status || "India match"}</p>
+                <div className="flex flex-wrap items-center gap-2">
+                  <p className="text-xs font-black uppercase tracking-[0.24em] text-gold">{match.statusLabel || match.status || "India match"}</p>
+                  {match.status === "live" && <span className="inline-flex items-center gap-2 rounded-full border border-crimson/50 bg-crimson/15 px-3 py-1 text-[0.62rem] font-black uppercase tracking-[0.16em] text-crimson"><span className="h-2 w-2 animate-pulse rounded-full bg-crimson" /> Live now</span>}
+                </div>
                 <h2 className="mt-2 font-display text-5xl font-black uppercase leading-none text-white">{matchTitle(match)}</h2>
                 <p className="mt-3 text-sm font-semibold text-white/52">{matchTimeLine(match)}</p>
               </div>
@@ -5183,6 +5187,9 @@ const RouterContext = React.createContext(null);
             <p className="relative mt-5 rounded-[8px] border border-white/10 bg-night/55 p-4 text-base font-bold leading-7 text-white/78">
               {match.overview || "Match details will update when the public feed posts the next score state."}
             </p>
+            <p className="relative mt-3 text-xs font-black uppercase tracking-[0.16em] text-white/38" aria-live="polite">
+              Score checked {formatFeedDate(syncedAt)}
+            </p>
           </article>
         );
       }
@@ -5196,7 +5203,7 @@ const RouterContext = React.createContext(null);
         );
       }
 
-      function IndiaMatchCard({ match }) {
+      function IndiaMatchCard({ match, syncedAt }) {
         return (
           <article className="rounded-[8px] border border-white/10 bg-white/[0.04] p-4 transition hover:border-gold/35 hover:bg-white/[0.06]">
             <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
@@ -5205,6 +5212,7 @@ const RouterContext = React.createContext(null);
                   <span className="rounded-full border border-white/12 bg-night/70 px-3 py-1 text-[0.62rem] font-black uppercase tracking-[0.16em] text-white/55">
                     {match.statusLabel || match.status}
                   </span>
+                  {match.status === "live" && <span className="inline-flex items-center gap-2 rounded-full border border-crimson/50 bg-crimson/15 px-3 py-1 text-[0.62rem] font-black uppercase tracking-[0.16em] text-crimson"><span className="h-2 w-2 animate-pulse rounded-full bg-crimson" /> Live now</span>}
                   <span className={levelBadgeClass(match.level)}>{match.levelLabel || match.level}</span>
                 </div>
                 <h3 className="mt-3 font-display text-3xl font-black uppercase leading-none text-white">{matchTitle(match)}</h3>
@@ -5230,6 +5238,7 @@ const RouterContext = React.createContext(null);
               ))}
             </div>
             <p className="mt-4 text-sm font-semibold leading-6 text-white/62">{match.overview || match.series || "Match update pending."}</p>
+            <p className="mt-3 text-[0.65rem] font-black uppercase tracking-[0.16em] text-white/35">Score checked {formatFeedDate(syncedAt)}</p>
           </article>
         );
       }

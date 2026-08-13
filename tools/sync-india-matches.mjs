@@ -583,7 +583,7 @@ async function main() {
       globalPages: Object.values(PAGES),
       teamPages: TEAM_PAGES.map((page) => page.url),
       domesticPages: DOMESTIC_PAGES.map((page) => page.url),
-      refreshCadence: "15 minutes",
+      refreshCadence: "5 minutes",
     },
     summary: {
       live: groups.live.length,

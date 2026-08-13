@@ -2,8 +2,8 @@ name: India Cricket Match Feed Sync
 
 on:
   schedule:
-    # Near-live public Pages refresh. GitHub schedules use UTC.
-    - cron: "*/15 * * * *"
+    # Near-live public score refresh. GitHub schedules use UTC.
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
