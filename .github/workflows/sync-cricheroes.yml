@@ -8,8 +8,8 @@ on:
       - "tools/sync-cricheroes.mjs"
       - ".github/workflows/sync-cricheroes.yml"
   schedule:
-    # Refresh eight player profiles every 30 minutes; the 77-player roster cycles in about five hours.
-    - cron: "*/30 * * * *"
+    # Refresh ten player profiles every 15 minutes; the 77-player roster cycles in about two hours.
+    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 permissions:

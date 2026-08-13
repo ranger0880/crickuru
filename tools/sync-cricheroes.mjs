@@ -7,7 +7,7 @@ const TEAM_SLUG = "kurukshetra-warriors";
 const TEAM_NAME = "Kurukshetra Warriors";
 const BASE_URL = `https://cricheroes.com/team-profile/${TEAM_ID}/${TEAM_SLUG}`;
 const OUTPUT_FILE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../data/crickuru-live.json");
-const PLAYER_REFRESH_BATCH = 8;
+const PLAYER_REFRESH_BATCH = 10;
 const RATE_LIMIT_RETRIES = 2;
 
 const HEADERS = {
