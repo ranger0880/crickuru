@@ -35,6 +35,9 @@ jobs:
         run: npm ci
 
       - name: Build production site
+        env:
+          VITE_AUTH_API_URL: ${{ secrets.VITE_AUTH_API_URL }}
+          VITE_GOOGLE_CLIENT_ID: ${{ secrets.VITE_GOOGLE_CLIENT_ID }}
         run: npm run build
 
       - name: Write deployment marker

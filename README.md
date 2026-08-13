@@ -54,6 +54,12 @@ The site includes the Google Analytics Google tag for measurement ID `G-6WZ5CTVL
 
 The `/warriors` route displays the full public Kurukshetra Warriors CricHeroes feed from `data/crickuru-live.json`, including team profile fields, match scorecards, roster signals, awards, opponents, source links and sync timing.
 
+## Account connections
+
+The quiz profile supports Google Identity Services and WhatsApp OTP through a separate authentication backend. Set `VITE_AUTH_API_URL` and `VITE_GOOGLE_CLIENT_ID` as GitHub Actions secrets; the workflows pass them into the build without committing credentials.
+
+The backend must expose `GET /auth/session`, `POST /auth/google`, `POST /auth/whatsapp/start`, `POST /auth/whatsapp/verify`, and `POST /auth/logout`. It must verify Google ID tokens server-side, send WhatsApp codes through the Meta WhatsApp Business API, rate-limit OTP requests, expire challenges, set an `HttpOnly; Secure; SameSite` session cookie, and use CSRF protection for cookie-authenticated mutations. The frontend never stores access tokens in browser storage.
+
 ## Files
 
 - `src/` - React app source

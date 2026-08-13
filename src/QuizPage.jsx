@@ -1,9 +1,11 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 const PROFILE_KEY = "crickuru-quiz-profile-v1";
 const SCORE_KEY = "crickuru-quiz-scores-v1";
 const TWO_MONTHS_MS = 60 * 24 * 60 * 60 * 1000;
+const AUTH_API_URL = String(import.meta.env.VITE_AUTH_API_URL || "").replace(/\/+$/, "");
+const GOOGLE_CLIENT_ID = String(import.meta.env.VITE_GOOGLE_CLIENT_ID || "");
 
 const modes = [
   { id: "rush", label: "10 Ball Rush", count: 10, seconds: 18 },
@@ -36,6 +38,10 @@ function QuizPage() {
   const [modeId, setModeId] = useState("rush");
   const [session, setSession] = useState(null);
   const [duel, setDuel] = useState(null);
+  const [authState, setAuthState] = useState({ status: AUTH_API_URL ? "ready" : "unconfigured", message: "" });
+  const [whatsappNumber, setWhatsappNumber] = useState("");
+  const [whatsappOtp, setWhatsappOtp] = useState("");
+  const [whatsappChallenge, setWhatsappChallenge] = useState("");
   const seasonDaysLeft = Math.max(1, 60 - Math.floor((Date.now() - new Date(scores.seasonStartedAt).getTime()) / (24 * 60 * 60 * 1000)));
 
   useEffect(() => {
@@ -46,6 +52,19 @@ function QuizPage() {
   useEffect(() => {
     saveScores(scores);
   }, [scores]);
+
+  useEffect(() => {
+    if (!AUTH_API_URL) return undefined;
+    let active = true;
+    authRequest("/auth/session", { method: "GET" })
+      .then((payload) => {
+        if (active && payload?.user) updateProfile(profileFromAuthUser(payload.user, payload.provider || "google", profile));
+      })
+      .catch(() => undefined);
+    return () => {
+      active = false;
+    };
+  }, []);
 
   useEffect(() => {
     if (!session || session.complete || session.selected !== null) return undefined;
@@ -99,6 +118,63 @@ function QuizPage() {
       contact: "",
       verified: false,
     });
+  }
+
+  const handleGoogleCredential = useCallback(async (credentialResponse) => {
+    if (!AUTH_API_URL || !credentialResponse?.credential) return;
+    setAuthState({ status: "loading", message: "Confirming Google sign-in..." });
+    try {
+      const payload = await authRequest("/auth/google", {
+        method: "POST",
+        body: JSON.stringify({ credential: credentialResponse.credential }),
+      });
+      if (!payload?.user) throw new Error("The sign-in response did not include a user.");
+      updateProfile(profileFromAuthUser(payload.user, "google", profile));
+      setAuthState({ status: "connected", message: "Google account connected." });
+    } catch (error) {
+      setAuthState({ status: "error", message: error.message || "Google sign-in failed." });
+    }
+  }, [profile]);
+
+  async function startWhatsAppLogin(event) {
+    event.preventDefault();
+    const phone = whatsappNumber.replace(/[^+\d]/g, "");
+    if (!/^\+[1-9]\d{7,14}$/.test(phone)) {
+      setAuthState({ status: "error", message: "Use an international WhatsApp number, for example +919876543210." });
+      return;
+    }
+    setAuthState({ status: "loading", message: "Requesting a WhatsApp verification code..." });
+    try {
+      const payload = await authRequest("/auth/whatsapp/start", {
+        method: "POST",
+        body: JSON.stringify({ phone }),
+      });
+      if (!payload?.challengeId) throw new Error("WhatsApp verification could not be started.");
+      setWhatsappChallenge(String(payload.challengeId));
+      setWhatsappOtp("");
+      setAuthState({ status: "challenge", message: "Code sent. It expires soon." });
+    } catch (error) {
+      setAuthState({ status: "error", message: error.message || "WhatsApp verification failed to start." });
+    }
+  }
+
+  async function verifyWhatsAppLogin(event) {
+    event.preventDefault();
+    if (!/^\d{6}$/.test(whatsappOtp) || !whatsappChallenge) return;
+    setAuthState({ status: "loading", message: "Confirming WhatsApp verification..." });
+    try {
+      const payload = await authRequest("/auth/whatsapp/verify", {
+        method: "POST",
+        body: JSON.stringify({ challengeId: whatsappChallenge, otp: whatsappOtp }),
+      });
+      if (!payload?.user) throw new Error("The verification response did not include a user.");
+      updateProfile(profileFromAuthUser(payload.user, "whatsapp", profile));
+      setWhatsappChallenge("");
+      setWhatsappOtp("");
+      setAuthState({ status: "connected", message: "WhatsApp account connected." });
+    } catch (error) {
+      setAuthState({ status: "error", message: error.message || "WhatsApp verification failed." });
+    }
   }
 
   function handleAvatarUpload(event) {
@@ -301,6 +377,15 @@ function QuizPage() {
               setDraft={setProfileDraft}
               onSaveProfile={saveLocalProfile}
               onAvatarUpload={handleAvatarUpload}
+              authState={authState}
+              onGoogleCredential={handleGoogleCredential}
+              whatsappNumber={whatsappNumber}
+              setWhatsappNumber={setWhatsappNumber}
+              whatsappOtp={whatsappOtp}
+              setWhatsappOtp={setWhatsappOtp}
+              whatsappChallenge={whatsappChallenge}
+              onStartWhatsApp={startWhatsAppLogin}
+              onVerifyWhatsApp={verifyWhatsAppLogin}
             />
             <LobbyPanel players={lobbyPlayers} profile={profile} onChallenge={startDuel} />
           </aside>
@@ -352,13 +437,28 @@ function QuizPage() {
   );
 }
 
-function ProfilePanel({ profile, draft, setDraft, onSaveProfile, onAvatarUpload }) {
+function ProfilePanel({
+  profile,
+  draft,
+  setDraft,
+  onSaveProfile,
+  onAvatarUpload,
+  authState,
+  onGoogleCredential,
+  whatsappNumber,
+  setWhatsappNumber,
+  whatsappOtp,
+  setWhatsappOtp,
+  whatsappChallenge,
+  onStartWhatsApp,
+  onVerifyWhatsApp,
+}) {
   return (
     <section className="glass rounded-[8px] p-5">
       <div className="flex items-center gap-4">
         <Avatar profile={profile} size="large" />
         <div>
-          <p className="text-xs font-black uppercase tracking-[0.22em] text-gold">Local Profile</p>
+          <p className="text-xs font-black uppercase tracking-[0.22em] text-gold">{profile.method === "local" ? "Local Profile" : `${profile.method} account`}</p>
           <h2 className="font-display text-3xl font-black uppercase text-white">{profile.name}</h2>
           <span className={`mt-1 inline-flex rounded-full border px-3 py-1 text-[0.65rem] font-black uppercase tracking-[0.16em] ${profile.verified ? "border-cyan/45 bg-cyan/10 text-cyan" : "border-white/12 bg-white/7 text-white/48"}`}>
             {profile.verified ? "Verified" : "Guest"}
@@ -383,8 +483,98 @@ function ProfilePanel({ profile, draft, setDraft, onSaveProfile, onAvatarUpload 
           Save Profile
         </button>
       </form>
+
+      <div className="mt-5 border-t border-white/10 pt-5">
+        <div className="flex items-center justify-between gap-3">
+          <div>
+            <p className="text-xs font-black uppercase tracking-[0.22em] text-cyan">Connect Settings</p>
+            <p className="mt-1 text-xs font-semibold text-white/48">Use a verified provider to carry scores across devices.</p>
+          </div>
+          <LinkIcon />
+        </div>
+
+        <div className="mt-4 grid gap-3">
+          <GoogleSignInButton clientId={GOOGLE_CLIENT_ID} disabled={!AUTH_API_URL} onCredential={onGoogleCredential} />
+          <form className="grid gap-2 sm:grid-cols-[1fr_auto]" onSubmit={onStartWhatsApp}>
+            <input
+              inputMode="tel"
+              autoComplete="tel"
+              value={whatsappNumber}
+              onChange={(event) => setWhatsappNumber(event.target.value)}
+              placeholder="WhatsApp number, +country code"
+              className="min-h-11 rounded-[8px] border border-white/12 bg-night/60 px-3 text-sm font-bold text-white"
+              disabled={!AUTH_API_URL || authState.status === "loading"}
+            />
+            <button
+              type="submit"
+              className="min-h-11 rounded-[8px] border border-cyan/35 bg-cyan/10 px-4 text-xs font-black uppercase tracking-[0.12em] text-cyan transition hover:bg-cyan hover:text-night disabled:cursor-not-allowed disabled:opacity-40"
+              disabled={!AUTH_API_URL || authState.status === "loading"}
+            >
+              WhatsApp OTP
+            </button>
+          </form>
+          {whatsappChallenge && (
+            <form className="grid gap-2 sm:grid-cols-[1fr_auto]" onSubmit={onVerifyWhatsApp}>
+              <input
+                inputMode="numeric"
+                autoComplete="one-time-code"
+                maxLength={6}
+                value={whatsappOtp}
+                onChange={(event) => setWhatsappOtp(event.target.value.replace(/\D/g, "").slice(0, 6))}
+                placeholder="6-digit code"
+                className="min-h-11 rounded-[8px] border border-white/12 bg-night/60 px-3 text-sm font-bold text-white"
+              />
+              <button type="submit" className="min-h-11 rounded-[8px] bg-gold px-4 text-xs font-black uppercase tracking-[0.12em] text-night">
+                Verify WhatsApp
+              </button>
+            </form>
+          )}
+          <p className={`text-xs font-bold ${authState.status === "error" ? "text-crimson" : authState.status === "connected" ? "text-cyan" : "text-white/45"}`} aria-live="polite">
+            {authState.message || (!AUTH_API_URL ? "Provider login is waiting for the auth service URL." : "Choose Google or WhatsApp to connect.")}
+          </p>
+        </div>
+      </div>
     </section>
   );
+}
+
+function GoogleSignInButton({ clientId, disabled, onCredential }) {
+  const buttonRef = useRef(null);
+  const [ready, setReady] = useState(false);
+
+  useEffect(() => {
+    if (disabled || !clientId) return undefined;
+    const renderButton = () => {
+      if (!window.google?.accounts?.id || !buttonRef.current) return;
+      buttonRef.current.innerHTML = "";
+      window.google.accounts.id.initialize({ client_id: clientId, callback: onCredential, ux_mode: "popup" });
+      window.google.accounts.id.renderButton(buttonRef.current, { theme: "outline", size: "large", shape: "rectangular", width: 320 });
+      setReady(true);
+    };
+    if (window.google?.accounts?.id) {
+      renderButton();
+      return undefined;
+    }
+    const existing = document.querySelector('script[src="https://accounts.google.com/gsi/client"]');
+    const script = existing || document.createElement("script");
+    script.src = "https://accounts.google.com/gsi/client";
+    script.async = true;
+    script.defer = true;
+    script.onload = renderButton;
+    if (!existing) document.head.appendChild(script);
+    return () => {
+      script.onload = null;
+    };
+  }, [clientId, disabled, onCredential]);
+
+  if (disabled || !clientId) {
+    return (
+      <button type="button" disabled className="min-h-11 rounded-[8px] border border-white/12 bg-white/[0.045] px-4 text-xs font-black uppercase tracking-[0.12em] text-white/35">
+        Google sign-in setup required
+      </button>
+    );
+  }
+  return <div ref={buttonRef} className={`min-h-11 overflow-hidden rounded-[8px] ${ready ? "bg-white" : "border border-white/12 bg-white/[0.045]"}`} aria-label="Continue with Google" />;
 }
 
 function LobbyPanel({ players, profile, onChallenge }) {
@@ -1099,6 +1289,42 @@ function formatOvers(balls) {
   return `${Math.floor(balls / 6)}.${balls % 6}`;
 }
 
+async function authRequest(path, options = {}) {
+  if (!AUTH_API_URL) throw new Error("Authentication is not configured yet.");
+  const response = await fetch(`${AUTH_API_URL}${path}`, {
+    credentials: "include",
+    headers: { Accept: "application/json", ...(options.body ? { "Content-Type": "application/json" } : {}) },
+    ...options,
+  });
+  let payload = null;
+  try {
+    payload = await response.json();
+  } catch {
+    payload = null;
+  }
+  if (!response.ok) throw new Error(payload?.error || "Authentication request failed.");
+  return payload;
+}
+
+function profileFromAuthUser(user, provider, currentProfile) {
+  const id = String(user?.id || user?.sub || "").trim();
+  if (!id) throw new Error("The authentication provider returned no stable user id.");
+  const name = String(user?.name || user?.email || "Warrior Player")
+    .replace(/[\u0000-\u001F\u007F]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 40) || "Warrior Player";
+  return {
+    ...currentProfile,
+    id: `auth-${provider}-${id}`,
+    name,
+    method: provider,
+    provider,
+    contact: "",
+    verified: true,
+  };
+}
+
 function readJson(key) {
   try {
     const raw = window.localStorage.getItem(key);
@@ -1159,6 +1385,10 @@ function initials(name = "KW") {
 
 function UploadIcon() {
   return <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 16V4" /><path d="m7 9 5-5 5 5" /><path d="M5 20h14" /></svg>;
+}
+
+function LinkIcon() {
+  return <svg viewBox="0 0 24 24" className="h-5 w-5 text-cyan" fill="none" stroke="currentColor" strokeWidth="2"><path d="M10 13a5 5 0 0 0 7.54.54l2-2a5 5 0 0 0-7.07-7.07l-1.14 1.14" /><path d="M14 11a5 5 0 0 0-7.54-.54l-2 2a5 5 0 0 0 7.07 7.07l1.14-1.14" /></svg>;
 }
 
 function UsersIcon() {
