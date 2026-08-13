@@ -159,6 +159,8 @@ const RouterContext = React.createContext(null);
         syncedAt: "",
         team: {
           name: "Kurukshetra Warriors",
+          captainName: "Ankit Kulshreshtha",
+          captainId: 29139731,
           logo: "",
           city: "Greater Noida",
           cricHeroesUrl: CricLinks.profile,
@@ -1005,7 +1007,7 @@ const RouterContext = React.createContext(null);
             </Reveal>
             <Reveal>
               <p className="mt-5 text-sm font-semibold uppercase tracking-[0.2em] text-white/54">
-                Home of the founding team - Kurukshetra Warriors
+                Home of the founding team - Kurukshetra Warriors - <Link to="/captain/ankit-kulshreshtha" className="text-gold underline decoration-gold/40 underline-offset-4 hover:text-white">Captain Ankit Kulshreshtha</Link>
               </p>
             </Reveal>
           </motion.div>
@@ -5274,6 +5276,61 @@ const RouterContext = React.createContext(null);
           .sort((a, b) => a.order - b.order);
       }
 
+      function CaptainProfilePage() {
+        const { loading, data } = useLiveCricketFeed();
+        const team = data.team || liveFeedFallback.team;
+        const player = asArray(data.players).find((item) => Number(item.id) === 29139731 || item.name?.toLowerCase() === "ankit kulshreshtha");
+        const stats = playerOverallStats(player);
+        const profileUrl = player?.profileUrl || "https://cricheroes.com/player-profile/29139731/ankit-kulshreshtha/profile";
+        const statsUrl = player?.statsUrl || "https://cricheroes.com/player-profile/29139731/ankit-kulshreshtha/stats";
+
+        return (
+          <main className="route-bg page-grain min-h-screen px-5 pb-16 pt-36 sm:px-8">
+            <section className="mx-auto max-w-5xl">
+              <div className="glass rounded-[8px] p-6 sm:p-10">
+                <p className="text-xs font-black uppercase tracking-[0.32em] text-cyan">Kurukshetra Warriors captain</p>
+                <h1 className="mt-4 font-display text-6xl font-black uppercase leading-none text-white sm:text-8xl">Ankit Kulshreshtha</h1>
+                <p className="mt-5 max-w-3xl text-lg leading-8 text-white/68">
+                  Ankit Kulshreshtha is the captain of Kurukshetra Warriors, the Greater Noida cricket team followed by CricKuru. This public profile connects the captain, team and official CricHeroes record.
+                </p>
+                <div className="mt-6 flex flex-wrap gap-3 text-xs font-black uppercase tracking-[0.15em]">
+                  <span className="rounded-full border border-gold/35 bg-gold/10 px-4 py-2 text-gold">Captain</span>
+                  <span className="rounded-full border border-cyan/35 bg-cyan/10 px-4 py-2 text-cyan">Kurukshetra Warriors</span>
+                  <span className="rounded-full border border-white/12 bg-white/7 px-4 py-2 text-white/55">{loading ? "Syncing CricHeroes" : `Updated ${formatFeedDate(data.syncedAt)}`}</span>
+                </div>
+                <div className="mt-8 grid gap-3 sm:grid-cols-4">
+                  <LiveStat label="Career matches" value={stats.matches || "-"} />
+                  <LiveStat label="Runs" value={stats.runs || "-"} />
+                  <LiveStat label="Wickets" value={stats.wickets || "-"} />
+                  <LiveStat label="Captain matches" value={stats.captainMatches || "-"} />
+                </div>
+                <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                  <a href={profileUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-gold px-6 text-sm font-black uppercase tracking-[0.16em] text-night">Official CricHeroes profile <Icon.ExternalLink size={15} /></a>
+                  <a href={statsUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/15 bg-white/7 px-6 text-sm font-black uppercase tracking-[0.16em] text-white hover:border-cyan hover:text-cyan">View career stats <Icon.ExternalLink size={15} /></a>
+                </div>
+              </div>
+              <div className="mt-5 grid gap-5 lg:grid-cols-2">
+                <div className="rounded-[8px] border border-white/12 bg-white/[0.045] p-6">
+                  <p className="text-xs font-black uppercase tracking-[0.22em] text-gold">Team connection</p>
+                  <h2 className="mt-2 font-display text-4xl font-black uppercase text-white">Leading the Warriors</h2>
+                  <p className="mt-3 leading-7 text-white/60">The live CricHeroes team snapshot identifies Ankit Kulshreshtha as captain and links his public player profile to Kurukshetra Warriors.</p>
+                  <a href={team.cricHeroesUrl || CricLinks.profile} target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex items-center gap-2 text-sm font-black uppercase tracking-[0.14em] text-cyan hover:text-white">Open team profile <Icon.ExternalLink size={15} /></a>
+                </div>
+                <div className="rounded-[8px] border border-white/12 bg-white/[0.045] p-6">
+                  <p className="text-xs font-black uppercase tracking-[0.22em] text-cyan">CricKuru coverage</p>
+                  <h2 className="mt-2 font-display text-4xl font-black uppercase text-white">Captain profile signals</h2>
+                  <div className="mt-4 grid gap-3 text-sm font-semibold text-white/65">
+                    <p className="rounded-[6px] bg-night/55 p-3">Role: Captain and team administrator</p>
+                    <p className="rounded-[6px] bg-night/55 p-3">Team: Kurukshetra Warriors</p>
+                    <p className="rounded-[6px] bg-night/55 p-3">Location: {team.city || "Greater Noida"}</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
+        );
+      }
+
       function IndiaImportantMatchRow({ match, compact = false }) {
         return (
           <article className={`${compact ? "py-3" : "py-4"} first:pt-0 last:pb-0`}>
@@ -5619,6 +5676,10 @@ const RouterContext = React.createContext(null);
                   <Route
                     path="/warriors"
                     element={<WarriorsDataPage />}
+                  />
+                  <Route
+                    path="/captain/ankit-kulshreshtha"
+                    element={<CaptainProfilePage />}
                   />
                   <Route
                     path="/india-matches"

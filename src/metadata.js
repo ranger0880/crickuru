@@ -1,14 +1,17 @@
 const SITE_ORIGIN = "https://crickuru.com";
 const SITE_NAME = "CricKuru";
 const DEFAULT_IMAGE_PATH = "/assets/stadium-vip-warriors.png";
+const CAPTAIN_NAME = "Ankit Kulshreshtha";
+const CAPTAIN_PATH = "/captain/ankit-kulshreshtha";
+const CAPTAIN_PROFILE_URL = "https://cricheroes.com/player-profile/29139731/ankit-kulshreshtha/profile";
 
 export const ROUTE_METADATA = [
   {
     path: "/",
     canonicalPath: "/",
-    title: "CricKuru - Kurukshetra Warriors Cricket Hub",
+    title: "CricKuru - Kurukshetra Warriors & Captain Ankit Kulshreshtha",
     description:
-      "The global home of Kurukshetra Warriors with CricHeroes links, live team intelligence, cricket stories, a playable arena, and the CricKuru meme forge.",
+      "CricKuru is the home of Kurukshetra Warriors and captain Ankit Kulshreshtha, with CricHeroes links, live team intelligence, cricket stories, a playable arena and meme forge.",
     ogType: "website",
     themeColor: "#05070B",
     changefreq: "weekly",
@@ -20,12 +23,24 @@ export const ROUTE_METADATA = [
     canonicalPath: "/warriors",
     title: "Kurukshetra Warriors CricHeroes Team Data - CricKuru",
     description:
-      "Explore the public Kurukshetra Warriors CricHeroes feed with interactive match scorecards, all-team player profiles, cross-team recent form, rare record holders, opponent form and live updates.",
+      "Explore the public Kurukshetra Warriors CricHeroes feed, captain Ankit Kulshreshtha, interactive match scorecards, player profiles, cross-team form, rare records and live updates.",
     ogType: "website",
     themeColor: "#05070B",
     changefreq: "daily",
     priority: "0.95",
     jsonLdType: "warriorsData",
+  },
+  {
+    path: CAPTAIN_PATH,
+    canonicalPath: CAPTAIN_PATH,
+    title: "Ankit Kulshreshtha - Captain of Kurukshetra Warriors | CricKuru",
+    description:
+      "Meet Ankit Kulshreshtha, captain of Kurukshetra Warriors. Explore his public CricHeroes profile, captaincy record, cricket role and team connection on CricKuru.",
+    ogType: "profile",
+    themeColor: "#05070B",
+    changefreq: "weekly",
+    priority: "0.95",
+    jsonLdType: "captainProfile",
   },
   {
     path: "/arena",
@@ -160,6 +175,7 @@ export function renderRouteMeta(pathname = "/") {
     `<title>${escapeHtml(metadata.title)}</title>`,
     `<meta name="description" content="${escapeHtml(metadata.description)}" data-route-meta="managed" />`,
     `<meta name="theme-color" content="${escapeHtml(metadata.themeColor)}" data-route-meta="managed" />`,
+    `<meta name="author" content="${SITE_NAME}" data-route-meta="managed" />`,
     `<link rel="canonical" href="${escapeHtml(canonicalUrl)}" data-route-meta="managed" />`,
     `<meta property="og:site_name" content="${SITE_NAME}" data-route-meta="managed" />`,
     `<meta property="og:type" content="${escapeHtml(metadata.ogType)}" data-route-meta="managed" />`,
@@ -167,6 +183,7 @@ export function renderRouteMeta(pathname = "/") {
     `<meta property="og:description" content="${escapeHtml(metadata.description)}" data-route-meta="managed" />`,
     `<meta property="og:url" content="${escapeHtml(pageUrl)}" data-route-meta="managed" />`,
     `<meta property="og:image" content="${escapeHtml(imageUrl)}" data-route-meta="managed" />`,
+    `<meta property="og:image:alt" content="${escapeHtml(`${SITE_NAME} - ${metadata.title}`)}" data-route-meta="managed" />`,
     `<meta name="twitter:card" content="summary_large_image" data-route-meta="managed" />`,
     `<meta name="twitter:title" content="${escapeHtml(metadata.title)}" data-route-meta="managed" />`,
     `<meta name="twitter:description" content="${escapeHtml(metadata.description)}" data-route-meta="managed" />`,
@@ -186,6 +203,7 @@ export function applyRouteMetadata(pathname = "/") {
   document.title = metadata.title;
   setMeta("name", "description", metadata.description);
   setMeta("name", "theme-color", metadata.themeColor);
+  setMeta("name", "author", SITE_NAME);
   setLink("canonical", canonicalUrl);
   setMeta("property", "og:site_name", SITE_NAME);
   setMeta("property", "og:type", metadata.ogType);
@@ -193,6 +211,7 @@ export function applyRouteMetadata(pathname = "/") {
   setMeta("property", "og:description", metadata.description);
   setMeta("property", "og:url", pageUrl);
   setMeta("property", "og:image", imageUrl);
+  setMeta("property", "og:image:alt", `${SITE_NAME} - ${metadata.title}`);
   setMeta("name", "twitter:card", "summary_large_image");
   setMeta("name", "twitter:title", metadata.title);
   setMeta("name", "twitter:description", metadata.description);
@@ -314,6 +333,13 @@ function jsonLdForRoute(metadata) {
           "@type": "Place",
           name: "Greater Noida",
         },
+        member: {
+          "@type": "Person",
+          name: CAPTAIN_NAME,
+          jobTitle: "Captain",
+          url: absoluteUrl(CAPTAIN_PATH),
+          sameAs: [CAPTAIN_PROFILE_URL],
+        },
       },
       {
         "@context": "https://schema.org",
@@ -326,6 +352,50 @@ function jsonLdForRoute(metadata) {
           "@type": "Organization",
           name: SITE_NAME,
           url: SITE_ORIGIN,
+        },
+      },
+    ];
+  }
+
+  if (metadata.jsonLdType === "captainProfile") {
+    return [
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        name: metadata.title,
+        description: metadata.description,
+        url: canonicalUrl,
+        mainEntity: {
+          "@type": "Person",
+          name: CAPTAIN_NAME,
+          jobTitle: "Captain of Kurukshetra Warriors",
+          url: canonicalUrl,
+          sameAs: [CAPTAIN_PROFILE_URL],
+          memberOf: {
+            "@type": "SportsTeam",
+            name: "Kurukshetra Warriors",
+            sport: "Cricket",
+            url: absoluteUrl("/warriors"),
+          },
+        },
+        isPartOf: {
+          "@type": "WebSite",
+          name: SITE_NAME,
+          url: SITE_ORIGIN,
+        },
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SportsTeam",
+        name: "Kurukshetra Warriors",
+        sport: "Cricket",
+        url: absoluteUrl("/warriors"),
+        member: {
+          "@type": "Person",
+          name: CAPTAIN_NAME,
+          jobTitle: "Captain",
+          url: canonicalUrl,
+          sameAs: [CAPTAIN_PROFILE_URL],
         },
       },
     ];
@@ -430,6 +500,13 @@ function jsonLdForRoute(metadata) {
       location: {
         "@type": "Place",
         name: "Greater Noida",
+      },
+      member: {
+        "@type": "Person",
+        name: CAPTAIN_NAME,
+        jobTitle: "Captain",
+        url: absoluteUrl(CAPTAIN_PATH),
+        sameAs: [CAPTAIN_PROFILE_URL],
       },
     },
     basePage,
