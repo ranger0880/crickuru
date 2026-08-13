@@ -5028,7 +5028,11 @@ const RouterContext = React.createContext(null);
         const importantMatches = asArray(data.importantMatches).slice(0, 10);
         const importantTournaments = asArray(data.importantTournaments);
         const [selectedTournamentId, setSelectedTournamentId] = useState("");
+        const [radarLevel, setRadarLevel] = useState("all");
         const [tournamentView, setTournamentView] = useState("radar");
+        const radarTournaments = radarLevel === "all"
+          ? importantTournaments
+          : importantTournaments.filter((tournament) => tournament.level === radarLevel);
         const activeTournament = importantTournaments.find((tournament) => tournament.id === selectedTournamentId) || importantTournaments[0];
         const monthlyResults = asArray(data.importantResultsByMonth);
         const activeMonth = monthlyResults.find((month) => month.month === selectedMonth) || monthlyResults[0];
@@ -5153,21 +5157,34 @@ const RouterContext = React.createContext(null);
                   </div>
                   <p className="max-w-xl text-sm leading-6 text-white/52">A tournament stays together here across every month of its schedule, from first fixture to final result.</p>
                 </div>
-                {importantTournaments.length ? (
-                  <label className="mt-5 grid max-w-xl gap-2">
-                    <span className="text-[0.65rem] font-black uppercase tracking-[0.18em] text-white/42">Follow tournament</span>
+                <div className="mt-5 grid gap-3 sm:grid-cols-2">
+                  {importantTournaments.length ? (
+                    <label className="grid gap-2">
+                      <span className="text-[0.65rem] font-black uppercase tracking-[0.18em] text-white/42">Follow tournament</span>
+                      <select
+                        aria-label="Follow important tournament"
+                        value={activeTournament?.id || ""}
+                        onChange={(event) => setSelectedTournamentId(event.target.value)}
+                        className="min-h-11 w-full appearance-none rounded-[8px] border border-gold/35 bg-night px-4 text-xs font-black uppercase tracking-[0.14em] text-gold outline-none transition focus:border-gold focus:ring-2 focus:ring-gold/20"
+                      >
+                        {importantTournaments.map((tournament) => <option key={tournament.id} value={tournament.id} className="bg-night text-white">{tournament.series}</option>)}
+                      </select>
+                    </label>
+                  ) : null}
+                  <label className="grid gap-2">
+                    <span className="text-[0.65rem] font-black uppercase tracking-[0.18em] text-white/42">Radar type</span>
                     <select
-                      aria-label="Follow important tournament"
-                      value={activeTournament?.id || ""}
-                      onChange={(event) => setSelectedTournamentId(event.target.value)}
-                      className="min-h-11 w-full appearance-none rounded-[8px] border border-gold/35 bg-night px-4 text-xs font-black uppercase tracking-[0.14em] text-gold outline-none transition focus:border-gold focus:ring-2 focus:ring-gold/20"
+                      aria-label="Tournament radar type"
+                      value={radarLevel}
+                      onChange={(event) => setRadarLevel(event.target.value)}
+                      className="min-h-11 w-full appearance-none rounded-[8px] border border-cyan/35 bg-night px-4 text-xs font-black uppercase tracking-[0.14em] text-cyan outline-none transition focus:border-cyan focus:ring-2 focus:ring-cyan/20"
                     >
-                      {importantTournaments.map((tournament) => <option key={tournament.id} value={tournament.id} className="bg-night text-white">{tournament.series}</option>)}
+                      {indiaLevelTabs.map((item) => <option key={item.id} value={item.id} className="bg-night text-white">{item.label}</option>)}
                     </select>
                   </label>
-                ) : null}
+                </div>
                 <div className="mt-5 flex flex-wrap items-center justify-between gap-3">
-                  <p className="text-xs font-black uppercase tracking-[0.16em] text-white/38">Select a node to open its match timeline</p>
+                  <p className="text-xs font-black uppercase tracking-[0.16em] text-white/38">Select a node to open its match timeline • Showing {radarTournaments.length} of {importantTournaments.length} tournament groups</p>
                   <div className="inline-flex rounded-full border border-white/12 bg-night/55 p-1" role="group" aria-label="Tournament display mode">
                     <button type="button" onClick={() => setTournamentView("radar")} aria-pressed={tournamentView === "radar"} className={`inline-flex min-h-10 items-center gap-2 rounded-full px-4 text-xs font-black uppercase tracking-[0.14em] transition ${tournamentView === "radar" ? "bg-gold text-night" : "text-white/55 hover:text-white"}`}>
                       <Icon.Radio size={15} /> Radar
@@ -5178,7 +5195,7 @@ const RouterContext = React.createContext(null);
                   </div>
                 </div>
                 {tournamentView === "radar" ? (
-                  <IndiaTournamentRadar tournaments={importantTournaments} activeId={activeTournament?.id} onSelect={setSelectedTournamentId} />
+                  <IndiaTournamentRadar tournaments={radarTournaments} activeId={activeTournament?.id} onSelect={setSelectedTournamentId} />
                 ) : (
                   <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
                     {importantTournaments.length ? importantTournaments.map((tournament) => <IndiaTournamentTracker key={tournament.id} tournament={tournament} active={tournament.id === activeTournament?.id} onSelect={() => setSelectedTournamentId(tournament.id)} />) : (
