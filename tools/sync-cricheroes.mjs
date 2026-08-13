@@ -653,6 +653,43 @@ function addPlayerStat(statsById, playerId, match, callback) {
   statsById.set(playerId, stats);
 }
 
+function noteBattingRows(match, players) {
+  const notes = Array.isArray(match.scorecard?.notes) ? match.scorecard.notes : [];
+  if (!notes.length) return [];
+
+  const rows = [];
+  let warriorsInnings = false;
+  for (const note of notes) {
+    const text = String(note || "");
+    if (text.startsWith(`${TEAM_NAME}:`) || text.includes(`Innings Break: ${TEAM_NAME}`) || text.includes(`End of Day: ${TEAM_NAME}`)) warriorsInnings = true;
+    if (/^Innings Break:/i.test(text) && !text.includes(TEAM_NAME)) warriorsInnings = false;
+    if (!warriorsInnings) continue;
+
+    for (const player of players) {
+      const name = String(player.name || "").trim();
+      if (!name) continue;
+      const escapedName = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      const dismissalLine = new RegExp(`${escapedName}\\s+(\\d+)\\s*\\((\\d+)\\)`, "i").exec(text);
+      const milestoneLine = new RegExp(`${escapedName}\\s*:\\s*(\\d+)\\s+off\\s+(\\d+)\\s+balls`, "i").exec(text);
+      const score = dismissalLine || milestoneLine;
+      if (!score) continue;
+      rows.push({
+        teamId: TEAM_ID,
+        teamName: TEAM_NAME,
+        playerId: Number(player.id),
+        playerName: player.name,
+        runs: Number(score[1]),
+        balls: Number(score[2]),
+        fours: 0,
+        sixes: 0,
+        strikeRate: score[2] ? ((Number(score[1]) / Number(score[2])) * 100).toFixed(2) : "0.00",
+        isOut: false,
+      });
+    }
+  }
+  return rows;
+}
+
 function extractRecordCandidates(match) {
   const records = [];
   const scorecard = match.scorecard || {};
@@ -705,7 +742,12 @@ function aggregatePlayerStats(players, matches) {
   const recordCandidates = matches.flatMap(extractRecordCandidates);
   for (const match of matches) {
     const seenInMatch = new Set();
-    for (const row of match.scorecard?.batting || []) {
+    const battingRows = [...(match.scorecard?.batting || [])];
+    const knownBatters = new Set(battingRows.map((row) => Number(row.playerId)));
+    for (const row of noteBattingRows(match, players)) {
+      if (!knownBatters.has(Number(row.playerId))) battingRows.push(row);
+    }
+    for (const row of battingRows) {
       if (row.teamId !== TEAM_ID) continue;
       seenInMatch.add(row.playerId);
       addPlayerStat(statsById, row.playerId, match, (stats) => {
