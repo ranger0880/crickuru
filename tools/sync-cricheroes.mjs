@@ -9,6 +9,8 @@ const BASE_URL = `https://cricheroes.com/team-profile/${TEAM_ID}/${TEAM_SLUG}`;
 const OUTPUT_FILE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../data/crickuru-live.json");
 const PLAYER_REFRESH_BATCH = 8;
 const RATE_LIMIT_RETRIES = 2;
+// Keep manually verified profile links at the front of the rate-limit-safe refresh queue.
+const PRIORITY_PLAYER_IDS = new Set([5584447]);
 
 const HEADERS = {
   "user-agent":
@@ -338,6 +340,11 @@ function bestWicketsFromText(value) {
   return match ? Number(match[1]) : 0;
 }
 
+function bestRunsFromText(value) {
+  const match = String(value || "").match(/\d+/);
+  return match ? Number(match[0]) : 0;
+}
+
 function normalizeOverallStats(initialStats) {
   if (!initialStats?.statistics) return null;
   const statistics = initialStats?.statistics || {};
@@ -365,7 +372,7 @@ function normalizeOverallStats(initialStats) {
     battingInnings: numericStat(batting, "Innings"),
     notOut: numericStat(batting, "Not out"),
     runs: numericStat(batting, "Runs"),
-    bestScore: numericStat(batting, "Highest Runs"),
+    bestScore: bestRunsFromText(statValue(batting, "Highest Runs")),
     average: String(statValue(batting, "Avg") || ""),
     strikeRate: String(statValue(batting, "SR") || ""),
     thirties: numericStat(batting, "30s"),
@@ -529,9 +536,14 @@ function playerPerformanceFromScorecard(player, match, scorecard) {
 
 async function hydratePlayerProfiles(players, previousPlayers = [], refreshCursor = 0) {
   const previousById = new Map((previousPlayers || []).map((player) => [Number(player.id), player]));
-  const orderedPlayers = players.length
+  const rotatedPlayers = players.length
     ? [...players.slice(refreshCursor), ...players.slice(0, refreshCursor)]
     : [];
+  const orderedPlayers = rotatedPlayers.sort((a, b) => {
+    const aPriority = PRIORITY_PLAYER_IDS.has(Number(a.id)) ? 0 : 1;
+    const bPriority = PRIORITY_PLAYER_IDS.has(Number(b.id)) ? 0 : 1;
+    return aPriority - bPriority;
+  });
   const missingStats = orderedPlayers.filter((player) => !previousById.get(Number(player.id))?.overallStats?.source);
   const refreshCandidates = missingStats.length
     ? missingStats
