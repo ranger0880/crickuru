@@ -165,7 +165,7 @@ const RouterContext = React.createContext(null);
           matchesUrl: CricLinks.matches,
           membersUrl: CricLinks.members,
         },
-        dataInventory: { teamProfile: false, matches: 0, liveMatches: 0, upcomingMatches: 0, recentMatches: 0, players: 0, opponents: 0, awards: 0, records: 0, sourcePages: [] },
+        dataInventory: { teamProfile: false, matches: 0, liveMatches: 0, upcomingMatches: 0, recentMatches: 0, players: 0, opponents: 0, awards: 0, records: 0, playerProfiles: 0, playerRecentMatches: 0, sourcePages: [] },
         summary: { matches: 0, live: 0, wins: 0, losses: 0, winRate: 0, liveOpponent: "", liveScore: "", liveStatus: "", latestResult: "", latestOpponent: "", upcoming: 0, nextOpponent: "", nextMatchDate: "", nextMatchVenue: "" },
         memberSummary: { total: 0, verified: 0, pro: 0, captains: 0, admins: 0, skills: [], batterCategories: [], bowlerCategories: [], badges: [] },
         matchInsights: { total: 0, completed: 0, averageFor: 0, averageAgainst: 0, highestFor: null, highestAgainst: null, matchTypes: [], ballTypes: [], venues: [], cities: [], tournaments: [] },
@@ -1652,7 +1652,7 @@ const RouterContext = React.createContext(null);
                     <span className="block">Data Vault</span>
                   </h1>
                   <p className="mt-6 max-w-full text-lg leading-8 text-white/68 sm:max-w-2xl">
-                    Every public Kurukshetra Warriors signal currently available from CricHeroes is pulled into this page: team profile, matches, scorecards, roster, awards and opponent form.
+                    Every public Kurukshetra Warriors signal currently available from CricHeroes is pulled into this page: team profile, matches, scorecards, roster, overall player profiles, cross-team recent form, awards and opponent form.
                   </p>
                   <div className="mt-6 flex flex-wrap gap-3 text-xs font-black uppercase tracking-[0.16em]">
                     <span className="rounded-full border border-gold/30 bg-gold/10 px-4 py-2 text-gold">{syncText}</span>
@@ -1940,7 +1940,7 @@ const RouterContext = React.createContext(null);
       }
 
       function WarriorsRosterDataCard({ player, rank }) {
-        const stats = player.stats || {};
+        const stats = player.warriorsStats || player.stats || {};
         return (
           <article className="rounded-[8px] border border-white/12 bg-white/[0.045] p-4">
             <div className="flex items-start justify-between gap-3">
@@ -2027,7 +2027,7 @@ const RouterContext = React.createContext(null);
               <div>
                 <p className="text-xs font-black uppercase tracking-[0.28em] text-gold">Trophy Room</p>
                 <h2 className="mt-2 font-display text-5xl font-black uppercase text-white">Current record holders</h2>
-                <p className="mt-3 max-w-2xl text-sm leading-7 text-white/55">These records stay on the wall until a stronger performance appears in a later CricHeroes scorecard.</p>
+                <p className="mt-3 max-w-2xl text-sm leading-7 text-white/55">These all-team records stay on the wall until a stronger performance appears in a later CricHeroes scorecard.</p>
               </div>
               <p className="text-xs font-black uppercase tracking-[0.16em] text-white/40">Updated {formatFeedDate(updatedAt)}</p>
             </div>
@@ -2042,7 +2042,7 @@ const RouterContext = React.createContext(null);
                     <p className="font-display text-4xl font-black text-gold">{record.value}<span className="ml-1 text-sm uppercase tracking-[0.12em]">{record.unit}</span></p>
                   </div>
                   <div className="mt-5 grid gap-2 text-sm font-semibold text-white/52 sm:grid-cols-2">
-                    <span>vs {record.opponent || "opponent"}</span>
+                    <span>{record.teamName || "CricHeroes team"} vs {record.opponent || "opponent"}</span>
                     <span className="sm:text-right">{formatFeedDate(record.date)}</span>
                   </div>
                   <div className="mt-4 flex flex-wrap gap-2">
@@ -2163,7 +2163,7 @@ const RouterContext = React.createContext(null);
                     Player Command Room
                   </h1>
                   <p className="mt-6 max-w-2xl text-lg leading-8 text-white/68">
-                    A mobile-friendly squad wall powered by the synced CricHeroes roster, recent awards, player roles and performance signals.
+                    A mobile-friendly squad wall powered by overall CricHeroes career stats, cross-team recent form, Warriors awards and performance signals.
                   </p>
                   <div className="mt-6 flex flex-wrap gap-3 text-xs font-black uppercase tracking-[0.16em]">
                     <span className="rounded-full border border-gold/30 bg-gold/10 px-4 py-2 text-gold">
@@ -2224,7 +2224,7 @@ const RouterContext = React.createContext(null);
 
               <div className="mt-10 flex flex-col gap-4 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:justify-between">
                 <p className="max-w-2xl text-sm leading-7 text-white/54">
-                  Performance charge is a 1-100 display score built from the latest CricHeroes scorecard snapshots, rare records, awards, role signals and recent form. The sync refreshes daily and whenever the public feed changes.
+                  Performance charge is a 1-100 display score built from overall CricHeroes totals, cross-team recent highlights, rare records, Warriors awards, role signals and recent form. Profile data refreshes daily.
                 </p>
                 <a
                   href={data.team?.membersUrl || CricLinks.members}
@@ -2265,6 +2265,7 @@ const RouterContext = React.createContext(null);
       function PlayerProfileCard({ player, rank }) {
         const awards = player.performance?.awards || 0;
         const activity = asArray(player.performance?.recentAwards).slice(0, 3);
+        const recentMatches = asArray(player.recentMatches).slice(0, 3);
         const stats = player.stats || {};
         const impact = player.impact || 0;
 
@@ -2289,11 +2290,20 @@ const RouterContext = React.createContext(null);
               </div>
             </div>
 
-            <div className="relative mt-5 grid grid-cols-4 gap-2 text-center">
-              <LiveTinyStat label="Runs" value={stats.runs || 0} />
-              <LiveTinyStat label="Wkts" value={stats.wickets || 0} />
-              <LiveTinyStat label="Best" value={stats.bestScore || 0} />
-              <LiveTinyStat label="Field" value={(stats.catches || 0) + (stats.stumpings || 0)} />
+            <div className="relative mt-5">
+              <p className="mb-2 text-[0.62rem] font-black uppercase tracking-[0.16em] text-cyan">Overall CricHeroes career</p>
+              <div className="grid grid-cols-4 gap-2 text-center">
+                <LiveTinyStat label="Runs" value={stats.runs || 0} />
+                <LiveTinyStat label="Wkts" value={stats.wickets || 0} />
+                <LiveTinyStat label="Best" value={stats.bestScore || 0} />
+                <LiveTinyStat label="Field" value={(stats.catches || 0) + (stats.stumpings || 0)} />
+              </div>
+              <p className="mt-3 text-center text-[0.62rem] font-black uppercase tracking-[0.12em] text-white/38">{stats.matches || stats.matchesTracked || 0} matches | Avg {stats.average || "-"} | SR {stats.strikeRate || "-"}</p>
+            </div>
+
+            <div className="relative mt-4 flex flex-wrap gap-2">
+              {player.statsUrl && <a className="rounded-full border border-cyan/25 px-3 py-1 text-[0.62rem] font-black uppercase tracking-[0.12em] text-cyan transition hover:border-cyan hover:bg-cyan/10" href={player.statsUrl} target="_blank" rel="noopener noreferrer">Overall profile</a>}
+              {player.matchesUrl && <a className="rounded-full border border-white/12 px-3 py-1 text-[0.62rem] font-black uppercase tracking-[0.12em] text-white/55 transition hover:border-gold/45 hover:text-gold" href={player.matchesUrl} target="_blank" rel="noopener noreferrer">All-team matches</a>}
             </div>
 
             <div className="relative mt-5">
@@ -2311,7 +2321,23 @@ const RouterContext = React.createContext(null);
             </div>
 
             <div className="relative mt-5 border-t border-white/10 pt-4">
-              <p className="text-[0.65rem] font-black uppercase tracking-[0.18em] text-white/40">Recent impact</p>
+              <p className="text-[0.65rem] font-black uppercase tracking-[0.18em] text-white/40">Recent form across teams</p>
+              {recentMatches.length ? (
+                <div className="mt-3 grid gap-2">
+                  {recentMatches.map((match) => (
+                    <a key={`recent-${match.id}`} href={match.performance?.scorecardUrl || match.scorecardUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between gap-3 rounded-[6px] border border-white/8 bg-night/45 px-3 py-2 text-sm transition hover:border-gold/35">
+                      <span className="min-w-0">
+                        <span className="block truncate font-semibold text-white/76">{match.performance?.highlight || `${match.teamA} vs ${match.teamB}`}</span>
+                        <span className="block truncate text-xs text-white/40">{match.performance?.teamName || "Cross-team match"} • {formatFeedDate(match.date)}</span>
+                      </span>
+                      <Icon.ExternalLink className="shrink-0 text-white/35" size={14} />
+                    </a>
+                  ))}
+                </div>
+              ) : (
+                <p className="mt-3 text-sm leading-6 text-white/52">Waiting for the public player match history.</p>
+              )}
+              <p className="mt-5 text-[0.65rem] font-black uppercase tracking-[0.18em] text-white/40">Recent awards with Warriors</p>
               {activity.length ? (
                 <div className="mt-3 grid gap-2">
                   {activity.map((award) => (

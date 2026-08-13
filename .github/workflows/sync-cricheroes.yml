@@ -2,8 +2,8 @@ name: Kurukshetra Warriors CricHeroes Feed Sync
 
 on:
   schedule:
-    # Frequent public Pages refresh for live-score periods. GitHub schedules use UTC.
-    - cron: "*/5 * * * *"
+    # Daily player-profile refresh. GitHub schedules use UTC.
+    - cron: "17 2 * * *"
   workflow_dispatch:
 
 permissions:

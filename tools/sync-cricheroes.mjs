@@ -15,6 +15,8 @@ const HEADERS = {
   "accept-language": "en-US,en;q=0.9",
 };
 
+const wait = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
+
 async function readExistingFeed() {
   try {
     return JSON.parse(await fs.readFile(OUTPUT_FILE, "utf8"));
@@ -35,6 +37,7 @@ function feedWithoutVolatileFields(feed) {
   }
   for (const player of stable.players || []) {
     if (player.stats) player.stats.updatedAt = "";
+    if (player.warriorsStats) player.warriorsStats.updatedAt = "";
   }
   return stable;
 }
@@ -45,25 +48,29 @@ function hasPublicDataChanged(previousFeed, nextFeed) {
 }
 
 async function fetchFlightText(url) {
-  const response = await fetch(url, { headers: HEADERS });
-  if (!response.ok) {
-    throw new Error(`CricHeroes returned ${response.status} for ${url}`);
-  }
+  for (let attempt = 0; attempt < 2; attempt += 1) {
+    const response = await fetch(url, { headers: HEADERS });
+    if (response.ok) {
+      const html = await response.text();
+      const chunks = [];
+      const regex = /self\.__next_f\.push\(\[1,"((?:\\.|[^"\\])*)"\]\)<\/script>/g;
+      let match;
 
-  const html = await response.text();
-  const chunks = [];
-  const regex = /self\.__next_f\.push\(\[1,"((?:\\.|[^"\\])*)"\]\)<\/script>/g;
-  let match;
+      while ((match = regex.exec(html))) {
+        try {
+          chunks.push(JSON.parse(`"${match[1]}"`));
+        } catch {
+          // Ignore malformed framework chunks. The useful data is duplicated across other chunks.
+        }
+      }
 
-  while ((match = regex.exec(html))) {
-    try {
-      chunks.push(JSON.parse(`"${match[1]}"`));
-    } catch {
-      // Ignore malformed framework chunks. The useful data is duplicated across other chunks.
+      return chunks.join("\n");
     }
+    if (response.status !== 429 || attempt === 1) {
+      throw new Error(`CricHeroes returned ${response.status} for ${url}`);
+    }
+    await wait(1500);
   }
-
-  return chunks.join("\n");
 }
 
 function extractJsonValue(text, key, startAt = 0) {
@@ -123,6 +130,10 @@ function slugifyScorecardName(value) {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "") || "team";
+}
+
+function playerProfileUrl(playerId, playerName, tab = "profile") {
+  return `https://cricheroes.com/player-profile/${playerId}/${slugifyScorecardName(playerName)}/${tab}`;
 }
 
 function scorecardUrl(match) {
@@ -253,6 +264,20 @@ async function fetchScorecardSummary(match) {
   }
 }
 
+async function mapWithConcurrency(items, limit, callback) {
+  const results = new Array(items.length);
+  let cursor = 0;
+  const worker = async () => {
+    while (cursor < items.length) {
+      const index = cursor;
+      cursor += 1;
+      results[index] = await callback(items[index], index);
+    }
+  };
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, worker));
+  return results;
+}
+
 function normalizeBestPerformances(summaryData) {
   const best = summaryData?.best_performances || {};
   return {
@@ -292,6 +317,212 @@ function normalizeBestPerformances(summaryData) {
       .map((note) => (typeof note === "string" ? note : note?.note || ""))
       .filter(Boolean),
   };
+}
+
+function statValue(section = [], title) {
+  const stat = section.find((item) => item.title === title);
+  return stat?.value ?? 0;
+}
+
+function numericStat(section, title) {
+  const value = Number(statValue(section, title));
+  return Number.isFinite(value) ? value : 0;
+}
+
+function bestWicketsFromText(value) {
+  const match = String(value || "").match(/^(\d+)\s*\//);
+  return match ? Number(match[1]) : 0;
+}
+
+function normalizeOverallStats(initialStats) {
+  if (!initialStats?.statistics) return null;
+  const statistics = initialStats?.statistics || {};
+  const batting = statistics.batting || [];
+  const bowling = statistics.bowling || [];
+  const fielding = statistics.fielding || [];
+  const captain = statistics.captain || [];
+  return {
+    source: "CricHeroes public player stats",
+    matches: numericStat(batting, "Matches"),
+    battingInnings: numericStat(batting, "Innings"),
+    notOut: numericStat(batting, "Not out"),
+    runs: numericStat(batting, "Runs"),
+    bestScore: numericStat(batting, "Highest Runs"),
+    average: String(statValue(batting, "Avg") || ""),
+    strikeRate: String(statValue(batting, "SR") || ""),
+    fifties: numericStat(batting, "50s"),
+    hundreds: numericStat(batting, "100s"),
+    fours: numericStat(batting, "4s"),
+    sixes: numericStat(batting, "6s"),
+    wins: numericStat(batting, "Won"),
+    losses: numericStat(batting, "Loss"),
+    bowlingInnings: numericStat(bowling, "Innings"),
+    overs: String(statValue(bowling, "Overs") || ""),
+    maidens: numericStat(bowling, "Maidens"),
+    wickets: numericStat(bowling, "Wickets"),
+    runsConceded: numericStat(bowling, "Runs"),
+    bestWickets: bestWicketsFromText(statValue(bowling, "Best Bowling")),
+    hatTricks: 0,
+    bestBowling: String(statValue(bowling, "Best Bowling") || ""),
+    threeWicketHauls: numericStat(bowling, "3 Wickets"),
+    fiveWicketHauls: numericStat(bowling, "5 Wickets"),
+    economy: String(statValue(bowling, "Economy") || ""),
+    bowlingStrikeRate: String(statValue(bowling, "SR") || ""),
+    bowlingAverage: String(statValue(bowling, "Avg") || ""),
+    catches: numericStat(fielding, "Catches"),
+    caughtBehind: numericStat(fielding, "Caught behind"),
+    runOuts: numericStat(fielding, "Run outs"),
+    stumpings: numericStat(fielding, "Stumpings"),
+    assistedRunOuts: numericStat(fielding, "Assisted Run Outs"),
+    byeRunsWicketkeeper: numericStat(fielding, "Bye Runs (WK)"),
+    captainMatches: numericStat(captain, "Matches"),
+    tossesWon: numericStat(captain, "Toss Won"),
+    captainWinPercentage: String(statValue(captain, "Win Per") || ""),
+  };
+}
+
+function normalizePlayerRecentMatches(rawMatches, player) {
+  return (Array.isArray(rawMatches) ? rawMatches : [])
+    .map((match) => ({
+      id: Number(match.match_id),
+      date: normalizeDate(match.match_start_time || match.created_date),
+      status: match.status || "",
+      matchType: match.match_type || "",
+      ballType: match.ball_type || "",
+      venue: match.ground_name?.trim() || match.city_name || "",
+      city: match.city_name || "",
+      teamAId: Number(match.team_a_id || 0),
+      teamA: match.team_a || "",
+      teamBId: Number(match.team_b_id || 0),
+      teamB: match.team_b || "",
+      winningTeamId: Number(match.winning_team_id || 0),
+      winningTeam: match.winning_team || "",
+      resultText: match.match_summary?.summary || match.win_by || match.match_result || match.status || "",
+      teamAScore: match.team_a_summary || "",
+      teamBScore: match.team_b_summary || "",
+      scorecardUrl: `https://cricheroes.com/scorecard/${match.match_id}/individual/${slugifyScorecardName(match.team_a)}-vs-${slugifyScorecardName(match.team_b)}/summary`,
+      playerId: Number(player.id),
+    }))
+    .filter((match) => match.id)
+    .sort((a, b) => matchTime(b) - matchTime(a));
+}
+
+async function fetchPlayerProfileData(player) {
+  let overallStats = null;
+  let recentMatches = [];
+  try {
+    const statsText = await fetchFlightText(player.statsUrl);
+    overallStats = normalizeOverallStats(extractJsonValue(statsText, "initialStats"));
+  } catch (error) {
+    console.warn(`Player stats unavailable for ${player.name}: ${error.message}`);
+  }
+  await wait(400);
+  try {
+    const matchesText = await fetchFlightText(player.matchesUrl);
+    const matchesPayload = extractJsonValue(matchesText, "matches");
+    recentMatches = normalizePlayerRecentMatches(matchesPayload?.data, player);
+  } catch (error) {
+    console.warn(`Player matches unavailable for ${player.name}: ${error.message}`);
+  }
+  return {
+    overallStats,
+    recentMatches,
+  };
+}
+
+function playerPerformanceFromScorecard(player, match, scorecard) {
+  const batting = (scorecard?.batting || []).find((row) => Number(row.playerId) === Number(player.id));
+  const bowling = (scorecard?.bowling || []).find((row) => Number(row.playerId) === Number(player.id));
+  const primaryRow = batting || bowling;
+  const notes = scorecard?.notes || [];
+  const teamId = primaryRow?.teamId || 0;
+  const teamName = primaryRow?.teamName || (teamId === match.teamAId ? match.teamA : teamId === match.teamBId ? match.teamB : "");
+  const opponent = teamId === match.teamAId ? match.teamB : teamId === match.teamBId ? match.teamA : "";
+  const highlights = [];
+  if ((batting?.runs || 0) >= 150) highlights.push(`${batting.runs} runs`);
+  else if ((batting?.runs || 0) >= 50) highlights.push(`${batting.runs} runs`);
+  if ((bowling?.wickets || 0) >= 5) highlights.push(`${bowling.wickets}-wicket haul`);
+  else if ((bowling?.wickets || 0) >= 3) highlights.push(`${bowling.wickets} wickets`);
+  const noteText = notes.join(" ");
+  if (new RegExp(String(player.name || "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i").test(noteText)) {
+    const catches = noteText.match(/(\d+)\s*catches?/i);
+    const stumpings = noteText.match(/(\d+)\s*stumpings?/i);
+    if (catches && Number(catches[1]) >= 3) highlights.push(`${catches[1]} catches`);
+    if (stumpings && Number(stumpings[1]) >= 2) highlights.push(`${stumpings[1]} stumpings`);
+  }
+  return {
+    teamId,
+    teamName,
+    opponent,
+    runs: batting?.runs || 0,
+    balls: batting?.balls || 0,
+    fours: batting?.fours || 0,
+    sixes: batting?.sixes || 0,
+    wickets: bowling?.wickets || 0,
+    ballsBowled: bowling?.balls || 0,
+    runsConceded: bowling?.runs || 0,
+    catches: 0,
+    stumpings: 0,
+    highlight: highlights.join(" • "),
+    scorecardUrl: match.scorecardUrl,
+  };
+}
+
+async function hydratePlayerProfiles(players, previousPlayers = []) {
+  const snapshots = await mapWithConcurrency(players, 1, async (player) => {
+    try {
+      return await fetchPlayerProfileData(player);
+    } catch (error) {
+      console.warn(`Player profile unavailable for ${player.name}: ${error.message}`);
+      return { overallStats: null, recentMatches: [] };
+    }
+  });
+  const previousById = new Map((previousPlayers || []).map((player) => [Number(player.id), player]));
+  players.forEach((player, index) => {
+    const previous = previousById.get(Number(player.id));
+    player.overallStats = snapshots[index].overallStats || previous?.overallStats || {};
+    player.stats = Object.keys(player.overallStats).length ? player.overallStats : previous?.stats || {};
+    player.recentMatches = snapshots[index].recentMatches.length ? snapshots[index].recentMatches : previous?.recentMatches || [];
+  });
+
+  const recentMatches = new Map();
+  for (const player of players) {
+    for (const match of player.recentMatches.slice(0, 6)) {
+      if (!recentMatches.has(match.id)) recentMatches.set(match.id, match);
+    }
+  }
+  const enrichedMatches = await mapWithConcurrency([...recentMatches.values()], 1, async (match) => ({
+    ...match,
+    scorecard: await fetchScorecardSummary(match),
+  }));
+  const scorecardsById = new Map(enrichedMatches.map((match) => [match.id, match.scorecard ? normalizeBestPerformances(match.scorecard) : null]));
+  for (const player of players) {
+    player.recentMatches = player.recentMatches.slice(0, 6).map((match) => ({
+      ...match,
+      performance: playerPerformanceFromScorecard(player, match, scorecardsById.get(match.id)),
+    }));
+    player.recentHighlights = player.recentMatches.filter((match) => match.performance?.highlight).slice(0, 3);
+  }
+}
+
+function extractPlayerRecentRecordCandidates(players) {
+  return players.flatMap((player) => player.recentMatches.flatMap((match) => {
+    const performance = match.performance || {};
+    const records = [];
+    if (performance.runs >= 150) records.push({ type: "highest_score", title: "150+ batting milestone", value: performance.runs, unit: "runs" });
+    if (performance.wickets >= 5) records.push({ type: "best_bowling", title: "Five-wicket haul", value: performance.wickets, unit: "wickets" });
+    return records.map((record) => ({
+      ...record,
+      playerId: player.id,
+      playerName: player.name,
+      matchId: match.id,
+      teamName: performance.teamName,
+      opponent: performance.opponent || (performance.teamName === match.teamA ? match.teamB : match.teamA),
+      date: match.date,
+      result: match.resultText,
+      scorecardUrl: performance.scorecardUrl,
+    }));
+  }));
 }
 
 async function hydrateScorecards(matches) {
@@ -389,7 +620,7 @@ function extractRecordCandidates(match) {
   if (catches && Number(catches[1]) >= 5) {
     records.push({ type: "catches", title: "Five-catch fielding record", value: Number(catches[1]), unit: "catches", playerId: 0, playerName: notePlayer(/([\w .'-]+?)[ :]\d+\s*catches?/i) });
   }
-  return records.map((record) => ({ ...record, matchId: match.id, opponent: match.opponent, date: match.date, result: match.result }));
+  return records.map((record) => ({ ...record, teamName: TEAM_NAME, matchId: match.id, opponent: match.opponent, date: match.date, result: match.result, scorecardUrl: match.scorecardUrl }));
 }
 
 function aggregatePlayerStats(players, matches) {
@@ -439,7 +670,9 @@ function aggregatePlayerStats(players, matches) {
   }
 
   for (const player of players) {
-    player.stats = { ...(statsById.get(Number(player.id)) || blankPlayerStats()), updatedAt: new Date().toISOString() };
+    const warriorsStats = { ...(statsById.get(Number(player.id)) || blankPlayerStats()), updatedAt: new Date().toISOString() };
+    player.warriorsStats = warriorsStats;
+    if (!player.overallStats || !Object.keys(player.overallStats).length) player.stats = warriorsStats;
   }
 
   return recordCandidates;
@@ -528,6 +761,9 @@ function normalizeMembers(rawMembers) {
       player.batter_category || "",
       player.bowler_category || "",
     ].filter(Boolean),
+    profileUrl: playerProfileUrl(player.player_id, player.name, "profile"),
+    statsUrl: playerProfileUrl(player.player_id, player.name, "stats"),
+    matchesUrl: playerProfileUrl(player.player_id, player.name, "matches"),
     performance: {
       playerOfMatch: 0,
       fielderOfMatch: 0,
@@ -781,6 +1017,7 @@ function buildMatchInsights(matches) {
 }
 
 async function main() {
+  const previousFeed = await readExistingFeed();
   const [matchesText, membersText] = await Promise.all([
     fetchFlightText(`${BASE_URL}/matches`),
     fetchFlightText(`${BASE_URL}/members`),
@@ -797,16 +1034,26 @@ async function main() {
   const matches = baseMatches.map((match) => ({ ...match, scorecard: scorecardsByMatch.get(Number(match.id)) || null }));
   const { liveMatches, upcomingMatches, recentMatches } = splitMatches(matches);
   const players = normalizeMembers(rawMembers);
+  await hydratePlayerProfiles(players, previousFeed?.players || []);
   const team = normalizeTeam(teamDetails, rawMembers, players);
-  const recordCandidates = aggregatePlayerStats(players, recentMatches);
+  const teamRecordCandidates = aggregatePlayerStats(players, recentMatches);
+  const overallRecordCandidates = extractPlayerRecentRecordCandidates(players);
+  const recordCandidates = [...teamRecordCandidates, ...overallRecordCandidates];
+  const profileCount = players.filter((player) => player.overallStats?.source === "CricHeroes public player stats").length;
+  const previousProfileCount = Number(previousFeed?.dataInventory?.playerProfiles || 0);
+  const minimumProfiles = Math.max(1, Math.ceil(players.length * 0.5));
+  if (profileCount < minimumProfiles && previousProfileCount === 0) {
+    console.warn(`Only ${profileCount}/${players.length} player profiles were available; keeping the previous feed.`);
+    return;
+  }
   const recordLedger = buildRecordLedger(recordCandidates, players);
   const opponentAwards = attachAwards(players, recentMatches);
   const opponents = buildOpponents(recentMatches, opponentAwards);
   const awardLedger = buildAwardsLedger(players, recentMatches);
 
   const feed = {
-    schemaVersion: 2,
-    source: "CricHeroes public team pages",
+    schemaVersion: 3,
+    source: "CricHeroes public team and player pages",
     syncedAt: new Date().toISOString(),
     playerStatsUpdatedAt: new Date().toISOString(),
     dataInventory: {
@@ -819,6 +1066,8 @@ async function main() {
       opponents: opponents.length,
       awards: awardLedger.length,
       records: recordLedger.length,
+      playerProfiles: players.filter((player) => player.overallStats?.source).length,
+      playerRecentMatches: players.reduce((sum, player) => sum + player.recentMatches.length, 0),
       sourcePages: [BASE_URL, `${BASE_URL}/matches`, `${BASE_URL}/members`],
     },
     team,
@@ -837,7 +1086,6 @@ async function main() {
     recordHistory: recordCandidates,
   };
 
-  const previousFeed = await readExistingFeed();
   if (!hasPublicDataChanged(previousFeed, feed)) {
     console.log("No public CricHeroes data changes since the last sync.");
     console.log(`Checked ${matches.length} matches, ${liveMatches.length} live, ${players.length} players, ${opponents.length} opponents.`);
