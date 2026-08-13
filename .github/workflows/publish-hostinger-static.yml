@@ -37,6 +37,8 @@ jobs:
         run: npm run build
 
       - name: Publish dist as hostinger-static
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
         run: |
           set -euo pipefail
