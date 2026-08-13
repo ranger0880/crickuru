@@ -52,7 +52,7 @@ The site includes the Google Analytics Google tag for measurement ID `G-6WZ5CTVL
 
 ## Warriors Data
 
-The `/warriors` route displays the full public Kurukshetra Warriors CricHeroes feed from `data/crickuru-live.json`, including team profile fields, match scorecards, roster signals, awards, opponents, source links and sync timing.
+The `/warriors` route displays the full public Kurukshetra Warriors CricHeroes feed from `data/crickuru-live.json`, including team profile fields, match scorecards, roster signals, awards, opponents, source links and near-live sync timing.
 
 ## Account connections
 

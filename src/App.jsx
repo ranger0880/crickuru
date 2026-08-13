@@ -281,7 +281,7 @@ const RouterContext = React.createContext(null);
 
           const loadFeed = async () => {
             try {
-              const response = await fetch(assetUrl(`/data/crickuru-live-v3.json?v=${Date.now()}`), { cache: "no-store" });
+              const response = await fetch(assetUrl(`/data/crickuru-live.json?v=${Date.now()}`), { cache: "no-store" });
               if (!response.ok) throw new Error(`Live feed returned ${response.status}`);
               const data = await response.json();
               if (!cancelled) setState({ loading: false, error: "", data: { ...liveFeedFallback, ...data } });
@@ -2029,7 +2029,7 @@ const RouterContext = React.createContext(null);
                 <p className="text-xs font-black uppercase tracking-[0.22em] text-cyan">Roster watch</p>
                 <h2 className="mt-2 font-display text-3xl font-black uppercase text-white">Recent squad changes</h2>
               </div>
-              <p className="text-xs font-black uppercase tracking-[0.14em] text-white/38">Checked daily from CricHeroes</p>
+              <p className="text-xs font-black uppercase tracking-[0.14em] text-white/38">Checked every 5 minutes from CricHeroes</p>
             </div>
             <div className="mt-4 grid gap-2 md:grid-cols-2">
               {changes.slice(0, 6).map((change, index) => (
@@ -2303,7 +2303,7 @@ const RouterContext = React.createContext(null);
 
               <div className="mt-10 flex flex-col gap-4 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:justify-between">
                 <p className="max-w-2xl text-sm leading-7 text-white/54">
-                  Performance charge is a 1-100 display score built from overall CricHeroes totals, cross-team recent highlights, rare records, Warriors awards, role signals and recent form. Profile data refreshes daily.
+                  Performance charge is a 1-100 display score built from overall CricHeroes totals, cross-team recent highlights, rare records, Warriors awards, role signals and recent form. Public data refreshes on a near-live schedule.
                 </p>
                 <a
                   href={data.team?.membersUrl || CricLinks.members}
@@ -2817,7 +2817,7 @@ const RouterContext = React.createContext(null);
                     ) : <p className="mt-5 text-sm leading-6 text-white/50">Recent all-team match form will appear after the next public profile sync.</p>}
                     <details className="mt-5 rounded-[6px] border border-white/8 bg-night/45 p-3">
                       <summary className="cursor-pointer text-xs font-black uppercase tracking-[0.14em] text-gold">Show synced match history ({matchHistory.length})</summary>
-                      <p className="mt-2 text-xs leading-5 text-white/38">{player.historyComplete === false ? "More public CricHeroes history is queued for the next daily sync." : "All public history pages currently available to the sync are loaded."}</p>
+                      <p className="mt-2 text-xs leading-5 text-white/38">{player.historyComplete === false ? "More public CricHeroes history is queued for the next near-live sync." : "All public history pages currently available to the sync are loaded."}</p>
                       <div className="mt-3 max-h-72 overflow-y-auto pr-1">
                         <div className="grid gap-2">
                           {matchHistory.map((match) => <a key={`history-${match.id}`} href={match.performance?.scorecardUrl || match.scorecardUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between gap-3 border-b border-white/7 py-2 text-sm"><span className="min-w-0"><span className="block truncate font-semibold text-white/72">{match.teamA} vs {match.teamB}</span><span className="block truncate text-xs text-white/38">{match.performance?.highlight || match.resultText || match.status} • {formatFeedDate(match.date)}</span></span><Icon.ExternalLink className="shrink-0 text-white/30" size={13} /></a>)}
@@ -5117,7 +5117,7 @@ const RouterContext = React.createContext(null);
                     <p className="text-xs font-black uppercase tracking-[0.24em] text-cyan">Update rhythm</p>
                     <h2 className="mt-2 font-display text-4xl font-black uppercase text-white">Near-Live Scoreboard</h2>
                     <p className="mt-4 leading-8 text-white/66">
-                      The browser checks the saved site feed every minute. GitHub Actions refreshes the feed on a schedule, so live scores can update without manual publishing.
+                      The browser checks the saved site feed every minute. GitHub Actions refreshes the public CricHeroes snapshot every five minutes when the source exposes a change.
                     </p>
                     <p className="mt-4 rounded-[8px] border border-white/10 bg-white/[0.045] p-4 text-sm leading-7 text-white/56">
                       Source: {data.source || "public cricket feed"}. For ball-by-ball guaranteed data, connect an official paid cricket data API later.
