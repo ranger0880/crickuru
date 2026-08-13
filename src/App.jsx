@@ -386,6 +386,11 @@ const RouterContext = React.createContext(null);
         return Array.isArray(value) ? value : [];
       }
 
+      function playerOverallStats(player) {
+        const candidates = [player?.overallStats, player?.stats];
+        return candidates.find((stats) => stats?.source === "CricHeroes public player stats") || {};
+      }
+
       function matchTimeLine(match) {
         const parts = [
           match.dateLabel || compactFeedDate(match.startTime),
@@ -1985,6 +1990,9 @@ const RouterContext = React.createContext(null);
               {(player.badges?.length ? player.badges : ["Roster"]).slice(0, 6).map((badge) => <BadgePill key={badge} label={badge} />)}
               {player.associationTag && <BadgePill label={player.associationTag} />}
             </div>
+            <button type="button" className="mt-4 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-[7px] border border-gold/35 bg-gold/10 px-4 text-xs font-black uppercase tracking-[0.16em] text-gold transition hover:border-gold hover:bg-gold/15 focus:outline-none focus:ring-2 focus:ring-gold/60" onClick={(event) => { event.stopPropagation(); onSelect?.(); }}>
+              <Icon.CircleUserRound size={16} /> Open player profile
+            </button>
           </article>
         );
       }
@@ -2188,9 +2196,9 @@ const RouterContext = React.createContext(null);
         const filteredPlayers = players.filter((player) => playerMatchesFilter(player, filter));
         const leaders = {
           impact: players[0],
-          batting: [...players].sort((a, b) => (b.stats?.runs || 0) - (a.stats?.runs || 0) || b.impact - a.impact)[0],
-          bowling: [...players].sort((a, b) => (b.stats?.wickets || 0) - (a.stats?.wickets || 0) || b.impact - a.impact)[0],
-          fielding: [...players].sort((a, b) => ((b.stats?.catches || 0) + (b.stats?.stumpings || 0)) - ((a.stats?.catches || 0) + (a.stats?.stumpings || 0)) || b.impact - a.impact)[0],
+          batting: [...players].sort((a, b) => (playerOverallStats(b).runs || 0) - (playerOverallStats(a).runs || 0) || b.impact - a.impact)[0],
+          bowling: [...players].sort((a, b) => (playerOverallStats(b).wickets || 0) - (playerOverallStats(a).wickets || 0) || b.impact - a.impact)[0],
+          fielding: [...players].sort((a, b) => ((playerOverallStats(b).catches || 0) + (playerOverallStats(b).stumpings || 0)) - ((playerOverallStats(a).catches || 0) + (playerOverallStats(a).stumpings || 0)) || b.impact - a.impact)[0],
         };
         const totalAwards = players.reduce((sum, player) => sum + (player.performance?.awards || 0), 0);
         const verifiedCount = players.filter((player) => player.isVerified).length;
@@ -2230,9 +2238,9 @@ const RouterContext = React.createContext(null);
 
               <div className="mt-10 grid gap-5 lg:grid-cols-4">
                 <PlayerLeaderCard label="Impact Leader" player={leaders.impact} metric={`${leaders.impact?.impact || 0}/100`} />
-                <PlayerLeaderCard label="Batting Edge" player={leaders.batting} metric={`${leaders.batting?.stats?.runs || 0} RUNS`} />
-                <PlayerLeaderCard label="Strike Bowler" player={leaders.bowling} metric={`${leaders.bowling?.stats?.wickets || 0} WKTS`} />
-                <PlayerLeaderCard label="Field Watch" player={leaders.fielding} metric={`${(leaders.fielding?.stats?.catches || 0) + (leaders.fielding?.stats?.stumpings || 0)} FIELD`} />
+                <PlayerLeaderCard label="Batting Edge" player={leaders.batting} metric={`${playerOverallStats(leaders.batting).runs || 0} RUNS`} />
+                <PlayerLeaderCard label="Strike Bowler" player={leaders.bowling} metric={`${playerOverallStats(leaders.bowling).wickets || 0} WKTS`} />
+                <PlayerLeaderCard label="Field Watch" player={leaders.fielding} metric={`${(playerOverallStats(leaders.fielding).catches || 0) + (playerOverallStats(leaders.fielding).stumpings || 0)} FIELD`} />
               </div>
 
               {rosterChanges.length > 0 && <RosterChangePanel changes={rosterChanges} />}
@@ -2314,7 +2322,7 @@ const RouterContext = React.createContext(null);
         const awards = player.performance?.awards || 0;
         const activity = asArray(player.performance?.recentAwards).slice(0, 3);
         const recentMatches = asArray(player.recentMatches).slice(0, 3);
-        const stats = player.stats || {};
+        const stats = playerOverallStats(player);
         const hasOverallStats = stats.source === "CricHeroes public player stats";
         const impact = player.impact || 0;
 
@@ -2407,13 +2415,16 @@ const RouterContext = React.createContext(null);
                 <p className="mt-3 text-sm leading-6 text-white/52">Waiting for the next CricHeroes award entry.</p>
               )}
             </div>
+            <button type="button" className="relative mt-5 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-[7px] border border-gold/35 bg-gold/10 px-4 text-xs font-black uppercase tracking-[0.16em] text-gold transition hover:border-gold hover:bg-gold/15 focus:outline-none focus:ring-2 focus:ring-gold/60" onClick={(event) => { event.stopPropagation(); onSelect?.(); }}>
+              <Icon.CircleUserRound size={16} /> Open player profile
+            </button>
           </article>
         );
       }
 
       function playerImpactScore(player) {
         const performance = player.performance || {};
-        const stats = player.stats?.source === "CricHeroes public player stats" ? player.stats : {};
+        const stats = playerOverallStats(player);
         const raw =
           Math.min(25, (stats.runs || 0) / 4) +
           Math.min(20, (stats.wickets || 0) * 5) +
@@ -2714,7 +2725,7 @@ const RouterContext = React.createContext(null);
       }
 
       function PlayerDetailModal({ player, onClose }) {
-        const stats = player.stats?.source === "CricHeroes public player stats" ? player.stats : {};
+        const stats = playerOverallStats(player);
         const warriorsStats = player.warriorsStats || {};
         const recentMatches = asArray(player.recentMatches).slice(0, 5);
         const matchHistory = asArray(player.matchHistory).length ? asArray(player.matchHistory) : recentMatches;
