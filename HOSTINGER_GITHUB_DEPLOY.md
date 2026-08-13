@@ -11,7 +11,7 @@ The GitHub workflow `.github/workflows/hostinger-deploy.yml` will:
 3. Build the production site with `npm run build`.
 4. Upload the generated `dist/` folder to Hostinger.
 
-It also runs after the scheduled CricHeroes and India match feed workflows finish successfully, so Hostinger can receive refreshed data too.
+It also runs when the scheduled CricHeroes and India match feed workflows commit refreshed data, so Hostinger can receive refreshed data too.
 
 ## Step 1 - Create or Find Hostinger FTP Details
 
@@ -46,8 +46,8 @@ Add these four secrets:
 
 | Secret name | Value |
 | --- | --- |
-| `HOSTINGER_FTP_SERVER` | FTP host from Hostinger, usually like `ftp.crickuru.com` or a server IP |
-| `HOSTINGER_FTP_USERNAME` | FTP username from Hostinger |
+| `HOSTINGER_FTP_SERVER` | `93.127.208.60` |
+| `HOSTINGER_FTP_USERNAME` | `u100370327` |
 | `HOSTINGER_FTP_PASSWORD` | FTP password from Hostinger |
 | `HOSTINGER_FTP_DIR` | `/` if FTP account is rooted at `public_html`, otherwise `public_html/` |
 
@@ -64,7 +64,7 @@ In GitHub:
 4. Wait for the green check.
 5. Open `https://crickuru.com`.
 
-If the workflow says the FTP secrets are missing, add the four secrets above and run it again.
+If the workflow says the FTP secrets are missing, add the four secrets above and run it again. Never commit the FTP password to the repository.
 
 ## Step 4 - Future Updates
 
