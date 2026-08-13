@@ -53,7 +53,7 @@ jobs:
           port: 21
           protocol: ftp
           local-dir: ./dist/
-          server-dir: /home/u100370327/domains/crickuru.com/public_html/
-          state-name: .crickuru-hostinger-absolute-sync-state.json
+          server-dir: /public_html/
+          state-name: .crickuru-hostinger-public-sync-state.json
           dangerous-clean-slate: false
           log-level: minimal
