@@ -5463,15 +5463,15 @@ const RouterContext = React.createContext(null);
           );
         };
         return (
-          <div className="relative mt-5 overflow-hidden rounded-[8px] border border-cyan/18 bg-[radial-gradient(circle_at_50%_50%,rgba(34,211,238,0.15),transparent_16%),radial-gradient(circle_at_50%_50%,rgba(244,185,66,0.08),transparent_52%),#05070B] p-3 sm:p-5" aria-label="Important tournament radar">
-            <div className="pointer-events-none absolute inset-[12%] rounded-full border border-cyan/18" />
-            <div className="pointer-events-none absolute inset-[24%] rounded-full border border-cyan/20" />
-            <div className="pointer-events-none absolute inset-[36%] rounded-full border border-cyan/24" />
+          <div className="relative mx-auto mt-5 overflow-hidden rounded-[8px] border border-cyan/18 bg-[radial-gradient(ellipse_at_50%_50%,rgba(34,211,238,0.15),transparent_18%),radial-gradient(ellipse_at_50%_50%,rgba(244,185,66,0.08),transparent_58%),#05070B] p-3 sm:min-h-[34rem] sm:p-5" aria-label="Important tournament radar">
+            <div className="pointer-events-none absolute inset-x-[3%] top-[10%] bottom-[8%] rounded-[50%] border border-cyan/30 shadow-[0_0_42px_rgba(34,211,238,0.08)]" />
+            <div className="pointer-events-none absolute inset-x-[8%] top-[20%] bottom-[18%] rounded-[50%] border border-cyan/16" />
+            <div className="pointer-events-none absolute inset-x-[16%] top-[31%] bottom-[30%] rounded-[50%] border border-cyan/12" />
             <div className="pointer-events-none absolute left-3 top-3 flex flex-wrap gap-2 text-[0.55rem] font-black uppercase tracking-[0.12em] sm:left-5 sm:top-5">
               {ringOrder.map((level) => <span key={level} className={`rounded-full border px-2 py-1 ${ringConfig[level].className}`}>{ringConfig[level].label}</span>)}
             </div>
-            <div className="pointer-events-none absolute left-1/2 top-1/2 h-[78%] w-px -translate-x-1/2 -translate-y-1/2 bg-cyan/15" />
-            <div className="pointer-events-none absolute left-[8%] top-1/2 h-px w-[84%] -translate-y-1/2 bg-cyan/15" />
+            <div className="pointer-events-none absolute left-1/2 top-[17%] h-[66%] w-px -translate-x-1/2 bg-cyan/15" />
+            <div className="pointer-events-none absolute left-[7%] top-1/2 h-px w-[86%] -translate-y-1/2 bg-cyan/15" />
             <div className="relative z-20 grid gap-2 pt-20 sm:grid-cols-[minmax(0,1fr)_7rem_minmax(0,1fr)] sm:grid-rows-[auto_minmax(11rem,1fr)_auto] sm:gap-3 sm:pt-24">
               <div className="sm:col-span-3 sm:row-start-1">{renderRing("international")}</div>
               <div className="sm:col-start-1 sm:row-start-2 sm:self-center">{renderRing("women")}</div>
