@@ -552,7 +552,42 @@ function buildImportantMatches(groups) {
       if (statusDelta) return statusDelta;
       return (Date.parse(b.startTime || "") || 0) - (Date.parse(a.startTime || "") || 0);
     })
-    .slice(0, 80);
+    ;
+}
+
+function buildImportantTournaments(importantMatches) {
+  const buckets = new Map();
+  for (const match of importantMatches) {
+    const series = match.series || "Major tournament fixtures";
+    if (!buckets.has(series)) buckets.set(series, []);
+    buckets.get(series).push(match);
+  }
+
+  return [...buckets.entries()]
+    .map(([series, matches]) => {
+      const ordered = [...matches].sort((a, b) => (Date.parse(a.startTime || "") || 0) - (Date.parse(b.startTime || "") || 0));
+      const live = matches.filter((match) => match.status === "live").length;
+      const upcoming = matches.filter((match) => match.status === "upcoming").length;
+      const recent = matches.filter((match) => match.status === "recent").length;
+      return {
+        id: series.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""),
+        series,
+        level: matches[0]?.level || "international",
+        levelLabel: matches[0]?.levelLabel || "International",
+        total: matches.length,
+        live,
+        upcoming,
+        recent,
+        startTime: ordered[0]?.startTime || "",
+        endTime: ordered.at(-1)?.startTime || "",
+        matches: ordered,
+      };
+    })
+    .sort((a, b) => {
+      const activeDelta = Number(Boolean(b.live || b.upcoming)) - Number(Boolean(a.live || a.upcoming));
+      if (activeDelta) return activeDelta;
+      return (Date.parse(b.endTime || "") || 0) - (Date.parse(a.endTime || "") || 0);
+    });
 }
 
 function monthLabel(monthKey) {
@@ -644,6 +679,7 @@ async function main() {
     recent: groups.recent,
     rankings: buildRankings(groups),
     importantMatches,
+    importantTournaments: buildImportantTournaments(importantMatches),
     importantResultsByMonth: buildImportantResultsByMonth(completedImportantMatches),
     errors: failures.slice(0, 8),
   };

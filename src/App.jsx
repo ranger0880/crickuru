@@ -193,6 +193,7 @@ const RouterContext = React.createContext(null);
         recent: [],
         upcoming: [],
         importantMatches: [],
+        importantTournaments: [],
         importantResultsByMonth: [],
         rankings: [
           { id: "international", label: "International", order: 1, live: 0, recent: 0, upcoming: 0, total: 0 },
@@ -5023,6 +5024,9 @@ const RouterContext = React.createContext(null);
         const featureMatch = asArray(data.live)[0] || asArray(data.upcoming)[0] || asArray(data.recent)[0];
         const rankings = normalizedIndiaRankings(data);
         const importantMatches = asArray(data.importantMatches).slice(0, 10);
+        const importantTournaments = asArray(data.importantTournaments);
+        const [selectedTournamentId, setSelectedTournamentId] = useState("");
+        const activeTournament = importantTournaments.find((tournament) => tournament.id === selectedTournamentId) || importantTournaments[0];
         const monthlyResults = asArray(data.importantResultsByMonth);
         const activeMonth = monthlyResults.find((month) => month.month === selectedMonth) || monthlyResults[0];
 
@@ -5101,6 +5105,48 @@ const RouterContext = React.createContext(null);
                     )}
                   </div>
                 </div>
+              </section>
+
+              <section className="mt-5 glass rounded-[8px] p-5" aria-labelledby="tournament-tracker-title">
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+                  <div>
+                    <p className="text-xs font-black uppercase tracking-[0.24em] text-gold">Long-run coverage</p>
+                    <h2 id="tournament-tracker-title" className="mt-2 font-display text-4xl font-black uppercase text-white">Tournament trackers</h2>
+                  </div>
+                  <p className="max-w-xl text-sm leading-6 text-white/52">A tournament stays together here across every month of its schedule, from first fixture to final result.</p>
+                </div>
+                {importantTournaments.length ? (
+                  <label className="mt-5 grid max-w-xl gap-2">
+                    <span className="text-[0.65rem] font-black uppercase tracking-[0.18em] text-white/42">Follow tournament</span>
+                    <select
+                      aria-label="Follow important tournament"
+                      value={activeTournament?.id || ""}
+                      onChange={(event) => setSelectedTournamentId(event.target.value)}
+                      className="min-h-11 w-full appearance-none rounded-[8px] border border-gold/35 bg-night px-4 text-xs font-black uppercase tracking-[0.14em] text-gold outline-none transition focus:border-gold focus:ring-2 focus:ring-gold/20"
+                    >
+                      {importantTournaments.map((tournament) => <option key={tournament.id} value={tournament.id} className="bg-night text-white">{tournament.series}</option>)}
+                    </select>
+                  </label>
+                ) : null}
+                <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+                  {importantTournaments.length ? importantTournaments.map((tournament) => <IndiaTournamentTracker key={tournament.id} tournament={tournament} />) : (
+                    <p className="text-sm leading-7 text-white/58">Tournament tracking will appear when the public feed exposes a major tournament fixture.</p>
+                  )}
+                </div>
+                {activeTournament ? (
+                  <div className="mt-5 rounded-[8px] border border-white/10 bg-night/38 p-4">
+                    <div className="flex flex-wrap items-end justify-between gap-3">
+                      <div>
+                        <p className="text-xs font-black uppercase tracking-[0.2em] text-cyan">Selected timeline</p>
+                        <h3 className="mt-1 font-display text-3xl font-black uppercase text-white">{activeTournament.series}</h3>
+                      </div>
+                      <p className="text-xs font-black uppercase tracking-[0.14em] text-white/38">{activeTournament.matches.length} fixtures across the full tournament</p>
+                    </div>
+                    <div className="mt-4 max-h-[34rem] overflow-y-auto divide-y divide-white/10 pr-2">
+                      {activeTournament.matches.map((match) => <IndiaImportantMatchRow key={match.id} match={match} compact />)}
+                    </div>
+                  </div>
+                ) : null}
               </section>
 
               <div className="mt-10 grid gap-5 xl:grid-cols-[1.05fr_0.95fr]">
@@ -5228,6 +5274,32 @@ const RouterContext = React.createContext(null);
               <p className="text-sm font-bold text-gold">{match.overview || "Result pending"}</p>
               {match.sourceUrl && <a href={match.sourceUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-[0.65rem] font-black uppercase tracking-[0.15em] text-cyan hover:text-white">Scorecard <Icon.ExternalLink size={13} /></a>}
             </div>
+          </article>
+        );
+      }
+
+      function IndiaTournamentTracker({ tournament }) {
+        const active = tournament.live > 0 || tournament.upcoming > 0;
+        return (
+          <article className="rounded-[8px] border border-white/10 bg-night/52 p-4">
+            <div className="flex items-start justify-between gap-3">
+              <div className="min-w-0">
+                <p className="truncate font-display text-2xl font-black uppercase leading-tight text-white">{tournament.series}</p>
+                <p className="mt-1 text-[0.62rem] font-black uppercase tracking-[0.15em] text-white/38">{tournament.levelLabel}</p>
+              </div>
+              <span className={`shrink-0 rounded-full border px-2.5 py-1 text-[0.6rem] font-black uppercase tracking-[0.14em] ${active ? "border-cyan/40 bg-cyan/10 text-cyan" : "border-white/15 bg-white/7 text-white/45"}`}>
+                {tournament.live ? "Live" : tournament.upcoming ? "In progress" : "Completed"}
+              </span>
+            </div>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.1em] text-white/45">
+              {compactFeedDate(tournament.startTime)} - {compactFeedDate(tournament.endTime)}
+            </p>
+            <div className="mt-4 grid grid-cols-3 gap-2 text-center text-[0.62rem] font-black uppercase tracking-[0.1em]">
+              <span className="rounded-[6px] bg-crimson/10 px-2 py-2 text-crimson">Live {tournament.live}</span>
+              <span className="rounded-[6px] bg-gold/10 px-2 py-2 text-gold">Future {tournament.upcoming}</span>
+              <span className="rounded-[6px] bg-white/7 px-2 py-2 text-white/48">Past {tournament.recent}</span>
+            </div>
+            <p className="mt-3 text-xs font-bold uppercase tracking-[0.12em] text-white/38">{tournament.total} important fixtures tracked</p>
           </article>
         );
       }
