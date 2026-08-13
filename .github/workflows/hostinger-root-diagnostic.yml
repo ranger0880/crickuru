@@ -1,0 +1,42 @@
+name: Diagnose CricKuru Hostinger root
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Inspect FTP roots and live response
+        env:
+          FTP_SERVER: ${{ secrets.HOSTINGER_FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.HOSTINGER_FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          server="${FTP_SERVER#ftp://}"
+          server="${server#ftps://}"
+          server="${server%/}"
+          roots=("" "public_html" "domains/crickuru.com" "domains/crickuru.com/public_html")
+          for root in "${roots[@]}"; do
+            url="ftp://$server/${root:+$root/}index.html"
+            echo "--- FTP root: /${root:-}" 
+            if curl --fail --silent --show-error --ftp-pasv --user "$FTP_USERNAME:$FTP_PASSWORD" "$url" > /tmp/root-index.html; then
+              wc -c /tmp/root-index.html
+              sha256sum /tmp/root-index.html
+              grep -o 'assets/index-[A-Za-z0-9_-]*\.js' /tmp/root-index.html || true
+            else
+              echo "index.html unavailable"
+            fi
+          done
+          echo "--- Live domain"
+          curl --fail --silent --show-error https://crickuru.com/ > /tmp/live-index.html
+          wc -c /tmp/live-index.html
+          sha256sum /tmp/live-index.html
+          grep -o 'assets/index-[A-Za-z0-9_-]*\.js' /tmp/live-index.html || true
