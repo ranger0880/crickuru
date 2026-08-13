@@ -482,7 +482,8 @@ async function hydratePlayerProfiles(players, previousPlayers = []) {
     const previous = previousById.get(Number(player.id));
     player.overallStats = snapshots[index].overallStats || previous?.overallStats || {};
     player.stats = Object.keys(player.overallStats).length ? player.overallStats : previous?.stats || {};
-    player.recentMatches = snapshots[index].recentMatches.length ? snapshots[index].recentMatches : previous?.recentMatches || [];
+    const recentMatches = snapshots[index].recentMatches.length ? snapshots[index].recentMatches : previous?.recentMatches || [];
+    player.recentMatches = recentMatches.filter((match) => matchTime(match) <= Date.now() + 60 * 60 * 1000);
   });
 
   const recentMatches = new Map();
