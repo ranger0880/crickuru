@@ -5026,6 +5026,7 @@ const RouterContext = React.createContext(null);
         const importantMatches = asArray(data.importantMatches).slice(0, 10);
         const importantTournaments = asArray(data.importantTournaments);
         const [selectedTournamentId, setSelectedTournamentId] = useState("");
+        const [tournamentView, setTournamentView] = useState("radar");
         const activeTournament = importantTournaments.find((tournament) => tournament.id === selectedTournamentId) || importantTournaments[0];
         const monthlyResults = asArray(data.importantResultsByMonth);
         const activeMonth = monthlyResults.find((month) => month.month === selectedMonth) || monthlyResults[0];
@@ -5128,11 +5129,26 @@ const RouterContext = React.createContext(null);
                     </select>
                   </label>
                 ) : null}
-                <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-                  {importantTournaments.length ? importantTournaments.map((tournament) => <IndiaTournamentTracker key={tournament.id} tournament={tournament} />) : (
-                    <p className="text-sm leading-7 text-white/58">Tournament tracking will appear when the public feed exposes a major tournament fixture.</p>
-                  )}
+                <div className="mt-5 flex flex-wrap items-center justify-between gap-3">
+                  <p className="text-xs font-black uppercase tracking-[0.16em] text-white/38">Select a node to open its match timeline</p>
+                  <div className="inline-flex rounded-full border border-white/12 bg-night/55 p-1" role="group" aria-label="Tournament display mode">
+                    <button type="button" onClick={() => setTournamentView("radar")} aria-pressed={tournamentView === "radar"} className={`inline-flex min-h-10 items-center gap-2 rounded-full px-4 text-xs font-black uppercase tracking-[0.14em] transition ${tournamentView === "radar" ? "bg-gold text-night" : "text-white/55 hover:text-white"}`}>
+                      <Icon.Radio size={15} /> Radar
+                    </button>
+                    <button type="button" onClick={() => setTournamentView("list")} aria-pressed={tournamentView === "list"} className={`inline-flex min-h-10 items-center gap-2 rounded-full px-4 text-xs font-black uppercase tracking-[0.14em] transition ${tournamentView === "list" ? "bg-cyan text-night" : "text-white/55 hover:text-white"}`}>
+                      <Icon.History size={15} /> List
+                    </button>
+                  </div>
                 </div>
+                {tournamentView === "radar" ? (
+                  <IndiaTournamentRadar tournaments={importantTournaments} activeId={activeTournament?.id} onSelect={setSelectedTournamentId} />
+                ) : (
+                  <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+                    {importantTournaments.length ? importantTournaments.map((tournament) => <IndiaTournamentTracker key={tournament.id} tournament={tournament} active={tournament.id === activeTournament?.id} onSelect={() => setSelectedTournamentId(tournament.id)} />) : (
+                      <p className="text-sm leading-7 text-white/58">Tournament tracking will appear when the public feed exposes a major tournament fixture.</p>
+                    )}
+                  </div>
+                )}
                 {activeTournament ? (
                   <div className="mt-5 rounded-[8px] border border-white/10 bg-night/38 p-4">
                     <div className="flex flex-wrap items-end justify-between gap-3">
@@ -5265,6 +5281,12 @@ const RouterContext = React.createContext(null);
             </div>
             <h3 className={`${compact ? "text-xl" : "text-2xl"} mt-2 font-display font-black uppercase leading-tight text-white`}>{matchTitle(match)}</h3>
             <p className="mt-1 text-xs font-semibold uppercase tracking-[0.1em] text-white/40">{match.series || "Major cricket fixture"}</p>
+            {asArray(match.starPerformers).length ? (
+              <div className="mt-3 rounded-[6px] border border-gold/20 bg-gold/8 px-3 py-2">
+                <p className="text-[0.58rem] font-black uppercase tracking-[0.14em] text-gold">Star performer</p>
+                {match.starPerformers.map((performer) => <p key={`${performer.name}-${performer.performance}`} className="mt-1 text-sm font-bold text-white/80">{performer.name}{performer.performance ? ` - ${performer.performance}` : ""}</p>)}
+              </div>
+            ) : match.status === "recent" ? <p className="mt-3 text-xs font-semibold text-white/38">Star performer: scorecard detail pending</p> : null}
             <div className="mt-3 grid gap-2 sm:grid-cols-2">
               {asArray(match.teams).map((team, index) => (
                 <p key={`${team.name}-${index}`} className="rounded-[6px] bg-night/55 px-3 py-2 text-sm font-bold text-white/76">{matchTeamLabel(team) || "Score pending"}</p>
@@ -5278,10 +5300,10 @@ const RouterContext = React.createContext(null);
         );
       }
 
-      function IndiaTournamentTracker({ tournament }) {
+      function IndiaTournamentTracker({ tournament, active: selected = false, onSelect }) {
         const active = tournament.live > 0 || tournament.upcoming > 0;
         return (
-          <article className="rounded-[8px] border border-white/10 bg-night/52 p-4">
+          <article className={`rounded-[8px] border bg-night/52 p-4 transition ${selected ? "border-gold/60 shadow-[0_0_24px_rgba(244,185,66,0.14)]" : "border-white/10"}`}>
             <div className="flex items-start justify-between gap-3">
               <div className="min-w-0">
                 <p className="truncate font-display text-2xl font-black uppercase leading-tight text-white">{tournament.series}</p>
@@ -5300,7 +5322,35 @@ const RouterContext = React.createContext(null);
               <span className="rounded-[6px] bg-white/7 px-2 py-2 text-white/48">Past {tournament.recent}</span>
             </div>
             <p className="mt-3 text-xs font-bold uppercase tracking-[0.12em] text-white/38">{tournament.total} important fixtures tracked</p>
+            {onSelect ? <button type="button" onClick={onSelect} className="mt-4 inline-flex min-h-10 items-center gap-2 rounded-full border border-cyan/35 px-4 text-[0.65rem] font-black uppercase tracking-[0.14em] text-cyan hover:border-cyan hover:text-white">Open timeline <Icon.ArrowRight size={14} /></button> : null}
           </article>
+        );
+      }
+
+      function IndiaTournamentRadar({ tournaments, activeId, onSelect }) {
+        return (
+          <div className="relative mt-5 min-h-[25rem] overflow-hidden rounded-[8px] border border-cyan/18 bg-[radial-gradient(circle_at_50%_50%,rgba(34,211,238,0.15),transparent_16%),radial-gradient(circle_at_50%_50%,rgba(244,185,66,0.08),transparent_52%),#05070B] p-4 sm:min-h-[32rem]" aria-label="Important tournament radar">
+            <div className="pointer-events-none absolute inset-[12%] rounded-full border border-cyan/18" />
+            <div className="pointer-events-none absolute inset-[24%] rounded-full border border-cyan/20" />
+            <div className="pointer-events-none absolute inset-[36%] rounded-full border border-cyan/24" />
+            <div className="pointer-events-none absolute left-1/2 top-[7%] h-[86%] w-px -translate-x-1/2 bg-cyan/15" />
+            <div className="pointer-events-none absolute left-[7%] top-1/2 h-px w-[86%] -translate-y-1/2 bg-cyan/15" />
+            <div className="absolute left-1/2 top-1/2 z-10 grid h-24 w-24 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border border-gold/55 bg-night/90 text-center shadow-[0_0_38px_rgba(244,185,66,0.2)]">
+              <div><Icon.Radio className="mx-auto text-gold" size={24} /><p className="mt-1 text-[0.58rem] font-black uppercase tracking-[0.16em] text-gold">Match radar</p></div>
+            </div>
+            {tournaments.map((tournament, index) => {
+              const angle = -Math.PI / 2 + (index / Math.max(tournaments.length, 1)) * Math.PI * 2;
+              const left = 50 + Math.cos(angle) * 40;
+              const top = 50 + Math.sin(angle) * 40;
+              const selected = tournament.id === activeId;
+              return (
+                <button key={tournament.id} type="button" onClick={() => onSelect(tournament.id)} aria-pressed={selected} title={`Open ${tournament.series}`} className={`absolute z-20 w-[8.5rem] -translate-x-1/2 -translate-y-1/2 rounded-[8px] border px-2 py-2 text-center transition sm:w-[10.5rem] ${selected ? "border-gold bg-gold text-night shadow-[0_0_26px_rgba(244,185,66,0.42)]" : "border-cyan/35 bg-night/90 text-white hover:border-cyan hover:text-cyan"}`} style={{ left: `${left}%`, top: `${top}%` }}>
+                  <span className="block truncate text-[0.62rem] font-black uppercase tracking-[0.08em]">{tournament.series}</span>
+                  <span className="mt-1 block text-[0.55rem] font-bold uppercase tracking-[0.12em] opacity-65">{tournament.total} fixtures</span>
+                </button>
+              );
+            })}
+          </div>
         );
       }
 

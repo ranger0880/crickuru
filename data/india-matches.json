@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-13T20:00:11.928Z",
+  "syncedAt": "2026-08-13T20:05:25.759Z",
   "coverage": {
     "pathways": [
       "India",
@@ -15698,7 +15698,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166933",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-13T14:00:00.000Z",
-      "rawId": 166933
+      "rawId": 166933,
+      "starPerformers": []
     },
     {
       "id": "recent-169081",
@@ -15729,7 +15730,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169081",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-13T13:30:00.000Z",
-      "rawId": 169081
+      "rawId": 169081,
+      "starPerformers": []
     },
     {
       "id": "recent-169497",
@@ -15760,7 +15762,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169497",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-08-07T04:30:00.000Z",
-      "rawId": 169497
+      "rawId": 169497,
+      "starPerformers": []
     },
     {
       "id": "recent-152720",
@@ -15791,7 +15794,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/152720",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-07-26T11:00:00.000Z",
-      "rawId": 152720
+      "rawId": 152720,
+      "starPerformers": []
     },
     {
       "id": "recent-152709",
@@ -15822,7 +15826,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/152709",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-07-25T11:00:00.000Z",
-      "rawId": 152709
+      "rawId": 152709,
+      "starPerformers": []
     },
     {
       "id": "recent-152698",
@@ -15853,7 +15858,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/152698",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-07-23T11:00:00.000Z",
-      "rawId": 152698
+      "rawId": 152698,
+      "starPerformers": []
     },
     {
       "id": "recent-157230",
@@ -15884,7 +15890,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/157230",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-07-20T04:30:00.000Z",
-      "rawId": 157230
+      "rawId": 157230,
+      "starPerformers": []
     },
     {
       "id": "recent-129480",
@@ -15915,7 +15922,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129480",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-07-19T10:00:00.000Z",
-      "rawId": 129480
+      "rawId": 129480,
+      "starPerformers": []
     },
     {
       "id": "recent-129469",
@@ -15946,7 +15954,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129469",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-07-16T12:00:00.000Z",
-      "rawId": 129469
+      "rawId": 129469,
+      "starPerformers": []
     },
     {
       "id": "recent-129458",
@@ -15977,7 +15986,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129458",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-07-14T10:00:00.000Z",
-      "rawId": 129458
+      "rawId": 129458,
+      "starPerformers": []
     },
     {
       "id": "recent-157226",
@@ -16008,7 +16018,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/157226",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-07-13T04:30:00.000Z",
-      "rawId": 157226
+      "rawId": 157226,
+      "starPerformers": []
     },
     {
       "id": "recent-129453",
@@ -16039,7 +16050,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129453",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-07-11T13:30:00.000Z",
-      "rawId": 129453
+      "rawId": 129453,
+      "starPerformers": []
     },
     {
       "id": "recent-129519",
@@ -16070,7 +16082,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129519",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-07-10T10:00:00.000Z",
-      "rawId": 129519
+      "rawId": 129519,
+      "starPerformers": []
     },
     {
       "id": "recent-129447",
@@ -16101,7 +16114,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129447",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-07-09T16:30:00.000Z",
-      "rawId": 129447
+      "rawId": 129447,
+      "starPerformers": []
     },
     {
       "id": "recent-157215",
@@ -16132,7 +16146,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/157215",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-07-09T04:30:00.000Z",
-      "rawId": 157215
+      "rawId": 157215,
+      "starPerformers": []
     },
     {
       "id": "recent-129442",
@@ -16163,7 +16178,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129442",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-07-07T16:30:00.000Z",
-      "rawId": 129442
+      "rawId": 129442,
+      "starPerformers": []
     },
     {
       "id": "recent-157212",
@@ -16194,7 +16210,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/157212",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-07-06T04:00:00.000Z",
-      "rawId": 157212
+      "rawId": 157212,
+      "starPerformers": []
     },
     {
       "id": "recent-155782",
@@ -16225,7 +16242,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155782",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2026-07-05T08:30:00.000Z",
-      "rawId": 155782
+      "rawId": 155782,
+      "starPerformers": []
     },
     {
       "id": "recent-155166",
@@ -16256,7 +16274,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155166",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-07-04T10:00:00.000Z",
-      "rawId": 155166
+      "rawId": 155166,
+      "starPerformers": []
     },
     {
       "id": "recent-157204",
@@ -16287,7 +16306,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/157204",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-07-04T04:00:00.000Z",
-      "rawId": 157204
+      "rawId": 157204,
+      "starPerformers": []
     },
     {
       "id": "recent-155771",
@@ -16318,7 +16338,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155771",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2026-07-03T03:30:00.000Z",
-      "rawId": 155771
+      "rawId": 155771,
+      "starPerformers": []
     },
     {
       "id": "recent-156691",
@@ -16349,7 +16370,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156691",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2026-07-02T04:30:00.000Z",
-      "rawId": 156691
+      "rawId": 156691,
+      "starPerformers": []
     },
     {
       "id": "recent-155155",
@@ -16380,7 +16402,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155155",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-07-01T10:00:00.000Z",
-      "rawId": 155155
+      "rawId": 155155,
+      "starPerformers": []
     },
     {
       "id": "recent-155760",
@@ -16411,7 +16434,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155760",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2026-06-30T03:30:00.000Z",
-      "rawId": 155760
+      "rawId": 155760,
+      "starPerformers": []
     },
     {
       "id": "recent-122011",
@@ -16442,7 +16466,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/122011",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-06-28T13:30:00.000Z",
-      "rawId": 122011
+      "rawId": 122011,
+      "starPerformers": []
     },
     {
       "id": "recent-155144",
@@ -16473,7 +16498,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155144",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-06-28T10:00:00.000Z",
-      "rawId": 155144
+      "rawId": 155144,
+      "starPerformers": []
     },
     {
       "id": "recent-155749",
@@ -16504,7 +16530,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155749",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2026-06-27T07:30:00.000Z",
-      "rawId": 155749
+      "rawId": 155749,
+      "starPerformers": []
     },
     {
       "id": "recent-155133",
@@ -16535,7 +16562,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155133",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-06-25T17:30:00.000Z",
-      "rawId": 155133
+      "rawId": 155133,
+      "starPerformers": []
     },
     {
       "id": "recent-121961",
@@ -16566,7 +16594,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/121961",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-06-25T13:30:00.000Z",
-      "rawId": 121961
+      "rawId": 121961,
+      "starPerformers": []
     },
     {
       "id": "recent-156680",
@@ -16597,7 +16626,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156680",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2026-06-25T04:30:00.000Z",
-      "rawId": 156680
+      "rawId": 156680,
+      "starPerformers": []
     },
     {
       "id": "recent-155738",
@@ -16628,7 +16658,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155738",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2026-06-24T07:30:00.000Z",
-      "rawId": 155738
+      "rawId": 155738,
+      "starPerformers": []
     },
     {
       "id": "recent-155122",
@@ -16659,7 +16690,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155122",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-06-23T17:30:00.000Z",
-      "rawId": 155122
+      "rawId": 155122,
+      "starPerformers": []
     },
     {
       "id": "recent-155727",
@@ -16690,7 +16722,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155727",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2026-06-22T07:30:00.000Z",
-      "rawId": 155727
+      "rawId": 155727,
+      "starPerformers": []
     },
     {
       "id": "recent-121923",
@@ -16721,7 +16754,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/121923",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-06-21T13:30:00.000Z",
-      "rawId": 121923
+      "rawId": 121923,
+      "starPerformers": []
     },
     {
       "id": "recent-156179",
@@ -16752,7 +16786,15 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156179",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2026-06-21T04:30:00.000Z",
-      "rawId": 156179
+      "rawId": 156179,
+      "starPerformers": [
+        {
+          "name": "Vaibhav Sooryavanshi",
+          "performance": "94(29)",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156179"
+        }
+      ]
     },
     {
       "id": "recent-155111",
@@ -16783,7 +16825,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155111",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-06-20T17:30:00.000Z",
-      "rawId": 155111
+      "rawId": 155111,
+      "starPerformers": []
     },
     {
       "id": "recent-121846",
@@ -16814,7 +16857,15 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/121846",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-06-17T13:30:00.000Z",
-      "rawId": 121846
+      "rawId": 121846,
+      "starPerformers": [
+        {
+          "name": "Smriti Mandhana",
+          "performance": "74(47)",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/121846"
+        }
+      ]
     },
     {
       "id": "recent-156157",
@@ -16845,7 +16896,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156157",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2026-06-17T04:30:00.000Z",
-      "rawId": 156157
+      "rawId": 156157,
+      "starPerformers": []
     },
     {
       "id": "recent-156146",
@@ -16876,7 +16928,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156146",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2026-06-15T04:30:00.000Z",
-      "rawId": 156146
+      "rawId": 156146,
+      "starPerformers": []
     },
     {
       "id": "recent-121813",
@@ -16907,7 +16960,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/121813",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-06-14T13:30:00.000Z",
-      "rawId": 121813
+      "rawId": 121813,
+      "starPerformers": []
     },
     {
       "id": "recent-156124",
@@ -16938,7 +16992,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156124",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2026-06-11T04:30:00.000Z",
-      "rawId": 156124
+      "rawId": 156124,
+      "starPerformers": []
     },
     {
       "id": "recent-156091",
@@ -16969,7 +17024,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156091",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-06-10T09:00:00.000Z",
-      "rawId": 156091
+      "rawId": 156091,
+      "starPerformers": []
     },
     {
       "id": "recent-156113",
@@ -17000,7 +17056,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156113",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2026-06-09T04:30:00.000Z",
-      "rawId": 156113
+      "rawId": 156113,
+      "starPerformers": []
     },
     {
       "id": "recent-156025",
@@ -17031,7 +17088,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156025",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-06-08T09:00:00.000Z",
-      "rawId": 156025
+      "rawId": 156025,
+      "starPerformers": []
     },
     {
       "id": "recent-129508",
@@ -17062,7 +17120,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129508",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-06-02T17:30:00.000Z",
-      "rawId": 129508
+      "rawId": 129508,
+      "starPerformers": []
     },
     {
       "id": "recent-129497",
@@ -17093,7 +17152,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129497",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-05-30T13:30:00.000Z",
-      "rawId": 129497
+      "rawId": 129497,
+      "starPerformers": []
     },
     {
       "id": "recent-144384",
@@ -17124,7 +17184,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/144384",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-02-22T07:00:00.000Z",
-      "rawId": 144384
+      "rawId": 144384,
+      "starPerformers": []
     },
     {
       "id": "recent-144362",
@@ -17155,7 +17216,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/144362",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-02-20T02:30:00.000Z",
-      "rawId": 144362
+      "rawId": 144362,
+      "starPerformers": []
     },
     {
       "id": "recent-144321",
@@ -17186,7 +17248,15 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/144321",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-02-17T02:30:00.000Z",
-      "rawId": 144321
+      "rawId": 144321,
+      "starPerformers": [
+        {
+          "name": "Tanuja Kanwer",
+          "performance": "4-12",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/144321"
+        }
+      ]
     },
     {
       "id": "recent-144298",
@@ -17217,7 +17287,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/144298",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-02-15T07:00:00.000Z",
-      "rawId": 144298
+      "rawId": 144298,
+      "starPerformers": []
     },
     {
       "id": "recent-145541",
@@ -17248,7 +17319,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/145541",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2026-02-06T11:30:00.000Z",
-      "rawId": 145541
+      "rawId": 145541,
+      "starPerformers": []
     },
     {
       "id": "recent-138680",
@@ -17279,7 +17351,15 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138680",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-02-06T07:30:00.000Z",
-      "rawId": 138680
+      "rawId": 138680,
+      "starPerformers": [
+        {
+          "name": "Vaibhav Sooryavanshi",
+          "performance": "175(80)",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138680"
+        }
+      ]
     },
     {
       "id": "recent-138669",
@@ -17310,7 +17390,15 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138669",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-02-04T07:30:00.000Z",
-      "rawId": 138669
+      "rawId": 138669,
+      "starPerformers": [
+        {
+          "name": "Aaron George",
+          "performance": "115(104)",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138669"
+        }
+      ]
     },
     {
       "id": "recent-145396",
@@ -17341,7 +17429,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/145396",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2026-02-02T11:30:00.000Z",
-      "rawId": 145396
+      "rawId": 145396,
+      "starPerformers": []
     },
     {
       "id": "recent-138653",
@@ -17372,7 +17461,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138653",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-02-01T07:30:00.000Z",
-      "rawId": 138653
+      "rawId": 138653,
+      "starPerformers": []
     },
     {
       "id": "recent-138589",
@@ -17403,7 +17493,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138589",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-01-27T07:30:00.000Z",
-      "rawId": 138589
+      "rawId": 138589,
+      "starPerformers": []
     },
     {
       "id": "recent-138513",
@@ -17434,7 +17525,15 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138513",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-01-24T07:30:00.000Z",
-      "rawId": 138513
+      "rawId": 138513,
+      "starPerformers": [
+        {
+          "name": "RS Ambrish",
+          "performance": "4-29",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138513"
+        }
+      ]
     },
     {
       "id": "recent-137454",
@@ -17465,7 +17564,15 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/137454",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2025-11-21T09:30:00.000Z",
-      "rawId": 137454
+      "rawId": 137454,
+      "starPerformers": [
+        {
+          "name": "Ripon Mondol",
+          "performance": "1-35",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/137454"
+        }
+      ]
     },
     {
       "id": "recent-105540",
@@ -17496,7 +17603,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105540",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2025-02-02T06:30:00.000Z",
-      "rawId": 105540
+      "rawId": 105540,
+      "starPerformers": []
     },
     {
       "id": "recent-105538",
@@ -17527,7 +17635,15 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105538",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2025-01-31T06:30:00.000Z",
-      "rawId": 105538
+      "rawId": 105538,
+      "starPerformers": [
+        {
+          "name": "Parunika Sisodia",
+          "performance": "3-21",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105538"
+        }
+      ]
     },
     {
       "id": "recent-105514",
@@ -17558,7 +17674,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105514",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2025-01-28T06:30:00.000Z",
-      "rawId": 105514
+      "rawId": 105514,
+      "starPerformers": []
     },
     {
       "id": "recent-105484",
@@ -17589,7 +17706,15 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105484",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2025-01-26T06:30:00.000Z",
-      "rawId": 105484
+      "rawId": 105484,
+      "starPerformers": [
+        {
+          "name": "Vaishnavi Sharma",
+          "performance": "3-15",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105484"
+        }
+      ]
     }
   ],
   "live": [],
@@ -33249,7 +33374,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166933",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-13T14:00:00.000Z",
-      "rawId": 166933
+      "rawId": 166933,
+      "starPerformers": []
     },
     {
       "id": "recent-169081",
@@ -33280,7 +33406,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169081",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-13T13:30:00.000Z",
-      "rawId": 169081
+      "rawId": 169081,
+      "starPerformers": []
     },
     {
       "id": "recent-169497",
@@ -33311,7 +33438,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169497",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-08-07T04:30:00.000Z",
-      "rawId": 169497
+      "rawId": 169497,
+      "starPerformers": []
     },
     {
       "id": "recent-152720",
@@ -33342,7 +33470,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/152720",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-07-26T11:00:00.000Z",
-      "rawId": 152720
+      "rawId": 152720,
+      "starPerformers": []
     },
     {
       "id": "recent-152709",
@@ -33373,7 +33502,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/152709",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-07-25T11:00:00.000Z",
-      "rawId": 152709
+      "rawId": 152709,
+      "starPerformers": []
     },
     {
       "id": "recent-152698",
@@ -33404,7 +33534,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/152698",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-07-23T11:00:00.000Z",
-      "rawId": 152698
+      "rawId": 152698,
+      "starPerformers": []
     },
     {
       "id": "recent-157230",
@@ -33435,7 +33566,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/157230",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-07-20T04:30:00.000Z",
-      "rawId": 157230
+      "rawId": 157230,
+      "starPerformers": []
     },
     {
       "id": "recent-129480",
@@ -33466,7 +33598,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129480",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-07-19T10:00:00.000Z",
-      "rawId": 129480
+      "rawId": 129480,
+      "starPerformers": []
     },
     {
       "id": "recent-129469",
@@ -33497,7 +33630,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129469",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-07-16T12:00:00.000Z",
-      "rawId": 129469
+      "rawId": 129469,
+      "starPerformers": []
     },
     {
       "id": "recent-129458",
@@ -33528,7 +33662,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129458",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-07-14T10:00:00.000Z",
-      "rawId": 129458
+      "rawId": 129458,
+      "starPerformers": []
     },
     {
       "id": "recent-157226",
@@ -33559,7 +33694,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/157226",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-07-13T04:30:00.000Z",
-      "rawId": 157226
+      "rawId": 157226,
+      "starPerformers": []
     },
     {
       "id": "recent-129453",
@@ -33590,7 +33726,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129453",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-07-11T13:30:00.000Z",
-      "rawId": 129453
+      "rawId": 129453,
+      "starPerformers": []
     },
     {
       "id": "recent-129519",
@@ -33621,7 +33758,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129519",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-07-10T10:00:00.000Z",
-      "rawId": 129519
+      "rawId": 129519,
+      "starPerformers": []
     },
     {
       "id": "recent-129447",
@@ -33652,7 +33790,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129447",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-07-09T16:30:00.000Z",
-      "rawId": 129447
+      "rawId": 129447,
+      "starPerformers": []
     },
     {
       "id": "recent-157215",
@@ -33683,7 +33822,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/157215",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-07-09T04:30:00.000Z",
-      "rawId": 157215
+      "rawId": 157215,
+      "starPerformers": []
     },
     {
       "id": "recent-129442",
@@ -33714,7 +33854,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129442",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-07-07T16:30:00.000Z",
-      "rawId": 129442
+      "rawId": 129442,
+      "starPerformers": []
     },
     {
       "id": "recent-157212",
@@ -33745,7 +33886,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/157212",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-07-06T04:00:00.000Z",
-      "rawId": 157212
+      "rawId": 157212,
+      "starPerformers": []
     },
     {
       "id": "recent-155782",
@@ -33776,7 +33918,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155782",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2026-07-05T08:30:00.000Z",
-      "rawId": 155782
+      "rawId": 155782,
+      "starPerformers": []
     },
     {
       "id": "recent-155166",
@@ -33807,7 +33950,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155166",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-07-04T10:00:00.000Z",
-      "rawId": 155166
+      "rawId": 155166,
+      "starPerformers": []
     },
     {
       "id": "recent-157204",
@@ -33838,7 +33982,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/157204",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-07-04T04:00:00.000Z",
-      "rawId": 157204
+      "rawId": 157204,
+      "starPerformers": []
     },
     {
       "id": "recent-155771",
@@ -33869,7 +34014,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155771",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2026-07-03T03:30:00.000Z",
-      "rawId": 155771
+      "rawId": 155771,
+      "starPerformers": []
     },
     {
       "id": "recent-156691",
@@ -33900,7 +34046,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156691",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2026-07-02T04:30:00.000Z",
-      "rawId": 156691
+      "rawId": 156691,
+      "starPerformers": []
     },
     {
       "id": "recent-155155",
@@ -33931,7 +34078,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155155",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-07-01T10:00:00.000Z",
-      "rawId": 155155
+      "rawId": 155155,
+      "starPerformers": []
     },
     {
       "id": "recent-155760",
@@ -33962,7 +34110,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155760",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2026-06-30T03:30:00.000Z",
-      "rawId": 155760
+      "rawId": 155760,
+      "starPerformers": []
     },
     {
       "id": "recent-122011",
@@ -33993,7 +34142,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/122011",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-06-28T13:30:00.000Z",
-      "rawId": 122011
+      "rawId": 122011,
+      "starPerformers": []
     },
     {
       "id": "recent-155144",
@@ -34024,7 +34174,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155144",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-06-28T10:00:00.000Z",
-      "rawId": 155144
+      "rawId": 155144,
+      "starPerformers": []
     },
     {
       "id": "recent-155749",
@@ -34055,7 +34206,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155749",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2026-06-27T07:30:00.000Z",
-      "rawId": 155749
+      "rawId": 155749,
+      "starPerformers": []
     },
     {
       "id": "recent-155133",
@@ -34086,7 +34238,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155133",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-06-25T17:30:00.000Z",
-      "rawId": 155133
+      "rawId": 155133,
+      "starPerformers": []
     },
     {
       "id": "recent-121961",
@@ -34117,7 +34270,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/121961",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-06-25T13:30:00.000Z",
-      "rawId": 121961
+      "rawId": 121961,
+      "starPerformers": []
     },
     {
       "id": "recent-156680",
@@ -34148,7 +34302,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156680",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2026-06-25T04:30:00.000Z",
-      "rawId": 156680
+      "rawId": 156680,
+      "starPerformers": []
     },
     {
       "id": "recent-155738",
@@ -34179,7 +34334,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155738",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2026-06-24T07:30:00.000Z",
-      "rawId": 155738
+      "rawId": 155738,
+      "starPerformers": []
     },
     {
       "id": "recent-155122",
@@ -34210,7 +34366,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155122",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-06-23T17:30:00.000Z",
-      "rawId": 155122
+      "rawId": 155122,
+      "starPerformers": []
     },
     {
       "id": "recent-155727",
@@ -34241,7 +34398,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155727",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2026-06-22T07:30:00.000Z",
-      "rawId": 155727
+      "rawId": 155727,
+      "starPerformers": []
     },
     {
       "id": "recent-121923",
@@ -34272,7 +34430,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/121923",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-06-21T13:30:00.000Z",
-      "rawId": 121923
+      "rawId": 121923,
+      "starPerformers": []
     },
     {
       "id": "recent-156179",
@@ -34303,7 +34462,15 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156179",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2026-06-21T04:30:00.000Z",
-      "rawId": 156179
+      "rawId": 156179,
+      "starPerformers": [
+        {
+          "name": "Vaibhav Sooryavanshi",
+          "performance": "94(29)",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156179"
+        }
+      ]
     },
     {
       "id": "recent-155111",
@@ -34334,7 +34501,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155111",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-06-20T17:30:00.000Z",
-      "rawId": 155111
+      "rawId": 155111,
+      "starPerformers": []
     },
     {
       "id": "recent-121846",
@@ -34365,7 +34533,15 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/121846",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-06-17T13:30:00.000Z",
-      "rawId": 121846
+      "rawId": 121846,
+      "starPerformers": [
+        {
+          "name": "Smriti Mandhana",
+          "performance": "74(47)",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/121846"
+        }
+      ]
     },
     {
       "id": "recent-156157",
@@ -34396,7 +34572,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156157",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2026-06-17T04:30:00.000Z",
-      "rawId": 156157
+      "rawId": 156157,
+      "starPerformers": []
     },
     {
       "id": "recent-156146",
@@ -34427,7 +34604,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156146",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2026-06-15T04:30:00.000Z",
-      "rawId": 156146
+      "rawId": 156146,
+      "starPerformers": []
     },
     {
       "id": "recent-121813",
@@ -34458,7 +34636,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/121813",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-06-14T13:30:00.000Z",
-      "rawId": 121813
+      "rawId": 121813,
+      "starPerformers": []
     },
     {
       "id": "recent-156124",
@@ -34489,7 +34668,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156124",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2026-06-11T04:30:00.000Z",
-      "rawId": 156124
+      "rawId": 156124,
+      "starPerformers": []
     },
     {
       "id": "recent-156091",
@@ -34520,7 +34700,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156091",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-06-10T09:00:00.000Z",
-      "rawId": 156091
+      "rawId": 156091,
+      "starPerformers": []
     },
     {
       "id": "recent-156113",
@@ -34551,7 +34732,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156113",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2026-06-09T04:30:00.000Z",
-      "rawId": 156113
+      "rawId": 156113,
+      "starPerformers": []
     },
     {
       "id": "recent-156025",
@@ -34582,7 +34764,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156025",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-06-08T09:00:00.000Z",
-      "rawId": 156025
+      "rawId": 156025,
+      "starPerformers": []
     },
     {
       "id": "recent-129508",
@@ -34613,7 +34796,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129508",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-06-02T17:30:00.000Z",
-      "rawId": 129508
+      "rawId": 129508,
+      "starPerformers": []
     },
     {
       "id": "recent-129497",
@@ -34644,7 +34828,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129497",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-05-30T13:30:00.000Z",
-      "rawId": 129497
+      "rawId": 129497,
+      "starPerformers": []
     },
     {
       "id": "recent-144384",
@@ -34675,7 +34860,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/144384",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-02-22T07:00:00.000Z",
-      "rawId": 144384
+      "rawId": 144384,
+      "starPerformers": []
     },
     {
       "id": "recent-144362",
@@ -34706,7 +34892,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/144362",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-02-20T02:30:00.000Z",
-      "rawId": 144362
+      "rawId": 144362,
+      "starPerformers": []
     },
     {
       "id": "recent-144321",
@@ -34737,7 +34924,15 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/144321",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-02-17T02:30:00.000Z",
-      "rawId": 144321
+      "rawId": 144321,
+      "starPerformers": [
+        {
+          "name": "Tanuja Kanwer",
+          "performance": "4-12",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/144321"
+        }
+      ]
     },
     {
       "id": "recent-144298",
@@ -34768,7 +34963,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/144298",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-02-15T07:00:00.000Z",
-      "rawId": 144298
+      "rawId": 144298,
+      "starPerformers": []
     },
     {
       "id": "recent-145541",
@@ -34799,7 +34995,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/145541",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2026-02-06T11:30:00.000Z",
-      "rawId": 145541
+      "rawId": 145541,
+      "starPerformers": []
     },
     {
       "id": "recent-138680",
@@ -34830,7 +35027,15 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138680",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-02-06T07:30:00.000Z",
-      "rawId": 138680
+      "rawId": 138680,
+      "starPerformers": [
+        {
+          "name": "Vaibhav Sooryavanshi",
+          "performance": "175(80)",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138680"
+        }
+      ]
     },
     {
       "id": "recent-138669",
@@ -34861,7 +35066,15 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138669",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-02-04T07:30:00.000Z",
-      "rawId": 138669
+      "rawId": 138669,
+      "starPerformers": [
+        {
+          "name": "Aaron George",
+          "performance": "115(104)",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138669"
+        }
+      ]
     },
     {
       "id": "recent-145396",
@@ -34892,7 +35105,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/145396",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2026-02-02T11:30:00.000Z",
-      "rawId": 145396
+      "rawId": 145396,
+      "starPerformers": []
     },
     {
       "id": "recent-138653",
@@ -34923,7 +35137,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138653",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-02-01T07:30:00.000Z",
-      "rawId": 138653
+      "rawId": 138653,
+      "starPerformers": []
     },
     {
       "id": "recent-138589",
@@ -34954,7 +35169,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138589",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-01-27T07:30:00.000Z",
-      "rawId": 138589
+      "rawId": 138589,
+      "starPerformers": []
     },
     {
       "id": "recent-138513",
@@ -34985,7 +35201,15 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138513",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-01-24T07:30:00.000Z",
-      "rawId": 138513
+      "rawId": 138513,
+      "starPerformers": [
+        {
+          "name": "RS Ambrish",
+          "performance": "4-29",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138513"
+        }
+      ]
     },
     {
       "id": "recent-137454",
@@ -35016,7 +35240,15 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/137454",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2025-11-21T09:30:00.000Z",
-      "rawId": 137454
+      "rawId": 137454,
+      "starPerformers": [
+        {
+          "name": "Ripon Mondol",
+          "performance": "1-35",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/137454"
+        }
+      ]
     },
     {
       "id": "recent-105540",
@@ -35047,7 +35279,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105540",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2025-02-02T06:30:00.000Z",
-      "rawId": 105540
+      "rawId": 105540,
+      "starPerformers": []
     },
     {
       "id": "recent-105538",
@@ -35078,7 +35311,15 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105538",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2025-01-31T06:30:00.000Z",
-      "rawId": 105538
+      "rawId": 105538,
+      "starPerformers": [
+        {
+          "name": "Parunika Sisodia",
+          "performance": "3-21",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105538"
+        }
+      ]
     },
     {
       "id": "recent-105514",
@@ -35109,7 +35350,8 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105514",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2025-01-28T06:30:00.000Z",
-      "rawId": 105514
+      "rawId": 105514,
+      "starPerformers": []
     },
     {
       "id": "recent-105484",
@@ -35140,7 +35382,15 @@
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105484",
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2025-01-26T06:30:00.000Z",
-      "rawId": 105484
+      "rawId": 105484,
+      "starPerformers": [
+        {
+          "name": "Vaishnavi Sharma",
+          "performance": "3-15",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105484"
+        }
+      ]
     }
   ],
   "rankings": [
@@ -48652,6 +48902,7 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-06-28T13:30:00.000Z",
       "rawId": 122011,
+      "starPerformers": [],
       "importance": "Major tournament"
     },
     {
@@ -48684,6 +48935,7 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-06-25T13:30:00.000Z",
       "rawId": 121961,
+      "starPerformers": [],
       "importance": "Major tournament"
     },
     {
@@ -48716,6 +48968,7 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-06-21T13:30:00.000Z",
       "rawId": 121923,
+      "starPerformers": [],
       "importance": "Major tournament"
     },
     {
@@ -48748,6 +49001,14 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2026-06-21T04:30:00.000Z",
       "rawId": 156179,
+      "starPerformers": [
+        {
+          "name": "Vaibhav Sooryavanshi",
+          "performance": "94(29)",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156179"
+        }
+      ],
       "importance": "Knockout stage"
     },
     {
@@ -48780,6 +49041,14 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-06-17T13:30:00.000Z",
       "rawId": 121846,
+      "starPerformers": [
+        {
+          "name": "Smriti Mandhana",
+          "performance": "74(47)",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/121846"
+        }
+      ],
       "importance": "Major tournament"
     },
     {
@@ -48812,6 +49081,7 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-06-14T13:30:00.000Z",
       "rawId": 121813,
+      "starPerformers": [],
       "importance": "Major tournament"
     },
     {
@@ -48844,6 +49114,7 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-06-10T09:00:00.000Z",
       "rawId": 156091,
+      "starPerformers": [],
       "importance": "Major tournament"
     },
     {
@@ -48876,6 +49147,7 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-06-08T09:00:00.000Z",
       "rawId": 156025,
+      "starPerformers": [],
       "importance": "Major tournament"
     },
     {
@@ -48908,6 +49180,7 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-02-22T07:00:00.000Z",
       "rawId": 144384,
+      "starPerformers": [],
       "importance": "Knockout stage"
     },
     {
@@ -48940,6 +49213,7 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-02-20T02:30:00.000Z",
       "rawId": 144362,
+      "starPerformers": [],
       "importance": "Knockout stage"
     },
     {
@@ -48972,6 +49246,14 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-02-17T02:30:00.000Z",
       "rawId": 144321,
+      "starPerformers": [
+        {
+          "name": "Tanuja Kanwer",
+          "performance": "4-12",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/144321"
+        }
+      ],
       "importance": "Major tournament"
     },
     {
@@ -49004,6 +49286,7 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-02-15T07:00:00.000Z",
       "rawId": 144298,
+      "starPerformers": [],
       "importance": "Major tournament"
     },
     {
@@ -49036,6 +49319,7 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2026-02-06T11:30:00.000Z",
       "rawId": 145541,
+      "starPerformers": [],
       "importance": "Major tournament"
     },
     {
@@ -49068,6 +49352,14 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-02-06T07:30:00.000Z",
       "rawId": 138680,
+      "starPerformers": [
+        {
+          "name": "Vaibhav Sooryavanshi",
+          "performance": "175(80)",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138680"
+        }
+      ],
       "importance": "Knockout stage"
     },
     {
@@ -49100,6 +49392,14 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-02-04T07:30:00.000Z",
       "rawId": 138669,
+      "starPerformers": [
+        {
+          "name": "Aaron George",
+          "performance": "115(104)",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138669"
+        }
+      ],
       "importance": "Knockout stage"
     },
     {
@@ -49132,6 +49432,7 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2026-02-02T11:30:00.000Z",
       "rawId": 145396,
+      "starPerformers": [],
       "importance": "Major tournament"
     },
     {
@@ -49164,6 +49465,7 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-02-01T07:30:00.000Z",
       "rawId": 138653,
+      "starPerformers": [],
       "importance": "Major tournament"
     },
     {
@@ -49196,6 +49498,7 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-01-27T07:30:00.000Z",
       "rawId": 138589,
+      "starPerformers": [],
       "importance": "Major tournament"
     },
     {
@@ -49228,6 +49531,14 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-01-24T07:30:00.000Z",
       "rawId": 138513,
+      "starPerformers": [
+        {
+          "name": "RS Ambrish",
+          "performance": "4-29",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138513"
+        }
+      ],
       "importance": "Major tournament"
     },
     {
@@ -49260,6 +49571,14 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2025-11-21T09:30:00.000Z",
       "rawId": 137454,
+      "starPerformers": [
+        {
+          "name": "Ripon Mondol",
+          "performance": "1-35",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/137454"
+        }
+      ],
       "importance": "Knockout stage"
     },
     {
@@ -49292,6 +49611,7 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2025-02-02T06:30:00.000Z",
       "rawId": 105540,
+      "starPerformers": [],
       "importance": "Knockout stage"
     },
     {
@@ -49324,6 +49644,14 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2025-01-31T06:30:00.000Z",
       "rawId": 105538,
+      "starPerformers": [
+        {
+          "name": "Parunika Sisodia",
+          "performance": "3-21",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105538"
+        }
+      ],
       "importance": "Knockout stage"
     },
     {
@@ -49356,6 +49684,7 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2025-01-28T06:30:00.000Z",
       "rawId": 105514,
+      "starPerformers": [],
       "importance": "Major tournament"
     },
     {
@@ -49388,6 +49717,14 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2025-01-26T06:30:00.000Z",
       "rawId": 105484,
+      "starPerformers": [
+        {
+          "name": "Vaishnavi Sharma",
+          "performance": "3-15",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105484"
+        }
+      ],
       "importance": "Major tournament"
     }
   ],
@@ -63000,6 +63337,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
           "startTime": "2026-06-14T13:30:00.000Z",
           "rawId": 121813,
+          "starPerformers": [],
           "importance": "Major tournament"
         },
         {
@@ -63032,6 +63370,14 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
           "startTime": "2026-06-17T13:30:00.000Z",
           "rawId": 121846,
+          "starPerformers": [
+            {
+              "name": "Smriti Mandhana",
+              "performance": "74(47)",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/121846"
+            }
+          ],
           "importance": "Major tournament"
         },
         {
@@ -63064,6 +63410,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
           "startTime": "2026-06-21T13:30:00.000Z",
           "rawId": 121923,
+          "starPerformers": [],
           "importance": "Major tournament"
         },
         {
@@ -63096,6 +63443,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
           "startTime": "2026-06-25T13:30:00.000Z",
           "rawId": 121961,
+          "starPerformers": [],
           "importance": "Major tournament"
         },
         {
@@ -63128,6 +63476,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
           "startTime": "2026-06-28T13:30:00.000Z",
           "rawId": 122011,
+          "starPerformers": [],
           "importance": "Major tournament"
         }
       ]
@@ -63174,6 +63523,14 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
           "startTime": "2026-06-21T04:30:00.000Z",
           "rawId": 156179,
+          "starPerformers": [
+            {
+              "name": "Vaibhav Sooryavanshi",
+              "performance": "94(29)",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156179"
+            }
+          ],
           "importance": "Knockout stage"
         }
       ]
@@ -63220,6 +63577,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
           "startTime": "2026-06-08T09:00:00.000Z",
           "rawId": 156025,
+          "starPerformers": [],
           "importance": "Major tournament"
         },
         {
@@ -63252,6 +63610,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
           "startTime": "2026-06-10T09:00:00.000Z",
           "rawId": 156091,
+          "starPerformers": [],
           "importance": "Major tournament"
         }
       ]
@@ -63298,6 +63657,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
           "startTime": "2026-02-15T07:00:00.000Z",
           "rawId": 144298,
+          "starPerformers": [],
           "importance": "Major tournament"
         },
         {
@@ -63330,6 +63690,14 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
           "startTime": "2026-02-17T02:30:00.000Z",
           "rawId": 144321,
+          "starPerformers": [
+            {
+              "name": "Tanuja Kanwer",
+              "performance": "4-12",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/144321"
+            }
+          ],
           "importance": "Major tournament"
         },
         {
@@ -63362,6 +63730,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
           "startTime": "2026-02-20T02:30:00.000Z",
           "rawId": 144362,
+          "starPerformers": [],
           "importance": "Knockout stage"
         },
         {
@@ -63394,6 +63763,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
           "startTime": "2026-02-22T07:00:00.000Z",
           "rawId": 144384,
+          "starPerformers": [],
           "importance": "Knockout stage"
         }
       ]
@@ -63440,6 +63810,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
           "startTime": "2026-02-02T11:30:00.000Z",
           "rawId": 145396,
+          "starPerformers": [],
           "importance": "Major tournament"
         },
         {
@@ -63472,6 +63843,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
           "startTime": "2026-02-06T11:30:00.000Z",
           "rawId": 145541,
+          "starPerformers": [],
           "importance": "Major tournament"
         }
       ]
@@ -63518,6 +63890,14 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
           "startTime": "2026-01-24T07:30:00.000Z",
           "rawId": 138513,
+          "starPerformers": [
+            {
+              "name": "RS Ambrish",
+              "performance": "4-29",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138513"
+            }
+          ],
           "importance": "Major tournament"
         },
         {
@@ -63550,6 +63930,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
           "startTime": "2026-01-27T07:30:00.000Z",
           "rawId": 138589,
+          "starPerformers": [],
           "importance": "Major tournament"
         },
         {
@@ -63582,6 +63963,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
           "startTime": "2026-02-01T07:30:00.000Z",
           "rawId": 138653,
+          "starPerformers": [],
           "importance": "Major tournament"
         },
         {
@@ -63614,6 +63996,14 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
           "startTime": "2026-02-04T07:30:00.000Z",
           "rawId": 138669,
+          "starPerformers": [
+            {
+              "name": "Aaron George",
+              "performance": "115(104)",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138669"
+            }
+          ],
           "importance": "Knockout stage"
         },
         {
@@ -63646,6 +64036,14 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
           "startTime": "2026-02-06T07:30:00.000Z",
           "rawId": 138680,
+          "starPerformers": [
+            {
+              "name": "Vaibhav Sooryavanshi",
+              "performance": "175(80)",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138680"
+            }
+          ],
           "importance": "Knockout stage"
         }
       ]
@@ -63692,6 +64090,14 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
           "startTime": "2025-11-21T09:30:00.000Z",
           "rawId": 137454,
+          "starPerformers": [
+            {
+              "name": "Ripon Mondol",
+              "performance": "1-35",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/137454"
+            }
+          ],
           "importance": "Knockout stage"
         }
       ]
@@ -63738,6 +64144,14 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
           "startTime": "2025-01-26T06:30:00.000Z",
           "rawId": 105484,
+          "starPerformers": [
+            {
+              "name": "Vaishnavi Sharma",
+              "performance": "3-15",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105484"
+            }
+          ],
           "importance": "Major tournament"
         },
         {
@@ -63770,6 +64184,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
           "startTime": "2025-01-28T06:30:00.000Z",
           "rawId": 105514,
+          "starPerformers": [],
           "importance": "Major tournament"
         },
         {
@@ -63802,6 +64217,14 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
           "startTime": "2025-01-31T06:30:00.000Z",
           "rawId": 105538,
+          "starPerformers": [
+            {
+              "name": "Parunika Sisodia",
+              "performance": "3-21",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105538"
+            }
+          ],
           "importance": "Knockout stage"
         },
         {
@@ -63834,6 +64257,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
           "startTime": "2025-02-02T06:30:00.000Z",
           "rawId": 105540,
+          "starPerformers": [],
           "importance": "Knockout stage"
         }
       ]
@@ -63874,6 +64298,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
           "startTime": "2026-06-28T13:30:00.000Z",
           "rawId": 122011,
+          "starPerformers": [],
           "importance": "Major tournament"
         },
         {
@@ -63906,6 +64331,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
           "startTime": "2026-06-25T13:30:00.000Z",
           "rawId": 121961,
+          "starPerformers": [],
           "importance": "Major tournament"
         },
         {
@@ -63938,6 +64364,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
           "startTime": "2026-06-21T13:30:00.000Z",
           "rawId": 121923,
+          "starPerformers": [],
           "importance": "Major tournament"
         },
         {
@@ -63970,6 +64397,14 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
           "startTime": "2026-06-21T04:30:00.000Z",
           "rawId": 156179,
+          "starPerformers": [
+            {
+              "name": "Vaibhav Sooryavanshi",
+              "performance": "94(29)",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156179"
+            }
+          ],
           "importance": "Knockout stage"
         },
         {
@@ -64002,6 +64437,14 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
           "startTime": "2026-06-17T13:30:00.000Z",
           "rawId": 121846,
+          "starPerformers": [
+            {
+              "name": "Smriti Mandhana",
+              "performance": "74(47)",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/121846"
+            }
+          ],
           "importance": "Major tournament"
         },
         {
@@ -64034,6 +64477,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
           "startTime": "2026-06-14T13:30:00.000Z",
           "rawId": 121813,
+          "starPerformers": [],
           "importance": "Major tournament"
         },
         {
@@ -64066,6 +64510,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
           "startTime": "2026-06-10T09:00:00.000Z",
           "rawId": 156091,
+          "starPerformers": [],
           "importance": "Major tournament"
         },
         {
@@ -64098,6 +64543,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
           "startTime": "2026-06-08T09:00:00.000Z",
           "rawId": 156025,
+          "starPerformers": [],
           "importance": "Major tournament"
         }
       ]
@@ -64136,6 +64582,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
           "startTime": "2026-02-22T07:00:00.000Z",
           "rawId": 144384,
+          "starPerformers": [],
           "importance": "Knockout stage"
         },
         {
@@ -64168,6 +64615,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
           "startTime": "2026-02-20T02:30:00.000Z",
           "rawId": 144362,
+          "starPerformers": [],
           "importance": "Knockout stage"
         },
         {
@@ -64200,6 +64648,14 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
           "startTime": "2026-02-17T02:30:00.000Z",
           "rawId": 144321,
+          "starPerformers": [
+            {
+              "name": "Tanuja Kanwer",
+              "performance": "4-12",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/144321"
+            }
+          ],
           "importance": "Major tournament"
         },
         {
@@ -64232,6 +64688,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
           "startTime": "2026-02-15T07:00:00.000Z",
           "rawId": 144298,
+          "starPerformers": [],
           "importance": "Major tournament"
         },
         {
@@ -64264,6 +64721,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
           "startTime": "2026-02-06T11:30:00.000Z",
           "rawId": 145541,
+          "starPerformers": [],
           "importance": "Major tournament"
         },
         {
@@ -64296,6 +64754,14 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
           "startTime": "2026-02-06T07:30:00.000Z",
           "rawId": 138680,
+          "starPerformers": [
+            {
+              "name": "Vaibhav Sooryavanshi",
+              "performance": "175(80)",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138680"
+            }
+          ],
           "importance": "Knockout stage"
         },
         {
@@ -64328,6 +64794,14 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
           "startTime": "2026-02-04T07:30:00.000Z",
           "rawId": 138669,
+          "starPerformers": [
+            {
+              "name": "Aaron George",
+              "performance": "115(104)",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138669"
+            }
+          ],
           "importance": "Knockout stage"
         },
         {
@@ -64360,6 +64834,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
           "startTime": "2026-02-02T11:30:00.000Z",
           "rawId": 145396,
+          "starPerformers": [],
           "importance": "Major tournament"
         },
         {
@@ -64392,6 +64867,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
           "startTime": "2026-02-01T07:30:00.000Z",
           "rawId": 138653,
+          "starPerformers": [],
           "importance": "Major tournament"
         }
       ]
@@ -64430,6 +64906,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
           "startTime": "2026-01-27T07:30:00.000Z",
           "rawId": 138589,
+          "starPerformers": [],
           "importance": "Major tournament"
         },
         {
@@ -64462,6 +64939,14 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
           "startTime": "2026-01-24T07:30:00.000Z",
           "rawId": 138513,
+          "starPerformers": [
+            {
+              "name": "RS Ambrish",
+              "performance": "4-29",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138513"
+            }
+          ],
           "importance": "Major tournament"
         }
       ]
@@ -64500,6 +64985,14 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
           "startTime": "2025-11-21T09:30:00.000Z",
           "rawId": 137454,
+          "starPerformers": [
+            {
+              "name": "Ripon Mondol",
+              "performance": "1-35",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/137454"
+            }
+          ],
           "importance": "Knockout stage"
         }
       ]
@@ -64538,6 +65031,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
           "startTime": "2025-02-02T06:30:00.000Z",
           "rawId": 105540,
+          "starPerformers": [],
           "importance": "Knockout stage"
         }
       ]
@@ -64576,6 +65070,14 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
           "startTime": "2025-01-31T06:30:00.000Z",
           "rawId": 105538,
+          "starPerformers": [
+            {
+              "name": "Parunika Sisodia",
+              "performance": "3-21",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105538"
+            }
+          ],
           "importance": "Knockout stage"
         },
         {
@@ -64608,6 +65110,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
           "startTime": "2025-01-28T06:30:00.000Z",
           "rawId": 105514,
+          "starPerformers": [],
           "importance": "Major tournament"
         },
         {
@@ -64640,6 +65143,14 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
           "startTime": "2025-01-26T06:30:00.000Z",
           "rawId": 105484,
+          "starPerformers": [
+            {
+              "name": "Vaishnavi Sharma",
+              "performance": "3-15",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105484"
+            }
+          ],
           "importance": "Major tournament"
         }
       ]

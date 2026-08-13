@@ -531,6 +531,40 @@ function buildRankings(groups) {
   });
 }
 
+function decodeHtmlEntities(value) {
+  return clean(String(value || ""))
+    .replace(/&amp;/g, "&")
+    .replace(/&#x27;/g, "'")
+    .replace(/&#39;/g, "'")
+    .replace(/&quot;/g, '"')
+    .replace(/&nbsp;/g, " ");
+}
+
+function extractStarPerformer(html) {
+  const marker = "PLAYER OF THE MATCH";
+  const markerIndex = html.toUpperCase().indexOf(marker);
+  if (markerIndex < 0) return null;
+  const block = html.slice(markerIndex, markerIndex + 9000);
+  const performer = block.match(/<img[^>]+alt="([^"]+)"[\s\S]*?<span[^>]*>([^<]+)<\/span><\/div><p[^>]*>([^<]+)<\/p>/i);
+  if (!performer) return null;
+  const name = decodeHtmlEntities(performer[2]);
+  const performance = decodeHtmlEntities(performer[3]);
+  if (!name) return null;
+  return { name, performance, label: "Player of the Match" };
+}
+
+async function enrichStarPerformers(matches) {
+  const targets = matches.filter((match) => match.status === "recent" && importantMatchReason(match) && match.sourceUrl);
+  const settled = await Promise.allSettled(targets.map(async (match) => {
+    const response = await fetch(match.sourceUrl, { headers: HEADERS });
+    if (!response.ok) return [match.id, []];
+    const performer = extractStarPerformer(await response.text());
+    return [match.id, performer ? [{ ...performer, sourceUrl: match.sourceUrl }] : []];
+  }));
+  const byMatch = new Map(settled.filter((result) => result.status === "fulfilled").map((result) => result.value));
+  return matches.map((match) => ({ ...match, starPerformers: byMatch.get(match.id) || match.starPerformers || [] }));
+}
+
 function importantMatchReason(match) {
   const text = searchableMatch(match);
   if (/\b(final|semi[- ]?final|quarter[- ]?final|qualifier|eliminator|play[- ]?off|third[- ]?place|title match)\b/.test(text)) {
@@ -650,6 +684,7 @@ async function main() {
     upcoming: sortMatches(relevant.filter((match) => match.status === "upcoming")),
     recent: sortMatches(relevant.filter((match) => match.status === "recent")).reverse(),
   };
+  groups.recent = await enrichStarPerformers(groups.recent);
   const importantMatches = buildImportantMatches(groups);
   const completedImportantMatches = groups.recent
     .map((match) => ({ ...match, importance: importantMatchReason(match) }))
