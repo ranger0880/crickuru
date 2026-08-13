@@ -5438,45 +5438,51 @@ const RouterContext = React.createContext(null);
           groups[level] = tournaments.filter((tournament) => tournament.level === level);
           return groups;
         }, {});
+        const renderRing = (level) => {
+          const group = grouped[level];
+          const ring = ringConfig[level];
+          if (!group.length) return null;
+          return (
+            <section className={`rounded-[8px] border p-2.5 shadow-[inset_0_0_28px_rgba(255,255,255,0.025)] ${ring.className}`} aria-label={`${ring.label} tournaments`}>
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <p className="text-[0.58rem] font-black uppercase tracking-[0.14em]">{ring.label}</p>
+                <span className="text-[0.54rem] font-bold uppercase tracking-[0.1em] opacity-65">{group.length} tracked</span>
+              </div>
+              <div className="mt-2 flex min-w-0 flex-wrap justify-center gap-1.5">
+                {group.map((tournament) => {
+                  const selected = tournament.id === activeId;
+                  return (
+                    <button key={tournament.id} type="button" onClick={() => onSelect(tournament.id)} aria-pressed={selected} title={`Open ${tournament.series}`} className={`min-h-12 w-[7.2rem] max-w-full min-w-0 overflow-hidden rounded-[7px] border px-2 py-1.5 text-left transition sm:w-[8rem] ${selected ? ring.selectedClass : ring.cardClass}`}>
+                      <span className="block truncate text-[0.56rem] font-black uppercase tracking-[0.06em]">{tournament.series}</span>
+                      <span className="mt-1 block truncate text-[0.5rem] font-bold uppercase tracking-[0.08em] opacity-65">{tournament.total} fixtures</span>
+                    </button>
+                  );
+                })}
+              </div>
+            </section>
+          );
+        };
         return (
-          <div className="relative mt-5 overflow-hidden rounded-[8px] border border-cyan/18 bg-[radial-gradient(circle_at_50%_18%,rgba(34,211,238,0.15),transparent_18%),radial-gradient(circle_at_50%_18%,rgba(244,185,66,0.08),transparent_52%),#05070B] p-4 sm:p-6" aria-label="Important tournament radar">
+          <div className="relative mt-5 overflow-hidden rounded-[8px] border border-cyan/18 bg-[radial-gradient(circle_at_50%_50%,rgba(34,211,238,0.15),transparent_16%),radial-gradient(circle_at_50%_50%,rgba(244,185,66,0.08),transparent_52%),#05070B] p-3 sm:p-5" aria-label="Important tournament radar">
             <div className="pointer-events-none absolute inset-[12%] rounded-full border border-cyan/18" />
             <div className="pointer-events-none absolute inset-[24%] rounded-full border border-cyan/20" />
             <div className="pointer-events-none absolute inset-[36%] rounded-full border border-cyan/24" />
             <div className="pointer-events-none absolute left-3 top-3 flex flex-wrap gap-2 text-[0.55rem] font-black uppercase tracking-[0.12em] sm:left-5 sm:top-5">
               {ringOrder.map((level) => <span key={level} className={`rounded-full border px-2 py-1 ${ringConfig[level].className}`}>{ringConfig[level].label}</span>)}
             </div>
-            <div className="pointer-events-none absolute left-1/2 top-0 h-32 w-px -translate-x-1/2 bg-cyan/15" />
-            <div className="pointer-events-none absolute left-[7%] top-16 h-px w-[86%] bg-cyan/15" />
-            <div className="absolute left-1/2 top-5 z-10 grid h-20 w-20 -translate-x-1/2 place-items-center rounded-full border border-gold/55 bg-night/90 text-center shadow-[0_0_38px_rgba(244,185,66,0.2)] sm:h-24 sm:w-24">
-              <div><Icon.Radio className="mx-auto text-gold" size={24} /><p className="mt-1 text-[0.58rem] font-black uppercase tracking-[0.16em] text-gold">Match radar</p></div>
-            </div>
-            <div className="relative z-20 grid gap-3 pt-28 sm:pt-32">
-              {ringOrder.map((level) => {
-                const group = grouped[level];
-                const ring = ringConfig[level];
-                if (!group.length) return null;
-                return (
-                  <section key={level} className={`rounded-[8px] border p-3 shadow-[inset_0_0_28px_rgba(255,255,255,0.025)] ${ring.className}`} aria-label={`${ring.label} tournaments`}>
-                    <div className="flex flex-wrap items-center justify-between gap-2">
-                      <p className="text-[0.62rem] font-black uppercase tracking-[0.15em]">{ring.label}</p>
-                      <span className="text-[0.58rem] font-bold uppercase tracking-[0.12em] opacity-65">{group.length} tracked</span>
-                    </div>
-                    <div className="mt-2 grid min-w-0 gap-2 sm:grid-cols-2 lg:grid-cols-3">
-                      {group.map((tournament) => {
-                        const selected = tournament.id === activeId;
-                        return (
-                          <button key={tournament.id} type="button" onClick={() => onSelect(tournament.id)} aria-pressed={selected} title={`Open ${tournament.series}`} className={`min-h-16 min-w-0 w-full overflow-hidden rounded-[8px] border px-3 py-2 text-left transition ${selected ? ring.selectedClass : ring.cardClass}`}>
-                            <span className="block truncate text-[0.62rem] font-black uppercase tracking-[0.08em]">{tournament.series}</span>
-                            <span className="mt-1 block truncate text-[0.55rem] font-bold uppercase tracking-[0.12em] opacity-65">{tournament.total} fixtures</span>
-                          </button>
-                        );
-                      })}
-                    </div>
-                  </section>
-                );
-              })}
-              {!tournaments.length ? <p className="rounded-[8px] border border-white/10 bg-night/70 p-6 text-center text-sm leading-7 text-white/58">No tournaments match this radar type yet.</p> : null}
+            <div className="pointer-events-none absolute left-1/2 top-1/2 h-[78%] w-px -translate-x-1/2 -translate-y-1/2 bg-cyan/15" />
+            <div className="pointer-events-none absolute left-[8%] top-1/2 h-px w-[84%] -translate-y-1/2 bg-cyan/15" />
+            <div className="relative z-20 grid gap-2 pt-20 sm:grid-cols-[minmax(0,1fr)_7rem_minmax(0,1fr)] sm:grid-rows-[auto_minmax(11rem,1fr)_auto] sm:gap-3 sm:pt-24">
+              <div className="sm:col-span-3 sm:row-start-1">{renderRing("international")}</div>
+              <div className="sm:col-start-1 sm:row-start-2 sm:self-center">{renderRing("women")}</div>
+              <div className="flex items-center justify-center sm:col-start-2 sm:row-start-2">
+                <div className="grid h-20 w-20 place-items-center rounded-full border border-gold/55 bg-night/90 text-center shadow-[0_0_38px_rgba(244,185,66,0.2)] sm:h-24 sm:w-24">
+                  <div><Icon.Radio className="mx-auto text-gold" size={22} /><p className="mt-1 text-[0.54rem] font-black uppercase tracking-[0.14em] text-gold">Match radar</p></div>
+                </div>
+              </div>
+              <div className="sm:col-start-3 sm:row-start-2 sm:self-center">{renderRing("league")}</div>
+              <div className="sm:col-span-3 sm:row-start-3">{renderRing("domestic")}</div>
+              {!tournaments.length ? <p className="rounded-[8px] border border-white/10 bg-night/70 p-6 text-center text-sm leading-7 text-white/58 sm:col-span-3">No tournaments match this radar type yet.</p> : null}
             </div>
           </div>
         );
