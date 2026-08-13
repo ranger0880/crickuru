@@ -165,7 +165,7 @@ const RouterContext = React.createContext(null);
           matchesUrl: CricLinks.matches,
           membersUrl: CricLinks.members,
         },
-        dataInventory: { teamProfile: false, matches: 0, liveMatches: 0, upcomingMatches: 0, recentMatches: 0, players: 0, opponents: 0, awards: 0, records: 0, playerProfiles: 0, playerRecentMatches: 0, sourcePages: [] },
+        dataInventory: { teamProfile: false, matches: 0, liveMatches: 0, upcomingMatches: 0, recentMatches: 0, players: 0, opponents: 0, awards: 0, records: 0, playerProfiles: 0, playerRecentMatches: 0, playerHistoryMatches: 0, playerHistoryComplete: 0, sourcePages: [] },
         summary: { matches: 0, live: 0, wins: 0, losses: 0, winRate: 0, liveOpponent: "", liveScore: "", liveStatus: "", latestResult: "", latestOpponent: "", upcoming: 0, nextOpponent: "", nextMatchDate: "", nextMatchVenue: "" },
         memberSummary: { total: 0, verified: 0, pro: 0, captains: 0, admins: 0, skills: [], batterCategories: [], bowlerCategories: [], badges: [] },
         matchInsights: { total: 0, completed: 0, averageFor: 0, averageAgainst: 0, highestFor: null, highestAgainst: null, matchTypes: [], ballTypes: [], venues: [], cities: [], tournaments: [] },
@@ -2532,7 +2532,7 @@ const RouterContext = React.createContext(null);
       }
 
       function PlayerStatsMatrix({ stats }) {
-        const groups = [
+        const fallbackGroups = [
           {
             title: "Batting",
             items: [
@@ -2558,6 +2558,10 @@ const RouterContext = React.createContext(null);
             ],
           },
         ];
+        const sectionLabels = { batting: "Batting", bowling: "Bowling", fielding: "Fielding", captain: "Captaincy" };
+        const groups = Object.entries(stats.sections || {}).length
+          ? Object.entries(stats.sections).map(([key, items]) => ({ title: sectionLabels[key] || key, items: items.map((item) => [item.title, item.value]) }))
+          : fallbackGroups;
         return (
           <section>
             <div className="flex items-end justify-between gap-3">
@@ -2565,7 +2569,7 @@ const RouterContext = React.createContext(null);
                 <p className="text-xs font-black uppercase tracking-[0.2em] text-cyan">Public CricHeroes totals</p>
                 <h3 className="mt-2 font-display text-3xl font-black uppercase text-white">Complete stat sheet</h3>
               </div>
-              <span className="hidden text-xs font-semibold text-white/35 sm:block">Overall profile data</span>
+              <span className="hidden text-xs font-semibold text-white/35 sm:block">{stats.publicFieldCount || groups.reduce((sum, group) => sum + group.items.length, 0)} public fields</span>
             </div>
             <div className="mt-4 grid gap-4 lg:grid-cols-3">
               {groups.map((group) => (
@@ -2592,6 +2596,7 @@ const RouterContext = React.createContext(null);
         const stats = player.stats?.source === "CricHeroes public player stats" ? player.stats : {};
         const warriorsStats = player.warriorsStats || {};
         const recentMatches = asArray(player.recentMatches).slice(0, 5);
+        const matchHistory = asArray(player.matchHistory).length ? asArray(player.matchHistory) : recentMatches;
         const improvementNotes = playerImprovementNotes(player, stats);
         const neon = playerNeonTheme(player.impact || 0);
 
@@ -2661,6 +2666,15 @@ const RouterContext = React.createContext(null);
                         {recentMatches.map((match) => <a key={match.id} href={match.performance?.scorecardUrl || match.scorecardUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between gap-3 rounded-[6px] border border-white/8 bg-night/55 px-3 py-3 transition hover:border-gold/35"><span className="min-w-0"><span className="block truncate font-semibold text-white/80">{match.performance?.highlight || `${match.teamA} vs ${match.teamB}`}</span><span className="block truncate text-xs text-white/40">{match.performance?.teamName || "Cross-team match"} • {formatFeedDate(match.date)}</span></span><Icon.ExternalLink className="shrink-0 text-white/35" size={14} /></a>)}
                       </div>
                     ) : <p className="mt-5 text-sm leading-6 text-white/50">Recent all-team match form will appear after the next public profile sync.</p>}
+                    <details className="mt-5 rounded-[6px] border border-white/8 bg-night/45 p-3">
+                      <summary className="cursor-pointer text-xs font-black uppercase tracking-[0.14em] text-gold">Show synced match history ({matchHistory.length})</summary>
+                      <p className="mt-2 text-xs leading-5 text-white/38">{player.historyComplete === false ? "More public CricHeroes history is queued for the next daily sync." : "All public history pages currently available to the sync are loaded."}</p>
+                      <div className="mt-3 max-h-72 overflow-y-auto pr-1">
+                        <div className="grid gap-2">
+                          {matchHistory.map((match) => <a key={`history-${match.id}`} href={match.performance?.scorecardUrl || match.scorecardUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between gap-3 border-b border-white/7 py-2 text-sm"><span className="min-w-0"><span className="block truncate font-semibold text-white/72">{match.teamA} vs {match.teamB}</span><span className="block truncate text-xs text-white/38">{match.performance?.highlight || match.resultText || match.status} • {formatFeedDate(match.date)}</span></span><Icon.ExternalLink className="shrink-0 text-white/30" size={13} /></a>)}
+                        </div>
+                      </div>
+                    </details>
                   </article>
                 </div>
 

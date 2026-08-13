@@ -341,8 +341,22 @@ function normalizeOverallStats(initialStats) {
   const bowling = statistics.bowling || [];
   const fielding = statistics.fielding || [];
   const captain = statistics.captain || [];
+  const sections = Object.fromEntries(
+    Object.entries(statistics)
+      .filter(([, items]) => Array.isArray(items))
+      .map(([sectionName, items]) => [
+        sectionName,
+        items.map((item) => ({
+          title: String(item.title || "Stat"),
+          value: item.value ?? "",
+          isUserProperty: Boolean(item.is_user_property),
+        })),
+      ]),
+  );
   return {
     source: "CricHeroes public player stats",
+    sections,
+    publicFieldCount: Object.values(sections).reduce((sum, items) => sum + items.length, 0),
     matches: numericStat(batting, "Matches"),
     battingInnings: numericStat(batting, "Innings"),
     notOut: numericStat(batting, "Not out"),
@@ -413,9 +427,29 @@ function normalizePlayerRecentMatches(rawMatches, player) {
     .sort((a, b) => matchTime(b) - matchTime(a));
 }
 
-async function fetchPlayerProfileData(player) {
+function mergePlayerMatchHistory(existing, incoming) {
+  const byId = new Map();
+  for (const match of [...(existing || []), ...(incoming || [])]) {
+    if (match.id) byId.set(Number(match.id), match);
+  }
+  return [...byId.values()].sort((a, b) => matchTime(b) - matchTime(a));
+}
+
+async function fetchPlayerHistoryPage(player, nextPath) {
+  if (!nextPath) return { matches: [], next: "" };
+  const url = new URL(nextPath, "https://cricheroes.com").toString();
+  const text = await fetchFlightText(url);
+  const payload = extractJsonValue(text, "matches");
+  return {
+    matches: normalizePlayerRecentMatches(payload?.data, player),
+    next: payload?.page?.next || "",
+  };
+}
+
+async function fetchPlayerProfileData(player, previousPlayer = null) {
   let overallStats = null;
-  let recentMatches = [];
+  let matchHistory = [];
+  let historyNext = "";
   try {
     const statsText = await fetchFlightText(player.statsUrl);
     overallStats = normalizeOverallStats(extractJsonValue(statsText, "initialStats"));
@@ -426,13 +460,25 @@ async function fetchPlayerProfileData(player) {
   try {
     const matchesText = await fetchFlightText(player.matchesUrl);
     const matchesPayload = extractJsonValue(matchesText, "matches");
-    recentMatches = normalizePlayerRecentMatches(matchesPayload?.data, player);
+    matchHistory = normalizePlayerRecentMatches(matchesPayload?.data, player);
+    historyNext = matchesPayload?.page?.next || "";
+    if (previousPlayer?.historyNext) {
+      await wait(400);
+      const nextPage = await fetchPlayerHistoryPage(player, previousPlayer.historyNext);
+      matchHistory = mergePlayerMatchHistory(previousPlayer.matchHistory, [...matchHistory, ...nextPage.matches]);
+      historyNext = nextPage.next;
+    } else if (previousPlayer?.matchHistory?.length) {
+      matchHistory = mergePlayerMatchHistory(previousPlayer.matchHistory, matchHistory);
+    }
   } catch (error) {
     console.warn(`Player matches unavailable for ${player.name}: ${error.message}`);
+    matchHistory = previousPlayer?.matchHistory || [];
+    historyNext = previousPlayer?.historyNext || "";
   }
   return {
     overallStats,
-    recentMatches,
+    matchHistory,
+    historyNext,
   };
 }
 
@@ -477,10 +523,11 @@ function playerPerformanceFromScorecard(player, match, scorecard) {
 async function hydratePlayerProfiles(players, previousPlayers = []) {
   const snapshots = await mapWithConcurrency(players, 1, async (player) => {
     try {
-      return await fetchPlayerProfileData(player);
+      const previous = (previousPlayers || []).find((item) => Number(item.id) === Number(player.id));
+      return await fetchPlayerProfileData(player, previous);
     } catch (error) {
       console.warn(`Player profile unavailable for ${player.name}: ${error.message}`);
-      return { overallStats: null, recentMatches: [] };
+      return { overallStats: null, matchHistory: [], historyNext: "" };
     }
   });
   const previousById = new Map((previousPlayers || []).map((player) => [Number(player.id), player]));
@@ -488,8 +535,12 @@ async function hydratePlayerProfiles(players, previousPlayers = []) {
     const previous = previousById.get(Number(player.id));
     player.overallStats = snapshots[index].overallStats || previous?.overallStats || {};
     player.stats = Object.keys(player.overallStats).length ? player.overallStats : previous?.stats || {};
-    const recentMatches = snapshots[index].recentMatches.length ? snapshots[index].recentMatches : previous?.recentMatches || [];
-    player.recentMatches = recentMatches.filter((match) => matchTime(match) <= Date.now() + 60 * 60 * 1000);
+    const matchHistory = snapshots[index].matchHistory.length ? snapshots[index].matchHistory : previous?.matchHistory || previous?.recentMatches || [];
+    player.matchHistory = matchHistory.filter((match) => matchTime(match) <= Date.now() + 60 * 60 * 1000);
+    player.historyNext = snapshots[index].historyNext || previous?.historyNext || "";
+    player.historyPageCount = (previous?.historyPageCount || 0) + (snapshots[index].matchHistory.length ? 1 : 0);
+    player.historyComplete = !player.historyNext;
+    player.recentMatches = player.matchHistory.slice(0, 6);
   });
 
   const recentMatches = new Map();
@@ -1108,6 +1159,8 @@ async function main() {
       rosterChanges: rosterChangeLog.length,
       playerProfiles: players.filter((player) => player.overallStats?.source).length,
       playerRecentMatches: players.reduce((sum, player) => sum + player.recentMatches.length, 0),
+      playerHistoryMatches: players.reduce((sum, player) => sum + player.matchHistory.length, 0),
+      playerHistoryComplete: players.filter((player) => player.historyComplete).length,
       sourcePages: [BASE_URL, `${BASE_URL}/matches`, `${BASE_URL}/members`],
     },
     team,
