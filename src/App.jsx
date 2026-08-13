@@ -5409,10 +5409,30 @@ const RouterContext = React.createContext(null);
       function IndiaTournamentRadar({ tournaments, activeId, onSelect }) {
         const ringOrder = ["international", "women", "league", "domestic"];
         const ringConfig = {
-          international: { radius: 24, label: "International core", className: "border-gold/45 bg-gold/10 text-gold" },
-          women: { radius: 29, label: "Women\u2019s international", className: "border-crimson/45 bg-crimson/10 text-crimson" },
-          league: { radius: 36, label: "League ring", className: "border-cyan/40 bg-cyan/10 text-cyan" },
-          domestic: { radius: 44, label: "Domestic / state outer ring", className: "border-white/22 bg-white/8 text-white/75" },
+          international: {
+            label: "International / orange rim",
+            className: "border-orange-300/45 bg-orange-300/10 text-orange-200",
+            cardClass: "border-orange-200/30 bg-orange-200/10 text-orange-50 hover:border-orange-200/70",
+            selectedClass: "border-orange-100 bg-orange-200 text-night shadow-[0_0_26px_rgba(251,146,60,0.32)]",
+          },
+          women: {
+            label: "Women / blue rim",
+            className: "border-blue-300/45 bg-blue-300/10 text-blue-200",
+            cardClass: "border-blue-200/30 bg-blue-200/10 text-blue-50 hover:border-blue-200/70",
+            selectedClass: "border-blue-100 bg-blue-200 text-night shadow-[0_0_26px_rgba(96,165,250,0.32)]",
+          },
+          league: {
+            label: "League / violet rim",
+            className: "border-violet-300/45 bg-violet-300/10 text-violet-200",
+            cardClass: "border-violet-200/30 bg-violet-200/10 text-violet-50 hover:border-violet-200/70",
+            selectedClass: "border-violet-100 bg-violet-200 text-night shadow-[0_0_26px_rgba(167,139,250,0.32)]",
+          },
+          domestic: {
+            label: "State / green outer rim",
+            className: "border-emerald-300/45 bg-emerald-300/10 text-emerald-200",
+            cardClass: "border-emerald-200/30 bg-emerald-200/10 text-emerald-50 hover:border-emerald-200/70",
+            selectedClass: "border-emerald-100 bg-emerald-200 text-night shadow-[0_0_26px_rgba(110,231,183,0.32)]",
+          },
         };
         const grouped = ringOrder.reduce((groups, level) => {
           groups[level] = tournaments.filter((tournament) => tournament.level === level);
@@ -5434,18 +5454,19 @@ const RouterContext = React.createContext(null);
             <div className="relative z-20 grid gap-3 pt-28 sm:pt-32">
               {ringOrder.map((level) => {
                 const group = grouped[level];
+                const ring = ringConfig[level];
                 if (!group.length) return null;
                 return (
-                  <section key={level} className={`rounded-[8px] border p-3 ${ringConfig[level].className}`} aria-label={`${ringConfig[level].label} tournaments`}>
+                  <section key={level} className={`rounded-[8px] border p-3 shadow-[inset_0_0_28px_rgba(255,255,255,0.025)] ${ring.className}`} aria-label={`${ring.label} tournaments`}>
                     <div className="flex flex-wrap items-center justify-between gap-2">
-                      <p className="text-[0.62rem] font-black uppercase tracking-[0.15em]">{ringConfig[level].label}</p>
+                      <p className="text-[0.62rem] font-black uppercase tracking-[0.15em]">{ring.label}</p>
                       <span className="text-[0.58rem] font-bold uppercase tracking-[0.12em] opacity-65">{group.length} tracked</span>
                     </div>
                     <div className="mt-2 grid min-w-0 gap-2 sm:grid-cols-2 lg:grid-cols-3">
                       {group.map((tournament) => {
                         const selected = tournament.id === activeId;
                         return (
-                          <button key={tournament.id} type="button" onClick={() => onSelect(tournament.id)} aria-pressed={selected} title={`Open ${tournament.series}`} className={`min-h-16 min-w-0 w-full overflow-hidden rounded-[8px] border px-3 py-2 text-left transition ${selected ? "border-gold bg-gold text-night shadow-[0_0_26px_rgba(244,185,66,0.42)]" : "border-white/12 bg-night/90 text-white hover:border-cyan hover:text-cyan"}`}>
+                          <button key={tournament.id} type="button" onClick={() => onSelect(tournament.id)} aria-pressed={selected} title={`Open ${tournament.series}`} className={`min-h-16 min-w-0 w-full overflow-hidden rounded-[8px] border px-3 py-2 text-left transition ${selected ? ring.selectedClass : ring.cardClass}`}>
                             <span className="block truncate text-[0.62rem] font-black uppercase tracking-[0.08em]">{tournament.series}</span>
                             <span className="mt-1 block truncate text-[0.55rem] font-bold uppercase tracking-[0.12em] opacity-65">{tournament.total} fixtures</span>
                           </button>
