@@ -5418,38 +5418,45 @@ const RouterContext = React.createContext(null);
           groups[level] = tournaments.filter((tournament) => tournament.level === level);
           return groups;
         }, {});
-        const radarTournaments = ringOrder.flatMap((level) => {
-          const group = grouped[level];
-          return group.map((tournament, index) => ({
-            tournament,
-            ring: ringConfig[level],
-            angle: -Math.PI / 2 + (index / Math.max(group.length, 1)) * Math.PI * 2 + (level === "domestic" ? 0.08 : 0),
-          }));
-        });
         return (
-          <div className="relative mt-5 min-h-[25rem] overflow-hidden rounded-[8px] border border-cyan/18 bg-[radial-gradient(circle_at_50%_50%,rgba(34,211,238,0.15),transparent_16%),radial-gradient(circle_at_50%_50%,rgba(244,185,66,0.08),transparent_52%),#05070B] p-4 sm:min-h-[32rem]" aria-label="Important tournament radar">
+          <div className="relative mt-5 overflow-hidden rounded-[8px] border border-cyan/18 bg-[radial-gradient(circle_at_50%_18%,rgba(34,211,238,0.15),transparent_18%),radial-gradient(circle_at_50%_18%,rgba(244,185,66,0.08),transparent_52%),#05070B] p-4 sm:p-6" aria-label="Important tournament radar">
             <div className="pointer-events-none absolute inset-[12%] rounded-full border border-cyan/18" />
             <div className="pointer-events-none absolute inset-[24%] rounded-full border border-cyan/20" />
             <div className="pointer-events-none absolute inset-[36%] rounded-full border border-cyan/24" />
             <div className="pointer-events-none absolute left-3 top-3 flex flex-wrap gap-2 text-[0.55rem] font-black uppercase tracking-[0.12em] sm:left-5 sm:top-5">
               {ringOrder.map((level) => <span key={level} className={`rounded-full border px-2 py-1 ${ringConfig[level].className}`}>{ringConfig[level].label}</span>)}
             </div>
-            <div className="pointer-events-none absolute left-1/2 top-[7%] h-[86%] w-px -translate-x-1/2 bg-cyan/15" />
-            <div className="pointer-events-none absolute left-[7%] top-1/2 h-px w-[86%] -translate-y-1/2 bg-cyan/15" />
-            <div className="absolute left-1/2 top-1/2 z-10 grid h-24 w-24 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border border-gold/55 bg-night/90 text-center shadow-[0_0_38px_rgba(244,185,66,0.2)]">
+            <div className="pointer-events-none absolute left-1/2 top-0 h-32 w-px -translate-x-1/2 bg-cyan/15" />
+            <div className="pointer-events-none absolute left-[7%] top-16 h-px w-[86%] bg-cyan/15" />
+            <div className="absolute left-1/2 top-5 z-10 grid h-20 w-20 -translate-x-1/2 place-items-center rounded-full border border-gold/55 bg-night/90 text-center shadow-[0_0_38px_rgba(244,185,66,0.2)] sm:h-24 sm:w-24">
               <div><Icon.Radio className="mx-auto text-gold" size={24} /><p className="mt-1 text-[0.58rem] font-black uppercase tracking-[0.16em] text-gold">Match radar</p></div>
             </div>
-            {radarTournaments.map(({ tournament, ring, angle }) => {
-              const left = 50 + Math.cos(angle) * ring.radius;
-              const top = 50 + Math.sin(angle) * ring.radius;
-              const selected = tournament.id === activeId;
-              return (
-                <button key={tournament.id} type="button" onClick={() => onSelect(tournament.id)} aria-pressed={selected} title={`Open ${tournament.series}`} className={`absolute z-20 w-[8.5rem] -translate-x-1/2 -translate-y-1/2 rounded-[8px] border px-2 py-2 text-center transition sm:w-[10.5rem] ${selected ? "border-gold bg-gold text-night shadow-[0_0_26px_rgba(244,185,66,0.42)]" : "border-cyan/35 bg-night/90 text-white hover:border-cyan hover:text-cyan"}`} style={{ left: `${left}%`, top: `${top}%` }}>
-                  <span className="block truncate text-[0.62rem] font-black uppercase tracking-[0.08em]">{tournament.series}</span>
-                  <span className="mt-1 block text-[0.55rem] font-bold uppercase tracking-[0.12em] opacity-65">{tournament.total} fixtures</span>
-                </button>
-              );
-            })}
+            <div className="relative z-20 grid gap-3 pt-28 sm:pt-32">
+              {ringOrder.map((level) => {
+                const group = grouped[level];
+                if (!group.length) return null;
+                return (
+                  <section key={level} className={`rounded-[8px] border p-3 ${ringConfig[level].className}`} aria-label={`${ringConfig[level].label} tournaments`}>
+                    <div className="flex flex-wrap items-center justify-between gap-2">
+                      <p className="text-[0.62rem] font-black uppercase tracking-[0.15em]">{ringConfig[level].label}</p>
+                      <span className="text-[0.58rem] font-bold uppercase tracking-[0.12em] opacity-65">{group.length} tracked</span>
+                    </div>
+                    <div className="mt-2 grid min-w-0 gap-2 sm:grid-cols-2 lg:grid-cols-3">
+                      {group.map((tournament) => {
+                        const selected = tournament.id === activeId;
+                        return (
+                          <button key={tournament.id} type="button" onClick={() => onSelect(tournament.id)} aria-pressed={selected} title={`Open ${tournament.series}`} className={`min-h-16 min-w-0 w-full overflow-hidden rounded-[8px] border px-3 py-2 text-left transition ${selected ? "border-gold bg-gold text-night shadow-[0_0_26px_rgba(244,185,66,0.42)]" : "border-white/12 bg-night/90 text-white hover:border-cyan hover:text-cyan"}`}>
+                            <span className="block truncate text-[0.62rem] font-black uppercase tracking-[0.08em]">{tournament.series}</span>
+                            <span className="mt-1 block truncate text-[0.55rem] font-bold uppercase tracking-[0.12em] opacity-65">{tournament.total} fixtures</span>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </section>
+                );
+              })}
+              {!tournaments.length ? <p className="rounded-[8px] border border-white/10 bg-night/70 p-6 text-center text-sm leading-7 text-white/58">No tournaments match this radar type yet.</p> : null}
+            </div>
           </div>
         );
       }
