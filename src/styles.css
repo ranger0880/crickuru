@@ -153,6 +153,26 @@
         color: #00738a !important;
       }
 
+      :root.theme-light [class~="text-orange-200"],
+      :root.theme-light [class~="text-orange-50"] {
+        color: #9a4d00 !important;
+      }
+
+      :root.theme-light [class~="text-blue-200"],
+      :root.theme-light [class~="text-blue-50"] {
+        color: #075985 !important;
+      }
+
+      :root.theme-light [class~="text-violet-200"],
+      :root.theme-light [class~="text-violet-50"] {
+        color: #6d28d9 !important;
+      }
+
+      :root.theme-light [class~="text-emerald-200"],
+      :root.theme-light [class~="text-emerald-50"] {
+        color: #047857 !important;
+      }
+
       :root.theme-light [class~="text-night"] {
         color: #05070b !important;
       }
