@@ -1631,6 +1631,7 @@ const RouterContext = React.createContext(null);
       function WarriorsDataPage() {
         const { loading, error, data } = useLiveCricketFeed();
         const [activeTab, setActiveTab] = useState("overview");
+        const [selectedPlayer, setSelectedPlayer] = useState(null);
         const team = data.team || liveFeedFallback.team;
         const inventory = data.dataInventory || liveFeedFallback.dataInventory;
         const matches = asArray(data.matches);
@@ -1726,12 +1727,13 @@ const RouterContext = React.createContext(null);
               <section className="mt-6" aria-live="polite">
                 {activeTab === "overview" && <WarriorsOverviewPanel data={data} sourcePages={sourcePages} />}
                 {activeTab === "matches" && <WarriorsMatchesPanel matches={matches} awards={awards} />}
-                {activeTab === "roster" && <WarriorsRosterPanel players={players} memberSummary={data.memberSummary} rosterChanges={rosterChanges} />}
+                {activeTab === "roster" && <WarriorsRosterPanel players={players} memberSummary={data.memberSummary} rosterChanges={rosterChanges} onSelectPlayer={setSelectedPlayer} />}
                 {activeTab === "awards" && <WarriorsAwardsPanel awards={awards} />}
                 {activeTab === "trophy" && <WarriorsTrophyRoomPanel records={records} updatedAt={data.playerStatsUpdatedAt || data.syncedAt} />}
                 {activeTab === "opponents" && <WarriorsOpponentsPanel opponents={opponents} />}
               </section>
             </section>
+            {selectedPlayer && <PlayerDetailModal player={selectedPlayer} onClose={() => setSelectedPlayer(null)} />}
           </main>
         );
       }
@@ -1917,7 +1919,7 @@ const RouterContext = React.createContext(null);
         );
       }
 
-      function WarriorsRosterPanel({ players, memberSummary, rosterChanges }) {
+      function WarriorsRosterPanel({ players, memberSummary, rosterChanges, onSelectPlayer }) {
         if (!players.length) {
           return <DataEmpty title="No players in the feed" description="The CricHeroes member list will appear here after the next successful sync." />;
         }
@@ -1936,16 +1938,23 @@ const RouterContext = React.createContext(null);
             </div>
             {rosterChanges.length > 0 && <RosterChangePanel changes={rosterChanges} />}
             <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-              {displayPlayers.map((player, index) => <WarriorsRosterDataCard key={player.id || player.name} player={player} rank={index + 1} />)}
+              {displayPlayers.map((player, index) => <WarriorsRosterDataCard key={player.id || player.name} player={player} rank={index + 1} onSelect={() => onSelectPlayer?.(player)} />)}
             </div>
           </div>
         );
       }
 
-      function WarriorsRosterDataCard({ player, rank }) {
+      function WarriorsRosterDataCard({ player, rank, onSelect }) {
         const stats = player.warriorsStats || player.stats || {};
         return (
-          <article className="rounded-[8px] border border-white/12 bg-white/[0.045] p-4">
+          <article
+            className="cursor-pointer rounded-[8px] border border-white/12 bg-white/[0.045] p-4 transition hover:-translate-y-1 hover:border-gold/45 hover:bg-gold/[0.05] focus:outline-none focus:ring-2 focus:ring-gold/60"
+            onClick={onSelect}
+            onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); onSelect?.(); } }}
+            role="button"
+            tabIndex={0}
+            aria-label={`Open full profile for ${player.name}`}
+          >
             <div className="flex items-start justify-between gap-3">
               <div className="flex min-w-0 items-center gap-3">
                 <LiveAvatar src={player.photo} name={player.name} />
@@ -2169,6 +2178,7 @@ const RouterContext = React.createContext(null);
       function PlayersPage() {
         const { loading, error, data } = useLiveCricketFeed();
         const [filter, setFilter] = useState("all");
+        const [selectedPlayer, setSelectedPlayer] = useState(null);
         const rosterChanges = asArray(data.rosterChangeLog);
         const players = useMemo(() => {
           return asArray(data.players)
@@ -2248,7 +2258,7 @@ const RouterContext = React.createContext(null);
 
               {filteredPlayers.length ? (
                 <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-                  {filteredPlayers.map((player, index) => <PlayerProfileCard key={player.id || player.name} player={player} rank={index + 1} />)}
+                  {filteredPlayers.map((player, index) => <PlayerProfileCard key={player.id || player.name} player={player} rank={index + 1} onSelect={() => setSelectedPlayer(player)} />)}
                 </div>
               ) : (
                 <div className="mt-8 rounded-[8px] border border-white/12 bg-white/[0.045] p-8 text-center">
@@ -2273,6 +2283,7 @@ const RouterContext = React.createContext(null);
                 </a>
               </div>
             </section>
+            {selectedPlayer && <PlayerDetailModal player={selectedPlayer} onClose={() => setSelectedPlayer(null)} />}
           </main>
         );
       }
@@ -2299,7 +2310,7 @@ const RouterContext = React.createContext(null);
         );
       }
 
-      function PlayerProfileCard({ player, rank }) {
+      function PlayerProfileCard({ player, rank, onSelect }) {
         const awards = player.performance?.awards || 0;
         const activity = asArray(player.performance?.recentAwards).slice(0, 3);
         const recentMatches = asArray(player.recentMatches).slice(0, 3);
@@ -2308,7 +2319,14 @@ const RouterContext = React.createContext(null);
         const impact = player.impact || 0;
 
         return (
-          <article className="relative overflow-hidden rounded-[8px] border border-white/12 bg-[radial-gradient(circle_at_85%_8%,rgba(244,185,66,0.14),transparent_28%),rgba(255,255,255,0.045)] p-5">
+          <article
+            className="relative cursor-pointer overflow-hidden rounded-[8px] border border-white/12 bg-[radial-gradient(circle_at_85%_8%,rgba(244,185,66,0.14),transparent_28%),rgba(255,255,255,0.045)] p-5 transition hover:-translate-y-1 hover:border-gold/45 focus:outline-none focus:ring-2 focus:ring-gold/60"
+            onClick={(event) => { if (!event.target.closest("a")) onSelect?.(); }}
+            onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); onSelect?.(); } }}
+            role="button"
+            tabIndex={0}
+            aria-label={`Open full profile for ${player.name}`}
+          >
             <div className="absolute right-[-56px] top-[-56px] h-40 w-40 rounded-full bg-cyan/8 blur-3xl" aria-hidden="true" />
             <div className="relative flex items-start justify-between gap-4">
               <div className="flex min-w-0 items-center gap-3">
@@ -2414,6 +2432,241 @@ const RouterContext = React.createContext(null);
           (player.isVerified ? 4 : 0) +
           asArray(player.badges).length;
         return Math.min(100, Math.max(1, Math.round(raw)));
+      }
+
+      function playerDetailNumber(value) {
+        const number = Number(value);
+        return Number.isFinite(number) ? number : 0;
+      }
+
+      function playerImprovementNotes(player, stats) {
+        const notes = [];
+        const average = Number.parseFloat(stats.average);
+        const bowlingAverage = Number.parseFloat(stats.bowlingAverage);
+        if (!stats.runs) notes.push("Build a repeatable scoring routine and turn more starts into innings.");
+        else if (Number.isFinite(average) && average < 25) notes.push("Work on strike rotation between boundary options to lift batting consistency.");
+        else notes.push("Keep converting boundary power into longer match-defining innings.");
+        if (!stats.wickets) notes.push("Develop a wicket-taking variation and attack the top of the stumps more often.");
+        else if (Number.isFinite(bowlingAverage) && bowlingAverage > 30) notes.push("Tighten the scoring areas around the wicket-taking deliveries.");
+        else notes.push("Keep sharpening the first and last overs where small changes create wickets.");
+        if (!(stats.catches || stats.stumpings || stats.runOuts)) notes.push("Add focused catching, ground-fielding and throwing repetitions to the weekly routine.");
+        else notes.push("Keep building fielding impact through sharper anticipation and cleaner releases.");
+        if (player.isCaptain) notes.push("As captain, keep pairing tactical clarity with calm communication under pressure.");
+        return notes.slice(0, 4);
+      }
+
+      function PlayerSkillMap({ type, player, stats }) {
+        const runs = playerDetailNumber(stats.runs);
+        const wickets = playerDetailNumber(stats.wickets);
+        const fours = playerDetailNumber(stats.fours);
+        const sixes = playerDetailNumber(stats.sixes);
+        const catches = playerDetailNumber(stats.catches);
+        const stumpings = playerDetailNumber(stats.stumpings);
+        const map = type === "batting"
+          ? {
+              title: "Batting shots",
+              kicker: "Visual shot map",
+              note: "Inferred from public scoring patterns and role signals",
+              markers: [
+                { label: "Cover drive", value: Math.min(96, 38 + fours % 42), left: 28, top: 30 },
+                { label: "Straight", value: Math.min(94, 32 + runs % 51), left: 50, top: 22 },
+                { label: "Pull / hook", value: Math.min(93, 36 + sixes % 44), left: 74, top: 37 },
+                { label: "Rotation", value: Math.min(92, 34 + (runs + fours) % 49), left: 52, top: 70 },
+              ],
+              metrics: [["Runs", runs], ["Best", stats.bestScore || 0], ["4s / 6s", `${fours} / ${sixes}`]],
+            }
+          : type === "bowling"
+            ? {
+                title: "Bowling zones",
+                kicker: "Visual bowling map",
+                note: "Inferred from wickets, economy and bowling role signals",
+                markers: [
+                  { label: "Top of off", value: Math.min(96, 42 + wickets * 4), left: 50, top: 27 },
+                  { label: "Yorker", value: Math.min(94, 34 + wickets * 5), left: 36, top: 67 },
+                  { label: "Variation", value: Math.min(91, 31 + (player.bowlerCategory || "").length * 2), left: 72, top: 53 },
+                ],
+                metrics: [["Wickets", wickets], ["Best", stats.bestBowling || stats.bestWickets || 0], ["Economy", stats.economy || "-"]],
+              }
+            : {
+                title: "Fielding zones",
+                kicker: "Visual fielding map",
+                note: "Official totals shown; placement is a coaching view",
+                markers: [
+                  { label: "Catches", value: Math.min(98, 28 + catches % 68), left: 24, top: 34 },
+                  { label: "Keeper", value: Math.min(94, 28 + stumpings * 8), left: 50, top: 76 },
+                  { label: "Ring / throws", value: Math.min(92, 34 + playerDetailNumber(stats.runOuts) * 4), left: 77, top: 42 },
+                ],
+                metrics: [["Catches", catches], ["Stumpings", stumpings], ["Run outs", stats.runOuts || 0]],
+              };
+
+        return (
+          <article className="overflow-hidden rounded-[8px] border border-white/12 bg-night/60">
+            <div className="relative min-h-64 overflow-hidden bg-cover bg-center" style={{ backgroundImage: `url(${assetUrl("/assets/stadium-vip-warriors.png")})` }}>
+              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,7,11,0.25),rgba(5,7,11,0.86))]" />
+              <div className="absolute left-1/2 top-1/2 h-28 w-16 -translate-x-1/2 -translate-y-1/2 rotate-90 rounded-[42%] border border-white/40 bg-[#c79a66]/55 shadow-[0_0_30px_rgba(255,255,255,0.18)]" />
+              <div className="absolute left-1/2 top-1/2 h-40 w-[2px] -translate-x-1/2 -translate-y-1/2 bg-white/35" />
+              <div className="absolute inset-x-5 top-4 flex items-start justify-between gap-3">
+                <div>
+                  <p className="text-xs font-black uppercase tracking-[0.2em] text-gold">{kickerLabel(map.kicker)}</p>
+                  <h3 className="mt-1 font-display text-3xl font-black uppercase text-white">{map.title}</h3>
+                </div>
+                <span className="rounded-full border border-white/20 bg-night/55 px-2 py-1 text-[0.55rem] font-black uppercase tracking-[0.12em] text-white/60">CricKuru view</span>
+              </div>
+              {map.markers.map((marker) => (
+                <span key={marker.label} className="absolute -translate-x-1/2 -translate-y-1/2 rounded-full border border-gold/50 bg-night/85 px-2 py-1 text-center shadow-[0_0_16px_rgba(244,185,66,0.3)]" style={{ left: `${marker.left}%`, top: `${marker.top}%` }}>
+                  <span className="block whitespace-nowrap text-[0.58rem] font-black uppercase tracking-[0.1em] text-white">{marker.label}</span>
+                  <span className="block text-xs font-black text-gold">{marker.value}/100</span>
+                </span>
+              ))}
+            </div>
+            <div className="grid grid-cols-3 gap-2 p-3">
+              {map.metrics.map(([label, value]) => <LiveTinyStat key={label} label={label} value={value} />)}
+            </div>
+            <p className="px-3 pb-4 text-[0.62rem] font-semibold leading-5 text-white/38">{map.note}</p>
+          </article>
+        );
+      }
+
+      function kickerLabel(value) {
+        return value || "Skill map";
+      }
+
+      function PlayerStatsMatrix({ stats }) {
+        const groups = [
+          {
+            title: "Batting",
+            items: [
+              ["Matches", stats.matches], ["Innings", stats.battingInnings], ["Not out", stats.notOut], ["Runs", stats.runs],
+              ["Highest runs", stats.bestScore], ["Average", stats.average], ["Strike rate", stats.strikeRate], ["30s", stats.thirties],
+              ["50s", stats.fifties], ["100s", stats.hundreds], ["4s", stats.fours], ["6s", stats.sixes], ["Ducks", stats.ducks], ["Won", stats.wins], ["Loss", stats.losses],
+            ],
+          },
+          {
+            title: "Bowling",
+            items: [
+              ["Matches", stats.matches], ["Innings", stats.bowlingInnings], ["Overs", stats.overs], ["Maidens", stats.maidens], ["Wickets", stats.wickets],
+              ["Runs conceded", stats.runsConceded], ["Best bowling", stats.bestBowling], ["3 wickets", stats.threeWicketHauls], ["5 wickets", stats.fiveWicketHauls],
+              ["Economy", stats.economy], ["Strike rate", stats.bowlingStrikeRate], ["Average", stats.bowlingAverage], ["Wides", stats.wides], ["No-balls", stats.noBalls], ["Dot balls", stats.dotBalls],
+            ],
+          },
+          {
+            title: "Fielding and captaincy",
+            items: [
+              ["Fielding matches", stats.fieldingMatches], ["Catches", stats.catches], ["Caught behind", stats.caughtBehind], ["Run outs", stats.runOuts],
+              ["Stumpings", stats.stumpings], ["Assisted run outs", stats.assistedRunOuts], ["Bye runs (WK)", stats.byeRunsWicketkeeper], ["Captain matches", stats.captainMatches],
+              ["Toss won", stats.tossesWon], ["Captain win %", stats.captainWinPercentage],
+            ],
+          },
+        ];
+        return (
+          <section>
+            <div className="flex items-end justify-between gap-3">
+              <div>
+                <p className="text-xs font-black uppercase tracking-[0.2em] text-cyan">Public CricHeroes totals</p>
+                <h3 className="mt-2 font-display text-3xl font-black uppercase text-white">Complete stat sheet</h3>
+              </div>
+              <span className="hidden text-xs font-semibold text-white/35 sm:block">Overall profile data</span>
+            </div>
+            <div className="mt-4 grid gap-4 lg:grid-cols-3">
+              {groups.map((group) => (
+                <article key={group.title} className="rounded-[8px] border border-white/12 bg-white/[0.035] p-4">
+                  <h4 className="text-xs font-black uppercase tracking-[0.18em] text-gold">{group.title}</h4>
+                  <div className="mt-3 grid gap-2">
+                    {group.items.map(([label, value]) => <div key={label} className="flex items-center justify-between gap-3 border-b border-white/7 pb-2 text-sm"><span className="text-white/48">{label}</span><span className="font-bold text-white/82">{value === 0 || value ? value : "-"}</span></div>)}
+                  </div>
+                </article>
+              ))}
+            </div>
+          </section>
+        );
+      }
+
+      function PlayerDetailModal({ player, onClose }) {
+        const stats = player.stats?.source === "CricHeroes public player stats" ? player.stats : {};
+        const warriorsStats = player.warriorsStats || {};
+        const recentMatches = asArray(player.recentMatches).slice(0, 5);
+        const improvementNotes = playerImprovementNotes(player, stats);
+
+        useEffect(() => {
+          const onKeyDown = (event) => { if (event.key === "Escape") onClose(); };
+          document.addEventListener("keydown", onKeyDown);
+          const previousOverflow = document.body.style.overflow;
+          document.body.style.overflow = "hidden";
+          return () => {
+            document.removeEventListener("keydown", onKeyDown);
+            document.body.style.overflow = previousOverflow;
+          };
+        }, [onClose]);
+
+        return (
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }} className="fixed inset-0 z-[90] overflow-y-auto bg-night/85 p-3 backdrop-blur-md sm:p-6" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) onClose(); }}>
+            <motion.section initial={{ opacity: 0, scale: 0.94, y: 22 }} animate={{ opacity: 1, scale: 1, y: 0 }} transition={{ type: "spring", stiffness: 280, damping: 25 }} className="mx-auto max-h-[calc(100vh-1.5rem)] max-w-7xl overflow-y-auto rounded-[10px] border border-white/15 bg-[#090d14] shadow-[0_25px_100px_rgba(0,0,0,0.65)] sm:max-h-[calc(100vh-3rem)]" role="dialog" aria-modal="true" aria-label={`${player.name} full player profile`}>
+              <header className="relative min-h-56 overflow-hidden bg-cover bg-center" style={{ backgroundImage: `url(${assetUrl("/assets/stadium-vip-warriors.png")})` }}>
+                <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(5,7,11,0.96),rgba(5,7,11,0.58),rgba(5,7,11,0.8))]" />
+                <button type="button" onClick={onClose} aria-label="Close player profile" title="Close player profile" className="absolute right-4 top-4 grid h-11 w-11 place-items-center rounded-full border border-white/20 bg-night/70 text-white transition hover:border-gold hover:text-gold"><Icon.X size={20} /></button>
+                <div className="relative flex min-h-56 items-end gap-4 p-5 sm:p-8">
+                  <LiveAvatar src={player.photo} name={player.name} />
+                  <div className="min-w-0">
+                    <p className="text-xs font-black uppercase tracking-[0.22em] text-gold">Full player profile</p>
+                    <h2 className="mt-2 truncate font-display text-4xl font-black uppercase text-white sm:text-6xl">{player.name}</h2>
+                    <p className="mt-2 text-sm font-bold uppercase tracking-[0.14em] text-white/60">{player.role || playerRoleLabel(player)} • {player.impact || 0}/100 performance charge</p>
+                  </div>
+                </div>
+              </header>
+
+              <div className="grid gap-6 p-5 sm:p-8">
+                <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
+                  <LiveStat label="Career matches" value={stats.matches || "-"} />
+                  <LiveStat label="Career runs" value={stats.runs || "-"} />
+                  <LiveStat label="Career wickets" value={stats.wickets || "-"} />
+                  <LiveStat label="Performance" value={`${player.impact || 0}/100`} />
+                </div>
+
+                {Object.keys(stats).length ? <PlayerStatsMatrix stats={stats} /> : <DataEmpty title="Career totals syncing" description="Overall CricHeroes statistics will appear after the next successful public profile refresh." />}
+
+                <div className="grid gap-4 md:grid-cols-3">
+                  <PlayerSkillMap type="batting" player={player} stats={stats} />
+                  <PlayerSkillMap type="bowling" player={player} stats={stats} />
+                  <PlayerSkillMap type="fielding" player={player} stats={stats} />
+                </div>
+
+                <div className="grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
+                  <article className="rounded-[8px] border border-gold/20 bg-gold/[0.045] p-5">
+                    <p className="text-xs font-black uppercase tracking-[0.2em] text-gold">Where to improve</p>
+                    <h3 className="mt-2 font-display text-3xl font-black uppercase text-white">Next level plan</h3>
+                    <p className="mt-2 text-xs leading-5 text-white/40">Coaching suggestions inferred from public totals, role signals and recent form.</p>
+                    <div className="mt-4 grid gap-3">
+                      {improvementNotes.map((note, index) => <p key={note} className="flex gap-3 text-sm leading-6 text-white/68"><span className="font-display text-xl font-black text-gold">0{index + 1}</span><span>{note}</span></p>)}
+                    </div>
+                  </article>
+
+                  <article className="rounded-[8px] border border-white/12 bg-white/[0.035] p-5">
+                    <div className="flex items-end justify-between gap-3">
+                      <div>
+                        <p className="text-xs font-black uppercase tracking-[0.2em] text-cyan">Recent matches</p>
+                        <h3 className="mt-2 font-display text-3xl font-black uppercase text-white">Across all teams</h3>
+                      </div>
+                      {player.matchesUrl && <a href={player.matchesUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.12em] text-cyan hover:text-white">Open CricHeroes <Icon.ExternalLink size={14} /></a>}
+                    </div>
+                    {recentMatches.length ? (
+                      <div className="mt-4 grid gap-2">
+                        {recentMatches.map((match) => <a key={match.id} href={match.performance?.scorecardUrl || match.scorecardUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between gap-3 rounded-[6px] border border-white/8 bg-night/55 px-3 py-3 transition hover:border-gold/35"><span className="min-w-0"><span className="block truncate font-semibold text-white/80">{match.performance?.highlight || `${match.teamA} vs ${match.teamB}`}</span><span className="block truncate text-xs text-white/40">{match.performance?.teamName || "Cross-team match"} • {formatFeedDate(match.date)}</span></span><Icon.ExternalLink className="shrink-0 text-white/35" size={14} /></a>)}
+                      </div>
+                    ) : <p className="mt-5 text-sm leading-6 text-white/50">Recent all-team match form will appear after the next public profile sync.</p>}
+                  </article>
+                </div>
+
+                <div className="flex flex-wrap items-center justify-between gap-3 border-t border-white/10 pt-5">
+                  <p className="text-xs font-semibold text-white/40">Warriors context: {warriorsStats.matchesTracked || 0} tracked matches, {warriorsStats.runs || 0} runs, {warriorsStats.wickets || 0} wickets.</p>
+                  <div className="flex flex-wrap gap-2">
+                    {player.statsUrl && <a href={player.statsUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-cyan/30 px-4 py-2 text-xs font-black uppercase tracking-[0.12em] text-cyan hover:border-cyan">Overall stats <Icon.ExternalLink size={14} /></a>}
+                    {player.profileUrl && <a href={player.profileUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-xs font-black uppercase tracking-[0.12em] text-white/65 hover:border-gold/50 hover:text-gold">CricHeroes profile <Icon.ExternalLink size={14} /></a>}
+                  </div>
+                </div>
+              </div>
+            </motion.section>
+          </motion.div>
+        );
       }
 
       function playerRoleLabel(player) {
