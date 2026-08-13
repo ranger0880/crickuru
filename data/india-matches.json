@@ -2,76 +2,14 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-13T12:27:26.162Z",
+  "syncedAt": "2026-08-13T14:00:19.255Z",
   "summary": {
-    "live": 2,
-    "recent": 10,
+    "live": 0,
+    "recent": 12,
     "upcoming": 39,
     "total": 51
   },
   "all": [
-    {
-      "id": "live-169073",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "West Delhi Lions vs Outer Delhi Warriors, 25th Match",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "West Delhi Lions",
-          "shortName": "WDL",
-          "score": "178/10 (19.4 Ov)"
-        },
-        {
-          "name": "Outer Delhi Warriors",
-          "shortName": "ODW",
-          "score": "79/2 (6.6 Ov)"
-        }
-      ],
-      "dateLabel": "13 Aug 2026, 01:30 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Outer Delhi Warriors need 100 runs in 78 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169073",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-13T08:00:00.000Z",
-      "rawId": 169073
-    },
-    {
-      "id": "live-166923",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Vida Kovai Kings vs Nellai Royal Kings, 16th Match",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Vida Kovai Kings",
-          "shortName": "VKK",
-          "score": "162/9 (19.6 Ov)"
-        },
-        {
-          "name": "Nellai Royal Kings",
-          "shortName": "NRK",
-          "score": "43/2 (5.6 Ov)"
-        }
-      ],
-      "dateLabel": "13 Aug 2026, 03:30 pm",
-      "time": "",
-      "place": "NPR College Ground, Dindigul",
-      "overview": "Nellai Royal Kings need 120 runs in 84 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166923",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-13T10:00:00.000Z",
-      "rawId": 166923
-    },
     {
       "id": "upcoming-163013",
       "status": "upcoming",
@@ -1282,6 +1220,68 @@
       "rawId": 151746
     },
     {
+      "id": "recent-166923",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Vida Kovai Kings vs Nellai Royal Kings, 16th Match",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Vida Kovai Kings",
+          "shortName": "VKK",
+          "score": "162/9 (19.6 Ov)"
+        },
+        {
+          "name": "Nellai Royal Kings",
+          "shortName": "NRK",
+          "score": "163/8 (19.5 Ov)"
+        }
+      ],
+      "dateLabel": "13 Aug 2026, 03:30 pm",
+      "time": "",
+      "place": "NPR College Ground, Dindigul",
+      "overview": "Nellai Royal Kings won by 2 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166923",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-13T10:00:00.000Z",
+      "rawId": 166923
+    },
+    {
+      "id": "recent-169073",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "West Delhi Lions vs Outer Delhi Warriors, 25th Match",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "West Delhi Lions",
+          "shortName": "WDL",
+          "score": "178/10 (19.4 Ov)"
+        },
+        {
+          "name": "Outer Delhi Warriors",
+          "shortName": "ODW",
+          "score": "179/5 (19.1 Ov)"
+        }
+      ],
+      "dateLabel": "13 Aug 2026, 01:30 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Outer Delhi Warriors won by 5 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169073",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-13T08:00:00.000Z",
+      "rawId": 169073
+    },
+    {
       "id": "recent-169497",
       "status": "recent",
       "statusLabel": "Past",
@@ -1592,70 +1592,7 @@
       "rawId": 129442
     }
   ],
-  "live": [
-    {
-      "id": "live-169073",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "West Delhi Lions vs Outer Delhi Warriors, 25th Match",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "West Delhi Lions",
-          "shortName": "WDL",
-          "score": "178/10 (19.4 Ov)"
-        },
-        {
-          "name": "Outer Delhi Warriors",
-          "shortName": "ODW",
-          "score": "79/2 (6.6 Ov)"
-        }
-      ],
-      "dateLabel": "13 Aug 2026, 01:30 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Outer Delhi Warriors need 100 runs in 78 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169073",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-13T08:00:00.000Z",
-      "rawId": 169073
-    },
-    {
-      "id": "live-166923",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Vida Kovai Kings vs Nellai Royal Kings, 16th Match",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Vida Kovai Kings",
-          "shortName": "VKK",
-          "score": "162/9 (19.6 Ov)"
-        },
-        {
-          "name": "Nellai Royal Kings",
-          "shortName": "NRK",
-          "score": "43/2 (5.6 Ov)"
-        }
-      ],
-      "dateLabel": "13 Aug 2026, 03:30 pm",
-      "time": "",
-      "place": "NPR College Ground, Dindigul",
-      "overview": "Nellai Royal Kings need 120 runs in 84 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166923",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-13T10:00:00.000Z",
-      "rawId": 166923
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "upcoming-163013",
@@ -2869,6 +2806,68 @@
   ],
   "recent": [
     {
+      "id": "recent-166923",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Vida Kovai Kings vs Nellai Royal Kings, 16th Match",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Vida Kovai Kings",
+          "shortName": "VKK",
+          "score": "162/9 (19.6 Ov)"
+        },
+        {
+          "name": "Nellai Royal Kings",
+          "shortName": "NRK",
+          "score": "163/8 (19.5 Ov)"
+        }
+      ],
+      "dateLabel": "13 Aug 2026, 03:30 pm",
+      "time": "",
+      "place": "NPR College Ground, Dindigul",
+      "overview": "Nellai Royal Kings won by 2 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166923",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-13T10:00:00.000Z",
+      "rawId": 166923
+    },
+    {
+      "id": "recent-169073",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "West Delhi Lions vs Outer Delhi Warriors, 25th Match",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "West Delhi Lions",
+          "shortName": "WDL",
+          "score": "178/10 (19.4 Ov)"
+        },
+        {
+          "name": "Outer Delhi Warriors",
+          "shortName": "ODW",
+          "score": "179/5 (19.1 Ov)"
+        }
+      ],
+      "dateLabel": "13 Aug 2026, 01:30 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Outer Delhi Warriors won by 5 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169073",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-13T08:00:00.000Z",
+      "rawId": 169073
+    },
+    {
       "id": "recent-169497",
       "status": "recent",
       "statusLabel": "Past",
@@ -3193,8 +3192,8 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 2,
-      "recent": 0,
+      "live": 0,
+      "recent": 2,
       "upcoming": 0,
       "total": 2
     },
