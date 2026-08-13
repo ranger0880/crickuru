@@ -70,6 +70,10 @@ The backend must expose `GET /auth/session`, `POST /auth/google`, `POST /auth/wh
 - `HOSTINGER_GITHUB_DEPLOY.md` - automatic GitHub Actions deployment guide
 - `crickuru-hostinger-upload.zip` - upload-ready production bundle
 
+## Direct Hostinger Git deployment
+
+The `main` branch contains the Vite source code and cannot be connected directly to Hostinger because Hostinger Git does not run the Vite build. The `hostinger-static` branch contains only the latest built website and is refreshed automatically from `main` by GitHub Actions. Connect Hostinger Git to `hostinger-static` with an empty install path so its `public_html` receives the ready-to-serve files.
+
 ## CricHeroes
 
 The page links to the official Kurukshetra Warriors CricHeroes pages:

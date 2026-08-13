@@ -1,0 +1,51 @@
+name: Publish Hostinger static branch
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hostinger-static-publish
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    name: Build and publish static branch
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build production site
+        env:
+          VITE_AUTH_API_URL: ${{ secrets.VITE_AUTH_API_URL }}
+          VITE_GOOGLE_CLIENT_ID: ${{ secrets.VITE_GOOGLE_CLIENT_ID }}
+        run: npm run build
+
+      - name: Publish dist as hostinger-static
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp -R dist /tmp/crickuru-dist
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch --orphan hostinger-static
+          git rm -rf .
+          cp -R /tmp/crickuru-dist/. .
+          git add -A
+          git commit -m "Publish production build"
+          git push --force origin HEAD:hostinger-static
