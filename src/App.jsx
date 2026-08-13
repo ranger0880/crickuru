@@ -192,6 +192,8 @@ const RouterContext = React.createContext(null);
         live: [],
         recent: [],
         upcoming: [],
+        importantMatches: [],
+        importantResultsByMonth: [],
         rankings: [
           { id: "international", label: "International", order: 1, live: 0, recent: 0, upcoming: 0, total: 0 },
           { id: "league", label: "League / IPL", order: 2, live: 0, recent: 0, upcoming: 0, total: 0 },
@@ -5015,10 +5017,14 @@ const RouterContext = React.createContext(null);
         const { loading, error, data } = useIndiaMatches();
         const [statusTab, setStatusTab] = useState("live");
         const [levelTab, setLevelTab] = useState("all");
+        const [selectedMonth, setSelectedMonth] = useState("");
         const matchesForStatus = asArray(data[statusTab]);
         const filteredMatches = matchesForStatus.filter((match) => levelTab === "all" || match.level === levelTab);
         const featureMatch = asArray(data.live)[0] || asArray(data.upcoming)[0] || asArray(data.recent)[0];
         const rankings = normalizedIndiaRankings(data);
+        const importantMatches = asArray(data.importantMatches).slice(0, 10);
+        const monthlyResults = asArray(data.importantResultsByMonth);
+        const activeMonth = monthlyResults.find((month) => month.month === selectedMonth) || monthlyResults[0];
 
         return (
           <main className="route-bg page-grain min-h-screen px-5 pb-16 pt-36 sm:px-8">
@@ -5051,6 +5057,51 @@ const RouterContext = React.createContext(null);
                   </div>
                 </div>
               </div>
+
+              <section className="mt-10 grid gap-5 xl:grid-cols-[1.05fr_0.95fr]" aria-labelledby="important-results-title">
+                <div className="glass rounded-[8px] p-5">
+                  <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+                    <div>
+                      <p className="text-xs font-black uppercase tracking-[0.24em] text-gold">Big match radar</p>
+                      <h2 id="important-results-title" className="mt-2 font-display text-4xl font-black uppercase text-white">Important matches</h2>
+                    </div>
+                    <span className="text-xs font-black uppercase tracking-[0.16em] text-white/38">Finals • Semis • Major tournaments</span>
+                  </div>
+                  <div className="mt-4 divide-y divide-white/10">
+                    {importantMatches.length ? importantMatches.map((match) => <IndiaImportantMatchRow key={match.id} match={match} />) : (
+                      <p className="py-5 text-sm leading-7 text-white/58">Important matches will appear here when the public schedule lists a knockout or major-tournament fixture.</p>
+                    )}
+                  </div>
+                </div>
+
+                <div className="glass rounded-[8px] p-5">
+                  <div className="flex items-end justify-between gap-3">
+                    <div>
+                      <p className="text-xs font-black uppercase tracking-[0.24em] text-cyan">Monthly results</p>
+                      <h2 className="mt-2 font-display text-4xl font-black uppercase text-white">Biggest outcomes</h2>
+                    </div>
+                    <span className="font-display text-3xl font-black text-cyan">{activeMonth?.matches?.length || 0}</span>
+                  </div>
+                  {monthlyResults.length ? (
+                    <label className="mt-5 grid gap-2">
+                      <span className="text-[0.65rem] font-black uppercase tracking-[0.18em] text-white/42">Results month</span>
+                      <select
+                        aria-label="Important match results month"
+                        value={activeMonth?.month || ""}
+                        onChange={(event) => setSelectedMonth(event.target.value)}
+                        className="min-h-11 w-full appearance-none rounded-[8px] border border-cyan/35 bg-night px-4 text-xs font-black uppercase tracking-[0.14em] text-cyan outline-none transition focus:border-cyan focus:ring-2 focus:ring-cyan/20"
+                      >
+                        {monthlyResults.map((month) => <option key={month.month} value={month.month} className="bg-night text-white">{month.label}</option>)}
+                      </select>
+                    </label>
+                  ) : null}
+                  <div className="mt-4 divide-y divide-white/10">
+                    {activeMonth?.matches?.length ? activeMonth.matches.map((match) => <IndiaImportantMatchRow key={match.id} match={match} compact />) : (
+                      <p className="py-5 text-sm leading-7 text-white/58">No completed important result is available in the saved feed yet.</p>
+                    )}
+                  </div>
+                </div>
+              </section>
 
               <div className="mt-10 grid gap-5 xl:grid-cols-[1.05fr_0.95fr]">
                 <div className="grid gap-5">
@@ -5156,6 +5207,29 @@ const RouterContext = React.createContext(null);
             };
           })
           .sort((a, b) => a.order - b.order);
+      }
+
+      function IndiaImportantMatchRow({ match, compact = false }) {
+        return (
+          <article className={`${compact ? "py-3" : "py-4"} first:pt-0 last:pb-0`}>
+            <div className="flex flex-wrap items-center gap-2 text-[0.62rem] font-black uppercase tracking-[0.15em]">
+              <span className="rounded-full border border-gold/35 bg-gold/10 px-2.5 py-1 text-gold">{match.importance || "Important"}</span>
+              <span className={match.status === "live" ? "text-crimson" : match.status === "upcoming" ? "text-cyan" : "text-white/40"}>{match.statusLabel || match.status}</span>
+              <span className="text-white/35">{compactFeedDate(match.startTime)}</span>
+            </div>
+            <h3 className={`${compact ? "text-xl" : "text-2xl"} mt-2 font-display font-black uppercase leading-tight text-white`}>{matchTitle(match)}</h3>
+            <p className="mt-1 text-xs font-semibold uppercase tracking-[0.1em] text-white/40">{match.series || "Major cricket fixture"}</p>
+            <div className="mt-3 grid gap-2 sm:grid-cols-2">
+              {asArray(match.teams).map((team, index) => (
+                <p key={`${team.name}-${index}`} className="rounded-[6px] bg-night/55 px-3 py-2 text-sm font-bold text-white/76">{matchTeamLabel(team) || "Score pending"}</p>
+              ))}
+            </div>
+            <div className="mt-3 flex flex-wrap items-center justify-between gap-3">
+              <p className="text-sm font-bold text-gold">{match.overview || "Result pending"}</p>
+              {match.sourceUrl && <a href={match.sourceUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-[0.65rem] font-black uppercase tracking-[0.15em] text-cyan hover:text-white">Scorecard <Icon.ExternalLink size={13} /></a>}
+            </div>
+          </article>
+        );
       }
 
       function IndiaFeatureMatch({ match, syncedAt }) {

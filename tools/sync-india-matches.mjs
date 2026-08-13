@@ -531,6 +531,49 @@ function buildRankings(groups) {
   });
 }
 
+function importantMatchReason(match) {
+  const text = searchableMatch(match);
+  if (/\b(final|semi[- ]?final|quarter[- ]?final|qualifier|eliminator|play[- ]?off|third[- ]?place|title match)\b/.test(text)) {
+    return "Knockout stage";
+  }
+  if (/world cup|champions trophy|asia cup|world test championship|test championship|ipl|wpl|ranji trophy|duleep trophy|irani cup|vijay hazare|syed mushtaq ali/.test(text)) {
+    return "Major tournament";
+  }
+  return "";
+}
+
+function buildImportantMatches(groups) {
+  const priority = { live: 3, upcoming: 2, recent: 1 };
+  return [...groups.live, ...groups.upcoming, ...groups.recent]
+    .map((match) => ({ ...match, importance: importantMatchReason(match) }))
+    .filter((match) => match.importance)
+    .sort((a, b) => {
+      const statusDelta = (priority[b.status] || 0) - (priority[a.status] || 0);
+      if (statusDelta) return statusDelta;
+      return (Date.parse(b.startTime || "") || 0) - (Date.parse(a.startTime || "") || 0);
+    })
+    .slice(0, 80);
+}
+
+function monthLabel(monthKey) {
+  const date = new Date(`${monthKey}-01T00:00:00Z`);
+  return new Intl.DateTimeFormat("en-IN", { month: "long", year: "numeric", timeZone: "Asia/Kolkata" }).format(date);
+}
+
+function buildImportantResultsByMonth(importantMatches) {
+  const buckets = new Map();
+  for (const match of importantMatches.filter((item) => item.status === "recent")) {
+    const month = String(match.startTime || "").slice(0, 7);
+    if (!/^\d{4}-\d{2}$/.test(month)) continue;
+    if (!buckets.has(month)) buckets.set(month, []);
+    buckets.get(month).push(match);
+  }
+
+  return [...buckets.entries()]
+    .sort(([monthA], [monthB]) => monthB.localeCompare(monthA))
+    .map(([month, matches]) => ({ month, label: monthLabel(month), matches }));
+}
+
 async function readPreviousFeed() {
   try {
     return JSON.parse(await fs.readFile(OUTPUT_FILE, "utf8"));
@@ -572,6 +615,10 @@ async function main() {
     upcoming: sortMatches(relevant.filter((match) => match.status === "upcoming")),
     recent: sortMatches(relevant.filter((match) => match.status === "recent")).reverse(),
   };
+  const importantMatches = buildImportantMatches(groups);
+  const completedImportantMatches = groups.recent
+    .map((match) => ({ ...match, importance: importantMatchReason(match) }))
+    .filter((match) => match.importance);
 
   const feed = {
     schemaVersion: 1,
@@ -596,6 +643,8 @@ async function main() {
     upcoming: groups.upcoming,
     recent: groups.recent,
     rankings: buildRankings(groups),
+    importantMatches,
+    importantResultsByMonth: buildImportantResultsByMonth(completedImportantMatches),
     errors: failures.slice(0, 8),
   };
 
