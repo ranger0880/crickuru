@@ -734,6 +734,18 @@
         .pitch-lines {
           bottom: -10%;
         }
+
+        .player-neon-shell::after,
+        .player-neon-card::after {
+          inset: -7px;
+          filter: blur(9px);
+          opacity: 0.18;
+        }
+
+        .player-neon-shell::before,
+        .player-neon-card::before {
+          animation-duration: 6.8s;
+        }
       }
 
       @media (prefers-reduced-motion: reduce) {

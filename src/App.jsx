@@ -1966,7 +1966,7 @@ const RouterContext = React.createContext(null);
               </div>
               <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full border border-white/10 bg-night/60 font-display text-xl font-black text-white">{player.impact}</span>
             </div>
-            <div className="mt-4 grid grid-cols-4 gap-2 text-center">
+            <div className="mt-4 grid grid-cols-2 gap-2 text-center sm:grid-cols-4">
               <LiveTinyStat label="Runs" value={stats.runs || 0} />
               <LiveTinyStat label="Wkts" value={stats.wickets || 0} />
               <LiveTinyStat label="Best" value={stats.bestScore || 0} />
@@ -2348,7 +2348,7 @@ const RouterContext = React.createContext(null);
 
             <div className="relative mt-5">
               <p className="mb-2 text-[0.62rem] font-black uppercase tracking-[0.16em] text-cyan">{hasOverallStats ? "Overall CricHeroes career" : "Overall profile refresh scheduled"}</p>
-              <div className="grid grid-cols-4 gap-2 text-center">
+              <div className="grid grid-cols-2 gap-2 text-center sm:grid-cols-4">
                 <LiveTinyStat label="Runs" value={hasOverallStats ? stats.runs || 0 : "-"} />
                 <LiveTinyStat label="Wkts" value={hasOverallStats ? stats.wickets || 0 : "-"} />
                 <LiveTinyStat label="Best" value={hasOverallStats ? stats.bestScore || 0 : "-"} />
@@ -2534,10 +2534,10 @@ const RouterContext = React.createContext(null);
         const report = createImprovementReport(player, stats);
         const neon = playerNeonTheme(player.impact || 0);
         return (
-          <article className="player-neon-card rounded-[8px] border bg-[linear-gradient(135deg,rgba(35,213,232,0.09),rgba(255,255,255,0.025))] p-5" style={{ "--player-neon-color": neon.color, "--player-neon-glow": neon.glow }}>
+          <article className="player-neon-card rounded-[8px] border bg-[linear-gradient(135deg,rgba(35,213,232,0.09),rgba(255,255,255,0.025))] p-4 sm:p-5" style={{ "--player-neon-color": neon.color, "--player-neon-glow": neon.glow }}>
             <div className="flex flex-wrap items-start justify-between gap-3">
               <div>
-                <p className="flex items-center gap-2 text-xs font-black uppercase tracking-[0.2em] text-cyan"><Icon.Sparkles size={15} /> AI performance coach</p>
+                <p className="flex flex-wrap items-center gap-2 text-xs font-black uppercase tracking-[0.2em] text-cyan"><Icon.Sparkles size={15} /> AI performance coach</p>
                 <h3 className="mt-2 font-display text-3xl font-black uppercase text-white">Areas to improve</h3>
                 <p className="mt-2 max-w-2xl text-xs leading-5 text-white/46">{report.coverage} Recommendations are coaching prompts, not a replacement for an in-person coach.</p>
               </div>
@@ -2635,7 +2635,7 @@ const RouterContext = React.createContext(null);
               </div>
               {map.markers.map((marker) => (
                 <span key={marker.label} className="absolute -translate-x-1/2 -translate-y-1/2 rounded-full border border-gold/50 bg-night/85 px-2 py-1 text-center shadow-[0_0_16px_rgba(244,185,66,0.3)]" style={{ left: `${marker.left}%`, top: `${marker.top}%` }}>
-                  <span className="block whitespace-nowrap text-[0.58rem] font-black uppercase tracking-[0.1em] text-white">{marker.label}</span>
+                  <span className="block max-w-[86px] whitespace-normal text-[0.58rem] font-black uppercase leading-tight tracking-[0.1em] text-white">{marker.label}</span>
                   <span className="block text-xs font-black text-gold">{marker.value}/100</span>
                 </span>
               ))}
@@ -2685,7 +2685,7 @@ const RouterContext = React.createContext(null);
           : fallbackGroups;
         return (
           <section>
-            <div className="flex items-end justify-between gap-3">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <p className="text-xs font-black uppercase tracking-[0.2em] text-cyan">Public CricHeroes totals</p>
                 <h3 className="mt-2 font-display text-3xl font-black uppercase text-white">Complete stat sheet</h3>
@@ -2697,7 +2697,7 @@ const RouterContext = React.createContext(null);
                 <article key={group.title} className="rounded-[8px] border border-white/12 bg-white/[0.035] p-4">
                   <h4 className="text-xs font-black uppercase tracking-[0.18em] text-gold">{group.title}</h4>
                   <div className="mt-3 grid gap-2">
-                    {group.items.map(([label, value]) => <div key={label} className="flex items-center justify-between gap-3 border-b border-white/7 pb-2 text-sm"><span className="text-white/48">{label}</span><span className="font-bold text-white/82">{value === 0 || value ? value : "-"}</span></div>)}
+                    {group.items.map(([label, value]) => <div key={label} className="flex min-w-0 items-start justify-between gap-3 border-b border-white/7 pb-2 text-sm"><span className="min-w-0 break-words text-white/48">{label}</span><span className="shrink-0 text-right font-bold text-white/82">{value === 0 || value ? value : "-"}</span></div>)}
                   </div>
                 </article>
               ))}
@@ -2732,14 +2732,14 @@ const RouterContext = React.createContext(null);
         }, [onClose]);
 
         return (
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }} className="fixed inset-0 z-[90] overflow-y-auto overscroll-contain bg-night/85 p-2 backdrop-blur-md sm:p-4 lg:p-6" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) onClose(); }}>
-            <motion.section initial={{ opacity: 0, scale: 0.94, y: 22 }} animate={{ opacity: 1, scale: 1, y: 0 }} transition={{ type: "spring", stiffness: 280, damping: 25 }} style={{ borderColor: neon.color, boxShadow: `0 0 0 1px ${neon.color}, 0 0 24px ${neon.glow}, 0 25px 100px rgba(0,0,0,0.7)`, "--player-neon-color": neon.color, "--player-neon-glow": neon.glow }} className="player-neon-shell mx-auto w-full max-h-[calc(100dvh-1rem)] min-h-0 overflow-y-auto rounded-[10px] border bg-[#090d14] sm:max-h-[calc(100dvh-2rem)] lg:max-h-[calc(100dvh-3rem)]" role="dialog" aria-modal="true" aria-label={`${player.name} full player profile`}>
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }} className="fixed inset-0 z-[90] overflow-y-auto overscroll-contain bg-night/85 p-1 backdrop-blur-md sm:p-4 lg:p-6" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) onClose(); }}>
+            <motion.section initial={{ opacity: 0, scale: 0.94, y: 22 }} animate={{ opacity: 1, scale: 1, y: 0 }} transition={{ type: "spring", stiffness: 280, damping: 25 }} style={{ borderColor: neon.color, boxShadow: `0 0 0 1px ${neon.color}, 0 0 24px ${neon.glow}, 0 25px 100px rgba(0,0,0,0.7)`, "--player-neon-color": neon.color, "--player-neon-glow": neon.glow }} className="player-neon-shell mx-auto w-full max-w-5xl max-h-[calc(100dvh-0.5rem)] min-h-0 overflow-x-hidden overflow-y-auto rounded-[8px] border bg-[#090d14] sm:max-h-[calc(100dvh-2rem)] sm:rounded-[10px] lg:max-h-[calc(100dvh-3rem)]" role="dialog" aria-modal="true" aria-label={`${player.name} full player profile`}>
               <header className="relative min-h-48 overflow-hidden bg-cover bg-center sm:min-h-56" style={{ backgroundImage: `url(${assetUrl("/assets/stadium-vip-warriors.png")})`, boxShadow: `inset 0 -3px 0 ${neon.color}, inset 0 -12px 28px ${neon.soft}` }}>
                 <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(5,7,11,0.96),rgba(5,7,11,0.58),rgba(5,7,11,0.8))]" />
                 <button type="button" onClick={onClose} aria-label="Close player profile" title="Close player profile" className="absolute right-3 top-3 grid h-11 w-11 place-items-center rounded-full border border-white/20 bg-night/70 text-white transition hover:border-gold hover:text-gold sm:right-4 sm:top-4"><Icon.X size={20} /></button>
                 <div className="relative flex min-h-48 items-end gap-3 p-4 sm:min-h-56 sm:gap-4 sm:p-8">
                   <span className="rounded-full p-1" style={{ boxShadow: `0 0 0 2px ${neon.color}, 0 0 22px ${neon.glow}` }}><LiveAvatar src={player.photo} name={player.name} /></span>
-                  <div className="min-w-0">
+                  <div className="min-w-0 flex-1">
                     <p className="text-[0.62rem] font-black uppercase tracking-[0.18em]" style={{ color: neon.color }}>Full player profile • {neon.label}</p>
                     <h2 className="mt-2 truncate font-display text-3xl font-black uppercase text-white sm:text-6xl">{player.name}</h2>
                     <p className="mt-2 text-xs font-bold uppercase tracking-[0.12em] text-white/60 sm:text-sm sm:tracking-[0.14em]">{player.role || playerRoleLabel(player)} • {player.impact || 0}/100 performance charge</p>
