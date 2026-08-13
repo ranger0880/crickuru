@@ -1,8 +1,38 @@
 {
   "schemaVersion": 1,
-  "source": "Cricbuzz public match pages and India team schedule/results",
+  "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-13T19:32:02.153Z",
+  "syncedAt": "2026-08-13T19:35:59.932Z",
+  "coverage": {
+    "pathways": [
+      "India",
+      "India Women",
+      "India A",
+      "India A Women",
+      "India U19",
+      "India Women U19"
+    ],
+    "globalPages": [
+      "https://www.cricbuzz.com/cricket-match/live-scores",
+      "https://www.cricbuzz.com/cricket-match/live-scores/upcoming-matches",
+      "https://www.cricbuzz.com/cricket-match/live-scores/recent-matches"
+    ],
+    "teamPages": [
+      "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "https://www.cricbuzz.com/cricket-team/india/2/results",
+      "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+      "https://www.cricbuzz.com/cricket-team/india-women/97/results",
+      "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
+      "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
+      "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
+      "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
+      "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
+      "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
+      "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/schedule",
+      "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results"
+    ],
+    "refreshCadence": "15 minutes"
+  },
   "summary": {
     "live": 0,
     "recent": 62,
