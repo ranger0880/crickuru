@@ -5390,20 +5390,41 @@ const RouterContext = React.createContext(null);
       }
 
       function IndiaTournamentRadar({ tournaments, activeId, onSelect }) {
+        const ringOrder = ["international", "women", "league", "domestic"];
+        const ringConfig = {
+          international: { radius: 24, label: "International core", className: "border-gold/45 bg-gold/10 text-gold" },
+          women: { radius: 29, label: "Women\u2019s international", className: "border-crimson/45 bg-crimson/10 text-crimson" },
+          league: { radius: 36, label: "League ring", className: "border-cyan/40 bg-cyan/10 text-cyan" },
+          domestic: { radius: 44, label: "Domestic / state outer ring", className: "border-white/22 bg-white/8 text-white/75" },
+        };
+        const grouped = ringOrder.reduce((groups, level) => {
+          groups[level] = tournaments.filter((tournament) => tournament.level === level);
+          return groups;
+        }, {});
+        const radarTournaments = ringOrder.flatMap((level) => {
+          const group = grouped[level];
+          return group.map((tournament, index) => ({
+            tournament,
+            ring: ringConfig[level],
+            angle: -Math.PI / 2 + (index / Math.max(group.length, 1)) * Math.PI * 2 + (level === "domestic" ? 0.08 : 0),
+          }));
+        });
         return (
           <div className="relative mt-5 min-h-[25rem] overflow-hidden rounded-[8px] border border-cyan/18 bg-[radial-gradient(circle_at_50%_50%,rgba(34,211,238,0.15),transparent_16%),radial-gradient(circle_at_50%_50%,rgba(244,185,66,0.08),transparent_52%),#05070B] p-4 sm:min-h-[32rem]" aria-label="Important tournament radar">
             <div className="pointer-events-none absolute inset-[12%] rounded-full border border-cyan/18" />
             <div className="pointer-events-none absolute inset-[24%] rounded-full border border-cyan/20" />
             <div className="pointer-events-none absolute inset-[36%] rounded-full border border-cyan/24" />
+            <div className="pointer-events-none absolute left-3 top-3 flex flex-wrap gap-2 text-[0.55rem] font-black uppercase tracking-[0.12em] sm:left-5 sm:top-5">
+              {ringOrder.map((level) => <span key={level} className={`rounded-full border px-2 py-1 ${ringConfig[level].className}`}>{ringConfig[level].label}</span>)}
+            </div>
             <div className="pointer-events-none absolute left-1/2 top-[7%] h-[86%] w-px -translate-x-1/2 bg-cyan/15" />
             <div className="pointer-events-none absolute left-[7%] top-1/2 h-px w-[86%] -translate-y-1/2 bg-cyan/15" />
             <div className="absolute left-1/2 top-1/2 z-10 grid h-24 w-24 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border border-gold/55 bg-night/90 text-center shadow-[0_0_38px_rgba(244,185,66,0.2)]">
               <div><Icon.Radio className="mx-auto text-gold" size={24} /><p className="mt-1 text-[0.58rem] font-black uppercase tracking-[0.16em] text-gold">Match radar</p></div>
             </div>
-            {tournaments.map((tournament, index) => {
-              const angle = -Math.PI / 2 + (index / Math.max(tournaments.length, 1)) * Math.PI * 2;
-              const left = 50 + Math.cos(angle) * 40;
-              const top = 50 + Math.sin(angle) * 40;
+            {radarTournaments.map(({ tournament, ring, angle }) => {
+              const left = 50 + Math.cos(angle) * ring.radius;
+              const top = 50 + Math.sin(angle) * ring.radius;
               const selected = tournament.id === activeId;
               return (
                 <button key={tournament.id} type="button" onClick={() => onSelect(tournament.id)} aria-pressed={selected} title={`Open ${tournament.series}`} className={`absolute z-20 w-[8.5rem] -translate-x-1/2 -translate-y-1/2 rounded-[8px] border px-2 py-2 text-center transition sm:w-[10.5rem] ${selected ? "border-gold bg-gold text-night shadow-[0_0_26px_rgba(244,185,66,0.42)]" : "border-cyan/35 bg-night/90 text-white hover:border-cyan hover:text-cyan"}`} style={{ left: `${left}%`, top: `${top}%` }}>
