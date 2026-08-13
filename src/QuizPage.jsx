@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from "react"
 import { motion } from "framer-motion";
 
 const PROFILE_KEY = "crickuru-quiz-profile-v1";
+const PROFILE_LOCK_KEY = "crickuru-quiz-profile-lock-v1";
 const SCORE_KEY = "crickuru-quiz-scores-v1";
 const TWO_MONTHS_MS = 60 * 24 * 60 * 60 * 1000;
 const AUTH_API_URL = String(import.meta.env.VITE_AUTH_API_URL || "").replace(/\/+$/, "");
@@ -95,19 +96,26 @@ function QuizPage() {
 
   function saveLocalProfile(event) {
     event.preventDefault();
+    if (profile.registered) {
+      setAuthState({ status: "error", message: "Only one local profile is allowed on this device. Connect a verified account to use your profile on another device." });
+      return;
+    }
     const cleanName = profileDraft.name
       .replace(/[\u0000-\u001F\u007F]/g, " ")
       .replace(/\s+/g, " ")
       .trim()
       .slice(0, 40) || "Warrior Player";
-    updateProfile({
+    const nextProfile = {
       ...profile,
       name: cleanName,
       method: "local",
+      provider: "local",
       contact: "",
       verified: false,
       registered: true,
-    });
+    };
+    writeJson(PROFILE_LOCK_KEY, { id: nextProfile.id, name: nextProfile.name, createdAt: nextProfile.joinedAt });
+    updateProfile(nextProfile);
   }
 
   const handleGoogleCredential = useCallback(async (credentialResponse) => {
@@ -471,14 +479,15 @@ function ProfilePanel({
           value={draft.name}
           onChange={(event) => setDraft({ ...draft, name: event.target.value })}
           placeholder="Player name"
-          className="min-h-11 rounded-[8px] border border-white/12 bg-night/60 px-3 text-sm font-bold text-white"
+          disabled={profile.registered}
+          className="min-h-11 rounded-[8px] border border-white/12 bg-night/60 px-3 text-sm font-bold text-white disabled:cursor-not-allowed disabled:opacity-50"
         />
         <label className="flex min-h-11 items-center justify-center gap-2 rounded-[8px] border border-white/12 bg-white/[0.045] px-3 text-xs font-black uppercase tracking-[0.12em] text-white/68 transition hover:border-gold/40 hover:text-gold">
           <UploadIcon /> Upload Image
           <input type="file" accept="image/jpeg,image/png,image/webp" className="hidden" onChange={onAvatarUpload} />
         </label>
         <button type="submit" className="shine-button min-h-11 rounded-[8px] bg-gold px-4 text-xs font-black uppercase tracking-[0.15em] text-night">
-          Save Profile
+          {profile.registered ? "Profile Locked" : "Save Profile"}
         </button>
       </form>
 
@@ -906,6 +915,20 @@ function loadProfile() {
           ? stored.avatar
           : "",
       joinedAt: stored.joinedAt || new Date().toISOString(),
+    };
+  }
+  const lock = readJson(PROFILE_LOCK_KEY);
+  if (lock?.id) {
+    return {
+      id: String(lock.id),
+      name: String(lock.name || "Registered Player").slice(0, 40),
+      method: "local",
+      provider: "local",
+      contact: "",
+      verified: false,
+      registered: true,
+      avatar: "",
+      joinedAt: lock.createdAt || new Date().toISOString(),
     };
   }
   return {
