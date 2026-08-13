@@ -44,25 +44,6 @@ jobs:
           test -n "$FTP_USERNAME" || (echo "Missing HOSTINGER_FTP_USERNAME" && exit 1)
           test -n "$FTP_PASSWORD" || (echo "Missing HOSTINGER_FTP_PASSWORD" && exit 1)
 
-      - name: Inspect FTP folders
-        env:
-          FTP_SERVER: ${{ secrets.HOSTINGER_FTP_SERVER }}
-          FTP_USERNAME: ${{ secrets.HOSTINGER_FTP_USERNAME }}
-          FTP_PASSWORD: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
-        run: |
-          set +e
-          for folder in "/" "/public_html/" "/domains/" "/domains/crickuru.com/" "/domains/crickuru.com/public_html/"; do
-            echo "--- FTP $folder ---"
-            curl --silent --show-error --ftp-pasv --user "$FTP_USERNAME:$FTP_PASSWORD" "ftp://$FTP_SERVER$folder" --list-only
-          done
-          for file in "/index.html" "/public_html/index.html" "/domains/crickuru.com/public_html/index.html"; do
-            target="/tmp/ftp-index-${RANDOM}.html"
-            curl --silent --show-error --ftp-pasv --user "$FTP_USERNAME:$FTP_PASSWORD" "ftp://$FTP_SERVER$file" -o "$target"
-            echo "--- CONTENT $file ---"
-            wc -c "$target"
-            grep -Eo '/src/App.jsx|/assets/index-[^" ]+\.js' "$target" | head -n 2
-          done
-
       - name: Sync built files to Hostinger
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
