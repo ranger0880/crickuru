@@ -21,6 +21,7 @@ for (const route of ROUTE_METADATA) {
 
 writeRoute("/404", renderRouteMeta(NOT_FOUND_METADATA.path), "404.html");
 writeText(path.join(distDir, ".htaccess"), renderHtaccess());
+writeLegacyAssetAliases();
 
 function writeRoute(routePath, metaHtml, forcedFileName) {
   const html = template.replace(marker, metaHtml);
@@ -151,4 +152,21 @@ function hashInlineScripts(html) {
 
 function writeText(outputPath, content) {
   fs.writeFileSync(outputPath, content, "utf8");
+}
+
+function writeLegacyAssetAliases() {
+  const assetDir = path.join(distDir, "assets");
+  const currentJs = fs.readdirSync(assetDir).find((name) => /^index-(?!CplD2v_A|_XkMW-m6)[A-Za-z0-9_-]+\.js$/.test(name));
+  const currentCss = fs.readdirSync(assetDir).find((name) => /^index-(?!D_lhbeiB|8uKMYpLS)[A-Za-z0-9_-]+\.css$/.test(name));
+
+  if (currentJs) {
+    for (const alias of ["index-CplD2v_A.js", "index-_XkMW-m6.js"]) {
+      fs.copyFileSync(path.join(assetDir, currentJs), path.join(assetDir, alias));
+    }
+  }
+  if (currentCss) {
+    for (const alias of ["index-D_lhbeiB.css", "index-8uKMYpLS.css"]) {
+      fs.copyFileSync(path.join(assetDir, currentCss), path.join(assetDir, alias));
+    }
+  }
 }
