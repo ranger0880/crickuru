@@ -1784,6 +1784,7 @@ const RouterContext = React.createContext(null);
         const records = asArray(data.recordLedger);
         const rosterChanges = asArray(data.rosterChangeLog);
         const sourcePages = asArray(inventory.sourcePages);
+        const totalMatchesPlayed = Number(data.summary?.matches ?? inventory.matches ?? matches.length);
         const syncText = loading ? "Syncing CricHeroes" : `Updated ${formatFeedDate(data.syncedAt)}`;
 
         return (
@@ -1839,11 +1840,12 @@ const RouterContext = React.createContext(null);
                     </a>
                   </div>
                   <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-4">
-                    <LiveStat label="Matches" value={inventory.matches || matches.length || "-"} />
-                    <LiveStat label="Players" value={inventory.players || players.length || "-"} />
-                    <LiveStat label="Opponents" value={inventory.opponents || opponents.length || "-"} />
-                    <LiveStat label="Awards" value={inventory.awards || awards.length || "-"} />
+                    <LiveStat label="Total matches played" value={totalMatchesPlayed || "-"} />
+                    <LiveStat label="Players" value={inventory.players ?? players.length ?? "-"} />
+                    <LiveStat label="Opponents" value={inventory.opponents ?? opponents.length ?? "-"} />
+                    <LiveStat label="Awards" value={inventory.awards ?? awards.length ?? "-"} />
                   </div>
+                  <p className="mt-4 text-[0.62rem] font-black uppercase tracking-[0.16em] text-white/38">Team total checked from CricHeroes {formatFeedDate(data.syncedAt)}</p>
                 </div>
               </div>
 
