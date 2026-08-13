@@ -1,6 +1,12 @@
 name: Kurukshetra Warriors CricHeroes Feed Sync
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - "tools/sync-cricheroes.mjs"
+      - ".github/workflows/sync-cricheroes.yml"
   schedule:
     # Near-live public refresh. GitHub schedules use UTC and may be delayed.
     - cron: "*/5 * * * *"
