@@ -5065,7 +5065,8 @@ const RouterContext = React.createContext(null);
                 </div>
               </div>
 
-              <section className="mt-6 glass rounded-[8px] p-5" aria-labelledby="match-filter-title">
+              <div className="flex flex-col">
+              <section className="order-1 mt-6 glass rounded-[8px] p-5" aria-labelledby="match-filter-title">
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
                   <div>
                     <p className="text-xs font-black uppercase tracking-[0.24em] text-gold">Match filter</p>
@@ -5099,7 +5100,7 @@ const RouterContext = React.createContext(null);
                 </div>
               </section>
 
-              <section className="mt-10 grid gap-5 xl:grid-cols-[1.05fr_0.95fr]" aria-labelledby="important-results-title">
+              <section className="order-4 mt-10 grid gap-5 xl:grid-cols-[1.05fr_0.95fr]" aria-labelledby="important-results-title">
                 <div className="glass rounded-[8px] p-5">
                   <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
                     <div>
@@ -5144,7 +5145,7 @@ const RouterContext = React.createContext(null);
                 </div>
               </section>
 
-              <section className="mt-5 glass rounded-[8px] p-5" aria-labelledby="tournament-tracker-title">
+              <section className="order-3 mt-5 glass rounded-[8px] p-5" aria-labelledby="tournament-tracker-title">
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
                   <div>
                     <p className="text-xs font-black uppercase tracking-[0.24em] text-gold">Long-run coverage</p>
@@ -5201,7 +5202,7 @@ const RouterContext = React.createContext(null);
                 ) : null}
               </section>
 
-              <div className="mt-10 grid gap-5 xl:grid-cols-[1.05fr_0.95fr]">
+              <div className="order-2 mt-10 grid gap-5 xl:grid-cols-[1.05fr_1.05fr]">
                 <div className="grid gap-5">
                   {featureMatch ? (
                     <IndiaFeatureMatch match={featureMatch} syncedAt={data.syncedAt} />
@@ -5251,6 +5252,7 @@ const RouterContext = React.createContext(null);
                     </p>
                   </div>
                 </div>
+              </div>
               </div>
             </section>
           </main>
