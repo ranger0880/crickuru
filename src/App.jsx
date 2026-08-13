@@ -281,7 +281,7 @@ const RouterContext = React.createContext(null);
 
           const loadFeed = async () => {
             try {
-              const response = await fetch(assetUrl(`/data/crickuru-live.json?v=${Date.now()}`), { cache: "no-store" });
+              const response = await fetch(assetUrl(`/data/crickuru-live-v3.json?v=${Date.now()}`), { cache: "no-store" });
               if (!response.ok) throw new Error(`Live feed returned ${response.status}`);
               const data = await response.json();
               if (!cancelled) setState({ loading: false, error: "", data: { ...liveFeedFallback, ...data } });

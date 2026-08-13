@@ -37,6 +37,17 @@ jobs:
           VITE_GOOGLE_CLIENT_ID: ${{ secrets.VITE_GOOGLE_CLIENT_ID }}
         run: npm run build
 
+      - name: Prepare compatibility aliases for cached Hostinger pages
+        shell: bash
+        run: |
+          set -euo pipefail
+          js="$(find dist/assets -maxdepth 1 -type f -name 'index-*.js' | head -n 1)"
+          css="$(find dist/assets -maxdepth 1 -type f -name 'index-*.css' | head -n 1)"
+          test -n "$js" && test -n "$css"
+          cp "$js" dist/assets/index-_XkMW-m6.js
+          cp "$css" dist/assets/index-8uKMYpLS.css
+          cp dist/data/crickuru-live.json dist/data/crickuru-live-v3.json
+
       - name: Check Hostinger secrets
         env:
           FTP_SERVER: ${{ secrets.HOSTINGER_FTP_SERVER }}
