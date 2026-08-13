@@ -2205,6 +2205,7 @@ const RouterContext = React.createContext(null);
         { id: "batters", label: "Batters" },
         { id: "bowlers", label: "Bowlers" },
         { id: "verified", label: "Verified" },
+        { id: "career", label: "Career tracked" },
       ];
 
       function PlayersPage() {
@@ -2226,6 +2227,8 @@ const RouterContext = React.createContext(null);
         };
         const totalAwards = players.reduce((sum, player) => sum + (player.performance?.awards || 0), 0);
         const verifiedCount = players.filter((player) => player.isVerified).length;
+        const careerTrackedCount = players.filter((player) => playerOverallStats(player)?.source === CRICHEROES_STATS_SOURCE).length;
+        const careerPendingCount = Math.max(0, players.length - careerTrackedCount);
 
         return (
           <main className="route-bg page-grain min-h-screen px-5 pb-16 pt-36 sm:px-8">
@@ -2253,11 +2256,17 @@ const RouterContext = React.createContext(null);
                   </div>
                 </motion.div>
 
-                <div className="grid gap-3 sm:grid-cols-3">
+                <div className="grid gap-3 sm:grid-cols-4">
                   <LiveStat label="Players" value={players.length || "-"} />
                   <LiveStat label="Awards" value={totalAwards || "-"} />
                   <LiveStat label="Verified" value={verifiedCount || "-"} />
+                  <LiveStat label="Career tracked" value={`${careerTrackedCount}/${players.length || 0}`} />
                 </div>
+              </div>
+
+              <div className="mt-5 rounded-[8px] border border-cyan/20 bg-cyan/5 px-4 py-3 text-sm leading-6 text-white/65">
+                <span className="font-black uppercase tracking-[0.14em] text-cyan">Overall CricHeroes career tracking:</span>{" "}
+                {careerTrackedCount} of {players.length} profiles currently have public career totals. {careerPendingCount} profile{careerPendingCount === 1 ? " is" : "s are"} queued for the next rate-limit-safe refresh; Warriors match totals remain shown separately until then.
               </div>
 
               <div className="mt-10 grid gap-5 lg:grid-cols-4">
@@ -2387,6 +2396,7 @@ const RouterContext = React.createContext(null);
                 <LiveTinyStat label="Field" value={hasStats ? (stats.catches || 0) + (stats.stumpings || 0) : "-"} />
               </div>
               <p className="mt-3 text-center text-[0.62rem] font-black uppercase tracking-[0.12em] text-white/38">{hasStats ? `${stats.matches || 0} matches | Avg ${stats.average || "-"} | SR ${stats.strikeRate || "-"}` : "Profile totals will appear after the next public sync"}</p>
+              {stats.source !== CRICHEROES_STATS_SOURCE && <p className="mt-2 text-center text-[0.58rem] font-black uppercase tracking-[0.12em] text-gold/70">Overall career profile queued</p>}
             </div>
 
             <div className="relative mt-4 flex flex-wrap gap-2">
@@ -2856,6 +2866,7 @@ const RouterContext = React.createContext(null);
         if (filter === "batters") return Boolean(player.batterCategory || player.performance?.bestBatter);
         if (filter === "bowlers") return Boolean(player.bowlerCategory || player.performance?.bestBowler);
         if (filter === "verified") return Boolean(player.isVerified);
+        if (filter === "career") return playerOverallStats(player)?.source === CRICHEROES_STATS_SOURCE;
         return true;
       }
 
