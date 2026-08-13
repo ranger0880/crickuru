@@ -2532,8 +2532,9 @@ const RouterContext = React.createContext(null);
 
       function PlayerImprovementPanel({ player, stats }) {
         const report = createImprovementReport(player, stats);
+        const neon = playerNeonTheme(player.impact || 0);
         return (
-          <article className="rounded-[8px] border border-cyan/25 bg-[linear-gradient(135deg,rgba(35,213,232,0.09),rgba(255,255,255,0.025))] p-5">
+          <article className="player-neon-card rounded-[8px] border bg-[linear-gradient(135deg,rgba(35,213,232,0.09),rgba(255,255,255,0.025))] p-5" style={{ "--player-neon-color": neon.color, "--player-neon-glow": neon.glow }}>
             <div className="flex flex-wrap items-start justify-between gap-3">
               <div>
                 <p className="flex items-center gap-2 text-xs font-black uppercase tracking-[0.2em] text-cyan"><Icon.Sparkles size={15} /> AI performance coach</p>
@@ -2732,7 +2733,7 @@ const RouterContext = React.createContext(null);
 
         return (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }} className="fixed inset-0 z-[90] overflow-y-auto overscroll-contain bg-night/85 p-2 backdrop-blur-md sm:p-4 lg:p-6" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) onClose(); }}>
-            <motion.section initial={{ opacity: 0, scale: 0.94, y: 22 }} animate={{ opacity: 1, scale: 1, y: 0 }} transition={{ type: "spring", stiffness: 280, damping: 25 }} style={{ borderColor: neon.color, boxShadow: `0 0 0 1px ${neon.color}, 0 0 24px ${neon.glow}, 0 25px 100px rgba(0,0,0,0.7)` }} className="mx-auto w-full max-h-[calc(100dvh-1rem)] min-h-0 overflow-y-auto rounded-[10px] border bg-[#090d14] sm:max-h-[calc(100dvh-2rem)] lg:max-h-[calc(100dvh-3rem)]" role="dialog" aria-modal="true" aria-label={`${player.name} full player profile`}>
+            <motion.section initial={{ opacity: 0, scale: 0.94, y: 22 }} animate={{ opacity: 1, scale: 1, y: 0 }} transition={{ type: "spring", stiffness: 280, damping: 25 }} style={{ borderColor: neon.color, boxShadow: `0 0 0 1px ${neon.color}, 0 0 24px ${neon.glow}, 0 25px 100px rgba(0,0,0,0.7)`, "--player-neon-color": neon.color, "--player-neon-glow": neon.glow }} className="player-neon-shell mx-auto w-full max-h-[calc(100dvh-1rem)] min-h-0 overflow-y-auto rounded-[10px] border bg-[#090d14] sm:max-h-[calc(100dvh-2rem)] lg:max-h-[calc(100dvh-3rem)]" role="dialog" aria-modal="true" aria-label={`${player.name} full player profile`}>
               <header className="relative min-h-48 overflow-hidden bg-cover bg-center sm:min-h-56" style={{ backgroundImage: `url(${assetUrl("/assets/stadium-vip-warriors.png")})`, boxShadow: `inset 0 -3px 0 ${neon.color}, inset 0 -12px 28px ${neon.soft}` }}>
                 <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(5,7,11,0.96),rgba(5,7,11,0.58),rgba(5,7,11,0.8))]" />
                 <button type="button" onClick={onClose} aria-label="Close player profile" title="Close player profile" className="absolute right-3 top-3 grid h-11 w-11 place-items-center rounded-full border border-white/20 bg-night/70 text-white transition hover:border-gold hover:text-gold sm:right-4 sm:top-4"><Icon.X size={20} /></button>

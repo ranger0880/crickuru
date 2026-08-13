@@ -571,6 +571,84 @@
         backdrop-filter: blur(22px);
       }
 
+      @property --player-neon-angle {
+        syntax: "<angle>";
+        inherits: false;
+        initial-value: 0deg;
+      }
+
+      .player-neon-shell,
+      .player-neon-card {
+        --player-neon-color: #23d5e8;
+        --player-neon-glow: rgba(35, 213, 232, 0.62);
+        position: relative;
+        isolation: isolate;
+      }
+
+      .player-neon-shell {
+        border-color: transparent !important;
+      }
+
+      .player-neon-shell::before,
+      .player-neon-card::before {
+        content: "";
+        position: absolute;
+        inset: -2px;
+        z-index: 4;
+        pointer-events: none;
+        border-radius: inherit;
+        background: conic-gradient(
+          from var(--player-neon-angle, 0deg),
+          transparent 0deg 226deg,
+          color-mix(in srgb, var(--player-neon-color) 26%, transparent) 246deg,
+          var(--player-neon-color) 270deg,
+          #ffffff 282deg,
+          var(--player-neon-color) 294deg,
+          color-mix(in srgb, var(--player-neon-color) 26%, transparent) 318deg,
+          transparent 338deg 360deg
+        );
+        padding: 2px;
+        -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+        -webkit-mask-composite: xor;
+        mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+        mask-composite: exclude;
+        animation: playerNeonSweep 5.8s linear infinite;
+      }
+
+      .player-neon-shell::after,
+      .player-neon-card::after {
+        content: "";
+        position: absolute;
+        inset: -12px;
+        z-index: -1;
+        pointer-events: none;
+        border-radius: inherit;
+        background: conic-gradient(from var(--player-neon-angle, 0deg), transparent 0deg 244deg, var(--player-neon-color) 280deg, transparent 318deg 360deg);
+        filter: blur(14px);
+        opacity: 0.26;
+        animation: playerNeonSweep 5.8s linear infinite;
+      }
+
+      .player-neon-card {
+        overflow: hidden;
+        border-color: color-mix(in srgb, var(--player-neon-color) 38%, rgba(255, 255, 255, 0.12)) !important;
+        box-shadow: 0 0 24px color-mix(in srgb, var(--player-neon-glow) 54%, transparent), inset 0 0 32px color-mix(in srgb, var(--player-neon-color) 7%, transparent);
+      }
+
+      .player-neon-card > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .player-neon-shell::before,
+        .player-neon-shell::after,
+        .player-neon-card::before,
+        .player-neon-card::after {
+          animation: none;
+        }
+      }
+
       @keyframes fogDrift {
         from {
           transform: translate3d(-2%, 1%, 0) scale(1);
@@ -608,6 +686,15 @@
         }
         to {
           transform: translateX(-50%);
+        }
+      }
+
+      @keyframes playerNeonSweep {
+        from {
+          --player-neon-angle: 0deg;
+        }
+        to {
+          --player-neon-angle: 360deg;
         }
       }
 
