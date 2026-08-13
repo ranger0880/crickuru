@@ -5070,43 +5070,38 @@ const RouterContext = React.createContext(null);
                         <p className="text-xs font-black uppercase tracking-[0.24em] text-gold">Match filter</p>
                         <h2 className="mt-2 font-display text-4xl font-black uppercase text-white">Live, Past and Future</h2>
                       </div>
-                      <div className="flex flex-wrap gap-2" role="tablist" aria-label="India match status">
-                        {indiaStatusTabs.map((item) => (
-                          <button
-                            key={item.id}
-                            type="button"
-                            role="tab"
-                            aria-selected={statusTab === item.id}
-                            onClick={() => setStatusTab(item.id)}
-                            className={`inline-flex min-h-11 items-center gap-2 rounded-full border px-4 text-xs font-black uppercase tracking-[0.14em] transition ${
-                              statusTab === item.id
-                                ? "border-gold/60 bg-gold/12 text-gold"
-                                : "border-white/12 bg-white/[0.045] text-white/62 hover:border-white/25 hover:text-white"
-                            }`}
+                      <div className="grid gap-3 sm:grid-cols-2 lg:min-w-[29rem]">
+                        <label className="grid gap-2">
+                          <span className="text-[0.65rem] font-black uppercase tracking-[0.18em] text-white/42">Status</span>
+                          <select
+                            aria-label="India match status"
+                            value={statusTab}
+                            onChange={(event) => setStatusTab(event.target.value)}
+                            className="min-h-11 w-full appearance-none rounded-[8px] border border-gold/35 bg-night px-4 text-xs font-black uppercase tracking-[0.14em] text-gold outline-none transition focus:border-gold focus:ring-2 focus:ring-gold/20"
                           >
-                            <item.icon size={15} /> {item.label}
-                          </button>
-                        ))}
+                            {indiaStatusTabs.map((item) => (
+                              <option key={item.id} value={item.id} className="bg-night text-white">
+                                {item.label}
+                              </option>
+                            ))}
+                          </select>
+                        </label>
+                        <label className="grid gap-2">
+                          <span className="text-[0.65rem] font-black uppercase tracking-[0.18em] text-white/42">Match type</span>
+                          <select
+                            aria-label="India match level"
+                            value={levelTab}
+                            onChange={(event) => setLevelTab(event.target.value)}
+                            className="min-h-11 w-full appearance-none rounded-[8px] border border-cyan/35 bg-night px-4 text-xs font-black uppercase tracking-[0.14em] text-cyan outline-none transition focus:border-cyan focus:ring-2 focus:ring-cyan/20"
+                          >
+                            {indiaLevelTabs.map((item) => (
+                              <option key={item.id} value={item.id} className="bg-night text-white">
+                                {item.label}
+                              </option>
+                            ))}
+                          </select>
+                        </label>
                       </div>
-                    </div>
-
-                    <div className="mt-5 flex gap-2 overflow-x-auto pb-1" role="tablist" aria-label="India match level">
-                      {indiaLevelTabs.map((item) => (
-                        <button
-                          key={item.id}
-                          type="button"
-                          role="tab"
-                          aria-selected={levelTab === item.id}
-                          onClick={() => setLevelTab(item.id)}
-                          className={`shrink-0 rounded-full border px-4 py-2 text-xs font-black uppercase tracking-[0.14em] transition ${
-                            levelTab === item.id
-                              ? "border-cyan/60 bg-cyan/10 text-cyan"
-                              : "border-white/12 bg-white/[0.035] text-white/54 hover:border-white/25 hover:text-white"
-                          }`}
-                        >
-                          {item.label}
-                        </button>
-                      ))}
                     </div>
 
                     <div className="mt-6 grid gap-3">
