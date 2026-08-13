@@ -66,11 +66,17 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          while IFS= read -r -d '' file; do
-            relative="${file#dist/}"
-            echo "Uploading $relative"
-            curl --fail --silent --show-error --ftp-pasv --ftp-create-dirs \
-              --connect-timeout 30 --max-time 180 \
-              --user "$FTP_USERNAME:$FTP_PASSWORD" \
-              --upload-file "$file" "ftp://$FTP_SERVER/$relative"
-          done < <(find dist -type f -print0)
+          # Hostinger accounts can expose more than one FTP root. Refresh the
+          # known CricKuru web roots so the active domain root receives the build.
+          roots=("" "public_html" "domains/crickuru.com" "domains/crickuru.com/public_html")
+          for root in "${roots[@]}"; do
+            echo "Refreshing FTP root: /${root}"
+            while IFS= read -r -d '' file; do
+              relative="${file#dist/}"
+              echo "Uploading /${root}/${relative}"
+              curl --fail --silent --show-error --ftp-pasv --ftp-create-dirs \
+                --connect-timeout 30 --max-time 180 \
+                --user "$FTP_USERNAME:$FTP_PASSWORD" \
+                --upload-file "$file" "ftp://$FTP_SERVER/${root:+$root/}$relative"
+            done < <(find dist -type f -print0)
+          done
