@@ -1,7 +1,8 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "source": "CricHeroes public team pages",
-  "syncedAt": "2026-08-10T16:29:46.465Z",
+  "syncedAt": "2026-08-13T13:19:55.933Z",
+  "playerStatsUpdatedAt": "2026-08-13T13:19:55.933Z",
   "dataInventory": {
     "teamProfile": true,
     "matches": 12,
@@ -11,6 +12,7 @@
     "players": 77,
     "opponents": 11,
     "awards": 39,
+    "records": 1,
     "sourcePages": [
       "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors",
       "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
@@ -267,7 +269,7 @@
       "status": "past",
       "state": "past",
       "date": "2026-07-15T00:56:42.000Z",
-      "endDate": "2026-07-15T03:31:52.000Z",
+      "endDate": "2026-07-14T22:01:52.000Z",
       "createdAt": "2026-07-14T13:00:13.000Z",
       "matchType": "Limited Overs",
       "matchCategoryName": "",
@@ -360,6 +362,7 @@
           }
         ]
       },
+      "scorecardUrl": "https://cricheroes.com/scorecard/26132337/individual/kurukshetra-warriors-vs-fabulous-xi/summary",
       "toss": "Fabulous XI won the toss and elected to field",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -367,6 +370,124 @@
         "fielderOfMatch": 9382549,
         "bestBatter": 28790413,
         "bestBowler": 9382549
+      },
+      "scorecard": {
+        "batting": [
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 5823563,
+            "playerName": "Vivek S",
+            "runs": 88,
+            "balls": 37,
+            "fours": 7,
+            "sixes": 9,
+            "strikeRate": "237.84",
+            "isOut": true
+          },
+          {
+            "teamId": 11466367,
+            "teamName": "Fabulous XI",
+            "playerId": 28790413,
+            "playerName": "Praveen Pratapgarh",
+            "runs": 84,
+            "balls": 22,
+            "fours": 5,
+            "sixes": 10,
+            "strikeRate": "381.82",
+            "isOut": true
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 8770695,
+            "playerName": "Aman 26",
+            "runs": 77,
+            "balls": 26,
+            "fours": 6,
+            "sixes": 7,
+            "strikeRate": "296.15",
+            "isOut": false
+          }
+        ],
+        "bowling": [
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 22785662,
+            "playerName": "Sabal Vashishth",
+            "overs": "2.0",
+            "balls": 12,
+            "maidens": 0,
+            "dotBalls": 7,
+            "runs": 11,
+            "wickets": 3,
+            "economyRate": "5.50"
+          },
+          {
+            "teamId": 11466367,
+            "teamName": "Fabulous XI",
+            "playerId": 9382549,
+            "playerName": "NITESH KUMAR",
+            "overs": "4.0",
+            "balls": 24,
+            "maidens": 1,
+            "dotBalls": 13,
+            "runs": 24,
+            "wickets": 3,
+            "economyRate": "6.00"
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 29139731,
+            "playerName": "Ankit Kulshreshtha",
+            "overs": "2.0",
+            "balls": 12,
+            "maidens": 0,
+            "dotBalls": 8,
+            "runs": 19,
+            "wickets": 3,
+            "economyRate": "9.50"
+          }
+        ],
+        "notes": [
+          "Match started at 15 Jul, 06:26 AM.",
+          "Kurukshetra Warriors: 51 runs in 3 overs, Extras 1",
+          "1st Wicket: 51 runs in 18 balls (Amit Kumar 6(5), Vivek S 44(13), Ex 1)",
+          "Vivek S: 52 off 20 balls (3 X 4, 6 X 6)",
+          "Kurukshetra Warriors: 103 runs in 6 overs, Extras 4",
+          "1st Wicket: 103 runs in 36 balls (Amit Kumar 31(13), Vivek S 68(23), Ex 4)",
+          "Amit Kumar: 50 off 23 balls (7 X 4, 2 X 6)",
+          "Kurukshetra Warriors: 150 runs in 10.3 overs, Extras 6",
+          "Kurukshetra Warriors: 202 runs in 14.3 overs, Extras 13",
+          "Aman 26: 50 off 20 balls (6 X 4, 3 X 6)",
+          "Kurukshetra Warriors: 254 runs in 19.2 overs, Extras 14",
+          "Innings Break: Kurukshetra Warriors - 269/6 in 20 overs (Aman 26 77)",
+          "Innings Ended at 15 Jul, 07:35 AM",
+          "Innings started at 15 Jul, 07:44 AM",
+          "Fabulous XI: 53 runs in 1.5 overs, Extras 0",
+          "Praveen Pratapgarh: 53 off 11 balls (1 X 4, 8 X 6)",
+          "1st Wicket: 53 runs in 11 balls (Praveen Pratapgarh 53(11), Mr Cricket 0(0), Ex 0)",
+          "Fabulous XI: 100 runs in 5 overs, Extras 2",
+          "1st Wicket: 100 runs in 31 balls (Praveen Pratapgarh 84(21), Mr Cricket 14(10), Ex 2)",
+          "Fabulous XI: 152 runs in 9.4 overs, Extras 9",
+          "Fabulous XI: 201 runs in 14.4 overs, Extras 11",
+          "NITESH KUMAR: 52 off 19 balls (3 X 4, 6 X 6)",
+          "10th Wicket: 53 runs in 23 balls (Satyam Sharma 4(5), NITESH KUMAR 49(18), Ex 0)",
+          "Fabulous XI: 254 runs in 18.5 overs, Extras 13",
+          "End of Day: Fabulous XI - 255/10 in 19 overs (Thakur Saurabh Singh 0, Satyam Sharma 5)",
+          "Match ended at 15 Jul, 09:01 AM.",
+          "Ball 5.3 : Fielder changed to Deepak Rajput from Rx 100.",
+          "Change scorer : Pushpendra Singh to Mr Cricket at 0/0 (0.0)."
+        ],
+        "playerOfTheMatch": {
+          "player_id": 5823563,
+          "player_name": "Vivek S",
+          "team_name": "Kurukshetra Warriors",
+          "profile_photo": "https://media.cricheroes.in/user_profile/1779329221637_sAQlz8HY2Dv7.jpeg"
+        },
+        "fetchedAt": "2026-08-13T13:19:55.916Z"
       }
     },
     {
@@ -374,7 +495,7 @@
       "status": "past",
       "state": "past",
       "date": "2026-06-02T01:03:10.000Z",
-      "endDate": "2026-06-02T03:29:51.000Z",
+      "endDate": "2026-06-01T21:59:51.000Z",
       "createdAt": "2026-06-02T00:51:09.000Z",
       "matchType": "Limited Overs",
       "matchCategoryName": "",
@@ -467,6 +588,7 @@
           }
         ]
       },
+      "scorecardUrl": "https://cricheroes.com/scorecard/25214310/individual/kurukshetra-warriors-vs-divino-dominators/summary",
       "toss": "Kurukshetra Warriors won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -474,6 +596,120 @@
         "fielderOfMatch": 6818401,
         "bestBatter": 11536802,
         "bestBowler": 6818401
+      },
+      "scorecard": {
+        "batting": [
+          {
+            "teamId": 8163475,
+            "teamName": "Divino Dominators",
+            "playerId": 11536802,
+            "playerName": "Virat Sharma",
+            "runs": 113,
+            "balls": 39,
+            "fours": 12,
+            "sixes": 8,
+            "strikeRate": "289.74",
+            "isOut": false
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 24060649,
+            "playerName": "(JATIN 18 )",
+            "runs": 50,
+            "balls": 17,
+            "fours": 5,
+            "sixes": 4,
+            "strikeRate": "294.12",
+            "isOut": true
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 20892696,
+            "playerName": "Dilip Kumar",
+            "runs": 43,
+            "balls": 17,
+            "fours": 4,
+            "sixes": 4,
+            "strikeRate": "252.94",
+            "isOut": true
+          }
+        ],
+        "bowling": [
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 6818401,
+            "playerName": "Kunvar Prashant",
+            "overs": "4.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 11,
+            "runs": 34,
+            "wickets": 5,
+            "economyRate": "8.50"
+          },
+          {
+            "teamId": 8163475,
+            "teamName": "Divino Dominators",
+            "playerId": 11536802,
+            "playerName": "Virat Sharma",
+            "overs": "2.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 5,
+            "runs": 20,
+            "wickets": 3,
+            "economyRate": "10.00"
+          },
+          {
+            "teamId": 8163475,
+            "teamName": "Divino Dominators",
+            "playerId": 969445,
+            "playerName": "Sanjay T",
+            "overs": "3.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 8,
+            "runs": 36,
+            "wickets": 3,
+            "economyRate": "12.00"
+          }
+        ],
+        "notes": [
+          "Match started at 02 Jun, 06:33 AM.",
+          "Kurukshetra Warriors: 53 runs in 4.4 overs, Extras 5",
+          "Kurukshetra Warriors: 100 runs in 8.2 overs, Extras 12",
+          "change wicketkeeper in match",
+          "change wicketkeeper in match",
+          "Kurukshetra Warriors: 152 runs in 12.2 overs, Extras 15",
+          "(JATIN 18 ): 50 off 16 balls (5 X 4, 4 X 6)",
+          "change wicketkeeper in match",
+          "change wicketkeeper in match",
+          "Kurukshetra Warriors: 201 runs in 15.1 overs, Extras 20",
+          "Innings ended at 02 Jun, 07:41 AM",
+          "Innings break: Kurukshetra Warriors - 229/10 in 16.4 overs (Vishal Tomar 0)",
+          "Innings started at 02 Jun, 07:49 AM",
+          "Divino Dominators: 52 runs in 4 overs, Extras 1",
+          "Divino Dominators: 104 runs in 7.3 overs, Extras 6",
+          "6th Wicket: 52 runs in 21 balls (Virat Sharma 29(12), Ashish 22(9), Ex 1)",
+          "Virat Sharma: 50 off 19 balls (7 X 4, 2 X 6)",
+          "Divino Dominators: 151 runs in 10.5 overs, Extras 9",
+          "Divino Dominators: 202 runs in 15 overs, Extras 12",
+          "Virat Sharma: 103 off 37 balls (11 X 4, 7 X 6)",
+          "End of Day: Divino Dominators - 232/7 in 16.5 overs (Love Kush Sharma 2, Virat Sharma 113)",
+          "Match ended at 02 Jun, 08:59 AM.",
+          "4 : milestone: Ashish completed 100 4s..",
+          "7.2 : milestone: Ashish completed 1000 Runs.."
+        ],
+        "playerOfTheMatch": {
+          "player_id": 11536802,
+          "player_name": "Virat Sharma",
+          "team_name": "Divino Dominators",
+          "profile_photo": "https://media.cricheroes.in/user_profile/1687784949654_szSgkw6bSMyS.jpg"
+        },
+        "fetchedAt": "2026-08-13T13:19:55.927Z"
       }
     },
     {
@@ -481,7 +717,7 @@
       "status": "past",
       "state": "past",
       "date": "2026-05-22T15:13:00.000Z",
-      "endDate": "2026-05-22T18:06:52.000Z",
+      "endDate": "2026-05-22T12:36:52.000Z",
       "createdAt": "2026-05-20T12:55:38.000Z",
       "matchType": "Limited Overs",
       "matchCategoryName": "",
@@ -574,6 +810,7 @@
           }
         ]
       },
+      "scorecardUrl": "https://cricheroes.com/scorecard/24878263/individual/the-core-xi-vs-kurukshetra-warriors/summary",
       "toss": "The Core XI won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -581,6 +818,113 @@
         "fielderOfMatch": 5584447,
         "bestBatter": 14689673,
         "bestBowler": 21511769
+      },
+      "scorecard": {
+        "batting": [
+          {
+            "teamId": 12274222,
+            "teamName": "The Core XI",
+            "playerId": 14689673,
+            "playerName": "Rohit Singh",
+            "runs": 75,
+            "balls": 31,
+            "fours": 5,
+            "sixes": 7,
+            "strikeRate": "241.94",
+            "isOut": false
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 42921491,
+            "playerName": "Himanshu Patel",
+            "runs": 46,
+            "balls": 25,
+            "fours": 6,
+            "sixes": 2,
+            "strikeRate": "184.00",
+            "isOut": true
+          },
+          {
+            "teamId": 12274222,
+            "teamName": "The Core XI",
+            "playerId": 13105302,
+            "playerName": "Sourav Singh",
+            "runs": 34,
+            "balls": 21,
+            "fours": 4,
+            "sixes": 2,
+            "strikeRate": "161.90",
+            "isOut": true
+          }
+        ],
+        "bowling": [
+          {
+            "teamId": 12274222,
+            "teamName": "The Core XI",
+            "playerId": 5136766,
+            "playerName": "Aakashdeep Sharma",
+            "overs": "3.0",
+            "balls": 0,
+            "maidens": 1,
+            "dotBalls": 9,
+            "runs": 27,
+            "wickets": 3,
+            "economyRate": "9.00"
+          },
+          {
+            "teamId": 12274222,
+            "teamName": "The Core XI",
+            "playerId": 21511769,
+            "playerName": "Tushar",
+            "overs": "3.4",
+            "balls": 0,
+            "maidens": 1,
+            "dotBalls": 9,
+            "runs": 38,
+            "wickets": 3,
+            "economyRate": "10.36"
+          },
+          {
+            "teamId": 12274222,
+            "teamName": "The Core XI",
+            "playerId": 19020464,
+            "playerName": "Pranjal Maurya ( Jarvis )",
+            "overs": "4.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 11,
+            "runs": 33,
+            "wickets": 2,
+            "economyRate": "8.25"
+          }
+        ],
+        "notes": [
+          "Match started at 22 May, 08:46 PM.",
+          "The Core XI: 50 runs in 4.4 overs, Extras 7",
+          "The Core XI: 103 runs in 7.4 overs, Extras 20",
+          "4th Wicket: 55 runs in 18 balls (Rohit Singh 18(7), Sourav singh 24(11), Ex 13)",
+          "The Core XI: 150 runs in 12 overs, Extras 24",
+          "Rohit Singh: 50 off 23 balls (3 X 4, 5 X 6)",
+          "The Core XI: 200 runs in 17 overs, Extras 26",
+          "Innings Break: The Core XI - 249/8 in 20 overs (Anurag Singh 1)",
+          "Innings Ended at 22 May, 10:21 PM",
+          "Innings Started at 22 May, 10:31 PM",
+          "Kurukshetra Warriors: 50 runs in 7.2 overs, Extras 6",
+          "4th Wicket: 50 runs in 27 balls (Pushpendra Singh 24(17), Himanshu Patel 23(10), Ex 3)",
+          "Kurukshetra Warriors: 101 runs in 10.3 overs, Extras 13",
+          "Kurukshetra Warriors: 150 runs in 15 overs, Extras 14",
+          "End of Day: Kurukshetra Warriors - 162/10 in 16.4 overs (Kunvar prashant 0)",
+          "Match ended at 22 May, 11:36 PM.",
+          "9.3 : Milestone: Deepak Rajput completed 300 6s."
+        ],
+        "playerOfTheMatch": {
+          "player_id": 14689673,
+          "player_name": "Rohit Singh",
+          "team_name": "The Core XI",
+          "profile_photo": "https://media.cricheroes.in/user_profile/1785074652095_FZ4UgTYV827N.jpg"
+        },
+        "fetchedAt": "2026-08-13T13:19:55.919Z"
       }
     },
     {
@@ -588,7 +932,7 @@
       "status": "past",
       "state": "past",
       "date": "2026-04-10T01:43:22.000Z",
-      "endDate": "2026-04-10T03:57:27.000Z",
+      "endDate": "2026-04-09T22:27:27.000Z",
       "createdAt": "2026-04-10T01:34:06.000Z",
       "matchType": "Limited Overs",
       "matchCategoryName": "",
@@ -681,6 +1025,7 @@
           }
         ]
       },
+      "scorecardUrl": "https://cricheroes.com/scorecard/23817201/individual/elite-warriors-11-vs-kurukshetra-warriors/summary",
       "toss": "Elite warriors 11 won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -688,6 +1033,112 @@
         "fielderOfMatch": 0,
         "bestBatter": 42908623,
         "bestBowler": 34183562
+      },
+      "scorecard": {
+        "batting": [
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 42908623,
+            "playerName": "Santino Bathla",
+            "runs": 54,
+            "balls": 35,
+            "fours": 8,
+            "sixes": 2,
+            "strikeRate": "154.29",
+            "isOut": true
+          },
+          {
+            "teamId": 12081810,
+            "teamName": "Elite warriors 11",
+            "playerId": 12896749,
+            "playerName": "Vikas Nagar",
+            "runs": 39,
+            "balls": 23,
+            "fours": 2,
+            "sixes": 2,
+            "strikeRate": "169.57",
+            "isOut": true
+          },
+          {
+            "teamId": 12081810,
+            "teamName": "Elite warriors 11",
+            "playerId": 7721275,
+            "playerName": "Ravi Nagar",
+            "runs": 30,
+            "balls": 23,
+            "fours": 6,
+            "sixes": 0,
+            "strikeRate": "130.43",
+            "isOut": true
+          }
+        ],
+        "bowling": [
+          {
+            "teamId": 12081810,
+            "teamName": "Elite warriors 11",
+            "playerId": 6197041,
+            "playerName": "Vikas Pi",
+            "overs": "4.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 9,
+            "runs": 25,
+            "wickets": 3,
+            "economyRate": "6.25"
+          },
+          {
+            "teamId": 12081810,
+            "teamName": "Elite warriors 11",
+            "playerId": 6196401,
+            "playerName": "Nikhil Saini",
+            "overs": "4.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 11,
+            "runs": 30,
+            "wickets": 3,
+            "economyRate": "7.50"
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 34183562,
+            "playerName": "Rohit Saini",
+            "overs": "4.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 10,
+            "runs": 43,
+            "wickets": 3,
+            "economyRate": "10.75"
+          }
+        ],
+        "notes": [
+          "Match started at 10 Apr, 07:13 AM.",
+          "Elite warriors 11: 50 runs in 4.2 overs, Extras 2",
+          "4th Wicket: 53 runs in 32 balls (Vikas Nagar 30(15), Ravi Nagar 21(17), Ex 2)",
+          "Elite warriors 11: 100 runs in 9.2 overs, Extras 5",
+          "Elite warriors 11: 150 runs in 15.1 overs, Extras 12",
+          "Innings Break: Elite warriors 11 - 164/9 in 18 overs (Sumit Jaat 2, Navin 0)",
+          "Innings Ended at 10 Apr, 08:16 AM",
+          "Innings started at 10 Apr, 08:24 AM",
+          "Kurukshetra Warriors: 54 runs in 6.1 overs, Extras 7",
+          "5th Wicket: 52 runs in 32 balls (Pushpendra Singh 22(13), Santino Bathla 26(19), Ex 4)",
+          "Kurukshetra Warriors: 102 runs in 10.5 overs, Extras 13",
+          "Santino Bathla: 50 off 31 balls (7 X 4, 2 X 6)",
+          "End of Day: Kurukshetra Warriors - 145/10 in 16.5 overs (Pranay 12)",
+          "Match ended at 10 Apr, 09:27 AM.",
+          "2.4 : Milestone: Rohit Saini completed 100 Wickets.",
+          "Change scorer : Nikhil Saini to Ankit Kulshreshtha at 0/0 (0.0)."
+        ],
+        "playerOfTheMatch": {
+          "player_id": 6197041,
+          "player_name": "Vikas Pi",
+          "team_name": "Elite warriors 11",
+          "profile_photo": "https://media.cricheroes.in/user_profile/1773544035326_v9xB0L1bH0xj.jpg"
+        },
+        "fetchedAt": "2026-08-13T13:19:55.921Z"
       }
     },
     {
@@ -695,7 +1146,7 @@
       "status": "past",
       "state": "past",
       "date": "2026-04-01T01:46:12.000Z",
-      "endDate": "2026-04-01T04:11:43.000Z",
+      "endDate": "2026-03-31T22:41:43.000Z",
       "createdAt": "2026-03-30T09:09:12.000Z",
       "matchType": "Limited Overs",
       "matchCategoryName": "",
@@ -788,6 +1239,7 @@
           }
         ]
       },
+      "scorecardUrl": "https://cricheroes.com/scorecard/23554204/individual/kurukshetra-warriors-vs-star-sport-cricket-club/summary",
       "toss": "Star Sport Cricket Club won the toss and elected to field",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -795,6 +1247,119 @@
         "fielderOfMatch": 0,
         "bestBatter": 7993637,
         "bestBowler": 28685755
+      },
+      "scorecard": {
+        "batting": [
+          {
+            "teamId": 2899173,
+            "teamName": "Star Sport Cricket Club",
+            "playerId": 7993637,
+            "playerName": "Anjani Tiwari 33",
+            "runs": 121,
+            "balls": 42,
+            "fours": 8,
+            "sixes": 13,
+            "strikeRate": "288.10",
+            "isOut": false
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 28790413,
+            "playerName": "Praveen Pratapgarh",
+            "runs": 75,
+            "balls": 23,
+            "fours": 7,
+            "sixes": 7,
+            "strikeRate": "326.09",
+            "isOut": true
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 25455261,
+            "playerName": "Deepak Rajput",
+            "runs": 44,
+            "balls": 18,
+            "fours": 3,
+            "sixes": 5,
+            "strikeRate": "244.44",
+            "isOut": true
+          }
+        ],
+        "bowling": [
+          {
+            "teamId": 2899173,
+            "teamName": "Star Sport Cricket Club",
+            "playerId": 28685755,
+            "playerName": "Ravi Gupta",
+            "overs": "3.3",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 14,
+            "runs": 11,
+            "wickets": 3,
+            "economyRate": "3.14"
+          },
+          {
+            "teamId": 2899173,
+            "teamName": "Star Sport Cricket Club",
+            "playerId": 24932453,
+            "playerName": "Satyam Sharma",
+            "overs": "4.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 6,
+            "runs": 34,
+            "wickets": 2,
+            "economyRate": "8.50"
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 6818401,
+            "playerName": "Kunvar prashant",
+            "overs": "3.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 6,
+            "runs": 28,
+            "wickets": 2,
+            "economyRate": "9.33"
+          }
+        ],
+        "notes": [
+          "Match started at 01 Apr, 07:16 AM.",
+          "Kurukshetra Warriors: 51 runs in 3.2 overs, Extras 3",
+          "3rd Wicket: 50 runs in 18 balls (Abhinav S 3(5), Praveen Pratapgarh 46(13), Ex 1)",
+          "Praveen Pratapgarh: 52 off 14 balls (5 X 4, 5 X 6)",
+          "Kurukshetra Warriors: 104 runs in 7 overs, Extras 5",
+          "Kurukshetra Warriors: 153 runs in 11.5 overs, Extras 7",
+          "Innings ended at 01 Apr, 08:34 AM",
+          "Innings Break: Kurukshetra Warriors - 195/10 in 18.3 overs (Rx 100 2)",
+          "Innings Started at 01 Apr, 08:36 AM",
+          "Star Sport Cricket Club: 51 runs in 5.1 overs, Extras 3",
+          "4th Wicket: 50 runs in 21 balls (Bunty 19(7), Anjani Tiwari _33 30(14), Ex 1)",
+          "Anjani Tiwari _33: 54 off 20 balls (5 X 4, 5 X 6)",
+          "Star Sport Cricket Club: 102 runs in 8 overs, Extras 4",
+          "4th Wicket: 101 runs in 36 balls (Bunty 29(12), Anjani Tiwari _33 71(24), Ex 1)",
+          "Star Sport Cricket Club: 152 runs in 11.1 overs, Extras 5",
+          "Anjani Tiwari _33: 100 off 32 balls (8 X 4, 10 X 6)",
+          "6th Wicket: 51 runs in 26 balls (Ravi Tonger 8(11), Anjani Tiwari _33 42(15), Ex 1)",
+          "Star Sport Cricket Club: 200 runs in 15.1 overs, Extras 8",
+          "End of Day: Star Sport Cricket Club - 200/6 in 15.1 overs (Satyam Sharma 0, Aditya Mishra ISE 12)",
+          "Match ended at 01 Apr, 09:41 AM.",
+          "Change scorer : CA Arvind Sharma to Deepak Rajput at 43/2 (2.3).",
+          "Change Scorer : Deepak Rajput to Naveen Bhardwaj at 0/0 (0.0).",
+          "Change scorer : Naveen Bhardwaj to Bunty at 0/0 (0.0)."
+        ],
+        "playerOfTheMatch": {
+          "player_id": 7993637,
+          "player_name": "Anjani Tiwari 33",
+          "team_name": "Star Sport Cricket Club",
+          "profile_photo": "https://media.cricheroes.in/user_profile/1739941237181_CzO1wbdb0sD8.jpeg"
+        },
+        "fetchedAt": "2026-08-13T13:19:55.920Z"
       }
     },
     {
@@ -802,7 +1367,7 @@
       "status": "past",
       "state": "past",
       "date": "2026-03-25T01:26:01.000Z",
-      "endDate": "2026-03-25T04:07:53.000Z",
+      "endDate": "2026-03-24T22:37:53.000Z",
       "createdAt": "2026-03-24T07:31:38.000Z",
       "matchType": "Limited Overs",
       "matchCategoryName": "",
@@ -895,6 +1460,7 @@
           }
         ]
       },
+      "scorecardUrl": "https://cricheroes.com/scorecard/23378722/individual/kurukshetra-warriors-vs-ace-power-xi/summary",
       "toss": "Ace Power XI won the toss and elected to field",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -902,6 +1468,116 @@
         "fielderOfMatch": 0,
         "bestBatter": 42405943,
         "bestBowler": 42429999
+      },
+      "scorecard": {
+        "batting": [
+          {
+            "teamId": 11199619,
+            "teamName": "Ace Power XI",
+            "playerId": 42405943,
+            "playerName": "Dhurandhar",
+            "runs": 86,
+            "balls": 36,
+            "fours": 7,
+            "sixes": 7,
+            "strikeRate": "238.89",
+            "isOut": true
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 45765702,
+            "playerName": "Amit Kumar",
+            "runs": 70,
+            "balls": 32,
+            "fours": 6,
+            "sixes": 4,
+            "strikeRate": "218.75",
+            "isOut": false
+          },
+          {
+            "teamId": 11199619,
+            "teamName": "Ace Power XI",
+            "playerId": 42459745,
+            "playerName": "Pawan Singh Rajpoot",
+            "runs": 39,
+            "balls": 21,
+            "fours": 7,
+            "sixes": 1,
+            "strikeRate": "185.71",
+            "isOut": true
+          }
+        ],
+        "bowling": [
+          {
+            "teamId": 11199619,
+            "teamName": "Ace Power XI",
+            "playerId": 42429999,
+            "playerName": "Mohit Upadhyay",
+            "overs": "4.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 11,
+            "runs": 26,
+            "wickets": 3,
+            "economyRate": "6.50"
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 1319201,
+            "playerName": "Vijay Kandwal",
+            "overs": "4.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 10,
+            "runs": 30,
+            "wickets": 2,
+            "economyRate": "7.50"
+          },
+          {
+            "teamId": 11199619,
+            "teamName": "Ace Power XI",
+            "playerId": 42405943,
+            "playerName": "Dhurandhar",
+            "overs": "3.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 5,
+            "runs": 37,
+            "wickets": 2,
+            "economyRate": "12.33"
+          }
+        ],
+        "notes": [
+          "Match started at 25 Mar, 06:57 AM.",
+          "Kurukshetra Warriors: 51 runs in 3.1 overs, Extras 7",
+          "Kurukshetra Warriors: 103 runs in 8 overs, Extras 14",
+          "Amit Kumar: 52 off 23 balls (4 X 4, 3 X 6)",
+          "5th Wicket: 51 runs in 19 balls (Himanshu Patel 4(3), Amit Kumar 44(16), Ex 3)",
+          "Kurukshetra Warriors: 150 runs in 11.3 overs, Extras 19",
+          "Kurukshetra Warriors: 200 runs in 16.5 overs, Extras 22",
+          "Innings Break: Kurukshetra Warriors - 233/7 in 20 overs (Deepak Rajput 16, Ankit Kulshreshtha 9)",
+          "Innings Ended at 25 Mar, 08:23 AM",
+          "Innings Started at 25 Mar, 08:25 AM",
+          "Ace Power XI: 51 runs in 3.5 overs, Extras 5",
+          "1st Wicket: 51 runs in 24 balls (Dhurandhar 17(9), Pawan Singh Rajpoot 29(15), Ex 5)",
+          "Ace Power XI: 103 runs in 8.2 overs, Extras 8",
+          "Dhurandhar: 51 off 23 balls (5 X 4, 3 X 6)",
+          "2nd Wicket: 54 runs in 27 balls (Dhurandhar 33(16), mohit upadhyay 19(11), Ex 2)",
+          "Ace Power XI: 153 runs in 11.3 overs, Extras 9",
+          "Ace Power XI: 203 runs in 16.3 overs, Extras 12",
+          "End of Day: Ace Power XI - 234/5 in 19.4 overs (Dev Kumar 34, Adamya Aggarwal 13)",
+          "Match ended at 25 Mar, 09:37 AM.",
+          "14.5 : Milestone: Vijay Kandwal completed 100 Wickets."
+        ],
+        "playerOfTheMatch": {
+          "player_id": 42405943,
+          "player_name": "Dhurandhar",
+          "team_name": "Ace Power XI",
+          "profile_photo": "https://media.cricheroes.in/user_profile/1766474912441_pNhO2hnwETz2.jpeg"
+        },
+        "fetchedAt": "2026-08-13T13:19:55.920Z"
       }
     },
     {
@@ -909,7 +1585,7 @@
       "status": "past",
       "state": "past",
       "date": "2026-03-18T01:29:13.000Z",
-      "endDate": "2026-03-18T03:34:58.000Z",
+      "endDate": "2026-03-17T22:04:58.000Z",
       "createdAt": "2026-03-15T04:41:11.000Z",
       "matchType": "Limited Overs",
       "matchCategoryName": "",
@@ -1002,6 +1678,7 @@
           }
         ]
       },
+      "scorecardUrl": "https://cricheroes.com/scorecard/23143469/individual/gully-cricket-club-gcc-vs-kurukshetra-warriors/summary",
       "toss": "Gully Cricket Club (GCC) won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -1009,6 +1686,135 @@
         "fielderOfMatch": 0,
         "bestBatter": 28790413,
         "bestBowler": 7367912
+      },
+      "scorecard": {
+        "batting": [
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 28790413,
+            "playerName": "Praveen Pratapgarh",
+            "runs": 120,
+            "balls": 27,
+            "fours": 4,
+            "sixes": 17,
+            "strikeRate": "444.44",
+            "isOut": false
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 8770695,
+            "playerName": "Aman 1111",
+            "runs": 75,
+            "balls": 32,
+            "fours": 7,
+            "sixes": 7,
+            "strikeRate": "234.38",
+            "isOut": false
+          },
+          {
+            "teamId": 10577831,
+            "teamName": "Gully Cricket Club (GCC)",
+            "playerId": 23065756,
+            "playerName": "Aniket Kumar Dubey",
+            "runs": 50,
+            "balls": 26,
+            "fours": 6,
+            "sixes": 2,
+            "strikeRate": "192.31",
+            "isOut": true
+          }
+        ],
+        "bowling": [
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 7367912,
+            "playerName": "Sagar",
+            "overs": "4.0",
+            "balls": 24,
+            "maidens": 0,
+            "dotBalls": 8,
+            "runs": 46,
+            "wickets": 3,
+            "economyRate": "11.50"
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 5584447,
+            "playerName": "Pushpendra Singh",
+            "overs": "4.0",
+            "balls": 24,
+            "maidens": 0,
+            "dotBalls": 6,
+            "runs": 55,
+            "wickets": 2,
+            "economyRate": "13.75"
+          },
+          {
+            "teamId": 10577831,
+            "teamName": "Gully Cricket Club (GCC)",
+            "playerId": 31906058,
+            "playerName": "Ranvir",
+            "overs": "3.0",
+            "balls": 18,
+            "maidens": 0,
+            "dotBalls": 8,
+            "runs": 44,
+            "wickets": 2,
+            "economyRate": "14.67"
+          }
+        ],
+        "notes": [
+          "Match started at 18 Mar, 06:59 AM.",
+          "Gully Cricket Club (GCC): 53 runs in 3.1 overs, Extras 7",
+          "Gully Cricket Club (GCC): 101 runs in 8.1 overs, Extras 9",
+          "5th Wicket: 50 runs in 29 balls (Aniket Kumar Dubey 6(7), Arpit Singh 42(22), Ex 2)",
+          "Gully Cricket Club (GCC): 153 runs in 12.5 overs, Extras 11",
+          "Gully Cricket Club (GCC): 200 runs in 15 overs, Extras 13",
+          "Gully Cricket Club (GCC): 251 runs in 18.1 overs, Extras 16",
+          "Aniket Kumar Dubey: 50 off 25 balls (6 X 4, 2 X 6)",
+          "Innings ended at 18 Mar, 08:13 AM",
+          "Innings Break: Gully Cricket Club (GCC) - 266/10 in 19.2 overs (( JATIN ) ( 18 ). 36)",
+          "Innings started at 18 Mar, 08:15 AM",
+          "Kurukshetra Warriors: 50 runs in 4.1 overs, Extras 1",
+          "3rd Wicket: 50 runs in 20 balls (Praveen Pratapgarh 23(5), Aman 1111 25(15), Ex 2)",
+          "Praveen Pratapgarh: 51 off 10 balls (2 X 4, 7 X 6)",
+          "Kurukshetra Warriors: 101 runs in 5.5 overs, Extras 3",
+          "3rd Wicket: 100 runs in 30 balls (Praveen Pratapgarh 61(12), Aman 1111 36(18), Ex 3)",
+          "Kurukshetra Warriors: 150 runs in 8.1 overs, Extras 3",
+          "Praveen Pratapgarh: 104 off 21 balls (3 X 4, 15 X 6)",
+          "3rd Wicket: 155 runs in 45 balls (Praveen Pratapgarh 104(21), Aman 1111 48(24), Ex 3)",
+          "Aman 1111: 55 off 27 balls (5 X 4, 5 X 6)",
+          "Kurukshetra Warriors: 203 runs in 10.1 overs, Extras 4",
+          "Kurukshetra Warriors: 252 runs in 12.3 overs, Extras 6",
+          "End of Day: Kurukshetra Warriors - 269/3 in 14.3 overs (Sagar 2, Sunny Bansal 14)",
+          "Match ended at 18 Mar, 09:04 AM.",
+          "Overall : Bowler changed to Pushpendra Singh from Pranay.",
+          "Overall : Pranay is removed from the playing squad..",
+          "Match : Pushpendra Singh has been added to the playing squad..",
+          "Ball 19.2 : Fielder changed to Pushpendra Singh from Kunvar prashant.",
+          "Ball 16.2 : Fielder changed to Pushpendra Singh from Pranay.",
+          "Ball 1.4 : Dev's wicket is changed to Caught out from Caught behind.",
+          "Over 1 : Bowler changed to Ranvir from Saket.",
+          "Over 9 : Bowler changed to Rathitube Khalnayak from Saket.",
+          "Match : Rathitube Khalnayak has been added to the playing squad..",
+          "Over 6 : Bowler changed to Rathitube Khalnayak from Ranvir.",
+          "Over 5 : Bowler changed to Rathitube Khalnayak from Aniket Kumar Dubey.",
+          "Over 6 : Bowler changed to Ranvir from Rathitube Khalnayak.",
+          "Change Scorer : Saket to Deepak Rajput at 0/0 (0).",
+          "10 : milestone: Deepak Rajput completed 300 4s..",
+          "10.3 : milestone: Vijay Kandwal completed 4000 Runs.."
+        ],
+        "playerOfTheMatch": {
+          "player_id": 28790413,
+          "player_name": "Praveen Pratapgarh",
+          "team_name": "Kurukshetra Warriors",
+          "profile_photo": "https://media.cricheroes.in/user_profile/1780864997429_9o5IzA0i3jGm.jpg"
+        },
+        "fetchedAt": "2026-08-13T13:19:55.921Z"
       }
     },
     {
@@ -1016,7 +1822,7 @@
       "status": "past",
       "state": "past",
       "date": "2026-03-14T01:50:46.000Z",
-      "endDate": "2026-03-14T04:31:31.000Z",
+      "endDate": "2026-03-13T23:01:31.000Z",
       "createdAt": "2026-03-13T05:51:49.000Z",
       "matchType": "Limited Overs",
       "matchCategoryName": "",
@@ -1109,6 +1915,7 @@
           }
         ]
       },
+      "scorecardUrl": "https://cricheroes.com/scorecard/23084704/individual/kurukshetra-warriors-vs-strikers-11/summary",
       "toss": "Kurukshetra Warriors won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -1116,6 +1923,115 @@
         "fielderOfMatch": 0,
         "bestBatter": 45765702,
         "bestBowler": 34183562
+      },
+      "scorecard": {
+        "batting": [
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 45765702,
+            "playerName": "Amit Kumar",
+            "runs": 69,
+            "balls": 44,
+            "fours": 7,
+            "sixes": 3,
+            "strikeRate": "156.82",
+            "isOut": true
+          },
+          {
+            "teamId": 12604411,
+            "teamName": "Strikers 11",
+            "playerId": 4530389,
+            "playerName": "Nandan Mishra",
+            "runs": 62,
+            "balls": 31,
+            "fours": 9,
+            "sixes": 2,
+            "strikeRate": "200.00",
+            "isOut": true
+          },
+          {
+            "teamId": 12604411,
+            "teamName": "Strikers 11",
+            "playerId": 48177039,
+            "playerName": "Neeraj Jha",
+            "runs": 37,
+            "balls": 32,
+            "fours": 3,
+            "sixes": 1,
+            "strikeRate": "115.62",
+            "isOut": true
+          }
+        ],
+        "bowling": [
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 34183562,
+            "playerName": "Rohit Saini",
+            "overs": "4.0",
+            "balls": 24,
+            "maidens": 0,
+            "dotBalls": 9,
+            "runs": 29,
+            "wickets": 3,
+            "economyRate": "7.25"
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 29139731,
+            "playerName": "Ankit Kulshreshtha",
+            "overs": "4.0",
+            "balls": 24,
+            "maidens": 0,
+            "dotBalls": 12,
+            "runs": 33,
+            "wickets": 3,
+            "economyRate": "8.25"
+          },
+          {
+            "teamId": 12604411,
+            "teamName": "Strikers 11",
+            "playerId": 45687702,
+            "playerName": "Himansu Kumar Pathak",
+            "overs": "4.0",
+            "balls": 24,
+            "maidens": 0,
+            "dotBalls": 12,
+            "runs": 16,
+            "wickets": 2,
+            "economyRate": "4.00"
+          }
+        ],
+        "notes": [
+          "Match started at 14 Mar, 07:20 AM.",
+          "Kurukshetra Warriors: 52 runs in 5 overs, Extras 4",
+          "2nd Wicket: 52 runs in 28 balls (Amit Kumar 15(13), CA Arvind Sharma 33(15), Ex 4)",
+          "Kurukshetra Warriors: 101 runs in 9.3 overs, Extras 8",
+          "Amit Kumar: 53 off 32 balls (6 X 4, 2 X 6)",
+          "3rd Wicket: 50 runs in 29 balls (Amit Kumar 40(21), Mohit Saini 8(8), Ex 2)",
+          "Kurukshetra Warriors: 150 runs in 14.4 overs, Extras 15",
+          "Innings ended at 14 Mar, 08:40 AM",
+          "Innings Break: Kurukshetra Warriors - 181/7 in 20 overs (Ankit Kulshreshtha 18)",
+          "Innings Started at 14 Mar, 08:44 AM",
+          "Strikers 11: 53 runs in 4.5 overs, Extras 7",
+          "3rd Wicket: 52 runs in 27 balls (Nandan Mishra 28(11), Neeraj jha 17(16), Ex 7)",
+          "Nandan Mishra: 52 off 20 balls (8 X 4, 2 X 6)",
+          "Strikers 11: 101 runs in 9.2 overs, Extras 9",
+          "Strikers 11: 152 runs in 14.5 overs, Extras 12",
+          "End of Day: Strikers 11 - 185/7 in 17.5 overs (Gyaneshwar Pal 12, Manish Mishra 36)",
+          "Match ended at 14 Mar, 10:01 AM.",
+          "Overall : Batter changed to Rx 100 from Deepak Rajput.",
+          "Change Scorer : Ankit Kulshreshtha to Nikhil Maheve at 0/0 (0)."
+        ],
+        "playerOfTheMatch": {
+          "player_id": 4530389,
+          "player_name": "Nandan Mishra",
+          "team_name": "Strikers 11",
+          "profile_photo": "https://media.cricheroes.in/user_profile/1702188258750_HHC7JkgE9XC4.jpg"
+        },
+        "fetchedAt": "2026-08-13T13:19:55.918Z"
       }
     },
     {
@@ -1123,7 +2039,7 @@
       "status": "past",
       "state": "past",
       "date": "2026-03-11T01:43:51.000Z",
-      "endDate": "2026-03-11T04:17:37.000Z",
+      "endDate": "2026-03-10T22:47:37.000Z",
       "createdAt": "2026-03-11T01:43:03.000Z",
       "matchType": "Limited Overs",
       "matchCategoryName": "",
@@ -1216,6 +2132,7 @@
           }
         ]
       },
+      "scorecardUrl": "https://cricheroes.com/scorecard/23046803/individual/kurukshetra-warriors-vs-techie-cricket-club/summary",
       "toss": "Kurukshetra Warriors won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -1223,6 +2140,129 @@
         "fielderOfMatch": 0,
         "bestBatter": 10287744,
         "bestBowler": 145048
+      },
+      "scorecard": {
+        "batting": [
+          {
+            "teamId": 7838698,
+            "teamName": "Techie Cricket Club",
+            "playerId": 10287744,
+            "playerName": "Golu 44",
+            "runs": 118,
+            "balls": 31,
+            "fours": 7,
+            "sixes": 13,
+            "strikeRate": "380.65",
+            "isOut": false
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 6818401,
+            "playerName": "Kunvar prashant",
+            "runs": 61,
+            "balls": 32,
+            "fours": 6,
+            "sixes": 4,
+            "strikeRate": "190.62",
+            "isOut": true
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 28790413,
+            "playerName": "Praveen Pratapgarh",
+            "runs": 57,
+            "balls": 19,
+            "fours": 3,
+            "sixes": 7,
+            "strikeRate": "300.00",
+            "isOut": true
+          }
+        ],
+        "bowling": [
+          {
+            "teamId": 7838698,
+            "teamName": "Techie Cricket Club",
+            "playerId": 10287744,
+            "playerName": "Golu 44",
+            "overs": "4.0",
+            "balls": 24,
+            "maidens": 0,
+            "dotBalls": 7,
+            "runs": 46,
+            "wickets": 2,
+            "economyRate": "11.50"
+          },
+          {
+            "teamId": 7838698,
+            "teamName": "Techie Cricket Club",
+            "playerId": 145048,
+            "playerName": "Anurodh Srivastava",
+            "overs": "3.0",
+            "balls": 18,
+            "maidens": 0,
+            "dotBalls": 8,
+            "runs": 44,
+            "wickets": 2,
+            "economyRate": "14.67"
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 23240150,
+            "playerName": "Yogendra Singh",
+            "overs": "1.0",
+            "balls": 6,
+            "maidens": 0,
+            "dotBalls": 4,
+            "runs": 5,
+            "wickets": 1,
+            "economyRate": "5.00"
+          }
+        ],
+        "notes": [
+          "Match started at 11 Mar, 07:13 AM.",
+          "Kurukshetra Warriors: 51 runs in 4 overs, Extras 4",
+          "Kurukshetra Warriors: 104 runs in 7.5 overs, Extras 5",
+          "6th Wicket: 50 runs in 15 balls (Kunvar prashant 2(2), Praveen Pratapgarh 46(13), Ex 2)",
+          "Praveen Pratapgarh: 50 off 14 balls (3 X 4, 6 X 6)",
+          "Kurukshetra Warriors: 153 runs in 11 overs, Extras 8",
+          "Kurukshetra Warriors: 200 runs in 15 overs, Extras 8",
+          "7th Wicket: 50 runs in 25 balls (CA Arvind Sharma 24(12), Kunvar prashant 26(13), Ex 0)",
+          "Kunvar prashant: 50 off 26 balls (5 X 4, 3 X 6)",
+          "Kurukshetra Warriors: 251 runs in 18.5 overs, Extras 12",
+          "Innings ended at 11 Mar, 08:30 AM",
+          "Innings Break: Kurukshetra Warriors - 277/8 in 20 overs (Kamal 1, CA Arvind Sharma 39)",
+          "Innings Started at 11 Mar, 08:37 AM",
+          "Techie Cricket Club: 51 runs in 2.3 overs, Extras 2",
+          "1st Wicket: 51 runs in 15 balls (( JATIN ) ( 18 ). 27(9), Akash Singh 22(6), Ex 2)",
+          "Techie Cricket Club: 103 runs in 9.5 overs, Extras 4",
+          "Techie Cricket Club: 151 runs in 12.4 overs, Extras 5",
+          "5th Wicket: 52 runs in 13 balls (Golu 44 45(11), Abhisekh singh 5(2), Ex 2)",
+          "Golu 44: 51 off 12 balls (6 X 4, 4 X 6)",
+          "Techie Cricket Club: 203 runs in 15.1 overs, Extras 8",
+          "Techie Cricket Club: 252 runs in 17.5 overs, Extras 11",
+          "Golu 44: 105 off 28 balls (7 X 4, 11 X 6)",
+          "6th Wicket: 52 runs in 14 balls (Golu 44 41(10), Sanjeet Nagar 9(4), Ex 2)",
+          "End of Day: Techie Cricket Club - 279/5 in 19 overs (Golu 44 118, Sanjeet Nagar 16)",
+          "Match ended at 11 Mar, 09:47 AM.",
+          "Over 19 : Bowler changed to Rx 100 from Deepak Rajput.",
+          "Match : Rx 100 has been added to the playing squad..",
+          "Overall : Bowler changed to Rx 100 from Sabal Vashishth.",
+          "Overall : Batter changed to Rx 100 from Sabal Vashishth.",
+          "Over 4 : Bowler changed to Sabal Vashishth from Kunvar prashant.",
+          "Over 15 : Bowler changed to Sabal Vashishth from Ankit Kulshreshtha.",
+          "Change Scorer : Ankit Kulshreshtha to Gaurav Chourasia at 0/0 (0).",
+          "16.5 : Milestone: Sanjeet Nagar completed 1000 Runs."
+        ],
+        "playerOfTheMatch": {
+          "player_id": 10287744,
+          "player_name": "Golu 44",
+          "team_name": "Techie Cricket Club",
+          "profile_photo": "https://media.cricheroes.in/user_profile/1760877797272_m81RhgfV9piB.jpg"
+        },
+        "fetchedAt": "2026-08-13T13:19:55.926Z"
       }
     },
     {
@@ -1230,7 +2270,7 @@
       "status": "past",
       "state": "past",
       "date": "2026-03-07T03:07:52.000Z",
-      "endDate": "2026-03-07T04:22:30.000Z",
+      "endDate": "2026-03-06T22:52:30.000Z",
       "createdAt": "2026-03-07T03:07:32.000Z",
       "matchType": "Limited Overs",
       "matchCategoryName": "",
@@ -1323,6 +2363,7 @@
           }
         ]
       },
+      "scorecardUrl": "https://cricheroes.com/scorecard/22937264/individual/mighty-heroes-vs-kurukshetra-warriors/summary",
       "toss": "MIGHTY HEROES won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -1330,6 +2371,110 @@
         "fielderOfMatch": 0,
         "bestBatter": 1257282,
         "bestBowler": 25455261
+      },
+      "scorecard": {
+        "batting": [
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 1257282,
+            "playerName": "Sunny Bansal",
+            "runs": 73,
+            "balls": 29,
+            "fours": 3,
+            "sixes": 7,
+            "strikeRate": "251.72",
+            "isOut": false
+          },
+          {
+            "teamId": 385484,
+            "teamName": "MIGHTY HEROES",
+            "playerId": 2187763,
+            "playerName": "Pradeep Yadav",
+            "runs": 67,
+            "balls": 25,
+            "fours": 9,
+            "sixes": 4,
+            "strikeRate": "268.00",
+            "isOut": false
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 25455261,
+            "playerName": "Deepak Rajput",
+            "runs": 32,
+            "balls": 15,
+            "fours": 6,
+            "sixes": 1,
+            "strikeRate": "213.33",
+            "isOut": true
+          }
+        ],
+        "bowling": [
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 25455261,
+            "playerName": "Deepak Rajput",
+            "overs": "2.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 4,
+            "runs": 19,
+            "wickets": 1,
+            "economyRate": "9.50"
+          },
+          {
+            "teamId": 385484,
+            "teamName": "MIGHTY HEROES",
+            "playerId": 2050141,
+            "playerName": "Deepak",
+            "overs": "2.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 3,
+            "runs": 22,
+            "wickets": 1,
+            "economyRate": "11.00"
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 43867977,
+            "playerName": "Nitesh Danu",
+            "overs": "2.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 3,
+            "runs": 25,
+            "wickets": 1,
+            "economyRate": "12.50"
+          }
+        ],
+        "notes": [
+          "Match started at 07 Mar, 08:37 AM.",
+          "MIGHTY HEROES: 50 runs in 4.1 overs, Extras 2",
+          "Pradeep Yadav: 51 off 18 balls (5 X 4, 4 X 6)",
+          "MIGHTY HEROES: 103 runs in 7.2 overs, Extras 5",
+          "Innings ended at 07 Mar, 09:12 AM",
+          "Innings Break: MIGHTY HEROES - 146/3 in 10 overs (Vivek Bhojak 12, Whistlepodu (Vishal) 21)",
+          "Innings started at 07 Mar, 09:16 AM",
+          "Kurukshetra Warriors: 54 runs in 2.3 overs, Extras 5",
+          "1st Wicket: 54 runs in 17 balls (Deepak Rajput 28(12), Sunny Bansal 21(5), Ex 5)",
+          "Kurukshetra Warriors: 101 runs in 6.1 overs, Extras 13",
+          "2nd Wicket: 53 runs in 24 balls (Abhinav S 21(11), Sunny Bansal 21(13), Ex 11)",
+          "Sunny Bansal: 50 off 21 balls (2 X 4, 5 X 6)",
+          "End of Day: Kurukshetra Warriors - 149/1 in 9.3 overs (Abhinav S 27, Sunny Bansal 73)",
+          "Match ended at 07 Mar, 09:52 AM."
+        ],
+        "playerOfTheMatch": {
+          "player_id": 1257282,
+          "player_name": "Sunny Bansal",
+          "team_name": "Kurukshetra Warriors",
+          "profile_photo": "https://media.cricheroes.in/user_profile/1768059656318_FcDWz8vhJEUM.jpeg"
+        },
+        "fetchedAt": "2026-08-13T13:19:55.928Z"
       }
     },
     {
@@ -1337,7 +2482,7 @@
       "status": "past",
       "state": "past",
       "date": "2026-03-07T01:37:27.000Z",
-      "endDate": "2026-03-07T03:03:01.000Z",
+      "endDate": "2026-03-06T21:33:01.000Z",
       "createdAt": "2026-03-03T06:09:46.000Z",
       "matchType": "Limited Overs",
       "matchCategoryName": "",
@@ -1430,6 +2575,7 @@
           }
         ]
       },
+      "scorecardUrl": "https://cricheroes.com/scorecard/22865500/individual/kurukshetra-warriors-vs-mighty-heroes/summary",
       "toss": "Kurukshetra Warriors won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -1437,6 +2583,108 @@
         "fielderOfMatch": 0,
         "bestBatter": 3780112,
         "bestBowler": 2798901
+      },
+      "scorecard": {
+        "batting": [
+          {
+            "teamId": 385484,
+            "teamName": "MIGHTY HEROES",
+            "playerId": 3780112,
+            "playerName": "Anshuman Samaiyar",
+            "runs": 50,
+            "balls": 33,
+            "fours": 9,
+            "sixes": 1,
+            "strikeRate": "151.52",
+            "isOut": false
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 42908623,
+            "playerName": "Santino Bathla",
+            "runs": 46,
+            "balls": 31,
+            "fours": 5,
+            "sixes": 3,
+            "strikeRate": "148.39",
+            "isOut": false
+          },
+          {
+            "teamId": 385484,
+            "teamName": "MIGHTY HEROES",
+            "playerId": 19987162,
+            "playerName": "Vikash Kumar",
+            "runs": 37,
+            "balls": 19,
+            "fours": 6,
+            "sixes": 1,
+            "strikeRate": "194.74",
+            "isOut": false
+          }
+        ],
+        "bowling": [
+          {
+            "teamId": 385484,
+            "teamName": "MIGHTY HEROES",
+            "playerId": 2798901,
+            "playerName": "Bhupendra Singh",
+            "overs": "4.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 15,
+            "runs": 23,
+            "wickets": 4,
+            "economyRate": "5.75"
+          },
+          {
+            "teamId": 385484,
+            "teamName": "MIGHTY HEROES",
+            "playerId": 2187763,
+            "playerName": "Pradeep Yadav",
+            "overs": "0.2",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 2,
+            "runs": 0,
+            "wickets": 1,
+            "economyRate": "0.00"
+          },
+          {
+            "teamId": 385484,
+            "teamName": "MIGHTY HEROES",
+            "playerId": 19987162,
+            "playerName": "Vikash Kumar",
+            "overs": "1.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 3,
+            "runs": 4,
+            "wickets": 1,
+            "economyRate": "4.00"
+          }
+        ],
+        "notes": [
+          "Match started at 07 Mar, 07:07 AM.",
+          "Kurukshetra Warriors: 51 runs in 6.2 overs, Extras 8",
+          "Innings ended at 07 Mar, 07:54 AM",
+          "Innings Break: Kurukshetra Warriors - 99/10 in 12.2 overs (Santino Bathla 46)",
+          "Innings started at 07 Mar, 08:02 AM",
+          "MIGHTY HEROES: 53 runs in 4.4 overs, Extras 5",
+          "1st Wicket: 53 runs in 28 balls (Anshuman Samaiyar 27(15), vikash kumar 21(13), Ex 5)",
+          "Anshuman Samaiyar: 50 off 33 balls (9 X 4, 1 X 6)",
+          "MIGHTY HEROES: 105 runs in 10.5 overs, Extras 6",
+          "End of Day: MIGHTY HEROES - 105/2 in 10.5 overs (Whistlepodu (Vishal) 6, Anshuman Samaiyar 50)",
+          "Match ended at 07 Mar, 08:33 AM.",
+          "Change Scorer : Ankit Kulshreshtha to Whistlepodu (Vishal) at 0/0 (0)."
+        ],
+        "playerOfTheMatch": {
+          "player_id": 2798901,
+          "player_name": "Bhupendra Singh",
+          "team_name": "MIGHTY HEROES",
+          "profile_photo": "https://media.cricheroes.in/user_profile/1743222088091_VKsmdssOFmio.jpg"
+        },
+        "fetchedAt": "2026-08-13T13:19:55.930Z"
       }
     },
     {
@@ -1444,7 +2692,7 @@
       "status": "past",
       "state": "past",
       "date": "2026-02-28T01:41:56.000Z",
-      "endDate": "2026-02-28T04:04:10.000Z",
+      "endDate": "2026-02-27T22:34:10.000Z",
       "createdAt": "2026-02-26T11:23:36.000Z",
       "matchType": "Limited Overs",
       "matchCategoryName": "",
@@ -1537,6 +2785,7 @@
           }
         ]
       },
+      "scorecardUrl": "https://cricheroes.com/scorecard/22742510/individual/ace-panthers-vs-kurukshetra-warriors/summary",
       "toss": "Ace Panthers won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -1544,6 +2793,111 @@
         "fielderOfMatch": 0,
         "bestBatter": 2934634,
         "bestBowler": 2786229
+      },
+      "scorecard": {
+        "batting": [
+          {
+            "teamId": 324638,
+            "teamName": "Ace Panthers",
+            "playerId": 2934634,
+            "playerName": "Himanshu Rajput",
+            "runs": 34,
+            "balls": 20,
+            "fours": 5,
+            "sixes": 0,
+            "strikeRate": "170.00",
+            "isOut": false
+          },
+          {
+            "teamId": 324638,
+            "teamName": "Ace Panthers",
+            "playerId": 41566599,
+            "playerName": "Ajay Pratap Singh",
+            "runs": 32,
+            "balls": 24,
+            "fours": 3,
+            "sixes": 1,
+            "strikeRate": "133.33",
+            "isOut": true
+          },
+          {
+            "teamId": 324638,
+            "teamName": "Ace Panthers",
+            "playerId": 31108385,
+            "playerName": "Amit Singh",
+            "runs": 27,
+            "balls": 12,
+            "fours": 6,
+            "sixes": 0,
+            "strikeRate": "225.00",
+            "isOut": true
+          }
+        ],
+        "bowling": [
+          {
+            "teamId": 324638,
+            "teamName": "Ace Panthers",
+            "playerId": 2786229,
+            "playerName": "Jeet",
+            "overs": "2.5",
+            "balls": 17,
+            "maidens": 0,
+            "dotBalls": 12,
+            "runs": 13,
+            "wickets": 3,
+            "economyRate": "4.59"
+          },
+          {
+            "teamId": 324638,
+            "teamName": "Ace Panthers",
+            "playerId": 2786150,
+            "playerName": "Aditya",
+            "overs": "2.0",
+            "balls": 12,
+            "maidens": 0,
+            "dotBalls": 8,
+            "runs": 12,
+            "wickets": 2,
+            "economyRate": "6.00"
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 43868532,
+            "playerName": "Sahil Sethi",
+            "overs": "2.0",
+            "balls": 12,
+            "maidens": 0,
+            "dotBalls": 3,
+            "runs": 17,
+            "wickets": 2,
+            "economyRate": "8.50"
+          }
+        ],
+        "notes": [
+          "Match started at 28 Feb, 07:11 AM.",
+          "Ace Panthers: 50 runs in 3.5 overs, Extras 1",
+          "Ace Panthers: 100 runs in 9.5 overs, Extras 3",
+          "Ace Panthers: 150 runs in 14.3 overs, Extras 5",
+          "Innings Break: Ace Panthers - 194/9 in 20 overs (Vinay Singh 7, Pushpraj 14)",
+          "Innings Ended at 28 Feb, 08:24 AM",
+          "Innings Started at 28 Feb, 08:26 AM",
+          "Kurukshetra Warriors: 53 runs in 5 overs, Extras 11",
+          "Kurukshetra Warriors: 100 runs in 12.2 overs, Extras 20",
+          "End of Day: Kurukshetra Warriors - 118/8 in 14.5 overs (Nitesh Danu 14)",
+          "Match ended at 28 Feb, 09:34 AM.",
+          "Ball 19.5 : Bowler changed to Deepak Rajput from Deepak Rajput.",
+          "Overall : Batter changed to Rx 100 from Deepak Rajput.",
+          "Ball 19.5 : Fielder changed to Deepak Rajput from Kamal.",
+          "Change scorer : Pushpraj to Nitesh Danu at 0/0 (0)."
+        ],
+        "playerOfTheMatch": {
+          "player_id": 2786229,
+          "player_name": "Jeet",
+          "team_name": "Ace Panthers",
+          "profile_photo": "https://media.cricheroes.in/user_profile/1762881554104_Ad5W087MFNUa.jpeg"
+        },
+        "fetchedAt": "2026-08-13T13:19:55.920Z"
       }
     }
   ],
@@ -1555,7 +2909,7 @@
       "status": "past",
       "state": "past",
       "date": "2026-07-15T00:56:42.000Z",
-      "endDate": "2026-07-15T03:31:52.000Z",
+      "endDate": "2026-07-14T22:01:52.000Z",
       "createdAt": "2026-07-14T13:00:13.000Z",
       "matchType": "Limited Overs",
       "matchCategoryName": "",
@@ -1648,6 +3002,7 @@
           }
         ]
       },
+      "scorecardUrl": "https://cricheroes.com/scorecard/26132337/individual/kurukshetra-warriors-vs-fabulous-xi/summary",
       "toss": "Fabulous XI won the toss and elected to field",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -1655,6 +3010,124 @@
         "fielderOfMatch": 9382549,
         "bestBatter": 28790413,
         "bestBowler": 9382549
+      },
+      "scorecard": {
+        "batting": [
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 5823563,
+            "playerName": "Vivek S",
+            "runs": 88,
+            "balls": 37,
+            "fours": 7,
+            "sixes": 9,
+            "strikeRate": "237.84",
+            "isOut": true
+          },
+          {
+            "teamId": 11466367,
+            "teamName": "Fabulous XI",
+            "playerId": 28790413,
+            "playerName": "Praveen Pratapgarh",
+            "runs": 84,
+            "balls": 22,
+            "fours": 5,
+            "sixes": 10,
+            "strikeRate": "381.82",
+            "isOut": true
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 8770695,
+            "playerName": "Aman 26",
+            "runs": 77,
+            "balls": 26,
+            "fours": 6,
+            "sixes": 7,
+            "strikeRate": "296.15",
+            "isOut": false
+          }
+        ],
+        "bowling": [
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 22785662,
+            "playerName": "Sabal Vashishth",
+            "overs": "2.0",
+            "balls": 12,
+            "maidens": 0,
+            "dotBalls": 7,
+            "runs": 11,
+            "wickets": 3,
+            "economyRate": "5.50"
+          },
+          {
+            "teamId": 11466367,
+            "teamName": "Fabulous XI",
+            "playerId": 9382549,
+            "playerName": "NITESH KUMAR",
+            "overs": "4.0",
+            "balls": 24,
+            "maidens": 1,
+            "dotBalls": 13,
+            "runs": 24,
+            "wickets": 3,
+            "economyRate": "6.00"
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 29139731,
+            "playerName": "Ankit Kulshreshtha",
+            "overs": "2.0",
+            "balls": 12,
+            "maidens": 0,
+            "dotBalls": 8,
+            "runs": 19,
+            "wickets": 3,
+            "economyRate": "9.50"
+          }
+        ],
+        "notes": [
+          "Match started at 15 Jul, 06:26 AM.",
+          "Kurukshetra Warriors: 51 runs in 3 overs, Extras 1",
+          "1st Wicket: 51 runs in 18 balls (Amit Kumar 6(5), Vivek S 44(13), Ex 1)",
+          "Vivek S: 52 off 20 balls (3 X 4, 6 X 6)",
+          "Kurukshetra Warriors: 103 runs in 6 overs, Extras 4",
+          "1st Wicket: 103 runs in 36 balls (Amit Kumar 31(13), Vivek S 68(23), Ex 4)",
+          "Amit Kumar: 50 off 23 balls (7 X 4, 2 X 6)",
+          "Kurukshetra Warriors: 150 runs in 10.3 overs, Extras 6",
+          "Kurukshetra Warriors: 202 runs in 14.3 overs, Extras 13",
+          "Aman 26: 50 off 20 balls (6 X 4, 3 X 6)",
+          "Kurukshetra Warriors: 254 runs in 19.2 overs, Extras 14",
+          "Innings Break: Kurukshetra Warriors - 269/6 in 20 overs (Aman 26 77)",
+          "Innings Ended at 15 Jul, 07:35 AM",
+          "Innings started at 15 Jul, 07:44 AM",
+          "Fabulous XI: 53 runs in 1.5 overs, Extras 0",
+          "Praveen Pratapgarh: 53 off 11 balls (1 X 4, 8 X 6)",
+          "1st Wicket: 53 runs in 11 balls (Praveen Pratapgarh 53(11), Mr Cricket 0(0), Ex 0)",
+          "Fabulous XI: 100 runs in 5 overs, Extras 2",
+          "1st Wicket: 100 runs in 31 balls (Praveen Pratapgarh 84(21), Mr Cricket 14(10), Ex 2)",
+          "Fabulous XI: 152 runs in 9.4 overs, Extras 9",
+          "Fabulous XI: 201 runs in 14.4 overs, Extras 11",
+          "NITESH KUMAR: 52 off 19 balls (3 X 4, 6 X 6)",
+          "10th Wicket: 53 runs in 23 balls (Satyam Sharma 4(5), NITESH KUMAR 49(18), Ex 0)",
+          "Fabulous XI: 254 runs in 18.5 overs, Extras 13",
+          "End of Day: Fabulous XI - 255/10 in 19 overs (Thakur Saurabh Singh 0, Satyam Sharma 5)",
+          "Match ended at 15 Jul, 09:01 AM.",
+          "Ball 5.3 : Fielder changed to Deepak Rajput from Rx 100.",
+          "Change scorer : Pushpendra Singh to Mr Cricket at 0/0 (0.0)."
+        ],
+        "playerOfTheMatch": {
+          "player_id": 5823563,
+          "player_name": "Vivek S",
+          "team_name": "Kurukshetra Warriors",
+          "profile_photo": "https://media.cricheroes.in/user_profile/1779329221637_sAQlz8HY2Dv7.jpeg"
+        },
+        "fetchedAt": "2026-08-13T13:19:55.916Z"
       }
     },
     {
@@ -1662,7 +3135,7 @@
       "status": "past",
       "state": "past",
       "date": "2026-06-02T01:03:10.000Z",
-      "endDate": "2026-06-02T03:29:51.000Z",
+      "endDate": "2026-06-01T21:59:51.000Z",
       "createdAt": "2026-06-02T00:51:09.000Z",
       "matchType": "Limited Overs",
       "matchCategoryName": "",
@@ -1755,6 +3228,7 @@
           }
         ]
       },
+      "scorecardUrl": "https://cricheroes.com/scorecard/25214310/individual/kurukshetra-warriors-vs-divino-dominators/summary",
       "toss": "Kurukshetra Warriors won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -1762,6 +3236,120 @@
         "fielderOfMatch": 6818401,
         "bestBatter": 11536802,
         "bestBowler": 6818401
+      },
+      "scorecard": {
+        "batting": [
+          {
+            "teamId": 8163475,
+            "teamName": "Divino Dominators",
+            "playerId": 11536802,
+            "playerName": "Virat Sharma",
+            "runs": 113,
+            "balls": 39,
+            "fours": 12,
+            "sixes": 8,
+            "strikeRate": "289.74",
+            "isOut": false
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 24060649,
+            "playerName": "(JATIN 18 )",
+            "runs": 50,
+            "balls": 17,
+            "fours": 5,
+            "sixes": 4,
+            "strikeRate": "294.12",
+            "isOut": true
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 20892696,
+            "playerName": "Dilip Kumar",
+            "runs": 43,
+            "balls": 17,
+            "fours": 4,
+            "sixes": 4,
+            "strikeRate": "252.94",
+            "isOut": true
+          }
+        ],
+        "bowling": [
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 6818401,
+            "playerName": "Kunvar Prashant",
+            "overs": "4.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 11,
+            "runs": 34,
+            "wickets": 5,
+            "economyRate": "8.50"
+          },
+          {
+            "teamId": 8163475,
+            "teamName": "Divino Dominators",
+            "playerId": 11536802,
+            "playerName": "Virat Sharma",
+            "overs": "2.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 5,
+            "runs": 20,
+            "wickets": 3,
+            "economyRate": "10.00"
+          },
+          {
+            "teamId": 8163475,
+            "teamName": "Divino Dominators",
+            "playerId": 969445,
+            "playerName": "Sanjay T",
+            "overs": "3.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 8,
+            "runs": 36,
+            "wickets": 3,
+            "economyRate": "12.00"
+          }
+        ],
+        "notes": [
+          "Match started at 02 Jun, 06:33 AM.",
+          "Kurukshetra Warriors: 53 runs in 4.4 overs, Extras 5",
+          "Kurukshetra Warriors: 100 runs in 8.2 overs, Extras 12",
+          "change wicketkeeper in match",
+          "change wicketkeeper in match",
+          "Kurukshetra Warriors: 152 runs in 12.2 overs, Extras 15",
+          "(JATIN 18 ): 50 off 16 balls (5 X 4, 4 X 6)",
+          "change wicketkeeper in match",
+          "change wicketkeeper in match",
+          "Kurukshetra Warriors: 201 runs in 15.1 overs, Extras 20",
+          "Innings ended at 02 Jun, 07:41 AM",
+          "Innings break: Kurukshetra Warriors - 229/10 in 16.4 overs (Vishal Tomar 0)",
+          "Innings started at 02 Jun, 07:49 AM",
+          "Divino Dominators: 52 runs in 4 overs, Extras 1",
+          "Divino Dominators: 104 runs in 7.3 overs, Extras 6",
+          "6th Wicket: 52 runs in 21 balls (Virat Sharma 29(12), Ashish 22(9), Ex 1)",
+          "Virat Sharma: 50 off 19 balls (7 X 4, 2 X 6)",
+          "Divino Dominators: 151 runs in 10.5 overs, Extras 9",
+          "Divino Dominators: 202 runs in 15 overs, Extras 12",
+          "Virat Sharma: 103 off 37 balls (11 X 4, 7 X 6)",
+          "End of Day: Divino Dominators - 232/7 in 16.5 overs (Love Kush Sharma 2, Virat Sharma 113)",
+          "Match ended at 02 Jun, 08:59 AM.",
+          "4 : milestone: Ashish completed 100 4s..",
+          "7.2 : milestone: Ashish completed 1000 Runs.."
+        ],
+        "playerOfTheMatch": {
+          "player_id": 11536802,
+          "player_name": "Virat Sharma",
+          "team_name": "Divino Dominators",
+          "profile_photo": "https://media.cricheroes.in/user_profile/1687784949654_szSgkw6bSMyS.jpg"
+        },
+        "fetchedAt": "2026-08-13T13:19:55.927Z"
       }
     },
     {
@@ -1769,7 +3357,7 @@
       "status": "past",
       "state": "past",
       "date": "2026-05-22T15:13:00.000Z",
-      "endDate": "2026-05-22T18:06:52.000Z",
+      "endDate": "2026-05-22T12:36:52.000Z",
       "createdAt": "2026-05-20T12:55:38.000Z",
       "matchType": "Limited Overs",
       "matchCategoryName": "",
@@ -1862,6 +3450,7 @@
           }
         ]
       },
+      "scorecardUrl": "https://cricheroes.com/scorecard/24878263/individual/the-core-xi-vs-kurukshetra-warriors/summary",
       "toss": "The Core XI won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -1869,6 +3458,113 @@
         "fielderOfMatch": 5584447,
         "bestBatter": 14689673,
         "bestBowler": 21511769
+      },
+      "scorecard": {
+        "batting": [
+          {
+            "teamId": 12274222,
+            "teamName": "The Core XI",
+            "playerId": 14689673,
+            "playerName": "Rohit Singh",
+            "runs": 75,
+            "balls": 31,
+            "fours": 5,
+            "sixes": 7,
+            "strikeRate": "241.94",
+            "isOut": false
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 42921491,
+            "playerName": "Himanshu Patel",
+            "runs": 46,
+            "balls": 25,
+            "fours": 6,
+            "sixes": 2,
+            "strikeRate": "184.00",
+            "isOut": true
+          },
+          {
+            "teamId": 12274222,
+            "teamName": "The Core XI",
+            "playerId": 13105302,
+            "playerName": "Sourav Singh",
+            "runs": 34,
+            "balls": 21,
+            "fours": 4,
+            "sixes": 2,
+            "strikeRate": "161.90",
+            "isOut": true
+          }
+        ],
+        "bowling": [
+          {
+            "teamId": 12274222,
+            "teamName": "The Core XI",
+            "playerId": 5136766,
+            "playerName": "Aakashdeep Sharma",
+            "overs": "3.0",
+            "balls": 0,
+            "maidens": 1,
+            "dotBalls": 9,
+            "runs": 27,
+            "wickets": 3,
+            "economyRate": "9.00"
+          },
+          {
+            "teamId": 12274222,
+            "teamName": "The Core XI",
+            "playerId": 21511769,
+            "playerName": "Tushar",
+            "overs": "3.4",
+            "balls": 0,
+            "maidens": 1,
+            "dotBalls": 9,
+            "runs": 38,
+            "wickets": 3,
+            "economyRate": "10.36"
+          },
+          {
+            "teamId": 12274222,
+            "teamName": "The Core XI",
+            "playerId": 19020464,
+            "playerName": "Pranjal Maurya ( Jarvis )",
+            "overs": "4.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 11,
+            "runs": 33,
+            "wickets": 2,
+            "economyRate": "8.25"
+          }
+        ],
+        "notes": [
+          "Match started at 22 May, 08:46 PM.",
+          "The Core XI: 50 runs in 4.4 overs, Extras 7",
+          "The Core XI: 103 runs in 7.4 overs, Extras 20",
+          "4th Wicket: 55 runs in 18 balls (Rohit Singh 18(7), Sourav singh 24(11), Ex 13)",
+          "The Core XI: 150 runs in 12 overs, Extras 24",
+          "Rohit Singh: 50 off 23 balls (3 X 4, 5 X 6)",
+          "The Core XI: 200 runs in 17 overs, Extras 26",
+          "Innings Break: The Core XI - 249/8 in 20 overs (Anurag Singh 1)",
+          "Innings Ended at 22 May, 10:21 PM",
+          "Innings Started at 22 May, 10:31 PM",
+          "Kurukshetra Warriors: 50 runs in 7.2 overs, Extras 6",
+          "4th Wicket: 50 runs in 27 balls (Pushpendra Singh 24(17), Himanshu Patel 23(10), Ex 3)",
+          "Kurukshetra Warriors: 101 runs in 10.3 overs, Extras 13",
+          "Kurukshetra Warriors: 150 runs in 15 overs, Extras 14",
+          "End of Day: Kurukshetra Warriors - 162/10 in 16.4 overs (Kunvar prashant 0)",
+          "Match ended at 22 May, 11:36 PM.",
+          "9.3 : Milestone: Deepak Rajput completed 300 6s."
+        ],
+        "playerOfTheMatch": {
+          "player_id": 14689673,
+          "player_name": "Rohit Singh",
+          "team_name": "The Core XI",
+          "profile_photo": "https://media.cricheroes.in/user_profile/1785074652095_FZ4UgTYV827N.jpg"
+        },
+        "fetchedAt": "2026-08-13T13:19:55.919Z"
       }
     },
     {
@@ -1876,7 +3572,7 @@
       "status": "past",
       "state": "past",
       "date": "2026-04-10T01:43:22.000Z",
-      "endDate": "2026-04-10T03:57:27.000Z",
+      "endDate": "2026-04-09T22:27:27.000Z",
       "createdAt": "2026-04-10T01:34:06.000Z",
       "matchType": "Limited Overs",
       "matchCategoryName": "",
@@ -1969,6 +3665,7 @@
           }
         ]
       },
+      "scorecardUrl": "https://cricheroes.com/scorecard/23817201/individual/elite-warriors-11-vs-kurukshetra-warriors/summary",
       "toss": "Elite warriors 11 won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -1976,6 +3673,112 @@
         "fielderOfMatch": 0,
         "bestBatter": 42908623,
         "bestBowler": 34183562
+      },
+      "scorecard": {
+        "batting": [
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 42908623,
+            "playerName": "Santino Bathla",
+            "runs": 54,
+            "balls": 35,
+            "fours": 8,
+            "sixes": 2,
+            "strikeRate": "154.29",
+            "isOut": true
+          },
+          {
+            "teamId": 12081810,
+            "teamName": "Elite warriors 11",
+            "playerId": 12896749,
+            "playerName": "Vikas Nagar",
+            "runs": 39,
+            "balls": 23,
+            "fours": 2,
+            "sixes": 2,
+            "strikeRate": "169.57",
+            "isOut": true
+          },
+          {
+            "teamId": 12081810,
+            "teamName": "Elite warriors 11",
+            "playerId": 7721275,
+            "playerName": "Ravi Nagar",
+            "runs": 30,
+            "balls": 23,
+            "fours": 6,
+            "sixes": 0,
+            "strikeRate": "130.43",
+            "isOut": true
+          }
+        ],
+        "bowling": [
+          {
+            "teamId": 12081810,
+            "teamName": "Elite warriors 11",
+            "playerId": 6197041,
+            "playerName": "Vikas Pi",
+            "overs": "4.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 9,
+            "runs": 25,
+            "wickets": 3,
+            "economyRate": "6.25"
+          },
+          {
+            "teamId": 12081810,
+            "teamName": "Elite warriors 11",
+            "playerId": 6196401,
+            "playerName": "Nikhil Saini",
+            "overs": "4.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 11,
+            "runs": 30,
+            "wickets": 3,
+            "economyRate": "7.50"
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 34183562,
+            "playerName": "Rohit Saini",
+            "overs": "4.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 10,
+            "runs": 43,
+            "wickets": 3,
+            "economyRate": "10.75"
+          }
+        ],
+        "notes": [
+          "Match started at 10 Apr, 07:13 AM.",
+          "Elite warriors 11: 50 runs in 4.2 overs, Extras 2",
+          "4th Wicket: 53 runs in 32 balls (Vikas Nagar 30(15), Ravi Nagar 21(17), Ex 2)",
+          "Elite warriors 11: 100 runs in 9.2 overs, Extras 5",
+          "Elite warriors 11: 150 runs in 15.1 overs, Extras 12",
+          "Innings Break: Elite warriors 11 - 164/9 in 18 overs (Sumit Jaat 2, Navin 0)",
+          "Innings Ended at 10 Apr, 08:16 AM",
+          "Innings started at 10 Apr, 08:24 AM",
+          "Kurukshetra Warriors: 54 runs in 6.1 overs, Extras 7",
+          "5th Wicket: 52 runs in 32 balls (Pushpendra Singh 22(13), Santino Bathla 26(19), Ex 4)",
+          "Kurukshetra Warriors: 102 runs in 10.5 overs, Extras 13",
+          "Santino Bathla: 50 off 31 balls (7 X 4, 2 X 6)",
+          "End of Day: Kurukshetra Warriors - 145/10 in 16.5 overs (Pranay 12)",
+          "Match ended at 10 Apr, 09:27 AM.",
+          "2.4 : Milestone: Rohit Saini completed 100 Wickets.",
+          "Change scorer : Nikhil Saini to Ankit Kulshreshtha at 0/0 (0.0)."
+        ],
+        "playerOfTheMatch": {
+          "player_id": 6197041,
+          "player_name": "Vikas Pi",
+          "team_name": "Elite warriors 11",
+          "profile_photo": "https://media.cricheroes.in/user_profile/1773544035326_v9xB0L1bH0xj.jpg"
+        },
+        "fetchedAt": "2026-08-13T13:19:55.921Z"
       }
     },
     {
@@ -1983,7 +3786,7 @@
       "status": "past",
       "state": "past",
       "date": "2026-04-01T01:46:12.000Z",
-      "endDate": "2026-04-01T04:11:43.000Z",
+      "endDate": "2026-03-31T22:41:43.000Z",
       "createdAt": "2026-03-30T09:09:12.000Z",
       "matchType": "Limited Overs",
       "matchCategoryName": "",
@@ -2076,6 +3879,7 @@
           }
         ]
       },
+      "scorecardUrl": "https://cricheroes.com/scorecard/23554204/individual/kurukshetra-warriors-vs-star-sport-cricket-club/summary",
       "toss": "Star Sport Cricket Club won the toss and elected to field",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -2083,6 +3887,119 @@
         "fielderOfMatch": 0,
         "bestBatter": 7993637,
         "bestBowler": 28685755
+      },
+      "scorecard": {
+        "batting": [
+          {
+            "teamId": 2899173,
+            "teamName": "Star Sport Cricket Club",
+            "playerId": 7993637,
+            "playerName": "Anjani Tiwari 33",
+            "runs": 121,
+            "balls": 42,
+            "fours": 8,
+            "sixes": 13,
+            "strikeRate": "288.10",
+            "isOut": false
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 28790413,
+            "playerName": "Praveen Pratapgarh",
+            "runs": 75,
+            "balls": 23,
+            "fours": 7,
+            "sixes": 7,
+            "strikeRate": "326.09",
+            "isOut": true
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 25455261,
+            "playerName": "Deepak Rajput",
+            "runs": 44,
+            "balls": 18,
+            "fours": 3,
+            "sixes": 5,
+            "strikeRate": "244.44",
+            "isOut": true
+          }
+        ],
+        "bowling": [
+          {
+            "teamId": 2899173,
+            "teamName": "Star Sport Cricket Club",
+            "playerId": 28685755,
+            "playerName": "Ravi Gupta",
+            "overs": "3.3",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 14,
+            "runs": 11,
+            "wickets": 3,
+            "economyRate": "3.14"
+          },
+          {
+            "teamId": 2899173,
+            "teamName": "Star Sport Cricket Club",
+            "playerId": 24932453,
+            "playerName": "Satyam Sharma",
+            "overs": "4.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 6,
+            "runs": 34,
+            "wickets": 2,
+            "economyRate": "8.50"
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 6818401,
+            "playerName": "Kunvar prashant",
+            "overs": "3.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 6,
+            "runs": 28,
+            "wickets": 2,
+            "economyRate": "9.33"
+          }
+        ],
+        "notes": [
+          "Match started at 01 Apr, 07:16 AM.",
+          "Kurukshetra Warriors: 51 runs in 3.2 overs, Extras 3",
+          "3rd Wicket: 50 runs in 18 balls (Abhinav S 3(5), Praveen Pratapgarh 46(13), Ex 1)",
+          "Praveen Pratapgarh: 52 off 14 balls (5 X 4, 5 X 6)",
+          "Kurukshetra Warriors: 104 runs in 7 overs, Extras 5",
+          "Kurukshetra Warriors: 153 runs in 11.5 overs, Extras 7",
+          "Innings ended at 01 Apr, 08:34 AM",
+          "Innings Break: Kurukshetra Warriors - 195/10 in 18.3 overs (Rx 100 2)",
+          "Innings Started at 01 Apr, 08:36 AM",
+          "Star Sport Cricket Club: 51 runs in 5.1 overs, Extras 3",
+          "4th Wicket: 50 runs in 21 balls (Bunty 19(7), Anjani Tiwari _33 30(14), Ex 1)",
+          "Anjani Tiwari _33: 54 off 20 balls (5 X 4, 5 X 6)",
+          "Star Sport Cricket Club: 102 runs in 8 overs, Extras 4",
+          "4th Wicket: 101 runs in 36 balls (Bunty 29(12), Anjani Tiwari _33 71(24), Ex 1)",
+          "Star Sport Cricket Club: 152 runs in 11.1 overs, Extras 5",
+          "Anjani Tiwari _33: 100 off 32 balls (8 X 4, 10 X 6)",
+          "6th Wicket: 51 runs in 26 balls (Ravi Tonger 8(11), Anjani Tiwari _33 42(15), Ex 1)",
+          "Star Sport Cricket Club: 200 runs in 15.1 overs, Extras 8",
+          "End of Day: Star Sport Cricket Club - 200/6 in 15.1 overs (Satyam Sharma 0, Aditya Mishra ISE 12)",
+          "Match ended at 01 Apr, 09:41 AM.",
+          "Change scorer : CA Arvind Sharma to Deepak Rajput at 43/2 (2.3).",
+          "Change Scorer : Deepak Rajput to Naveen Bhardwaj at 0/0 (0.0).",
+          "Change scorer : Naveen Bhardwaj to Bunty at 0/0 (0.0)."
+        ],
+        "playerOfTheMatch": {
+          "player_id": 7993637,
+          "player_name": "Anjani Tiwari 33",
+          "team_name": "Star Sport Cricket Club",
+          "profile_photo": "https://media.cricheroes.in/user_profile/1739941237181_CzO1wbdb0sD8.jpeg"
+        },
+        "fetchedAt": "2026-08-13T13:19:55.920Z"
       }
     },
     {
@@ -2090,7 +4007,7 @@
       "status": "past",
       "state": "past",
       "date": "2026-03-25T01:26:01.000Z",
-      "endDate": "2026-03-25T04:07:53.000Z",
+      "endDate": "2026-03-24T22:37:53.000Z",
       "createdAt": "2026-03-24T07:31:38.000Z",
       "matchType": "Limited Overs",
       "matchCategoryName": "",
@@ -2183,6 +4100,7 @@
           }
         ]
       },
+      "scorecardUrl": "https://cricheroes.com/scorecard/23378722/individual/kurukshetra-warriors-vs-ace-power-xi/summary",
       "toss": "Ace Power XI won the toss and elected to field",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -2190,6 +4108,116 @@
         "fielderOfMatch": 0,
         "bestBatter": 42405943,
         "bestBowler": 42429999
+      },
+      "scorecard": {
+        "batting": [
+          {
+            "teamId": 11199619,
+            "teamName": "Ace Power XI",
+            "playerId": 42405943,
+            "playerName": "Dhurandhar",
+            "runs": 86,
+            "balls": 36,
+            "fours": 7,
+            "sixes": 7,
+            "strikeRate": "238.89",
+            "isOut": true
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 45765702,
+            "playerName": "Amit Kumar",
+            "runs": 70,
+            "balls": 32,
+            "fours": 6,
+            "sixes": 4,
+            "strikeRate": "218.75",
+            "isOut": false
+          },
+          {
+            "teamId": 11199619,
+            "teamName": "Ace Power XI",
+            "playerId": 42459745,
+            "playerName": "Pawan Singh Rajpoot",
+            "runs": 39,
+            "balls": 21,
+            "fours": 7,
+            "sixes": 1,
+            "strikeRate": "185.71",
+            "isOut": true
+          }
+        ],
+        "bowling": [
+          {
+            "teamId": 11199619,
+            "teamName": "Ace Power XI",
+            "playerId": 42429999,
+            "playerName": "Mohit Upadhyay",
+            "overs": "4.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 11,
+            "runs": 26,
+            "wickets": 3,
+            "economyRate": "6.50"
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 1319201,
+            "playerName": "Vijay Kandwal",
+            "overs": "4.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 10,
+            "runs": 30,
+            "wickets": 2,
+            "economyRate": "7.50"
+          },
+          {
+            "teamId": 11199619,
+            "teamName": "Ace Power XI",
+            "playerId": 42405943,
+            "playerName": "Dhurandhar",
+            "overs": "3.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 5,
+            "runs": 37,
+            "wickets": 2,
+            "economyRate": "12.33"
+          }
+        ],
+        "notes": [
+          "Match started at 25 Mar, 06:57 AM.",
+          "Kurukshetra Warriors: 51 runs in 3.1 overs, Extras 7",
+          "Kurukshetra Warriors: 103 runs in 8 overs, Extras 14",
+          "Amit Kumar: 52 off 23 balls (4 X 4, 3 X 6)",
+          "5th Wicket: 51 runs in 19 balls (Himanshu Patel 4(3), Amit Kumar 44(16), Ex 3)",
+          "Kurukshetra Warriors: 150 runs in 11.3 overs, Extras 19",
+          "Kurukshetra Warriors: 200 runs in 16.5 overs, Extras 22",
+          "Innings Break: Kurukshetra Warriors - 233/7 in 20 overs (Deepak Rajput 16, Ankit Kulshreshtha 9)",
+          "Innings Ended at 25 Mar, 08:23 AM",
+          "Innings Started at 25 Mar, 08:25 AM",
+          "Ace Power XI: 51 runs in 3.5 overs, Extras 5",
+          "1st Wicket: 51 runs in 24 balls (Dhurandhar 17(9), Pawan Singh Rajpoot 29(15), Ex 5)",
+          "Ace Power XI: 103 runs in 8.2 overs, Extras 8",
+          "Dhurandhar: 51 off 23 balls (5 X 4, 3 X 6)",
+          "2nd Wicket: 54 runs in 27 balls (Dhurandhar 33(16), mohit upadhyay 19(11), Ex 2)",
+          "Ace Power XI: 153 runs in 11.3 overs, Extras 9",
+          "Ace Power XI: 203 runs in 16.3 overs, Extras 12",
+          "End of Day: Ace Power XI - 234/5 in 19.4 overs (Dev Kumar 34, Adamya Aggarwal 13)",
+          "Match ended at 25 Mar, 09:37 AM.",
+          "14.5 : Milestone: Vijay Kandwal completed 100 Wickets."
+        ],
+        "playerOfTheMatch": {
+          "player_id": 42405943,
+          "player_name": "Dhurandhar",
+          "team_name": "Ace Power XI",
+          "profile_photo": "https://media.cricheroes.in/user_profile/1766474912441_pNhO2hnwETz2.jpeg"
+        },
+        "fetchedAt": "2026-08-13T13:19:55.920Z"
       }
     },
     {
@@ -2197,7 +4225,7 @@
       "status": "past",
       "state": "past",
       "date": "2026-03-18T01:29:13.000Z",
-      "endDate": "2026-03-18T03:34:58.000Z",
+      "endDate": "2026-03-17T22:04:58.000Z",
       "createdAt": "2026-03-15T04:41:11.000Z",
       "matchType": "Limited Overs",
       "matchCategoryName": "",
@@ -2290,6 +4318,7 @@
           }
         ]
       },
+      "scorecardUrl": "https://cricheroes.com/scorecard/23143469/individual/gully-cricket-club-gcc-vs-kurukshetra-warriors/summary",
       "toss": "Gully Cricket Club (GCC) won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -2297,6 +4326,135 @@
         "fielderOfMatch": 0,
         "bestBatter": 28790413,
         "bestBowler": 7367912
+      },
+      "scorecard": {
+        "batting": [
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 28790413,
+            "playerName": "Praveen Pratapgarh",
+            "runs": 120,
+            "balls": 27,
+            "fours": 4,
+            "sixes": 17,
+            "strikeRate": "444.44",
+            "isOut": false
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 8770695,
+            "playerName": "Aman 1111",
+            "runs": 75,
+            "balls": 32,
+            "fours": 7,
+            "sixes": 7,
+            "strikeRate": "234.38",
+            "isOut": false
+          },
+          {
+            "teamId": 10577831,
+            "teamName": "Gully Cricket Club (GCC)",
+            "playerId": 23065756,
+            "playerName": "Aniket Kumar Dubey",
+            "runs": 50,
+            "balls": 26,
+            "fours": 6,
+            "sixes": 2,
+            "strikeRate": "192.31",
+            "isOut": true
+          }
+        ],
+        "bowling": [
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 7367912,
+            "playerName": "Sagar",
+            "overs": "4.0",
+            "balls": 24,
+            "maidens": 0,
+            "dotBalls": 8,
+            "runs": 46,
+            "wickets": 3,
+            "economyRate": "11.50"
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 5584447,
+            "playerName": "Pushpendra Singh",
+            "overs": "4.0",
+            "balls": 24,
+            "maidens": 0,
+            "dotBalls": 6,
+            "runs": 55,
+            "wickets": 2,
+            "economyRate": "13.75"
+          },
+          {
+            "teamId": 10577831,
+            "teamName": "Gully Cricket Club (GCC)",
+            "playerId": 31906058,
+            "playerName": "Ranvir",
+            "overs": "3.0",
+            "balls": 18,
+            "maidens": 0,
+            "dotBalls": 8,
+            "runs": 44,
+            "wickets": 2,
+            "economyRate": "14.67"
+          }
+        ],
+        "notes": [
+          "Match started at 18 Mar, 06:59 AM.",
+          "Gully Cricket Club (GCC): 53 runs in 3.1 overs, Extras 7",
+          "Gully Cricket Club (GCC): 101 runs in 8.1 overs, Extras 9",
+          "5th Wicket: 50 runs in 29 balls (Aniket Kumar Dubey 6(7), Arpit Singh 42(22), Ex 2)",
+          "Gully Cricket Club (GCC): 153 runs in 12.5 overs, Extras 11",
+          "Gully Cricket Club (GCC): 200 runs in 15 overs, Extras 13",
+          "Gully Cricket Club (GCC): 251 runs in 18.1 overs, Extras 16",
+          "Aniket Kumar Dubey: 50 off 25 balls (6 X 4, 2 X 6)",
+          "Innings ended at 18 Mar, 08:13 AM",
+          "Innings Break: Gully Cricket Club (GCC) - 266/10 in 19.2 overs (( JATIN ) ( 18 ). 36)",
+          "Innings started at 18 Mar, 08:15 AM",
+          "Kurukshetra Warriors: 50 runs in 4.1 overs, Extras 1",
+          "3rd Wicket: 50 runs in 20 balls (Praveen Pratapgarh 23(5), Aman 1111 25(15), Ex 2)",
+          "Praveen Pratapgarh: 51 off 10 balls (2 X 4, 7 X 6)",
+          "Kurukshetra Warriors: 101 runs in 5.5 overs, Extras 3",
+          "3rd Wicket: 100 runs in 30 balls (Praveen Pratapgarh 61(12), Aman 1111 36(18), Ex 3)",
+          "Kurukshetra Warriors: 150 runs in 8.1 overs, Extras 3",
+          "Praveen Pratapgarh: 104 off 21 balls (3 X 4, 15 X 6)",
+          "3rd Wicket: 155 runs in 45 balls (Praveen Pratapgarh 104(21), Aman 1111 48(24), Ex 3)",
+          "Aman 1111: 55 off 27 balls (5 X 4, 5 X 6)",
+          "Kurukshetra Warriors: 203 runs in 10.1 overs, Extras 4",
+          "Kurukshetra Warriors: 252 runs in 12.3 overs, Extras 6",
+          "End of Day: Kurukshetra Warriors - 269/3 in 14.3 overs (Sagar 2, Sunny Bansal 14)",
+          "Match ended at 18 Mar, 09:04 AM.",
+          "Overall : Bowler changed to Pushpendra Singh from Pranay.",
+          "Overall : Pranay is removed from the playing squad..",
+          "Match : Pushpendra Singh has been added to the playing squad..",
+          "Ball 19.2 : Fielder changed to Pushpendra Singh from Kunvar prashant.",
+          "Ball 16.2 : Fielder changed to Pushpendra Singh from Pranay.",
+          "Ball 1.4 : Dev's wicket is changed to Caught out from Caught behind.",
+          "Over 1 : Bowler changed to Ranvir from Saket.",
+          "Over 9 : Bowler changed to Rathitube Khalnayak from Saket.",
+          "Match : Rathitube Khalnayak has been added to the playing squad..",
+          "Over 6 : Bowler changed to Rathitube Khalnayak from Ranvir.",
+          "Over 5 : Bowler changed to Rathitube Khalnayak from Aniket Kumar Dubey.",
+          "Over 6 : Bowler changed to Ranvir from Rathitube Khalnayak.",
+          "Change Scorer : Saket to Deepak Rajput at 0/0 (0).",
+          "10 : milestone: Deepak Rajput completed 300 4s..",
+          "10.3 : milestone: Vijay Kandwal completed 4000 Runs.."
+        ],
+        "playerOfTheMatch": {
+          "player_id": 28790413,
+          "player_name": "Praveen Pratapgarh",
+          "team_name": "Kurukshetra Warriors",
+          "profile_photo": "https://media.cricheroes.in/user_profile/1780864997429_9o5IzA0i3jGm.jpg"
+        },
+        "fetchedAt": "2026-08-13T13:19:55.921Z"
       }
     },
     {
@@ -2304,7 +4462,7 @@
       "status": "past",
       "state": "past",
       "date": "2026-03-14T01:50:46.000Z",
-      "endDate": "2026-03-14T04:31:31.000Z",
+      "endDate": "2026-03-13T23:01:31.000Z",
       "createdAt": "2026-03-13T05:51:49.000Z",
       "matchType": "Limited Overs",
       "matchCategoryName": "",
@@ -2397,6 +4555,7 @@
           }
         ]
       },
+      "scorecardUrl": "https://cricheroes.com/scorecard/23084704/individual/kurukshetra-warriors-vs-strikers-11/summary",
       "toss": "Kurukshetra Warriors won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -2404,6 +4563,115 @@
         "fielderOfMatch": 0,
         "bestBatter": 45765702,
         "bestBowler": 34183562
+      },
+      "scorecard": {
+        "batting": [
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 45765702,
+            "playerName": "Amit Kumar",
+            "runs": 69,
+            "balls": 44,
+            "fours": 7,
+            "sixes": 3,
+            "strikeRate": "156.82",
+            "isOut": true
+          },
+          {
+            "teamId": 12604411,
+            "teamName": "Strikers 11",
+            "playerId": 4530389,
+            "playerName": "Nandan Mishra",
+            "runs": 62,
+            "balls": 31,
+            "fours": 9,
+            "sixes": 2,
+            "strikeRate": "200.00",
+            "isOut": true
+          },
+          {
+            "teamId": 12604411,
+            "teamName": "Strikers 11",
+            "playerId": 48177039,
+            "playerName": "Neeraj Jha",
+            "runs": 37,
+            "balls": 32,
+            "fours": 3,
+            "sixes": 1,
+            "strikeRate": "115.62",
+            "isOut": true
+          }
+        ],
+        "bowling": [
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 34183562,
+            "playerName": "Rohit Saini",
+            "overs": "4.0",
+            "balls": 24,
+            "maidens": 0,
+            "dotBalls": 9,
+            "runs": 29,
+            "wickets": 3,
+            "economyRate": "7.25"
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 29139731,
+            "playerName": "Ankit Kulshreshtha",
+            "overs": "4.0",
+            "balls": 24,
+            "maidens": 0,
+            "dotBalls": 12,
+            "runs": 33,
+            "wickets": 3,
+            "economyRate": "8.25"
+          },
+          {
+            "teamId": 12604411,
+            "teamName": "Strikers 11",
+            "playerId": 45687702,
+            "playerName": "Himansu Kumar Pathak",
+            "overs": "4.0",
+            "balls": 24,
+            "maidens": 0,
+            "dotBalls": 12,
+            "runs": 16,
+            "wickets": 2,
+            "economyRate": "4.00"
+          }
+        ],
+        "notes": [
+          "Match started at 14 Mar, 07:20 AM.",
+          "Kurukshetra Warriors: 52 runs in 5 overs, Extras 4",
+          "2nd Wicket: 52 runs in 28 balls (Amit Kumar 15(13), CA Arvind Sharma 33(15), Ex 4)",
+          "Kurukshetra Warriors: 101 runs in 9.3 overs, Extras 8",
+          "Amit Kumar: 53 off 32 balls (6 X 4, 2 X 6)",
+          "3rd Wicket: 50 runs in 29 balls (Amit Kumar 40(21), Mohit Saini 8(8), Ex 2)",
+          "Kurukshetra Warriors: 150 runs in 14.4 overs, Extras 15",
+          "Innings ended at 14 Mar, 08:40 AM",
+          "Innings Break: Kurukshetra Warriors - 181/7 in 20 overs (Ankit Kulshreshtha 18)",
+          "Innings Started at 14 Mar, 08:44 AM",
+          "Strikers 11: 53 runs in 4.5 overs, Extras 7",
+          "3rd Wicket: 52 runs in 27 balls (Nandan Mishra 28(11), Neeraj jha 17(16), Ex 7)",
+          "Nandan Mishra: 52 off 20 balls (8 X 4, 2 X 6)",
+          "Strikers 11: 101 runs in 9.2 overs, Extras 9",
+          "Strikers 11: 152 runs in 14.5 overs, Extras 12",
+          "End of Day: Strikers 11 - 185/7 in 17.5 overs (Gyaneshwar Pal 12, Manish Mishra 36)",
+          "Match ended at 14 Mar, 10:01 AM.",
+          "Overall : Batter changed to Rx 100 from Deepak Rajput.",
+          "Change Scorer : Ankit Kulshreshtha to Nikhil Maheve at 0/0 (0)."
+        ],
+        "playerOfTheMatch": {
+          "player_id": 4530389,
+          "player_name": "Nandan Mishra",
+          "team_name": "Strikers 11",
+          "profile_photo": "https://media.cricheroes.in/user_profile/1702188258750_HHC7JkgE9XC4.jpg"
+        },
+        "fetchedAt": "2026-08-13T13:19:55.918Z"
       }
     },
     {
@@ -2411,7 +4679,7 @@
       "status": "past",
       "state": "past",
       "date": "2026-03-11T01:43:51.000Z",
-      "endDate": "2026-03-11T04:17:37.000Z",
+      "endDate": "2026-03-10T22:47:37.000Z",
       "createdAt": "2026-03-11T01:43:03.000Z",
       "matchType": "Limited Overs",
       "matchCategoryName": "",
@@ -2504,6 +4772,7 @@
           }
         ]
       },
+      "scorecardUrl": "https://cricheroes.com/scorecard/23046803/individual/kurukshetra-warriors-vs-techie-cricket-club/summary",
       "toss": "Kurukshetra Warriors won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -2511,6 +4780,129 @@
         "fielderOfMatch": 0,
         "bestBatter": 10287744,
         "bestBowler": 145048
+      },
+      "scorecard": {
+        "batting": [
+          {
+            "teamId": 7838698,
+            "teamName": "Techie Cricket Club",
+            "playerId": 10287744,
+            "playerName": "Golu 44",
+            "runs": 118,
+            "balls": 31,
+            "fours": 7,
+            "sixes": 13,
+            "strikeRate": "380.65",
+            "isOut": false
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 6818401,
+            "playerName": "Kunvar prashant",
+            "runs": 61,
+            "balls": 32,
+            "fours": 6,
+            "sixes": 4,
+            "strikeRate": "190.62",
+            "isOut": true
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 28790413,
+            "playerName": "Praveen Pratapgarh",
+            "runs": 57,
+            "balls": 19,
+            "fours": 3,
+            "sixes": 7,
+            "strikeRate": "300.00",
+            "isOut": true
+          }
+        ],
+        "bowling": [
+          {
+            "teamId": 7838698,
+            "teamName": "Techie Cricket Club",
+            "playerId": 10287744,
+            "playerName": "Golu 44",
+            "overs": "4.0",
+            "balls": 24,
+            "maidens": 0,
+            "dotBalls": 7,
+            "runs": 46,
+            "wickets": 2,
+            "economyRate": "11.50"
+          },
+          {
+            "teamId": 7838698,
+            "teamName": "Techie Cricket Club",
+            "playerId": 145048,
+            "playerName": "Anurodh Srivastava",
+            "overs": "3.0",
+            "balls": 18,
+            "maidens": 0,
+            "dotBalls": 8,
+            "runs": 44,
+            "wickets": 2,
+            "economyRate": "14.67"
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 23240150,
+            "playerName": "Yogendra Singh",
+            "overs": "1.0",
+            "balls": 6,
+            "maidens": 0,
+            "dotBalls": 4,
+            "runs": 5,
+            "wickets": 1,
+            "economyRate": "5.00"
+          }
+        ],
+        "notes": [
+          "Match started at 11 Mar, 07:13 AM.",
+          "Kurukshetra Warriors: 51 runs in 4 overs, Extras 4",
+          "Kurukshetra Warriors: 104 runs in 7.5 overs, Extras 5",
+          "6th Wicket: 50 runs in 15 balls (Kunvar prashant 2(2), Praveen Pratapgarh 46(13), Ex 2)",
+          "Praveen Pratapgarh: 50 off 14 balls (3 X 4, 6 X 6)",
+          "Kurukshetra Warriors: 153 runs in 11 overs, Extras 8",
+          "Kurukshetra Warriors: 200 runs in 15 overs, Extras 8",
+          "7th Wicket: 50 runs in 25 balls (CA Arvind Sharma 24(12), Kunvar prashant 26(13), Ex 0)",
+          "Kunvar prashant: 50 off 26 balls (5 X 4, 3 X 6)",
+          "Kurukshetra Warriors: 251 runs in 18.5 overs, Extras 12",
+          "Innings ended at 11 Mar, 08:30 AM",
+          "Innings Break: Kurukshetra Warriors - 277/8 in 20 overs (Kamal 1, CA Arvind Sharma 39)",
+          "Innings Started at 11 Mar, 08:37 AM",
+          "Techie Cricket Club: 51 runs in 2.3 overs, Extras 2",
+          "1st Wicket: 51 runs in 15 balls (( JATIN ) ( 18 ). 27(9), Akash Singh 22(6), Ex 2)",
+          "Techie Cricket Club: 103 runs in 9.5 overs, Extras 4",
+          "Techie Cricket Club: 151 runs in 12.4 overs, Extras 5",
+          "5th Wicket: 52 runs in 13 balls (Golu 44 45(11), Abhisekh singh 5(2), Ex 2)",
+          "Golu 44: 51 off 12 balls (6 X 4, 4 X 6)",
+          "Techie Cricket Club: 203 runs in 15.1 overs, Extras 8",
+          "Techie Cricket Club: 252 runs in 17.5 overs, Extras 11",
+          "Golu 44: 105 off 28 balls (7 X 4, 11 X 6)",
+          "6th Wicket: 52 runs in 14 balls (Golu 44 41(10), Sanjeet Nagar 9(4), Ex 2)",
+          "End of Day: Techie Cricket Club - 279/5 in 19 overs (Golu 44 118, Sanjeet Nagar 16)",
+          "Match ended at 11 Mar, 09:47 AM.",
+          "Over 19 : Bowler changed to Rx 100 from Deepak Rajput.",
+          "Match : Rx 100 has been added to the playing squad..",
+          "Overall : Bowler changed to Rx 100 from Sabal Vashishth.",
+          "Overall : Batter changed to Rx 100 from Sabal Vashishth.",
+          "Over 4 : Bowler changed to Sabal Vashishth from Kunvar prashant.",
+          "Over 15 : Bowler changed to Sabal Vashishth from Ankit Kulshreshtha.",
+          "Change Scorer : Ankit Kulshreshtha to Gaurav Chourasia at 0/0 (0).",
+          "16.5 : Milestone: Sanjeet Nagar completed 1000 Runs."
+        ],
+        "playerOfTheMatch": {
+          "player_id": 10287744,
+          "player_name": "Golu 44",
+          "team_name": "Techie Cricket Club",
+          "profile_photo": "https://media.cricheroes.in/user_profile/1760877797272_m81RhgfV9piB.jpg"
+        },
+        "fetchedAt": "2026-08-13T13:19:55.926Z"
       }
     },
     {
@@ -2518,7 +4910,7 @@
       "status": "past",
       "state": "past",
       "date": "2026-03-07T03:07:52.000Z",
-      "endDate": "2026-03-07T04:22:30.000Z",
+      "endDate": "2026-03-06T22:52:30.000Z",
       "createdAt": "2026-03-07T03:07:32.000Z",
       "matchType": "Limited Overs",
       "matchCategoryName": "",
@@ -2611,6 +5003,7 @@
           }
         ]
       },
+      "scorecardUrl": "https://cricheroes.com/scorecard/22937264/individual/mighty-heroes-vs-kurukshetra-warriors/summary",
       "toss": "MIGHTY HEROES won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -2618,6 +5011,110 @@
         "fielderOfMatch": 0,
         "bestBatter": 1257282,
         "bestBowler": 25455261
+      },
+      "scorecard": {
+        "batting": [
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 1257282,
+            "playerName": "Sunny Bansal",
+            "runs": 73,
+            "balls": 29,
+            "fours": 3,
+            "sixes": 7,
+            "strikeRate": "251.72",
+            "isOut": false
+          },
+          {
+            "teamId": 385484,
+            "teamName": "MIGHTY HEROES",
+            "playerId": 2187763,
+            "playerName": "Pradeep Yadav",
+            "runs": 67,
+            "balls": 25,
+            "fours": 9,
+            "sixes": 4,
+            "strikeRate": "268.00",
+            "isOut": false
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 25455261,
+            "playerName": "Deepak Rajput",
+            "runs": 32,
+            "balls": 15,
+            "fours": 6,
+            "sixes": 1,
+            "strikeRate": "213.33",
+            "isOut": true
+          }
+        ],
+        "bowling": [
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 25455261,
+            "playerName": "Deepak Rajput",
+            "overs": "2.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 4,
+            "runs": 19,
+            "wickets": 1,
+            "economyRate": "9.50"
+          },
+          {
+            "teamId": 385484,
+            "teamName": "MIGHTY HEROES",
+            "playerId": 2050141,
+            "playerName": "Deepak",
+            "overs": "2.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 3,
+            "runs": 22,
+            "wickets": 1,
+            "economyRate": "11.00"
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 43867977,
+            "playerName": "Nitesh Danu",
+            "overs": "2.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 3,
+            "runs": 25,
+            "wickets": 1,
+            "economyRate": "12.50"
+          }
+        ],
+        "notes": [
+          "Match started at 07 Mar, 08:37 AM.",
+          "MIGHTY HEROES: 50 runs in 4.1 overs, Extras 2",
+          "Pradeep Yadav: 51 off 18 balls (5 X 4, 4 X 6)",
+          "MIGHTY HEROES: 103 runs in 7.2 overs, Extras 5",
+          "Innings ended at 07 Mar, 09:12 AM",
+          "Innings Break: MIGHTY HEROES - 146/3 in 10 overs (Vivek Bhojak 12, Whistlepodu (Vishal) 21)",
+          "Innings started at 07 Mar, 09:16 AM",
+          "Kurukshetra Warriors: 54 runs in 2.3 overs, Extras 5",
+          "1st Wicket: 54 runs in 17 balls (Deepak Rajput 28(12), Sunny Bansal 21(5), Ex 5)",
+          "Kurukshetra Warriors: 101 runs in 6.1 overs, Extras 13",
+          "2nd Wicket: 53 runs in 24 balls (Abhinav S 21(11), Sunny Bansal 21(13), Ex 11)",
+          "Sunny Bansal: 50 off 21 balls (2 X 4, 5 X 6)",
+          "End of Day: Kurukshetra Warriors - 149/1 in 9.3 overs (Abhinav S 27, Sunny Bansal 73)",
+          "Match ended at 07 Mar, 09:52 AM."
+        ],
+        "playerOfTheMatch": {
+          "player_id": 1257282,
+          "player_name": "Sunny Bansal",
+          "team_name": "Kurukshetra Warriors",
+          "profile_photo": "https://media.cricheroes.in/user_profile/1768059656318_FcDWz8vhJEUM.jpeg"
+        },
+        "fetchedAt": "2026-08-13T13:19:55.928Z"
       }
     },
     {
@@ -2625,7 +5122,7 @@
       "status": "past",
       "state": "past",
       "date": "2026-03-07T01:37:27.000Z",
-      "endDate": "2026-03-07T03:03:01.000Z",
+      "endDate": "2026-03-06T21:33:01.000Z",
       "createdAt": "2026-03-03T06:09:46.000Z",
       "matchType": "Limited Overs",
       "matchCategoryName": "",
@@ -2718,6 +5215,7 @@
           }
         ]
       },
+      "scorecardUrl": "https://cricheroes.com/scorecard/22865500/individual/kurukshetra-warriors-vs-mighty-heroes/summary",
       "toss": "Kurukshetra Warriors won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -2725,6 +5223,108 @@
         "fielderOfMatch": 0,
         "bestBatter": 3780112,
         "bestBowler": 2798901
+      },
+      "scorecard": {
+        "batting": [
+          {
+            "teamId": 385484,
+            "teamName": "MIGHTY HEROES",
+            "playerId": 3780112,
+            "playerName": "Anshuman Samaiyar",
+            "runs": 50,
+            "balls": 33,
+            "fours": 9,
+            "sixes": 1,
+            "strikeRate": "151.52",
+            "isOut": false
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 42908623,
+            "playerName": "Santino Bathla",
+            "runs": 46,
+            "balls": 31,
+            "fours": 5,
+            "sixes": 3,
+            "strikeRate": "148.39",
+            "isOut": false
+          },
+          {
+            "teamId": 385484,
+            "teamName": "MIGHTY HEROES",
+            "playerId": 19987162,
+            "playerName": "Vikash Kumar",
+            "runs": 37,
+            "balls": 19,
+            "fours": 6,
+            "sixes": 1,
+            "strikeRate": "194.74",
+            "isOut": false
+          }
+        ],
+        "bowling": [
+          {
+            "teamId": 385484,
+            "teamName": "MIGHTY HEROES",
+            "playerId": 2798901,
+            "playerName": "Bhupendra Singh",
+            "overs": "4.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 15,
+            "runs": 23,
+            "wickets": 4,
+            "economyRate": "5.75"
+          },
+          {
+            "teamId": 385484,
+            "teamName": "MIGHTY HEROES",
+            "playerId": 2187763,
+            "playerName": "Pradeep Yadav",
+            "overs": "0.2",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 2,
+            "runs": 0,
+            "wickets": 1,
+            "economyRate": "0.00"
+          },
+          {
+            "teamId": 385484,
+            "teamName": "MIGHTY HEROES",
+            "playerId": 19987162,
+            "playerName": "Vikash Kumar",
+            "overs": "1.0",
+            "balls": 0,
+            "maidens": 0,
+            "dotBalls": 3,
+            "runs": 4,
+            "wickets": 1,
+            "economyRate": "4.00"
+          }
+        ],
+        "notes": [
+          "Match started at 07 Mar, 07:07 AM.",
+          "Kurukshetra Warriors: 51 runs in 6.2 overs, Extras 8",
+          "Innings ended at 07 Mar, 07:54 AM",
+          "Innings Break: Kurukshetra Warriors - 99/10 in 12.2 overs (Santino Bathla 46)",
+          "Innings started at 07 Mar, 08:02 AM",
+          "MIGHTY HEROES: 53 runs in 4.4 overs, Extras 5",
+          "1st Wicket: 53 runs in 28 balls (Anshuman Samaiyar 27(15), vikash kumar 21(13), Ex 5)",
+          "Anshuman Samaiyar: 50 off 33 balls (9 X 4, 1 X 6)",
+          "MIGHTY HEROES: 105 runs in 10.5 overs, Extras 6",
+          "End of Day: MIGHTY HEROES - 105/2 in 10.5 overs (Whistlepodu (Vishal) 6, Anshuman Samaiyar 50)",
+          "Match ended at 07 Mar, 08:33 AM.",
+          "Change Scorer : Ankit Kulshreshtha to Whistlepodu (Vishal) at 0/0 (0)."
+        ],
+        "playerOfTheMatch": {
+          "player_id": 2798901,
+          "player_name": "Bhupendra Singh",
+          "team_name": "MIGHTY HEROES",
+          "profile_photo": "https://media.cricheroes.in/user_profile/1743222088091_VKsmdssOFmio.jpg"
+        },
+        "fetchedAt": "2026-08-13T13:19:55.930Z"
       }
     },
     {
@@ -2732,7 +5332,7 @@
       "status": "past",
       "state": "past",
       "date": "2026-02-28T01:41:56.000Z",
-      "endDate": "2026-02-28T04:04:10.000Z",
+      "endDate": "2026-02-27T22:34:10.000Z",
       "createdAt": "2026-02-26T11:23:36.000Z",
       "matchType": "Limited Overs",
       "matchCategoryName": "",
@@ -2825,6 +5425,7 @@
           }
         ]
       },
+      "scorecardUrl": "https://cricheroes.com/scorecard/22742510/individual/ace-panthers-vs-kurukshetra-warriors/summary",
       "toss": "Ace Panthers won the toss and elected to bat",
       "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
       "awards": {
@@ -2832,6 +5433,111 @@
         "fielderOfMatch": 0,
         "bestBatter": 2934634,
         "bestBowler": 2786229
+      },
+      "scorecard": {
+        "batting": [
+          {
+            "teamId": 324638,
+            "teamName": "Ace Panthers",
+            "playerId": 2934634,
+            "playerName": "Himanshu Rajput",
+            "runs": 34,
+            "balls": 20,
+            "fours": 5,
+            "sixes": 0,
+            "strikeRate": "170.00",
+            "isOut": false
+          },
+          {
+            "teamId": 324638,
+            "teamName": "Ace Panthers",
+            "playerId": 41566599,
+            "playerName": "Ajay Pratap Singh",
+            "runs": 32,
+            "balls": 24,
+            "fours": 3,
+            "sixes": 1,
+            "strikeRate": "133.33",
+            "isOut": true
+          },
+          {
+            "teamId": 324638,
+            "teamName": "Ace Panthers",
+            "playerId": 31108385,
+            "playerName": "Amit Singh",
+            "runs": 27,
+            "balls": 12,
+            "fours": 6,
+            "sixes": 0,
+            "strikeRate": "225.00",
+            "isOut": true
+          }
+        ],
+        "bowling": [
+          {
+            "teamId": 324638,
+            "teamName": "Ace Panthers",
+            "playerId": 2786229,
+            "playerName": "Jeet",
+            "overs": "2.5",
+            "balls": 17,
+            "maidens": 0,
+            "dotBalls": 12,
+            "runs": 13,
+            "wickets": 3,
+            "economyRate": "4.59"
+          },
+          {
+            "teamId": 324638,
+            "teamName": "Ace Panthers",
+            "playerId": 2786150,
+            "playerName": "Aditya",
+            "overs": "2.0",
+            "balls": 12,
+            "maidens": 0,
+            "dotBalls": 8,
+            "runs": 12,
+            "wickets": 2,
+            "economyRate": "6.00"
+          },
+          {
+            "teamId": 8626734,
+            "teamName": "Kurukshetra Warriors",
+            "playerId": 43868532,
+            "playerName": "Sahil Sethi",
+            "overs": "2.0",
+            "balls": 12,
+            "maidens": 0,
+            "dotBalls": 3,
+            "runs": 17,
+            "wickets": 2,
+            "economyRate": "8.50"
+          }
+        ],
+        "notes": [
+          "Match started at 28 Feb, 07:11 AM.",
+          "Ace Panthers: 50 runs in 3.5 overs, Extras 1",
+          "Ace Panthers: 100 runs in 9.5 overs, Extras 3",
+          "Ace Panthers: 150 runs in 14.3 overs, Extras 5",
+          "Innings Break: Ace Panthers - 194/9 in 20 overs (Vinay Singh 7, Pushpraj 14)",
+          "Innings Ended at 28 Feb, 08:24 AM",
+          "Innings Started at 28 Feb, 08:26 AM",
+          "Kurukshetra Warriors: 53 runs in 5 overs, Extras 11",
+          "Kurukshetra Warriors: 100 runs in 12.2 overs, Extras 20",
+          "End of Day: Kurukshetra Warriors - 118/8 in 14.5 overs (Nitesh Danu 14)",
+          "Match ended at 28 Feb, 09:34 AM.",
+          "Ball 19.5 : Bowler changed to Deepak Rajput from Deepak Rajput.",
+          "Overall : Batter changed to Rx 100 from Deepak Rajput.",
+          "Ball 19.5 : Fielder changed to Deepak Rajput from Kamal.",
+          "Change scorer : Pushpraj to Nitesh Danu at 0/0 (0)."
+        ],
+        "playerOfTheMatch": {
+          "player_id": 2786229,
+          "player_name": "Jeet",
+          "team_name": "Ace Panthers",
+          "profile_photo": "https://media.cricheroes.in/user_profile/1762881554104_Ad5W087MFNUa.jpeg"
+        },
+        "fetchedAt": "2026-08-13T13:19:55.920Z"
       }
     }
   ],
@@ -2884,6 +5590,28 @@
           }
         ],
         "awards": 3
+      },
+      "stats": {
+        "matchesTracked": 3,
+        "battingInnings": 3,
+        "runs": 252,
+        "balls": 69,
+        "fours": 14,
+        "sixes": 31,
+        "bestScore": 120,
+        "fifties": 3,
+        "hundreds": 1,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "2026-04-01T01:46:12.000Z",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -2927,6 +5655,28 @@
           }
         ],
         "awards": 2
+      },
+      "stats": {
+        "matchesTracked": 3,
+        "battingInnings": 1,
+        "runs": 61,
+        "balls": 32,
+        "fours": 6,
+        "sixes": 4,
+        "bestScore": 61,
+        "fifties": 1,
+        "hundreds": 0,
+        "bowlingInnings": 2,
+        "wickets": 7,
+        "ballsBowled": 0,
+        "runsConceded": 62,
+        "bestWickets": 5,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "2026-06-02T01:03:10.000Z",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -2969,6 +5719,28 @@
           }
         ],
         "awards": 2
+      },
+      "stats": {
+        "matchesTracked": 2,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 2,
+        "wickets": 6,
+        "ballsBowled": 24,
+        "runsConceded": 72,
+        "bestWickets": 3,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "2026-04-10T01:43:22.000Z",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3013,6 +5785,28 @@
           }
         ],
         "awards": 2
+      },
+      "stats": {
+        "matchesTracked": 1,
+        "battingInnings": 1,
+        "runs": 73,
+        "balls": 29,
+        "fours": 3,
+        "sixes": 7,
+        "bestScore": 73,
+        "fifties": 1,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "2026-03-07T03:07:52.000Z",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3048,6 +5842,28 @@
           }
         ],
         "awards": 1
+      },
+      "stats": {
+        "matchesTracked": 2,
+        "battingInnings": 2,
+        "runs": 139,
+        "balls": 76,
+        "fours": 13,
+        "sixes": 7,
+        "bestScore": 70,
+        "fifties": 2,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "2026-03-25T01:26:01.000Z",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3085,6 +5901,28 @@
           }
         ],
         "awards": 1
+      },
+      "stats": {
+        "matchesTracked": 2,
+        "battingInnings": 2,
+        "runs": 76,
+        "balls": 33,
+        "fours": 9,
+        "sixes": 6,
+        "bestScore": 44,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 1,
+        "wickets": 1,
+        "ballsBowled": 0,
+        "runsConceded": 19,
+        "bestWickets": 1,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "2026-04-01T01:46:12.000Z",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3121,6 +5959,28 @@
           }
         ],
         "awards": 1
+      },
+      "stats": {
+        "matchesTracked": 1,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 1,
+        "wickets": 2,
+        "ballsBowled": 24,
+        "runsConceded": 55,
+        "bestWickets": 2,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "2026-03-18T01:29:13.000Z",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3158,6 +6018,28 @@
           }
         ],
         "awards": 1
+      },
+      "stats": {
+        "matchesTracked": 1,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 1,
+        "wickets": 3,
+        "ballsBowled": 24,
+        "runsConceded": 46,
+        "bestWickets": 3,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "2026-03-18T01:29:13.000Z",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3192,6 +6074,28 @@
           }
         ],
         "awards": 1
+      },
+      "stats": {
+        "matchesTracked": 2,
+        "battingInnings": 2,
+        "runs": 100,
+        "balls": 66,
+        "fours": 13,
+        "sixes": 5,
+        "bestScore": 54,
+        "fifties": 1,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "2026-04-10T01:43:22.000Z",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3229,6 +6133,28 @@
           }
         ],
         "awards": 1
+      },
+      "stats": {
+        "matchesTracked": 1,
+        "battingInnings": 1,
+        "runs": 88,
+        "balls": 37,
+        "fours": 7,
+        "sixes": 9,
+        "bestScore": 88,
+        "fifties": 1,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "2026-07-15T00:56:42.000Z",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3259,6 +6185,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 2,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 2,
+        "wickets": 6,
+        "ballsBowled": 36,
+        "runsConceded": 52,
+        "bestWickets": 3,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "2026-07-15T00:56:42.000Z",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3287,6 +6235,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 1,
+        "battingInnings": 1,
+        "runs": 50,
+        "balls": 17,
+        "fours": 5,
+        "sixes": 4,
+        "bestScore": 50,
+        "fifties": 1,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "2026-06-02T01:03:10.000Z",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3316,6 +6286,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3345,6 +6337,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3373,6 +6387,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3401,6 +6437,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3430,6 +6488,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3454,6 +6534,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3483,6 +6585,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 2,
+        "battingInnings": 2,
+        "runs": 152,
+        "balls": 58,
+        "fours": 13,
+        "sixes": 14,
+        "bestScore": 77,
+        "fifties": 2,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "2026-07-15T00:56:42.000Z",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3509,6 +6633,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3537,6 +6683,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3566,6 +6734,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3593,6 +6783,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3619,6 +6831,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3645,6 +6879,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3673,6 +6929,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3697,6 +6975,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3726,6 +7026,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3754,6 +7076,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3783,6 +7127,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3809,6 +7175,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3837,6 +7225,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3865,6 +7275,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3893,6 +7325,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3917,6 +7371,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3945,6 +7421,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 1,
+        "battingInnings": 1,
+        "runs": 43,
+        "balls": 17,
+        "fours": 4,
+        "sixes": 4,
+        "bestScore": 43,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "2026-06-02T01:03:10.000Z",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3972,6 +7470,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -3999,6 +7519,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4028,6 +7570,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4057,6 +7621,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 1,
+        "battingInnings": 1,
+        "runs": 46,
+        "balls": 25,
+        "fours": 6,
+        "sixes": 2,
+        "bestScore": 46,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "2026-05-22T15:13:00.000Z",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4083,6 +7669,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4112,6 +7720,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4139,6 +7769,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4168,6 +7820,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4196,6 +7870,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4222,6 +7918,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4248,6 +7966,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4276,6 +8016,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4304,6 +8066,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 1,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 1,
+        "wickets": 1,
+        "ballsBowled": 0,
+        "runsConceded": 25,
+        "bestWickets": 1,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "2026-03-07T03:07:52.000Z",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4332,6 +8116,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4359,6 +8165,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4387,6 +8215,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4414,6 +8264,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4443,6 +8315,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4472,6 +8366,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4501,6 +8417,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4528,6 +8466,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4557,6 +8517,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 1,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 1,
+        "wickets": 3,
+        "ballsBowled": 12,
+        "runsConceded": 11,
+        "bestWickets": 3,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "2026-07-15T00:56:42.000Z",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4583,6 +8565,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 1,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 1,
+        "wickets": 2,
+        "ballsBowled": 12,
+        "runsConceded": 17,
+        "bestWickets": 2,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "2026-02-28T01:41:56.000Z",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4611,6 +8615,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4640,6 +8666,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4668,6 +8716,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4694,6 +8764,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4721,6 +8813,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4750,6 +8864,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4776,6 +8912,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4802,6 +8960,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4830,6 +9010,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4859,6 +9061,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 1,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 1,
+        "wickets": 2,
+        "ballsBowled": 0,
+        "runsConceded": 30,
+        "bestWickets": 2,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "2026-03-25T01:26:01.000Z",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4887,6 +9111,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4914,6 +9160,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4940,6 +9208,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4967,6 +9257,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -4996,6 +9308,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -5020,6 +9354,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -5047,6 +9403,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     },
     {
@@ -5076,6 +9454,28 @@
         "bestBowler": 0,
         "recentAwards": [],
         "awards": 0
+      },
+      "stats": {
+        "matchesTracked": 1,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 1,
+        "wickets": 1,
+        "ballsBowled": 6,
+        "runsConceded": 5,
+        "bestWickets": 1,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "2026-03-11T01:43:51.000Z",
+        "updatedAt": "2026-08-13T13:19:55.932Z"
       }
     }
   ],
@@ -6070,6 +10470,36 @@
       "opponent": "Ace Panthers",
       "matchId": 22742510,
       "date": "2026-02-28T01:41:56.000Z"
+    }
+  ],
+  "recordLedger": [
+    {
+      "type": "best_bowling",
+      "title": "Five-wicket haul",
+      "value": 5,
+      "unit": "wickets",
+      "playerId": 6818401,
+      "playerName": "Kunvar prashant",
+      "matchId": 25214310,
+      "opponent": "Divino Dominators",
+      "date": "2026-06-02T01:03:10.000Z",
+      "result": "loss",
+      "playerPhoto": "https://media.cricheroes.in/user_profile/1738040185345_44AWc8yYQ3Xd.jpeg",
+      "status": "Current holder"
+    }
+  ],
+  "recordHistory": [
+    {
+      "type": "best_bowling",
+      "title": "Five-wicket haul",
+      "value": 5,
+      "unit": "wickets",
+      "playerId": 6818401,
+      "playerName": "Kunvar Prashant",
+      "matchId": 25214310,
+      "opponent": "Divino Dominators",
+      "date": "2026-06-02T01:03:10.000Z",
+      "result": "loss"
     }
   ]
 }

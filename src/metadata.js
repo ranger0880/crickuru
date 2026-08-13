@@ -20,7 +20,7 @@ export const ROUTE_METADATA = [
     canonicalPath: "/warriors",
     title: "Kurukshetra Warriors CricHeroes Team Data - CricKuru",
     description:
-      "Explore the public Kurukshetra Warriors CricHeroes feed with team profile details, match scorecards, roster data, award records, opponent form and live updates.",
+      "Explore the public Kurukshetra Warriors CricHeroes feed with interactive match scorecards, roster data, daily player snapshots, rare record holders, opponent form and live updates.",
     ogType: "website",
     themeColor: "#05070B",
     changefreq: "daily",
@@ -56,7 +56,7 @@ export const ROUTE_METADATA = [
     canonicalPath: "/players",
     title: "Kurukshetra Warriors Player Stats and Performance - CricKuru",
     description:
-      "Explore Kurukshetra Warriors player profiles, CricHeroes roster signals, award counts, role badges, impact scores and recent performance cards.",
+      "Explore Kurukshetra Warriors player profiles, daily CricHeroes scorecard snapshots, award counts, rare records, role badges, 1-100 performance charges and recent form.",
     ogType: "website",
     themeColor: "#05070B",
     changefreq: "daily",

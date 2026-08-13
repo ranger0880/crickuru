@@ -165,7 +165,7 @@ const RouterContext = React.createContext(null);
           matchesUrl: CricLinks.matches,
           membersUrl: CricLinks.members,
         },
-        dataInventory: { teamProfile: false, matches: 0, liveMatches: 0, upcomingMatches: 0, recentMatches: 0, players: 0, opponents: 0, awards: 0, sourcePages: [] },
+        dataInventory: { teamProfile: false, matches: 0, liveMatches: 0, upcomingMatches: 0, recentMatches: 0, players: 0, opponents: 0, awards: 0, records: 0, sourcePages: [] },
         summary: { matches: 0, live: 0, wins: 0, losses: 0, winRate: 0, liveOpponent: "", liveScore: "", liveStatus: "", latestResult: "", latestOpponent: "", upcoming: 0, nextOpponent: "", nextMatchDate: "", nextMatchVenue: "" },
         memberSummary: { total: 0, verified: 0, pro: 0, captains: 0, admins: 0, skills: [], batterCategories: [], bowlerCategories: [], badges: [] },
         matchInsights: { total: 0, completed: 0, averageFor: 0, averageAgainst: 0, highestFor: null, highestAgainst: null, matchTypes: [], ballTypes: [], venues: [], cities: [], tournaments: [] },
@@ -176,6 +176,9 @@ const RouterContext = React.createContext(null);
         players: [],
         opponents: [],
         awardLedger: [],
+        recordLedger: [],
+        recordHistory: [],
+        playerStatsUpdatedAt: "",
       };
 
       const indiaMatchesFallback = {
@@ -1620,6 +1623,7 @@ const RouterContext = React.createContext(null);
         { id: "matches", label: "Matches" },
         { id: "roster", label: "Roster" },
         { id: "awards", label: "Awards" },
+        { id: "trophy", label: "Trophy Room" },
         { id: "opponents", label: "Opponents" },
       ];
 
@@ -1633,6 +1637,7 @@ const RouterContext = React.createContext(null);
         const players = asArray(data.players);
         const opponents = asArray(data.opponents);
         const awards = asArray(data.awardLedger);
+        const records = asArray(data.recordLedger);
         const sourcePages = asArray(inventory.sourcePages);
         const syncText = loading ? "Syncing CricHeroes" : `Updated ${formatFeedDate(data.syncedAt)}`;
 
@@ -1721,6 +1726,7 @@ const RouterContext = React.createContext(null);
                 {activeTab === "matches" && <WarriorsMatchesPanel matches={matches} awards={awards} />}
                 {activeTab === "roster" && <WarriorsRosterPanel players={players} memberSummary={data.memberSummary} />}
                 {activeTab === "awards" && <WarriorsAwardsPanel awards={awards} />}
+                {activeTab === "trophy" && <WarriorsTrophyRoomPanel records={records} updatedAt={data.playerStatsUpdatedAt || data.syncedAt} />}
                 {activeTab === "opponents" && <WarriorsOpponentsPanel opponents={opponents} />}
               </section>
             </section>
@@ -1733,7 +1739,9 @@ const RouterContext = React.createContext(null);
         const summary = data.summary || liveFeedFallback.summary;
         const memberSummary = data.memberSummary || liveFeedFallback.memberSummary;
         const insights = data.matchInsights || liveFeedFallback.matchInsights;
-        const uniqueSourcePages = [...new Set([team.cricHeroesUrl || CricLinks.profile, ...sourcePages].filter(Boolean))];
+        const uniqueSourcePages = [
+          ...new Set([team.cricHeroesUrl || CricLinks.profile, ...sourcePages, assetUrl("/data/crickuru-live.json")].filter(Boolean)),
+        ];
 
         return (
           <div className="grid gap-5 xl:grid-cols-[0.95fr_1.05fr]">
@@ -1758,19 +1766,32 @@ const RouterContext = React.createContext(null);
 
               <article className="rounded-[8px] border border-white/12 bg-white/[0.045] p-5">
                 <p className="text-xs font-black uppercase tracking-[0.22em] text-gold">Public source pages</p>
+                <p className="mt-2 text-sm leading-6 text-white/50">Open the live team pages directly, or inspect the saved snapshot used by CricKuru.</p>
                 <div className="mt-4 grid gap-3">
-                  {uniqueSourcePages.map((url) => (
-                    <a
-                      key={url}
-                      href={url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-between gap-3 rounded-[8px] border border-white/10 bg-night/55 p-3 text-sm font-semibold text-white/64 transition hover:border-gold/35 hover:text-gold"
-                    >
-                      <span className="break-all">{url}</span>
-                      <Icon.ExternalLink size={15} />
-                    </a>
-                  ))}
+                  {uniqueSourcePages.map((url) => {
+                    const source = publicSourceDetails(url);
+                    return (
+                      <a
+                        key={url}
+                        href={url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group flex items-center justify-between gap-4 rounded-[8px] border border-white/10 bg-night/55 p-4 transition hover:-translate-y-0.5 hover:border-gold/45 hover:bg-gold/[0.06]"
+                      >
+                        <span className="min-w-0">
+                          <span className="flex items-center gap-2 text-xs font-black uppercase tracking-[0.18em] text-cyan">
+                            {source.label}
+                            <span className="rounded-full border border-cyan/25 px-2 py-0.5 text-[0.55rem] text-cyan/75">Live source</span>
+                          </span>
+                          <span className="mt-1 block font-display text-2xl font-black uppercase text-white group-hover:text-gold">{source.title}</span>
+                          <span className="mt-1 block text-sm font-semibold text-white/45">{source.description}</span>
+                        </span>
+                        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-white/12 bg-white/[0.04] text-white/55 transition group-hover:border-gold/40 group-hover:text-gold">
+                          <Icon.ExternalLink size={16} />
+                        </span>
+                      </a>
+                    );
+                  })}
                 </div>
               </article>
             </div>
@@ -1801,6 +1822,20 @@ const RouterContext = React.createContext(null);
             </div>
           </div>
         );
+      }
+
+      function publicSourceDetails(url) {
+        const value = String(url || "");
+        if (/\/matches(?:$|\?)/i.test(value)) {
+          return { label: "Matchbook", title: "Matches and scorecards", description: "Results, score summaries and match-by-match updates." };
+        }
+        if (/\/members(?:$|\?)/i.test(value)) {
+          return { label: "Roster", title: "Members and player profiles", description: "The public squad list, roles and player identity signals." };
+        }
+        if (/crickuru-live\.json/i.test(value)) {
+          return { label: "Snapshot", title: "CricKuru synced feed", description: "The latest normalized data snapshot used by this site." };
+        }
+        return { label: "Team profile", title: "Official Kurukshetra Warriors page", description: "Team identity, captain, location and public activity." };
       }
 
       function WarriorsMatchesPanel({ matches, awards }) {
@@ -1905,6 +1940,7 @@ const RouterContext = React.createContext(null);
       }
 
       function WarriorsRosterDataCard({ player, rank }) {
+        const stats = player.stats || {};
         return (
           <article className="rounded-[8px] border border-white/12 bg-white/[0.045] p-4">
             <div className="flex items-start justify-between gap-3">
@@ -1919,10 +1955,19 @@ const RouterContext = React.createContext(null);
               <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full border border-white/10 bg-night/60 font-display text-xl font-black text-white">{player.impact}</span>
             </div>
             <div className="mt-4 grid grid-cols-4 gap-2 text-center">
-              <LiveTinyStat label="POM" value={player.performance?.playerOfMatch || 0} />
-              <LiveTinyStat label="BAT" value={player.performance?.bestBatter || 0} />
-              <LiveTinyStat label="BWL" value={player.performance?.bestBowler || 0} />
-              <LiveTinyStat label="FLD" value={player.performance?.fielderOfMatch || 0} />
+              <LiveTinyStat label="Runs" value={stats.runs || 0} />
+              <LiveTinyStat label="Wkts" value={stats.wickets || 0} />
+              <LiveTinyStat label="Best" value={stats.bestScore || 0} />
+              <LiveTinyStat label="Field" value={(stats.catches || 0) + (stats.stumpings || 0)} />
+            </div>
+            <div className="mt-4">
+              <div className="flex items-center justify-between text-[0.62rem] font-black uppercase tracking-[0.14em] text-white/42">
+                <span>Performance charge</span>
+                <span>{player.impact}/100</span>
+              </div>
+              <div className="mt-2 h-2 overflow-hidden rounded-full bg-white/8">
+                <span className="block h-full rounded-full bg-gradient-to-r from-gold via-cyan to-crimson" style={{ width: `${player.impact}%` }} />
+              </div>
             </div>
             <div className="mt-4 flex flex-wrap gap-2">
               {(player.badges?.length ? player.badges : ["Roster"]).slice(0, 6).map((badge) => <BadgePill key={badge} label={badge} />)}
@@ -1958,6 +2003,55 @@ const RouterContext = React.createContext(null);
                 </div>
               </article>
             ))}
+          </div>
+        );
+      }
+
+      function WarriorsTrophyRoomPanel({ records, updatedAt }) {
+        if (!records.length) {
+          return (
+            <div className="grid gap-5">
+              <div className="rounded-[8px] border border-gold/25 bg-[radial-gradient(circle_at_50%_0%,rgba(244,185,66,0.14),transparent_38%),rgba(255,255,255,0.045)] p-8 text-center">
+                <p className="text-xs font-black uppercase tracking-[0.28em] text-gold">Trophy Room</p>
+                <h2 className="mt-3 font-display text-5xl font-black uppercase text-white">First record awaits</h2>
+                <p className="mx-auto mt-3 max-w-2xl text-sm leading-7 text-white/55">Rare scorecard achievements will appear here when the public CricHeroes data records a 150+ score, hat-trick, five-wicket haul, four-stumping match or five-catch match.</p>
+                <p className="mt-5 text-xs font-black uppercase tracking-[0.16em] text-white/35">Stats checked {formatFeedDate(updatedAt)}</p>
+              </div>
+            </div>
+          );
+        }
+
+        return (
+          <div className="grid gap-5">
+            <div className="flex flex-col gap-3 rounded-[8px] border border-gold/25 bg-[radial-gradient(circle_at_85%_10%,rgba(244,185,66,0.18),transparent_34%),rgba(255,255,255,0.045)] p-5 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="text-xs font-black uppercase tracking-[0.28em] text-gold">Trophy Room</p>
+                <h2 className="mt-2 font-display text-5xl font-black uppercase text-white">Current record holders</h2>
+                <p className="mt-3 max-w-2xl text-sm leading-7 text-white/55">These records stay on the wall until a stronger performance appears in a later CricHeroes scorecard.</p>
+              </div>
+              <p className="text-xs font-black uppercase tracking-[0.16em] text-white/40">Updated {formatFeedDate(updatedAt)}</p>
+            </div>
+            <div className="grid gap-4 md:grid-cols-2">
+              {records.map((record) => (
+                <article key={record.type} className="rounded-[8px] border border-gold/25 bg-night/55 p-5 shadow-[0_0_30px_rgba(244,185,66,0.08)]">
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <p className="text-xs font-black uppercase tracking-[0.2em] text-cyan">{record.title}</p>
+                      <h3 className="mt-2 font-display text-3xl font-black uppercase text-white">{record.playerName}</h3>
+                    </div>
+                    <p className="font-display text-4xl font-black text-gold">{record.value}<span className="ml-1 text-sm uppercase tracking-[0.12em]">{record.unit}</span></p>
+                  </div>
+                  <div className="mt-5 grid gap-2 text-sm font-semibold text-white/52 sm:grid-cols-2">
+                    <span>vs {record.opponent || "opponent"}</span>
+                    <span className="sm:text-right">{formatFeedDate(record.date)}</span>
+                  </div>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    <BadgePill label="Current holder" />
+                    <BadgePill label="CricHeroes scorecard" />
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
         );
       }
@@ -2052,9 +2146,9 @@ const RouterContext = React.createContext(null);
         const filteredPlayers = players.filter((player) => playerMatchesFilter(player, filter));
         const leaders = {
           impact: players[0],
-          batting: [...players].sort((a, b) => (b.performance?.bestBatter || 0) - (a.performance?.bestBatter || 0) || b.impact - a.impact)[0],
-          bowling: [...players].sort((a, b) => (b.performance?.bestBowler || 0) - (a.performance?.bestBowler || 0) || b.impact - a.impact)[0],
-          fielding: [...players].sort((a, b) => (b.performance?.fielderOfMatch || 0) - (a.performance?.fielderOfMatch || 0) || b.impact - a.impact)[0],
+          batting: [...players].sort((a, b) => (b.stats?.runs || 0) - (a.stats?.runs || 0) || b.impact - a.impact)[0],
+          bowling: [...players].sort((a, b) => (b.stats?.wickets || 0) - (a.stats?.wickets || 0) || b.impact - a.impact)[0],
+          fielding: [...players].sort((a, b) => ((b.stats?.catches || 0) + (b.stats?.stumpings || 0)) - ((a.stats?.catches || 0) + (a.stats?.stumpings || 0)) || b.impact - a.impact)[0],
         };
         const totalAwards = players.reduce((sum, player) => sum + (player.performance?.awards || 0), 0);
         const verifiedCount = players.filter((player) => player.isVerified).length;
@@ -2076,7 +2170,7 @@ const RouterContext = React.createContext(null);
                       {loading ? "Syncing players" : `${players.length} Warriors`}
                     </span>
                     <span className="rounded-full border border-white/12 bg-white/7 px-4 py-2 text-white/58">
-                      Updated {formatFeedDate(data.syncedAt)}
+                      Stats updated {formatFeedDate(data.playerStatsUpdatedAt || data.syncedAt)}
                     </span>
                     {error && <span className="rounded-full border border-crimson/35 bg-crimson/10 px-4 py-2 text-crimson">Using saved roster</span>}
                   </div>
@@ -2091,9 +2185,9 @@ const RouterContext = React.createContext(null);
 
               <div className="mt-10 grid gap-5 lg:grid-cols-4">
                 <PlayerLeaderCard label="Impact Leader" player={leaders.impact} metric={`${leaders.impact?.impact || 0}/100`} />
-                <PlayerLeaderCard label="Batting Edge" player={leaders.batting} metric={`${leaders.batting?.performance?.bestBatter || 0} BAT`} />
-                <PlayerLeaderCard label="Strike Bowler" player={leaders.bowling} metric={`${leaders.bowling?.performance?.bestBowler || 0} BWL`} />
-                <PlayerLeaderCard label="Field Watch" player={leaders.fielding} metric={`${leaders.fielding?.performance?.fielderOfMatch || 0} FLD`} />
+                <PlayerLeaderCard label="Batting Edge" player={leaders.batting} metric={`${leaders.batting?.stats?.runs || 0} RUNS`} />
+                <PlayerLeaderCard label="Strike Bowler" player={leaders.bowling} metric={`${leaders.bowling?.stats?.wickets || 0} WKTS`} />
+                <PlayerLeaderCard label="Field Watch" player={leaders.fielding} metric={`${(leaders.fielding?.stats?.catches || 0) + (leaders.fielding?.stats?.stumpings || 0)} FIELD`} />
               </div>
 
               <div className="mt-10 flex gap-2 overflow-x-auto pb-2" role="tablist" aria-label="Player filters">
@@ -2130,7 +2224,7 @@ const RouterContext = React.createContext(null);
 
               <div className="mt-10 flex flex-col gap-4 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:justify-between">
                 <p className="max-w-2xl text-sm leading-7 text-white/54">
-                  Impact is a CricKuru display score based on CricHeroes awards, captain/pro/verified signals and batting/bowling category badges.
+                  Performance charge is a 1-100 display score built from the latest CricHeroes scorecard snapshots, rare records, awards, role signals and recent form. The sync refreshes daily and whenever the public feed changes.
                 </p>
                 <a
                   href={data.team?.membersUrl || CricLinks.members}
@@ -2171,6 +2265,7 @@ const RouterContext = React.createContext(null);
       function PlayerProfileCard({ player, rank }) {
         const awards = player.performance?.awards || 0;
         const activity = asArray(player.performance?.recentAwards).slice(0, 3);
+        const stats = player.stats || {};
         const impact = player.impact || 0;
 
         return (
@@ -2195,16 +2290,16 @@ const RouterContext = React.createContext(null);
             </div>
 
             <div className="relative mt-5 grid grid-cols-4 gap-2 text-center">
-              <LiveTinyStat label="POM" value={player.performance?.playerOfMatch || 0} />
-              <LiveTinyStat label="BAT" value={player.performance?.bestBatter || 0} />
-              <LiveTinyStat label="BWL" value={player.performance?.bestBowler || 0} />
-              <LiveTinyStat label="FLD" value={player.performance?.fielderOfMatch || 0} />
+              <LiveTinyStat label="Runs" value={stats.runs || 0} />
+              <LiveTinyStat label="Wkts" value={stats.wickets || 0} />
+              <LiveTinyStat label="Best" value={stats.bestScore || 0} />
+              <LiveTinyStat label="Field" value={(stats.catches || 0) + (stats.stumpings || 0)} />
             </div>
 
             <div className="relative mt-5">
               <div className="flex items-center justify-between text-xs font-black uppercase tracking-[0.14em] text-white/42">
                 <span>Performance charge</span>
-                <span>{awards} awards</span>
+                <span>{impact}/100 charge</span>
               </div>
               <div className="mt-2 h-2 overflow-hidden rounded-full bg-white/8">
                 <span className="block h-full rounded-full bg-gradient-to-r from-gold via-cyan to-crimson" style={{ width: `${Math.min(100, Math.max(8, impact))}%` }} />
@@ -2236,17 +2331,25 @@ const RouterContext = React.createContext(null);
 
       function playerImpactScore(player) {
         const performance = player.performance || {};
+        const stats = player.stats || {};
         const raw =
-          (performance.awards || 0) * 12 +
-          (performance.playerOfMatch || 0) * 10 +
-          (performance.bestBatter || 0) * 7 +
-          (performance.bestBowler || 0) * 7 +
-          (performance.fielderOfMatch || 0) * 5 +
+          Math.min(25, (stats.runs || 0) / 4) +
+          Math.min(20, (stats.wickets || 0) * 5) +
+          Math.min(12, (stats.bestScore || 0) / 8) +
+          Math.min(10, (stats.fifties || 0) * 3) +
+          Math.min(12, (stats.hundreds || 0) * 6) +
+          Math.min(12, (stats.hatTricks || 0) * 12) +
+          Math.min(10, ((stats.catches || 0) + (stats.stumpings || 0)) * 2) +
+          (performance.awards || 0) * 5 +
+          (performance.playerOfMatch || 0) * 6 +
+          (performance.bestBatter || 0) * 4 +
+          (performance.bestBowler || 0) * 4 +
+          (performance.fielderOfMatch || 0) * 3 +
           (player.isCaptain ? 10 : 0) +
-          (player.isPro ? 7 : 0) +
-          (player.isVerified ? 5 : 0) +
-          asArray(player.badges).length * 2;
-        return Math.min(100, Math.max(8, raw));
+          (player.isPro ? 6 : 0) +
+          (player.isVerified ? 4 : 0) +
+          asArray(player.badges).length;
+        return Math.min(100, Math.max(1, Math.round(raw)));
       }
 
       function playerRoleLabel(player) {

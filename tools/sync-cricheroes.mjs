@@ -25,10 +25,18 @@ async function readExistingFeed() {
 
 function feedWithoutVolatileFields(feed) {
   if (!feed) return null;
-  return {
-    ...feed,
-    syncedAt: "",
-  };
+  const stable = JSON.parse(JSON.stringify(feed));
+  stable.syncedAt = "";
+  stable.playerStatsUpdatedAt = "";
+  for (const list of [stable.matches, stable.liveMatches, stable.upcomingMatches, stable.recentMatches]) {
+    for (const match of list || []) {
+      if (match.scorecard) match.scorecard.fetchedAt = "";
+    }
+  }
+  for (const player of stable.players || []) {
+    if (player.stats) player.stats.updatedAt = "";
+  }
+  return stable;
 }
 
 function hasPublicDataChanged(previousFeed, nextFeed) {
@@ -108,6 +116,17 @@ function normalizeDate(value) {
   const normalized = value.includes("T") ? value : value.replace(" ", "T");
   const date = new Date(normalized);
   return Number.isNaN(date.getTime()) ? value : date.toISOString();
+}
+
+function slugifyScorecardName(value) {
+  return String(value || "team")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "") || "team";
+}
+
+function scorecardUrl(match) {
+  return `https://cricheroes.com/scorecard/${match.match_id}/individual/${slugifyScorecardName(match.team_a)}-vs-${slugifyScorecardName(match.team_b)}/summary`;
 }
 
 function scoreFor(match, side) {
@@ -210,6 +229,7 @@ function buildMatches(rawMatches) {
         warriors: normalizeInnings(ours.innings),
         opponent: normalizeInnings(opponent.innings),
       },
+      scorecardUrl: scorecardUrl(match),
       toss: match.toss_details || "",
       cricHeroesUrl: `${BASE_URL}/matches`,
       awards: {
@@ -220,6 +240,227 @@ function buildMatches(rawMatches) {
       },
     };
   });
+}
+
+async function fetchScorecardSummary(match) {
+  try {
+    const text = await fetchFlightText(match.scorecardUrl);
+    const summary = extractJsonValue(text, "summaryData");
+    return summary?.data || null;
+  } catch (error) {
+    console.warn(`Scorecard unavailable for ${match.id}: ${error.message}`);
+    return null;
+  }
+}
+
+function normalizeBestPerformances(summaryData) {
+  const best = summaryData?.best_performances || {};
+  return {
+    batting: Array.isArray(best.batting)
+      ? best.batting.map((row) => ({
+          teamId: Number(row.team_id || 0),
+          teamName: row.team_name || "",
+          playerId: Number(row.player_id || 0),
+          playerName: row.player_name || "",
+          runs: Number(row.runs || 0),
+          balls: Number(row.balls || 0),
+          fours: Number(row["4s"] || 0),
+          sixes: Number(row["6s"] || 0),
+          strikeRate: row.strike_rate || "",
+          isOut: Boolean(row.is_out),
+        }))
+      : [],
+    bowling: Array.isArray(best.bowling)
+      ? best.bowling.map((row) => ({
+          teamId: Number(row.team_id || 0),
+          teamName: row.team_name || "",
+          playerId: Number(row.player_id || 0),
+          playerName: row.player_name || "",
+          overs: row.overs || "",
+          balls: Number(row.balls || 0),
+          maidens: Number(row.maidens || 0),
+          dotBalls: Number(row["0s"] || 0),
+          runs: Number(row.runs || 0),
+          wickets: Number(row.wickets || 0),
+          economyRate: row.economy_rate || "",
+        }))
+      : [],
+    notes: [
+      ...(Array.isArray(summaryData?.match_notes) ? summaryData.match_notes : []),
+      ...(Array.isArray(summaryData?.scorer_notes) ? summaryData.scorer_notes : []),
+    ]
+      .map((note) => (typeof note === "string" ? note : note?.note || ""))
+      .filter(Boolean),
+  };
+}
+
+async function hydrateScorecards(matches) {
+  const hydrated = await Promise.all(
+    matches.map(async (match) => {
+      const summaryData = await fetchScorecardSummary(match);
+      return {
+        ...match,
+        scorecard: {
+          ...(match.scorecard || {}),
+          ...normalizeBestPerformances(summaryData),
+          playerOfTheMatch: summaryData?.player_of_the_match || null,
+          fetchedAt: new Date().toISOString(),
+        },
+      };
+    }),
+  );
+  return hydrated;
+}
+
+function blankPlayerStats() {
+  return {
+    matchesTracked: 0,
+    battingInnings: 0,
+    runs: 0,
+    balls: 0,
+    fours: 0,
+    sixes: 0,
+    bestScore: 0,
+    fifties: 0,
+    hundreds: 0,
+    bowlingInnings: 0,
+    wickets: 0,
+    ballsBowled: 0,
+    runsConceded: 0,
+    bestWickets: 0,
+    maidens: 0,
+    hatTricks: 0,
+    catches: 0,
+    stumpings: 0,
+    lastMatchDate: "",
+    updatedAt: "",
+  };
+}
+
+function addPlayerStat(statsById, playerId, match, callback) {
+  if (!playerId) return;
+  const stats = statsById.get(playerId) || blankPlayerStats();
+  stats.lastMatchDate = stats.lastMatchDate && stats.lastMatchDate > match.date ? stats.lastMatchDate : match.date;
+  callback(stats);
+  statsById.set(playerId, stats);
+}
+
+function extractRecordCandidates(match) {
+  const records = [];
+  const scorecard = match.scorecard || {};
+  for (const row of scorecard.batting || []) {
+    if (row.teamId === TEAM_ID && row.runs >= 150) {
+      records.push({
+        type: "highest_score",
+        title: "150+ batting milestone",
+        value: row.runs,
+        unit: "runs",
+        playerId: row.playerId,
+        playerName: row.playerName,
+      });
+    }
+  }
+  for (const row of scorecard.bowling || []) {
+    if (row.teamId === TEAM_ID && row.wickets >= 5) {
+      records.push({
+        type: "best_bowling",
+        title: "Five-wicket haul",
+        value: row.wickets,
+        unit: "wickets",
+        playerId: row.playerId,
+        playerName: row.playerName,
+      });
+    }
+  }
+
+  const noteText = (scorecard.notes || []).join(" ");
+  const notePlayer = (pattern) => {
+    const matchResult = noteText.match(pattern);
+    return matchResult?.[1]?.trim() || "Warriors player";
+  };
+  if (/hat[- ]?trick/i.test(noteText)) {
+    records.push({ type: "hat_trick", title: "Hat-trick", value: 1, unit: "hat-trick", playerId: 0, playerName: notePlayer(/([\w .'-]+?)[ :]hat[- ]?trick/i) });
+  }
+  const stumpings = noteText.match(/(\d+)\s*stumpings?/i);
+  if (stumpings && Number(stumpings[1]) >= 4) {
+    records.push({ type: "stumpings", title: "Wicketkeeper stumpings record", value: Number(stumpings[1]), unit: "stumpings", playerId: 0, playerName: notePlayer(/([\w .'-]+?)[ :]\d+\s*stumpings?/i) });
+  }
+  const catches = noteText.match(/(\d+)\s*catches?/i);
+  if (catches && Number(catches[1]) >= 5) {
+    records.push({ type: "catches", title: "Five-catch fielding record", value: Number(catches[1]), unit: "catches", playerId: 0, playerName: notePlayer(/([\w .'-]+?)[ :]\d+\s*catches?/i) });
+  }
+  return records.map((record) => ({ ...record, matchId: match.id, opponent: match.opponent, date: match.date, result: match.result }));
+}
+
+function aggregatePlayerStats(players, matches) {
+  const statsById = new Map();
+  const recordCandidates = matches.flatMap(extractRecordCandidates);
+  for (const match of matches) {
+    const seenInMatch = new Set();
+    for (const row of match.scorecard?.batting || []) {
+      if (row.teamId !== TEAM_ID) continue;
+      seenInMatch.add(row.playerId);
+      addPlayerStat(statsById, row.playerId, match, (stats) => {
+        stats.battingInnings += 1;
+        stats.runs += row.runs;
+        stats.balls += row.balls;
+        stats.fours += row.fours;
+        stats.sixes += row.sixes;
+        stats.bestScore = Math.max(stats.bestScore, row.runs);
+        if (row.runs >= 50) stats.fifties += 1;
+        if (row.runs >= 100) stats.hundreds += 1;
+      });
+    }
+    for (const row of match.scorecard?.bowling || []) {
+      if (row.teamId !== TEAM_ID) continue;
+      seenInMatch.add(row.playerId);
+      addPlayerStat(statsById, row.playerId, match, (stats) => {
+        stats.bowlingInnings += 1;
+        stats.wickets += row.wickets;
+        stats.ballsBowled += row.balls;
+        stats.runsConceded += row.runs;
+        stats.bestWickets = Math.max(stats.bestWickets, row.wickets);
+        stats.maidens += row.maidens;
+      });
+    }
+    for (const playerId of seenInMatch) {
+      const stats = statsById.get(playerId);
+      if (stats) stats.matchesTracked = Math.min(matches.length, stats.matchesTracked + 1);
+    }
+  }
+
+  for (const record of recordCandidates) {
+    if (!record.playerId) continue;
+    const stats = statsById.get(record.playerId) || blankPlayerStats();
+    if (record.type === "hat_trick") stats.hatTricks += 1;
+    if (record.type === "stumpings") stats.stumpings = Math.max(stats.stumpings, record.value);
+    if (record.type === "catches") stats.catches = Math.max(stats.catches, record.value);
+    statsById.set(record.playerId, stats);
+  }
+
+  for (const player of players) {
+    player.stats = { ...(statsById.get(Number(player.id)) || blankPlayerStats()), updatedAt: new Date().toISOString() };
+  }
+
+  return recordCandidates;
+}
+
+function buildRecordLedger(candidates, players) {
+  const playerMap = new Map(players.map((player) => [Number(player.id), player]));
+  const best = new Map();
+  for (const candidate of candidates) {
+    const previous = best.get(candidate.type);
+    if (!previous || candidate.value > previous.value || (candidate.value === previous.value && candidate.date > previous.date)) {
+      const player = playerMap.get(Number(candidate.playerId));
+      best.set(candidate.type, {
+        ...candidate,
+        playerName: player?.name || candidate.playerName,
+        playerPhoto: player?.photo || "",
+        status: "Current holder",
+      });
+    }
+  }
+  return [...best.values()].sort((a, b) => b.value - a.value || b.date.localeCompare(a.date));
 }
 
 function normalizeMatchState(value) {
@@ -549,18 +790,25 @@ async function main() {
   const rawMatches = extractJsonValue(matchesText, "matches")?.data || [];
   const rawMembers = extractJsonValue(membersText, "members", membersText.indexOf("\"teamDetails\"")) || extractJsonValue(membersText, "members");
 
-  const matches = buildMatches(rawMatches);
+  const baseMatches = buildMatches(rawMatches);
+  const initialSplit = splitMatches(baseMatches);
+  const enrichedRecentMatches = await hydrateScorecards(initialSplit.recentMatches);
+  const scorecardsByMatch = new Map(enrichedRecentMatches.map((match) => [Number(match.id), match.scorecard]));
+  const matches = baseMatches.map((match) => ({ ...match, scorecard: scorecardsByMatch.get(Number(match.id)) || null }));
   const { liveMatches, upcomingMatches, recentMatches } = splitMatches(matches);
   const players = normalizeMembers(rawMembers);
   const team = normalizeTeam(teamDetails, rawMembers, players);
+  const recordCandidates = aggregatePlayerStats(players, recentMatches);
+  const recordLedger = buildRecordLedger(recordCandidates, players);
   const opponentAwards = attachAwards(players, recentMatches);
   const opponents = buildOpponents(recentMatches, opponentAwards);
   const awardLedger = buildAwardsLedger(players, recentMatches);
 
   const feed = {
-    schemaVersion: 1,
+    schemaVersion: 2,
     source: "CricHeroes public team pages",
     syncedAt: new Date().toISOString(),
+    playerStatsUpdatedAt: new Date().toISOString(),
     dataInventory: {
       teamProfile: true,
       matches: matches.length,
@@ -570,6 +818,7 @@ async function main() {
       players: players.length,
       opponents: opponents.length,
       awards: awardLedger.length,
+      records: recordLedger.length,
       sourcePages: [BASE_URL, `${BASE_URL}/matches`, `${BASE_URL}/members`],
     },
     team,
@@ -584,6 +833,8 @@ async function main() {
     opponents,
     awardLedger,
     opponentAwards,
+    recordLedger,
+    recordHistory: recordCandidates,
   };
 
   const previousFeed = await readExistingFeed();
