@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-13T10:30:22.024Z",
+  "syncedAt": "2026-08-13T11:29:09.606Z",
   "summary": {
     "live": 1,
     "recent": 10,
@@ -24,7 +24,7 @@
         {
           "name": "Vida Kovai Kings",
           "shortName": "VKK",
-          "score": "40/1 (4.1 Ov)"
+          "score": "126/7 (15.6 Ov)"
         },
         {
           "name": "Nellai Royal Kings",
@@ -1576,7 +1576,7 @@
         {
           "name": "Vida Kovai Kings",
           "shortName": "VKK",
-          "score": "40/1 (4.1 Ov)"
+          "score": "126/7 (15.6 Ov)"
         },
         {
           "name": "Nellai Royal Kings",
