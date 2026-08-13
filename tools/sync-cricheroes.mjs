@@ -450,6 +450,7 @@ async function fetchPlayerProfileData(player, previousPlayer = null) {
   let overallStats = null;
   let matchHistory = [];
   let historyNext = "";
+  let historyFetched = false;
   try {
     const statsText = await fetchFlightText(player.statsUrl);
     overallStats = normalizeOverallStats(extractJsonValue(statsText, "initialStats"));
@@ -462,6 +463,7 @@ async function fetchPlayerProfileData(player, previousPlayer = null) {
     const matchesPayload = extractJsonValue(matchesText, "matches");
     matchHistory = normalizePlayerRecentMatches(matchesPayload?.data, player);
     historyNext = matchesPayload?.page?.next || "";
+    historyFetched = true;
     if (previousPlayer?.historyNext) {
       await wait(400);
       const nextPage = await fetchPlayerHistoryPage(player, previousPlayer.historyNext);
@@ -479,6 +481,7 @@ async function fetchPlayerProfileData(player, previousPlayer = null) {
     overallStats,
     matchHistory,
     historyNext,
+    historyFetched,
   };
 }
 
@@ -527,7 +530,7 @@ async function hydratePlayerProfiles(players, previousPlayers = []) {
       return await fetchPlayerProfileData(player, previous);
     } catch (error) {
       console.warn(`Player profile unavailable for ${player.name}: ${error.message}`);
-      return { overallStats: null, matchHistory: [], historyNext: "" };
+      return { overallStats: null, matchHistory: [], historyNext: "", historyFetched: false };
     }
   });
   const previousById = new Map((previousPlayers || []).map((player) => [Number(player.id), player]));
@@ -539,7 +542,8 @@ async function hydratePlayerProfiles(players, previousPlayers = []) {
     player.matchHistory = matchHistory.filter((match) => matchTime(match) <= Date.now() + 60 * 60 * 1000);
     player.historyNext = snapshots[index].historyNext || previous?.historyNext || "";
     player.historyPageCount = (previous?.historyPageCount || 0) + (snapshots[index].matchHistory.length ? 1 : 0);
-    player.historyComplete = !player.historyNext;
+    player.historySyncInitialized = Boolean(snapshots[index].historyFetched || previous?.historySyncInitialized);
+    player.historyComplete = player.historySyncInitialized ? !player.historyNext : false;
     player.recentMatches = player.matchHistory.slice(0, 6);
   });
 
