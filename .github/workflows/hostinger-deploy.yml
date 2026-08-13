@@ -47,16 +47,28 @@ jobs:
           test -n "$FTP_USERNAME" || (echo "Missing HOSTINGER_FTP_USERNAME" && exit 1)
           test -n "$FTP_PASSWORD" || (echo "Missing HOSTINGER_FTP_PASSWORD" && exit 1)
 
+      - name: Normalize FTP server address
+        id: ftp-server
+        env:
+          FTP_SERVER: ${{ secrets.HOSTINGER_FTP_SERVER }}
+        run: |
+          server="$FTP_SERVER"
+          server="${server#ftp://}"
+          server="${server#ftps://}"
+          server="${server%/}"
+          echo "server=$server" >> "$GITHUB_OUTPUT"
+
       - name: Sync built files to Hostinger
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
-          server: ${{ secrets.HOSTINGER_FTP_SERVER }}
+          server: ${{ steps.ftp-server.outputs.server }}
           username: ${{ secrets.HOSTINGER_FTP_USERNAME }}
           password: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
           port: 21
           protocol: ftp
           local-dir: ./dist/
-          server-dir: /public_html/
+          server-dir: public_html/
           state-name: .crickuru-hostinger-public-sync-state.json
           dangerous-clean-slate: false
+          timeout: 120000
           log-level: minimal
