@@ -2439,20 +2439,140 @@ const RouterContext = React.createContext(null);
         return Number.isFinite(number) ? number : 0;
       }
 
-      function playerImprovementNotes(player, stats) {
-        const notes = [];
-        const average = Number.parseFloat(stats.average);
-        const bowlingAverage = Number.parseFloat(stats.bowlingAverage);
-        if (!stats.runs) notes.push("Build a repeatable scoring routine and turn more starts into innings.");
-        else if (Number.isFinite(average) && average < 25) notes.push("Work on strike rotation between boundary options to lift batting consistency.");
-        else notes.push("Keep converting boundary power into longer match-defining innings.");
-        if (!stats.wickets) notes.push("Develop a wicket-taking variation and attack the top of the stumps more often.");
-        else if (Number.isFinite(bowlingAverage) && bowlingAverage > 30) notes.push("Tighten the scoring areas around the wicket-taking deliveries.");
-        else notes.push("Keep sharpening the first and last overs where small changes create wickets.");
-        if (!(stats.catches || stats.stumpings || stats.runOuts)) notes.push("Add focused catching, ground-fielding and throwing repetitions to the weekly routine.");
-        else notes.push("Keep building fielding impact through sharper anticipation and cleaner releases.");
-        if (player.isCaptain) notes.push("As captain, keep pairing tactical clarity with calm communication under pressure.");
-        return notes.slice(0, 4);
+      function playerDetailDecimal(value) {
+        const number = Number.parseFloat(String(value ?? "").replace(/[^0-9.-]/g, ""));
+        return Number.isFinite(number) ? number : 0;
+      }
+
+      function playerDetailPercent(value) {
+        return playerDetailDecimal(String(value ?? "").replace("%", ""));
+      }
+
+      function playerMatchForm(player) {
+        return asArray(player.matchHistory || player.recentMatches)
+          .slice(0, 8)
+          .map((match) => match.performance || {})
+          .filter((performance) => Object.values(performance).some((value) => Number(value) > 0));
+      }
+
+      function coachingEvidence(label, value, suffix = "") {
+        return `${label}: ${value}${suffix}`;
+      }
+
+      function createImprovementReport(player, stats) {
+        const form = playerMatchForm(player);
+        const innings = playerDetailNumber(stats.battingInnings);
+        const bowlingInnings = playerDetailNumber(stats.bowlingInnings);
+        const fieldingMatches = playerDetailNumber(stats.fieldingMatches || stats.matches);
+        const average = playerDetailDecimal(stats.average);
+        const strikeRate = playerDetailDecimal(stats.strikeRate);
+        const bowlingAverage = playerDetailDecimal(stats.bowlingAverage);
+        const economy = playerDetailDecimal(stats.economy);
+        const captainWinPercentage = playerDetailPercent(stats.captainWinPercentage);
+        const formRuns = form.reduce((sum, item) => sum + playerDetailNumber(item.runs), 0);
+        const formWickets = form.reduce((sum, item) => sum + playerDetailNumber(item.wickets), 0);
+        const formCatches = form.reduce((sum, item) => sum + playerDetailNumber(item.catches), 0);
+        const formStumpings = form.reduce((sum, item) => sum + playerDetailNumber(item.stumpings), 0);
+        const report = [];
+        const strengths = [];
+        const addFocus = (area, priority, title, observed, why, action, target, confidence = "High") => report.push({ area, priority, title, observed, why, action, target, confidence });
+        const addStrength = (area, title, value) => strengths.push({ area, title, value });
+
+        if (innings >= 8) {
+          if (average && average < 25) addFocus("Batting", "High", "Turn starts into stable scores", coachingEvidence("career average", average.toFixed(2)), "The public batting average is below the consistency benchmark.", "Use a first-20-ball plan: leave or defend the hard ball, then target singles before expanding the boundary options.", "Raise average toward 25+ while keeping the current role.");
+          else if (average >= 40) addStrength("Batting", "Reliable run base", coachingEvidence("average", average.toFixed(2)));
+          if (strikeRate && strikeRate < 110) addFocus("Batting", "Medium", "Lift scoring tempo", coachingEvidence("strike rate", strikeRate.toFixed(2)), "The scoring rate suggests too many low-value balls between scoring shots.", "Practise two boundary options and a single option for each scoring zone, with a six-ball intent reset after a dot-ball pair.", "Move strike rate toward 110+ without reducing average.");
+          else if (strikeRate >= 160) addStrength("Batting", "Boundary pressure", coachingEvidence("strike rate", strikeRate.toFixed(2)));
+          if (playerDetailNumber(stats.fifties) > 0 && !playerDetailNumber(stats.hundreds)) addFocus("Batting", "Medium", "Convert fifties into match-winning hundreds", coachingEvidence("50s", stats.fifties), "There are established scoring starts but no recorded century conversion yet.", "At 40+, switch to a low-risk rotation plan and protect the scoring areas that are already working.", "Convert one established fifty into a 100+ score.");
+          if (playerDetailNumber(stats.ducks) / innings > 0.1) addFocus("Batting", "Medium", "Improve first-10-ball control", coachingEvidence("ducks", stats.ducks), "Early dismissals are a meaningful share of recorded innings.", "Train the opening phase against swing and short-ball scenarios before adding power shots.", "Reduce duck rate below 10% of innings.");
+        } else {
+          addFocus("Batting", "Watch", "Build a larger batting sample", "Public batting sample is limited", "The feed has too few recorded batting innings for a reliable technical conclusion.", "Log the first 20 balls of every innings: contact quality, dot balls, singles and dismissals.", "Collect 8+ innings before changing technique", "Low");
+        }
+
+        if (bowlingInnings >= 8) {
+          if (bowlingAverage > 30) addFocus("Bowling", "High", "Improve wicket efficiency", coachingEvidence("bowling average", bowlingAverage.toFixed(2)), "Runs per wicket are high compared with a strong control profile.", "Build an over-by-over wicket plan: one setup ball, one change-up, then attack the stumps or the outside edge.", "Bring bowling average below 30.");
+          else if (bowlingAverage && bowlingAverage < 22) addStrength("Bowling", "Wicket efficiency", coachingEvidence("average", bowlingAverage.toFixed(2)));
+          if (economy > 10.5) addFocus("Bowling", "High", "Tighten run control", coachingEvidence("economy", economy.toFixed(2)), "The current economy gives batters too many low-risk scoring balls.", "Practise a repeatable stock line for six balls, then use one planned variation rather than changing every delivery.", "Bring economy below 10.5.");
+          else if (economy && economy < 8) addStrength("Bowling", "Run control", coachingEvidence("economy", economy.toFixed(2)));
+          const wides = playerDetailNumber(stats.wides);
+          const noBalls = playerDetailNumber(stats.noBalls);
+          if ((wides + noBalls) / bowlingInnings > 0.6) addFocus("Bowling", "Medium", "Improve bowling discipline", coachingEvidence("wides + no-balls per innings", ((wides + noBalls) / bowlingInnings).toFixed(2)), "Extras are costing more than half a delivery per bowling innings on average.", "Use a target-zone drill with a smaller run-up and finish balanced over the front leg.", "Reduce wides and no-balls below 0.6 per innings.");
+          if (playerDetailNumber(stats.wickets) > 0 && !playerDetailNumber(stats.fiveWicketHauls)) addFocus("Bowling", "Watch", "Finish strong spells", coachingEvidence("wickets", stats.wickets), "Wickets are present but no five-wicket haul is recorded in the public totals.", "Rehearse a closing spell: attack the stumps when a batter is set and keep one boundary-saving field option ready.", "Turn one strong spell into a five-wicket haul.", "Medium");
+        } else {
+          addFocus("Bowling", "Watch", "Build a repeatable bowling sample", "Public bowling sample is limited", "There are not enough recorded bowling innings to separate control, threat and role effects.", "Track line, length, pace, extras and wickets after every over for the next eight innings.", "Collect 8+ bowling innings before changing the action", "Low");
+        }
+
+        const fieldingEvents = playerDetailNumber(stats.catches) + playerDetailNumber(stats.stumpings) + playerDetailNumber(stats.runOuts);
+        if (fieldingMatches >= 8) {
+          const fieldingRate = fieldingEvents / fieldingMatches;
+          if (fieldingRate < 0.2) addFocus("Fielding", "Medium", "Create more direct fielding impact", coachingEvidence("dismissal contributions per match", fieldingRate.toFixed(2)), "The public fielding totals show limited catches, stumpings or run outs per fielding match.", "Use three stations each week: reaction catches, one-hand pickups and throw-to-target under fatigue.", "Build toward 0.20+ direct contributions per match.");
+          else addStrength("Fielding", "Reliable involvement", coachingEvidence("direct contributions", fieldingEvents));
+          if (playerDetailNumber(stats.caughtBehind) + playerDetailNumber(stats.stumpings) > 0) addStrength("Fielding", "Wicketkeeping impact", coachingEvidence("keeper dismissals", playerDetailNumber(stats.caughtBehind) + playerDetailNumber(stats.stumpings)));
+        } else {
+          addFocus("Fielding", "Watch", "Make fielding measurable", "Public fielding sample is limited", "The feed does not yet have enough fielding matches for a stable rate.", "Record chances, successful pickups, catches and throws in every match, including chances not converted.", "Build a fielding baseline across 8+ matches", "Low");
+        }
+
+        if (playerDetailNumber(stats.captainMatches) >= 3) {
+          if (captainWinPercentage < 50) addFocus("Captaincy", "Medium", "Sharpen game-state decisions", coachingEvidence("captain win rate", `${captainWinPercentage.toFixed(2)}%`), "The public captaincy record leaves room to improve decision outcomes.", "Review toss choice, bowling changes and field settings after every match; write one decision to repeat and one to change.", "Move captain win rate toward 50%+.");
+          else addStrength("Captaincy", "Positive leadership record", coachingEvidence("captain win rate", `${captainWinPercentage.toFixed(2)}%`));
+        }
+
+        if (form.length >= 3) {
+          if (formRuns / form.length >= 30) addStrength("Recent form", "Recent scoring pulse", coachingEvidence("runs across sampled matches", formRuns));
+          else if (formRuns > 0) addFocus("Recent form", "Medium", "Carry recent starts deeper", coachingEvidence("runs across sampled matches", formRuns), "Recent scorecard-linked form shows involvement but not yet a sustained scoring run.", "Set a match-to-match process goal instead of chasing a single big score: one partnership, one rotation phase, one boundary phase.", "Raise sampled-match scoring output next sync.", "Medium");
+          if (formWickets >= 5) addStrength("Recent form", "Current wicket threat", coachingEvidence("sampled-match wickets", formWickets));
+          if (formCatches + formStumpings >= 3) addStrength("Recent form", "Current fielding impact", coachingEvidence("sampled-match dismissals", formCatches + formStumpings));
+        }
+
+        const sourceCoverage = player.stats?.publicFieldCount || Object.values(stats.sections || {}).reduce((sum, items) => sum + items.length, 0);
+        const coverage = sourceCoverage ? `Based on ${sourceCoverage} public CricHeroes fields${form.length ? ` and ${form.length} scorecard-linked recent performances` : ""}.` : "Waiting for public CricHeroes fields before making a strong recommendation.";
+        const ordered = report.sort((a, b) => ({ High: 0, Medium: 1, Watch: 2 }[a.priority] - ({ High: 0, Medium: 1, Watch: 2 }[b.priority]))).slice(0, 6);
+        return { coverage, focus: ordered, strengths: strengths.slice(0, 4), formSample: form.length };
+      }
+
+      function PlayerImprovementPanel({ player, stats }) {
+        const report = createImprovementReport(player, stats);
+        return (
+          <article className="rounded-[8px] border border-cyan/25 bg-[linear-gradient(135deg,rgba(35,213,232,0.09),rgba(255,255,255,0.025))] p-5">
+            <div className="flex flex-wrap items-start justify-between gap-3">
+              <div>
+                <p className="flex items-center gap-2 text-xs font-black uppercase tracking-[0.2em] text-cyan"><Icon.Sparkles size={15} /> AI performance coach</p>
+                <h3 className="mt-2 font-display text-3xl font-black uppercase text-white">Areas to improve</h3>
+                <p className="mt-2 max-w-2xl text-xs leading-5 text-white/46">{report.coverage} Recommendations are coaching prompts, not a replacement for an in-person coach.</p>
+              </div>
+              <span className="rounded-full border border-cyan/25 bg-cyan/10 px-3 py-2 text-[0.62rem] font-black uppercase tracking-[0.12em] text-cyan">Daily stat lens</span>
+            </div>
+
+            {report.strengths.length > 0 && (
+              <div className="mt-5 flex flex-wrap gap-2">
+                {report.strengths.map((strength) => <span key={`${strength.area}-${strength.title}`} className="rounded-full border border-gold/25 bg-gold/10 px-3 py-2 text-xs font-bold text-gold">{strength.title}: {strength.value}</span>)}
+              </div>
+            )}
+
+            <div className="mt-5 grid gap-3">
+              {report.focus.map((item, index) => (
+                <div key={`${item.area}-${item.title}`} className="rounded-[7px] border border-white/10 bg-night/55 p-4">
+                  <div className="flex flex-wrap items-start justify-between gap-3">
+                    <div className="flex min-w-0 gap-3">
+                      <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full border border-cyan/30 bg-cyan/10 font-display font-black text-cyan">{String(index + 1).padStart(2, "0")}</span>
+                      <div>
+                        <div className="flex flex-wrap items-center gap-2"><p className="text-[0.62rem] font-black uppercase tracking-[0.16em] text-cyan">{item.area}</p><span className={`rounded-full px-2 py-1 text-[0.55rem] font-black uppercase tracking-[0.1em] ${item.priority === "High" ? "bg-crimson/15 text-crimson" : item.priority === "Medium" ? "bg-gold/15 text-gold" : "bg-white/10 text-white/48"}`}>{item.priority} priority</span></div>
+                        <h4 className="mt-1 text-lg font-black text-white">{item.title}</h4>
+                      </div>
+                    </div>
+                    <span className="text-[0.58rem] font-black uppercase tracking-[0.12em] text-white/35">{item.confidence} signal</span>
+                  </div>
+                  <div className="mt-3 grid gap-2 text-sm leading-6 sm:grid-cols-3">
+                    <p className="text-white/62"><span className="block text-[0.58rem] font-black uppercase tracking-[0.12em] text-white/35">Observed</span>{item.observed}</p>
+                    <p className="text-white/62"><span className="block text-[0.58rem] font-black uppercase tracking-[0.12em] text-white/35">Why it matters</span>{item.why}</p>
+                    <p className="text-white/62"><span className="block text-[0.58rem] font-black uppercase tracking-[0.12em] text-white/35">Next target</span>{item.target}</p>
+                  </div>
+                  <p className="mt-3 border-t border-white/8 pt-3 text-sm leading-6 text-cyan/80"><span className="font-black uppercase tracking-[0.1em]">Practice cue: </span>{item.action}</p>
+                </div>
+              ))}
+            </div>
+          </article>
+        );
       }
 
       function PlayerSkillMap({ type, player, stats }) {
@@ -2597,7 +2717,6 @@ const RouterContext = React.createContext(null);
         const warriorsStats = player.warriorsStats || {};
         const recentMatches = asArray(player.recentMatches).slice(0, 5);
         const matchHistory = asArray(player.matchHistory).length ? asArray(player.matchHistory) : recentMatches;
-        const improvementNotes = playerImprovementNotes(player, stats);
         const neon = playerNeonTheme(player.impact || 0);
 
         useEffect(() => {
@@ -2644,14 +2763,7 @@ const RouterContext = React.createContext(null);
                 </div>
 
                 <div className="grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
-                  <article className="rounded-[8px] border border-gold/20 bg-gold/[0.045] p-5">
-                    <p className="text-xs font-black uppercase tracking-[0.2em] text-gold">Where to improve</p>
-                    <h3 className="mt-2 font-display text-3xl font-black uppercase text-white">Next level plan</h3>
-                    <p className="mt-2 text-xs leading-5 text-white/40">Coaching suggestions inferred from public totals, role signals and recent form.</p>
-                    <div className="mt-4 grid gap-3">
-                      {improvementNotes.map((note, index) => <p key={note} className="flex gap-3 text-sm leading-6 text-white/68"><span className="font-display text-xl font-black text-gold">0{index + 1}</span><span>{note}</span></p>)}
-                    </div>
-                  </article>
+                  <PlayerImprovementPanel player={player} stats={stats} />
 
                   <article className="rounded-[8px] border border-white/12 bg-white/[0.035] p-5">
                     <div className="flex items-end justify-between gap-3">
