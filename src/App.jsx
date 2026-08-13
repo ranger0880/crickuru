@@ -440,6 +440,29 @@ const RouterContext = React.createContext(null);
         }).format(date);
       }
 
+      function indiaMonthKey(value) {
+        const date = new Date(value);
+        if (Number.isNaN(date.getTime())) return "";
+        const parts = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Kolkata", year: "numeric", month: "2-digit" }).formatToParts(date);
+        const year = parts.find((part) => part.type === "year")?.value;
+        const month = parts.find((part) => part.type === "month")?.value;
+        return year && month ? `${year}-${month}` : "";
+      }
+
+      function radarMonthWindow(now = new Date()) {
+        const current = indiaMonthKey(now);
+        if (!current) return new Set();
+        const [year, month] = current.split("-").map(Number);
+        return new Set([-1, 0, 1].map((offset) => {
+          const date = new Date(Date.UTC(year, month - 1 + offset, 1));
+          return `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, "0")}`;
+        }));
+      }
+
+      function isRadarWindowMatch(match, now = new Date()) {
+        return radarMonthWindow(now).has(indiaMonthKey(match?.startTime || match?.date));
+      }
+
       function compactFeedDate(value) {
         if (!value) return "Awaiting schedule";
         const date = new Date(value);
@@ -5096,8 +5119,23 @@ const RouterContext = React.createContext(null);
         const filteredMatches = matchesForStatus.filter((match) => levelTab === "all" || match.level === levelTab);
         const featureMatch = asArray(data.live)[0] || asArray(data.upcoming)[0] || asArray(data.recent)[0];
         const rankings = normalizedIndiaRankings(data);
-        const importantMatches = asArray(data.importantMatches).slice(0, 10);
-        const importantTournaments = asArray(data.importantTournaments);
+        const importantMatches = asArray(data.importantMatches).filter((match) => isRadarWindowMatch(match)).slice(0, 10);
+        const importantTournaments = asArray(data.importantTournaments)
+          .map((tournament) => {
+            const matches = asArray(tournament.matches).filter((match) => isRadarWindowMatch(match));
+            if (!matches.length) return null;
+            return {
+              ...tournament,
+              total: matches.length,
+              live: matches.filter((match) => match.status === "live").length,
+              upcoming: matches.filter((match) => match.status === "upcoming").length,
+              recent: matches.filter((match) => match.status === "recent").length,
+              startTime: matches.map((match) => match.startTime).sort()[0] || tournament.startTime,
+              endTime: matches.map((match) => match.startTime).sort().at(-1) || tournament.endTime,
+              matches,
+            };
+          })
+          .filter(Boolean);
         const [selectedTournamentId, setSelectedTournamentId] = useState("");
         const [radarLevel, setRadarLevel] = useState("all");
         const [tournamentView, setTournamentView] = useState("radar");
@@ -5105,7 +5143,9 @@ const RouterContext = React.createContext(null);
           ? importantTournaments
           : importantTournaments.filter((tournament) => tournament.level === radarLevel);
         const activeTournament = importantTournaments.find((tournament) => tournament.id === selectedTournamentId) || importantTournaments[0];
-        const monthlyResults = asArray(data.importantResultsByMonth);
+        const monthlyResults = asArray(data.importantResultsByMonth)
+          .map((month) => ({ ...month, matches: asArray(month.matches).filter((match) => isRadarWindowMatch(match)) }))
+          .filter((month) => month.matches.length);
         const activeMonth = monthlyResults.find((month) => month.month === selectedMonth) || monthlyResults[0];
 
         return (

@@ -576,11 +576,31 @@ function importantMatchReason(match) {
   return "";
 }
 
-function buildImportantMatches(groups) {
+function indiaMonthKey(value) {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return "";
+  const parts = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Kolkata", year: "numeric", month: "2-digit" }).formatToParts(date);
+  const year = parts.find((part) => part.type === "year")?.value;
+  const month = parts.find((part) => part.type === "month")?.value;
+  return year && month ? `${year}-${month}` : "";
+}
+
+function radarMonthWindow(now = new Date()) {
+  const current = indiaMonthKey(now);
+  if (!current) return new Set();
+  const [year, month] = current.split("-").map(Number);
+  return new Set([-1, 0, 1].map((offset) => {
+    const date = new Date(Date.UTC(year, month - 1 + offset, 1));
+    return `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, "0")}`;
+  }));
+}
+
+function buildImportantMatches(groups, now = new Date()) {
   const priority = { live: 3, upcoming: 2, recent: 1 };
+  const allowedMonths = radarMonthWindow(now);
   return [...groups.live, ...groups.upcoming, ...groups.recent]
     .map((match) => ({ ...match, importance: importantMatchReason(match) }))
-    .filter((match) => match.importance)
+    .filter((match) => match.importance && allowedMonths.has(indiaMonthKey(match.startTime)))
     .sort((a, b) => {
       const statusDelta = (priority[b.status] || 0) - (priority[a.status] || 0);
       if (statusDelta) return statusDelta;
@@ -686,9 +706,7 @@ async function main() {
   };
   groups.recent = await enrichStarPerformers(groups.recent);
   const importantMatches = buildImportantMatches(groups);
-  const completedImportantMatches = groups.recent
-    .map((match) => ({ ...match, importance: importantMatchReason(match) }))
-    .filter((match) => match.importance);
+  const completedImportantMatches = importantMatches.filter((match) => match.status === "recent");
 
   const feed = {
     schemaVersion: 1,
