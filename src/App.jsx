@@ -1058,7 +1058,7 @@ const RouterContext = React.createContext(null);
             <a
               href={CricLinks.matches}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="mt-5 inline-flex w-full min-h-11 items-center justify-center gap-2 rounded-full border border-white/12 bg-white/7 text-sm font-bold uppercase tracking-[0.16em] text-white/84 transition hover:border-gold/60 hover:text-gold"
             >
               Open Matches <Icon.ExternalLink size={16} />
@@ -1246,7 +1246,7 @@ const RouterContext = React.createContext(null);
                   <a
                     href={CricLinks.matches}
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     className="shine-button inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-gold px-5 text-sm font-black uppercase tracking-[0.16em] text-night"
                   >
                     Open Matches <Icon.ExternalLink size={16} />
@@ -1254,7 +1254,7 @@ const RouterContext = React.createContext(null);
                   <a
                     href={CricLinks.members}
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/15 bg-white/7 px-5 text-sm font-black uppercase tracking-[0.16em] text-white transition hover:border-gold/55 hover:text-gold"
                   >
                     Open Members <Icon.ExternalLink size={16} />
@@ -1286,7 +1286,7 @@ const RouterContext = React.createContext(null);
                 <a
                   href={CricLinks.members}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="mt-7 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-gold px-6 text-sm font-black uppercase tracking-[0.16em] text-night transition hover:scale-[1.03]"
                 >
                   Open Official Members <Icon.ExternalLink size={16} />
@@ -1355,7 +1355,7 @@ const RouterContext = React.createContext(null);
                   </div>
                   <div className="mt-4 flex flex-col gap-3 text-sm text-white/58 sm:flex-row sm:items-center sm:justify-between">
                     <span>{loading ? "Syncing CricHeroes feed..." : `Score feed checked: ${formatFeedDate(data.syncedAt)}`}</span>
-                    <a href={data.team?.matchesUrl || CricLinks.matches} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 font-black uppercase tracking-[0.16em] text-gold">
+                    <a href={data.team?.matchesUrl || CricLinks.matches} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-black uppercase tracking-[0.16em] text-gold">
                       CricHeroes <Icon.ExternalLink size={15} />
                     </a>
                   </div>
@@ -1655,7 +1655,7 @@ const RouterContext = React.createContext(null);
                     <a
                       href={assetUrl("/data/crickuru-live.json")}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/[0.045] px-4 py-2 text-white/64 transition hover:border-gold/40 hover:text-gold"
                     >
                       Raw JSON <Icon.ExternalLink size={14} />
@@ -1682,7 +1682,7 @@ const RouterContext = React.createContext(null);
                     <a
                       href={team.cricHeroesUrl || CricLinks.profile}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-gold px-5 text-sm font-black uppercase tracking-[0.14em] text-night transition hover:scale-[1.03]"
                     >
                       Official Profile <Icon.ExternalLink size={15} />
@@ -1764,7 +1764,7 @@ const RouterContext = React.createContext(null);
                       key={url}
                       href={url}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       className="flex items-center justify-between gap-3 rounded-[8px] border border-white/10 bg-night/55 p-3 text-sm font-semibold text-white/64 transition hover:border-gold/35 hover:text-gold"
                     >
                       <span className="break-all">{url}</span>
@@ -2135,7 +2135,7 @@ const RouterContext = React.createContext(null);
                 <a
                   href={data.team?.membersUrl || CricLinks.members}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-gold/35 bg-gold/10 px-5 text-sm font-black uppercase tracking-[0.16em] text-gold transition hover:border-gold hover:bg-gold/15"
                 >
                   Official Members <Icon.ExternalLink size={16} />
@@ -3490,7 +3490,7 @@ const RouterContext = React.createContext(null);
               {game.complete ? (
                 <div className="grid gap-3 sm:grid-cols-2">
                   <button type="button" onClick={onReset} className="shine-button min-h-14 rounded-full bg-gold px-6 text-sm font-black uppercase tracking-[0.18em] text-night">Play Again</button>
-                  <a href={CricLinks.matches} target="_blank" rel="noreferrer" className="inline-flex min-h-14 items-center justify-center rounded-full border border-white/15 bg-white/7 px-6 text-sm font-black uppercase tracking-[0.18em] text-white/72">Real Matches</a>
+                  <a href={CricLinks.matches} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-14 items-center justify-center rounded-full border border-white/15 bg-white/7 px-6 text-sm font-black uppercase tracking-[0.18em] text-white/72">Real Matches</a>
                 </div>
               ) : (
                 <div className="grid grid-cols-3 gap-2">
@@ -4615,7 +4615,7 @@ const RouterContext = React.createContext(null);
                 <a
                   href={match.sourceUrl}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="inline-flex min-h-10 shrink-0 items-center justify-center gap-2 rounded-full border border-white/12 px-4 text-xs font-black uppercase tracking-[0.14em] text-white/62 transition hover:border-gold/45 hover:text-gold"
                 >
                   Source <Icon.ExternalLink size={14} />
@@ -4741,7 +4741,7 @@ const RouterContext = React.createContext(null);
                     <a
                       href={CricLinks.matches}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/15 bg-white/7 px-6 text-sm font-black uppercase tracking-[0.16em] text-white transition hover:border-gold/55 hover:text-gold"
                     >
                       CricHeroes <Icon.ExternalLink size={16} />
@@ -4776,7 +4776,7 @@ const RouterContext = React.createContext(null);
                 <a
                   href={CricLinks.matches}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/12 px-4 text-sm font-bold text-white/70 transition hover:border-gold/50 hover:text-gold"
                 >
                   Matches <Icon.ExternalLink size={15} />
@@ -4784,7 +4784,7 @@ const RouterContext = React.createContext(null);
                 <a
                   href={CricLinks.members}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/12 px-4 text-sm font-bold text-white/70 transition hover:border-gold/50 hover:text-gold"
                 >
                   Members <Icon.ExternalLink size={15} />
