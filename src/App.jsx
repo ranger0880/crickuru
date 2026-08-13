@@ -1803,14 +1803,6 @@ const RouterContext = React.createContext(null);
                   <div className="mt-6 flex flex-wrap gap-3 text-xs font-black uppercase tracking-[0.16em]">
                     <span className="rounded-full border border-gold/30 bg-gold/10 px-4 py-2 text-gold">{syncText}</span>
                     {error && <span className="rounded-full border border-crimson/35 bg-crimson/10 px-4 py-2 text-crimson">Using saved feed</span>}
-                    <a
-                      href={assetUrl("/data/crickuru-live.json")}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/[0.045] px-4 py-2 text-white/64 transition hover:border-gold/40 hover:text-gold"
-                    >
-                      Raw JSON <Icon.ExternalLink size={14} />
-                    </a>
                   </div>
                 </motion.div>
 
@@ -1887,9 +1879,7 @@ const RouterContext = React.createContext(null);
         const summary = data.summary || liveFeedFallback.summary;
         const memberSummary = data.memberSummary || liveFeedFallback.memberSummary;
         const insights = data.matchInsights || liveFeedFallback.matchInsights;
-        const uniqueSourcePages = [
-          ...new Set([team.cricHeroesUrl || CricLinks.profile, ...sourcePages, assetUrl("/data/crickuru-live.json")].filter(Boolean)),
-        ];
+        const uniqueSourcePages = [...new Set([team.cricHeroesUrl || CricLinks.profile, ...sourcePages].filter(Boolean))];
 
         return (
           <div className="grid gap-5 xl:grid-cols-[0.95fr_1.05fr]">
@@ -1914,7 +1904,7 @@ const RouterContext = React.createContext(null);
 
               <article className="rounded-[8px] border border-white/12 bg-white/[0.045] p-5">
                 <p className="text-xs font-black uppercase tracking-[0.22em] text-gold">Public source pages</p>
-                <p className="mt-2 text-sm leading-6 text-white/50">Open the live team pages directly, or inspect the saved snapshot used by CricKuru.</p>
+                <p className="mt-2 text-sm leading-6 text-white/50">Open the live team pages directly. CricKuru keeps the synchronized data inside the experience.</p>
                 <div className="mt-4 grid gap-3">
                   {uniqueSourcePages.map((url) => {
                     const source = publicSourceDetails(url);
