@@ -218,7 +218,9 @@ const RouterContext = React.createContext(null);
       const themeStorageKey = "crickuru-theme";
       const quizProfileStorageKey = "crickuru-quiz-profile-v1";
       const onlinePresenceStorageKey = "crickuru-online-presence-v1";
+      const playerChatStorageKey = "crickuru-player-chat-v1";
       const onlinePresenceTtl = 90 * 1000;
+      const playerChatLimit = 80;
 
       function getInitialTheme() {
         try {
@@ -275,6 +277,15 @@ const RouterContext = React.createContext(null);
         try {
           const stored = JSON.parse(window.localStorage.getItem(onlinePresenceStorageKey) || "[]");
           return Array.isArray(stored) ? stored : [];
+        } catch {
+          return [];
+        }
+      }
+
+      function readPlayerChatMessages() {
+        try {
+          const stored = JSON.parse(window.localStorage.getItem(playerChatStorageKey) || "[]");
+          return Array.isArray(stored) ? stored.filter((message) => message?.text && message?.senderName).slice(-playerChatLimit) : [];
         } catch {
           return [];
         }
@@ -552,11 +563,13 @@ const RouterContext = React.createContext(null);
         LogIn: (props) => <SvgIcon {...props}><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" /><path d="M10 17l5-5-5-5" /><path d="M15 12H3" /></SvgIcon>,
         History: (props) => <SvgIcon {...props}><path d="M3 12a9 9 0 1 0 3-6.7" /><path d="M3 3v6h6" /><path d="M12 7v5l3 2" /></SvgIcon>,
         Menu: (props) => <SvgIcon {...props}><path d="M4 6h16" /><path d="M4 12h16" /><path d="M4 18h16" /></SvgIcon>,
+        MessageCircle: (props) => <SvgIcon {...props}><path d="M20 11.5a7.5 7.5 0 0 1-7.8 7.5 8.5 8.5 0 0 1-3.5-.8L4 20l1.7-4.1A7.4 7.4 0 0 1 4.5 11.5 7.5 7.5 0 0 1 12 4a7.5 7.5 0 0 1 8 7.5Z" /><path d="M8 11.5h.01" /><path d="M12 11.5h.01" /><path d="M16 11.5h.01" /></SvgIcon>,
         Moon: (props) => <SvgIcon {...props}><path d="M12 3a6 6 0 0 0 8.8 6.9A9 9 0 1 1 12 3Z" /></SvgIcon>,
         Mouse: (props) => <SvgIcon {...props}><rect x="5" y="2" width="14" height="20" rx="7" /><path d="M12 6v4" /></SvgIcon>,
         Play: (props) => <SvgIcon {...props}><polygon points="6 3 20 12 6 21 6 3" /></SvgIcon>,
         Radio: (props) => <SvgIcon {...props}><path d="M4.9 19.1a10 10 0 0 1 0-14.2" /><path d="M7.8 16.2a6 6 0 0 1 0-8.5" /><circle cx="12" cy="12" r="2" /><path d="M16.2 7.8a6 6 0 0 1 0 8.5" /><path d="M19.1 4.9a10 10 0 0 1 0 14.2" /></SvgIcon>,
         Shield: (props) => <SvgIcon {...props}><path d="M20 13c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V5l8-3 8 3v8Z" /></SvgIcon>,
+        Send: (props) => <SvgIcon {...props}><path d="m22 2-7 20-4-9-9-4Z" /><path d="M22 2 11 13" /></SvgIcon>,
         Sparkles: (props) => <SvgIcon {...props}><path d="m12 3-1.9 5.8L4 11l6.1 2.2L12 19l1.9-5.8L20 11l-6.1-2.2L12 3Z" /><path d="M5 3v4" /><path d="M3 5h4" /><path d="M19 17v4" /><path d="M17 19h4" /></SvgIcon>,
         Sun: (props) => <SvgIcon {...props}><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></SvgIcon>,
         Swords: (props) => <SvgIcon {...props}><path d="m14.5 17.5 3 3 3-3-3-3" /><path d="m3 3 8.5 8.5" /><path d="m11.5 6.5 2-2L21 12l-2 2" /><path d="m3 21 8.5-8.5" /><path d="m6.5 11.5-2 2L12 21l2-2" /></SvgIcon>,
@@ -5873,6 +5886,90 @@ const RouterContext = React.createContext(null);
         );
       }
 
+      function PlayerChat() {
+        const guestId = useRef(`guest-${Date.now()}-${Math.random().toString(36).slice(2)}`).current;
+        const [open, setOpen] = useState(false);
+        const [draft, setDraft] = useState("");
+        const [messages, setMessages] = useState(readPlayerChatMessages);
+        const messagesRef = useRef(null);
+
+        useEffect(() => {
+          const syncMessages = () => setMessages(readPlayerChatMessages());
+          window.addEventListener("storage", syncMessages);
+          return () => window.removeEventListener("storage", syncMessages);
+        }, []);
+
+        useEffect(() => {
+          if (open && messagesRef.current) messagesRef.current.scrollTop = messagesRef.current.scrollHeight;
+        }, [open, messages]);
+
+        function sendMessage(event) {
+          event.preventDefault();
+          const text = draft.replace(/[\u0000-\u001F\u007F]/g, " ").replace(/\s+/g, " ").trim().slice(0, 280);
+          if (!text) return;
+          const profile = readQuizProfileForPresence();
+          const message = {
+            id: `message-${Date.now()}-${Math.random().toString(36).slice(2)}`,
+            senderId: String(profile?.id || guestId),
+            senderName: String(profile?.name || "Guest Warrior"),
+            avatar: String(profile?.avatar || ""),
+            text,
+            createdAt: new Date().toISOString(),
+          };
+          const nextMessages = [...readPlayerChatMessages(), message].slice(-playerChatLimit);
+          try {
+            window.localStorage.setItem(playerChatStorageKey, JSON.stringify(nextMessages));
+          } catch {
+            // Keep the message in the current window if storage is unavailable.
+          }
+          setMessages(nextMessages);
+          setDraft("");
+        }
+
+        return (
+          <aside className={`fixed bottom-24 right-4 z-[65] w-[min(23rem,calc(100vw-2rem))] sm:right-6 ${open ? "" : "w-auto"}`} aria-label="Warrior player chat">
+            {open ? (
+              <div className="overflow-hidden rounded-[10px] border border-cyan/30 bg-night/95 shadow-[0_18px_70px_rgba(0,0,0,0.42)] backdrop-blur-xl">
+                <div className="flex items-center justify-between gap-3 border-b border-white/10 px-4 py-3">
+                  <div className="flex items-center gap-2">
+                    <span className="grid h-9 w-9 place-items-center rounded-full border border-cyan/35 bg-cyan/10 text-cyan"><Icon.MessageCircle size={17} /></span>
+                    <div>
+                      <p className="text-[0.62rem] font-black uppercase tracking-[0.2em] text-cyan">Warrior chat</p>
+                      <p className="text-xs font-bold text-white/48">Players talking live</p>
+                    </div>
+                  </div>
+                  <button type="button" onClick={() => setOpen(false)} title="Close chat" aria-label="Close chat" className="grid h-9 w-9 place-items-center rounded-full border border-white/12 text-white/60 transition hover:border-cyan/50 hover:text-cyan"><Icon.X size={16} /></button>
+                </div>
+                <div ref={messagesRef} className="max-h-[min(24rem,52vh)] min-h-40 space-y-3 overflow-y-auto p-3" aria-live="polite">
+                  {messages.length ? messages.map((message) => (
+                    <article key={message.id} className="flex items-start gap-2">
+                      <LiveAvatar src={message.avatar} name={message.senderName} />
+                      <div className="min-w-0 rounded-[8px] border border-white/10 bg-white/[0.05] px-3 py-2">
+                        <div className="flex flex-wrap items-baseline gap-2">
+                          <p className="max-w-[11rem] truncate text-xs font-black text-white/82">{message.senderName}</p>
+                          <time className="text-[0.55rem] font-bold uppercase tracking-[0.08em] text-white/35" dateTime={message.createdAt}>{compactFeedDate(message.createdAt)}</time>
+                        </div>
+                        <p className="mt-1 break-words text-sm leading-5 text-white/72">{message.text}</p>
+                      </div>
+                    </article>
+                  )) : (
+                    <div className="grid min-h-32 place-items-center rounded-[8px] border border-dashed border-white/12 px-5 text-center">
+                      <p className="text-xs font-bold uppercase tracking-[0.12em] text-white/45">Start the conversation</p>
+                    </div>
+                  )}
+                </div>
+                <form onSubmit={sendMessage} className="flex items-center gap-2 border-t border-white/10 p-3">
+                  <input value={draft} onChange={(event) => setDraft(event.target.value)} maxLength={280} aria-label="Chat message" placeholder="Say something to the players" className="min-h-11 min-w-0 flex-1 rounded-full border border-white/12 bg-white/[0.06] px-4 text-sm text-white outline-none placeholder:text-white/35 focus:border-cyan/60" />
+                  <button type="submit" title="Send message" aria-label="Send message" className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-cyan text-night transition hover:bg-white"><Icon.Send size={17} /></button>
+                </form>
+              </div>
+            ) : (
+              <button type="button" onClick={() => setOpen(true)} title="Open player chat" aria-label="Open player chat" className="relative grid h-14 w-14 place-items-center rounded-full border border-cyan/45 bg-night/95 text-cyan shadow-[0_8px_36px_rgba(0,0,0,0.35),0_0_24px_rgba(34,211,238,0.2)] transition hover:scale-105 hover:border-cyan hover:text-white"><Icon.MessageCircle size={23} /><span className="absolute right-1 top-1 h-2.5 w-2.5 rounded-full bg-cyan shadow-[0_0_14px_rgba(34,211,238,0.85)]" /></button>
+            )}
+          </aside>
+        );
+      }
+
       function App() {
         const routerBasename = window.location.hostname.endsWith("github.io") ? "/crickuru" : "/";
 
@@ -5884,6 +5981,7 @@ const RouterContext = React.createContext(null);
                 <MetaManager />
                 <IndiaLiveStrip />
                 <Navbar />
+                <PlayerChat />
                 <Routes>
                   <Route path="/" element={<LandingPage />} />
                   <Route
