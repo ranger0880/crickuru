@@ -7,6 +7,8 @@ const TEAM_SLUG = "kurukshetra-warriors";
 const TEAM_NAME = "Kurukshetra Warriors";
 const BASE_URL = `https://cricheroes.com/team-profile/${TEAM_ID}/${TEAM_SLUG}`;
 const OUTPUT_FILE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../data/crickuru-live.json");
+const PLAYER_REFRESH_BATCH = 8;
+const RATE_LIMIT_RETRIES = 2;
 
 const HEADERS = {
   "user-agent":
@@ -48,7 +50,7 @@ function hasPublicDataChanged(previousFeed, nextFeed) {
 }
 
 async function fetchFlightText(url) {
-  for (let attempt = 0; attempt < 2; attempt += 1) {
+  for (let attempt = 0; attempt <= RATE_LIMIT_RETRIES; attempt += 1) {
     const response = await fetch(url, { headers: HEADERS });
     if (response.ok) {
       const html = await response.text();
@@ -66,10 +68,12 @@ async function fetchFlightText(url) {
 
       return chunks.join("\n");
     }
-    if (response.status !== 429 || attempt === 1) {
+    if (response.status !== 429 || attempt === RATE_LIMIT_RETRIES) {
       throw new Error(`CricHeroes returned ${response.status} for ${url}`);
     }
-    await wait(1500);
+    const retryAfter = Number(response.headers.get("retry-after"));
+    const backoff = Number.isFinite(retryAfter) && retryAfter > 0 ? retryAfter * 1000 : 3000 * (attempt + 1);
+    await wait(Math.min(12000, backoff));
   }
 }
 
@@ -523,17 +527,27 @@ function playerPerformanceFromScorecard(player, match, scorecard) {
   };
 }
 
-async function hydratePlayerProfiles(players, previousPlayers = []) {
+async function hydratePlayerProfiles(players, previousPlayers = [], refreshCursor = 0) {
+  const previousById = new Map((previousPlayers || []).map((player) => [Number(player.id), player]));
+  const orderedPlayers = players.length
+    ? [...players.slice(refreshCursor), ...players.slice(0, refreshCursor)]
+    : [];
+  const missingStats = orderedPlayers.filter((player) => !previousById.get(Number(player.id))?.overallStats?.source);
+  const refreshCandidates = missingStats.length
+    ? missingStats
+    : orderedPlayers.filter((player) => !previousById.get(Number(player.id))?.historyComplete).slice(0, PLAYER_REFRESH_BATCH);
+  const targets = (refreshCandidates.length ? refreshCandidates : orderedPlayers).slice(0, PLAYER_REFRESH_BATCH);
+  const targetIds = new Set(targets.map((player) => Number(player.id)));
   const snapshots = await mapWithConcurrency(players, 1, async (player) => {
+    if (!targetIds.has(Number(player.id))) return { overallStats: null, matchHistory: [], historyNext: "", historyFetched: false };
     try {
-      const previous = (previousPlayers || []).find((item) => Number(item.id) === Number(player.id));
+      const previous = previousById.get(Number(player.id));
       return await fetchPlayerProfileData(player, previous);
     } catch (error) {
       console.warn(`Player profile unavailable for ${player.name}: ${error.message}`);
       return { overallStats: null, matchHistory: [], historyNext: "", historyFetched: false };
     }
   });
-  const previousById = new Map((previousPlayers || []).map((player) => [Number(player.id), player]));
   players.forEach((player, index) => {
     const previous = previousById.get(Number(player.id));
     player.overallStats = snapshots[index].overallStats || previous?.overallStats || {};
@@ -549,6 +563,7 @@ async function hydratePlayerProfiles(players, previousPlayers = []) {
 
   const recentMatches = new Map();
   for (const player of players) {
+    if (!targetIds.has(Number(player.id))) continue;
     for (const match of player.recentMatches.slice(0, 6)) {
       if (!recentMatches.has(match.id)) recentMatches.set(match.id, match);
     }
@@ -1127,7 +1142,8 @@ async function main() {
   const matches = baseMatches.map((match) => ({ ...match, scorecard: scorecardsByMatch.get(Number(match.id)) || null }));
   const { liveMatches, upcomingMatches, recentMatches } = splitMatches(matches);
   const players = normalizeMembers(rawMembers);
-  await hydratePlayerProfiles(players, previousFeed?.players || []);
+  const refreshCursor = players.length ? Number(previousFeed?.playerSyncCursor || 0) % players.length : 0;
+  await hydratePlayerProfiles(players, previousFeed?.players || [], refreshCursor);
   const team = normalizeTeam(teamDetails, rawMembers, players);
   const teamRecordCandidates = aggregatePlayerStats(players, recentMatches);
   const overallRecordCandidates = extractPlayerRecentRecordCandidates(players);
@@ -1150,6 +1166,7 @@ async function main() {
     source: "CricHeroes public team and player pages",
     syncedAt: new Date().toISOString(),
     playerStatsUpdatedAt: new Date().toISOString(),
+    playerSyncCursor: players.length ? (refreshCursor + PLAYER_REFRESH_BATCH) % players.length : 0,
     dataInventory: {
       teamProfile: true,
       matches: matches.length,
