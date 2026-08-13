@@ -386,9 +386,33 @@ const RouterContext = React.createContext(null);
         return Array.isArray(value) ? value : [];
       }
 
+      const CRICHEROES_STATS_SOURCE = "CricHeroes public player stats";
+
+      function hasPlayerStats(stats) {
+        if (!stats || typeof stats !== "object") return false;
+        return Object.entries(stats).some(([key, value]) => key !== "source" && key !== "updatedAt" && value !== null && value !== undefined && value !== "");
+      }
+
+      function normalizePlayerStats(stats) {
+        if (!hasPlayerStats(stats)) return {};
+        return {
+          ...stats,
+          matches: stats.matches ?? stats.matchesTracked,
+          fieldingMatches: stats.fieldingMatches ?? stats.matchesTracked,
+          bestBowling: stats.bestBowling ?? (stats.bestWickets ? `${stats.bestWickets} wickets` : undefined),
+        };
+      }
+
       function playerOverallStats(player) {
-        const candidates = [player?.overallStats, player?.stats];
-        return candidates.find((stats) => stats?.source === "CricHeroes public player stats") || {};
+        const candidates = [player?.overallStats, player?.stats, player?.warriorsStats];
+        const overall = candidates.find((stats) => stats?.source === CRICHEROES_STATS_SOURCE);
+        return normalizePlayerStats(overall || candidates.find(hasPlayerStats));
+      }
+
+      function playerStatsSource(player, stats = playerOverallStats(player)) {
+        if (stats?.source === CRICHEROES_STATS_SOURCE) return "Overall CricHeroes career";
+        if (hasPlayerStats(stats)) return "Kurukshetra Warriors tracked";
+        return "Overall profile refresh scheduled";
       }
 
       function matchTimeLine(match) {
@@ -2323,7 +2347,7 @@ const RouterContext = React.createContext(null);
         const activity = asArray(player.performance?.recentAwards).slice(0, 3);
         const recentMatches = asArray(player.recentMatches).slice(0, 3);
         const stats = playerOverallStats(player);
-        const hasOverallStats = stats.source === "CricHeroes public player stats";
+        const hasStats = hasPlayerStats(stats);
         const impact = player.impact || 0;
 
         return (
@@ -2355,14 +2379,14 @@ const RouterContext = React.createContext(null);
             </div>
 
             <div className="relative mt-5">
-              <p className="mb-2 text-[0.62rem] font-black uppercase tracking-[0.16em] text-cyan">{hasOverallStats ? "Overall CricHeroes career" : "Overall profile refresh scheduled"}</p>
+              <p className="mb-2 text-[0.62rem] font-black uppercase tracking-[0.16em] text-cyan">{playerStatsSource(player, stats)}</p>
               <div className="grid grid-cols-2 gap-2 text-center sm:grid-cols-4">
-                <LiveTinyStat label="Runs" value={hasOverallStats ? stats.runs || 0 : "-"} />
-                <LiveTinyStat label="Wkts" value={hasOverallStats ? stats.wickets || 0 : "-"} />
-                <LiveTinyStat label="Best" value={hasOverallStats ? stats.bestScore || 0 : "-"} />
-                <LiveTinyStat label="Field" value={hasOverallStats ? (stats.catches || 0) + (stats.stumpings || 0) : "-"} />
+                <LiveTinyStat label="Runs" value={hasStats ? stats.runs || 0 : "-"} />
+                <LiveTinyStat label="Wkts" value={hasStats ? stats.wickets || 0 : "-"} />
+                <LiveTinyStat label="Best" value={hasStats ? stats.bestScore || 0 : "-"} />
+                <LiveTinyStat label="Field" value={hasStats ? (stats.catches || 0) + (stats.stumpings || 0) : "-"} />
               </div>
-              <p className="mt-3 text-center text-[0.62rem] font-black uppercase tracking-[0.12em] text-white/38">{hasOverallStats ? `${stats.matches || 0} matches | Avg ${stats.average || "-"} | SR ${stats.strikeRate || "-"}` : "Profile totals will appear after the next public sync"}</p>
+              <p className="mt-3 text-center text-[0.62rem] font-black uppercase tracking-[0.12em] text-white/38">{hasStats ? `${stats.matches || 0} matches | Avg ${stats.average || "-"} | SR ${stats.strikeRate || "-"}` : "Profile totals will appear after the next public sync"}</p>
             </div>
 
             <div className="relative mt-4 flex flex-wrap gap-2">
@@ -2663,7 +2687,7 @@ const RouterContext = React.createContext(null);
         return value || "Skill map";
       }
 
-      function PlayerStatsMatrix({ stats }) {
+      function PlayerStatsMatrix({ stats, sourceLabel = "Overall CricHeroes career" }) {
         const fallbackGroups = [
           {
             title: "Batting",
@@ -2698,8 +2722,8 @@ const RouterContext = React.createContext(null);
           <section>
             <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
               <div>
-                <p className="text-xs font-black uppercase tracking-[0.2em] text-cyan">Public CricHeroes totals</p>
-                <h3 className="mt-2 font-display text-3xl font-black uppercase text-white">Complete stat sheet</h3>
+                <p className="text-xs font-black uppercase tracking-[0.2em] text-cyan">{sourceLabel}</p>
+                <h3 className="mt-2 font-display text-3xl font-black uppercase text-white">Available stat sheet</h3>
               </div>
               <span className="hidden text-xs font-semibold text-white/35 sm:block">{stats.publicFieldCount || groups.reduce((sum, group) => sum + group.items.length, 0)} public fields</span>
             </div>
@@ -2726,6 +2750,7 @@ const RouterContext = React.createContext(null);
 
       function PlayerDetailModal({ player, onClose }) {
         const stats = playerOverallStats(player);
+        const statsSource = playerStatsSource(player, stats);
         const warriorsStats = player.warriorsStats || {};
         const recentMatches = asArray(player.recentMatches).slice(0, 5);
         const matchHistory = asArray(player.matchHistory).length ? asArray(player.matchHistory) : recentMatches;
@@ -2760,13 +2785,13 @@ const RouterContext = React.createContext(null);
 
               <div className="grid gap-5 p-4 sm:gap-6 sm:p-8">
                 <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
-                  <LiveStat label="Career matches" value={stats.matches || "-"} />
-                  <LiveStat label="Career runs" value={stats.runs || "-"} />
-                  <LiveStat label="Career wickets" value={stats.wickets || "-"} />
+                  <LiveStat label={statsSource === "Overall CricHeroes career" ? "Career matches" : "Tracked matches"} value={stats.matches || "-"} />
+                  <LiveStat label={statsSource === "Overall CricHeroes career" ? "Career runs" : "Tracked runs"} value={stats.runs || "-"} />
+                  <LiveStat label={statsSource === "Overall CricHeroes career" ? "Career wickets" : "Tracked wickets"} value={stats.wickets || "-"} />
                   <LiveStat label="Performance" value={`${player.impact || 0}/100`} />
                 </div>
 
-                {Object.keys(stats).length ? <PlayerStatsMatrix stats={stats} /> : <DataEmpty title="Career totals syncing" description="Overall CricHeroes statistics will appear after the next successful public profile refresh." />}
+                {Object.keys(stats).length ? <PlayerStatsMatrix stats={stats} sourceLabel={statsSource} /> : <DataEmpty title="Career totals syncing" description="Overall CricHeroes statistics will appear after the next successful public profile refresh." />}
 
                 <div className="grid gap-4 md:grid-cols-3">
                   <PlayerSkillMap type="batting" player={player} stats={stats} />
