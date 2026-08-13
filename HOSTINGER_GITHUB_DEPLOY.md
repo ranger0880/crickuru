@@ -49,7 +49,7 @@ Add these four secrets:
 | `HOSTINGER_FTP_SERVER` | `93.127.208.60` |
 | `HOSTINGER_FTP_USERNAME` | `u100370327` |
 | `HOSTINGER_FTP_PASSWORD` | FTP password from Hostinger |
-| `HOSTINGER_FTP_DIR` | Not required; the workflow uses the folder confirmed by Hostinger: `public_html/` |
+| `HOSTINGER_FTP_DIR` | Not required; the workflow uses the domain document root: `domains/crickuru.com/public_html/` |
 
 Do not put quotes around the secret values.
 The workflow also accepts `public_html`, `/public_html`, or `/public_html/` and normalizes it automatically.
