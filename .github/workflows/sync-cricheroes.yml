@@ -8,8 +8,8 @@ on:
       - "tools/sync-cricheroes.mjs"
       - ".github/workflows/sync-cricheroes.yml"
   schedule:
-    # Near-live public refresh. GitHub schedules use UTC and may be delayed.
-    - cron: "*/5 * * * *"
+    # Refresh eight player profiles every 30 minutes; the 77-player roster cycles in about five hours.
+    - cron: "*/30 * * * *"
   workflow_dispatch:
 
 permissions:
