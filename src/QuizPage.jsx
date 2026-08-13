@@ -19,17 +19,6 @@ const rankTitles = {
   3: "Dhoni Ice Finisher",
 };
 
-const bots = [
-  { id: "bot-1", name: "Aarav Cover Drive", skill: 0.84, mood: "Duel ready", city: "Delhi" },
-  { id: "bot-2", name: "Zoya Googly", skill: 0.79, mood: "Powerplay quiz", city: "Mumbai" },
-  { id: "bot-3", name: "Kabir Yorker", skill: 0.73, mood: "Waiting", city: "Bengaluru" },
-  { id: "bot-4", name: "Meera Sweep", skill: 0.69, mood: "Hot streak", city: "Chandigarh" },
-  { id: "bot-5", name: "Rudra Finisher", skill: 0.76, mood: "Challenge me", city: "Jaipur" },
-  { id: "bot-6", name: "Ira Slip Catch", skill: 0.64, mood: "In lobby", city: "Lucknow" },
-  { id: "bot-7", name: "Vivaan Upper Cut", skill: 0.71, mood: "Fast fingers", city: "Pune" },
-  { id: "bot-8", name: "Anika Off Spin", skill: 0.67, mood: "Quiz grind", city: "Kolkata" },
-];
-
 function QuizPage() {
   const [profile, setProfile] = useState(loadProfile);
   const [profileDraft, setProfileDraft] = useState(() => loadProfile());
@@ -117,6 +106,7 @@ function QuizPage() {
       method: "local",
       contact: "",
       verified: false,
+      registered: true,
     });
   }
 
@@ -200,6 +190,10 @@ function QuizPage() {
   }
 
   function startQuiz() {
+    if (!profile.registered) {
+      setAuthState({ status: "error", message: "Save your player profile or connect an account before entering the rankings." });
+      return;
+    }
     const seed = `${profile.id}-${Date.now()}-${modeId}`;
     const questions = pickQuestions(selectedMode.count, seed);
     setSession({
@@ -309,6 +303,10 @@ function QuizPage() {
   }
 
   function startDuel(opponent) {
+    if (!profile.registered) {
+      setAuthState({ status: "error", message: "Register your player profile before starting a duel." });
+      return;
+    }
     setDuel({
       id: `duel-${Date.now()}`,
       opponent,
@@ -588,7 +586,12 @@ function LobbyPanel({ players, profile, onChallenge }) {
         <UsersIcon />
       </div>
       <div className="mt-4 grid max-h-[520px] gap-3 overflow-y-auto pr-1">
-        {players.map((player) => (
+        {players.length === 0 ? (
+          <div className="rounded-[8px] border border-dashed border-white/15 bg-white/[0.025] p-6 text-center">
+            <p className="text-sm font-black uppercase tracking-[0.12em] text-white/60">Lobby is quiet</p>
+            <p className="mt-2 text-xs font-semibold leading-5 text-white/42">Registered players will appear here when they connect.</p>
+          </div>
+        ) : players.map((player) => (
           <article key={player.id} className="rounded-[8px] border border-white/10 bg-night/45 p-3">
             <div className="flex items-center gap-3">
               <Avatar profile={player} />
@@ -830,7 +833,12 @@ function LeaderboardPanel({ view, setView, rows, seasonDaysLeft }) {
         Season reset in {seasonDaysLeft} days.
       </p>
       <div className="mt-4 grid gap-3">
-        {rows.slice(0, 10).map((row, index) => (
+        {rows.length === 0 ? (
+          <div className="rounded-[8px] border border-dashed border-white/15 bg-white/[0.025] p-6 text-center">
+            <p className="text-sm font-black uppercase tracking-[0.12em] text-white/60">No rankings yet</p>
+            <p className="mt-2 text-xs font-semibold leading-5 text-white/42">Complete a quiz after registering to enter this board.</p>
+          </div>
+        ) : rows.slice(0, 10).map((row, index) => (
           <article key={row.id} className={`rounded-[8px] border p-3 ${index < 3 ? "border-gold/28 bg-gold/8" : "border-white/10 bg-night/45"}`}>
             <div className="flex items-center gap-3">
               <span className={`grid h-9 w-9 shrink-0 place-items-center rounded-[8px] font-display text-2xl font-black ${index < 3 ? "bg-gold text-night" : "bg-white/8 text-white/60"}`}>
@@ -890,6 +898,7 @@ function loadProfile() {
       method: "local",
       contact: "",
       verified: false,
+      registered: Boolean(stored.registered || (stored.name && stored.name !== "Guest Warrior")),
       avatar:
         typeof stored.avatar === "string" &&
         stored.avatar.length <= 450_000 &&
@@ -905,6 +914,7 @@ function loadProfile() {
     method: "local",
     contact: "",
     verified: false,
+    registered: false,
     avatar: "",
     joinedAt: new Date().toISOString(),
   };
@@ -965,6 +975,7 @@ function duelRecordFromState(duel, profile) {
 }
 
 function buildLeaderboardRows(store, profile, view) {
+  if (!profile.registered) return [];
   const periods = periodKeys();
   const key = periods[view] || periods.monthly;
   const localRows = view === "duel"
@@ -983,24 +994,12 @@ function buildLeaderboardRows(store, profile, view) {
     bestByPlayer.set(profile.id, { id: profile.id, name: profile.name, avatar: profile.avatar, score: view === "duel" ? 650 : 0 });
   }
 
-  const botRows = bots.map((bot, index) => ({
-    id: `${bot.id}-${view}`,
-    name: bot.name,
-    avatar: "",
-    score: view === "duel"
-      ? 780 + deterministicNumber(`${key}-${bot.id}-duel`, 820)
-      : 900 + deterministicNumber(`${key}-${bot.id}-${index}`, 6400),
-  }));
-
-  return [...bestByPlayer.values(), ...botRows].sort((a, b) => b.score - a.score);
+  return [...bestByPlayer.values()].sort((a, b) => b.score - a.score);
 }
 
 function buildLobbyPlayers(profile) {
-  const onlineBots = bots
-    .map((bot, index) => ({ ...bot, onlineSeed: deterministicNumber(`${new Date().getMinutes()}-${bot.id}`, 100), order: index }))
-    .filter((bot) => bot.onlineSeed > 12)
-    .slice(0, 7);
-  return [{ ...profile, mood: profile.verified ? "Verified and ready" : "Guest warmup", city: "Kurukshetra" }, ...onlineBots];
+  if (!profile.registered) return [];
+  return [{ ...profile, mood: profile.verified ? "Verified and ready" : "Registered and ready", city: "Kurukshetra" }];
 }
 
 function pickQuestions(count, seed) {
@@ -1322,6 +1321,7 @@ function profileFromAuthUser(user, provider, currentProfile) {
     provider,
     contact: "",
     verified: true,
+    registered: true,
   };
 }
 
