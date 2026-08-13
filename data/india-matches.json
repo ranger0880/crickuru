@@ -2,14 +2,45 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India team schedule/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-13T11:29:09.606Z",
+  "syncedAt": "2026-08-13T12:27:26.162Z",
   "summary": {
-    "live": 1,
+    "live": 2,
     "recent": 10,
     "upcoming": 39,
-    "total": 50
+    "total": 51
   },
   "all": [
+    {
+      "id": "live-169073",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "West Delhi Lions vs Outer Delhi Warriors, 25th Match",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "West Delhi Lions",
+          "shortName": "WDL",
+          "score": "178/10 (19.4 Ov)"
+        },
+        {
+          "name": "Outer Delhi Warriors",
+          "shortName": "ODW",
+          "score": "79/2 (6.6 Ov)"
+        }
+      ],
+      "dateLabel": "13 Aug 2026, 01:30 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Outer Delhi Warriors need 100 runs in 78 balls",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169073",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-13T08:00:00.000Z",
+      "rawId": 169073
+    },
     {
       "id": "live-166923",
       "status": "live",
@@ -24,18 +55,18 @@
         {
           "name": "Vida Kovai Kings",
           "shortName": "VKK",
-          "score": "126/7 (15.6 Ov)"
+          "score": "162/9 (19.6 Ov)"
         },
         {
           "name": "Nellai Royal Kings",
           "shortName": "NRK",
-          "score": ""
+          "score": "43/2 (5.6 Ov)"
         }
       ],
       "dateLabel": "13 Aug 2026, 03:30 pm",
       "time": "",
       "place": "NPR College Ground, Dindigul",
-      "overview": "Nellai Royal Kings opt to bowl",
+      "overview": "Nellai Royal Kings need 120 runs in 84 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166923",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-13T10:00:00.000Z",
@@ -1563,6 +1594,37 @@
   ],
   "live": [
     {
+      "id": "live-169073",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "West Delhi Lions vs Outer Delhi Warriors, 25th Match",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "West Delhi Lions",
+          "shortName": "WDL",
+          "score": "178/10 (19.4 Ov)"
+        },
+        {
+          "name": "Outer Delhi Warriors",
+          "shortName": "ODW",
+          "score": "79/2 (6.6 Ov)"
+        }
+      ],
+      "dateLabel": "13 Aug 2026, 01:30 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Outer Delhi Warriors need 100 runs in 78 balls",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169073",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-13T08:00:00.000Z",
+      "rawId": 169073
+    },
+    {
       "id": "live-166923",
       "status": "live",
       "statusLabel": "Live",
@@ -1576,18 +1638,18 @@
         {
           "name": "Vida Kovai Kings",
           "shortName": "VKK",
-          "score": "126/7 (15.6 Ov)"
+          "score": "162/9 (19.6 Ov)"
         },
         {
           "name": "Nellai Royal Kings",
           "shortName": "NRK",
-          "score": ""
+          "score": "43/2 (5.6 Ov)"
         }
       ],
       "dateLabel": "13 Aug 2026, 03:30 pm",
       "time": "",
       "place": "NPR College Ground, Dindigul",
-      "overview": "Nellai Royal Kings opt to bowl",
+      "overview": "Nellai Royal Kings need 120 runs in 84 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166923",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-13T10:00:00.000Z",
@@ -3131,10 +3193,10 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 1,
+      "live": 2,
       "recent": 0,
       "upcoming": 0,
-      "total": 1
+      "total": 2
     },
     {
       "id": "women",
