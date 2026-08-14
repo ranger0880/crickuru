@@ -2510,6 +2510,7 @@ const RouterContext = React.createContext(null);
         const stats = playerOverallStats(player);
         const hasStats = hasPlayerStats(stats);
         const impact = player.impact || 0;
+        const improvementReport = createImprovementReport(player, stats);
 
         return (
           <article
@@ -2537,6 +2538,22 @@ const RouterContext = React.createContext(null);
               >
                 <span className="grid h-12 w-12 place-items-center rounded-full bg-night font-display text-2xl font-black text-white">{impact}</span>
               </div>
+            </div>
+
+            <div className="relative mt-5 rounded-[7px] border border-cyan/20 bg-cyan/[0.06] p-4">
+              <div className="flex items-center gap-2 text-[0.62rem] font-black uppercase tracking-[0.16em] text-cyan"><Icon.Sparkles size={14} /> Areas of improvement</div>
+              {improvementReport.focus.length ? (
+                <div className="mt-3 grid gap-2">
+                  {improvementReport.focus.slice(0, 2).map((item) => (
+                    <div key={`${item.area}-${item.title}`} className="flex items-start justify-between gap-3 rounded-[6px] border border-white/8 bg-night/45 px-3 py-2">
+                      <span className="min-w-0 text-sm font-bold leading-5 text-white/82">{item.title}</span>
+                      <span className={`shrink-0 text-[0.55rem] font-black uppercase tracking-[0.1em] ${item.priority === "High" ? "text-crimson" : item.priority === "Medium" ? "text-gold" : "text-white/45"}`}>{item.priority}</span>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <p className="mt-2 text-sm leading-5 text-white/58">Maintain current strengths while more public data is tracked.</p>
+              )}
             </div>
 
             <div className="relative mt-5">
@@ -2954,6 +2971,8 @@ const RouterContext = React.createContext(null);
                   <LiveStat label="Performance" value={`${player.impact || 0}/100`} />
                 </div>
 
+                <PlayerImprovementPanel player={player} stats={stats} />
+
                 {Object.keys(stats).length ? <PlayerStatsMatrix stats={stats} sourceLabel={statsSource} /> : <DataEmpty title="Career totals syncing" description="Overall CricHeroes statistics will appear after the next successful public profile refresh." />}
 
                 <div className="grid gap-4 md:grid-cols-3">
@@ -2963,8 +2982,6 @@ const RouterContext = React.createContext(null);
                 </div>
 
                 <div className="grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
-                  <PlayerImprovementPanel player={player} stats={stats} />
-
                   <article className="rounded-[8px] border border-white/12 bg-white/[0.035] p-5">
                     <div className="flex items-end justify-between gap-3">
                       <div>
