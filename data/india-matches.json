@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-14T02:43:19.821Z",
+  "syncedAt": "2026-08-14T04:28:41.147Z",
   "coverage": {
     "pathways": [
       "India",
@@ -51,8 +51,8 @@
       "statusLabel": "Future",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "Sri Lanka vs India, 1st Test",
       "series": "India tour of Sri Lanka 2026",
       "teams": [
@@ -72,7 +72,7 @@
       "place": "Galle International Stadium, Galle",
       "overview": "Match starts at Aug 15, 04:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163013",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-15T04:30:00.000Z",
       "rawId": 163013
     },
@@ -17661,8 +17661,8 @@
       "statusLabel": "Future",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "Sri Lanka vs India, 1st Test",
       "series": "India tour of Sri Lanka 2026",
       "teams": [
@@ -17682,7 +17682,7 @@
       "place": "Galle International Stadium, Galle",
       "overview": "Match starts at Aug 15, 04:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163013",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-15T04:30:00.000Z",
       "rawId": 163013
     },
