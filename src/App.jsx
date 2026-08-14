@@ -2690,6 +2690,10 @@ const RouterContext = React.createContext(null);
         const roleText = `${player.role || ""} ${player.batterCategory || ""}`.toLocaleLowerCase();
         const isWicketkeeper = roleText.includes("keeper") || playerDetailNumber(stats.caughtBehind) > 0 || playerDetailNumber(stats.stumpings) > 0 || playerDetailNumber(stats.byeRunsWicketkeeper) > 0;
         const fieldingArea = isWicketkeeper ? "Keeping" : "Fielding";
+        const roleLabel = player.role || playerRoleLabel(player);
+        const battingSnapshot = `Recorded batting innings: ${innings}; runs: ${playerDetailNumber(stats.runs)}; average: ${average ? average.toFixed(2) : "not available"}; strike rate: ${strikeRate ? strikeRate.toFixed(2) : "not available"}.`;
+        const bowlingSnapshot = `Recorded bowling innings: ${bowlingInnings}; wickets: ${playerDetailNumber(stats.wickets)}; economy: ${economy ? economy.toFixed(2) : "not available"}; bowling average: ${bowlingAverage ? bowlingAverage.toFixed(2) : "not available"}.`;
+        const fieldingSnapshot = `${isWicketkeeper ? "Recorded keeping" : "Recorded fielding"} matches: ${fieldingMatches}; catches: ${playerDetailNumber(stats.catches)}; stumpings: ${playerDetailNumber(stats.stumpings)}; run outs: ${playerDetailNumber(stats.runOuts)}.`;
         const report = [];
         const strengths = [];
         const addFocus = (area, priority, title, observed, why, action, target, confidence = "High") => report.push({ area, priority, title, observed, why, action, target, confidence });
@@ -2703,7 +2707,7 @@ const RouterContext = React.createContext(null);
           if (playerDetailNumber(stats.fifties) > 0 && !playerDetailNumber(stats.hundreds)) addFocus("Batting", "Medium", "Convert fifties into match-winning hundreds", coachingEvidence("50s", stats.fifties), "There are established scoring starts but no recorded century conversion yet.", "At 40+, switch to a low-risk rotation plan and protect the scoring areas that are already working.", "Convert one established fifty into a 100+ score.");
           if (playerDetailNumber(stats.ducks) / innings > 0.1) addFocus("Batting", "Medium", "Improve first-10-ball control", coachingEvidence("ducks", stats.ducks), "Early dismissals are a meaningful share of recorded innings.", "Train the opening phase against swing and short-ball scenarios before adding power shots.", "Reduce duck rate below 10% of innings.");
         } else {
-          addFocus("Batting", "Watch", "Build a larger batting sample", "Public batting sample is limited", "The feed has too few recorded batting innings for a reliable technical conclusion.", "Log the first 20 balls of every innings: contact quality, dot balls, singles and dismissals.", "Collect 8+ innings before changing technique", "Low");
+          addFocus("Batting", "Watch", "Build a larger batting sample", battingSnapshot, "The feed has too few recorded batting innings for a reliable technical conclusion.", "Log the first 20 balls of every innings: contact quality, dot balls, singles and dismissals.", "Collect 8+ innings before changing technique", "Low");
         }
 
         if (bowlingInnings >= 8) {
@@ -2716,7 +2720,7 @@ const RouterContext = React.createContext(null);
           if ((wides + noBalls) / bowlingInnings > 0.6) addFocus("Bowling", "Medium", "Improve bowling discipline", coachingEvidence("wides + no-balls per innings", ((wides + noBalls) / bowlingInnings).toFixed(2)), "Extras are costing more than half a delivery per bowling innings on average.", "Use a target-zone drill with a smaller run-up and finish balanced over the front leg.", "Reduce wides and no-balls below 0.6 per innings.");
           if (playerDetailNumber(stats.wickets) > 0 && !playerDetailNumber(stats.fiveWicketHauls)) addFocus("Bowling", "Watch", "Finish strong spells", coachingEvidence("wickets", stats.wickets), "Wickets are present but no five-wicket haul is recorded in the public totals.", "Rehearse a closing spell: attack the stumps when a batter is set and keep one boundary-saving field option ready.", "Turn one strong spell into a five-wicket haul.", "Medium");
         } else {
-          addFocus("Bowling", "Watch", "Build a repeatable bowling sample", "Public bowling sample is limited", "There are not enough recorded bowling innings to separate control, threat and role effects.", "Track line, length, pace, extras and wickets after every over for the next eight innings.", "Collect 8+ bowling innings before changing the action", "Low");
+          addFocus("Bowling", "Watch", "Build a repeatable bowling sample", bowlingSnapshot, "There are not enough recorded bowling innings to separate control, threat and role effects.", "Track line, length, pace, extras and wickets after every over for the next eight innings.", "Collect 8+ bowling innings before changing the action", "Low");
         }
 
         const fieldingEvents = playerDetailNumber(stats.catches) + playerDetailNumber(stats.stumpings) + playerDetailNumber(stats.runOuts);
@@ -2726,7 +2730,7 @@ const RouterContext = React.createContext(null);
           else addStrength(fieldingArea, isWicketkeeper ? "Reliable keeping involvement" : "Reliable fielding involvement", coachingEvidence("direct contributions", fieldingEvents));
           if (playerDetailNumber(stats.caughtBehind) + playerDetailNumber(stats.stumpings) > 0) addStrength(fieldingArea, "Wicketkeeping impact", coachingEvidence("keeper dismissals", playerDetailNumber(stats.caughtBehind) + playerDetailNumber(stats.stumpings)));
         } else {
-          addFocus(fieldingArea, "Watch", isWicketkeeper ? "Build a keeping sample" : "Make fielding measurable", isWicketkeeper ? "Public keeping sample is limited" : "Public fielding sample is limited", isWicketkeeper ? "The feed does not yet have enough keeping matches for a stable rate." : "The feed does not yet have enough fielding matches for a stable rate.", isWicketkeeper ? "Record takes, byes, stumpings, catches and release speed in every match." : "Record chances, successful pickups, catches and throws in every match, including chances not converted.", isWicketkeeper ? "Build a keeping baseline across 8+ matches" : "Build a fielding baseline across 8+ matches", "Low");
+          addFocus(fieldingArea, "Watch", isWicketkeeper ? "Build a keeping sample" : "Make fielding measurable", fieldingSnapshot, isWicketkeeper ? "The feed does not yet have enough keeping matches for a stable rate." : "The feed does not yet have enough fielding matches for a stable rate.", isWicketkeeper ? "Record takes, byes, stumpings, catches and release speed in every match." : "Record chances, successful pickups, catches and throws in every match, including chances not converted.", isWicketkeeper ? "Build a keeping baseline across 8+ matches" : "Build a fielding baseline across 8+ matches", "Low");
         }
 
         if (playerDetailNumber(stats.captainMatches) >= 3) {
@@ -2749,7 +2753,7 @@ const RouterContext = React.createContext(null);
         const areaFirst = areaOrder.map((area) => byPriority.find((item) => item.area === area)).filter(Boolean);
         const remaining = byPriority.filter((item) => !areaFirst.includes(item));
         const ordered = [...areaFirst, ...remaining].slice(0, 6);
-        return { coverage, focus: ordered, strengths: strengths.slice(0, 4), formSample: form.length };
+        return { coverage, roleLabel, focus: ordered, strengths: strengths.slice(0, 4), formSample: form.length };
       }
 
       function PlayerImprovementPanel({ player, stats }) {
@@ -2760,8 +2764,8 @@ const RouterContext = React.createContext(null);
             <div className="flex flex-wrap items-start justify-between gap-3">
               <div>
                 <p className="flex flex-wrap items-center gap-2 text-xs font-black uppercase tracking-[0.2em] text-cyan"><Icon.Sparkles size={15} /> AI performance coach</p>
-                <h3 className="mt-2 font-display text-3xl font-black uppercase text-white">Areas to improve</h3>
-                <p className="mt-2 max-w-2xl text-xs leading-5 text-white/46">{report.coverage} Recommendations are coaching prompts, not a replacement for an in-person coach.</p>
+                <h3 className="mt-2 font-display text-3xl font-black uppercase text-white">Stats-tailored coaching plan</h3>
+                <p className="mt-2 max-w-2xl text-xs leading-5 text-white/46">{report.coverage} Built for {report.roleLabel}; recommendations update as the player’s public stats and recent form change.</p>
               </div>
               <span className="rounded-full border border-cyan/25 bg-cyan/10 px-3 py-2 text-[0.62rem] font-black uppercase tracking-[0.12em] text-cyan">Daily stat lens</span>
             </div>
