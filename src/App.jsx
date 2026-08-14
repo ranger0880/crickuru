@@ -2325,6 +2325,13 @@ const RouterContext = React.createContext(null);
             .map((player) => ({ ...player, impact: playerImpactScore(player), role: playerRoleLabel(player) }))
             .sort((a, b) => b.impact - a.impact || (b.performance?.awards || 0) - (a.performance?.awards || 0) || a.name.localeCompare(b.name));
         }, [data.players]);
+        const captain = useMemo(() => {
+          const captainId = Number(data.team?.captainId || 0);
+          const captainName = String(data.team?.captainName || "Ankit Kulshreshtha").trim().toLocaleLowerCase();
+          return players.find((player) => captainId && Number(player.id) === captainId)
+            || players.find((player) => String(player.name || "").trim().toLocaleLowerCase() === captainName)
+            || players.find((player) => String(player.name || "").toLocaleLowerCase().includes("ankit kulshreshtha"));
+        }, [data.team?.captainId, data.team?.captainName, players]);
         const normalizedPlayerQuery = playerQuery.trim().toLocaleLowerCase();
         const filteredPlayers = players.filter((player) => {
           if (!playerMatchesFilter(player, filter)) return false;
@@ -2389,6 +2396,8 @@ const RouterContext = React.createContext(null);
                 <span className="font-black uppercase tracking-[0.14em] text-cyan">Overall CricHeroes career tracking:</span>{" "}
                 {careerTrackedCount} of {players.length} profiles currently have public career totals. {careerPendingCount} profile{careerPendingCount === 1 ? " is" : "s are"} queued for the next rate-limit-safe refresh; Warriors match totals remain shown separately until then.
               </div>
+
+              {captain && <CaptainSpotlightCard player={captain} onSelect={() => setSelectedPlayer(captain)} />}
 
               <div className="mt-10 grid gap-5 lg:grid-cols-4">
                 <PlayerLeaderCard label="Impact Leader" player={leaders.impact} metric={`${leaders.impact?.impact || 0}/100`} />
@@ -2478,6 +2487,45 @@ const RouterContext = React.createContext(null);
             </section>
             {selectedPlayer && <PlayerDetailModal player={selectedPlayer} onClose={() => setSelectedPlayer(null)} />}
           </main>
+        );
+      }
+
+      function CaptainSpotlightCard({ player, onSelect }) {
+        const stats = playerOverallStats(player);
+        const captainMatches = playerDetailNumber(stats.captainMatches);
+        const captainWinRate = stats.captainWinPercentage || "-";
+        return (
+          <article
+            className="relative mt-8 cursor-pointer overflow-hidden rounded-[8px] border border-gold/35 bg-[radial-gradient(circle_at_92%_12%,rgba(244,185,66,0.2),transparent_30%),linear-gradient(135deg,rgba(183,25,50,0.16),rgba(255,255,255,0.045))] p-5 shadow-[0_0_36px_rgba(244,185,66,0.1)] transition hover:-translate-y-1 hover:border-gold focus:outline-none focus:ring-2 focus:ring-gold/60 sm:p-6"
+            onClick={(event) => { if (!event.target.closest("a")) onSelect?.(); }}
+            onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); onSelect?.(); } }}
+            role="button"
+            tabIndex={0}
+            aria-label={`Open captain profile for ${player.name}`}
+          >
+            <div className="absolute right-[-50px] top-[-70px] h-44 w-44 rounded-full bg-gold/10 blur-3xl" aria-hidden="true" />
+            <div className="relative grid gap-5 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)_auto] lg:items-center">
+              <div className="flex min-w-0 items-center gap-4">
+                <span className="rounded-full p-1" style={{ boxShadow: "0 0 0 2px #F4B942, 0 0 24px rgba(244,185,66,0.5)" }}>
+                  <LiveAvatar src={player.photo} name={player.name} />
+                </span>
+                <div className="min-w-0">
+                  <p className="text-[0.64rem] font-black uppercase tracking-[0.22em] text-gold">Team captain</p>
+                  <h2 className="mt-2 truncate font-display text-3xl font-black uppercase leading-none text-white sm:text-4xl">{player.name}</h2>
+                  <p className="mt-2 text-xs font-bold uppercase tracking-[0.14em] text-white/58">{player.role || "Kurukshetra Warriors captain"} • {player.impact || 0}/100 performance charge</p>
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4">
+                <LiveTinyStat label="Captain matches" value={captainMatches || "-"} />
+                <LiveTinyStat label="Win rate" value={captainWinRate} />
+                <LiveTinyStat label="Career runs" value={stats.runs || "-"} />
+                <LiveTinyStat label="Career wkts" value={stats.wickets || "-"} />
+              </div>
+              <button type="button" onClick={(event) => { event.stopPropagation(); onSelect?.(); }} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-[7px] border border-gold/40 bg-gold/10 px-5 text-xs font-black uppercase tracking-[0.16em] text-gold transition hover:border-gold hover:bg-gold/15 focus:outline-none focus:ring-2 focus:ring-gold/60">
+                <Icon.CircleUserRound size={16} /> Open captain profile
+              </button>
+            </div>
+          </article>
         );
       }
 
