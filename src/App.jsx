@@ -2544,7 +2544,7 @@ const RouterContext = React.createContext(null);
               <div className="flex items-center gap-2 text-[0.62rem] font-black uppercase tracking-[0.16em] text-cyan"><Icon.Sparkles size={14} /> Areas of improvement</div>
               {improvementReport.focus.length ? (
                 <div className="mt-3 grid gap-2">
-                  {improvementReport.focus.slice(0, 2).map((item) => (
+                  {improvementReport.focus.slice(0, 3).map((item) => (
                     <div key={`${item.area}-${item.title}`} className="flex items-start justify-between gap-3 rounded-[6px] border border-white/8 bg-night/45 px-3 py-2">
                       <span className="min-w-0 text-sm font-bold leading-5 text-white/82">{item.title}</span>
                       <span className={`shrink-0 text-[0.55rem] font-black uppercase tracking-[0.1em] ${item.priority === "High" ? "text-crimson" : item.priority === "Medium" ? "text-gold" : "text-white/45"}`}>{item.priority}</span>
@@ -2687,6 +2687,9 @@ const RouterContext = React.createContext(null);
         const formWickets = form.reduce((sum, item) => sum + playerDetailNumber(item.wickets), 0);
         const formCatches = form.reduce((sum, item) => sum + playerDetailNumber(item.catches), 0);
         const formStumpings = form.reduce((sum, item) => sum + playerDetailNumber(item.stumpings), 0);
+        const roleText = `${player.role || ""} ${player.batterCategory || ""}`.toLocaleLowerCase();
+        const isWicketkeeper = roleText.includes("keeper") || playerDetailNumber(stats.caughtBehind) > 0 || playerDetailNumber(stats.stumpings) > 0 || playerDetailNumber(stats.byeRunsWicketkeeper) > 0;
+        const fieldingArea = isWicketkeeper ? "Keeping" : "Fielding";
         const report = [];
         const strengths = [];
         const addFocus = (area, priority, title, observed, why, action, target, confidence = "High") => report.push({ area, priority, title, observed, why, action, target, confidence });
@@ -2719,11 +2722,11 @@ const RouterContext = React.createContext(null);
         const fieldingEvents = playerDetailNumber(stats.catches) + playerDetailNumber(stats.stumpings) + playerDetailNumber(stats.runOuts);
         if (fieldingMatches >= 8) {
           const fieldingRate = fieldingEvents / fieldingMatches;
-          if (fieldingRate < 0.2) addFocus("Fielding", "Medium", "Create more direct fielding impact", coachingEvidence("dismissal contributions per match", fieldingRate.toFixed(2)), "The public fielding totals show limited catches, stumpings or run outs per fielding match.", "Use three stations each week: reaction catches, one-hand pickups and throw-to-target under fatigue.", "Build toward 0.20+ direct contributions per match.");
-          else addStrength("Fielding", "Reliable involvement", coachingEvidence("direct contributions", fieldingEvents));
-          if (playerDetailNumber(stats.caughtBehind) + playerDetailNumber(stats.stumpings) > 0) addStrength("Fielding", "Wicketkeeping impact", coachingEvidence("keeper dismissals", playerDetailNumber(stats.caughtBehind) + playerDetailNumber(stats.stumpings)));
+          if (fieldingRate < 0.2) addFocus(fieldingArea, "Medium", isWicketkeeper ? "Improve keeping impact" : "Create more direct fielding impact", coachingEvidence("dismissal contributions per match", fieldingRate.toFixed(2)), isWicketkeeper ? "The public keeping totals show limited catches, stumpings or run outs per keeping match." : "The public fielding totals show limited catches, stumpings or run outs per fielding match.", isWicketkeeper ? "Work through takes standing back, takes standing up and fast glove-to-throw drills under match pressure." : "Use three stations each week: reaction catches, one-hand pickups and throw-to-target under fatigue.", "Build toward 0.20+ direct contributions per match.");
+          else addStrength(fieldingArea, isWicketkeeper ? "Reliable keeping involvement" : "Reliable fielding involvement", coachingEvidence("direct contributions", fieldingEvents));
+          if (playerDetailNumber(stats.caughtBehind) + playerDetailNumber(stats.stumpings) > 0) addStrength(fieldingArea, "Wicketkeeping impact", coachingEvidence("keeper dismissals", playerDetailNumber(stats.caughtBehind) + playerDetailNumber(stats.stumpings)));
         } else {
-          addFocus("Fielding", "Watch", "Make fielding measurable", "Public fielding sample is limited", "The feed does not yet have enough fielding matches for a stable rate.", "Record chances, successful pickups, catches and throws in every match, including chances not converted.", "Build a fielding baseline across 8+ matches", "Low");
+          addFocus(fieldingArea, "Watch", isWicketkeeper ? "Build a keeping sample" : "Make fielding measurable", isWicketkeeper ? "Public keeping sample is limited" : "Public fielding sample is limited", isWicketkeeper ? "The feed does not yet have enough keeping matches for a stable rate." : "The feed does not yet have enough fielding matches for a stable rate.", isWicketkeeper ? "Record takes, byes, stumpings, catches and release speed in every match." : "Record chances, successful pickups, catches and throws in every match, including chances not converted.", isWicketkeeper ? "Build a keeping baseline across 8+ matches" : "Build a fielding baseline across 8+ matches", "Low");
         }
 
         if (playerDetailNumber(stats.captainMatches) >= 3) {
@@ -2740,7 +2743,12 @@ const RouterContext = React.createContext(null);
 
         const sourceCoverage = player.stats?.publicFieldCount || Object.values(stats.sections || {}).reduce((sum, items) => sum + items.length, 0);
         const coverage = sourceCoverage ? `Based on ${sourceCoverage} public CricHeroes fields${form.length ? ` and ${form.length} scorecard-linked recent performances` : ""}.` : "Waiting for public CricHeroes fields before making a strong recommendation.";
-        const ordered = report.sort((a, b) => ({ High: 0, Medium: 1, Watch: 2 }[a.priority] - ({ High: 0, Medium: 1, Watch: 2 }[b.priority]))).slice(0, 6);
+        const priorityRank = { High: 0, Medium: 1, Watch: 2 };
+        const byPriority = [...report].sort((a, b) => (priorityRank[a.priority] ?? 3) - (priorityRank[b.priority] ?? 3));
+        const areaOrder = ["Batting", "Bowling", fieldingArea];
+        const areaFirst = areaOrder.map((area) => byPriority.find((item) => item.area === area)).filter(Boolean);
+        const remaining = byPriority.filter((item) => !areaFirst.includes(item));
+        const ordered = [...areaFirst, ...remaining].slice(0, 6);
         return { coverage, focus: ordered, strengths: strengths.slice(0, 4), formSample: form.length };
       }
 
