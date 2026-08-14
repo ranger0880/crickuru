@@ -857,7 +857,7 @@ const RouterContext = React.createContext(null);
         const recentMatches = asArray(data.recent);
         const tickerMatches = liveMatches.length ? liveMatches : upcomingMatches.length ? upcomingMatches.slice(0, 3) : recentMatches.slice(0, 3);
         const repeatedMatches = tickerMatches.length > 1 ? [...tickerMatches, ...tickerMatches] : tickerMatches;
-        const statusLabel = liveMatches.length ? `${liveMatches.length} LIVE NOW` : upcomingMatches.length ? `${upcomingMatches.length} upcoming` : "India feed";
+        const statusLabel = liveMatches.length ? `${liveMatches.length} LIVE NOW` : "";
 
         return (
           <aside className="fixed left-0 right-0 top-0 z-[70] h-9 border-b border-gold/20 bg-night/95 text-white shadow-xl shadow-black/30 backdrop-blur-xl" aria-label="India live cricket score panel">
@@ -867,7 +867,7 @@ const RouterContext = React.createContext(null);
                 className="inline-flex h-6 shrink-0 items-center gap-2 rounded-full border border-gold/35 bg-gold/12 px-3 text-[0.64rem] font-black uppercase tracking-[0.16em] text-gold"
               >
                 <span className={`h-2 w-2 rounded-full ${liveMatches.length ? "bg-crimson shadow-[0_0_12px_rgba(183,25,50,0.9)]" : "bg-gold"}`} />
-                India {loading ? "sync" : statusLabel}
+                India{loading ? " sync" : statusLabel ? ` ${statusLabel}` : ""}
               </Link>
               <div className="india-ticker min-w-0 flex-1 overflow-hidden" aria-live="polite">
                 {repeatedMatches.length ? (
