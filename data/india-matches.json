@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-15T08:23:02.749Z",
+  "syncedAt": "2026-08-15T08:50:34.375Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,8 +41,8 @@
   "summary": {
     "live": 1,
     "recent": 60,
-    "upcoming": 503,
-    "total": 564
+    "upcoming": 505,
+    "total": 566
   },
   "all": [
     {
@@ -59,7 +59,7 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "101/1 (26.6 Ov)"
+          "score": "113/1 (31.6 Ov)"
         },
         {
           "name": "Sri Lanka",
@@ -70,11 +70,73 @@
       "dateLabel": "15 Aug 2026, 10:00 am",
       "time": "",
       "place": "Galle International Stadium, Galle",
-      "overview": "Day 1: Match delayed due to wet outfield",
+      "overview": "Day 1: 2nd Session",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163013",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-15T04:30:00.000Z",
       "rawId": 163013
+    },
+    {
+      "id": "upcoming-169091",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "New Delhi Tigers vs South Delhi Superstarz, 27th Match",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "New Delhi Tigers",
+          "shortName": "NDT",
+          "score": ""
+        },
+        {
+          "name": "South Delhi Superstarz",
+          "shortName": "SDS",
+          "score": ""
+        }
+      ],
+      "dateLabel": "15 Aug 2026, 07:00 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Match starts at Aug 15, 13:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169091",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-15T13:30:00.000Z",
+      "rawId": 169091
+    },
+    {
+      "id": "upcoming-166963",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Vida Kovai Kings vs Trichy Grand Cholas, 20th Match",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Vida Kovai Kings",
+          "shortName": "VKK",
+          "score": ""
+        },
+        {
+          "name": "Trichy Grand Cholas",
+          "shortName": "TRI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "15 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "NPR College Ground, Dindigul",
+      "overview": "Match starts at Aug 15, 14:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166963",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-15T14:00:00.000Z",
+      "rawId": 166963
     },
     {
       "id": "upcoming-163027",
@@ -17668,7 +17730,7 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "101/1 (26.6 Ov)"
+          "score": "113/1 (31.6 Ov)"
         },
         {
           "name": "Sri Lanka",
@@ -17679,7 +17741,7 @@
       "dateLabel": "15 Aug 2026, 10:00 am",
       "time": "",
       "place": "Galle International Stadium, Galle",
-      "overview": "Day 1: Match delayed due to wet outfield",
+      "overview": "Day 1: 2nd Session",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163013",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-15T04:30:00.000Z",
@@ -17687,6 +17749,68 @@
     }
   ],
   "upcoming": [
+    {
+      "id": "upcoming-169091",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "New Delhi Tigers vs South Delhi Superstarz, 27th Match",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "New Delhi Tigers",
+          "shortName": "NDT",
+          "score": ""
+        },
+        {
+          "name": "South Delhi Superstarz",
+          "shortName": "SDS",
+          "score": ""
+        }
+      ],
+      "dateLabel": "15 Aug 2026, 07:00 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Match starts at Aug 15, 13:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169091",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-15T13:30:00.000Z",
+      "rawId": 169091
+    },
+    {
+      "id": "upcoming-166963",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Vida Kovai Kings vs Trichy Grand Cholas, 20th Match",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Vida Kovai Kings",
+          "shortName": "VKK",
+          "score": ""
+        },
+        {
+          "name": "Trichy Grand Cholas",
+          "shortName": "TRI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "15 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "NPR College Ground, Dindigul",
+      "overview": "Match starts at Aug 15, 14:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166963",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-15T14:00:00.000Z",
+      "rawId": 166963
+    },
     {
       "id": "upcoming-163027",
       "status": "upcoming",
@@ -35282,8 +35406,8 @@
       "order": 2,
       "live": 0,
       "recent": 0,
-      "upcoming": 0,
-      "total": 0
+      "upcoming": 2,
+      "total": 2
     },
     {
       "id": "women",
