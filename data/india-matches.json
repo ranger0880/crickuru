@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-15T14:42:22.505Z",
+  "syncedAt": "2026-08-15T14:58:57.079Z",
   "coverage": {
     "pathways": [
       "India",
@@ -90,7 +90,7 @@
         {
           "name": "New Delhi Tigers",
           "shortName": "NDT",
-          "score": "120/3 (11.5 Ov)"
+          "score": "147/5 (15.1 Ov)"
         },
         {
           "name": "South Delhi Superstarz",
@@ -121,7 +121,7 @@
         {
           "name": "Vida Kovai Kings",
           "shortName": "VKK",
-          "score": "87/4 (8.6 Ov)"
+          "score": "117/5 (12.5 Ov)"
         },
         {
           "name": "Trichy Grand Cholas",
@@ -17761,7 +17761,7 @@
         {
           "name": "New Delhi Tigers",
           "shortName": "NDT",
-          "score": "120/3 (11.5 Ov)"
+          "score": "147/5 (15.1 Ov)"
         },
         {
           "name": "South Delhi Superstarz",
@@ -17792,7 +17792,7 @@
         {
           "name": "Vida Kovai Kings",
           "shortName": "VKK",
-          "score": "87/4 (8.6 Ov)"
+          "score": "117/5 (12.5 Ov)"
         },
         {
           "name": "Trichy Grand Cholas",
