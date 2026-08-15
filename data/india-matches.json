@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-15T05:31:50.232Z",
+  "syncedAt": "2026-08-15T05:53:50.371Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,8 +41,8 @@
   "summary": {
     "live": 1,
     "recent": 60,
-    "upcoming": 503,
-    "total": 564
+    "upcoming": 498,
+    "total": 559
   },
   "all": [
     {
@@ -59,7 +59,7 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "47/1 (10.6 Ov)"
+          "score": "69/1 (16.2 Ov)"
         },
         {
           "name": "Sri Lanka",
@@ -75,68 +75,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-15T04:30:00.000Z",
       "rawId": 163013
-    },
-    {
-      "id": "upcoming-163027",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "East Zone vs North East Zone, 1st Quarter final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "East Zone",
-          "shortName": "EZONE",
-          "score": ""
-        },
-        {
-          "name": "North East Zone",
-          "shortName": "NEZONE",
-          "score": ""
-        }
-      ],
-      "dateLabel": "23 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Match starts at Aug 23, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-08-23T04:00:00.000Z",
-      "rawId": 163027
-    },
-    {
-      "id": "upcoming-163031",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "North Zone vs West Zone, 2nd Quarter final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "North Zone",
-          "shortName": "NZONE",
-          "score": ""
-        },
-        {
-          "name": "West Zone",
-          "shortName": "WZONE",
-          "score": ""
-        }
-      ],
-      "dateLabel": "23 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Match starts at Aug 23, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-08-23T04:00:00.000Z",
-      "rawId": 163031
     },
     {
       "id": "upcoming-163017",
@@ -168,68 +106,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
       "startTime": "2026-08-23T04:30:00.000Z",
       "rawId": 163017
-    },
-    {
-      "id": "upcoming-163043",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Central Zone vs TBC, 1st Semi-Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "Central Zone",
-          "shortName": "CZONE",
-          "score": ""
-        },
-        {
-          "name": "TBC",
-          "shortName": "TBC",
-          "score": ""
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Match starts at Aug 30, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-08-30T04:00:00.000Z",
-      "rawId": 163043
-    },
-    {
-      "id": "upcoming-163047",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "South Zone vs TBC, 2nd Semi-Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "South Zone",
-          "shortName": "SZONE",
-          "score": ""
-        },
-        {
-          "name": "TBC",
-          "shortName": "TBC",
-          "score": ""
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Match starts at Aug 30, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-08-30T04:00:00.000Z",
-      "rawId": 163047
     },
     {
       "id": "upcoming-169811",
@@ -323,37 +199,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
       "startTime": "2026-09-05T14:30:00.000Z",
       "rawId": 169850
-    },
-    {
-      "id": "upcoming-163061",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "TBC vs TBC, Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "TBC",
-          "shortName": "TBC",
-          "score": ""
-        },
-        {
-          "name": "TBC",
-          "shortName": "TBC",
-          "score": ""
-        }
-      ],
-      "dateLabel": "06 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Match starts at Sep 06, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-09-06T04:00:00.000Z",
-      "rawId": 163061
     },
     {
       "id": "upcoming-155584",
@@ -17668,7 +17513,7 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "47/1 (10.6 Ov)"
+          "score": "69/1 (16.2 Ov)"
         },
         {
           "name": "Sri Lanka",
@@ -17687,68 +17532,6 @@
     }
   ],
   "upcoming": [
-    {
-      "id": "upcoming-163027",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "East Zone vs North East Zone, 1st Quarter final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "East Zone",
-          "shortName": "EZONE",
-          "score": ""
-        },
-        {
-          "name": "North East Zone",
-          "shortName": "NEZONE",
-          "score": ""
-        }
-      ],
-      "dateLabel": "23 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Match starts at Aug 23, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-08-23T04:00:00.000Z",
-      "rawId": 163027
-    },
-    {
-      "id": "upcoming-163031",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "North Zone vs West Zone, 2nd Quarter final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "North Zone",
-          "shortName": "NZONE",
-          "score": ""
-        },
-        {
-          "name": "West Zone",
-          "shortName": "WZONE",
-          "score": ""
-        }
-      ],
-      "dateLabel": "23 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Match starts at Aug 23, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-08-23T04:00:00.000Z",
-      "rawId": 163031
-    },
     {
       "id": "upcoming-163017",
       "status": "upcoming",
@@ -17779,68 +17562,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
       "startTime": "2026-08-23T04:30:00.000Z",
       "rawId": 163017
-    },
-    {
-      "id": "upcoming-163043",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Central Zone vs TBC, 1st Semi-Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "Central Zone",
-          "shortName": "CZONE",
-          "score": ""
-        },
-        {
-          "name": "TBC",
-          "shortName": "TBC",
-          "score": ""
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Match starts at Aug 30, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-08-30T04:00:00.000Z",
-      "rawId": 163043
-    },
-    {
-      "id": "upcoming-163047",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "South Zone vs TBC, 2nd Semi-Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "South Zone",
-          "shortName": "SZONE",
-          "score": ""
-        },
-        {
-          "name": "TBC",
-          "shortName": "TBC",
-          "score": ""
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Match starts at Aug 30, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-08-30T04:00:00.000Z",
-      "rawId": 163047
     },
     {
       "id": "upcoming-169811",
@@ -17934,37 +17655,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
       "startTime": "2026-09-05T14:30:00.000Z",
       "rawId": 169850
-    },
-    {
-      "id": "upcoming-163061",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "TBC vs TBC, Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "TBC",
-          "shortName": "TBC",
-          "score": ""
-        },
-        {
-          "name": "TBC",
-          "shortName": "TBC",
-          "score": ""
-        }
-      ],
-      "dateLabel": "06 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Match starts at Sep 06, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-09-06T04:00:00.000Z",
-      "rawId": 163061
     },
     {
       "id": "upcoming-155584",
@@ -35300,43 +34990,11 @@
       "order": 4,
       "live": 0,
       "recent": 0,
-      "upcoming": 417,
-      "total": 417
+      "upcoming": 412,
+      "total": 412
     }
   ],
   "importantMatches": [
-    {
-      "id": "upcoming-163061",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "TBC vs TBC, Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "TBC",
-          "shortName": "TBC",
-          "score": ""
-        },
-        {
-          "name": "TBC",
-          "shortName": "TBC",
-          "score": ""
-        }
-      ],
-      "dateLabel": "06 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Match starts at Sep 06, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-09-06T04:00:00.000Z",
-      "rawId": 163061,
-      "importance": "Knockout stage"
-    },
     {
       "id": "upcoming-169850",
       "status": "upcoming",
@@ -35432,311 +35090,9 @@
       "startTime": "2026-08-30T14:30:00.000Z",
       "rawId": 169811,
       "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163043",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Central Zone vs TBC, 1st Semi-Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "Central Zone",
-          "shortName": "CZONE",
-          "score": ""
-        },
-        {
-          "name": "TBC",
-          "shortName": "TBC",
-          "score": ""
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Match starts at Aug 30, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-08-30T04:00:00.000Z",
-      "rawId": 163043,
-      "importance": "Knockout stage"
-    },
-    {
-      "id": "upcoming-163047",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "South Zone vs TBC, 2nd Semi-Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "South Zone",
-          "shortName": "SZONE",
-          "score": ""
-        },
-        {
-          "name": "TBC",
-          "shortName": "TBC",
-          "score": ""
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Match starts at Aug 30, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-08-30T04:00:00.000Z",
-      "rawId": 163047,
-      "importance": "Knockout stage"
-    },
-    {
-      "id": "upcoming-163027",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "East Zone vs North East Zone, 1st Quarter final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "East Zone",
-          "shortName": "EZONE",
-          "score": ""
-        },
-        {
-          "name": "North East Zone",
-          "shortName": "NEZONE",
-          "score": ""
-        }
-      ],
-      "dateLabel": "23 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Match starts at Aug 23, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-08-23T04:00:00.000Z",
-      "rawId": 163027,
-      "importance": "Knockout stage"
-    },
-    {
-      "id": "upcoming-163031",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "North Zone vs West Zone, 2nd Quarter final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "North Zone",
-          "shortName": "NZONE",
-          "score": ""
-        },
-        {
-          "name": "West Zone",
-          "shortName": "WZONE",
-          "score": ""
-        }
-      ],
-      "dateLabel": "23 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Match starts at Aug 23, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-08-23T04:00:00.000Z",
-      "rawId": 163031,
-      "importance": "Knockout stage"
     }
   ],
   "importantTournaments": [
-    {
-      "id": "duleep-trophy-2026",
-      "series": "Duleep Trophy 2026",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "total": 5,
-      "live": 0,
-      "upcoming": 5,
-      "recent": 0,
-      "startTime": "2026-08-23T04:00:00.000Z",
-      "endTime": "2026-09-06T04:00:00.000Z",
-      "matches": [
-        {
-          "id": "upcoming-163027",
-          "status": "upcoming",
-          "statusLabel": "Future",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "East Zone vs North East Zone, 1st Quarter final",
-          "series": "Duleep Trophy 2026",
-          "teams": [
-            {
-              "name": "East Zone",
-              "shortName": "EZONE",
-              "score": ""
-            },
-            {
-              "name": "North East Zone",
-              "shortName": "NEZONE",
-              "score": ""
-            }
-          ],
-          "dateLabel": "23 Aug 2026, 09:30 am",
-          "time": "",
-          "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-          "overview": "Match starts at Aug 23, 04:00 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-          "startTime": "2026-08-23T04:00:00.000Z",
-          "rawId": 163027,
-          "importance": "Knockout stage"
-        },
-        {
-          "id": "upcoming-163031",
-          "status": "upcoming",
-          "statusLabel": "Future",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "North Zone vs West Zone, 2nd Quarter final",
-          "series": "Duleep Trophy 2026",
-          "teams": [
-            {
-              "name": "North Zone",
-              "shortName": "NZONE",
-              "score": ""
-            },
-            {
-              "name": "West Zone",
-              "shortName": "WZONE",
-              "score": ""
-            }
-          ],
-          "dateLabel": "23 Aug 2026, 09:30 am",
-          "time": "",
-          "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-          "overview": "Match starts at Aug 23, 04:00 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-          "startTime": "2026-08-23T04:00:00.000Z",
-          "rawId": 163031,
-          "importance": "Knockout stage"
-        },
-        {
-          "id": "upcoming-163043",
-          "status": "upcoming",
-          "statusLabel": "Future",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "Central Zone vs TBC, 1st Semi-Final",
-          "series": "Duleep Trophy 2026",
-          "teams": [
-            {
-              "name": "Central Zone",
-              "shortName": "CZONE",
-              "score": ""
-            },
-            {
-              "name": "TBC",
-              "shortName": "TBC",
-              "score": ""
-            }
-          ],
-          "dateLabel": "30 Aug 2026, 09:30 am",
-          "time": "",
-          "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-          "overview": "Match starts at Aug 30, 04:00 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-          "startTime": "2026-08-30T04:00:00.000Z",
-          "rawId": 163043,
-          "importance": "Knockout stage"
-        },
-        {
-          "id": "upcoming-163047",
-          "status": "upcoming",
-          "statusLabel": "Future",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "South Zone vs TBC, 2nd Semi-Final",
-          "series": "Duleep Trophy 2026",
-          "teams": [
-            {
-              "name": "South Zone",
-              "shortName": "SZONE",
-              "score": ""
-            },
-            {
-              "name": "TBC",
-              "shortName": "TBC",
-              "score": ""
-            }
-          ],
-          "dateLabel": "30 Aug 2026, 09:30 am",
-          "time": "",
-          "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-          "overview": "Match starts at Aug 30, 04:00 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-          "startTime": "2026-08-30T04:00:00.000Z",
-          "rawId": 163047,
-          "importance": "Knockout stage"
-        },
-        {
-          "id": "upcoming-163061",
-          "status": "upcoming",
-          "statusLabel": "Future",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "TBC vs TBC, Final",
-          "series": "Duleep Trophy 2026",
-          "teams": [
-            {
-              "name": "TBC",
-              "shortName": "TBC",
-              "score": ""
-            },
-            {
-              "name": "TBC",
-              "shortName": "TBC",
-              "score": ""
-            }
-          ],
-          "dateLabel": "06 Sept 2026, 09:30 am",
-          "time": "",
-          "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-          "overview": "Match starts at Sep 06, 04:00 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-          "startTime": "2026-09-06T04:00:00.000Z",
-          "rawId": 163061,
-          "importance": "Knockout stage"
-        }
-      ]
-    },
     {
       "id": "women-s-asia-cup-2026",
       "series": "Women's Asia Cup 2026",
