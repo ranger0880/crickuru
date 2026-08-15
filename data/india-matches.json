@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-15T14:58:57.079Z",
+  "syncedAt": "2026-08-15T15:22:48.578Z",
   "coverage": {
     "pathways": [
       "India",
@@ -39,10 +39,10 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 3,
+    "live": 2,
     "recent": 60,
     "upcoming": 503,
-    "total": 566
+    "total": 565
   },
   "all": [
     {
@@ -77,37 +77,6 @@
       "rawId": 163013
     },
     {
-      "id": "live-169091",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "New Delhi Tigers vs South Delhi Superstarz, 27th Match",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "New Delhi Tigers",
-          "shortName": "NDT",
-          "score": "147/5 (15.1 Ov)"
-        },
-        {
-          "name": "South Delhi Superstarz",
-          "shortName": "SDS",
-          "score": ""
-        }
-      ],
-      "dateLabel": "15 Aug 2026, 07:00 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "South Delhi Superstarz opt to bowl",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169091",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-15T13:30:00.000Z",
-      "rawId": 169091
-    },
-    {
       "id": "live-166963",
       "status": "live",
       "statusLabel": "Live",
@@ -121,7 +90,7 @@
         {
           "name": "Vida Kovai Kings",
           "shortName": "VKK",
-          "score": "117/5 (12.5 Ov)"
+          "score": "184/5 (17.6 Ov)"
         },
         {
           "name": "Trichy Grand Cholas",
@@ -17748,37 +17717,6 @@
       "rawId": 163013
     },
     {
-      "id": "live-169091",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "New Delhi Tigers vs South Delhi Superstarz, 27th Match",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "New Delhi Tigers",
-          "shortName": "NDT",
-          "score": "147/5 (15.1 Ov)"
-        },
-        {
-          "name": "South Delhi Superstarz",
-          "shortName": "SDS",
-          "score": ""
-        }
-      ],
-      "dateLabel": "15 Aug 2026, 07:00 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "South Delhi Superstarz opt to bowl",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169091",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-15T13:30:00.000Z",
-      "rawId": 169091
-    },
-    {
       "id": "live-166963",
       "status": "live",
       "statusLabel": "Live",
@@ -17792,7 +17730,7 @@
         {
           "name": "Vida Kovai Kings",
           "shortName": "VKK",
-          "score": "117/5 (12.5 Ov)"
+          "score": "184/5 (17.6 Ov)"
         },
         {
           "name": "Trichy Grand Cholas",
@@ -35404,10 +35342,10 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 2,
+      "live": 1,
       "recent": 0,
       "upcoming": 0,
-      "total": 2
+      "total": 1
     },
     {
       "id": "women",
