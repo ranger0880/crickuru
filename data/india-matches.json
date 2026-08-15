@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-15T17:28:04.546Z",
+  "syncedAt": "2026-08-15T17:46:28.240Z",
   "coverage": {
     "pathways": [
       "India",
@@ -39,10 +39,10 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 2,
+    "live": 1,
     "recent": 60,
     "upcoming": 503,
-    "total": 565
+    "total": 564
   },
   "all": [
     {
@@ -75,37 +75,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-15T04:30:00.000Z",
       "rawId": 163013
-    },
-    {
-      "id": "live-166963",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "league",
-      "sourceScope": "domestic-global",
-      "title": "Vida Kovai Kings vs Trichy Grand Cholas, 20th Match",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Vida Kovai Kings",
-          "shortName": "VKK",
-          "score": "201/6 (19.6 Ov)"
-        },
-        {
-          "name": "Trichy Grand Cholas",
-          "shortName": "TRI",
-          "score": "74/8 (14.3 Ov)"
-        }
-      ],
-      "dateLabel": "15 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "NPR College Ground, Dindigul",
-      "overview": "Trichy Grand Cholas need 128 runs in 33 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166963",
-      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic/liveStream",
-      "startTime": "2026-08-15T14:00:00.000Z",
-      "rawId": 166963
     },
     {
       "id": "upcoming-163027",
@@ -17715,37 +17684,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-15T04:30:00.000Z",
       "rawId": 163013
-    },
-    {
-      "id": "live-166963",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "league",
-      "sourceScope": "domestic-global",
-      "title": "Vida Kovai Kings vs Trichy Grand Cholas, 20th Match",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Vida Kovai Kings",
-          "shortName": "VKK",
-          "score": "201/6 (19.6 Ov)"
-        },
-        {
-          "name": "Trichy Grand Cholas",
-          "shortName": "TRI",
-          "score": "74/8 (14.3 Ov)"
-        }
-      ],
-      "dateLabel": "15 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "NPR College Ground, Dindigul",
-      "overview": "Trichy Grand Cholas need 128 runs in 33 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166963",
-      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic/liveStream",
-      "startTime": "2026-08-15T14:00:00.000Z",
-      "rawId": 166963
     }
   ],
   "upcoming": [
@@ -35360,10 +35298,10 @@
       "id": "domestic",
       "label": "Domestic / State",
       "order": 4,
-      "live": 1,
+      "live": 0,
       "recent": 0,
       "upcoming": 417,
-      "total": 418
+      "total": 417
     }
   ],
   "importantMatches": [
