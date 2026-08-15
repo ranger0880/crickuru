@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-15T10:58:52.401Z",
+  "syncedAt": "2026-08-15T11:21:54.778Z",
   "coverage": {
     "pathways": [
       "India",
@@ -59,7 +59,7 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "217/1 (56.2 Ov)"
+          "score": "236/1 (61.4 Ov)"
         },
         {
           "name": "Sri Lanka",
@@ -17730,7 +17730,7 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "217/1 (56.2 Ov)"
+          "score": "236/1 (61.4 Ov)"
         },
         {
           "name": "Sri Lanka",
