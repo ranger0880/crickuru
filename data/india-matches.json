@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-16T16:35:27.731Z",
+  "syncedAt": "2026-08-16T16:55:44.048Z",
   "coverage": {
     "pathways": [
       "India",
@@ -95,13 +95,13 @@
         {
           "name": "Purani Dilli 6",
           "shortName": "PD",
-          "score": "109/1 (9.3 Ov)"
+          "score": "145/3 (13.6 Ov)"
         }
       ],
       "dateLabel": "16 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Purani Dilli 6 need 111 runs in 63 balls",
+      "overview": "Purani Dilli 6 need 75 runs in 36 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169111",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-16T13:30:00.000Z",
@@ -17735,13 +17735,13 @@
         {
           "name": "Purani Dilli 6",
           "shortName": "PD",
-          "score": "109/1 (9.3 Ov)"
+          "score": "145/3 (13.6 Ov)"
         }
       ],
       "dateLabel": "16 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Purani Dilli 6 need 111 runs in 63 balls",
+      "overview": "Purani Dilli 6 need 75 runs in 36 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169111",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-16T13:30:00.000Z",
