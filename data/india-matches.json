@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-16T17:34:03.978Z",
+  "syncedAt": "2026-08-16T17:51:05.034Z",
   "coverage": {
     "pathways": [
       "India",
@@ -39,8 +39,8 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 2,
-    "recent": 60,
+    "live": 1,
+    "recent": 61,
     "upcoming": 503,
     "total": 565
   },
@@ -75,37 +75,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-15T04:30:00.000Z",
       "rawId": 163013
-    },
-    {
-      "id": "live-169111",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Outer Delhi Warriors vs Purani Dilli 6, 29th Match",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "Outer Delhi Warriors",
-          "shortName": "ODW",
-          "score": "219/5 (19.6 Ov)"
-        },
-        {
-          "name": "Purani Dilli 6",
-          "shortName": "PD",
-          "score": "198/6 (19.6 Ov)"
-        }
-      ],
-      "dateLabel": "16 Aug 2026, 07:00 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Outer Delhi Warriors won by 21 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169111",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores/upcoming-matches",
-      "startTime": "2026-08-16T13:30:00.000Z",
-      "rawId": 169111
     },
     {
       "id": "upcoming-163027",
@@ -15701,6 +15670,38 @@
       "rawId": 164501
     },
     {
+      "id": "recent-169111",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Outer Delhi Warriors vs Purani Dilli 6, 29th Match",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "Outer Delhi Warriors",
+          "shortName": "ODW",
+          "score": "219/5 (19.6 Ov)"
+        },
+        {
+          "name": "Purani Dilli 6",
+          "shortName": "PD",
+          "score": "198/6 (19.6 Ov)"
+        }
+      ],
+      "dateLabel": "16 Aug 2026, 07:00 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Outer Delhi Warriors won by 21 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169111",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-16T13:30:00.000Z",
+      "rawId": 169111,
+      "starPerformers": []
+    },
+    {
       "id": "recent-169497",
       "status": "recent",
       "statusLabel": "Past",
@@ -17715,37 +17716,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-15T04:30:00.000Z",
       "rawId": 163013
-    },
-    {
-      "id": "live-169111",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Outer Delhi Warriors vs Purani Dilli 6, 29th Match",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "Outer Delhi Warriors",
-          "shortName": "ODW",
-          "score": "219/5 (19.6 Ov)"
-        },
-        {
-          "name": "Purani Dilli 6",
-          "shortName": "PD",
-          "score": "198/6 (19.6 Ov)"
-        }
-      ],
-      "dateLabel": "16 Aug 2026, 07:00 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Outer Delhi Warriors won by 21 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169111",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores/upcoming-matches",
-      "startTime": "2026-08-16T13:30:00.000Z",
-      "rawId": 169111
     }
   ],
   "upcoming": [
@@ -33345,6 +33315,38 @@
   ],
   "recent": [
     {
+      "id": "recent-169111",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Outer Delhi Warriors vs Purani Dilli 6, 29th Match",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "Outer Delhi Warriors",
+          "shortName": "ODW",
+          "score": "219/5 (19.6 Ov)"
+        },
+        {
+          "name": "Purani Dilli 6",
+          "shortName": "PD",
+          "score": "198/6 (19.6 Ov)"
+        }
+      ],
+      "dateLabel": "16 Aug 2026, 07:00 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Outer Delhi Warriors won by 21 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169111",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-16T13:30:00.000Z",
+      "rawId": 169111,
+      "starPerformers": []
+    },
+    {
       "id": "recent-169497",
       "status": "recent",
       "statusLabel": "Past",
@@ -35342,8 +35344,8 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 1,
-      "recent": 0,
+      "live": 0,
+      "recent": 1,
       "upcoming": 0,
       "total": 1
     },
