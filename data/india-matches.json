@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-16T09:39:11.246Z",
+  "syncedAt": "2026-08-16T09:57:21.156Z",
   "coverage": {
     "pathways": [
       "India",
@@ -39,10 +39,10 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 1,
+    "live": 2,
     "recent": 60,
     "upcoming": 503,
-    "total": 564
+    "total": 565
   },
   "all": [
     {
@@ -59,7 +59,7 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "316/3 (82.3 Ov)"
+          "score": "327/4 (85.6 Ov)"
         },
         {
           "name": "Sri Lanka",
@@ -75,6 +75,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-15T04:30:00.000Z",
       "rawId": 163013
+    },
+    {
+      "id": "live-169101",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "North Delhi Strikers vs Central Delhi Kings, 28th Match",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "North Delhi Strikers",
+          "shortName": "NDS",
+          "score": "150/9 (19.6 Ov)"
+        },
+        {
+          "name": "Central Delhi Kings",
+          "shortName": "CDK",
+          "score": ""
+        }
+      ],
+      "dateLabel": "16 Aug 2026, 01:30 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Innings Break",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169101",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-16T08:00:00.000Z",
+      "rawId": 169101
     },
     {
       "id": "upcoming-163027",
@@ -17668,7 +17699,7 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "316/3 (82.3 Ov)"
+          "score": "327/4 (85.6 Ov)"
         },
         {
           "name": "Sri Lanka",
@@ -17684,6 +17715,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-15T04:30:00.000Z",
       "rawId": 163013
+    },
+    {
+      "id": "live-169101",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "North Delhi Strikers vs Central Delhi Kings, 28th Match",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "North Delhi Strikers",
+          "shortName": "NDS",
+          "score": "150/9 (19.6 Ov)"
+        },
+        {
+          "name": "Central Delhi Kings",
+          "shortName": "CDK",
+          "score": ""
+        }
+      ],
+      "dateLabel": "16 Aug 2026, 01:30 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Innings Break",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169101",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-16T08:00:00.000Z",
+      "rawId": 169101
     }
   ],
   "upcoming": [
@@ -35280,10 +35342,10 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 0,
+      "live": 1,
       "recent": 0,
       "upcoming": 0,
-      "total": 0
+      "total": 1
     },
     {
       "id": "women",
