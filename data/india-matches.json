@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
-  "sourceStatus": "fresh",
-  "syncedAt": "2026-08-16T03:13:32.935Z",
+  "sourceStatus": "partial",
+  "syncedAt": "2026-08-16T04:00:05.386Z",
   "coverage": {
     "pathways": [
       "India",
@@ -40,9 +40,9 @@
   },
   "summary": {
     "live": 1,
-    "recent": 60,
+    "recent": 50,
     "upcoming": 503,
-    "total": 564
+    "total": 554
   },
   "all": [
     {
@@ -16182,38 +16182,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-155166",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "India A Women vs England A Women, Unofficial 3rd ODI",
-      "series": "India A Women tour of England 2026",
-      "teams": [
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "281/7 (50 Ov)"
-        },
-        {
-          "name": "England A Women",
-          "shortName": "ENGAW",
-          "score": "222/10 (45 Ov)"
-        }
-      ],
-      "dateLabel": "04 Jul 2026, 03:30 pm",
-      "time": "",
-      "place": "The Cooper Associates County Ground, Taunton",
-      "overview": "India A Women won by 59 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155166",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-07-04T10:00:00.000Z",
-      "rawId": 155166,
-      "starPerformers": []
-    },
-    {
       "id": "recent-157204",
       "status": "recent",
       "statusLabel": "Past",
@@ -16310,38 +16278,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-155155",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "England A Women vs India A Women, Unofficial 2nd ODI",
-      "series": "India A Women tour of England 2026",
-      "teams": [
-        {
-          "name": "England A Women",
-          "shortName": "ENGAW",
-          "score": "298/5 (50 Ov)"
-        },
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "173/10 (42.3 Ov)"
-        }
-      ],
-      "dateLabel": "01 Jul 2026, 03:30 pm",
-      "time": "",
-      "place": "The Cooper Associates County Ground, Taunton",
-      "overview": "England A Women won by 125 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155155",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-07-01T10:00:00.000Z",
-      "rawId": 155155,
-      "starPerformers": []
-    },
-    {
       "id": "recent-155760",
       "status": "recent",
       "statusLabel": "Past",
@@ -16406,38 +16342,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-155144",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "England A Women vs India A Women, Unofficial 1st ODI",
-      "series": "India A Women tour of England 2026",
-      "teams": [
-        {
-          "name": "England A Women",
-          "shortName": "ENGAW",
-          "score": "222/6 (50 Ov)"
-        },
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "226/3 (46 Ov)"
-        }
-      ],
-      "dateLabel": "28 Jun 2026, 03:30 pm",
-      "time": "",
-      "place": "County Ground, Hove",
-      "overview": "India A Women won by 7 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155144",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-06-28T10:00:00.000Z",
-      "rawId": 155144,
-      "starPerformers": []
-    },
-    {
       "id": "recent-155749",
       "status": "recent",
       "statusLabel": "Past",
@@ -16467,38 +16371,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2026-06-27T07:30:00.000Z",
       "rawId": 155749,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-155133",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "India A Women vs England A Women, Unofficial 3rd T20",
-      "series": "India A Women tour of England 2026",
-      "teams": [
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "111/10 (19.5 Ov)"
-        },
-        {
-          "name": "England A Women",
-          "shortName": "ENGAW",
-          "score": "112/4 (16 Ov)"
-        }
-      ],
-      "dateLabel": "25 Jun 2026, 11:00 pm",
-      "time": "",
-      "place": "County Ground, Chelmsford",
-      "overview": "England A Women won by 6 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155133",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-06-25T17:30:00.000Z",
-      "rawId": 155133,
       "starPerformers": []
     },
     {
@@ -16595,38 +16467,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2026-06-24T07:30:00.000Z",
       "rawId": 155738,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-155122",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "India A Women vs England A Women, Unofficial 2nd T20",
-      "series": "India A Women tour of England 2026",
-      "teams": [
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "172/4 (20 Ov)"
-        },
-        {
-          "name": "England A Women",
-          "shortName": "ENGAW",
-          "score": "173/5 (18 Ov)"
-        }
-      ],
-      "dateLabel": "23 Jun 2026, 11:00 pm",
-      "time": "",
-      "place": "County Ground, Northampton",
-      "overview": "England A Women won by 5 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155122",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-06-23T17:30:00.000Z",
-      "rawId": 155122,
       "starPerformers": []
     },
     {
@@ -16731,38 +16571,6 @@
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156179"
         }
       ]
-    },
-    {
-      "id": "recent-155111",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "England A Women vs India A Women, Unofficial 1st T20",
-      "series": "India A Women tour of England 2026",
-      "teams": [
-        {
-          "name": "England A Women",
-          "shortName": "ENGAW",
-          "score": "126/7 (20 Ov)"
-        },
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "127/5 (18.1 Ov)"
-        }
-      ],
-      "dateLabel": "20 Jun 2026, 11:00 pm",
-      "time": "",
-      "place": "County Ground, Northampton",
-      "overview": "India A Women won by 5 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155111",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-06-20T17:30:00.000Z",
-      "rawId": 155111,
-      "starPerformers": []
     },
     {
       "id": "recent-121846",
@@ -17089,141 +16897,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-05-30T13:30:00.000Z",
       "rawId": 129497,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-144384",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "India A Women vs Bangladesh A Women, Final",
-      "series": "ACC Women's Asia Cup Rising Stars 2026",
-      "teams": [
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "134/7 (20 Ov)"
-        },
-        {
-          "name": "Bangladesh A Women",
-          "shortName": "BANWA",
-          "score": "88/10 (19.1 Ov)"
-        }
-      ],
-      "dateLabel": "22 Feb 2026, 12:30 pm",
-      "time": "",
-      "place": "Terdthai Cricket Ground, Bangkok",
-      "overview": "India A Women won by 46 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/144384",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-02-22T07:00:00.000Z",
-      "rawId": 144384,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-144362",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "Sri Lanka A Women vs India A Women, Semi Final 1 (A1vB2)",
-      "series": "ACC Women's Asia Cup Rising Stars 2026",
-      "teams": [
-        {
-          "name": "Sri Lanka A Women",
-          "shortName": "SLWA",
-          "score": "118/10 (19.4 Ov)"
-        },
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "119/5 (13 Ov)"
-        }
-      ],
-      "dateLabel": "20 Feb 2026, 08:00 am",
-      "time": "",
-      "place": "Terdthai Cricket Ground, Bangkok",
-      "overview": "India A Women won by 5 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/144362",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-02-20T02:30:00.000Z",
-      "rawId": 144362,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-144321",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "Nepal Women vs India A Women, 9th Match, Group A",
-      "series": "ACC Women's Asia Cup Rising Stars 2026",
-      "teams": [
-        {
-          "name": "Nepal Women",
-          "shortName": "NEPW",
-          "score": "78/10 (18 Ov)"
-        },
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "82/3 (7 Ov)"
-        }
-      ],
-      "dateLabel": "17 Feb 2026, 08:00 am",
-      "time": "",
-      "place": "Terdthai Cricket Ground, Bangkok",
-      "overview": "India A Women won by 7 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/144321",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-02-17T02:30:00.000Z",
-      "rawId": 144321,
-      "starPerformers": [
-        {
-          "name": "Tanuja Kanwer",
-          "performance": "4-12",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/144321"
-        }
-      ]
-    },
-    {
-      "id": "recent-144298",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "Pakistan A Women vs India A Women, 6th Match, Group A",
-      "series": "ACC Women's Asia Cup Rising Stars 2026",
-      "teams": [
-        {
-          "name": "Pakistan A Women",
-          "shortName": "PAKWA",
-          "score": "93/10 (18.5 Ov)"
-        },
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "97/2 (10 Ov)"
-        }
-      ],
-      "dateLabel": "15 Feb 2026, 12:30 pm",
-      "time": "",
-      "place": "Terdthai Cricket Ground, Bangkok",
-      "overview": "India A Women won by 8 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/144298",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-02-15T07:00:00.000Z",
-      "rawId": 144298,
       "starPerformers": []
     },
     {
@@ -33795,38 +33468,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-155166",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "India A Women vs England A Women, Unofficial 3rd ODI",
-      "series": "India A Women tour of England 2026",
-      "teams": [
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "281/7 (50 Ov)"
-        },
-        {
-          "name": "England A Women",
-          "shortName": "ENGAW",
-          "score": "222/10 (45 Ov)"
-        }
-      ],
-      "dateLabel": "04 Jul 2026, 03:30 pm",
-      "time": "",
-      "place": "The Cooper Associates County Ground, Taunton",
-      "overview": "India A Women won by 59 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155166",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-07-04T10:00:00.000Z",
-      "rawId": 155166,
-      "starPerformers": []
-    },
-    {
       "id": "recent-157204",
       "status": "recent",
       "statusLabel": "Past",
@@ -33923,38 +33564,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-155155",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "England A Women vs India A Women, Unofficial 2nd ODI",
-      "series": "India A Women tour of England 2026",
-      "teams": [
-        {
-          "name": "England A Women",
-          "shortName": "ENGAW",
-          "score": "298/5 (50 Ov)"
-        },
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "173/10 (42.3 Ov)"
-        }
-      ],
-      "dateLabel": "01 Jul 2026, 03:30 pm",
-      "time": "",
-      "place": "The Cooper Associates County Ground, Taunton",
-      "overview": "England A Women won by 125 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155155",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-07-01T10:00:00.000Z",
-      "rawId": 155155,
-      "starPerformers": []
-    },
-    {
       "id": "recent-155760",
       "status": "recent",
       "statusLabel": "Past",
@@ -34019,38 +33628,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-155144",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "England A Women vs India A Women, Unofficial 1st ODI",
-      "series": "India A Women tour of England 2026",
-      "teams": [
-        {
-          "name": "England A Women",
-          "shortName": "ENGAW",
-          "score": "222/6 (50 Ov)"
-        },
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "226/3 (46 Ov)"
-        }
-      ],
-      "dateLabel": "28 Jun 2026, 03:30 pm",
-      "time": "",
-      "place": "County Ground, Hove",
-      "overview": "India A Women won by 7 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155144",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-06-28T10:00:00.000Z",
-      "rawId": 155144,
-      "starPerformers": []
-    },
-    {
       "id": "recent-155749",
       "status": "recent",
       "statusLabel": "Past",
@@ -34080,38 +33657,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2026-06-27T07:30:00.000Z",
       "rawId": 155749,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-155133",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "India A Women vs England A Women, Unofficial 3rd T20",
-      "series": "India A Women tour of England 2026",
-      "teams": [
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "111/10 (19.5 Ov)"
-        },
-        {
-          "name": "England A Women",
-          "shortName": "ENGAW",
-          "score": "112/4 (16 Ov)"
-        }
-      ],
-      "dateLabel": "25 Jun 2026, 11:00 pm",
-      "time": "",
-      "place": "County Ground, Chelmsford",
-      "overview": "England A Women won by 6 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155133",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-06-25T17:30:00.000Z",
-      "rawId": 155133,
       "starPerformers": []
     },
     {
@@ -34208,38 +33753,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2026-06-24T07:30:00.000Z",
       "rawId": 155738,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-155122",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "India A Women vs England A Women, Unofficial 2nd T20",
-      "series": "India A Women tour of England 2026",
-      "teams": [
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "172/4 (20 Ov)"
-        },
-        {
-          "name": "England A Women",
-          "shortName": "ENGAW",
-          "score": "173/5 (18 Ov)"
-        }
-      ],
-      "dateLabel": "23 Jun 2026, 11:00 pm",
-      "time": "",
-      "place": "County Ground, Northampton",
-      "overview": "England A Women won by 5 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155122",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-06-23T17:30:00.000Z",
-      "rawId": 155122,
       "starPerformers": []
     },
     {
@@ -34344,38 +33857,6 @@
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156179"
         }
       ]
-    },
-    {
-      "id": "recent-155111",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "England A Women vs India A Women, Unofficial 1st T20",
-      "series": "India A Women tour of England 2026",
-      "teams": [
-        {
-          "name": "England A Women",
-          "shortName": "ENGAW",
-          "score": "126/7 (20 Ov)"
-        },
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "127/5 (18.1 Ov)"
-        }
-      ],
-      "dateLabel": "20 Jun 2026, 11:00 pm",
-      "time": "",
-      "place": "County Ground, Northampton",
-      "overview": "India A Women won by 5 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155111",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-06-20T17:30:00.000Z",
-      "rawId": 155111,
-      "starPerformers": []
     },
     {
       "id": "recent-121846",
@@ -34702,141 +34183,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-05-30T13:30:00.000Z",
       "rawId": 129497,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-144384",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "India A Women vs Bangladesh A Women, Final",
-      "series": "ACC Women's Asia Cup Rising Stars 2026",
-      "teams": [
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "134/7 (20 Ov)"
-        },
-        {
-          "name": "Bangladesh A Women",
-          "shortName": "BANWA",
-          "score": "88/10 (19.1 Ov)"
-        }
-      ],
-      "dateLabel": "22 Feb 2026, 12:30 pm",
-      "time": "",
-      "place": "Terdthai Cricket Ground, Bangkok",
-      "overview": "India A Women won by 46 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/144384",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-02-22T07:00:00.000Z",
-      "rawId": 144384,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-144362",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "Sri Lanka A Women vs India A Women, Semi Final 1 (A1vB2)",
-      "series": "ACC Women's Asia Cup Rising Stars 2026",
-      "teams": [
-        {
-          "name": "Sri Lanka A Women",
-          "shortName": "SLWA",
-          "score": "118/10 (19.4 Ov)"
-        },
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "119/5 (13 Ov)"
-        }
-      ],
-      "dateLabel": "20 Feb 2026, 08:00 am",
-      "time": "",
-      "place": "Terdthai Cricket Ground, Bangkok",
-      "overview": "India A Women won by 5 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/144362",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-02-20T02:30:00.000Z",
-      "rawId": 144362,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-144321",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "Nepal Women vs India A Women, 9th Match, Group A",
-      "series": "ACC Women's Asia Cup Rising Stars 2026",
-      "teams": [
-        {
-          "name": "Nepal Women",
-          "shortName": "NEPW",
-          "score": "78/10 (18 Ov)"
-        },
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "82/3 (7 Ov)"
-        }
-      ],
-      "dateLabel": "17 Feb 2026, 08:00 am",
-      "time": "",
-      "place": "Terdthai Cricket Ground, Bangkok",
-      "overview": "India A Women won by 7 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/144321",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-02-17T02:30:00.000Z",
-      "rawId": 144321,
-      "starPerformers": [
-        {
-          "name": "Tanuja Kanwer",
-          "performance": "4-12",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/144321"
-        }
-      ]
-    },
-    {
-      "id": "recent-144298",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "Pakistan A Women vs India A Women, 6th Match, Group A",
-      "series": "ACC Women's Asia Cup Rising Stars 2026",
-      "teams": [
-        {
-          "name": "Pakistan A Women",
-          "shortName": "PAKWA",
-          "score": "93/10 (18.5 Ov)"
-        },
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "97/2 (10 Ov)"
-        }
-      ],
-      "dateLabel": "15 Feb 2026, 12:30 pm",
-      "time": "",
-      "place": "Terdthai Cricket Ground, Bangkok",
-      "overview": "India A Women won by 8 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/144298",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-02-15T07:00:00.000Z",
-      "rawId": 144298,
       "starPerformers": []
     },
     {
@@ -35290,9 +34636,9 @@
       "label": "Women",
       "order": 3,
       "live": 0,
-      "recent": 30,
+      "recent": 20,
       "upcoming": 35,
-      "total": 65
+      "total": 55
     },
     {
       "id": "domestic",
@@ -35849,5 +35195,7 @@
     }
   ],
   "importantResultsByMonth": [],
-  "errors": []
+  "errors": [
+    "fetch failed"
+  ]
 }
