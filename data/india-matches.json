@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-16T14:51:22.260Z",
+  "syncedAt": "2026-08-16T15:07:24.890Z",
   "coverage": {
     "pathways": [
       "India",
@@ -90,7 +90,7 @@
         {
           "name": "Outer Delhi Warriors",
           "shortName": "ODW",
-          "score": "140/3 (12.6 Ov)"
+          "score": "189/4 (16.6 Ov)"
         },
         {
           "name": "Purani Dilli 6",
@@ -17730,7 +17730,7 @@
         {
           "name": "Outer Delhi Warriors",
           "shortName": "ODW",
-          "score": "140/3 (12.6 Ov)"
+          "score": "189/4 (16.6 Ov)"
         },
         {
           "name": "Purani Dilli 6",
