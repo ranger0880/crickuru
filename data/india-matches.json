@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-16T17:14:05.668Z",
+  "syncedAt": "2026-08-16T17:34:03.978Z",
   "coverage": {
     "pathways": [
       "India",
@@ -95,15 +95,15 @@
         {
           "name": "Purani Dilli 6",
           "shortName": "PD",
-          "score": "169/4 (16.2 Ov)"
+          "score": "198/6 (19.6 Ov)"
         }
       ],
       "dateLabel": "16 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Purani Dilli 6 need 51 runs in 22 balls",
+      "overview": "Outer Delhi Warriors won by 21 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169111",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores/upcoming-matches",
       "startTime": "2026-08-16T13:30:00.000Z",
       "rawId": 169111
     },
@@ -17735,15 +17735,15 @@
         {
           "name": "Purani Dilli 6",
           "shortName": "PD",
-          "score": "169/4 (16.2 Ov)"
+          "score": "198/6 (19.6 Ov)"
         }
       ],
       "dateLabel": "16 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Purani Dilli 6 need 51 runs in 22 balls",
+      "overview": "Outer Delhi Warriors won by 21 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169111",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores/upcoming-matches",
       "startTime": "2026-08-16T13:30:00.000Z",
       "rawId": 169111
     }
