@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-17T11:39:39.192Z",
+  "syncedAt": "2026-08-17T11:57:45.094Z",
   "coverage": {
     "pathways": [
       "India",
@@ -95,13 +95,13 @@
         {
           "name": "New Delhi Tigers",
           "shortName": "NDT",
-          "score": "152/6 (17.1 Ov)"
+          "score": "156/10 (19.2 Ov)"
         }
       ],
       "dateLabel": "17 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "New Delhi Tigers need 41 runs in 17 balls",
+      "overview": "East Delhi Riders won by 36 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169121",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-17T08:00:00.000Z",
@@ -17735,13 +17735,13 @@
         {
           "name": "New Delhi Tigers",
           "shortName": "NDT",
-          "score": "152/6 (17.1 Ov)"
+          "score": "156/10 (19.2 Ov)"
         }
       ],
       "dateLabel": "17 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "New Delhi Tigers need 41 runs in 17 balls",
+      "overview": "East Delhi Riders won by 36 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169121",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-17T08:00:00.000Z",
