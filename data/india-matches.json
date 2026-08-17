@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-17T12:41:08.999Z",
+  "syncedAt": "2026-08-17T13:25:39.436Z",
   "coverage": {
     "pathways": [
       "India",
@@ -39,8 +39,8 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 2,
-    "recent": 60,
+    "live": 1,
+    "recent": 61,
     "upcoming": 503,
     "total": 565
   },
@@ -75,37 +75,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-15T04:30:00.000Z",
       "rawId": 163013
-    },
-    {
-      "id": "live-169121",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "league",
-      "sourceScope": "domestic-global",
-      "title": "East Delhi Riders vs New Delhi Tigers, 30th Match",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "East Delhi Riders",
-          "shortName": "EDR",
-          "score": "192/7 (19.6 Ov)"
-        },
-        {
-          "name": "New Delhi Tigers",
-          "shortName": "NDT",
-          "score": "156/7 (18.1 Ov)"
-        }
-      ],
-      "dateLabel": "17 Aug 2026, 01:30 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "New Delhi Tigers need 37 runs in 11 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169121",
-      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic",
-      "startTime": "2026-08-17T08:00:00.000Z",
-      "rawId": 169121
     },
     {
       "id": "upcoming-163027",
@@ -15701,6 +15670,38 @@
       "rawId": 164501
     },
     {
+      "id": "recent-169121",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "East Delhi Riders vs New Delhi Tigers, 30th Match",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "East Delhi Riders",
+          "shortName": "EDR",
+          "score": "192/7 (19.6 Ov)"
+        },
+        {
+          "name": "New Delhi Tigers",
+          "shortName": "NDT",
+          "score": "156/10 (19.2 Ov)"
+        }
+      ],
+      "dateLabel": "17 Aug 2026, 01:30 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "East Delhi Riders won by 36 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169121",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-17T08:00:00.000Z",
+      "rawId": 169121,
+      "starPerformers": []
+    },
+    {
       "id": "recent-169497",
       "status": "recent",
       "statusLabel": "Past",
@@ -17715,37 +17716,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-15T04:30:00.000Z",
       "rawId": 163013
-    },
-    {
-      "id": "live-169121",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "league",
-      "sourceScope": "domestic-global",
-      "title": "East Delhi Riders vs New Delhi Tigers, 30th Match",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "East Delhi Riders",
-          "shortName": "EDR",
-          "score": "192/7 (19.6 Ov)"
-        },
-        {
-          "name": "New Delhi Tigers",
-          "shortName": "NDT",
-          "score": "156/7 (18.1 Ov)"
-        }
-      ],
-      "dateLabel": "17 Aug 2026, 01:30 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "New Delhi Tigers need 37 runs in 11 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169121",
-      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic",
-      "startTime": "2026-08-17T08:00:00.000Z",
-      "rawId": 169121
     }
   ],
   "upcoming": [
@@ -33345,6 +33315,38 @@
   ],
   "recent": [
     {
+      "id": "recent-169121",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "East Delhi Riders vs New Delhi Tigers, 30th Match",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "East Delhi Riders",
+          "shortName": "EDR",
+          "score": "192/7 (19.6 Ov)"
+        },
+        {
+          "name": "New Delhi Tigers",
+          "shortName": "NDT",
+          "score": "156/10 (19.2 Ov)"
+        }
+      ],
+      "dateLabel": "17 Aug 2026, 01:30 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "East Delhi Riders won by 36 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169121",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-17T08:00:00.000Z",
+      "rawId": 169121,
+      "starPerformers": []
+    },
+    {
       "id": "recent-169497",
       "status": "recent",
       "statusLabel": "Past",
@@ -35343,9 +35345,9 @@
       "label": "League / IPL",
       "order": 2,
       "live": 0,
-      "recent": 0,
+      "recent": 1,
       "upcoming": 0,
-      "total": 0
+      "total": 1
     },
     {
       "id": "women",
@@ -35360,10 +35362,10 @@
       "id": "domestic",
       "label": "Domestic / State",
       "order": 4,
-      "live": 1,
+      "live": 0,
       "recent": 0,
       "upcoming": 417,
-      "total": 418
+      "total": 417
     }
   ],
   "importantMatches": [
