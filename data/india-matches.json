@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-17T09:53:17.872Z",
+  "syncedAt": "2026-08-17T10:18:44.633Z",
   "coverage": {
     "pathways": [
       "India",
@@ -64,13 +64,13 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "227/5 (58.2 Ov)"
+          "score": "240/6 (63.6 Ov)"
         }
       ],
       "dateLabel": "15 Aug 2026, 10:00 am",
       "time": "",
       "place": "Galle International Stadium, Galle",
-      "overview": "Day 3: 3rd Session - Sri Lanka trail by 235 runs",
+      "overview": "Day 3: 3rd Session - Sri Lanka trail by 222 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163013",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-15T04:30:00.000Z",
@@ -95,13 +95,13 @@
         {
           "name": "New Delhi Tigers",
           "shortName": "NDT",
-          "score": ""
+          "score": "35/1 (3.6 Ov)"
         }
       ],
       "dateLabel": "17 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Innings Break",
+      "overview": "New Delhi Tigers need 158 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169121",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-17T08:00:00.000Z",
@@ -17704,13 +17704,13 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "227/5 (58.2 Ov)"
+          "score": "240/6 (63.6 Ov)"
         }
       ],
       "dateLabel": "15 Aug 2026, 10:00 am",
       "time": "",
       "place": "Galle International Stadium, Galle",
-      "overview": "Day 3: 3rd Session - Sri Lanka trail by 235 runs",
+      "overview": "Day 3: 3rd Session - Sri Lanka trail by 222 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163013",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-15T04:30:00.000Z",
@@ -17735,13 +17735,13 @@
         {
           "name": "New Delhi Tigers",
           "shortName": "NDT",
-          "score": ""
+          "score": "35/1 (3.6 Ov)"
         }
       ],
       "dateLabel": "17 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Innings Break",
+      "overview": "New Delhi Tigers need 158 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169121",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-17T08:00:00.000Z",
