@@ -1,12 +1,12 @@
 {
   "schemaVersion": 3,
   "source": "CricHeroes public team and player pages",
-  "sourceStatus": "stale",
-  "syncedAt": "2026-08-18T10:01:03.085Z",
-  "lastCheckedAt": "2026-08-18T10:17:20.547Z",
-  "lastSuccessfulSyncAt": "2026-08-18T10:01:03.085Z",
-  "playerStatsUpdatedAt": "2026-08-18T10:01:03.085Z",
-  "playerSyncCursor": 58,
+  "sourceStatus": "fresh",
+  "syncedAt": "2026-08-18T10:46:30.076Z",
+  "lastCheckedAt": "2026-08-18T10:46:30.076Z",
+  "lastSuccessfulSyncAt": "2026-08-18T10:46:30.076Z",
+  "playerStatsUpdatedAt": "2026-08-18T10:46:30.076Z",
+  "playerSyncCursor": 70,
   "coverage": {
     "refreshCadence": "15 minutes",
     "playerProfileBatch": 12,
@@ -19,14 +19,14 @@
     "liveMatches": 0,
     "upcomingMatches": 0,
     "recentMatches": 39,
-    "players": 77,
+    "players": 78,
     "opponents": 29,
     "awards": 114,
     "records": 1,
-    "rosterChanges": 0,
-    "playerProfiles": 77,
-    "playerRecentMatches": 418,
-    "playerHistoryMatches": 667,
+    "rosterChanges": 1,
+    "playerProfiles": 78,
+    "playerRecentMatches": 424,
+    "playerHistoryMatches": 677,
     "playerHistoryComplete": 16,
     "sourcePages": [
       "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors",
@@ -48,7 +48,7 @@
     "isAssociationTeam": false,
     "captainId": 29139731,
     "captainName": "Ankit Kulshreshtha",
-    "totalPlayers": 77,
+    "totalPlayers": 78,
     "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors",
     "matchesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
     "membersUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/members",
@@ -71,15 +71,15 @@
     "nextMatchVenue": ""
   },
   "memberSummary": {
-    "total": 77,
-    "verified": 73,
+    "total": 78,
+    "verified": 74,
     "pro": 36,
     "captains": 1,
     "admins": 2,
     "skills": [
       {
         "name": "Unlisted",
-        "count": 66
+        "count": 67
       },
       {
         "name": "BAT",
@@ -117,7 +117,7 @@
       },
       {
         "name": "Steady Batter",
-        "count": 3
+        "count": 4
       }
     ],
     "bowlerCategories": [
@@ -141,7 +141,7 @@
     "badges": [
       {
         "name": "Verified",
-        "count": 73
+        "count": 74
       },
       {
         "name": "Pro",
@@ -189,7 +189,7 @@
       },
       {
         "name": "Steady Batter",
-        "count": 3
+        "count": 4
       },
       {
         "name": "Captain",
@@ -582,7 +582,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1779329221637_sAQlz8HY2Dv7.jpeg"
         },
-        "fetchedAt": "2026-08-18T10:01:04.770Z"
+        "fetchedAt": "2026-08-18T10:46:31.730Z"
       }
     },
     {
@@ -804,7 +804,7 @@
           "team_name": "Divino Dominators",
           "profile_photo": "https://media.cricheroes.in/user_profile/1687784949654_szSgkw6bSMyS.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:04.770Z"
+        "fetchedAt": "2026-08-18T10:46:31.731Z"
       }
     },
     {
@@ -1019,7 +1019,7 @@
           "team_name": "The Core XI",
           "profile_photo": "https://media.cricheroes.in/user_profile/1785074652095_FZ4UgTYV827N.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.277Z"
+        "fetchedAt": "2026-08-18T10:46:32.112Z"
       }
     },
     {
@@ -1233,7 +1233,7 @@
           "team_name": "Elite warriors 11",
           "profile_photo": "https://media.cricheroes.in/user_profile/1773544035326_v9xB0L1bH0xj.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.188Z"
+        "fetchedAt": "2026-08-18T10:46:32.207Z"
       }
     },
     {
@@ -1454,7 +1454,7 @@
           "team_name": "Star Sport Cricket Club",
           "profile_photo": "https://media.cricheroes.in/user_profile/1739941237181_CzO1wbdb0sD8.jpeg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.277Z"
+        "fetchedAt": "2026-08-18T10:46:32.089Z"
       }
     },
     {
@@ -1672,7 +1672,7 @@
           "team_name": "Ace Power XI",
           "profile_photo": "https://media.cricheroes.in/user_profile/1766474912441_pNhO2hnwETz2.jpeg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.319Z"
+        "fetchedAt": "2026-08-18T10:46:32.123Z"
       }
     },
     {
@@ -1909,7 +1909,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1780864997429_9o5IzA0i3jGm.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.229Z"
+        "fetchedAt": "2026-08-18T10:46:32.205Z"
       }
     },
     {
@@ -2126,7 +2126,7 @@
           "team_name": "Strikers 11",
           "profile_photo": "https://media.cricheroes.in/user_profile/1702188258750_HHC7JkgE9XC4.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.323Z"
+        "fetchedAt": "2026-08-18T10:46:32.188Z"
       }
     },
     {
@@ -2357,7 +2357,7 @@
           "team_name": "Techie Cricket Club",
           "profile_photo": "https://media.cricheroes.in/user_profile/1760877797272_m81RhgfV9piB.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.323Z"
+        "fetchedAt": "2026-08-18T10:46:32.320Z"
       }
     },
     {
@@ -2569,7 +2569,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1768059656318_FcDWz8vhJEUM.jpeg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.327Z"
+        "fetchedAt": "2026-08-18T10:46:32.321Z"
       }
     },
     {
@@ -2779,7 +2779,7 @@
           "team_name": "MIGHTY HEROES",
           "profile_photo": "https://media.cricheroes.in/user_profile/1743222088091_VKsmdssOFmio.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.565Z"
+        "fetchedAt": "2026-08-18T10:46:32.275Z"
       }
     },
     {
@@ -2992,7 +2992,7 @@
           "team_name": "Ace Panthers",
           "profile_photo": "https://media.cricheroes.in/user_profile/1762881554104_Ad5W087MFNUa.jpeg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.339Z"
+        "fetchedAt": "2026-08-18T10:46:32.363Z"
       }
     },
     {
@@ -3218,7 +3218,7 @@
           "team_name": "Divino Dominators",
           "profile_photo": "https://media.cricheroes.in/user_profile/1649006656456_R9taTt5Q8etp.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.347Z"
+        "fetchedAt": "2026-08-18T10:46:32.351Z"
       }
     },
     {
@@ -3445,7 +3445,7 @@
           "team_name": "Power Rangers",
           "profile_photo": "https://media.cricheroes.in/user_profile/1749052271503_kWVeL2Ne19GO.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.346Z"
+        "fetchedAt": "2026-08-18T10:46:32.289Z"
       }
     },
     {
@@ -3657,7 +3657,7 @@
           "team_name": "Divino Dominators",
           "profile_photo": "https://media.cricheroes.in/user_profile/1769450892074_lW3zrXmmAtAL.jpeg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.358Z"
+        "fetchedAt": "2026-08-18T10:46:32.353Z"
       }
     },
     {
@@ -3868,7 +3868,7 @@
           "team_name": "Divino Dragons DCPL",
           "profile_photo": "https://media.cricheroes.in/user_profile/1750647894024_1SYaJrdU2hQe.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.397Z"
+        "fetchedAt": "2026-08-18T10:46:32.319Z"
       }
     },
     {
@@ -4081,7 +4081,7 @@
           "team_name": "Maverick Masters",
           "profile_photo": "https://media.cricheroes.in/user_profile/1738844234316_vGL0pYg8SE2K.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.483Z"
+        "fetchedAt": "2026-08-18T10:46:32.331Z"
       }
     },
     {
@@ -4289,7 +4289,7 @@
           "team_name": "DIVINO STARZ DCPL3",
           "profile_photo": "https://media.cricheroes.in/user_profile/1759217577159_vlKUBI1T9eCT.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.667Z"
+        "fetchedAt": "2026-08-18T10:46:32.365Z"
       }
     },
     {
@@ -4501,7 +4501,7 @@
           "team_name": "Divino Royals",
           "profile_photo": "https://media.cricheroes.in/user_profile/1740397679772_urlfRclTtO4z.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.446Z"
+        "fetchedAt": "2026-08-18T10:46:32.345Z"
       }
     },
     {
@@ -4721,7 +4721,7 @@
           "team_name": "Dharma Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1769406507625_xj7GkiCZWIE0.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.458Z"
+        "fetchedAt": "2026-08-18T10:46:32.363Z"
       }
     },
     {
@@ -4929,7 +4929,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1768059656318_FcDWz8vhJEUM.jpeg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.467Z"
+        "fetchedAt": "2026-08-18T10:46:32.389Z"
       }
     },
     {
@@ -5137,7 +5137,7 @@
           "team_name": "Divino Hustlers - DCPL 2.0",
           "profile_photo": "https://media.cricheroes.in/user_profile/1758255711270_w1MRkDJEvcdn.jpeg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.394Z"
+        "fetchedAt": "2026-08-18T10:46:32.389Z"
       }
     },
     {
@@ -5349,7 +5349,7 @@
           "team_name": "SNX 11",
           "profile_photo": "https://media.cricheroes.in/user_profile/1786212187690_hrU5SkagCsDB.jpeg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.419Z"
+        "fetchedAt": "2026-08-18T10:46:32.389Z"
       }
     },
     {
@@ -5631,7 +5631,7 @@
           "team_name": "Divino Dragons - DCPL2",
           "profile_photo": "https://media.cricheroes.in/user_profile/1762236484006_gh7vxjTz0CzH.jpeg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.459Z"
+        "fetchedAt": "2026-08-18T10:46:32.469Z"
       }
     },
     {
@@ -5843,7 +5843,7 @@
           "team_name": "Divino Champains DCPL-2",
           "profile_photo": "https://media.cricheroes.in/user_profile/1738844234316_vGL0pYg8SE2K.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.448Z"
+        "fetchedAt": "2026-08-18T10:46:32.452Z"
       }
     },
     {
@@ -6051,7 +6051,7 @@
           "team_name": "Divino Stars- Soft Ball",
           "profile_photo": "https://media.cricheroes.in/user_profile/1724909418920_VlIU0dKIKpbt.jpg"
         },
-        "fetchedAt": "2026-08-13T21:32:30.388Z"
+        "fetchedAt": "2026-08-18T10:46:32.415Z"
       }
     },
     {
@@ -6266,7 +6266,7 @@
           "team_name": "Maverick Masters",
           "profile_photo": "https://media.cricheroes.in/user_profile/1724909418920_VlIU0dKIKpbt.jpg"
         },
-        "fetchedAt": "2026-08-13T21:32:30.413Z"
+        "fetchedAt": "2026-08-18T10:46:32.469Z"
       }
     },
     {
@@ -6484,7 +6484,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1774670641951_DB3xaM3qqmnv.jpeg"
         },
-        "fetchedAt": "2026-08-13T21:32:30.449Z"
+        "fetchedAt": "2026-08-18T10:46:32.398Z"
       }
     },
     {
@@ -8760,7 +8760,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1779329221637_sAQlz8HY2Dv7.jpeg"
         },
-        "fetchedAt": "2026-08-18T10:01:04.770Z"
+        "fetchedAt": "2026-08-18T10:46:31.730Z"
       }
     },
     {
@@ -8982,7 +8982,7 @@
           "team_name": "Divino Dominators",
           "profile_photo": "https://media.cricheroes.in/user_profile/1687784949654_szSgkw6bSMyS.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:04.770Z"
+        "fetchedAt": "2026-08-18T10:46:31.731Z"
       }
     },
     {
@@ -9197,7 +9197,7 @@
           "team_name": "The Core XI",
           "profile_photo": "https://media.cricheroes.in/user_profile/1785074652095_FZ4UgTYV827N.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.277Z"
+        "fetchedAt": "2026-08-18T10:46:32.112Z"
       }
     },
     {
@@ -9411,7 +9411,7 @@
           "team_name": "Elite warriors 11",
           "profile_photo": "https://media.cricheroes.in/user_profile/1773544035326_v9xB0L1bH0xj.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.188Z"
+        "fetchedAt": "2026-08-18T10:46:32.207Z"
       }
     },
     {
@@ -9632,7 +9632,7 @@
           "team_name": "Star Sport Cricket Club",
           "profile_photo": "https://media.cricheroes.in/user_profile/1739941237181_CzO1wbdb0sD8.jpeg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.277Z"
+        "fetchedAt": "2026-08-18T10:46:32.089Z"
       }
     },
     {
@@ -9850,7 +9850,7 @@
           "team_name": "Ace Power XI",
           "profile_photo": "https://media.cricheroes.in/user_profile/1766474912441_pNhO2hnwETz2.jpeg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.319Z"
+        "fetchedAt": "2026-08-18T10:46:32.123Z"
       }
     },
     {
@@ -10087,7 +10087,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1780864997429_9o5IzA0i3jGm.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.229Z"
+        "fetchedAt": "2026-08-18T10:46:32.205Z"
       }
     },
     {
@@ -10304,7 +10304,7 @@
           "team_name": "Strikers 11",
           "profile_photo": "https://media.cricheroes.in/user_profile/1702188258750_HHC7JkgE9XC4.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.323Z"
+        "fetchedAt": "2026-08-18T10:46:32.188Z"
       }
     },
     {
@@ -10535,7 +10535,7 @@
           "team_name": "Techie Cricket Club",
           "profile_photo": "https://media.cricheroes.in/user_profile/1760877797272_m81RhgfV9piB.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.323Z"
+        "fetchedAt": "2026-08-18T10:46:32.320Z"
       }
     },
     {
@@ -10747,7 +10747,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1768059656318_FcDWz8vhJEUM.jpeg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.327Z"
+        "fetchedAt": "2026-08-18T10:46:32.321Z"
       }
     },
     {
@@ -10957,7 +10957,7 @@
           "team_name": "MIGHTY HEROES",
           "profile_photo": "https://media.cricheroes.in/user_profile/1743222088091_VKsmdssOFmio.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.565Z"
+        "fetchedAt": "2026-08-18T10:46:32.275Z"
       }
     },
     {
@@ -11170,7 +11170,7 @@
           "team_name": "Ace Panthers",
           "profile_photo": "https://media.cricheroes.in/user_profile/1762881554104_Ad5W087MFNUa.jpeg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.339Z"
+        "fetchedAt": "2026-08-18T10:46:32.363Z"
       }
     },
     {
@@ -11396,7 +11396,7 @@
           "team_name": "Divino Dominators",
           "profile_photo": "https://media.cricheroes.in/user_profile/1649006656456_R9taTt5Q8etp.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.347Z"
+        "fetchedAt": "2026-08-18T10:46:32.351Z"
       }
     },
     {
@@ -11623,7 +11623,7 @@
           "team_name": "Power Rangers",
           "profile_photo": "https://media.cricheroes.in/user_profile/1749052271503_kWVeL2Ne19GO.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.346Z"
+        "fetchedAt": "2026-08-18T10:46:32.289Z"
       }
     },
     {
@@ -11835,7 +11835,7 @@
           "team_name": "Divino Dominators",
           "profile_photo": "https://media.cricheroes.in/user_profile/1769450892074_lW3zrXmmAtAL.jpeg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.358Z"
+        "fetchedAt": "2026-08-18T10:46:32.353Z"
       }
     },
     {
@@ -12046,7 +12046,7 @@
           "team_name": "Divino Dragons DCPL",
           "profile_photo": "https://media.cricheroes.in/user_profile/1750647894024_1SYaJrdU2hQe.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.397Z"
+        "fetchedAt": "2026-08-18T10:46:32.319Z"
       }
     },
     {
@@ -12259,7 +12259,7 @@
           "team_name": "Maverick Masters",
           "profile_photo": "https://media.cricheroes.in/user_profile/1738844234316_vGL0pYg8SE2K.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.483Z"
+        "fetchedAt": "2026-08-18T10:46:32.331Z"
       }
     },
     {
@@ -12467,7 +12467,7 @@
           "team_name": "DIVINO STARZ DCPL3",
           "profile_photo": "https://media.cricheroes.in/user_profile/1759217577159_vlKUBI1T9eCT.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.667Z"
+        "fetchedAt": "2026-08-18T10:46:32.365Z"
       }
     },
     {
@@ -12679,7 +12679,7 @@
           "team_name": "Divino Royals",
           "profile_photo": "https://media.cricheroes.in/user_profile/1740397679772_urlfRclTtO4z.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.446Z"
+        "fetchedAt": "2026-08-18T10:46:32.345Z"
       }
     },
     {
@@ -12899,7 +12899,7 @@
           "team_name": "Dharma Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1769406507625_xj7GkiCZWIE0.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.458Z"
+        "fetchedAt": "2026-08-18T10:46:32.363Z"
       }
     },
     {
@@ -13107,7 +13107,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1768059656318_FcDWz8vhJEUM.jpeg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.467Z"
+        "fetchedAt": "2026-08-18T10:46:32.389Z"
       }
     },
     {
@@ -13315,7 +13315,7 @@
           "team_name": "Divino Hustlers - DCPL 2.0",
           "profile_photo": "https://media.cricheroes.in/user_profile/1758255711270_w1MRkDJEvcdn.jpeg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.394Z"
+        "fetchedAt": "2026-08-18T10:46:32.389Z"
       }
     },
     {
@@ -13527,7 +13527,7 @@
           "team_name": "SNX 11",
           "profile_photo": "https://media.cricheroes.in/user_profile/1786212187690_hrU5SkagCsDB.jpeg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.419Z"
+        "fetchedAt": "2026-08-18T10:46:32.389Z"
       }
     },
     {
@@ -13809,7 +13809,7 @@
           "team_name": "Divino Dragons - DCPL2",
           "profile_photo": "https://media.cricheroes.in/user_profile/1762236484006_gh7vxjTz0CzH.jpeg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.459Z"
+        "fetchedAt": "2026-08-18T10:46:32.469Z"
       }
     },
     {
@@ -14021,7 +14021,7 @@
           "team_name": "Divino Champains DCPL-2",
           "profile_photo": "https://media.cricheroes.in/user_profile/1738844234316_vGL0pYg8SE2K.jpg"
         },
-        "fetchedAt": "2026-08-18T10:01:05.448Z"
+        "fetchedAt": "2026-08-18T10:46:32.452Z"
       }
     },
     {
@@ -14229,7 +14229,7 @@
           "team_name": "Divino Stars- Soft Ball",
           "profile_photo": "https://media.cricheroes.in/user_profile/1724909418920_VlIU0dKIKpbt.jpg"
         },
-        "fetchedAt": "2026-08-13T21:32:30.388Z"
+        "fetchedAt": "2026-08-18T10:46:32.415Z"
       }
     },
     {
@@ -14444,7 +14444,7 @@
           "team_name": "Maverick Masters",
           "profile_photo": "https://media.cricheroes.in/user_profile/1724909418920_VlIU0dKIKpbt.jpg"
         },
-        "fetchedAt": "2026-08-13T21:32:30.413Z"
+        "fetchedAt": "2026-08-18T10:46:32.469Z"
       }
     },
     {
@@ -14662,7 +14662,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1774670641951_DB3xaM3qqmnv.jpeg"
         },
-        "fetchedAt": "2026-08-13T21:32:30.449Z"
+        "fetchedAt": "2026-08-18T10:46:32.398Z"
       }
     },
     {
@@ -17777,26 +17777,26 @@
         }
       ],
       "warriorsStats": {
-        "matchesTracked": 6,
-        "battingInnings": 5,
-        "runs": 165,
-        "balls": 89,
-        "fours": 5,
+        "matchesTracked": 9,
+        "battingInnings": 8,
+        "runs": 237,
+        "balls": 138,
+        "fours": 8,
         "sixes": 8,
         "bestScore": 73,
         "fifties": 2,
         "hundreds": 0,
-        "bowlingInnings": 1,
-        "wickets": 2,
+        "bowlingInnings": 3,
+        "wickets": 6,
         "ballsBowled": 0,
-        "runsConceded": 12,
+        "runsConceded": 39,
         "bestWickets": 2,
         "maidens": 0,
         "hatTricks": 0,
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-03-18T01:29:13.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -18786,14 +18786,14 @@
       ],
       "recentHighlights": [],
       "warriorsStats": {
-        "matchesTracked": 2,
-        "battingInnings": 2,
-        "runs": 89,
-        "balls": 57,
-        "fours": 11,
-        "sixes": 1,
-        "bestScore": 46,
-        "fifties": 0,
+        "matchesTracked": 6,
+        "battingInnings": 6,
+        "runs": 278,
+        "balls": 161,
+        "fours": 31,
+        "sixes": 9,
+        "bestScore": 60,
+        "fifties": 2,
         "hundreds": 0,
         "bowlingInnings": 0,
         "wickets": 0,
@@ -18805,7 +18805,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-03-02T04:39:00.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -19888,7 +19888,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-04-01T01:46:12.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -20916,26 +20916,26 @@
       ],
       "recentHighlights": [],
       "warriorsStats": {
-        "matchesTracked": 4,
-        "battingInnings": 2,
-        "runs": 72,
-        "balls": 52,
-        "fours": 4,
+        "matchesTracked": 5,
+        "battingInnings": 3,
+        "runs": 113,
+        "balls": 78,
+        "fours": 9,
         "sixes": 0,
         "bestScore": 46,
         "fifties": 0,
         "hundreds": 0,
-        "bowlingInnings": 2,
-        "wickets": 3,
-        "ballsBowled": 12,
-        "runsConceded": 29,
+        "bowlingInnings": 3,
+        "wickets": 5,
+        "ballsBowled": 36,
+        "runsConceded": 47,
         "bestWickets": 2,
         "maidens": 0,
         "hatTricks": 0,
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-11-16T01:49:48.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -21965,7 +21965,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-07-15T00:56:42.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -23042,7 +23042,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-04-01T01:46:12.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -24071,7 +24071,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-06-02T01:03:10.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -25184,7 +25184,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-05-22T15:13:00.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -26194,26 +26194,26 @@
       ],
       "recentHighlights": [],
       "warriorsStats": {
-        "matchesTracked": 5,
-        "battingInnings": 4,
-        "runs": 90,
+        "matchesTracked": 10,
+        "battingInnings": 6,
+        "runs": 99,
         "balls": 64,
         "fours": 5,
         "sixes": 0,
         "bestScore": 51,
         "fifties": 1,
         "hundreds": 0,
-        "bowlingInnings": 3,
-        "wickets": 8,
-        "ballsBowled": 42,
-        "runsConceded": 99,
+        "bowlingInnings": 7,
+        "wickets": 18,
+        "ballsBowled": 66,
+        "runsConceded": 219,
         "bestWickets": 3,
         "maidens": 0,
         "hatTricks": 0,
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-03-18T01:29:13.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -26987,26 +26987,26 @@
       ],
       "recentHighlights": [],
       "warriorsStats": {
-        "matchesTracked": 0,
-        "battingInnings": 0,
-        "runs": 0,
-        "balls": 0,
-        "fours": 0,
-        "sixes": 0,
-        "bestScore": 0,
-        "fifties": 0,
+        "matchesTracked": 2,
+        "battingInnings": 2,
+        "runs": 89,
+        "balls": 40,
+        "fours": 3,
+        "sixes": 5,
+        "bestScore": 52,
+        "fifties": 1,
         "hundreds": 0,
-        "bowlingInnings": 0,
-        "wickets": 0,
+        "bowlingInnings": 1,
+        "wickets": 2,
         "ballsBowled": 0,
-        "runsConceded": 0,
-        "bestWickets": 0,
+        "runsConceded": 7,
+        "bestWickets": 2,
         "maidens": 0,
         "hatTricks": 0,
         "catches": 0,
         "stumpings": 0,
-        "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "lastMatchDate": "2025-02-18T01:55:31.000Z",
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -28048,26 +28048,26 @@
         }
       ],
       "warriorsStats": {
-        "matchesTracked": 2,
-        "battingInnings": 2,
-        "runs": 13,
-        "balls": 0,
-        "fours": 0,
-        "sixes": 0,
-        "bestScore": 8,
+        "matchesTracked": 4,
+        "battingInnings": 4,
+        "runs": 64,
+        "balls": 24,
+        "fours": 3,
+        "sixes": 3,
+        "bestScore": 36,
         "fifties": 0,
         "hundreds": 0,
-        "bowlingInnings": 0,
-        "wickets": 0,
-        "ballsBowled": 0,
-        "runsConceded": 0,
-        "bestWickets": 0,
+        "bowlingInnings": 1,
+        "wickets": 3,
+        "ballsBowled": 18,
+        "runsConceded": 35,
+        "bestWickets": 3,
         "maidens": 0,
         "hatTricks": 0,
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-03-25T14:59:00.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -29128,7 +29128,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -30223,7 +30223,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-04-10T01:43:22.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -31256,7 +31256,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-02-23T01:50:00.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -32209,7 +32209,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-07-15T00:56:42.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -33272,7 +33272,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-11-08T15:54:13.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -34281,7 +34281,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-04-10T01:43:22.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -35298,7 +35298,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-07-15T00:56:42.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -36362,13 +36362,13 @@
         }
       ],
       "warriorsStats": {
-        "matchesTracked": 5,
-        "battingInnings": 4,
-        "runs": 37,
+        "matchesTracked": 6,
+        "battingInnings": 5,
+        "runs": 77,
         "balls": 5,
         "fours": 0,
         "sixes": 0,
-        "bestScore": 18,
+        "bestScore": 40,
         "fifties": 0,
         "hundreds": 0,
         "bowlingInnings": 2,
@@ -36381,7 +36381,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-07-15T00:56:42.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -37389,7 +37389,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-06-02T01:03:10.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -38408,7 +38408,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -39500,7 +39500,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-04-01T01:46:12.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -40287,9 +40287,9 @@
       ],
       "recentHighlights": [],
       "warriorsStats": {
-        "matchesTracked": 3,
-        "battingInnings": 3,
-        "runs": 7,
+        "matchesTracked": 4,
+        "battingInnings": 4,
+        "runs": 12,
         "balls": 2,
         "fours": 0,
         "sixes": 0,
@@ -40306,7 +40306,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-02-21T02:12:20.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -41342,13 +41342,13 @@
         }
       ],
       "warriorsStats": {
-        "matchesTracked": 1,
-        "battingInnings": 1,
-        "runs": 16,
-        "balls": 20,
-        "fours": 0,
+        "matchesTracked": 3,
+        "battingInnings": 3,
+        "runs": 64,
+        "balls": 50,
+        "fours": 3,
         "sixes": 0,
-        "bestScore": 16,
+        "bestScore": 24,
         "fifties": 0,
         "hundreds": 0,
         "bowlingInnings": 0,
@@ -41361,7 +41361,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-02-23T16:47:44.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -42370,7 +42370,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -42783,13 +42783,13 @@
       ],
       "recentHighlights": [],
       "warriorsStats": {
-        "matchesTracked": 0,
-        "battingInnings": 0,
-        "runs": 0,
+        "matchesTracked": 1,
+        "battingInnings": 1,
+        "runs": 11,
         "balls": 0,
         "fours": 0,
         "sixes": 0,
-        "bestScore": 0,
+        "bestScore": 11,
         "fifties": 0,
         "hundreds": 0,
         "bowlingInnings": 0,
@@ -42801,8 +42801,8 @@
         "hatTricks": 0,
         "catches": 0,
         "stumpings": 0,
-        "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "lastMatchDate": "2025-01-18T02:34:54.000Z",
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -43414,7 +43414,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -44413,26 +44413,26 @@
       ],
       "recentHighlights": [],
       "warriorsStats": {
-        "matchesTracked": 2,
-        "battingInnings": 2,
-        "runs": 80,
-        "balls": 40,
-        "fours": 7,
-        "sixes": 5,
+        "matchesTracked": 4,
+        "battingInnings": 4,
+        "runs": 156,
+        "balls": 82,
+        "fours": 14,
+        "sixes": 7,
         "bestScore": 51,
-        "fifties": 1,
+        "fifties": 2,
         "hundreds": 0,
-        "bowlingInnings": 0,
-        "wickets": 0,
-        "ballsBowled": 0,
-        "runsConceded": 0,
-        "bestWickets": 0,
+        "bowlingInnings": 2,
+        "wickets": 4,
+        "ballsBowled": 44,
+        "runsConceded": 54,
+        "bestWickets": 2,
         "maidens": 0,
         "hatTricks": 0,
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-02-21T02:12:20.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -45441,7 +45441,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -46406,7 +46406,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-02-21T02:12:20.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -47351,13 +47351,13 @@
       ],
       "recentHighlights": [],
       "warriorsStats": {
-        "matchesTracked": 2,
-        "battingInnings": 0,
-        "runs": 0,
+        "matchesTracked": 3,
+        "battingInnings": 1,
+        "runs": 15,
         "balls": 0,
         "fours": 0,
         "sixes": 0,
-        "bestScore": 0,
+        "bestScore": 15,
         "fifties": 0,
         "hundreds": 0,
         "bowlingInnings": 2,
@@ -47370,7 +47370,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-03-08T16:21:25.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -47530,7 +47530,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -48178,7 +48178,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -49144,7 +49144,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -50153,7 +50153,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-03-14T01:50:46.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -51037,7 +51037,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -51984,26 +51984,26 @@
       ],
       "recentHighlights": [],
       "warriorsStats": {
-        "matchesTracked": 1,
-        "battingInnings": 1,
-        "runs": 8,
+        "matchesTracked": 4,
+        "battingInnings": 3,
+        "runs": 22,
         "balls": 0,
         "fours": 0,
         "sixes": 0,
-        "bestScore": 8,
+        "bestScore": 10,
         "fifties": 0,
         "hundreds": 0,
-        "bowlingInnings": 0,
-        "wickets": 0,
-        "ballsBowled": 0,
-        "runsConceded": 0,
-        "bestWickets": 0,
+        "bowlingInnings": 1,
+        "wickets": 2,
+        "ballsBowled": 24,
+        "runsConceded": 31,
+        "bestWickets": 2,
         "maidens": 0,
         "hatTricks": 0,
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-03-02T04:39:00.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -52969,7 +52969,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -53916,7 +53916,7 @@
       ],
       "recentHighlights": [],
       "warriorsStats": {
-        "matchesTracked": 0,
+        "matchesTracked": 1,
         "battingInnings": 0,
         "runs": 0,
         "balls": 0,
@@ -53925,17 +53925,17 @@
         "bestScore": 0,
         "fifties": 0,
         "hundreds": 0,
-        "bowlingInnings": 0,
-        "wickets": 0,
+        "bowlingInnings": 1,
+        "wickets": 3,
         "ballsBowled": 0,
-        "runsConceded": 0,
-        "bestWickets": 0,
+        "runsConceded": 24,
+        "bestWickets": 3,
         "maidens": 0,
         "hatTricks": 0,
         "catches": 0,
         "stumpings": 0,
-        "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "lastMatchDate": "2025-02-02T02:20:41.000Z",
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -54093,7 +54093,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -55096,7 +55096,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-06-02T01:03:10.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -56042,7 +56042,7 @@
       ],
       "recentHighlights": [],
       "warriorsStats": {
-        "matchesTracked": 0,
+        "matchesTracked": 1,
         "battingInnings": 0,
         "runs": 0,
         "balls": 0,
@@ -56051,17 +56051,17 @@
         "bestScore": 0,
         "fifties": 0,
         "hundreds": 0,
-        "bowlingInnings": 0,
-        "wickets": 0,
+        "bowlingInnings": 1,
+        "wickets": 2,
         "ballsBowled": 0,
-        "runsConceded": 0,
-        "bestWickets": 0,
+        "runsConceded": 25,
+        "bestWickets": 2,
         "maidens": 0,
         "hatTricks": 0,
         "catches": 0,
         "stumpings": 0,
-        "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "lastMatchDate": "2025-01-26T02:23:41.000Z",
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -57068,7 +57068,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -58108,7 +58108,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -59075,7 +59075,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-05-22T15:13:00.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -59565,7 +59565,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -60584,7 +60584,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-03-11T01:43:51.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -61530,9 +61530,9 @@
       ],
       "recentHighlights": [],
       "warriorsStats": {
-        "matchesTracked": 1,
-        "battingInnings": 1,
-        "runs": 2,
+        "matchesTracked": 2,
+        "battingInnings": 2,
+        "runs": 3,
         "balls": 0,
         "fours": 0,
         "sixes": 0,
@@ -61549,7 +61549,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-10-31T15:23:58.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -62515,7 +62515,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -63249,7 +63249,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -63739,7 +63739,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-11-16T01:49:48.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -64794,7 +64794,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-03-14T01:50:46.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -65760,7 +65760,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-03-07T03:07:52.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -66748,9 +66748,9 @@
       ],
       "recentHighlights": [],
       "warriorsStats": {
-        "matchesTracked": 1,
-        "battingInnings": 1,
-        "runs": 11,
+        "matchesTracked": 3,
+        "battingInnings": 3,
+        "runs": 22,
         "balls": 0,
         "fours": 0,
         "sixes": 0,
@@ -66767,7 +66767,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-11-15T09:42:06.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -67775,7 +67775,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-04-10T01:43:22.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -68740,7 +68740,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -69717,7 +69717,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-11-16T01:49:48.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -70809,7 +70809,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -71828,7 +71828,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -72835,7 +72835,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-04-01T01:46:12.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -73927,7 +73927,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-07-15T00:56:42.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -74643,7 +74643,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-02-28T01:41:56.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -75669,13 +75669,13 @@
         }
       ],
       "warriorsStats": {
-        "matchesTracked": 0,
-        "battingInnings": 0,
-        "runs": 0,
+        "matchesTracked": 2,
+        "battingInnings": 2,
+        "runs": 17,
         "balls": 0,
         "fours": 0,
         "sixes": 0,
-        "bestScore": 0,
+        "bestScore": 17,
         "fifties": 0,
         "hundreds": 0,
         "bowlingInnings": 0,
@@ -75687,8 +75687,8 @@
         "hatTricks": 0,
         "catches": 0,
         "stumpings": 0,
-        "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "lastMatchDate": "2025-02-18T14:57:00.000Z",
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -76665,7 +76665,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -77631,7 +77631,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -78280,13 +78280,13 @@
       ],
       "recentHighlights": [],
       "warriorsStats": {
-        "matchesTracked": 0,
-        "battingInnings": 0,
-        "runs": 0,
-        "balls": 0,
+        "matchesTracked": 1,
+        "battingInnings": 1,
+        "runs": 15,
+        "balls": 11,
         "fours": 0,
         "sixes": 0,
-        "bestScore": 0,
+        "bestScore": 15,
         "fifties": 0,
         "hundreds": 0,
         "bowlingInnings": 0,
@@ -78298,8 +78298,8 @@
         "hatTricks": 0,
         "catches": 0,
         "stumpings": 0,
-        "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "lastMatchDate": "2025-01-18T02:34:54.000Z",
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -79255,13 +79255,13 @@
       ],
       "recentHighlights": [],
       "warriorsStats": {
-        "matchesTracked": 1,
-        "battingInnings": 1,
-        "runs": 17,
-        "balls": 0,
-        "fours": 0,
-        "sixes": 0,
-        "bestScore": 17,
+        "matchesTracked": 5,
+        "battingInnings": 5,
+        "runs": 141,
+        "balls": 71,
+        "fours": 7,
+        "sixes": 4,
+        "bestScore": 48,
         "fifties": 0,
         "hundreds": 0,
         "bowlingInnings": 0,
@@ -79274,7 +79274,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-02-23T01:50:00.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -79811,6 +79811,1018 @@
       ],
       "recentHighlights": [],
       "warriorsStats": {
+        "matchesTracked": 1,
+        "battingInnings": 1,
+        "runs": 1,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 1,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "2025-02-09T02:21:33.000Z",
+        "updatedAt": "2026-08-18T10:46:52.610Z"
+      }
+    },
+    {
+      "id": 24510976,
+      "name": "Tanmay Sukhija",
+      "photo": "https://media.cricheroes.in/user_profile/1776098380238_9uwbNhmnoQTz.jpeg",
+      "skill": "",
+      "isVerified": true,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "associationTag": "",
+      "batterCategory": "Steady Batter",
+      "batterCategoryInfo": "One who likes to build innings slowly and hold on to one end. Tap here to know more.",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Verified",
+        "Steady Batter"
+      ],
+      "profileUrl": "https://cricheroes.com/player-profile/24510976/tanmay-sukhija/profile",
+      "statsUrl": "https://cricheroes.com/player-profile/24510976/tanmay-sukhija/stats",
+      "matchesUrl": "https://cricheroes.com/player-profile/24510976/tanmay-sukhija/matches",
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      },
+      "overallStats": {
+        "source": "CricHeroes public player stats",
+        "sections": {
+          "batting": [
+            {
+              "title": "Matches",
+              "value": 27,
+              "isUserProperty": true
+            },
+            {
+              "title": "Innings",
+              "value": 18,
+              "isUserProperty": false
+            },
+            {
+              "title": "Not out",
+              "value": 6,
+              "isUserProperty": false
+            },
+            {
+              "title": "Runs",
+              "value": 130,
+              "isUserProperty": true
+            },
+            {
+              "title": "Highest Runs",
+              "value": "29",
+              "isUserProperty": false
+            },
+            {
+              "title": "Avg",
+              "value": "10.83",
+              "isUserProperty": false
+            },
+            {
+              "title": "SR",
+              "value": "70.65",
+              "isUserProperty": false
+            },
+            {
+              "title": "30s",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "50s",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "100s",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "4s",
+              "value": 13,
+              "isUserProperty": false
+            },
+            {
+              "title": "6s",
+              "value": 1,
+              "isUserProperty": false
+            },
+            {
+              "title": "Ducks",
+              "value": 2,
+              "isUserProperty": false
+            },
+            {
+              "title": "Won",
+              "value": 11,
+              "isUserProperty": false
+            },
+            {
+              "title": "Loss",
+              "value": 15,
+              "isUserProperty": false
+            }
+          ],
+          "bowling": [
+            {
+              "title": "Matches",
+              "value": 27,
+              "isUserProperty": true
+            },
+            {
+              "title": "Innings",
+              "value": 12,
+              "isUserProperty": false
+            },
+            {
+              "title": "Overs",
+              "value": "20.1",
+              "isUserProperty": false
+            },
+            {
+              "title": "Maidens",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Wickets",
+              "value": 11,
+              "isUserProperty": true
+            },
+            {
+              "title": "Runs",
+              "value": 139,
+              "isUserProperty": false
+            },
+            {
+              "title": "Best Bowling",
+              "value": "3/5",
+              "isUserProperty": false
+            },
+            {
+              "title": "3 Wickets",
+              "value": 1,
+              "isUserProperty": false
+            },
+            {
+              "title": "5 Wickets",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Economy",
+              "value": "6.89",
+              "isUserProperty": false
+            },
+            {
+              "title": "SR",
+              "value": "11.00",
+              "isUserProperty": false
+            },
+            {
+              "title": "Avg",
+              "value": "12.64",
+              "isUserProperty": false
+            },
+            {
+              "title": "Wides",
+              "value": 15,
+              "isUserProperty": false
+            },
+            {
+              "title": "NoBalls",
+              "value": 3,
+              "isUserProperty": false
+            },
+            {
+              "title": "Dot Balls",
+              "value": 71,
+              "isUserProperty": false
+            },
+            {
+              "title": "4s",
+              "value": 13,
+              "isUserProperty": false
+            },
+            {
+              "title": "6s",
+              "value": 4,
+              "isUserProperty": false
+            }
+          ],
+          "fielding": [
+            {
+              "title": "Matches",
+              "value": 27,
+              "isUserProperty": false
+            },
+            {
+              "title": "Catches",
+              "value": 5,
+              "isUserProperty": false
+            },
+            {
+              "title": "Caught behind",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Run outs",
+              "value": 1,
+              "isUserProperty": false
+            },
+            {
+              "title": "Stumpings",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Assisted Run Outs",
+              "value": 1,
+              "isUserProperty": false
+            },
+            {
+              "title": "Bye Runs (WK)",
+              "value": 4,
+              "isUserProperty": false
+            }
+          ],
+          "captain": []
+        },
+        "publicFieldCount": 39,
+        "matches": 27,
+        "battingInnings": 18,
+        "notOut": 6,
+        "runs": 130,
+        "bestScore": 29,
+        "average": "10.83",
+        "strikeRate": "70.65",
+        "thirties": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "fours": 13,
+        "sixes": 1,
+        "ducks": 2,
+        "wins": 11,
+        "losses": 15,
+        "bowlingInnings": 12,
+        "overs": "20.1",
+        "maidens": 0,
+        "wickets": 11,
+        "runsConceded": 139,
+        "bestWickets": 3,
+        "hatTricks": 0,
+        "bestBowling": "3/5",
+        "threeWicketHauls": 1,
+        "fiveWicketHauls": 0,
+        "economy": "6.89",
+        "bowlingStrikeRate": "11.00",
+        "bowlingAverage": "12.64",
+        "wides": 15,
+        "noBalls": 3,
+        "dotBalls": 71,
+        "fieldingMatches": 27,
+        "catches": 5,
+        "caughtBehind": 0,
+        "runOuts": 1,
+        "stumpings": 0,
+        "assistedRunOuts": 1,
+        "byeRunsWicketkeeper": 4,
+        "captainMatches": 0,
+        "tossesWon": 0,
+        "captainWinPercentage": ""
+      },
+      "stats": {
+        "source": "CricHeroes public player stats",
+        "sections": {
+          "batting": [
+            {
+              "title": "Matches",
+              "value": 27,
+              "isUserProperty": true
+            },
+            {
+              "title": "Innings",
+              "value": 18,
+              "isUserProperty": false
+            },
+            {
+              "title": "Not out",
+              "value": 6,
+              "isUserProperty": false
+            },
+            {
+              "title": "Runs",
+              "value": 130,
+              "isUserProperty": true
+            },
+            {
+              "title": "Highest Runs",
+              "value": "29",
+              "isUserProperty": false
+            },
+            {
+              "title": "Avg",
+              "value": "10.83",
+              "isUserProperty": false
+            },
+            {
+              "title": "SR",
+              "value": "70.65",
+              "isUserProperty": false
+            },
+            {
+              "title": "30s",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "50s",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "100s",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "4s",
+              "value": 13,
+              "isUserProperty": false
+            },
+            {
+              "title": "6s",
+              "value": 1,
+              "isUserProperty": false
+            },
+            {
+              "title": "Ducks",
+              "value": 2,
+              "isUserProperty": false
+            },
+            {
+              "title": "Won",
+              "value": 11,
+              "isUserProperty": false
+            },
+            {
+              "title": "Loss",
+              "value": 15,
+              "isUserProperty": false
+            }
+          ],
+          "bowling": [
+            {
+              "title": "Matches",
+              "value": 27,
+              "isUserProperty": true
+            },
+            {
+              "title": "Innings",
+              "value": 12,
+              "isUserProperty": false
+            },
+            {
+              "title": "Overs",
+              "value": "20.1",
+              "isUserProperty": false
+            },
+            {
+              "title": "Maidens",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Wickets",
+              "value": 11,
+              "isUserProperty": true
+            },
+            {
+              "title": "Runs",
+              "value": 139,
+              "isUserProperty": false
+            },
+            {
+              "title": "Best Bowling",
+              "value": "3/5",
+              "isUserProperty": false
+            },
+            {
+              "title": "3 Wickets",
+              "value": 1,
+              "isUserProperty": false
+            },
+            {
+              "title": "5 Wickets",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Economy",
+              "value": "6.89",
+              "isUserProperty": false
+            },
+            {
+              "title": "SR",
+              "value": "11.00",
+              "isUserProperty": false
+            },
+            {
+              "title": "Avg",
+              "value": "12.64",
+              "isUserProperty": false
+            },
+            {
+              "title": "Wides",
+              "value": 15,
+              "isUserProperty": false
+            },
+            {
+              "title": "NoBalls",
+              "value": 3,
+              "isUserProperty": false
+            },
+            {
+              "title": "Dot Balls",
+              "value": 71,
+              "isUserProperty": false
+            },
+            {
+              "title": "4s",
+              "value": 13,
+              "isUserProperty": false
+            },
+            {
+              "title": "6s",
+              "value": 4,
+              "isUserProperty": false
+            }
+          ],
+          "fielding": [
+            {
+              "title": "Matches",
+              "value": 27,
+              "isUserProperty": false
+            },
+            {
+              "title": "Catches",
+              "value": 5,
+              "isUserProperty": false
+            },
+            {
+              "title": "Caught behind",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Run outs",
+              "value": 1,
+              "isUserProperty": false
+            },
+            {
+              "title": "Stumpings",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Assisted Run Outs",
+              "value": 1,
+              "isUserProperty": false
+            },
+            {
+              "title": "Bye Runs (WK)",
+              "value": 4,
+              "isUserProperty": false
+            }
+          ],
+          "captain": []
+        },
+        "publicFieldCount": 39,
+        "matches": 27,
+        "battingInnings": 18,
+        "notOut": 6,
+        "runs": 130,
+        "bestScore": 29,
+        "average": "10.83",
+        "strikeRate": "70.65",
+        "thirties": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "fours": 13,
+        "sixes": 1,
+        "ducks": 2,
+        "wins": 11,
+        "losses": 15,
+        "bowlingInnings": 12,
+        "overs": "20.1",
+        "maidens": 0,
+        "wickets": 11,
+        "runsConceded": 139,
+        "bestWickets": 3,
+        "hatTricks": 0,
+        "bestBowling": "3/5",
+        "threeWicketHauls": 1,
+        "fiveWicketHauls": 0,
+        "economy": "6.89",
+        "bowlingStrikeRate": "11.00",
+        "bowlingAverage": "12.64",
+        "wides": 15,
+        "noBalls": 3,
+        "dotBalls": 71,
+        "fieldingMatches": 27,
+        "catches": 5,
+        "caughtBehind": 0,
+        "runOuts": 1,
+        "stumpings": 0,
+        "assistedRunOuts": 1,
+        "byeRunsWicketkeeper": 4,
+        "captainMatches": 0,
+        "tossesWon": 0,
+        "captainWinPercentage": ""
+      },
+      "matchHistory": [
+        {
+          "id": 24028516,
+          "date": "2026-04-17T10:00:55.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "GGSIPU Cricket Ground",
+          "city": "New Delhi",
+          "teamAId": 10805234,
+          "teamA": "MSI-XI",
+          "teamBId": 7958944,
+          "teamB": "MAIT CRICKET TEAM",
+          "winningTeamId": 7958944,
+          "winningTeam": "MAIT CRICKET TEAM",
+          "resultText": "MAIT CRICKET TEAM won by 8 wickets",
+          "teamAScore": "80/5",
+          "teamBScore": "81/2",
+          "scorecardUrl": "https://cricheroes.com/scorecard/24028516/individual/msi-xi-vs-mait-cricket-team/summary",
+          "playerId": 24510976
+        },
+        {
+          "id": 24006076,
+          "date": "2026-04-16T10:09:11.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "GGSIPU Cricket Ground",
+          "city": "New Delhi",
+          "teamAId": 10805234,
+          "teamA": "MSI-XI",
+          "teamBId": 13151152,
+          "teamB": "GTBIT",
+          "winningTeamId": 10805234,
+          "winningTeam": "MSI-XI",
+          "resultText": "MSI-XI won by 18 runs",
+          "teamAScore": "64/5",
+          "teamBScore": "46/5",
+          "scorecardUrl": "https://cricheroes.com/scorecard/24006076/individual/msi-xi-vs-gtbit/summary",
+          "playerId": 24510976
+        },
+        {
+          "id": 23968041,
+          "date": "2026-04-14T11:34:03.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "GGSIPU Cricket Ground",
+          "city": "New Delhi",
+          "teamAId": 10805234,
+          "teamA": "MSI-XI",
+          "teamBId": 13168160,
+          "teamB": "Bvb",
+          "winningTeamId": 10805234,
+          "winningTeam": "MSI-XI",
+          "resultText": "MSI-XI won by 47 runs",
+          "teamAScore": "86/3",
+          "teamBScore": "39/2",
+          "scorecardUrl": "https://cricheroes.com/scorecard/23968041/individual/msi-xi-vs-bvb/summary",
+          "playerId": 24510976
+        },
+        {
+          "id": 23932960,
+          "date": "2026-04-13T06:40:23.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "GGSIPU Cricket Ground",
+          "city": "New Delhi",
+          "teamAId": 10805234,
+          "teamA": "MSI-XI",
+          "teamBId": 13149844,
+          "teamB": "Bcips",
+          "winningTeamId": 10805234,
+          "winningTeam": "MSI-XI",
+          "resultText": "MSI-XI won by 73 runs",
+          "teamAScore": "107/0",
+          "teamBScore": "34/8",
+          "scorecardUrl": "https://cricheroes.com/scorecard/23932960/individual/msi-xi-vs-bcips/summary",
+          "playerId": 24510976
+        },
+        {
+          "id": 23828867,
+          "date": "2026-04-10T11:16:00.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "Dhara Singh Cricket Ground",
+          "city": "Delhi",
+          "teamAId": 2320224,
+          "teamA": "CPJ CRICKET TEAM",
+          "teamBId": 10805234,
+          "teamB": "MSI-XI",
+          "winningTeamId": 10805234,
+          "winningTeam": "MSI-XI",
+          "resultText": "MSI-XI won by 7 wickets",
+          "teamAScore": "207/8",
+          "teamBScore": "208/3",
+          "scorecardUrl": "https://cricheroes.com/scorecard/23828867/individual/cpj-cricket-team-vs-msi-xi/summary",
+          "playerId": 24510976
+        },
+        {
+          "id": 22066120,
+          "date": "2026-01-30T03:16:40.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "LNMIIT Cricket Ground",
+          "city": "Jaipur",
+          "teamAId": 7836427,
+          "teamA": "Christ University",
+          "teamBId": 10805234,
+          "teamB": "MSI-XI",
+          "winningTeamId": 7836427,
+          "winningTeam": "Christ University",
+          "resultText": "Christ University won by 2 runs",
+          "teamAScore": "131/6",
+          "teamBScore": "129/8",
+          "scorecardUrl": "https://cricheroes.com/scorecard/22066120/individual/christ-university-vs-msi-xi/summary",
+          "playerId": 24510976
+        },
+        {
+          "id": 21894847,
+          "date": "2026-01-24T07:26:58.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "Champions Cricket Academy",
+          "city": "New Delhi",
+          "teamAId": 5178830,
+          "teamA": "Trinity Dwarka",
+          "teamBId": 10805234,
+          "teamB": "MSI-XI",
+          "winningTeamId": 5178830,
+          "winningTeam": "Trinity Dwarka",
+          "resultText": "Trinity Dwarka won by 77 runs",
+          "teamAScore": "206/10",
+          "teamBScore": "129/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/21894847/individual/trinity-dwarka-vs-msi-xi/summary",
+          "playerId": 24510976
+        },
+        {
+          "id": 19954926,
+          "date": "2025-11-05T05:57:45.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "WFOs Sports Hub 2 (New Delhi)",
+          "city": "New Delhi",
+          "teamAId": 1951830,
+          "teamA": "Netaji Subhas University Of Technology (NSUT)",
+          "teamBId": 10805234,
+          "teamB": "MSI-XI",
+          "winningTeamId": 1951830,
+          "winningTeam": "Netaji Subhas University Of Technology (NSUT)",
+          "resultText": "Netaji Subhas University Of Technology (NSUT) won by 120 runs",
+          "teamAScore": "236/3",
+          "teamBScore": "116/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/19954926/individual/netaji-subhas-university-of-technology-nsut-vs-msi-xi/summary",
+          "playerId": 24510976
+        },
+        {
+          "id": 19765651,
+          "date": "2025-10-24T08:59:55.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "Jungle Safari 4",
+          "city": "Delhi",
+          "teamAId": 8145586,
+          "teamA": "DP WARRIOR",
+          "teamBId": 830461,
+          "teamB": "Spartans Challengers",
+          "winningTeamId": 8145586,
+          "winningTeam": "DP WARRIOR",
+          "resultText": "DP WARRIOR won by 32 runs",
+          "teamAScore": "134/9",
+          "teamBScore": "102/9",
+          "scorecardUrl": "https://cricheroes.com/scorecard/19765651/individual/dp-warrior-vs-spartans-challengers/summary",
+          "playerId": 24510976
+        },
+        {
+          "id": 19762373,
+          "date": "2025-10-24T05:25:00.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "Jungle Safari 4",
+          "city": "New Delhi",
+          "teamAId": 8145586,
+          "teamA": "DP WARRIOR",
+          "teamBId": 830461,
+          "teamB": "Spartans Challengers",
+          "winningTeamId": 8145586,
+          "winningTeam": "DP WARRIOR",
+          "resultText": "DP WARRIOR won by 55 runs",
+          "teamAScore": "198/4",
+          "teamBScore": "143/6",
+          "scorecardUrl": "https://cricheroes.com/scorecard/19762373/individual/dp-warrior-vs-spartans-challengers/summary",
+          "playerId": 24510976
+        }
+      ],
+      "historyNext": "/player/get-player-match/24510976?pageno=2&datetime=1787050002755",
+      "historyPageCount": 1,
+      "historySyncInitialized": true,
+      "historyComplete": false,
+      "recentMatches": [
+        {
+          "id": 24028516,
+          "date": "2026-04-17T10:00:55.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "GGSIPU Cricket Ground",
+          "city": "New Delhi",
+          "teamAId": 10805234,
+          "teamA": "MSI-XI",
+          "teamBId": 7958944,
+          "teamB": "MAIT CRICKET TEAM",
+          "winningTeamId": 7958944,
+          "winningTeam": "MAIT CRICKET TEAM",
+          "resultText": "MAIT CRICKET TEAM won by 8 wickets",
+          "teamAScore": "80/5",
+          "teamBScore": "81/2",
+          "scorecardUrl": "https://cricheroes.com/scorecard/24028516/individual/msi-xi-vs-mait-cricket-team/summary",
+          "playerId": 24510976,
+          "performance": {
+            "teamId": 0,
+            "teamName": "",
+            "opponent": "",
+            "runs": 0,
+            "balls": 0,
+            "fours": 0,
+            "sixes": 0,
+            "wickets": 0,
+            "ballsBowled": 0,
+            "runsConceded": 0,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "",
+            "scorecardUrl": "https://cricheroes.com/scorecard/24028516/individual/msi-xi-vs-mait-cricket-team/summary"
+          }
+        },
+        {
+          "id": 24006076,
+          "date": "2026-04-16T10:09:11.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "GGSIPU Cricket Ground",
+          "city": "New Delhi",
+          "teamAId": 10805234,
+          "teamA": "MSI-XI",
+          "teamBId": 13151152,
+          "teamB": "GTBIT",
+          "winningTeamId": 10805234,
+          "winningTeam": "MSI-XI",
+          "resultText": "MSI-XI won by 18 runs",
+          "teamAScore": "64/5",
+          "teamBScore": "46/5",
+          "scorecardUrl": "https://cricheroes.com/scorecard/24006076/individual/msi-xi-vs-gtbit/summary",
+          "playerId": 24510976,
+          "performance": {
+            "teamId": 0,
+            "teamName": "",
+            "opponent": "",
+            "runs": 0,
+            "balls": 0,
+            "fours": 0,
+            "sixes": 0,
+            "wickets": 0,
+            "ballsBowled": 0,
+            "runsConceded": 0,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "",
+            "scorecardUrl": "https://cricheroes.com/scorecard/24006076/individual/msi-xi-vs-gtbit/summary"
+          }
+        },
+        {
+          "id": 23968041,
+          "date": "2026-04-14T11:34:03.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "GGSIPU Cricket Ground",
+          "city": "New Delhi",
+          "teamAId": 10805234,
+          "teamA": "MSI-XI",
+          "teamBId": 13168160,
+          "teamB": "Bvb",
+          "winningTeamId": 10805234,
+          "winningTeam": "MSI-XI",
+          "resultText": "MSI-XI won by 47 runs",
+          "teamAScore": "86/3",
+          "teamBScore": "39/2",
+          "scorecardUrl": "https://cricheroes.com/scorecard/23968041/individual/msi-xi-vs-bvb/summary",
+          "playerId": 24510976,
+          "performance": {
+            "teamId": 10805234,
+            "teamName": "MSI-XI",
+            "opponent": "Bvb",
+            "runs": 0,
+            "balls": 0,
+            "fours": 0,
+            "sixes": 0,
+            "wickets": 1,
+            "ballsBowled": 0,
+            "runsConceded": 3,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "",
+            "scorecardUrl": "https://cricheroes.com/scorecard/23968041/individual/msi-xi-vs-bvb/summary"
+          }
+        },
+        {
+          "id": 23932960,
+          "date": "2026-04-13T06:40:23.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "GGSIPU Cricket Ground",
+          "city": "New Delhi",
+          "teamAId": 10805234,
+          "teamA": "MSI-XI",
+          "teamBId": 13149844,
+          "teamB": "Bcips",
+          "winningTeamId": 10805234,
+          "winningTeam": "MSI-XI",
+          "resultText": "MSI-XI won by 73 runs",
+          "teamAScore": "107/0",
+          "teamBScore": "34/8",
+          "scorecardUrl": "https://cricheroes.com/scorecard/23932960/individual/msi-xi-vs-bcips/summary",
+          "playerId": 24510976,
+          "performance": {
+            "teamId": 10805234,
+            "teamName": "MSI-XI",
+            "opponent": "Bcips",
+            "runs": 0,
+            "balls": 0,
+            "fours": 0,
+            "sixes": 0,
+            "wickets": 3,
+            "ballsBowled": 0,
+            "runsConceded": 5,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "3 wickets",
+            "scorecardUrl": "https://cricheroes.com/scorecard/23932960/individual/msi-xi-vs-bcips/summary"
+          }
+        },
+        {
+          "id": 23828867,
+          "date": "2026-04-10T11:16:00.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "Dhara Singh Cricket Ground",
+          "city": "Delhi",
+          "teamAId": 2320224,
+          "teamA": "CPJ CRICKET TEAM",
+          "teamBId": 10805234,
+          "teamB": "MSI-XI",
+          "winningTeamId": 10805234,
+          "winningTeam": "MSI-XI",
+          "resultText": "MSI-XI won by 7 wickets",
+          "teamAScore": "207/8",
+          "teamBScore": "208/3",
+          "scorecardUrl": "https://cricheroes.com/scorecard/23828867/individual/cpj-cricket-team-vs-msi-xi/summary",
+          "playerId": 24510976,
+          "performance": {
+            "teamId": 0,
+            "teamName": "",
+            "opponent": "",
+            "runs": 0,
+            "balls": 0,
+            "fours": 0,
+            "sixes": 0,
+            "wickets": 0,
+            "ballsBowled": 0,
+            "runsConceded": 0,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "",
+            "scorecardUrl": "https://cricheroes.com/scorecard/23828867/individual/cpj-cricket-team-vs-msi-xi/summary"
+          }
+        },
+        {
+          "id": 22066120,
+          "date": "2026-01-30T03:16:40.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "LNMIIT Cricket Ground",
+          "city": "Jaipur",
+          "teamAId": 7836427,
+          "teamA": "Christ University",
+          "teamBId": 10805234,
+          "teamB": "MSI-XI",
+          "winningTeamId": 7836427,
+          "winningTeam": "Christ University",
+          "resultText": "Christ University won by 2 runs",
+          "teamAScore": "131/6",
+          "teamBScore": "129/8",
+          "scorecardUrl": "https://cricheroes.com/scorecard/22066120/individual/christ-university-vs-msi-xi/summary",
+          "playerId": 24510976,
+          "performance": {
+            "teamId": 0,
+            "teamName": "",
+            "opponent": "",
+            "runs": 0,
+            "balls": 0,
+            "fours": 0,
+            "sixes": 0,
+            "wickets": 0,
+            "ballsBowled": 0,
+            "runsConceded": 0,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "",
+            "scorecardUrl": "https://cricheroes.com/scorecard/22066120/individual/christ-university-vs-msi-xi/summary"
+          }
+        }
+      ],
+      "recentHighlights": [
+        {
+          "id": 23932960,
+          "date": "2026-04-13T06:40:23.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "GGSIPU Cricket Ground",
+          "city": "New Delhi",
+          "teamAId": 10805234,
+          "teamA": "MSI-XI",
+          "teamBId": 13149844,
+          "teamB": "Bcips",
+          "winningTeamId": 10805234,
+          "winningTeam": "MSI-XI",
+          "resultText": "MSI-XI won by 73 runs",
+          "teamAScore": "107/0",
+          "teamBScore": "34/8",
+          "scorecardUrl": "https://cricheroes.com/scorecard/23932960/individual/msi-xi-vs-bcips/summary",
+          "playerId": 24510976,
+          "performance": {
+            "teamId": 10805234,
+            "teamName": "MSI-XI",
+            "opponent": "Bcips",
+            "runs": 0,
+            "balls": 0,
+            "fours": 0,
+            "sixes": 0,
+            "wickets": 3,
+            "ballsBowled": 0,
+            "runsConceded": 5,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "3 wickets",
+            "scorecardUrl": "https://cricheroes.com/scorecard/23932960/individual/msi-xi-vs-bcips/summary"
+          }
+        }
+      ],
+      "warriorsStats": {
         "matchesTracked": 0,
         "battingInnings": 0,
         "runs": 0,
@@ -79830,7 +80842,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -80480,7 +81492,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -81498,7 +82510,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -82544,7 +83556,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-03-25T01:26:01.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -83509,7 +84521,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -84413,7 +85425,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -85378,7 +86390,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-01-18T09:09:43.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -86460,7 +87472,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-06-02T01:03:10.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -87425,7 +88437,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     },
     {
@@ -88434,7 +89446,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-03-11T01:43:51.000Z",
-        "updatedAt": "2026-08-18T10:02:48.245Z"
+        "updatedAt": "2026-08-18T10:46:52.610Z"
       }
     }
   ],
@@ -91243,9 +92255,16 @@
       "scorecardUrl": "https://cricheroes.com/scorecard/25214310/individual/kurukshetra-warriors-vs-divino-dominators/summary"
     }
   ],
-  "rosterChangeLog": [],
-  "errors": [
-    "CricHeroes returned 403 for https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
-    "CricHeroes returned 403 for https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches"
-  ]
+  "rosterChangeLog": [
+    {
+      "type": "added",
+      "label": "Joined roster",
+      "playerId": 24510976,
+      "playerName": "Tanmay Sukhija",
+      "playerPhoto": "https://media.cricheroes.in/user_profile/1776098380238_9uwbNhmnoQTz.jpeg",
+      "profileUrl": "https://cricheroes.com/player-profile/24510976/tanmay-sukhija/profile",
+      "detectedAt": "2026-08-18T10:46:52.610Z"
+    }
+  ],
+  "errors": []
 }
