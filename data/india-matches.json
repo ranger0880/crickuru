@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-18T10:56:20.096Z",
-  "lastCheckedAt": "2026-08-18T10:56:20.096Z",
-  "lastSuccessfulSyncAt": "2026-08-18T10:56:20.096Z",
+  "syncedAt": "2026-08-18T11:20:39.394Z",
+  "lastCheckedAt": "2026-08-18T11:20:39.394Z",
+  "lastSuccessfulSyncAt": "2026-08-18T11:20:39.394Z",
   "coverage": {
     "pathways": [
       "India",
@@ -66,13 +66,13 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "284/10 (79.4 Ov) & 21/3 (11.3 Ov)"
+          "score": "284/10 (79.4 Ov) & 36/3 (16.3 Ov)"
         }
       ],
       "dateLabel": "15 Aug 2026, 10:00 am",
       "time": "",
       "place": "Galle International Stadium, Galle",
-      "overview": "Day 4: 3rd Session - Sri Lanka need 351 runs",
+      "overview": "Day 4: 3rd Session - Sri Lanka need 336 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163013",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-15T04:30:00.000Z",
@@ -97,13 +97,13 @@
         {
           "name": "North Delhi Strikers",
           "shortName": "NDS",
-          "score": "69/1 (6.6 Ov)"
+          "score": "114/1 (11.6 Ov)"
         }
       ],
       "dateLabel": "18 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "North Delhi Strikers need 143 runs in 78 balls",
+      "overview": "North Delhi Strikers need 98 runs in 48 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169141",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-18T08:00:00.000Z",
@@ -17737,13 +17737,13 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "284/10 (79.4 Ov) & 21/3 (11.3 Ov)"
+          "score": "284/10 (79.4 Ov) & 36/3 (16.3 Ov)"
         }
       ],
       "dateLabel": "15 Aug 2026, 10:00 am",
       "time": "",
       "place": "Galle International Stadium, Galle",
-      "overview": "Day 4: 3rd Session - Sri Lanka need 351 runs",
+      "overview": "Day 4: 3rd Session - Sri Lanka need 336 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163013",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-15T04:30:00.000Z",
@@ -17768,13 +17768,13 @@
         {
           "name": "North Delhi Strikers",
           "shortName": "NDS",
-          "score": "69/1 (6.6 Ov)"
+          "score": "114/1 (11.6 Ov)"
         }
       ],
       "dateLabel": "18 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "North Delhi Strikers need 143 runs in 78 balls",
+      "overview": "North Delhi Strikers need 98 runs in 48 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169141",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-18T08:00:00.000Z",
