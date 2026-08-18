@@ -1,0 +1,73 @@
+Options -Indexes
+
+<IfModule mod_mime.c>
+  AddType text/plain .txt
+  AddType application/xml .xml
+  AddType application/json .json
+  AddType application/manifest+json .webmanifest
+  AddType application/javascript .js
+  AddType text/css .css
+  AddType image/x-icon .ico
+</IfModule>
+
+<FilesMatch "^(?:\.|.*\.(?:env|ini|log|bak|old|orig|sql|sqlite|conf|config|map))$">
+  Require all denied
+</FilesMatch>
+
+<FilesMatch "^(?:package(?:-lock)?\.json|vite\.config\.js|tailwind\.config\.cjs|postcss\.config\.cjs|README.*|.*\.md)$">
+  Require all denied
+</FilesMatch>
+
+<Files "manifest.json">
+  ForceType application/manifest+json
+</Files>
+
+<IfModule mod_headers.c>
+  Header always set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+  Header always set Pragma "no-cache"
+  <FilesMatch "\.(?:html|json)$">
+    Header always set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+    Header always set Pragma "no-cache"
+  </FilesMatch>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Cross-Origin-Opener-Policy "same-origin-allow-popups"
+  Header always set Permissions-Policy "accelerometer=(), autoplay=(), camera=(), encrypted-media=(), fullscreen=(self), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' https://accounts.google.com https://www.googletagmanager.com https://pagead2.googlesyndication.com https://fundingchoicesmessages.google.com 'sha256-E5e+2NGq4Eh23m7PHIiQYEioBYvPM74YqwfrMvb3BgI=' 'sha256-6SLDZnEmzY0j2R2VSq4+2b3yy4F1IBP1urvCKJqOlsU=' 'sha256-grKVXs/OA8kFFXiF2JFZMN5xT+Z3xdbzTGjZC6YxGM4=' 'sha256-CkpzllhXBRGnWYjxlu677RAFozIXgCeLZk7isG9DZI8=' 'sha256-1OXGKBOtbW5zTR3vFFjyVaizW+ZU179rGRSlUDrCAwY=' 'sha256-nx4cqiYzlMIvgNQH8+IIPu2WL7nEfzG1sU2QvHriMJY=' 'sha256-ccIys+sQzKr3hG/cmPrWFIRPGUQogISfqzDKfEdLzmE=' 'sha256-UKbX6TjE13jLwzf0I0A8NWJJaSv2geWeCDZyL6Bditw=' 'sha256-ca+xh33znf7MpJ7UUL1BQgx+Qso+EIeTq4vMydpno7o=' 'sha256-hvL9sQghkomjgK8VVsGDufK1ZppyuaklBzRlCWt+O/E=' 'sha256-HzO3e38hEHgk4p7fYGr3jXEnp30BgT13vdN49JWBlVY='; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: blob: https://media.cricheroes.in https://www.google-analytics.com https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://tpc.googlesyndication.com; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://region2.google-analytics.com https://stats.g.doubleclick.net https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://fundingchoicesmessages.google.com; frame-src 'self' https://accounts.google.com https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://pagead2.googlesyndication.com; manifest-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; object-src 'none'; upgrade-insecure-requests"
+  <FilesMatch "\.(?:html|json)$">
+    Header always set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+    Header always set Pragma "no-cache"
+  </FilesMatch>
+</IfModule>
+
+<IfModule LiteSpeed>
+  CacheDisable public /
+  CacheDisable private /
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType application/json "access plus 0 seconds"
+  ExpiresByType application/javascript "access plus 1 week"
+  ExpiresByType text/css "access plus 1 week"
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  DirectoryIndex index.html
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^(?:\.git|\.github|node_modules|src|scripts|tools|public|dist)(?:/|$) - [R=404,L]
+  RewriteRule ^(?:wp-admin|wp-content|wp-includes)(?:/|$) - [R=404,L]
+  RewriteRule ^(?:wp-[^/]+\.php|xmlrpc\.php|index\.php)$ - [R=404,L]
+  RewriteRule ^(robots\.txt|sitemap\.xml|sitemap_index\.xml|manifest\.json|favicon\.ico)$ - [L]
+  RewriteRule ^assets/ - [L]
+  RewriteRule ^data/ - [L]
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_URI} !\.[A-Za-z0-9]{2,8}$
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
