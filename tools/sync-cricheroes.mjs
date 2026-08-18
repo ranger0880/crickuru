@@ -7,7 +7,7 @@ const TEAM_SLUG = "kurukshetra-warriors";
 const TEAM_NAME = "Kurukshetra Warriors";
 const BASE_URL = `https://cricheroes.com/team-profile/${TEAM_ID}/${TEAM_SLUG}`;
 const OUTPUT_FILE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../data/crickuru-live.json");
-const PLAYER_REFRESH_BATCH = 10;
+const PLAYER_REFRESH_BATCH = 12;
 const RATE_LIMIT_RETRIES = 2;
 
 const HEADERS = {
@@ -27,11 +27,18 @@ async function readExistingFeed() {
   }
 }
 
+async function writeFeed(feed) {
+  await fs.mkdir(path.dirname(OUTPUT_FILE), { recursive: true });
+  await fs.writeFile(OUTPUT_FILE, `${JSON.stringify(feed, null, 2)}\n`, "utf8");
+}
+
 function feedWithoutVolatileFields(feed) {
   if (!feed) return null;
   const stable = JSON.parse(JSON.stringify(feed));
   stable.syncedAt = "";
   stable.playerStatsUpdatedAt = "";
+  stable.lastCheckedAt = "";
+  stable.lastSuccessfulSyncAt = "";
   for (const list of [stable.matches, stable.liveMatches, stable.upcomingMatches, stable.recentMatches]) {
     for (const match of list || []) {
       if (match.scorecard) match.scorecard.fetchedAt = "";
@@ -559,6 +566,14 @@ function playerPerformanceFromScorecard(player, match, scorecard) {
 
 async function hydratePlayerProfiles(players, previousPlayers = [], refreshCursor = 0) {
   const previousById = new Map((previousPlayers || []).map((player) => [Number(player.id), player]));
+  const previousPerformanceByMatch = new Map();
+  for (const previousPlayer of previousPlayers || []) {
+    for (const match of previousPlayer.recentMatches || []) {
+      if (match?.id && match.performance) {
+        previousPerformanceByMatch.set(`${Number(previousPlayer.id)}:${Number(match.id)}`, match.performance);
+      }
+    }
+  }
   const orderedPlayers = players.length
     ? [...players.slice(refreshCursor), ...players.slice(0, refreshCursor)]
     : [];
@@ -606,7 +621,9 @@ async function hydratePlayerProfiles(players, previousPlayers = [], refreshCurso
   for (const player of players) {
     player.recentMatches = player.recentMatches.slice(0, 6).map((match) => ({
       ...match,
-      performance: playerPerformanceFromScorecard(player, match, scorecardsById.get(match.id)),
+      performance: scorecardsById.get(match.id)
+        ? playerPerformanceFromScorecard(player, match, scorecardsById.get(match.id))
+        : previousPerformanceByMatch.get(`${Number(player.id)}:${Number(match.id)}`) || playerPerformanceFromScorecard(player, match, null),
     }));
     player.recentHighlights = player.recentMatches.filter((match) => match.performance?.highlight).slice(0, 3);
   }
@@ -632,16 +649,28 @@ function extractPlayerRecentRecordCandidates(players) {
   }));
 }
 
-async function hydrateScorecards(matches) {
+async function hydrateScorecards(matches, previousMatches = []) {
+  const previousScorecardsById = new Map(
+    (previousMatches || [])
+      .filter((match) => match?.id && match.scorecard)
+      .map((match) => [Number(match.id), match.scorecard]),
+  );
   const hydrated = await Promise.all(
     matches.map(async (match) => {
       const summaryData = await fetchScorecardSummary(match);
+      const previousScorecard = previousScorecardsById.get(Number(match.id)) || match.scorecard || null;
+      if (!summaryData) {
+        return {
+          ...match,
+          scorecard: previousScorecard,
+        };
+      }
       return {
         ...match,
         scorecard: {
-          ...(match.scorecard || {}),
+          ...(previousScorecard || {}),
           ...normalizeBestPerformances(summaryData),
-          playerOfTheMatch: summaryData?.player_of_the_match || null,
+          playerOfTheMatch: summaryData?.player_of_the_match || previousScorecard?.playerOfTheMatch || null,
           fetchedAt: new Date().toISOString(),
         },
       };
@@ -1200,6 +1229,7 @@ function buildMatchInsights(matches) {
 
 async function main() {
   const previousFeed = await readExistingFeed();
+  const checkedAt = new Date().toISOString();
   let matchesText;
   let teamMatches;
   let membersText;
@@ -1212,6 +1242,13 @@ async function main() {
   } catch (error) {
     if (previousFeed) {
       console.warn(`CricHeroes is temporarily blocking the public feed (${error.message}); keeping the last complete roster.`);
+      await writeFeed({
+        ...previousFeed,
+        lastCheckedAt: checkedAt,
+        sourceStatus: "stale",
+        errors: [error.message || String(error), ...(previousFeed.errors || [])].slice(0, 8),
+      });
+      console.log(`Wrote ${OUTPUT_FILE} with a fresh check timestamp and the last complete roster.`);
       return;
     }
     throw error;
@@ -1223,7 +1260,7 @@ async function main() {
 
   const baseMatches = buildMatches(rawMatches);
   const initialSplit = splitMatches(baseMatches);
-  const enrichedRecentMatches = await hydrateScorecards(initialSplit.recentMatches);
+  const enrichedRecentMatches = await hydrateScorecards(initialSplit.recentMatches, previousFeed?.recentMatches || previousFeed?.matches || []);
   const scorecardsByMatch = new Map(enrichedRecentMatches.map((match) => [Number(match.id), match.scorecard]));
   const matches = baseMatches.map((match) => ({ ...match, scorecard: scorecardsByMatch.get(Number(match.id)) || null }));
   const { liveMatches, upcomingMatches, recentMatches } = splitMatches(matches);
@@ -1250,9 +1287,17 @@ async function main() {
   const feed = {
     schemaVersion: 3,
     source: "CricHeroes public team and player pages",
-    syncedAt: new Date().toISOString(),
-    playerStatsUpdatedAt: new Date().toISOString(),
+    sourceStatus: "fresh",
+    syncedAt: checkedAt,
+    lastCheckedAt: checkedAt,
+    lastSuccessfulSyncAt: checkedAt,
+    playerStatsUpdatedAt: checkedAt,
     playerSyncCursor: players.length ? (refreshCursor + PLAYER_REFRESH_BATCH) % players.length : 0,
+    coverage: {
+      refreshCadence: "15 minutes",
+      playerProfileBatch: PLAYER_REFRESH_BATCH,
+      playerProfileCycle: players.length ? `${Math.ceil(players.length / PLAYER_REFRESH_BATCH)} scheduled runs` : "waiting for roster",
+    },
     dataInventory: {
       teamProfile: true,
       matches: matches.length,
@@ -1286,6 +1331,7 @@ async function main() {
     recordLedger,
     recordHistory: recordCandidates,
     rosterChangeLog,
+    errors: [],
   };
 
   if (!hasPublicDataChanged(previousFeed, feed)) {
@@ -1294,8 +1340,7 @@ async function main() {
     return;
   }
 
-  await fs.mkdir(path.dirname(OUTPUT_FILE), { recursive: true });
-  await fs.writeFile(OUTPUT_FILE, `${JSON.stringify(feed, null, 2)}\n`, "utf8");
+  await writeFeed(feed);
   console.log(`Wrote ${OUTPUT_FILE}`);
   console.log(`Synced ${matches.length} matches, ${liveMatches.length} live, ${players.length} players, ${opponents.length} opponents.`);
 }

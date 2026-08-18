@@ -156,7 +156,10 @@ const RouterContext = React.createContext(null);
       const liveFeedFallback = {
         schemaVersion: 1,
         source: "CricKuru local feed",
+        sourceStatus: "empty",
         syncedAt: "",
+        lastCheckedAt: "",
+        lastSuccessfulSyncAt: "",
         team: {
           name: "Kurukshetra Warriors",
           captainName: "Ankit Kulshreshtha",
@@ -189,6 +192,8 @@ const RouterContext = React.createContext(null);
         source: "CricKuru India match feed",
         sourceStatus: "empty",
         syncedAt: "",
+        lastCheckedAt: "",
+        lastSuccessfulSyncAt: "",
         summary: { live: 0, recent: 0, upcoming: 0, total: 0 },
         all: [],
         live: [],
@@ -362,6 +367,7 @@ const RouterContext = React.createContext(null);
 
       function useLiveCricketFeed() {
         const [state, setState] = useState({ loading: true, error: "", data: liveFeedFallback });
+        const liveMode = asArray(state.data.liveMatches).length > 0;
 
         useEffect(() => {
           let cancelled = false;
@@ -384,12 +390,12 @@ const RouterContext = React.createContext(null);
           };
 
           loadFeed();
-          const interval = window.setInterval(loadFeed, 60 * 1000);
+          const interval = window.setInterval(loadFeed, liveMode ? 15 * 1000 : 60 * 1000);
           return () => {
             cancelled = true;
             window.clearInterval(interval);
           };
-        }, []);
+        }, [liveMode]);
 
         return state;
       }
@@ -2357,6 +2363,9 @@ const RouterContext = React.createContext(null);
         const verifiedCount = players.filter((player) => player.isVerified).length;
         const careerTrackedCount = players.filter((player) => playerOverallStats(player)?.source === CRICHEROES_STATS_SOURCE).length;
         const careerPendingCount = Math.max(0, players.length - careerTrackedCount);
+        const feedCheckedAt = data.lastCheckedAt || data.syncedAt;
+        const feedChangedAt = data.lastSuccessfulSyncAt || data.playerStatsUpdatedAt || data.syncedAt;
+        const feedStatus = data.sourceStatus === "stale" ? "Using saved CricHeroes data" : "CricHeroes live sync ready";
 
         return (
           <main className="route-bg page-grain min-h-screen px-5 pb-16 pt-36 sm:px-8">
@@ -2375,10 +2384,13 @@ const RouterContext = React.createContext(null);
                       {loading ? "Syncing players" : `${players.length} Warriors`}
                     </span>
                     <span className="rounded-full border border-white/12 bg-white/7 px-4 py-2 text-white/58">
-                      Stats updated {formatFeedDate(data.playerStatsUpdatedAt || data.syncedAt)}
+                      Stats changed {formatFeedDate(feedChangedAt)}
                     </span>
                     <span className="rounded-full border border-cyan/20 bg-cyan/6 px-4 py-2 text-cyan/75">
-                      Roster checked {formatFeedDate(data.syncedAt)}
+                      Checked {formatFeedDate(feedCheckedAt)}
+                    </span>
+                    <span className={`rounded-full border px-4 py-2 ${data.sourceStatus === "stale" ? "border-crimson/35 bg-crimson/10 text-crimson" : "border-emerald-300/25 bg-emerald-300/10 text-emerald-200"}`}>
+                      {feedStatus}
                     </span>
                     {error && <span className="rounded-full border border-crimson/35 bg-crimson/10 px-4 py-2 text-crimson">Using saved roster</span>}
                   </div>
@@ -2394,7 +2406,7 @@ const RouterContext = React.createContext(null);
 
               <div className="mt-5 rounded-[8px] border border-cyan/20 bg-cyan/5 px-4 py-3 text-sm leading-6 text-white/65">
                 <span className="font-black uppercase tracking-[0.14em] text-cyan">Overall CricHeroes career tracking:</span>{" "}
-                {careerTrackedCount} of {players.length} profiles currently have public career totals. {careerPendingCount} profile{careerPendingCount === 1 ? " is" : "s are"} queued for the next rate-limit-safe refresh; Warriors match totals remain shown separately until then.
+                {careerTrackedCount} of {players.length} profiles currently have public career totals. {careerPendingCount} profile{careerPendingCount === 1 ? " is" : "s are"} queued for the next rate-limit-safe refresh; Warriors match totals remain shown separately until then. Last automatic check: {formatFeedDate(feedCheckedAt)}.
               </div>
 
               {captain && <CaptainSpotlightCard player={captain} onSelect={() => setSelectedPlayer(captain)} />}
@@ -5291,7 +5303,7 @@ const RouterContext = React.createContext(null);
                   </p>
                   <div className="mt-6 flex flex-wrap gap-3 text-xs font-black uppercase tracking-[0.16em]">
                     <span className="rounded-full border border-gold/30 bg-gold/10 px-4 py-2 text-gold">
-                      {loading ? "Syncing now" : `Updated ${formatFeedDate(data.syncedAt)}`}
+                      {loading ? "Syncing now" : `Checked ${formatFeedDate(data.lastCheckedAt || data.syncedAt)}`}
                     </span>
                     <span className="rounded-full border border-white/12 bg-white/7 px-4 py-2 text-white/58">
                       {error ? "Using saved feed" : data.sourceStatus || "ready"}
@@ -5462,7 +5474,7 @@ const RouterContext = React.createContext(null);
               <div className="order-2 mt-10 grid gap-5 xl:grid-cols-[1.05fr_1.05fr]">
                 <div className="grid gap-5">
                   {featureMatch ? (
-                    <IndiaFeatureMatch match={featureMatch} syncedAt={data.syncedAt} />
+                    <IndiaFeatureMatch match={featureMatch} syncedAt={data.lastCheckedAt || data.syncedAt} />
                   ) : (
                     <div className="glass rounded-[8px] p-6">
                       <p className="font-display text-4xl font-black uppercase text-white">No India match listed right now</p>
@@ -5483,7 +5495,7 @@ const RouterContext = React.createContext(null);
 
                     <div className="mt-6 grid gap-3">
                       {filteredMatches.length ? (
-                        filteredMatches.map((match) => <IndiaMatchCard key={match.id} match={match} syncedAt={data.syncedAt} />)
+                        filteredMatches.map((match) => <IndiaMatchCard key={match.id} match={match} syncedAt={data.lastCheckedAt || data.syncedAt} />)
                       ) : (
                         <div className="rounded-[8px] border border-white/10 bg-night/52 p-5">
                           <p className="font-display text-3xl font-black uppercase text-white">Nothing in this view</p>

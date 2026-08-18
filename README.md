@@ -36,11 +36,12 @@ Refresh the feed locally with:
 node tools/sync-india-matches.mjs
 ```
 
-GitHub Actions also runs `.github/workflows/sync-india-matches.yml` every 15 minutes, rebuilds the production site, and deploys the refreshed feed to GitHub Pages.
+GitHub Actions also runs `.github/workflows/sync-india-matches.yml` every 5 minutes and commits the refreshed feed. The site rebuild/deploy workflow then publishes that data to GitHub Pages.
 
 ## Players
 
 The `/players` route displays the synced Kurukshetra Warriors roster as mobile-friendly performance cards with impact scores, role badges, awards and recent CricHeroes highlights.
+GitHub Actions runs the CricHeroes feed every 15 minutes, refreshes 12 player profiles per pass, and writes a visible `lastCheckedAt` timestamp even when CricHeroes temporarily blocks a fetch so the page clearly shows whether it is using fresh or saved public data.
 
 ## Meme Forge
 

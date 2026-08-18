@@ -16,8 +16,7 @@ permissions:
   contents: write
 
 concurrency:
-  # Keep the two scheduled data writers from racing on main.
-  group: crickuru-data-refresh
+  group: crickuru-warriors-refresh
   cancel-in-progress: false
 
 jobs:

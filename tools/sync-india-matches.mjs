@@ -678,6 +678,7 @@ async function writeFeed(feed) {
 
 async function main() {
   const previous = await readPreviousFeed();
+  const checkedAt = new Date().toISOString();
   const settled = await Promise.allSettled([
     ...Object.entries(PAGES).map(([status, url]) => fetchPage(status, url)),
     ...TEAM_PAGES.map((page) => fetchPage(page.status, page.url, { sourceScope: page.sourceScope, level: page.level, teamPage: true })),
@@ -691,8 +692,9 @@ async function main() {
   if (!relevant.length && failures.length && previous) {
     await writeFeed({
       ...previous,
-      syncedAt: new Date().toISOString(),
+      lastCheckedAt: checkedAt,
       sourceStatus: "stale",
+      lastSuccessfulSyncAt: previous.lastSuccessfulSyncAt || previous.syncedAt || "",
       errors: failures.slice(0, 8),
     });
     console.log(`Kept previous India feed because Cricbuzz returned no relevant matches. ${failures.length} errors.`);
@@ -712,7 +714,9 @@ async function main() {
     schemaVersion: 1,
     source: "Cricbuzz public match pages and India pathway schedules/results",
     sourceStatus: failures.length ? "partial" : "fresh",
-    syncedAt: new Date().toISOString(),
+    syncedAt: checkedAt,
+    lastCheckedAt: checkedAt,
+    lastSuccessfulSyncAt: checkedAt,
     coverage: {
       pathways: ["India", "India Women", "India A", "India A Women", "India U19", "India Women U19"],
       globalPages: Object.values(PAGES),
