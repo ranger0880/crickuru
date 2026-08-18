@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-18T13:50:03.682Z",
-  "lastCheckedAt": "2026-08-18T13:50:03.682Z",
-  "lastSuccessfulSyncAt": "2026-08-18T13:50:03.682Z",
+  "syncedAt": "2026-08-18T14:18:11.585Z",
+  "lastCheckedAt": "2026-08-18T14:18:11.585Z",
+  "lastSuccessfulSyncAt": "2026-08-18T14:18:11.585Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,9 +41,9 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 2,
+    "live": 3,
     "recent": 60,
-    "upcoming": 504,
+    "upcoming": 503,
     "total": 566
   },
   "all": [
@@ -92,7 +92,7 @@
         {
           "name": "Central Delhi Kings",
           "shortName": "CDK",
-          "score": "10/2 (2.1 Ov)"
+          "score": "45/3 (6.6 Ov)"
         },
         {
           "name": "East Delhi Riders",
@@ -110,9 +110,9 @@
       "rawId": 169151
     },
     {
-      "id": "upcoming-166973",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-166973",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -123,7 +123,7 @@
         {
           "name": "Chepauk Super Gillies",
           "shortName": "CSG",
-          "score": ""
+          "score": "19/2 (2.3 Ov)"
         },
         {
           "name": "Vida Kovai Kings",
@@ -17763,7 +17763,7 @@
         {
           "name": "Central Delhi Kings",
           "shortName": "CDK",
-          "score": "10/2 (2.1 Ov)"
+          "score": "45/3 (6.6 Ov)"
         },
         {
           "name": "East Delhi Riders",
@@ -17779,13 +17779,11 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-18T13:30:00.000Z",
       "rawId": 169151
-    }
-  ],
-  "upcoming": [
+    },
     {
-      "id": "upcoming-166973",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-166973",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -17796,7 +17794,7 @@
         {
           "name": "Chepauk Super Gillies",
           "shortName": "CSG",
-          "score": ""
+          "score": "19/2 (2.3 Ov)"
         },
         {
           "name": "Vida Kovai Kings",
@@ -17812,7 +17810,9 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-18T14:00:00.000Z",
       "rawId": 166973
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-163027",
       "status": "upcoming",
@@ -35406,9 +35406,9 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 1,
+      "live": 2,
       "recent": 0,
-      "upcoming": 1,
+      "upcoming": 0,
       "total": 2
     },
     {
