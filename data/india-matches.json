@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-18T12:03:10.562Z",
-  "lastCheckedAt": "2026-08-18T12:03:10.562Z",
-  "lastSuccessfulSyncAt": "2026-08-18T12:03:10.562Z",
+  "syncedAt": "2026-08-18T13:02:29.620Z",
+  "lastCheckedAt": "2026-08-18T13:02:29.620Z",
+  "lastSuccessfulSyncAt": "2026-08-18T13:02:29.620Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,8 +41,8 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 2,
-    "recent": 60,
+    "live": 1,
+    "recent": 61,
     "upcoming": 504,
     "total": 566
   },
@@ -66,48 +66,17 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "284/10 (79.4 Ov) & 60/4 (26.4 Ov)"
+          "score": "284/10 (79.4 Ov) & 84/4 (33.6 Ov)"
         }
       ],
       "dateLabel": "15 Aug 2026, 10:00 am",
       "time": "",
       "place": "Galle International Stadium, Galle",
-      "overview": "Day 4: 3rd Session - Sri Lanka need 312 runs",
+      "overview": "Day 4: Stumps - Sri Lanka need 288 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163013",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-15T04:30:00.000Z",
       "rawId": 163013
-    },
-    {
-      "id": "live-169141",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Purani Dilli 6 vs North Delhi Strikers, 32nd Match",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "Purani Dilli 6",
-          "shortName": "PD",
-          "score": "211/6 (19.6 Ov)"
-        },
-        {
-          "name": "North Delhi Strikers",
-          "shortName": "NDS",
-          "score": "183/3 (18.2 Ov)"
-        }
-      ],
-      "dateLabel": "18 Aug 2026, 01:30 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "North Delhi Strikers need 29 runs in 10 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169141",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-18T08:00:00.000Z",
-      "rawId": 169141
     },
     {
       "id": "upcoming-166973",
@@ -15734,6 +15703,38 @@
       "rawId": 164501
     },
     {
+      "id": "recent-169141",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Purani Dilli 6 vs North Delhi Strikers, 32nd Match",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "Purani Dilli 6",
+          "shortName": "PD",
+          "score": "211/6 (19.6 Ov)"
+        },
+        {
+          "name": "North Delhi Strikers",
+          "shortName": "NDS",
+          "score": "191/4 (19.6 Ov)"
+        }
+      ],
+      "dateLabel": "18 Aug 2026, 01:30 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Purani Dilli 6 won by 20 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169141",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-18T08:00:00.000Z",
+      "rawId": 169141,
+      "starPerformers": []
+    },
+    {
       "id": "recent-169497",
       "status": "recent",
       "statusLabel": "Past",
@@ -17737,48 +17738,17 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "284/10 (79.4 Ov) & 60/4 (26.4 Ov)"
+          "score": "284/10 (79.4 Ov) & 84/4 (33.6 Ov)"
         }
       ],
       "dateLabel": "15 Aug 2026, 10:00 am",
       "time": "",
       "place": "Galle International Stadium, Galle",
-      "overview": "Day 4: 3rd Session - Sri Lanka need 312 runs",
+      "overview": "Day 4: Stumps - Sri Lanka need 288 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163013",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-15T04:30:00.000Z",
       "rawId": 163013
-    },
-    {
-      "id": "live-169141",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Purani Dilli 6 vs North Delhi Strikers, 32nd Match",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "Purani Dilli 6",
-          "shortName": "PD",
-          "score": "211/6 (19.6 Ov)"
-        },
-        {
-          "name": "North Delhi Strikers",
-          "shortName": "NDS",
-          "score": "183/3 (18.2 Ov)"
-        }
-      ],
-      "dateLabel": "18 Aug 2026, 01:30 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "North Delhi Strikers need 29 runs in 10 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169141",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-18T08:00:00.000Z",
-      "rawId": 169141
     }
   ],
   "upcoming": [
@@ -33409,6 +33379,38 @@
   ],
   "recent": [
     {
+      "id": "recent-169141",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Purani Dilli 6 vs North Delhi Strikers, 32nd Match",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "Purani Dilli 6",
+          "shortName": "PD",
+          "score": "211/6 (19.6 Ov)"
+        },
+        {
+          "name": "North Delhi Strikers",
+          "shortName": "NDS",
+          "score": "191/4 (19.6 Ov)"
+        }
+      ],
+      "dateLabel": "18 Aug 2026, 01:30 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Purani Dilli 6 won by 20 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169141",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-18T08:00:00.000Z",
+      "rawId": 169141,
+      "starPerformers": []
+    },
+    {
       "id": "recent-169497",
       "status": "recent",
       "statusLabel": "Past",
@@ -35406,8 +35408,8 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 1,
-      "recent": 0,
+      "live": 0,
+      "recent": 1,
       "upcoming": 1,
       "total": 2
     },
