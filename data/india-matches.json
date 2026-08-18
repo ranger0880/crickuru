@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-18T15:56:53.902Z",
-  "lastCheckedAt": "2026-08-18T15:56:53.902Z",
-  "lastSuccessfulSyncAt": "2026-08-18T15:56:53.902Z",
+  "syncedAt": "2026-08-18T16:27:18.341Z",
+  "lastCheckedAt": "2026-08-18T16:27:18.341Z",
+  "lastSuccessfulSyncAt": "2026-08-18T16:27:18.341Z",
   "coverage": {
     "pathways": [
       "India",
@@ -97,13 +97,13 @@
         {
           "name": "East Delhi Riders",
           "shortName": "EDR",
-          "score": "2/1 (0.5 Ov)"
+          "score": "38/3 (5.2 Ov)"
         }
       ],
       "dateLabel": "18 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "East Delhi Riders need 178 runs",
+      "overview": "East Delhi Riders need 142 runs in 88 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169151",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-18T13:30:00.000Z",
@@ -128,13 +128,13 @@
         {
           "name": "Vida Kovai Kings",
           "shortName": "VKK",
-          "score": ""
+          "score": "71/1 (6.6 Ov)"
         }
       ],
       "dateLabel": "18 Aug 2026, 07:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Innings Break",
+      "overview": "Vida Kovai Kings need 97 runs in 78 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166973",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-18T14:00:00.000Z",
@@ -17768,13 +17768,13 @@
         {
           "name": "East Delhi Riders",
           "shortName": "EDR",
-          "score": "2/1 (0.5 Ov)"
+          "score": "38/3 (5.2 Ov)"
         }
       ],
       "dateLabel": "18 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "East Delhi Riders need 178 runs",
+      "overview": "East Delhi Riders need 142 runs in 88 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169151",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-18T13:30:00.000Z",
@@ -17799,13 +17799,13 @@
         {
           "name": "Vida Kovai Kings",
           "shortName": "VKK",
-          "score": ""
+          "score": "71/1 (6.6 Ov)"
         }
       ],
       "dateLabel": "18 Aug 2026, 07:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Innings Break",
+      "overview": "Vida Kovai Kings need 97 runs in 78 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166973",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-18T14:00:00.000Z",
