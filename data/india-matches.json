@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-18T03:27:20.025Z",
+  "syncedAt": "2026-08-18T04:06:46.603Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,8 +41,8 @@
   "summary": {
     "live": 1,
     "recent": 61,
-    "upcoming": 503,
-    "total": 565
+    "upcoming": 505,
+    "total": 567
   },
   "all": [
     {
@@ -75,6 +75,68 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-15T04:30:00.000Z",
       "rawId": 163013
+    },
+    {
+      "id": "upcoming-169141",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Purani Dilli 6 vs North Delhi Strikers, 32nd Match",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "Purani Dilli 6",
+          "shortName": "PD",
+          "score": ""
+        },
+        {
+          "name": "North Delhi Strikers",
+          "shortName": "NDS",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Aug 2026, 01:30 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Match starts at Aug 18, 08:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169141",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-18T08:00:00.000Z",
+      "rawId": 169141
+    },
+    {
+      "id": "upcoming-166973",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Chepauk Super Gillies vs Vida Kovai Kings, 21st Match",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Chepauk Super Gillies",
+          "shortName": "CSG",
+          "score": ""
+        },
+        {
+          "name": "Vida Kovai Kings",
+          "shortName": "VKK",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Match starts at Aug 18, 14:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166973",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-18T14:00:00.000Z",
+      "rawId": 166973
     },
     {
       "id": "upcoming-163027",
@@ -15673,10 +15735,10 @@
       "id": "recent-169121",
       "status": "recent",
       "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
       "sourceType": "league",
-      "sourceScope": "global",
+      "sourceScope": "domestic-global",
       "title": "East Delhi Riders vs New Delhi Tigers, 30th Match",
       "series": "Delhi Premier League 2026",
       "teams": [
@@ -15696,7 +15758,7 @@
       "place": "Arun Jaitley Stadium, Delhi",
       "overview": "East Delhi Riders won by 36 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169121",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic",
       "startTime": "2026-08-17T08:00:00.000Z",
       "rawId": 169121,
       "starPerformers": []
@@ -17719,6 +17781,68 @@
     }
   ],
   "upcoming": [
+    {
+      "id": "upcoming-169141",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Purani Dilli 6 vs North Delhi Strikers, 32nd Match",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "Purani Dilli 6",
+          "shortName": "PD",
+          "score": ""
+        },
+        {
+          "name": "North Delhi Strikers",
+          "shortName": "NDS",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Aug 2026, 01:30 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Match starts at Aug 18, 08:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169141",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-18T08:00:00.000Z",
+      "rawId": 169141
+    },
+    {
+      "id": "upcoming-166973",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Chepauk Super Gillies vs Vida Kovai Kings, 21st Match",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Chepauk Super Gillies",
+          "shortName": "CSG",
+          "score": ""
+        },
+        {
+          "name": "Vida Kovai Kings",
+          "shortName": "VKK",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Match starts at Aug 18, 14:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166973",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-18T14:00:00.000Z",
+      "rawId": 166973
+    },
     {
       "id": "upcoming-163027",
       "status": "upcoming",
@@ -33318,10 +33442,10 @@
       "id": "recent-169121",
       "status": "recent",
       "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
       "sourceType": "league",
-      "sourceScope": "global",
+      "sourceScope": "domestic-global",
       "title": "East Delhi Riders vs New Delhi Tigers, 30th Match",
       "series": "Delhi Premier League 2026",
       "teams": [
@@ -33341,7 +33465,7 @@
       "place": "Arun Jaitley Stadium, Delhi",
       "overview": "East Delhi Riders won by 36 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169121",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic",
       "startTime": "2026-08-17T08:00:00.000Z",
       "rawId": 169121,
       "starPerformers": []
@@ -35345,9 +35469,9 @@
       "label": "League / IPL",
       "order": 2,
       "live": 0,
-      "recent": 1,
-      "upcoming": 0,
-      "total": 1
+      "recent": 0,
+      "upcoming": 2,
+      "total": 2
     },
     {
       "id": "women",
@@ -35363,9 +35487,9 @@
       "label": "Domestic / State",
       "order": 4,
       "live": 0,
-      "recent": 0,
+      "recent": 1,
       "upcoming": 417,
-      "total": 417
+      "total": 418
     }
   ],
   "importantMatches": [
