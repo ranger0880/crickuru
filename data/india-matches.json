@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-19T13:56:43.674Z",
-  "lastCheckedAt": "2026-08-19T13:56:43.674Z",
-  "lastSuccessfulSyncAt": "2026-08-19T13:56:43.674Z",
+  "syncedAt": "2026-08-19T14:29:00.245Z",
+  "lastCheckedAt": "2026-08-19T14:29:00.245Z",
+  "lastSuccessfulSyncAt": "2026-08-19T14:29:00.245Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,16 +41,16 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 0,
+    "live": 1,
     "recent": 61,
-    "upcoming": 504,
+    "upcoming": 503,
     "total": 565
   },
   "all": [
     {
-      "id": "upcoming-166980",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-166980",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -61,7 +61,7 @@
         {
           "name": "Trichy Grand Cholas",
           "shortName": "TRI",
-          "score": ""
+          "score": "41 (2.6 Ov)"
         },
         {
           "name": "Dindigul Dragons",
@@ -72,7 +72,7 @@
       "dateLabel": "19 Aug 2026, 07:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Dindigul Dragons opt to bowl",
+      "overview": "Match delayed due to rain",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166980",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-19T14:00:00.000Z",
@@ -17687,12 +17687,11 @@
       ]
     }
   ],
-  "live": [],
-  "upcoming": [
+  "live": [
     {
-      "id": "upcoming-166980",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-166980",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -17703,7 +17702,7 @@
         {
           "name": "Trichy Grand Cholas",
           "shortName": "TRI",
-          "score": ""
+          "score": "41 (2.6 Ov)"
         },
         {
           "name": "Dindigul Dragons",
@@ -17714,12 +17713,14 @@
       "dateLabel": "19 Aug 2026, 07:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Dindigul Dragons opt to bowl",
+      "overview": "Match delayed due to rain",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166980",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-19T14:00:00.000Z",
       "rawId": 166980
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-163027",
       "status": "upcoming",
@@ -35345,9 +35346,9 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 0,
+      "live": 1,
       "recent": 1,
-      "upcoming": 1,
+      "upcoming": 0,
       "total": 2
     },
     {
