@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
-  "sourceStatus": "fresh",
-  "syncedAt": "2026-08-19T08:19:05.003Z",
-  "lastCheckedAt": "2026-08-19T08:19:05.003Z",
-  "lastSuccessfulSyncAt": "2026-08-19T08:19:05.003Z",
+  "sourceStatus": "partial",
+  "syncedAt": "2026-08-19T08:58:43.365Z",
+  "lastCheckedAt": "2026-08-19T08:58:43.365Z",
+  "lastSuccessfulSyncAt": "2026-08-19T08:58:43.365Z",
   "coverage": {
     "pathways": [
       "India",
@@ -42,9 +42,9 @@
   },
   "summary": {
     "live": 1,
-    "recent": 60,
-    "upcoming": 504,
-    "total": 565
+    "recent": 50,
+    "upcoming": 488,
+    "total": 539
   },
   "all": [
     {
@@ -61,7 +61,7 @@
         {
           "name": "North Delhi Strikers",
           "shortName": "NDS",
-          "score": "53 (2.6 Ov)"
+          "score": "116/2 (9.5 Ov)"
         },
         {
           "name": "South Delhi Superstarz",
@@ -263,99 +263,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163047
-    },
-    {
-      "id": "upcoming-169811",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "India Women vs Thailand Women, Match 3, Group A",
-      "series": "Women's Asia Cup 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        },
-        {
-          "name": "Thailand Women",
-          "shortName": "THAIW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 08:00 pm",
-      "time": "",
-      "place": "Dubai International Cricket Stadium, Dubai",
-      "overview": "Match starts at Aug 30, 14:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169811",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-08-30T14:30:00.000Z",
-      "rawId": 169811
-    },
-    {
-      "id": "upcoming-169841",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "India Women vs Hong Kong, China Women, Match 7, Group A",
-      "series": "Women's Asia Cup 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        },
-        {
-          "name": "Hong Kong, China Women",
-          "shortName": "HKC W",
-          "score": ""
-        }
-      ],
-      "dateLabel": "03 Sept 2026, 08:00 pm",
-      "time": "",
-      "place": "Dubai International Cricket Stadium, Dubai",
-      "overview": "Match starts at Sep 03, 14:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169841",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-09-03T14:30:00.000Z",
-      "rawId": 169841
-    },
-    {
-      "id": "upcoming-169850",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "India Women vs Pakistan Women, Match 9, Group A",
-      "series": "Women's Asia Cup 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        },
-        {
-          "name": "Pakistan Women",
-          "shortName": "PAKW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "05 Sept 2026, 08:00 pm",
-      "time": "",
-      "place": "Dubai International Cricket Stadium, Dubai",
-      "overview": "Match starts at Sep 05, 14:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169850",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-09-05T14:30:00.000Z",
-      "rawId": 169850
     },
     {
       "id": "upcoming-163061",
@@ -1846,37 +1753,6 @@
       "rawId": 151598
     },
     {
-      "id": "upcoming-155519",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "India Women vs Zimbabwe Women, 1st T20I",
-      "series": "Zimbabwe Women tour of India 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        },
-        {
-          "name": "Zimbabwe Women",
-          "shortName": "ZIMW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "16 Oct 2026, 07:00 pm",
-      "time": "",
-      "place": "Shaheed Veer Narayan Singh International Stadium, Raipur",
-      "overview": "Match starts at Oct 16, 13:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155519",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-10-16T13:30:00.000Z",
-      "rawId": 155519
-    },
-    {
       "id": "upcoming-151602",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -2497,68 +2373,6 @@
       "rawId": 163671
     },
     {
-      "id": "upcoming-155530",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "India Women vs Zimbabwe Women, 2nd T20I",
-      "series": "Zimbabwe Women tour of India 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        },
-        {
-          "name": "Zimbabwe Women",
-          "shortName": "ZIMW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Oct 2026, 07:00 pm",
-      "time": "",
-      "place": "Shaheed Veer Narayan Singh International Stadium, Raipur",
-      "overview": "Match starts at Oct 18, 13:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155530",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-10-18T13:30:00.000Z",
-      "rawId": 155530
-    },
-    {
-      "id": "upcoming-155541",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "India Women vs Zimbabwe Women, 3rd T20I",
-      "series": "Zimbabwe Women tour of India 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        },
-        {
-          "name": "Zimbabwe Women",
-          "shortName": "ZIMW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "20 Oct 2026, 07:00 pm",
-      "time": "",
-      "place": "Shaheed Veer Narayan Singh International Stadium, Raipur",
-      "overview": "Match starts at Oct 20, 13:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155541",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-10-20T13:30:00.000Z",
-      "rawId": 155541
-    },
-    {
       "id": "upcoming-161190",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -2590,37 +2404,6 @@
       "rawId": 161190
     },
     {
-      "id": "upcoming-155551",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "India Women vs Zimbabwe Women, 1st ODI",
-      "series": "Zimbabwe Women tour of India 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        },
-        {
-          "name": "Zimbabwe Women",
-          "shortName": "ZIMW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "23 Oct 2026, 02:00 pm",
-      "time": "",
-      "place": "BCA Stadium, Kotambi, Vadodara",
-      "overview": "Match starts at Oct 23, 08:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155551",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-10-23T08:30:00.000Z",
-      "rawId": 155551
-    },
-    {
       "id": "upcoming-161201",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -2650,37 +2433,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
       "startTime": "2026-10-24T07:00:00.000Z",
       "rawId": 161201
-    },
-    {
-      "id": "upcoming-155562",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "India Women vs Zimbabwe Women, 2nd ODI",
-      "series": "Zimbabwe Women tour of India 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        },
-        {
-          "name": "Zimbabwe Women",
-          "shortName": "ZIMW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "25 Oct 2026, 02:00 pm",
-      "time": "",
-      "place": "BCA Stadium, Kotambi, Vadodara",
-      "overview": "Match starts at Oct 25, 08:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155562",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-10-25T08:30:00.000Z",
-      "rawId": 155562
     },
     {
       "id": "upcoming-163147",
@@ -3301,37 +3053,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
       "startTime": "2026-10-27T07:00:00.000Z",
       "rawId": 161212
-    },
-    {
-      "id": "upcoming-155573",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "India Women vs Zimbabwe Women, 3rd ODI",
-      "series": "Zimbabwe Women tour of India 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        },
-        {
-          "name": "Zimbabwe Women",
-          "shortName": "ZIMW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "28 Oct 2026, 02:00 pm",
-      "time": "",
-      "place": "BCA Stadium, Kotambi, Vadodara",
-      "overview": "Match starts at Oct 28, 08:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155573",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-10-28T08:30:00.000Z",
-      "rawId": 155573
     },
     {
       "id": "upcoming-161223",
@@ -8883,37 +8604,6 @@
       "rawId": 169721
     },
     {
-      "id": "upcoming-169743",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "South Africa Women vs India Women, One-off Test",
-      "series": "India Women tour of South Africa, 2026",
-      "teams": [
-        {
-          "name": "South Africa Women",
-          "shortName": "RSAW",
-          "score": ""
-        },
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "09 Dec 2026, 01:30 pm",
-      "time": "",
-      "place": "St George's Park, Gqeberha",
-      "overview": "Match starts at Dec 09, 08:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169743",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-12-09T08:00:00.000Z",
-      "rawId": 169743
-    },
-    {
       "id": "upcoming-169731",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -10247,37 +9937,6 @@
       "rawId": 165621
     },
     {
-      "id": "upcoming-169750",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "South Africa Women vs India Women, 1st ODI",
-      "series": "India Women tour of South Africa, 2026",
-      "teams": [
-        {
-          "name": "South Africa Women",
-          "shortName": "RSAW",
-          "score": ""
-        },
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "16 Dec 2026, 01:30 pm",
-      "time": "",
-      "place": "Boland Park, Paarl",
-      "overview": "Match starts at Dec 16, 08:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169750",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-12-16T08:00:00.000Z",
-      "rawId": 169750
-    },
-    {
       "id": "upcoming-151624",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -10960,37 +10619,6 @@
       "rawId": 151635
     },
     {
-      "id": "upcoming-169760",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "South Africa Women vs India Women, 2nd ODI",
-      "series": "India Women tour of South Africa, 2026",
-      "teams": [
-        {
-          "name": "South Africa Women",
-          "shortName": "RSAW",
-          "score": ""
-        },
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "19 Dec 2026, 05:30 pm",
-      "time": "",
-      "place": "Newlands, Cape Town",
-      "overview": "Match starts at Dec 19, 12:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169760",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-12-19T12:00:00.000Z",
-      "rawId": 169760
-    },
-    {
       "id": "upcoming-163267",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -11578,37 +11206,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12442/vijay-hazare-trophy-elite-2026-27/matches",
       "startTime": "2026-12-21T03:30:00.000Z",
       "rawId": 165931
-    },
-    {
-      "id": "upcoming-169761",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "South Africa Women vs India Women, 3rd ODI",
-      "series": "India Women tour of South Africa, 2026",
-      "teams": [
-        {
-          "name": "South Africa Women",
-          "shortName": "RSAW",
-          "score": ""
-        },
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "22 Dec 2026, 05:30 pm",
-      "time": "",
-      "place": "Mangaung Oval, Bloemfontein",
-      "overview": "Match starts at Dec 22, 12:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169761",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-12-22T12:00:00.000Z",
-      "rawId": 169761
     },
     {
       "id": "upcoming-151646",
@@ -12260,37 +11857,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
       "startTime": "2026-12-24T13:30:00.000Z",
       "rawId": 151657
-    },
-    {
-      "id": "upcoming-169771",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "South Africa Women vs India Women, 1st T20I",
-      "series": "India Women tour of South Africa, 2026",
-      "teams": [
-        {
-          "name": "South Africa Women",
-          "shortName": "RSAW",
-          "score": ""
-        },
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "26 Dec 2026, 09:30 pm",
-      "time": "",
-      "place": "Willowmoore Park, Benoni",
-      "overview": "Match starts at Dec 26, 16:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169771",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-12-26T16:00:00.000Z",
-      "rawId": 169771
     },
     {
       "id": "upcoming-163303",
@@ -13345,68 +12911,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12442/vijay-hazare-trophy-elite-2026-27/matches",
       "startTime": "2026-12-29T03:30:00.000Z",
       "rawId": 166333
-    },
-    {
-      "id": "upcoming-169781",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "South Africa Women vs India Women, 2nd T20I",
-      "series": "India Women tour of South Africa, 2026",
-      "teams": [
-        {
-          "name": "South Africa Women",
-          "shortName": "RSAW",
-          "score": ""
-        },
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "29 Dec 2026, 09:30 pm",
-      "time": "",
-      "place": "Senwes Park, Potchefstroom",
-      "overview": "Match starts at Dec 29, 16:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169781",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-12-29T16:00:00.000Z",
-      "rawId": 169781
-    },
-    {
-      "id": "upcoming-169787",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "South Africa Women vs India Women, 3rd T20I",
-      "series": "India Women tour of South Africa, 2026",
-      "teams": [
-        {
-          "name": "South Africa Women",
-          "shortName": "RSAW",
-          "score": ""
-        },
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "30 Dec 2026, 09:30 pm",
-      "time": "",
-      "place": "Senwes Park, Potchefstroom",
-      "overview": "Match starts at Dec 30, 16:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169787",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-12-30T16:00:00.000Z",
-      "rawId": 169787
     },
     {
       "id": "upcoming-166437",
@@ -16183,38 +15687,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-155782",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women-u19",
-      "title": "Sri Lanka Women U19 vs India Women U19, 3rd unofficial ODI",
-      "series": "Sri Lanka Women U19 tour of India 2026",
-      "teams": [
-        {
-          "name": "Sri Lanka Women U19",
-          "shortName": "SLWU19",
-          "score": "159/10 (48.5 Ov)"
-        },
-        {
-          "name": "India Women U19",
-          "shortName": "INDWU19",
-          "score": "161/2 (18 Ov)"
-        }
-      ],
-      "dateLabel": "05 Jul 2026, 02:00 pm",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "India Women U19 won by 8 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155782",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
-      "startTime": "2026-07-05T08:30:00.000Z",
-      "rawId": 155782,
-      "starPerformers": []
-    },
-    {
       "id": "recent-155166",
       "status": "recent",
       "statusLabel": "Past",
@@ -16276,38 +15748,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-07-04T04:00:00.000Z",
       "rawId": 157204,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-155771",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women-u19",
-      "title": "India Women U19 vs Sri Lanka Women U19, 2nd unofficial ODI",
-      "series": "Sri Lanka Women U19 tour of India 2026",
-      "teams": [
-        {
-          "name": "India Women U19",
-          "shortName": "INDWU19",
-          "score": "209/8 (50 Ov)"
-        },
-        {
-          "name": "Sri Lanka Women U19",
-          "shortName": "SLWU19",
-          "score": "160/10 (41.2 Ov)"
-        }
-      ],
-      "dateLabel": "03 Jul 2026, 09:00 am",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "India Women U19 won by 49 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155771",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
-      "startTime": "2026-07-03T03:30:00.000Z",
-      "rawId": 155771,
       "starPerformers": []
     },
     {
@@ -16375,38 +15815,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-155760",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women-u19",
-      "title": "India Women U19 vs Sri Lanka Women U19, 1st unofficial ODI",
-      "series": "Sri Lanka Women U19 tour of India 2026",
-      "teams": [
-        {
-          "name": "India Women U19",
-          "shortName": "INDWU19",
-          "score": "279/8 (50 Ov)"
-        },
-        {
-          "name": "Sri Lanka Women U19",
-          "shortName": "SLWU19",
-          "score": "159/10 (48.5 Ov)"
-        }
-      ],
-      "dateLabel": "30 Jun 2026, 09:00 am",
-      "time": "",
-      "place": "Cricket Association Puducherry Ground 2, Puducherry",
-      "overview": "India Women U19 won by 120 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155760",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
-      "startTime": "2026-06-30T03:30:00.000Z",
-      "rawId": 155760,
-      "starPerformers": []
-    },
-    {
       "id": "recent-122011",
       "status": "recent",
       "statusLabel": "Past",
@@ -16468,38 +15876,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-06-28T10:00:00.000Z",
       "rawId": 155144,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-155749",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women-u19",
-      "title": "Sri Lanka Women U19 vs India Women U19, 3rd unofficial T20",
-      "series": "Sri Lanka Women U19 tour of India 2026",
-      "teams": [
-        {
-          "name": "Sri Lanka Women U19",
-          "shortName": "SLWU19",
-          "score": "116/7 (20 Ov)"
-        },
-        {
-          "name": "India Women U19",
-          "shortName": "INDWU19",
-          "score": "120/3 (18 Ov)"
-        }
-      ],
-      "dateLabel": "27 Jun 2026, 01:00 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "India Women U19 won by 7 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155749",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
-      "startTime": "2026-06-27T07:30:00.000Z",
-      "rawId": 155749,
       "starPerformers": []
     },
     {
@@ -16599,38 +15975,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-155738",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women-u19",
-      "title": "India Women U19 vs Sri Lanka Women U19, 2nd unofficial T20",
-      "series": "Sri Lanka Women U19 tour of India 2026",
-      "teams": [
-        {
-          "name": "India Women U19",
-          "shortName": "INDWU19",
-          "score": "134/6 (20 Ov)"
-        },
-        {
-          "name": "Sri Lanka Women U19",
-          "shortName": "SLWU19",
-          "score": "123/8 (20 Ov)"
-        }
-      ],
-      "dateLabel": "24 Jun 2026, 01:00 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "India Women U19 won by 11 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155738",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
-      "startTime": "2026-06-24T07:30:00.000Z",
-      "rawId": 155738,
-      "starPerformers": []
-    },
-    {
       "id": "recent-155122",
       "status": "recent",
       "statusLabel": "Past",
@@ -16660,38 +16004,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-06-23T17:30:00.000Z",
       "rawId": 155122,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-155727",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women-u19",
-      "title": "India Women U19 vs Sri Lanka Women U19, 1st unofficial T20",
-      "series": "Sri Lanka Women U19 tour of India 2026",
-      "teams": [
-        {
-          "name": "India Women U19",
-          "shortName": "INDWU19",
-          "score": "170/6 (20 Ov)"
-        },
-        {
-          "name": "Sri Lanka Women U19",
-          "shortName": "SLWU19",
-          "score": "77/10 (18.3 Ov)"
-        }
-      ],
-      "dateLabel": "22 Jun 2026, 01:00 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "India Women U19 won by 93 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155727",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
-      "startTime": "2026-06-22T07:30:00.000Z",
-      "rawId": 155727,
       "starPerformers": []
     },
     {
@@ -17542,148 +16854,6 @@
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/137454"
         }
       ]
-    },
-    {
-      "id": "recent-105540",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women-u19",
-      "title": "South Africa Women U19 vs India Women U19, Final",
-      "series": "ICC Under 19 Womens T20 World Cup 2025",
-      "teams": [
-        {
-          "name": "South Africa Women U19",
-          "shortName": "RSAWU19",
-          "score": "82/10 (20 Ov)"
-        },
-        {
-          "name": "India Women U19",
-          "shortName": "INDWU19",
-          "score": "84/1 (11.2 Ov)"
-        }
-      ],
-      "dateLabel": "02 Feb 2025, 12:00 pm",
-      "time": "",
-      "place": "Bayuemas Oval, Kuala Lumpur",
-      "overview": "India Women U19 won by 9 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105540",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
-      "startTime": "2025-02-02T06:30:00.000Z",
-      "rawId": 105540,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-105538",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women-u19",
-      "title": "England Women U19 vs India Women U19, Semi-Final 2",
-      "series": "ICC Under 19 Womens T20 World Cup 2025",
-      "teams": [
-        {
-          "name": "England Women U19",
-          "shortName": "ENGWU19",
-          "score": "113/8 (20 Ov)"
-        },
-        {
-          "name": "India Women U19",
-          "shortName": "INDWU19",
-          "score": "117/1 (15 Ov)"
-        }
-      ],
-      "dateLabel": "31 Jan 2025, 12:00 pm",
-      "time": "",
-      "place": "Bayuemas Oval, Kuala Lumpur",
-      "overview": "India Women U19 won by 9 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105538",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
-      "startTime": "2025-01-31T06:30:00.000Z",
-      "rawId": 105538,
-      "starPerformers": [
-        {
-          "name": "Parunika Sisodia",
-          "performance": "3-21",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105538"
-        }
-      ]
-    },
-    {
-      "id": "recent-105514",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women-u19",
-      "title": "India Women U19 vs Scotland Women U19, 10th Match, Super Six Group 1",
-      "series": "ICC Under 19 Womens T20 World Cup 2025",
-      "teams": [
-        {
-          "name": "India Women U19",
-          "shortName": "INDWU19",
-          "score": "208/1 (20 Ov)"
-        },
-        {
-          "name": "Scotland Women U19",
-          "shortName": "SCOWU19",
-          "score": "58/10 (14 Ov)"
-        }
-      ],
-      "dateLabel": "28 Jan 2025, 12:00 pm",
-      "time": "",
-      "place": "Bayuemas Oval, Kuala Lumpur",
-      "overview": "India Women U19 won by 150 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105514",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
-      "startTime": "2025-01-28T06:30:00.000Z",
-      "rawId": 105514,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-105484",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women-u19",
-      "title": "Bangladesh Women U19 vs India Women U19, 6th Match, Super Six Group 1",
-      "series": "ICC Under 19 Womens T20 World Cup 2025",
-      "teams": [
-        {
-          "name": "Bangladesh Women U19",
-          "shortName": "BANWU19",
-          "score": "64/8 (20 Ov)"
-        },
-        {
-          "name": "India Women U19",
-          "shortName": "INDWU19",
-          "score": "66/2 (7 Ov)"
-        }
-      ],
-      "dateLabel": "26 Jan 2025, 12:00 pm",
-      "time": "",
-      "place": "Bayuemas Oval, Kuala Lumpur",
-      "overview": "India Women U19 won by 8 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105484",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
-      "startTime": "2025-01-26T06:30:00.000Z",
-      "rawId": 105484,
-      "starPerformers": [
-        {
-          "name": "Vaishnavi Sharma",
-          "performance": "3-15",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105484"
-        }
-      ]
     }
   ],
   "live": [
@@ -17701,7 +16871,7 @@
         {
           "name": "North Delhi Strikers",
           "shortName": "NDS",
-          "score": "53 (2.6 Ov)"
+          "score": "116/2 (9.5 Ov)"
         },
         {
           "name": "South Delhi Superstarz",
@@ -17905,99 +17075,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163047
-    },
-    {
-      "id": "upcoming-169811",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "India Women vs Thailand Women, Match 3, Group A",
-      "series": "Women's Asia Cup 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        },
-        {
-          "name": "Thailand Women",
-          "shortName": "THAIW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 08:00 pm",
-      "time": "",
-      "place": "Dubai International Cricket Stadium, Dubai",
-      "overview": "Match starts at Aug 30, 14:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169811",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-08-30T14:30:00.000Z",
-      "rawId": 169811
-    },
-    {
-      "id": "upcoming-169841",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "India Women vs Hong Kong, China Women, Match 7, Group A",
-      "series": "Women's Asia Cup 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        },
-        {
-          "name": "Hong Kong, China Women",
-          "shortName": "HKC W",
-          "score": ""
-        }
-      ],
-      "dateLabel": "03 Sept 2026, 08:00 pm",
-      "time": "",
-      "place": "Dubai International Cricket Stadium, Dubai",
-      "overview": "Match starts at Sep 03, 14:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169841",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-09-03T14:30:00.000Z",
-      "rawId": 169841
-    },
-    {
-      "id": "upcoming-169850",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "India Women vs Pakistan Women, Match 9, Group A",
-      "series": "Women's Asia Cup 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        },
-        {
-          "name": "Pakistan Women",
-          "shortName": "PAKW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "05 Sept 2026, 08:00 pm",
-      "time": "",
-      "place": "Dubai International Cricket Stadium, Dubai",
-      "overview": "Match starts at Sep 05, 14:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169850",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-09-05T14:30:00.000Z",
-      "rawId": 169850
     },
     {
       "id": "upcoming-163061",
@@ -19488,37 +18565,6 @@
       "rawId": 151598
     },
     {
-      "id": "upcoming-155519",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "India Women vs Zimbabwe Women, 1st T20I",
-      "series": "Zimbabwe Women tour of India 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        },
-        {
-          "name": "Zimbabwe Women",
-          "shortName": "ZIMW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "16 Oct 2026, 07:00 pm",
-      "time": "",
-      "place": "Shaheed Veer Narayan Singh International Stadium, Raipur",
-      "overview": "Match starts at Oct 16, 13:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155519",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-10-16T13:30:00.000Z",
-      "rawId": 155519
-    },
-    {
       "id": "upcoming-151602",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -20139,68 +19185,6 @@
       "rawId": 163671
     },
     {
-      "id": "upcoming-155530",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "India Women vs Zimbabwe Women, 2nd T20I",
-      "series": "Zimbabwe Women tour of India 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        },
-        {
-          "name": "Zimbabwe Women",
-          "shortName": "ZIMW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Oct 2026, 07:00 pm",
-      "time": "",
-      "place": "Shaheed Veer Narayan Singh International Stadium, Raipur",
-      "overview": "Match starts at Oct 18, 13:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155530",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-10-18T13:30:00.000Z",
-      "rawId": 155530
-    },
-    {
-      "id": "upcoming-155541",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "India Women vs Zimbabwe Women, 3rd T20I",
-      "series": "Zimbabwe Women tour of India 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        },
-        {
-          "name": "Zimbabwe Women",
-          "shortName": "ZIMW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "20 Oct 2026, 07:00 pm",
-      "time": "",
-      "place": "Shaheed Veer Narayan Singh International Stadium, Raipur",
-      "overview": "Match starts at Oct 20, 13:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155541",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-10-20T13:30:00.000Z",
-      "rawId": 155541
-    },
-    {
       "id": "upcoming-161190",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -20232,37 +19216,6 @@
       "rawId": 161190
     },
     {
-      "id": "upcoming-155551",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "India Women vs Zimbabwe Women, 1st ODI",
-      "series": "Zimbabwe Women tour of India 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        },
-        {
-          "name": "Zimbabwe Women",
-          "shortName": "ZIMW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "23 Oct 2026, 02:00 pm",
-      "time": "",
-      "place": "BCA Stadium, Kotambi, Vadodara",
-      "overview": "Match starts at Oct 23, 08:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155551",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-10-23T08:30:00.000Z",
-      "rawId": 155551
-    },
-    {
       "id": "upcoming-161201",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -20292,37 +19245,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
       "startTime": "2026-10-24T07:00:00.000Z",
       "rawId": 161201
-    },
-    {
-      "id": "upcoming-155562",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "India Women vs Zimbabwe Women, 2nd ODI",
-      "series": "Zimbabwe Women tour of India 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        },
-        {
-          "name": "Zimbabwe Women",
-          "shortName": "ZIMW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "25 Oct 2026, 02:00 pm",
-      "time": "",
-      "place": "BCA Stadium, Kotambi, Vadodara",
-      "overview": "Match starts at Oct 25, 08:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155562",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-10-25T08:30:00.000Z",
-      "rawId": 155562
     },
     {
       "id": "upcoming-163147",
@@ -20943,37 +19865,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
       "startTime": "2026-10-27T07:00:00.000Z",
       "rawId": 161212
-    },
-    {
-      "id": "upcoming-155573",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "India Women vs Zimbabwe Women, 3rd ODI",
-      "series": "Zimbabwe Women tour of India 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        },
-        {
-          "name": "Zimbabwe Women",
-          "shortName": "ZIMW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "28 Oct 2026, 02:00 pm",
-      "time": "",
-      "place": "BCA Stadium, Kotambi, Vadodara",
-      "overview": "Match starts at Oct 28, 08:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155573",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-10-28T08:30:00.000Z",
-      "rawId": 155573
     },
     {
       "id": "upcoming-161223",
@@ -26525,37 +25416,6 @@
       "rawId": 169721
     },
     {
-      "id": "upcoming-169743",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "South Africa Women vs India Women, One-off Test",
-      "series": "India Women tour of South Africa, 2026",
-      "teams": [
-        {
-          "name": "South Africa Women",
-          "shortName": "RSAW",
-          "score": ""
-        },
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "09 Dec 2026, 01:30 pm",
-      "time": "",
-      "place": "St George's Park, Gqeberha",
-      "overview": "Match starts at Dec 09, 08:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169743",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-12-09T08:00:00.000Z",
-      "rawId": 169743
-    },
-    {
       "id": "upcoming-169731",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -27889,37 +26749,6 @@
       "rawId": 165621
     },
     {
-      "id": "upcoming-169750",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "South Africa Women vs India Women, 1st ODI",
-      "series": "India Women tour of South Africa, 2026",
-      "teams": [
-        {
-          "name": "South Africa Women",
-          "shortName": "RSAW",
-          "score": ""
-        },
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "16 Dec 2026, 01:30 pm",
-      "time": "",
-      "place": "Boland Park, Paarl",
-      "overview": "Match starts at Dec 16, 08:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169750",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-12-16T08:00:00.000Z",
-      "rawId": 169750
-    },
-    {
       "id": "upcoming-151624",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -28602,37 +27431,6 @@
       "rawId": 151635
     },
     {
-      "id": "upcoming-169760",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "South Africa Women vs India Women, 2nd ODI",
-      "series": "India Women tour of South Africa, 2026",
-      "teams": [
-        {
-          "name": "South Africa Women",
-          "shortName": "RSAW",
-          "score": ""
-        },
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "19 Dec 2026, 05:30 pm",
-      "time": "",
-      "place": "Newlands, Cape Town",
-      "overview": "Match starts at Dec 19, 12:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169760",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-12-19T12:00:00.000Z",
-      "rawId": 169760
-    },
-    {
       "id": "upcoming-163267",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -29220,37 +28018,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12442/vijay-hazare-trophy-elite-2026-27/matches",
       "startTime": "2026-12-21T03:30:00.000Z",
       "rawId": 165931
-    },
-    {
-      "id": "upcoming-169761",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "South Africa Women vs India Women, 3rd ODI",
-      "series": "India Women tour of South Africa, 2026",
-      "teams": [
-        {
-          "name": "South Africa Women",
-          "shortName": "RSAW",
-          "score": ""
-        },
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "22 Dec 2026, 05:30 pm",
-      "time": "",
-      "place": "Mangaung Oval, Bloemfontein",
-      "overview": "Match starts at Dec 22, 12:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169761",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-12-22T12:00:00.000Z",
-      "rawId": 169761
     },
     {
       "id": "upcoming-151646",
@@ -29902,37 +28669,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
       "startTime": "2026-12-24T13:30:00.000Z",
       "rawId": 151657
-    },
-    {
-      "id": "upcoming-169771",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "South Africa Women vs India Women, 1st T20I",
-      "series": "India Women tour of South Africa, 2026",
-      "teams": [
-        {
-          "name": "South Africa Women",
-          "shortName": "RSAW",
-          "score": ""
-        },
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "26 Dec 2026, 09:30 pm",
-      "time": "",
-      "place": "Willowmoore Park, Benoni",
-      "overview": "Match starts at Dec 26, 16:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169771",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-12-26T16:00:00.000Z",
-      "rawId": 169771
     },
     {
       "id": "upcoming-163303",
@@ -30987,68 +29723,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12442/vijay-hazare-trophy-elite-2026-27/matches",
       "startTime": "2026-12-29T03:30:00.000Z",
       "rawId": 166333
-    },
-    {
-      "id": "upcoming-169781",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "South Africa Women vs India Women, 2nd T20I",
-      "series": "India Women tour of South Africa, 2026",
-      "teams": [
-        {
-          "name": "South Africa Women",
-          "shortName": "RSAW",
-          "score": ""
-        },
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "29 Dec 2026, 09:30 pm",
-      "time": "",
-      "place": "Senwes Park, Potchefstroom",
-      "overview": "Match starts at Dec 29, 16:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169781",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-12-29T16:00:00.000Z",
-      "rawId": 169781
-    },
-    {
-      "id": "upcoming-169787",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "South Africa Women vs India Women, 3rd T20I",
-      "series": "India Women tour of South Africa, 2026",
-      "teams": [
-        {
-          "name": "South Africa Women",
-          "shortName": "RSAW",
-          "score": ""
-        },
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "30 Dec 2026, 09:30 pm",
-      "time": "",
-      "place": "Senwes Park, Potchefstroom",
-      "overview": "Match starts at Dec 30, 16:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169787",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-12-30T16:00:00.000Z",
-      "rawId": 169787
     },
     {
       "id": "upcoming-166437",
@@ -33827,38 +32501,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-155782",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women-u19",
-      "title": "Sri Lanka Women U19 vs India Women U19, 3rd unofficial ODI",
-      "series": "Sri Lanka Women U19 tour of India 2026",
-      "teams": [
-        {
-          "name": "Sri Lanka Women U19",
-          "shortName": "SLWU19",
-          "score": "159/10 (48.5 Ov)"
-        },
-        {
-          "name": "India Women U19",
-          "shortName": "INDWU19",
-          "score": "161/2 (18 Ov)"
-        }
-      ],
-      "dateLabel": "05 Jul 2026, 02:00 pm",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "India Women U19 won by 8 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155782",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
-      "startTime": "2026-07-05T08:30:00.000Z",
-      "rawId": 155782,
-      "starPerformers": []
-    },
-    {
       "id": "recent-155166",
       "status": "recent",
       "statusLabel": "Past",
@@ -33920,38 +32562,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-07-04T04:00:00.000Z",
       "rawId": 157204,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-155771",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women-u19",
-      "title": "India Women U19 vs Sri Lanka Women U19, 2nd unofficial ODI",
-      "series": "Sri Lanka Women U19 tour of India 2026",
-      "teams": [
-        {
-          "name": "India Women U19",
-          "shortName": "INDWU19",
-          "score": "209/8 (50 Ov)"
-        },
-        {
-          "name": "Sri Lanka Women U19",
-          "shortName": "SLWU19",
-          "score": "160/10 (41.2 Ov)"
-        }
-      ],
-      "dateLabel": "03 Jul 2026, 09:00 am",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "India Women U19 won by 49 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155771",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
-      "startTime": "2026-07-03T03:30:00.000Z",
-      "rawId": 155771,
       "starPerformers": []
     },
     {
@@ -34019,38 +32629,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-155760",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women-u19",
-      "title": "India Women U19 vs Sri Lanka Women U19, 1st unofficial ODI",
-      "series": "Sri Lanka Women U19 tour of India 2026",
-      "teams": [
-        {
-          "name": "India Women U19",
-          "shortName": "INDWU19",
-          "score": "279/8 (50 Ov)"
-        },
-        {
-          "name": "Sri Lanka Women U19",
-          "shortName": "SLWU19",
-          "score": "159/10 (48.5 Ov)"
-        }
-      ],
-      "dateLabel": "30 Jun 2026, 09:00 am",
-      "time": "",
-      "place": "Cricket Association Puducherry Ground 2, Puducherry",
-      "overview": "India Women U19 won by 120 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155760",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
-      "startTime": "2026-06-30T03:30:00.000Z",
-      "rawId": 155760,
-      "starPerformers": []
-    },
-    {
       "id": "recent-122011",
       "status": "recent",
       "statusLabel": "Past",
@@ -34112,38 +32690,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-06-28T10:00:00.000Z",
       "rawId": 155144,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-155749",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women-u19",
-      "title": "Sri Lanka Women U19 vs India Women U19, 3rd unofficial T20",
-      "series": "Sri Lanka Women U19 tour of India 2026",
-      "teams": [
-        {
-          "name": "Sri Lanka Women U19",
-          "shortName": "SLWU19",
-          "score": "116/7 (20 Ov)"
-        },
-        {
-          "name": "India Women U19",
-          "shortName": "INDWU19",
-          "score": "120/3 (18 Ov)"
-        }
-      ],
-      "dateLabel": "27 Jun 2026, 01:00 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "India Women U19 won by 7 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155749",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
-      "startTime": "2026-06-27T07:30:00.000Z",
-      "rawId": 155749,
       "starPerformers": []
     },
     {
@@ -34243,38 +32789,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-155738",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women-u19",
-      "title": "India Women U19 vs Sri Lanka Women U19, 2nd unofficial T20",
-      "series": "Sri Lanka Women U19 tour of India 2026",
-      "teams": [
-        {
-          "name": "India Women U19",
-          "shortName": "INDWU19",
-          "score": "134/6 (20 Ov)"
-        },
-        {
-          "name": "Sri Lanka Women U19",
-          "shortName": "SLWU19",
-          "score": "123/8 (20 Ov)"
-        }
-      ],
-      "dateLabel": "24 Jun 2026, 01:00 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "India Women U19 won by 11 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155738",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
-      "startTime": "2026-06-24T07:30:00.000Z",
-      "rawId": 155738,
-      "starPerformers": []
-    },
-    {
       "id": "recent-155122",
       "status": "recent",
       "statusLabel": "Past",
@@ -34304,38 +32818,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-06-23T17:30:00.000Z",
       "rawId": 155122,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-155727",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women-u19",
-      "title": "India Women U19 vs Sri Lanka Women U19, 1st unofficial T20",
-      "series": "Sri Lanka Women U19 tour of India 2026",
-      "teams": [
-        {
-          "name": "India Women U19",
-          "shortName": "INDWU19",
-          "score": "170/6 (20 Ov)"
-        },
-        {
-          "name": "Sri Lanka Women U19",
-          "shortName": "SLWU19",
-          "score": "77/10 (18.3 Ov)"
-        }
-      ],
-      "dateLabel": "22 Jun 2026, 01:00 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "India Women U19 won by 93 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155727",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
-      "startTime": "2026-06-22T07:30:00.000Z",
-      "rawId": 155727,
       "starPerformers": []
     },
     {
@@ -35186,148 +33668,6 @@
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/137454"
         }
       ]
-    },
-    {
-      "id": "recent-105540",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women-u19",
-      "title": "South Africa Women U19 vs India Women U19, Final",
-      "series": "ICC Under 19 Womens T20 World Cup 2025",
-      "teams": [
-        {
-          "name": "South Africa Women U19",
-          "shortName": "RSAWU19",
-          "score": "82/10 (20 Ov)"
-        },
-        {
-          "name": "India Women U19",
-          "shortName": "INDWU19",
-          "score": "84/1 (11.2 Ov)"
-        }
-      ],
-      "dateLabel": "02 Feb 2025, 12:00 pm",
-      "time": "",
-      "place": "Bayuemas Oval, Kuala Lumpur",
-      "overview": "India Women U19 won by 9 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105540",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
-      "startTime": "2025-02-02T06:30:00.000Z",
-      "rawId": 105540,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-105538",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women-u19",
-      "title": "England Women U19 vs India Women U19, Semi-Final 2",
-      "series": "ICC Under 19 Womens T20 World Cup 2025",
-      "teams": [
-        {
-          "name": "England Women U19",
-          "shortName": "ENGWU19",
-          "score": "113/8 (20 Ov)"
-        },
-        {
-          "name": "India Women U19",
-          "shortName": "INDWU19",
-          "score": "117/1 (15 Ov)"
-        }
-      ],
-      "dateLabel": "31 Jan 2025, 12:00 pm",
-      "time": "",
-      "place": "Bayuemas Oval, Kuala Lumpur",
-      "overview": "India Women U19 won by 9 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105538",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
-      "startTime": "2025-01-31T06:30:00.000Z",
-      "rawId": 105538,
-      "starPerformers": [
-        {
-          "name": "Parunika Sisodia",
-          "performance": "3-21",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105538"
-        }
-      ]
-    },
-    {
-      "id": "recent-105514",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women-u19",
-      "title": "India Women U19 vs Scotland Women U19, 10th Match, Super Six Group 1",
-      "series": "ICC Under 19 Womens T20 World Cup 2025",
-      "teams": [
-        {
-          "name": "India Women U19",
-          "shortName": "INDWU19",
-          "score": "208/1 (20 Ov)"
-        },
-        {
-          "name": "Scotland Women U19",
-          "shortName": "SCOWU19",
-          "score": "58/10 (14 Ov)"
-        }
-      ],
-      "dateLabel": "28 Jan 2025, 12:00 pm",
-      "time": "",
-      "place": "Bayuemas Oval, Kuala Lumpur",
-      "overview": "India Women U19 won by 150 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105514",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
-      "startTime": "2025-01-28T06:30:00.000Z",
-      "rawId": 105514,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-105484",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women-u19",
-      "title": "Bangladesh Women U19 vs India Women U19, 6th Match, Super Six Group 1",
-      "series": "ICC Under 19 Womens T20 World Cup 2025",
-      "teams": [
-        {
-          "name": "Bangladesh Women U19",
-          "shortName": "BANWU19",
-          "score": "64/8 (20 Ov)"
-        },
-        {
-          "name": "India Women U19",
-          "shortName": "INDWU19",
-          "score": "66/2 (7 Ov)"
-        }
-      ],
-      "dateLabel": "26 Jan 2025, 12:00 pm",
-      "time": "",
-      "place": "Bayuemas Oval, Kuala Lumpur",
-      "overview": "India Women U19 won by 8 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105484",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
-      "startTime": "2025-01-26T06:30:00.000Z",
-      "rawId": 105484,
-      "starPerformers": [
-        {
-          "name": "Vaishnavi Sharma",
-          "performance": "3-15",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105484"
-        }
-      ]
     }
   ],
   "rankings": [
@@ -35354,9 +33694,9 @@
       "label": "Women",
       "order": 3,
       "live": 0,
-      "recent": 30,
-      "upcoming": 35,
-      "total": 65
+      "recent": 20,
+      "upcoming": 19,
+      "total": 39
     },
     {
       "id": "domestic",
@@ -35400,102 +33740,6 @@
       "startTime": "2026-09-06T04:00:00.000Z",
       "rawId": 163061,
       "importance": "Knockout stage"
-    },
-    {
-      "id": "upcoming-169850",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "India Women vs Pakistan Women, Match 9, Group A",
-      "series": "Women's Asia Cup 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        },
-        {
-          "name": "Pakistan Women",
-          "shortName": "PAKW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "05 Sept 2026, 08:00 pm",
-      "time": "",
-      "place": "Dubai International Cricket Stadium, Dubai",
-      "overview": "Match starts at Sep 05, 14:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169850",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-09-05T14:30:00.000Z",
-      "rawId": 169850,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-169841",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "India Women vs Hong Kong, China Women, Match 7, Group A",
-      "series": "Women's Asia Cup 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        },
-        {
-          "name": "Hong Kong, China Women",
-          "shortName": "HKC W",
-          "score": ""
-        }
-      ],
-      "dateLabel": "03 Sept 2026, 08:00 pm",
-      "time": "",
-      "place": "Dubai International Cricket Stadium, Dubai",
-      "overview": "Match starts at Sep 03, 14:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169841",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-09-03T14:30:00.000Z",
-      "rawId": 169841,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-169811",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "India Women vs Thailand Women, Match 3, Group A",
-      "series": "Women's Asia Cup 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        },
-        {
-          "name": "Thailand Women",
-          "shortName": "THAIW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 08:00 pm",
-      "time": "",
-      "place": "Dubai International Cricket Stadium, Dubai",
-      "overview": "Match starts at Aug 30, 14:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169811",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-      "startTime": "2026-08-30T14:30:00.000Z",
-      "rawId": 169811,
-      "importance": "Major tournament"
     },
     {
       "id": "upcoming-163043",
@@ -35800,118 +34044,11 @@
           "importance": "Knockout stage"
         }
       ]
-    },
-    {
-      "id": "women-s-asia-cup-2026",
-      "series": "Women's Asia Cup 2026",
-      "level": "women",
-      "levelLabel": "Women",
-      "total": 3,
-      "live": 0,
-      "upcoming": 3,
-      "recent": 0,
-      "startTime": "2026-08-30T14:30:00.000Z",
-      "endTime": "2026-09-05T14:30:00.000Z",
-      "matches": [
-        {
-          "id": "upcoming-169811",
-          "status": "upcoming",
-          "statusLabel": "Future",
-          "level": "women",
-          "levelLabel": "Women",
-          "sourceType": "",
-          "sourceScope": "india-women",
-          "title": "India Women vs Thailand Women, Match 3, Group A",
-          "series": "Women's Asia Cup 2026",
-          "teams": [
-            {
-              "name": "India Women",
-              "shortName": "INDW",
-              "score": ""
-            },
-            {
-              "name": "Thailand Women",
-              "shortName": "THAIW",
-              "score": ""
-            }
-          ],
-          "dateLabel": "30 Aug 2026, 08:00 pm",
-          "time": "",
-          "place": "Dubai International Cricket Stadium, Dubai",
-          "overview": "Match starts at Aug 30, 14:30 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169811",
-          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-          "startTime": "2026-08-30T14:30:00.000Z",
-          "rawId": 169811,
-          "importance": "Major tournament"
-        },
-        {
-          "id": "upcoming-169841",
-          "status": "upcoming",
-          "statusLabel": "Future",
-          "level": "women",
-          "levelLabel": "Women",
-          "sourceType": "",
-          "sourceScope": "india-women",
-          "title": "India Women vs Hong Kong, China Women, Match 7, Group A",
-          "series": "Women's Asia Cup 2026",
-          "teams": [
-            {
-              "name": "India Women",
-              "shortName": "INDW",
-              "score": ""
-            },
-            {
-              "name": "Hong Kong, China Women",
-              "shortName": "HKC W",
-              "score": ""
-            }
-          ],
-          "dateLabel": "03 Sept 2026, 08:00 pm",
-          "time": "",
-          "place": "Dubai International Cricket Stadium, Dubai",
-          "overview": "Match starts at Sep 03, 14:30 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169841",
-          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-          "startTime": "2026-09-03T14:30:00.000Z",
-          "rawId": 169841,
-          "importance": "Major tournament"
-        },
-        {
-          "id": "upcoming-169850",
-          "status": "upcoming",
-          "statusLabel": "Future",
-          "level": "women",
-          "levelLabel": "Women",
-          "sourceType": "",
-          "sourceScope": "india-women",
-          "title": "India Women vs Pakistan Women, Match 9, Group A",
-          "series": "Women's Asia Cup 2026",
-          "teams": [
-            {
-              "name": "India Women",
-              "shortName": "INDW",
-              "score": ""
-            },
-            {
-              "name": "Pakistan Women",
-              "shortName": "PAKW",
-              "score": ""
-            }
-          ],
-          "dateLabel": "05 Sept 2026, 08:00 pm",
-          "time": "",
-          "place": "Dubai International Cricket Stadium, Dubai",
-          "overview": "Match starts at Sep 05, 14:30 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169850",
-          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
-          "startTime": "2026-09-05T14:30:00.000Z",
-          "rawId": 169850,
-          "importance": "Major tournament"
-        }
-      ]
     }
   ],
   "importantResultsByMonth": [],
-  "errors": []
+  "errors": [
+    "fetch failed",
+    "fetch failed"
+  ]
 }
