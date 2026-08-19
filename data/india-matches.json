@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-19T03:29:49.108Z",
-  "lastCheckedAt": "2026-08-19T03:29:49.108Z",
-  "lastSuccessfulSyncAt": "2026-08-19T03:29:49.108Z",
+  "syncedAt": "2026-08-19T04:08:51.488Z",
+  "lastCheckedAt": "2026-08-19T04:08:51.488Z",
+  "lastSuccessfulSyncAt": "2026-08-19T04:08:51.488Z",
   "coverage": {
     "pathways": [
       "India",
@@ -42,8 +42,8 @@
   },
   "summary": {
     "live": 1,
-    "recent": 62,
-    "upcoming": 503,
+    "recent": 60,
+    "upcoming": 505,
     "total": 566
   },
   "all": [
@@ -77,6 +77,68 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-15T04:30:00.000Z",
       "rawId": 163013
+    },
+    {
+      "id": "upcoming-169157",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "North Delhi Strikers vs South Delhi Superstarz, 34th Match",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "North Delhi Strikers",
+          "shortName": "NDS",
+          "score": ""
+        },
+        {
+          "name": "South Delhi Superstarz",
+          "shortName": "SDS",
+          "score": ""
+        }
+      ],
+      "dateLabel": "19 Aug 2026, 01:30 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Match starts at Aug 19, 08:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169157",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-19T08:00:00.000Z",
+      "rawId": 169157
+    },
+    {
+      "id": "upcoming-166980",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Dindigul Dragons vs Trichy Grand Cholas, 22nd Match",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Dindigul Dragons",
+          "shortName": "DGD",
+          "score": ""
+        },
+        {
+          "name": "Trichy Grand Cholas",
+          "shortName": "TRI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "19 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Match starts at Aug 19, 14:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166980",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-19T14:00:00.000Z",
+      "rawId": 166980
     },
     {
       "id": "upcoming-163027",
@@ -15672,70 +15734,6 @@
       "rawId": 164501
     },
     {
-      "id": "recent-166973",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Chepauk Super Gillies vs Vida Kovai Kings, 21st Match",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Chepauk Super Gillies",
-          "shortName": "CSG",
-          "score": "167/10 (19.3 Ov)"
-        },
-        {
-          "name": "Vida Kovai Kings",
-          "shortName": "VKK",
-          "score": "171/5 (18.5 Ov)"
-        }
-      ],
-      "dateLabel": "18 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Vida Kovai Kings won by 5 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166973",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-18T14:00:00.000Z",
-      "rawId": 166973,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-169151",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Central Delhi Kings vs East Delhi Riders, 33rd Match",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "Central Delhi Kings",
-          "shortName": "CDK",
-          "score": "179/10 (19.5 Ov)"
-        },
-        {
-          "name": "East Delhi Riders",
-          "shortName": "EDR",
-          "score": "149/7 (19.6 Ov)"
-        }
-      ],
-      "dateLabel": "18 Aug 2026, 07:00 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Central Delhi Kings won by 30 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169151",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-18T13:30:00.000Z",
-      "rawId": 169151,
-      "starPerformers": []
-    },
-    {
       "id": "recent-169497",
       "status": "recent",
       "statusLabel": "Past",
@@ -17753,6 +17751,68 @@
     }
   ],
   "upcoming": [
+    {
+      "id": "upcoming-169157",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "North Delhi Strikers vs South Delhi Superstarz, 34th Match",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "North Delhi Strikers",
+          "shortName": "NDS",
+          "score": ""
+        },
+        {
+          "name": "South Delhi Superstarz",
+          "shortName": "SDS",
+          "score": ""
+        }
+      ],
+      "dateLabel": "19 Aug 2026, 01:30 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Match starts at Aug 19, 08:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169157",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-19T08:00:00.000Z",
+      "rawId": 169157
+    },
+    {
+      "id": "upcoming-166980",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Dindigul Dragons vs Trichy Grand Cholas, 22nd Match",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Dindigul Dragons",
+          "shortName": "DGD",
+          "score": ""
+        },
+        {
+          "name": "Trichy Grand Cholas",
+          "shortName": "TRI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "19 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Match starts at Aug 19, 14:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166980",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-19T14:00:00.000Z",
+      "rawId": 166980
+    },
     {
       "id": "upcoming-163027",
       "status": "upcoming",
@@ -33349,70 +33409,6 @@
   ],
   "recent": [
     {
-      "id": "recent-166973",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Chepauk Super Gillies vs Vida Kovai Kings, 21st Match",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Chepauk Super Gillies",
-          "shortName": "CSG",
-          "score": "167/10 (19.3 Ov)"
-        },
-        {
-          "name": "Vida Kovai Kings",
-          "shortName": "VKK",
-          "score": "171/5 (18.5 Ov)"
-        }
-      ],
-      "dateLabel": "18 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Vida Kovai Kings won by 5 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166973",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-18T14:00:00.000Z",
-      "rawId": 166973,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-169151",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Central Delhi Kings vs East Delhi Riders, 33rd Match",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "Central Delhi Kings",
-          "shortName": "CDK",
-          "score": "179/10 (19.5 Ov)"
-        },
-        {
-          "name": "East Delhi Riders",
-          "shortName": "EDR",
-          "score": "149/7 (19.6 Ov)"
-        }
-      ],
-      "dateLabel": "18 Aug 2026, 07:00 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Central Delhi Kings won by 30 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169151",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-18T13:30:00.000Z",
-      "rawId": 169151,
-      "starPerformers": []
-    },
-    {
       "id": "recent-169497",
       "status": "recent",
       "statusLabel": "Past",
@@ -35411,8 +35407,8 @@
       "label": "League / IPL",
       "order": 2,
       "live": 0,
-      "recent": 2,
-      "upcoming": 0,
+      "recent": 0,
+      "upcoming": 2,
       "total": 2
     },
     {
