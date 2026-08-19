@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-19T11:28:43.750Z",
-  "lastCheckedAt": "2026-08-19T11:28:43.750Z",
-  "lastSuccessfulSyncAt": "2026-08-19T11:28:43.750Z",
+  "syncedAt": "2026-08-19T11:51:15.200Z",
+  "lastCheckedAt": "2026-08-19T11:51:15.200Z",
+  "lastSuccessfulSyncAt": "2026-08-19T11:51:15.200Z",
   "coverage": {
     "pathways": [
       "India",
@@ -66,13 +66,13 @@
         {
           "name": "South Delhi Superstarz",
           "shortName": "SDS",
-          "score": "129/4 (12.4 Ov)"
+          "score": "172/5 (16.6 Ov)"
         }
       ],
       "dateLabel": "19 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "South Delhi Superstarz need 79 runs in 44 balls",
+      "overview": "South Delhi Superstarz need 36 runs in 18 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169157",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-19T08:00:00.000Z",
@@ -17706,13 +17706,13 @@
         {
           "name": "South Delhi Superstarz",
           "shortName": "SDS",
-          "score": "129/4 (12.4 Ov)"
+          "score": "172/5 (16.6 Ov)"
         }
       ],
       "dateLabel": "19 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "South Delhi Superstarz need 79 runs in 44 balls",
+      "overview": "South Delhi Superstarz need 36 runs in 18 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169157",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-19T08:00:00.000Z",
