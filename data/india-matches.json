@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-19T17:54:18.713Z",
-  "lastCheckedAt": "2026-08-19T17:54:18.713Z",
-  "lastSuccessfulSyncAt": "2026-08-19T17:54:18.713Z",
+  "syncedAt": "2026-08-19T18:18:43.801Z",
+  "lastCheckedAt": "2026-08-19T18:18:43.801Z",
+  "lastSuccessfulSyncAt": "2026-08-19T18:18:43.801Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,43 +41,12 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 1,
-    "recent": 61,
+    "live": 0,
+    "recent": 62,
     "upcoming": 503,
     "total": 565
   },
   "all": [
-    {
-      "id": "live-166980",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Trichy Grand Cholas vs Dindigul Dragons, 22nd Match",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Trichy Grand Cholas",
-          "shortName": "TRI",
-          "score": "197/4 (18.6 Ov)"
-        },
-        {
-          "name": "Dindigul Dragons",
-          "shortName": "DGD",
-          "score": "155/6 (15.4 Ov)"
-        }
-      ],
-      "dateLabel": "19 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Dindigul Dragons need 43 runs in 20 balls - Match reduced to 19 overs due to rain",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166980",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-19T14:00:00.000Z",
-      "rawId": 166980
-    },
     {
       "id": "upcoming-163027",
       "status": "upcoming",
@@ -15672,6 +15641,38 @@
       "rawId": 164501
     },
     {
+      "id": "recent-166980",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Trichy Grand Cholas vs Dindigul Dragons, 22nd Match",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Trichy Grand Cholas",
+          "shortName": "TRI",
+          "score": "197/4 (18.6 Ov)"
+        },
+        {
+          "name": "Dindigul Dragons",
+          "shortName": "DGD",
+          "score": "170/8 (18.6 Ov)"
+        }
+      ],
+      "dateLabel": "19 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Trichy Grand Cholas won by 27 runs - 19 overs game due to rain",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166980",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-19T14:00:00.000Z",
+      "rawId": 166980,
+      "starPerformers": []
+    },
+    {
       "id": "recent-169157",
       "status": "recent",
       "statusLabel": "Past",
@@ -17687,39 +17688,7 @@
       ]
     }
   ],
-  "live": [
-    {
-      "id": "live-166980",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Trichy Grand Cholas vs Dindigul Dragons, 22nd Match",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Trichy Grand Cholas",
-          "shortName": "TRI",
-          "score": "197/4 (18.6 Ov)"
-        },
-        {
-          "name": "Dindigul Dragons",
-          "shortName": "DGD",
-          "score": "155/6 (15.4 Ov)"
-        }
-      ],
-      "dateLabel": "19 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Dindigul Dragons need 43 runs in 20 balls - Match reduced to 19 overs due to rain",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166980",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-19T14:00:00.000Z",
-      "rawId": 166980
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "upcoming-163027",
@@ -33317,6 +33286,38 @@
   ],
   "recent": [
     {
+      "id": "recent-166980",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Trichy Grand Cholas vs Dindigul Dragons, 22nd Match",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Trichy Grand Cholas",
+          "shortName": "TRI",
+          "score": "197/4 (18.6 Ov)"
+        },
+        {
+          "name": "Dindigul Dragons",
+          "shortName": "DGD",
+          "score": "170/8 (18.6 Ov)"
+        }
+      ],
+      "dateLabel": "19 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Trichy Grand Cholas won by 27 runs - 19 overs game due to rain",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166980",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-19T14:00:00.000Z",
+      "rawId": 166980,
+      "starPerformers": []
+    },
+    {
       "id": "recent-169157",
       "status": "recent",
       "statusLabel": "Past",
@@ -35346,8 +35347,8 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 1,
-      "recent": 1,
+      "live": 0,
+      "recent": 2,
       "upcoming": 0,
       "total": 2
     },
