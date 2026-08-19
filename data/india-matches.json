@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-19T04:48:52.547Z",
-  "lastCheckedAt": "2026-08-19T04:48:52.547Z",
-  "lastSuccessfulSyncAt": "2026-08-19T04:48:52.547Z",
+  "syncedAt": "2026-08-19T05:15:59.981Z",
+  "lastCheckedAt": "2026-08-19T05:15:59.981Z",
+  "lastSuccessfulSyncAt": "2026-08-19T05:15:59.981Z",
   "coverage": {
     "pathways": [
       "India",
@@ -66,13 +66,13 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "284/10 (79.4 Ov) & 98/4 (41.6 Ov)"
+          "score": "284/10 (79.4 Ov) & 130/4 (49.1 Ov)"
         }
       ],
       "dateLabel": "15 Aug 2026, 10:00 am",
       "time": "",
       "place": "Galle International Stadium, Galle",
-      "overview": "Day 5: 1st Session - Sri Lanka need 274 runs",
+      "overview": "Day 5: 1st Session - Sri Lanka need 242 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163013",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-15T04:30:00.000Z",
@@ -17737,13 +17737,13 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "284/10 (79.4 Ov) & 98/4 (41.6 Ov)"
+          "score": "284/10 (79.4 Ov) & 130/4 (49.1 Ov)"
         }
       ],
       "dateLabel": "15 Aug 2026, 10:00 am",
       "time": "",
       "place": "Galle International Stadium, Galle",
-      "overview": "Day 5: 1st Session - Sri Lanka need 274 runs",
+      "overview": "Day 5: 1st Session - Sri Lanka need 242 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163013",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-15T04:30:00.000Z",
