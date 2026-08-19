@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-19T07:51:50.156Z",
-  "lastCheckedAt": "2026-08-19T07:51:50.156Z",
-  "lastSuccessfulSyncAt": "2026-08-19T07:51:50.156Z",
+  "syncedAt": "2026-08-19T08:19:05.003Z",
+  "lastCheckedAt": "2026-08-19T08:19:05.003Z",
+  "lastSuccessfulSyncAt": "2026-08-19T08:19:05.003Z",
   "coverage": {
     "pathways": [
       "India",
@@ -43,45 +43,14 @@
   "summary": {
     "live": 1,
     "recent": 60,
-    "upcoming": 505,
-    "total": 566
+    "upcoming": 504,
+    "total": 565
   },
   "all": [
     {
-      "id": "live-163013",
+      "id": "live-169157",
       "status": "live",
       "statusLabel": "Live",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
-      "title": "India vs Sri Lanka, 1st Test",
-      "series": "India tour of Sri Lanka 2026",
-      "teams": [
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": "462/10 (116.4 Ov) & 193/10 (48.5 Ov)"
-        },
-        {
-          "name": "Sri Lanka",
-          "shortName": "SL",
-          "score": "284/10 (79.4 Ov) & 199/9 (76.3 Ov)"
-        }
-      ],
-      "dateLabel": "15 Aug 2026, 10:00 am",
-      "time": "",
-      "place": "Galle International Stadium, Galle",
-      "overview": "Day 5: 2nd Session - Sri Lanka need 173 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163013",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
-      "startTime": "2026-08-15T04:30:00.000Z",
-      "rawId": 163013
-    },
-    {
-      "id": "upcoming-169157",
-      "status": "upcoming",
-      "statusLabel": "Future",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -92,7 +61,7 @@
         {
           "name": "North Delhi Strikers",
           "shortName": "NDS",
-          "score": ""
+          "score": "53 (2.6 Ov)"
         },
         {
           "name": "South Delhi Superstarz",
@@ -15734,6 +15703,38 @@
       "rawId": 164501
     },
     {
+      "id": "recent-163013",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "India vs Sri Lanka, 1st Test",
+      "series": "India tour of Sri Lanka 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "462/10 (116.4 Ov) & 193/10 (48.5 Ov)"
+        },
+        {
+          "name": "Sri Lanka",
+          "shortName": "SL",
+          "score": "284/10 (79.4 Ov) & 206/10 (77.4 Ov)"
+        }
+      ],
+      "dateLabel": "15 Aug 2026, 10:00 am",
+      "time": "",
+      "place": "Galle International Stadium, Galle",
+      "overview": "India won by 165 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163013",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-15T04:30:00.000Z",
+      "rawId": 163013,
+      "starPerformers": []
+    },
+    {
       "id": "recent-169497",
       "status": "recent",
       "statusLabel": "Past",
@@ -16147,38 +16148,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-07-09T04:30:00.000Z",
       "rawId": 157215,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-129442",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
-      "title": "England vs India, 3rd T20I",
-      "series": "India tour of England, 2026",
-      "teams": [
-        {
-          "name": "England",
-          "shortName": "ENG",
-          "score": "201/7 (20 Ov)"
-        },
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": "76/10 (11.4 Ov)"
-        }
-      ],
-      "dateLabel": "07 Jul 2026, 10:00 pm",
-      "time": "",
-      "place": "Trent Bridge, Nottingham",
-      "overview": "England won by 125 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129442",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
-      "startTime": "2026-07-07T16:30:00.000Z",
-      "rawId": 129442,
       "starPerformers": []
     },
     {
@@ -17719,42 +17688,9 @@
   ],
   "live": [
     {
-      "id": "live-163013",
+      "id": "live-169157",
       "status": "live",
       "statusLabel": "Live",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
-      "title": "India vs Sri Lanka, 1st Test",
-      "series": "India tour of Sri Lanka 2026",
-      "teams": [
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": "462/10 (116.4 Ov) & 193/10 (48.5 Ov)"
-        },
-        {
-          "name": "Sri Lanka",
-          "shortName": "SL",
-          "score": "284/10 (79.4 Ov) & 199/9 (76.3 Ov)"
-        }
-      ],
-      "dateLabel": "15 Aug 2026, 10:00 am",
-      "time": "",
-      "place": "Galle International Stadium, Galle",
-      "overview": "Day 5: 2nd Session - Sri Lanka need 173 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163013",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
-      "startTime": "2026-08-15T04:30:00.000Z",
-      "rawId": 163013
-    }
-  ],
-  "upcoming": [
-    {
-      "id": "upcoming-169157",
-      "status": "upcoming",
-      "statusLabel": "Future",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -17765,7 +17701,7 @@
         {
           "name": "North Delhi Strikers",
           "shortName": "NDS",
-          "score": ""
+          "score": "53 (2.6 Ov)"
         },
         {
           "name": "South Delhi Superstarz",
@@ -17781,7 +17717,9 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-19T08:00:00.000Z",
       "rawId": 169157
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-166980",
       "status": "upcoming",
@@ -33409,6 +33347,38 @@
   ],
   "recent": [
     {
+      "id": "recent-163013",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "India vs Sri Lanka, 1st Test",
+      "series": "India tour of Sri Lanka 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "462/10 (116.4 Ov) & 193/10 (48.5 Ov)"
+        },
+        {
+          "name": "Sri Lanka",
+          "shortName": "SL",
+          "score": "284/10 (79.4 Ov) & 206/10 (77.4 Ov)"
+        }
+      ],
+      "dateLabel": "15 Aug 2026, 10:00 am",
+      "time": "",
+      "place": "Galle International Stadium, Galle",
+      "overview": "India won by 165 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163013",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-15T04:30:00.000Z",
+      "rawId": 163013,
+      "starPerformers": []
+    },
+    {
       "id": "recent-169497",
       "status": "recent",
       "statusLabel": "Past",
@@ -33822,38 +33792,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-07-09T04:30:00.000Z",
       "rawId": 157215,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-129442",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
-      "title": "England vs India, 3rd T20I",
-      "series": "India tour of England, 2026",
-      "teams": [
-        {
-          "name": "England",
-          "shortName": "ENG",
-          "score": "201/7 (20 Ov)"
-        },
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": "76/10 (11.4 Ov)"
-        }
-      ],
-      "dateLabel": "07 Jul 2026, 10:00 pm",
-      "time": "",
-      "place": "Trent Bridge, Nottingham",
-      "overview": "England won by 125 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129442",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
-      "startTime": "2026-07-07T16:30:00.000Z",
-      "rawId": 129442,
       "starPerformers": []
     },
     {
@@ -35397,18 +35335,18 @@
       "id": "international",
       "label": "International",
       "order": 1,
-      "live": 1,
+      "live": 0,
       "recent": 30,
       "upcoming": 51,
-      "total": 82
+      "total": 81
     },
     {
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 0,
+      "live": 1,
       "recent": 0,
-      "upcoming": 2,
+      "upcoming": 1,
       "total": 2
     },
     {
