@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-20T11:11:04.123Z",
-  "lastCheckedAt": "2026-08-20T11:11:04.123Z",
-  "lastSuccessfulSyncAt": "2026-08-20T11:11:04.123Z",
+  "syncedAt": "2026-08-20T11:40:29.054Z",
+  "lastCheckedAt": "2026-08-20T11:40:29.054Z",
+  "lastSuccessfulSyncAt": "2026-08-20T11:40:29.054Z",
   "coverage": {
     "pathways": [
       "India",
@@ -61,7 +61,7 @@
         {
           "name": "Madurai Panthers",
           "shortName": "MDP",
-          "score": "76/7 (12.3 Ov)"
+          "score": "147/7 (18.3 Ov)"
         },
         {
           "name": "IDream Tiruppur Tamizhans",
@@ -17670,7 +17670,7 @@
         {
           "name": "Madurai Panthers",
           "shortName": "MDP",
-          "score": "76/7 (12.3 Ov)"
+          "score": "147/7 (18.3 Ov)"
         },
         {
           "name": "IDream Tiruppur Tamizhans",
