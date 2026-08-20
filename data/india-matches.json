@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-20T15:38:37.299Z",
-  "lastCheckedAt": "2026-08-20T15:38:37.299Z",
-  "lastSuccessfulSyncAt": "2026-08-20T15:38:37.299Z",
+  "syncedAt": "2026-08-20T16:03:10.790Z",
+  "lastCheckedAt": "2026-08-20T16:03:10.790Z",
+  "lastSuccessfulSyncAt": "2026-08-20T16:03:10.790Z",
   "coverage": {
     "pathways": [
       "India",
@@ -61,18 +61,18 @@
         {
           "name": "SKM Salem Spartans",
           "shortName": "SAL",
-          "score": "134/6 (19.3 Ov)"
+          "score": "140/7 (19.6 Ov)"
         },
         {
           "name": "Nellai Royal Kings",
           "shortName": "NRK",
-          "score": ""
+          "score": "19 (1.6 Ov)"
         }
       ],
       "dateLabel": "20 Aug 2026, 07:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "SKM Salem Spartans opt to bat",
+      "overview": "Nellai Royal Kings need 122 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166993",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-20T14:00:00.000Z",
@@ -17670,18 +17670,18 @@
         {
           "name": "SKM Salem Spartans",
           "shortName": "SAL",
-          "score": "134/6 (19.3 Ov)"
+          "score": "140/7 (19.6 Ov)"
         },
         {
           "name": "Nellai Royal Kings",
           "shortName": "NRK",
-          "score": ""
+          "score": "19 (1.6 Ov)"
         }
       ],
       "dateLabel": "20 Aug 2026, 07:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "SKM Salem Spartans opt to bat",
+      "overview": "Nellai Royal Kings need 122 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166993",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-20T14:00:00.000Z",
