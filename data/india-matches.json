@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-20T11:40:29.054Z",
-  "lastCheckedAt": "2026-08-20T11:40:29.054Z",
-  "lastSuccessfulSyncAt": "2026-08-20T11:40:29.054Z",
+  "syncedAt": "2026-08-20T12:00:33.761Z",
+  "lastCheckedAt": "2026-08-20T12:00:33.761Z",
+  "lastSuccessfulSyncAt": "2026-08-20T12:00:33.761Z",
   "coverage": {
     "pathways": [
       "India",
@@ -61,7 +61,7 @@
         {
           "name": "Madurai Panthers",
           "shortName": "MDP",
-          "score": "147/7 (18.3 Ov)"
+          "score": "157/9 (19.6 Ov)"
         },
         {
           "name": "IDream Tiruppur Tamizhans",
@@ -72,7 +72,7 @@
       "dateLabel": "20 Aug 2026, 03:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "IDream Tiruppur Tamizhans opt to bowl",
+      "overview": "Innings Break",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166983",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-20T10:00:00.000Z",
@@ -17670,7 +17670,7 @@
         {
           "name": "Madurai Panthers",
           "shortName": "MDP",
-          "score": "147/7 (18.3 Ov)"
+          "score": "157/9 (19.6 Ov)"
         },
         {
           "name": "IDream Tiruppur Tamizhans",
@@ -17681,7 +17681,7 @@
       "dateLabel": "20 Aug 2026, 03:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "IDream Tiruppur Tamizhans opt to bowl",
+      "overview": "Innings Break",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166983",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-20T10:00:00.000Z",
