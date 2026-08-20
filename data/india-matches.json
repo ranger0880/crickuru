@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-20T08:28:48.692Z",
-  "lastCheckedAt": "2026-08-20T08:28:48.692Z",
-  "lastSuccessfulSyncAt": "2026-08-20T08:28:48.692Z",
+  "syncedAt": "2026-08-20T09:06:17.696Z",
+  "lastCheckedAt": "2026-08-20T09:06:17.696Z",
+  "lastSuccessfulSyncAt": "2026-08-20T09:06:17.696Z",
   "coverage": {
     "pathways": [
       "India",
@@ -42,9 +42,9 @@
   },
   "summary": {
     "live": 0,
-    "recent": 61,
+    "recent": 60,
     "upcoming": 504,
-    "total": 565
+    "total": 564
   },
   "all": [
     {
@@ -15670,38 +15670,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2027-02-27T04:00:00.000Z",
       "rawId": 164501
-    },
-    {
-      "id": "recent-169157",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "North Delhi Strikers vs South Delhi Superstarz, 34th Match",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "North Delhi Strikers",
-          "shortName": "NDS",
-          "score": "207/9 (19.6 Ov)"
-        },
-        {
-          "name": "South Delhi Superstarz",
-          "shortName": "SDS",
-          "score": "208/6 (19.3 Ov)"
-        }
-      ],
-      "dateLabel": "19 Aug 2026, 01:30 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "South Delhi Superstarz won by 4 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169157",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-19T08:00:00.000Z",
-      "rawId": 169157,
-      "starPerformers": []
     },
     {
       "id": "recent-163013",
@@ -33316,38 +33284,6 @@
   ],
   "recent": [
     {
-      "id": "recent-169157",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "North Delhi Strikers vs South Delhi Superstarz, 34th Match",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "North Delhi Strikers",
-          "shortName": "NDS",
-          "score": "207/9 (19.6 Ov)"
-        },
-        {
-          "name": "South Delhi Superstarz",
-          "shortName": "SDS",
-          "score": "208/6 (19.3 Ov)"
-        }
-      ],
-      "dateLabel": "19 Aug 2026, 01:30 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "South Delhi Superstarz won by 4 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169157",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-19T08:00:00.000Z",
-      "rawId": 169157,
-      "starPerformers": []
-    },
-    {
       "id": "recent-163013",
       "status": "recent",
       "statusLabel": "Past",
@@ -35346,9 +35282,9 @@
       "label": "League / IPL",
       "order": 2,
       "live": 0,
-      "recent": 1,
+      "recent": 0,
       "upcoming": 1,
-      "total": 2
+      "total": 1
     },
     {
       "id": "women",
