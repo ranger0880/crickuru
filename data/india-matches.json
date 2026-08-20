@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-20T09:06:17.696Z",
-  "lastCheckedAt": "2026-08-20T09:06:17.696Z",
-  "lastSuccessfulSyncAt": "2026-08-20T09:06:17.696Z",
+  "syncedAt": "2026-08-20T09:46:36.432Z",
+  "lastCheckedAt": "2026-08-20T09:46:36.432Z",
+  "lastSuccessfulSyncAt": "2026-08-20T09:46:36.432Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,16 +41,16 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 0,
+    "live": 1,
     "recent": 60,
-    "upcoming": 504,
+    "upcoming": 503,
     "total": 564
   },
   "all": [
     {
-      "id": "upcoming-166983",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-166983",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -72,7 +72,7 @@
       "dateLabel": "20 Aug 2026, 03:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Match starts at Aug 20, 10:00 GMT",
+      "overview": "Toss delayed due to rain",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166983",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-20T10:00:00.000Z",
@@ -17655,12 +17655,11 @@
       ]
     }
   ],
-  "live": [],
-  "upcoming": [
+  "live": [
     {
-      "id": "upcoming-166983",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-166983",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -17682,12 +17681,14 @@
       "dateLabel": "20 Aug 2026, 03:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Match starts at Aug 20, 10:00 GMT",
+      "overview": "Toss delayed due to rain",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166983",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-20T10:00:00.000Z",
       "rawId": 166983
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-163027",
       "status": "upcoming",
@@ -35281,9 +35282,9 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 0,
+      "live": 1,
       "recent": 0,
-      "upcoming": 1,
+      "upcoming": 0,
       "total": 1
     },
     {
