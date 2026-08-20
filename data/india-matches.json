@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-20T12:00:33.761Z",
-  "lastCheckedAt": "2026-08-20T12:00:33.761Z",
-  "lastSuccessfulSyncAt": "2026-08-20T12:00:33.761Z",
+  "syncedAt": "2026-08-20T13:01:49.714Z",
+  "lastCheckedAt": "2026-08-20T13:01:49.714Z",
+  "lastSuccessfulSyncAt": "2026-08-20T13:01:49.714Z",
   "coverage": {
     "pathways": [
       "India",
@@ -66,13 +66,13 @@
         {
           "name": "IDream Tiruppur Tamizhans",
           "shortName": "ITT",
-          "score": ""
+          "score": "105/5 (11.2 Ov)"
         }
       ],
       "dateLabel": "20 Aug 2026, 03:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Innings Break",
+      "overview": "IDream Tiruppur Tamizhans need 53 runs in 52 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166983",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-20T10:00:00.000Z",
@@ -17675,13 +17675,13 @@
         {
           "name": "IDream Tiruppur Tamizhans",
           "shortName": "ITT",
-          "score": ""
+          "score": "105/5 (11.2 Ov)"
         }
       ],
       "dateLabel": "20 Aug 2026, 03:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Innings Break",
+      "overview": "IDream Tiruppur Tamizhans need 53 runs in 52 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166983",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-20T10:00:00.000Z",
