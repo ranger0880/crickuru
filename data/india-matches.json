@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-20T16:45:39.781Z",
-  "lastCheckedAt": "2026-08-20T16:45:39.781Z",
-  "lastSuccessfulSyncAt": "2026-08-20T16:45:39.781Z",
+  "syncedAt": "2026-08-20T17:12:38.082Z",
+  "lastCheckedAt": "2026-08-20T17:12:38.082Z",
+  "lastSuccessfulSyncAt": "2026-08-20T17:12:38.082Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,43 +41,12 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 1,
-    "recent": 60,
+    "live": 0,
+    "recent": 61,
     "upcoming": 503,
     "total": 564
   },
   "all": [
-    {
-      "id": "live-166993",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "SKM Salem Spartans vs Nellai Royal Kings, 24th Match",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "SKM Salem Spartans",
-          "shortName": "SAL",
-          "score": "140/7 (19.6 Ov)"
-        },
-        {
-          "name": "Nellai Royal Kings",
-          "shortName": "NRK",
-          "score": "119/4 (12.2 Ov)"
-        }
-      ],
-      "dateLabel": "20 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Nellai Royal Kings need 22 runs in 46 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166993",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-20T14:00:00.000Z",
-      "rawId": 166993
-    },
     {
       "id": "upcoming-163027",
       "status": "upcoming",
@@ -15672,6 +15641,38 @@
       "rawId": 164501
     },
     {
+      "id": "recent-166993",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "SKM Salem Spartans vs Nellai Royal Kings, 24th Match",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "SKM Salem Spartans",
+          "shortName": "SAL",
+          "score": "140/7 (19.6 Ov)"
+        },
+        {
+          "name": "Nellai Royal Kings",
+          "shortName": "NRK",
+          "score": "146/5 (16.1 Ov)"
+        }
+      ],
+      "dateLabel": "20 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Nellai Royal Kings won by 5 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166993",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-20T14:00:00.000Z",
+      "rawId": 166993,
+      "starPerformers": []
+    },
+    {
       "id": "recent-163013",
       "status": "recent",
       "statusLabel": "Past",
@@ -17655,39 +17656,7 @@
       ]
     }
   ],
-  "live": [
-    {
-      "id": "live-166993",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "SKM Salem Spartans vs Nellai Royal Kings, 24th Match",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "SKM Salem Spartans",
-          "shortName": "SAL",
-          "score": "140/7 (19.6 Ov)"
-        },
-        {
-          "name": "Nellai Royal Kings",
-          "shortName": "NRK",
-          "score": "119/4 (12.2 Ov)"
-        }
-      ],
-      "dateLabel": "20 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Nellai Royal Kings need 22 runs in 46 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166993",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-20T14:00:00.000Z",
-      "rawId": 166993
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "upcoming-163027",
@@ -33285,6 +33254,38 @@
   ],
   "recent": [
     {
+      "id": "recent-166993",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "SKM Salem Spartans vs Nellai Royal Kings, 24th Match",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "SKM Salem Spartans",
+          "shortName": "SAL",
+          "score": "140/7 (19.6 Ov)"
+        },
+        {
+          "name": "Nellai Royal Kings",
+          "shortName": "NRK",
+          "score": "146/5 (16.1 Ov)"
+        }
+      ],
+      "dateLabel": "20 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Nellai Royal Kings won by 5 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166993",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-20T14:00:00.000Z",
+      "rawId": 166993,
+      "starPerformers": []
+    },
+    {
       "id": "recent-163013",
       "status": "recent",
       "statusLabel": "Past",
@@ -35282,8 +35283,8 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 1,
-      "recent": 0,
+      "live": 0,
+      "recent": 1,
       "upcoming": 0,
       "total": 1
     },
