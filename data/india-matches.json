@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-20T13:01:49.714Z",
-  "lastCheckedAt": "2026-08-20T13:01:49.714Z",
-  "lastSuccessfulSyncAt": "2026-08-20T13:01:49.714Z",
+  "syncedAt": "2026-08-20T13:52:45.901Z",
+  "lastCheckedAt": "2026-08-20T13:52:45.901Z",
+  "lastSuccessfulSyncAt": "2026-08-20T13:52:45.901Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,43 +41,12 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 1,
-    "recent": 60,
+    "live": 0,
+    "recent": 61,
     "upcoming": 503,
     "total": 564
   },
   "all": [
-    {
-      "id": "live-166983",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Madurai Panthers vs IDream Tiruppur Tamizhans, 23rd Match",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Madurai Panthers",
-          "shortName": "MDP",
-          "score": "157/9 (19.6 Ov)"
-        },
-        {
-          "name": "IDream Tiruppur Tamizhans",
-          "shortName": "ITT",
-          "score": "105/5 (11.2 Ov)"
-        }
-      ],
-      "dateLabel": "20 Aug 2026, 03:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "IDream Tiruppur Tamizhans need 53 runs in 52 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166983",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-20T10:00:00.000Z",
-      "rawId": 166983
-    },
     {
       "id": "upcoming-163027",
       "status": "upcoming",
@@ -15672,6 +15641,38 @@
       "rawId": 164501
     },
     {
+      "id": "recent-166983",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Madurai Panthers vs IDream Tiruppur Tamizhans, 23rd Match",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Madurai Panthers",
+          "shortName": "MDP",
+          "score": "157/9 (19.6 Ov)"
+        },
+        {
+          "name": "IDream Tiruppur Tamizhans",
+          "shortName": "ITT",
+          "score": "160/6 (17.4 Ov)"
+        }
+      ],
+      "dateLabel": "20 Aug 2026, 03:30 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "IDream Tiruppur Tamizhans won by 4 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166983",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-20T10:00:00.000Z",
+      "rawId": 166983,
+      "starPerformers": []
+    },
+    {
       "id": "recent-163013",
       "status": "recent",
       "statusLabel": "Past",
@@ -17655,39 +17656,7 @@
       ]
     }
   ],
-  "live": [
-    {
-      "id": "live-166983",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Madurai Panthers vs IDream Tiruppur Tamizhans, 23rd Match",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Madurai Panthers",
-          "shortName": "MDP",
-          "score": "157/9 (19.6 Ov)"
-        },
-        {
-          "name": "IDream Tiruppur Tamizhans",
-          "shortName": "ITT",
-          "score": "105/5 (11.2 Ov)"
-        }
-      ],
-      "dateLabel": "20 Aug 2026, 03:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "IDream Tiruppur Tamizhans need 53 runs in 52 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166983",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-20T10:00:00.000Z",
-      "rawId": 166983
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "upcoming-163027",
@@ -33285,6 +33254,38 @@
   ],
   "recent": [
     {
+      "id": "recent-166983",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Madurai Panthers vs IDream Tiruppur Tamizhans, 23rd Match",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Madurai Panthers",
+          "shortName": "MDP",
+          "score": "157/9 (19.6 Ov)"
+        },
+        {
+          "name": "IDream Tiruppur Tamizhans",
+          "shortName": "ITT",
+          "score": "160/6 (17.4 Ov)"
+        }
+      ],
+      "dateLabel": "20 Aug 2026, 03:30 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "IDream Tiruppur Tamizhans won by 4 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166983",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-20T10:00:00.000Z",
+      "rawId": 166983,
+      "starPerformers": []
+    },
+    {
       "id": "recent-163013",
       "status": "recent",
       "statusLabel": "Past",
@@ -35282,8 +35283,8 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 1,
-      "recent": 0,
+      "live": 0,
+      "recent": 1,
       "upcoming": 0,
       "total": 1
     },
