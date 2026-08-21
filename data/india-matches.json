@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-21T13:04:00.920Z",
-  "lastCheckedAt": "2026-08-21T13:04:00.920Z",
-  "lastSuccessfulSyncAt": "2026-08-21T13:04:00.920Z",
+  "syncedAt": "2026-08-21T13:53:22.115Z",
+  "lastCheckedAt": "2026-08-21T13:53:22.115Z",
+  "lastSuccessfulSyncAt": "2026-08-21T13:53:22.115Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,9 +41,9 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 1,
+    "live": 2,
     "recent": 60,
-    "upcoming": 504,
+    "upcoming": 503,
     "total": 565
   },
   "all": [
@@ -66,22 +66,22 @@
         {
           "name": "Dindigul Dragons",
           "shortName": "DGD",
-          "score": "15/1 (1.4 Ov)"
+          "score": "77/7 (9.6 Ov)"
         }
       ],
       "dateLabel": "21 Aug 2026, 03:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Dindigul Dragons need 164 runs in 86 balls - 16 Overs game due to rain, DLS Target 179",
+      "overview": "Dindigul Dragons need 102 runs in 36 balls - 16 Overs game due to rain, DLS Target 179",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167000",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-21T10:00:00.000Z",
       "rawId": 167000
     },
     {
-      "id": "upcoming-169171",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-169171",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -103,7 +103,7 @@
       "dateLabel": "21 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Match starts at Aug 21, 13:30 GMT",
+      "overview": "East Delhi Riders opt to bowl",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169171",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-21T13:30:00.000Z",
@@ -17706,24 +17706,22 @@
         {
           "name": "Dindigul Dragons",
           "shortName": "DGD",
-          "score": "15/1 (1.4 Ov)"
+          "score": "77/7 (9.6 Ov)"
         }
       ],
       "dateLabel": "21 Aug 2026, 03:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Dindigul Dragons need 164 runs in 86 balls - 16 Overs game due to rain, DLS Target 179",
+      "overview": "Dindigul Dragons need 102 runs in 36 balls - 16 Overs game due to rain, DLS Target 179",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167000",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-21T10:00:00.000Z",
       "rawId": 167000
-    }
-  ],
-  "upcoming": [
+    },
     {
-      "id": "upcoming-169171",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-169171",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -17745,12 +17743,14 @@
       "dateLabel": "21 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Match starts at Aug 21, 13:30 GMT",
+      "overview": "East Delhi Riders opt to bowl",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169171",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-21T13:30:00.000Z",
       "rawId": 169171
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-163027",
       "status": "upcoming",
@@ -35344,9 +35344,9 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 1,
+      "live": 2,
       "recent": 0,
-      "upcoming": 1,
+      "upcoming": 0,
       "total": 2
     },
     {
