@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-21T13:53:22.115Z",
-  "lastCheckedAt": "2026-08-21T13:53:22.115Z",
-  "lastSuccessfulSyncAt": "2026-08-21T13:53:22.115Z",
+  "syncedAt": "2026-08-21T14:27:04.048Z",
+  "lastCheckedAt": "2026-08-21T14:27:04.048Z",
+  "lastSuccessfulSyncAt": "2026-08-21T14:27:04.048Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,43 +41,12 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 2,
-    "recent": 60,
+    "live": 1,
+    "recent": 61,
     "upcoming": 503,
     "total": 565
   },
   "all": [
-    {
-      "id": "live-167000",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Vida Kovai Kings vs Dindigul Dragons, 25th Match",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Vida Kovai Kings",
-          "shortName": "VKK",
-          "score": "171/3 (15.6 Ov)"
-        },
-        {
-          "name": "Dindigul Dragons",
-          "shortName": "DGD",
-          "score": "77/7 (9.6 Ov)"
-        }
-      ],
-      "dateLabel": "21 Aug 2026, 03:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Dindigul Dragons need 102 runs in 36 balls - 16 Overs game due to rain, DLS Target 179",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167000",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-21T10:00:00.000Z",
-      "rawId": 167000
-    },
     {
       "id": "live-169171",
       "status": "live",
@@ -92,7 +61,7 @@
         {
           "name": "Outer Delhi Warriors",
           "shortName": "ODW",
-          "score": ""
+          "score": "46/5 (5.6 Ov)"
         },
         {
           "name": "East Delhi Riders",
@@ -15703,6 +15672,38 @@
       "rawId": 164501
     },
     {
+      "id": "recent-167000",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Vida Kovai Kings vs Dindigul Dragons, 25th Match",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Vida Kovai Kings",
+          "shortName": "VKK",
+          "score": "171/3 (15.6 Ov)"
+        },
+        {
+          "name": "Dindigul Dragons",
+          "shortName": "DGD",
+          "score": "93/10 (13.2 Ov)"
+        }
+      ],
+      "dateLabel": "21 Aug 2026, 03:30 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Vida Kovai Kings won by 85 runs (DLS Method)",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167000",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-21T10:00:00.000Z",
+      "rawId": 167000,
+      "starPerformers": []
+    },
+    {
       "id": "recent-163013",
       "status": "recent",
       "statusLabel": "Past",
@@ -17688,37 +17689,6 @@
   ],
   "live": [
     {
-      "id": "live-167000",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Vida Kovai Kings vs Dindigul Dragons, 25th Match",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Vida Kovai Kings",
-          "shortName": "VKK",
-          "score": "171/3 (15.6 Ov)"
-        },
-        {
-          "name": "Dindigul Dragons",
-          "shortName": "DGD",
-          "score": "77/7 (9.6 Ov)"
-        }
-      ],
-      "dateLabel": "21 Aug 2026, 03:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Dindigul Dragons need 102 runs in 36 balls - 16 Overs game due to rain, DLS Target 179",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167000",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-21T10:00:00.000Z",
-      "rawId": 167000
-    },
-    {
       "id": "live-169171",
       "status": "live",
       "statusLabel": "Live",
@@ -17732,7 +17702,7 @@
         {
           "name": "Outer Delhi Warriors",
           "shortName": "ODW",
-          "score": ""
+          "score": "46/5 (5.6 Ov)"
         },
         {
           "name": "East Delhi Riders",
@@ -33347,6 +33317,38 @@
   ],
   "recent": [
     {
+      "id": "recent-167000",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Vida Kovai Kings vs Dindigul Dragons, 25th Match",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Vida Kovai Kings",
+          "shortName": "VKK",
+          "score": "171/3 (15.6 Ov)"
+        },
+        {
+          "name": "Dindigul Dragons",
+          "shortName": "DGD",
+          "score": "93/10 (13.2 Ov)"
+        }
+      ],
+      "dateLabel": "21 Aug 2026, 03:30 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Vida Kovai Kings won by 85 runs (DLS Method)",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167000",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-21T10:00:00.000Z",
+      "rawId": 167000,
+      "starPerformers": []
+    },
+    {
       "id": "recent-163013",
       "status": "recent",
       "statusLabel": "Past",
@@ -35344,8 +35346,8 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 2,
-      "recent": 0,
+      "live": 1,
+      "recent": 1,
       "upcoming": 0,
       "total": 2
     },
