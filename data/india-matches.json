@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-21T07:12:39.058Z",
-  "lastCheckedAt": "2026-08-21T07:12:39.058Z",
-  "lastSuccessfulSyncAt": "2026-08-21T07:12:39.058Z",
+  "syncedAt": "2026-08-21T07:57:12.346Z",
+  "lastCheckedAt": "2026-08-21T07:57:12.346Z",
+  "lastSuccessfulSyncAt": "2026-08-21T07:57:12.346Z",
   "coverage": {
     "pathways": [
       "India",
@@ -42,11 +42,42 @@
   },
   "summary": {
     "live": 0,
-    "recent": 61,
-    "upcoming": 504,
+    "recent": 60,
+    "upcoming": 505,
     "total": 565
   },
   "all": [
+    {
+      "id": "upcoming-167000",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Vida Kovai Kings vs Dindigul Dragons, 25th Match",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Vida Kovai Kings",
+          "shortName": "VKK",
+          "score": ""
+        },
+        {
+          "name": "Dindigul Dragons",
+          "shortName": "DGD",
+          "score": ""
+        }
+      ],
+      "dateLabel": "21 Aug 2026, 03:30 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Match starts at Aug 21, 10:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167000",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-21T10:00:00.000Z",
+      "rawId": 167000
+    },
     {
       "id": "upcoming-169171",
       "status": "upcoming",
@@ -15672,38 +15703,6 @@
       "rawId": 164501
     },
     {
-      "id": "recent-166993",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "SKM Salem Spartans vs Nellai Royal Kings, 24th Match",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "SKM Salem Spartans",
-          "shortName": "SAL",
-          "score": "140/7 (19.6 Ov)"
-        },
-        {
-          "name": "Nellai Royal Kings",
-          "shortName": "NRK",
-          "score": "146/5 (16.1 Ov)"
-        }
-      ],
-      "dateLabel": "20 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Nellai Royal Kings won by 5 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166993",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-20T14:00:00.000Z",
-      "rawId": 166993,
-      "starPerformers": []
-    },
-    {
       "id": "recent-163013",
       "status": "recent",
       "statusLabel": "Past",
@@ -17689,6 +17688,37 @@
   ],
   "live": [],
   "upcoming": [
+    {
+      "id": "upcoming-167000",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Vida Kovai Kings vs Dindigul Dragons, 25th Match",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Vida Kovai Kings",
+          "shortName": "VKK",
+          "score": ""
+        },
+        {
+          "name": "Dindigul Dragons",
+          "shortName": "DGD",
+          "score": ""
+        }
+      ],
+      "dateLabel": "21 Aug 2026, 03:30 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Match starts at Aug 21, 10:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167000",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-21T10:00:00.000Z",
+      "rawId": 167000
+    },
     {
       "id": "upcoming-169171",
       "status": "upcoming",
@@ -33316,38 +33346,6 @@
   ],
   "recent": [
     {
-      "id": "recent-166993",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "SKM Salem Spartans vs Nellai Royal Kings, 24th Match",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "SKM Salem Spartans",
-          "shortName": "SAL",
-          "score": "140/7 (19.6 Ov)"
-        },
-        {
-          "name": "Nellai Royal Kings",
-          "shortName": "NRK",
-          "score": "146/5 (16.1 Ov)"
-        }
-      ],
-      "dateLabel": "20 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Nellai Royal Kings won by 5 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/166993",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-20T14:00:00.000Z",
-      "rawId": 166993,
-      "starPerformers": []
-    },
-    {
       "id": "recent-163013",
       "status": "recent",
       "statusLabel": "Past",
@@ -35346,8 +35344,8 @@
       "label": "League / IPL",
       "order": 2,
       "live": 0,
-      "recent": 1,
-      "upcoming": 1,
+      "recent": 0,
+      "upcoming": 2,
       "total": 2
     },
     {
