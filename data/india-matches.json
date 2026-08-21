@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-21T15:34:22.010Z",
-  "lastCheckedAt": "2026-08-21T15:34:22.010Z",
-  "lastSuccessfulSyncAt": "2026-08-21T15:34:22.010Z",
+  "syncedAt": "2026-08-21T16:01:44.676Z",
+  "lastCheckedAt": "2026-08-21T16:01:44.676Z",
+  "lastSuccessfulSyncAt": "2026-08-21T16:01:44.676Z",
   "coverage": {
     "pathways": [
       "India",
@@ -61,18 +61,18 @@
         {
           "name": "Outer Delhi Warriors",
           "shortName": "ODW",
-          "score": "130/8 (18.1 Ov)"
+          "score": "134/10 (19.1 Ov)"
         },
         {
           "name": "East Delhi Riders",
           "shortName": "EDR",
-          "score": ""
+          "score": "13 (1.5 Ov)"
         }
       ],
       "dateLabel": "21 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "East Delhi Riders opt to bowl",
+      "overview": "East Delhi Riders need 122 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169171",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-21T13:30:00.000Z",
@@ -92,7 +92,7 @@
         {
           "name": "Trichy Grand Cholas",
           "shortName": "TRI",
-          "score": "136/3 (13.6 Ov)"
+          "score": "177/5 (18.1 Ov)"
         },
         {
           "name": "Chepauk Super Gillies",
@@ -17701,18 +17701,18 @@
         {
           "name": "Outer Delhi Warriors",
           "shortName": "ODW",
-          "score": "130/8 (18.1 Ov)"
+          "score": "134/10 (19.1 Ov)"
         },
         {
           "name": "East Delhi Riders",
           "shortName": "EDR",
-          "score": ""
+          "score": "13 (1.5 Ov)"
         }
       ],
       "dateLabel": "21 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "East Delhi Riders opt to bowl",
+      "overview": "East Delhi Riders need 122 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169171",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-21T13:30:00.000Z",
@@ -17732,7 +17732,7 @@
         {
           "name": "Trichy Grand Cholas",
           "shortName": "TRI",
-          "score": "136/3 (13.6 Ov)"
+          "score": "177/5 (18.1 Ov)"
         },
         {
           "name": "Chepauk Super Gillies",
