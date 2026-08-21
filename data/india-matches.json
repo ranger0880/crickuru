@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-21T09:54:37.767Z",
-  "lastCheckedAt": "2026-08-21T09:54:37.767Z",
-  "lastSuccessfulSyncAt": "2026-08-21T09:54:37.767Z",
+  "syncedAt": "2026-08-21T10:20:27.646Z",
+  "lastCheckedAt": "2026-08-21T10:20:27.646Z",
+  "lastSuccessfulSyncAt": "2026-08-21T10:20:27.646Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,16 +41,16 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 0,
+    "live": 1,
     "recent": 60,
-    "upcoming": 505,
+    "upcoming": 504,
     "total": 565
   },
   "all": [
     {
-      "id": "upcoming-167000",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-167000",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -61,7 +61,7 @@
         {
           "name": "Vida Kovai Kings",
           "shortName": "VKK",
-          "score": ""
+          "score": "43 (3.6 Ov)"
         },
         {
           "name": "Dindigul Dragons",
@@ -17686,12 +17686,11 @@
       ]
     }
   ],
-  "live": [],
-  "upcoming": [
+  "live": [
     {
-      "id": "upcoming-167000",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-167000",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -17702,7 +17701,7 @@
         {
           "name": "Vida Kovai Kings",
           "shortName": "VKK",
-          "score": ""
+          "score": "43 (3.6 Ov)"
         },
         {
           "name": "Dindigul Dragons",
@@ -17718,7 +17717,9 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-21T10:00:00.000Z",
       "rawId": 167000
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-169171",
       "status": "upcoming",
@@ -35343,9 +35344,9 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 0,
+      "live": 1,
       "recent": 0,
-      "upcoming": 2,
+      "upcoming": 1,
       "total": 2
     },
     {
