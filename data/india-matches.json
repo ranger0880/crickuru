@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-21T12:02:46.021Z",
-  "lastCheckedAt": "2026-08-21T12:02:46.021Z",
-  "lastSuccessfulSyncAt": "2026-08-21T12:02:46.021Z",
+  "syncedAt": "2026-08-21T13:04:00.920Z",
+  "lastCheckedAt": "2026-08-21T13:04:00.920Z",
+  "lastSuccessfulSyncAt": "2026-08-21T13:04:00.920Z",
   "coverage": {
     "pathways": [
       "India",
@@ -61,18 +61,18 @@
         {
           "name": "Vida Kovai Kings",
           "shortName": "VKK",
-          "score": "96/3 (12.1 Ov)"
+          "score": "171/3 (15.6 Ov)"
         },
         {
           "name": "Dindigul Dragons",
           "shortName": "DGD",
-          "score": ""
+          "score": "15/1 (1.4 Ov)"
         }
       ],
       "dateLabel": "21 Aug 2026, 03:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Play stopped due to wet outfield",
+      "overview": "Dindigul Dragons need 164 runs in 86 balls - 16 Overs game due to rain, DLS Target 179",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167000",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-21T10:00:00.000Z",
@@ -17701,18 +17701,18 @@
         {
           "name": "Vida Kovai Kings",
           "shortName": "VKK",
-          "score": "96/3 (12.1 Ov)"
+          "score": "171/3 (15.6 Ov)"
         },
         {
           "name": "Dindigul Dragons",
           "shortName": "DGD",
-          "score": ""
+          "score": "15/1 (1.4 Ov)"
         }
       ],
       "dateLabel": "21 Aug 2026, 03:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Play stopped due to wet outfield",
+      "overview": "Dindigul Dragons need 164 runs in 86 balls - 16 Overs game due to rain, DLS Target 179",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167000",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-21T10:00:00.000Z",
