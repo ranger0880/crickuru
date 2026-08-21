@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-21T17:44:52.255Z",
-  "lastCheckedAt": "2026-08-21T17:44:52.255Z",
-  "lastSuccessfulSyncAt": "2026-08-21T17:44:52.255Z",
+  "syncedAt": "2026-08-21T18:04:26.480Z",
+  "lastCheckedAt": "2026-08-21T18:04:26.480Z",
+  "lastSuccessfulSyncAt": "2026-08-21T18:04:26.480Z",
   "coverage": {
     "pathways": [
       "India",
@@ -51,10 +51,10 @@
       "id": "live-167003",
       "status": "live",
       "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
       "sourceType": "league",
-      "sourceScope": "global",
+      "sourceScope": "domestic-global",
       "title": "Trichy Grand Cholas vs Chepauk Super Gillies, 26th Match",
       "series": "Tamil Nadu Premier League 2026",
       "teams": [
@@ -66,15 +66,15 @@
         {
           "name": "Chepauk Super Gillies",
           "shortName": "CSG",
-          "score": "156/4 (16.3 Ov)"
+          "score": "170/6 (18.6 Ov)"
         }
       ],
       "dateLabel": "21 Aug 2026, 07:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Chepauk Super Gillies need 36 runs in 21 balls",
+      "overview": "Chepauk Super Gillies need 22 runs in 6 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167003",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic",
       "startTime": "2026-08-21T14:00:00.000Z",
       "rawId": 167003
     },
@@ -17692,10 +17692,10 @@
       "id": "live-167003",
       "status": "live",
       "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
       "sourceType": "league",
-      "sourceScope": "global",
+      "sourceScope": "domestic-global",
       "title": "Trichy Grand Cholas vs Chepauk Super Gillies, 26th Match",
       "series": "Tamil Nadu Premier League 2026",
       "teams": [
@@ -17707,15 +17707,15 @@
         {
           "name": "Chepauk Super Gillies",
           "shortName": "CSG",
-          "score": "156/4 (16.3 Ov)"
+          "score": "170/6 (18.6 Ov)"
         }
       ],
       "dateLabel": "21 Aug 2026, 07:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Chepauk Super Gillies need 36 runs in 21 balls",
+      "overview": "Chepauk Super Gillies need 22 runs in 6 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167003",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic",
       "startTime": "2026-08-21T14:00:00.000Z",
       "rawId": 167003
     }
@@ -35346,10 +35346,10 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 1,
+      "live": 0,
       "recent": 1,
       "upcoming": 0,
-      "total": 2
+      "total": 1
     },
     {
       "id": "women",
@@ -35364,10 +35364,10 @@
       "id": "domestic",
       "label": "Domestic / State",
       "order": 4,
-      "live": 0,
+      "live": 1,
       "recent": 0,
       "upcoming": 417,
-      "total": 417
+      "total": 418
     }
   ],
   "importantMatches": [
