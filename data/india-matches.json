@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-21T14:58:30.175Z",
-  "lastCheckedAt": "2026-08-21T14:58:30.175Z",
-  "lastSuccessfulSyncAt": "2026-08-21T14:58:30.175Z",
+  "syncedAt": "2026-08-21T15:34:22.010Z",
+  "lastCheckedAt": "2026-08-21T15:34:22.010Z",
+  "lastSuccessfulSyncAt": "2026-08-21T15:34:22.010Z",
   "coverage": {
     "pathways": [
       "India",
@@ -61,7 +61,7 @@
         {
           "name": "Outer Delhi Warriors",
           "shortName": "ODW",
-          "score": "73/7 (11.6 Ov)"
+          "score": "130/8 (18.1 Ov)"
         },
         {
           "name": "East Delhi Riders",
@@ -92,7 +92,7 @@
         {
           "name": "Trichy Grand Cholas",
           "shortName": "TRI",
-          "score": "59/2 (4.6 Ov)"
+          "score": "136/3 (13.6 Ov)"
         },
         {
           "name": "Chepauk Super Gillies",
@@ -17701,7 +17701,7 @@
         {
           "name": "Outer Delhi Warriors",
           "shortName": "ODW",
-          "score": "73/7 (11.6 Ov)"
+          "score": "130/8 (18.1 Ov)"
         },
         {
           "name": "East Delhi Riders",
@@ -17732,7 +17732,7 @@
         {
           "name": "Trichy Grand Cholas",
           "shortName": "TRI",
-          "score": "59/2 (4.6 Ov)"
+          "score": "136/3 (13.6 Ov)"
         },
         {
           "name": "Chepauk Super Gillies",
