@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-22T15:48:10.445Z",
-  "lastCheckedAt": "2026-08-22T15:48:10.445Z",
-  "lastSuccessfulSyncAt": "2026-08-22T15:48:10.445Z",
+  "syncedAt": "2026-08-22T16:00:18.623Z",
+  "lastCheckedAt": "2026-08-22T16:00:18.623Z",
+  "lastSuccessfulSyncAt": "2026-08-22T16:00:18.623Z",
   "coverage": {
     "pathways": [
       "India",
@@ -66,13 +66,13 @@
         {
           "name": "West Delhi Lions",
           "shortName": "WDL",
-          "score": ""
+          "score": "4 (0.4 Ov)"
         }
       ],
       "dateLabel": "22 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Innings Break",
+      "overview": "West Delhi Lions need 229 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169177",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-22T13:30:00.000Z",
@@ -92,7 +92,7 @@
         {
           "name": "Madurai Panthers",
           "shortName": "MDP",
-          "score": "127/4 (15.1 Ov)"
+          "score": "153/4 (17.2 Ov)"
         },
         {
           "name": "Nellai Royal Kings",
@@ -17706,13 +17706,13 @@
         {
           "name": "West Delhi Lions",
           "shortName": "WDL",
-          "score": ""
+          "score": "4 (0.4 Ov)"
         }
       ],
       "dateLabel": "22 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Innings Break",
+      "overview": "West Delhi Lions need 229 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169177",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-22T13:30:00.000Z",
@@ -17732,7 +17732,7 @@
         {
           "name": "Madurai Panthers",
           "shortName": "MDP",
-          "score": "127/4 (15.1 Ov)"
+          "score": "153/4 (17.2 Ov)"
         },
         {
           "name": "Nellai Royal Kings",
