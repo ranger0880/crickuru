@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-22T11:28:08.910Z",
-  "lastCheckedAt": "2026-08-22T11:28:08.910Z",
-  "lastSuccessfulSyncAt": "2026-08-22T11:28:08.910Z",
+  "syncedAt": "2026-08-22T11:45:48.867Z",
+  "lastCheckedAt": "2026-08-22T11:45:48.867Z",
+  "lastSuccessfulSyncAt": "2026-08-22T11:45:48.867Z",
   "coverage": {
     "pathways": [
       "India",
@@ -61,7 +61,7 @@
         {
           "name": "SKM Salem Spartans",
           "shortName": "SAL",
-          "score": "156/6 (18.3 Ov)"
+          "score": "169/8 (19.6 Ov)"
         },
         {
           "name": "IDream Tiruppur Tamizhans",
@@ -72,7 +72,7 @@
       "dateLabel": "22 Aug 2026, 03:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "SKM Salem Spartans opt to bat",
+      "overview": "Innings Break",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167013",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-22T10:00:00.000Z",
@@ -17701,7 +17701,7 @@
         {
           "name": "SKM Salem Spartans",
           "shortName": "SAL",
-          "score": "156/6 (18.3 Ov)"
+          "score": "169/8 (19.6 Ov)"
         },
         {
           "name": "IDream Tiruppur Tamizhans",
@@ -17712,7 +17712,7 @@
       "dateLabel": "22 Aug 2026, 03:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "SKM Salem Spartans opt to bat",
+      "overview": "Innings Break",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167013",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-22T10:00:00.000Z",
