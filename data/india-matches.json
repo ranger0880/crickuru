@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-22T17:09:58.271Z",
-  "lastCheckedAt": "2026-08-22T17:09:58.271Z",
-  "lastSuccessfulSyncAt": "2026-08-22T17:09:58.271Z",
+  "syncedAt": "2026-08-22T17:34:22.831Z",
+  "lastCheckedAt": "2026-08-22T17:34:22.831Z",
+  "lastSuccessfulSyncAt": "2026-08-22T17:34:22.831Z",
   "coverage": {
     "pathways": [
       "India",
@@ -66,13 +66,13 @@
         {
           "name": "West Delhi Lions",
           "shortName": "WDL",
-          "score": "140/4 (11.5 Ov)"
+          "score": "176/5 (15.6 Ov)"
         }
       ],
       "dateLabel": "22 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "West Delhi Lions need 93 runs in 49 balls",
+      "overview": "West Delhi Lions need 57 runs in 24 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169177",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-22T13:30:00.000Z",
@@ -97,13 +97,13 @@
         {
           "name": "Nellai Royal Kings",
           "shortName": "NRK",
-          "score": "83/3 (9.6 Ov)"
+          "score": "107/5 (14.5 Ov)"
         }
       ],
       "dateLabel": "22 Aug 2026, 07:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Nellai Royal Kings need 116 runs in 60 balls",
+      "overview": "Nellai Royal Kings need 92 runs in 31 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-22T14:00:00.000Z",
@@ -17706,13 +17706,13 @@
         {
           "name": "West Delhi Lions",
           "shortName": "WDL",
-          "score": "140/4 (11.5 Ov)"
+          "score": "176/5 (15.6 Ov)"
         }
       ],
       "dateLabel": "22 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "West Delhi Lions need 93 runs in 49 balls",
+      "overview": "West Delhi Lions need 57 runs in 24 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169177",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-22T13:30:00.000Z",
@@ -17737,13 +17737,13 @@
         {
           "name": "Nellai Royal Kings",
           "shortName": "NRK",
-          "score": "83/3 (9.6 Ov)"
+          "score": "107/5 (14.5 Ov)"
         }
       ],
       "dateLabel": "22 Aug 2026, 07:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Nellai Royal Kings need 116 runs in 60 balls",
+      "overview": "Nellai Royal Kings need 92 runs in 31 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-22T14:00:00.000Z",
