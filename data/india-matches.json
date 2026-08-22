@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-22T13:47:53.496Z",
-  "lastCheckedAt": "2026-08-22T13:47:53.496Z",
-  "lastSuccessfulSyncAt": "2026-08-22T13:47:53.496Z",
+  "syncedAt": "2026-08-22T14:01:39.140Z",
+  "lastCheckedAt": "2026-08-22T14:01:39.140Z",
+  "lastSuccessfulSyncAt": "2026-08-22T14:01:39.140Z",
   "coverage": {
     "pathways": [
       "India",
@@ -61,7 +61,7 @@
         {
           "name": "Central Delhi Kings",
           "shortName": "CDK",
-          "score": "44 (2.6 Ov)"
+          "score": "59/1 (3.6 Ov)"
         },
         {
           "name": "West Delhi Lions",
@@ -17702,7 +17702,7 @@
         {
           "name": "Central Delhi Kings",
           "shortName": "CDK",
-          "score": "44 (2.6 Ov)"
+          "score": "59/1 (3.6 Ov)"
         },
         {
           "name": "West Delhi Lions",
