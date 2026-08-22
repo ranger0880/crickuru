@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-22T12:50:15.201Z",
-  "lastCheckedAt": "2026-08-22T12:50:15.201Z",
-  "lastSuccessfulSyncAt": "2026-08-22T12:50:15.201Z",
+  "syncedAt": "2026-08-22T13:21:25.568Z",
+  "lastCheckedAt": "2026-08-22T13:21:25.568Z",
+  "lastSuccessfulSyncAt": "2026-08-22T13:21:25.568Z",
   "coverage": {
     "pathways": [
       "India",
@@ -66,13 +66,13 @@
         {
           "name": "IDream Tiruppur Tamizhans",
           "shortName": "ITT",
-          "score": "84/6 (12.2 Ov)"
+          "score": "123/9 (18.5 Ov)"
         }
       ],
       "dateLabel": "22 Aug 2026, 03:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "IDream Tiruppur Tamizhans need 86 runs in 46 balls",
+      "overview": "IDream Tiruppur Tamizhans need 47 runs in 7 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167013",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-22T10:00:00.000Z",
@@ -103,7 +103,7 @@
       "dateLabel": "22 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Match starts at Aug 22, 13:30 GMT",
+      "overview": "Central Delhi Kings opt to bat",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169177",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-22T13:30:00.000Z",
@@ -17706,13 +17706,13 @@
         {
           "name": "IDream Tiruppur Tamizhans",
           "shortName": "ITT",
-          "score": "84/6 (12.2 Ov)"
+          "score": "123/9 (18.5 Ov)"
         }
       ],
       "dateLabel": "22 Aug 2026, 03:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "IDream Tiruppur Tamizhans need 86 runs in 46 balls",
+      "overview": "IDream Tiruppur Tamizhans need 47 runs in 7 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167013",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-22T10:00:00.000Z",
@@ -17745,7 +17745,7 @@
       "dateLabel": "22 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Match starts at Aug 22, 13:30 GMT",
+      "overview": "Central Delhi Kings opt to bat",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169177",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-22T13:30:00.000Z",
