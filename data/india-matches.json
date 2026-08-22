@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-22T10:24:38.855Z",
-  "lastCheckedAt": "2026-08-22T10:24:38.855Z",
-  "lastSuccessfulSyncAt": "2026-08-22T10:24:38.855Z",
+  "syncedAt": "2026-08-22T10:46:36.702Z",
+  "lastCheckedAt": "2026-08-22T10:46:36.702Z",
+  "lastSuccessfulSyncAt": "2026-08-22T10:46:36.702Z",
   "coverage": {
     "pathways": [
       "India",
@@ -61,7 +61,7 @@
         {
           "name": "SKM Salem Spartans",
           "shortName": "SAL",
-          "score": "47/1 (4.2 Ov)"
+          "score": "71/4 (9.1 Ov)"
         },
         {
           "name": "IDream Tiruppur Tamizhans",
@@ -17701,7 +17701,7 @@
         {
           "name": "SKM Salem Spartans",
           "shortName": "SAL",
-          "score": "47/1 (4.2 Ov)"
+          "score": "71/4 (9.1 Ov)"
         },
         {
           "name": "IDream Tiruppur Tamizhans",
