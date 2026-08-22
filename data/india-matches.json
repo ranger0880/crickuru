@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-22T17:52:36.359Z",
-  "lastCheckedAt": "2026-08-22T17:52:36.359Z",
-  "lastSuccessfulSyncAt": "2026-08-22T17:52:36.359Z",
+  "syncedAt": "2026-08-22T18:09:14.007Z",
+  "lastCheckedAt": "2026-08-22T18:09:14.007Z",
+  "lastSuccessfulSyncAt": "2026-08-22T18:09:14.007Z",
   "coverage": {
     "pathways": [
       "India",
@@ -51,10 +51,10 @@
       "id": "live-169177",
       "status": "live",
       "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
       "sourceType": "league",
-      "sourceScope": "global",
+      "sourceScope": "domestic-global",
       "title": "Central Delhi Kings vs West Delhi Lions, 37th Match",
       "series": "Delhi Premier League 2026",
       "teams": [
@@ -66,15 +66,15 @@
         {
           "name": "West Delhi Lions",
           "shortName": "WDL",
-          "score": "189/8 (18.1 Ov)"
+          "score": "211/8 (19.6 Ov)"
         }
       ],
       "dateLabel": "22 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "West Delhi Lions need 44 runs in 11 balls",
+      "overview": "Central Delhi Kings won by 21 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169177",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-schedule/upcoming-series/domestic",
       "startTime": "2026-08-22T13:30:00.000Z",
       "rawId": 169177
     },
@@ -82,10 +82,10 @@
       "id": "live-167017",
       "status": "live",
       "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
       "sourceType": "league",
-      "sourceScope": "global",
+      "sourceScope": "domestic-global",
       "title": "Madurai Panthers vs Nellai Royal Kings, 28th Match",
       "series": "Tamil Nadu Premier League 2026",
       "teams": [
@@ -97,15 +97,15 @@
         {
           "name": "Nellai Royal Kings",
           "shortName": "NRK",
-          "score": "120/6 (17.2 Ov)"
+          "score": "125/9 (18.6 Ov)"
         }
       ],
       "dateLabel": "22 Aug 2026, 07:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Nellai Royal Kings need 79 runs in 16 balls",
+      "overview": "Nellai Royal Kings need 74 runs in 6 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167017",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-schedule/upcoming-series/domestic",
       "startTime": "2026-08-22T14:00:00.000Z",
       "rawId": 167017
     },
@@ -17691,10 +17691,10 @@
       "id": "live-169177",
       "status": "live",
       "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
       "sourceType": "league",
-      "sourceScope": "global",
+      "sourceScope": "domestic-global",
       "title": "Central Delhi Kings vs West Delhi Lions, 37th Match",
       "series": "Delhi Premier League 2026",
       "teams": [
@@ -17706,15 +17706,15 @@
         {
           "name": "West Delhi Lions",
           "shortName": "WDL",
-          "score": "189/8 (18.1 Ov)"
+          "score": "211/8 (19.6 Ov)"
         }
       ],
       "dateLabel": "22 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "West Delhi Lions need 44 runs in 11 balls",
+      "overview": "Central Delhi Kings won by 21 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169177",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-schedule/upcoming-series/domestic",
       "startTime": "2026-08-22T13:30:00.000Z",
       "rawId": 169177
     },
@@ -17722,10 +17722,10 @@
       "id": "live-167017",
       "status": "live",
       "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
       "sourceType": "league",
-      "sourceScope": "global",
+      "sourceScope": "domestic-global",
       "title": "Madurai Panthers vs Nellai Royal Kings, 28th Match",
       "series": "Tamil Nadu Premier League 2026",
       "teams": [
@@ -17737,15 +17737,15 @@
         {
           "name": "Nellai Royal Kings",
           "shortName": "NRK",
-          "score": "120/6 (17.2 Ov)"
+          "score": "125/9 (18.6 Ov)"
         }
       ],
       "dateLabel": "22 Aug 2026, 07:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Nellai Royal Kings need 79 runs in 16 balls",
+      "overview": "Nellai Royal Kings need 74 runs in 6 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167017",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-schedule/upcoming-series/domestic",
       "startTime": "2026-08-22T14:00:00.000Z",
       "rawId": 167017
     }
@@ -35344,10 +35344,10 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 2,
+      "live": 0,
       "recent": 0,
       "upcoming": 0,
-      "total": 2
+      "total": 0
     },
     {
       "id": "women",
@@ -35362,10 +35362,10 @@
       "id": "domestic",
       "label": "Domestic / State",
       "order": 4,
-      "live": 0,
+      "live": 2,
       "recent": 0,
       "upcoming": 417,
-      "total": 417
+      "total": 419
     }
   ],
   "importantMatches": [
