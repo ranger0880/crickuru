@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-22T16:00:18.623Z",
-  "lastCheckedAt": "2026-08-22T16:00:18.623Z",
-  "lastSuccessfulSyncAt": "2026-08-22T16:00:18.623Z",
+  "syncedAt": "2026-08-22T16:31:46.159Z",
+  "lastCheckedAt": "2026-08-22T16:31:46.159Z",
+  "lastSuccessfulSyncAt": "2026-08-22T16:31:46.159Z",
   "coverage": {
     "pathways": [
       "India",
@@ -66,13 +66,13 @@
         {
           "name": "West Delhi Lions",
           "shortName": "WDL",
-          "score": "4 (0.4 Ov)"
+          "score": "72/2 (5.4 Ov)"
         }
       ],
       "dateLabel": "22 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "West Delhi Lions need 229 runs",
+      "overview": "West Delhi Lions need 161 runs in 86 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169177",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-22T13:30:00.000Z",
@@ -92,18 +92,18 @@
         {
           "name": "Madurai Panthers",
           "shortName": "MDP",
-          "score": "153/4 (17.2 Ov)"
+          "score": "198/5 (19.6 Ov)"
         },
         {
           "name": "Nellai Royal Kings",
           "shortName": "NRK",
-          "score": ""
+          "score": "1 (0.4 Ov)"
         }
       ],
       "dateLabel": "22 Aug 2026, 07:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Madurai Panthers opt to bat",
+      "overview": "Nellai Royal Kings need 198 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-22T14:00:00.000Z",
@@ -17706,13 +17706,13 @@
         {
           "name": "West Delhi Lions",
           "shortName": "WDL",
-          "score": "4 (0.4 Ov)"
+          "score": "72/2 (5.4 Ov)"
         }
       ],
       "dateLabel": "22 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "West Delhi Lions need 229 runs",
+      "overview": "West Delhi Lions need 161 runs in 86 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169177",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-22T13:30:00.000Z",
@@ -17732,18 +17732,18 @@
         {
           "name": "Madurai Panthers",
           "shortName": "MDP",
-          "score": "153/4 (17.2 Ov)"
+          "score": "198/5 (19.6 Ov)"
         },
         {
           "name": "Nellai Royal Kings",
           "shortName": "NRK",
-          "score": ""
+          "score": "1 (0.4 Ov)"
         }
       ],
       "dateLabel": "22 Aug 2026, 07:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Madurai Panthers opt to bat",
+      "overview": "Nellai Royal Kings need 198 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-22T14:00:00.000Z",
