@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-22T14:29:39.704Z",
-  "lastCheckedAt": "2026-08-22T14:29:39.704Z",
-  "lastSuccessfulSyncAt": "2026-08-22T14:29:39.704Z",
+  "syncedAt": "2026-08-22T14:50:03.956Z",
+  "lastCheckedAt": "2026-08-22T14:50:03.956Z",
+  "lastSuccessfulSyncAt": "2026-08-22T14:50:03.956Z",
   "coverage": {
     "pathways": [
       "India",
@@ -61,7 +61,7 @@
         {
           "name": "Central Delhi Kings",
           "shortName": "CDK",
-          "score": "112/3 (10.5 Ov)"
+          "score": "140/4 (13.5 Ov)"
         },
         {
           "name": "West Delhi Lions",
@@ -92,7 +92,7 @@
         {
           "name": "Madurai Panthers",
           "shortName": "MDP",
-          "score": "51/3 (5.4 Ov)"
+          "score": "75/3 (9.1 Ov)"
         },
         {
           "name": "Nellai Royal Kings",
@@ -103,7 +103,7 @@
       "dateLabel": "22 Aug 2026, 07:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Madurai Panthers opt to bat",
+      "overview": "Rain stops play",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-22T14:00:00.000Z",
@@ -17701,7 +17701,7 @@
         {
           "name": "Central Delhi Kings",
           "shortName": "CDK",
-          "score": "112/3 (10.5 Ov)"
+          "score": "140/4 (13.5 Ov)"
         },
         {
           "name": "West Delhi Lions",
@@ -17732,7 +17732,7 @@
         {
           "name": "Madurai Panthers",
           "shortName": "MDP",
-          "score": "51/3 (5.4 Ov)"
+          "score": "75/3 (9.1 Ov)"
         },
         {
           "name": "Nellai Royal Kings",
@@ -17743,7 +17743,7 @@
       "dateLabel": "22 Aug 2026, 07:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Madurai Panthers opt to bat",
+      "overview": "Rain stops play",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-22T14:00:00.000Z",
