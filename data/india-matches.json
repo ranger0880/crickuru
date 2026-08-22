@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-22T15:29:28.464Z",
-  "lastCheckedAt": "2026-08-22T15:29:28.464Z",
-  "lastSuccessfulSyncAt": "2026-08-22T15:29:28.464Z",
+  "syncedAt": "2026-08-22T15:48:10.445Z",
+  "lastCheckedAt": "2026-08-22T15:48:10.445Z",
+  "lastSuccessfulSyncAt": "2026-08-22T15:48:10.445Z",
   "coverage": {
     "pathways": [
       "India",
@@ -61,7 +61,7 @@
         {
           "name": "Central Delhi Kings",
           "shortName": "CDK",
-          "score": "221/6 (18.4 Ov)"
+          "score": "232/8 (19.6 Ov)"
         },
         {
           "name": "West Delhi Lions",
@@ -72,7 +72,7 @@
       "dateLabel": "22 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Central Delhi Kings opt to bat",
+      "overview": "Innings Break",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169177",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-22T13:30:00.000Z",
@@ -92,7 +92,7 @@
         {
           "name": "Madurai Panthers",
           "shortName": "MDP",
-          "score": "92/3 (10.6 Ov)"
+          "score": "127/4 (15.1 Ov)"
         },
         {
           "name": "Nellai Royal Kings",
@@ -17701,7 +17701,7 @@
         {
           "name": "Central Delhi Kings",
           "shortName": "CDK",
-          "score": "221/6 (18.4 Ov)"
+          "score": "232/8 (19.6 Ov)"
         },
         {
           "name": "West Delhi Lions",
@@ -17712,7 +17712,7 @@
       "dateLabel": "22 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Central Delhi Kings opt to bat",
+      "overview": "Innings Break",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169177",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-22T13:30:00.000Z",
@@ -17732,7 +17732,7 @@
         {
           "name": "Madurai Panthers",
           "shortName": "MDP",
-          "score": "92/3 (10.6 Ov)"
+          "score": "127/4 (15.1 Ov)"
         },
         {
           "name": "Nellai Royal Kings",
