@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-23T05:25:39.130Z",
-  "lastCheckedAt": "2026-08-23T05:25:39.130Z",
-  "lastSuccessfulSyncAt": "2026-08-23T05:25:39.130Z",
+  "syncedAt": "2026-08-23T05:53:07.997Z",
+  "lastCheckedAt": "2026-08-23T05:53:07.997Z",
+  "lastSuccessfulSyncAt": "2026-08-23T05:53:07.997Z",
   "coverage": {
     "pathways": [
       "India",
@@ -61,7 +61,7 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "75/2 (16.2 Ov)"
+          "score": "106/2 (21.4 Ov)"
         },
         {
           "name": "North East Zone",
@@ -92,7 +92,7 @@
         {
           "name": "North Zone",
           "shortName": "NZONE",
-          "score": "45/2 (16.2 Ov)"
+          "score": "63/2 (22.6 Ov)"
         },
         {
           "name": "West Zone",
@@ -123,7 +123,7 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "37/1 (10.4 Ov)"
+          "score": "54/1 (16.1 Ov)"
         },
         {
           "name": "Sri Lanka",
@@ -17670,7 +17670,7 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "75/2 (16.2 Ov)"
+          "score": "106/2 (21.4 Ov)"
         },
         {
           "name": "North East Zone",
@@ -17701,7 +17701,7 @@
         {
           "name": "North Zone",
           "shortName": "NZONE",
-          "score": "45/2 (16.2 Ov)"
+          "score": "63/2 (22.6 Ov)"
         },
         {
           "name": "West Zone",
@@ -17732,7 +17732,7 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "37/1 (10.4 Ov)"
+          "score": "54/1 (16.1 Ov)"
         },
         {
           "name": "Sri Lanka",
@@ -35321,7 +35321,7 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "75/2 (16.2 Ov)"
+          "score": "106/2 (21.4 Ov)"
         },
         {
           "name": "North East Zone",
@@ -35353,7 +35353,7 @@
         {
           "name": "North Zone",
           "shortName": "NZONE",
-          "score": "45/2 (16.2 Ov)"
+          "score": "63/2 (22.6 Ov)"
         },
         {
           "name": "West Zone",
@@ -35623,7 +35623,7 @@
             {
               "name": "East Zone",
               "shortName": "EZONE",
-              "score": "75/2 (16.2 Ov)"
+              "score": "106/2 (21.4 Ov)"
             },
             {
               "name": "North East Zone",
@@ -35655,7 +35655,7 @@
             {
               "name": "North Zone",
               "shortName": "NZONE",
-              "score": "45/2 (16.2 Ov)"
+              "score": "63/2 (22.6 Ov)"
             },
             {
               "name": "West Zone",
