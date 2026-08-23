@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-23T16:19:25.573Z",
-  "lastCheckedAt": "2026-08-23T16:19:25.573Z",
-  "lastSuccessfulSyncAt": "2026-08-23T16:19:25.573Z",
+  "syncedAt": "2026-08-23T16:46:15.775Z",
+  "lastCheckedAt": "2026-08-23T16:46:15.775Z",
+  "lastSuccessfulSyncAt": "2026-08-23T16:46:15.775Z",
   "coverage": {
     "pathways": [
       "India",
@@ -159,13 +159,13 @@
         {
           "name": "Outer Delhi Warriors",
           "shortName": "ODW",
-          "score": "40/2 (6.2 Ov)"
+          "score": "55/4 (10.6 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Outer Delhi Warriors need 127 runs in 82 balls",
+      "overview": "Outer Delhi Warriors need 112 runs in 54 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169183",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T13:30:00.000Z",
@@ -185,7 +185,7 @@
         {
           "name": "Trichy Grand Cholas",
           "shortName": "TRI",
-          "score": "30/1 (3.1 Ov)"
+          "score": "50/1 (4.5 Ov)"
         },
         {
           "name": "Madurai Panthers",
@@ -17799,13 +17799,13 @@
         {
           "name": "Outer Delhi Warriors",
           "shortName": "ODW",
-          "score": "40/2 (6.2 Ov)"
+          "score": "55/4 (10.6 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Outer Delhi Warriors need 127 runs in 82 balls",
+      "overview": "Outer Delhi Warriors need 112 runs in 54 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169183",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T13:30:00.000Z",
@@ -17825,7 +17825,7 @@
         {
           "name": "Trichy Grand Cholas",
           "shortName": "TRI",
-          "score": "30/1 (3.1 Ov)"
+          "score": "50/1 (4.5 Ov)"
         },
         {
           "name": "Madurai Panthers",
@@ -35383,7 +35383,7 @@
         {
           "name": "Trichy Grand Cholas",
           "shortName": "TRI",
-          "score": "30/1 (3.1 Ov)"
+          "score": "50/1 (4.5 Ov)"
         },
         {
           "name": "Madurai Panthers",
@@ -35969,7 +35969,7 @@
             {
               "name": "Trichy Grand Cholas",
               "shortName": "TRI",
-              "score": "30/1 (3.1 Ov)"
+              "score": "50/1 (4.5 Ov)"
             },
             {
               "name": "Madurai Panthers",
