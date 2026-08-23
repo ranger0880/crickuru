@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-23T14:07:58.196Z",
-  "lastCheckedAt": "2026-08-23T14:07:58.196Z",
-  "lastSuccessfulSyncAt": "2026-08-23T14:07:58.196Z",
+  "syncedAt": "2026-08-23T14:35:49.787Z",
+  "lastCheckedAt": "2026-08-23T14:35:49.787Z",
+  "lastSuccessfulSyncAt": "2026-08-23T14:35:49.787Z",
   "coverage": {
     "pathways": [
       "India",
@@ -154,7 +154,7 @@
         {
           "name": "North Delhi Strikers",
           "shortName": "NDS",
-          "score": "69/3 (6.6 Ov)"
+          "score": "102/4 (13.4 Ov)"
         },
         {
           "name": "Outer Delhi Warriors",
@@ -185,7 +185,7 @@
         {
           "name": "Trichy Grand Cholas",
           "shortName": "TRI",
-          "score": "4 (0.6 Ov)"
+          "score": "25/1 (2.5 Ov)"
         },
         {
           "name": "Madurai Panthers",
@@ -196,7 +196,7 @@
       "dateLabel": "23 Aug 2026, 07:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Madurai Panthers opt to bowl",
+      "overview": "Rain stops play",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167020",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T14:00:00.000Z",
@@ -17794,7 +17794,7 @@
         {
           "name": "North Delhi Strikers",
           "shortName": "NDS",
-          "score": "69/3 (6.6 Ov)"
+          "score": "102/4 (13.4 Ov)"
         },
         {
           "name": "Outer Delhi Warriors",
@@ -17825,7 +17825,7 @@
         {
           "name": "Trichy Grand Cholas",
           "shortName": "TRI",
-          "score": "4 (0.6 Ov)"
+          "score": "25/1 (2.5 Ov)"
         },
         {
           "name": "Madurai Panthers",
@@ -17836,7 +17836,7 @@
       "dateLabel": "23 Aug 2026, 07:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Madurai Panthers opt to bowl",
+      "overview": "Rain stops play",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167020",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T14:00:00.000Z",
@@ -35383,7 +35383,7 @@
         {
           "name": "Trichy Grand Cholas",
           "shortName": "TRI",
-          "score": "4 (0.6 Ov)"
+          "score": "25/1 (2.5 Ov)"
         },
         {
           "name": "Madurai Panthers",
@@ -35394,7 +35394,7 @@
       "dateLabel": "23 Aug 2026, 07:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Madurai Panthers opt to bowl",
+      "overview": "Rain stops play",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167020",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T14:00:00.000Z",
@@ -35969,7 +35969,7 @@
             {
               "name": "Trichy Grand Cholas",
               "shortName": "TRI",
-              "score": "4 (0.6 Ov)"
+              "score": "25/1 (2.5 Ov)"
             },
             {
               "name": "Madurai Panthers",
@@ -35980,7 +35980,7 @@
           "dateLabel": "23 Aug 2026, 07:30 pm",
           "time": "",
           "place": "MA Chidambaram Stadium, Chennai",
-          "overview": "Madurai Panthers opt to bowl",
+          "overview": "Rain stops play",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167020",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-23T14:00:00.000Z",
