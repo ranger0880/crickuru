@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-23T11:44:14.058Z",
-  "lastCheckedAt": "2026-08-23T11:44:14.058Z",
-  "lastSuccessfulSyncAt": "2026-08-23T11:44:14.058Z",
+  "syncedAt": "2026-08-23T11:58:41.211Z",
+  "lastCheckedAt": "2026-08-23T11:58:41.211Z",
+  "lastSuccessfulSyncAt": "2026-08-23T11:58:41.211Z",
   "coverage": {
     "pathways": [
       "India",
@@ -85,7 +85,7 @@
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "domestic",
-      "sourceScope": "global",
+      "sourceScope": "domestic-global",
       "title": "North Zone vs West Zone, 2nd Quarter final",
       "series": "Duleep Trophy 2026",
       "teams": [
@@ -105,7 +105,7 @@
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
       "overview": "Day 1: Stumps - West Zone trail by 220 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-schedule/upcoming-series/domestic",
       "startTime": "2026-08-23T04:00:00.000Z",
       "rawId": 163031
     },
@@ -123,7 +123,7 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "295/4 (82.3 Ov)"
+          "score": "296/5 (84.2 Ov)"
         },
         {
           "name": "Sri Lanka",
@@ -17694,7 +17694,7 @@
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "domestic",
-      "sourceScope": "global",
+      "sourceScope": "domestic-global",
       "title": "North Zone vs West Zone, 2nd Quarter final",
       "series": "Duleep Trophy 2026",
       "teams": [
@@ -17714,7 +17714,7 @@
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
       "overview": "Day 1: Stumps - West Zone trail by 220 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-schedule/upcoming-series/domestic",
       "startTime": "2026-08-23T04:00:00.000Z",
       "rawId": 163031
     },
@@ -17732,7 +17732,7 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "295/4 (82.3 Ov)"
+          "score": "296/5 (84.2 Ov)"
         },
         {
           "name": "Sri Lanka",
@@ -35346,7 +35346,7 @@
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "domestic",
-      "sourceScope": "global",
+      "sourceScope": "domestic-global",
       "title": "North Zone vs West Zone, 2nd Quarter final",
       "series": "Duleep Trophy 2026",
       "teams": [
@@ -35366,7 +35366,7 @@
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
       "overview": "Day 1: Stumps - West Zone trail by 220 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-schedule/upcoming-series/domestic",
       "startTime": "2026-08-23T04:00:00.000Z",
       "rawId": 163031,
       "importance": "Knockout stage"
@@ -35648,7 +35648,7 @@
           "level": "domestic",
           "levelLabel": "Domestic / State",
           "sourceType": "domestic",
-          "sourceScope": "global",
+          "sourceScope": "domestic-global",
           "title": "North Zone vs West Zone, 2nd Quarter final",
           "series": "Duleep Trophy 2026",
           "teams": [
@@ -35668,7 +35668,7 @@
           "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
           "overview": "Day 1: Stumps - West Zone trail by 220 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "listUrl": "https://www.cricbuzz.com/cricket-schedule/upcoming-series/domestic",
           "startTime": "2026-08-23T04:00:00.000Z",
           "rawId": 163031,
           "importance": "Knockout stage"
