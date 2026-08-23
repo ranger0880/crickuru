@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-23T07:06:12.947Z",
-  "lastCheckedAt": "2026-08-23T07:06:12.947Z",
-  "lastSuccessfulSyncAt": "2026-08-23T07:06:12.947Z",
+  "syncedAt": "2026-08-23T07:43:18.310Z",
+  "lastCheckedAt": "2026-08-23T07:43:18.310Z",
+  "lastSuccessfulSyncAt": "2026-08-23T07:43:18.310Z",
   "coverage": {
     "pathways": [
       "India",
@@ -61,7 +61,7 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "138/5 (29.3 Ov)"
+          "score": "157/5 (36.5 Ov)"
         },
         {
           "name": "North East Zone",
@@ -72,7 +72,7 @@
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 1: Lunch Break",
+      "overview": "Day 1: 2nd Session",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -92,7 +92,7 @@
         {
           "name": "North Zone",
           "shortName": "NZONE",
-          "score": "114/2 (31.6 Ov)"
+          "score": "126/3 (38.6 Ov)"
         },
         {
           "name": "West Zone",
@@ -103,7 +103,7 @@
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 1: Lunch Break",
+      "overview": "Day 1: 2nd Session",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -123,7 +123,7 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "88/2 (24.6 Ov)"
+          "score": "115/2 (32.5 Ov)"
         },
         {
           "name": "Sri Lanka",
@@ -134,7 +134,7 @@
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 1: Lunch Break",
+      "overview": "Day 1: 2nd Session",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
@@ -17670,7 +17670,7 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "138/5 (29.3 Ov)"
+          "score": "157/5 (36.5 Ov)"
         },
         {
           "name": "North East Zone",
@@ -17681,7 +17681,7 @@
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 1: Lunch Break",
+      "overview": "Day 1: 2nd Session",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -17701,7 +17701,7 @@
         {
           "name": "North Zone",
           "shortName": "NZONE",
-          "score": "114/2 (31.6 Ov)"
+          "score": "126/3 (38.6 Ov)"
         },
         {
           "name": "West Zone",
@@ -17712,7 +17712,7 @@
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 1: Lunch Break",
+      "overview": "Day 1: 2nd Session",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -17732,7 +17732,7 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "88/2 (24.6 Ov)"
+          "score": "115/2 (32.5 Ov)"
         },
         {
           "name": "Sri Lanka",
@@ -17743,7 +17743,7 @@
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 1: Lunch Break",
+      "overview": "Day 1: 2nd Session",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
@@ -35321,7 +35321,7 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "138/5 (29.3 Ov)"
+          "score": "157/5 (36.5 Ov)"
         },
         {
           "name": "North East Zone",
@@ -35332,7 +35332,7 @@
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 1: Lunch Break",
+      "overview": "Day 1: 2nd Session",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -35353,7 +35353,7 @@
         {
           "name": "North Zone",
           "shortName": "NZONE",
-          "score": "114/2 (31.6 Ov)"
+          "score": "126/3 (38.6 Ov)"
         },
         {
           "name": "West Zone",
@@ -35364,7 +35364,7 @@
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 1: Lunch Break",
+      "overview": "Day 1: 2nd Session",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -35623,7 +35623,7 @@
             {
               "name": "East Zone",
               "shortName": "EZONE",
-              "score": "138/5 (29.3 Ov)"
+              "score": "157/5 (36.5 Ov)"
             },
             {
               "name": "North East Zone",
@@ -35634,7 +35634,7 @@
           "dateLabel": "23 Aug 2026, 09:30 am",
           "time": "",
           "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-          "overview": "Day 1: Lunch Break",
+          "overview": "Day 1: 2nd Session",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-23T04:00:00.000Z",
@@ -35655,7 +35655,7 @@
             {
               "name": "North Zone",
               "shortName": "NZONE",
-              "score": "114/2 (31.6 Ov)"
+              "score": "126/3 (38.6 Ov)"
             },
             {
               "name": "West Zone",
@@ -35666,7 +35666,7 @@
           "dateLabel": "23 Aug 2026, 09:30 am",
           "time": "",
           "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-          "overview": "Day 1: Lunch Break",
+          "overview": "Day 1: 2nd Session",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-23T04:00:00.000Z",
