@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-23T11:58:41.211Z",
-  "lastCheckedAt": "2026-08-23T11:58:41.211Z",
-  "lastSuccessfulSyncAt": "2026-08-23T11:58:41.211Z",
+  "syncedAt": "2026-08-23T12:41:41.494Z",
+  "lastCheckedAt": "2026-08-23T12:41:41.494Z",
+  "lastSuccessfulSyncAt": "2026-08-23T12:41:41.494Z",
   "coverage": {
     "pathways": [
       "India",
@@ -84,8 +84,8 @@
       "statusLabel": "Live",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "domestic-global",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
       "title": "North Zone vs West Zone, 2nd Quarter final",
       "series": "Duleep Trophy 2026",
       "teams": [
@@ -97,7 +97,7 @@
         {
           "name": "West Zone",
           "shortName": "WZONE",
-          "score": "31/2 (9.6 Ov)"
+          "score": "31/2 (10 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
@@ -105,7 +105,7 @@
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
       "overview": "Day 1: Stumps - West Zone trail by 220 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
-      "listUrl": "https://www.cricbuzz.com/cricket-schedule/upcoming-series/domestic",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-23T04:00:00.000Z",
       "rawId": 163031
     },
@@ -123,7 +123,7 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "296/5 (84.2 Ov)"
+          "score": "300/5 (84.6 Ov)"
         },
         {
           "name": "Sri Lanka",
@@ -134,7 +134,7 @@
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 1: 3rd Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
@@ -17693,8 +17693,8 @@
       "statusLabel": "Live",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "domestic-global",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
       "title": "North Zone vs West Zone, 2nd Quarter final",
       "series": "Duleep Trophy 2026",
       "teams": [
@@ -17706,7 +17706,7 @@
         {
           "name": "West Zone",
           "shortName": "WZONE",
-          "score": "31/2 (9.6 Ov)"
+          "score": "31/2 (10 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
@@ -17714,7 +17714,7 @@
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
       "overview": "Day 1: Stumps - West Zone trail by 220 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
-      "listUrl": "https://www.cricbuzz.com/cricket-schedule/upcoming-series/domestic",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-23T04:00:00.000Z",
       "rawId": 163031
     },
@@ -17732,7 +17732,7 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "296/5 (84.2 Ov)"
+          "score": "300/5 (84.6 Ov)"
         },
         {
           "name": "Sri Lanka",
@@ -17743,7 +17743,7 @@
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 1: 3rd Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
@@ -35345,8 +35345,8 @@
       "statusLabel": "Live",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "domestic-global",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
       "title": "North Zone vs West Zone, 2nd Quarter final",
       "series": "Duleep Trophy 2026",
       "teams": [
@@ -35358,7 +35358,7 @@
         {
           "name": "West Zone",
           "shortName": "WZONE",
-          "score": "31/2 (9.6 Ov)"
+          "score": "31/2 (10 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
@@ -35366,7 +35366,7 @@
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
       "overview": "Day 1: Stumps - West Zone trail by 220 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
-      "listUrl": "https://www.cricbuzz.com/cricket-schedule/upcoming-series/domestic",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-23T04:00:00.000Z",
       "rawId": 163031,
       "importance": "Knockout stage"
@@ -35647,8 +35647,8 @@
           "statusLabel": "Live",
           "level": "domestic",
           "levelLabel": "Domestic / State",
-          "sourceType": "domestic",
-          "sourceScope": "domestic-global",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
           "title": "North Zone vs West Zone, 2nd Quarter final",
           "series": "Duleep Trophy 2026",
           "teams": [
@@ -35660,7 +35660,7 @@
             {
               "name": "West Zone",
               "shortName": "WZONE",
-              "score": "31/2 (9.6 Ov)"
+              "score": "31/2 (10 Ov)"
             }
           ],
           "dateLabel": "23 Aug 2026, 09:30 am",
@@ -35668,7 +35668,7 @@
           "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
           "overview": "Day 1: Stumps - West Zone trail by 220 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
-          "listUrl": "https://www.cricbuzz.com/cricket-schedule/upcoming-series/domestic",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
           "startTime": "2026-08-23T04:00:00.000Z",
           "rawId": 163031,
           "importance": "Knockout stage"
