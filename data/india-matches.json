@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-23T11:00:29.757Z",
-  "lastCheckedAt": "2026-08-23T11:00:29.757Z",
-  "lastSuccessfulSyncAt": "2026-08-23T11:00:29.757Z",
+  "syncedAt": "2026-08-23T11:26:29.327Z",
+  "lastCheckedAt": "2026-08-23T11:26:29.327Z",
+  "lastSuccessfulSyncAt": "2026-08-23T11:26:29.327Z",
   "coverage": {
     "pathways": [
       "India",
@@ -61,7 +61,7 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "348/6 (78.3 Ov)"
+          "score": "355/6 (79.6 Ov)"
         },
         {
           "name": "North East Zone",
@@ -72,7 +72,7 @@
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 1: 3rd Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -97,13 +97,13 @@
         {
           "name": "West Zone",
           "shortName": "WZONE",
-          "score": "30/1 (7.6 Ov)"
+          "score": "31/2 (9.6 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 1: 3rd Session - West Zone trail by 221 runs",
+      "overview": "Day 1: Stumps - West Zone trail by 220 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -123,7 +123,7 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "270/3 (72.2 Ov)"
+          "score": "291/4 (79.1 Ov)"
         },
         {
           "name": "Sri Lanka",
@@ -17670,7 +17670,7 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "348/6 (78.3 Ov)"
+          "score": "355/6 (79.6 Ov)"
         },
         {
           "name": "North East Zone",
@@ -17681,7 +17681,7 @@
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 1: 3rd Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -17706,13 +17706,13 @@
         {
           "name": "West Zone",
           "shortName": "WZONE",
-          "score": "30/1 (7.6 Ov)"
+          "score": "31/2 (9.6 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 1: 3rd Session - West Zone trail by 221 runs",
+      "overview": "Day 1: Stumps - West Zone trail by 220 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -17732,7 +17732,7 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "270/3 (72.2 Ov)"
+          "score": "291/4 (79.1 Ov)"
         },
         {
           "name": "Sri Lanka",
@@ -35321,7 +35321,7 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "348/6 (78.3 Ov)"
+          "score": "355/6 (79.6 Ov)"
         },
         {
           "name": "North East Zone",
@@ -35332,7 +35332,7 @@
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 1: 3rd Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -35358,13 +35358,13 @@
         {
           "name": "West Zone",
           "shortName": "WZONE",
-          "score": "30/1 (7.6 Ov)"
+          "score": "31/2 (9.6 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 1: 3rd Session - West Zone trail by 221 runs",
+      "overview": "Day 1: Stumps - West Zone trail by 220 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -35623,7 +35623,7 @@
             {
               "name": "East Zone",
               "shortName": "EZONE",
-              "score": "348/6 (78.3 Ov)"
+              "score": "355/6 (79.6 Ov)"
             },
             {
               "name": "North East Zone",
@@ -35634,7 +35634,7 @@
           "dateLabel": "23 Aug 2026, 09:30 am",
           "time": "",
           "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-          "overview": "Day 1: 3rd Session",
+          "overview": "Day 1: Stumps",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-23T04:00:00.000Z",
@@ -35660,13 +35660,13 @@
             {
               "name": "West Zone",
               "shortName": "WZONE",
-              "score": "30/1 (7.6 Ov)"
+              "score": "31/2 (9.6 Ov)"
             }
           ],
           "dateLabel": "23 Aug 2026, 09:30 am",
           "time": "",
           "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-          "overview": "Day 1: 3rd Session - West Zone trail by 221 runs",
+          "overview": "Day 1: Stumps - West Zone trail by 220 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-23T04:00:00.000Z",
