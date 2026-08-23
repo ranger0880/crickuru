@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-23T17:29:10.758Z",
-  "lastCheckedAt": "2026-08-23T17:29:10.758Z",
-  "lastSuccessfulSyncAt": "2026-08-23T17:29:10.758Z",
+  "syncedAt": "2026-08-23T17:47:43.408Z",
+  "lastCheckedAt": "2026-08-23T17:47:43.408Z",
+  "lastSuccessfulSyncAt": "2026-08-23T17:47:43.408Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,8 +41,8 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 5,
-    "recent": 60,
+    "live": 4,
+    "recent": 61,
     "upcoming": 500,
     "total": 565
   },
@@ -159,48 +159,17 @@
         {
           "name": "Outer Delhi Warriors",
           "shortName": "ODW",
-          "score": "85/6 (15.2 Ov)"
+          "score": "127/7 (19.6 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Outer Delhi Warriors need 82 runs in 28 balls",
+      "overview": "North Delhi Strikers won by 39 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169183",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T13:30:00.000Z",
       "rawId": 169183
-    },
-    {
-      "id": "live-167020",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Trichy Grand Cholas vs Madurai Panthers, Qualifier 1",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Trichy Grand Cholas",
-          "shortName": "TRI",
-          "score": "50/1 (4.5 Ov)"
-        },
-        {
-          "name": "Madurai Panthers",
-          "shortName": "MDP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "23 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "13 overs game due to rain",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167020",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-23T14:00:00.000Z",
-      "rawId": 167020
     },
     {
       "id": "upcoming-163043",
@@ -15703,6 +15672,38 @@
       "rawId": 164501
     },
     {
+      "id": "recent-167020",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Trichy Grand Cholas vs Madurai Panthers, Qualifier 1",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Trichy Grand Cholas",
+          "shortName": "TRI",
+          "score": "50/1 (4.5 Ov)"
+        },
+        {
+          "name": "Madurai Panthers",
+          "shortName": "MDP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "23 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "13 overs game due to rain",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167020",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-23T14:00:00.000Z",
+      "rawId": 167020,
+      "starPerformers": []
+    },
+    {
       "id": "recent-163013",
       "status": "recent",
       "statusLabel": "Past",
@@ -17799,48 +17800,17 @@
         {
           "name": "Outer Delhi Warriors",
           "shortName": "ODW",
-          "score": "85/6 (15.2 Ov)"
+          "score": "127/7 (19.6 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Outer Delhi Warriors need 82 runs in 28 balls",
+      "overview": "North Delhi Strikers won by 39 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169183",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T13:30:00.000Z",
       "rawId": 169183
-    },
-    {
-      "id": "live-167020",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Trichy Grand Cholas vs Madurai Panthers, Qualifier 1",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Trichy Grand Cholas",
-          "shortName": "TRI",
-          "score": "50/1 (4.5 Ov)"
-        },
-        {
-          "name": "Madurai Panthers",
-          "shortName": "MDP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "23 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "13 overs game due to rain",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167020",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-23T14:00:00.000Z",
-      "rawId": 167020
     }
   ],
   "upcoming": [
@@ -33347,6 +33317,38 @@
   ],
   "recent": [
     {
+      "id": "recent-167020",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Trichy Grand Cholas vs Madurai Panthers, Qualifier 1",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Trichy Grand Cholas",
+          "shortName": "TRI",
+          "score": "50/1 (4.5 Ov)"
+        },
+        {
+          "name": "Madurai Panthers",
+          "shortName": "MDP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "23 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "13 overs game due to rain",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167020",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-23T14:00:00.000Z",
+      "rawId": 167020,
+      "starPerformers": []
+    },
+    {
       "id": "recent-163013",
       "status": "recent",
       "statusLabel": "Past",
@@ -35344,8 +35346,8 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 2,
-      "recent": 0,
+      "live": 1,
+      "recent": 1,
       "upcoming": 0,
       "total": 2
     },
@@ -35369,38 +35371,6 @@
     }
   ],
   "importantMatches": [
-    {
-      "id": "live-167020",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Trichy Grand Cholas vs Madurai Panthers, Qualifier 1",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Trichy Grand Cholas",
-          "shortName": "TRI",
-          "score": "50/1 (4.5 Ov)"
-        },
-        {
-          "name": "Madurai Panthers",
-          "shortName": "MDP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "23 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "13 overs game due to rain",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167020",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-23T14:00:00.000Z",
-      "rawId": 167020,
-      "importance": "Knockout stage"
-    },
     {
       "id": "live-163027",
       "status": "live",
@@ -35655,6 +35625,39 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163047,
+      "importance": "Knockout stage"
+    },
+    {
+      "id": "recent-167020",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Trichy Grand Cholas vs Madurai Panthers, Qualifier 1",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Trichy Grand Cholas",
+          "shortName": "TRI",
+          "score": "50/1 (4.5 Ov)"
+        },
+        {
+          "name": "Madurai Panthers",
+          "shortName": "MDP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "23 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "13 overs game due to rain",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167020",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-23T14:00:00.000Z",
+      "rawId": 167020,
+      "starPerformers": [],
       "importance": "Knockout stage"
     }
   ],
@@ -35949,16 +35952,16 @@
       "level": "league",
       "levelLabel": "League / IPL",
       "total": 1,
-      "live": 1,
+      "live": 0,
       "upcoming": 0,
-      "recent": 0,
+      "recent": 1,
       "startTime": "2026-08-23T14:00:00.000Z",
       "endTime": "2026-08-23T14:00:00.000Z",
       "matches": [
         {
-          "id": "live-167020",
-          "status": "live",
-          "statusLabel": "Live",
+          "id": "recent-167020",
+          "status": "recent",
+          "statusLabel": "Past",
           "level": "league",
           "levelLabel": "League / IPL",
           "sourceType": "league",
@@ -35985,11 +35988,52 @@
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-23T14:00:00.000Z",
           "rawId": 167020,
+          "starPerformers": [],
           "importance": "Knockout stage"
         }
       ]
     }
   ],
-  "importantResultsByMonth": [],
+  "importantResultsByMonth": [
+    {
+      "month": "2026-08",
+      "label": "August 2026",
+      "matches": [
+        {
+          "id": "recent-167020",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "league",
+          "levelLabel": "League / IPL",
+          "sourceType": "league",
+          "sourceScope": "global",
+          "title": "Trichy Grand Cholas vs Madurai Panthers, Qualifier 1",
+          "series": "Tamil Nadu Premier League 2026",
+          "teams": [
+            {
+              "name": "Trichy Grand Cholas",
+              "shortName": "TRI",
+              "score": "50/1 (4.5 Ov)"
+            },
+            {
+              "name": "Madurai Panthers",
+              "shortName": "MDP",
+              "score": ""
+            }
+          ],
+          "dateLabel": "23 Aug 2026, 07:30 pm",
+          "time": "",
+          "place": "MA Chidambaram Stadium, Chennai",
+          "overview": "13 overs game due to rain",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167020",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "startTime": "2026-08-23T14:00:00.000Z",
+          "rawId": 167020,
+          "starPerformers": [],
+          "importance": "Knockout stage"
+        }
+      ]
+    }
+  ],
   "errors": []
 }
