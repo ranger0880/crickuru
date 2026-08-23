@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-23T04:56:46.943Z",
-  "lastCheckedAt": "2026-08-23T04:56:46.943Z",
-  "lastSuccessfulSyncAt": "2026-08-23T04:56:46.943Z",
+  "syncedAt": "2026-08-23T05:25:39.130Z",
+  "lastCheckedAt": "2026-08-23T05:25:39.130Z",
+  "lastSuccessfulSyncAt": "2026-08-23T05:25:39.130Z",
   "coverage": {
     "pathways": [
       "India",
@@ -42,8 +42,8 @@
   },
   "summary": {
     "live": 3,
-    "recent": 61,
-    "upcoming": 500,
+    "recent": 60,
+    "upcoming": 501,
     "total": 564
   },
   "all": [
@@ -61,7 +61,7 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "50/2 (10.4 Ov)"
+          "score": "75/2 (16.2 Ov)"
         },
         {
           "name": "North East Zone",
@@ -84,15 +84,15 @@
       "statusLabel": "Live",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "North Zone vs West Zone, 2nd Quarter final",
       "series": "Duleep Trophy 2026",
       "teams": [
         {
           "name": "North Zone",
           "shortName": "NZONE",
-          "score": "32/1 (10.5 Ov)"
+          "score": "45/2 (16.2 Ov)"
         },
         {
           "name": "West Zone",
@@ -105,7 +105,7 @@
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
       "overview": "Day 1: 1st Session",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
       "rawId": 163031
     },
@@ -123,7 +123,7 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "17 (4.5 Ov)"
+          "score": "37/1 (10.4 Ov)"
         },
         {
           "name": "Sri Lanka",
@@ -139,6 +139,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
       "rawId": 163017
+    },
+    {
+      "id": "upcoming-167020",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Madurai Panthers vs Trichy Grand Cholas, Qualifier 1",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Madurai Panthers",
+          "shortName": "MDP",
+          "score": ""
+        },
+        {
+          "name": "Trichy Grand Cholas",
+          "shortName": "TRI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "23 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Match starts at Aug 23, 14:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167020",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-23T14:00:00.000Z",
+      "rawId": 167020
     },
     {
       "id": "upcoming-163043",
@@ -15641,38 +15672,6 @@
       "rawId": 164501
     },
     {
-      "id": "recent-167017",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Madurai Panthers vs Nellai Royal Kings, 28th Match",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Madurai Panthers",
-          "shortName": "MDP",
-          "score": "198/5 (19.6 Ov)"
-        },
-        {
-          "name": "Nellai Royal Kings",
-          "shortName": "NRK",
-          "score": "126/10 (19.1 Ov)"
-        }
-      ],
-      "dateLabel": "22 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Madurai Panthers won by 72 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167017",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-22T14:00:00.000Z",
-      "rawId": 167017,
-      "starPerformers": []
-    },
-    {
       "id": "recent-163013",
       "status": "recent",
       "statusLabel": "Past",
@@ -17671,7 +17670,7 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "50/2 (10.4 Ov)"
+          "score": "75/2 (16.2 Ov)"
         },
         {
           "name": "North East Zone",
@@ -17694,15 +17693,15 @@
       "statusLabel": "Live",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "North Zone vs West Zone, 2nd Quarter final",
       "series": "Duleep Trophy 2026",
       "teams": [
         {
           "name": "North Zone",
           "shortName": "NZONE",
-          "score": "32/1 (10.5 Ov)"
+          "score": "45/2 (16.2 Ov)"
         },
         {
           "name": "West Zone",
@@ -17715,7 +17714,7 @@
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
       "overview": "Day 1: 1st Session",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
       "rawId": 163031
     },
@@ -17733,7 +17732,7 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "17 (4.5 Ov)"
+          "score": "37/1 (10.4 Ov)"
         },
         {
           "name": "Sri Lanka",
@@ -17752,6 +17751,37 @@
     }
   ],
   "upcoming": [
+    {
+      "id": "upcoming-167020",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Madurai Panthers vs Trichy Grand Cholas, Qualifier 1",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Madurai Panthers",
+          "shortName": "MDP",
+          "score": ""
+        },
+        {
+          "name": "Trichy Grand Cholas",
+          "shortName": "TRI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "23 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Match starts at Aug 23, 14:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167020",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-23T14:00:00.000Z",
+      "rawId": 167020
+    },
     {
       "id": "upcoming-163043",
       "status": "upcoming",
@@ -33255,38 +33285,6 @@
   ],
   "recent": [
     {
-      "id": "recent-167017",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Madurai Panthers vs Nellai Royal Kings, 28th Match",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Madurai Panthers",
-          "shortName": "MDP",
-          "score": "198/5 (19.6 Ov)"
-        },
-        {
-          "name": "Nellai Royal Kings",
-          "shortName": "NRK",
-          "score": "126/10 (19.1 Ov)"
-        }
-      ],
-      "dateLabel": "22 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Madurai Panthers won by 72 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167017",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-22T14:00:00.000Z",
-      "rawId": 167017,
-      "starPerformers": []
-    },
-    {
       "id": "recent-163013",
       "status": "recent",
       "statusLabel": "Past",
@@ -35285,8 +35283,8 @@
       "label": "League / IPL",
       "order": 2,
       "live": 0,
-      "recent": 1,
-      "upcoming": 0,
+      "recent": 0,
+      "upcoming": 1,
       "total": 1
     },
     {
@@ -35323,7 +35321,7 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "50/2 (10.4 Ov)"
+          "score": "75/2 (16.2 Ov)"
         },
         {
           "name": "North East Zone",
@@ -35347,15 +35345,15 @@
       "statusLabel": "Live",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "North Zone vs West Zone, 2nd Quarter final",
       "series": "Duleep Trophy 2026",
       "teams": [
         {
           "name": "North Zone",
           "shortName": "NZONE",
-          "score": "32/1 (10.5 Ov)"
+          "score": "45/2 (16.2 Ov)"
         },
         {
           "name": "West Zone",
@@ -35368,7 +35366,7 @@
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
       "overview": "Day 1: 1st Session",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
       "rawId": 163031,
       "importance": "Knockout stage"
@@ -35564,6 +35562,38 @@
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163047,
       "importance": "Knockout stage"
+    },
+    {
+      "id": "upcoming-167020",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Madurai Panthers vs Trichy Grand Cholas, Qualifier 1",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Madurai Panthers",
+          "shortName": "MDP",
+          "score": ""
+        },
+        {
+          "name": "Trichy Grand Cholas",
+          "shortName": "TRI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "23 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Match starts at Aug 23, 14:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167020",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-23T14:00:00.000Z",
+      "rawId": 167020,
+      "importance": "Knockout stage"
     }
   ],
   "importantTournaments": [
@@ -35593,7 +35623,7 @@
             {
               "name": "East Zone",
               "shortName": "EZONE",
-              "score": "50/2 (10.4 Ov)"
+              "score": "75/2 (16.2 Ov)"
             },
             {
               "name": "North East Zone",
@@ -35617,15 +35647,15 @@
           "statusLabel": "Live",
           "level": "domestic",
           "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
+          "sourceType": "domestic",
+          "sourceScope": "global",
           "title": "North Zone vs West Zone, 2nd Quarter final",
           "series": "Duleep Trophy 2026",
           "teams": [
             {
               "name": "North Zone",
               "shortName": "NZONE",
-              "score": "32/1 (10.5 Ov)"
+              "score": "45/2 (16.2 Ov)"
             },
             {
               "name": "West Zone",
@@ -35638,7 +35668,7 @@
           "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
           "overview": "Day 1: 1st Session",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-23T04:00:00.000Z",
           "rawId": 163031,
           "importance": "Knockout stage"
@@ -35848,6 +35878,52 @@
           "startTime": "2026-09-05T14:30:00.000Z",
           "rawId": 169850,
           "importance": "Major tournament"
+        }
+      ]
+    },
+    {
+      "id": "tamil-nadu-premier-league-2026",
+      "series": "Tamil Nadu Premier League 2026",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "total": 1,
+      "live": 0,
+      "upcoming": 1,
+      "recent": 0,
+      "startTime": "2026-08-23T14:00:00.000Z",
+      "endTime": "2026-08-23T14:00:00.000Z",
+      "matches": [
+        {
+          "id": "upcoming-167020",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "league",
+          "levelLabel": "League / IPL",
+          "sourceType": "league",
+          "sourceScope": "global",
+          "title": "Madurai Panthers vs Trichy Grand Cholas, Qualifier 1",
+          "series": "Tamil Nadu Premier League 2026",
+          "teams": [
+            {
+              "name": "Madurai Panthers",
+              "shortName": "MDP",
+              "score": ""
+            },
+            {
+              "name": "Trichy Grand Cholas",
+              "shortName": "TRI",
+              "score": ""
+            }
+          ],
+          "dateLabel": "23 Aug 2026, 07:30 pm",
+          "time": "",
+          "place": "MA Chidambaram Stadium, Chennai",
+          "overview": "Match starts at Aug 23, 14:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167020",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "startTime": "2026-08-23T14:00:00.000Z",
+          "rawId": 167020,
+          "importance": "Knockout stage"
         }
       ]
     }
