@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-23T14:35:49.787Z",
-  "lastCheckedAt": "2026-08-23T14:35:49.787Z",
-  "lastSuccessfulSyncAt": "2026-08-23T14:35:49.787Z",
+  "syncedAt": "2026-08-23T14:55:35.786Z",
+  "lastCheckedAt": "2026-08-23T14:55:35.786Z",
+  "lastSuccessfulSyncAt": "2026-08-23T14:55:35.786Z",
   "coverage": {
     "pathways": [
       "India",
@@ -154,7 +154,7 @@
         {
           "name": "North Delhi Strikers",
           "shortName": "NDS",
-          "score": "102/4 (13.4 Ov)"
+          "score": "145/4 (16.6 Ov)"
         },
         {
           "name": "Outer Delhi Warriors",
@@ -17794,7 +17794,7 @@
         {
           "name": "North Delhi Strikers",
           "shortName": "NDS",
-          "score": "102/4 (13.4 Ov)"
+          "score": "145/4 (16.6 Ov)"
         },
         {
           "name": "Outer Delhi Warriors",
