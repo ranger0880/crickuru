@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-24T11:13:18.334Z",
-  "lastCheckedAt": "2026-08-24T11:13:18.334Z",
-  "lastSuccessfulSyncAt": "2026-08-24T11:13:18.334Z",
+  "syncedAt": "2026-08-24T11:44:03.128Z",
+  "lastCheckedAt": "2026-08-24T11:44:03.128Z",
+  "lastSuccessfulSyncAt": "2026-08-24T11:44:03.128Z",
   "coverage": {
     "pathways": [
       "India",
@@ -123,18 +123,18 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "483/8 (135.5 Ov)"
+          "score": "503/9 (137.6 Ov)"
         },
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": ""
+          "score": "(0.2 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 2: 3rd Session",
+      "overview": "Day 2: Rain stops play - Sri Lanka trail by 503 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
@@ -17763,18 +17763,18 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "483/8 (135.5 Ov)"
+          "score": "503/9 (137.6 Ov)"
         },
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": ""
+          "score": "(0.2 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 2: 3rd Session",
+      "overview": "Day 2: Rain stops play - Sri Lanka trail by 503 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
