@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-24T09:10:44.838Z",
-  "lastCheckedAt": "2026-08-24T09:10:44.838Z",
-  "lastSuccessfulSyncAt": "2026-08-24T09:10:44.838Z",
+  "syncedAt": "2026-08-24T10:02:22.673Z",
+  "lastCheckedAt": "2026-08-24T10:02:22.673Z",
+  "lastSuccessfulSyncAt": "2026-08-24T10:02:22.673Z",
   "coverage": {
     "pathways": [
       "India",
@@ -66,13 +66,13 @@
         {
           "name": "North East Zone",
           "shortName": "NEZONE",
-          "score": "67/2 (23.3 Ov)"
+          "score": "85/5 (32.3 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 2: 2nd Session - North East Zone trail by 400 runs",
+      "overview": "Day 2: 3rd Session - North East Zone trail by 382 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -92,7 +92,7 @@
         {
           "name": "North Zone",
           "shortName": "NZONE",
-          "score": "251/10 (66.5 Ov)"
+          "score": "251/10 (66.5 Ov) & 41/2 (8.4 Ov)"
         },
         {
           "name": "West Zone",
@@ -103,7 +103,7 @@
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 2: Tea Break - West Zone trail by 64 runs",
+      "overview": "Day 2: 3rd Session - North Zone lead by 105 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -17706,13 +17706,13 @@
         {
           "name": "North East Zone",
           "shortName": "NEZONE",
-          "score": "67/2 (23.3 Ov)"
+          "score": "85/5 (32.3 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 2: 2nd Session - North East Zone trail by 400 runs",
+      "overview": "Day 2: 3rd Session - North East Zone trail by 382 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -17732,7 +17732,7 @@
         {
           "name": "North Zone",
           "shortName": "NZONE",
-          "score": "251/10 (66.5 Ov)"
+          "score": "251/10 (66.5 Ov) & 41/2 (8.4 Ov)"
         },
         {
           "name": "West Zone",
@@ -17743,7 +17743,7 @@
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 2: Tea Break - West Zone trail by 64 runs",
+      "overview": "Day 2: 3rd Session - North Zone lead by 105 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -35388,13 +35388,13 @@
         {
           "name": "North East Zone",
           "shortName": "NEZONE",
-          "score": "67/2 (23.3 Ov)"
+          "score": "85/5 (32.3 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 2: 2nd Session - North East Zone trail by 400 runs",
+      "overview": "Day 2: 3rd Session - North East Zone trail by 382 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -35415,7 +35415,7 @@
         {
           "name": "North Zone",
           "shortName": "NZONE",
-          "score": "251/10 (66.5 Ov)"
+          "score": "251/10 (66.5 Ov) & 41/2 (8.4 Ov)"
         },
         {
           "name": "West Zone",
@@ -35426,7 +35426,7 @@
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 2: Tea Break - West Zone trail by 64 runs",
+      "overview": "Day 2: 3rd Session - North Zone lead by 105 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -35690,13 +35690,13 @@
             {
               "name": "North East Zone",
               "shortName": "NEZONE",
-              "score": "67/2 (23.3 Ov)"
+              "score": "85/5 (32.3 Ov)"
             }
           ],
           "dateLabel": "23 Aug 2026, 09:30 am",
           "time": "",
           "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-          "overview": "Day 2: 2nd Session - North East Zone trail by 400 runs",
+          "overview": "Day 2: 3rd Session - North East Zone trail by 382 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-23T04:00:00.000Z",
@@ -35717,7 +35717,7 @@
             {
               "name": "North Zone",
               "shortName": "NZONE",
-              "score": "251/10 (66.5 Ov)"
+              "score": "251/10 (66.5 Ov) & 41/2 (8.4 Ov)"
             },
             {
               "name": "West Zone",
@@ -35728,7 +35728,7 @@
           "dateLabel": "23 Aug 2026, 09:30 am",
           "time": "",
           "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-          "overview": "Day 2: Tea Break - West Zone trail by 64 runs",
+          "overview": "Day 2: 3rd Session - North Zone lead by 105 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-23T04:00:00.000Z",
