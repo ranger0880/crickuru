@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-24T10:46:32.002Z",
-  "lastCheckedAt": "2026-08-24T10:46:32.002Z",
-  "lastSuccessfulSyncAt": "2026-08-24T10:46:32.002Z",
+  "syncedAt": "2026-08-24T11:13:18.334Z",
+  "lastCheckedAt": "2026-08-24T11:13:18.334Z",
+  "lastSuccessfulSyncAt": "2026-08-24T11:13:18.334Z",
   "coverage": {
     "pathways": [
       "India",
@@ -66,13 +66,13 @@
         {
           "name": "North East Zone",
           "shortName": "NEZONE",
-          "score": "111/8 (42.2 Ov)"
+          "score": "111/10 (42.5 Ov) & 7 (0.6 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 2: 3rd Session - North East Zone trail by 356 runs",
+      "overview": "Day 2: Stumps - North East Zone trail by 349 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -92,7 +92,7 @@
         {
           "name": "North Zone",
           "shortName": "NZONE",
-          "score": "251/10 (66.5 Ov) & 84/3 (17.2 Ov)"
+          "score": "251/10 (66.5 Ov) & 107/4 (20.6 Ov)"
         },
         {
           "name": "West Zone",
@@ -103,7 +103,7 @@
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 2: 3rd Session - North Zone lead by 148 runs",
+      "overview": "Day 2: Stumps - North Zone lead by 171 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -123,7 +123,7 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "475/8 (131.2 Ov)"
+          "score": "483/8 (135.5 Ov)"
         },
         {
           "name": "Sri Lanka",
@@ -134,7 +134,7 @@
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 2: Play stopped due to wet outfield",
+      "overview": "Day 2: 3rd Session",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
@@ -17706,13 +17706,13 @@
         {
           "name": "North East Zone",
           "shortName": "NEZONE",
-          "score": "111/8 (42.2 Ov)"
+          "score": "111/10 (42.5 Ov) & 7 (0.6 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 2: 3rd Session - North East Zone trail by 356 runs",
+      "overview": "Day 2: Stumps - North East Zone trail by 349 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -17732,7 +17732,7 @@
         {
           "name": "North Zone",
           "shortName": "NZONE",
-          "score": "251/10 (66.5 Ov) & 84/3 (17.2 Ov)"
+          "score": "251/10 (66.5 Ov) & 107/4 (20.6 Ov)"
         },
         {
           "name": "West Zone",
@@ -17743,7 +17743,7 @@
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 2: 3rd Session - North Zone lead by 148 runs",
+      "overview": "Day 2: Stumps - North Zone lead by 171 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -17763,7 +17763,7 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "475/8 (131.2 Ov)"
+          "score": "483/8 (135.5 Ov)"
         },
         {
           "name": "Sri Lanka",
@@ -17774,7 +17774,7 @@
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 2: Play stopped due to wet outfield",
+      "overview": "Day 2: 3rd Session",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
@@ -35388,13 +35388,13 @@
         {
           "name": "North East Zone",
           "shortName": "NEZONE",
-          "score": "111/8 (42.2 Ov)"
+          "score": "111/10 (42.5 Ov) & 7 (0.6 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 2: 3rd Session - North East Zone trail by 356 runs",
+      "overview": "Day 2: Stumps - North East Zone trail by 349 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -35415,7 +35415,7 @@
         {
           "name": "North Zone",
           "shortName": "NZONE",
-          "score": "251/10 (66.5 Ov) & 84/3 (17.2 Ov)"
+          "score": "251/10 (66.5 Ov) & 107/4 (20.6 Ov)"
         },
         {
           "name": "West Zone",
@@ -35426,7 +35426,7 @@
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 2: 3rd Session - North Zone lead by 148 runs",
+      "overview": "Day 2: Stumps - North Zone lead by 171 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -35690,13 +35690,13 @@
             {
               "name": "North East Zone",
               "shortName": "NEZONE",
-              "score": "111/8 (42.2 Ov)"
+              "score": "111/10 (42.5 Ov) & 7 (0.6 Ov)"
             }
           ],
           "dateLabel": "23 Aug 2026, 09:30 am",
           "time": "",
           "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-          "overview": "Day 2: 3rd Session - North East Zone trail by 356 runs",
+          "overview": "Day 2: Stumps - North East Zone trail by 349 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-23T04:00:00.000Z",
@@ -35717,7 +35717,7 @@
             {
               "name": "North Zone",
               "shortName": "NZONE",
-              "score": "251/10 (66.5 Ov) & 84/3 (17.2 Ov)"
+              "score": "251/10 (66.5 Ov) & 107/4 (20.6 Ov)"
             },
             {
               "name": "West Zone",
@@ -35728,7 +35728,7 @@
           "dateLabel": "23 Aug 2026, 09:30 am",
           "time": "",
           "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-          "overview": "Day 2: 3rd Session - North Zone lead by 148 runs",
+          "overview": "Day 2: Stumps - North Zone lead by 171 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-23T04:00:00.000Z",
