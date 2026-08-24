@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-24T20:35:03.398Z",
-  "lastCheckedAt": "2026-08-24T20:35:03.398Z",
-  "lastSuccessfulSyncAt": "2026-08-24T20:35:03.398Z",
+  "syncedAt": "2026-08-24T21:02:31.625Z",
+  "lastCheckedAt": "2026-08-24T21:02:31.625Z",
+  "lastSuccessfulSyncAt": "2026-08-24T21:02:31.625Z",
   "coverage": {
     "pathways": [
       "India",
