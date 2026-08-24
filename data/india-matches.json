@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-24T16:00:55.000Z",
-  "lastCheckedAt": "2026-08-24T16:00:55.000Z",
-  "lastSuccessfulSyncAt": "2026-08-24T16:00:55.000Z",
+  "syncedAt": "2026-08-24T16:47:35.576Z",
+  "lastCheckedAt": "2026-08-24T16:47:35.576Z",
+  "lastSuccessfulSyncAt": "2026-08-24T16:47:35.576Z",
   "coverage": {
     "pathways": [
       "India",
@@ -154,7 +154,7 @@
         {
           "name": "New Delhi Tigers",
           "shortName": "NDT",
-          "score": "101/4 (14.6 Ov)"
+          "score": "168/9 (19.6 Ov)"
         },
         {
           "name": "South Delhi Superstarz",
@@ -165,7 +165,7 @@
       "dateLabel": "24 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "New Delhi Tigers opt to bat",
+      "overview": "Innings Break",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169193",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-24T13:30:00.000Z",
@@ -17794,7 +17794,7 @@
         {
           "name": "New Delhi Tigers",
           "shortName": "NDT",
-          "score": "101/4 (14.6 Ov)"
+          "score": "168/9 (19.6 Ov)"
         },
         {
           "name": "South Delhi Superstarz",
@@ -17805,7 +17805,7 @@
       "dateLabel": "24 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "New Delhi Tigers opt to bat",
+      "overview": "Innings Break",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169193",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-24T13:30:00.000Z",
