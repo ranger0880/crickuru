@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-24T16:47:35.576Z",
-  "lastCheckedAt": "2026-08-24T16:47:35.576Z",
-  "lastSuccessfulSyncAt": "2026-08-24T16:47:35.576Z",
+  "syncedAt": "2026-08-24T17:17:33.079Z",
+  "lastCheckedAt": "2026-08-24T17:17:33.079Z",
+  "lastSuccessfulSyncAt": "2026-08-24T17:17:33.079Z",
   "coverage": {
     "pathways": [
       "India",
@@ -159,13 +159,13 @@
         {
           "name": "South Delhi Superstarz",
           "shortName": "SDS",
-          "score": ""
+          "score": "9 (2.6 Ov)"
         }
       ],
       "dateLabel": "24 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Innings Break",
+      "overview": "South Delhi Superstarz need 160 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169193",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-24T13:30:00.000Z",
@@ -17799,13 +17799,13 @@
         {
           "name": "South Delhi Superstarz",
           "shortName": "SDS",
-          "score": ""
+          "score": "9 (2.6 Ov)"
         }
       ],
       "dateLabel": "24 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Innings Break",
+      "overview": "South Delhi Superstarz need 160 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169193",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-24T13:30:00.000Z",
