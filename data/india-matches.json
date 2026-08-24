@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-24T12:02:26.465Z",
-  "lastCheckedAt": "2026-08-24T12:02:26.465Z",
-  "lastSuccessfulSyncAt": "2026-08-24T12:02:26.465Z",
+  "syncedAt": "2026-08-24T13:06:20.174Z",
+  "lastCheckedAt": "2026-08-24T13:06:20.174Z",
+  "lastSuccessfulSyncAt": "2026-08-24T13:06:20.174Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,9 +41,9 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 3,
+    "live": 4,
     "recent": 60,
-    "upcoming": 502,
+    "upcoming": 501,
     "total": 565
   },
   "all": [
@@ -128,22 +128,22 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "(0.2 Ov)"
+          "score": "8/2 (2.6 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 2: Rain stops play - Sri Lanka trail by 503 runs",
+      "overview": "Day 2: Stumps - Sri Lanka trail by 495 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
       "rawId": 163017
     },
     {
-      "id": "upcoming-169193",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-169193",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -165,7 +165,7 @@
       "dateLabel": "24 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Match starts at Aug 24, 13:30 GMT",
+      "overview": "Toss delayed due to rain",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169193",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-24T13:30:00.000Z",
@@ -17768,24 +17768,22 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "(0.2 Ov)"
+          "score": "8/2 (2.6 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 2: Rain stops play - Sri Lanka trail by 503 runs",
+      "overview": "Day 2: Stumps - Sri Lanka trail by 495 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
       "rawId": 163017
-    }
-  ],
-  "upcoming": [
+    },
     {
-      "id": "upcoming-169193",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-169193",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -17807,12 +17805,14 @@
       "dateLabel": "24 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Match starts at Aug 24, 13:30 GMT",
+      "overview": "Toss delayed due to rain",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169193",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-24T13:30:00.000Z",
       "rawId": 169193
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-167027",
       "status": "upcoming",
@@ -35344,9 +35344,9 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 0,
+      "live": 1,
       "recent": 0,
-      "upcoming": 2,
+      "upcoming": 1,
       "total": 2
     },
     {
