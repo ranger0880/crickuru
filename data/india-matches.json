@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-24T07:37:27.280Z",
-  "lastCheckedAt": "2026-08-24T07:37:27.280Z",
-  "lastSuccessfulSyncAt": "2026-08-24T07:37:27.280Z",
+  "syncedAt": "2026-08-24T08:24:08.530Z",
+  "lastCheckedAt": "2026-08-24T08:24:08.530Z",
+  "lastSuccessfulSyncAt": "2026-08-24T08:24:08.530Z",
   "coverage": {
     "pathways": [
       "India",
@@ -66,13 +66,13 @@
         {
           "name": "North East Zone",
           "shortName": "NEZONE",
-          "score": "13 (6.6 Ov)"
+          "score": "36/1 (14.6 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 2: 2nd Session - North East Zone trail by 454 runs",
+      "overview": "Day 2: 2nd Session - North East Zone trail by 431 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -97,13 +97,13 @@
         {
           "name": "West Zone",
           "shortName": "WZONE",
-          "score": "133/6 (48.5 Ov)"
+          "score": "160/7 (58.2 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 2: 2nd Session - West Zone trail by 118 runs",
+      "overview": "Day 2: 2nd Session - West Zone trail by 91 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -123,7 +123,7 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "437/7 (116.6 Ov)"
+          "score": "460/8 (126.5 Ov)"
         },
         {
           "name": "Sri Lanka",
@@ -17706,13 +17706,13 @@
         {
           "name": "North East Zone",
           "shortName": "NEZONE",
-          "score": "13 (6.6 Ov)"
+          "score": "36/1 (14.6 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 2: 2nd Session - North East Zone trail by 454 runs",
+      "overview": "Day 2: 2nd Session - North East Zone trail by 431 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -17737,13 +17737,13 @@
         {
           "name": "West Zone",
           "shortName": "WZONE",
-          "score": "133/6 (48.5 Ov)"
+          "score": "160/7 (58.2 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 2: 2nd Session - West Zone trail by 118 runs",
+      "overview": "Day 2: 2nd Session - West Zone trail by 91 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -17763,7 +17763,7 @@
         {
           "name": "India",
           "shortName": "IND",
-          "score": "437/7 (116.6 Ov)"
+          "score": "460/8 (126.5 Ov)"
         },
         {
           "name": "Sri Lanka",
@@ -35388,13 +35388,13 @@
         {
           "name": "North East Zone",
           "shortName": "NEZONE",
-          "score": "13 (6.6 Ov)"
+          "score": "36/1 (14.6 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 2: 2nd Session - North East Zone trail by 454 runs",
+      "overview": "Day 2: 2nd Session - North East Zone trail by 431 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -35420,13 +35420,13 @@
         {
           "name": "West Zone",
           "shortName": "WZONE",
-          "score": "133/6 (48.5 Ov)"
+          "score": "160/7 (58.2 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 2: 2nd Session - West Zone trail by 118 runs",
+      "overview": "Day 2: 2nd Session - West Zone trail by 91 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -35690,13 +35690,13 @@
             {
               "name": "North East Zone",
               "shortName": "NEZONE",
-              "score": "13 (6.6 Ov)"
+              "score": "36/1 (14.6 Ov)"
             }
           ],
           "dateLabel": "23 Aug 2026, 09:30 am",
           "time": "",
           "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-          "overview": "Day 2: 2nd Session - North East Zone trail by 454 runs",
+          "overview": "Day 2: 2nd Session - North East Zone trail by 431 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-23T04:00:00.000Z",
@@ -35722,13 +35722,13 @@
             {
               "name": "West Zone",
               "shortName": "WZONE",
-              "score": "133/6 (48.5 Ov)"
+              "score": "160/7 (58.2 Ov)"
             }
           ],
           "dateLabel": "23 Aug 2026, 09:30 am",
           "time": "",
           "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-          "overview": "Day 2: 2nd Session - West Zone trail by 118 runs",
+          "overview": "Day 2: 2nd Session - West Zone trail by 91 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-23T04:00:00.000Z",
