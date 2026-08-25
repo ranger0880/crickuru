@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-25T16:52:57.365Z",
-  "lastCheckedAt": "2026-08-25T16:52:57.365Z",
-  "lastSuccessfulSyncAt": "2026-08-25T16:52:57.365Z",
+  "syncedAt": "2026-08-25T17:20:00.809Z",
+  "lastCheckedAt": "2026-08-25T17:20:00.809Z",
+  "lastSuccessfulSyncAt": "2026-08-25T17:20:00.809Z",
   "coverage": {
     "pathways": [
       "India",
@@ -123,7 +123,7 @@
         {
           "name": "East Delhi Riders",
           "shortName": "EDR",
-          "score": "80/1 (5.6 Ov)"
+          "score": "117/5 (9.5 Ov)"
         },
         {
           "name": "Purani Dilli 6",
@@ -17765,7 +17765,7 @@
         {
           "name": "East Delhi Riders",
           "shortName": "EDR",
-          "score": "80/1 (5.6 Ov)"
+          "score": "117/5 (9.5 Ov)"
         },
         {
           "name": "Purani Dilli 6",
