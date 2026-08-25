@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-25T03:49:00.479Z",
-  "lastCheckedAt": "2026-08-25T03:49:00.479Z",
-  "lastSuccessfulSyncAt": "2026-08-25T03:49:00.479Z",
+  "syncedAt": "2026-08-25T04:24:38.599Z",
+  "lastCheckedAt": "2026-08-25T04:24:38.599Z",
+  "lastSuccessfulSyncAt": "2026-08-25T04:24:38.599Z",
   "coverage": {
     "pathways": [
       "India",
@@ -42,9 +42,9 @@
   },
   "summary": {
     "live": 3,
-    "recent": 62,
+    "recent": 61,
     "upcoming": 501,
-    "total": 566
+    "total": 565
   },
   "all": [
     {
@@ -66,13 +66,13 @@
         {
           "name": "North East Zone",
           "shortName": "NEZONE",
-          "score": "111/10 (42.5 Ov) & 7 (0.6 Ov)"
+          "score": "111/10 (42.5 Ov) & 14/1 (5.2 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 2: Stumps - North East Zone trail by 349 runs",
+      "overview": "Day 3: 1st Session - North East Zone trail by 342 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -92,7 +92,7 @@
         {
           "name": "North Zone",
           "shortName": "NZONE",
-          "score": "251/10 (66.5 Ov) & 107/4 (20.6 Ov)"
+          "score": "251/10 (66.5 Ov) & 126/5 (26.2 Ov)"
         },
         {
           "name": "West Zone",
@@ -103,7 +103,7 @@
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 2: Stumps - North Zone lead by 171 runs",
+      "overview": "Day 3: 1st Session - North Zone lead by 190 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -128,13 +128,13 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "8/2 (2.6 Ov)"
+          "score": "21/2 (4.6 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 2: Stumps - Sri Lanka trail by 495 runs",
+      "overview": "Day 3: 1st Session - Sri Lanka trail by 482 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
@@ -15672,38 +15672,6 @@
       "rawId": 164501
     },
     {
-      "id": "recent-167027",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "IDream Tiruppur Tamizhans vs Vida Kovai Kings, Eliminator",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "IDream Tiruppur Tamizhans",
-          "shortName": "ITT",
-          "score": "15 (2.6 Ov)"
-        },
-        {
-          "name": "Vida Kovai Kings",
-          "shortName": "VKK",
-          "score": ""
-        }
-      ],
-      "dateLabel": "24 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "No result due to rain",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167027",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-24T14:00:00.000Z",
-      "rawId": 167027,
-      "starPerformers": []
-    },
-    {
       "id": "recent-169193",
       "status": "recent",
       "statusLabel": "Past",
@@ -17739,13 +17707,13 @@
         {
           "name": "North East Zone",
           "shortName": "NEZONE",
-          "score": "111/10 (42.5 Ov) & 7 (0.6 Ov)"
+          "score": "111/10 (42.5 Ov) & 14/1 (5.2 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 2: Stumps - North East Zone trail by 349 runs",
+      "overview": "Day 3: 1st Session - North East Zone trail by 342 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -17765,7 +17733,7 @@
         {
           "name": "North Zone",
           "shortName": "NZONE",
-          "score": "251/10 (66.5 Ov) & 107/4 (20.6 Ov)"
+          "score": "251/10 (66.5 Ov) & 126/5 (26.2 Ov)"
         },
         {
           "name": "West Zone",
@@ -17776,7 +17744,7 @@
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 2: Stumps - North Zone lead by 171 runs",
+      "overview": "Day 3: 1st Session - North Zone lead by 190 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -17801,13 +17769,13 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "8/2 (2.6 Ov)"
+          "score": "21/2 (4.6 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 2: Stumps - Sri Lanka trail by 495 runs",
+      "overview": "Day 3: 1st Session - Sri Lanka trail by 482 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
@@ -33349,38 +33317,6 @@
   ],
   "recent": [
     {
-      "id": "recent-167027",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "IDream Tiruppur Tamizhans vs Vida Kovai Kings, Eliminator",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "IDream Tiruppur Tamizhans",
-          "shortName": "ITT",
-          "score": "15 (2.6 Ov)"
-        },
-        {
-          "name": "Vida Kovai Kings",
-          "shortName": "VKK",
-          "score": ""
-        }
-      ],
-      "dateLabel": "24 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "No result due to rain",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167027",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-24T14:00:00.000Z",
-      "rawId": 167027,
-      "starPerformers": []
-    },
-    {
       "id": "recent-169193",
       "status": "recent",
       "statusLabel": "Past",
@@ -35411,9 +35347,9 @@
       "label": "League / IPL",
       "order": 2,
       "live": 0,
-      "recent": 2,
+      "recent": 1,
       "upcoming": 1,
-      "total": 3
+      "total": 2
     },
     {
       "id": "women",
@@ -35454,13 +35390,13 @@
         {
           "name": "North East Zone",
           "shortName": "NEZONE",
-          "score": "111/10 (42.5 Ov) & 7 (0.6 Ov)"
+          "score": "111/10 (42.5 Ov) & 14/1 (5.2 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 2: Stumps - North East Zone trail by 349 runs",
+      "overview": "Day 3: 1st Session - North East Zone trail by 342 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -35481,7 +35417,7 @@
         {
           "name": "North Zone",
           "shortName": "NZONE",
-          "score": "251/10 (66.5 Ov) & 107/4 (20.6 Ov)"
+          "score": "251/10 (66.5 Ov) & 126/5 (26.2 Ov)"
         },
         {
           "name": "West Zone",
@@ -35492,7 +35428,7 @@
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 2: Stumps - North Zone lead by 171 runs",
+      "overview": "Day 3: 1st Session - North Zone lead by 190 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -35690,39 +35626,6 @@
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163047,
       "importance": "Knockout stage"
-    },
-    {
-      "id": "recent-167027",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "IDream Tiruppur Tamizhans vs Vida Kovai Kings, Eliminator",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "IDream Tiruppur Tamizhans",
-          "shortName": "ITT",
-          "score": "15 (2.6 Ov)"
-        },
-        {
-          "name": "Vida Kovai Kings",
-          "shortName": "VKK",
-          "score": ""
-        }
-      ],
-      "dateLabel": "24 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "No result due to rain",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167027",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-24T14:00:00.000Z",
-      "rawId": 167027,
-      "starPerformers": [],
-      "importance": "Knockout stage"
     }
   ],
   "importantTournaments": [
@@ -35757,13 +35660,13 @@
             {
               "name": "North East Zone",
               "shortName": "NEZONE",
-              "score": "111/10 (42.5 Ov) & 7 (0.6 Ov)"
+              "score": "111/10 (42.5 Ov) & 14/1 (5.2 Ov)"
             }
           ],
           "dateLabel": "23 Aug 2026, 09:30 am",
           "time": "",
           "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-          "overview": "Day 2: Stumps - North East Zone trail by 349 runs",
+          "overview": "Day 3: 1st Session - North East Zone trail by 342 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-23T04:00:00.000Z",
@@ -35784,7 +35687,7 @@
             {
               "name": "North Zone",
               "shortName": "NZONE",
-              "score": "251/10 (66.5 Ov) & 107/4 (20.6 Ov)"
+              "score": "251/10 (66.5 Ov) & 126/5 (26.2 Ov)"
             },
             {
               "name": "West Zone",
@@ -35795,7 +35698,7 @@
           "dateLabel": "23 Aug 2026, 09:30 am",
           "time": "",
           "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-          "overview": "Day 2: Stumps - North Zone lead by 171 runs",
+          "overview": "Day 3: 1st Session - North Zone lead by 190 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-23T04:00:00.000Z",
@@ -36009,95 +35912,8 @@
           "importance": "Major tournament"
         }
       ]
-    },
-    {
-      "id": "tamil-nadu-premier-league-2026",
-      "series": "Tamil Nadu Premier League 2026",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "total": 1,
-      "live": 0,
-      "upcoming": 0,
-      "recent": 1,
-      "startTime": "2026-08-24T14:00:00.000Z",
-      "endTime": "2026-08-24T14:00:00.000Z",
-      "matches": [
-        {
-          "id": "recent-167027",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "league",
-          "levelLabel": "League / IPL",
-          "sourceType": "league",
-          "sourceScope": "global",
-          "title": "IDream Tiruppur Tamizhans vs Vida Kovai Kings, Eliminator",
-          "series": "Tamil Nadu Premier League 2026",
-          "teams": [
-            {
-              "name": "IDream Tiruppur Tamizhans",
-              "shortName": "ITT",
-              "score": "15 (2.6 Ov)"
-            },
-            {
-              "name": "Vida Kovai Kings",
-              "shortName": "VKK",
-              "score": ""
-            }
-          ],
-          "dateLabel": "24 Aug 2026, 07:30 pm",
-          "time": "",
-          "place": "MA Chidambaram Stadium, Chennai",
-          "overview": "No result due to rain",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167027",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-          "startTime": "2026-08-24T14:00:00.000Z",
-          "rawId": 167027,
-          "starPerformers": [],
-          "importance": "Knockout stage"
-        }
-      ]
     }
   ],
-  "importantResultsByMonth": [
-    {
-      "month": "2026-08",
-      "label": "August 2026",
-      "matches": [
-        {
-          "id": "recent-167027",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "league",
-          "levelLabel": "League / IPL",
-          "sourceType": "league",
-          "sourceScope": "global",
-          "title": "IDream Tiruppur Tamizhans vs Vida Kovai Kings, Eliminator",
-          "series": "Tamil Nadu Premier League 2026",
-          "teams": [
-            {
-              "name": "IDream Tiruppur Tamizhans",
-              "shortName": "ITT",
-              "score": "15 (2.6 Ov)"
-            },
-            {
-              "name": "Vida Kovai Kings",
-              "shortName": "VKK",
-              "score": ""
-            }
-          ],
-          "dateLabel": "24 Aug 2026, 07:30 pm",
-          "time": "",
-          "place": "MA Chidambaram Stadium, Chennai",
-          "overview": "No result due to rain",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167027",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-          "startTime": "2026-08-24T14:00:00.000Z",
-          "rawId": 167027,
-          "starPerformers": [],
-          "importance": "Knockout stage"
-        }
-      ]
-    }
-  ],
+  "importantResultsByMonth": [],
   "errors": []
 }
