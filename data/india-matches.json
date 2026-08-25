@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-25T07:51:13.805Z",
-  "lastCheckedAt": "2026-08-25T07:51:13.805Z",
-  "lastSuccessfulSyncAt": "2026-08-25T07:51:13.805Z",
+  "syncedAt": "2026-08-25T08:25:00.596Z",
+  "lastCheckedAt": "2026-08-25T08:25:00.596Z",
+  "lastSuccessfulSyncAt": "2026-08-25T08:25:00.596Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,43 +41,12 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 3,
-    "recent": 61,
+    "live": 2,
+    "recent": 62,
     "upcoming": 501,
     "total": 565
   },
   "all": [
-    {
-      "id": "live-163027",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "East Zone vs North East Zone, 1st Quarter final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "East Zone",
-          "shortName": "EZONE",
-          "score": "467/10 (112.5 Ov)"
-        },
-        {
-          "name": "North East Zone",
-          "shortName": "NEZONE",
-          "score": "111/10 (42.5 Ov) & 125/8 (44.4 Ov)"
-        }
-      ],
-      "dateLabel": "23 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 3: 2nd Session - North East Zone trail by 231 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-23T04:00:00.000Z",
-      "rawId": 163027
-    },
     {
       "id": "live-163031",
       "status": "live",
@@ -97,13 +66,13 @@
         {
           "name": "West Zone",
           "shortName": "WZONE",
-          "score": "187/10 (65.4 Ov) & 27/1 (8.6 Ov)"
+          "score": "187/10 (65.4 Ov) & 46/2 (15.4 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 3: 2nd Session - West Zone need 260 runs",
+      "overview": "Day 3: 2nd Session - West Zone need 241 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -128,13 +97,13 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "137/5 (34.5 Ov)"
+          "score": "163/5 (41.5 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 3: 2nd Session - Sri Lanka trail by 366 runs",
+      "overview": "Day 3: 2nd Session - Sri Lanka trail by 340 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
@@ -15704,6 +15673,38 @@
       "starPerformers": []
     },
     {
+      "id": "recent-163027",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "East Zone vs North East Zone, 1st Quarter final",
+      "series": "Duleep Trophy 2026",
+      "teams": [
+        {
+          "name": "East Zone",
+          "shortName": "EZONE",
+          "score": "467/10 (112.5 Ov)"
+        },
+        {
+          "name": "North East Zone",
+          "shortName": "NEZONE",
+          "score": "111/10 (42.5 Ov) & 146/10 (49.6 Ov)"
+        }
+      ],
+      "dateLabel": "23 Aug 2026, 09:30 am",
+      "time": "",
+      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
+      "overview": "East Zone won by an innings and 210 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-23T04:00:00.000Z",
+      "rawId": 163027,
+      "starPerformers": []
+    },
+    {
       "id": "recent-163013",
       "status": "recent",
       "statusLabel": "Past",
@@ -17689,37 +17690,6 @@
   ],
   "live": [
     {
-      "id": "live-163027",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "East Zone vs North East Zone, 1st Quarter final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "East Zone",
-          "shortName": "EZONE",
-          "score": "467/10 (112.5 Ov)"
-        },
-        {
-          "name": "North East Zone",
-          "shortName": "NEZONE",
-          "score": "111/10 (42.5 Ov) & 125/8 (44.4 Ov)"
-        }
-      ],
-      "dateLabel": "23 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 3: 2nd Session - North East Zone trail by 231 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-23T04:00:00.000Z",
-      "rawId": 163027
-    },
-    {
       "id": "live-163031",
       "status": "live",
       "statusLabel": "Live",
@@ -17738,13 +17708,13 @@
         {
           "name": "West Zone",
           "shortName": "WZONE",
-          "score": "187/10 (65.4 Ov) & 27/1 (8.6 Ov)"
+          "score": "187/10 (65.4 Ov) & 46/2 (15.4 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 3: 2nd Session - West Zone need 260 runs",
+      "overview": "Day 3: 2nd Session - West Zone need 241 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -17769,13 +17739,13 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "137/5 (34.5 Ov)"
+          "score": "163/5 (41.5 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 3: 2nd Session - Sri Lanka trail by 366 runs",
+      "overview": "Day 3: 2nd Session - Sri Lanka trail by 340 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
@@ -33349,6 +33319,38 @@
       "starPerformers": []
     },
     {
+      "id": "recent-163027",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "East Zone vs North East Zone, 1st Quarter final",
+      "series": "Duleep Trophy 2026",
+      "teams": [
+        {
+          "name": "East Zone",
+          "shortName": "EZONE",
+          "score": "467/10 (112.5 Ov)"
+        },
+        {
+          "name": "North East Zone",
+          "shortName": "NEZONE",
+          "score": "111/10 (42.5 Ov) & 146/10 (49.6 Ov)"
+        }
+      ],
+      "dateLabel": "23 Aug 2026, 09:30 am",
+      "time": "",
+      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
+      "overview": "East Zone won by an innings and 210 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-23T04:00:00.000Z",
+      "rawId": 163027,
+      "starPerformers": []
+    },
+    {
       "id": "recent-163013",
       "status": "recent",
       "statusLabel": "Past",
@@ -35364,45 +35366,13 @@
       "id": "domestic",
       "label": "Domestic / State",
       "order": 4,
-      "live": 2,
-      "recent": 0,
+      "live": 1,
+      "recent": 1,
       "upcoming": 415,
       "total": 417
     }
   ],
   "importantMatches": [
-    {
-      "id": "live-163027",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "East Zone vs North East Zone, 1st Quarter final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "East Zone",
-          "shortName": "EZONE",
-          "score": "467/10 (112.5 Ov)"
-        },
-        {
-          "name": "North East Zone",
-          "shortName": "NEZONE",
-          "score": "111/10 (42.5 Ov) & 125/8 (44.4 Ov)"
-        }
-      ],
-      "dateLabel": "23 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 3: 2nd Session - North East Zone trail by 231 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-23T04:00:00.000Z",
-      "rawId": 163027,
-      "importance": "Knockout stage"
-    },
     {
       "id": "live-163031",
       "status": "live",
@@ -35422,13 +35392,13 @@
         {
           "name": "West Zone",
           "shortName": "WZONE",
-          "score": "187/10 (65.4 Ov) & 27/1 (8.6 Ov)"
+          "score": "187/10 (65.4 Ov) & 46/2 (15.4 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 3: 2nd Session - West Zone need 260 runs",
+      "overview": "Day 3: 2nd Session - West Zone need 241 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -35626,6 +35596,39 @@
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163047,
       "importance": "Knockout stage"
+    },
+    {
+      "id": "recent-163027",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "East Zone vs North East Zone, 1st Quarter final",
+      "series": "Duleep Trophy 2026",
+      "teams": [
+        {
+          "name": "East Zone",
+          "shortName": "EZONE",
+          "score": "467/10 (112.5 Ov)"
+        },
+        {
+          "name": "North East Zone",
+          "shortName": "NEZONE",
+          "score": "111/10 (42.5 Ov) & 146/10 (49.6 Ov)"
+        }
+      ],
+      "dateLabel": "23 Aug 2026, 09:30 am",
+      "time": "",
+      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
+      "overview": "East Zone won by an innings and 210 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-23T04:00:00.000Z",
+      "rawId": 163027,
+      "starPerformers": [],
+      "importance": "Knockout stage"
     }
   ],
   "importantTournaments": [
@@ -35635,44 +35638,12 @@
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "total": 5,
-      "live": 2,
+      "live": 1,
       "upcoming": 3,
-      "recent": 0,
+      "recent": 1,
       "startTime": "2026-08-23T04:00:00.000Z",
       "endTime": "2026-09-06T04:00:00.000Z",
       "matches": [
-        {
-          "id": "live-163027",
-          "status": "live",
-          "statusLabel": "Live",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "domestic",
-          "sourceScope": "global",
-          "title": "East Zone vs North East Zone, 1st Quarter final",
-          "series": "Duleep Trophy 2026",
-          "teams": [
-            {
-              "name": "East Zone",
-              "shortName": "EZONE",
-              "score": "467/10 (112.5 Ov)"
-            },
-            {
-              "name": "North East Zone",
-              "shortName": "NEZONE",
-              "score": "111/10 (42.5 Ov) & 125/8 (44.4 Ov)"
-            }
-          ],
-          "dateLabel": "23 Aug 2026, 09:30 am",
-          "time": "",
-          "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-          "overview": "Day 3: 2nd Session - North East Zone trail by 231 runs",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-          "startTime": "2026-08-23T04:00:00.000Z",
-          "rawId": 163027,
-          "importance": "Knockout stage"
-        },
         {
           "id": "live-163031",
           "status": "live",
@@ -35692,17 +35663,50 @@
             {
               "name": "West Zone",
               "shortName": "WZONE",
-              "score": "187/10 (65.4 Ov) & 27/1 (8.6 Ov)"
+              "score": "187/10 (65.4 Ov) & 46/2 (15.4 Ov)"
             }
           ],
           "dateLabel": "23 Aug 2026, 09:30 am",
           "time": "",
           "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-          "overview": "Day 3: 2nd Session - West Zone need 260 runs",
+          "overview": "Day 3: 2nd Session - West Zone need 241 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-23T04:00:00.000Z",
           "rawId": 163031,
+          "importance": "Knockout stage"
+        },
+        {
+          "id": "recent-163027",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "domestic",
+          "sourceScope": "global",
+          "title": "East Zone vs North East Zone, 1st Quarter final",
+          "series": "Duleep Trophy 2026",
+          "teams": [
+            {
+              "name": "East Zone",
+              "shortName": "EZONE",
+              "score": "467/10 (112.5 Ov)"
+            },
+            {
+              "name": "North East Zone",
+              "shortName": "NEZONE",
+              "score": "111/10 (42.5 Ov) & 146/10 (49.6 Ov)"
+            }
+          ],
+          "dateLabel": "23 Aug 2026, 09:30 am",
+          "time": "",
+          "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
+          "overview": "East Zone won by an innings and 210 runs",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "startTime": "2026-08-23T04:00:00.000Z",
+          "rawId": 163027,
+          "starPerformers": [],
           "importance": "Knockout stage"
         },
         {
@@ -35914,6 +35918,46 @@
       ]
     }
   ],
-  "importantResultsByMonth": [],
+  "importantResultsByMonth": [
+    {
+      "month": "2026-08",
+      "label": "August 2026",
+      "matches": [
+        {
+          "id": "recent-163027",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "domestic",
+          "sourceScope": "global",
+          "title": "East Zone vs North East Zone, 1st Quarter final",
+          "series": "Duleep Trophy 2026",
+          "teams": [
+            {
+              "name": "East Zone",
+              "shortName": "EZONE",
+              "score": "467/10 (112.5 Ov)"
+            },
+            {
+              "name": "North East Zone",
+              "shortName": "NEZONE",
+              "score": "111/10 (42.5 Ov) & 146/10 (49.6 Ov)"
+            }
+          ],
+          "dateLabel": "23 Aug 2026, 09:30 am",
+          "time": "",
+          "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
+          "overview": "East Zone won by an innings and 210 runs",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "startTime": "2026-08-23T04:00:00.000Z",
+          "rawId": 163027,
+          "starPerformers": [],
+          "importance": "Knockout stage"
+        }
+      ]
+    }
+  ],
   "errors": []
 }
