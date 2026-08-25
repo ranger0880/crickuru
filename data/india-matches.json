@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-25T13:06:27.240Z",
-  "lastCheckedAt": "2026-08-25T13:06:27.240Z",
-  "lastSuccessfulSyncAt": "2026-08-25T13:06:27.240Z",
+  "syncedAt": "2026-08-25T13:59:28.997Z",
+  "lastCheckedAt": "2026-08-25T13:59:28.997Z",
+  "lastSuccessfulSyncAt": "2026-08-25T13:59:28.997Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,9 +41,9 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 2,
+    "live": 3,
     "recent": 62,
-    "upcoming": 501,
+    "upcoming": 500,
     "total": 565
   },
   "all": [
@@ -110,9 +110,9 @@
       "rawId": 163017
     },
     {
-      "id": "upcoming-169203",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-169203",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -134,7 +134,7 @@
       "dateLabel": "25 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Match starts at Aug 25, 13:30 GMT",
+      "overview": "Toss delayed due to rain",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169203",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-25T13:30:00.000Z",
@@ -17750,13 +17750,11 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
       "rawId": 163017
-    }
-  ],
-  "upcoming": [
+    },
     {
-      "id": "upcoming-169203",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-169203",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -17778,12 +17776,14 @@
       "dateLabel": "25 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Match starts at Aug 25, 13:30 GMT",
+      "overview": "Toss delayed due to rain",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169203",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-25T13:30:00.000Z",
       "rawId": 169203
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-163043",
       "status": "upcoming",
@@ -35348,9 +35348,9 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 0,
+      "live": 1,
       "recent": 1,
-      "upcoming": 1,
+      "upcoming": 0,
       "total": 2
     },
     {
