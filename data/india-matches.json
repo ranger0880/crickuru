@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-25T10:15:29.959Z",
-  "lastCheckedAt": "2026-08-25T10:15:29.959Z",
-  "lastSuccessfulSyncAt": "2026-08-25T10:15:29.959Z",
+  "syncedAt": "2026-08-25T10:51:38.620Z",
+  "lastCheckedAt": "2026-08-25T10:51:38.620Z",
+  "lastSuccessfulSyncAt": "2026-08-25T10:51:38.620Z",
   "coverage": {
     "pathways": [
       "India",
@@ -66,13 +66,13 @@
         {
           "name": "West Zone",
           "shortName": "WZONE",
-          "score": "187/10 (65.4 Ov) & 159/3 (36.6 Ov)"
+          "score": "187/10 (65.4 Ov) & 186/3 (43.4 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 3: 3rd Session - West Zone need 128 runs",
+      "overview": "Day 3: 3rd Session - West Zone need 101 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -97,13 +97,13 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "216/7 (64.6 Ov)"
+          "score": "253/8 (73.6 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 3: Tea Break - Sri Lanka trail by 287 runs",
+      "overview": "Day 3: 3rd Session - Sri Lanka trail by 250 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
@@ -17708,13 +17708,13 @@
         {
           "name": "West Zone",
           "shortName": "WZONE",
-          "score": "187/10 (65.4 Ov) & 159/3 (36.6 Ov)"
+          "score": "187/10 (65.4 Ov) & 186/3 (43.4 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 3: 3rd Session - West Zone need 128 runs",
+      "overview": "Day 3: 3rd Session - West Zone need 101 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -17739,13 +17739,13 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "216/7 (64.6 Ov)"
+          "score": "253/8 (73.6 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 3: Tea Break - Sri Lanka trail by 287 runs",
+      "overview": "Day 3: 3rd Session - Sri Lanka trail by 250 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
@@ -35392,13 +35392,13 @@
         {
           "name": "West Zone",
           "shortName": "WZONE",
-          "score": "187/10 (65.4 Ov) & 159/3 (36.6 Ov)"
+          "score": "187/10 (65.4 Ov) & 186/3 (43.4 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 3: 3rd Session - West Zone need 128 runs",
+      "overview": "Day 3: 3rd Session - West Zone need 101 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -35663,13 +35663,13 @@
             {
               "name": "West Zone",
               "shortName": "WZONE",
-              "score": "187/10 (65.4 Ov) & 159/3 (36.6 Ov)"
+              "score": "187/10 (65.4 Ov) & 186/3 (43.4 Ov)"
             }
           ],
           "dateLabel": "23 Aug 2026, 09:30 am",
           "time": "",
           "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-          "overview": "Day 3: 3rd Session - West Zone need 128 runs",
+          "overview": "Day 3: 3rd Session - West Zone need 101 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-23T04:00:00.000Z",
