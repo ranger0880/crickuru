@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-25T17:49:37.407Z",
-  "lastCheckedAt": "2026-08-25T17:49:37.407Z",
-  "lastSuccessfulSyncAt": "2026-08-25T17:49:37.407Z",
+  "syncedAt": "2026-08-25T18:17:55.764Z",
+  "lastCheckedAt": "2026-08-25T18:17:55.764Z",
+  "lastSuccessfulSyncAt": "2026-08-25T18:17:55.764Z",
   "coverage": {
     "pathways": [
       "India",
@@ -128,13 +128,13 @@
         {
           "name": "Purani Dilli 6",
           "shortName": "PD",
-          "score": "41/1 (2.6 Ov)"
+          "score": "92/4 (7.4 Ov)"
         }
       ],
       "dateLabel": "25 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Purani Dilli 6 need 78 runs in 42 balls - Match reduced to 10 overs due to rain",
+      "overview": "Purani Dilli 6 need 27 runs in 14 balls - Match reduced to 10 overs due to rain",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169203",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-25T13:30:00.000Z",
@@ -17770,13 +17770,13 @@
         {
           "name": "Purani Dilli 6",
           "shortName": "PD",
-          "score": "41/1 (2.6 Ov)"
+          "score": "92/4 (7.4 Ov)"
         }
       ],
       "dateLabel": "25 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Purani Dilli 6 need 78 runs in 42 balls - Match reduced to 10 overs due to rain",
+      "overview": "Purani Dilli 6 need 27 runs in 14 balls - Match reduced to 10 overs due to rain",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169203",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-25T13:30:00.000Z",
