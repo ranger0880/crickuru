@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-25T08:25:00.596Z",
-  "lastCheckedAt": "2026-08-25T08:25:00.596Z",
-  "lastSuccessfulSyncAt": "2026-08-25T08:25:00.596Z",
+  "syncedAt": "2026-08-25T09:06:04.645Z",
+  "lastCheckedAt": "2026-08-25T09:06:04.645Z",
+  "lastSuccessfulSyncAt": "2026-08-25T09:06:04.645Z",
   "coverage": {
     "pathways": [
       "India",
@@ -66,13 +66,13 @@
         {
           "name": "West Zone",
           "shortName": "WZONE",
-          "score": "187/10 (65.4 Ov) & 46/2 (15.4 Ov)"
+          "score": "187/10 (65.4 Ov) & 99/3 (24.5 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 3: 2nd Session - West Zone need 241 runs",
+      "overview": "Day 3: 2nd Session - West Zone need 188 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -97,13 +97,13 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "163/5 (41.5 Ov)"
+          "score": "179/7 (49.6 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 3: 2nd Session - Sri Lanka trail by 340 runs",
+      "overview": "Day 3: 2nd Session - Sri Lanka trail by 324 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
@@ -148,7 +148,7 @@
       "levelLabel": "Domestic / State",
       "sourceType": "",
       "sourceScope": "domestic-series",
-      "title": "Central Zone vs TBC, 1st Semi-Final",
+      "title": "Central Zone vs East Zone, 1st Semi-Final",
       "series": "Duleep Trophy 2026",
       "teams": [
         {
@@ -157,8 +157,8 @@
           "score": ""
         },
         {
-          "name": "TBC",
-          "shortName": "TBC",
+          "name": "East Zone",
+          "shortName": "EZONE",
           "score": ""
         }
       ],
@@ -17708,13 +17708,13 @@
         {
           "name": "West Zone",
           "shortName": "WZONE",
-          "score": "187/10 (65.4 Ov) & 46/2 (15.4 Ov)"
+          "score": "187/10 (65.4 Ov) & 99/3 (24.5 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 3: 2nd Session - West Zone need 241 runs",
+      "overview": "Day 3: 2nd Session - West Zone need 188 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -17739,13 +17739,13 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "163/5 (41.5 Ov)"
+          "score": "179/7 (49.6 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 3: 2nd Session - Sri Lanka trail by 340 runs",
+      "overview": "Day 3: 2nd Session - Sri Lanka trail by 324 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
@@ -17792,7 +17792,7 @@
       "levelLabel": "Domestic / State",
       "sourceType": "",
       "sourceScope": "domestic-series",
-      "title": "Central Zone vs TBC, 1st Semi-Final",
+      "title": "Central Zone vs East Zone, 1st Semi-Final",
       "series": "Duleep Trophy 2026",
       "teams": [
         {
@@ -17801,8 +17801,8 @@
           "score": ""
         },
         {
-          "name": "TBC",
-          "shortName": "TBC",
+          "name": "East Zone",
+          "shortName": "EZONE",
           "score": ""
         }
       ],
@@ -35392,13 +35392,13 @@
         {
           "name": "West Zone",
           "shortName": "WZONE",
-          "score": "187/10 (65.4 Ov) & 46/2 (15.4 Ov)"
+          "score": "187/10 (65.4 Ov) & 99/3 (24.5 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 3: 2nd Session - West Zone need 241 runs",
+      "overview": "Day 3: 2nd Session - West Zone need 188 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -35541,7 +35541,7 @@
       "levelLabel": "Domestic / State",
       "sourceType": "",
       "sourceScope": "domestic-series",
-      "title": "Central Zone vs TBC, 1st Semi-Final",
+      "title": "Central Zone vs East Zone, 1st Semi-Final",
       "series": "Duleep Trophy 2026",
       "teams": [
         {
@@ -35550,8 +35550,8 @@
           "score": ""
         },
         {
-          "name": "TBC",
-          "shortName": "TBC",
+          "name": "East Zone",
+          "shortName": "EZONE",
           "score": ""
         }
       ],
@@ -35663,13 +35663,13 @@
             {
               "name": "West Zone",
               "shortName": "WZONE",
-              "score": "187/10 (65.4 Ov) & 46/2 (15.4 Ov)"
+              "score": "187/10 (65.4 Ov) & 99/3 (24.5 Ov)"
             }
           ],
           "dateLabel": "23 Aug 2026, 09:30 am",
           "time": "",
           "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-          "overview": "Day 3: 2nd Session - West Zone need 241 runs",
+          "overview": "Day 3: 2nd Session - West Zone need 188 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-23T04:00:00.000Z",
@@ -35717,7 +35717,7 @@
           "levelLabel": "Domestic / State",
           "sourceType": "",
           "sourceScope": "domestic-series",
-          "title": "Central Zone vs TBC, 1st Semi-Final",
+          "title": "Central Zone vs East Zone, 1st Semi-Final",
           "series": "Duleep Trophy 2026",
           "teams": [
             {
@@ -35726,8 +35726,8 @@
               "score": ""
             },
             {
-              "name": "TBC",
-              "shortName": "TBC",
+              "name": "East Zone",
+              "shortName": "EZONE",
               "score": ""
             }
           ],
