@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-25T11:14:01.537Z",
-  "lastCheckedAt": "2026-08-25T11:14:01.537Z",
-  "lastSuccessfulSyncAt": "2026-08-25T11:14:01.537Z",
+  "syncedAt": "2026-08-25T11:45:02.279Z",
+  "lastCheckedAt": "2026-08-25T11:45:02.279Z",
+  "lastSuccessfulSyncAt": "2026-08-25T11:45:02.279Z",
   "coverage": {
     "pathways": [
       "India",
@@ -66,13 +66,13 @@
         {
           "name": "West Zone",
           "shortName": "WZONE",
-          "score": "187/10 (65.4 Ov) & 211/5 (47.2 Ov)"
+          "score": "187/10 (65.4 Ov) & 220/7 (50.6 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 3: 3rd Session - West Zone need 76 runs",
+      "overview": "Day 3: Stumps - West Zone need 67 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -97,13 +97,13 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "262/8 (80.2 Ov)"
+          "score": "265/8 (83.4 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 3: 3rd Session - Sri Lanka trail by 241 runs",
+      "overview": "Day 3: Rain stops play - Sri Lanka trail by 238 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
@@ -17708,13 +17708,13 @@
         {
           "name": "West Zone",
           "shortName": "WZONE",
-          "score": "187/10 (65.4 Ov) & 211/5 (47.2 Ov)"
+          "score": "187/10 (65.4 Ov) & 220/7 (50.6 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 3: 3rd Session - West Zone need 76 runs",
+      "overview": "Day 3: Stumps - West Zone need 67 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -17739,13 +17739,13 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "262/8 (80.2 Ov)"
+          "score": "265/8 (83.4 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 3: 3rd Session - Sri Lanka trail by 241 runs",
+      "overview": "Day 3: Rain stops play - Sri Lanka trail by 238 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
@@ -35392,13 +35392,13 @@
         {
           "name": "West Zone",
           "shortName": "WZONE",
-          "score": "187/10 (65.4 Ov) & 211/5 (47.2 Ov)"
+          "score": "187/10 (65.4 Ov) & 220/7 (50.6 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 3: 3rd Session - West Zone need 76 runs",
+      "overview": "Day 3: Stumps - West Zone need 67 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -35663,13 +35663,13 @@
             {
               "name": "West Zone",
               "shortName": "WZONE",
-              "score": "187/10 (65.4 Ov) & 211/5 (47.2 Ov)"
+              "score": "187/10 (65.4 Ov) & 220/7 (50.6 Ov)"
             }
           ],
           "dateLabel": "23 Aug 2026, 09:30 am",
           "time": "",
           "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-          "overview": "Day 3: 3rd Session - West Zone need 76 runs",
+          "overview": "Day 3: Stumps - West Zone need 67 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-23T04:00:00.000Z",
