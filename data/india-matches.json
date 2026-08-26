@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-26T13:28:17.576Z",
-  "lastCheckedAt": "2026-08-26T13:28:17.576Z",
-  "lastSuccessfulSyncAt": "2026-08-26T13:28:17.576Z",
+  "syncedAt": "2026-08-26T14:11:44.647Z",
+  "lastCheckedAt": "2026-08-26T14:11:44.647Z",
+  "lastSuccessfulSyncAt": "2026-08-26T14:11:44.647Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,9 +41,9 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 1,
+    "live": 2,
     "recent": 63,
-    "upcoming": 501,
+    "upcoming": 500,
     "total": 565
   },
   "all": [
@@ -79,31 +79,31 @@
       "rawId": 163017
     },
     {
-      "id": "upcoming-167030",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-167030",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
       "sourceScope": "global",
-      "title": "Trichy Grand Cholas vs Vida Kovai Kings, Qualifier 2",
+      "title": "Vida Kovai Kings vs Trichy Grand Cholas, Qualifier 2",
       "series": "Tamil Nadu Premier League 2026",
       "teams": [
         {
-          "name": "Trichy Grand Cholas",
-          "shortName": "TRI",
-          "score": ""
-        },
-        {
           "name": "Vida Kovai Kings",
           "shortName": "VKK",
+          "score": "17 (1.6 Ov)"
+        },
+        {
+          "name": "Trichy Grand Cholas",
+          "shortName": "TRI",
           "score": ""
         }
       ],
       "dateLabel": "26 Aug 2026, 07:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Match starts at Aug 26, 14:00 GMT",
+      "overview": "Vida Kovai Kings opt to bat",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-26T14:00:00.000Z",
@@ -17727,40 +17727,40 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
       "rawId": 163017
-    }
-  ],
-  "upcoming": [
+    },
     {
-      "id": "upcoming-167030",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-167030",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
       "sourceScope": "global",
-      "title": "Trichy Grand Cholas vs Vida Kovai Kings, Qualifier 2",
+      "title": "Vida Kovai Kings vs Trichy Grand Cholas, Qualifier 2",
       "series": "Tamil Nadu Premier League 2026",
       "teams": [
         {
-          "name": "Trichy Grand Cholas",
-          "shortName": "TRI",
-          "score": ""
-        },
-        {
           "name": "Vida Kovai Kings",
           "shortName": "VKK",
+          "score": "17 (1.6 Ov)"
+        },
+        {
+          "name": "Trichy Grand Cholas",
+          "shortName": "TRI",
           "score": ""
         }
       ],
       "dateLabel": "26 Aug 2026, 07:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Match starts at Aug 26, 14:00 GMT",
+      "overview": "Vida Kovai Kings opt to bat",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-26T14:00:00.000Z",
       "rawId": 167030
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-163043",
       "status": "upcoming",
@@ -35364,9 +35364,9 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 0,
+      "live": 1,
       "recent": 1,
-      "upcoming": 1,
+      "upcoming": 0,
       "total": 2
     },
     {
@@ -35389,6 +35389,38 @@
     }
   ],
   "importantMatches": [
+    {
+      "id": "live-167030",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Vida Kovai Kings vs Trichy Grand Cholas, Qualifier 2",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Vida Kovai Kings",
+          "shortName": "VKK",
+          "score": "17 (1.6 Ov)"
+        },
+        {
+          "name": "Trichy Grand Cholas",
+          "shortName": "TRI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Vida Kovai Kings opt to bat",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-26T14:00:00.000Z",
+      "rawId": 167030,
+      "importance": "Knockout stage"
+    },
     {
       "id": "upcoming-163061",
       "status": "upcoming",
@@ -35579,38 +35611,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163047,
-      "importance": "Knockout stage"
-    },
-    {
-      "id": "upcoming-167030",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Trichy Grand Cholas vs Vida Kovai Kings, Qualifier 2",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Trichy Grand Cholas",
-          "shortName": "TRI",
-          "score": ""
-        },
-        {
-          "name": "Vida Kovai Kings",
-          "shortName": "VKK",
-          "score": ""
-        }
-      ],
-      "dateLabel": "26 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Match starts at Aug 26, 14:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-26T14:00:00.000Z",
-      "rawId": 167030,
       "importance": "Knockout stage"
     },
     {
@@ -36013,38 +36013,38 @@
       "level": "league",
       "levelLabel": "League / IPL",
       "total": 1,
-      "live": 0,
-      "upcoming": 1,
+      "live": 1,
+      "upcoming": 0,
       "recent": 0,
       "startTime": "2026-08-26T14:00:00.000Z",
       "endTime": "2026-08-26T14:00:00.000Z",
       "matches": [
         {
-          "id": "upcoming-167030",
-          "status": "upcoming",
-          "statusLabel": "Future",
+          "id": "live-167030",
+          "status": "live",
+          "statusLabel": "Live",
           "level": "league",
           "levelLabel": "League / IPL",
           "sourceType": "league",
           "sourceScope": "global",
-          "title": "Trichy Grand Cholas vs Vida Kovai Kings, Qualifier 2",
+          "title": "Vida Kovai Kings vs Trichy Grand Cholas, Qualifier 2",
           "series": "Tamil Nadu Premier League 2026",
           "teams": [
             {
-              "name": "Trichy Grand Cholas",
-              "shortName": "TRI",
-              "score": ""
-            },
-            {
               "name": "Vida Kovai Kings",
               "shortName": "VKK",
+              "score": "17 (1.6 Ov)"
+            },
+            {
+              "name": "Trichy Grand Cholas",
+              "shortName": "TRI",
               "score": ""
             }
           ],
           "dateLabel": "26 Aug 2026, 07:30 pm",
           "time": "",
           "place": "MA Chidambaram Stadium, Chennai",
-          "overview": "Match starts at Aug 26, 14:00 GMT",
+          "overview": "Vida Kovai Kings opt to bat",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-26T14:00:00.000Z",
