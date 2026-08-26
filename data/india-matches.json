@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-26T15:53:10.240Z",
-  "lastCheckedAt": "2026-08-26T15:53:10.240Z",
-  "lastSuccessfulSyncAt": "2026-08-26T15:53:10.240Z",
+  "syncedAt": "2026-08-26T16:39:03.302Z",
+  "lastCheckedAt": "2026-08-26T16:39:03.302Z",
+  "lastSuccessfulSyncAt": "2026-08-26T16:39:03.302Z",
   "coverage": {
     "pathways": [
       "India",
@@ -92,18 +92,18 @@
         {
           "name": "Outer Delhi Warriors",
           "shortName": "ODW",
-          "score": "171/7 (17.6 Ov)"
+          "score": "179/10 (19.4 Ov)"
         },
         {
           "name": "Purani Dilli 6",
           "shortName": "PD",
-          "score": ""
+          "score": "25/1 (2.6 Ov)"
         }
       ],
       "dateLabel": "26 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Purani Dilli 6 opt to bowl",
+      "overview": "Purani Dilli 6 need 155 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169217",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-26T13:30:00.000Z",
@@ -128,13 +128,13 @@
         {
           "name": "Trichy Grand Cholas",
           "shortName": "TRI",
-          "score": "/3 (0.3 Ov)"
+          "score": "67/7 (10.3 Ov)"
         }
       ],
       "dateLabel": "26 Aug 2026, 07:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Trichy Grand Cholas need 184 runs",
+      "overview": "Trichy Grand Cholas need 117 runs in 57 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-26T14:00:00.000Z",
@@ -17734,18 +17734,18 @@
         {
           "name": "Outer Delhi Warriors",
           "shortName": "ODW",
-          "score": "171/7 (17.6 Ov)"
+          "score": "179/10 (19.4 Ov)"
         },
         {
           "name": "Purani Dilli 6",
           "shortName": "PD",
-          "score": ""
+          "score": "25/1 (2.6 Ov)"
         }
       ],
       "dateLabel": "26 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Purani Dilli 6 opt to bowl",
+      "overview": "Purani Dilli 6 need 155 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169217",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-26T13:30:00.000Z",
@@ -17770,13 +17770,13 @@
         {
           "name": "Trichy Grand Cholas",
           "shortName": "TRI",
-          "score": "/3 (0.3 Ov)"
+          "score": "67/7 (10.3 Ov)"
         }
       ],
       "dateLabel": "26 Aug 2026, 07:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Trichy Grand Cholas need 184 runs",
+      "overview": "Trichy Grand Cholas need 117 runs in 57 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-26T14:00:00.000Z",
@@ -35392,13 +35392,13 @@
         {
           "name": "Trichy Grand Cholas",
           "shortName": "TRI",
-          "score": "/3 (0.3 Ov)"
+          "score": "67/7 (10.3 Ov)"
         }
       ],
       "dateLabel": "26 Aug 2026, 07:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Trichy Grand Cholas need 184 runs",
+      "overview": "Trichy Grand Cholas need 117 runs in 57 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-26T14:00:00.000Z",
@@ -35419,18 +35419,18 @@
         {
           "name": "Outer Delhi Warriors",
           "shortName": "ODW",
-          "score": "171/7 (17.6 Ov)"
+          "score": "179/10 (19.4 Ov)"
         },
         {
           "name": "Purani Dilli 6",
           "shortName": "PD",
-          "score": ""
+          "score": "25/1 (2.6 Ov)"
         }
       ],
       "dateLabel": "26 Aug 2026, 07:00 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Purani Dilli 6 opt to bowl",
+      "overview": "Purani Dilli 6 need 155 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169217",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-26T13:30:00.000Z",
@@ -36014,13 +36014,13 @@
             {
               "name": "Trichy Grand Cholas",
               "shortName": "TRI",
-              "score": "/3 (0.3 Ov)"
+              "score": "67/7 (10.3 Ov)"
             }
           ],
           "dateLabel": "26 Aug 2026, 07:30 pm",
           "time": "",
           "place": "MA Chidambaram Stadium, Chennai",
-          "overview": "Trichy Grand Cholas need 184 runs",
+          "overview": "Trichy Grand Cholas need 117 runs in 57 balls",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-26T14:00:00.000Z",
@@ -36055,18 +36055,18 @@
             {
               "name": "Outer Delhi Warriors",
               "shortName": "ODW",
-              "score": "171/7 (17.6 Ov)"
+              "score": "179/10 (19.4 Ov)"
             },
             {
               "name": "Purani Dilli 6",
               "shortName": "PD",
-              "score": ""
+              "score": "25/1 (2.6 Ov)"
             }
           ],
           "dateLabel": "26 Aug 2026, 07:00 pm",
           "time": "",
           "place": "Arun Jaitley Stadium, Delhi",
-          "overview": "Purani Dilli 6 opt to bowl",
+          "overview": "Purani Dilli 6 need 155 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169217",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-26T13:30:00.000Z",
