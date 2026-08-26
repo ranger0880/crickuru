@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-26T16:39:03.302Z",
-  "lastCheckedAt": "2026-08-26T16:39:03.302Z",
-  "lastSuccessfulSyncAt": "2026-08-26T16:39:03.302Z",
+  "syncedAt": "2026-08-26T18:21:16.503Z",
+  "lastCheckedAt": "2026-08-26T18:21:16.503Z",
+  "lastSuccessfulSyncAt": "2026-08-26T18:21:16.503Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,8 +41,8 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 3,
-    "recent": 62,
+    "live": 1,
+    "recent": 64,
     "upcoming": 500,
     "total": 565
   },
@@ -77,68 +77,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
       "rawId": 163017
-    },
-    {
-      "id": "live-169217",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Outer Delhi Warriors vs Purani Dilli 6, Eliminator (3v4)",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "Outer Delhi Warriors",
-          "shortName": "ODW",
-          "score": "179/10 (19.4 Ov)"
-        },
-        {
-          "name": "Purani Dilli 6",
-          "shortName": "PD",
-          "score": "25/1 (2.6 Ov)"
-        }
-      ],
-      "dateLabel": "26 Aug 2026, 07:00 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Purani Dilli 6 need 155 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169217",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-26T13:30:00.000Z",
-      "rawId": 169217
-    },
-    {
-      "id": "live-167030",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Vida Kovai Kings vs Trichy Grand Cholas, Qualifier 2",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Vida Kovai Kings",
-          "shortName": "VKK",
-          "score": "183/5 (19.6 Ov)"
-        },
-        {
-          "name": "Trichy Grand Cholas",
-          "shortName": "TRI",
-          "score": "67/7 (10.3 Ov)"
-        }
-      ],
-      "dateLabel": "26 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Trichy Grand Cholas need 117 runs in 57 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-26T14:00:00.000Z",
-      "rawId": 167030
     },
     {
       "id": "upcoming-163043",
@@ -15641,6 +15579,77 @@
       "rawId": 164501
     },
     {
+      "id": "recent-167030",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Vida Kovai Kings vs Trichy Grand Cholas, Qualifier 2",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Vida Kovai Kings",
+          "shortName": "VKK",
+          "score": "183/5 (19.6 Ov)"
+        },
+        {
+          "name": "Trichy Grand Cholas",
+          "shortName": "TRI",
+          "score": "99/10 (15.4 Ov)"
+        }
+      ],
+      "dateLabel": "26 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Vida Kovai Kings won by 84 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-26T14:00:00.000Z",
+      "rawId": 167030,
+      "starPerformers": [
+        {
+          "name": "K Deeban Lingesh",
+          "performance": "3-14",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030"
+        }
+      ]
+    },
+    {
+      "id": "recent-169217",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Outer Delhi Warriors vs Purani Dilli 6, Eliminator (3v4)",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "Outer Delhi Warriors",
+          "shortName": "ODW",
+          "score": "179/10 (19.4 Ov)"
+        },
+        {
+          "name": "Purani Dilli 6",
+          "shortName": "PD",
+          "score": "183/3 (14.5 Ov)"
+        }
+      ],
+      "dateLabel": "26 Aug 2026, 07:00 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Purani Dilli 6 won by 7 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169217",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-26T13:30:00.000Z",
+      "rawId": 169217,
+      "starPerformers": []
+    },
+    {
       "id": "recent-163027",
       "status": "recent",
       "statusLabel": "Past",
@@ -17719,68 +17728,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
       "rawId": 163017
-    },
-    {
-      "id": "live-169217",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Outer Delhi Warriors vs Purani Dilli 6, Eliminator (3v4)",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "Outer Delhi Warriors",
-          "shortName": "ODW",
-          "score": "179/10 (19.4 Ov)"
-        },
-        {
-          "name": "Purani Dilli 6",
-          "shortName": "PD",
-          "score": "25/1 (2.6 Ov)"
-        }
-      ],
-      "dateLabel": "26 Aug 2026, 07:00 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Purani Dilli 6 need 155 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169217",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-26T13:30:00.000Z",
-      "rawId": 169217
-    },
-    {
-      "id": "live-167030",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Vida Kovai Kings vs Trichy Grand Cholas, Qualifier 2",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Vida Kovai Kings",
-          "shortName": "VKK",
-          "score": "183/5 (19.6 Ov)"
-        },
-        {
-          "name": "Trichy Grand Cholas",
-          "shortName": "TRI",
-          "score": "67/7 (10.3 Ov)"
-        }
-      ],
-      "dateLabel": "26 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Trichy Grand Cholas need 117 runs in 57 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-26T14:00:00.000Z",
-      "rawId": 167030
     }
   ],
   "upcoming": [
@@ -33287,6 +33234,77 @@
   ],
   "recent": [
     {
+      "id": "recent-167030",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Vida Kovai Kings vs Trichy Grand Cholas, Qualifier 2",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Vida Kovai Kings",
+          "shortName": "VKK",
+          "score": "183/5 (19.6 Ov)"
+        },
+        {
+          "name": "Trichy Grand Cholas",
+          "shortName": "TRI",
+          "score": "99/10 (15.4 Ov)"
+        }
+      ],
+      "dateLabel": "26 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Vida Kovai Kings won by 84 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-26T14:00:00.000Z",
+      "rawId": 167030,
+      "starPerformers": [
+        {
+          "name": "K Deeban Lingesh",
+          "performance": "3-14",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030"
+        }
+      ]
+    },
+    {
+      "id": "recent-169217",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Outer Delhi Warriors vs Purani Dilli 6, Eliminator (3v4)",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "Outer Delhi Warriors",
+          "shortName": "ODW",
+          "score": "179/10 (19.4 Ov)"
+        },
+        {
+          "name": "Purani Dilli 6",
+          "shortName": "PD",
+          "score": "183/3 (14.5 Ov)"
+        }
+      ],
+      "dateLabel": "26 Aug 2026, 07:00 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Purani Dilli 6 won by 7 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169217",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-26T13:30:00.000Z",
+      "rawId": 169217,
+      "starPerformers": []
+    },
+    {
       "id": "recent-163027",
       "status": "recent",
       "statusLabel": "Past",
@@ -35348,8 +35366,8 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 2,
-      "recent": 0,
+      "live": 0,
+      "recent": 2,
       "upcoming": 0,
       "total": 2
     },
@@ -35373,70 +35391,6 @@
     }
   ],
   "importantMatches": [
-    {
-      "id": "live-167030",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Vida Kovai Kings vs Trichy Grand Cholas, Qualifier 2",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Vida Kovai Kings",
-          "shortName": "VKK",
-          "score": "183/5 (19.6 Ov)"
-        },
-        {
-          "name": "Trichy Grand Cholas",
-          "shortName": "TRI",
-          "score": "67/7 (10.3 Ov)"
-        }
-      ],
-      "dateLabel": "26 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Trichy Grand Cholas need 117 runs in 57 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-26T14:00:00.000Z",
-      "rawId": 167030,
-      "importance": "Knockout stage"
-    },
-    {
-      "id": "live-169217",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Outer Delhi Warriors vs Purani Dilli 6, Eliminator (3v4)",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "Outer Delhi Warriors",
-          "shortName": "ODW",
-          "score": "179/10 (19.4 Ov)"
-        },
-        {
-          "name": "Purani Dilli 6",
-          "shortName": "PD",
-          "score": "25/1 (2.6 Ov)"
-        }
-      ],
-      "dateLabel": "26 Aug 2026, 07:00 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Purani Dilli 6 need 155 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169217",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-26T13:30:00.000Z",
-      "rawId": 169217,
-      "importance": "Knockout stage"
-    },
     {
       "id": "upcoming-163061",
       "status": "upcoming",
@@ -35627,6 +35581,79 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163047,
+      "importance": "Knockout stage"
+    },
+    {
+      "id": "recent-167030",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Vida Kovai Kings vs Trichy Grand Cholas, Qualifier 2",
+      "series": "Tamil Nadu Premier League 2026",
+      "teams": [
+        {
+          "name": "Vida Kovai Kings",
+          "shortName": "VKK",
+          "score": "183/5 (19.6 Ov)"
+        },
+        {
+          "name": "Trichy Grand Cholas",
+          "shortName": "TRI",
+          "score": "99/10 (15.4 Ov)"
+        }
+      ],
+      "dateLabel": "26 Aug 2026, 07:30 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Vida Kovai Kings won by 84 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-26T14:00:00.000Z",
+      "rawId": 167030,
+      "starPerformers": [
+        {
+          "name": "K Deeban Lingesh",
+          "performance": "3-14",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030"
+        }
+      ],
+      "importance": "Knockout stage"
+    },
+    {
+      "id": "recent-169217",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Outer Delhi Warriors vs Purani Dilli 6, Eliminator (3v4)",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "Outer Delhi Warriors",
+          "shortName": "ODW",
+          "score": "179/10 (19.4 Ov)"
+        },
+        {
+          "name": "Purani Dilli 6",
+          "shortName": "PD",
+          "score": "183/3 (14.5 Ov)"
+        }
+      ],
+      "dateLabel": "26 Aug 2026, 07:00 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Purani Dilli 6 won by 7 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169217",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-26T13:30:00.000Z",
+      "rawId": 169217,
+      "starPerformers": [],
       "importance": "Knockout stage"
     },
     {
@@ -35989,16 +36016,16 @@
       "level": "league",
       "levelLabel": "League / IPL",
       "total": 1,
-      "live": 1,
+      "live": 0,
       "upcoming": 0,
-      "recent": 0,
+      "recent": 1,
       "startTime": "2026-08-26T14:00:00.000Z",
       "endTime": "2026-08-26T14:00:00.000Z",
       "matches": [
         {
-          "id": "live-167030",
-          "status": "live",
-          "statusLabel": "Live",
+          "id": "recent-167030",
+          "status": "recent",
+          "statusLabel": "Past",
           "level": "league",
           "levelLabel": "League / IPL",
           "sourceType": "league",
@@ -36014,17 +36041,25 @@
             {
               "name": "Trichy Grand Cholas",
               "shortName": "TRI",
-              "score": "67/7 (10.3 Ov)"
+              "score": "99/10 (15.4 Ov)"
             }
           ],
           "dateLabel": "26 Aug 2026, 07:30 pm",
           "time": "",
           "place": "MA Chidambaram Stadium, Chennai",
-          "overview": "Trichy Grand Cholas need 117 runs in 57 balls",
+          "overview": "Vida Kovai Kings won by 84 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-26T14:00:00.000Z",
           "rawId": 167030,
+          "starPerformers": [
+            {
+              "name": "K Deeban Lingesh",
+              "performance": "3-14",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030"
+            }
+          ],
           "importance": "Knockout stage"
         }
       ]
@@ -36035,16 +36070,16 @@
       "level": "league",
       "levelLabel": "League / IPL",
       "total": 1,
-      "live": 1,
+      "live": 0,
       "upcoming": 0,
-      "recent": 0,
+      "recent": 1,
       "startTime": "2026-08-26T13:30:00.000Z",
       "endTime": "2026-08-26T13:30:00.000Z",
       "matches": [
         {
-          "id": "live-169217",
-          "status": "live",
-          "statusLabel": "Live",
+          "id": "recent-169217",
+          "status": "recent",
+          "statusLabel": "Past",
           "level": "league",
           "levelLabel": "League / IPL",
           "sourceType": "league",
@@ -36060,17 +36095,18 @@
             {
               "name": "Purani Dilli 6",
               "shortName": "PD",
-              "score": "25/1 (2.6 Ov)"
+              "score": "183/3 (14.5 Ov)"
             }
           ],
           "dateLabel": "26 Aug 2026, 07:00 pm",
           "time": "",
           "place": "Arun Jaitley Stadium, Delhi",
-          "overview": "Purani Dilli 6 need 155 runs",
+          "overview": "Purani Dilli 6 won by 7 wkts",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169217",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-26T13:30:00.000Z",
           "rawId": 169217,
+          "starPerformers": [],
           "importance": "Knockout stage"
         }
       ]
@@ -36081,6 +36117,79 @@
       "month": "2026-08",
       "label": "August 2026",
       "matches": [
+        {
+          "id": "recent-167030",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "league",
+          "levelLabel": "League / IPL",
+          "sourceType": "league",
+          "sourceScope": "global",
+          "title": "Vida Kovai Kings vs Trichy Grand Cholas, Qualifier 2",
+          "series": "Tamil Nadu Premier League 2026",
+          "teams": [
+            {
+              "name": "Vida Kovai Kings",
+              "shortName": "VKK",
+              "score": "183/5 (19.6 Ov)"
+            },
+            {
+              "name": "Trichy Grand Cholas",
+              "shortName": "TRI",
+              "score": "99/10 (15.4 Ov)"
+            }
+          ],
+          "dateLabel": "26 Aug 2026, 07:30 pm",
+          "time": "",
+          "place": "MA Chidambaram Stadium, Chennai",
+          "overview": "Vida Kovai Kings won by 84 runs",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "startTime": "2026-08-26T14:00:00.000Z",
+          "rawId": 167030,
+          "starPerformers": [
+            {
+              "name": "K Deeban Lingesh",
+              "performance": "3-14",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030"
+            }
+          ],
+          "importance": "Knockout stage"
+        },
+        {
+          "id": "recent-169217",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "league",
+          "levelLabel": "League / IPL",
+          "sourceType": "league",
+          "sourceScope": "global",
+          "title": "Outer Delhi Warriors vs Purani Dilli 6, Eliminator (3v4)",
+          "series": "Delhi Premier League 2026",
+          "teams": [
+            {
+              "name": "Outer Delhi Warriors",
+              "shortName": "ODW",
+              "score": "179/10 (19.4 Ov)"
+            },
+            {
+              "name": "Purani Dilli 6",
+              "shortName": "PD",
+              "score": "183/3 (14.5 Ov)"
+            }
+          ],
+          "dateLabel": "26 Aug 2026, 07:00 pm",
+          "time": "",
+          "place": "Arun Jaitley Stadium, Delhi",
+          "overview": "Purani Dilli 6 won by 7 wkts",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169217",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "startTime": "2026-08-26T13:30:00.000Z",
+          "rawId": 169217,
+          "starPerformers": [],
+          "importance": "Knockout stage"
+        },
         {
           "id": "recent-163027",
           "status": "recent",
