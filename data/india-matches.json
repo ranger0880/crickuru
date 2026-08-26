@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-26T20:13:44.863Z",
-  "lastCheckedAt": "2026-08-26T20:13:44.863Z",
-  "lastSuccessfulSyncAt": "2026-08-26T20:13:44.863Z",
+  "syncedAt": "2026-08-26T23:33:55.279Z",
+  "lastCheckedAt": "2026-08-26T23:33:55.279Z",
+  "lastSuccessfulSyncAt": "2026-08-26T23:33:55.279Z",
   "coverage": {
     "pathways": [
       "India",
@@ -42,9 +42,9 @@
   },
   "summary": {
     "live": 1,
-    "recent": 64,
+    "recent": 63,
     "upcoming": 500,
-    "total": 565
+    "total": 564
   },
   "all": [
     {
@@ -15616,38 +15616,6 @@
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030"
         }
       ]
-    },
-    {
-      "id": "recent-169217",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Outer Delhi Warriors vs Purani Dilli 6, Eliminator (3v4)",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "Outer Delhi Warriors",
-          "shortName": "ODW",
-          "score": "179/10 (19.4 Ov)"
-        },
-        {
-          "name": "Purani Dilli 6",
-          "shortName": "PD",
-          "score": "183/3 (14.5 Ov)"
-        }
-      ],
-      "dateLabel": "26 Aug 2026, 07:00 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Purani Dilli 6 won by 7 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169217",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-26T13:30:00.000Z",
-      "rawId": 169217,
-      "starPerformers": []
     },
     {
       "id": "recent-163027",
@@ -33273,38 +33241,6 @@
       ]
     },
     {
-      "id": "recent-169217",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Outer Delhi Warriors vs Purani Dilli 6, Eliminator (3v4)",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "Outer Delhi Warriors",
-          "shortName": "ODW",
-          "score": "179/10 (19.4 Ov)"
-        },
-        {
-          "name": "Purani Dilli 6",
-          "shortName": "PD",
-          "score": "183/3 (14.5 Ov)"
-        }
-      ],
-      "dateLabel": "26 Aug 2026, 07:00 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Purani Dilli 6 won by 7 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169217",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-26T13:30:00.000Z",
-      "rawId": 169217,
-      "starPerformers": []
-    },
-    {
       "id": "recent-163027",
       "status": "recent",
       "statusLabel": "Past",
@@ -35367,9 +35303,9 @@
       "label": "League / IPL",
       "order": 2,
       "live": 0,
-      "recent": 2,
+      "recent": 1,
       "upcoming": 0,
-      "total": 2
+      "total": 1
     },
     {
       "id": "women",
@@ -35621,39 +35557,6 @@
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030"
         }
       ],
-      "importance": "Knockout stage"
-    },
-    {
-      "id": "recent-169217",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Outer Delhi Warriors vs Purani Dilli 6, Eliminator (3v4)",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "Outer Delhi Warriors",
-          "shortName": "ODW",
-          "score": "179/10 (19.4 Ov)"
-        },
-        {
-          "name": "Purani Dilli 6",
-          "shortName": "PD",
-          "score": "183/3 (14.5 Ov)"
-        }
-      ],
-      "dateLabel": "26 Aug 2026, 07:00 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Purani Dilli 6 won by 7 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169217",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-26T13:30:00.000Z",
-      "rawId": 169217,
-      "starPerformers": [],
       "importance": "Knockout stage"
     },
     {
@@ -36063,53 +35966,6 @@
           "importance": "Knockout stage"
         }
       ]
-    },
-    {
-      "id": "delhi-premier-league-2026",
-      "series": "Delhi Premier League 2026",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "total": 1,
-      "live": 0,
-      "upcoming": 0,
-      "recent": 1,
-      "startTime": "2026-08-26T13:30:00.000Z",
-      "endTime": "2026-08-26T13:30:00.000Z",
-      "matches": [
-        {
-          "id": "recent-169217",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "league",
-          "levelLabel": "League / IPL",
-          "sourceType": "league",
-          "sourceScope": "global",
-          "title": "Outer Delhi Warriors vs Purani Dilli 6, Eliminator (3v4)",
-          "series": "Delhi Premier League 2026",
-          "teams": [
-            {
-              "name": "Outer Delhi Warriors",
-              "shortName": "ODW",
-              "score": "179/10 (19.4 Ov)"
-            },
-            {
-              "name": "Purani Dilli 6",
-              "shortName": "PD",
-              "score": "183/3 (14.5 Ov)"
-            }
-          ],
-          "dateLabel": "26 Aug 2026, 07:00 pm",
-          "time": "",
-          "place": "Arun Jaitley Stadium, Delhi",
-          "overview": "Purani Dilli 6 won by 7 wkts",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169217",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-          "startTime": "2026-08-26T13:30:00.000Z",
-          "rawId": 169217,
-          "starPerformers": [],
-          "importance": "Knockout stage"
-        }
-      ]
     }
   ],
   "importantResultsByMonth": [
@@ -36155,39 +36011,6 @@
               "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030"
             }
           ],
-          "importance": "Knockout stage"
-        },
-        {
-          "id": "recent-169217",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "league",
-          "levelLabel": "League / IPL",
-          "sourceType": "league",
-          "sourceScope": "global",
-          "title": "Outer Delhi Warriors vs Purani Dilli 6, Eliminator (3v4)",
-          "series": "Delhi Premier League 2026",
-          "teams": [
-            {
-              "name": "Outer Delhi Warriors",
-              "shortName": "ODW",
-              "score": "179/10 (19.4 Ov)"
-            },
-            {
-              "name": "Purani Dilli 6",
-              "shortName": "PD",
-              "score": "183/3 (14.5 Ov)"
-            }
-          ],
-          "dateLabel": "26 Aug 2026, 07:00 pm",
-          "time": "",
-          "place": "Arun Jaitley Stadium, Delhi",
-          "overview": "Purani Dilli 6 won by 7 wkts",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169217",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-          "startTime": "2026-08-26T13:30:00.000Z",
-          "rawId": 169217,
-          "starPerformers": [],
           "importance": "Knockout stage"
         },
         {
