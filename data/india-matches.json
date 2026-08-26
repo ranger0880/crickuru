@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-26T05:54:55.381Z",
-  "lastCheckedAt": "2026-08-26T05:54:55.381Z",
-  "lastSuccessfulSyncAt": "2026-08-26T05:54:55.381Z",
+  "syncedAt": "2026-08-26T06:32:53.826Z",
+  "lastCheckedAt": "2026-08-26T06:32:53.826Z",
+  "lastSuccessfulSyncAt": "2026-08-26T06:32:53.826Z",
   "coverage": {
     "pathways": [
       "India",
@@ -66,13 +66,13 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "290/10 (89.4 Ov) & 48/1 (11.6 Ov)"
+          "score": "290/10 (89.4 Ov) & 83/2 (21.6 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 4: 1st Session - Sri Lanka trail by 165 runs",
+      "overview": "Day 4: Lunch Break - Sri Lanka trail by 130 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
@@ -17708,13 +17708,13 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "290/10 (89.4 Ov) & 48/1 (11.6 Ov)"
+          "score": "290/10 (89.4 Ov) & 83/2 (21.6 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 4: 1st Session - Sri Lanka trail by 165 runs",
+      "overview": "Day 4: Lunch Break - Sri Lanka trail by 130 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
