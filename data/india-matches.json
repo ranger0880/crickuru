@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-26T14:11:44.647Z",
-  "lastCheckedAt": "2026-08-26T14:11:44.647Z",
-  "lastSuccessfulSyncAt": "2026-08-26T14:11:44.647Z",
+  "syncedAt": "2026-08-26T15:53:10.240Z",
+  "lastCheckedAt": "2026-08-26T15:53:10.240Z",
+  "lastSuccessfulSyncAt": "2026-08-26T15:53:10.240Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,8 +41,8 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 2,
-    "recent": 63,
+    "live": 3,
+    "recent": 62,
     "upcoming": 500,
     "total": 565
   },
@@ -79,6 +79,37 @@
       "rawId": 163017
     },
     {
+      "id": "live-169217",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Outer Delhi Warriors vs Purani Dilli 6, Eliminator (3v4)",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "Outer Delhi Warriors",
+          "shortName": "ODW",
+          "score": "171/7 (17.6 Ov)"
+        },
+        {
+          "name": "Purani Dilli 6",
+          "shortName": "PD",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Aug 2026, 07:00 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Purani Dilli 6 opt to bowl",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169217",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-26T13:30:00.000Z",
+      "rawId": 169217
+    },
+    {
       "id": "live-167030",
       "status": "live",
       "statusLabel": "Live",
@@ -92,18 +123,18 @@
         {
           "name": "Vida Kovai Kings",
           "shortName": "VKK",
-          "score": "17 (1.6 Ov)"
+          "score": "183/5 (19.6 Ov)"
         },
         {
           "name": "Trichy Grand Cholas",
           "shortName": "TRI",
-          "score": ""
+          "score": "/3 (0.3 Ov)"
         }
       ],
       "dateLabel": "26 Aug 2026, 07:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Vida Kovai Kings opt to bat",
+      "overview": "Trichy Grand Cholas need 184 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-26T14:00:00.000Z",
@@ -15610,45 +15641,6 @@
       "rawId": 164501
     },
     {
-      "id": "recent-169213",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "South Delhi Superstarz vs Central Delhi Kings, Qualifier 1 (1v2)",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "South Delhi Superstarz",
-          "shortName": "SDS",
-          "score": "193/7 (19.6 Ov)"
-        },
-        {
-          "name": "Central Delhi Kings",
-          "shortName": "CDK",
-          "score": "178/10 (19.4 Ov)"
-        }
-      ],
-      "dateLabel": "26 Aug 2026, 01:30 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "South Delhi Superstarz won by 15 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169213",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-26T08:00:00.000Z",
-      "rawId": 169213,
-      "starPerformers": [
-        {
-          "name": "Divansh Rawat",
-          "performance": "3-29",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169213"
-        }
-      ]
-    },
-    {
       "id": "recent-163027",
       "status": "recent",
       "statusLabel": "Past",
@@ -17729,6 +17721,37 @@
       "rawId": 163017
     },
     {
+      "id": "live-169217",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Outer Delhi Warriors vs Purani Dilli 6, Eliminator (3v4)",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "Outer Delhi Warriors",
+          "shortName": "ODW",
+          "score": "171/7 (17.6 Ov)"
+        },
+        {
+          "name": "Purani Dilli 6",
+          "shortName": "PD",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Aug 2026, 07:00 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Purani Dilli 6 opt to bowl",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169217",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-26T13:30:00.000Z",
+      "rawId": 169217
+    },
+    {
       "id": "live-167030",
       "status": "live",
       "statusLabel": "Live",
@@ -17742,18 +17765,18 @@
         {
           "name": "Vida Kovai Kings",
           "shortName": "VKK",
-          "score": "17 (1.6 Ov)"
+          "score": "183/5 (19.6 Ov)"
         },
         {
           "name": "Trichy Grand Cholas",
           "shortName": "TRI",
-          "score": ""
+          "score": "/3 (0.3 Ov)"
         }
       ],
       "dateLabel": "26 Aug 2026, 07:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Vida Kovai Kings opt to bat",
+      "overview": "Trichy Grand Cholas need 184 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-26T14:00:00.000Z",
@@ -33264,45 +33287,6 @@
   ],
   "recent": [
     {
-      "id": "recent-169213",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "South Delhi Superstarz vs Central Delhi Kings, Qualifier 1 (1v2)",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "South Delhi Superstarz",
-          "shortName": "SDS",
-          "score": "193/7 (19.6 Ov)"
-        },
-        {
-          "name": "Central Delhi Kings",
-          "shortName": "CDK",
-          "score": "178/10 (19.4 Ov)"
-        }
-      ],
-      "dateLabel": "26 Aug 2026, 01:30 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "South Delhi Superstarz won by 15 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169213",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-26T08:00:00.000Z",
-      "rawId": 169213,
-      "starPerformers": [
-        {
-          "name": "Divansh Rawat",
-          "performance": "3-29",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169213"
-        }
-      ]
-    },
-    {
       "id": "recent-163027",
       "status": "recent",
       "statusLabel": "Past",
@@ -35364,8 +35348,8 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 1,
-      "recent": 1,
+      "live": 2,
+      "recent": 0,
       "upcoming": 0,
       "total": 2
     },
@@ -35403,22 +35387,54 @@
         {
           "name": "Vida Kovai Kings",
           "shortName": "VKK",
-          "score": "17 (1.6 Ov)"
+          "score": "183/5 (19.6 Ov)"
         },
         {
           "name": "Trichy Grand Cholas",
           "shortName": "TRI",
-          "score": ""
+          "score": "/3 (0.3 Ov)"
         }
       ],
       "dateLabel": "26 Aug 2026, 07:30 pm",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Vida Kovai Kings opt to bat",
+      "overview": "Trichy Grand Cholas need 184 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-26T14:00:00.000Z",
       "rawId": 167030,
+      "importance": "Knockout stage"
+    },
+    {
+      "id": "live-169217",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Outer Delhi Warriors vs Purani Dilli 6, Eliminator (3v4)",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "Outer Delhi Warriors",
+          "shortName": "ODW",
+          "score": "171/7 (17.6 Ov)"
+        },
+        {
+          "name": "Purani Dilli 6",
+          "shortName": "PD",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Aug 2026, 07:00 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Purani Dilli 6 opt to bowl",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169217",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-26T13:30:00.000Z",
+      "rawId": 169217,
       "importance": "Knockout stage"
     },
     {
@@ -35611,46 +35627,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163047,
-      "importance": "Knockout stage"
-    },
-    {
-      "id": "recent-169213",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "South Delhi Superstarz vs Central Delhi Kings, Qualifier 1 (1v2)",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "South Delhi Superstarz",
-          "shortName": "SDS",
-          "score": "193/7 (19.6 Ov)"
-        },
-        {
-          "name": "Central Delhi Kings",
-          "shortName": "CDK",
-          "score": "178/10 (19.4 Ov)"
-        }
-      ],
-      "dateLabel": "26 Aug 2026, 01:30 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "South Delhi Superstarz won by 15 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169213",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-26T08:00:00.000Z",
-      "rawId": 169213,
-      "starPerformers": [
-        {
-          "name": "Divansh Rawat",
-          "performance": "3-29",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169213"
-        }
-      ],
       "importance": "Knockout stage"
     },
     {
@@ -36033,18 +36009,18 @@
             {
               "name": "Vida Kovai Kings",
               "shortName": "VKK",
-              "score": "17 (1.6 Ov)"
+              "score": "183/5 (19.6 Ov)"
             },
             {
               "name": "Trichy Grand Cholas",
               "shortName": "TRI",
-              "score": ""
+              "score": "/3 (0.3 Ov)"
             }
           ],
           "dateLabel": "26 Aug 2026, 07:30 pm",
           "time": "",
           "place": "MA Chidambaram Stadium, Chennai",
-          "overview": "Vida Kovai Kings opt to bat",
+          "overview": "Trichy Grand Cholas need 184 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-26T14:00:00.000Z",
@@ -36059,50 +36035,42 @@
       "level": "league",
       "levelLabel": "League / IPL",
       "total": 1,
-      "live": 0,
+      "live": 1,
       "upcoming": 0,
-      "recent": 1,
-      "startTime": "2026-08-26T08:00:00.000Z",
-      "endTime": "2026-08-26T08:00:00.000Z",
+      "recent": 0,
+      "startTime": "2026-08-26T13:30:00.000Z",
+      "endTime": "2026-08-26T13:30:00.000Z",
       "matches": [
         {
-          "id": "recent-169213",
-          "status": "recent",
-          "statusLabel": "Past",
+          "id": "live-169217",
+          "status": "live",
+          "statusLabel": "Live",
           "level": "league",
           "levelLabel": "League / IPL",
           "sourceType": "league",
           "sourceScope": "global",
-          "title": "South Delhi Superstarz vs Central Delhi Kings, Qualifier 1 (1v2)",
+          "title": "Outer Delhi Warriors vs Purani Dilli 6, Eliminator (3v4)",
           "series": "Delhi Premier League 2026",
           "teams": [
             {
-              "name": "South Delhi Superstarz",
-              "shortName": "SDS",
-              "score": "193/7 (19.6 Ov)"
+              "name": "Outer Delhi Warriors",
+              "shortName": "ODW",
+              "score": "171/7 (17.6 Ov)"
             },
             {
-              "name": "Central Delhi Kings",
-              "shortName": "CDK",
-              "score": "178/10 (19.4 Ov)"
+              "name": "Purani Dilli 6",
+              "shortName": "PD",
+              "score": ""
             }
           ],
-          "dateLabel": "26 Aug 2026, 01:30 pm",
+          "dateLabel": "26 Aug 2026, 07:00 pm",
           "time": "",
           "place": "Arun Jaitley Stadium, Delhi",
-          "overview": "South Delhi Superstarz won by 15 runs",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169213",
+          "overview": "Purani Dilli 6 opt to bowl",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169217",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-          "startTime": "2026-08-26T08:00:00.000Z",
-          "rawId": 169213,
-          "starPerformers": [
-            {
-              "name": "Divansh Rawat",
-              "performance": "3-29",
-              "label": "Player of the Match",
-              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169213"
-            }
-          ],
+          "startTime": "2026-08-26T13:30:00.000Z",
+          "rawId": 169217,
           "importance": "Knockout stage"
         }
       ]
@@ -36113,46 +36081,6 @@
       "month": "2026-08",
       "label": "August 2026",
       "matches": [
-        {
-          "id": "recent-169213",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "league",
-          "levelLabel": "League / IPL",
-          "sourceType": "league",
-          "sourceScope": "global",
-          "title": "South Delhi Superstarz vs Central Delhi Kings, Qualifier 1 (1v2)",
-          "series": "Delhi Premier League 2026",
-          "teams": [
-            {
-              "name": "South Delhi Superstarz",
-              "shortName": "SDS",
-              "score": "193/7 (19.6 Ov)"
-            },
-            {
-              "name": "Central Delhi Kings",
-              "shortName": "CDK",
-              "score": "178/10 (19.4 Ov)"
-            }
-          ],
-          "dateLabel": "26 Aug 2026, 01:30 pm",
-          "time": "",
-          "place": "Arun Jaitley Stadium, Delhi",
-          "overview": "South Delhi Superstarz won by 15 runs",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169213",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-          "startTime": "2026-08-26T08:00:00.000Z",
-          "rawId": 169213,
-          "starPerformers": [
-            {
-              "name": "Divansh Rawat",
-              "performance": "3-29",
-              "label": "Player of the Match",
-              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169213"
-            }
-          ],
-          "importance": "Knockout stage"
-        },
         {
           "id": "recent-163027",
           "status": "recent",
