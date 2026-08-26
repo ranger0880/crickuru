@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-26T07:28:52.596Z",
-  "lastCheckedAt": "2026-08-26T07:28:52.596Z",
-  "lastSuccessfulSyncAt": "2026-08-26T07:28:52.596Z",
+  "syncedAt": "2026-08-26T08:08:35.828Z",
+  "lastCheckedAt": "2026-08-26T08:08:35.828Z",
+  "lastSuccessfulSyncAt": "2026-08-26T08:08:35.828Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,9 +41,9 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 1,
+    "live": 2,
     "recent": 62,
-    "upcoming": 502,
+    "upcoming": 501,
     "total": 565
   },
   "all": [
@@ -66,44 +66,44 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "290/10 (89.4 Ov) & 98/2 (27.4 Ov)"
+          "score": "290/10 (89.4 Ov) & 146/2 (38.1 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 4: 2nd Session - Sri Lanka trail by 115 runs",
+      "overview": "Day 4: 2nd Session - Sri Lanka trail by 67 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
       "rawId": 163017
     },
     {
-      "id": "upcoming-169213",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-169213",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
       "sourceScope": "global",
-      "title": "Central Delhi Kings vs South Delhi Superstarz, Qualifier 1 (1v2)",
+      "title": "South Delhi Superstarz vs Central Delhi Kings, Qualifier 1 (1v2)",
       "series": "Delhi Premier League 2026",
       "teams": [
         {
-          "name": "Central Delhi Kings",
-          "shortName": "CDK",
-          "score": ""
-        },
-        {
           "name": "South Delhi Superstarz",
           "shortName": "SDS",
+          "score": "1/1 (0.3 Ov)"
+        },
+        {
+          "name": "Central Delhi Kings",
+          "shortName": "CDK",
           "score": ""
         }
       ],
       "dateLabel": "26 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Match starts at Aug 26, 08:00 GMT",
+      "overview": "Central Delhi Kings opt to bowl",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169213",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-26T08:00:00.000Z",
@@ -17708,51 +17708,51 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "290/10 (89.4 Ov) & 98/2 (27.4 Ov)"
+          "score": "290/10 (89.4 Ov) & 146/2 (38.1 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 4: 2nd Session - Sri Lanka trail by 115 runs",
+      "overview": "Day 4: 2nd Session - Sri Lanka trail by 67 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
       "rawId": 163017
-    }
-  ],
-  "upcoming": [
+    },
     {
-      "id": "upcoming-169213",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-169213",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
       "sourceScope": "global",
-      "title": "Central Delhi Kings vs South Delhi Superstarz, Qualifier 1 (1v2)",
+      "title": "South Delhi Superstarz vs Central Delhi Kings, Qualifier 1 (1v2)",
       "series": "Delhi Premier League 2026",
       "teams": [
         {
-          "name": "Central Delhi Kings",
-          "shortName": "CDK",
-          "score": ""
-        },
-        {
           "name": "South Delhi Superstarz",
           "shortName": "SDS",
+          "score": "1/1 (0.3 Ov)"
+        },
+        {
+          "name": "Central Delhi Kings",
+          "shortName": "CDK",
           "score": ""
         }
       ],
       "dateLabel": "26 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Match starts at Aug 26, 08:00 GMT",
+      "overview": "Central Delhi Kings opt to bowl",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169213",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-26T08:00:00.000Z",
       "rawId": 169213
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-167030",
       "status": "upcoming",
@@ -35348,9 +35348,9 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 0,
+      "live": 1,
       "recent": 0,
-      "upcoming": 2,
+      "upcoming": 1,
       "total": 2
     },
     {
@@ -35373,6 +35373,38 @@
     }
   ],
   "importantMatches": [
+    {
+      "id": "live-169213",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "South Delhi Superstarz vs Central Delhi Kings, Qualifier 1 (1v2)",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "South Delhi Superstarz",
+          "shortName": "SDS",
+          "score": "1/1 (0.3 Ov)"
+        },
+        {
+          "name": "Central Delhi Kings",
+          "shortName": "CDK",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Aug 2026, 01:30 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Central Delhi Kings opt to bowl",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169213",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-26T08:00:00.000Z",
+      "rawId": 169213,
+      "importance": "Knockout stage"
+    },
     {
       "id": "upcoming-163061",
       "status": "upcoming",
@@ -35595,38 +35627,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-26T14:00:00.000Z",
       "rawId": 167030,
-      "importance": "Knockout stage"
-    },
-    {
-      "id": "upcoming-169213",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Central Delhi Kings vs South Delhi Superstarz, Qualifier 1 (1v2)",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "Central Delhi Kings",
-          "shortName": "CDK",
-          "score": ""
-        },
-        {
-          "name": "South Delhi Superstarz",
-          "shortName": "SDS",
-          "score": ""
-        }
-      ],
-      "dateLabel": "26 Aug 2026, 01:30 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Match starts at Aug 26, 08:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169213",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-26T08:00:00.000Z",
-      "rawId": 169213,
       "importance": "Knockout stage"
     },
     {
@@ -36035,38 +36035,38 @@
       "level": "league",
       "levelLabel": "League / IPL",
       "total": 1,
-      "live": 0,
-      "upcoming": 1,
+      "live": 1,
+      "upcoming": 0,
       "recent": 0,
       "startTime": "2026-08-26T08:00:00.000Z",
       "endTime": "2026-08-26T08:00:00.000Z",
       "matches": [
         {
-          "id": "upcoming-169213",
-          "status": "upcoming",
-          "statusLabel": "Future",
+          "id": "live-169213",
+          "status": "live",
+          "statusLabel": "Live",
           "level": "league",
           "levelLabel": "League / IPL",
           "sourceType": "league",
           "sourceScope": "global",
-          "title": "Central Delhi Kings vs South Delhi Superstarz, Qualifier 1 (1v2)",
+          "title": "South Delhi Superstarz vs Central Delhi Kings, Qualifier 1 (1v2)",
           "series": "Delhi Premier League 2026",
           "teams": [
             {
-              "name": "Central Delhi Kings",
-              "shortName": "CDK",
-              "score": ""
-            },
-            {
               "name": "South Delhi Superstarz",
               "shortName": "SDS",
+              "score": "1/1 (0.3 Ov)"
+            },
+            {
+              "name": "Central Delhi Kings",
+              "shortName": "CDK",
               "score": ""
             }
           ],
           "dateLabel": "26 Aug 2026, 01:30 pm",
           "time": "",
           "place": "Arun Jaitley Stadium, Delhi",
-          "overview": "Match starts at Aug 26, 08:00 GMT",
+          "overview": "Central Delhi Kings opt to bowl",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169213",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-26T08:00:00.000Z",
