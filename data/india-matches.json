@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-26T00:50:25.357Z",
-  "lastCheckedAt": "2026-08-26T00:50:25.357Z",
-  "lastSuccessfulSyncAt": "2026-08-26T00:50:25.357Z",
+  "syncedAt": "2026-08-26T02:15:20.742Z",
+  "lastCheckedAt": "2026-08-26T02:15:20.742Z",
+  "lastSuccessfulSyncAt": "2026-08-26T02:15:20.742Z",
   "coverage": {
     "pathways": [
       "India",
@@ -42,9 +42,9 @@
   },
   "summary": {
     "live": 2,
-    "recent": 63,
+    "recent": 62,
     "upcoming": 500,
-    "total": 565
+    "total": 564
   },
   "all": [
     {
@@ -15608,38 +15608,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2027-02-27T04:00:00.000Z",
       "rawId": 164501
-    },
-    {
-      "id": "recent-169203",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "East Delhi Riders vs Purani Dilli 6, 40th Match",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "East Delhi Riders",
-          "shortName": "EDR",
-          "score": "118/6 (9.6 Ov)"
-        },
-        {
-          "name": "Purani Dilli 6",
-          "shortName": "PD",
-          "score": "108/6 (9.6 Ov)"
-        }
-      ],
-      "dateLabel": "25 Aug 2026, 07:00 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "East Delhi Riders won by 10 runs - (Match reduced to 10 overs per side due to rain)",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169203",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-25T13:30:00.000Z",
-      "rawId": 169203,
-      "starPerformers": []
     },
     {
       "id": "recent-169193",
@@ -33257,38 +33225,6 @@
   ],
   "recent": [
     {
-      "id": "recent-169203",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "East Delhi Riders vs Purani Dilli 6, 40th Match",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "East Delhi Riders",
-          "shortName": "EDR",
-          "score": "118/6 (9.6 Ov)"
-        },
-        {
-          "name": "Purani Dilli 6",
-          "shortName": "PD",
-          "score": "108/6 (9.6 Ov)"
-        }
-      ],
-      "dateLabel": "25 Aug 2026, 07:00 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "East Delhi Riders won by 10 runs - (Match reduced to 10 overs per side due to rain)",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169203",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-25T13:30:00.000Z",
-      "rawId": 169203,
-      "starPerformers": []
-    },
-    {
       "id": "recent-169193",
       "status": "recent",
       "statusLabel": "Past",
@@ -35351,9 +35287,9 @@
       "label": "League / IPL",
       "order": 2,
       "live": 0,
-      "recent": 2,
+      "recent": 1,
       "upcoming": 0,
-      "total": 2
+      "total": 1
     },
     {
       "id": "women",
