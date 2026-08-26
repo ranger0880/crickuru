@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-26T03:26:39.890Z",
-  "lastCheckedAt": "2026-08-26T03:26:39.890Z",
-  "lastSuccessfulSyncAt": "2026-08-26T03:26:39.890Z",
+  "syncedAt": "2026-08-26T04:09:26.621Z",
+  "lastCheckedAt": "2026-08-26T04:09:26.621Z",
+  "lastSuccessfulSyncAt": "2026-08-26T04:09:26.621Z",
   "coverage": {
     "pathways": [
       "India",
@@ -66,13 +66,13 @@
         {
           "name": "West Zone",
           "shortName": "WZONE",
-          "score": "187/10 (65.4 Ov) & 220/7 (50.6 Ov)"
+          "score": "187/10 (65.4 Ov) & 223/8 (52.4 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 3: Stumps - West Zone need 67 runs",
+      "overview": "Day 4: 1st Session - West Zone need 64 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -17677,13 +17677,13 @@
         {
           "name": "West Zone",
           "shortName": "WZONE",
-          "score": "187/10 (65.4 Ov) & 220/7 (50.6 Ov)"
+          "score": "187/10 (65.4 Ov) & 223/8 (52.4 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 3: Stumps - West Zone need 67 runs",
+      "overview": "Day 4: 1st Session - West Zone need 64 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -35330,13 +35330,13 @@
         {
           "name": "West Zone",
           "shortName": "WZONE",
-          "score": "187/10 (65.4 Ov) & 220/7 (50.6 Ov)"
+          "score": "187/10 (65.4 Ov) & 223/8 (52.4 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 3: Stumps - West Zone need 67 runs",
+      "overview": "Day 4: 1st Session - West Zone need 64 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:00:00.000Z",
@@ -35601,13 +35601,13 @@
             {
               "name": "West Zone",
               "shortName": "WZONE",
-              "score": "187/10 (65.4 Ov) & 220/7 (50.6 Ov)"
+              "score": "187/10 (65.4 Ov) & 223/8 (52.4 Ov)"
             }
           ],
           "dateLabel": "23 Aug 2026, 09:30 am",
           "time": "",
           "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-          "overview": "Day 3: Stumps - West Zone need 67 runs",
+          "overview": "Day 4: 1st Session - West Zone need 64 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-23T04:00:00.000Z",
