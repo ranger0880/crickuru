@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-26T10:54:46.270Z",
-  "lastCheckedAt": "2026-08-26T10:54:46.270Z",
-  "lastSuccessfulSyncAt": "2026-08-26T10:54:46.270Z",
+  "syncedAt": "2026-08-26T11:20:36.252Z",
+  "lastCheckedAt": "2026-08-26T11:20:36.252Z",
+  "lastSuccessfulSyncAt": "2026-08-26T11:20:36.252Z",
   "coverage": {
     "pathways": [
       "India",
@@ -66,13 +66,13 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "290/10 (89.4 Ov) & 225/6 (69.6 Ov)"
+          "score": "290/10 (89.4 Ov) & 229/6 (72.4 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 4: 3rd Session - Sri Lanka lead by 12 runs",
+      "overview": "Day 4: Rain stops play - Sri Lanka lead by 16 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
@@ -97,13 +97,13 @@
         {
           "name": "Central Delhi Kings",
           "shortName": "CDK",
-          "score": "36/2 (4.4 Ov)"
+          "score": "59/4 (8.6 Ov)"
         }
       ],
       "dateLabel": "26 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Central Delhi Kings need 158 runs in 92 balls",
+      "overview": "Central Delhi Kings need 135 runs in 66 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169213",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-26T08:00:00.000Z",
@@ -17708,13 +17708,13 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "290/10 (89.4 Ov) & 225/6 (69.6 Ov)"
+          "score": "290/10 (89.4 Ov) & 229/6 (72.4 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 4: 3rd Session - Sri Lanka lead by 12 runs",
+      "overview": "Day 4: Rain stops play - Sri Lanka lead by 16 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
@@ -17739,13 +17739,13 @@
         {
           "name": "Central Delhi Kings",
           "shortName": "CDK",
-          "score": "36/2 (4.4 Ov)"
+          "score": "59/4 (8.6 Ov)"
         }
       ],
       "dateLabel": "26 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Central Delhi Kings need 158 runs in 92 balls",
+      "overview": "Central Delhi Kings need 135 runs in 66 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169213",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-26T08:00:00.000Z",
@@ -35392,13 +35392,13 @@
         {
           "name": "Central Delhi Kings",
           "shortName": "CDK",
-          "score": "36/2 (4.4 Ov)"
+          "score": "59/4 (8.6 Ov)"
         }
       ],
       "dateLabel": "26 Aug 2026, 01:30 pm",
       "time": "",
       "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Central Delhi Kings need 158 runs in 92 balls",
+      "overview": "Central Delhi Kings need 135 runs in 66 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169213",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-26T08:00:00.000Z",
@@ -36060,13 +36060,13 @@
             {
               "name": "Central Delhi Kings",
               "shortName": "CDK",
-              "score": "36/2 (4.4 Ov)"
+              "score": "59/4 (8.6 Ov)"
             }
           ],
           "dateLabel": "26 Aug 2026, 01:30 pm",
           "time": "",
           "place": "Arun Jaitley Stadium, Delhi",
-          "overview": "Central Delhi Kings need 158 runs in 92 balls",
+          "overview": "Central Delhi Kings need 135 runs in 66 balls",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169213",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-26T08:00:00.000Z",
