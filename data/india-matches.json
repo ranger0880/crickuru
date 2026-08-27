@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-27T04:58:43.978Z",
-  "lastCheckedAt": "2026-08-27T04:58:43.978Z",
-  "lastSuccessfulSyncAt": "2026-08-27T04:58:43.978Z",
+  "syncedAt": "2026-08-27T16:11:05.419Z",
+  "lastCheckedAt": "2026-08-27T16:11:05.419Z",
+  "lastSuccessfulSyncAt": "2026-08-27T16:11:05.419Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,43 +41,12 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 1,
-    "recent": 63,
-    "upcoming": 500,
+    "live": 0,
+    "recent": 62,
+    "upcoming": 502,
     "total": 564
   },
   "all": [
-    {
-      "id": "live-163017",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India vs Sri Lanka, 2nd Test",
-      "series": "India tour of Sri Lanka 2026",
-      "teams": [
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": "503/9 (137.6 Ov)"
-        },
-        {
-          "name": "Sri Lanka",
-          "shortName": "SL",
-          "score": "290/10 (89.4 Ov) & 260/6 (83.5 Ov)"
-        }
-      ],
-      "dateLabel": "23 Aug 2026, 10:00 am",
-      "time": "",
-      "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 5: 1st Session - Sri Lanka lead by 47 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-23T04:30:00.000Z",
-      "rawId": 163017
-    },
     {
       "id": "upcoming-163043",
       "status": "upcoming",
@@ -387,6 +356,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
       "startTime": "2026-09-15T13:30:00.000Z",
       "rawId": 170110
+    },
+    {
+      "id": "upcoming-170911",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women",
+      "title": "Japan Women vs India Women, 1st Quarter-Final",
+      "series": "Women's Asian Games 2026",
+      "teams": [
+        {
+          "name": "Japan Women",
+          "shortName": "JPNW",
+          "score": ""
+        },
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": ""
+        }
+      ],
+      "dateLabel": "17 Sept 2026, 05:30 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "Match starts at Sep 17, 00:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170911",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+      "startTime": "2026-09-17T00:00:00.000Z",
+      "rawId": 170911
     },
     {
       "id": "upcoming-155606",
@@ -728,6 +728,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
       "startTime": "2026-09-27T08:30:00.000Z",
       "rawId": 151532
+    },
+    {
+      "id": "upcoming-171030",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-men",
+      "title": "India vs TBC, 2nd Quarter-Final",
+      "series": "Asian Games 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "TBC",
+          "shortName": "TBC",
+          "score": ""
+        }
+      ],
+      "dateLabel": "28 Sept 2026, 10:30 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "Match starts at Sep 28, 05:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171030",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-09-28T05:00:00.000Z",
+      "rawId": 171030
     },
     {
       "id": "upcoming-155422",
@@ -15579,43 +15610,36 @@
       "rawId": 164501
     },
     {
-      "id": "recent-167030",
+      "id": "recent-163017",
       "status": "recent",
       "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
       "sourceScope": "global",
-      "title": "Vida Kovai Kings vs Trichy Grand Cholas, Qualifier 2",
-      "series": "Tamil Nadu Premier League 2026",
+      "title": "India vs Sri Lanka, 2nd Test",
+      "series": "India tour of Sri Lanka 2026",
       "teams": [
         {
-          "name": "Vida Kovai Kings",
-          "shortName": "VKK",
-          "score": "183/5 (19.6 Ov)"
+          "name": "India",
+          "shortName": "IND",
+          "score": "503/9 (137.6 Ov)"
         },
         {
-          "name": "Trichy Grand Cholas",
-          "shortName": "TRI",
-          "score": "99/10 (15.4 Ov)"
+          "name": "Sri Lanka",
+          "shortName": "SL",
+          "score": "290/10 (89.4 Ov) & 429/9 (153.6 Ov)"
         }
       ],
-      "dateLabel": "26 Aug 2026, 07:30 pm",
+      "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Vida Kovai Kings won by 84 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030",
+      "place": "Sinhalese Sports Club, Colombo",
+      "overview": "Match drawn",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-26T14:00:00.000Z",
-      "rawId": 167030,
-      "starPerformers": [
-        {
-          "name": "K Deeban Lingesh",
-          "performance": "3-14",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030"
-        }
-      ]
+      "startTime": "2026-08-23T04:30:00.000Z",
+      "rawId": 163017,
+      "starPerformers": []
     },
     {
       "id": "recent-163031",
@@ -16063,38 +16087,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-07-10T10:00:00.000Z",
       "rawId": 129519,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-129447",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
-      "title": "India vs England, 4th T20I",
-      "series": "India tour of England, 2026",
-      "teams": [
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": "158/7 (20 Ov)"
-        },
-        {
-          "name": "England",
-          "shortName": "ENG",
-          "score": "159/1 (13 Ov)"
-        }
-      ],
-      "dateLabel": "09 Jul 2026, 10:00 pm",
-      "time": "",
-      "place": "County Ground, Bristol",
-      "overview": "England won by 9 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129447",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
-      "startTime": "2026-07-09T16:30:00.000Z",
-      "rawId": 129447,
       "starPerformers": []
     },
     {
@@ -17665,39 +17657,7 @@
       ]
     }
   ],
-  "live": [
-    {
-      "id": "live-163017",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India vs Sri Lanka, 2nd Test",
-      "series": "India tour of Sri Lanka 2026",
-      "teams": [
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": "503/9 (137.6 Ov)"
-        },
-        {
-          "name": "Sri Lanka",
-          "shortName": "SL",
-          "score": "290/10 (89.4 Ov) & 260/6 (83.5 Ov)"
-        }
-      ],
-      "dateLabel": "23 Aug 2026, 10:00 am",
-      "time": "",
-      "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 5: 1st Session - Sri Lanka lead by 47 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-23T04:30:00.000Z",
-      "rawId": 163017
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "upcoming-163043",
@@ -18008,6 +17968,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
       "startTime": "2026-09-15T13:30:00.000Z",
       "rawId": 170110
+    },
+    {
+      "id": "upcoming-170911",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women",
+      "title": "Japan Women vs India Women, 1st Quarter-Final",
+      "series": "Women's Asian Games 2026",
+      "teams": [
+        {
+          "name": "Japan Women",
+          "shortName": "JPNW",
+          "score": ""
+        },
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": ""
+        }
+      ],
+      "dateLabel": "17 Sept 2026, 05:30 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "Match starts at Sep 17, 00:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170911",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+      "startTime": "2026-09-17T00:00:00.000Z",
+      "rawId": 170911
     },
     {
       "id": "upcoming-155606",
@@ -18349,6 +18340,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
       "startTime": "2026-09-27T08:30:00.000Z",
       "rawId": 151532
+    },
+    {
+      "id": "upcoming-171030",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-men",
+      "title": "India vs TBC, 2nd Quarter-Final",
+      "series": "Asian Games 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "TBC",
+          "shortName": "TBC",
+          "score": ""
+        }
+      ],
+      "dateLabel": "28 Sept 2026, 10:30 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "Match starts at Sep 28, 05:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171030",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-09-28T05:00:00.000Z",
+      "rawId": 171030
     },
     {
       "id": "upcoming-155422",
@@ -33202,43 +33224,36 @@
   ],
   "recent": [
     {
-      "id": "recent-167030",
+      "id": "recent-163017",
       "status": "recent",
       "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
       "sourceScope": "global",
-      "title": "Vida Kovai Kings vs Trichy Grand Cholas, Qualifier 2",
-      "series": "Tamil Nadu Premier League 2026",
+      "title": "India vs Sri Lanka, 2nd Test",
+      "series": "India tour of Sri Lanka 2026",
       "teams": [
         {
-          "name": "Vida Kovai Kings",
-          "shortName": "VKK",
-          "score": "183/5 (19.6 Ov)"
+          "name": "India",
+          "shortName": "IND",
+          "score": "503/9 (137.6 Ov)"
         },
         {
-          "name": "Trichy Grand Cholas",
-          "shortName": "TRI",
-          "score": "99/10 (15.4 Ov)"
+          "name": "Sri Lanka",
+          "shortName": "SL",
+          "score": "290/10 (89.4 Ov) & 429/9 (153.6 Ov)"
         }
       ],
-      "dateLabel": "26 Aug 2026, 07:30 pm",
+      "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Vida Kovai Kings won by 84 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030",
+      "place": "Sinhalese Sports Club, Colombo",
+      "overview": "Match drawn",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-26T14:00:00.000Z",
-      "rawId": 167030,
-      "starPerformers": [
-        {
-          "name": "K Deeban Lingesh",
-          "performance": "3-14",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030"
-        }
-      ]
+      "startTime": "2026-08-23T04:30:00.000Z",
+      "rawId": 163017,
+      "starPerformers": []
     },
     {
       "id": "recent-163031",
@@ -33686,38 +33701,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-07-10T10:00:00.000Z",
       "rawId": 129519,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-129447",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
-      "title": "India vs England, 4th T20I",
-      "series": "India tour of England, 2026",
-      "teams": [
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": "158/7 (20 Ov)"
-        },
-        {
-          "name": "England",
-          "shortName": "ENG",
-          "score": "159/1 (13 Ov)"
-        }
-      ],
-      "dateLabel": "09 Jul 2026, 10:00 pm",
-      "time": "",
-      "place": "County Ground, Bristol",
-      "overview": "England won by 9 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129447",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
-      "startTime": "2026-07-09T16:30:00.000Z",
-      "rawId": 129447,
       "starPerformers": []
     },
     {
@@ -35293,9 +35276,9 @@
       "id": "international",
       "label": "International",
       "order": 1,
-      "live": 1,
+      "live": 0,
       "recent": 30,
-      "upcoming": 50,
+      "upcoming": 51,
       "total": 81
     },
     {
@@ -35303,9 +35286,9 @@
       "label": "League / IPL",
       "order": 2,
       "live": 0,
-      "recent": 1,
+      "recent": 0,
       "upcoming": 0,
-      "total": 1
+      "total": 0
     },
     {
       "id": "women",
@@ -35313,8 +35296,8 @@
       "order": 3,
       "live": 0,
       "recent": 30,
-      "upcoming": 35,
-      "total": 65
+      "upcoming": 36,
+      "total": 66
     },
     {
       "id": "domestic",
@@ -35327,6 +35310,70 @@
     }
   ],
   "importantMatches": [
+    {
+      "id": "upcoming-171030",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-men",
+      "title": "India vs TBC, 2nd Quarter-Final",
+      "series": "Asian Games 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "TBC",
+          "shortName": "TBC",
+          "score": ""
+        }
+      ],
+      "dateLabel": "28 Sept 2026, 10:30 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "Match starts at Sep 28, 05:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171030",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-09-28T05:00:00.000Z",
+      "rawId": 171030,
+      "importance": "Knockout stage"
+    },
+    {
+      "id": "upcoming-170911",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women",
+      "title": "Japan Women vs India Women, 1st Quarter-Final",
+      "series": "Women's Asian Games 2026",
+      "teams": [
+        {
+          "name": "Japan Women",
+          "shortName": "JPNW",
+          "score": ""
+        },
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": ""
+        }
+      ],
+      "dateLabel": "17 Sept 2026, 05:30 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "Match starts at Sep 17, 00:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170911",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+      "startTime": "2026-09-17T00:00:00.000Z",
+      "rawId": 170911,
+      "importance": "Knockout stage"
+    },
     {
       "id": "upcoming-163061",
       "status": "upcoming",
@@ -35520,46 +35567,6 @@
       "importance": "Knockout stage"
     },
     {
-      "id": "recent-167030",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Vida Kovai Kings vs Trichy Grand Cholas, Qualifier 2",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Vida Kovai Kings",
-          "shortName": "VKK",
-          "score": "183/5 (19.6 Ov)"
-        },
-        {
-          "name": "Trichy Grand Cholas",
-          "shortName": "TRI",
-          "score": "99/10 (15.4 Ov)"
-        }
-      ],
-      "dateLabel": "26 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Vida Kovai Kings won by 84 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-26T14:00:00.000Z",
-      "rawId": 167030,
-      "starPerformers": [
-        {
-          "name": "K Deeban Lingesh",
-          "performance": "3-14",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030"
-        }
-      ],
-      "importance": "Knockout stage"
-    },
-    {
       "id": "recent-163031",
       "status": "recent",
       "statusLabel": "Past",
@@ -35627,6 +35634,98 @@
     }
   ],
   "importantTournaments": [
+    {
+      "id": "asian-games-2026",
+      "series": "Asian Games 2026",
+      "level": "international",
+      "levelLabel": "International",
+      "total": 1,
+      "live": 0,
+      "upcoming": 1,
+      "recent": 0,
+      "startTime": "2026-09-28T05:00:00.000Z",
+      "endTime": "2026-09-28T05:00:00.000Z",
+      "matches": [
+        {
+          "id": "upcoming-171030",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "international",
+          "levelLabel": "International",
+          "sourceType": "",
+          "sourceScope": "india-men",
+          "title": "India vs TBC, 2nd Quarter-Final",
+          "series": "Asian Games 2026",
+          "teams": [
+            {
+              "name": "India",
+              "shortName": "IND",
+              "score": ""
+            },
+            {
+              "name": "TBC",
+              "shortName": "TBC",
+              "score": ""
+            }
+          ],
+          "dateLabel": "28 Sept 2026, 10:30 am",
+          "time": "",
+          "place": "Korogi Sports Park, Nisshin",
+          "overview": "Match starts at Sep 28, 05:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171030",
+          "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+          "startTime": "2026-09-28T05:00:00.000Z",
+          "rawId": 171030,
+          "importance": "Knockout stage"
+        }
+      ]
+    },
+    {
+      "id": "women-s-asian-games-2026",
+      "series": "Women's Asian Games 2026",
+      "level": "women",
+      "levelLabel": "Women",
+      "total": 1,
+      "live": 0,
+      "upcoming": 1,
+      "recent": 0,
+      "startTime": "2026-09-17T00:00:00.000Z",
+      "endTime": "2026-09-17T00:00:00.000Z",
+      "matches": [
+        {
+          "id": "upcoming-170911",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "women",
+          "levelLabel": "Women",
+          "sourceType": "",
+          "sourceScope": "india-women",
+          "title": "Japan Women vs India Women, 1st Quarter-Final",
+          "series": "Women's Asian Games 2026",
+          "teams": [
+            {
+              "name": "Japan Women",
+              "shortName": "JPNW",
+              "score": ""
+            },
+            {
+              "name": "India Women",
+              "shortName": "INDW",
+              "score": ""
+            }
+          ],
+          "dateLabel": "17 Sept 2026, 05:30 am",
+          "time": "",
+          "place": "Korogi Sports Park, Nisshin",
+          "overview": "Match starts at Sep 17, 00:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170911",
+          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+          "startTime": "2026-09-17T00:00:00.000Z",
+          "rawId": 170911,
+          "importance": "Knockout stage"
+        }
+      ]
+    },
     {
       "id": "duleep-trophy-2026",
       "series": "Duleep Trophy 2026",
@@ -35912,60 +36011,6 @@
           "importance": "Major tournament"
         }
       ]
-    },
-    {
-      "id": "tamil-nadu-premier-league-2026",
-      "series": "Tamil Nadu Premier League 2026",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "total": 1,
-      "live": 0,
-      "upcoming": 0,
-      "recent": 1,
-      "startTime": "2026-08-26T14:00:00.000Z",
-      "endTime": "2026-08-26T14:00:00.000Z",
-      "matches": [
-        {
-          "id": "recent-167030",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "league",
-          "levelLabel": "League / IPL",
-          "sourceType": "league",
-          "sourceScope": "global",
-          "title": "Vida Kovai Kings vs Trichy Grand Cholas, Qualifier 2",
-          "series": "Tamil Nadu Premier League 2026",
-          "teams": [
-            {
-              "name": "Vida Kovai Kings",
-              "shortName": "VKK",
-              "score": "183/5 (19.6 Ov)"
-            },
-            {
-              "name": "Trichy Grand Cholas",
-              "shortName": "TRI",
-              "score": "99/10 (15.4 Ov)"
-            }
-          ],
-          "dateLabel": "26 Aug 2026, 07:30 pm",
-          "time": "",
-          "place": "MA Chidambaram Stadium, Chennai",
-          "overview": "Vida Kovai Kings won by 84 runs",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-          "startTime": "2026-08-26T14:00:00.000Z",
-          "rawId": 167030,
-          "starPerformers": [
-            {
-              "name": "K Deeban Lingesh",
-              "performance": "3-14",
-              "label": "Player of the Match",
-              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030"
-            }
-          ],
-          "importance": "Knockout stage"
-        }
-      ]
     }
   ],
   "importantResultsByMonth": [
@@ -35973,46 +36018,6 @@
       "month": "2026-08",
       "label": "August 2026",
       "matches": [
-        {
-          "id": "recent-167030",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "league",
-          "levelLabel": "League / IPL",
-          "sourceType": "league",
-          "sourceScope": "global",
-          "title": "Vida Kovai Kings vs Trichy Grand Cholas, Qualifier 2",
-          "series": "Tamil Nadu Premier League 2026",
-          "teams": [
-            {
-              "name": "Vida Kovai Kings",
-              "shortName": "VKK",
-              "score": "183/5 (19.6 Ov)"
-            },
-            {
-              "name": "Trichy Grand Cholas",
-              "shortName": "TRI",
-              "score": "99/10 (15.4 Ov)"
-            }
-          ],
-          "dateLabel": "26 Aug 2026, 07:30 pm",
-          "time": "",
-          "place": "MA Chidambaram Stadium, Chennai",
-          "overview": "Vida Kovai Kings won by 84 runs",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-          "startTime": "2026-08-26T14:00:00.000Z",
-          "rawId": 167030,
-          "starPerformers": [
-            {
-              "name": "K Deeban Lingesh",
-              "performance": "3-14",
-              "label": "Player of the Match",
-              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167030"
-            }
-          ],
-          "importance": "Knockout stage"
-        },
         {
           "id": "recent-163031",
           "status": "recent",
