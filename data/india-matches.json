@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-26T23:33:55.279Z",
-  "lastCheckedAt": "2026-08-26T23:33:55.279Z",
-  "lastSuccessfulSyncAt": "2026-08-26T23:33:55.279Z",
+  "syncedAt": "2026-08-27T04:58:43.978Z",
+  "lastCheckedAt": "2026-08-27T04:58:43.978Z",
+  "lastSuccessfulSyncAt": "2026-08-27T04:58:43.978Z",
   "coverage": {
     "pathways": [
       "India",
@@ -66,13 +66,13 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "290/10 (89.4 Ov) & 229/6 (72.4 Ov)"
+          "score": "290/10 (89.4 Ov) & 260/6 (83.5 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 4: Stumps - Sri Lanka lead by 16 runs",
+      "overview": "Day 5: 1st Session - Sri Lanka lead by 47 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
@@ -15618,6 +15618,38 @@
       ]
     },
     {
+      "id": "recent-163031",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "North Zone vs West Zone, 2nd Quarter final",
+      "series": "Duleep Trophy 2026",
+      "teams": [
+        {
+          "name": "North Zone",
+          "shortName": "NZONE",
+          "score": "251/10 (66.5 Ov) & 222/10 (51 Ov)"
+        },
+        {
+          "name": "West Zone",
+          "shortName": "WZONE",
+          "score": "187/10 (65.4 Ov) & 234/10 (57.3 Ov)"
+        }
+      ],
+      "dateLabel": "23 Aug 2026, 09:30 am",
+      "time": "",
+      "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
+      "overview": "North Zone won by 52 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+      "startTime": "2026-08-23T04:00:00.000Z",
+      "rawId": 163031,
+      "starPerformers": []
+    },
+    {
       "id": "recent-163027",
       "status": "recent",
       "statusLabel": "Past",
@@ -15647,38 +15679,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-23T04:00:00.000Z",
       "rawId": 163027,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-163031",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "North Zone vs West Zone, 2nd Quarter final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "North Zone",
-          "shortName": "NZONE",
-          "score": "251/10 (66.5 Ov) & 222/10 (50.6 Ov)"
-        },
-        {
-          "name": "West Zone",
-          "shortName": "WZONE",
-          "score": "187/10 (65.4 Ov) & 234/10 (57.3 Ov)"
-        }
-      ],
-      "dateLabel": "23 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "North Zone won by 52 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-23T04:00:00.000Z",
-      "rawId": 163031,
       "starPerformers": []
     },
     {
@@ -17685,13 +17685,13 @@
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "290/10 (89.4 Ov) & 229/6 (72.4 Ov)"
+          "score": "290/10 (89.4 Ov) & 260/6 (83.5 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 10:00 am",
       "time": "",
       "place": "Sinhalese Sports Club, Colombo",
-      "overview": "Day 4: Stumps - Sri Lanka lead by 16 runs",
+      "overview": "Day 5: 1st Session - Sri Lanka lead by 47 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-23T04:30:00.000Z",
@@ -33241,6 +33241,38 @@
       ]
     },
     {
+      "id": "recent-163031",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "North Zone vs West Zone, 2nd Quarter final",
+      "series": "Duleep Trophy 2026",
+      "teams": [
+        {
+          "name": "North Zone",
+          "shortName": "NZONE",
+          "score": "251/10 (66.5 Ov) & 222/10 (51 Ov)"
+        },
+        {
+          "name": "West Zone",
+          "shortName": "WZONE",
+          "score": "187/10 (65.4 Ov) & 234/10 (57.3 Ov)"
+        }
+      ],
+      "dateLabel": "23 Aug 2026, 09:30 am",
+      "time": "",
+      "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
+      "overview": "North Zone won by 52 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+      "startTime": "2026-08-23T04:00:00.000Z",
+      "rawId": 163031,
+      "starPerformers": []
+    },
+    {
       "id": "recent-163027",
       "status": "recent",
       "statusLabel": "Past",
@@ -33270,38 +33302,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-23T04:00:00.000Z",
       "rawId": 163027,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-163031",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "North Zone vs West Zone, 2nd Quarter final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "North Zone",
-          "shortName": "NZONE",
-          "score": "251/10 (66.5 Ov) & 222/10 (50.6 Ov)"
-        },
-        {
-          "name": "West Zone",
-          "shortName": "WZONE",
-          "score": "187/10 (65.4 Ov) & 234/10 (57.3 Ov)"
-        }
-      ],
-      "dateLabel": "23 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "North Zone won by 52 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-23T04:00:00.000Z",
-      "rawId": 163031,
       "starPerformers": []
     },
     {
@@ -35560,6 +35560,39 @@
       "importance": "Knockout stage"
     },
     {
+      "id": "recent-163031",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "North Zone vs West Zone, 2nd Quarter final",
+      "series": "Duleep Trophy 2026",
+      "teams": [
+        {
+          "name": "North Zone",
+          "shortName": "NZONE",
+          "score": "251/10 (66.5 Ov) & 222/10 (51 Ov)"
+        },
+        {
+          "name": "West Zone",
+          "shortName": "WZONE",
+          "score": "187/10 (65.4 Ov) & 234/10 (57.3 Ov)"
+        }
+      ],
+      "dateLabel": "23 Aug 2026, 09:30 am",
+      "time": "",
+      "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
+      "overview": "North Zone won by 52 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+      "startTime": "2026-08-23T04:00:00.000Z",
+      "rawId": 163031,
+      "starPerformers": [],
+      "importance": "Knockout stage"
+    },
+    {
       "id": "recent-163027",
       "status": "recent",
       "statusLabel": "Past",
@@ -35591,39 +35624,6 @@
       "rawId": 163027,
       "starPerformers": [],
       "importance": "Knockout stage"
-    },
-    {
-      "id": "recent-163031",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "North Zone vs West Zone, 2nd Quarter final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "North Zone",
-          "shortName": "NZONE",
-          "score": "251/10 (66.5 Ov) & 222/10 (50.6 Ov)"
-        },
-        {
-          "name": "West Zone",
-          "shortName": "WZONE",
-          "score": "187/10 (65.4 Ov) & 234/10 (57.3 Ov)"
-        }
-      ],
-      "dateLabel": "23 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "North Zone won by 52 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-23T04:00:00.000Z",
-      "rawId": 163031,
-      "starPerformers": [],
-      "importance": "Knockout stage"
     }
   ],
   "importantTournaments": [
@@ -35639,6 +35639,39 @@
       "startTime": "2026-08-23T04:00:00.000Z",
       "endTime": "2026-09-06T04:00:00.000Z",
       "matches": [
+        {
+          "id": "recent-163031",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "North Zone vs West Zone, 2nd Quarter final",
+          "series": "Duleep Trophy 2026",
+          "teams": [
+            {
+              "name": "North Zone",
+              "shortName": "NZONE",
+              "score": "251/10 (66.5 Ov) & 222/10 (51 Ov)"
+            },
+            {
+              "name": "West Zone",
+              "shortName": "WZONE",
+              "score": "187/10 (65.4 Ov) & 234/10 (57.3 Ov)"
+            }
+          ],
+          "dateLabel": "23 Aug 2026, 09:30 am",
+          "time": "",
+          "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
+          "overview": "North Zone won by 52 runs",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+          "startTime": "2026-08-23T04:00:00.000Z",
+          "rawId": 163031,
+          "starPerformers": [],
+          "importance": "Knockout stage"
+        },
         {
           "id": "recent-163027",
           "status": "recent",
@@ -35669,39 +35702,6 @@
           "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
           "startTime": "2026-08-23T04:00:00.000Z",
           "rawId": 163027,
-          "starPerformers": [],
-          "importance": "Knockout stage"
-        },
-        {
-          "id": "recent-163031",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "domestic",
-          "sourceScope": "global",
-          "title": "North Zone vs West Zone, 2nd Quarter final",
-          "series": "Duleep Trophy 2026",
-          "teams": [
-            {
-              "name": "North Zone",
-              "shortName": "NZONE",
-              "score": "251/10 (66.5 Ov) & 222/10 (50.6 Ov)"
-            },
-            {
-              "name": "West Zone",
-              "shortName": "WZONE",
-              "score": "187/10 (65.4 Ov) & 234/10 (57.3 Ov)"
-            }
-          ],
-          "dateLabel": "23 Aug 2026, 09:30 am",
-          "time": "",
-          "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-          "overview": "North Zone won by 52 runs",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-          "startTime": "2026-08-23T04:00:00.000Z",
-          "rawId": 163031,
           "starPerformers": [],
           "importance": "Knockout stage"
         },
@@ -36014,6 +36014,39 @@
           "importance": "Knockout stage"
         },
         {
+          "id": "recent-163031",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "North Zone vs West Zone, 2nd Quarter final",
+          "series": "Duleep Trophy 2026",
+          "teams": [
+            {
+              "name": "North Zone",
+              "shortName": "NZONE",
+              "score": "251/10 (66.5 Ov) & 222/10 (51 Ov)"
+            },
+            {
+              "name": "West Zone",
+              "shortName": "WZONE",
+              "score": "187/10 (65.4 Ov) & 234/10 (57.3 Ov)"
+            }
+          ],
+          "dateLabel": "23 Aug 2026, 09:30 am",
+          "time": "",
+          "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
+          "overview": "North Zone won by 52 runs",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+          "startTime": "2026-08-23T04:00:00.000Z",
+          "rawId": 163031,
+          "starPerformers": [],
+          "importance": "Knockout stage"
+        },
+        {
           "id": "recent-163027",
           "status": "recent",
           "statusLabel": "Past",
@@ -36043,39 +36076,6 @@
           "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
           "startTime": "2026-08-23T04:00:00.000Z",
           "rawId": 163027,
-          "starPerformers": [],
-          "importance": "Knockout stage"
-        },
-        {
-          "id": "recent-163031",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "domestic",
-          "sourceScope": "global",
-          "title": "North Zone vs West Zone, 2nd Quarter final",
-          "series": "Duleep Trophy 2026",
-          "teams": [
-            {
-              "name": "North Zone",
-              "shortName": "NZONE",
-              "score": "251/10 (66.5 Ov) & 222/10 (50.6 Ov)"
-            },
-            {
-              "name": "West Zone",
-              "shortName": "WZONE",
-              "score": "187/10 (65.4 Ov) & 234/10 (57.3 Ov)"
-            }
-          ],
-          "dateLabel": "23 Aug 2026, 09:30 am",
-          "time": "",
-          "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-          "overview": "North Zone won by 52 runs",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-          "startTime": "2026-08-23T04:00:00.000Z",
-          "rawId": 163031,
           "starPerformers": [],
           "importance": "Knockout stage"
         }
