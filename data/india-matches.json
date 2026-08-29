@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-29T10:27:58.637Z",
-  "lastCheckedAt": "2026-08-29T10:27:58.637Z",
-  "lastSuccessfulSyncAt": "2026-08-29T10:27:58.637Z",
+  "syncedAt": "2026-08-29T15:10:50.463Z",
+  "lastCheckedAt": "2026-08-29T15:10:50.463Z",
+  "lastSuccessfulSyncAt": "2026-08-29T15:10:50.463Z",
   "coverage": {
     "pathways": [
       "India",
@@ -53,8 +53,8 @@
       "statusLabel": "Future",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "Central Zone vs East Zone, 1st Semi-Final",
       "series": "Duleep Trophy 2026",
       "teams": [
@@ -74,7 +74,7 @@
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
       "overview": "Match starts at Aug 30, 04:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163043
     },
@@ -17665,8 +17665,8 @@
       "statusLabel": "Future",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "Central Zone vs East Zone, 1st Semi-Final",
       "series": "Duleep Trophy 2026",
       "teams": [
@@ -17686,7 +17686,7 @@
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
       "overview": "Match starts at Aug 30, 04:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163043
     },
@@ -35508,8 +35508,8 @@
       "statusLabel": "Future",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "Central Zone vs East Zone, 1st Semi-Final",
       "series": "Duleep Trophy 2026",
       "teams": [
@@ -35529,7 +35529,7 @@
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
       "overview": "Match starts at Aug 30, 04:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163043,
       "importance": "Knockout stage"
@@ -35810,8 +35810,8 @@
           "statusLabel": "Future",
           "level": "domestic",
           "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
+          "sourceType": "domestic",
+          "sourceScope": "global",
           "title": "Central Zone vs East Zone, 1st Semi-Final",
           "series": "Duleep Trophy 2026",
           "teams": [
@@ -35831,7 +35831,7 @@
           "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
           "overview": "Match starts at Aug 30, 04:00 GMT",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-30T04:00:00.000Z",
           "rawId": 163043,
           "importance": "Knockout stage"
