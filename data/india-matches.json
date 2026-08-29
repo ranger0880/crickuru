@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-29T03:48:53.723Z",
-  "lastCheckedAt": "2026-08-29T03:48:53.723Z",
-  "lastSuccessfulSyncAt": "2026-08-29T03:48:53.723Z",
+  "syncedAt": "2026-08-29T10:27:58.637Z",
+  "lastCheckedAt": "2026-08-29T10:27:58.637Z",
+  "lastSuccessfulSyncAt": "2026-08-29T10:27:58.637Z",
   "coverage": {
     "pathways": [
       "India",
@@ -42,9 +42,9 @@
   },
   "summary": {
     "live": 0,
-    "recent": 63,
+    "recent": 62,
     "upcoming": 502,
-    "total": 565
+    "total": 564
   },
   "all": [
     {
@@ -15608,45 +15608,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2027-02-27T04:00:00.000Z",
       "rawId": 164501
-    },
-    {
-      "id": "recent-167040",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Vida Kovai Kings vs Madurai Panthers, Final",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Vida Kovai Kings",
-          "shortName": "VKK",
-          "score": "182/7 (19.6 Ov)"
-        },
-        {
-          "name": "Madurai Panthers",
-          "shortName": "MDP",
-          "score": "98/10 (14.2 Ov)"
-        }
-      ],
-      "dateLabel": "28 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Vida Kovai Kings won by 84 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167040",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-28T14:00:00.000Z",
-      "rawId": 167040,
-      "starPerformers": [
-        {
-          "name": "Andre Siddarth C",
-          "performance": "82(47)",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167040"
-        }
-      ]
     },
     {
       "id": "recent-163017",
@@ -33263,45 +33224,6 @@
   ],
   "recent": [
     {
-      "id": "recent-167040",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Vida Kovai Kings vs Madurai Panthers, Final",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Vida Kovai Kings",
-          "shortName": "VKK",
-          "score": "182/7 (19.6 Ov)"
-        },
-        {
-          "name": "Madurai Panthers",
-          "shortName": "MDP",
-          "score": "98/10 (14.2 Ov)"
-        }
-      ],
-      "dateLabel": "28 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Vida Kovai Kings won by 84 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167040",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-28T14:00:00.000Z",
-      "rawId": 167040,
-      "starPerformers": [
-        {
-          "name": "Andre Siddarth C",
-          "performance": "82(47)",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167040"
-        }
-      ]
-    },
-    {
       "id": "recent-163017",
       "status": "recent",
       "statusLabel": "Past",
@@ -35364,9 +35286,9 @@
       "label": "League / IPL",
       "order": 2,
       "live": 0,
-      "recent": 1,
+      "recent": 0,
       "upcoming": 0,
-      "total": 1
+      "total": 0
     },
     {
       "id": "women",
@@ -35642,46 +35564,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163047,
-      "importance": "Knockout stage"
-    },
-    {
-      "id": "recent-167040",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Vida Kovai Kings vs Madurai Panthers, Final",
-      "series": "Tamil Nadu Premier League 2026",
-      "teams": [
-        {
-          "name": "Vida Kovai Kings",
-          "shortName": "VKK",
-          "score": "182/7 (19.6 Ov)"
-        },
-        {
-          "name": "Madurai Panthers",
-          "shortName": "MDP",
-          "score": "98/10 (14.2 Ov)"
-        }
-      ],
-      "dateLabel": "28 Aug 2026, 07:30 pm",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Vida Kovai Kings won by 84 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167040",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-28T14:00:00.000Z",
-      "rawId": 167040,
-      "starPerformers": [
-        {
-          "name": "Andre Siddarth C",
-          "performance": "82(47)",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167040"
-        }
-      ],
       "importance": "Knockout stage"
     },
     {
@@ -36129,60 +36011,6 @@
           "importance": "Major tournament"
         }
       ]
-    },
-    {
-      "id": "tamil-nadu-premier-league-2026",
-      "series": "Tamil Nadu Premier League 2026",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "total": 1,
-      "live": 0,
-      "upcoming": 0,
-      "recent": 1,
-      "startTime": "2026-08-28T14:00:00.000Z",
-      "endTime": "2026-08-28T14:00:00.000Z",
-      "matches": [
-        {
-          "id": "recent-167040",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "league",
-          "levelLabel": "League / IPL",
-          "sourceType": "league",
-          "sourceScope": "global",
-          "title": "Vida Kovai Kings vs Madurai Panthers, Final",
-          "series": "Tamil Nadu Premier League 2026",
-          "teams": [
-            {
-              "name": "Vida Kovai Kings",
-              "shortName": "VKK",
-              "score": "182/7 (19.6 Ov)"
-            },
-            {
-              "name": "Madurai Panthers",
-              "shortName": "MDP",
-              "score": "98/10 (14.2 Ov)"
-            }
-          ],
-          "dateLabel": "28 Aug 2026, 07:30 pm",
-          "time": "",
-          "place": "MA Chidambaram Stadium, Chennai",
-          "overview": "Vida Kovai Kings won by 84 runs",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167040",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-          "startTime": "2026-08-28T14:00:00.000Z",
-          "rawId": 167040,
-          "starPerformers": [
-            {
-              "name": "Andre Siddarth C",
-              "performance": "82(47)",
-              "label": "Player of the Match",
-              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167040"
-            }
-          ],
-          "importance": "Knockout stage"
-        }
-      ]
     }
   ],
   "importantResultsByMonth": [
@@ -36190,46 +36018,6 @@
       "month": "2026-08",
       "label": "August 2026",
       "matches": [
-        {
-          "id": "recent-167040",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "league",
-          "levelLabel": "League / IPL",
-          "sourceType": "league",
-          "sourceScope": "global",
-          "title": "Vida Kovai Kings vs Madurai Panthers, Final",
-          "series": "Tamil Nadu Premier League 2026",
-          "teams": [
-            {
-              "name": "Vida Kovai Kings",
-              "shortName": "VKK",
-              "score": "182/7 (19.6 Ov)"
-            },
-            {
-              "name": "Madurai Panthers",
-              "shortName": "MDP",
-              "score": "98/10 (14.2 Ov)"
-            }
-          ],
-          "dateLabel": "28 Aug 2026, 07:30 pm",
-          "time": "",
-          "place": "MA Chidambaram Stadium, Chennai",
-          "overview": "Vida Kovai Kings won by 84 runs",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167040",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-          "startTime": "2026-08-28T14:00:00.000Z",
-          "rawId": 167040,
-          "starPerformers": [
-            {
-              "name": "Andre Siddarth C",
-              "performance": "82(47)",
-              "label": "Player of the Match",
-              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/167040"
-            }
-          ],
-          "importance": "Knockout stage"
-        },
         {
           "id": "recent-163031",
           "status": "recent",
