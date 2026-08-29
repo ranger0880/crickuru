@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-28T22:29:41.524Z",
-  "lastCheckedAt": "2026-08-28T22:29:41.524Z",
-  "lastSuccessfulSyncAt": "2026-08-28T22:29:41.524Z",
+  "syncedAt": "2026-08-29T03:48:53.723Z",
+  "lastCheckedAt": "2026-08-29T03:48:53.723Z",
+  "lastSuccessfulSyncAt": "2026-08-29T03:48:53.723Z",
   "coverage": {
     "pathways": [
       "India",
@@ -15654,20 +15654,20 @@
       "statusLabel": "Past",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-men",
       "title": "India vs Sri Lanka, 2nd Test",
       "series": "India tour of Sri Lanka 2026",
       "teams": [
         {
           "name": "India",
           "shortName": "IND",
-          "score": "503/9 (137.6 Ov)"
+          "score": "503/9 (138 Ov)"
         },
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "290/10 (89.4 Ov) & 429/9 (153.6 Ov)"
+          "score": "290/10 (89.4 Ov) & 429/9 (154 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 10:00 am",
@@ -15675,7 +15675,7 @@
       "place": "Sinhalese Sports Club, Colombo",
       "overview": "Match drawn",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-08-23T04:30:00.000Z",
       "rawId": 163017,
       "starPerformers": []
@@ -33307,20 +33307,20 @@
       "statusLabel": "Past",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-men",
       "title": "India vs Sri Lanka, 2nd Test",
       "series": "India tour of Sri Lanka 2026",
       "teams": [
         {
           "name": "India",
           "shortName": "IND",
-          "score": "503/9 (137.6 Ov)"
+          "score": "503/9 (138 Ov)"
         },
         {
           "name": "Sri Lanka",
           "shortName": "SL",
-          "score": "290/10 (89.4 Ov) & 429/9 (153.6 Ov)"
+          "score": "290/10 (89.4 Ov) & 429/9 (154 Ov)"
         }
       ],
       "dateLabel": "23 Aug 2026, 10:00 am",
@@ -33328,7 +33328,7 @@
       "place": "Sinhalese Sports Club, Colombo",
       "overview": "Match drawn",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163017",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-08-23T04:30:00.000Z",
       "rawId": 163017,
       "starPerformers": []
