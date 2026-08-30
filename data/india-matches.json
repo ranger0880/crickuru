@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-30T19:27:30.143Z",
-  "lastCheckedAt": "2026-08-30T19:27:30.143Z",
-  "lastSuccessfulSyncAt": "2026-08-30T19:27:30.143Z",
+  "syncedAt": "2026-08-30T21:57:52.162Z",
+  "lastCheckedAt": "2026-08-30T21:57:52.162Z",
+  "lastSuccessfulSyncAt": "2026-08-30T21:57:52.162Z",
   "coverage": {
     "pathways": [
       "India",
@@ -42,9 +42,9 @@
   },
   "summary": {
     "live": 2,
-    "recent": 64,
+    "recent": 63,
     "upcoming": 499,
-    "total": 565
+    "total": 564
   },
   "all": [
     {
@@ -15577,38 +15577,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2027-02-27T04:00:00.000Z",
       "rawId": 164501
-    },
-    {
-      "id": "recent-171080",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "league",
-      "sourceScope": "domestic-global",
-      "title": "Amritsar Soormas vs Mohali Kings, 1st Match",
-      "series": "Sher-E-Punjab T20 League, 2026",
-      "teams": [
-        {
-          "name": "Amritsar Soormas",
-          "shortName": "AMS",
-          "score": "258/10 (19.5 Ov)"
-        },
-        {
-          "name": "Mohali Kings",
-          "shortName": "MHK",
-          "score": "262/5 (19.3 Ov)"
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 08:00 pm",
-      "time": "",
-      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Mohali Kings won by 5 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171080",
-      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic",
-      "startTime": "2026-08-30T14:30:00.000Z",
-      "rawId": 171080,
-      "starPerformers": []
     },
     {
       "id": "recent-169231",
@@ -33234,38 +33202,6 @@
   ],
   "recent": [
     {
-      "id": "recent-171080",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "league",
-      "sourceScope": "domestic-global",
-      "title": "Amritsar Soormas vs Mohali Kings, 1st Match",
-      "series": "Sher-E-Punjab T20 League, 2026",
-      "teams": [
-        {
-          "name": "Amritsar Soormas",
-          "shortName": "AMS",
-          "score": "258/10 (19.5 Ov)"
-        },
-        {
-          "name": "Mohali Kings",
-          "shortName": "MHK",
-          "score": "262/5 (19.3 Ov)"
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 08:00 pm",
-      "time": "",
-      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Mohali Kings won by 5 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171080",
-      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic",
-      "startTime": "2026-08-30T14:30:00.000Z",
-      "rawId": 171080,
-      "starPerformers": []
-    },
-    {
       "id": "recent-169231",
       "status": "recent",
       "statusLabel": "Past",
@@ -35385,9 +35321,9 @@
       "label": "Domestic / State",
       "order": 4,
       "live": 2,
-      "recent": 3,
+      "recent": 2,
       "upcoming": 413,
-      "total": 418
+      "total": 417
     }
   ],
   "importantMatches": [
