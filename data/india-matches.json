@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-30T16:42:48.991Z",
-  "lastCheckedAt": "2026-08-30T16:42:48.991Z",
-  "lastSuccessfulSyncAt": "2026-08-30T16:42:48.991Z",
+  "syncedAt": "2026-08-30T19:27:30.143Z",
+  "lastCheckedAt": "2026-08-30T19:27:30.143Z",
+  "lastSuccessfulSyncAt": "2026-08-30T19:27:30.143Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,10 +41,10 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 5,
-    "recent": 62,
+    "live": 2,
+    "recent": 64,
     "upcoming": 499,
-    "total": 566
+    "total": 565
   },
   "all": [
     {
@@ -53,8 +53,8 @@
       "statusLabel": "Live",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "Central Zone vs East Zone, 1st Semi-Final",
       "series": "Duleep Trophy 2026",
       "teams": [
@@ -74,7 +74,7 @@
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
       "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163043
     },
@@ -108,99 +108,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163047
-    },
-    {
-      "id": "live-169811",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India Women vs Thailand Women, Match 3, Group A",
-      "series": "Women's Asia Cup 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": "159/9 (19.6 Ov)"
-        },
-        {
-          "name": "Thailand Women",
-          "shortName": "THAIW",
-          "score": "40/3 (6.3 Ov)"
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 08:00 pm",
-      "time": "",
-      "place": "Dubai International Cricket Stadium, Dubai",
-      "overview": "Thailand Women need 120 runs in 81 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169811",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-30T14:30:00.000Z",
-      "rawId": 169811
-    },
-    {
-      "id": "live-169231",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Central Delhi Kings vs South Delhi Superstarz, Final",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "Central Delhi Kings",
-          "shortName": "CDK",
-          "score": "182/8 (19.6 Ov)"
-        },
-        {
-          "name": "South Delhi Superstarz",
-          "shortName": "SDS",
-          "score": ""
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 08:00 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "South Delhi Superstarz opt to bowl",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169231",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-30T14:30:00.000Z",
-      "rawId": 169231
-    },
-    {
-      "id": "live-171080",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Amritsar Soormas vs Mohali Kings, 1st Match",
-      "series": "Sher-E-Punjab T20 League, 2026",
-      "teams": [
-        {
-          "name": "Amritsar Soormas",
-          "shortName": "AMS",
-          "score": "258/10 (19.5 Ov)"
-        },
-        {
-          "name": "Mohali Kings",
-          "shortName": "MHK",
-          "score": ""
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 08:00 pm",
-      "time": "",
-      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Innings Break",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171080",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-30T14:30:00.000Z",
-      "rawId": 171080
     },
     {
       "id": "upcoming-169841",
@@ -15672,6 +15579,109 @@
       "rawId": 164501
     },
     {
+      "id": "recent-171080",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "league",
+      "sourceScope": "domestic-global",
+      "title": "Amritsar Soormas vs Mohali Kings, 1st Match",
+      "series": "Sher-E-Punjab T20 League, 2026",
+      "teams": [
+        {
+          "name": "Amritsar Soormas",
+          "shortName": "AMS",
+          "score": "258/10 (19.5 Ov)"
+        },
+        {
+          "name": "Mohali Kings",
+          "shortName": "MHK",
+          "score": "262/5 (19.3 Ov)"
+        }
+      ],
+      "dateLabel": "30 Aug 2026, 08:00 pm",
+      "time": "",
+      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "overview": "Mohali Kings won by 5 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171080",
+      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic",
+      "startTime": "2026-08-30T14:30:00.000Z",
+      "rawId": 171080,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-169231",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Central Delhi Kings vs South Delhi Superstarz, Final",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "Central Delhi Kings",
+          "shortName": "CDK",
+          "score": "182/8 (19.6 Ov)"
+        },
+        {
+          "name": "South Delhi Superstarz",
+          "shortName": "SDS",
+          "score": "186/3 (18.2 Ov)"
+        }
+      ],
+      "dateLabel": "30 Aug 2026, 08:00 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "South Delhi Superstarz won by 7 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169231",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-30T14:30:00.000Z",
+      "rawId": 169231,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-169811",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "India Women vs Thailand Women, Match 3, Group A",
+      "series": "Women's Asia Cup 2026",
+      "teams": [
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": "159/9 (19.6 Ov)"
+        },
+        {
+          "name": "Thailand Women",
+          "shortName": "THAIW",
+          "score": "65/10 (16.1 Ov)"
+        }
+      ],
+      "dateLabel": "30 Aug 2026, 08:00 pm",
+      "time": "",
+      "place": "Dubai International Cricket Stadium, Dubai",
+      "overview": "India Women won by 94 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169811",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-30T14:30:00.000Z",
+      "rawId": 169811,
+      "starPerformers": [
+        {
+          "name": "Shafali Verma",
+          "performance": "64(36)",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169811"
+        }
+      ]
+    },
+    {
       "id": "recent-163017",
       "status": "recent",
       "statusLabel": "Past",
@@ -17126,38 +17136,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-129497",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "England Women vs India Women, 2nd T20I",
-      "series": "India Women tour of England 2026",
-      "teams": [
-        {
-          "name": "England Women",
-          "shortName": "ENGW",
-          "score": "168/5 (20 Ov)"
-        },
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": "142/9 (20 Ov)"
-        }
-      ],
-      "dateLabel": "30 May 2026, 07:00 pm",
-      "time": "",
-      "place": "County Ground, Bristol",
-      "overview": "England Women won by 26 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129497",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
-      "startTime": "2026-05-30T13:30:00.000Z",
-      "rawId": 129497,
-      "starPerformers": []
-    },
-    {
       "id": "recent-144384",
       "status": "recent",
       "statusLabel": "Past",
@@ -17726,8 +17704,8 @@
       "statusLabel": "Live",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "Central Zone vs East Zone, 1st Semi-Final",
       "series": "Duleep Trophy 2026",
       "teams": [
@@ -17747,7 +17725,7 @@
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
       "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163043
     },
@@ -17781,99 +17759,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163047
-    },
-    {
-      "id": "live-169811",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India Women vs Thailand Women, Match 3, Group A",
-      "series": "Women's Asia Cup 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": "159/9 (19.6 Ov)"
-        },
-        {
-          "name": "Thailand Women",
-          "shortName": "THAIW",
-          "score": "40/3 (6.3 Ov)"
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 08:00 pm",
-      "time": "",
-      "place": "Dubai International Cricket Stadium, Dubai",
-      "overview": "Thailand Women need 120 runs in 81 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169811",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-30T14:30:00.000Z",
-      "rawId": 169811
-    },
-    {
-      "id": "live-169231",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Central Delhi Kings vs South Delhi Superstarz, Final",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "Central Delhi Kings",
-          "shortName": "CDK",
-          "score": "182/8 (19.6 Ov)"
-        },
-        {
-          "name": "South Delhi Superstarz",
-          "shortName": "SDS",
-          "score": ""
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 08:00 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "South Delhi Superstarz opt to bowl",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169231",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-30T14:30:00.000Z",
-      "rawId": 169231
-    },
-    {
-      "id": "live-171080",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Amritsar Soormas vs Mohali Kings, 1st Match",
-      "series": "Sher-E-Punjab T20 League, 2026",
-      "teams": [
-        {
-          "name": "Amritsar Soormas",
-          "shortName": "AMS",
-          "score": "258/10 (19.5 Ov)"
-        },
-        {
-          "name": "Mohali Kings",
-          "shortName": "MHK",
-          "score": ""
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 08:00 pm",
-      "time": "",
-      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Innings Break",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171080",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-30T14:30:00.000Z",
-      "rawId": 171080
     }
   ],
   "upcoming": [
@@ -33349,6 +33234,109 @@
   ],
   "recent": [
     {
+      "id": "recent-171080",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "league",
+      "sourceScope": "domestic-global",
+      "title": "Amritsar Soormas vs Mohali Kings, 1st Match",
+      "series": "Sher-E-Punjab T20 League, 2026",
+      "teams": [
+        {
+          "name": "Amritsar Soormas",
+          "shortName": "AMS",
+          "score": "258/10 (19.5 Ov)"
+        },
+        {
+          "name": "Mohali Kings",
+          "shortName": "MHK",
+          "score": "262/5 (19.3 Ov)"
+        }
+      ],
+      "dateLabel": "30 Aug 2026, 08:00 pm",
+      "time": "",
+      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "overview": "Mohali Kings won by 5 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171080",
+      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic",
+      "startTime": "2026-08-30T14:30:00.000Z",
+      "rawId": 171080,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-169231",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Central Delhi Kings vs South Delhi Superstarz, Final",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "Central Delhi Kings",
+          "shortName": "CDK",
+          "score": "182/8 (19.6 Ov)"
+        },
+        {
+          "name": "South Delhi Superstarz",
+          "shortName": "SDS",
+          "score": "186/3 (18.2 Ov)"
+        }
+      ],
+      "dateLabel": "30 Aug 2026, 08:00 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "South Delhi Superstarz won by 7 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169231",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-30T14:30:00.000Z",
+      "rawId": 169231,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-169811",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "India Women vs Thailand Women, Match 3, Group A",
+      "series": "Women's Asia Cup 2026",
+      "teams": [
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": "159/9 (19.6 Ov)"
+        },
+        {
+          "name": "Thailand Women",
+          "shortName": "THAIW",
+          "score": "65/10 (16.1 Ov)"
+        }
+      ],
+      "dateLabel": "30 Aug 2026, 08:00 pm",
+      "time": "",
+      "place": "Dubai International Cricket Stadium, Dubai",
+      "overview": "India Women won by 94 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169811",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-30T14:30:00.000Z",
+      "rawId": 169811,
+      "starPerformers": [
+        {
+          "name": "Shafali Verma",
+          "performance": "64(36)",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169811"
+        }
+      ]
+    },
+    {
       "id": "recent-163017",
       "status": "recent",
       "statusLabel": "Past",
@@ -34803,38 +34791,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-129497",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "England Women vs India Women, 2nd T20I",
-      "series": "India Women tour of England 2026",
-      "teams": [
-        {
-          "name": "England Women",
-          "shortName": "ENGW",
-          "score": "168/5 (20 Ov)"
-        },
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": "142/9 (20 Ov)"
-        }
-      ],
-      "dateLabel": "30 May 2026, 07:00 pm",
-      "time": "",
-      "place": "County Ground, Bristol",
-      "overview": "England Women won by 26 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129497",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
-      "startTime": "2026-05-30T13:30:00.000Z",
-      "rawId": 129497,
-      "starPerformers": []
-    },
-    {
       "id": "recent-144384",
       "status": "recent",
       "statusLabel": "Past",
@@ -35410,103 +35366,39 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 2,
-      "recent": 0,
+      "live": 0,
+      "recent": 1,
       "upcoming": 0,
-      "total": 2
+      "total": 1
     },
     {
       "id": "women",
       "label": "Women",
       "order": 3,
-      "live": 1,
+      "live": 0,
       "recent": 30,
       "upcoming": 35,
-      "total": 66
+      "total": 65
     },
     {
       "id": "domestic",
       "label": "Domestic / State",
       "order": 4,
       "live": 2,
-      "recent": 2,
+      "recent": 3,
       "upcoming": 413,
-      "total": 417
+      "total": 418
     }
   ],
   "importantMatches": [
-    {
-      "id": "live-169811",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India Women vs Thailand Women, Match 3, Group A",
-      "series": "Women's Asia Cup 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": "159/9 (19.6 Ov)"
-        },
-        {
-          "name": "Thailand Women",
-          "shortName": "THAIW",
-          "score": "40/3 (6.3 Ov)"
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 08:00 pm",
-      "time": "",
-      "place": "Dubai International Cricket Stadium, Dubai",
-      "overview": "Thailand Women need 120 runs in 81 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169811",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-30T14:30:00.000Z",
-      "rawId": 169811,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "live-169231",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Central Delhi Kings vs South Delhi Superstarz, Final",
-      "series": "Delhi Premier League 2026",
-      "teams": [
-        {
-          "name": "Central Delhi Kings",
-          "shortName": "CDK",
-          "score": "182/8 (19.6 Ov)"
-        },
-        {
-          "name": "South Delhi Superstarz",
-          "shortName": "SDS",
-          "score": ""
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 08:00 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "South Delhi Superstarz opt to bowl",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169231",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-30T14:30:00.000Z",
-      "rawId": 169231,
-      "importance": "Knockout stage"
-    },
     {
       "id": "live-163043",
       "status": "live",
       "statusLabel": "Live",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "Central Zone vs East Zone, 1st Semi-Final",
       "series": "Duleep Trophy 2026",
       "teams": [
@@ -35526,7 +35418,7 @@
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
       "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163043,
       "importance": "Knockout stage"
@@ -35721,6 +35613,79 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
       "startTime": "2026-09-03T14:30:00.000Z",
       "rawId": 169841,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "recent-169231",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Central Delhi Kings vs South Delhi Superstarz, Final",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "Central Delhi Kings",
+          "shortName": "CDK",
+          "score": "182/8 (19.6 Ov)"
+        },
+        {
+          "name": "South Delhi Superstarz",
+          "shortName": "SDS",
+          "score": "186/3 (18.2 Ov)"
+        }
+      ],
+      "dateLabel": "30 Aug 2026, 08:00 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "South Delhi Superstarz won by 7 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169231",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-30T14:30:00.000Z",
+      "rawId": 169231,
+      "starPerformers": [],
+      "importance": "Knockout stage"
+    },
+    {
+      "id": "recent-169811",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "India Women vs Thailand Women, Match 3, Group A",
+      "series": "Women's Asia Cup 2026",
+      "teams": [
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": "159/9 (19.6 Ov)"
+        },
+        {
+          "name": "Thailand Women",
+          "shortName": "THAIW",
+          "score": "65/10 (16.1 Ov)"
+        }
+      ],
+      "dateLabel": "30 Aug 2026, 08:00 pm",
+      "time": "",
+      "place": "Dubai International Cricket Stadium, Dubai",
+      "overview": "India Women won by 94 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169811",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-30T14:30:00.000Z",
+      "rawId": 169811,
+      "starPerformers": [
+        {
+          "name": "Shafali Verma",
+          "performance": "64(36)",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169811"
+        }
+      ],
       "importance": "Major tournament"
     },
     {
@@ -35967,8 +35932,8 @@
           "statusLabel": "Live",
           "level": "domestic",
           "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
+          "sourceType": "domestic",
+          "sourceScope": "global",
           "title": "Central Zone vs East Zone, 1st Semi-Final",
           "series": "Duleep Trophy 2026",
           "teams": [
@@ -35988,7 +35953,7 @@
           "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
           "overview": "Day 1: Stumps",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-30T04:00:00.000Z",
           "rawId": 163043,
           "importance": "Knockout stage"
@@ -36065,16 +36030,16 @@
       "level": "women",
       "levelLabel": "Women",
       "total": 3,
-      "live": 1,
+      "live": 0,
       "upcoming": 2,
-      "recent": 0,
+      "recent": 1,
       "startTime": "2026-08-30T14:30:00.000Z",
       "endTime": "2026-09-05T14:30:00.000Z",
       "matches": [
         {
-          "id": "live-169811",
-          "status": "live",
-          "statusLabel": "Live",
+          "id": "recent-169811",
+          "status": "recent",
+          "statusLabel": "Past",
           "level": "women",
           "levelLabel": "Women",
           "sourceType": "International",
@@ -36090,17 +36055,25 @@
             {
               "name": "Thailand Women",
               "shortName": "THAIW",
-              "score": "40/3 (6.3 Ov)"
+              "score": "65/10 (16.1 Ov)"
             }
           ],
           "dateLabel": "30 Aug 2026, 08:00 pm",
           "time": "",
           "place": "Dubai International Cricket Stadium, Dubai",
-          "overview": "Thailand Women need 120 runs in 81 balls",
+          "overview": "India Women won by 94 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169811",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-30T14:30:00.000Z",
           "rawId": 169811,
+          "starPerformers": [
+            {
+              "name": "Shafali Verma",
+              "performance": "64(36)",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169811"
+            }
+          ],
           "importance": "Major tournament"
         },
         {
@@ -36175,16 +36148,16 @@
       "level": "league",
       "levelLabel": "League / IPL",
       "total": 1,
-      "live": 1,
+      "live": 0,
       "upcoming": 0,
-      "recent": 0,
+      "recent": 1,
       "startTime": "2026-08-30T14:30:00.000Z",
       "endTime": "2026-08-30T14:30:00.000Z",
       "matches": [
         {
-          "id": "live-169231",
-          "status": "live",
-          "statusLabel": "Live",
+          "id": "recent-169231",
+          "status": "recent",
+          "statusLabel": "Past",
           "level": "league",
           "levelLabel": "League / IPL",
           "sourceType": "league",
@@ -36200,17 +36173,18 @@
             {
               "name": "South Delhi Superstarz",
               "shortName": "SDS",
-              "score": ""
+              "score": "186/3 (18.2 Ov)"
             }
           ],
           "dateLabel": "30 Aug 2026, 08:00 pm",
           "time": "",
           "place": "Arun Jaitley Stadium, Delhi",
-          "overview": "South Delhi Superstarz opt to bowl",
+          "overview": "South Delhi Superstarz won by 7 wkts",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169231",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-30T14:30:00.000Z",
           "rawId": 169231,
+          "starPerformers": [],
           "importance": "Knockout stage"
         }
       ]
@@ -36221,6 +36195,79 @@
       "month": "2026-08",
       "label": "August 2026",
       "matches": [
+        {
+          "id": "recent-169231",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "league",
+          "levelLabel": "League / IPL",
+          "sourceType": "league",
+          "sourceScope": "global",
+          "title": "Central Delhi Kings vs South Delhi Superstarz, Final",
+          "series": "Delhi Premier League 2026",
+          "teams": [
+            {
+              "name": "Central Delhi Kings",
+              "shortName": "CDK",
+              "score": "182/8 (19.6 Ov)"
+            },
+            {
+              "name": "South Delhi Superstarz",
+              "shortName": "SDS",
+              "score": "186/3 (18.2 Ov)"
+            }
+          ],
+          "dateLabel": "30 Aug 2026, 08:00 pm",
+          "time": "",
+          "place": "Arun Jaitley Stadium, Delhi",
+          "overview": "South Delhi Superstarz won by 7 wkts",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169231",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "startTime": "2026-08-30T14:30:00.000Z",
+          "rawId": 169231,
+          "starPerformers": [],
+          "importance": "Knockout stage"
+        },
+        {
+          "id": "recent-169811",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "women",
+          "levelLabel": "Women",
+          "sourceType": "International",
+          "sourceScope": "global",
+          "title": "India Women vs Thailand Women, Match 3, Group A",
+          "series": "Women's Asia Cup 2026",
+          "teams": [
+            {
+              "name": "India Women",
+              "shortName": "INDW",
+              "score": "159/9 (19.6 Ov)"
+            },
+            {
+              "name": "Thailand Women",
+              "shortName": "THAIW",
+              "score": "65/10 (16.1 Ov)"
+            }
+          ],
+          "dateLabel": "30 Aug 2026, 08:00 pm",
+          "time": "",
+          "place": "Dubai International Cricket Stadium, Dubai",
+          "overview": "India Women won by 94 runs",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169811",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "startTime": "2026-08-30T14:30:00.000Z",
+          "rawId": 169811,
+          "starPerformers": [
+            {
+              "name": "Shafali Verma",
+              "performance": "64(36)",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169811"
+            }
+          ],
+          "importance": "Major tournament"
+        },
         {
           "id": "recent-163031",
           "status": "recent",
