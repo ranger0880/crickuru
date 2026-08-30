@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-30T12:15:06.569Z",
-  "lastCheckedAt": "2026-08-30T12:15:06.569Z",
-  "lastSuccessfulSyncAt": "2026-08-30T12:15:06.569Z",
+  "syncedAt": "2026-08-30T16:42:48.991Z",
+  "lastCheckedAt": "2026-08-30T16:42:48.991Z",
+  "lastSuccessfulSyncAt": "2026-08-30T16:42:48.991Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,51 +41,20 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 2,
+    "live": 5,
     "recent": 62,
-    "upcoming": 500,
-    "total": 564
+    "upcoming": 499,
+    "total": 566
   },
   "all": [
-    {
-      "id": "live-163047",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "North Zone vs South Zone, 2nd Semi-Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "North Zone",
-          "shortName": "NZONE",
-          "score": "195/10 (59.1 Ov)"
-        },
-        {
-          "name": "South Zone",
-          "shortName": "SZONE",
-          "score": "40/2 (17.6 Ov)"
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 1: Stumps - South Zone trail by 155 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-30T04:00:00.000Z",
-      "rawId": 163047
-    },
     {
       "id": "live-163043",
       "status": "live",
       "statusLabel": "Live",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
       "title": "Central Zone vs East Zone, 1st Semi-Final",
       "series": "Duleep Trophy 2026",
       "teams": [
@@ -105,14 +74,45 @@
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
       "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163043
     },
     {
-      "id": "upcoming-169811",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-163047",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "North Zone vs South Zone, 2nd Semi-Final",
+      "series": "Duleep Trophy 2026",
+      "teams": [
+        {
+          "name": "North Zone",
+          "shortName": "NZONE",
+          "score": "195/10 (59.1 Ov)"
+        },
+        {
+          "name": "South Zone",
+          "shortName": "SZONE",
+          "score": "40/2 (18 Ov)"
+        }
+      ],
+      "dateLabel": "30 Aug 2026, 09:30 am",
+      "time": "",
+      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
+      "overview": "Day 1: Stumps - South Zone trail by 155 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+      "startTime": "2026-08-30T04:00:00.000Z",
+      "rawId": 163047
+    },
+    {
+      "id": "live-169811",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "women",
       "levelLabel": "Women",
       "sourceType": "International",
@@ -123,22 +123,84 @@
         {
           "name": "India Women",
           "shortName": "INDW",
-          "score": ""
+          "score": "159/9 (19.6 Ov)"
         },
         {
           "name": "Thailand Women",
           "shortName": "THAIW",
-          "score": ""
+          "score": "40/3 (6.3 Ov)"
         }
       ],
       "dateLabel": "30 Aug 2026, 08:00 pm",
       "time": "",
       "place": "Dubai International Cricket Stadium, Dubai",
-      "overview": "Match starts at Aug 30, 14:30 GMT",
+      "overview": "Thailand Women need 120 runs in 81 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169811",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-30T14:30:00.000Z",
       "rawId": 169811
+    },
+    {
+      "id": "live-169231",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Central Delhi Kings vs South Delhi Superstarz, Final",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "Central Delhi Kings",
+          "shortName": "CDK",
+          "score": "182/8 (19.6 Ov)"
+        },
+        {
+          "name": "South Delhi Superstarz",
+          "shortName": "SDS",
+          "score": ""
+        }
+      ],
+      "dateLabel": "30 Aug 2026, 08:00 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "South Delhi Superstarz opt to bowl",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169231",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-30T14:30:00.000Z",
+      "rawId": 169231
+    },
+    {
+      "id": "live-171080",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Amritsar Soormas vs Mohali Kings, 1st Match",
+      "series": "Sher-E-Punjab T20 League, 2026",
+      "teams": [
+        {
+          "name": "Amritsar Soormas",
+          "shortName": "AMS",
+          "score": "258/10 (19.5 Ov)"
+        },
+        {
+          "name": "Mohali Kings",
+          "shortName": "MHK",
+          "score": ""
+        }
+      ],
+      "dateLabel": "30 Aug 2026, 08:00 pm",
+      "time": "",
+      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "overview": "Innings Break",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171080",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-30T14:30:00.000Z",
+      "rawId": 171080
     },
     {
       "id": "upcoming-169841",
@@ -17659,44 +17721,13 @@
   ],
   "live": [
     {
-      "id": "live-163047",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "North Zone vs South Zone, 2nd Semi-Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "North Zone",
-          "shortName": "NZONE",
-          "score": "195/10 (59.1 Ov)"
-        },
-        {
-          "name": "South Zone",
-          "shortName": "SZONE",
-          "score": "40/2 (17.6 Ov)"
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 1: Stumps - South Zone trail by 155 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-30T04:00:00.000Z",
-      "rawId": 163047
-    },
-    {
       "id": "live-163043",
       "status": "live",
       "statusLabel": "Live",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
       "title": "Central Zone vs East Zone, 1st Semi-Final",
       "series": "Duleep Trophy 2026",
       "teams": [
@@ -17716,16 +17747,45 @@
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
       "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163043
-    }
-  ],
-  "upcoming": [
+    },
     {
-      "id": "upcoming-169811",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-163047",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "North Zone vs South Zone, 2nd Semi-Final",
+      "series": "Duleep Trophy 2026",
+      "teams": [
+        {
+          "name": "North Zone",
+          "shortName": "NZONE",
+          "score": "195/10 (59.1 Ov)"
+        },
+        {
+          "name": "South Zone",
+          "shortName": "SZONE",
+          "score": "40/2 (18 Ov)"
+        }
+      ],
+      "dateLabel": "30 Aug 2026, 09:30 am",
+      "time": "",
+      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
+      "overview": "Day 1: Stumps - South Zone trail by 155 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+      "startTime": "2026-08-30T04:00:00.000Z",
+      "rawId": 163047
+    },
+    {
+      "id": "live-169811",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "women",
       "levelLabel": "Women",
       "sourceType": "International",
@@ -17736,23 +17796,87 @@
         {
           "name": "India Women",
           "shortName": "INDW",
-          "score": ""
+          "score": "159/9 (19.6 Ov)"
         },
         {
           "name": "Thailand Women",
           "shortName": "THAIW",
-          "score": ""
+          "score": "40/3 (6.3 Ov)"
         }
       ],
       "dateLabel": "30 Aug 2026, 08:00 pm",
       "time": "",
       "place": "Dubai International Cricket Stadium, Dubai",
-      "overview": "Match starts at Aug 30, 14:30 GMT",
+      "overview": "Thailand Women need 120 runs in 81 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169811",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-30T14:30:00.000Z",
       "rawId": 169811
     },
+    {
+      "id": "live-169231",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Central Delhi Kings vs South Delhi Superstarz, Final",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "Central Delhi Kings",
+          "shortName": "CDK",
+          "score": "182/8 (19.6 Ov)"
+        },
+        {
+          "name": "South Delhi Superstarz",
+          "shortName": "SDS",
+          "score": ""
+        }
+      ],
+      "dateLabel": "30 Aug 2026, 08:00 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "South Delhi Superstarz opt to bowl",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169231",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-30T14:30:00.000Z",
+      "rawId": 169231
+    },
+    {
+      "id": "live-171080",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Amritsar Soormas vs Mohali Kings, 1st Match",
+      "series": "Sher-E-Punjab T20 League, 2026",
+      "teams": [
+        {
+          "name": "Amritsar Soormas",
+          "shortName": "AMS",
+          "score": "258/10 (19.5 Ov)"
+        },
+        {
+          "name": "Mohali Kings",
+          "shortName": "MHK",
+          "score": ""
+        }
+      ],
+      "dateLabel": "30 Aug 2026, 08:00 pm",
+      "time": "",
+      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "overview": "Innings Break",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171080",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-30T14:30:00.000Z",
+      "rawId": 171080
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-169841",
       "status": "upcoming",
@@ -35286,18 +35410,18 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 0,
+      "live": 2,
       "recent": 0,
       "upcoming": 0,
-      "total": 0
+      "total": 2
     },
     {
       "id": "women",
       "label": "Women",
       "order": 3,
-      "live": 0,
+      "live": 1,
       "recent": 30,
-      "upcoming": 36,
+      "upcoming": 35,
       "total": 66
     },
     {
@@ -35312,35 +35436,67 @@
   ],
   "importantMatches": [
     {
-      "id": "live-163047",
+      "id": "live-169811",
       "status": "live",
       "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "International",
       "sourceScope": "global",
-      "title": "North Zone vs South Zone, 2nd Semi-Final",
-      "series": "Duleep Trophy 2026",
+      "title": "India Women vs Thailand Women, Match 3, Group A",
+      "series": "Women's Asia Cup 2026",
       "teams": [
         {
-          "name": "North Zone",
-          "shortName": "NZONE",
-          "score": "195/10 (59.1 Ov)"
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": "159/9 (19.6 Ov)"
         },
         {
-          "name": "South Zone",
-          "shortName": "SZONE",
-          "score": "40/2 (17.6 Ov)"
+          "name": "Thailand Women",
+          "shortName": "THAIW",
+          "score": "40/3 (6.3 Ov)"
         }
       ],
-      "dateLabel": "30 Aug 2026, 09:30 am",
+      "dateLabel": "30 Aug 2026, 08:00 pm",
       "time": "",
-      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 1: Stumps - South Zone trail by 155 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
+      "place": "Dubai International Cricket Stadium, Dubai",
+      "overview": "Thailand Women need 120 runs in 81 balls",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169811",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-30T04:00:00.000Z",
-      "rawId": 163047,
+      "startTime": "2026-08-30T14:30:00.000Z",
+      "rawId": 169811,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "live-169231",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Central Delhi Kings vs South Delhi Superstarz, Final",
+      "series": "Delhi Premier League 2026",
+      "teams": [
+        {
+          "name": "Central Delhi Kings",
+          "shortName": "CDK",
+          "score": "182/8 (19.6 Ov)"
+        },
+        {
+          "name": "South Delhi Superstarz",
+          "shortName": "SDS",
+          "score": ""
+        }
+      ],
+      "dateLabel": "30 Aug 2026, 08:00 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "South Delhi Superstarz opt to bowl",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169231",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-30T14:30:00.000Z",
+      "rawId": 169231,
       "importance": "Knockout stage"
     },
     {
@@ -35349,8 +35505,8 @@
       "statusLabel": "Live",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
       "title": "Central Zone vs East Zone, 1st Semi-Final",
       "series": "Duleep Trophy 2026",
       "teams": [
@@ -35370,9 +35526,41 @@
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
       "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163043,
+      "importance": "Knockout stage"
+    },
+    {
+      "id": "live-163047",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "North Zone vs South Zone, 2nd Semi-Final",
+      "series": "Duleep Trophy 2026",
+      "teams": [
+        {
+          "name": "North Zone",
+          "shortName": "NZONE",
+          "score": "195/10 (59.1 Ov)"
+        },
+        {
+          "name": "South Zone",
+          "shortName": "SZONE",
+          "score": "40/2 (18 Ov)"
+        }
+      ],
+      "dateLabel": "30 Aug 2026, 09:30 am",
+      "time": "",
+      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
+      "overview": "Day 1: Stumps - South Zone trail by 155 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+      "startTime": "2026-08-30T04:00:00.000Z",
+      "rawId": 163047,
       "importance": "Knockout stage"
     },
     {
@@ -35533,38 +35721,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
       "startTime": "2026-09-03T14:30:00.000Z",
       "rawId": 169841,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-169811",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India Women vs Thailand Women, Match 3, Group A",
-      "series": "Women's Asia Cup 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        },
-        {
-          "name": "Thailand Women",
-          "shortName": "THAIW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 08:00 pm",
-      "time": "",
-      "place": "Dubai International Cricket Stadium, Dubai",
-      "overview": "Match starts at Aug 30, 14:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169811",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-30T14:30:00.000Z",
-      "rawId": 169811,
       "importance": "Major tournament"
     },
     {
@@ -35806,45 +35962,13 @@
           "importance": "Knockout stage"
         },
         {
-          "id": "live-163047",
-          "status": "live",
-          "statusLabel": "Live",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "domestic",
-          "sourceScope": "global",
-          "title": "North Zone vs South Zone, 2nd Semi-Final",
-          "series": "Duleep Trophy 2026",
-          "teams": [
-            {
-              "name": "North Zone",
-              "shortName": "NZONE",
-              "score": "195/10 (59.1 Ov)"
-            },
-            {
-              "name": "South Zone",
-              "shortName": "SZONE",
-              "score": "40/2 (17.6 Ov)"
-            }
-          ],
-          "dateLabel": "30 Aug 2026, 09:30 am",
-          "time": "",
-          "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-          "overview": "Day 1: Stumps - South Zone trail by 155 runs",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-          "startTime": "2026-08-30T04:00:00.000Z",
-          "rawId": 163047,
-          "importance": "Knockout stage"
-        },
-        {
           "id": "live-163043",
           "status": "live",
           "statusLabel": "Live",
           "level": "domestic",
           "levelLabel": "Domestic / State",
-          "sourceType": "domestic",
-          "sourceScope": "global",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
           "title": "Central Zone vs East Zone, 1st Semi-Final",
           "series": "Duleep Trophy 2026",
           "teams": [
@@ -35864,9 +35988,41 @@
           "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
           "overview": "Day 1: Stumps",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
           "startTime": "2026-08-30T04:00:00.000Z",
           "rawId": 163043,
+          "importance": "Knockout stage"
+        },
+        {
+          "id": "live-163047",
+          "status": "live",
+          "statusLabel": "Live",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "North Zone vs South Zone, 2nd Semi-Final",
+          "series": "Duleep Trophy 2026",
+          "teams": [
+            {
+              "name": "North Zone",
+              "shortName": "NZONE",
+              "score": "195/10 (59.1 Ov)"
+            },
+            {
+              "name": "South Zone",
+              "shortName": "SZONE",
+              "score": "40/2 (18 Ov)"
+            }
+          ],
+          "dateLabel": "30 Aug 2026, 09:30 am",
+          "time": "",
+          "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
+          "overview": "Day 1: Stumps - South Zone trail by 155 runs",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+          "startTime": "2026-08-30T04:00:00.000Z",
+          "rawId": 163047,
           "importance": "Knockout stage"
         },
         {
@@ -35909,16 +36065,16 @@
       "level": "women",
       "levelLabel": "Women",
       "total": 3,
-      "live": 0,
-      "upcoming": 3,
+      "live": 1,
+      "upcoming": 2,
       "recent": 0,
       "startTime": "2026-08-30T14:30:00.000Z",
       "endTime": "2026-09-05T14:30:00.000Z",
       "matches": [
         {
-          "id": "upcoming-169811",
-          "status": "upcoming",
-          "statusLabel": "Future",
+          "id": "live-169811",
+          "status": "live",
+          "statusLabel": "Live",
           "level": "women",
           "levelLabel": "Women",
           "sourceType": "International",
@@ -35929,18 +36085,18 @@
             {
               "name": "India Women",
               "shortName": "INDW",
-              "score": ""
+              "score": "159/9 (19.6 Ov)"
             },
             {
               "name": "Thailand Women",
               "shortName": "THAIW",
-              "score": ""
+              "score": "40/3 (6.3 Ov)"
             }
           ],
           "dateLabel": "30 Aug 2026, 08:00 pm",
           "time": "",
           "place": "Dubai International Cricket Stadium, Dubai",
-          "overview": "Match starts at Aug 30, 14:30 GMT",
+          "overview": "Thailand Women need 120 runs in 81 balls",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169811",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-30T14:30:00.000Z",
@@ -36010,6 +36166,52 @@
           "startTime": "2026-09-05T14:30:00.000Z",
           "rawId": 169850,
           "importance": "Major tournament"
+        }
+      ]
+    },
+    {
+      "id": "delhi-premier-league-2026",
+      "series": "Delhi Premier League 2026",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "total": 1,
+      "live": 1,
+      "upcoming": 0,
+      "recent": 0,
+      "startTime": "2026-08-30T14:30:00.000Z",
+      "endTime": "2026-08-30T14:30:00.000Z",
+      "matches": [
+        {
+          "id": "live-169231",
+          "status": "live",
+          "statusLabel": "Live",
+          "level": "league",
+          "levelLabel": "League / IPL",
+          "sourceType": "league",
+          "sourceScope": "global",
+          "title": "Central Delhi Kings vs South Delhi Superstarz, Final",
+          "series": "Delhi Premier League 2026",
+          "teams": [
+            {
+              "name": "Central Delhi Kings",
+              "shortName": "CDK",
+              "score": "182/8 (19.6 Ov)"
+            },
+            {
+              "name": "South Delhi Superstarz",
+              "shortName": "SDS",
+              "score": ""
+            }
+          ],
+          "dateLabel": "30 Aug 2026, 08:00 pm",
+          "time": "",
+          "place": "Arun Jaitley Stadium, Delhi",
+          "overview": "South Delhi Superstarz opt to bowl",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169231",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "startTime": "2026-08-30T14:30:00.000Z",
+          "rawId": 169231,
+          "importance": "Knockout stage"
         }
       ]
     }
