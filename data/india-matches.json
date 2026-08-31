@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-31T11:48:40.125Z",
-  "lastCheckedAt": "2026-08-31T11:48:40.125Z",
-  "lastSuccessfulSyncAt": "2026-08-31T11:48:40.125Z",
+  "syncedAt": "2026-08-31T18:10:53.411Z",
+  "lastCheckedAt": "2026-08-31T18:10:53.411Z",
+  "lastSuccessfulSyncAt": "2026-08-31T18:10:53.411Z",
   "coverage": {
     "pathways": [
       "India",
@@ -61,7 +61,7 @@
         {
           "name": "Central Zone",
           "shortName": "CZONE",
-          "score": "266/10 (80.1 Ov) & 43/3 (19.6 Ov)"
+          "score": "266/10 (80.1 Ov) & 45/3 (19.6 Ov)"
         },
         {
           "name": "East Zone",
@@ -72,7 +72,7 @@
       "dateLabel": "30 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 2: Stumps - Central Zone lead by 43 runs",
+      "overview": "Day 2: Stumps - Central Zone lead by 45 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-30T04:00:00.000Z",
@@ -17648,7 +17648,7 @@
         {
           "name": "Central Zone",
           "shortName": "CZONE",
-          "score": "266/10 (80.1 Ov) & 43/3 (19.6 Ov)"
+          "score": "266/10 (80.1 Ov) & 45/3 (19.6 Ov)"
         },
         {
           "name": "East Zone",
@@ -17659,7 +17659,7 @@
       "dateLabel": "30 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 2: Stumps - Central Zone lead by 43 runs",
+      "overview": "Day 2: Stumps - Central Zone lead by 45 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-30T04:00:00.000Z",
@@ -35277,7 +35277,7 @@
         {
           "name": "Central Zone",
           "shortName": "CZONE",
-          "score": "266/10 (80.1 Ov) & 43/3 (19.6 Ov)"
+          "score": "266/10 (80.1 Ov) & 45/3 (19.6 Ov)"
         },
         {
           "name": "East Zone",
@@ -35288,7 +35288,7 @@
       "dateLabel": "30 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 2: Stumps - Central Zone lead by 43 runs",
+      "overview": "Day 2: Stumps - Central Zone lead by 45 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-30T04:00:00.000Z",
@@ -35779,7 +35779,7 @@
             {
               "name": "Central Zone",
               "shortName": "CZONE",
-              "score": "266/10 (80.1 Ov) & 43/3 (19.6 Ov)"
+              "score": "266/10 (80.1 Ov) & 45/3 (19.6 Ov)"
             },
             {
               "name": "East Zone",
@@ -35790,7 +35790,7 @@
           "dateLabel": "30 Aug 2026, 09:30 am",
           "time": "",
           "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-          "overview": "Day 2: Stumps - Central Zone lead by 43 runs",
+          "overview": "Day 2: Stumps - Central Zone lead by 45 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-30T04:00:00.000Z",
