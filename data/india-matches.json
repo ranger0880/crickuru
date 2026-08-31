@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-31T18:10:53.411Z",
-  "lastCheckedAt": "2026-08-31T18:10:53.411Z",
-  "lastSuccessfulSyncAt": "2026-08-31T18:10:53.411Z",
+  "syncedAt": "2026-08-31T22:48:46.312Z",
+  "lastCheckedAt": "2026-08-31T22:48:46.312Z",
+  "lastSuccessfulSyncAt": "2026-08-31T22:48:46.312Z",
   "coverage": {
     "pathways": [
       "India",
@@ -35328,6 +35328,1862 @@
       "importance": "Knockout stage"
     },
     {
+      "id": "upcoming-163147",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Sikkim vs Nagaland, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        },
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163147",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163147,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163137",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Mizoram vs Meghalaya, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Mizoram",
+          "shortName": "MIZ",
+          "score": ""
+        },
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163137",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163137,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163131",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Manipur vs Arunachal Pradesh, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        },
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163131",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163131,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163851",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Maharashtra vs Gujarat, Elite Group C",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Maharashtra",
+          "shortName": "MAH",
+          "score": ""
+        },
+        {
+          "name": "Gujarat",
+          "shortName": "GUJ",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163851",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163851,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163861",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Kerala vs Bengal, Elite Group C",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Kerala",
+          "shortName": "KER",
+          "score": ""
+        },
+        {
+          "name": "Bengal",
+          "shortName": "BEN",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163861",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163861,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163871",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Odisha vs Services, Elite Group C",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Odisha",
+          "shortName": "ODSA",
+          "score": ""
+        },
+        {
+          "name": "Services",
+          "shortName": "SER",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163871",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163871,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163881",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Mumbai vs Haryana, Elite Group D",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Mumbai",
+          "shortName": "MUM",
+          "score": ""
+        },
+        {
+          "name": "Haryana",
+          "shortName": "HAR",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163881",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163881,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163891",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Uttarakhand vs Rajasthan, Elite Group D",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Uttarakhand",
+          "shortName": "UTK",
+          "score": ""
+        },
+        {
+          "name": "Rajasthan",
+          "shortName": "RAJ",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163891",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163891,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163900",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Tamil Nadu vs Railways, Elite Group D",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Tamil Nadu",
+          "shortName": "TN",
+          "score": ""
+        },
+        {
+          "name": "Railways",
+          "shortName": "RLYS",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163900",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163900,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163910",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Chandigarh vs Himachal Pradesh, Elite Group D",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Chandigarh",
+          "shortName": "CDG",
+          "score": ""
+        },
+        {
+          "name": "Himachal Pradesh",
+          "shortName": "HP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163910",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163910,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163841",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Jharkhand vs Delhi, Elite Group C",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Jharkhand",
+          "shortName": "JHKD",
+          "score": ""
+        },
+        {
+          "name": "Delhi",
+          "shortName": "DEL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163841",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163841,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163831",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Chhattisgarh vs Andhra, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Chhattisgarh",
+          "shortName": "CG",
+          "score": ""
+        },
+        {
+          "name": "Andhra",
+          "shortName": "AP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163831",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163831,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163771",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Baroda vs Jammu and Kashmir, Elite Group A",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Baroda",
+          "shortName": "BRD",
+          "score": ""
+        },
+        {
+          "name": "Jammu and Kashmir",
+          "shortName": "JK",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163771",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163771,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163773",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Madhya Pradesh vs Bihar, Elite Group A",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Madhya Pradesh",
+          "shortName": "MP",
+          "score": ""
+        },
+        {
+          "name": "Bihar",
+          "shortName": "BIH",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163773",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163773,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163781",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Vidarbha vs Goa, Elite Group A",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Vidarbha",
+          "shortName": "VID",
+          "score": ""
+        },
+        {
+          "name": "Goa",
+          "shortName": "GOA",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163781",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163781,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163791",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Puducherry vs Uttar Pradesh, Elite Group A",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Puducherry",
+          "shortName": "PDC",
+          "score": ""
+        },
+        {
+          "name": "Uttar Pradesh",
+          "shortName": "UP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163791",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163791,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163801",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Hyderabad vs Punjab, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Hyderabad",
+          "shortName": "HYD",
+          "score": ""
+        },
+        {
+          "name": "Punjab",
+          "shortName": "PUN",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163801",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163801,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163811",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Karnataka vs Tripura, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Karnataka",
+          "shortName": "KAR",
+          "score": ""
+        },
+        {
+          "name": "Tripura",
+          "shortName": "TRI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163811",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163811,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163821",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Saurashtra vs Assam, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Saurashtra",
+          "shortName": "SAUR",
+          "score": ""
+        },
+        {
+          "name": "Assam",
+          "shortName": "ASM",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163821",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163821,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163111",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Meghalaya vs Manipur, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163111",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163111,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163113",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Nagaland vs Mizoram, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        },
+        {
+          "name": "Mizoram",
+          "shortName": "MIZ",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163113",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163113,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163121",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Arunachal Pradesh vs Sikkim, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        },
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163121",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163121,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163761",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Tamil Nadu vs Uttarakhand, Elite Group D",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Tamil Nadu",
+          "shortName": "TN",
+          "score": ""
+        },
+        {
+          "name": "Uttarakhand",
+          "shortName": "UTK",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163761",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163761,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163751",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Himachal Pradesh vs Mumbai, Elite Group D",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Himachal Pradesh",
+          "shortName": "HP",
+          "score": ""
+        },
+        {
+          "name": "Mumbai",
+          "shortName": "MUM",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163751",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163751,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163741",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Haryana vs Chandigarh, Elite Group D",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Haryana",
+          "shortName": "HAR",
+          "score": ""
+        },
+        {
+          "name": "Chandigarh",
+          "shortName": "CDG",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163741",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163741,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163731",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Kerala vs Odisha, Elite Group C",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Kerala",
+          "shortName": "KER",
+          "score": ""
+        },
+        {
+          "name": "Odisha",
+          "shortName": "ODSA",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163731",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163731,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163721",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Services vs Bengal, Elite Group C",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Services",
+          "shortName": "SER",
+          "score": ""
+        },
+        {
+          "name": "Bengal",
+          "shortName": "BEN",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163721",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163721,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163713",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Delhi vs Gujarat, Elite Group C",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Delhi",
+          "shortName": "DEL",
+          "score": ""
+        },
+        {
+          "name": "Gujarat",
+          "shortName": "GUJ",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163713",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163713,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163763",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Rajasthan vs Railways, Elite Group D",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Rajasthan",
+          "shortName": "RAJ",
+          "score": ""
+        },
+        {
+          "name": "Railways",
+          "shortName": "RLYS",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163763",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163763,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163701",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Maharashtra vs Jharkhand, Elite Group C",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Maharashtra",
+          "shortName": "MAH",
+          "score": ""
+        },
+        {
+          "name": "Jharkhand",
+          "shortName": "JHKD",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163701",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163701,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163681",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Punjab vs Chhattisgarh, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Punjab",
+          "shortName": "PUN",
+          "score": ""
+        },
+        {
+          "name": "Chhattisgarh",
+          "shortName": "CG",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163681",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163681,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163631",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Baroda vs Bihar, Elite Group A",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Baroda",
+          "shortName": "BRD",
+          "score": ""
+        },
+        {
+          "name": "Bihar",
+          "shortName": "BIH",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163631",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163631,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163641",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Puducherry vs Madhya Pradesh, Elite Group A",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Puducherry",
+          "shortName": "PDC",
+          "score": ""
+        },
+        {
+          "name": "Madhya Pradesh",
+          "shortName": "MP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163641",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163641,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163643",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Jammu and Kashmir vs Vidarbha, Elite Group A",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Jammu and Kashmir",
+          "shortName": "JK",
+          "score": ""
+        },
+        {
+          "name": "Vidarbha",
+          "shortName": "VID",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163643",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163643,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163653",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Uttar Pradesh vs Goa, Elite Group A",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Uttar Pradesh",
+          "shortName": "UP",
+          "score": ""
+        },
+        {
+          "name": "Goa",
+          "shortName": "GOA",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163653",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163653,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163661",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Andhra vs Hyderabad, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Andhra",
+          "shortName": "AP",
+          "score": ""
+        },
+        {
+          "name": "Hyderabad",
+          "shortName": "HYD",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163661",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163661,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163671",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Karnataka vs Saurashtra, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Karnataka",
+          "shortName": "KAR",
+          "score": ""
+        },
+        {
+          "name": "Saurashtra",
+          "shortName": "SAUR",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163671",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163671,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163691",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Assam vs Tripura, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Assam",
+          "shortName": "ASM",
+          "score": ""
+        },
+        {
+          "name": "Tripura",
+          "shortName": "TRI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 05:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 00:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163691",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-18T00:00:00.000Z",
+      "rawId": 163691,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163087",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Mizoram vs Manipur, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Mizoram",
+          "shortName": "MIZ",
+          "score": ""
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163087",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163087,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163097",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Sikkim vs Meghalaya, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        },
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163097",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163097,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163103",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Arunachal Pradesh vs Nagaland, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        },
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163103",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163103,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163520",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Goa vs Baroda, Elite Group A",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Goa",
+          "shortName": "GOA",
+          "score": ""
+        },
+        {
+          "name": "Baroda",
+          "shortName": "BRD",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 03:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163520",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163520,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163621",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Mumbai vs Chandigarh, Elite Group D",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Mumbai",
+          "shortName": "MUM",
+          "score": ""
+        },
+        {
+          "name": "Chandigarh",
+          "shortName": "CDG",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163621",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163621,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163611",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Rajasthan vs Tamil Nadu, Elite Group D",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Rajasthan",
+          "shortName": "RAJ",
+          "score": ""
+        },
+        {
+          "name": "Tamil Nadu",
+          "shortName": "TN",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163611",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163611,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163601",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Railways vs Uttarakhand, Elite Group D",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Railways",
+          "shortName": "RLYS",
+          "score": ""
+        },
+        {
+          "name": "Uttarakhand",
+          "shortName": "UTK",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163601",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163601,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163591",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Haryana vs Himachal Pradesh, Elite Group D",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Haryana",
+          "shortName": "HAR",
+          "score": ""
+        },
+        {
+          "name": "Himachal Pradesh",
+          "shortName": "HP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163591",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163591,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163581",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Services vs Maharashtra, Elite Group C",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Services",
+          "shortName": "SER",
+          "score": ""
+        },
+        {
+          "name": "Maharashtra",
+          "shortName": "MAH",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163581",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163581,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163571",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Bengal vs Delhi, Elite Group C",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Bengal",
+          "shortName": "BEN",
+          "score": ""
+        },
+        {
+          "name": "Delhi",
+          "shortName": "DEL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163571",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163571,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163563",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Gujarat vs Odisha, Elite Group C",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Gujarat",
+          "shortName": "GUJ",
+          "score": ""
+        },
+        {
+          "name": "Odisha",
+          "shortName": "ODSA",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163563",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163563,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163561",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Jharkhand vs Kerala, Elite Group C",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Jharkhand",
+          "shortName": "JHKD",
+          "score": ""
+        },
+        {
+          "name": "Kerala",
+          "shortName": "KER",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 03:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163561",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163561,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163560",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Saurashtra vs Chhattisgarh, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Saurashtra",
+          "shortName": "SAUR",
+          "score": ""
+        },
+        {
+          "name": "Chhattisgarh",
+          "shortName": "CG",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 03:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163560",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163560,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163551",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Punjab vs Assam, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Punjab",
+          "shortName": "PUN",
+          "score": ""
+        },
+        {
+          "name": "Assam",
+          "shortName": "ASM",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 03:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163551",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163551,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163550",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Andhra vs Karnataka, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Andhra",
+          "shortName": "AP",
+          "score": ""
+        },
+        {
+          "name": "Karnataka",
+          "shortName": "KAR",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 03:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163550,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163540",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Hyderabad vs Tripura, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Hyderabad",
+          "shortName": "HYD",
+          "score": ""
+        },
+        {
+          "name": "Tripura",
+          "shortName": "TRI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 03:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163540",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163540,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163531",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Vidarbha vs Puducherry, Elite Group A",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Vidarbha",
+          "shortName": "VID",
+          "score": ""
+        },
+        {
+          "name": "Puducherry",
+          "shortName": "PDC",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 03:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163531",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163531,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163530",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Jammu and Kashmir vs Madhya Pradesh, Elite Group A",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Jammu and Kashmir",
+          "shortName": "JK",
+          "score": ""
+        },
+        {
+          "name": "Madhya Pradesh",
+          "shortName": "MP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 03:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163530",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163530,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163521",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Bihar vs Uttar Pradesh, Elite Group A",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Bihar",
+          "shortName": "BIH",
+          "score": ""
+        },
+        {
+          "name": "Uttar Pradesh",
+          "shortName": "UP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 03:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163521",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163521,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163077",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Jammu and Kashmir vs Rest of India, Irani Cup",
+      "series": "Irani Cup 2026",
+      "teams": [
+        {
+          "name": "Jammu and Kashmir",
+          "shortName": "JK",
+          "score": ""
+        },
+        {
+          "name": "Rest of India",
+          "shortName": "ROI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "01 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 01, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12387/irani-cup-2026/matches",
+      "startTime": "2026-10-01T04:00:00.000Z",
+      "rawId": 163077,
+      "importance": "Major tournament"
+    },
+    {
       "id": "upcoming-171030",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -35595,6 +37451,1904 @@
     }
   ],
   "importantTournaments": [
+    {
+      "id": "ranji-trophy-plate-2026-27",
+      "series": "Ranji Trophy Plate 2026-27",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "total": 9,
+      "live": 0,
+      "upcoming": 9,
+      "recent": 0,
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "endTime": "2026-10-26T04:00:00.000Z",
+      "matches": [
+        {
+          "id": "upcoming-163087",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Mizoram vs Manipur, Plate",
+          "series": "Ranji Trophy Plate 2026-27",
+          "teams": [
+            {
+              "name": "Mizoram",
+              "shortName": "MIZ",
+              "score": ""
+            },
+            {
+              "name": "Manipur",
+              "shortName": "MNP",
+              "score": ""
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 11, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163087",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163087,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163097",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Sikkim vs Meghalaya, Plate",
+          "series": "Ranji Trophy Plate 2026-27",
+          "teams": [
+            {
+              "name": "Sikkim",
+              "shortName": "SKM",
+              "score": ""
+            },
+            {
+              "name": "Meghalaya",
+              "shortName": "MGLY",
+              "score": ""
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 11, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163097",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163097,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163103",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Arunachal Pradesh vs Nagaland, Plate",
+          "series": "Ranji Trophy Plate 2026-27",
+          "teams": [
+            {
+              "name": "Arunachal Pradesh",
+              "shortName": "ARNP",
+              "score": ""
+            },
+            {
+              "name": "Nagaland",
+              "shortName": "NGL",
+              "score": ""
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 11, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163103",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163103,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163111",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Meghalaya vs Manipur, Plate",
+          "series": "Ranji Trophy Plate 2026-27",
+          "teams": [
+            {
+              "name": "Meghalaya",
+              "shortName": "MGLY",
+              "score": ""
+            },
+            {
+              "name": "Manipur",
+              "shortName": "MNP",
+              "score": ""
+            }
+          ],
+          "dateLabel": "18 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 18, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163111",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+          "startTime": "2026-10-18T04:00:00.000Z",
+          "rawId": 163111,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163113",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Nagaland vs Mizoram, Plate",
+          "series": "Ranji Trophy Plate 2026-27",
+          "teams": [
+            {
+              "name": "Nagaland",
+              "shortName": "NGL",
+              "score": ""
+            },
+            {
+              "name": "Mizoram",
+              "shortName": "MIZ",
+              "score": ""
+            }
+          ],
+          "dateLabel": "18 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 18, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163113",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+          "startTime": "2026-10-18T04:00:00.000Z",
+          "rawId": 163113,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163121",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Arunachal Pradesh vs Sikkim, Plate",
+          "series": "Ranji Trophy Plate 2026-27",
+          "teams": [
+            {
+              "name": "Arunachal Pradesh",
+              "shortName": "ARNP",
+              "score": ""
+            },
+            {
+              "name": "Sikkim",
+              "shortName": "SKM",
+              "score": ""
+            }
+          ],
+          "dateLabel": "18 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 18, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163121",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+          "startTime": "2026-10-18T04:00:00.000Z",
+          "rawId": 163121,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163147",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Sikkim vs Nagaland, Plate",
+          "series": "Ranji Trophy Plate 2026-27",
+          "teams": [
+            {
+              "name": "Sikkim",
+              "shortName": "SKM",
+              "score": ""
+            },
+            {
+              "name": "Nagaland",
+              "shortName": "NGL",
+              "score": ""
+            }
+          ],
+          "dateLabel": "26 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 26, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163147",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+          "startTime": "2026-10-26T04:00:00.000Z",
+          "rawId": 163147,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163137",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Mizoram vs Meghalaya, Plate",
+          "series": "Ranji Trophy Plate 2026-27",
+          "teams": [
+            {
+              "name": "Mizoram",
+              "shortName": "MIZ",
+              "score": ""
+            },
+            {
+              "name": "Meghalaya",
+              "shortName": "MGLY",
+              "score": ""
+            }
+          ],
+          "dateLabel": "26 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 26, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163137",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+          "startTime": "2026-10-26T04:00:00.000Z",
+          "rawId": 163137,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163131",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Manipur vs Arunachal Pradesh, Plate",
+          "series": "Ranji Trophy Plate 2026-27",
+          "teams": [
+            {
+              "name": "Manipur",
+              "shortName": "MNP",
+              "score": ""
+            },
+            {
+              "name": "Arunachal Pradesh",
+              "shortName": "ARNP",
+              "score": ""
+            }
+          ],
+          "dateLabel": "26 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 26, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163131",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+          "startTime": "2026-10-26T04:00:00.000Z",
+          "rawId": 163131,
+          "importance": "Major tournament"
+        }
+      ]
+    },
+    {
+      "id": "ranji-trophy-elite-2026-27",
+      "series": "Ranji Trophy Elite 2026-27",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "total": 48,
+      "live": 0,
+      "upcoming": 48,
+      "recent": 0,
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "endTime": "2026-10-26T04:00:00.000Z",
+      "matches": [
+        {
+          "id": "upcoming-163520",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Goa vs Baroda, Elite Group A",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Goa",
+              "shortName": "GOA",
+              "score": ""
+            },
+            {
+              "name": "Baroda",
+              "shortName": "BRD",
+              "score": ""
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 11, 03:30 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163520",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163520,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163621",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Mumbai vs Chandigarh, Elite Group D",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Mumbai",
+              "shortName": "MUM",
+              "score": ""
+            },
+            {
+              "name": "Chandigarh",
+              "shortName": "CDG",
+              "score": ""
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 11, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163621",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163621,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163611",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Rajasthan vs Tamil Nadu, Elite Group D",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Rajasthan",
+              "shortName": "RAJ",
+              "score": ""
+            },
+            {
+              "name": "Tamil Nadu",
+              "shortName": "TN",
+              "score": ""
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 11, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163611",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163611,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163601",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Railways vs Uttarakhand, Elite Group D",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Railways",
+              "shortName": "RLYS",
+              "score": ""
+            },
+            {
+              "name": "Uttarakhand",
+              "shortName": "UTK",
+              "score": ""
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 11, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163601",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163601,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163591",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Haryana vs Himachal Pradesh, Elite Group D",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Haryana",
+              "shortName": "HAR",
+              "score": ""
+            },
+            {
+              "name": "Himachal Pradesh",
+              "shortName": "HP",
+              "score": ""
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 11, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163591",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163591,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163581",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Services vs Maharashtra, Elite Group C",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Services",
+              "shortName": "SER",
+              "score": ""
+            },
+            {
+              "name": "Maharashtra",
+              "shortName": "MAH",
+              "score": ""
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 11, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163581",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163581,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163571",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Bengal vs Delhi, Elite Group C",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Bengal",
+              "shortName": "BEN",
+              "score": ""
+            },
+            {
+              "name": "Delhi",
+              "shortName": "DEL",
+              "score": ""
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 11, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163571",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163571,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163563",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Gujarat vs Odisha, Elite Group C",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Gujarat",
+              "shortName": "GUJ",
+              "score": ""
+            },
+            {
+              "name": "Odisha",
+              "shortName": "ODSA",
+              "score": ""
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 11, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163563",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163563,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163561",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Jharkhand vs Kerala, Elite Group C",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Jharkhand",
+              "shortName": "JHKD",
+              "score": ""
+            },
+            {
+              "name": "Kerala",
+              "shortName": "KER",
+              "score": ""
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 11, 03:30 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163561",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163561,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163560",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Saurashtra vs Chhattisgarh, Elite Group B",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Saurashtra",
+              "shortName": "SAUR",
+              "score": ""
+            },
+            {
+              "name": "Chhattisgarh",
+              "shortName": "CG",
+              "score": ""
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 11, 03:30 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163560",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163560,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163551",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Punjab vs Assam, Elite Group B",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Punjab",
+              "shortName": "PUN",
+              "score": ""
+            },
+            {
+              "name": "Assam",
+              "shortName": "ASM",
+              "score": ""
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 11, 03:30 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163551",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163551,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163550",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Andhra vs Karnataka, Elite Group B",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Andhra",
+              "shortName": "AP",
+              "score": ""
+            },
+            {
+              "name": "Karnataka",
+              "shortName": "KAR",
+              "score": ""
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 11, 03:30 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163550,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163540",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Hyderabad vs Tripura, Elite Group B",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Hyderabad",
+              "shortName": "HYD",
+              "score": ""
+            },
+            {
+              "name": "Tripura",
+              "shortName": "TRI",
+              "score": ""
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 11, 03:30 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163540",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163540,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163531",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Vidarbha vs Puducherry, Elite Group A",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Vidarbha",
+              "shortName": "VID",
+              "score": ""
+            },
+            {
+              "name": "Puducherry",
+              "shortName": "PDC",
+              "score": ""
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 11, 03:30 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163531",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163531,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163530",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Jammu and Kashmir vs Madhya Pradesh, Elite Group A",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Jammu and Kashmir",
+              "shortName": "JK",
+              "score": ""
+            },
+            {
+              "name": "Madhya Pradesh",
+              "shortName": "MP",
+              "score": ""
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 11, 03:30 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163530",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163530,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163521",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Bihar vs Uttar Pradesh, Elite Group A",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Bihar",
+              "shortName": "BIH",
+              "score": ""
+            },
+            {
+              "name": "Uttar Pradesh",
+              "shortName": "UP",
+              "score": ""
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 11, 03:30 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163521",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163521,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163691",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Assam vs Tripura, Elite Group B",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Assam",
+              "shortName": "ASM",
+              "score": ""
+            },
+            {
+              "name": "Tripura",
+              "shortName": "TRI",
+              "score": ""
+            }
+          ],
+          "dateLabel": "18 Oct 2026, 05:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 18, 00:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163691",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-18T00:00:00.000Z",
+          "rawId": 163691,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163761",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Tamil Nadu vs Uttarakhand, Elite Group D",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Tamil Nadu",
+              "shortName": "TN",
+              "score": ""
+            },
+            {
+              "name": "Uttarakhand",
+              "shortName": "UTK",
+              "score": ""
+            }
+          ],
+          "dateLabel": "18 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 18, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163761",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-18T04:00:00.000Z",
+          "rawId": 163761,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163751",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Himachal Pradesh vs Mumbai, Elite Group D",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Himachal Pradesh",
+              "shortName": "HP",
+              "score": ""
+            },
+            {
+              "name": "Mumbai",
+              "shortName": "MUM",
+              "score": ""
+            }
+          ],
+          "dateLabel": "18 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 18, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163751",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-18T04:00:00.000Z",
+          "rawId": 163751,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163741",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Haryana vs Chandigarh, Elite Group D",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Haryana",
+              "shortName": "HAR",
+              "score": ""
+            },
+            {
+              "name": "Chandigarh",
+              "shortName": "CDG",
+              "score": ""
+            }
+          ],
+          "dateLabel": "18 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 18, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163741",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-18T04:00:00.000Z",
+          "rawId": 163741,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163731",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Kerala vs Odisha, Elite Group C",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Kerala",
+              "shortName": "KER",
+              "score": ""
+            },
+            {
+              "name": "Odisha",
+              "shortName": "ODSA",
+              "score": ""
+            }
+          ],
+          "dateLabel": "18 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 18, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163731",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-18T04:00:00.000Z",
+          "rawId": 163731,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163721",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Services vs Bengal, Elite Group C",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Services",
+              "shortName": "SER",
+              "score": ""
+            },
+            {
+              "name": "Bengal",
+              "shortName": "BEN",
+              "score": ""
+            }
+          ],
+          "dateLabel": "18 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 18, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163721",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-18T04:00:00.000Z",
+          "rawId": 163721,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163713",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Delhi vs Gujarat, Elite Group C",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Delhi",
+              "shortName": "DEL",
+              "score": ""
+            },
+            {
+              "name": "Gujarat",
+              "shortName": "GUJ",
+              "score": ""
+            }
+          ],
+          "dateLabel": "18 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 18, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163713",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-18T04:00:00.000Z",
+          "rawId": 163713,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163763",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Rajasthan vs Railways, Elite Group D",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Rajasthan",
+              "shortName": "RAJ",
+              "score": ""
+            },
+            {
+              "name": "Railways",
+              "shortName": "RLYS",
+              "score": ""
+            }
+          ],
+          "dateLabel": "18 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 18, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163763",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-18T04:00:00.000Z",
+          "rawId": 163763,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163701",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Maharashtra vs Jharkhand, Elite Group C",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Maharashtra",
+              "shortName": "MAH",
+              "score": ""
+            },
+            {
+              "name": "Jharkhand",
+              "shortName": "JHKD",
+              "score": ""
+            }
+          ],
+          "dateLabel": "18 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 18, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163701",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-18T04:00:00.000Z",
+          "rawId": 163701,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163681",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Punjab vs Chhattisgarh, Elite Group B",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Punjab",
+              "shortName": "PUN",
+              "score": ""
+            },
+            {
+              "name": "Chhattisgarh",
+              "shortName": "CG",
+              "score": ""
+            }
+          ],
+          "dateLabel": "18 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 18, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163681",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-18T04:00:00.000Z",
+          "rawId": 163681,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163631",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Baroda vs Bihar, Elite Group A",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Baroda",
+              "shortName": "BRD",
+              "score": ""
+            },
+            {
+              "name": "Bihar",
+              "shortName": "BIH",
+              "score": ""
+            }
+          ],
+          "dateLabel": "18 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 18, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163631",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-18T04:00:00.000Z",
+          "rawId": 163631,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163641",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Puducherry vs Madhya Pradesh, Elite Group A",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Puducherry",
+              "shortName": "PDC",
+              "score": ""
+            },
+            {
+              "name": "Madhya Pradesh",
+              "shortName": "MP",
+              "score": ""
+            }
+          ],
+          "dateLabel": "18 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 18, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163641",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-18T04:00:00.000Z",
+          "rawId": 163641,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163643",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Jammu and Kashmir vs Vidarbha, Elite Group A",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Jammu and Kashmir",
+              "shortName": "JK",
+              "score": ""
+            },
+            {
+              "name": "Vidarbha",
+              "shortName": "VID",
+              "score": ""
+            }
+          ],
+          "dateLabel": "18 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 18, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163643",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-18T04:00:00.000Z",
+          "rawId": 163643,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163653",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Uttar Pradesh vs Goa, Elite Group A",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Uttar Pradesh",
+              "shortName": "UP",
+              "score": ""
+            },
+            {
+              "name": "Goa",
+              "shortName": "GOA",
+              "score": ""
+            }
+          ],
+          "dateLabel": "18 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 18, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163653",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-18T04:00:00.000Z",
+          "rawId": 163653,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163661",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Andhra vs Hyderabad, Elite Group B",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Andhra",
+              "shortName": "AP",
+              "score": ""
+            },
+            {
+              "name": "Hyderabad",
+              "shortName": "HYD",
+              "score": ""
+            }
+          ],
+          "dateLabel": "18 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 18, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163661",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-18T04:00:00.000Z",
+          "rawId": 163661,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163671",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Karnataka vs Saurashtra, Elite Group B",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Karnataka",
+              "shortName": "KAR",
+              "score": ""
+            },
+            {
+              "name": "Saurashtra",
+              "shortName": "SAUR",
+              "score": ""
+            }
+          ],
+          "dateLabel": "18 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 18, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163671",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-18T04:00:00.000Z",
+          "rawId": 163671,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163851",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Maharashtra vs Gujarat, Elite Group C",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Maharashtra",
+              "shortName": "MAH",
+              "score": ""
+            },
+            {
+              "name": "Gujarat",
+              "shortName": "GUJ",
+              "score": ""
+            }
+          ],
+          "dateLabel": "26 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 26, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163851",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-26T04:00:00.000Z",
+          "rawId": 163851,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163861",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Kerala vs Bengal, Elite Group C",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Kerala",
+              "shortName": "KER",
+              "score": ""
+            },
+            {
+              "name": "Bengal",
+              "shortName": "BEN",
+              "score": ""
+            }
+          ],
+          "dateLabel": "26 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 26, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163861",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-26T04:00:00.000Z",
+          "rawId": 163861,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163871",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Odisha vs Services, Elite Group C",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Odisha",
+              "shortName": "ODSA",
+              "score": ""
+            },
+            {
+              "name": "Services",
+              "shortName": "SER",
+              "score": ""
+            }
+          ],
+          "dateLabel": "26 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 26, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163871",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-26T04:00:00.000Z",
+          "rawId": 163871,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163881",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Mumbai vs Haryana, Elite Group D",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Mumbai",
+              "shortName": "MUM",
+              "score": ""
+            },
+            {
+              "name": "Haryana",
+              "shortName": "HAR",
+              "score": ""
+            }
+          ],
+          "dateLabel": "26 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 26, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163881",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-26T04:00:00.000Z",
+          "rawId": 163881,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163891",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Uttarakhand vs Rajasthan, Elite Group D",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Uttarakhand",
+              "shortName": "UTK",
+              "score": ""
+            },
+            {
+              "name": "Rajasthan",
+              "shortName": "RAJ",
+              "score": ""
+            }
+          ],
+          "dateLabel": "26 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 26, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163891",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-26T04:00:00.000Z",
+          "rawId": 163891,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163900",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Tamil Nadu vs Railways, Elite Group D",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Tamil Nadu",
+              "shortName": "TN",
+              "score": ""
+            },
+            {
+              "name": "Railways",
+              "shortName": "RLYS",
+              "score": ""
+            }
+          ],
+          "dateLabel": "26 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 26, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163900",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-26T04:00:00.000Z",
+          "rawId": 163900,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163910",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Chandigarh vs Himachal Pradesh, Elite Group D",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Chandigarh",
+              "shortName": "CDG",
+              "score": ""
+            },
+            {
+              "name": "Himachal Pradesh",
+              "shortName": "HP",
+              "score": ""
+            }
+          ],
+          "dateLabel": "26 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 26, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163910",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-26T04:00:00.000Z",
+          "rawId": 163910,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163841",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Jharkhand vs Delhi, Elite Group C",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Jharkhand",
+              "shortName": "JHKD",
+              "score": ""
+            },
+            {
+              "name": "Delhi",
+              "shortName": "DEL",
+              "score": ""
+            }
+          ],
+          "dateLabel": "26 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 26, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163841",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-26T04:00:00.000Z",
+          "rawId": 163841,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163831",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Chhattisgarh vs Andhra, Elite Group B",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Chhattisgarh",
+              "shortName": "CG",
+              "score": ""
+            },
+            {
+              "name": "Andhra",
+              "shortName": "AP",
+              "score": ""
+            }
+          ],
+          "dateLabel": "26 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 26, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163831",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-26T04:00:00.000Z",
+          "rawId": 163831,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163771",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Baroda vs Jammu and Kashmir, Elite Group A",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Baroda",
+              "shortName": "BRD",
+              "score": ""
+            },
+            {
+              "name": "Jammu and Kashmir",
+              "shortName": "JK",
+              "score": ""
+            }
+          ],
+          "dateLabel": "26 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 26, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163771",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-26T04:00:00.000Z",
+          "rawId": 163771,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163773",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Madhya Pradesh vs Bihar, Elite Group A",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Madhya Pradesh",
+              "shortName": "MP",
+              "score": ""
+            },
+            {
+              "name": "Bihar",
+              "shortName": "BIH",
+              "score": ""
+            }
+          ],
+          "dateLabel": "26 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 26, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163773",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-26T04:00:00.000Z",
+          "rawId": 163773,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163781",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Vidarbha vs Goa, Elite Group A",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Vidarbha",
+              "shortName": "VID",
+              "score": ""
+            },
+            {
+              "name": "Goa",
+              "shortName": "GOA",
+              "score": ""
+            }
+          ],
+          "dateLabel": "26 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 26, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163781",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-26T04:00:00.000Z",
+          "rawId": 163781,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163791",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Puducherry vs Uttar Pradesh, Elite Group A",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Puducherry",
+              "shortName": "PDC",
+              "score": ""
+            },
+            {
+              "name": "Uttar Pradesh",
+              "shortName": "UP",
+              "score": ""
+            }
+          ],
+          "dateLabel": "26 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 26, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163791",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-26T04:00:00.000Z",
+          "rawId": 163791,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163801",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Hyderabad vs Punjab, Elite Group B",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Hyderabad",
+              "shortName": "HYD",
+              "score": ""
+            },
+            {
+              "name": "Punjab",
+              "shortName": "PUN",
+              "score": ""
+            }
+          ],
+          "dateLabel": "26 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 26, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163801",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-26T04:00:00.000Z",
+          "rawId": 163801,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163811",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Karnataka vs Tripura, Elite Group B",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Karnataka",
+              "shortName": "KAR",
+              "score": ""
+            },
+            {
+              "name": "Tripura",
+              "shortName": "TRI",
+              "score": ""
+            }
+          ],
+          "dateLabel": "26 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 26, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163811",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-26T04:00:00.000Z",
+          "rawId": 163811,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163821",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Saurashtra vs Assam, Elite Group B",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Saurashtra",
+              "shortName": "SAUR",
+              "score": ""
+            },
+            {
+              "name": "Assam",
+              "shortName": "ASM",
+              "score": ""
+            }
+          ],
+          "dateLabel": "26 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 26, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163821",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-26T04:00:00.000Z",
+          "rawId": 163821,
+          "importance": "Major tournament"
+        }
+      ]
+    },
+    {
+      "id": "irani-cup-2026",
+      "series": "Irani Cup 2026",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "total": 1,
+      "live": 0,
+      "upcoming": 1,
+      "recent": 0,
+      "startTime": "2026-10-01T04:00:00.000Z",
+      "endTime": "2026-10-01T04:00:00.000Z",
+      "matches": [
+        {
+          "id": "upcoming-163077",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Jammu and Kashmir vs Rest of India, Irani Cup",
+          "series": "Irani Cup 2026",
+          "teams": [
+            {
+              "name": "Jammu and Kashmir",
+              "shortName": "JK",
+              "score": ""
+            },
+            {
+              "name": "Rest of India",
+              "shortName": "ROI",
+              "score": ""
+            }
+          ],
+          "dateLabel": "01 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 01, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12387/irani-cup-2026/matches",
+          "startTime": "2026-10-01T04:00:00.000Z",
+          "rawId": 163077,
+          "importance": "Major tournament"
+        }
+      ]
+    },
     {
       "id": "asian-games-2026",
       "series": "Asian Games 2026",
