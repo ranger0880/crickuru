@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-08-31T00:13:09.902Z",
-  "lastCheckedAt": "2026-08-31T00:13:09.902Z",
-  "lastSuccessfulSyncAt": "2026-08-31T00:13:09.902Z",
+  "syncedAt": "2026-08-31T05:35:39.958Z",
+  "lastCheckedAt": "2026-08-31T05:35:39.958Z",
+  "lastSuccessfulSyncAt": "2026-08-31T05:35:39.958Z",
   "coverage": {
     "pathways": [
       "India",
@@ -66,13 +66,13 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": ""
+          "score": "113 (17.4 Ov)"
         }
       ],
       "dateLabel": "30 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 1: Stumps",
+      "overview": "Day 2: 1st Session - East Zone trail by 153 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-30T04:00:00.000Z",
@@ -97,13 +97,13 @@
         {
           "name": "South Zone",
           "shortName": "SZONE",
-          "score": "40/2 (18 Ov)"
+          "score": "85/5 (33.3 Ov)"
         }
       ],
       "dateLabel": "30 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 1: Stumps - South Zone trail by 155 runs",
+      "overview": "Day 2: 1st Session - South Zone trail by 110 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-30T04:00:00.000Z",
@@ -17685,13 +17685,13 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": ""
+          "score": "113 (17.4 Ov)"
         }
       ],
       "dateLabel": "30 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 1: Stumps",
+      "overview": "Day 2: 1st Session - East Zone trail by 153 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-30T04:00:00.000Z",
@@ -17716,13 +17716,13 @@
         {
           "name": "South Zone",
           "shortName": "SZONE",
-          "score": "40/2 (18 Ov)"
+          "score": "85/5 (33.3 Ov)"
         }
       ],
       "dateLabel": "30 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 1: Stumps - South Zone trail by 155 runs",
+      "overview": "Day 2: 1st Session - South Zone trail by 110 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-30T04:00:00.000Z",
@@ -35346,13 +35346,13 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": ""
+          "score": "113 (17.4 Ov)"
         }
       ],
       "dateLabel": "30 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 1: Stumps",
+      "overview": "Day 2: 1st Session - East Zone trail by 153 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-30T04:00:00.000Z",
@@ -35378,13 +35378,13 @@
         {
           "name": "South Zone",
           "shortName": "SZONE",
-          "score": "40/2 (18 Ov)"
+          "score": "85/5 (33.3 Ov)"
         }
       ],
       "dateLabel": "30 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 1: Stumps - South Zone trail by 155 runs",
+      "overview": "Day 2: 1st Session - South Zone trail by 110 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-30T04:00:00.000Z",
@@ -35881,13 +35881,13 @@
             {
               "name": "East Zone",
               "shortName": "EZONE",
-              "score": ""
+              "score": "113 (17.4 Ov)"
             }
           ],
           "dateLabel": "30 Aug 2026, 09:30 am",
           "time": "",
           "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-          "overview": "Day 1: Stumps",
+          "overview": "Day 2: 1st Session - East Zone trail by 153 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-30T04:00:00.000Z",
@@ -35913,13 +35913,13 @@
             {
               "name": "South Zone",
               "shortName": "SZONE",
-              "score": "40/2 (18 Ov)"
+              "score": "85/5 (33.3 Ov)"
             }
           ],
           "dateLabel": "30 Aug 2026, 09:30 am",
           "time": "",
           "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-          "overview": "Day 1: Stumps - South Zone trail by 155 runs",
+          "overview": "Day 2: 1st Session - South Zone trail by 110 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
           "startTime": "2026-08-30T04:00:00.000Z",
