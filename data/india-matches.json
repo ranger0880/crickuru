@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-01T11:54:17.691Z",
-  "lastCheckedAt": "2026-09-01T11:54:17.691Z",
-  "lastSuccessfulSyncAt": "2026-09-01T11:54:17.691Z",
+  "syncedAt": "2026-09-01T15:44:46.607Z",
+  "lastCheckedAt": "2026-09-01T15:44:46.607Z",
+  "lastSuccessfulSyncAt": "2026-09-01T15:44:46.607Z",
   "coverage": {
     "pathways": [
       "India",
@@ -42,9 +42,9 @@
   },
   "summary": {
     "live": 1,
-    "recent": 53,
+    "recent": 63,
     "upcoming": 499,
-    "total": 553
+    "total": 563
   },
   "all": [
     {
@@ -53,15 +53,15 @@
       "statusLabel": "Live",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
       "title": "North Zone vs South Zone, 2nd Semi-Final",
       "series": "Duleep Trophy 2026",
       "teams": [
         {
           "name": "North Zone",
           "shortName": "NZONE",
-          "score": "195/10 (59.1 Ov) & 256/7 (65.6 Ov)"
+          "score": "195/10 (59.1 Ov) & 256/7 (66 Ov)"
         },
         {
           "name": "South Zone",
@@ -74,7 +74,7 @@
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
       "overview": "Day 3: Stumps - North Zone lead by 139 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163047
     },
@@ -16163,6 +16163,38 @@
       "starPerformers": []
     },
     {
+      "id": "recent-155782",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "Sri Lanka Women U19 vs India Women U19, 3rd unofficial ODI",
+      "series": "Sri Lanka Women U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "Sri Lanka Women U19",
+          "shortName": "SLWU19",
+          "score": "159/10 (48.5 Ov)"
+        },
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": "161/2 (18 Ov)"
+        }
+      ],
+      "dateLabel": "05 Jul 2026, 02:00 pm",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "India Women U19 won by 8 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155782",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
+      "startTime": "2026-07-05T08:30:00.000Z",
+      "rawId": 155782,
+      "starPerformers": []
+    },
+    {
       "id": "recent-155166",
       "status": "recent",
       "statusLabel": "Past",
@@ -16224,6 +16256,38 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-07-04T04:00:00.000Z",
       "rawId": 157204,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-155771",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "India Women U19 vs Sri Lanka Women U19, 2nd unofficial ODI",
+      "series": "Sri Lanka Women U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": "209/8 (50 Ov)"
+        },
+        {
+          "name": "Sri Lanka Women U19",
+          "shortName": "SLWU19",
+          "score": "160/10 (41.2 Ov)"
+        }
+      ],
+      "dateLabel": "03 Jul 2026, 09:00 am",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "India Women U19 won by 49 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155771",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
+      "startTime": "2026-07-03T03:30:00.000Z",
+      "rawId": 155771,
       "starPerformers": []
     },
     {
@@ -16291,6 +16355,38 @@
       "starPerformers": []
     },
     {
+      "id": "recent-155760",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "India Women U19 vs Sri Lanka Women U19, 1st unofficial ODI",
+      "series": "Sri Lanka Women U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": "279/8 (50 Ov)"
+        },
+        {
+          "name": "Sri Lanka Women U19",
+          "shortName": "SLWU19",
+          "score": "159/10 (48.5 Ov)"
+        }
+      ],
+      "dateLabel": "30 Jun 2026, 09:00 am",
+      "time": "",
+      "place": "Cricket Association Puducherry Ground 2, Puducherry",
+      "overview": "India Women U19 won by 120 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155760",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
+      "startTime": "2026-06-30T03:30:00.000Z",
+      "rawId": 155760,
+      "starPerformers": []
+    },
+    {
       "id": "recent-122011",
       "status": "recent",
       "statusLabel": "Past",
@@ -16352,6 +16448,38 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-06-28T10:00:00.000Z",
       "rawId": 155144,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-155749",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "Sri Lanka Women U19 vs India Women U19, 3rd unofficial T20",
+      "series": "Sri Lanka Women U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "Sri Lanka Women U19",
+          "shortName": "SLWU19",
+          "score": "116/7 (20 Ov)"
+        },
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": "120/3 (18 Ov)"
+        }
+      ],
+      "dateLabel": "27 Jun 2026, 01:00 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "India Women U19 won by 7 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155749",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
+      "startTime": "2026-06-27T07:30:00.000Z",
+      "rawId": 155749,
       "starPerformers": []
     },
     {
@@ -16451,6 +16579,38 @@
       "starPerformers": []
     },
     {
+      "id": "recent-155738",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "India Women U19 vs Sri Lanka Women U19, 2nd unofficial T20",
+      "series": "Sri Lanka Women U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": "134/6 (20 Ov)"
+        },
+        {
+          "name": "Sri Lanka Women U19",
+          "shortName": "SLWU19",
+          "score": "123/8 (20 Ov)"
+        }
+      ],
+      "dateLabel": "24 Jun 2026, 01:00 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "India Women U19 won by 11 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155738",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
+      "startTime": "2026-06-24T07:30:00.000Z",
+      "rawId": 155738,
+      "starPerformers": []
+    },
+    {
       "id": "recent-155122",
       "status": "recent",
       "statusLabel": "Past",
@@ -16480,6 +16640,38 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-06-23T17:30:00.000Z",
       "rawId": 155122,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-155727",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "India Women U19 vs Sri Lanka Women U19, 1st unofficial T20",
+      "series": "Sri Lanka Women U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": "170/6 (20 Ov)"
+        },
+        {
+          "name": "Sri Lanka Women U19",
+          "shortName": "SLWU19",
+          "score": "77/10 (18.3 Ov)"
+        }
+      ],
+      "dateLabel": "22 Jun 2026, 01:00 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "India Women U19 won by 93 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155727",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
+      "startTime": "2026-06-22T07:30:00.000Z",
+      "rawId": 155727,
       "starPerformers": []
     },
     {
@@ -17298,6 +17490,148 @@
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/137454"
         }
       ]
+    },
+    {
+      "id": "recent-105540",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "South Africa Women U19 vs India Women U19, Final",
+      "series": "ICC Under 19 Womens T20 World Cup 2025",
+      "teams": [
+        {
+          "name": "South Africa Women U19",
+          "shortName": "RSAWU19",
+          "score": "82/10 (20 Ov)"
+        },
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": "84/1 (11.2 Ov)"
+        }
+      ],
+      "dateLabel": "02 Feb 2025, 12:00 pm",
+      "time": "",
+      "place": "Bayuemas Oval, Kuala Lumpur",
+      "overview": "India Women U19 won by 9 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105540",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
+      "startTime": "2025-02-02T06:30:00.000Z",
+      "rawId": 105540,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-105538",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "England Women U19 vs India Women U19, Semi-Final 2",
+      "series": "ICC Under 19 Womens T20 World Cup 2025",
+      "teams": [
+        {
+          "name": "England Women U19",
+          "shortName": "ENGWU19",
+          "score": "113/8 (20 Ov)"
+        },
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": "117/1 (15 Ov)"
+        }
+      ],
+      "dateLabel": "31 Jan 2025, 12:00 pm",
+      "time": "",
+      "place": "Bayuemas Oval, Kuala Lumpur",
+      "overview": "India Women U19 won by 9 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105538",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
+      "startTime": "2025-01-31T06:30:00.000Z",
+      "rawId": 105538,
+      "starPerformers": [
+        {
+          "name": "Parunika Sisodia",
+          "performance": "3-21",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105538"
+        }
+      ]
+    },
+    {
+      "id": "recent-105514",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "India Women U19 vs Scotland Women U19, 10th Match, Super Six Group 1",
+      "series": "ICC Under 19 Womens T20 World Cup 2025",
+      "teams": [
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": "208/1 (20 Ov)"
+        },
+        {
+          "name": "Scotland Women U19",
+          "shortName": "SCOWU19",
+          "score": "58/10 (14 Ov)"
+        }
+      ],
+      "dateLabel": "28 Jan 2025, 12:00 pm",
+      "time": "",
+      "place": "Bayuemas Oval, Kuala Lumpur",
+      "overview": "India Women U19 won by 150 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105514",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
+      "startTime": "2025-01-28T06:30:00.000Z",
+      "rawId": 105514,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-105484",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "Bangladesh Women U19 vs India Women U19, 6th Match, Super Six Group 1",
+      "series": "ICC Under 19 Womens T20 World Cup 2025",
+      "teams": [
+        {
+          "name": "Bangladesh Women U19",
+          "shortName": "BANWU19",
+          "score": "64/8 (20 Ov)"
+        },
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": "66/2 (7 Ov)"
+        }
+      ],
+      "dateLabel": "26 Jan 2025, 12:00 pm",
+      "time": "",
+      "place": "Bayuemas Oval, Kuala Lumpur",
+      "overview": "India Women U19 won by 8 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105484",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
+      "startTime": "2025-01-26T06:30:00.000Z",
+      "rawId": 105484,
+      "starPerformers": [
+        {
+          "name": "Vaishnavi Sharma",
+          "performance": "3-15",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105484"
+        }
+      ]
     }
   ],
   "live": [
@@ -17307,15 +17641,15 @@
       "statusLabel": "Live",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
       "title": "North Zone vs South Zone, 2nd Semi-Final",
       "series": "Duleep Trophy 2026",
       "teams": [
         {
           "name": "North Zone",
           "shortName": "NZONE",
-          "score": "195/10 (59.1 Ov) & 256/7 (65.6 Ov)"
+          "score": "195/10 (59.1 Ov) & 256/7 (66 Ov)"
         },
         {
           "name": "South Zone",
@@ -17328,7 +17662,7 @@
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
       "overview": "Day 3: Stumps - North Zone lead by 139 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163047
     }
@@ -33421,6 +33755,38 @@
       "starPerformers": []
     },
     {
+      "id": "recent-155782",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "Sri Lanka Women U19 vs India Women U19, 3rd unofficial ODI",
+      "series": "Sri Lanka Women U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "Sri Lanka Women U19",
+          "shortName": "SLWU19",
+          "score": "159/10 (48.5 Ov)"
+        },
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": "161/2 (18 Ov)"
+        }
+      ],
+      "dateLabel": "05 Jul 2026, 02:00 pm",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "India Women U19 won by 8 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155782",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
+      "startTime": "2026-07-05T08:30:00.000Z",
+      "rawId": 155782,
+      "starPerformers": []
+    },
+    {
       "id": "recent-155166",
       "status": "recent",
       "statusLabel": "Past",
@@ -33482,6 +33848,38 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-07-04T04:00:00.000Z",
       "rawId": 157204,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-155771",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "India Women U19 vs Sri Lanka Women U19, 2nd unofficial ODI",
+      "series": "Sri Lanka Women U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": "209/8 (50 Ov)"
+        },
+        {
+          "name": "Sri Lanka Women U19",
+          "shortName": "SLWU19",
+          "score": "160/10 (41.2 Ov)"
+        }
+      ],
+      "dateLabel": "03 Jul 2026, 09:00 am",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "India Women U19 won by 49 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155771",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
+      "startTime": "2026-07-03T03:30:00.000Z",
+      "rawId": 155771,
       "starPerformers": []
     },
     {
@@ -33549,6 +33947,38 @@
       "starPerformers": []
     },
     {
+      "id": "recent-155760",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "India Women U19 vs Sri Lanka Women U19, 1st unofficial ODI",
+      "series": "Sri Lanka Women U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": "279/8 (50 Ov)"
+        },
+        {
+          "name": "Sri Lanka Women U19",
+          "shortName": "SLWU19",
+          "score": "159/10 (48.5 Ov)"
+        }
+      ],
+      "dateLabel": "30 Jun 2026, 09:00 am",
+      "time": "",
+      "place": "Cricket Association Puducherry Ground 2, Puducherry",
+      "overview": "India Women U19 won by 120 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155760",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
+      "startTime": "2026-06-30T03:30:00.000Z",
+      "rawId": 155760,
+      "starPerformers": []
+    },
+    {
       "id": "recent-122011",
       "status": "recent",
       "statusLabel": "Past",
@@ -33610,6 +34040,38 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-06-28T10:00:00.000Z",
       "rawId": 155144,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-155749",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "Sri Lanka Women U19 vs India Women U19, 3rd unofficial T20",
+      "series": "Sri Lanka Women U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "Sri Lanka Women U19",
+          "shortName": "SLWU19",
+          "score": "116/7 (20 Ov)"
+        },
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": "120/3 (18 Ov)"
+        }
+      ],
+      "dateLabel": "27 Jun 2026, 01:00 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "India Women U19 won by 7 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155749",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
+      "startTime": "2026-06-27T07:30:00.000Z",
+      "rawId": 155749,
       "starPerformers": []
     },
     {
@@ -33709,6 +34171,38 @@
       "starPerformers": []
     },
     {
+      "id": "recent-155738",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "India Women U19 vs Sri Lanka Women U19, 2nd unofficial T20",
+      "series": "Sri Lanka Women U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": "134/6 (20 Ov)"
+        },
+        {
+          "name": "Sri Lanka Women U19",
+          "shortName": "SLWU19",
+          "score": "123/8 (20 Ov)"
+        }
+      ],
+      "dateLabel": "24 Jun 2026, 01:00 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "India Women U19 won by 11 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155738",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
+      "startTime": "2026-06-24T07:30:00.000Z",
+      "rawId": 155738,
+      "starPerformers": []
+    },
+    {
       "id": "recent-155122",
       "status": "recent",
       "statusLabel": "Past",
@@ -33738,6 +34232,38 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-06-23T17:30:00.000Z",
       "rawId": 155122,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-155727",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "India Women U19 vs Sri Lanka Women U19, 1st unofficial T20",
+      "series": "Sri Lanka Women U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": "170/6 (20 Ov)"
+        },
+        {
+          "name": "Sri Lanka Women U19",
+          "shortName": "SLWU19",
+          "score": "77/10 (18.3 Ov)"
+        }
+      ],
+      "dateLabel": "22 Jun 2026, 01:00 pm",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "India Women U19 won by 93 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155727",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
+      "startTime": "2026-06-22T07:30:00.000Z",
+      "rawId": 155727,
       "starPerformers": []
     },
     {
@@ -34556,6 +35082,148 @@
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/137454"
         }
       ]
+    },
+    {
+      "id": "recent-105540",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "South Africa Women U19 vs India Women U19, Final",
+      "series": "ICC Under 19 Womens T20 World Cup 2025",
+      "teams": [
+        {
+          "name": "South Africa Women U19",
+          "shortName": "RSAWU19",
+          "score": "82/10 (20 Ov)"
+        },
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": "84/1 (11.2 Ov)"
+        }
+      ],
+      "dateLabel": "02 Feb 2025, 12:00 pm",
+      "time": "",
+      "place": "Bayuemas Oval, Kuala Lumpur",
+      "overview": "India Women U19 won by 9 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105540",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
+      "startTime": "2025-02-02T06:30:00.000Z",
+      "rawId": 105540,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-105538",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "England Women U19 vs India Women U19, Semi-Final 2",
+      "series": "ICC Under 19 Womens T20 World Cup 2025",
+      "teams": [
+        {
+          "name": "England Women U19",
+          "shortName": "ENGWU19",
+          "score": "113/8 (20 Ov)"
+        },
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": "117/1 (15 Ov)"
+        }
+      ],
+      "dateLabel": "31 Jan 2025, 12:00 pm",
+      "time": "",
+      "place": "Bayuemas Oval, Kuala Lumpur",
+      "overview": "India Women U19 won by 9 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105538",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
+      "startTime": "2025-01-31T06:30:00.000Z",
+      "rawId": 105538,
+      "starPerformers": [
+        {
+          "name": "Parunika Sisodia",
+          "performance": "3-21",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105538"
+        }
+      ]
+    },
+    {
+      "id": "recent-105514",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "India Women U19 vs Scotland Women U19, 10th Match, Super Six Group 1",
+      "series": "ICC Under 19 Womens T20 World Cup 2025",
+      "teams": [
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": "208/1 (20 Ov)"
+        },
+        {
+          "name": "Scotland Women U19",
+          "shortName": "SCOWU19",
+          "score": "58/10 (14 Ov)"
+        }
+      ],
+      "dateLabel": "28 Jan 2025, 12:00 pm",
+      "time": "",
+      "place": "Bayuemas Oval, Kuala Lumpur",
+      "overview": "India Women U19 won by 150 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105514",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
+      "startTime": "2025-01-28T06:30:00.000Z",
+      "rawId": 105514,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-105484",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "Bangladesh Women U19 vs India Women U19, 6th Match, Super Six Group 1",
+      "series": "ICC Under 19 Womens T20 World Cup 2025",
+      "teams": [
+        {
+          "name": "Bangladesh Women U19",
+          "shortName": "BANWU19",
+          "score": "64/8 (20 Ov)"
+        },
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": "66/2 (7 Ov)"
+        }
+      ],
+      "dateLabel": "26 Jan 2025, 12:00 pm",
+      "time": "",
+      "place": "Bayuemas Oval, Kuala Lumpur",
+      "overview": "India Women U19 won by 8 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105484",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
+      "startTime": "2025-01-26T06:30:00.000Z",
+      "rawId": 105484,
+      "starPerformers": [
+        {
+          "name": "Vaishnavi Sharma",
+          "performance": "3-15",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/105484"
+        }
+      ]
     }
   ],
   "rankings": [
@@ -34582,9 +35250,9 @@
       "label": "Women",
       "order": 3,
       "live": 0,
-      "recent": 20,
+      "recent": 30,
       "upcoming": 35,
-      "total": 55
+      "total": 65
     },
     {
       "id": "domestic",
@@ -34603,15 +35271,15 @@
       "statusLabel": "Live",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
       "title": "North Zone vs South Zone, 2nd Semi-Final",
       "series": "Duleep Trophy 2026",
       "teams": [
         {
           "name": "North Zone",
           "shortName": "NZONE",
-          "score": "195/10 (59.1 Ov) & 256/7 (65.6 Ov)"
+          "score": "195/10 (59.1 Ov) & 256/7 (66 Ov)"
         },
         {
           "name": "South Zone",
@@ -34624,7 +35292,7 @@
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
       "overview": "Day 3: Stumps - North Zone lead by 139 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163047,
       "importance": "Knockout stage"
@@ -38860,15 +39528,15 @@
           "statusLabel": "Live",
           "level": "domestic",
           "levelLabel": "Domestic / State",
-          "sourceType": "domestic",
-          "sourceScope": "global",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
           "title": "North Zone vs South Zone, 2nd Semi-Final",
           "series": "Duleep Trophy 2026",
           "teams": [
             {
               "name": "North Zone",
               "shortName": "NZONE",
-              "score": "195/10 (59.1 Ov) & 256/7 (65.6 Ov)"
+              "score": "195/10 (59.1 Ov) & 256/7 (66 Ov)"
             },
             {
               "name": "South Zone",
@@ -38881,7 +39549,7 @@
           "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
           "overview": "Day 3: Stumps - North Zone lead by 139 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
           "startTime": "2026-08-30T04:00:00.000Z",
           "rawId": 163047,
           "importance": "Knockout stage"
