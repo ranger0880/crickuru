@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-01T01:25:58.044Z",
-  "lastCheckedAt": "2026-09-01T01:25:58.044Z",
-  "lastSuccessfulSyncAt": "2026-09-01T01:25:58.044Z",
+  "syncedAt": "2026-09-01T06:27:58.248Z",
+  "lastCheckedAt": "2026-09-01T06:27:58.248Z",
+  "lastSuccessfulSyncAt": "2026-09-01T06:27:58.248Z",
   "coverage": {
     "pathways": [
       "India",
@@ -61,7 +61,7 @@
         {
           "name": "Central Zone",
           "shortName": "CZONE",
-          "score": "266/10 (80.1 Ov) & 45/3 (19.6 Ov)"
+          "score": "266/10 (80.1 Ov) & 136/8 (43.6 Ov)"
         },
         {
           "name": "East Zone",
@@ -72,7 +72,7 @@
       "dateLabel": "30 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 2: Stumps - Central Zone lead by 45 runs",
+      "overview": "Day 3: 1st Session - Central Zone lead by 136 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-30T04:00:00.000Z",
@@ -92,18 +92,18 @@
         {
           "name": "North Zone",
           "shortName": "NZONE",
-          "score": "195/10 (59.1 Ov)"
+          "score": "195/10 (59.1 Ov) & 37/1 (14.6 Ov)"
         },
         {
           "name": "South Zone",
           "shortName": "SZONE",
-          "score": "285/9 (93.6 Ov)"
+          "score": "312/10 (100.3 Ov)"
         }
       ],
       "dateLabel": "30 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 2: Stumps - South Zone lead by 90 runs",
+      "overview": "Day 3: 1st Session - North Zone trail by 80 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-30T04:00:00.000Z",
@@ -17648,7 +17648,7 @@
         {
           "name": "Central Zone",
           "shortName": "CZONE",
-          "score": "266/10 (80.1 Ov) & 45/3 (19.6 Ov)"
+          "score": "266/10 (80.1 Ov) & 136/8 (43.6 Ov)"
         },
         {
           "name": "East Zone",
@@ -17659,7 +17659,7 @@
       "dateLabel": "30 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 2: Stumps - Central Zone lead by 45 runs",
+      "overview": "Day 3: 1st Session - Central Zone lead by 136 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-30T04:00:00.000Z",
@@ -17679,18 +17679,18 @@
         {
           "name": "North Zone",
           "shortName": "NZONE",
-          "score": "195/10 (59.1 Ov)"
+          "score": "195/10 (59.1 Ov) & 37/1 (14.6 Ov)"
         },
         {
           "name": "South Zone",
           "shortName": "SZONE",
-          "score": "285/9 (93.6 Ov)"
+          "score": "312/10 (100.3 Ov)"
         }
       ],
       "dateLabel": "30 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 2: Stumps - South Zone lead by 90 runs",
+      "overview": "Day 3: 1st Session - North Zone trail by 80 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-30T04:00:00.000Z",
@@ -35277,7 +35277,7 @@
         {
           "name": "Central Zone",
           "shortName": "CZONE",
-          "score": "266/10 (80.1 Ov) & 45/3 (19.6 Ov)"
+          "score": "266/10 (80.1 Ov) & 136/8 (43.6 Ov)"
         },
         {
           "name": "East Zone",
@@ -35288,7 +35288,7 @@
       "dateLabel": "30 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "Day 2: Stumps - Central Zone lead by 45 runs",
+      "overview": "Day 3: 1st Session - Central Zone lead by 136 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-30T04:00:00.000Z",
@@ -35309,18 +35309,18 @@
         {
           "name": "North Zone",
           "shortName": "NZONE",
-          "score": "195/10 (59.1 Ov)"
+          "score": "195/10 (59.1 Ov) & 37/1 (14.6 Ov)"
         },
         {
           "name": "South Zone",
           "shortName": "SZONE",
-          "score": "285/9 (93.6 Ov)"
+          "score": "312/10 (100.3 Ov)"
         }
       ],
       "dateLabel": "30 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 2: Stumps - South Zone lead by 90 runs",
+      "overview": "Day 3: 1st Session - North Zone trail by 80 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-30T04:00:00.000Z",
@@ -39533,7 +39533,7 @@
             {
               "name": "Central Zone",
               "shortName": "CZONE",
-              "score": "266/10 (80.1 Ov) & 45/3 (19.6 Ov)"
+              "score": "266/10 (80.1 Ov) & 136/8 (43.6 Ov)"
             },
             {
               "name": "East Zone",
@@ -39544,7 +39544,7 @@
           "dateLabel": "30 Aug 2026, 09:30 am",
           "time": "",
           "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-          "overview": "Day 2: Stumps - Central Zone lead by 45 runs",
+          "overview": "Day 3: 1st Session - Central Zone lead by 136 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-30T04:00:00.000Z",
@@ -39565,18 +39565,18 @@
             {
               "name": "North Zone",
               "shortName": "NZONE",
-              "score": "195/10 (59.1 Ov)"
+              "score": "195/10 (59.1 Ov) & 37/1 (14.6 Ov)"
             },
             {
               "name": "South Zone",
               "shortName": "SZONE",
-              "score": "285/9 (93.6 Ov)"
+              "score": "312/10 (100.3 Ov)"
             }
           ],
           "dateLabel": "30 Aug 2026, 09:30 am",
           "time": "",
           "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-          "overview": "Day 2: Stumps - South Zone lead by 90 runs",
+          "overview": "Day 3: 1st Session - North Zone trail by 80 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-30T04:00:00.000Z",
