@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-02T05:50:01.045Z",
-  "lastCheckedAt": "2026-09-02T05:50:01.045Z",
-  "lastSuccessfulSyncAt": "2026-09-02T05:50:01.045Z",
+  "syncedAt": "2026-09-02T09:58:47.167Z",
+  "lastCheckedAt": "2026-09-02T09:58:47.167Z",
+  "lastSuccessfulSyncAt": "2026-09-02T09:58:47.167Z",
   "coverage": {
     "pathways": [
       "India",
@@ -42,46 +42,15 @@
   },
   "summary": {
     "live": 1,
-    "recent": 63,
-    "upcoming": 503,
+    "recent": 64,
+    "upcoming": 502,
     "total": 567
   },
   "all": [
     {
-      "id": "live-163047",
+      "id": "live-171110",
       "status": "live",
       "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "North Zone vs South Zone, 2nd Semi-Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "North Zone",
-          "shortName": "NZONE",
-          "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
-        },
-        {
-          "name": "South Zone",
-          "shortName": "SZONE",
-          "score": "312/10 (100.3 Ov) & 48 (10.6 Ov)"
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 4: 1st Session - South Zone need 133 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-30T04:00:00.000Z",
-      "rawId": 163047
-    },
-    {
-      "id": "upcoming-171110",
-      "status": "upcoming",
-      "statusLabel": "Future",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -92,18 +61,18 @@
         {
           "name": "Mohali Kings",
           "shortName": "MHK",
-          "score": ""
+          "score": "101/10 (17.2 Ov)"
         },
         {
           "name": "Ludhiana Lions",
           "shortName": "LDL",
-          "score": ""
+          "score": "94/3 (8.1 Ov)"
         }
       ],
       "dateLabel": "02 Sept 2026, 01:00 pm",
       "time": "",
       "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Match starts at Sep 02, 07:30 GMT",
+      "overview": "Ludhiana Lions need 8 runs in 71 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171110",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-02T07:30:00.000Z",
@@ -179,7 +148,7 @@
       "levelLabel": "Domestic / State",
       "sourceType": "",
       "sourceScope": "domestic-series",
-      "title": "East Zone vs TBC, Final",
+      "title": "East Zone vs South Zone, Final",
       "series": "Duleep Trophy 2026",
       "teams": [
         {
@@ -188,8 +157,8 @@
           "score": ""
         },
         {
-          "name": "TBC",
-          "shortName": "TBC",
+          "name": "South Zone",
+          "shortName": "SZONE",
           "score": ""
         }
       ],
@@ -15743,6 +15712,38 @@
       "starPerformers": []
     },
     {
+      "id": "recent-163047",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "North Zone vs South Zone, 2nd Semi-Final",
+      "series": "Duleep Trophy 2026",
+      "teams": [
+        {
+          "name": "North Zone",
+          "shortName": "NZONE",
+          "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
+        },
+        {
+          "name": "South Zone",
+          "shortName": "SZONE",
+          "score": "312/10 (100.3 Ov) & 182/3 (43.1 Ov)"
+        }
+      ],
+      "dateLabel": "30 Aug 2026, 09:30 am",
+      "time": "",
+      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
+      "overview": "South Zone won by 7 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-30T04:00:00.000Z",
+      "rawId": 163047,
+      "starPerformers": []
+    },
+    {
       "id": "recent-163017",
       "status": "recent",
       "statusLabel": "Past",
@@ -17760,42 +17761,9 @@
   ],
   "live": [
     {
-      "id": "live-163047",
+      "id": "live-171110",
       "status": "live",
       "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "North Zone vs South Zone, 2nd Semi-Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "North Zone",
-          "shortName": "NZONE",
-          "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
-        },
-        {
-          "name": "South Zone",
-          "shortName": "SZONE",
-          "score": "312/10 (100.3 Ov) & 48 (10.6 Ov)"
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 4: 1st Session - South Zone need 133 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-30T04:00:00.000Z",
-      "rawId": 163047
-    }
-  ],
-  "upcoming": [
-    {
-      "id": "upcoming-171110",
-      "status": "upcoming",
-      "statusLabel": "Future",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -17806,23 +17774,25 @@
         {
           "name": "Mohali Kings",
           "shortName": "MHK",
-          "score": ""
+          "score": "101/10 (17.2 Ov)"
         },
         {
           "name": "Ludhiana Lions",
           "shortName": "LDL",
-          "score": ""
+          "score": "94/3 (8.1 Ov)"
         }
       ],
       "dateLabel": "02 Sept 2026, 01:00 pm",
       "time": "",
       "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Match starts at Sep 02, 07:30 GMT",
+      "overview": "Ludhiana Lions need 8 runs in 71 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171110",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-02T07:30:00.000Z",
       "rawId": 171110
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-169841",
       "status": "upcoming",
@@ -17893,7 +17863,7 @@
       "levelLabel": "Domestic / State",
       "sourceType": "",
       "sourceScope": "domestic-series",
-      "title": "East Zone vs TBC, Final",
+      "title": "East Zone vs South Zone, Final",
       "series": "Duleep Trophy 2026",
       "teams": [
         {
@@ -17902,8 +17872,8 @@
           "score": ""
         },
         {
-          "name": "TBC",
-          "shortName": "TBC",
+          "name": "South Zone",
+          "shortName": "SZONE",
           "score": ""
         }
       ],
@@ -33459,6 +33429,38 @@
       "starPerformers": []
     },
     {
+      "id": "recent-163047",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "North Zone vs South Zone, 2nd Semi-Final",
+      "series": "Duleep Trophy 2026",
+      "teams": [
+        {
+          "name": "North Zone",
+          "shortName": "NZONE",
+          "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
+        },
+        {
+          "name": "South Zone",
+          "shortName": "SZONE",
+          "score": "312/10 (100.3 Ov) & 182/3 (43.1 Ov)"
+        }
+      ],
+      "dateLabel": "30 Aug 2026, 09:30 am",
+      "time": "",
+      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
+      "overview": "South Zone won by 7 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-30T04:00:00.000Z",
+      "rawId": 163047,
+      "starPerformers": []
+    },
+    {
       "id": "recent-163017",
       "status": "recent",
       "statusLabel": "Past",
@@ -35488,9 +35490,9 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 0,
+      "live": 1,
       "recent": 0,
-      "upcoming": 1,
+      "upcoming": 0,
       "total": 1
     },
     {
@@ -35506,45 +35508,13 @@
       "id": "domestic",
       "label": "Domestic / State",
       "order": 4,
-      "live": 1,
-      "recent": 3,
+      "live": 0,
+      "recent": 4,
       "upcoming": 414,
       "total": 418
     }
   ],
   "importantMatches": [
-    {
-      "id": "live-163047",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "North Zone vs South Zone, 2nd Semi-Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "North Zone",
-          "shortName": "NZONE",
-          "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
-        },
-        {
-          "name": "South Zone",
-          "shortName": "SZONE",
-          "score": "312/10 (100.3 Ov) & 48 (10.6 Ov)"
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 4: 1st Session - South Zone need 133 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-30T04:00:00.000Z",
-      "rawId": 163047,
-      "importance": "Knockout stage"
-    },
     {
       "id": "upcoming-163851",
       "status": "upcoming",
@@ -37473,7 +37443,7 @@
       "levelLabel": "Domestic / State",
       "sourceType": "",
       "sourceScope": "domestic-series",
-      "title": "East Zone vs TBC, Final",
+      "title": "East Zone vs South Zone, Final",
       "series": "Duleep Trophy 2026",
       "teams": [
         {
@@ -37482,8 +37452,8 @@
           "score": ""
         },
         {
-          "name": "TBC",
-          "shortName": "TBC",
+          "name": "South Zone",
+          "shortName": "SZONE",
           "score": ""
         }
       ],
@@ -37631,6 +37601,39 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163043,
+      "starPerformers": [],
+      "importance": "Knockout stage"
+    },
+    {
+      "id": "recent-163047",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "North Zone vs South Zone, 2nd Semi-Final",
+      "series": "Duleep Trophy 2026",
+      "teams": [
+        {
+          "name": "North Zone",
+          "shortName": "NZONE",
+          "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
+        },
+        {
+          "name": "South Zone",
+          "shortName": "SZONE",
+          "score": "312/10 (100.3 Ov) & 182/3 (43.1 Ov)"
+        }
+      ],
+      "dateLabel": "30 Aug 2026, 09:30 am",
+      "time": "",
+      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
+      "overview": "South Zone won by 7 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-08-30T04:00:00.000Z",
+      "rawId": 163047,
       "starPerformers": [],
       "importance": "Knockout stage"
     },
@@ -39698,9 +39701,9 @@
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "total": 5,
-      "live": 1,
+      "live": 0,
       "upcoming": 1,
-      "recent": 3,
+      "recent": 4,
       "startTime": "2026-08-23T04:00:00.000Z",
       "endTime": "2026-09-06T04:00:00.000Z",
       "matches": [
@@ -39771,38 +39774,6 @@
           "importance": "Knockout stage"
         },
         {
-          "id": "live-163047",
-          "status": "live",
-          "statusLabel": "Live",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "domestic",
-          "sourceScope": "global",
-          "title": "North Zone vs South Zone, 2nd Semi-Final",
-          "series": "Duleep Trophy 2026",
-          "teams": [
-            {
-              "name": "North Zone",
-              "shortName": "NZONE",
-              "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
-            },
-            {
-              "name": "South Zone",
-              "shortName": "SZONE",
-              "score": "312/10 (100.3 Ov) & 48 (10.6 Ov)"
-            }
-          ],
-          "dateLabel": "30 Aug 2026, 09:30 am",
-          "time": "",
-          "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-          "overview": "Day 4: 1st Session - South Zone need 133 runs",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-          "startTime": "2026-08-30T04:00:00.000Z",
-          "rawId": 163047,
-          "importance": "Knockout stage"
-        },
-        {
           "id": "recent-163043",
           "status": "recent",
           "statusLabel": "Past",
@@ -39836,6 +39807,39 @@
           "importance": "Knockout stage"
         },
         {
+          "id": "recent-163047",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "domestic",
+          "sourceScope": "global",
+          "title": "North Zone vs South Zone, 2nd Semi-Final",
+          "series": "Duleep Trophy 2026",
+          "teams": [
+            {
+              "name": "North Zone",
+              "shortName": "NZONE",
+              "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
+            },
+            {
+              "name": "South Zone",
+              "shortName": "SZONE",
+              "score": "312/10 (100.3 Ov) & 182/3 (43.1 Ov)"
+            }
+          ],
+          "dateLabel": "30 Aug 2026, 09:30 am",
+          "time": "",
+          "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
+          "overview": "South Zone won by 7 wkts",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "startTime": "2026-08-30T04:00:00.000Z",
+          "rawId": 163047,
+          "starPerformers": [],
+          "importance": "Knockout stage"
+        },
+        {
           "id": "upcoming-163061",
           "status": "upcoming",
           "statusLabel": "Future",
@@ -39843,7 +39847,7 @@
           "levelLabel": "Domestic / State",
           "sourceType": "",
           "sourceScope": "domestic-series",
-          "title": "East Zone vs TBC, Final",
+          "title": "East Zone vs South Zone, Final",
           "series": "Duleep Trophy 2026",
           "teams": [
             {
@@ -39852,8 +39856,8 @@
               "score": ""
             },
             {
-              "name": "TBC",
-              "shortName": "TBC",
+              "name": "South Zone",
+              "shortName": "SZONE",
               "score": ""
             }
           ],
@@ -40063,6 +40067,39 @@
           "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
           "startTime": "2026-08-30T04:00:00.000Z",
           "rawId": 163043,
+          "starPerformers": [],
+          "importance": "Knockout stage"
+        },
+        {
+          "id": "recent-163047",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "domestic",
+          "sourceScope": "global",
+          "title": "North Zone vs South Zone, 2nd Semi-Final",
+          "series": "Duleep Trophy 2026",
+          "teams": [
+            {
+              "name": "North Zone",
+              "shortName": "NZONE",
+              "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
+            },
+            {
+              "name": "South Zone",
+              "shortName": "SZONE",
+              "score": "312/10 (100.3 Ov) & 182/3 (43.1 Ov)"
+            }
+          ],
+          "dateLabel": "30 Aug 2026, 09:30 am",
+          "time": "",
+          "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
+          "overview": "South Zone won by 7 wkts",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "startTime": "2026-08-30T04:00:00.000Z",
+          "rawId": 163047,
           "starPerformers": [],
           "importance": "Knockout stage"
         },
