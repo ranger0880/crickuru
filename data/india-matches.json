@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-02T14:09:50.413Z",
-  "lastCheckedAt": "2026-09-02T14:09:50.413Z",
-  "lastSuccessfulSyncAt": "2026-09-02T14:09:50.413Z",
+  "syncedAt": "2026-09-02T17:52:55.742Z",
+  "lastCheckedAt": "2026-09-02T17:52:55.742Z",
+  "lastSuccessfulSyncAt": "2026-09-02T17:52:55.742Z",
   "coverage": {
     "pathways": [
       "India",
@@ -53,8 +53,8 @@
       "statusLabel": "Future",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "India Women vs Hong Kong, China Women, Match 7, Group A",
       "series": "Women's Asia Cup 2026",
       "teams": [
@@ -74,7 +74,7 @@
       "place": "Dubai International Cricket Stadium, Dubai",
       "overview": "Match starts at Sep 03, 14:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169841",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-03T14:30:00.000Z",
       "rawId": 169841
     },
@@ -15649,6 +15649,38 @@
       ]
     },
     {
+      "id": "recent-163047",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "North Zone vs South Zone, 2nd Semi-Final",
+      "series": "Duleep Trophy 2026",
+      "teams": [
+        {
+          "name": "North Zone",
+          "shortName": "NZONE",
+          "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
+        },
+        {
+          "name": "South Zone",
+          "shortName": "SZONE",
+          "score": "312/10 (100.3 Ov) & 182/3 (43.1 Ov)"
+        }
+      ],
+      "dateLabel": "30 Aug 2026, 09:30 am",
+      "time": "",
+      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
+      "overview": "South Zone won by 7 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+      "startTime": "2026-08-30T04:00:00.000Z",
+      "rawId": 163047,
+      "starPerformers": []
+    },
+    {
       "id": "recent-163043",
       "status": "recent",
       "statusLabel": "Past",
@@ -15678,38 +15710,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163043,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-163047",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "North Zone vs South Zone, 2nd Semi-Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "North Zone",
-          "shortName": "NZONE",
-          "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
-        },
-        {
-          "name": "South Zone",
-          "shortName": "SZONE",
-          "score": "312/10 (100.3 Ov) & 182/3 (43.1 Ov)"
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "South Zone won by 7 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-30T04:00:00.000Z",
-      "rawId": 163047,
       "starPerformers": []
     },
     {
@@ -17736,8 +17736,8 @@
       "statusLabel": "Future",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "India Women vs Hong Kong, China Women, Match 7, Group A",
       "series": "Women's Asia Cup 2026",
       "teams": [
@@ -17757,7 +17757,7 @@
       "place": "Dubai International Cricket Stadium, Dubai",
       "overview": "Match starts at Sep 03, 14:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169841",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-03T14:30:00.000Z",
       "rawId": 169841
     },
@@ -33334,6 +33334,38 @@
       ]
     },
     {
+      "id": "recent-163047",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "North Zone vs South Zone, 2nd Semi-Final",
+      "series": "Duleep Trophy 2026",
+      "teams": [
+        {
+          "name": "North Zone",
+          "shortName": "NZONE",
+          "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
+        },
+        {
+          "name": "South Zone",
+          "shortName": "SZONE",
+          "score": "312/10 (100.3 Ov) & 182/3 (43.1 Ov)"
+        }
+      ],
+      "dateLabel": "30 Aug 2026, 09:30 am",
+      "time": "",
+      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
+      "overview": "South Zone won by 7 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+      "startTime": "2026-08-30T04:00:00.000Z",
+      "rawId": 163047,
+      "starPerformers": []
+    },
+    {
       "id": "recent-163043",
       "status": "recent",
       "statusLabel": "Past",
@@ -33363,38 +33395,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163043,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-163047",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "North Zone vs South Zone, 2nd Semi-Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "North Zone",
-          "shortName": "NZONE",
-          "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
-        },
-        {
-          "name": "South Zone",
-          "shortName": "SZONE",
-          "score": "312/10 (100.3 Ov) & 182/3 (43.1 Ov)"
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "South Zone won by 7 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-30T04:00:00.000Z",
-      "rawId": 163047,
       "starPerformers": []
     },
     {
@@ -37442,8 +37442,8 @@
       "statusLabel": "Future",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "India Women vs Hong Kong, China Women, Match 7, Group A",
       "series": "Women's Asia Cup 2026",
       "teams": [
@@ -37463,7 +37463,7 @@
       "place": "Dubai International Cricket Stadium, Dubai",
       "overview": "Match starts at Sep 03, 14:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169841",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-03T14:30:00.000Z",
       "rawId": 169841,
       "importance": "Major tournament"
@@ -37509,6 +37509,39 @@
       "importance": "Major tournament"
     },
     {
+      "id": "recent-163047",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "North Zone vs South Zone, 2nd Semi-Final",
+      "series": "Duleep Trophy 2026",
+      "teams": [
+        {
+          "name": "North Zone",
+          "shortName": "NZONE",
+          "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
+        },
+        {
+          "name": "South Zone",
+          "shortName": "SZONE",
+          "score": "312/10 (100.3 Ov) & 182/3 (43.1 Ov)"
+        }
+      ],
+      "dateLabel": "30 Aug 2026, 09:30 am",
+      "time": "",
+      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
+      "overview": "South Zone won by 7 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+      "startTime": "2026-08-30T04:00:00.000Z",
+      "rawId": 163047,
+      "starPerformers": [],
+      "importance": "Knockout stage"
+    },
+    {
       "id": "recent-163043",
       "status": "recent",
       "statusLabel": "Past",
@@ -37538,39 +37571,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163043,
-      "starPerformers": [],
-      "importance": "Knockout stage"
-    },
-    {
-      "id": "recent-163047",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "North Zone vs South Zone, 2nd Semi-Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "North Zone",
-          "shortName": "NZONE",
-          "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
-        },
-        {
-          "name": "South Zone",
-          "shortName": "SZONE",
-          "score": "312/10 (100.3 Ov) & 182/3 (43.1 Ov)"
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "South Zone won by 7 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-08-30T04:00:00.000Z",
-      "rawId": 163047,
       "starPerformers": [],
       "importance": "Knockout stage"
     },
@@ -39711,6 +39711,39 @@
           "importance": "Knockout stage"
         },
         {
+          "id": "recent-163047",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "North Zone vs South Zone, 2nd Semi-Final",
+          "series": "Duleep Trophy 2026",
+          "teams": [
+            {
+              "name": "North Zone",
+              "shortName": "NZONE",
+              "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
+            },
+            {
+              "name": "South Zone",
+              "shortName": "SZONE",
+              "score": "312/10 (100.3 Ov) & 182/3 (43.1 Ov)"
+            }
+          ],
+          "dateLabel": "30 Aug 2026, 09:30 am",
+          "time": "",
+          "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
+          "overview": "South Zone won by 7 wkts",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+          "startTime": "2026-08-30T04:00:00.000Z",
+          "rawId": 163047,
+          "starPerformers": [],
+          "importance": "Knockout stage"
+        },
+        {
           "id": "recent-163043",
           "status": "recent",
           "statusLabel": "Past",
@@ -39740,39 +39773,6 @@
           "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
           "startTime": "2026-08-30T04:00:00.000Z",
           "rawId": 163043,
-          "starPerformers": [],
-          "importance": "Knockout stage"
-        },
-        {
-          "id": "recent-163047",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "domestic",
-          "sourceScope": "global",
-          "title": "North Zone vs South Zone, 2nd Semi-Final",
-          "series": "Duleep Trophy 2026",
-          "teams": [
-            {
-              "name": "North Zone",
-              "shortName": "NZONE",
-              "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
-            },
-            {
-              "name": "South Zone",
-              "shortName": "SZONE",
-              "score": "312/10 (100.3 Ov) & 182/3 (43.1 Ov)"
-            }
-          ],
-          "dateLabel": "30 Aug 2026, 09:30 am",
-          "time": "",
-          "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-          "overview": "South Zone won by 7 wkts",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-          "startTime": "2026-08-30T04:00:00.000Z",
-          "rawId": 163047,
           "starPerformers": [],
           "importance": "Knockout stage"
         },
@@ -39868,8 +39868,8 @@
           "statusLabel": "Future",
           "level": "women",
           "levelLabel": "Women",
-          "sourceType": "",
-          "sourceScope": "india-women",
+          "sourceType": "International",
+          "sourceScope": "global",
           "title": "India Women vs Hong Kong, China Women, Match 7, Group A",
           "series": "Women's Asia Cup 2026",
           "teams": [
@@ -39889,7 +39889,7 @@
           "place": "Dubai International Cricket Stadium, Dubai",
           "overview": "Match starts at Sep 03, 14:30 GMT",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169841",
-          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-09-03T14:30:00.000Z",
           "rawId": 169841,
           "importance": "Major tournament"
@@ -39975,6 +39975,39 @@
           "importance": "Major tournament"
         },
         {
+          "id": "recent-163047",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "North Zone vs South Zone, 2nd Semi-Final",
+          "series": "Duleep Trophy 2026",
+          "teams": [
+            {
+              "name": "North Zone",
+              "shortName": "NZONE",
+              "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
+            },
+            {
+              "name": "South Zone",
+              "shortName": "SZONE",
+              "score": "312/10 (100.3 Ov) & 182/3 (43.1 Ov)"
+            }
+          ],
+          "dateLabel": "30 Aug 2026, 09:30 am",
+          "time": "",
+          "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
+          "overview": "South Zone won by 7 wkts",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+          "startTime": "2026-08-30T04:00:00.000Z",
+          "rawId": 163047,
+          "starPerformers": [],
+          "importance": "Knockout stage"
+        },
+        {
           "id": "recent-163043",
           "status": "recent",
           "statusLabel": "Past",
@@ -40004,39 +40037,6 @@
           "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
           "startTime": "2026-08-30T04:00:00.000Z",
           "rawId": 163043,
-          "starPerformers": [],
-          "importance": "Knockout stage"
-        },
-        {
-          "id": "recent-163047",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "domestic",
-          "sourceScope": "global",
-          "title": "North Zone vs South Zone, 2nd Semi-Final",
-          "series": "Duleep Trophy 2026",
-          "teams": [
-            {
-              "name": "North Zone",
-              "shortName": "NZONE",
-              "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
-            },
-            {
-              "name": "South Zone",
-              "shortName": "SZONE",
-              "score": "312/10 (100.3 Ov) & 182/3 (43.1 Ov)"
-            }
-          ],
-          "dateLabel": "30 Aug 2026, 09:30 am",
-          "time": "",
-          "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-          "overview": "South Zone won by 7 wkts",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-          "startTime": "2026-08-30T04:00:00.000Z",
-          "rawId": 163047,
           "starPerformers": [],
           "importance": "Knockout stage"
         },
