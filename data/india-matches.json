@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-02T01:12:50.922Z",
-  "lastCheckedAt": "2026-09-02T01:12:50.922Z",
-  "lastSuccessfulSyncAt": "2026-09-02T01:12:50.922Z",
+  "syncedAt": "2026-09-02T05:50:01.045Z",
+  "lastCheckedAt": "2026-09-02T05:50:01.045Z",
+  "lastSuccessfulSyncAt": "2026-09-02T05:50:01.045Z",
   "coverage": {
     "pathways": [
       "India",
@@ -43,8 +43,8 @@
   "summary": {
     "live": 1,
     "recent": 63,
-    "upcoming": 502,
-    "total": 566
+    "upcoming": 503,
+    "total": 567
   },
   "all": [
     {
@@ -53,30 +53,61 @@
       "statusLabel": "Live",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "North Zone vs South Zone, 2nd Semi-Final",
       "series": "Duleep Trophy 2026",
       "teams": [
         {
           "name": "North Zone",
           "shortName": "NZONE",
-          "score": "195/10 (59.1 Ov) & 256/7 (66 Ov)"
+          "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
         },
         {
           "name": "South Zone",
           "shortName": "SZONE",
-          "score": "312/10 (100.3 Ov)"
+          "score": "312/10 (100.3 Ov) & 48 (10.6 Ov)"
         }
       ],
       "dateLabel": "30 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 3: Stumps - North Zone lead by 139 runs",
+      "overview": "Day 4: 1st Session - South Zone need 133 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163047
+    },
+    {
+      "id": "upcoming-171110",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Mohali Kings vs Ludhiana Lions, 6th Match",
+      "series": "Sher-E-Punjab T20 League, 2026",
+      "teams": [
+        {
+          "name": "Mohali Kings",
+          "shortName": "MHK",
+          "score": ""
+        },
+        {
+          "name": "Ludhiana Lions",
+          "shortName": "LDL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "02 Sept 2026, 01:00 pm",
+      "time": "",
+      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "overview": "Match starts at Sep 02, 07:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171110",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-02T07:30:00.000Z",
+      "rawId": 171110
     },
     {
       "id": "upcoming-169841",
@@ -1040,99 +1071,6 @@
       "rawId": 155455
     },
     {
-      "id": "upcoming-163087",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Mizoram vs Manipur, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Mizoram",
-          "shortName": "MIZ",
-          "score": ""
-        },
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Oct 11, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163087",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163087
-    },
-    {
-      "id": "upcoming-163097",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Sikkim vs Meghalaya, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        },
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Oct 11, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163097",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163097
-    },
-    {
-      "id": "upcoming-163103",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Arunachal Pradesh vs Nagaland, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        },
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Oct 11, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163103",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163103
-    },
-    {
       "id": "upcoming-163520",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -1629,6 +1567,99 @@
       "rawId": 163521
     },
     {
+      "id": "upcoming-163087",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Mizoram vs Manipur, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Mizoram",
+          "shortName": "MIZ",
+          "score": ""
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163087",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163087
+    },
+    {
+      "id": "upcoming-163097",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Sikkim vs Meghalaya, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        },
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163097",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163097
+    },
+    {
+      "id": "upcoming-163103",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Arunachal Pradesh vs Nagaland, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        },
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163103",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163103
+    },
+    {
       "id": "upcoming-151587",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -1782,99 +1813,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-18T00:00:00.000Z",
       "rawId": 163691
-    },
-    {
-      "id": "upcoming-163111",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Meghalaya vs Manipur, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        },
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Oct 18, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163111",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-18T04:00:00.000Z",
-      "rawId": 163111
-    },
-    {
-      "id": "upcoming-163113",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Nagaland vs Mizoram, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        },
-        {
-          "name": "Mizoram",
-          "shortName": "MIZ",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Oct 18, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163113",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-18T04:00:00.000Z",
-      "rawId": 163113
-    },
-    {
-      "id": "upcoming-163121",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Arunachal Pradesh vs Sikkim, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        },
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Oct 18, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163121",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-18T04:00:00.000Z",
-      "rawId": 163121
     },
     {
       "id": "upcoming-163761",
@@ -2342,6 +2280,99 @@
       "rawId": 163671
     },
     {
+      "id": "upcoming-163111",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Meghalaya vs Manipur, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163111",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163111
+    },
+    {
+      "id": "upcoming-163113",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Nagaland vs Mizoram, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        },
+        {
+          "name": "Mizoram",
+          "shortName": "MIZ",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163113",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163113
+    },
+    {
+      "id": "upcoming-163121",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Arunachal Pradesh vs Sikkim, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        },
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163121",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163121
+    },
+    {
       "id": "upcoming-155530",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -2557,99 +2588,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
       "startTime": "2026-10-25T08:30:00.000Z",
       "rawId": 155562
-    },
-    {
-      "id": "upcoming-163147",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Sikkim vs Nagaland, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        },
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        }
-      ],
-      "dateLabel": "26 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Oct 26, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163147",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-26T04:00:00.000Z",
-      "rawId": 163147
-    },
-    {
-      "id": "upcoming-163137",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Mizoram vs Meghalaya, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Mizoram",
-          "shortName": "MIZ",
-          "score": ""
-        },
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        }
-      ],
-      "dateLabel": "26 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Oct 26, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163137",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-26T04:00:00.000Z",
-      "rawId": 163137
-    },
-    {
-      "id": "upcoming-163131",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Manipur vs Arunachal Pradesh, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        },
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "26 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Oct 26, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163131",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-26T04:00:00.000Z",
-      "rawId": 163131
     },
     {
       "id": "upcoming-163851",
@@ -3148,6 +3086,99 @@
       "rawId": 163821
     },
     {
+      "id": "upcoming-163147",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Sikkim vs Nagaland, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        },
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163147",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163147
+    },
+    {
+      "id": "upcoming-163137",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Mizoram vs Meghalaya, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Mizoram",
+          "shortName": "MIZ",
+          "score": ""
+        },
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163137",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163137
+    },
+    {
+      "id": "upcoming-163131",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Manipur vs Arunachal Pradesh, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        },
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163131",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163131
+    },
+    {
       "id": "upcoming-161212",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -3301,99 +3332,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
       "startTime": "2026-11-01T07:00:00.000Z",
       "rawId": 161234
-    },
-    {
-      "id": "upcoming-163151",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Manipur vs Sikkim, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        },
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        }
-      ],
-      "dateLabel": "02 Nov 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 02, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163151",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-11-02T04:00:00.000Z",
-      "rawId": 163151
-    },
-    {
-      "id": "upcoming-163153",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Meghalaya vs Nagaland, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        },
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        }
-      ],
-      "dateLabel": "02 Nov 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 02, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163153",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-11-02T04:00:00.000Z",
-      "rawId": 163153
-    },
-    {
-      "id": "upcoming-163161",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Mizoram vs Arunachal Pradesh, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Mizoram",
-          "shortName": "MIZ",
-          "score": ""
-        },
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "02 Nov 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 02, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163161",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-11-02T04:00:00.000Z",
-      "rawId": 163161
     },
     {
       "id": "upcoming-163970",
@@ -3890,6 +3828,99 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-11-02T04:00:00.000Z",
       "rawId": 163953
+    },
+    {
+      "id": "upcoming-163151",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Manipur vs Sikkim, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        },
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        }
+      ],
+      "dateLabel": "02 Nov 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 02, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163151",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-11-02T04:00:00.000Z",
+      "rawId": 163151
+    },
+    {
+      "id": "upcoming-163153",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Meghalaya vs Nagaland, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        },
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "02 Nov 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 02, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163153",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-11-02T04:00:00.000Z",
+      "rawId": 163153
+    },
+    {
+      "id": "upcoming-163161",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Mizoram vs Arunachal Pradesh, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Mizoram",
+          "shortName": "MIZ",
+          "score": ""
+        },
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "02 Nov 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 02, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163161",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-11-02T04:00:00.000Z",
+      "rawId": 163161
     },
     {
       "id": "upcoming-161245",
@@ -13657,99 +13688,6 @@
       "rawId": 151701
     },
     {
-      "id": "upcoming-163163",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Nagaland vs Manipur, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        },
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "17 Jan 2027, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Jan 17, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163163",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2027-01-17T04:00:00.000Z",
-      "rawId": 163163
-    },
-    {
-      "id": "upcoming-163171",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Meghalaya vs Arunachal Pradesh, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        },
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "17 Jan 2027, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Jan 17, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163171",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2027-01-17T04:00:00.000Z",
-      "rawId": 163171
-    },
-    {
-      "id": "upcoming-163181",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Sikkim vs Mizoram, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        },
-        {
-          "name": "Mizoram",
-          "shortName": "MIZ",
-          "score": ""
-        }
-      ],
-      "dateLabel": "17 Jan 2027, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Jan 17, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163181",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2027-01-17T04:00:00.000Z",
-      "rawId": 163181
-    },
-    {
       "id": "upcoming-164091",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -14246,6 +14184,99 @@
       "rawId": 164073
     },
     {
+      "id": "upcoming-163163",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Nagaland vs Manipur, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "17 Jan 2027, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Jan 17, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163163",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2027-01-17T04:00:00.000Z",
+      "rawId": 163163
+    },
+    {
+      "id": "upcoming-163171",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Meghalaya vs Arunachal Pradesh, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        },
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "17 Jan 2027, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Jan 17, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163171",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2027-01-17T04:00:00.000Z",
+      "rawId": 163171
+    },
+    {
+      "id": "upcoming-163181",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Sikkim vs Mizoram, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        },
+        {
+          "name": "Mizoram",
+          "shortName": "MIZ",
+          "score": ""
+        }
+      ],
+      "dateLabel": "17 Jan 2027, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Jan 17, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163181",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2027-01-17T04:00:00.000Z",
+      "rawId": 163181
+    },
+    {
       "id": "upcoming-151712",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -14275,37 +14306,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
       "startTime": "2027-01-21T04:00:00.000Z",
       "rawId": 151712
-    },
-    {
-      "id": "upcoming-163183",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "TBC vs TBC, Final",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "TBC",
-          "shortName": "TBC",
-          "score": ""
-        },
-        {
-          "name": "TBC",
-          "shortName": "TBC",
-          "score": ""
-        }
-      ],
-      "dateLabel": "24 Jan 2027, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Jan 24, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163183",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2027-01-24T04:00:00.000Z",
-      "rawId": 163183
     },
     {
       "id": "upcoming-164211",
@@ -14802,6 +14802,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2027-01-24T04:00:00.000Z",
       "rawId": 164191
+    },
+    {
+      "id": "upcoming-163183",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "TBC vs TBC, Final",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "TBC",
+          "shortName": "TBC",
+          "score": ""
+        },
+        {
+          "name": "TBC",
+          "shortName": "TBC",
+          "score": ""
+        }
+      ],
+      "dateLabel": "24 Jan 2027, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Jan 24, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163183",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2027-01-24T04:00:00.000Z",
+      "rawId": 163183
     },
     {
       "id": "upcoming-151713",
@@ -15685,8 +15716,8 @@
       "statusLabel": "Past",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
       "title": "Central Zone vs East Zone, 1st Semi-Final",
       "series": "Duleep Trophy 2026",
       "teams": [
@@ -15698,7 +15729,7 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "266/10 (56.6 Ov) & 162/6 (39.3 Ov)"
+          "score": "266/10 (57 Ov) & 162/6 (39.3 Ov)"
         }
       ],
       "dateLabel": "30 Aug 2026, 09:30 am",
@@ -15706,7 +15737,7 @@
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
       "overview": "East Zone won by 4 wkts",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163043,
       "starPerformers": []
@@ -17734,33 +17765,64 @@
       "statusLabel": "Live",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "North Zone vs South Zone, 2nd Semi-Final",
       "series": "Duleep Trophy 2026",
       "teams": [
         {
           "name": "North Zone",
           "shortName": "NZONE",
-          "score": "195/10 (59.1 Ov) & 256/7 (66 Ov)"
+          "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
         },
         {
           "name": "South Zone",
           "shortName": "SZONE",
-          "score": "312/10 (100.3 Ov)"
+          "score": "312/10 (100.3 Ov) & 48 (10.6 Ov)"
         }
       ],
       "dateLabel": "30 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 3: Stumps - North Zone lead by 139 runs",
+      "overview": "Day 4: 1st Session - South Zone need 133 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163047
     }
   ],
   "upcoming": [
+    {
+      "id": "upcoming-171110",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Mohali Kings vs Ludhiana Lions, 6th Match",
+      "series": "Sher-E-Punjab T20 League, 2026",
+      "teams": [
+        {
+          "name": "Mohali Kings",
+          "shortName": "MHK",
+          "score": ""
+        },
+        {
+          "name": "Ludhiana Lions",
+          "shortName": "LDL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "02 Sept 2026, 01:00 pm",
+      "time": "",
+      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "overview": "Match starts at Sep 02, 07:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171110",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-02T07:30:00.000Z",
+      "rawId": 171110
+    },
     {
       "id": "upcoming-169841",
       "status": "upcoming",
@@ -18723,99 +18785,6 @@
       "rawId": 155455
     },
     {
-      "id": "upcoming-163087",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Mizoram vs Manipur, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Mizoram",
-          "shortName": "MIZ",
-          "score": ""
-        },
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Oct 11, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163087",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163087
-    },
-    {
-      "id": "upcoming-163097",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Sikkim vs Meghalaya, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        },
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Oct 11, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163097",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163097
-    },
-    {
-      "id": "upcoming-163103",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Arunachal Pradesh vs Nagaland, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        },
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Oct 11, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163103",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163103
-    },
-    {
       "id": "upcoming-163520",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -19312,6 +19281,99 @@
       "rawId": 163521
     },
     {
+      "id": "upcoming-163087",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Mizoram vs Manipur, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Mizoram",
+          "shortName": "MIZ",
+          "score": ""
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163087",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163087
+    },
+    {
+      "id": "upcoming-163097",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Sikkim vs Meghalaya, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        },
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163097",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163097
+    },
+    {
+      "id": "upcoming-163103",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Arunachal Pradesh vs Nagaland, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        },
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163103",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163103
+    },
+    {
       "id": "upcoming-151587",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -19465,99 +19527,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-18T00:00:00.000Z",
       "rawId": 163691
-    },
-    {
-      "id": "upcoming-163111",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Meghalaya vs Manipur, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        },
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Oct 18, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163111",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-18T04:00:00.000Z",
-      "rawId": 163111
-    },
-    {
-      "id": "upcoming-163113",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Nagaland vs Mizoram, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        },
-        {
-          "name": "Mizoram",
-          "shortName": "MIZ",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Oct 18, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163113",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-18T04:00:00.000Z",
-      "rawId": 163113
-    },
-    {
-      "id": "upcoming-163121",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Arunachal Pradesh vs Sikkim, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        },
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Oct 18, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163121",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-18T04:00:00.000Z",
-      "rawId": 163121
     },
     {
       "id": "upcoming-163761",
@@ -20025,6 +19994,99 @@
       "rawId": 163671
     },
     {
+      "id": "upcoming-163111",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Meghalaya vs Manipur, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163111",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163111
+    },
+    {
+      "id": "upcoming-163113",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Nagaland vs Mizoram, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        },
+        {
+          "name": "Mizoram",
+          "shortName": "MIZ",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163113",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163113
+    },
+    {
+      "id": "upcoming-163121",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Arunachal Pradesh vs Sikkim, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        },
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163121",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163121
+    },
+    {
       "id": "upcoming-155530",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -20240,99 +20302,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
       "startTime": "2026-10-25T08:30:00.000Z",
       "rawId": 155562
-    },
-    {
-      "id": "upcoming-163147",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Sikkim vs Nagaland, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        },
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        }
-      ],
-      "dateLabel": "26 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Oct 26, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163147",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-26T04:00:00.000Z",
-      "rawId": 163147
-    },
-    {
-      "id": "upcoming-163137",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Mizoram vs Meghalaya, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Mizoram",
-          "shortName": "MIZ",
-          "score": ""
-        },
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        }
-      ],
-      "dateLabel": "26 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Oct 26, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163137",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-26T04:00:00.000Z",
-      "rawId": 163137
-    },
-    {
-      "id": "upcoming-163131",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Manipur vs Arunachal Pradesh, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        },
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "26 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Oct 26, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163131",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-26T04:00:00.000Z",
-      "rawId": 163131
     },
     {
       "id": "upcoming-163851",
@@ -20831,6 +20800,99 @@
       "rawId": 163821
     },
     {
+      "id": "upcoming-163147",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Sikkim vs Nagaland, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        },
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163147",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163147
+    },
+    {
+      "id": "upcoming-163137",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Mizoram vs Meghalaya, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Mizoram",
+          "shortName": "MIZ",
+          "score": ""
+        },
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163137",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163137
+    },
+    {
+      "id": "upcoming-163131",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Manipur vs Arunachal Pradesh, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        },
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163131",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163131
+    },
+    {
       "id": "upcoming-161212",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -20984,99 +21046,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
       "startTime": "2026-11-01T07:00:00.000Z",
       "rawId": 161234
-    },
-    {
-      "id": "upcoming-163151",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Manipur vs Sikkim, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        },
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        }
-      ],
-      "dateLabel": "02 Nov 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 02, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163151",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-11-02T04:00:00.000Z",
-      "rawId": 163151
-    },
-    {
-      "id": "upcoming-163153",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Meghalaya vs Nagaland, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        },
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        }
-      ],
-      "dateLabel": "02 Nov 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 02, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163153",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-11-02T04:00:00.000Z",
-      "rawId": 163153
-    },
-    {
-      "id": "upcoming-163161",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Mizoram vs Arunachal Pradesh, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Mizoram",
-          "shortName": "MIZ",
-          "score": ""
-        },
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "02 Nov 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 02, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163161",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-11-02T04:00:00.000Z",
-      "rawId": 163161
     },
     {
       "id": "upcoming-163970",
@@ -21573,6 +21542,99 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-11-02T04:00:00.000Z",
       "rawId": 163953
+    },
+    {
+      "id": "upcoming-163151",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Manipur vs Sikkim, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        },
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        }
+      ],
+      "dateLabel": "02 Nov 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 02, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163151",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-11-02T04:00:00.000Z",
+      "rawId": 163151
+    },
+    {
+      "id": "upcoming-163153",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Meghalaya vs Nagaland, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        },
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "02 Nov 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 02, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163153",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-11-02T04:00:00.000Z",
+      "rawId": 163153
+    },
+    {
+      "id": "upcoming-163161",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Mizoram vs Arunachal Pradesh, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Mizoram",
+          "shortName": "MIZ",
+          "score": ""
+        },
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "02 Nov 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 02, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163161",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-11-02T04:00:00.000Z",
+      "rawId": 163161
     },
     {
       "id": "upcoming-161245",
@@ -31340,99 +31402,6 @@
       "rawId": 151701
     },
     {
-      "id": "upcoming-163163",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Nagaland vs Manipur, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        },
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "17 Jan 2027, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Jan 17, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163163",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2027-01-17T04:00:00.000Z",
-      "rawId": 163163
-    },
-    {
-      "id": "upcoming-163171",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Meghalaya vs Arunachal Pradesh, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        },
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "17 Jan 2027, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Jan 17, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163171",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2027-01-17T04:00:00.000Z",
-      "rawId": 163171
-    },
-    {
-      "id": "upcoming-163181",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Sikkim vs Mizoram, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        },
-        {
-          "name": "Mizoram",
-          "shortName": "MIZ",
-          "score": ""
-        }
-      ],
-      "dateLabel": "17 Jan 2027, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Jan 17, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163181",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2027-01-17T04:00:00.000Z",
-      "rawId": 163181
-    },
-    {
       "id": "upcoming-164091",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -31929,6 +31898,99 @@
       "rawId": 164073
     },
     {
+      "id": "upcoming-163163",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Nagaland vs Manipur, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "17 Jan 2027, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Jan 17, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163163",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2027-01-17T04:00:00.000Z",
+      "rawId": 163163
+    },
+    {
+      "id": "upcoming-163171",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Meghalaya vs Arunachal Pradesh, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        },
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "17 Jan 2027, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Jan 17, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163171",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2027-01-17T04:00:00.000Z",
+      "rawId": 163171
+    },
+    {
+      "id": "upcoming-163181",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Sikkim vs Mizoram, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        },
+        {
+          "name": "Mizoram",
+          "shortName": "MIZ",
+          "score": ""
+        }
+      ],
+      "dateLabel": "17 Jan 2027, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Jan 17, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163181",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2027-01-17T04:00:00.000Z",
+      "rawId": 163181
+    },
+    {
       "id": "upcoming-151712",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -31958,37 +32020,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
       "startTime": "2027-01-21T04:00:00.000Z",
       "rawId": 151712
-    },
-    {
-      "id": "upcoming-163183",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "TBC vs TBC, Final",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "TBC",
-          "shortName": "TBC",
-          "score": ""
-        },
-        {
-          "name": "TBC",
-          "shortName": "TBC",
-          "score": ""
-        }
-      ],
-      "dateLabel": "24 Jan 2027, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Jan 24, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163183",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2027-01-24T04:00:00.000Z",
-      "rawId": 163183
     },
     {
       "id": "upcoming-164211",
@@ -32485,6 +32516,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2027-01-24T04:00:00.000Z",
       "rawId": 164191
+    },
+    {
+      "id": "upcoming-163183",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "TBC vs TBC, Final",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "TBC",
+          "shortName": "TBC",
+          "score": ""
+        },
+        {
+          "name": "TBC",
+          "shortName": "TBC",
+          "score": ""
+        }
+      ],
+      "dateLabel": "24 Jan 2027, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Jan 24, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163183",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2027-01-24T04:00:00.000Z",
+      "rawId": 163183
     },
     {
       "id": "upcoming-151713",
@@ -33370,8 +33432,8 @@
       "statusLabel": "Past",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
       "title": "Central Zone vs East Zone, 1st Semi-Final",
       "series": "Duleep Trophy 2026",
       "teams": [
@@ -33383,7 +33445,7 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "266/10 (56.6 Ov) & 162/6 (39.3 Ov)"
+          "score": "266/10 (57 Ov) & 162/6 (39.3 Ov)"
         }
       ],
       "dateLabel": "30 Aug 2026, 09:30 am",
@@ -33391,7 +33453,7 @@
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
       "overview": "East Zone won by 4 wkts",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163043,
       "starPerformers": []
@@ -35428,8 +35490,8 @@
       "order": 2,
       "live": 0,
       "recent": 0,
-      "upcoming": 0,
-      "total": 0
+      "upcoming": 1,
+      "total": 1
     },
     {
       "id": "women",
@@ -35457,127 +35519,31 @@
       "statusLabel": "Live",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "North Zone vs South Zone, 2nd Semi-Final",
       "series": "Duleep Trophy 2026",
       "teams": [
         {
           "name": "North Zone",
           "shortName": "NZONE",
-          "score": "195/10 (59.1 Ov) & 256/7 (66 Ov)"
+          "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
         },
         {
           "name": "South Zone",
           "shortName": "SZONE",
-          "score": "312/10 (100.3 Ov)"
+          "score": "312/10 (100.3 Ov) & 48 (10.6 Ov)"
         }
       ],
       "dateLabel": "30 Aug 2026, 09:30 am",
       "time": "",
       "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "Day 3: Stumps - North Zone lead by 139 runs",
+      "overview": "Day 4: 1st Session - South Zone need 133 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163047,
       "importance": "Knockout stage"
-    },
-    {
-      "id": "upcoming-163147",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Sikkim vs Nagaland, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        },
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        }
-      ],
-      "dateLabel": "26 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Oct 26, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163147",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-26T04:00:00.000Z",
-      "rawId": 163147,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163137",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Mizoram vs Meghalaya, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Mizoram",
-          "shortName": "MIZ",
-          "score": ""
-        },
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        }
-      ],
-      "dateLabel": "26 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Oct 26, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163137",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-26T04:00:00.000Z",
-      "rawId": 163137,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163131",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Manipur vs Arunachal Pradesh, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        },
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "26 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Oct 26, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163131",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-26T04:00:00.000Z",
-      "rawId": 163131,
-      "importance": "Major tournament"
     },
     {
       "id": "upcoming-163851",
@@ -36092,99 +36058,99 @@
       "importance": "Major tournament"
     },
     {
-      "id": "upcoming-163111",
+      "id": "upcoming-163147",
       "status": "upcoming",
       "statusLabel": "Future",
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "",
       "sourceScope": "domestic-series",
-      "title": "Meghalaya vs Manipur, Plate",
+      "title": "Sikkim vs Nagaland, Plate",
       "series": "Ranji Trophy Plate 2026-27",
       "teams": [
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        },
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Oct 18, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163111",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-18T04:00:00.000Z",
-      "rawId": 163111,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163113",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Nagaland vs Mizoram, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        },
-        {
-          "name": "Mizoram",
-          "shortName": "MIZ",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Oct 18, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163113",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-18T04:00:00.000Z",
-      "rawId": 163113,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163121",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Arunachal Pradesh vs Sikkim, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        },
         {
           "name": "Sikkim",
           "shortName": "SKM",
           "score": ""
+        },
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
         }
       ],
-      "dateLabel": "18 Oct 2026, 09:30 am",
+      "dateLabel": "26 Oct 2026, 09:30 am",
       "time": "",
       "place": "TBC, TBC",
-      "overview": "Match starts at Oct 18, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163121",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163147",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-18T04:00:00.000Z",
-      "rawId": 163121,
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163147,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163137",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Mizoram vs Meghalaya, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Mizoram",
+          "shortName": "MIZ",
+          "score": ""
+        },
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163137",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163137,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163131",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Manipur vs Arunachal Pradesh, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        },
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 26, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163131",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-26T04:00:00.000Z",
+      "rawId": 163131,
       "importance": "Major tournament"
     },
     {
@@ -36668,6 +36634,102 @@
       "importance": "Major tournament"
     },
     {
+      "id": "upcoming-163111",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Meghalaya vs Manipur, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163111",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163111,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163113",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Nagaland vs Mizoram, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        },
+        {
+          "name": "Mizoram",
+          "shortName": "MIZ",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163113",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163113,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163121",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Arunachal Pradesh vs Sikkim, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        },
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163121",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163121,
+      "importance": "Major tournament"
+    },
+    {
       "id": "upcoming-163691",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -36697,102 +36759,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-18T00:00:00.000Z",
       "rawId": 163691,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163087",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Mizoram vs Manipur, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Mizoram",
-          "shortName": "MIZ",
-          "score": ""
-        },
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Oct 11, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163087",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163087,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163097",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Sikkim vs Meghalaya, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        },
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Oct 11, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163097",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163097,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163103",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Arunachal Pradesh vs Nagaland, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        },
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Oct 11, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163103",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163103,
       "importance": "Major tournament"
     },
     {
@@ -37308,6 +37274,102 @@
       "importance": "Major tournament"
     },
     {
+      "id": "upcoming-163087",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Mizoram vs Manipur, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Mizoram",
+          "shortName": "MIZ",
+          "score": ""
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163087",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163087,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163097",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Sikkim vs Meghalaya, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        },
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163097",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163097,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163103",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Arunachal Pradesh vs Nagaland, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        },
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163103",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163103,
+      "importance": "Major tournament"
+    },
+    {
       "id": "upcoming-163077",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -37545,8 +37607,8 @@
       "statusLabel": "Past",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
       "title": "Central Zone vs East Zone, 1st Semi-Final",
       "series": "Duleep Trophy 2026",
       "teams": [
@@ -37558,7 +37620,7 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "266/10 (56.6 Ov) & 162/6 (39.3 Ov)"
+          "score": "266/10 (57 Ov) & 162/6 (39.3 Ov)"
         }
       ],
       "dateLabel": "30 Aug 2026, 09:30 am",
@@ -37566,7 +37628,7 @@
       "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
       "overview": "East Zone won by 4 wkts",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-08-30T04:00:00.000Z",
       "rawId": 163043,
       "starPerformers": [],
@@ -37640,308 +37702,6 @@
     }
   ],
   "importantTournaments": [
-    {
-      "id": "ranji-trophy-plate-2026-27",
-      "series": "Ranji Trophy Plate 2026-27",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "total": 9,
-      "live": 0,
-      "upcoming": 9,
-      "recent": 0,
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "endTime": "2026-10-26T04:00:00.000Z",
-      "matches": [
-        {
-          "id": "upcoming-163087",
-          "status": "upcoming",
-          "statusLabel": "Future",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "Mizoram vs Manipur, Plate",
-          "series": "Ranji Trophy Plate 2026-27",
-          "teams": [
-            {
-              "name": "Mizoram",
-              "shortName": "MIZ",
-              "score": ""
-            },
-            {
-              "name": "Manipur",
-              "shortName": "MNP",
-              "score": ""
-            }
-          ],
-          "dateLabel": "11 Oct 2026, 09:30 am",
-          "time": "",
-          "place": "TBC, TBC",
-          "overview": "Match starts at Oct 11, 04:00 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163087",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-          "startTime": "2026-10-11T04:00:00.000Z",
-          "rawId": 163087,
-          "importance": "Major tournament"
-        },
-        {
-          "id": "upcoming-163097",
-          "status": "upcoming",
-          "statusLabel": "Future",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "Sikkim vs Meghalaya, Plate",
-          "series": "Ranji Trophy Plate 2026-27",
-          "teams": [
-            {
-              "name": "Sikkim",
-              "shortName": "SKM",
-              "score": ""
-            },
-            {
-              "name": "Meghalaya",
-              "shortName": "MGLY",
-              "score": ""
-            }
-          ],
-          "dateLabel": "11 Oct 2026, 09:30 am",
-          "time": "",
-          "place": "TBC, TBC",
-          "overview": "Match starts at Oct 11, 04:00 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163097",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-          "startTime": "2026-10-11T04:00:00.000Z",
-          "rawId": 163097,
-          "importance": "Major tournament"
-        },
-        {
-          "id": "upcoming-163103",
-          "status": "upcoming",
-          "statusLabel": "Future",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "Arunachal Pradesh vs Nagaland, Plate",
-          "series": "Ranji Trophy Plate 2026-27",
-          "teams": [
-            {
-              "name": "Arunachal Pradesh",
-              "shortName": "ARNP",
-              "score": ""
-            },
-            {
-              "name": "Nagaland",
-              "shortName": "NGL",
-              "score": ""
-            }
-          ],
-          "dateLabel": "11 Oct 2026, 09:30 am",
-          "time": "",
-          "place": "TBC, TBC",
-          "overview": "Match starts at Oct 11, 04:00 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163103",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-          "startTime": "2026-10-11T04:00:00.000Z",
-          "rawId": 163103,
-          "importance": "Major tournament"
-        },
-        {
-          "id": "upcoming-163111",
-          "status": "upcoming",
-          "statusLabel": "Future",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "Meghalaya vs Manipur, Plate",
-          "series": "Ranji Trophy Plate 2026-27",
-          "teams": [
-            {
-              "name": "Meghalaya",
-              "shortName": "MGLY",
-              "score": ""
-            },
-            {
-              "name": "Manipur",
-              "shortName": "MNP",
-              "score": ""
-            }
-          ],
-          "dateLabel": "18 Oct 2026, 09:30 am",
-          "time": "",
-          "place": "TBC, TBC",
-          "overview": "Match starts at Oct 18, 04:00 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163111",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-          "startTime": "2026-10-18T04:00:00.000Z",
-          "rawId": 163111,
-          "importance": "Major tournament"
-        },
-        {
-          "id": "upcoming-163113",
-          "status": "upcoming",
-          "statusLabel": "Future",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "Nagaland vs Mizoram, Plate",
-          "series": "Ranji Trophy Plate 2026-27",
-          "teams": [
-            {
-              "name": "Nagaland",
-              "shortName": "NGL",
-              "score": ""
-            },
-            {
-              "name": "Mizoram",
-              "shortName": "MIZ",
-              "score": ""
-            }
-          ],
-          "dateLabel": "18 Oct 2026, 09:30 am",
-          "time": "",
-          "place": "TBC, TBC",
-          "overview": "Match starts at Oct 18, 04:00 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163113",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-          "startTime": "2026-10-18T04:00:00.000Z",
-          "rawId": 163113,
-          "importance": "Major tournament"
-        },
-        {
-          "id": "upcoming-163121",
-          "status": "upcoming",
-          "statusLabel": "Future",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "Arunachal Pradesh vs Sikkim, Plate",
-          "series": "Ranji Trophy Plate 2026-27",
-          "teams": [
-            {
-              "name": "Arunachal Pradesh",
-              "shortName": "ARNP",
-              "score": ""
-            },
-            {
-              "name": "Sikkim",
-              "shortName": "SKM",
-              "score": ""
-            }
-          ],
-          "dateLabel": "18 Oct 2026, 09:30 am",
-          "time": "",
-          "place": "TBC, TBC",
-          "overview": "Match starts at Oct 18, 04:00 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163121",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-          "startTime": "2026-10-18T04:00:00.000Z",
-          "rawId": 163121,
-          "importance": "Major tournament"
-        },
-        {
-          "id": "upcoming-163147",
-          "status": "upcoming",
-          "statusLabel": "Future",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "Sikkim vs Nagaland, Plate",
-          "series": "Ranji Trophy Plate 2026-27",
-          "teams": [
-            {
-              "name": "Sikkim",
-              "shortName": "SKM",
-              "score": ""
-            },
-            {
-              "name": "Nagaland",
-              "shortName": "NGL",
-              "score": ""
-            }
-          ],
-          "dateLabel": "26 Oct 2026, 09:30 am",
-          "time": "",
-          "place": "TBC, TBC",
-          "overview": "Match starts at Oct 26, 04:00 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163147",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-          "startTime": "2026-10-26T04:00:00.000Z",
-          "rawId": 163147,
-          "importance": "Major tournament"
-        },
-        {
-          "id": "upcoming-163137",
-          "status": "upcoming",
-          "statusLabel": "Future",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "Mizoram vs Meghalaya, Plate",
-          "series": "Ranji Trophy Plate 2026-27",
-          "teams": [
-            {
-              "name": "Mizoram",
-              "shortName": "MIZ",
-              "score": ""
-            },
-            {
-              "name": "Meghalaya",
-              "shortName": "MGLY",
-              "score": ""
-            }
-          ],
-          "dateLabel": "26 Oct 2026, 09:30 am",
-          "time": "",
-          "place": "TBC, TBC",
-          "overview": "Match starts at Oct 26, 04:00 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163137",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-          "startTime": "2026-10-26T04:00:00.000Z",
-          "rawId": 163137,
-          "importance": "Major tournament"
-        },
-        {
-          "id": "upcoming-163131",
-          "status": "upcoming",
-          "statusLabel": "Future",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "Manipur vs Arunachal Pradesh, Plate",
-          "series": "Ranji Trophy Plate 2026-27",
-          "teams": [
-            {
-              "name": "Manipur",
-              "shortName": "MNP",
-              "score": ""
-            },
-            {
-              "name": "Arunachal Pradesh",
-              "shortName": "ARNP",
-              "score": ""
-            }
-          ],
-          "dateLabel": "26 Oct 2026, 09:30 am",
-          "time": "",
-          "place": "TBC, TBC",
-          "overview": "Match starts at Oct 26, 04:00 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163131",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-          "startTime": "2026-10-26T04:00:00.000Z",
-          "rawId": 163131,
-          "importance": "Major tournament"
-        }
-      ]
-    },
     {
       "id": "ranji-trophy-elite-2026-27",
       "series": "Ranji Trophy Elite 2026-27",
@@ -39493,6 +39253,308 @@
       ]
     },
     {
+      "id": "ranji-trophy-plate-2026-27",
+      "series": "Ranji Trophy Plate 2026-27",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "total": 9,
+      "live": 0,
+      "upcoming": 9,
+      "recent": 0,
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "endTime": "2026-10-26T04:00:00.000Z",
+      "matches": [
+        {
+          "id": "upcoming-163087",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Mizoram vs Manipur, Plate",
+          "series": "Ranji Trophy Plate 2026-27",
+          "teams": [
+            {
+              "name": "Mizoram",
+              "shortName": "MIZ",
+              "score": ""
+            },
+            {
+              "name": "Manipur",
+              "shortName": "MNP",
+              "score": ""
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 11, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163087",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163087,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163097",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Sikkim vs Meghalaya, Plate",
+          "series": "Ranji Trophy Plate 2026-27",
+          "teams": [
+            {
+              "name": "Sikkim",
+              "shortName": "SKM",
+              "score": ""
+            },
+            {
+              "name": "Meghalaya",
+              "shortName": "MGLY",
+              "score": ""
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 11, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163097",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163097,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163103",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Arunachal Pradesh vs Nagaland, Plate",
+          "series": "Ranji Trophy Plate 2026-27",
+          "teams": [
+            {
+              "name": "Arunachal Pradesh",
+              "shortName": "ARNP",
+              "score": ""
+            },
+            {
+              "name": "Nagaland",
+              "shortName": "NGL",
+              "score": ""
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 11, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163103",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163103,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163111",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Meghalaya vs Manipur, Plate",
+          "series": "Ranji Trophy Plate 2026-27",
+          "teams": [
+            {
+              "name": "Meghalaya",
+              "shortName": "MGLY",
+              "score": ""
+            },
+            {
+              "name": "Manipur",
+              "shortName": "MNP",
+              "score": ""
+            }
+          ],
+          "dateLabel": "18 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 18, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163111",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+          "startTime": "2026-10-18T04:00:00.000Z",
+          "rawId": 163111,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163113",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Nagaland vs Mizoram, Plate",
+          "series": "Ranji Trophy Plate 2026-27",
+          "teams": [
+            {
+              "name": "Nagaland",
+              "shortName": "NGL",
+              "score": ""
+            },
+            {
+              "name": "Mizoram",
+              "shortName": "MIZ",
+              "score": ""
+            }
+          ],
+          "dateLabel": "18 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 18, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163113",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+          "startTime": "2026-10-18T04:00:00.000Z",
+          "rawId": 163113,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163121",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Arunachal Pradesh vs Sikkim, Plate",
+          "series": "Ranji Trophy Plate 2026-27",
+          "teams": [
+            {
+              "name": "Arunachal Pradesh",
+              "shortName": "ARNP",
+              "score": ""
+            },
+            {
+              "name": "Sikkim",
+              "shortName": "SKM",
+              "score": ""
+            }
+          ],
+          "dateLabel": "18 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 18, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163121",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+          "startTime": "2026-10-18T04:00:00.000Z",
+          "rawId": 163121,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163147",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Sikkim vs Nagaland, Plate",
+          "series": "Ranji Trophy Plate 2026-27",
+          "teams": [
+            {
+              "name": "Sikkim",
+              "shortName": "SKM",
+              "score": ""
+            },
+            {
+              "name": "Nagaland",
+              "shortName": "NGL",
+              "score": ""
+            }
+          ],
+          "dateLabel": "26 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 26, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163147",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+          "startTime": "2026-10-26T04:00:00.000Z",
+          "rawId": 163147,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163137",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Mizoram vs Meghalaya, Plate",
+          "series": "Ranji Trophy Plate 2026-27",
+          "teams": [
+            {
+              "name": "Mizoram",
+              "shortName": "MIZ",
+              "score": ""
+            },
+            {
+              "name": "Meghalaya",
+              "shortName": "MGLY",
+              "score": ""
+            }
+          ],
+          "dateLabel": "26 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 26, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163137",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+          "startTime": "2026-10-26T04:00:00.000Z",
+          "rawId": 163137,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163131",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Manipur vs Arunachal Pradesh, Plate",
+          "series": "Ranji Trophy Plate 2026-27",
+          "teams": [
+            {
+              "name": "Manipur",
+              "shortName": "MNP",
+              "score": ""
+            },
+            {
+              "name": "Arunachal Pradesh",
+              "shortName": "ARNP",
+              "score": ""
+            }
+          ],
+          "dateLabel": "26 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "TBC, TBC",
+          "overview": "Match starts at Oct 26, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163131",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+          "startTime": "2026-10-26T04:00:00.000Z",
+          "rawId": 163131,
+          "importance": "Major tournament"
+        }
+      ]
+    },
+    {
       "id": "irani-cup-2026",
       "series": "Irani Cup 2026",
       "level": "domestic",
@@ -39714,28 +39776,28 @@
           "statusLabel": "Live",
           "level": "domestic",
           "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
+          "sourceType": "domestic",
+          "sourceScope": "global",
           "title": "North Zone vs South Zone, 2nd Semi-Final",
           "series": "Duleep Trophy 2026",
           "teams": [
             {
               "name": "North Zone",
               "shortName": "NZONE",
-              "score": "195/10 (59.1 Ov) & 256/7 (66 Ov)"
+              "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
             },
             {
               "name": "South Zone",
               "shortName": "SZONE",
-              "score": "312/10 (100.3 Ov)"
+              "score": "312/10 (100.3 Ov) & 48 (10.6 Ov)"
             }
           ],
           "dateLabel": "30 Aug 2026, 09:30 am",
           "time": "",
           "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-          "overview": "Day 3: Stumps - North Zone lead by 139 runs",
+          "overview": "Day 4: 1st Session - South Zone need 133 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-08-30T04:00:00.000Z",
           "rawId": 163047,
           "importance": "Knockout stage"
@@ -39746,8 +39808,8 @@
           "statusLabel": "Past",
           "level": "domestic",
           "levelLabel": "Domestic / State",
-          "sourceType": "domestic",
-          "sourceScope": "global",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
           "title": "Central Zone vs East Zone, 1st Semi-Final",
           "series": "Duleep Trophy 2026",
           "teams": [
@@ -39759,7 +39821,7 @@
             {
               "name": "East Zone",
               "shortName": "EZONE",
-              "score": "266/10 (56.6 Ov) & 162/6 (39.3 Ov)"
+              "score": "266/10 (57 Ov) & 162/6 (39.3 Ov)"
             }
           ],
           "dateLabel": "30 Aug 2026, 09:30 am",
@@ -39767,7 +39829,7 @@
           "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
           "overview": "East Zone won by 4 wkts",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
           "startTime": "2026-08-30T04:00:00.000Z",
           "rawId": 163043,
           "starPerformers": [],
@@ -39977,8 +40039,8 @@
           "statusLabel": "Past",
           "level": "domestic",
           "levelLabel": "Domestic / State",
-          "sourceType": "domestic",
-          "sourceScope": "global",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
           "title": "Central Zone vs East Zone, 1st Semi-Final",
           "series": "Duleep Trophy 2026",
           "teams": [
@@ -39990,7 +40052,7 @@
             {
               "name": "East Zone",
               "shortName": "EZONE",
-              "score": "266/10 (56.6 Ov) & 162/6 (39.3 Ov)"
+              "score": "266/10 (57 Ov) & 162/6 (39.3 Ov)"
             }
           ],
           "dateLabel": "30 Aug 2026, 09:30 am",
@@ -39998,7 +40060,7 @@
           "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
           "overview": "East Zone won by 4 wkts",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
           "startTime": "2026-08-30T04:00:00.000Z",
           "rawId": 163043,
           "starPerformers": [],
