@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-03T09:33:13.463Z",
-  "lastCheckedAt": "2026-09-03T09:33:13.463Z",
-  "lastSuccessfulSyncAt": "2026-09-03T09:33:13.463Z",
+  "syncedAt": "2026-09-03T13:49:41.481Z",
+  "lastCheckedAt": "2026-09-03T13:49:41.481Z",
+  "lastSuccessfulSyncAt": "2026-09-03T13:49:41.481Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,12 +41,43 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 0,
+    "live": 1,
     "recent": 64,
     "upcoming": 502,
-    "total": 566
+    "total": 567
   },
   "all": [
+    {
+      "id": "live-171137",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Mohali Kings vs Fazilka Falcons, 9th Match",
+      "series": "Sher-E-Punjab T20 League, 2026",
+      "teams": [
+        {
+          "name": "Mohali Kings",
+          "shortName": "MHK",
+          "score": "41 (3.4 Ov)"
+        },
+        {
+          "name": "Fazilka Falcons",
+          "shortName": "FZF",
+          "score": ""
+        }
+      ],
+      "dateLabel": "03 Sept 2026, 07:00 pm",
+      "time": "",
+      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "overview": "Fazilka Falcons opt to bowl",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171137",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-03T13:30:00.000Z",
+      "rawId": 171137
+    },
     {
       "id": "upcoming-169841",
       "status": "upcoming",
@@ -17728,7 +17759,39 @@
       ]
     }
   ],
-  "live": [],
+  "live": [
+    {
+      "id": "live-171137",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Mohali Kings vs Fazilka Falcons, 9th Match",
+      "series": "Sher-E-Punjab T20 League, 2026",
+      "teams": [
+        {
+          "name": "Mohali Kings",
+          "shortName": "MHK",
+          "score": "41 (3.4 Ov)"
+        },
+        {
+          "name": "Fazilka Falcons",
+          "shortName": "FZF",
+          "score": ""
+        }
+      ],
+      "dateLabel": "03 Sept 2026, 07:00 pm",
+      "time": "",
+      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "overview": "Fazilka Falcons opt to bowl",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171137",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-03T13:30:00.000Z",
+      "rawId": 171137
+    }
+  ],
   "upcoming": [
     {
       "id": "upcoming-169841",
@@ -35427,10 +35490,10 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 0,
+      "live": 1,
       "recent": 0,
       "upcoming": 0,
-      "total": 0
+      "total": 1
     },
     {
       "id": "women",
