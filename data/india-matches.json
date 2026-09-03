@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-03T17:18:08.746Z",
-  "lastCheckedAt": "2026-09-03T17:18:08.746Z",
-  "lastSuccessfulSyncAt": "2026-09-03T17:18:08.746Z",
+  "syncedAt": "2026-09-03T19:55:34.811Z",
+  "lastCheckedAt": "2026-09-03T19:55:34.811Z",
+  "lastSuccessfulSyncAt": "2026-09-03T19:55:34.811Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,43 +41,12 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 1,
-    "recent": 65,
+    "live": 0,
+    "recent": 64,
     "upcoming": 501,
-    "total": 567
+    "total": 565
   },
   "all": [
-    {
-      "id": "live-169841",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India Women vs Hong Kong, China Women, Match 7, Group A",
-      "series": "Women's Asia Cup 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": "193/5 (19.6 Ov)"
-        },
-        {
-          "name": "Hong Kong, China Women",
-          "shortName": "HKC W",
-          "score": "54/5 (14.2 Ov)"
-        }
-      ],
-      "dateLabel": "03 Sept 2026, 08:00 pm",
-      "time": "",
-      "place": "Dubai International Cricket Stadium, Dubai",
-      "overview": "Hong Kong, China Women need 140 runs in 34 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169841",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-03T14:30:00.000Z",
-      "rawId": 169841
-    },
     {
       "id": "upcoming-169850",
       "status": "upcoming",
@@ -15610,36 +15579,43 @@
       "rawId": 164501
     },
     {
-      "id": "recent-171137",
+      "id": "recent-169841",
       "status": "recent",
       "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "International",
       "sourceScope": "global",
-      "title": "Mohali Kings vs Fazilka Falcons, 9th Match",
-      "series": "Sher-E-Punjab T20 League, 2026",
+      "title": "India Women vs Hong Kong, China Women, Match 7, Group A",
+      "series": "Women's Asia Cup 2026",
       "teams": [
         {
-          "name": "Mohali Kings",
-          "shortName": "MHK",
-          "score": "230/3 (19.6 Ov)"
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": "193/5 (19.6 Ov)"
         },
         {
-          "name": "Fazilka Falcons",
-          "shortName": "FZF",
-          "score": "190/9 (19.6 Ov)"
+          "name": "Hong Kong, China Women",
+          "shortName": "HKC W",
+          "score": "56/10 (16.2 Ov)"
         }
       ],
-      "dateLabel": "03 Sept 2026, 07:00 pm",
+      "dateLabel": "03 Sept 2026, 08:00 pm",
       "time": "",
-      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Mohali Kings won by 40 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171137",
+      "place": "Dubai International Cricket Stadium, Dubai",
+      "overview": "India Women won by 137 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169841",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-03T13:30:00.000Z",
-      "rawId": 171137,
-      "starPerformers": []
+      "startTime": "2026-09-03T14:30:00.000Z",
+      "rawId": 169841,
+      "starPerformers": [
+        {
+          "name": "Smriti Mandhana",
+          "performance": "124(64)",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169841"
+        }
+      ]
     },
     {
       "id": "recent-169811",
@@ -17167,38 +17143,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-129508",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "India Women vs England Women, 3rd T20I",
-      "series": "India Women tour of England 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": "180/5 (20 Ov)"
-        },
-        {
-          "name": "England Women",
-          "shortName": "ENGW",
-          "score": "184/4 (18 Ov)"
-        }
-      ],
-      "dateLabel": "02 Jun 2026, 11:00 pm",
-      "time": "",
-      "place": "The Cooper Associates County Ground, Taunton",
-      "overview": "England Women won by 6 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129508",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
-      "startTime": "2026-06-02T17:30:00.000Z",
-      "rawId": 129508,
-      "starPerformers": []
-    },
-    {
       "id": "recent-144384",
       "status": "recent",
       "statusLabel": "Past",
@@ -17760,39 +17704,7 @@
       ]
     }
   ],
-  "live": [
-    {
-      "id": "live-169841",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India Women vs Hong Kong, China Women, Match 7, Group A",
-      "series": "Women's Asia Cup 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": "193/5 (19.6 Ov)"
-        },
-        {
-          "name": "Hong Kong, China Women",
-          "shortName": "HKC W",
-          "score": "54/5 (14.2 Ov)"
-        }
-      ],
-      "dateLabel": "03 Sept 2026, 08:00 pm",
-      "time": "",
-      "place": "Dubai International Cricket Stadium, Dubai",
-      "overview": "Hong Kong, China Women need 140 runs in 34 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169841",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-03T14:30:00.000Z",
-      "rawId": 169841
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "upcoming-169850",
@@ -33328,36 +33240,43 @@
   ],
   "recent": [
     {
-      "id": "recent-171137",
+      "id": "recent-169841",
       "status": "recent",
       "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "International",
       "sourceScope": "global",
-      "title": "Mohali Kings vs Fazilka Falcons, 9th Match",
-      "series": "Sher-E-Punjab T20 League, 2026",
+      "title": "India Women vs Hong Kong, China Women, Match 7, Group A",
+      "series": "Women's Asia Cup 2026",
       "teams": [
         {
-          "name": "Mohali Kings",
-          "shortName": "MHK",
-          "score": "230/3 (19.6 Ov)"
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": "193/5 (19.6 Ov)"
         },
         {
-          "name": "Fazilka Falcons",
-          "shortName": "FZF",
-          "score": "190/9 (19.6 Ov)"
+          "name": "Hong Kong, China Women",
+          "shortName": "HKC W",
+          "score": "56/10 (16.2 Ov)"
         }
       ],
-      "dateLabel": "03 Sept 2026, 07:00 pm",
+      "dateLabel": "03 Sept 2026, 08:00 pm",
       "time": "",
-      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Mohali Kings won by 40 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171137",
+      "place": "Dubai International Cricket Stadium, Dubai",
+      "overview": "India Women won by 137 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169841",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-03T13:30:00.000Z",
-      "rawId": 171137,
-      "starPerformers": []
+      "startTime": "2026-09-03T14:30:00.000Z",
+      "rawId": 169841,
+      "starPerformers": [
+        {
+          "name": "Smriti Mandhana",
+          "performance": "124(64)",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169841"
+        }
+      ]
     },
     {
       "id": "recent-169811",
@@ -34885,38 +34804,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-129508",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "India Women vs England Women, 3rd T20I",
-      "series": "India Women tour of England 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": "180/5 (20 Ov)"
-        },
-        {
-          "name": "England Women",
-          "shortName": "ENGW",
-          "score": "184/4 (18 Ov)"
-        }
-      ],
-      "dateLabel": "02 Jun 2026, 11:00 pm",
-      "time": "",
-      "place": "The Cooper Associates County Ground, Taunton",
-      "overview": "England Women won by 6 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129508",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
-      "startTime": "2026-06-02T17:30:00.000Z",
-      "rawId": 129508,
-      "starPerformers": []
-    },
-    {
       "id": "recent-144384",
       "status": "recent",
       "statusLabel": "Past",
@@ -35493,18 +35380,18 @@
       "label": "League / IPL",
       "order": 2,
       "live": 0,
-      "recent": 1,
+      "recent": 0,
       "upcoming": 0,
-      "total": 1
+      "total": 0
     },
     {
       "id": "women",
       "label": "Women",
       "order": 3,
-      "live": 1,
+      "live": 0,
       "recent": 30,
       "upcoming": 34,
-      "total": 65
+      "total": 64
     },
     {
       "id": "domestic",
@@ -35517,38 +35404,6 @@
     }
   ],
   "importantMatches": [
-    {
-      "id": "live-169841",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India Women vs Hong Kong, China Women, Match 7, Group A",
-      "series": "Women's Asia Cup 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": "193/5 (19.6 Ov)"
-        },
-        {
-          "name": "Hong Kong, China Women",
-          "shortName": "HKC W",
-          "score": "54/5 (14.2 Ov)"
-        }
-      ],
-      "dateLabel": "03 Sept 2026, 08:00 pm",
-      "time": "",
-      "place": "Dubai International Cricket Stadium, Dubai",
-      "overview": "Hong Kong, China Women need 140 runs in 34 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169841",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-03T14:30:00.000Z",
-      "rawId": 169841,
-      "importance": "Major tournament"
-    },
     {
       "id": "upcoming-163851",
       "status": "upcoming",
@@ -37531,6 +37386,46 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
       "startTime": "2026-09-05T14:30:00.000Z",
       "rawId": 169850,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "recent-169841",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "India Women vs Hong Kong, China Women, Match 7, Group A",
+      "series": "Women's Asia Cup 2026",
+      "teams": [
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": "193/5 (19.6 Ov)"
+        },
+        {
+          "name": "Hong Kong, China Women",
+          "shortName": "HKC W",
+          "score": "56/10 (16.2 Ov)"
+        }
+      ],
+      "dateLabel": "03 Sept 2026, 08:00 pm",
+      "time": "",
+      "place": "Dubai International Cricket Stadium, Dubai",
+      "overview": "India Women won by 137 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169841",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-03T14:30:00.000Z",
+      "rawId": 169841,
+      "starPerformers": [
+        {
+          "name": "Smriti Mandhana",
+          "performance": "124(64)",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169841"
+        }
+      ],
       "importance": "Major tournament"
     },
     {
@@ -39881,9 +39776,9 @@
       "level": "women",
       "levelLabel": "Women",
       "total": 3,
-      "live": 1,
+      "live": 0,
       "upcoming": 1,
-      "recent": 1,
+      "recent": 2,
       "startTime": "2026-08-30T14:30:00.000Z",
       "endTime": "2026-09-05T14:30:00.000Z",
       "matches": [
@@ -39928,9 +39823,9 @@
           "importance": "Major tournament"
         },
         {
-          "id": "live-169841",
-          "status": "live",
-          "statusLabel": "Live",
+          "id": "recent-169841",
+          "status": "recent",
+          "statusLabel": "Past",
           "level": "women",
           "levelLabel": "Women",
           "sourceType": "International",
@@ -39946,17 +39841,25 @@
             {
               "name": "Hong Kong, China Women",
               "shortName": "HKC W",
-              "score": "54/5 (14.2 Ov)"
+              "score": "56/10 (16.2 Ov)"
             }
           ],
           "dateLabel": "03 Sept 2026, 08:00 pm",
           "time": "",
           "place": "Dubai International Cricket Stadium, Dubai",
-          "overview": "Hong Kong, China Women need 140 runs in 34 balls",
+          "overview": "India Women won by 137 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169841",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-09-03T14:30:00.000Z",
           "rawId": 169841,
+          "starPerformers": [
+            {
+              "name": "Smriti Mandhana",
+              "performance": "124(64)",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169841"
+            }
+          ],
           "importance": "Major tournament"
         },
         {
@@ -39995,6 +39898,52 @@
     }
   ],
   "importantResultsByMonth": [
+    {
+      "month": "2026-09",
+      "label": "September 2026",
+      "matches": [
+        {
+          "id": "recent-169841",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "women",
+          "levelLabel": "Women",
+          "sourceType": "International",
+          "sourceScope": "global",
+          "title": "India Women vs Hong Kong, China Women, Match 7, Group A",
+          "series": "Women's Asia Cup 2026",
+          "teams": [
+            {
+              "name": "India Women",
+              "shortName": "INDW",
+              "score": "193/5 (19.6 Ov)"
+            },
+            {
+              "name": "Hong Kong, China Women",
+              "shortName": "HKC W",
+              "score": "56/10 (16.2 Ov)"
+            }
+          ],
+          "dateLabel": "03 Sept 2026, 08:00 pm",
+          "time": "",
+          "place": "Dubai International Cricket Stadium, Dubai",
+          "overview": "India Women won by 137 runs",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169841",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "startTime": "2026-09-03T14:30:00.000Z",
+          "rawId": 169841,
+          "starPerformers": [
+            {
+              "name": "Smriti Mandhana",
+              "performance": "124(64)",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169841"
+            }
+          ],
+          "importance": "Major tournament"
+        }
+      ]
+    },
     {
       "month": "2026-08",
       "label": "August 2026",
