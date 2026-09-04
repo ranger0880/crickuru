@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-04T08:53:49.984Z",
-  "lastCheckedAt": "2026-09-04T08:53:49.984Z",
-  "lastSuccessfulSyncAt": "2026-09-04T08:53:49.984Z",
+  "syncedAt": "2026-09-04T12:57:19.152Z",
+  "lastCheckedAt": "2026-09-04T12:57:19.152Z",
+  "lastSuccessfulSyncAt": "2026-09-04T12:57:19.152Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,43 +41,12 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 1,
-    "recent": 64,
-    "upcoming": 501,
-    "total": 566
+    "live": 0,
+    "recent": 65,
+    "upcoming": 502,
+    "total": 567
   },
   "all": [
-    {
-      "id": "live-171143",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Amritsar Soormas vs Bathinda Royals, 10th Match",
-      "series": "Sher-E-Punjab T20 League, 2026",
-      "teams": [
-        {
-          "name": "Amritsar Soormas",
-          "shortName": "AMS",
-          "score": "30/2 (4.4 Ov)"
-        },
-        {
-          "name": "Bathinda Royals",
-          "shortName": "BTR",
-          "score": ""
-        }
-      ],
-      "dateLabel": "04 Sept 2026, 01:00 pm",
-      "time": "",
-      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Match delayed due to rain",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171143",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-04T07:30:00.000Z",
-      "rawId": 171143
-    },
     {
       "id": "upcoming-169850",
       "status": "upcoming",
@@ -449,6 +418,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
       "startTime": "2026-09-21T03:30:00.000Z",
       "rawId": 155477
+    },
+    {
+      "id": "upcoming-171477",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-men",
+      "title": "Japan vs India, One-off T20I",
+      "series": "India tour of Japan, 2026",
+      "teams": [
+        {
+          "name": "Japan",
+          "shortName": "JPN",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "22 Sept 2026, 09:30 am",
+      "time": "",
+      "place": "Sano International Cricket Ground, Sano, Kanto",
+      "overview": "Match starts at Sep 22, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171477",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-09-22T04:00:00.000Z",
+      "rawId": 171477
     },
     {
       "id": "upcoming-155411",
@@ -15610,6 +15610,38 @@
       "rawId": 164501
     },
     {
+      "id": "recent-171143",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Amritsar Soormas vs Bathinda Royals, 10th Match",
+      "series": "Sher-E-Punjab T20 League, 2026",
+      "teams": [
+        {
+          "name": "Amritsar Soormas",
+          "shortName": "AMS",
+          "score": "105/7 (10.6 Ov)"
+        },
+        {
+          "name": "Bathinda Royals",
+          "shortName": "BTR",
+          "score": "108/2 (7.5 Ov)"
+        }
+      ],
+      "dateLabel": "04 Sept 2026, 01:00 pm",
+      "time": "",
+      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "overview": "Bathinda Royals won by 8 wkt (Match reduced to 11 overs DLS method Target 107)",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171143",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-04T07:30:00.000Z",
+      "rawId": 171143,
+      "starPerformers": []
+    },
+    {
       "id": "recent-169841",
       "status": "recent",
       "statusLabel": "Past",
@@ -17735,39 +17767,7 @@
       ]
     }
   ],
-  "live": [
-    {
-      "id": "live-171143",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Amritsar Soormas vs Bathinda Royals, 10th Match",
-      "series": "Sher-E-Punjab T20 League, 2026",
-      "teams": [
-        {
-          "name": "Amritsar Soormas",
-          "shortName": "AMS",
-          "score": "30/2 (4.4 Ov)"
-        },
-        {
-          "name": "Bathinda Royals",
-          "shortName": "BTR",
-          "score": ""
-        }
-      ],
-      "dateLabel": "04 Sept 2026, 01:00 pm",
-      "time": "",
-      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Match delayed due to rain",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171143",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-04T07:30:00.000Z",
-      "rawId": 171143
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "upcoming-169850",
@@ -18140,6 +18140,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
       "startTime": "2026-09-21T03:30:00.000Z",
       "rawId": 155477
+    },
+    {
+      "id": "upcoming-171477",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-men",
+      "title": "Japan vs India, One-off T20I",
+      "series": "India tour of Japan, 2026",
+      "teams": [
+        {
+          "name": "Japan",
+          "shortName": "JPN",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "22 Sept 2026, 09:30 am",
+      "time": "",
+      "place": "Sano International Cricket Ground, Sano, Kanto",
+      "overview": "Match starts at Sep 22, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171477",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-09-22T04:00:00.000Z",
+      "rawId": 171477
     },
     {
       "id": "upcoming-155411",
@@ -33303,6 +33334,38 @@
   ],
   "recent": [
     {
+      "id": "recent-171143",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Amritsar Soormas vs Bathinda Royals, 10th Match",
+      "series": "Sher-E-Punjab T20 League, 2026",
+      "teams": [
+        {
+          "name": "Amritsar Soormas",
+          "shortName": "AMS",
+          "score": "105/7 (10.6 Ov)"
+        },
+        {
+          "name": "Bathinda Royals",
+          "shortName": "BTR",
+          "score": "108/2 (7.5 Ov)"
+        }
+      ],
+      "dateLabel": "04 Sept 2026, 01:00 pm",
+      "time": "",
+      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "overview": "Bathinda Royals won by 8 wkt (Match reduced to 11 overs DLS method Target 107)",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171143",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-04T07:30:00.000Z",
+      "rawId": 171143,
+      "starPerformers": []
+    },
+    {
       "id": "recent-169841",
       "status": "recent",
       "statusLabel": "Past",
@@ -35435,15 +35498,15 @@
       "order": 1,
       "live": 0,
       "recent": 30,
-      "upcoming": 53,
-      "total": 83
+      "upcoming": 54,
+      "total": 84
     },
     {
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 1,
-      "recent": 0,
+      "live": 0,
+      "recent": 1,
       "upcoming": 0,
       "total": 1
     },
