@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-04T04:20:11.312Z",
-  "lastCheckedAt": "2026-09-04T04:20:11.312Z",
-  "lastSuccessfulSyncAt": "2026-09-04T04:20:11.312Z",
+  "syncedAt": "2026-09-04T08:53:49.984Z",
+  "lastCheckedAt": "2026-09-04T08:53:49.984Z",
+  "lastSuccessfulSyncAt": "2026-09-04T08:53:49.984Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,12 +41,43 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 0,
+    "live": 1,
     "recent": 64,
     "upcoming": 501,
-    "total": 565
+    "total": 566
   },
   "all": [
+    {
+      "id": "live-171143",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Amritsar Soormas vs Bathinda Royals, 10th Match",
+      "series": "Sher-E-Punjab T20 League, 2026",
+      "teams": [
+        {
+          "name": "Amritsar Soormas",
+          "shortName": "AMS",
+          "score": "30/2 (4.4 Ov)"
+        },
+        {
+          "name": "Bathinda Royals",
+          "shortName": "BTR",
+          "score": ""
+        }
+      ],
+      "dateLabel": "04 Sept 2026, 01:00 pm",
+      "time": "",
+      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "overview": "Match delayed due to rain",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171143",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-04T07:30:00.000Z",
+      "rawId": 171143
+    },
     {
       "id": "upcoming-169850",
       "status": "upcoming",
@@ -17704,7 +17735,39 @@
       ]
     }
   ],
-  "live": [],
+  "live": [
+    {
+      "id": "live-171143",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Amritsar Soormas vs Bathinda Royals, 10th Match",
+      "series": "Sher-E-Punjab T20 League, 2026",
+      "teams": [
+        {
+          "name": "Amritsar Soormas",
+          "shortName": "AMS",
+          "score": "30/2 (4.4 Ov)"
+        },
+        {
+          "name": "Bathinda Royals",
+          "shortName": "BTR",
+          "score": ""
+        }
+      ],
+      "dateLabel": "04 Sept 2026, 01:00 pm",
+      "time": "",
+      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "overview": "Match delayed due to rain",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171143",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-04T07:30:00.000Z",
+      "rawId": 171143
+    }
+  ],
   "upcoming": [
     {
       "id": "upcoming-169850",
@@ -35379,10 +35442,10 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 0,
+      "live": 1,
       "recent": 0,
       "upcoming": 0,
-      "total": 0
+      "total": 1
     },
     {
       "id": "women",
