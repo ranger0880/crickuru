@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-05T15:23:01.969Z",
-  "lastCheckedAt": "2026-09-05T15:23:01.969Z",
-  "lastSuccessfulSyncAt": "2026-09-05T15:23:01.969Z",
+  "syncedAt": "2026-09-05T17:24:43.555Z",
+  "lastCheckedAt": "2026-09-05T17:24:43.555Z",
+  "lastSuccessfulSyncAt": "2026-09-05T17:24:43.555Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,8 +41,8 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 2,
-    "recent": 64,
+    "live": 1,
+    "recent": 65,
     "upcoming": 501,
     "total": 567
   },
@@ -61,53 +61,22 @@
         {
           "name": "Jalandhar Warriors",
           "shortName": "JLW",
-          "score": "5 (0.5 Ov)"
+          "score": "177/7 (13.6 Ov)"
         },
         {
           "name": "Mohali Kings",
           "shortName": "MHK",
-          "score": ""
+          "score": "89/2 (7.6 Ov)"
         }
       ],
       "dateLabel": "05 Sept 2026, 07:00 pm",
       "time": "",
       "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Mohali Kings opt to bowl",
+      "overview": "Mohali Kings need 89 runs in 36 balls - 14 Overs game due to rain",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171157",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-05T13:30:00.000Z",
       "rawId": 171157
-    },
-    {
-      "id": "live-169850",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "Pakistan Women vs India Women, Match 9, Group A",
-      "series": "Women's Asia Cup 2026",
-      "teams": [
-        {
-          "name": "Pakistan Women",
-          "shortName": "PAKW",
-          "score": "43/6 (11.4 Ov)"
-        },
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "05 Sept 2026, 08:00 pm",
-      "time": "",
-      "place": "Dubai International Cricket Stadium, Dubai",
-      "overview": "Pakistan Women opt to bat",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169850",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-05T14:30:00.000Z",
-      "rawId": 169850
     },
     {
       "id": "upcoming-163061",
@@ -15641,6 +15610,45 @@
       "rawId": 164501
     },
     {
+      "id": "recent-169850",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "Pakistan Women vs India Women, Match 9, Group A",
+      "series": "Women's Asia Cup 2026",
+      "teams": [
+        {
+          "name": "Pakistan Women",
+          "shortName": "PAKW",
+          "score": "55/10 (18.1 Ov)"
+        },
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": "57/3 (8.4 Ov)"
+        }
+      ],
+      "dateLabel": "05 Sept 2026, 08:00 pm",
+      "time": "",
+      "place": "Dubai International Cricket Stadium, Dubai",
+      "overview": "India Women won by 7 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169850",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-05T14:30:00.000Z",
+      "rawId": 169850,
+      "starPerformers": [
+        {
+          "name": "Shree Charani",
+          "performance": "3-7",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169850"
+        }
+      ]
+    },
+    {
       "id": "recent-169841",
       "status": "recent",
       "statusLabel": "Past",
@@ -17781,53 +17789,22 @@
         {
           "name": "Jalandhar Warriors",
           "shortName": "JLW",
-          "score": "5 (0.5 Ov)"
+          "score": "177/7 (13.6 Ov)"
         },
         {
           "name": "Mohali Kings",
           "shortName": "MHK",
-          "score": ""
+          "score": "89/2 (7.6 Ov)"
         }
       ],
       "dateLabel": "05 Sept 2026, 07:00 pm",
       "time": "",
       "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Mohali Kings opt to bowl",
+      "overview": "Mohali Kings need 89 runs in 36 balls - 14 Overs game due to rain",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171157",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-05T13:30:00.000Z",
       "rawId": 171157
-    },
-    {
-      "id": "live-169850",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "Pakistan Women vs India Women, Match 9, Group A",
-      "series": "Women's Asia Cup 2026",
-      "teams": [
-        {
-          "name": "Pakistan Women",
-          "shortName": "PAKW",
-          "score": "43/6 (11.4 Ov)"
-        },
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "05 Sept 2026, 08:00 pm",
-      "time": "",
-      "place": "Dubai International Cricket Stadium, Dubai",
-      "overview": "Pakistan Women opt to bat",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169850",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-05T14:30:00.000Z",
-      "rawId": 169850
     }
   ],
   "upcoming": [
@@ -33365,6 +33342,45 @@
   ],
   "recent": [
     {
+      "id": "recent-169850",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "Pakistan Women vs India Women, Match 9, Group A",
+      "series": "Women's Asia Cup 2026",
+      "teams": [
+        {
+          "name": "Pakistan Women",
+          "shortName": "PAKW",
+          "score": "55/10 (18.1 Ov)"
+        },
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": "57/3 (8.4 Ov)"
+        }
+      ],
+      "dateLabel": "05 Sept 2026, 08:00 pm",
+      "time": "",
+      "place": "Dubai International Cricket Stadium, Dubai",
+      "overview": "India Women won by 7 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169850",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-05T14:30:00.000Z",
+      "rawId": 169850,
+      "starPerformers": [
+        {
+          "name": "Shree Charani",
+          "performance": "3-7",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169850"
+        }
+      ]
+    },
+    {
       "id": "recent-169841",
       "status": "recent",
       "statusLabel": "Past",
@@ -35513,8 +35529,8 @@
       "id": "women",
       "label": "Women",
       "order": 3,
-      "live": 1,
-      "recent": 30,
+      "live": 0,
+      "recent": 31,
       "upcoming": 33,
       "total": 64
     },
@@ -35529,38 +35545,6 @@
     }
   ],
   "importantMatches": [
-    {
-      "id": "live-169850",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "Pakistan Women vs India Women, Match 9, Group A",
-      "series": "Women's Asia Cup 2026",
-      "teams": [
-        {
-          "name": "Pakistan Women",
-          "shortName": "PAKW",
-          "score": "43/6 (11.4 Ov)"
-        },
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "05 Sept 2026, 08:00 pm",
-      "time": "",
-      "place": "Dubai International Cricket Stadium, Dubai",
-      "overview": "Pakistan Women opt to bat",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169850",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-05T14:30:00.000Z",
-      "rawId": 169850,
-      "importance": "Major tournament"
-    },
     {
       "id": "upcoming-163851",
       "status": "upcoming",
@@ -37512,6 +37496,46 @@
       "startTime": "2026-09-06T04:00:00.000Z",
       "rawId": 163061,
       "importance": "Knockout stage"
+    },
+    {
+      "id": "recent-169850",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "Pakistan Women vs India Women, Match 9, Group A",
+      "series": "Women's Asia Cup 2026",
+      "teams": [
+        {
+          "name": "Pakistan Women",
+          "shortName": "PAKW",
+          "score": "55/10 (18.1 Ov)"
+        },
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": "57/3 (8.4 Ov)"
+        }
+      ],
+      "dateLabel": "05 Sept 2026, 08:00 pm",
+      "time": "",
+      "place": "Dubai International Cricket Stadium, Dubai",
+      "overview": "India Women won by 7 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169850",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-05T14:30:00.000Z",
+      "rawId": 169850,
+      "starPerformers": [
+        {
+          "name": "Shree Charani",
+          "performance": "3-7",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169850"
+        }
+      ],
+      "importance": "Major tournament"
     },
     {
       "id": "recent-169841",
@@ -39901,9 +39925,9 @@
       "level": "women",
       "levelLabel": "Women",
       "total": 3,
-      "live": 1,
+      "live": 0,
       "upcoming": 0,
-      "recent": 2,
+      "recent": 3,
       "startTime": "2026-08-30T14:30:00.000Z",
       "endTime": "2026-09-05T14:30:00.000Z",
       "matches": [
@@ -39988,9 +40012,9 @@
           "importance": "Major tournament"
         },
         {
-          "id": "live-169850",
-          "status": "live",
-          "statusLabel": "Live",
+          "id": "recent-169850",
+          "status": "recent",
+          "statusLabel": "Past",
           "level": "women",
           "levelLabel": "Women",
           "sourceType": "International",
@@ -40001,22 +40025,30 @@
             {
               "name": "Pakistan Women",
               "shortName": "PAKW",
-              "score": "43/6 (11.4 Ov)"
+              "score": "55/10 (18.1 Ov)"
             },
             {
               "name": "India Women",
               "shortName": "INDW",
-              "score": ""
+              "score": "57/3 (8.4 Ov)"
             }
           ],
           "dateLabel": "05 Sept 2026, 08:00 pm",
           "time": "",
           "place": "Dubai International Cricket Stadium, Dubai",
-          "overview": "Pakistan Women opt to bat",
+          "overview": "India Women won by 7 wkts",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169850",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-09-05T14:30:00.000Z",
           "rawId": 169850,
+          "starPerformers": [
+            {
+              "name": "Shree Charani",
+              "performance": "3-7",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169850"
+            }
+          ],
           "importance": "Major tournament"
         }
       ]
@@ -40027,6 +40059,46 @@
       "month": "2026-09",
       "label": "September 2026",
       "matches": [
+        {
+          "id": "recent-169850",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "women",
+          "levelLabel": "Women",
+          "sourceType": "International",
+          "sourceScope": "global",
+          "title": "Pakistan Women vs India Women, Match 9, Group A",
+          "series": "Women's Asia Cup 2026",
+          "teams": [
+            {
+              "name": "Pakistan Women",
+              "shortName": "PAKW",
+              "score": "55/10 (18.1 Ov)"
+            },
+            {
+              "name": "India Women",
+              "shortName": "INDW",
+              "score": "57/3 (8.4 Ov)"
+            }
+          ],
+          "dateLabel": "05 Sept 2026, 08:00 pm",
+          "time": "",
+          "place": "Dubai International Cricket Stadium, Dubai",
+          "overview": "India Women won by 7 wkts",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169850",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "startTime": "2026-09-05T14:30:00.000Z",
+          "rawId": 169850,
+          "starPerformers": [
+            {
+              "name": "Shree Charani",
+              "performance": "3-7",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169850"
+            }
+          ],
+          "importance": "Major tournament"
+        },
         {
           "id": "recent-169841",
           "status": "recent",
