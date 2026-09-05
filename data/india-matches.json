@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-05T05:02:27.502Z",
-  "lastCheckedAt": "2026-09-05T05:02:27.502Z",
-  "lastSuccessfulSyncAt": "2026-09-05T05:02:27.502Z",
+  "syncedAt": "2026-09-05T08:57:56.932Z",
+  "lastCheckedAt": "2026-09-05T08:57:56.932Z",
+  "lastSuccessfulSyncAt": "2026-09-05T08:57:56.932Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,16 +41,16 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 0,
+    "live": 1,
     "recent": 64,
-    "upcoming": 503,
+    "upcoming": 502,
     "total": 567
   },
   "all": [
     {
-      "id": "upcoming-171153",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-171153",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -61,7 +61,7 @@
         {
           "name": "Fazilka Falcons",
           "shortName": "FZF",
-          "score": ""
+          "score": "144/4 (14.3 Ov)"
         },
         {
           "name": "Bathinda Royals",
@@ -72,7 +72,7 @@
       "dateLabel": "05 Sept 2026, 01:00 pm",
       "time": "",
       "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Match starts at Sep 05, 07:30 GMT",
+      "overview": "Bathinda Royals opt to bowl",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171153",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-05T07:30:00.000Z",
@@ -17766,12 +17766,11 @@
       ]
     }
   ],
-  "live": [],
-  "upcoming": [
+  "live": [
     {
-      "id": "upcoming-171153",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-171153",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
@@ -17782,7 +17781,7 @@
         {
           "name": "Fazilka Falcons",
           "shortName": "FZF",
-          "score": ""
+          "score": "144/4 (14.3 Ov)"
         },
         {
           "name": "Bathinda Royals",
@@ -17793,12 +17792,14 @@
       "dateLabel": "05 Sept 2026, 01:00 pm",
       "time": "",
       "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Match starts at Sep 05, 07:30 GMT",
+      "overview": "Bathinda Royals opt to bowl",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171153",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-05T07:30:00.000Z",
       "rawId": 171153
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-169850",
       "status": "upcoming",
@@ -35503,9 +35504,9 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 0,
+      "live": 1,
       "recent": 0,
-      "upcoming": 1,
+      "upcoming": 0,
       "total": 1
     },
     {
