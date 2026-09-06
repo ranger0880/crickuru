@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-06T00:24:00.708Z",
-  "lastCheckedAt": "2026-09-06T00:24:00.708Z",
-  "lastSuccessfulSyncAt": "2026-09-06T00:24:00.708Z",
+  "syncedAt": "2026-09-06T04:32:23.147Z",
+  "lastCheckedAt": "2026-09-06T04:32:23.147Z",
+  "lastSuccessfulSyncAt": "2026-09-06T04:32:23.147Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,16 +41,16 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 0,
-    "recent": 65,
+    "live": 1,
+    "recent": 64,
     "upcoming": 501,
     "total": 566
   },
   "all": [
     {
-      "id": "upcoming-163061",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-163061",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "domestic",
@@ -61,7 +61,7 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": ""
+          "score": "26 (5.2 Ov)"
         },
         {
           "name": "South Zone",
@@ -72,11 +72,42 @@
       "dateLabel": "06 Sept 2026, 09:30 am",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Match starts at Sep 06, 04:00 GMT",
+      "overview": "Day 1: 1st Session",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-06T04:00:00.000Z",
       "rawId": 163061
+    },
+    {
+      "id": "upcoming-171163",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Bathinda Royals vs Jalandhar Warriors, 14th Match",
+      "series": "Sher-E-Punjab T20 League, 2026",
+      "teams": [
+        {
+          "name": "Bathinda Royals",
+          "shortName": "BTR",
+          "score": ""
+        },
+        {
+          "name": "Jalandhar Warriors",
+          "shortName": "JLW",
+          "score": ""
+        }
+      ],
+      "dateLabel": "06 Sept 2026, 01:00 pm",
+      "time": "",
+      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "overview": "Match starts at Sep 06, 07:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171163",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-06T07:30:00.000Z",
+      "rawId": 171163
     },
     {
       "id": "upcoming-155584",
@@ -15618,38 +15649,6 @@
       ]
     },
     {
-      "id": "recent-171157",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Jalandhar Warriors vs Mohali Kings, 13th Match",
-      "series": "Sher-E-Punjab T20 League, 2026",
-      "teams": [
-        {
-          "name": "Jalandhar Warriors",
-          "shortName": "JLW",
-          "score": "177/7 (13.6 Ov)"
-        },
-        {
-          "name": "Mohali Kings",
-          "shortName": "MHK",
-          "score": "179/2 (12.6 Ov)"
-        }
-      ],
-      "dateLabel": "05 Sept 2026, 07:00 pm",
-      "time": "",
-      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Mohali Kings won by 8 wkts (14 Overs game due to wet outfield)",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171157",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-05T13:30:00.000Z",
-      "rawId": 171157,
-      "starPerformers": []
-    },
-    {
       "id": "recent-169841",
       "status": "recent",
       "statusLabel": "Past",
@@ -17743,12 +17742,11 @@
       ]
     }
   ],
-  "live": [],
-  "upcoming": [
+  "live": [
     {
-      "id": "upcoming-163061",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-163061",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "domestic",
@@ -17759,7 +17757,7 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": ""
+          "score": "26 (5.2 Ov)"
         },
         {
           "name": "South Zone",
@@ -17770,11 +17768,44 @@
       "dateLabel": "06 Sept 2026, 09:30 am",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Match starts at Sep 06, 04:00 GMT",
+      "overview": "Day 1: 1st Session",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-06T04:00:00.000Z",
       "rawId": 163061
+    }
+  ],
+  "upcoming": [
+    {
+      "id": "upcoming-171163",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Bathinda Royals vs Jalandhar Warriors, 14th Match",
+      "series": "Sher-E-Punjab T20 League, 2026",
+      "teams": [
+        {
+          "name": "Bathinda Royals",
+          "shortName": "BTR",
+          "score": ""
+        },
+        {
+          "name": "Jalandhar Warriors",
+          "shortName": "JLW",
+          "score": ""
+        }
+      ],
+      "dateLabel": "06 Sept 2026, 01:00 pm",
+      "time": "",
+      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "overview": "Match starts at Sep 06, 07:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171163",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-06T07:30:00.000Z",
+      "rawId": 171163
     },
     {
       "id": "upcoming-155584",
@@ -33318,38 +33349,6 @@
       ]
     },
     {
-      "id": "recent-171157",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Jalandhar Warriors vs Mohali Kings, 13th Match",
-      "series": "Sher-E-Punjab T20 League, 2026",
-      "teams": [
-        {
-          "name": "Jalandhar Warriors",
-          "shortName": "JLW",
-          "score": "177/7 (13.6 Ov)"
-        },
-        {
-          "name": "Mohali Kings",
-          "shortName": "MHK",
-          "score": "179/2 (12.6 Ov)"
-        }
-      ],
-      "dateLabel": "05 Sept 2026, 07:00 pm",
-      "time": "",
-      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Mohali Kings won by 8 wkts (14 Overs game due to wet outfield)",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171157",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-05T13:30:00.000Z",
-      "rawId": 171157,
-      "starPerformers": []
-    },
-    {
       "id": "recent-169841",
       "status": "recent",
       "statusLabel": "Past",
@@ -35458,8 +35457,8 @@
       "label": "League / IPL",
       "order": 2,
       "live": 0,
-      "recent": 1,
-      "upcoming": 0,
+      "recent": 0,
+      "upcoming": 1,
       "total": 1
     },
     {
@@ -35475,13 +35474,45 @@
       "id": "domestic",
       "label": "Domestic / State",
       "order": 4,
-      "live": 0,
+      "live": 1,
       "recent": 4,
-      "upcoming": 414,
+      "upcoming": 413,
       "total": 418
     }
   ],
   "importantMatches": [
+    {
+      "id": "live-163061",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "East Zone vs South Zone, Final",
+      "series": "Duleep Trophy 2026",
+      "teams": [
+        {
+          "name": "East Zone",
+          "shortName": "EZONE",
+          "score": "26 (5.2 Ov)"
+        },
+        {
+          "name": "South Zone",
+          "shortName": "SZONE",
+          "score": ""
+        }
+      ],
+      "dateLabel": "06 Sept 2026, 09:30 am",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Day 1: 1st Session",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-06T04:00:00.000Z",
+      "rawId": 163061,
+      "importance": "Knockout stage"
+    },
     {
       "id": "upcoming-163851",
       "status": "upcoming",
@@ -37400,38 +37431,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
       "startTime": "2026-09-17T00:00:00.000Z",
       "rawId": 170911,
-      "importance": "Knockout stage"
-    },
-    {
-      "id": "upcoming-163061",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "East Zone vs South Zone, Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "East Zone",
-          "shortName": "EZONE",
-          "score": ""
-        },
-        {
-          "name": "South Zone",
-          "shortName": "SZONE",
-          "score": ""
-        }
-      ],
-      "dateLabel": "06 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Match starts at Sep 06, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-06T04:00:00.000Z",
-      "rawId": 163061,
       "importance": "Knockout stage"
     },
     {
@@ -39684,8 +39683,8 @@
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "total": 5,
-      "live": 0,
-      "upcoming": 1,
+      "live": 1,
+      "upcoming": 0,
       "recent": 4,
       "startTime": "2026-08-23T04:00:00.000Z",
       "endTime": "2026-09-06T04:00:00.000Z",
@@ -39823,9 +39822,9 @@
           "importance": "Knockout stage"
         },
         {
-          "id": "upcoming-163061",
-          "status": "upcoming",
-          "statusLabel": "Future",
+          "id": "live-163061",
+          "status": "live",
+          "statusLabel": "Live",
           "level": "domestic",
           "levelLabel": "Domestic / State",
           "sourceType": "domestic",
@@ -39836,7 +39835,7 @@
             {
               "name": "East Zone",
               "shortName": "EZONE",
-              "score": ""
+              "score": "26 (5.2 Ov)"
             },
             {
               "name": "South Zone",
@@ -39847,7 +39846,7 @@
           "dateLabel": "06 Sept 2026, 09:30 am",
           "time": "",
           "place": "MA Chidambaram Stadium, Chennai",
-          "overview": "Match starts at Sep 06, 04:00 GMT",
+          "overview": "Day 1: 1st Session",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-09-06T04:00:00.000Z",
