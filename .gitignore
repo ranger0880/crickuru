@@ -39,6 +39,7 @@ yarn-error.log*
 /node_modules/
 /dist/
 /public/
+/bot/.auth/
 
 # htaccess
 /.htaccess

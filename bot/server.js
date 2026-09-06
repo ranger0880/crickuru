@@ -212,3 +212,9 @@ const server = http.createServer(async (request, response) => {
 });
 
 server.listen(PORT, () => console.log(`CricKuru Bot API listening on port ${PORT}`));
+
+if (process.env.WHATSAPP_ENABLED === "true") {
+  import("./whatsapp.mjs")
+    .then(({ startWhatsAppBot }) => startWhatsAppBot())
+    .catch((error) => console.error("WhatsApp adapter failed to start:", error));
+}

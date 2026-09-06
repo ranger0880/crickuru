@@ -6,7 +6,7 @@ This service powers the optional CricKuru website assistant. It reads the saniti
 
 - Create a **Web Service** from `ranger0880/crickuru`.
 - Root Directory: `bot`
-- Build Command: leave blank
+- Build Command: `npm install --omit=dev`
 - Start Command: `node server.js`
 - Environment variable: `CORS_ORIGINS=https://crickuru.com,https://www.crickuru.com`
 
@@ -16,4 +16,6 @@ Set the GitHub Pages / Hostinger build variable `VITE_BOT_API_URL` to the Render
 
 ## WhatsApp
 
-The HTTP API is ready to be called by a WhatsApp adapter, but a group bot requires an approved WhatsApp Business provider or a separately persisted session. Do not commit QR sessions, access tokens, or phone numbers. Render's ephemeral filesystem is not suitable for an unattended QR session without an external store.
+The optional `whatsapp.mjs` adapter uses `@whiskeysockets/baileys`, responds only in the allowlisted group, and only when a message starts with `!crickuru` or mentions the bot account. It is disabled by default.
+
+To enable it, set `WHATSAPP_ENABLED=true`, `WHATSAPP_GROUP_JID=<your-group-jid>`, and optionally `WHATSAPP_TRIGGER=!crickuru`. The first run prints a QR in the service logs; scan it from the WhatsApp account that should operate the bot. Keep `bot/.auth/` outside GitHub and use persistent storage for unattended operation. Render's default filesystem is ephemeral, so a persistent disk or external auth store is required for reliable restarts.
