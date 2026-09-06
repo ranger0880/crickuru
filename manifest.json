@@ -1,0 +1,28 @@
+{
+  "name": "CricKuru - Kurukshetra Warriors Cricket Hub",
+  "short_name": "CricKuru",
+  "description": "Kurukshetra Warriors cricket hub, playable arena, meme forge, and CricHeroes links.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#05070B",
+  "theme_color": "#05070B",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/assets/red-leather-cricket-ball-cursor.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "sports",
+    "games",
+    "entertainment"
+  ]
+}
