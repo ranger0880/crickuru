@@ -2566,7 +2566,7 @@ const RouterContext = React.createContext(null);
       function PlayerProfileCard({ player, rank, onSelect }) {
         const awards = player.performance?.awards || 0;
         const activity = asArray(player.performance?.recentAwards).slice(0, 3);
-        const recentMatches = asArray(player.recentMatches).slice(0, 3);
+        const recentMatches = playerRecentForm(player, 3);
         const stats = playerOverallStats(player);
         const hasStats = hasPlayerStats(stats);
         const impact = player.impact || 0;
@@ -2722,9 +2722,26 @@ const RouterContext = React.createContext(null);
         return playerDetailDecimal(String(value ?? "").replace("%", ""));
       }
 
+      function playerRecentForm(player, limit = 5) {
+        const byId = new Map();
+        for (const match of [...asArray(player?.recentMatches), ...asArray(player?.matchHistory)]) {
+          if (!match) continue;
+          const key = String(match.id || match.scorecardUrl || `${match.date || ""}-${match.teamA || ""}-${match.teamB || ""}`);
+          const previous = byId.get(key);
+          byId.set(key, previous?.performance && !match.performance ? previous : { ...previous, ...match });
+        }
+        return [...byId.values()]
+          .filter((match) => match.date || match.teamA || match.teamB || match.performance)
+          .sort((a, b) => {
+            const aTime = new Date(a.date || a.matchDate || a.startTime || 0).getTime();
+            const bTime = new Date(b.date || b.matchDate || b.startTime || 0).getTime();
+            return (Number.isFinite(bTime) ? bTime : 0) - (Number.isFinite(aTime) ? aTime : 0);
+          })
+          .slice(0, limit);
+      }
+
       function playerMatchForm(player) {
-        return asArray(player.matchHistory || player.recentMatches)
-          .slice(0, 8)
+        return playerRecentForm(player, 8)
           .map((match) => match.performance || {})
           .filter((performance) => Object.values(performance).some((value) => Number(value) > 0));
       }
@@ -3003,7 +3020,7 @@ const RouterContext = React.createContext(null);
         const stats = playerOverallStats(player);
         const statsSource = playerStatsSource(player, stats);
         const warriorsStats = player.warriorsStats || {};
-        const recentMatches = asArray(player.recentMatches).slice(0, 5);
+        const recentMatches = playerRecentForm(player, 5);
         const matchHistory = asArray(player.matchHistory).length ? asArray(player.matchHistory) : recentMatches;
         const neon = playerNeonTheme(player.impact || 0);
 

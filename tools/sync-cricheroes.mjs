@@ -507,9 +507,16 @@ async function fetchPlayerProfileData(player, previousPlayer = null) {
     historyFetched = true;
     if (previousPlayer?.historyNext) {
       await wait(400);
-      const nextPage = await fetchPlayerHistoryPage(player, previousPlayer.historyNext);
-      matchHistory = mergePlayerMatchHistory(previousPlayer.matchHistory, [...matchHistory, ...nextPage.matches]);
-      historyNext = nextPage.next;
+      try {
+        const nextPage = await fetchPlayerHistoryPage(player, previousPlayer.historyNext);
+        matchHistory = mergePlayerMatchHistory(previousPlayer.matchHistory, [...matchHistory, ...nextPage.matches]);
+        historyNext = nextPage.next;
+      } catch (error) {
+        // CricHeroes can retire an old pagination URL. Keep the fresh page one result instead of replacing it with stale history.
+        console.warn(`Player history continuation unavailable for ${player.name}: ${error.message}`);
+        matchHistory = mergePlayerMatchHistory(previousPlayer.matchHistory, matchHistory);
+        historyNext = previousPlayer.historyNext;
+      }
     } else if (previousPlayer?.matchHistory?.length) {
       matchHistory = mergePlayerMatchHistory(previousPlayer.matchHistory, matchHistory);
     }
