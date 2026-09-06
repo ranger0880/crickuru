@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-06T04:32:23.147Z",
-  "lastCheckedAt": "2026-09-06T04:32:23.147Z",
-  "lastSuccessfulSyncAt": "2026-09-06T04:32:23.147Z",
+  "syncedAt": "2026-09-06T04:52:34.375Z",
+  "lastCheckedAt": "2026-09-06T04:52:34.375Z",
+  "lastSuccessfulSyncAt": "2026-09-06T04:52:34.375Z",
   "coverage": {
     "pathways": [
       "India",
@@ -61,7 +61,7 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "26 (5.2 Ov)"
+          "score": "60 (8.4 Ov)"
         },
         {
           "name": "South Zone",
@@ -17757,7 +17757,7 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "26 (5.2 Ov)"
+          "score": "60 (8.4 Ov)"
         },
         {
           "name": "South Zone",
@@ -35495,7 +35495,7 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "26 (5.2 Ov)"
+          "score": "60 (8.4 Ov)"
         },
         {
           "name": "South Zone",
@@ -39835,7 +39835,7 @@
             {
               "name": "East Zone",
               "shortName": "EZONE",
-              "score": "26 (5.2 Ov)"
+              "score": "60 (8.4 Ov)"
             },
             {
               "name": "South Zone",
