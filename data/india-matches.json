@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-06T08:59:04.044Z",
-  "lastCheckedAt": "2026-09-06T08:59:04.044Z",
-  "lastSuccessfulSyncAt": "2026-09-06T08:59:04.044Z",
+  "syncedAt": "2026-09-06T12:41:42.753Z",
+  "lastCheckedAt": "2026-09-06T12:41:42.753Z",
+  "lastSuccessfulSyncAt": "2026-09-06T12:41:42.753Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,10 +41,10 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 2,
+    "live": 1,
     "recent": 64,
     "upcoming": 500,
-    "total": 566
+    "total": 565
   },
   "all": [
     {
@@ -61,7 +61,7 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "240/3 (51.4 Ov)"
+          "score": "385/4 (78.6 Ov)"
         },
         {
           "name": "South Zone",
@@ -72,42 +72,11 @@
       "dateLabel": "06 Sept 2026, 09:30 am",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Day 1: 2nd Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-06T04:00:00.000Z",
       "rawId": 163061
-    },
-    {
-      "id": "live-171163",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Bathinda Royals vs Jalandhar Warriors, 14th Match",
-      "series": "Sher-E-Punjab T20 League, 2026",
-      "teams": [
-        {
-          "name": "Bathinda Royals",
-          "shortName": "BTR",
-          "score": "212/4 (18.2 Ov)"
-        },
-        {
-          "name": "Jalandhar Warriors",
-          "shortName": "JLW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "06 Sept 2026, 01:00 pm",
-      "time": "",
-      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Jalandhar Warriors opt to bowl",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171163",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-06T07:30:00.000Z",
-      "rawId": 171163
     },
     {
       "id": "upcoming-155584",
@@ -15615,8 +15584,8 @@
       "statusLabel": "Past",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-women",
       "title": "Pakistan Women vs India Women, Match 9, Group A",
       "series": "Women's Asia Cup 2026",
       "teams": [
@@ -15628,7 +15597,7 @@
         {
           "name": "India Women",
           "shortName": "INDW",
-          "score": "57/3 (8.4 Ov)"
+          "score": "57/3 (8 Ov)"
         }
       ],
       "dateLabel": "05 Sept 2026, 08:00 pm",
@@ -15636,7 +15605,7 @@
       "place": "Dubai International Cricket Stadium, Dubai",
       "overview": "India Women won by 7 wkts",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169850",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-09-05T14:30:00.000Z",
       "rawId": 169850,
       "starPerformers": [
@@ -17757,7 +17726,7 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "240/3 (51.4 Ov)"
+          "score": "385/4 (78.6 Ov)"
         },
         {
           "name": "South Zone",
@@ -17768,42 +17737,11 @@
       "dateLabel": "06 Sept 2026, 09:30 am",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Day 1: 2nd Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-06T04:00:00.000Z",
       "rawId": 163061
-    },
-    {
-      "id": "live-171163",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Bathinda Royals vs Jalandhar Warriors, 14th Match",
-      "series": "Sher-E-Punjab T20 League, 2026",
-      "teams": [
-        {
-          "name": "Bathinda Royals",
-          "shortName": "BTR",
-          "score": "212/4 (18.2 Ov)"
-        },
-        {
-          "name": "Jalandhar Warriors",
-          "shortName": "JLW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "06 Sept 2026, 01:00 pm",
-      "time": "",
-      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Jalandhar Warriors opt to bowl",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171163",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-06T07:30:00.000Z",
-      "rawId": 171163
     }
   ],
   "upcoming": [
@@ -33315,8 +33253,8 @@
       "statusLabel": "Past",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-women",
       "title": "Pakistan Women vs India Women, Match 9, Group A",
       "series": "Women's Asia Cup 2026",
       "teams": [
@@ -33328,7 +33266,7 @@
         {
           "name": "India Women",
           "shortName": "INDW",
-          "score": "57/3 (8.4 Ov)"
+          "score": "57/3 (8 Ov)"
         }
       ],
       "dateLabel": "05 Sept 2026, 08:00 pm",
@@ -33336,7 +33274,7 @@
       "place": "Dubai International Cricket Stadium, Dubai",
       "overview": "India Women won by 7 wkts",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169850",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-09-05T14:30:00.000Z",
       "rawId": 169850,
       "starPerformers": [
@@ -35456,10 +35394,10 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 1,
+      "live": 0,
       "recent": 0,
       "upcoming": 0,
-      "total": 1
+      "total": 0
     },
     {
       "id": "women",
@@ -35495,7 +35433,7 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "240/3 (51.4 Ov)"
+          "score": "385/4 (78.6 Ov)"
         },
         {
           "name": "South Zone",
@@ -35506,7 +35444,7 @@
       "dateLabel": "06 Sept 2026, 09:30 am",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Day 1: 2nd Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-06T04:00:00.000Z",
@@ -37439,8 +37377,8 @@
       "statusLabel": "Past",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-women",
       "title": "Pakistan Women vs India Women, Match 9, Group A",
       "series": "Women's Asia Cup 2026",
       "teams": [
@@ -37452,7 +37390,7 @@
         {
           "name": "India Women",
           "shortName": "INDW",
-          "score": "57/3 (8.4 Ov)"
+          "score": "57/3 (8 Ov)"
         }
       ],
       "dateLabel": "05 Sept 2026, 08:00 pm",
@@ -37460,7 +37398,7 @@
       "place": "Dubai International Cricket Stadium, Dubai",
       "overview": "India Women won by 7 wkts",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169850",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-09-05T14:30:00.000Z",
       "rawId": 169850,
       "starPerformers": [
@@ -39835,7 +39773,7 @@
             {
               "name": "East Zone",
               "shortName": "EZONE",
-              "score": "240/3 (51.4 Ov)"
+              "score": "385/4 (78.6 Ov)"
             },
             {
               "name": "South Zone",
@@ -39846,7 +39784,7 @@
           "dateLabel": "06 Sept 2026, 09:30 am",
           "time": "",
           "place": "MA Chidambaram Stadium, Chennai",
-          "overview": "Day 1: 2nd Session",
+          "overview": "Day 1: Stumps",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-09-06T04:00:00.000Z",
@@ -39953,8 +39891,8 @@
           "statusLabel": "Past",
           "level": "women",
           "levelLabel": "Women",
-          "sourceType": "International",
-          "sourceScope": "global",
+          "sourceType": "",
+          "sourceScope": "india-women",
           "title": "Pakistan Women vs India Women, Match 9, Group A",
           "series": "Women's Asia Cup 2026",
           "teams": [
@@ -39966,7 +39904,7 @@
             {
               "name": "India Women",
               "shortName": "INDW",
-              "score": "57/3 (8.4 Ov)"
+              "score": "57/3 (8 Ov)"
             }
           ],
           "dateLabel": "05 Sept 2026, 08:00 pm",
@@ -39974,7 +39912,7 @@
           "place": "Dubai International Cricket Stadium, Dubai",
           "overview": "India Women won by 7 wkts",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169850",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
           "startTime": "2026-09-05T14:30:00.000Z",
           "rawId": 169850,
           "starPerformers": [
@@ -40001,8 +39939,8 @@
           "statusLabel": "Past",
           "level": "women",
           "levelLabel": "Women",
-          "sourceType": "International",
-          "sourceScope": "global",
+          "sourceType": "",
+          "sourceScope": "india-women",
           "title": "Pakistan Women vs India Women, Match 9, Group A",
           "series": "Women's Asia Cup 2026",
           "teams": [
@@ -40014,7 +39952,7 @@
             {
               "name": "India Women",
               "shortName": "INDW",
-              "score": "57/3 (8.4 Ov)"
+              "score": "57/3 (8 Ov)"
             }
           ],
           "dateLabel": "05 Sept 2026, 08:00 pm",
@@ -40022,7 +39960,7 @@
           "place": "Dubai International Cricket Stadium, Dubai",
           "overview": "India Women won by 7 wkts",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169850",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
           "startTime": "2026-09-05T14:30:00.000Z",
           "rawId": 169850,
           "starPerformers": [
