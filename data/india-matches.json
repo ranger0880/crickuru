@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-06T17:44:52.723Z",
-  "lastCheckedAt": "2026-09-06T17:44:52.723Z",
-  "lastSuccessfulSyncAt": "2026-09-06T17:44:52.723Z",
+  "syncedAt": "2026-09-06T19:33:02.443Z",
+  "lastCheckedAt": "2026-09-06T19:33:02.443Z",
+  "lastSuccessfulSyncAt": "2026-09-06T19:33:02.443Z",
   "coverage": {
     "pathways": [
       "India",
@@ -43,8 +43,8 @@
   "summary": {
     "live": 1,
     "recent": 64,
-    "upcoming": 500,
-    "total": 565
+    "upcoming": 501,
+    "total": 566
   },
   "all": [
     {
@@ -77,6 +77,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-06T04:00:00.000Z",
       "rawId": 163061
+    },
+    {
+      "id": "upcoming-169887",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women",
+      "title": "India Women vs TBC, Semi Final 1 (A1 v B2)",
+      "series": "Women's Asia Cup 2026",
+      "teams": [
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": ""
+        },
+        {
+          "name": "TBC",
+          "shortName": "TBC",
+          "score": ""
+        }
+      ],
+      "dateLabel": "10 Sept 2026, 08:00 pm",
+      "time": "",
+      "place": "Dubai International Cricket Stadium, Dubai",
+      "overview": "Match starts at Sep 10, 14:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169887",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+      "startTime": "2026-09-10T14:30:00.000Z",
+      "rawId": 169887
     },
     {
       "id": "upcoming-155584",
@@ -17746,6 +17777,37 @@
   ],
   "upcoming": [
     {
+      "id": "upcoming-169887",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women",
+      "title": "India Women vs TBC, Semi Final 1 (A1 v B2)",
+      "series": "Women's Asia Cup 2026",
+      "teams": [
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": ""
+        },
+        {
+          "name": "TBC",
+          "shortName": "TBC",
+          "score": ""
+        }
+      ],
+      "dateLabel": "10 Sept 2026, 08:00 pm",
+      "time": "",
+      "place": "Dubai International Cricket Stadium, Dubai",
+      "overview": "Match starts at Sep 10, 14:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169887",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+      "startTime": "2026-09-10T14:30:00.000Z",
+      "rawId": 169887
+    },
+    {
       "id": "upcoming-155584",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -35405,8 +35467,8 @@
       "order": 3,
       "live": 0,
       "recent": 30,
-      "upcoming": 33,
-      "total": 63
+      "upcoming": 34,
+      "total": 64
     },
     {
       "id": "domestic",
@@ -37369,6 +37431,38 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
       "startTime": "2026-09-17T00:00:00.000Z",
       "rawId": 170911,
+      "importance": "Knockout stage"
+    },
+    {
+      "id": "upcoming-169887",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women",
+      "title": "India Women vs TBC, Semi Final 1 (A1 v B2)",
+      "series": "Women's Asia Cup 2026",
+      "teams": [
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": ""
+        },
+        {
+          "name": "TBC",
+          "shortName": "TBC",
+          "score": ""
+        }
+      ],
+      "dateLabel": "10 Sept 2026, 08:00 pm",
+      "time": "",
+      "place": "Dubai International Cricket Stadium, Dubai",
+      "overview": "Match starts at Sep 10, 14:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169887",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+      "startTime": "2026-09-10T14:30:00.000Z",
+      "rawId": 169887,
       "importance": "Knockout stage"
     },
     {
@@ -39616,6 +39710,172 @@
       ]
     },
     {
+      "id": "women-s-asia-cup-2026",
+      "series": "Women's Asia Cup 2026",
+      "level": "women",
+      "levelLabel": "Women",
+      "total": 4,
+      "live": 0,
+      "upcoming": 1,
+      "recent": 3,
+      "startTime": "2026-08-30T14:30:00.000Z",
+      "endTime": "2026-09-10T14:30:00.000Z",
+      "matches": [
+        {
+          "id": "recent-169811",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "women",
+          "levelLabel": "Women",
+          "sourceType": "",
+          "sourceScope": "india-women",
+          "title": "India Women vs Thailand Women, Match 3, Group A",
+          "series": "Women's Asia Cup 2026",
+          "teams": [
+            {
+              "name": "India Women",
+              "shortName": "INDW",
+              "score": "159/9 (20 Ov)"
+            },
+            {
+              "name": "Thailand Women",
+              "shortName": "THAIW",
+              "score": "65/10 (16.1 Ov)"
+            }
+          ],
+          "dateLabel": "30 Aug 2026, 08:00 pm",
+          "time": "",
+          "place": "Dubai International Cricket Stadium, Dubai",
+          "overview": "India Women won by 94 runs",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169811",
+          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
+          "startTime": "2026-08-30T14:30:00.000Z",
+          "rawId": 169811,
+          "starPerformers": [
+            {
+              "name": "Shafali Verma",
+              "performance": "64(36)",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169811"
+            }
+          ],
+          "importance": "Major tournament"
+        },
+        {
+          "id": "recent-169841",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "women",
+          "levelLabel": "Women",
+          "sourceType": "",
+          "sourceScope": "india-women",
+          "title": "India Women vs Hong Kong, China Women, Match 7, Group A",
+          "series": "Women's Asia Cup 2026",
+          "teams": [
+            {
+              "name": "India Women",
+              "shortName": "INDW",
+              "score": "193/5 (20 Ov)"
+            },
+            {
+              "name": "Hong Kong, China Women",
+              "shortName": "HKC W",
+              "score": "56/10 (16.2 Ov)"
+            }
+          ],
+          "dateLabel": "03 Sept 2026, 08:00 pm",
+          "time": "",
+          "place": "Dubai International Cricket Stadium, Dubai",
+          "overview": "India Women won by 137 runs",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169841",
+          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
+          "startTime": "2026-09-03T14:30:00.000Z",
+          "rawId": 169841,
+          "starPerformers": [
+            {
+              "name": "Smriti Mandhana",
+              "performance": "124(64)",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169841"
+            }
+          ],
+          "importance": "Major tournament"
+        },
+        {
+          "id": "recent-169850",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "women",
+          "levelLabel": "Women",
+          "sourceType": "",
+          "sourceScope": "india-women",
+          "title": "Pakistan Women vs India Women, Match 9, Group A",
+          "series": "Women's Asia Cup 2026",
+          "teams": [
+            {
+              "name": "Pakistan Women",
+              "shortName": "PAKW",
+              "score": "55/10 (18.1 Ov)"
+            },
+            {
+              "name": "India Women",
+              "shortName": "INDW",
+              "score": "57/3 (8 Ov)"
+            }
+          ],
+          "dateLabel": "05 Sept 2026, 08:00 pm",
+          "time": "",
+          "place": "Dubai International Cricket Stadium, Dubai",
+          "overview": "India Women won by 7 wkts",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169850",
+          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
+          "startTime": "2026-09-05T14:30:00.000Z",
+          "rawId": 169850,
+          "starPerformers": [
+            {
+              "name": "Shree Charani",
+              "performance": "3-7",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169850"
+            }
+          ],
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-169887",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "women",
+          "levelLabel": "Women",
+          "sourceType": "",
+          "sourceScope": "india-women",
+          "title": "India Women vs TBC, Semi Final 1 (A1 v B2)",
+          "series": "Women's Asia Cup 2026",
+          "teams": [
+            {
+              "name": "India Women",
+              "shortName": "INDW",
+              "score": ""
+            },
+            {
+              "name": "TBC",
+              "shortName": "TBC",
+              "score": ""
+            }
+          ],
+          "dateLabel": "10 Sept 2026, 08:00 pm",
+          "time": "",
+          "place": "Dubai International Cricket Stadium, Dubai",
+          "overview": "Match starts at Sep 10, 14:30 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169887",
+          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+          "startTime": "2026-09-10T14:30:00.000Z",
+          "rawId": 169887,
+          "importance": "Knockout stage"
+        }
+      ]
+    },
+    {
       "id": "duleep-trophy-2026",
       "series": "Duleep Trophy 2026",
       "level": "domestic",
@@ -39790,140 +40050,6 @@
           "startTime": "2026-09-06T04:00:00.000Z",
           "rawId": 163061,
           "importance": "Knockout stage"
-        }
-      ]
-    },
-    {
-      "id": "women-s-asia-cup-2026",
-      "series": "Women's Asia Cup 2026",
-      "level": "women",
-      "levelLabel": "Women",
-      "total": 3,
-      "live": 0,
-      "upcoming": 0,
-      "recent": 3,
-      "startTime": "2026-08-30T14:30:00.000Z",
-      "endTime": "2026-09-05T14:30:00.000Z",
-      "matches": [
-        {
-          "id": "recent-169811",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "women",
-          "levelLabel": "Women",
-          "sourceType": "",
-          "sourceScope": "india-women",
-          "title": "India Women vs Thailand Women, Match 3, Group A",
-          "series": "Women's Asia Cup 2026",
-          "teams": [
-            {
-              "name": "India Women",
-              "shortName": "INDW",
-              "score": "159/9 (20 Ov)"
-            },
-            {
-              "name": "Thailand Women",
-              "shortName": "THAIW",
-              "score": "65/10 (16.1 Ov)"
-            }
-          ],
-          "dateLabel": "30 Aug 2026, 08:00 pm",
-          "time": "",
-          "place": "Dubai International Cricket Stadium, Dubai",
-          "overview": "India Women won by 94 runs",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169811",
-          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
-          "startTime": "2026-08-30T14:30:00.000Z",
-          "rawId": 169811,
-          "starPerformers": [
-            {
-              "name": "Shafali Verma",
-              "performance": "64(36)",
-              "label": "Player of the Match",
-              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169811"
-            }
-          ],
-          "importance": "Major tournament"
-        },
-        {
-          "id": "recent-169841",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "women",
-          "levelLabel": "Women",
-          "sourceType": "",
-          "sourceScope": "india-women",
-          "title": "India Women vs Hong Kong, China Women, Match 7, Group A",
-          "series": "Women's Asia Cup 2026",
-          "teams": [
-            {
-              "name": "India Women",
-              "shortName": "INDW",
-              "score": "193/5 (20 Ov)"
-            },
-            {
-              "name": "Hong Kong, China Women",
-              "shortName": "HKC W",
-              "score": "56/10 (16.2 Ov)"
-            }
-          ],
-          "dateLabel": "03 Sept 2026, 08:00 pm",
-          "time": "",
-          "place": "Dubai International Cricket Stadium, Dubai",
-          "overview": "India Women won by 137 runs",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169841",
-          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
-          "startTime": "2026-09-03T14:30:00.000Z",
-          "rawId": 169841,
-          "starPerformers": [
-            {
-              "name": "Smriti Mandhana",
-              "performance": "124(64)",
-              "label": "Player of the Match",
-              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169841"
-            }
-          ],
-          "importance": "Major tournament"
-        },
-        {
-          "id": "recent-169850",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "women",
-          "levelLabel": "Women",
-          "sourceType": "",
-          "sourceScope": "india-women",
-          "title": "Pakistan Women vs India Women, Match 9, Group A",
-          "series": "Women's Asia Cup 2026",
-          "teams": [
-            {
-              "name": "Pakistan Women",
-              "shortName": "PAKW",
-              "score": "55/10 (18.1 Ov)"
-            },
-            {
-              "name": "India Women",
-              "shortName": "INDW",
-              "score": "57/3 (8 Ov)"
-            }
-          ],
-          "dateLabel": "05 Sept 2026, 08:00 pm",
-          "time": "",
-          "place": "Dubai International Cricket Stadium, Dubai",
-          "overview": "India Women won by 7 wkts",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169850",
-          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
-          "startTime": "2026-09-05T14:30:00.000Z",
-          "rawId": 169850,
-          "starPerformers": [
-            {
-              "name": "Shree Charani",
-              "performance": "3-7",
-              "label": "Player of the Match",
-              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169850"
-            }
-          ],
-          "importance": "Major tournament"
         }
       ]
     }
