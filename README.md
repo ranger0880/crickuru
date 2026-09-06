@@ -61,6 +61,12 @@ The quiz profile supports Google Identity Services and WhatsApp OTP through a se
 
 The backend must expose `GET /auth/session`, `POST /auth/google`, `POST /auth/whatsapp/start`, `POST /auth/whatsapp/verify`, and `POST /auth/logout`. It must verify Google ID tokens server-side, send WhatsApp codes through the Meta WhatsApp Business API, rate-limit OTP requests, expire challenges, set an `HttpOnly; Secure; SameSite` session cookie, and use CSRF protection for cookie-authenticated mutations. The frontend never stores access tokens in browser storage.
 
+## CricKuru assistant bot
+
+The optional assistant API lives in `bot/`. It reads the scheduled `data/crickuru-live.json` snapshot and exposes player stats, team data, and a small source-aware chat endpoint without scraping CricHeroes on every visitor request. The site widget connects when `VITE_BOT_API_URL` is set at build time.
+
+Deploy it on Render with the included `render.yaml`, or use root directory `bot` and start command `node server.js`. Set `CORS_ORIGINS` to the production site origins, then set `VITE_BOT_API_URL` in the site build environment and rebuild. WhatsApp group automation is intentionally not bundled: use an approved WhatsApp Business provider and keep its credentials/session outside GitHub; Render's default filesystem is ephemeral.
+
 ## Files
 
 - `src/` - React app source

@@ -504,6 +504,7 @@ const RouterContext = React.createContext(null);
       }
 
       const CRICHEROES_STATS_SOURCE = "CricHeroes public player stats";
+      const BOT_API_URL = String(import.meta.env.VITE_BOT_API_URL || "").replace(/\/+$/, "");
 
       function hasPlayerStats(stats) {
         if (!stats || typeof stats !== "object") return false;
@@ -562,6 +563,7 @@ const RouterContext = React.createContext(null);
 
       const fallbackIcons = {
         ArrowRight: (props) => <SvgIcon {...props}><path d="M5 12h14" /><path d="m13 5 7 7-7 7" /></SvgIcon>,
+        Bot: (props) => <SvgIcon {...props}><rect x="4" y="7" width="16" height="13" rx="3" /><path d="M12 3v4" /><path d="M8 13h.01" /><path d="M16 13h.01" /><path d="M8 17h8" /></SvgIcon>,
         CalendarDays: (props) => <SvgIcon {...props}><path d="M8 2v4" /><path d="M16 2v4" /><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M3 10h18" /><path d="M8 14h.01" /><path d="M12 14h.01" /><path d="M16 14h.01" /><path d="M8 18h.01" /><path d="M12 18h.01" /></SvgIcon>,
         ChevronDown: (props) => <SvgIcon {...props}><path d="m6 9 6 6 6-6" /></SvgIcon>,
         CircleUserRound: (props) => <SvgIcon {...props}><path d="M18 20a6 6 0 0 0-12 0" /><circle cx="12" cy="10" r="4" /><circle cx="12" cy="12" r="10" /></SvgIcon>,
@@ -6115,6 +6117,77 @@ const RouterContext = React.createContext(null);
         );
       }
 
+      function CricKuruBot() {
+        const [open, setOpen] = useState(false);
+        const [draft, setDraft] = useState("");
+        const [busy, setBusy] = useState(false);
+        const [messages, setMessages] = useState([
+          { id: "welcome", from: "bot", text: "Ask me about a Warriors player, career totals, recent cross-team form, or the latest team matches." },
+        ]);
+        const messagesRef = useRef(null);
+
+        useEffect(() => {
+          if (open && messagesRef.current) messagesRef.current.scrollTop = messagesRef.current.scrollHeight;
+        }, [open, messages, busy]);
+
+        async function sendMessage(event) {
+          event.preventDefault();
+          const text = draft.replace(/[\u0000-\u001F\u007F]/g, " ").replace(/\s+/g, " ").trim().slice(0, 500);
+          if (!text || busy) return;
+          setMessages((current) => [...current, { id: `user-${Date.now()}`, from: "user", text }]);
+          setDraft("");
+          setBusy(true);
+          try {
+            if (!BOT_API_URL) throw new Error("The assistant API is not connected yet. Set VITE_BOT_API_URL and rebuild the site.");
+            const response = await fetch(`${BOT_API_URL}/api/chat`, {
+              method: "POST",
+              headers: { "content-type": "application/json" },
+              body: JSON.stringify({ message: text }),
+            });
+            const payload = await response.json();
+            if (!response.ok) throw new Error(payload.error || "The assistant is temporarily unavailable.");
+            setMessages((current) => [...current, { id: `bot-${Date.now()}`, from: "bot", text: payload.answer || "No answer available." }]);
+          } catch (error) {
+            setMessages((current) => [...current, { id: `error-${Date.now()}`, from: "bot", text: error.message }]);
+          } finally {
+            setBusy(false);
+          }
+        }
+
+        return (
+          <aside className={`fixed bottom-24 right-20 z-[64] w-[min(23rem,calc(100vw-5.5rem))] sm:right-24 ${open ? "sm:w-[min(23rem,calc(100vw-7rem))]" : "w-auto"}`} aria-label="CricKuru assistant">
+            {open ? (
+              <div className="overflow-hidden rounded-[10px] border border-gold/30 bg-night/95 shadow-[0_18px_70px_rgba(0,0,0,0.42)] backdrop-blur-xl">
+                <div className="flex items-center justify-between gap-3 border-b border-white/10 px-4 py-3">
+                  <div className="flex items-center gap-2">
+                    <span className="grid h-9 w-9 place-items-center rounded-full border border-gold/35 bg-gold/10 text-gold"><Icon.Bot size={17} /></span>
+                    <div>
+                      <p className="text-[0.62rem] font-black uppercase tracking-[0.2em] text-gold">CricKuru assistant</p>
+                      <p className="text-xs font-bold text-white/48">CricHeroes snapshot guide</p>
+                    </div>
+                  </div>
+                  <button type="button" onClick={() => setOpen(false)} title="Close assistant" aria-label="Close assistant" className="grid h-9 w-9 place-items-center rounded-full border border-white/12 text-white/60 transition hover:border-gold/50 hover:text-gold"><Icon.X size={16} /></button>
+                </div>
+                <div ref={messagesRef} className="max-h-[min(24rem,52vh)] min-h-40 space-y-3 overflow-y-auto p-3" aria-live="polite">
+                  {messages.map((message) => (
+                    <div key={message.id} className={`flex ${message.from === "user" ? "justify-end" : "justify-start"}`}>
+                      <p className={`max-w-[90%] break-words rounded-[8px] border px-3 py-2 text-sm leading-5 ${message.from === "user" ? "border-cyan/25 bg-cyan/10 text-white/82" : "border-white/10 bg-white/[0.05] text-white/70"}`}>{message.text}</p>
+                    </div>
+                  ))}
+                  {busy && <p className="text-xs font-bold uppercase tracking-[0.12em] text-gold/70">Checking synced data...</p>}
+                </div>
+                <form onSubmit={sendMessage} className="flex items-center gap-2 border-t border-white/10 p-3">
+                  <input value={draft} onChange={(event) => setDraft(event.target.value)} maxLength={500} aria-label="Ask CricKuru assistant" placeholder="Ask about a player or match" className="min-h-11 min-w-0 flex-1 rounded-full border border-white/12 bg-white/[0.06] px-4 text-sm text-white outline-none placeholder:text-white/35 focus:border-gold/60" />
+                  <button type="submit" disabled={busy} title="Ask assistant" aria-label="Ask assistant" className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-gold text-night transition hover:bg-white disabled:cursor-wait disabled:opacity-50"><Icon.Send size={17} /></button>
+                </form>
+              </div>
+            ) : (
+              <button type="button" onClick={() => setOpen(true)} title="Open CricKuru assistant" aria-label="Open CricKuru assistant" className="relative grid h-14 w-14 place-items-center rounded-full border border-gold/45 bg-night/95 text-gold shadow-[0_8px_36px_rgba(0,0,0,0.35),0_0_24px_rgba(244,185,66,0.2)] transition hover:scale-105 hover:border-gold hover:text-white"><Icon.Bot size={23} /><span className="absolute right-1 top-1 h-2.5 w-2.5 rounded-full bg-gold shadow-[0_0_14px_rgba(244,185,66,0.85)]" /></button>
+            )}
+          </aside>
+        );
+      }
+
       function App() {
         const routerBasename = window.location.hostname.endsWith("github.io") ? "/crickuru" : "/";
 
@@ -6127,6 +6200,7 @@ const RouterContext = React.createContext(null);
                 <IndiaLiveStrip />
                 <Navbar />
                 <PlayerChat />
+                <CricKuruBot />
                 <Routes>
                   <Route path="/" element={<LandingPage />} />
                   <Route

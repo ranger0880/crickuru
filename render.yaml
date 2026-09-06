@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: crickuru-bot
+    runtime: node
+    rootDir: bot
+    buildCommand: "true"
+    startCommand: node server.js
+    envVars:
+      - key: CORS_ORIGINS
+        value: https://crickuru.com,https://www.crickuru.com
