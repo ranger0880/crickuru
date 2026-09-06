@@ -38,6 +38,7 @@ jobs:
         env:
           VITE_AUTH_API_URL: ${{ secrets.VITE_AUTH_API_URL }}
           VITE_GOOGLE_CLIENT_ID: ${{ secrets.VITE_GOOGLE_CLIENT_ID }}
+          VITE_BOT_API_URL: ${{ secrets.VITE_BOT_API_URL }}
         run: npm run build
 
       - name: Write deployment marker
