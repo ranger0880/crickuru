@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-07T05:45:51.835Z",
-  "lastCheckedAt": "2026-09-07T05:45:51.835Z",
-  "lastSuccessfulSyncAt": "2026-09-07T05:45:51.835Z",
+  "syncedAt": "2026-09-07T10:44:59.777Z",
+  "lastCheckedAt": "2026-09-07T10:44:59.777Z",
+  "lastSuccessfulSyncAt": "2026-09-07T10:44:59.777Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,9 +41,9 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 1,
+    "live": 2,
     "recent": 64,
-    "upcoming": 502,
+    "upcoming": 501,
     "total": 567
   },
   "all": [
@@ -61,7 +61,7 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "470/4 (99.4 Ov)"
+          "score": "683/7 (151.6 Ov)"
         },
         {
           "name": "South Zone",
@@ -72,38 +72,38 @@
       "dateLabel": "06 Sept 2026, 09:30 am",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Day 2: 1st Session",
+      "overview": "Day 2: 3rd Session",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-06T04:00:00.000Z",
       "rawId": 163061
     },
     {
-      "id": "upcoming-171180",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-171180",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
       "sourceScope": "global",
-      "title": "Mohali Kings vs Ludhiana Lions, 16th Match",
+      "title": "Ludhiana Lions vs Mohali Kings, 16th Match",
       "series": "Sher-E-Punjab T20 League, 2026",
       "teams": [
         {
-          "name": "Mohali Kings",
-          "shortName": "MHK",
-          "score": ""
-        },
-        {
           "name": "Ludhiana Lions",
           "shortName": "LDL",
-          "score": ""
+          "score": "213/6 (19.6 Ov)"
+        },
+        {
+          "name": "Mohali Kings",
+          "shortName": "MHK",
+          "score": "121/2 (12.6 Ov)"
         }
       ],
       "dateLabel": "07 Sept 2026, 01:00 pm",
       "time": "",
       "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Match starts at Sep 07, 07:30 GMT",
+      "overview": "Mohali Kings need 93 runs in 42 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171180",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-07T07:30:00.000Z",
@@ -17788,7 +17788,7 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "470/4 (99.4 Ov)"
+          "score": "683/7 (151.6 Ov)"
         },
         {
           "name": "South Zone",
@@ -17799,45 +17799,45 @@
       "dateLabel": "06 Sept 2026, 09:30 am",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Day 2: 1st Session",
+      "overview": "Day 2: 3rd Session",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-06T04:00:00.000Z",
       "rawId": 163061
-    }
-  ],
-  "upcoming": [
+    },
     {
-      "id": "upcoming-171180",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-171180",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
       "sourceScope": "global",
-      "title": "Mohali Kings vs Ludhiana Lions, 16th Match",
+      "title": "Ludhiana Lions vs Mohali Kings, 16th Match",
       "series": "Sher-E-Punjab T20 League, 2026",
       "teams": [
         {
-          "name": "Mohali Kings",
-          "shortName": "MHK",
-          "score": ""
-        },
-        {
           "name": "Ludhiana Lions",
           "shortName": "LDL",
-          "score": ""
+          "score": "213/6 (19.6 Ov)"
+        },
+        {
+          "name": "Mohali Kings",
+          "shortName": "MHK",
+          "score": "121/2 (12.6 Ov)"
         }
       ],
       "dateLabel": "07 Sept 2026, 01:00 pm",
       "time": "",
       "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Match starts at Sep 07, 07:30 GMT",
+      "overview": "Mohali Kings need 93 runs in 42 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171180",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-07T07:30:00.000Z",
       "rawId": 171180
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-169887",
       "status": "upcoming",
@@ -35518,9 +35518,9 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 0,
+      "live": 1,
       "recent": 0,
-      "upcoming": 1,
+      "upcoming": 0,
       "total": 1
     },
     {
@@ -35557,7 +35557,7 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "470/4 (99.4 Ov)"
+          "score": "683/7 (151.6 Ov)"
         },
         {
           "name": "South Zone",
@@ -35568,7 +35568,7 @@
       "dateLabel": "06 Sept 2026, 09:30 am",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Day 2: 1st Session",
+      "overview": "Day 2: 3rd Session",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-06T04:00:00.000Z",
@@ -40095,7 +40095,7 @@
             {
               "name": "East Zone",
               "shortName": "EZONE",
-              "score": "470/4 (99.4 Ov)"
+              "score": "683/7 (151.6 Ov)"
             },
             {
               "name": "South Zone",
@@ -40106,7 +40106,7 @@
           "dateLabel": "06 Sept 2026, 09:30 am",
           "time": "",
           "place": "MA Chidambaram Stadium, Chennai",
-          "overview": "Day 2: 1st Session",
+          "overview": "Day 2: 3rd Session",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-09-06T04:00:00.000Z",
