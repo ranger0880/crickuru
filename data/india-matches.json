@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-07T16:05:42.074Z",
-  "lastCheckedAt": "2026-09-07T16:05:42.074Z",
-  "lastSuccessfulSyncAt": "2026-09-07T16:05:42.074Z",
+  "syncedAt": "2026-09-07T19:53:28.446Z",
+  "lastCheckedAt": "2026-09-07T19:53:28.446Z",
+  "lastSuccessfulSyncAt": "2026-09-07T19:53:28.446Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,10 +41,10 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 2,
-    "recent": 65,
-    "upcoming": 501,
-    "total": 568
+    "live": 1,
+    "recent": 64,
+    "upcoming": 502,
+    "total": 567
   },
   "all": [
     {
@@ -79,35 +79,35 @@
       "rawId": 163061
     },
     {
-      "id": "live-171181",
-      "status": "live",
-      "statusLabel": "Live",
+      "id": "upcoming-171190",
+      "status": "upcoming",
+      "statusLabel": "Future",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
       "sourceScope": "global",
-      "title": "Fazilka Falcons vs Amritsar Soormas, 17th Match",
+      "title": "Amritsar Soormas vs Mohali Kings, 18th Match",
       "series": "Sher-E-Punjab T20 League, 2026",
       "teams": [
         {
-          "name": "Fazilka Falcons",
-          "shortName": "FZF",
-          "score": "191/6 (19.6 Ov)"
-        },
-        {
           "name": "Amritsar Soormas",
           "shortName": "AMS",
-          "score": "87/2 (7.3 Ov)"
+          "score": ""
+        },
+        {
+          "name": "Mohali Kings",
+          "shortName": "MHK",
+          "score": ""
         }
       ],
-      "dateLabel": "07 Sept 2026, 07:00 pm",
+      "dateLabel": "08 Sept 2026, 01:00 pm",
       "time": "",
       "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Amritsar Soormas need 105 runs in 75 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171181",
+      "overview": "Match starts at Sep 08, 07:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171190",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-07T13:30:00.000Z",
-      "rawId": 171181
+      "startTime": "2026-09-08T07:30:00.000Z",
+      "rawId": 171190
     },
     {
       "id": "upcoming-169887",
@@ -15641,38 +15641,6 @@
       "rawId": 164501
     },
     {
-      "id": "recent-171180",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Ludhiana Lions vs Mohali Kings, 16th Match",
-      "series": "Sher-E-Punjab T20 League, 2026",
-      "teams": [
-        {
-          "name": "Ludhiana Lions",
-          "shortName": "LDL",
-          "score": "213/6 (19.6 Ov)"
-        },
-        {
-          "name": "Mohali Kings",
-          "shortName": "MHK",
-          "score": "214/6 (19.6 Ov)"
-        }
-      ],
-      "dateLabel": "07 Sept 2026, 01:00 pm",
-      "time": "",
-      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Mohali Kings won by 4 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171180",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-07T07:30:00.000Z",
-      "rawId": 171180,
-      "starPerformers": []
-    },
-    {
       "id": "recent-169850",
       "status": "recent",
       "statusLabel": "Past",
@@ -17836,40 +17804,40 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-06T04:00:00.000Z",
       "rawId": 163061
-    },
+    }
+  ],
+  "upcoming": [
     {
-      "id": "live-171181",
-      "status": "live",
-      "statusLabel": "Live",
+      "id": "upcoming-171190",
+      "status": "upcoming",
+      "statusLabel": "Future",
       "level": "league",
       "levelLabel": "League / IPL",
       "sourceType": "league",
       "sourceScope": "global",
-      "title": "Fazilka Falcons vs Amritsar Soormas, 17th Match",
+      "title": "Amritsar Soormas vs Mohali Kings, 18th Match",
       "series": "Sher-E-Punjab T20 League, 2026",
       "teams": [
         {
-          "name": "Fazilka Falcons",
-          "shortName": "FZF",
-          "score": "191/6 (19.6 Ov)"
-        },
-        {
           "name": "Amritsar Soormas",
           "shortName": "AMS",
-          "score": "87/2 (7.3 Ov)"
+          "score": ""
+        },
+        {
+          "name": "Mohali Kings",
+          "shortName": "MHK",
+          "score": ""
         }
       ],
-      "dateLabel": "07 Sept 2026, 07:00 pm",
+      "dateLabel": "08 Sept 2026, 01:00 pm",
       "time": "",
       "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Amritsar Soormas need 105 runs in 75 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171181",
+      "overview": "Match starts at Sep 08, 07:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171190",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-07T13:30:00.000Z",
-      "rawId": 171181
-    }
-  ],
-  "upcoming": [
+      "startTime": "2026-09-08T07:30:00.000Z",
+      "rawId": 171190
+    },
     {
       "id": "upcoming-169887",
       "status": "upcoming",
@@ -33404,38 +33372,6 @@
   ],
   "recent": [
     {
-      "id": "recent-171180",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Ludhiana Lions vs Mohali Kings, 16th Match",
-      "series": "Sher-E-Punjab T20 League, 2026",
-      "teams": [
-        {
-          "name": "Ludhiana Lions",
-          "shortName": "LDL",
-          "score": "213/6 (19.6 Ov)"
-        },
-        {
-          "name": "Mohali Kings",
-          "shortName": "MHK",
-          "score": "214/6 (19.6 Ov)"
-        }
-      ],
-      "dateLabel": "07 Sept 2026, 01:00 pm",
-      "time": "",
-      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Mohali Kings won by 4 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171180",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-07T07:30:00.000Z",
-      "rawId": 171180,
-      "starPerformers": []
-    },
-    {
       "id": "recent-169850",
       "status": "recent",
       "statusLabel": "Past",
@@ -35582,10 +35518,10 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 1,
-      "recent": 1,
-      "upcoming": 0,
-      "total": 2
+      "live": 0,
+      "recent": 0,
+      "upcoming": 1,
+      "total": 1
     },
     {
       "id": "women",
