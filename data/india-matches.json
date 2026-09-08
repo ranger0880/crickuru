@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-08T00:30:31.357Z",
-  "lastCheckedAt": "2026-09-08T00:30:31.357Z",
-  "lastSuccessfulSyncAt": "2026-09-08T00:30:31.357Z",
+  "syncedAt": "2026-09-08T05:05:17.213Z",
+  "lastCheckedAt": "2026-09-08T05:05:17.213Z",
+  "lastSuccessfulSyncAt": "2026-09-08T05:05:17.213Z",
   "coverage": {
     "pathways": [
       "India",
@@ -66,13 +66,13 @@
         {
           "name": "South Zone",
           "shortName": "SZONE",
-          "score": ""
+          "score": "34/1 (11.6 Ov)"
         }
       ],
       "dateLabel": "06 Sept 2026, 09:30 am",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Day 2: Stumps",
+      "overview": "Day 3: 1st Session - South Zone trail by 674 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-06T04:00:00.000Z",
@@ -675,7 +675,7 @@
       "levelLabel": "International",
       "sourceType": "",
       "sourceScope": "india-men",
-      "title": "India vs TBC, 2nd Quarter-Final",
+      "title": "India vs A2, 2nd Quarter-Final",
       "series": "Asian Games 2026",
       "teams": [
         {
@@ -684,8 +684,8 @@
           "score": ""
         },
         {
-          "name": "TBC",
-          "shortName": "TBC",
+          "name": "A2",
+          "shortName": "A2",
           "score": ""
         }
       ],
@@ -17793,13 +17793,13 @@
         {
           "name": "South Zone",
           "shortName": "SZONE",
-          "score": ""
+          "score": "34/1 (11.6 Ov)"
         }
       ],
       "dateLabel": "06 Sept 2026, 09:30 am",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Day 2: Stumps",
+      "overview": "Day 3: 1st Session - South Zone trail by 674 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-06T04:00:00.000Z",
@@ -18404,7 +18404,7 @@
       "levelLabel": "International",
       "sourceType": "",
       "sourceScope": "india-men",
-      "title": "India vs TBC, 2nd Quarter-Final",
+      "title": "India vs A2, 2nd Quarter-Final",
       "series": "Asian Games 2026",
       "teams": [
         {
@@ -18413,8 +18413,8 @@
           "score": ""
         },
         {
-          "name": "TBC",
-          "shortName": "TBC",
+          "name": "A2",
+          "shortName": "A2",
           "score": ""
         }
       ],
@@ -35562,13 +35562,13 @@
         {
           "name": "South Zone",
           "shortName": "SZONE",
-          "score": ""
+          "score": "34/1 (11.6 Ov)"
         }
       ],
       "dateLabel": "06 Sept 2026, 09:30 am",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Day 2: Stumps",
+      "overview": "Day 3: 1st Session - South Zone trail by 674 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-06T04:00:00.000Z",
@@ -37439,7 +37439,7 @@
       "levelLabel": "International",
       "sourceType": "",
       "sourceScope": "india-men",
-      "title": "India vs TBC, 2nd Quarter-Final",
+      "title": "India vs A2, 2nd Quarter-Final",
       "series": "Asian Games 2026",
       "teams": [
         {
@@ -37448,8 +37448,8 @@
           "score": ""
         },
         {
-          "name": "TBC",
-          "shortName": "TBC",
+          "name": "A2",
+          "shortName": "A2",
           "score": ""
         }
       ],
@@ -39699,7 +39699,7 @@
           "levelLabel": "International",
           "sourceType": "",
           "sourceScope": "india-men",
-          "title": "India vs TBC, 2nd Quarter-Final",
+          "title": "India vs A2, 2nd Quarter-Final",
           "series": "Asian Games 2026",
           "teams": [
             {
@@ -39708,8 +39708,8 @@
               "score": ""
             },
             {
-              "name": "TBC",
-              "shortName": "TBC",
+              "name": "A2",
+              "shortName": "A2",
               "score": ""
             }
           ],
@@ -40100,13 +40100,13 @@
             {
               "name": "South Zone",
               "shortName": "SZONE",
-              "score": ""
+              "score": "34/1 (11.6 Ov)"
             }
           ],
           "dateLabel": "06 Sept 2026, 09:30 am",
           "time": "",
           "place": "MA Chidambaram Stadium, Chennai",
-          "overview": "Day 2: Stumps",
+          "overview": "Day 3: 1st Session - South Zone trail by 674 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-09-06T04:00:00.000Z",
