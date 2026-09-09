@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-09T05:11:29.502Z",
-  "lastCheckedAt": "2026-09-09T05:11:29.502Z",
-  "lastSuccessfulSyncAt": "2026-09-09T05:11:29.502Z",
+  "syncedAt": "2026-09-09T09:43:55.342Z",
+  "lastCheckedAt": "2026-09-09T09:43:55.342Z",
+  "lastSuccessfulSyncAt": "2026-09-09T09:43:55.342Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,8 +41,8 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 1,
-    "recent": 65,
+    "live": 2,
+    "recent": 64,
     "upcoming": 501,
     "total": 567
   },
@@ -61,22 +61,53 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "708/10 (162.6 Ov)"
+          "score": "708/10 (162.6 Ov) & 119/2 (25.5 Ov)"
         },
         {
           "name": "South Zone",
           "shortName": "SZONE",
-          "score": "300/6 (91.6 Ov)"
+          "score": "336/10 (107.3 Ov)"
         }
       ],
       "dateLabel": "06 Sept 2026, 09:30 am",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Day 4: 1st Session - South Zone trail by 408 runs",
+      "overview": "Day 4: 3rd Session - East Zone lead by 491 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-06T04:00:00.000Z",
       "rawId": 163061
+    },
+    {
+      "id": "live-171203",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Fazilka Falcons vs Ludhiana Lions, 20th Match",
+      "series": "Sher-E-Punjab T20 League, 2026",
+      "teams": [
+        {
+          "name": "Fazilka Falcons",
+          "shortName": "FZF",
+          "score": "200/3 (19.6 Ov)"
+        },
+        {
+          "name": "Ludhiana Lions",
+          "shortName": "LDL",
+          "score": "51/1 (4.1 Ov)"
+        }
+      ],
+      "dateLabel": "09 Sept 2026, 01:00 pm",
+      "time": "",
+      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "overview": "Ludhiana Lions need 150 runs in 95 balls",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171203",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-09T07:30:00.000Z",
+      "rawId": 171203
     },
     {
       "id": "upcoming-169887",
@@ -15610,38 +15641,6 @@
       "rawId": 164501
     },
     {
-      "id": "recent-171200",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Jalandhar Warriors vs Ludhiana Lions, 19th Match",
-      "series": "Sher-E-Punjab T20 League, 2026",
-      "teams": [
-        {
-          "name": "Jalandhar Warriors",
-          "shortName": "JLW",
-          "score": "169/8 (19.6 Ov)"
-        },
-        {
-          "name": "Ludhiana Lions",
-          "shortName": "LDL",
-          "score": "162/8 (19.6 Ov)"
-        }
-      ],
-      "dateLabel": "08 Sept 2026, 07:00 pm",
-      "time": "",
-      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Jalandhar Warriors won by 7 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171200",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-08T13:30:00.000Z",
-      "rawId": 171200,
-      "starPerformers": []
-    },
-    {
       "id": "recent-169850",
       "status": "recent",
       "statusLabel": "Past",
@@ -17789,22 +17788,53 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "708/10 (162.6 Ov)"
+          "score": "708/10 (162.6 Ov) & 119/2 (25.5 Ov)"
         },
         {
           "name": "South Zone",
           "shortName": "SZONE",
-          "score": "300/6 (91.6 Ov)"
+          "score": "336/10 (107.3 Ov)"
         }
       ],
       "dateLabel": "06 Sept 2026, 09:30 am",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Day 4: 1st Session - South Zone trail by 408 runs",
+      "overview": "Day 4: 3rd Session - East Zone lead by 491 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-06T04:00:00.000Z",
       "rawId": 163061
+    },
+    {
+      "id": "live-171203",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Fazilka Falcons vs Ludhiana Lions, 20th Match",
+      "series": "Sher-E-Punjab T20 League, 2026",
+      "teams": [
+        {
+          "name": "Fazilka Falcons",
+          "shortName": "FZF",
+          "score": "200/3 (19.6 Ov)"
+        },
+        {
+          "name": "Ludhiana Lions",
+          "shortName": "LDL",
+          "score": "51/1 (4.1 Ov)"
+        }
+      ],
+      "dateLabel": "09 Sept 2026, 01:00 pm",
+      "time": "",
+      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "overview": "Ludhiana Lions need 150 runs in 95 balls",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171203",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-09T07:30:00.000Z",
+      "rawId": 171203
     }
   ],
   "upcoming": [
@@ -33342,38 +33372,6 @@
   ],
   "recent": [
     {
-      "id": "recent-171200",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Jalandhar Warriors vs Ludhiana Lions, 19th Match",
-      "series": "Sher-E-Punjab T20 League, 2026",
-      "teams": [
-        {
-          "name": "Jalandhar Warriors",
-          "shortName": "JLW",
-          "score": "169/8 (19.6 Ov)"
-        },
-        {
-          "name": "Ludhiana Lions",
-          "shortName": "LDL",
-          "score": "162/8 (19.6 Ov)"
-        }
-      ],
-      "dateLabel": "08 Sept 2026, 07:00 pm",
-      "time": "",
-      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Jalandhar Warriors won by 7 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171200",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-08T13:30:00.000Z",
-      "rawId": 171200,
-      "starPerformers": []
-    },
-    {
       "id": "recent-169850",
       "status": "recent",
       "statusLabel": "Past",
@@ -35520,8 +35518,8 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 0,
-      "recent": 1,
+      "live": 1,
+      "recent": 0,
       "upcoming": 0,
       "total": 1
     },
@@ -35559,18 +35557,18 @@
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "708/10 (162.6 Ov)"
+          "score": "708/10 (162.6 Ov) & 119/2 (25.5 Ov)"
         },
         {
           "name": "South Zone",
           "shortName": "SZONE",
-          "score": "300/6 (91.6 Ov)"
+          "score": "336/10 (107.3 Ov)"
         }
       ],
       "dateLabel": "06 Sept 2026, 09:30 am",
       "time": "",
       "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Day 4: 1st Session - South Zone trail by 408 runs",
+      "overview": "Day 4: 3rd Session - East Zone lead by 491 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-06T04:00:00.000Z",
@@ -40097,18 +40095,18 @@
             {
               "name": "East Zone",
               "shortName": "EZONE",
-              "score": "708/10 (162.6 Ov)"
+              "score": "708/10 (162.6 Ov) & 119/2 (25.5 Ov)"
             },
             {
               "name": "South Zone",
               "shortName": "SZONE",
-              "score": "300/6 (91.6 Ov)"
+              "score": "336/10 (107.3 Ov)"
             }
           ],
           "dateLabel": "06 Sept 2026, 09:30 am",
           "time": "",
           "place": "MA Chidambaram Stadium, Chennai",
-          "overview": "Day 4: 1st Session - South Zone trail by 408 runs",
+          "overview": "Day 4: 3rd Session - East Zone lead by 491 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-09-06T04:00:00.000Z",
