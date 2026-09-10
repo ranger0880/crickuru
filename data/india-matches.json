@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-10T04:52:04.557Z",
-  "lastCheckedAt": "2026-09-10T04:52:04.557Z",
-  "lastSuccessfulSyncAt": "2026-09-10T04:52:04.557Z",
+  "syncedAt": "2026-09-10T09:13:57.168Z",
+  "lastCheckedAt": "2026-09-10T09:13:57.168Z",
+  "lastSuccessfulSyncAt": "2026-09-10T09:13:57.168Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,43 +41,12 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 1,
-    "recent": 64,
+    "live": 0,
+    "recent": 65,
     "upcoming": 501,
     "total": 566
   },
   "all": [
-    {
-      "id": "live-163061",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "East Zone vs South Zone, Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "East Zone",
-          "shortName": "EZONE",
-          "score": "708/10 (162.6 Ov) & 238/6 (59.4 Ov)"
-        },
-        {
-          "name": "South Zone",
-          "shortName": "SZONE",
-          "score": "336/10 (107.3 Ov)"
-        }
-      ],
-      "dateLabel": "06 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Day 5: 1st Session - East Zone lead by 610 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-06T04:00:00.000Z",
-      "rawId": 163061
-    },
     {
       "id": "upcoming-169887",
       "status": "upcoming",
@@ -15610,6 +15579,38 @@
       "rawId": 164501
     },
     {
+      "id": "recent-163061",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "East Zone vs South Zone, Final",
+      "series": "Duleep Trophy 2026",
+      "teams": [
+        {
+          "name": "East Zone",
+          "shortName": "EZONE",
+          "score": "708/10 (162.6 Ov) & 388/7 (99.2 Ov)"
+        },
+        {
+          "name": "South Zone",
+          "shortName": "SZONE",
+          "score": "336/10 (107.3 Ov)"
+        }
+      ],
+      "dateLabel": "06 Sept 2026, 09:30 am",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Match drawn (East Zone won on 1st innings) - Match drawn",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-06T04:00:00.000Z",
+      "rawId": 163061,
+      "starPerformers": []
+    },
+    {
       "id": "recent-169850",
       "status": "recent",
       "statusLabel": "Past",
@@ -17742,39 +17743,7 @@
       ]
     }
   ],
-  "live": [
-    {
-      "id": "live-163061",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "East Zone vs South Zone, Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "East Zone",
-          "shortName": "EZONE",
-          "score": "708/10 (162.6 Ov) & 238/6 (59.4 Ov)"
-        },
-        {
-          "name": "South Zone",
-          "shortName": "SZONE",
-          "score": "336/10 (107.3 Ov)"
-        }
-      ],
-      "dateLabel": "06 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Day 5: 1st Session - East Zone lead by 610 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-06T04:00:00.000Z",
-      "rawId": 163061
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "upcoming-169887",
@@ -33310,6 +33279,38 @@
   ],
   "recent": [
     {
+      "id": "recent-163061",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "East Zone vs South Zone, Final",
+      "series": "Duleep Trophy 2026",
+      "teams": [
+        {
+          "name": "East Zone",
+          "shortName": "EZONE",
+          "score": "708/10 (162.6 Ov) & 388/7 (99.2 Ov)"
+        },
+        {
+          "name": "South Zone",
+          "shortName": "SZONE",
+          "score": "336/10 (107.3 Ov)"
+        }
+      ],
+      "dateLabel": "06 Sept 2026, 09:30 am",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Match drawn (East Zone won on 1st innings) - Match drawn",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-06T04:00:00.000Z",
+      "rawId": 163061,
+      "starPerformers": []
+    },
+    {
       "id": "recent-169850",
       "status": "recent",
       "statusLabel": "Past",
@@ -35474,45 +35475,13 @@
       "id": "domestic",
       "label": "Domestic / State",
       "order": 4,
-      "live": 1,
-      "recent": 4,
+      "live": 0,
+      "recent": 5,
       "upcoming": 413,
       "total": 418
     }
   ],
   "importantMatches": [
-    {
-      "id": "live-163061",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "East Zone vs South Zone, Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "East Zone",
-          "shortName": "EZONE",
-          "score": "708/10 (162.6 Ov) & 238/6 (59.4 Ov)"
-        },
-        {
-          "name": "South Zone",
-          "shortName": "SZONE",
-          "score": "336/10 (107.3 Ov)"
-        }
-      ],
-      "dateLabel": "06 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "Day 5: 1st Session - East Zone lead by 610 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-06T04:00:00.000Z",
-      "rawId": 163061,
-      "importance": "Knockout stage"
-    },
     {
       "id": "upcoming-163851",
       "status": "upcoming",
@@ -37463,6 +37432,39 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-10T14:30:00.000Z",
       "rawId": 169887,
+      "importance": "Knockout stage"
+    },
+    {
+      "id": "recent-163061",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "East Zone vs South Zone, Final",
+      "series": "Duleep Trophy 2026",
+      "teams": [
+        {
+          "name": "East Zone",
+          "shortName": "EZONE",
+          "score": "708/10 (162.6 Ov) & 388/7 (99.2 Ov)"
+        },
+        {
+          "name": "South Zone",
+          "shortName": "SZONE",
+          "score": "336/10 (107.3 Ov)"
+        }
+      ],
+      "dateLabel": "06 Sept 2026, 09:30 am",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Match drawn (East Zone won on 1st innings) - Match drawn",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-06T04:00:00.000Z",
+      "rawId": 163061,
+      "starPerformers": [],
       "importance": "Knockout stage"
     },
     {
@@ -39881,9 +39883,9 @@
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "total": 5,
-      "live": 1,
+      "live": 0,
       "upcoming": 0,
-      "recent": 4,
+      "recent": 5,
       "startTime": "2026-08-23T04:00:00.000Z",
       "endTime": "2026-09-06T04:00:00.000Z",
       "matches": [
@@ -40020,9 +40022,9 @@
           "importance": "Knockout stage"
         },
         {
-          "id": "live-163061",
-          "status": "live",
-          "statusLabel": "Live",
+          "id": "recent-163061",
+          "status": "recent",
+          "statusLabel": "Past",
           "level": "domestic",
           "levelLabel": "Domestic / State",
           "sourceType": "domestic",
@@ -40033,7 +40035,7 @@
             {
               "name": "East Zone",
               "shortName": "EZONE",
-              "score": "708/10 (162.6 Ov) & 238/6 (59.4 Ov)"
+              "score": "708/10 (162.6 Ov) & 388/7 (99.2 Ov)"
             },
             {
               "name": "South Zone",
@@ -40044,11 +40046,12 @@
           "dateLabel": "06 Sept 2026, 09:30 am",
           "time": "",
           "place": "MA Chidambaram Stadium, Chennai",
-          "overview": "Day 5: 1st Session - East Zone lead by 610 runs",
+          "overview": "Match drawn (East Zone won on 1st innings) - Match drawn",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-09-06T04:00:00.000Z",
           "rawId": 163061,
+          "starPerformers": [],
           "importance": "Knockout stage"
         }
       ]
@@ -40059,6 +40062,39 @@
       "month": "2026-09",
       "label": "September 2026",
       "matches": [
+        {
+          "id": "recent-163061",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "domestic",
+          "sourceScope": "global",
+          "title": "East Zone vs South Zone, Final",
+          "series": "Duleep Trophy 2026",
+          "teams": [
+            {
+              "name": "East Zone",
+              "shortName": "EZONE",
+              "score": "708/10 (162.6 Ov) & 388/7 (99.2 Ov)"
+            },
+            {
+              "name": "South Zone",
+              "shortName": "SZONE",
+              "score": "336/10 (107.3 Ov)"
+            }
+          ],
+          "dateLabel": "06 Sept 2026, 09:30 am",
+          "time": "",
+          "place": "MA Chidambaram Stadium, Chennai",
+          "overview": "Match drawn (East Zone won on 1st innings) - Match drawn",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "startTime": "2026-09-06T04:00:00.000Z",
+          "rawId": 163061,
+          "starPerformers": [],
+          "importance": "Knockout stage"
+        },
         {
           "id": "recent-169850",
           "status": "recent",
