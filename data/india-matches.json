@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-11T01:22:07.414Z",
-  "lastCheckedAt": "2026-09-11T01:22:07.414Z",
-  "lastSuccessfulSyncAt": "2026-09-11T01:22:07.414Z",
+  "syncedAt": "2026-09-11T06:08:00.419Z",
+  "lastCheckedAt": "2026-09-11T06:08:00.419Z",
+  "lastSuccessfulSyncAt": "2026-09-11T06:08:00.419Z",
   "coverage": {
     "pathways": [
       "India",
@@ -15616,15 +15616,15 @@
       "statusLabel": "Past",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
       "title": "East Zone vs South Zone, Final",
       "series": "Duleep Trophy 2026",
       "teams": [
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "708/10 (162.6 Ov) & 388/7 (99.2 Ov)"
+          "score": "708/10 (163 Ov) & 388/7 (99.2 Ov)"
         },
         {
           "name": "South Zone",
@@ -15637,7 +15637,7 @@
       "place": "MA Chidambaram Stadium, Chennai",
       "overview": "East Zone won on 1st innings lead - Match drawn",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-09-06T04:00:00.000Z",
       "rawId": 163061,
       "starPerformers": []
@@ -33316,15 +33316,15 @@
       "statusLabel": "Past",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
       "title": "East Zone vs South Zone, Final",
       "series": "Duleep Trophy 2026",
       "teams": [
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "708/10 (162.6 Ov) & 388/7 (99.2 Ov)"
+          "score": "708/10 (163 Ov) & 388/7 (99.2 Ov)"
         },
         {
           "name": "South Zone",
@@ -33337,7 +33337,7 @@
       "place": "MA Chidambaram Stadium, Chennai",
       "overview": "East Zone won on 1st innings lead - Match drawn",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-09-06T04:00:00.000Z",
       "rawId": 163061,
       "starPerformers": []
@@ -37473,15 +37473,15 @@
       "statusLabel": "Past",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
       "title": "East Zone vs South Zone, Final",
       "series": "Duleep Trophy 2026",
       "teams": [
         {
           "name": "East Zone",
           "shortName": "EZONE",
-          "score": "708/10 (162.6 Ov) & 388/7 (99.2 Ov)"
+          "score": "708/10 (163 Ov) & 388/7 (99.2 Ov)"
         },
         {
           "name": "South Zone",
@@ -37494,7 +37494,7 @@
       "place": "MA Chidambaram Stadium, Chennai",
       "overview": "East Zone won on 1st innings lead - Match drawn",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
       "startTime": "2026-09-06T04:00:00.000Z",
       "rawId": 163061,
       "starPerformers": [],
@@ -40093,15 +40093,15 @@
           "statusLabel": "Past",
           "level": "domestic",
           "levelLabel": "Domestic / State",
-          "sourceType": "domestic",
-          "sourceScope": "global",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
           "title": "East Zone vs South Zone, Final",
           "series": "Duleep Trophy 2026",
           "teams": [
             {
               "name": "East Zone",
               "shortName": "EZONE",
-              "score": "708/10 (162.6 Ov) & 388/7 (99.2 Ov)"
+              "score": "708/10 (163 Ov) & 388/7 (99.2 Ov)"
             },
             {
               "name": "South Zone",
@@ -40114,7 +40114,7 @@
           "place": "MA Chidambaram Stadium, Chennai",
           "overview": "East Zone won on 1st innings lead - Match drawn",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
           "startTime": "2026-09-06T04:00:00.000Z",
           "rawId": 163061,
           "starPerformers": [],
@@ -40167,15 +40167,15 @@
           "statusLabel": "Past",
           "level": "domestic",
           "levelLabel": "Domestic / State",
-          "sourceType": "domestic",
-          "sourceScope": "global",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
           "title": "East Zone vs South Zone, Final",
           "series": "Duleep Trophy 2026",
           "teams": [
             {
               "name": "East Zone",
               "shortName": "EZONE",
-              "score": "708/10 (162.6 Ov) & 388/7 (99.2 Ov)"
+              "score": "708/10 (163 Ov) & 388/7 (99.2 Ov)"
             },
             {
               "name": "South Zone",
@@ -40188,7 +40188,7 @@
           "place": "MA Chidambaram Stadium, Chennai",
           "overview": "East Zone won on 1st innings lead - Match drawn",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
           "startTime": "2026-09-06T04:00:00.000Z",
           "rawId": 163061,
           "starPerformers": [],
