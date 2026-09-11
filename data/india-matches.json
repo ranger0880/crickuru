@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-11T15:02:03.422Z",
-  "lastCheckedAt": "2026-09-11T15:02:03.422Z",
-  "lastSuccessfulSyncAt": "2026-09-11T15:02:03.422Z",
+  "syncedAt": "2026-09-11T18:22:28.236Z",
+  "lastCheckedAt": "2026-09-11T18:22:28.236Z",
+  "lastSuccessfulSyncAt": "2026-09-11T18:22:28.236Z",
   "coverage": {
     "pathways": [
       "India",
@@ -117,7 +117,7 @@
       "levelLabel": "Women",
       "sourceType": "",
       "sourceScope": "india-women",
-      "title": "India Women vs TBC, Final",
+      "title": "India Women vs Sri Lanka Women, Final",
       "series": "Women's Asia Cup 2026",
       "teams": [
         {
@@ -126,8 +126,8 @@
           "score": ""
         },
         {
-          "name": "TBC",
-          "shortName": "TBC",
+          "name": "Sri Lanka Women",
+          "shortName": "SLW",
           "score": ""
         }
       ],
@@ -17815,7 +17815,7 @@
       "levelLabel": "Women",
       "sourceType": "",
       "sourceScope": "india-women",
-      "title": "India Women vs TBC, Final",
+      "title": "India Women vs Sri Lanka Women, Final",
       "series": "Women's Asia Cup 2026",
       "teams": [
         {
@@ -17824,8 +17824,8 @@
           "score": ""
         },
         {
-          "name": "TBC",
-          "shortName": "TBC",
+          "name": "Sri Lanka Women",
+          "shortName": "SLW",
           "score": ""
         }
       ],
@@ -37410,7 +37410,7 @@
       "levelLabel": "Women",
       "sourceType": "",
       "sourceScope": "india-women",
-      "title": "India Women vs TBC, Final",
+      "title": "India Women vs Sri Lanka Women, Final",
       "series": "Women's Asia Cup 2026",
       "teams": [
         {
@@ -37419,8 +37419,8 @@
           "score": ""
         },
         {
-          "name": "TBC",
-          "shortName": "TBC",
+          "name": "Sri Lanka Women",
+          "shortName": "SLW",
           "score": ""
         }
       ],
@@ -39917,7 +39917,7 @@
           "levelLabel": "Women",
           "sourceType": "",
           "sourceScope": "india-women",
-          "title": "India Women vs TBC, Final",
+          "title": "India Women vs Sri Lanka Women, Final",
           "series": "Women's Asia Cup 2026",
           "teams": [
             {
@@ -39926,8 +39926,8 @@
               "score": ""
             },
             {
-              "name": "TBC",
-              "shortName": "TBC",
+              "name": "Sri Lanka Women",
+              "shortName": "SLW",
               "score": ""
             }
           ],
