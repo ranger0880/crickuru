@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-12T09:34:46.256Z",
-  "lastCheckedAt": "2026-09-12T09:34:46.256Z",
-  "lastSuccessfulSyncAt": "2026-09-12T09:34:46.256Z",
+  "syncedAt": "2026-09-12T13:04:55.577Z",
+  "lastCheckedAt": "2026-09-12T13:04:55.577Z",
+  "lastSuccessfulSyncAt": "2026-09-12T13:04:55.577Z",
   "coverage": {
     "pathways": [
       "India",
@@ -48,40 +48,9 @@
   },
   "all": [
     {
-      "id": "live-171240",
+      "id": "live-155584",
       "status": "live",
       "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Mohali Kings vs Amritsar Soormas, Semi Final 1",
-      "series": "Sher-E-Punjab T20 League, 2026",
-      "teams": [
-        {
-          "name": "Mohali Kings",
-          "shortName": "MHK",
-          "score": "169/7 (19.6 Ov)"
-        },
-        {
-          "name": "Amritsar Soormas",
-          "shortName": "AMS",
-          "score": ""
-        }
-      ],
-      "dateLabel": "12 Sept 2026, 01:00 pm",
-      "time": "",
-      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Innings Break",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171240",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-12T07:30:00.000Z",
-      "rawId": 171240
-    },
-    {
-      "id": "upcoming-155584",
-      "status": "upcoming",
-      "statusLabel": "Future",
       "level": "women",
       "levelLabel": "Women",
       "sourceType": "",
@@ -92,7 +61,7 @@
         {
           "name": "India A Women",
           "shortName": "INDWA",
-          "score": ""
+          "score": "13 (2 Ov)"
         },
         {
           "name": "Australia A Women",
@@ -103,11 +72,42 @@
       "dateLabel": "12 Sept 2026, 06:00 pm",
       "time": "",
       "place": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
-      "overview": "Match starts at Sep 12, 12:30 GMT",
+      "overview": "India A Women opt to bat",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155584",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
       "startTime": "2026-09-12T12:30:00.000Z",
       "rawId": 155584
+    },
+    {
+      "id": "upcoming-171241",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Ludhiana Lions vs Jalandhar Warriors, Semi Final 2",
+      "series": "Sher-E-Punjab T20 League, 2026",
+      "teams": [
+        {
+          "name": "Ludhiana Lions",
+          "shortName": "LDL",
+          "score": ""
+        },
+        {
+          "name": "Jalandhar Warriors",
+          "shortName": "JLW",
+          "score": ""
+        }
+      ],
+      "dateLabel": "12 Sept 2026, 07:00 pm",
+      "time": "",
+      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "overview": "Match starts at Sep 12, 13:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171241",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-12T13:30:00.000Z",
+      "rawId": 171241
     },
     {
       "id": "upcoming-170103",
@@ -17776,42 +17776,9 @@
   ],
   "live": [
     {
-      "id": "live-171240",
+      "id": "live-155584",
       "status": "live",
       "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Mohali Kings vs Amritsar Soormas, Semi Final 1",
-      "series": "Sher-E-Punjab T20 League, 2026",
-      "teams": [
-        {
-          "name": "Mohali Kings",
-          "shortName": "MHK",
-          "score": "169/7 (19.6 Ov)"
-        },
-        {
-          "name": "Amritsar Soormas",
-          "shortName": "AMS",
-          "score": ""
-        }
-      ],
-      "dateLabel": "12 Sept 2026, 01:00 pm",
-      "time": "",
-      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Innings Break",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171240",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-12T07:30:00.000Z",
-      "rawId": 171240
-    }
-  ],
-  "upcoming": [
-    {
-      "id": "upcoming-155584",
-      "status": "upcoming",
-      "statusLabel": "Future",
       "level": "women",
       "levelLabel": "Women",
       "sourceType": "",
@@ -17822,7 +17789,7 @@
         {
           "name": "India A Women",
           "shortName": "INDWA",
-          "score": ""
+          "score": "13 (2 Ov)"
         },
         {
           "name": "Australia A Women",
@@ -17833,11 +17800,44 @@
       "dateLabel": "12 Sept 2026, 06:00 pm",
       "time": "",
       "place": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
-      "overview": "Match starts at Sep 12, 12:30 GMT",
+      "overview": "India A Women opt to bat",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155584",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
       "startTime": "2026-09-12T12:30:00.000Z",
       "rawId": 155584
+    }
+  ],
+  "upcoming": [
+    {
+      "id": "upcoming-171241",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Ludhiana Lions vs Jalandhar Warriors, Semi Final 2",
+      "series": "Sher-E-Punjab T20 League, 2026",
+      "teams": [
+        {
+          "name": "Ludhiana Lions",
+          "shortName": "LDL",
+          "score": ""
+        },
+        {
+          "name": "Jalandhar Warriors",
+          "shortName": "JLW",
+          "score": ""
+        }
+      ],
+      "dateLabel": "12 Sept 2026, 07:00 pm",
+      "time": "",
+      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "overview": "Match starts at Sep 12, 13:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171241",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-12T13:30:00.000Z",
+      "rawId": 171241
     },
     {
       "id": "upcoming-170103",
@@ -35520,18 +35520,18 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 1,
+      "live": 0,
       "recent": 0,
-      "upcoming": 0,
+      "upcoming": 1,
       "total": 1
     },
     {
       "id": "women",
       "label": "Women",
       "order": 3,
-      "live": 0,
+      "live": 1,
       "recent": 30,
-      "upcoming": 34,
+      "upcoming": 33,
       "total": 64
     },
     {
@@ -35545,38 +35545,6 @@
     }
   ],
   "importantMatches": [
-    {
-      "id": "live-171240",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Mohali Kings vs Amritsar Soormas, Semi Final 1",
-      "series": "Sher-E-Punjab T20 League, 2026",
-      "teams": [
-        {
-          "name": "Mohali Kings",
-          "shortName": "MHK",
-          "score": "169/7 (19.6 Ov)"
-        },
-        {
-          "name": "Amritsar Soormas",
-          "shortName": "AMS",
-          "score": ""
-        }
-      ],
-      "dateLabel": "12 Sept 2026, 01:00 pm",
-      "time": "",
-      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Innings Break",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171240",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-12T07:30:00.000Z",
-      "rawId": 171240,
-      "importance": "Knockout stage"
-    },
     {
       "id": "upcoming-163851",
       "status": "upcoming",
@@ -37527,6 +37495,38 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
       "startTime": "2026-09-13T14:30:00.000Z",
       "rawId": 169891,
+      "importance": "Knockout stage"
+    },
+    {
+      "id": "upcoming-171241",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Ludhiana Lions vs Jalandhar Warriors, Semi Final 2",
+      "series": "Sher-E-Punjab T20 League, 2026",
+      "teams": [
+        {
+          "name": "Ludhiana Lions",
+          "shortName": "LDL",
+          "score": ""
+        },
+        {
+          "name": "Jalandhar Warriors",
+          "shortName": "JLW",
+          "score": ""
+        }
+      ],
+      "dateLabel": "12 Sept 2026, 07:00 pm",
+      "time": "",
+      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "overview": "Match starts at Sep 12, 13:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171241",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-12T13:30:00.000Z",
+      "rawId": 171241,
       "importance": "Knockout stage"
     },
     {
@@ -40044,42 +40044,42 @@
       "level": "league",
       "levelLabel": "League / IPL",
       "total": 1,
-      "live": 1,
-      "upcoming": 0,
+      "live": 0,
+      "upcoming": 1,
       "recent": 0,
-      "startTime": "2026-09-12T07:30:00.000Z",
-      "endTime": "2026-09-12T07:30:00.000Z",
+      "startTime": "2026-09-12T13:30:00.000Z",
+      "endTime": "2026-09-12T13:30:00.000Z",
       "matches": [
         {
-          "id": "live-171240",
-          "status": "live",
-          "statusLabel": "Live",
+          "id": "upcoming-171241",
+          "status": "upcoming",
+          "statusLabel": "Future",
           "level": "league",
           "levelLabel": "League / IPL",
           "sourceType": "league",
           "sourceScope": "global",
-          "title": "Mohali Kings vs Amritsar Soormas, Semi Final 1",
+          "title": "Ludhiana Lions vs Jalandhar Warriors, Semi Final 2",
           "series": "Sher-E-Punjab T20 League, 2026",
           "teams": [
             {
-              "name": "Mohali Kings",
-              "shortName": "MHK",
-              "score": "169/7 (19.6 Ov)"
+              "name": "Ludhiana Lions",
+              "shortName": "LDL",
+              "score": ""
             },
             {
-              "name": "Amritsar Soormas",
-              "shortName": "AMS",
+              "name": "Jalandhar Warriors",
+              "shortName": "JLW",
               "score": ""
             }
           ],
-          "dateLabel": "12 Sept 2026, 01:00 pm",
+          "dateLabel": "12 Sept 2026, 07:00 pm",
           "time": "",
           "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-          "overview": "Innings Break",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171240",
+          "overview": "Match starts at Sep 12, 13:30 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171241",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-          "startTime": "2026-09-12T07:30:00.000Z",
-          "rawId": 171240,
+          "startTime": "2026-09-12T13:30:00.000Z",
+          "rawId": 171241,
           "importance": "Knockout stage"
         }
       ]
