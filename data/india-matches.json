@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-12T01:05:33.533Z",
-  "lastCheckedAt": "2026-09-12T01:05:33.533Z",
-  "lastSuccessfulSyncAt": "2026-09-12T01:05:33.533Z",
+  "syncedAt": "2026-09-12T05:41:02.620Z",
+  "lastCheckedAt": "2026-09-12T05:41:02.620Z",
+  "lastSuccessfulSyncAt": "2026-09-12T05:41:02.620Z",
   "coverage": {
     "pathways": [
       "India",
@@ -43,10 +43,41 @@
   "summary": {
     "live": 0,
     "recent": 65,
-    "upcoming": 501,
-    "total": 566
+    "upcoming": 502,
+    "total": 567
   },
   "all": [
+    {
+      "id": "upcoming-171240",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Mohali Kings vs Amritsar Soormas, Semi Final 1",
+      "series": "Sher-E-Punjab T20 League, 2026",
+      "teams": [
+        {
+          "name": "Mohali Kings",
+          "shortName": "MHK",
+          "score": ""
+        },
+        {
+          "name": "Amritsar Soormas",
+          "shortName": "AMS",
+          "score": ""
+        }
+      ],
+      "dateLabel": "12 Sept 2026, 01:00 pm",
+      "time": "",
+      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "overview": "Match starts at Sep 12, 07:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171240",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-12T07:30:00.000Z",
+      "rawId": 171240
+    },
     {
       "id": "upcoming-155584",
       "status": "upcoming",
@@ -15584,20 +15615,20 @@
       "statusLabel": "Past",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-women",
       "title": "India Women vs Bangladesh Women, Semi Final 1 (A1 v B2)",
       "series": "Women's Asia Cup 2026",
       "teams": [
         {
           "name": "India Women",
           "shortName": "INDW",
-          "score": "149/6 (19.6 Ov)"
+          "score": "149/6 (20 Ov)"
         },
         {
           "name": "Bangladesh Women",
           "shortName": "BANW",
-          "score": "109/7 (19.6 Ov)"
+          "score": "109/7 (20 Ov)"
         }
       ],
       "dateLabel": "10 Sept 2026, 08:00 pm",
@@ -15605,7 +15636,7 @@
       "place": "Dubai International Cricket Stadium, Dubai",
       "overview": "India Women won by 40 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169887",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-09-10T14:30:00.000Z",
       "rawId": 169887,
       "starPerformers": []
@@ -17745,6 +17776,37 @@
   ],
   "live": [],
   "upcoming": [
+    {
+      "id": "upcoming-171240",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Mohali Kings vs Amritsar Soormas, Semi Final 1",
+      "series": "Sher-E-Punjab T20 League, 2026",
+      "teams": [
+        {
+          "name": "Mohali Kings",
+          "shortName": "MHK",
+          "score": ""
+        },
+        {
+          "name": "Amritsar Soormas",
+          "shortName": "AMS",
+          "score": ""
+        }
+      ],
+      "dateLabel": "12 Sept 2026, 01:00 pm",
+      "time": "",
+      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "overview": "Match starts at Sep 12, 07:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171240",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-12T07:30:00.000Z",
+      "rawId": 171240
+    },
     {
       "id": "upcoming-155584",
       "status": "upcoming",
@@ -33284,20 +33346,20 @@
       "statusLabel": "Past",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-women",
       "title": "India Women vs Bangladesh Women, Semi Final 1 (A1 v B2)",
       "series": "Women's Asia Cup 2026",
       "teams": [
         {
           "name": "India Women",
           "shortName": "INDW",
-          "score": "149/6 (19.6 Ov)"
+          "score": "149/6 (20 Ov)"
         },
         {
           "name": "Bangladesh Women",
           "shortName": "BANW",
-          "score": "109/7 (19.6 Ov)"
+          "score": "109/7 (20 Ov)"
         }
       ],
       "dateLabel": "10 Sept 2026, 08:00 pm",
@@ -33305,7 +33367,7 @@
       "place": "Dubai International Cricket Stadium, Dubai",
       "overview": "India Women won by 40 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169887",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-09-10T14:30:00.000Z",
       "rawId": 169887,
       "starPerformers": []
@@ -35459,8 +35521,8 @@
       "order": 2,
       "live": 0,
       "recent": 0,
-      "upcoming": 0,
-      "total": 0
+      "upcoming": 1,
+      "total": 1
     },
     {
       "id": "women",
@@ -37435,25 +37497,57 @@
       "importance": "Knockout stage"
     },
     {
+      "id": "upcoming-171240",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Mohali Kings vs Amritsar Soormas, Semi Final 1",
+      "series": "Sher-E-Punjab T20 League, 2026",
+      "teams": [
+        {
+          "name": "Mohali Kings",
+          "shortName": "MHK",
+          "score": ""
+        },
+        {
+          "name": "Amritsar Soormas",
+          "shortName": "AMS",
+          "score": ""
+        }
+      ],
+      "dateLabel": "12 Sept 2026, 01:00 pm",
+      "time": "",
+      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "overview": "Match starts at Sep 12, 07:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171240",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-12T07:30:00.000Z",
+      "rawId": 171240,
+      "importance": "Knockout stage"
+    },
+    {
       "id": "recent-169887",
       "status": "recent",
       "statusLabel": "Past",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-women",
       "title": "India Women vs Bangladesh Women, Semi Final 1 (A1 v B2)",
       "series": "Women's Asia Cup 2026",
       "teams": [
         {
           "name": "India Women",
           "shortName": "INDW",
-          "score": "149/6 (19.6 Ov)"
+          "score": "149/6 (20 Ov)"
         },
         {
           "name": "Bangladesh Women",
           "shortName": "BANW",
-          "score": "109/7 (19.6 Ov)"
+          "score": "109/7 (20 Ov)"
         }
       ],
       "dateLabel": "10 Sept 2026, 08:00 pm",
@@ -37461,7 +37555,7 @@
       "place": "Dubai International Cricket Stadium, Dubai",
       "overview": "India Women won by 40 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169887",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-09-10T14:30:00.000Z",
       "rawId": 169887,
       "starPerformers": [],
@@ -39882,20 +39976,20 @@
           "statusLabel": "Past",
           "level": "women",
           "levelLabel": "Women",
-          "sourceType": "International",
-          "sourceScope": "global",
+          "sourceType": "",
+          "sourceScope": "india-women",
           "title": "India Women vs Bangladesh Women, Semi Final 1 (A1 v B2)",
           "series": "Women's Asia Cup 2026",
           "teams": [
             {
               "name": "India Women",
               "shortName": "INDW",
-              "score": "149/6 (19.6 Ov)"
+              "score": "149/6 (20 Ov)"
             },
             {
               "name": "Bangladesh Women",
               "shortName": "BANW",
-              "score": "109/7 (19.6 Ov)"
+              "score": "109/7 (20 Ov)"
             }
           ],
           "dateLabel": "10 Sept 2026, 08:00 pm",
@@ -39903,7 +39997,7 @@
           "place": "Dubai International Cricket Stadium, Dubai",
           "overview": "India Women won by 40 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169887",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
           "startTime": "2026-09-10T14:30:00.000Z",
           "rawId": 169887,
           "starPerformers": [],
@@ -39939,6 +40033,52 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
           "startTime": "2026-09-13T14:30:00.000Z",
           "rawId": 169891,
+          "importance": "Knockout stage"
+        }
+      ]
+    },
+    {
+      "id": "sher-e-punjab-t20-league-2026",
+      "series": "Sher-E-Punjab T20 League, 2026",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "total": 1,
+      "live": 0,
+      "upcoming": 1,
+      "recent": 0,
+      "startTime": "2026-09-12T07:30:00.000Z",
+      "endTime": "2026-09-12T07:30:00.000Z",
+      "matches": [
+        {
+          "id": "upcoming-171240",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "league",
+          "levelLabel": "League / IPL",
+          "sourceType": "league",
+          "sourceScope": "global",
+          "title": "Mohali Kings vs Amritsar Soormas, Semi Final 1",
+          "series": "Sher-E-Punjab T20 League, 2026",
+          "teams": [
+            {
+              "name": "Mohali Kings",
+              "shortName": "MHK",
+              "score": ""
+            },
+            {
+              "name": "Amritsar Soormas",
+              "shortName": "AMS",
+              "score": ""
+            }
+          ],
+          "dateLabel": "12 Sept 2026, 01:00 pm",
+          "time": "",
+          "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+          "overview": "Match starts at Sep 12, 07:30 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171240",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "startTime": "2026-09-12T07:30:00.000Z",
+          "rawId": 171240,
           "importance": "Knockout stage"
         }
       ]
@@ -40134,20 +40274,20 @@
           "statusLabel": "Past",
           "level": "women",
           "levelLabel": "Women",
-          "sourceType": "International",
-          "sourceScope": "global",
+          "sourceType": "",
+          "sourceScope": "india-women",
           "title": "India Women vs Bangladesh Women, Semi Final 1 (A1 v B2)",
           "series": "Women's Asia Cup 2026",
           "teams": [
             {
               "name": "India Women",
               "shortName": "INDW",
-              "score": "149/6 (19.6 Ov)"
+              "score": "149/6 (20 Ov)"
             },
             {
               "name": "Bangladesh Women",
               "shortName": "BANW",
-              "score": "109/7 (19.6 Ov)"
+              "score": "109/7 (20 Ov)"
             }
           ],
           "dateLabel": "10 Sept 2026, 08:00 pm",
@@ -40155,7 +40295,7 @@
           "place": "Dubai International Cricket Stadium, Dubai",
           "overview": "India Women won by 40 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169887",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
           "startTime": "2026-09-10T14:30:00.000Z",
           "rawId": 169887,
           "starPerformers": [],
