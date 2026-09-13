@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-13T13:55:39.141Z",
-  "lastCheckedAt": "2026-09-13T13:55:39.141Z",
-  "lastSuccessfulSyncAt": "2026-09-13T13:55:39.141Z",
+  "syncedAt": "2026-09-13T17:10:44.578Z",
+  "lastCheckedAt": "2026-09-13T17:10:44.578Z",
+  "lastSuccessfulSyncAt": "2026-09-13T17:10:44.578Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,47 +41,47 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 0,
+    "live": 2,
     "recent": 65,
-    "upcoming": 500,
+    "upcoming": 498,
     "total": 565
   },
   "all": [
     {
-      "id": "upcoming-170103",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "International",
+      "id": "live-171243",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
       "sourceScope": "global",
-      "title": "Afghanistan vs India, 1st T20I",
-      "series": "Afghanistan vs India in India 2026",
+      "title": "Ludhiana Lions vs Amritsar Soormas, Final",
+      "series": "Sher-E-Punjab T20 League, 2026",
       "teams": [
         {
-          "name": "Afghanistan",
-          "shortName": "AFG",
-          "score": ""
+          "name": "Ludhiana Lions",
+          "shortName": "LDL",
+          "score": "142/10 (19.6 Ov)"
         },
         {
-          "name": "India",
-          "shortName": "IND",
-          "score": ""
+          "name": "Amritsar Soormas",
+          "shortName": "AMS",
+          "score": "100/2 (11.6 Ov)"
         }
       ],
-      "dateLabel": "13 Sept 2026, 07:30 pm",
+      "dateLabel": "13 Sept 2026, 07:00 pm",
       "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "India opt to bowl",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170103",
+      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "overview": "Amritsar Soormas need 43 runs in 48 balls",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171243",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-13T14:00:00.000Z",
-      "rawId": 170103
+      "startTime": "2026-09-13T13:30:00.000Z",
+      "rawId": 171243
     },
     {
-      "id": "upcoming-169891",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-169891",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "women",
       "levelLabel": "Women",
       "sourceType": "International",
@@ -92,18 +92,18 @@
         {
           "name": "India Women",
           "shortName": "INDW",
-          "score": ""
+          "score": "183/5 (19.6 Ov)"
         },
         {
           "name": "Sri Lanka Women",
           "shortName": "SLW",
-          "score": ""
+          "score": "63/3 (9.6 Ov)"
         }
       ],
       "dateLabel": "13 Sept 2026, 08:00 pm",
       "time": "",
       "place": "Dubai International Cricket Stadium, Dubai",
-      "overview": "Match starts at Sep 13, 14:30 GMT",
+      "overview": "Sri Lanka Women need 121 runs in 60 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169891",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-13T14:30:00.000Z",
@@ -15548,6 +15548,38 @@
       "rawId": 164501
     },
     {
+      "id": "recent-170103",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "Afghanistan vs India, 1st T20I",
+      "series": "Afghanistan vs India in India 2026",
+      "teams": [
+        {
+          "name": "Afghanistan",
+          "shortName": "AFG",
+          "score": "156/8 (19.6 Ov)"
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "157/3 (13.4 Ov)"
+        }
+      ],
+      "dateLabel": "13 Sept 2026, 07:30 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "India won by 7 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170103",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-13T14:00:00.000Z",
+      "rawId": 170103,
+      "starPerformers": []
+    },
+    {
       "id": "recent-155584",
       "status": "recent",
       "statusLabel": "Past",
@@ -16238,38 +16270,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-07-13T04:30:00.000Z",
       "rawId": 157226,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-129453",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
-      "title": "England vs India, 5th T20I",
-      "series": "India tour of England, 2026",
-      "teams": [
-        {
-          "name": "England",
-          "shortName": "ENG",
-          "score": "257/3 (20 Ov)"
-        },
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": "201/8 (20 Ov)"
-        }
-      ],
-      "dateLabel": "11 Jul 2026, 07:00 pm",
-      "time": "",
-      "place": "The Rose Bowl, Southampton",
-      "overview": "England won by 56 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129453",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
-      "startTime": "2026-07-11T13:30:00.000Z",
-      "rawId": 129453,
       "starPerformers": []
     },
     {
@@ -17712,43 +17712,42 @@
       ]
     }
   ],
-  "live": [],
-  "upcoming": [
+  "live": [
     {
-      "id": "upcoming-170103",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "International",
+      "id": "live-171243",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
       "sourceScope": "global",
-      "title": "Afghanistan vs India, 1st T20I",
-      "series": "Afghanistan vs India in India 2026",
+      "title": "Ludhiana Lions vs Amritsar Soormas, Final",
+      "series": "Sher-E-Punjab T20 League, 2026",
       "teams": [
         {
-          "name": "Afghanistan",
-          "shortName": "AFG",
-          "score": ""
+          "name": "Ludhiana Lions",
+          "shortName": "LDL",
+          "score": "142/10 (19.6 Ov)"
         },
         {
-          "name": "India",
-          "shortName": "IND",
-          "score": ""
+          "name": "Amritsar Soormas",
+          "shortName": "AMS",
+          "score": "100/2 (11.6 Ov)"
         }
       ],
-      "dateLabel": "13 Sept 2026, 07:30 pm",
+      "dateLabel": "13 Sept 2026, 07:00 pm",
       "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "India opt to bowl",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170103",
+      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "overview": "Amritsar Soormas need 43 runs in 48 balls",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171243",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-13T14:00:00.000Z",
-      "rawId": 170103
+      "startTime": "2026-09-13T13:30:00.000Z",
+      "rawId": 171243
     },
     {
-      "id": "upcoming-169891",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-169891",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "women",
       "levelLabel": "Women",
       "sourceType": "International",
@@ -17759,23 +17758,25 @@
         {
           "name": "India Women",
           "shortName": "INDW",
-          "score": ""
+          "score": "183/5 (19.6 Ov)"
         },
         {
           "name": "Sri Lanka Women",
           "shortName": "SLW",
-          "score": ""
+          "score": "63/3 (9.6 Ov)"
         }
       ],
       "dateLabel": "13 Sept 2026, 08:00 pm",
       "time": "",
       "place": "Dubai International Cricket Stadium, Dubai",
-      "overview": "Match starts at Sep 13, 14:30 GMT",
+      "overview": "Sri Lanka Women need 121 runs in 60 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169891",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-13T14:30:00.000Z",
       "rawId": 169891
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-155595",
       "status": "upcoming",
@@ -33217,6 +33218,38 @@
   ],
   "recent": [
     {
+      "id": "recent-170103",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "Afghanistan vs India, 1st T20I",
+      "series": "Afghanistan vs India in India 2026",
+      "teams": [
+        {
+          "name": "Afghanistan",
+          "shortName": "AFG",
+          "score": "156/8 (19.6 Ov)"
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "157/3 (13.4 Ov)"
+        }
+      ],
+      "dateLabel": "13 Sept 2026, 07:30 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "India won by 7 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170103",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-13T14:00:00.000Z",
+      "rawId": 170103,
+      "starPerformers": []
+    },
+    {
       "id": "recent-155584",
       "status": "recent",
       "statusLabel": "Past",
@@ -33907,38 +33940,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-07-13T04:30:00.000Z",
       "rawId": 157226,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-129453",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
-      "title": "England vs India, 5th T20I",
-      "series": "India tour of England, 2026",
-      "teams": [
-        {
-          "name": "England",
-          "shortName": "ENG",
-          "score": "257/3 (20 Ov)"
-        },
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": "201/8 (20 Ov)"
-        }
-      ],
-      "dateLabel": "11 Jul 2026, 07:00 pm",
-      "time": "",
-      "place": "The Rose Bowl, Southampton",
-      "overview": "England won by 56 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129453",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
-      "startTime": "2026-07-11T13:30:00.000Z",
-      "rawId": 129453,
       "starPerformers": []
     },
     {
@@ -35388,25 +35389,25 @@
       "order": 1,
       "live": 0,
       "recent": 30,
-      "upcoming": 54,
-      "total": 84
+      "upcoming": 53,
+      "total": 83
     },
     {
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 0,
+      "live": 1,
       "recent": 0,
       "upcoming": 0,
-      "total": 0
+      "total": 1
     },
     {
       "id": "women",
       "label": "Women",
       "order": 3,
-      "live": 0,
+      "live": 1,
       "recent": 30,
-      "upcoming": 33,
+      "upcoming": 32,
       "total": 63
     },
     {
@@ -35420,6 +35421,70 @@
     }
   ],
   "importantMatches": [
+    {
+      "id": "live-169891",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "India Women vs Sri Lanka Women, Final",
+      "series": "Women's Asia Cup 2026",
+      "teams": [
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": "183/5 (19.6 Ov)"
+        },
+        {
+          "name": "Sri Lanka Women",
+          "shortName": "SLW",
+          "score": "63/3 (9.6 Ov)"
+        }
+      ],
+      "dateLabel": "13 Sept 2026, 08:00 pm",
+      "time": "",
+      "place": "Dubai International Cricket Stadium, Dubai",
+      "overview": "Sri Lanka Women need 121 runs in 60 balls",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169891",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-13T14:30:00.000Z",
+      "rawId": 169891,
+      "importance": "Knockout stage"
+    },
+    {
+      "id": "live-171243",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Ludhiana Lions vs Amritsar Soormas, Final",
+      "series": "Sher-E-Punjab T20 League, 2026",
+      "teams": [
+        {
+          "name": "Ludhiana Lions",
+          "shortName": "LDL",
+          "score": "142/10 (19.6 Ov)"
+        },
+        {
+          "name": "Amritsar Soormas",
+          "shortName": "AMS",
+          "score": "100/2 (11.6 Ov)"
+        }
+      ],
+      "dateLabel": "13 Sept 2026, 07:00 pm",
+      "time": "",
+      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "overview": "Amritsar Soormas need 43 runs in 48 balls",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171243",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-13T13:30:00.000Z",
+      "rawId": 171243,
+      "importance": "Knockout stage"
+    },
     {
       "id": "upcoming-163851",
       "status": "upcoming",
@@ -37338,38 +37403,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
       "startTime": "2026-09-18T05:00:00.000Z",
       "rawId": 170933,
-      "importance": "Knockout stage"
-    },
-    {
-      "id": "upcoming-169891",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India Women vs Sri Lanka Women, Final",
-      "series": "Women's Asia Cup 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        },
-        {
-          "name": "Sri Lanka Women",
-          "shortName": "SLW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "13 Sept 2026, 08:00 pm",
-      "time": "",
-      "place": "Dubai International Cricket Stadium, Dubai",
-      "overview": "Match starts at Sep 13, 14:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169891",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-13T14:30:00.000Z",
-      "rawId": 169891,
       "importance": "Knockout stage"
     },
     {
@@ -39688,8 +39721,8 @@
       "level": "women",
       "levelLabel": "Women",
       "total": 5,
-      "live": 0,
-      "upcoming": 1,
+      "live": 1,
+      "upcoming": 0,
       "recent": 4,
       "startTime": "2026-08-30T14:30:00.000Z",
       "endTime": "2026-09-13T14:30:00.000Z",
@@ -39848,9 +39881,9 @@
           "importance": "Knockout stage"
         },
         {
-          "id": "upcoming-169891",
-          "status": "upcoming",
-          "statusLabel": "Future",
+          "id": "live-169891",
+          "status": "live",
+          "statusLabel": "Live",
           "level": "women",
           "levelLabel": "Women",
           "sourceType": "International",
@@ -39861,22 +39894,68 @@
             {
               "name": "India Women",
               "shortName": "INDW",
-              "score": ""
+              "score": "183/5 (19.6 Ov)"
             },
             {
               "name": "Sri Lanka Women",
               "shortName": "SLW",
-              "score": ""
+              "score": "63/3 (9.6 Ov)"
             }
           ],
           "dateLabel": "13 Sept 2026, 08:00 pm",
           "time": "",
           "place": "Dubai International Cricket Stadium, Dubai",
-          "overview": "Match starts at Sep 13, 14:30 GMT",
+          "overview": "Sri Lanka Women need 121 runs in 60 balls",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169891",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-09-13T14:30:00.000Z",
           "rawId": 169891,
+          "importance": "Knockout stage"
+        }
+      ]
+    },
+    {
+      "id": "sher-e-punjab-t20-league-2026",
+      "series": "Sher-E-Punjab T20 League, 2026",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "total": 1,
+      "live": 1,
+      "upcoming": 0,
+      "recent": 0,
+      "startTime": "2026-09-13T13:30:00.000Z",
+      "endTime": "2026-09-13T13:30:00.000Z",
+      "matches": [
+        {
+          "id": "live-171243",
+          "status": "live",
+          "statusLabel": "Live",
+          "level": "league",
+          "levelLabel": "League / IPL",
+          "sourceType": "league",
+          "sourceScope": "global",
+          "title": "Ludhiana Lions vs Amritsar Soormas, Final",
+          "series": "Sher-E-Punjab T20 League, 2026",
+          "teams": [
+            {
+              "name": "Ludhiana Lions",
+              "shortName": "LDL",
+              "score": "142/10 (19.6 Ov)"
+            },
+            {
+              "name": "Amritsar Soormas",
+              "shortName": "AMS",
+              "score": "100/2 (11.6 Ov)"
+            }
+          ],
+          "dateLabel": "13 Sept 2026, 07:00 pm",
+          "time": "",
+          "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+          "overview": "Amritsar Soormas need 43 runs in 48 balls",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171243",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "startTime": "2026-09-13T13:30:00.000Z",
+          "rawId": 171243,
           "importance": "Knockout stage"
         }
       ]
