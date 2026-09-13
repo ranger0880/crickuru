@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-13T19:26:51.114Z",
-  "lastCheckedAt": "2026-09-13T19:26:51.114Z",
-  "lastSuccessfulSyncAt": "2026-09-13T19:26:51.114Z",
+  "syncedAt": "2026-09-13T21:33:05.289Z",
+  "lastCheckedAt": "2026-09-13T21:33:05.289Z",
+  "lastSuccessfulSyncAt": "2026-09-13T21:33:05.289Z",
   "coverage": {
     "pathways": [
       "India",
@@ -15579,14 +15579,7 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-13T13:30:00.000Z",
       "rawId": 171243,
-      "starPerformers": [
-        {
-          "name": "Mayank Markande",
-          "performance": "3-17",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171243"
-        }
-      ]
+      "starPerformers": []
     },
     {
       "id": "recent-155584",
@@ -33225,14 +33218,7 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-13T13:30:00.000Z",
       "rawId": 171243,
-      "starPerformers": [
-        {
-          "name": "Mayank Markande",
-          "performance": "3-17",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171243"
-        }
-      ]
+      "starPerformers": []
     },
     {
       "id": "recent-155584",
@@ -37357,14 +37343,7 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-13T13:30:00.000Z",
       "rawId": 171243,
-      "starPerformers": [
-        {
-          "name": "Mayank Markande",
-          "performance": "3-17",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171243"
-        }
-      ],
+      "starPerformers": [],
       "importance": "Knockout stage"
     },
     {
@@ -39919,14 +39898,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-09-13T13:30:00.000Z",
           "rawId": 171243,
-          "starPerformers": [
-            {
-              "name": "Mayank Markande",
-              "performance": "3-17",
-              "label": "Player of the Match",
-              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171243"
-            }
-          ],
+          "starPerformers": [],
           "importance": "Knockout stage"
         }
       ]
@@ -40179,14 +40151,7 @@
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-09-13T13:30:00.000Z",
           "rawId": 171243,
-          "starPerformers": [
-            {
-              "name": "Mayank Markande",
-              "performance": "3-17",
-              "label": "Player of the Match",
-              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171243"
-            }
-          ],
+          "starPerformers": [],
           "importance": "Knockout stage"
         },
         {
