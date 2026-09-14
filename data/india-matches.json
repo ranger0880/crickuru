@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-13T23:25:51.735Z",
-  "lastCheckedAt": "2026-09-13T23:25:51.735Z",
-  "lastSuccessfulSyncAt": "2026-09-13T23:25:51.735Z",
+  "syncedAt": "2026-09-14T01:19:23.452Z",
+  "lastCheckedAt": "2026-09-14T01:19:23.452Z",
+  "lastSuccessfulSyncAt": "2026-09-14T01:19:23.452Z",
   "coverage": {
     "pathways": [
       "India",
@@ -42,9 +42,9 @@
   },
   "summary": {
     "live": 0,
-    "recent": 66,
+    "recent": 61,
     "upcoming": 498,
-    "total": 564
+    "total": 559
   },
   "all": [
     {
@@ -15653,38 +15653,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-163061",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "East Zone vs South Zone, Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "East Zone",
-          "shortName": "EZONE",
-          "score": "708/10 (163 Ov) & 388/7 (99.2 Ov)"
-        },
-        {
-          "name": "South Zone",
-          "shortName": "SZONE",
-          "score": "336/10 (107.3 Ov)"
-        }
-      ],
-      "dateLabel": "06 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "East Zone won on 1st innings lead - Match drawn",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-09-06T04:00:00.000Z",
-      "rawId": 163061,
-      "starPerformers": []
-    },
-    {
       "id": "recent-169850",
       "status": "recent",
       "statusLabel": "Past",
@@ -15802,70 +15770,6 @@
       ]
     },
     {
-      "id": "recent-163047",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "North Zone vs South Zone, 2nd Semi-Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "North Zone",
-          "shortName": "NZONE",
-          "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
-        },
-        {
-          "name": "South Zone",
-          "shortName": "SZONE",
-          "score": "312/10 (100.3 Ov) & 182/3 (43.1 Ov)"
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "South Zone won by 7 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-08-30T04:00:00.000Z",
-      "rawId": 163047,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-163043",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Central Zone vs East Zone, 1st Semi-Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "Central Zone",
-          "shortName": "CZONE",
-          "score": "266/10 (80.1 Ov) & 158/10 (50.2 Ov)"
-        },
-        {
-          "name": "East Zone",
-          "shortName": "EZONE",
-          "score": "266/10 (57 Ov) & 162/6 (39.3 Ov)"
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "East Zone won by 4 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-08-30T04:00:00.000Z",
-      "rawId": 163043,
-      "starPerformers": []
-    },
-    {
       "id": "recent-163017",
       "status": "recent",
       "statusLabel": "Past",
@@ -15895,70 +15799,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-08-23T04:30:00.000Z",
       "rawId": 163017,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-163031",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "North Zone vs West Zone, 2nd Quarter final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "North Zone",
-          "shortName": "NZONE",
-          "score": "251/10 (66.5 Ov) & 222/10 (51 Ov)"
-        },
-        {
-          "name": "West Zone",
-          "shortName": "WZONE",
-          "score": "187/10 (65.4 Ov) & 234/10 (57.3 Ov)"
-        }
-      ],
-      "dateLabel": "23 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "North Zone won by 52 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-08-23T04:00:00.000Z",
-      "rawId": 163031,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-163027",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "East Zone vs North East Zone, 1st Quarter final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "East Zone",
-          "shortName": "EZONE",
-          "score": "467/10 (112.5 Ov)"
-        },
-        {
-          "name": "North East Zone",
-          "shortName": "NEZONE",
-          "score": "111/10 (42.5 Ov) & 146/10 (50 Ov)"
-        }
-      ],
-      "dateLabel": "23 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "East Zone won by an innings and 210 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-08-23T04:00:00.000Z",
-      "rawId": 163027,
       "starPerformers": []
     },
     {
@@ -33299,38 +33139,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-163061",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "East Zone vs South Zone, Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "East Zone",
-          "shortName": "EZONE",
-          "score": "708/10 (163 Ov) & 388/7 (99.2 Ov)"
-        },
-        {
-          "name": "South Zone",
-          "shortName": "SZONE",
-          "score": "336/10 (107.3 Ov)"
-        }
-      ],
-      "dateLabel": "06 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "East Zone won on 1st innings lead - Match drawn",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-09-06T04:00:00.000Z",
-      "rawId": 163061,
-      "starPerformers": []
-    },
-    {
       "id": "recent-169850",
       "status": "recent",
       "statusLabel": "Past",
@@ -33448,70 +33256,6 @@
       ]
     },
     {
-      "id": "recent-163047",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "North Zone vs South Zone, 2nd Semi-Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "North Zone",
-          "shortName": "NZONE",
-          "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
-        },
-        {
-          "name": "South Zone",
-          "shortName": "SZONE",
-          "score": "312/10 (100.3 Ov) & 182/3 (43.1 Ov)"
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "South Zone won by 7 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-08-30T04:00:00.000Z",
-      "rawId": 163047,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-163043",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Central Zone vs East Zone, 1st Semi-Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "Central Zone",
-          "shortName": "CZONE",
-          "score": "266/10 (80.1 Ov) & 158/10 (50.2 Ov)"
-        },
-        {
-          "name": "East Zone",
-          "shortName": "EZONE",
-          "score": "266/10 (57 Ov) & 162/6 (39.3 Ov)"
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "East Zone won by 4 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-08-30T04:00:00.000Z",
-      "rawId": 163043,
-      "starPerformers": []
-    },
-    {
       "id": "recent-163017",
       "status": "recent",
       "statusLabel": "Past",
@@ -33541,70 +33285,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-08-23T04:30:00.000Z",
       "rawId": 163017,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-163031",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "North Zone vs West Zone, 2nd Quarter final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "North Zone",
-          "shortName": "NZONE",
-          "score": "251/10 (66.5 Ov) & 222/10 (51 Ov)"
-        },
-        {
-          "name": "West Zone",
-          "shortName": "WZONE",
-          "score": "187/10 (65.4 Ov) & 234/10 (57.3 Ov)"
-        }
-      ],
-      "dateLabel": "23 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "North Zone won by 52 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-08-23T04:00:00.000Z",
-      "rawId": 163031,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-163027",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "East Zone vs North East Zone, 1st Quarter final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "East Zone",
-          "shortName": "EZONE",
-          "score": "467/10 (112.5 Ov)"
-        },
-        {
-          "name": "North East Zone",
-          "shortName": "NEZONE",
-          "score": "111/10 (42.5 Ov) & 146/10 (50 Ov)"
-        }
-      ],
-      "dateLabel": "23 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "East Zone won by an innings and 210 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-08-23T04:00:00.000Z",
-      "rawId": 163027,
       "starPerformers": []
     },
     {
@@ -35368,9 +35048,9 @@
       "label": "Domestic / State",
       "order": 4,
       "live": 0,
-      "recent": 5,
+      "recent": 0,
       "upcoming": 413,
-      "total": 418
+      "total": 413
     }
   ],
   "importantMatches": [
@@ -37401,39 +37081,6 @@
       "importance": "Knockout stage"
     },
     {
-      "id": "recent-163061",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "East Zone vs South Zone, Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "East Zone",
-          "shortName": "EZONE",
-          "score": "708/10 (163 Ov) & 388/7 (99.2 Ov)"
-        },
-        {
-          "name": "South Zone",
-          "shortName": "SZONE",
-          "score": "336/10 (107.3 Ov)"
-        }
-      ],
-      "dateLabel": "06 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
-      "overview": "East Zone won on 1st innings lead - Match drawn",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-09-06T04:00:00.000Z",
-      "rawId": 163061,
-      "starPerformers": [],
-      "importance": "Knockout stage"
-    },
-    {
       "id": "recent-169850",
       "status": "recent",
       "statusLabel": "Past",
@@ -37552,138 +37199,6 @@
         }
       ],
       "importance": "Major tournament"
-    },
-    {
-      "id": "recent-163047",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "North Zone vs South Zone, 2nd Semi-Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "North Zone",
-          "shortName": "NZONE",
-          "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
-        },
-        {
-          "name": "South Zone",
-          "shortName": "SZONE",
-          "score": "312/10 (100.3 Ov) & 182/3 (43.1 Ov)"
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "South Zone won by 7 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-08-30T04:00:00.000Z",
-      "rawId": 163047,
-      "starPerformers": [],
-      "importance": "Knockout stage"
-    },
-    {
-      "id": "recent-163043",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Central Zone vs East Zone, 1st Semi-Final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "Central Zone",
-          "shortName": "CZONE",
-          "score": "266/10 (80.1 Ov) & 158/10 (50.2 Ov)"
-        },
-        {
-          "name": "East Zone",
-          "shortName": "EZONE",
-          "score": "266/10 (57 Ov) & 162/6 (39.3 Ov)"
-        }
-      ],
-      "dateLabel": "30 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "East Zone won by 4 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-08-30T04:00:00.000Z",
-      "rawId": 163043,
-      "starPerformers": [],
-      "importance": "Knockout stage"
-    },
-    {
-      "id": "recent-163031",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "North Zone vs West Zone, 2nd Quarter final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "North Zone",
-          "shortName": "NZONE",
-          "score": "251/10 (66.5 Ov) & 222/10 (51 Ov)"
-        },
-        {
-          "name": "West Zone",
-          "shortName": "WZONE",
-          "score": "187/10 (65.4 Ov) & 234/10 (57.3 Ov)"
-        }
-      ],
-      "dateLabel": "23 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "North Zone won by 52 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-08-23T04:00:00.000Z",
-      "rawId": 163031,
-      "starPerformers": [],
-      "importance": "Knockout stage"
-    },
-    {
-      "id": "recent-163027",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "East Zone vs North East Zone, 1st Quarter final",
-      "series": "Duleep Trophy 2026",
-      "teams": [
-        {
-          "name": "East Zone",
-          "shortName": "EZONE",
-          "score": "467/10 (112.5 Ov)"
-        },
-        {
-          "name": "North East Zone",
-          "shortName": "NEZONE",
-          "score": "111/10 (42.5 Ov) & 146/10 (50 Ov)"
-        }
-      ],
-      "dateLabel": "23 Aug 2026, 09:30 am",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-      "overview": "East Zone won by an innings and 210 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-      "startTime": "2026-08-23T04:00:00.000Z",
-      "rawId": 163027,
-      "starPerformers": [],
-      "importance": "Knockout stage"
     }
   ],
   "importantTournaments": [
@@ -39930,185 +39445,6 @@
           "importance": "Knockout stage"
         }
       ]
-    },
-    {
-      "id": "duleep-trophy-2026",
-      "series": "Duleep Trophy 2026",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "total": 5,
-      "live": 0,
-      "upcoming": 0,
-      "recent": 5,
-      "startTime": "2026-08-23T04:00:00.000Z",
-      "endTime": "2026-09-06T04:00:00.000Z",
-      "matches": [
-        {
-          "id": "recent-163031",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "North Zone vs West Zone, 2nd Quarter final",
-          "series": "Duleep Trophy 2026",
-          "teams": [
-            {
-              "name": "North Zone",
-              "shortName": "NZONE",
-              "score": "251/10 (66.5 Ov) & 222/10 (51 Ov)"
-            },
-            {
-              "name": "West Zone",
-              "shortName": "WZONE",
-              "score": "187/10 (65.4 Ov) & 234/10 (57.3 Ov)"
-            }
-          ],
-          "dateLabel": "23 Aug 2026, 09:30 am",
-          "time": "",
-          "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-          "overview": "North Zone won by 52 runs",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-          "startTime": "2026-08-23T04:00:00.000Z",
-          "rawId": 163031,
-          "starPerformers": [],
-          "importance": "Knockout stage"
-        },
-        {
-          "id": "recent-163027",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "East Zone vs North East Zone, 1st Quarter final",
-          "series": "Duleep Trophy 2026",
-          "teams": [
-            {
-              "name": "East Zone",
-              "shortName": "EZONE",
-              "score": "467/10 (112.5 Ov)"
-            },
-            {
-              "name": "North East Zone",
-              "shortName": "NEZONE",
-              "score": "111/10 (42.5 Ov) & 146/10 (50 Ov)"
-            }
-          ],
-          "dateLabel": "23 Aug 2026, 09:30 am",
-          "time": "",
-          "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-          "overview": "East Zone won by an innings and 210 runs",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-          "startTime": "2026-08-23T04:00:00.000Z",
-          "rawId": 163027,
-          "starPerformers": [],
-          "importance": "Knockout stage"
-        },
-        {
-          "id": "recent-163047",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "North Zone vs South Zone, 2nd Semi-Final",
-          "series": "Duleep Trophy 2026",
-          "teams": [
-            {
-              "name": "North Zone",
-              "shortName": "NZONE",
-              "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
-            },
-            {
-              "name": "South Zone",
-              "shortName": "SZONE",
-              "score": "312/10 (100.3 Ov) & 182/3 (43.1 Ov)"
-            }
-          ],
-          "dateLabel": "30 Aug 2026, 09:30 am",
-          "time": "",
-          "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-          "overview": "South Zone won by 7 wkts",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-          "startTime": "2026-08-30T04:00:00.000Z",
-          "rawId": 163047,
-          "starPerformers": [],
-          "importance": "Knockout stage"
-        },
-        {
-          "id": "recent-163043",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "Central Zone vs East Zone, 1st Semi-Final",
-          "series": "Duleep Trophy 2026",
-          "teams": [
-            {
-              "name": "Central Zone",
-              "shortName": "CZONE",
-              "score": "266/10 (80.1 Ov) & 158/10 (50.2 Ov)"
-            },
-            {
-              "name": "East Zone",
-              "shortName": "EZONE",
-              "score": "266/10 (57 Ov) & 162/6 (39.3 Ov)"
-            }
-          ],
-          "dateLabel": "30 Aug 2026, 09:30 am",
-          "time": "",
-          "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-          "overview": "East Zone won by 4 wkts",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-          "startTime": "2026-08-30T04:00:00.000Z",
-          "rawId": 163043,
-          "starPerformers": [],
-          "importance": "Knockout stage"
-        },
-        {
-          "id": "recent-163061",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "East Zone vs South Zone, Final",
-          "series": "Duleep Trophy 2026",
-          "teams": [
-            {
-              "name": "East Zone",
-              "shortName": "EZONE",
-              "score": "708/10 (163 Ov) & 388/7 (99.2 Ov)"
-            },
-            {
-              "name": "South Zone",
-              "shortName": "SZONE",
-              "score": "336/10 (107.3 Ov)"
-            }
-          ],
-          "dateLabel": "06 Sept 2026, 09:30 am",
-          "time": "",
-          "place": "MA Chidambaram Stadium, Chennai",
-          "overview": "East Zone won on 1st innings lead - Match drawn",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-          "startTime": "2026-09-06T04:00:00.000Z",
-          "rawId": 163061,
-          "starPerformers": [],
-          "importance": "Knockout stage"
-        }
-      ]
     }
   ],
   "importantResultsByMonth": [
@@ -40219,39 +39555,6 @@
           "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
           "startTime": "2026-09-10T14:30:00.000Z",
           "rawId": 169887,
-          "starPerformers": [],
-          "importance": "Knockout stage"
-        },
-        {
-          "id": "recent-163061",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "East Zone vs South Zone, Final",
-          "series": "Duleep Trophy 2026",
-          "teams": [
-            {
-              "name": "East Zone",
-              "shortName": "EZONE",
-              "score": "708/10 (163 Ov) & 388/7 (99.2 Ov)"
-            },
-            {
-              "name": "South Zone",
-              "shortName": "SZONE",
-              "score": "336/10 (107.3 Ov)"
-            }
-          ],
-          "dateLabel": "06 Sept 2026, 09:30 am",
-          "time": "",
-          "place": "MA Chidambaram Stadium, Chennai",
-          "overview": "East Zone won on 1st innings lead - Match drawn",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163061",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-          "startTime": "2026-09-06T04:00:00.000Z",
-          "rawId": 163061,
           "starPerformers": [],
           "importance": "Knockout stage"
         },
@@ -40380,138 +39683,6 @@
             }
           ],
           "importance": "Major tournament"
-        },
-        {
-          "id": "recent-163047",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "North Zone vs South Zone, 2nd Semi-Final",
-          "series": "Duleep Trophy 2026",
-          "teams": [
-            {
-              "name": "North Zone",
-              "shortName": "NZONE",
-              "score": "195/10 (59.1 Ov) & 297/10 (72.4 Ov)"
-            },
-            {
-              "name": "South Zone",
-              "shortName": "SZONE",
-              "score": "312/10 (100.3 Ov) & 182/3 (43.1 Ov)"
-            }
-          ],
-          "dateLabel": "30 Aug 2026, 09:30 am",
-          "time": "",
-          "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-          "overview": "South Zone won by 7 wkts",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163047",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-          "startTime": "2026-08-30T04:00:00.000Z",
-          "rawId": 163047,
-          "starPerformers": [],
-          "importance": "Knockout stage"
-        },
-        {
-          "id": "recent-163043",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "Central Zone vs East Zone, 1st Semi-Final",
-          "series": "Duleep Trophy 2026",
-          "teams": [
-            {
-              "name": "Central Zone",
-              "shortName": "CZONE",
-              "score": "266/10 (80.1 Ov) & 158/10 (50.2 Ov)"
-            },
-            {
-              "name": "East Zone",
-              "shortName": "EZONE",
-              "score": "266/10 (57 Ov) & 162/6 (39.3 Ov)"
-            }
-          ],
-          "dateLabel": "30 Aug 2026, 09:30 am",
-          "time": "",
-          "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-          "overview": "East Zone won by 4 wkts",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163043",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-          "startTime": "2026-08-30T04:00:00.000Z",
-          "rawId": 163043,
-          "starPerformers": [],
-          "importance": "Knockout stage"
-        },
-        {
-          "id": "recent-163031",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "North Zone vs West Zone, 2nd Quarter final",
-          "series": "Duleep Trophy 2026",
-          "teams": [
-            {
-              "name": "North Zone",
-              "shortName": "NZONE",
-              "score": "251/10 (66.5 Ov) & 222/10 (51 Ov)"
-            },
-            {
-              "name": "West Zone",
-              "shortName": "WZONE",
-              "score": "187/10 (65.4 Ov) & 234/10 (57.3 Ov)"
-            }
-          ],
-          "dateLabel": "23 Aug 2026, 09:30 am",
-          "time": "",
-          "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-          "overview": "North Zone won by 52 runs",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163031",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-          "startTime": "2026-08-23T04:00:00.000Z",
-          "rawId": 163031,
-          "starPerformers": [],
-          "importance": "Knockout stage"
-        },
-        {
-          "id": "recent-163027",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "East Zone vs North East Zone, 1st Quarter final",
-          "series": "Duleep Trophy 2026",
-          "teams": [
-            {
-              "name": "East Zone",
-              "shortName": "EZONE",
-              "score": "467/10 (112.5 Ov)"
-            },
-            {
-              "name": "North East Zone",
-              "shortName": "NEZONE",
-              "score": "111/10 (42.5 Ov) & 146/10 (50 Ov)"
-            }
-          ],
-          "dateLabel": "23 Aug 2026, 09:30 am",
-          "time": "",
-          "place": "BCCI Centre of Excellence Ground 2, Bengaluru",
-          "overview": "East Zone won by an innings and 210 runs",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163027",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12376/duleep-trophy-2026/matches",
-          "startTime": "2026-08-23T04:00:00.000Z",
-          "rawId": 163027,
-          "starPerformers": [],
-          "importance": "Knockout stage"
         }
       ]
     }
