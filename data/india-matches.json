@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-14T13:09:26.466Z",
-  "lastCheckedAt": "2026-09-14T13:09:26.466Z",
-  "lastSuccessfulSyncAt": "2026-09-14T13:09:26.466Z",
+  "syncedAt": "2026-09-14T18:35:27.563Z",
+  "lastCheckedAt": "2026-09-14T18:35:27.563Z",
+  "lastSuccessfulSyncAt": "2026-09-14T18:35:27.563Z",
   "coverage": {
     "pathways": [
       "India",
@@ -42,9 +42,9 @@
   },
   "summary": {
     "live": 0,
-    "recent": 61,
+    "recent": 60,
     "upcoming": 498,
-    "total": 559
+    "total": 558
   },
   "all": [
     {
@@ -84,8 +84,8 @@
       "statusLabel": "Future",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "Afghanistan vs India, 2nd T20I",
       "series": "Afghanistan vs India in India 2026",
       "teams": [
@@ -105,7 +105,7 @@
       "place": "Arun Jaitley Stadium, Delhi",
       "overview": "Match starts at Sep 15, 14:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170110",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-15T14:00:00.000Z",
       "rawId": 170110
     },
@@ -15491,20 +15491,20 @@
       "statusLabel": "Past",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-women",
       "title": "India Women vs Sri Lanka Women, Final",
       "series": "Women's Asia Cup 2026",
       "teams": [
         {
           "name": "India Women",
           "shortName": "INDW",
-          "score": "183/5 (19.6 Ov)"
+          "score": "183/5 (20 Ov)"
         },
         {
           "name": "Sri Lanka Women",
           "shortName": "SLW",
-          "score": "111/10 (19.6 Ov)"
+          "score": "111/10 (20 Ov)"
         }
       ],
       "dateLabel": "13 Sept 2026, 08:00 pm",
@@ -15512,7 +15512,7 @@
       "place": "Dubai International Cricket Stadium, Dubai",
       "overview": "India Women won by 72 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169891",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-09-13T14:30:00.000Z",
       "rawId": 169891,
       "starPerformers": []
@@ -15523,15 +15523,15 @@
       "statusLabel": "Past",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-men",
       "title": "Afghanistan vs India, 1st T20I",
       "series": "Afghanistan vs India in India 2026",
       "teams": [
         {
           "name": "Afghanistan",
           "shortName": "AFG",
-          "score": "156/8 (19.6 Ov)"
+          "score": "156/8 (20 Ov)"
         },
         {
           "name": "India",
@@ -15544,49 +15544,10 @@
       "place": "Arun Jaitley Stadium, Delhi",
       "overview": "India won by 7 wkts",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170103",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-13T14:00:00.000Z",
       "rawId": 170103,
       "starPerformers": []
-    },
-    {
-      "id": "recent-171243",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Ludhiana Lions vs Amritsar Soormas, Final",
-      "series": "Sher-E-Punjab T20 League, 2026",
-      "teams": [
-        {
-          "name": "Ludhiana Lions",
-          "shortName": "LDL",
-          "score": "142/10 (19.6 Ov)"
-        },
-        {
-          "name": "Amritsar Soormas",
-          "shortName": "AMS",
-          "score": "144/2 (16.4 Ov)"
-        }
-      ],
-      "dateLabel": "13 Sept 2026, 07:00 pm",
-      "time": "",
-      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Amritsar Soormas won by 8 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171243",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-13T13:30:00.000Z",
-      "rawId": 171243,
-      "starPerformers": [
-        {
-          "name": "Mayank Markande",
-          "performance": "3-17",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171243"
-        }
-      ]
     },
     {
       "id": "recent-155584",
@@ -17568,8 +17529,8 @@
       "statusLabel": "Future",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "Afghanistan vs India, 2nd T20I",
       "series": "Afghanistan vs India in India 2026",
       "teams": [
@@ -17589,7 +17550,7 @@
       "place": "Arun Jaitley Stadium, Delhi",
       "overview": "Match starts at Sep 15, 14:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170110",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-15T14:00:00.000Z",
       "rawId": 170110
     },
@@ -32977,20 +32938,20 @@
       "statusLabel": "Past",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-women",
       "title": "India Women vs Sri Lanka Women, Final",
       "series": "Women's Asia Cup 2026",
       "teams": [
         {
           "name": "India Women",
           "shortName": "INDW",
-          "score": "183/5 (19.6 Ov)"
+          "score": "183/5 (20 Ov)"
         },
         {
           "name": "Sri Lanka Women",
           "shortName": "SLW",
-          "score": "111/10 (19.6 Ov)"
+          "score": "111/10 (20 Ov)"
         }
       ],
       "dateLabel": "13 Sept 2026, 08:00 pm",
@@ -32998,7 +32959,7 @@
       "place": "Dubai International Cricket Stadium, Dubai",
       "overview": "India Women won by 72 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169891",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-09-13T14:30:00.000Z",
       "rawId": 169891,
       "starPerformers": []
@@ -33009,15 +32970,15 @@
       "statusLabel": "Past",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-men",
       "title": "Afghanistan vs India, 1st T20I",
       "series": "Afghanistan vs India in India 2026",
       "teams": [
         {
           "name": "Afghanistan",
           "shortName": "AFG",
-          "score": "156/8 (19.6 Ov)"
+          "score": "156/8 (20 Ov)"
         },
         {
           "name": "India",
@@ -33030,49 +32991,10 @@
       "place": "Arun Jaitley Stadium, Delhi",
       "overview": "India won by 7 wkts",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170103",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-13T14:00:00.000Z",
       "rawId": 170103,
       "starPerformers": []
-    },
-    {
-      "id": "recent-171243",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Ludhiana Lions vs Amritsar Soormas, Final",
-      "series": "Sher-E-Punjab T20 League, 2026",
-      "teams": [
-        {
-          "name": "Ludhiana Lions",
-          "shortName": "LDL",
-          "score": "142/10 (19.6 Ov)"
-        },
-        {
-          "name": "Amritsar Soormas",
-          "shortName": "AMS",
-          "score": "144/2 (16.4 Ov)"
-        }
-      ],
-      "dateLabel": "13 Sept 2026, 07:00 pm",
-      "time": "",
-      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Amritsar Soormas won by 8 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171243",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-13T13:30:00.000Z",
-      "rawId": 171243,
-      "starPerformers": [
-        {
-          "name": "Mayank Markande",
-          "performance": "3-17",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171243"
-        }
-      ]
     },
     {
       "id": "recent-155584",
@@ -35030,9 +34952,9 @@
       "label": "League / IPL",
       "order": 2,
       "live": 0,
-      "recent": 1,
+      "recent": 0,
       "upcoming": 0,
-      "total": 1
+      "total": 0
     },
     {
       "id": "women",
@@ -36980,20 +36902,20 @@
       "statusLabel": "Past",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-women",
       "title": "India Women vs Sri Lanka Women, Final",
       "series": "Women's Asia Cup 2026",
       "teams": [
         {
           "name": "India Women",
           "shortName": "INDW",
-          "score": "183/5 (19.6 Ov)"
+          "score": "183/5 (20 Ov)"
         },
         {
           "name": "Sri Lanka Women",
           "shortName": "SLW",
-          "score": "111/10 (19.6 Ov)"
+          "score": "111/10 (20 Ov)"
         }
       ],
       "dateLabel": "13 Sept 2026, 08:00 pm",
@@ -37001,50 +36923,10 @@
       "place": "Dubai International Cricket Stadium, Dubai",
       "overview": "India Women won by 72 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169891",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-09-13T14:30:00.000Z",
       "rawId": 169891,
       "starPerformers": [],
-      "importance": "Knockout stage"
-    },
-    {
-      "id": "recent-171243",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Ludhiana Lions vs Amritsar Soormas, Final",
-      "series": "Sher-E-Punjab T20 League, 2026",
-      "teams": [
-        {
-          "name": "Ludhiana Lions",
-          "shortName": "LDL",
-          "score": "142/10 (19.6 Ov)"
-        },
-        {
-          "name": "Amritsar Soormas",
-          "shortName": "AMS",
-          "score": "144/2 (16.4 Ov)"
-        }
-      ],
-      "dateLabel": "13 Sept 2026, 07:00 pm",
-      "time": "",
-      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Amritsar Soormas won by 8 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171243",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-13T13:30:00.000Z",
-      "rawId": 171243,
-      "starPerformers": [
-        {
-          "name": "Mayank Markande",
-          "performance": "3-17",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171243"
-        }
-      ],
       "importance": "Knockout stage"
     },
     {
@@ -39363,20 +39245,20 @@
           "statusLabel": "Past",
           "level": "women",
           "levelLabel": "Women",
-          "sourceType": "International",
-          "sourceScope": "global",
+          "sourceType": "",
+          "sourceScope": "india-women",
           "title": "India Women vs Sri Lanka Women, Final",
           "series": "Women's Asia Cup 2026",
           "teams": [
             {
               "name": "India Women",
               "shortName": "INDW",
-              "score": "183/5 (19.6 Ov)"
+              "score": "183/5 (20 Ov)"
             },
             {
               "name": "Sri Lanka Women",
               "shortName": "SLW",
-              "score": "111/10 (19.6 Ov)"
+              "score": "111/10 (20 Ov)"
             }
           ],
           "dateLabel": "13 Sept 2026, 08:00 pm",
@@ -39384,64 +39266,10 @@
           "place": "Dubai International Cricket Stadium, Dubai",
           "overview": "India Women won by 72 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169891",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
           "startTime": "2026-09-13T14:30:00.000Z",
           "rawId": 169891,
           "starPerformers": [],
-          "importance": "Knockout stage"
-        }
-      ]
-    },
-    {
-      "id": "sher-e-punjab-t20-league-2026",
-      "series": "Sher-E-Punjab T20 League, 2026",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "total": 1,
-      "live": 0,
-      "upcoming": 0,
-      "recent": 1,
-      "startTime": "2026-09-13T13:30:00.000Z",
-      "endTime": "2026-09-13T13:30:00.000Z",
-      "matches": [
-        {
-          "id": "recent-171243",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "league",
-          "levelLabel": "League / IPL",
-          "sourceType": "league",
-          "sourceScope": "global",
-          "title": "Ludhiana Lions vs Amritsar Soormas, Final",
-          "series": "Sher-E-Punjab T20 League, 2026",
-          "teams": [
-            {
-              "name": "Ludhiana Lions",
-              "shortName": "LDL",
-              "score": "142/10 (19.6 Ov)"
-            },
-            {
-              "name": "Amritsar Soormas",
-              "shortName": "AMS",
-              "score": "144/2 (16.4 Ov)"
-            }
-          ],
-          "dateLabel": "13 Sept 2026, 07:00 pm",
-          "time": "",
-          "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-          "overview": "Amritsar Soormas won by 8 wkts",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171243",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-          "startTime": "2026-09-13T13:30:00.000Z",
-          "rawId": 171243,
-          "starPerformers": [
-            {
-              "name": "Mayank Markande",
-              "performance": "3-17",
-              "label": "Player of the Match",
-              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171243"
-            }
-          ],
           "importance": "Knockout stage"
         }
       ]
@@ -39458,20 +39286,20 @@
           "statusLabel": "Past",
           "level": "women",
           "levelLabel": "Women",
-          "sourceType": "International",
-          "sourceScope": "global",
+          "sourceType": "",
+          "sourceScope": "india-women",
           "title": "India Women vs Sri Lanka Women, Final",
           "series": "Women's Asia Cup 2026",
           "teams": [
             {
               "name": "India Women",
               "shortName": "INDW",
-              "score": "183/5 (19.6 Ov)"
+              "score": "183/5 (20 Ov)"
             },
             {
               "name": "Sri Lanka Women",
               "shortName": "SLW",
-              "score": "111/10 (19.6 Ov)"
+              "score": "111/10 (20 Ov)"
             }
           ],
           "dateLabel": "13 Sept 2026, 08:00 pm",
@@ -39479,50 +39307,10 @@
           "place": "Dubai International Cricket Stadium, Dubai",
           "overview": "India Women won by 72 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169891",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
           "startTime": "2026-09-13T14:30:00.000Z",
           "rawId": 169891,
           "starPerformers": [],
-          "importance": "Knockout stage"
-        },
-        {
-          "id": "recent-171243",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "league",
-          "levelLabel": "League / IPL",
-          "sourceType": "league",
-          "sourceScope": "global",
-          "title": "Ludhiana Lions vs Amritsar Soormas, Final",
-          "series": "Sher-E-Punjab T20 League, 2026",
-          "teams": [
-            {
-              "name": "Ludhiana Lions",
-              "shortName": "LDL",
-              "score": "142/10 (19.6 Ov)"
-            },
-            {
-              "name": "Amritsar Soormas",
-              "shortName": "AMS",
-              "score": "144/2 (16.4 Ov)"
-            }
-          ],
-          "dateLabel": "13 Sept 2026, 07:00 pm",
-          "time": "",
-          "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-          "overview": "Amritsar Soormas won by 8 wkts",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171243",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-          "startTime": "2026-09-13T13:30:00.000Z",
-          "rawId": 171243,
-          "starPerformers": [
-            {
-              "name": "Mayank Markande",
-              "performance": "3-17",
-              "label": "Player of the Match",
-              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171243"
-            }
-          ],
           "importance": "Knockout stage"
         },
         {
