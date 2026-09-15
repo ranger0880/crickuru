@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-15T14:50:33.033Z",
-  "lastCheckedAt": "2026-09-15T14:50:33.033Z",
-  "lastSuccessfulSyncAt": "2026-09-15T14:50:33.033Z",
+  "syncedAt": "2026-09-15T18:31:27.467Z",
+  "lastCheckedAt": "2026-09-15T18:31:27.467Z",
+  "lastSuccessfulSyncAt": "2026-09-15T18:31:27.467Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,74 +41,12 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 1,
+    "live": 0,
     "recent": 60,
-    "upcoming": 497,
-    "total": 558
+    "upcoming": 496,
+    "total": 556
   },
   "all": [
-    {
-      "id": "live-170110",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "Afghanistan vs India, 2nd T20I",
-      "series": "Afghanistan vs India in India 2026",
-      "teams": [
-        {
-          "name": "Afghanistan",
-          "shortName": "AFG",
-          "score": "72/4 (10.4 Ov)"
-        },
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": ""
-        }
-      ],
-      "dateLabel": "15 Sept 2026, 07:30 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "India opt to bowl",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170110",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-15T14:00:00.000Z",
-      "rawId": 170110
-    },
-    {
-      "id": "upcoming-155595",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "Australia A Women vs India A Women, 2nd unofficial T20",
-      "series": "Australia A Women tour of India 2026",
-      "teams": [
-        {
-          "name": "Australia A Women",
-          "shortName": "AUSWA",
-          "score": ""
-        },
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": ""
-        }
-      ],
-      "dateLabel": "15 Sept 2026, 06:00 pm",
-      "time": "",
-      "place": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
-      "overview": "Australia A Women opt to bat",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155595",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
-      "startTime": "2026-09-15T12:30:00.000Z",
-      "rawId": 155595
-    },
     {
       "id": "upcoming-155606",
       "status": "upcoming",
@@ -15486,6 +15424,70 @@
       "rawId": 164501
     },
     {
+      "id": "recent-170110",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "Afghanistan vs India, 2nd T20I",
+      "series": "Afghanistan vs India in India 2026",
+      "teams": [
+        {
+          "name": "Afghanistan",
+          "shortName": "AFG",
+          "score": "159/8 (19.6 Ov)"
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "163/3 (14.5 Ov)"
+        }
+      ],
+      "dateLabel": "15 Sept 2026, 07:30 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "India won by 7 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170110",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-15T14:00:00.000Z",
+      "rawId": 170110,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-155595",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-a-women",
+      "title": "Australia A Women vs India A Women, 2nd unofficial T20",
+      "series": "Australia A Women tour of India 2026",
+      "teams": [
+        {
+          "name": "Australia A Women",
+          "shortName": "AUSWA",
+          "score": "178/2 (20 Ov)"
+        },
+        {
+          "name": "India A Women",
+          "shortName": "INDWA",
+          "score": "148/7 (20 Ov)"
+        }
+      ],
+      "dateLabel": "15 Sept 2026, 06:00 pm",
+      "time": "",
+      "place": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
+      "overview": "Australia A Women won by 30 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155595",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
+      "startTime": "2026-09-15T12:30:00.000Z",
+      "rawId": 155595,
+      "starPerformers": []
+    },
+    {
       "id": "recent-169891",
       "status": "recent",
       "statusLabel": "Past",
@@ -16016,38 +16018,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-07-16T12:00:00.000Z",
       "rawId": 129469,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-129458",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
-      "title": "England vs India, 1st ODI",
-      "series": "India tour of England, 2026",
-      "teams": [
-        {
-          "name": "England",
-          "shortName": "ENG",
-          "score": "258/10 (47 Ov)"
-        },
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": "262/4 (45.2 Ov)"
-        }
-      ],
-      "dateLabel": "14 Jul 2026, 03:30 pm",
-      "time": "",
-      "place": "Edgbaston, Birmingham",
-      "overview": "India won by 6 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129458",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
-      "startTime": "2026-07-14T10:00:00.000Z",
-      "rawId": 129458,
       "starPerformers": []
     },
     {
@@ -17025,45 +16995,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-144321",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "Nepal Women vs India A Women, 9th Match, Group A",
-      "series": "ACC Women's Asia Cup Rising Stars 2026",
-      "teams": [
-        {
-          "name": "Nepal Women",
-          "shortName": "NEPW",
-          "score": "78/10 (18 Ov)"
-        },
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "82/3 (7 Ov)"
-        }
-      ],
-      "dateLabel": "17 Feb 2026, 08:00 am",
-      "time": "",
-      "place": "Terdthai Cricket Ground, Bangkok",
-      "overview": "India A Women won by 7 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/144321",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-02-17T02:30:00.000Z",
-      "rawId": 144321,
-      "starPerformers": [
-        {
-          "name": "Tanuja Kanwer",
-          "performance": "4-12",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/144321"
-        }
-      ]
-    },
-    {
       "id": "recent-145541",
       "status": "recent",
       "statusLabel": "Past",
@@ -17490,71 +17421,8 @@
       ]
     }
   ],
-  "live": [
-    {
-      "id": "live-170110",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "Afghanistan vs India, 2nd T20I",
-      "series": "Afghanistan vs India in India 2026",
-      "teams": [
-        {
-          "name": "Afghanistan",
-          "shortName": "AFG",
-          "score": "72/4 (10.4 Ov)"
-        },
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": ""
-        }
-      ],
-      "dateLabel": "15 Sept 2026, 07:30 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "India opt to bowl",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170110",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-15T14:00:00.000Z",
-      "rawId": 170110
-    }
-  ],
+  "live": [],
   "upcoming": [
-    {
-      "id": "upcoming-155595",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "Australia A Women vs India A Women, 2nd unofficial T20",
-      "series": "Australia A Women tour of India 2026",
-      "teams": [
-        {
-          "name": "Australia A Women",
-          "shortName": "AUSWA",
-          "score": ""
-        },
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": ""
-        }
-      ],
-      "dateLabel": "15 Sept 2026, 06:00 pm",
-      "time": "",
-      "place": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
-      "overview": "Australia A Women opt to bat",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155595",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
-      "startTime": "2026-09-15T12:30:00.000Z",
-      "rawId": 155595
-    },
     {
       "id": "upcoming-155606",
       "status": "upcoming",
@@ -32934,6 +32802,70 @@
   ],
   "recent": [
     {
+      "id": "recent-170110",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "Afghanistan vs India, 2nd T20I",
+      "series": "Afghanistan vs India in India 2026",
+      "teams": [
+        {
+          "name": "Afghanistan",
+          "shortName": "AFG",
+          "score": "159/8 (19.6 Ov)"
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "163/3 (14.5 Ov)"
+        }
+      ],
+      "dateLabel": "15 Sept 2026, 07:30 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "India won by 7 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170110",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-15T14:00:00.000Z",
+      "rawId": 170110,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-155595",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-a-women",
+      "title": "Australia A Women vs India A Women, 2nd unofficial T20",
+      "series": "Australia A Women tour of India 2026",
+      "teams": [
+        {
+          "name": "Australia A Women",
+          "shortName": "AUSWA",
+          "score": "178/2 (20 Ov)"
+        },
+        {
+          "name": "India A Women",
+          "shortName": "INDWA",
+          "score": "148/7 (20 Ov)"
+        }
+      ],
+      "dateLabel": "15 Sept 2026, 06:00 pm",
+      "time": "",
+      "place": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
+      "overview": "Australia A Women won by 30 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155595",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
+      "startTime": "2026-09-15T12:30:00.000Z",
+      "rawId": 155595,
+      "starPerformers": []
+    },
+    {
       "id": "recent-169891",
       "status": "recent",
       "statusLabel": "Past",
@@ -33464,38 +33396,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-07-16T12:00:00.000Z",
       "rawId": 129469,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-129458",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
-      "title": "England vs India, 1st ODI",
-      "series": "India tour of England, 2026",
-      "teams": [
-        {
-          "name": "England",
-          "shortName": "ENG",
-          "score": "258/10 (47 Ov)"
-        },
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": "262/4 (45.2 Ov)"
-        }
-      ],
-      "dateLabel": "14 Jul 2026, 03:30 pm",
-      "time": "",
-      "place": "Edgbaston, Birmingham",
-      "overview": "India won by 6 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129458",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
-      "startTime": "2026-07-14T10:00:00.000Z",
-      "rawId": 129458,
       "starPerformers": []
     },
     {
@@ -34473,45 +34373,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-144321",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "Nepal Women vs India A Women, 9th Match, Group A",
-      "series": "ACC Women's Asia Cup Rising Stars 2026",
-      "teams": [
-        {
-          "name": "Nepal Women",
-          "shortName": "NEPW",
-          "score": "78/10 (18 Ov)"
-        },
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "82/3 (7 Ov)"
-        }
-      ],
-      "dateLabel": "17 Feb 2026, 08:00 am",
-      "time": "",
-      "place": "Terdthai Cricket Ground, Bangkok",
-      "overview": "India A Women won by 7 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/144321",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-02-17T02:30:00.000Z",
-      "rawId": 144321,
-      "starPerformers": [
-        {
-          "name": "Tanuja Kanwer",
-          "performance": "4-12",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/144321"
-        }
-      ]
-    },
-    {
       "id": "recent-145541",
       "status": "recent",
       "statusLabel": "Past",
@@ -34943,10 +34804,10 @@
       "id": "international",
       "label": "International",
       "order": 1,
-      "live": 1,
+      "live": 0,
       "recent": 30,
       "upcoming": 52,
-      "total": 83
+      "total": 82
     },
     {
       "id": "league",
@@ -34963,8 +34824,8 @@
       "order": 3,
       "live": 0,
       "recent": 30,
-      "upcoming": 32,
-      "total": 62
+      "upcoming": 31,
+      "total": 61
     },
     {
       "id": "domestic",
