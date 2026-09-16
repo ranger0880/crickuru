@@ -5,6 +5,7 @@ import path from "node:path";
 const API_URL = String(process.env.BOT_API_URL || `http://127.0.0.1:${process.env.PORT || 3000}`).replace(/\/+$/, "");
 const AUTH_DIR = process.env.WHATSAPP_AUTH_DIR || path.resolve(process.cwd(), ".auth");
 const GROUP_JID = String(process.env.WHATSAPP_GROUP_JID || "").trim();
+const LOG_GROUPS = String(process.env.WHATSAPP_LOG_GROUPS || "").toLowerCase() === "true";
 const TRIGGER = String(process.env.WHATSAPP_TRIGGER || "!crickuru").trim().toLowerCase();
 
 function messageText(message) {
@@ -31,7 +32,7 @@ async function askAssistant(message) {
 }
 
 export async function startWhatsAppBot() {
-  if (!GROUP_JID) throw new Error("Set WHATSAPP_GROUP_JID before enabling the WhatsApp adapter");
+  if (!GROUP_JID && !LOG_GROUPS) throw new Error("Set WHATSAPP_GROUP_JID before enabling the WhatsApp adapter");
   const { state, saveCreds } = await useMultiFileAuthState(AUTH_DIR);
   const socket = makeWASocket({ auth: state, printQRInTerminal: false, markOnlineOnConnect: false });
   socket.ev.on("creds.update", saveCreds);
@@ -40,7 +41,15 @@ export async function startWhatsAppBot() {
       console.log("Scan this WhatsApp QR from the account that should operate the CricKuru bot:");
       qrcode.generate(qr, { small: true });
     }
-    if (connection === "open") console.log(`CricKuru WhatsApp bot connected for group ${GROUP_JID}`);
+    if (connection === "open") {
+      console.log(`CricKuru WhatsApp bot connected${GROUP_JID ? ` for group ${GROUP_JID}` : " in group discovery mode"}`);
+      if (LOG_GROUPS) {
+        socket.groupFetchAllParticipating()
+          .then((groups) => Object.values(groups).map((group) => ({ subject: group.subject, jid: group.id })))
+          .then((groups) => console.log(`WhatsApp groups:\n${JSON.stringify(groups, null, 2)}`))
+          .catch((error) => console.error("Unable to list WhatsApp groups:", error.message));
+      }
+    }
     if (connection === "close" && lastDisconnect?.error?.output?.statusCode !== DisconnectReason.loggedOut) {
       setTimeout(() => startWhatsAppBot().catch((error) => console.error("WhatsApp reconnect failed:", error)), 5000);
     }

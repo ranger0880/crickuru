@@ -22,6 +22,8 @@ Set the GitHub Pages / Hostinger build variable `VITE_BOT_API_URL` to the Render
 
 The optional `whatsapp.mjs` adapter uses `@whiskeysockets/baileys`, responds only in the allowlisted group, and only when a message starts with `!crickuru` or mentions the bot account. It is disabled by default.
 
+To discover the group JID, temporarily set `WHATSAPP_LOG_GROUPS=true` and leave `WHATSAPP_GROUP_JID` empty. After the QR session opens, copy the JID for your team group from the logs, set it as `WHATSAPP_GROUP_JID`, then remove or disable `WHATSAPP_LOG_GROUPS`.
+
 This Baileys bridge is suitable for testing and existing-group use, but it is not Meta's official Cloud API. Official WhatsApp Business Platform group capabilities are restricted and should be checked against your business account before production use.
 
 To enable it, set `WHATSAPP_ENABLED=true`, `WHATSAPP_GROUP_JID=<your-group-jid>`, and optionally `WHATSAPP_TRIGGER=!crickuru`. The first run prints a QR in the service logs; scan it from the WhatsApp account that should operate the bot. Keep `bot/.auth/` outside GitHub and use persistent storage for unattended operation. Render's default filesystem is ephemeral, so a persistent disk or external auth store is required for reliable restarts.
