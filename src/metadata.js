@@ -127,6 +127,18 @@ export const ROUTE_METADATA = [
     jsonLdType: "coin",
   },
   {
+    path: "/gt-gaming",
+    canonicalPath: "/gt-gaming",
+    title: "GT Gaming Chairs - Comfort and Control for Long Sessions | CricKuru",
+    description:
+      "Explore the GT Throne gaming chair from CricKuru sponsor GT Gaming, including its recline, memory foam, upholstery, steel frame and long-session comfort features.",
+    ogType: "website",
+    themeColor: "#05070B",
+    changefreq: "monthly",
+    priority: "0.65",
+    jsonLdType: "gtGaming",
+  },
+  {
     path: "/kurukshetra-coin",
     canonicalPath: "/coin",
     title: "Kuru Coin - CricKuru Community Launch Watch",

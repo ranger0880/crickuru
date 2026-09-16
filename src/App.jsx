@@ -17,6 +17,7 @@ const RouterContext = React.createContext(null);
         "/coin": "coin/index.html",
         "/kurukshetra-coin": "kurukshetra-coin/index.html",
         "/india-matches": "india-matches/index.html",
+        "/gt-gaming": "gt-gaming/index.html",
       };
 
       function isLocalFilePreview() {
@@ -25,7 +26,7 @@ const RouterContext = React.createContext(null);
 
       function localPreviewPrefix() {
         const path = decodeURIComponent(window.location.pathname).replace(/\\/g, "/");
-        return /\/(arena|coin|kurukshetra-coin|india-matches|meme|memes|players|quiz|warriors)\/index\.html$/i.test(path) ? "../" : "";
+        return /\/(arena|coin|kurukshetra-coin|india-matches|meme|memes|players|quiz|warriors|gt-gaming)\/index\.html$/i.test(path) ? "../" : "";
       }
 
       function normalizePath(pathname, basename = "/") {
@@ -43,7 +44,7 @@ const RouterContext = React.createContext(null);
       function currentRoutePath(basename = "/") {
         if (!isLocalFilePreview()) return normalizePath(window.location.pathname, basename);
         const path = decodeURIComponent(window.location.pathname).replace(/\\/g, "/").toLowerCase();
-        const routeMatch = path.match(/\/(arena|coin|kurukshetra-coin|india-matches|meme|memes|players|quiz|warriors)\/index\.html$/);
+        const routeMatch = path.match(/\/(arena|coin|kurukshetra-coin|india-matches|meme|memes|players|quiz|warriors|gt-gaming)\/index\.html$/);
         return routeMatch ? `/${routeMatch[1]}` : "/";
       }
 
@@ -619,6 +620,7 @@ const RouterContext = React.createContext(null);
         { label: "Arena", path: "/arena" },
         { label: "Memes", path: "/memes" },
         { label: "Kuru Coin", path: "/coin" },
+        { label: "GT Chairs", path: "/gt-gaming" },
       ];
 
       const ease = [0.22, 1, 0.36, 1];
@@ -5926,6 +5928,112 @@ const RouterContext = React.createContext(null);
         );
       }
 
+      function GTGamingPage() {
+        const features = [
+          ["Frog mechanism", "Independent seat and backrest movement helps you adjust your working angle and stay in control through long sessions."],
+          ["180° recline", "Move from focused play to a full recline for breaks, recovery or a quick reset between matches."],
+          ["Memory foam support", "Memory foam head and lumbar cushions pair with a high-density seat core designed to retain its shape."],
+          ["Heavy-duty build", "A steel frame and wear-resistant PU leather are built for repeated daily use, with black-and-gold diamond stitching."],
+        ];
+
+        return (
+          <main className="route-bg page-grain min-h-screen overflow-hidden px-5 pb-16 pt-36 sm:px-8">
+            <section className="mx-auto max-w-7xl">
+              <motion.div
+                className="grid items-center gap-10 lg:grid-cols-[1.02fr_0.98fr]"
+                initial={{ opacity: 0, y: 24 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.75, ease }}
+              >
+                <div>
+                  <div className="flex flex-wrap items-center gap-3 text-xs font-black uppercase tracking-[0.25em]">
+                    <span className="rounded-full border border-gold/35 bg-gold/10 px-3 py-1.5 text-gold">Official sponsor</span>
+                    <span className="text-white/45">GT Gaming</span>
+                  </div>
+                  <h1 className="mt-6 max-w-3xl font-display text-6xl font-black uppercase leading-[0.9] text-white sm:text-8xl">The GT Throne</h1>
+                  <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
+                    GT Gaming makes premium gaming chairs for players, streamers, creators and anyone who spends serious time at a desk. The GT Throne combines adjustability, cushioning and a durable build in a black-and-gold finish.
+                  </p>
+                  <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                    <a href="https://www.gtgaming.shop/" target="_blank" rel="sponsored noopener noreferrer" className="shine-button inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-gold px-6 text-sm font-black uppercase tracking-[0.16em] text-night">
+                      Visit GT Gaming <Icon.ExternalLink size={16} />
+                    </a>
+                    <Link to="/warriors" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/15 bg-white/7 px-6 text-sm font-black uppercase tracking-[0.16em] text-white/78 transition hover:border-gold/55 hover:text-gold">
+                      Back to Warriors <Icon.ArrowRight size={16} />
+                    </Link>
+                  </div>
+                  <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
+                    {[["180°", "full recline"], ["2X", "memory foam"], ["Steel", "heavy-duty frame"], ["8+ hrs", "marathon comfort"]].map(([value, label]) => (
+                      <div key={label} className="border-l border-gold/35 pl-3">
+                        <p className="font-display text-2xl font-black text-gold">{value}</p>
+                        <p className="mt-1 text-[0.62rem] font-black uppercase tracking-[0.14em] text-white/45">{label}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div className="relative mx-auto w-full max-w-xl">
+                  <div className="absolute -inset-6 rounded-[14px] bg-gold/10 blur-3xl" aria-hidden="true" />
+                  <figure className="relative overflow-hidden rounded-[8px] border border-gold/30 bg-[#11100d] shadow-[0_18px_70px_rgba(0,0,0,0.4)]">
+                    <img src={GT_GAMING_CHAIR_IMAGE} alt="GT Throne gaming chair by GT Gaming" className="aspect-[4/3] w-full object-contain" loading="eager" referrerPolicy="no-referrer" />
+                    <figcaption className="flex items-center justify-between border-t border-gold/15 px-5 py-4 text-xs font-black uppercase tracking-[0.16em]">
+                      <span className="text-white/55">GT Throne</span>
+                      <span className="text-gold">Engineered in India</span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </motion.div>
+
+              <section className="mt-20 border-t border-white/10 pt-10" aria-labelledby="gt-features-heading">
+                <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+                  <div>
+                    <p className="text-xs font-black uppercase tracking-[0.3em] text-cyan">Why it is built this way</p>
+                    <h2 id="gt-features-heading" className="mt-3 font-display text-4xl font-black uppercase text-white sm:text-6xl">Comfort meets control</h2>
+                  </div>
+                  <p className="max-w-md text-sm leading-7 text-white/55">A practical read of the product features published by GT Gaming, without pretending a chair can replace movement or a good desk setup.</p>
+                </div>
+                <div className="mt-8 grid gap-x-8 gap-y-8 md:grid-cols-2">
+                  {features.map(([title, text], index) => (
+                    <article key={title} className="border-t border-white/12 pt-5">
+                      <div className="flex items-start gap-4">
+                        <span className="font-display text-2xl font-black text-gold">0{index + 1}</span>
+                        <div>
+                          <h3 className="text-xl font-black text-white">{title}</h3>
+                          <p className="mt-2 max-w-xl text-sm leading-7 text-white/62">{text}</p>
+                        </div>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </section>
+
+              <section className="mt-16 grid gap-8 border-t border-white/10 pt-10 lg:grid-cols-[0.75fr_1.25fr]" aria-labelledby="gt-efficiency-heading">
+                <div>
+                  <p className="text-xs font-black uppercase tracking-[0.3em] text-crimson">The efficiency check</p>
+                  <h2 id="gt-efficiency-heading" className="mt-3 font-display text-4xl font-black uppercase text-white sm:text-5xl">What it helps you do</h2>
+                </div>
+                <div className="grid gap-4 sm:grid-cols-3">
+                  {[
+                    ["Adjust faster", "Recline and tune your sitting angle as the session changes."],
+                    ["Stay supported", "Cushions and a high-density seat core are aimed at steadier comfort."],
+                    ["Keep going", "The steel frame and PU leather focus on everyday durability."],
+                  ].map(([title, text]) => (
+                    <div key={title} className="rounded-[8px] border border-white/12 bg-white/[0.035] p-5">
+                      <h3 className="font-black text-gold">{title}</h3>
+                      <p className="mt-2 text-sm leading-7 text-white/58">{text}</p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+
+              <div className="mt-16 flex flex-col items-start justify-between gap-5 border-t border-gold/20 pt-7 sm:flex-row sm:items-center">
+                <p className="max-w-xl text-sm leading-7 text-white/55">For current availability, dimensions, pricing and delivery details, use the official GT Gaming store.</p>
+                <a href="https://www.gtgaming.shop/" target="_blank" rel="sponsored noopener noreferrer" className="inline-flex min-h-11 items-center gap-2 rounded-full border border-gold/35 px-5 text-sm font-black uppercase tracking-[0.14em] text-gold transition hover:border-gold hover:bg-gold/10">Explore the range <Icon.ExternalLink size={15} /></a>
+              </div>
+            </section>
+          </main>
+        );
+      }
+
       function PlaceholderPage({ title, kicker, description, icon: PageIcon }) {
         return (
           <main className="route-bg page-grain px-5 pb-16 pt-36 sm:px-8">
@@ -6007,6 +6115,12 @@ const RouterContext = React.createContext(null);
                 >
                   GT Gaming sponsor <Icon.ExternalLink size={15} />
                 </a>
+                <Link
+                  to="/gt-gaming"
+                  className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/12 px-4 text-sm font-bold text-white/70 transition hover:border-gold/50 hover:text-gold"
+                >
+                  Chair guide <Icon.ArrowRight size={15} />
+                </Link>
               </div>
               <p className="text-sm text-white/45">&copy; 2026 CricKuru. Built for crickuru.com.</p>
             </div>
@@ -6271,6 +6385,10 @@ const RouterContext = React.createContext(null);
                   <Route
                     path="/kurukshetra-coin"
                     element={<CoinPage />}
+                  />
+                  <Route
+                    path="/gt-gaming"
+                    element={<GTGamingPage />}
                   />
                   <Route
                     path="*"
