@@ -10,12 +10,18 @@ This service powers the optional CricKuru website assistant. It reads the saniti
 - Start Command: `node server.js`
 - Environment variable: `CORS_ORIGINS=https://crickuru.com,https://www.crickuru.com`
 
-The service exposes `GET /health`, `GET /api/team/8626734`, `GET /api/stats?url=<CricHeroes player-profile URL>`, and `POST /api/chat` with `{ "message": "..." }`.
+The service exposes `GET /health`, `GET /api/team/8626734`, `GET /api/stats?url=<CricHeroes player-profile URL>`, and `POST /api/chat` with `{ "message": "..." }`. The assistant is read-only and can answer from the synchronized site feed, return CricKuru page links, and identify the GT Gaming sponsor page.
+
+## Optional AI answers
+
+Set `OPENAI_API_KEY` as a Render environment variable to enable concise AI answers for questions that are not covered by the direct site-link and player-data replies. Set `OPENAI_MODEL` only if you need a different model. The key is server-side only and is never stored in the repository. Requests use `store: false`; the bot still receives only the synchronized CricKuru snapshot and public site links.
 
 Set the GitHub Pages / Hostinger build variable `VITE_BOT_API_URL` to the Render URL, then rebuild the site. The widget remains harmless and disconnected when this variable is empty.
 
 ## WhatsApp
 
 The optional `whatsapp.mjs` adapter uses `@whiskeysockets/baileys`, responds only in the allowlisted group, and only when a message starts with `!crickuru` or mentions the bot account. It is disabled by default.
+
+This Baileys bridge is suitable for testing and existing-group use, but it is not Meta's official Cloud API. Official WhatsApp Business Platform group capabilities are restricted and should be checked against your business account before production use.
 
 To enable it, set `WHATSAPP_ENABLED=true`, `WHATSAPP_GROUP_JID=<your-group-jid>`, and optionally `WHATSAPP_TRIGGER=!crickuru`. The first run prints a QR in the service logs; scan it from the WhatsApp account that should operate the bot. Keep `bot/.auth/` outside GitHub and use persistent storage for unattended operation. Render's default filesystem is ephemeral, so a persistent disk or external auth store is required for reliable restarts.

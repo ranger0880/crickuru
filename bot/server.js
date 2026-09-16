@@ -5,6 +5,9 @@ const path = require("node:path");
 const PORT = Number(process.env.PORT || 3000);
 const TEAM_ID = "8626734";
 const TEAM_URL = "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/members";
+const SITE_URL = "https://crickuru.com";
+const OPENAI_API_KEY = String(process.env.OPENAI_API_KEY || "").trim();
+const OPENAI_MODEL = String(process.env.OPENAI_MODEL || "gpt-5.6-luna").trim();
 const FEED_FILE = path.resolve(__dirname, "..", "data", "crickuru-live.json");
 const allowedOrigins = new Set(
   String(process.env.CORS_ORIGINS || "https://crickuru.com,https://www.crickuru.com,http://localhost:5173")
@@ -139,14 +142,84 @@ function matchSummary(match) {
   return `${match.teamA} vs ${match.teamB} on ${new Date(match.date).toLocaleDateString("en-IN")}${performance}`;
 }
 
-function answerChat(feed, message) {
+function siteLinkAnswer(query) {
+  const links = {
+    home: `${SITE_URL}/`,
+    warriors: `${SITE_URL}/warriors/`,
+    players: `${SITE_URL}/players/`,
+    matches: `${SITE_URL}/india-matches/`,
+    quiz: `${SITE_URL}/quiz/`,
+    arena: `${SITE_URL}/arena/`,
+    memes: `${SITE_URL}/memes/`,
+    coin: `${SITE_URL}/coin/`,
+    sponsor: `${SITE_URL}/gt-gaming/`,
+    cricHeroes: TEAM_URL,
+  };
+  if (/sponsor|gt gaming|gaming chair|gt throne|chair/.test(query)) return `GT Gaming sponsor page: ${links.sponsor}\nOfficial store: https://www.gtgaming.shop/`;
+  if (/quiz|leaderboard|duel/.test(query)) return `CricKuru Quiz: ${links.quiz}`;
+  if (/arena|game|toss|batting|bowling/.test(query)) return `CricKuru Arena: ${links.arena}`;
+  if (/meme/.test(query)) return `CricKuru Meme Forge: ${links.memes}`;
+  if (/coin|kuru/.test(query)) return `Kuru Coin launch watch: ${links.coin}`;
+  if (/india|international|domestic|state|live match|fixtures/.test(query)) return `India and domestic match centre: ${links.matches}`;
+  if (/site|website|link|page|help|what can you do/.test(query)) return `I can help with Warriors players, career totals, recent form, synced matches, site pages and the GT Gaming sponsor.\nPlayers: ${links.players}\nMatches: ${links.matches}\nQuiz: ${links.quiz}\nArena: ${links.arena}`;
+  return "";
+}
+
+function aiContext(feed) {
+  const players = (feed?.players || []).map((player) => {
+    const stats = player.overallStats || player.stats || {};
+    return { id: String(player.id), name: player.name, role: player.role, runs: Number(stats.runs || 0), wickets: Number(stats.wickets || 0), matches: Number(stats.matches || 0), best: Number(stats.best || 0), impact: Number(player.impact || 0) };
+  });
+  const matches = (feed?.recentMatches || feed?.matches || []).slice(0, 12).map((match) => ({
+    date: match.date,
+    teams: [match.teamA, match.teamB],
+    result: match.resultText,
+    scores: [match.teamAScore, match.teamBScore],
+    scorecardUrl: match.performance?.scorecardUrl || match.scorecardUrl || "",
+  }));
+  return JSON.stringify({
+    site: SITE_URL,
+    team: "Kurukshetra Warriors",
+    captain: "Ankit Kulshreshtha",
+    CricHeroes: { teamUrl: "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors", matchesUrl: "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches", membersUrl: TEAM_URL },
+    syncedAt: feed?.syncedAt || feed?.lastCheckedAt || "",
+    playerCount: players.length,
+    players,
+    recentMatches: matches,
+    sitePages: {
+      warriors: `${SITE_URL}/warriors/`, players: `${SITE_URL}/players/`, matches: `${SITE_URL}/india-matches/`, quiz: `${SITE_URL}/quiz/`, arena: `${SITE_URL}/arena/`, memes: `${SITE_URL}/memes/`, coin: `${SITE_URL}/coin/`, sponsor: `${SITE_URL}/gt-gaming/`,
+    },
+  });
+}
+
+async function askOpenAI(feed, message) {
+  if (!OPENAI_API_KEY) return "";
+  const response = await fetch("https://api.openai.com/v1/responses", {
+    method: "POST",
+    headers: { authorization: `Bearer ${OPENAI_API_KEY}`, "content-type": "application/json" },
+    body: JSON.stringify({
+      model: OPENAI_MODEL,
+      store: false,
+      instructions: "You are CricKuru Bot for the Kurukshetra Warriors WhatsApp group. Answer only using the supplied CricKuru data and links. Be concise, friendly and useful for a team group. Never invent scores, player stats, schedules or claims. Say when data is not available. You are read-only: never claim to register users, change the website, edit scores, access private accounts, or perform admin actions. Keep replies under 900 characters.",
+      input: `CricKuru data:\n${aiContext(feed)}\n\nTeam member question:\n${message}`,
+      max_output_tokens: 300,
+    }),
+  });
+  if (!response.ok) throw new Error(`AI request failed with ${response.status}`);
+  const payload = await response.json();
+  const text = payload.output_text || payload.output?.flatMap((item) => item.content || []).map((item) => item.text || "").join(" ") || "";
+  return cleanText(text, 900);
+}
+
+async function answerChat(feed, message) {
   const query = message.toLowerCase();
   const mentionedPlayer = (feed?.players || []).find((player) => query.includes(cleanText(player.name, 120).toLowerCase()));
   if (mentionedPlayer) {
     const stats = mentionedPlayer.overallStats || mentionedPlayer.stats || {};
     const matches = recentMatches(mentionedPlayer, 3);
     const recent = matches.length ? matches.map(matchSummary).join(" | ") : "No recent public match record is available yet.";
-    return `${mentionedPlayer.name}: ${stats.runs || 0} career runs, ${stats.wickets || 0} wickets across ${stats.matches || 0} matches. Recent form across teams: ${recent}`;
+    const answer = `${mentionedPlayer.name}: ${stats.runs || 0} career runs, ${stats.wickets || 0} wickets across ${stats.matches || 0} matches. Recent form across teams: ${recent}`;
+    return answer.slice(0, 1200);
   }
   if (/recent|latest|last match|form|score/.test(query)) {
     const matches = (feed?.recentMatches || feed?.matches || []).slice(0, 3);
@@ -155,7 +228,10 @@ function answerChat(feed, message) {
   if (/team|roster|members|warriors|players/.test(query)) {
     return `Kurukshetra Warriors currently has ${feed?.players?.length || 0} synced players. I can show a player's career totals or recent form across teams.`;
   }
-  return "I can answer from CricKuru's synchronized CricHeroes data. Ask about a Warriors player, career totals, recent cross-team form, or the latest team matches.";
+  const siteAnswer = siteLinkAnswer(query);
+  if (siteAnswer) return siteAnswer;
+  const aiAnswer = await askOpenAI(feed, message);
+  return aiAnswer || "I can answer from CricKuru's synchronized CricHeroes data. Ask about a Warriors player, career totals, recent cross-team form, latest team matches, quiz, arena, memes or site links.";
 }
 
 function readBody(request) {
@@ -203,7 +279,7 @@ const server = http.createServer(async (request, response) => {
       const body = JSON.parse(await readBody(request));
       const message = cleanText(body.message, 500);
       if (!message) return send(request, response, 400, { error: "Message is required" });
-      return send(request, response, 200, { answer: answerChat(feed, message), syncedAt: feed.syncedAt || "" });
+      return send(request, response, 200, { answer: await answerChat(feed, message), syncedAt: feed.syncedAt || "" });
     } catch (error) {
       return send(request, response, 400, { error: error.message === "Request body too large" ? error.message : "Invalid JSON body" });
     }
