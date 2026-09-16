@@ -24,6 +24,8 @@ The optional `whatsapp.mjs` adapter uses `@whiskeysockets/baileys`, responds onl
 
 To discover the group JID, temporarily set `WHATSAPP_LOG_GROUPS=true` and leave `WHATSAPP_GROUP_JID` empty. After the QR session opens, copy the JID for your team group from the logs, set it as `WHATSAPP_GROUP_JID`, then remove or disable `WHATSAPP_LOG_GROUPS`.
 
+If the Render text QR cannot be scanned, set `WHATSAPP_PAIRING_PHONE` to the bot account's full international phone number with digits only, for example `919876543210`. After redeploying, open WhatsApp on that number and choose **Linked Devices > Link a Device > Link with phone number**, then enter the pairing code shown in the Render logs. Remove `WHATSAPP_PAIRING_PHONE` after linking if you want QR fallback on future fresh sessions.
+
 This Baileys bridge is suitable for testing and existing-group use, but it is not Meta's official Cloud API. Official WhatsApp Business Platform group capabilities are restricted and should be checked against your business account before production use.
 
 To enable it, set `WHATSAPP_ENABLED=true`, `WHATSAPP_GROUP_JID=<your-group-jid>`, and optionally `WHATSAPP_TRIGGER=!crickuru`. The first run prints a QR in the service logs; scan it from the WhatsApp account that should operate the bot. Keep `bot/.auth/` outside GitHub and use persistent storage for unattended operation. Render's default filesystem is ephemeral, so a persistent disk or external auth store is required for reliable restarts.

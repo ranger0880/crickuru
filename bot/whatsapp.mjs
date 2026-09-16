@@ -6,6 +6,7 @@ const API_URL = String(process.env.BOT_API_URL || `http://127.0.0.1:${process.en
 const AUTH_DIR = process.env.WHATSAPP_AUTH_DIR || path.resolve(process.cwd(), ".auth");
 const GROUP_JID = String(process.env.WHATSAPP_GROUP_JID || "").trim();
 const LOG_GROUPS = String(process.env.WHATSAPP_LOG_GROUPS || "").toLowerCase() === "true";
+const PAIRING_PHONE = String(process.env.WHATSAPP_PAIRING_PHONE || "").replace(/\D/g, "");
 const TRIGGER = String(process.env.WHATSAPP_TRIGGER || "!crickuru").trim().toLowerCase();
 
 function messageText(message) {
@@ -35,11 +36,25 @@ export async function startWhatsAppBot() {
   if (!GROUP_JID && !LOG_GROUPS) throw new Error("Set WHATSAPP_GROUP_JID before enabling the WhatsApp adapter");
   const { state, saveCreds } = await useMultiFileAuthState(AUTH_DIR);
   const socket = makeWASocket({ auth: state, printQRInTerminal: false, markOnlineOnConnect: false });
+  let pairingRequested = false;
   socket.ev.on("creds.update", saveCreds);
   socket.ev.on("connection.update", ({ connection, lastDisconnect, qr }) => {
     if (qr) {
-      console.log("Scan this WhatsApp QR from the account that should operate the CricKuru bot:");
-      qrcode.generate(qr, { small: true });
+      if (PAIRING_PHONE && !state.creds.registered && !pairingRequested) {
+        pairingRequested = true;
+        setTimeout(async () => {
+          try {
+            const code = await socket.requestPairingCode(PAIRING_PHONE);
+            console.log(`Enter this WhatsApp pairing code on ${PAIRING_PHONE}: ${code.match(/.{1,4}/g)?.join("-") || code}`);
+          } catch (error) {
+            pairingRequested = false;
+            console.error("WhatsApp pairing code failed:", error.message);
+          }
+        }, 1500);
+      } else if (!PAIRING_PHONE) {
+        console.log("Scan this WhatsApp QR from the account that should operate the CricKuru bot:");
+        qrcode.generate(qr, { small: true });
+      }
     }
     if (connection === "open") {
       console.log(`CricKuru WhatsApp bot connected${GROUP_JID ? ` for group ${GROUP_JID}` : " in group discovery mode"}`);
