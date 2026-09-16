@@ -505,6 +505,7 @@ const RouterContext = React.createContext(null);
 
       const CRICHEROES_STATS_SOURCE = "CricHeroes public player stats";
       const BOT_API_URL = String(import.meta.env.VITE_BOT_API_URL || "").replace(/\/+$/, "");
+      const GT_GAMING_CHAIR_IMAGE = "https://gtgaming.shop/wp-content/uploads/2026/07/Adobe-Express-file.png";
 
       function hasPlayerStats(stats) {
         if (!stats || typeof stats !== "object") return false;
@@ -6117,6 +6118,25 @@ const RouterContext = React.createContext(null);
         );
       }
 
+      function SponsorBanner() {
+        return (
+          <section className="border-b border-gold/15 bg-[#11100d] px-4 py-2.5 text-white sm:px-6" aria-label="CricKuru sponsor">
+            <div className="mx-auto flex max-w-7xl items-center justify-between gap-3">
+              <a href="https://www.gtgaming.shop/" target="_blank" rel="sponsored noopener noreferrer" className="flex min-w-0 items-center gap-3 transition hover:opacity-85">
+                <span className="grid h-9 w-14 shrink-0 place-items-center overflow-hidden rounded-[6px] border border-gold/25 bg-white/5">
+                  <img src={GT_GAMING_CHAIR_IMAGE} alt="GT Throne gaming chair" loading="lazy" referrerPolicy="no-referrer" className="h-full w-full object-contain" />
+                </span>
+                <span className="min-w-0">
+                  <span className="block text-[0.58rem] font-black uppercase tracking-[0.2em] text-gold">Official sponsor</span>
+                  <span className="block truncate text-xs font-bold text-white/75 sm:text-sm">GT Gaming • The GT Throne</span>
+                </span>
+              </a>
+              <a href="https://www.gtgaming.shop/" target="_blank" rel="sponsored noopener noreferrer" className="shrink-0 rounded-full border border-gold/30 px-3 py-1.5 text-[0.58rem] font-black uppercase tracking-[0.14em] text-gold transition hover:border-gold hover:bg-gold/10" title="Visit GT Gaming">View sponsor</a>
+            </div>
+          </section>
+        );
+      }
+
       function CricKuruBot() {
         const [open, setOpen] = useState(false);
         const [draft, setDraft] = useState("");
@@ -6199,6 +6219,7 @@ const RouterContext = React.createContext(null);
                 <MetaManager />
                 <IndiaLiveStrip />
                 <Navbar />
+                <SponsorBanner />
                 <PlayerChat />
                 <CricKuruBot />
                 <Routes>
