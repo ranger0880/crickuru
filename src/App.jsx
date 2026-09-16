@@ -6120,7 +6120,7 @@ const RouterContext = React.createContext(null);
 
       function SponsorBanner() {
         return (
-          <section className="border-b border-gold/15 bg-[#11100d] px-4 py-2.5 text-white sm:px-6" aria-label="CricKuru sponsor">
+          <section className="relative z-40 mt-[7.25rem] border-b border-gold/15 bg-[#11100d] px-4 py-3 text-white shadow-[0_10px_32px_rgba(0,0,0,0.22)] sm:px-6" aria-label="CricKuru sponsor">
             <div className="mx-auto flex max-w-7xl items-center justify-between gap-3">
               <a href="https://www.gtgaming.shop/" target="_blank" rel="sponsored noopener noreferrer" className="flex min-w-0 items-center gap-3 transition hover:opacity-85">
                 <span className="grid h-9 w-14 shrink-0 place-items-center overflow-hidden rounded-[6px] border border-gold/25 bg-white/5">
