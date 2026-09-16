@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-15T23:42:35.271Z",
-  "lastCheckedAt": "2026-09-15T23:42:35.271Z",
-  "lastSuccessfulSyncAt": "2026-09-15T23:42:35.271Z",
+  "syncedAt": "2026-09-16T01:40:58.894Z",
+  "lastCheckedAt": "2026-09-16T01:40:58.894Z",
+  "lastSuccessfulSyncAt": "2026-09-16T01:40:58.894Z",
   "coverage": {
     "pathways": [
       "India",
@@ -15482,7 +15482,7 @@
       "place": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
       "overview": "Australia A Women won by 30 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155595",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-09-15T12:30:00.000Z",
       "rawId": 155595,
       "starPerformers": []
@@ -32860,7 +32860,7 @@
       "place": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
       "overview": "Australia A Women won by 30 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155595",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-09-15T12:30:00.000Z",
       "rawId": 155595,
       "starPerformers": []
