@@ -5999,6 +5999,14 @@ const RouterContext = React.createContext(null);
                 >
                   Members <Icon.ExternalLink size={15} />
                 </a>
+                <a
+                  href="https://www.gtgaming.shop/"
+                  target="_blank"
+                  rel="sponsored noopener noreferrer"
+                  className="inline-flex min-h-11 items-center gap-2 rounded-full border border-gold/30 bg-gold/8 px-4 text-sm font-bold text-gold transition hover:border-gold hover:bg-gold/15"
+                >
+                  GT Gaming sponsor <Icon.ExternalLink size={15} />
+                </a>
               </div>
               <p className="text-sm text-white/45">&copy; 2026 CricKuru. Built for crickuru.com.</p>
             </div>
@@ -6120,7 +6128,7 @@ const RouterContext = React.createContext(null);
 
       function SponsorBanner() {
         return (
-          <section className="relative z-40 mt-[7.25rem] border-b border-gold/15 bg-[#11100d] px-4 py-3 text-white shadow-[0_10px_32px_rgba(0,0,0,0.22)] sm:px-6" aria-label="CricKuru sponsor">
+          <section className="relative z-[80] mt-[8.5rem] border-b border-gold/15 bg-[#11100d] px-4 py-3 text-white shadow-[0_10px_32px_rgba(0,0,0,0.22)] sm:px-6" aria-label="CricKuru sponsor">
             <div className="mx-auto flex max-w-7xl items-center justify-between gap-3">
               <a href="https://www.gtgaming.shop/" target="_blank" rel="sponsored noopener noreferrer" className="flex min-w-0 items-center gap-3 transition hover:opacity-85">
                 <span className="grid h-9 w-14 shrink-0 place-items-center overflow-hidden rounded-[6px] border border-gold/25 bg-white/5">
