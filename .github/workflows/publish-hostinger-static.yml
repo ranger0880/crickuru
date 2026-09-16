@@ -5,6 +5,12 @@ on:
     branches:
       - main
   workflow_dispatch:
+  workflow_run:
+    workflows:
+      - Kurukshetra Warriors CricHeroes Feed Sync
+      - India Cricket Match Feed Sync
+    types:
+      - completed
 
 permissions:
   contents: write
@@ -15,6 +21,7 @@ concurrency:
 
 jobs:
   publish:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     name: Build and publish static branch
     runs-on: ubuntu-latest
     steps:
