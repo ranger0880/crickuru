@@ -37,6 +37,7 @@ function feedWithoutVolatileFields(feed) {
   const stable = JSON.parse(JSON.stringify(feed));
   stable.syncedAt = "";
   stable.playerStatsUpdatedAt = "";
+  stable.playerRecentMatchesUpdatedAt = "";
   stable.lastCheckedAt = "";
   stable.lastSuccessfulSyncAt = "";
   for (const list of [stable.matches, stable.liveMatches, stable.upcomingMatches, stable.recentMatches]) {
@@ -590,6 +591,8 @@ async function hydratePlayerProfiles(players, previousPlayers = [], refreshCurso
     : orderedPlayers.filter((player) => !previousById.get(Number(player.id))?.historyComplete).slice(0, PLAYER_REFRESH_BATCH);
   const targets = (refreshCandidates.length ? refreshCandidates : orderedPlayers).slice(0, PLAYER_REFRESH_BATCH);
   const targetIds = new Set(targets.map((player) => Number(player.id)));
+  let statsRefreshCount = 0;
+  let recentMatchesRefreshCount = 0;
   const snapshots = await mapWithConcurrency(players, 1, async (player) => {
     if (!targetIds.has(Number(player.id))) return { overallStats: null, matchHistory: [], historyNext: "", historyFetched: false };
     try {
@@ -602,6 +605,8 @@ async function hydratePlayerProfiles(players, previousPlayers = [], refreshCurso
   });
   players.forEach((player, index) => {
     const previous = previousById.get(Number(player.id));
+    if (snapshots[index].overallStats) statsRefreshCount += 1;
+    if (snapshots[index].historyFetched) recentMatchesRefreshCount += 1;
     player.overallStats = snapshots[index].overallStats || previous?.overallStats || {};
     player.stats = Object.keys(player.overallStats).length ? player.overallStats : previous?.stats || {};
     const matchHistory = snapshots[index].matchHistory.length ? snapshots[index].matchHistory : previous?.matchHistory || previous?.recentMatches || [];
@@ -634,6 +639,40 @@ async function hydratePlayerProfiles(players, previousPlayers = [], refreshCurso
     }));
     player.recentHighlights = player.recentMatches.filter((match) => match.performance?.highlight).slice(0, 3);
   }
+
+  return { statsRefreshCount, recentMatchesRefreshCount };
+}
+
+async function refreshExistingPlayerData(previousFeed, checkedAt, syncError) {
+  const previousPlayers = Array.isArray(previousFeed?.players) ? previousFeed.players : [];
+  if (!previousPlayers.length) return false;
+
+  const players = JSON.parse(JSON.stringify(previousPlayers));
+  const refreshCursor = Number(previousFeed.playerSyncCursor || 0) % players.length;
+  const refresh = await hydratePlayerProfiles(players, previousPlayers, refreshCursor);
+  if (!refresh.statsRefreshCount && !refresh.recentMatchesRefreshCount) return false;
+
+  const nextFeed = {
+    ...previousFeed,
+    sourceStatus: "partial",
+    lastCheckedAt: checkedAt,
+    playerRecentMatchesUpdatedAt: checkedAt,
+    playerStatsUpdatedAt: refresh.statsRefreshCount ? checkedAt : previousFeed.playerStatsUpdatedAt || "",
+    playerSyncCursor: (refreshCursor + PLAYER_REFRESH_BATCH) % players.length,
+    players: players.sort((a, b) => Number(b.performance?.awards || 0) - Number(a.performance?.awards || 0) || Number(b.isCaptain) - Number(a.isCaptain)),
+    dataInventory: {
+      ...previousFeed.dataInventory,
+      playerProfiles: players.filter((player) => player.overallStats?.source).length,
+      playerRecentMatches: players.reduce((sum, player) => sum + player.recentMatches.length, 0),
+      playerHistoryMatches: players.reduce((sum, player) => sum + player.matchHistory.length, 0),
+      playerHistoryComplete: players.filter((player) => player.historyComplete).length,
+    },
+    errors: [`Team feed unavailable: ${syncError}`, ...(previousFeed.errors || [])].slice(0, 8),
+  };
+
+  await writeFeed(nextFeed);
+  console.log(`Wrote a partial player refresh: ${refresh.recentMatchesRefreshCount} recent-form pages and ${refresh.statsRefreshCount} stats pages.`);
+  return true;
 }
 
 function extractPlayerRecentRecordCandidates(players) {
@@ -1248,6 +1287,8 @@ async function main() {
     matchesText = teamMatches.text;
   } catch (error) {
     if (previousFeed) {
+      const playerRefreshSucceeded = await refreshExistingPlayerData(previousFeed, checkedAt, error.message || String(error));
+      if (playerRefreshSucceeded) return;
       console.warn(`CricHeroes is temporarily blocking the public feed (${error.message}); keeping the last complete roster.`);
       await writeFeed({
         ...previousFeed,
@@ -1299,6 +1340,7 @@ async function main() {
     lastCheckedAt: checkedAt,
     lastSuccessfulSyncAt: checkedAt,
     playerStatsUpdatedAt: checkedAt,
+    playerRecentMatchesUpdatedAt: checkedAt,
     playerSyncCursor: players.length ? (refreshCursor + PLAYER_REFRESH_BATCH) % players.length : 0,
     coverage: {
       refreshCadence: "15 minutes",

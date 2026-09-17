@@ -2369,8 +2369,19 @@ const RouterContext = React.createContext(null);
         const careerTrackedCount = players.filter((player) => playerOverallStats(player)?.source === CRICHEROES_STATS_SOURCE).length;
         const careerPendingCount = Math.max(0, players.length - careerTrackedCount);
         const feedCheckedAt = data.lastCheckedAt || data.syncedAt;
-        const feedChangedAt = data.lastSuccessfulSyncAt || data.playerStatsUpdatedAt || data.syncedAt;
-        const feedStatus = data.sourceStatus === "stale" ? "Using saved CricHeroes data" : "CricHeroes live sync ready";
+        const feedChangedAt = data.sourceStatus === "partial"
+          ? data.playerRecentMatchesUpdatedAt || data.playerStatsUpdatedAt || data.lastSuccessfulSyncAt || data.syncedAt
+          : data.lastSuccessfulSyncAt || data.playerStatsUpdatedAt || data.syncedAt;
+        const feedStatus = data.sourceStatus === "stale"
+          ? "Using saved CricHeroes data"
+          : data.sourceStatus === "partial"
+            ? "Recent player form refreshed"
+            : "CricHeroes live sync ready";
+        const feedStatusClass = data.sourceStatus === "stale"
+          ? "border-crimson/35 bg-crimson/10 text-crimson"
+          : data.sourceStatus === "partial"
+            ? "border-gold/35 bg-gold/10 text-gold"
+            : "border-emerald-300/25 bg-emerald-300/10 text-emerald-200";
 
         return (
           <main className="route-bg page-grain min-h-screen px-5 pb-16 pt-36 sm:px-8">
@@ -2394,7 +2405,7 @@ const RouterContext = React.createContext(null);
                     <span className="rounded-full border border-cyan/20 bg-cyan/6 px-4 py-2 text-cyan/75">
                       Checked {formatFeedDate(feedCheckedAt)}
                     </span>
-                    <span className={`rounded-full border px-4 py-2 ${data.sourceStatus === "stale" ? "border-crimson/35 bg-crimson/10 text-crimson" : "border-emerald-300/25 bg-emerald-300/10 text-emerald-200"}`}>
+                    <span className={`rounded-full border px-4 py-2 ${feedStatusClass}`}>
                       {feedStatus}
                     </span>
                     {error && <span className="rounded-full border border-crimson/35 bg-crimson/10 px-4 py-2 text-crimson">Using saved roster</span>}

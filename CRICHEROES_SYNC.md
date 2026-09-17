@@ -21,6 +21,7 @@ Then run `npm run build`. GitHub Pages deploys the generated `dist/` output.
 - Pulls the latest Kurukshetra Warriors matches and members from CricHeroes
 - Separates live matches, upcoming fixtures and recent results
 - Rebuilds and redeploys only when the CricHeroes feed changes
+- If the team feed is temporarily blocked, tries the saved public player URLs to refresh recent cross-team form and labels the snapshot as partial
 - Commits `data/crickuru-live.json` and `crickuru-hostinger-upload.zip` when the feed changes
 
 The website uses this feed to show:
@@ -31,4 +32,4 @@ The website uses this feed to show:
 - Warriors player badges and award counts
 - Opponent team form and rivalry badges
 
-Because the site is hosted on static GitHub Pages, this is a near-live refresh. The browser checks the saved feed every minute, while GitHub Actions refreshes and redeploys changed CricHeroes data every 5 minutes.
+Because the site is hosted on static GitHub Pages, this is a near-live refresh. The browser checks the saved feed every minute, while GitHub Actions refreshes and redeploys changed CricHeroes data every 15 minutes. Player profiles are refreshed in small batches so the full roster cycles without hammering the public pages.
