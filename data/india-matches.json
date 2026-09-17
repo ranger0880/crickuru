@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-17T00:40:15.553Z",
-  "lastCheckedAt": "2026-09-17T00:40:15.553Z",
-  "lastSuccessfulSyncAt": "2026-09-17T00:40:15.553Z",
+  "syncedAt": "2026-09-17T05:22:29.395Z",
+  "lastCheckedAt": "2026-09-17T05:22:29.395Z",
+  "lastSuccessfulSyncAt": "2026-09-17T05:22:29.395Z",
   "coverage": {
     "pathways": [
       "India",
@@ -148,7 +148,7 @@
       "levelLabel": "Women",
       "sourceType": "",
       "sourceScope": "india-women",
-      "title": "Japan Women vs India Women, 4th Quarter-Final",
+      "title": "Japan Women vs India Women, 4th Quarter Final",
       "series": "Women's Asian Games 2026",
       "teams": [
         {
@@ -17524,7 +17524,7 @@
       "levelLabel": "Women",
       "sourceType": "",
       "sourceScope": "india-women",
-      "title": "Japan Women vs India Women, 4th Quarter-Final",
+      "title": "Japan Women vs India Women, 4th Quarter Final",
       "series": "Women's Asian Games 2026",
       "teams": [
         {
@@ -36734,7 +36734,7 @@
       "levelLabel": "Women",
       "sourceType": "",
       "sourceScope": "india-women",
-      "title": "Japan Women vs India Women, 4th Quarter-Final",
+      "title": "Japan Women vs India Women, 4th Quarter Final",
       "series": "Women's Asian Games 2026",
       "teams": [
         {
@@ -38910,7 +38910,7 @@
           "levelLabel": "Women",
           "sourceType": "",
           "sourceScope": "india-women",
-          "title": "Japan Women vs India Women, 4th Quarter-Final",
+          "title": "Japan Women vs India Women, 4th Quarter Final",
           "series": "Women's Asian Games 2026",
           "teams": [
             {
