@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-17T10:08:13.886Z",
-  "lastCheckedAt": "2026-09-17T10:08:13.886Z",
-  "lastSuccessfulSyncAt": "2026-09-17T10:08:13.886Z",
+  "syncedAt": "2026-09-17T14:56:50.940Z",
+  "lastCheckedAt": "2026-09-17T14:56:50.940Z",
+  "lastSuccessfulSyncAt": "2026-09-17T14:56:50.940Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,12 +41,43 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 0,
+    "live": 1,
     "recent": 60,
-    "upcoming": 496,
+    "upcoming": 495,
     "total": 556
   },
   "all": [
+    {
+      "id": "live-170120",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "India vs Afghanistan, 3rd T20I",
+      "series": "Afghanistan vs India in India 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "153/2 (11.3 Ov)"
+        },
+        {
+          "name": "Afghanistan",
+          "shortName": "AFG",
+          "score": ""
+        }
+      ],
+      "dateLabel": "17 Sept 2026, 07:30 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Afghanistan opt to bowl",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170120",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-17T14:00:00.000Z",
+      "rawId": 170120
+    },
     {
       "id": "upcoming-155606",
       "status": "upcoming",
@@ -77,37 +108,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
       "startTime": "2026-09-17T12:30:00.000Z",
       "rawId": 155606
-    },
-    {
-      "id": "upcoming-170120",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "Afghanistan vs India, 3rd T20I",
-      "series": "Afghanistan vs India in India 2026",
-      "teams": [
-        {
-          "name": "Afghanistan",
-          "shortName": "AFG",
-          "score": ""
-        },
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": ""
-        }
-      ],
-      "dateLabel": "17 Sept 2026, 07:30 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Match starts at Sep 17, 14:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170120",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-17T14:00:00.000Z",
-      "rawId": 170120
     },
     {
       "id": "upcoming-155466",
@@ -146,8 +146,8 @@
       "statusLabel": "Future",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "Japan Women vs India Women, 4th Quarter Final",
       "series": "Women's Asian Games 2026",
       "teams": [
@@ -167,7 +167,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "Match starts at Sep 18, 05:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170933",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-18T05:00:00.000Z",
       "rawId": 170933
     },
@@ -17421,7 +17421,39 @@
       ]
     }
   ],
-  "live": [],
+  "live": [
+    {
+      "id": "live-170120",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "India vs Afghanistan, 3rd T20I",
+      "series": "Afghanistan vs India in India 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "153/2 (11.3 Ov)"
+        },
+        {
+          "name": "Afghanistan",
+          "shortName": "AFG",
+          "score": ""
+        }
+      ],
+      "dateLabel": "17 Sept 2026, 07:30 pm",
+      "time": "",
+      "place": "Arun Jaitley Stadium, Delhi",
+      "overview": "Afghanistan opt to bowl",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170120",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-17T14:00:00.000Z",
+      "rawId": 170120
+    }
+  ],
   "upcoming": [
     {
       "id": "upcoming-155606",
@@ -17453,37 +17485,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
       "startTime": "2026-09-17T12:30:00.000Z",
       "rawId": 155606
-    },
-    {
-      "id": "upcoming-170120",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "Afghanistan vs India, 3rd T20I",
-      "series": "Afghanistan vs India in India 2026",
-      "teams": [
-        {
-          "name": "Afghanistan",
-          "shortName": "AFG",
-          "score": ""
-        },
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": ""
-        }
-      ],
-      "dateLabel": "17 Sept 2026, 07:30 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "Match starts at Sep 17, 14:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170120",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-17T14:00:00.000Z",
-      "rawId": 170120
     },
     {
       "id": "upcoming-155466",
@@ -17522,8 +17523,8 @@
       "statusLabel": "Future",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "Japan Women vs India Women, 4th Quarter Final",
       "series": "Women's Asian Games 2026",
       "teams": [
@@ -17543,7 +17544,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "Match starts at Sep 18, 05:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170933",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-18T05:00:00.000Z",
       "rawId": 170933
     },
@@ -34804,9 +34805,9 @@
       "id": "international",
       "label": "International",
       "order": 1,
-      "live": 0,
+      "live": 1,
       "recent": 30,
-      "upcoming": 52,
+      "upcoming": 51,
       "total": 82
     },
     {
@@ -36732,8 +36733,8 @@
       "statusLabel": "Future",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "Japan Women vs India Women, 4th Quarter Final",
       "series": "Women's Asian Games 2026",
       "teams": [
@@ -36753,7 +36754,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "Match starts at Sep 18, 05:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170933",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-18T05:00:00.000Z",
       "rawId": 170933,
       "importance": "Knockout stage"
@@ -38908,8 +38909,8 @@
           "statusLabel": "Future",
           "level": "women",
           "levelLabel": "Women",
-          "sourceType": "",
-          "sourceScope": "india-women",
+          "sourceType": "International",
+          "sourceScope": "global",
           "title": "Japan Women vs India Women, 4th Quarter Final",
           "series": "Women's Asian Games 2026",
           "teams": [
@@ -38929,7 +38930,7 @@
           "place": "Korogi Sports Park, Nisshin",
           "overview": "Match starts at Sep 18, 05:00 GMT",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170933",
-          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-09-18T05:00:00.000Z",
           "rawId": 170933,
           "importance": "Knockout stage"
