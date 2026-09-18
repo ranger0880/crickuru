@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-18T11:42:46.126Z",
-  "lastCheckedAt": "2026-09-18T11:42:46.126Z",
-  "lastSuccessfulSyncAt": "2026-09-18T11:42:46.126Z",
+  "syncedAt": "2026-09-18T15:09:22.222Z",
+  "lastCheckedAt": "2026-09-18T15:09:22.222Z",
+  "lastSuccessfulSyncAt": "2026-09-18T15:09:22.222Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,43 +41,12 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 1,
+    "live": 0,
     "recent": 60,
     "upcoming": 493,
-    "total": 554
+    "total": 553
   },
   "all": [
-    {
-      "id": "live-155466",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-u19",
-      "title": "India U19 vs Australia U19, 1st unofficial ODI",
-      "series": "Australia U19 tour of India 2026",
-      "teams": [
-        {
-          "name": "India U19",
-          "shortName": "INDU19",
-          "score": "182/6 (20 Ov)"
-        },
-        {
-          "name": "Australia U19",
-          "shortName": "AUSU19",
-          "score": "149/3 (16.5 Ov)"
-        }
-      ],
-      "dateLabel": "18 Sept 2026, 09:00 am",
-      "time": "",
-      "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
-      "overview": "Australia U19 need 34 runs in 19 balls - Match reduced to 20 overs per side due to rain",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155466",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
-      "startTime": "2026-09-18T03:30:00.000Z",
-      "rawId": 155466
-    },
     {
       "id": "upcoming-170951",
       "status": "upcoming",
@@ -15394,6 +15363,38 @@
       "starPerformers": []
     },
     {
+      "id": "recent-155466",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-u19",
+      "title": "India U19 vs Australia U19, 1st unofficial ODI",
+      "series": "Australia U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "India U19",
+          "shortName": "INDU19",
+          "score": "182/6 (20 Ov)"
+        },
+        {
+          "name": "Australia U19",
+          "shortName": "AUSU19",
+          "score": "175/7 (20 Ov)"
+        }
+      ],
+      "dateLabel": "18 Sept 2026, 09:00 am",
+      "time": "",
+      "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
+      "overview": "India U19 won by 7 runs (Match reduced to 20 overs per side due to rain)",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155466",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
+      "startTime": "2026-09-18T03:30:00.000Z",
+      "rawId": 155466,
+      "starPerformers": []
+    },
+    {
       "id": "recent-170120",
       "status": "recent",
       "statusLabel": "Past",
@@ -17132,45 +17133,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-138513",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-u19",
-      "title": "New Zealand U19 vs India U19, 24th Match, Group B",
-      "series": "ICC Under 19 World Cup 2026",
-      "teams": [
-        {
-          "name": "New Zealand U19",
-          "shortName": "NZU19",
-          "score": "135/10 (36.2 Ov)"
-        },
-        {
-          "name": "India U19",
-          "shortName": "INDU19",
-          "score": "130/3 (13 Ov)"
-        }
-      ],
-      "dateLabel": "24 Jan 2026, 01:00 pm",
-      "time": "",
-      "place": "Queens Sports Club, Bulawayo",
-      "overview": "India U19 won by 7 wkts (DLS Method)",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138513",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
-      "startTime": "2026-01-24T07:30:00.000Z",
-      "rawId": 138513,
-      "starPerformers": [
-        {
-          "name": "RS Ambrish",
-          "performance": "4-29",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138513"
-        }
-      ]
-    },
-    {
       "id": "recent-137454",
       "status": "recent",
       "statusLabel": "Past",
@@ -17352,39 +17314,7 @@
       ]
     }
   ],
-  "live": [
-    {
-      "id": "live-155466",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-u19",
-      "title": "India U19 vs Australia U19, 1st unofficial ODI",
-      "series": "Australia U19 tour of India 2026",
-      "teams": [
-        {
-          "name": "India U19",
-          "shortName": "INDU19",
-          "score": "182/6 (20 Ov)"
-        },
-        {
-          "name": "Australia U19",
-          "shortName": "AUSU19",
-          "score": "149/3 (16.5 Ov)"
-        }
-      ],
-      "dateLabel": "18 Sept 2026, 09:00 am",
-      "time": "",
-      "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
-      "overview": "Australia U19 need 34 runs in 19 balls - Match reduced to 20 overs per side due to rain",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155466",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
-      "startTime": "2026-09-18T03:30:00.000Z",
-      "rawId": 155466
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "upcoming-170951",
@@ -32704,6 +32634,38 @@
       "starPerformers": []
     },
     {
+      "id": "recent-155466",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-u19",
+      "title": "India U19 vs Australia U19, 1st unofficial ODI",
+      "series": "Australia U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "India U19",
+          "shortName": "INDU19",
+          "score": "182/6 (20 Ov)"
+        },
+        {
+          "name": "Australia U19",
+          "shortName": "AUSU19",
+          "score": "175/7 (20 Ov)"
+        }
+      ],
+      "dateLabel": "18 Sept 2026, 09:00 am",
+      "time": "",
+      "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
+      "overview": "India U19 won by 7 runs (Match reduced to 20 overs per side due to rain)",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155466",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
+      "startTime": "2026-09-18T03:30:00.000Z",
+      "rawId": 155466,
+      "starPerformers": []
+    },
+    {
       "id": "recent-170120",
       "status": "recent",
       "statusLabel": "Past",
@@ -34442,45 +34404,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-138513",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-u19",
-      "title": "New Zealand U19 vs India U19, 24th Match, Group B",
-      "series": "ICC Under 19 World Cup 2026",
-      "teams": [
-        {
-          "name": "New Zealand U19",
-          "shortName": "NZU19",
-          "score": "135/10 (36.2 Ov)"
-        },
-        {
-          "name": "India U19",
-          "shortName": "INDU19",
-          "score": "130/3 (13 Ov)"
-        }
-      ],
-      "dateLabel": "24 Jan 2026, 01:00 pm",
-      "time": "",
-      "place": "Queens Sports Club, Bulawayo",
-      "overview": "India U19 won by 7 wkts (DLS Method)",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138513",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
-      "startTime": "2026-01-24T07:30:00.000Z",
-      "rawId": 138513,
-      "starPerformers": [
-        {
-          "name": "RS Ambrish",
-          "performance": "4-29",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138513"
-        }
-      ]
-    },
-    {
       "id": "recent-137454",
       "status": "recent",
       "statusLabel": "Past",
@@ -34667,10 +34590,10 @@
       "id": "international",
       "label": "International",
       "order": 1,
-      "live": 1,
+      "live": 0,
       "recent": 30,
       "upcoming": 50,
-      "total": 81
+      "total": 80
     },
     {
       "id": "league",
