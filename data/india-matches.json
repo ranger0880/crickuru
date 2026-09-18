@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-18T06:33:35.227Z",
-  "lastCheckedAt": "2026-09-18T06:33:35.227Z",
-  "lastSuccessfulSyncAt": "2026-09-18T06:33:35.227Z",
+  "syncedAt": "2026-09-18T11:42:46.126Z",
+  "lastCheckedAt": "2026-09-18T11:42:46.126Z",
+  "lastSuccessfulSyncAt": "2026-09-18T11:42:46.126Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,9 +41,9 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 2,
+    "live": 1,
     "recent": 60,
-    "upcoming": 492,
+    "upcoming": 493,
     "total": 554
   },
   "all": [
@@ -61,53 +61,53 @@
         {
           "name": "India U19",
           "shortName": "INDU19",
-          "score": ""
+          "score": "182/6 (20 Ov)"
         },
         {
           "name": "Australia U19",
           "shortName": "AUSU19",
-          "score": ""
+          "score": "149/3 (16.5 Ov)"
         }
       ],
       "dateLabel": "18 Sept 2026, 09:00 am",
       "time": "",
       "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
-      "overview": "Toss delayed due to rain",
+      "overview": "Australia U19 need 34 runs in 19 balls - Match reduced to 20 overs per side due to rain",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155466",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
       "startTime": "2026-09-18T03:30:00.000Z",
       "rawId": 155466
     },
     {
-      "id": "live-170933",
-      "status": "live",
-      "statusLabel": "Live",
+      "id": "upcoming-170951",
+      "status": "upcoming",
+      "statusLabel": "Future",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "Japan Women vs India Women, 4th Quarter Final",
+      "sourceType": "",
+      "sourceScope": "india-women",
+      "title": "India Women vs Bangladesh Women, 2nd Semi Final",
       "series": "Women's Asian Games 2026",
       "teams": [
         {
-          "name": "Japan Women",
-          "shortName": "JPNW",
-          "score": "57/10 (19.5 Ov)"
-        },
-        {
           "name": "India Women",
           "shortName": "INDW",
-          "score": "5 (0.1 Ov)"
+          "score": ""
+        },
+        {
+          "name": "Bangladesh Women",
+          "shortName": "BANW",
+          "score": ""
         }
       ],
-      "dateLabel": "18 Sept 2026, 10:30 am",
+      "dateLabel": "20 Sept 2026, 10:30 am",
       "time": "",
       "place": "Korogi Sports Park, Nisshin",
-      "overview": "India Women need 53 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170933",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-18T05:00:00.000Z",
-      "rawId": 170933
+      "overview": "Match starts at Sep 20, 05:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170951",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+      "startTime": "2026-09-20T05:00:00.000Z",
+      "rawId": 170951
     },
     {
       "id": "upcoming-155617",
@@ -15362,6 +15362,38 @@
       "rawId": 164501
     },
     {
+      "id": "recent-170933",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "Japan Women vs India Women, 4th Quarter Final",
+      "series": "Women's Asian Games 2026",
+      "teams": [
+        {
+          "name": "Japan Women",
+          "shortName": "JPNW",
+          "score": "57/10 (19.5 Ov)"
+        },
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": "59/2 (4.6 Ov)"
+        }
+      ],
+      "dateLabel": "18 Sept 2026, 10:30 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "India Women won by 8 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170933",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-18T05:00:00.000Z",
+      "rawId": 170933,
+      "starPerformers": []
+    },
+    {
       "id": "recent-170120",
       "status": "recent",
       "statusLabel": "Past",
@@ -16734,45 +16766,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-121846",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "India Women vs Netherlands Women, 10th Match, Group A",
-      "series": "ICC Women's T20 World Cup 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": "209/5 (20 Ov)"
-        },
-        {
-          "name": "Netherlands Women",
-          "shortName": "NEDW",
-          "score": "114/10 (17.3 Ov)"
-        }
-      ],
-      "dateLabel": "17 Jun 2026, 07:00 pm",
-      "time": "",
-      "place": "Headingley, Leeds",
-      "overview": "India Women won by 95 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/121846",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
-      "startTime": "2026-06-17T13:30:00.000Z",
-      "rawId": 121846,
-      "starPerformers": [
-        {
-          "name": "Smriti Mandhana",
-          "performance": "74(47)",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/121846"
-        }
-      ]
-    },
-    {
       "id": "recent-156157",
       "status": "recent",
       "statusLabel": "Past",
@@ -17374,56 +17367,56 @@
         {
           "name": "India U19",
           "shortName": "INDU19",
-          "score": ""
+          "score": "182/6 (20 Ov)"
         },
         {
           "name": "Australia U19",
           "shortName": "AUSU19",
-          "score": ""
+          "score": "149/3 (16.5 Ov)"
         }
       ],
       "dateLabel": "18 Sept 2026, 09:00 am",
       "time": "",
       "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
-      "overview": "Toss delayed due to rain",
+      "overview": "Australia U19 need 34 runs in 19 balls - Match reduced to 20 overs per side due to rain",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155466",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
       "startTime": "2026-09-18T03:30:00.000Z",
       "rawId": 155466
-    },
-    {
-      "id": "live-170933",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "Japan Women vs India Women, 4th Quarter Final",
-      "series": "Women's Asian Games 2026",
-      "teams": [
-        {
-          "name": "Japan Women",
-          "shortName": "JPNW",
-          "score": "57/10 (19.5 Ov)"
-        },
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": "5 (0.1 Ov)"
-        }
-      ],
-      "dateLabel": "18 Sept 2026, 10:30 am",
-      "time": "",
-      "place": "Korogi Sports Park, Nisshin",
-      "overview": "India Women need 53 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170933",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-18T05:00:00.000Z",
-      "rawId": 170933
     }
   ],
   "upcoming": [
+    {
+      "id": "upcoming-170951",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women",
+      "title": "India Women vs Bangladesh Women, 2nd Semi Final",
+      "series": "Women's Asian Games 2026",
+      "teams": [
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": ""
+        },
+        {
+          "name": "Bangladesh Women",
+          "shortName": "BANW",
+          "score": ""
+        }
+      ],
+      "dateLabel": "20 Sept 2026, 10:30 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "Match starts at Sep 20, 05:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170951",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+      "startTime": "2026-09-20T05:00:00.000Z",
+      "rawId": 170951
+    },
     {
       "id": "upcoming-155617",
       "status": "upcoming",
@@ -32679,6 +32672,38 @@
   ],
   "recent": [
     {
+      "id": "recent-170933",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "Japan Women vs India Women, 4th Quarter Final",
+      "series": "Women's Asian Games 2026",
+      "teams": [
+        {
+          "name": "Japan Women",
+          "shortName": "JPNW",
+          "score": "57/10 (19.5 Ov)"
+        },
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": "59/2 (4.6 Ov)"
+        }
+      ],
+      "dateLabel": "18 Sept 2026, 10:30 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "India Women won by 8 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170933",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-18T05:00:00.000Z",
+      "rawId": 170933,
+      "starPerformers": []
+    },
+    {
       "id": "recent-170120",
       "status": "recent",
       "statusLabel": "Past",
@@ -34051,45 +34076,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-121846",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "India Women vs Netherlands Women, 10th Match, Group A",
-      "series": "ICC Women's T20 World Cup 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": "209/5 (20 Ov)"
-        },
-        {
-          "name": "Netherlands Women",
-          "shortName": "NEDW",
-          "score": "114/10 (17.3 Ov)"
-        }
-      ],
-      "dateLabel": "17 Jun 2026, 07:00 pm",
-      "time": "",
-      "place": "Headingley, Leeds",
-      "overview": "India Women won by 95 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/121846",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
-      "startTime": "2026-06-17T13:30:00.000Z",
-      "rawId": 121846,
-      "starPerformers": [
-        {
-          "name": "Smriti Mandhana",
-          "performance": "74(47)",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/121846"
-        }
-      ]
-    },
-    {
       "id": "recent-156157",
       "status": "recent",
       "statusLabel": "Past",
@@ -34699,9 +34685,9 @@
       "id": "women",
       "label": "Women",
       "order": 3,
-      "live": 1,
+      "live": 0,
       "recent": 30,
-      "upcoming": 29,
+      "upcoming": 30,
       "total": 60
     },
     {
@@ -34715,38 +34701,6 @@
     }
   ],
   "importantMatches": [
-    {
-      "id": "live-170933",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "Japan Women vs India Women, 4th Quarter Final",
-      "series": "Women's Asian Games 2026",
-      "teams": [
-        {
-          "name": "Japan Women",
-          "shortName": "JPNW",
-          "score": "57/10 (19.5 Ov)"
-        },
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": "5 (0.1 Ov)"
-        }
-      ],
-      "dateLabel": "18 Sept 2026, 10:30 am",
-      "time": "",
-      "place": "Korogi Sports Park, Nisshin",
-      "overview": "India Women need 53 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170933",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-18T05:00:00.000Z",
-      "rawId": 170933,
-      "importance": "Knockout stage"
-    },
     {
       "id": "upcoming-163147",
       "status": "upcoming",
@@ -36633,6 +36587,71 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030,
+      "importance": "Knockout stage"
+    },
+    {
+      "id": "upcoming-170951",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women",
+      "title": "India Women vs Bangladesh Women, 2nd Semi Final",
+      "series": "Women's Asian Games 2026",
+      "teams": [
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": ""
+        },
+        {
+          "name": "Bangladesh Women",
+          "shortName": "BANW",
+          "score": ""
+        }
+      ],
+      "dateLabel": "20 Sept 2026, 10:30 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "Match starts at Sep 20, 05:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170951",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+      "startTime": "2026-09-20T05:00:00.000Z",
+      "rawId": 170951,
+      "importance": "Knockout stage"
+    },
+    {
+      "id": "recent-170933",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "Japan Women vs India Women, 4th Quarter Final",
+      "series": "Women's Asian Games 2026",
+      "teams": [
+        {
+          "name": "Japan Women",
+          "shortName": "JPNW",
+          "score": "57/10 (19.5 Ov)"
+        },
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": "59/2 (4.6 Ov)"
+        }
+      ],
+      "dateLabel": "18 Sept 2026, 10:30 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "India Women won by 8 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170933",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-18T05:00:00.000Z",
+      "rawId": 170933,
+      "starPerformers": [],
       "importance": "Knockout stage"
     },
     {
@@ -38772,17 +38791,17 @@
       "series": "Women's Asian Games 2026",
       "level": "women",
       "levelLabel": "Women",
-      "total": 1,
-      "live": 1,
-      "upcoming": 0,
-      "recent": 0,
+      "total": 2,
+      "live": 0,
+      "upcoming": 1,
+      "recent": 1,
       "startTime": "2026-09-18T05:00:00.000Z",
-      "endTime": "2026-09-18T05:00:00.000Z",
+      "endTime": "2026-09-20T05:00:00.000Z",
       "matches": [
         {
-          "id": "live-170933",
-          "status": "live",
-          "statusLabel": "Live",
+          "id": "recent-170933",
+          "status": "recent",
+          "statusLabel": "Past",
           "level": "women",
           "levelLabel": "Women",
           "sourceType": "International",
@@ -38798,17 +38817,50 @@
             {
               "name": "India Women",
               "shortName": "INDW",
-              "score": "5 (0.1 Ov)"
+              "score": "59/2 (4.6 Ov)"
             }
           ],
           "dateLabel": "18 Sept 2026, 10:30 am",
           "time": "",
           "place": "Korogi Sports Park, Nisshin",
-          "overview": "India Women need 53 runs",
+          "overview": "India Women won by 8 wkts",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170933",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-09-18T05:00:00.000Z",
           "rawId": 170933,
+          "starPerformers": [],
+          "importance": "Knockout stage"
+        },
+        {
+          "id": "upcoming-170951",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "women",
+          "levelLabel": "Women",
+          "sourceType": "",
+          "sourceScope": "india-women",
+          "title": "India Women vs Bangladesh Women, 2nd Semi Final",
+          "series": "Women's Asian Games 2026",
+          "teams": [
+            {
+              "name": "India Women",
+              "shortName": "INDW",
+              "score": ""
+            },
+            {
+              "name": "Bangladesh Women",
+              "shortName": "BANW",
+              "score": ""
+            }
+          ],
+          "dateLabel": "20 Sept 2026, 10:30 am",
+          "time": "",
+          "place": "Korogi Sports Park, Nisshin",
+          "overview": "Match starts at Sep 20, 05:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170951",
+          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+          "startTime": "2026-09-20T05:00:00.000Z",
+          "rawId": 170951,
           "importance": "Knockout stage"
         }
       ]
@@ -39019,6 +39071,39 @@
       "month": "2026-09",
       "label": "September 2026",
       "matches": [
+        {
+          "id": "recent-170933",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "women",
+          "levelLabel": "Women",
+          "sourceType": "International",
+          "sourceScope": "global",
+          "title": "Japan Women vs India Women, 4th Quarter Final",
+          "series": "Women's Asian Games 2026",
+          "teams": [
+            {
+              "name": "Japan Women",
+              "shortName": "JPNW",
+              "score": "57/10 (19.5 Ov)"
+            },
+            {
+              "name": "India Women",
+              "shortName": "INDW",
+              "score": "59/2 (4.6 Ov)"
+            }
+          ],
+          "dateLabel": "18 Sept 2026, 10:30 am",
+          "time": "",
+          "place": "Korogi Sports Park, Nisshin",
+          "overview": "India Women won by 8 wkts",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170933",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "startTime": "2026-09-18T05:00:00.000Z",
+          "rawId": 170933,
+          "starPerformers": [],
+          "importance": "Knockout stage"
+        },
         {
           "id": "recent-169891",
           "status": "recent",
