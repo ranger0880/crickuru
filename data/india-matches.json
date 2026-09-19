@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-19T01:09:51.490Z",
-  "lastCheckedAt": "2026-09-19T01:09:51.490Z",
-  "lastSuccessfulSyncAt": "2026-09-19T01:09:51.490Z",
+  "syncedAt": "2026-09-19T05:50:48.322Z",
+  "lastCheckedAt": "2026-09-19T05:50:48.322Z",
+  "lastSuccessfulSyncAt": "2026-09-19T05:50:48.322Z",
   "coverage": {
     "pathways": [
       "India",
@@ -53,8 +53,8 @@
       "statusLabel": "Future",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "India Women vs Bangladesh Women, 2nd Semi Final",
       "series": "Women's Asian Games 2026",
       "teams": [
@@ -74,7 +74,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "Match starts at Sep 20, 05:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170951",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-20T05:00:00.000Z",
       "rawId": 170951
     },
@@ -15336,20 +15336,20 @@
       "statusLabel": "Past",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-women",
       "title": "Japan Women vs India Women, 4th Quarter Final",
       "series": "Women's Asian Games 2026",
       "teams": [
         {
           "name": "Japan Women",
           "shortName": "JPNW",
-          "score": "57/10 (19.5 Ov)"
+          "score": "57/10 (19 Ov)"
         },
         {
           "name": "India Women",
           "shortName": "INDW",
-          "score": "59/2 (4.6 Ov)"
+          "score": "59/2 (5 Ov)"
         }
       ],
       "dateLabel": "18 Sept 2026, 10:30 am",
@@ -15357,7 +15357,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "India Women won by 8 wkts",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170933",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-09-18T05:00:00.000Z",
       "rawId": 170933,
       "starPerformers": []
@@ -15400,20 +15400,20 @@
       "statusLabel": "Past",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-men",
       "title": "India vs Afghanistan, 3rd T20I",
       "series": "Afghanistan vs India in India 2026",
       "teams": [
         {
           "name": "India",
           "shortName": "IND",
-          "score": "221/7 (19.6 Ov)"
+          "score": "221/7 (20 Ov)"
         },
         {
           "name": "Afghanistan",
           "shortName": "AFG",
-          "score": "94/10 (14.1 Ov)"
+          "score": "94/10 (14 Ov)"
         }
       ],
       "dateLabel": "17 Sept 2026, 07:30 pm",
@@ -15421,7 +15421,7 @@
       "place": "Arun Jaitley Stadium, Delhi",
       "overview": "India won by 127 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170120",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-17T14:00:00.000Z",
       "rawId": 170120,
       "starPerformers": []
@@ -17322,8 +17322,8 @@
       "statusLabel": "Future",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "India Women vs Bangladesh Women, 2nd Semi Final",
       "series": "Women's Asian Games 2026",
       "teams": [
@@ -17343,7 +17343,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "Match starts at Sep 20, 05:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170951",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-20T05:00:00.000Z",
       "rawId": 170951
     },
@@ -32607,20 +32607,20 @@
       "statusLabel": "Past",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-women",
       "title": "Japan Women vs India Women, 4th Quarter Final",
       "series": "Women's Asian Games 2026",
       "teams": [
         {
           "name": "Japan Women",
           "shortName": "JPNW",
-          "score": "57/10 (19.5 Ov)"
+          "score": "57/10 (19 Ov)"
         },
         {
           "name": "India Women",
           "shortName": "INDW",
-          "score": "59/2 (4.6 Ov)"
+          "score": "59/2 (5 Ov)"
         }
       ],
       "dateLabel": "18 Sept 2026, 10:30 am",
@@ -32628,7 +32628,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "India Women won by 8 wkts",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170933",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-09-18T05:00:00.000Z",
       "rawId": 170933,
       "starPerformers": []
@@ -32671,20 +32671,20 @@
       "statusLabel": "Past",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-men",
       "title": "India vs Afghanistan, 3rd T20I",
       "series": "Afghanistan vs India in India 2026",
       "teams": [
         {
           "name": "India",
           "shortName": "IND",
-          "score": "221/7 (19.6 Ov)"
+          "score": "221/7 (20 Ov)"
         },
         {
           "name": "Afghanistan",
           "shortName": "AFG",
-          "score": "94/10 (14.1 Ov)"
+          "score": "94/10 (14 Ov)"
         }
       ],
       "dateLabel": "17 Sept 2026, 07:30 pm",
@@ -32692,7 +32692,7 @@
       "place": "Arun Jaitley Stadium, Delhi",
       "overview": "India won by 127 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170120",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-17T14:00:00.000Z",
       "rawId": 170120,
       "starPerformers": []
@@ -36518,8 +36518,8 @@
       "statusLabel": "Future",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "India Women vs Bangladesh Women, 2nd Semi Final",
       "series": "Women's Asian Games 2026",
       "teams": [
@@ -36539,7 +36539,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "Match starts at Sep 20, 05:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170951",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-20T05:00:00.000Z",
       "rawId": 170951,
       "importance": "Knockout stage"
@@ -36550,20 +36550,20 @@
       "statusLabel": "Past",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-women",
       "title": "Japan Women vs India Women, 4th Quarter Final",
       "series": "Women's Asian Games 2026",
       "teams": [
         {
           "name": "Japan Women",
           "shortName": "JPNW",
-          "score": "57/10 (19.5 Ov)"
+          "score": "57/10 (19 Ov)"
         },
         {
           "name": "India Women",
           "shortName": "INDW",
-          "score": "59/2 (4.6 Ov)"
+          "score": "59/2 (5 Ov)"
         }
       ],
       "dateLabel": "18 Sept 2026, 10:30 am",
@@ -36571,7 +36571,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "India Women won by 8 wkts",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170933",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-09-18T05:00:00.000Z",
       "rawId": 170933,
       "starPerformers": [],
@@ -38727,20 +38727,20 @@
           "statusLabel": "Past",
           "level": "women",
           "levelLabel": "Women",
-          "sourceType": "International",
-          "sourceScope": "global",
+          "sourceType": "",
+          "sourceScope": "india-women",
           "title": "Japan Women vs India Women, 4th Quarter Final",
           "series": "Women's Asian Games 2026",
           "teams": [
             {
               "name": "Japan Women",
               "shortName": "JPNW",
-              "score": "57/10 (19.5 Ov)"
+              "score": "57/10 (19 Ov)"
             },
             {
               "name": "India Women",
               "shortName": "INDW",
-              "score": "59/2 (4.6 Ov)"
+              "score": "59/2 (5 Ov)"
             }
           ],
           "dateLabel": "18 Sept 2026, 10:30 am",
@@ -38748,7 +38748,7 @@
           "place": "Korogi Sports Park, Nisshin",
           "overview": "India Women won by 8 wkts",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170933",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
           "startTime": "2026-09-18T05:00:00.000Z",
           "rawId": 170933,
           "starPerformers": [],
@@ -38760,8 +38760,8 @@
           "statusLabel": "Future",
           "level": "women",
           "levelLabel": "Women",
-          "sourceType": "",
-          "sourceScope": "india-women",
+          "sourceType": "International",
+          "sourceScope": "global",
           "title": "India Women vs Bangladesh Women, 2nd Semi Final",
           "series": "Women's Asian Games 2026",
           "teams": [
@@ -38781,7 +38781,7 @@
           "place": "Korogi Sports Park, Nisshin",
           "overview": "Match starts at Sep 20, 05:00 GMT",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170951",
-          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-09-20T05:00:00.000Z",
           "rawId": 170951,
           "importance": "Knockout stage"
@@ -39000,20 +39000,20 @@
           "statusLabel": "Past",
           "level": "women",
           "levelLabel": "Women",
-          "sourceType": "International",
-          "sourceScope": "global",
+          "sourceType": "",
+          "sourceScope": "india-women",
           "title": "Japan Women vs India Women, 4th Quarter Final",
           "series": "Women's Asian Games 2026",
           "teams": [
             {
               "name": "Japan Women",
               "shortName": "JPNW",
-              "score": "57/10 (19.5 Ov)"
+              "score": "57/10 (19 Ov)"
             },
             {
               "name": "India Women",
               "shortName": "INDW",
-              "score": "59/2 (4.6 Ov)"
+              "score": "59/2 (5 Ov)"
             }
           ],
           "dateLabel": "18 Sept 2026, 10:30 am",
@@ -39021,7 +39021,7 @@
           "place": "Korogi Sports Park, Nisshin",
           "overview": "India Women won by 8 wkts",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170933",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
           "startTime": "2026-09-18T05:00:00.000Z",
           "rawId": 170933,
           "starPerformers": [],
