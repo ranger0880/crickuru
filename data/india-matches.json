@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-18T23:12:59.975Z",
-  "lastCheckedAt": "2026-09-18T23:12:59.975Z",
-  "lastSuccessfulSyncAt": "2026-09-18T23:12:59.975Z",
+  "syncedAt": "2026-09-19T01:09:51.490Z",
+  "lastCheckedAt": "2026-09-19T01:09:51.490Z",
+  "lastSuccessfulSyncAt": "2026-09-19T01:09:51.490Z",
   "coverage": {
     "pathways": [
       "India",
@@ -15389,7 +15389,7 @@
       "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
       "overview": "India U19 won by 7 runs (Match reduced to 20 overs per side due to rain)",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155466",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-09-18T03:30:00.000Z",
       "rawId": 155466,
       "starPerformers": []
@@ -32660,7 +32660,7 @@
       "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
       "overview": "India U19 won by 7 runs (Match reduced to 20 overs per side due to rain)",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155466",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-09-18T03:30:00.000Z",
       "rawId": 155466,
       "starPerformers": []
