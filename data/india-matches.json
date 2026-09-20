@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-20T00:58:27.667Z",
-  "lastCheckedAt": "2026-09-20T00:58:27.667Z",
-  "lastSuccessfulSyncAt": "2026-09-20T00:58:27.667Z",
+  "syncedAt": "2026-09-20T05:48:44.780Z",
+  "lastCheckedAt": "2026-09-20T05:48:44.780Z",
+  "lastSuccessfulSyncAt": "2026-09-20T05:48:44.780Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,16 +41,16 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 0,
+    "live": 1,
     "recent": 60,
-    "upcoming": 493,
+    "upcoming": 492,
     "total": 553
   },
   "all": [
     {
-      "id": "upcoming-170951",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-170951",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "women",
       "levelLabel": "Women",
       "sourceType": "International",
@@ -61,7 +61,7 @@
         {
           "name": "India Women",
           "shortName": "INDW",
-          "score": ""
+          "score": "101/2 (10.6 Ov)"
         },
         {
           "name": "Bangladesh Women",
@@ -72,7 +72,7 @@
       "dateLabel": "20 Sept 2026, 10:30 am",
       "time": "",
       "place": "Korogi Sports Park, Nisshin",
-      "overview": "Match starts at Sep 20, 05:00 GMT",
+      "overview": "India Women opt to bat",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170951",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-20T05:00:00.000Z",
@@ -17314,12 +17314,11 @@
       ]
     }
   ],
-  "live": [],
-  "upcoming": [
+  "live": [
     {
-      "id": "upcoming-170951",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-170951",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "women",
       "levelLabel": "Women",
       "sourceType": "International",
@@ -17330,7 +17329,7 @@
         {
           "name": "India Women",
           "shortName": "INDW",
-          "score": ""
+          "score": "101/2 (10.6 Ov)"
         },
         {
           "name": "Bangladesh Women",
@@ -17341,12 +17340,14 @@
       "dateLabel": "20 Sept 2026, 10:30 am",
       "time": "",
       "place": "Korogi Sports Park, Nisshin",
-      "overview": "Match starts at Sep 20, 05:00 GMT",
+      "overview": "India Women opt to bat",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170951",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-20T05:00:00.000Z",
       "rawId": 170951
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-155617",
       "status": "upcoming",
@@ -34608,9 +34609,9 @@
       "id": "women",
       "label": "Women",
       "order": 3,
-      "live": 0,
+      "live": 1,
       "recent": 30,
-      "upcoming": 30,
+      "upcoming": 29,
       "total": 60
     },
     {
@@ -34624,6 +34625,38 @@
     }
   ],
   "importantMatches": [
+    {
+      "id": "live-170951",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "India Women vs Bangladesh Women, 2nd Semi Final",
+      "series": "Women's Asian Games 2026",
+      "teams": [
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": "101/2 (10.6 Ov)"
+        },
+        {
+          "name": "Bangladesh Women",
+          "shortName": "BANW",
+          "score": ""
+        }
+      ],
+      "dateLabel": "20 Sept 2026, 10:30 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "India Women opt to bat",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170951",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-20T05:00:00.000Z",
+      "rawId": 170951,
+      "importance": "Knockout stage"
+    },
     {
       "id": "upcoming-163147",
       "status": "upcoming",
@@ -36510,38 +36543,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030,
-      "importance": "Knockout stage"
-    },
-    {
-      "id": "upcoming-170951",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India Women vs Bangladesh Women, 2nd Semi Final",
-      "series": "Women's Asian Games 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": ""
-        },
-        {
-          "name": "Bangladesh Women",
-          "shortName": "BANW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "20 Sept 2026, 10:30 am",
-      "time": "",
-      "place": "Korogi Sports Park, Nisshin",
-      "overview": "Match starts at Sep 20, 05:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170951",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-20T05:00:00.000Z",
-      "rawId": 170951,
       "importance": "Knockout stage"
     },
     {
@@ -38715,8 +38716,8 @@
       "level": "women",
       "levelLabel": "Women",
       "total": 2,
-      "live": 0,
-      "upcoming": 1,
+      "live": 1,
+      "upcoming": 0,
       "recent": 1,
       "startTime": "2026-09-18T05:00:00.000Z",
       "endTime": "2026-09-20T05:00:00.000Z",
@@ -38755,9 +38756,9 @@
           "importance": "Knockout stage"
         },
         {
-          "id": "upcoming-170951",
-          "status": "upcoming",
-          "statusLabel": "Future",
+          "id": "live-170951",
+          "status": "live",
+          "statusLabel": "Live",
           "level": "women",
           "levelLabel": "Women",
           "sourceType": "International",
@@ -38768,7 +38769,7 @@
             {
               "name": "India Women",
               "shortName": "INDW",
-              "score": ""
+              "score": "101/2 (10.6 Ov)"
             },
             {
               "name": "Bangladesh Women",
@@ -38779,7 +38780,7 @@
           "dateLabel": "20 Sept 2026, 10:30 am",
           "time": "",
           "place": "Korogi Sports Park, Nisshin",
-          "overview": "Match starts at Sep 20, 05:00 GMT",
+          "overview": "India Women opt to bat",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170951",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-09-20T05:00:00.000Z",
