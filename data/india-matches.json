@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-20T05:48:44.780Z",
-  "lastCheckedAt": "2026-09-20T05:48:44.780Z",
-  "lastSuccessfulSyncAt": "2026-09-20T05:48:44.780Z",
+  "syncedAt": "2026-09-20T10:07:57.685Z",
+  "lastCheckedAt": "2026-09-20T10:07:57.685Z",
+  "lastSuccessfulSyncAt": "2026-09-20T10:07:57.685Z",
   "coverage": {
     "pathways": [
       "India",
@@ -48,62 +48,31 @@
   },
   "all": [
     {
-      "id": "live-170951",
+      "id": "live-155617",
       "status": "live",
       "statusLabel": "Live",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India Women vs Bangladesh Women, 2nd Semi Final",
-      "series": "Women's Asian Games 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": "101/2 (10.6 Ov)"
-        },
-        {
-          "name": "Bangladesh Women",
-          "shortName": "BANW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "20 Sept 2026, 10:30 am",
-      "time": "",
-      "place": "Korogi Sports Park, Nisshin",
-      "overview": "India Women opt to bat",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170951",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-20T05:00:00.000Z",
-      "rawId": 170951
-    },
-    {
-      "id": "upcoming-155617",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
       "sourceType": "",
       "sourceScope": "india-a-women",
-      "title": "India A Women vs Australia A Women, 1st unofficial ODI",
+      "title": "Australia A Women vs India A Women, 1st unofficial ODI",
       "series": "Australia A Women tour of India 2026",
       "teams": [
         {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": ""
-        },
-        {
           "name": "Australia A Women",
           "shortName": "AUSWA",
+          "score": "75 (15 Ov)"
+        },
+        {
+          "name": "India A Women",
+          "shortName": "INDWA",
           "score": ""
         }
       ],
       "dateLabel": "20 Sept 2026, 02:00 pm",
       "time": "",
       "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Match starts at Sep 20, 08:30 GMT",
+      "overview": "India A Women opt to bowl",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155617",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
       "startTime": "2026-09-20T08:30:00.000Z",
@@ -201,6 +170,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
       "startTime": "2026-09-22T04:00:00.000Z",
       "rawId": 155411
+    },
+    {
+      "id": "upcoming-170963",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women",
+      "title": "India Women vs Sri Lanka Women, Final",
+      "series": "Women's Asian Games 2026",
+      "teams": [
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": ""
+        },
+        {
+          "name": "Sri Lanka Women",
+          "shortName": "SLW",
+          "score": ""
+        }
+      ],
+      "dateLabel": "22 Sept 2026, 10:30 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "Match starts at Sep 22, 05:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170963",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+      "startTime": "2026-09-22T05:00:00.000Z",
+      "rawId": 170963
     },
     {
       "id": "upcoming-155628",
@@ -15331,6 +15331,38 @@
       "rawId": 164501
     },
     {
+      "id": "recent-170951",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "India Women vs Bangladesh Women, 2nd Semi Final",
+      "series": "Women's Asian Games 2026",
+      "teams": [
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": "195/4 (19.6 Ov)"
+        },
+        {
+          "name": "Bangladesh Women",
+          "shortName": "BANW",
+          "score": "81/10 (15.4 Ov)"
+        }
+      ],
+      "dateLabel": "20 Sept 2026, 10:30 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "India Women won by 114 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170951",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-20T05:00:00.000Z",
+      "rawId": 170951,
+      "starPerformers": []
+    },
+    {
       "id": "recent-170933",
       "status": "recent",
       "statusLabel": "Past",
@@ -16664,38 +16696,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-121923",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "India Women vs South Africa Women, 18th Match, Group A",
-      "series": "ICC Women's T20 World Cup 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": "158/7 (20 Ov)"
-        },
-        {
-          "name": "South Africa Women",
-          "shortName": "RSAW",
-          "score": "161/4 (19 Ov)"
-        }
-      ],
-      "dateLabel": "21 Jun 2026, 07:00 pm",
-      "time": "",
-      "place": "Emirates Old Trafford, Manchester",
-      "overview": "South Africa Women won by 6 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/121923",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
-      "startTime": "2026-06-21T13:30:00.000Z",
-      "rawId": 121923,
-      "starPerformers": []
-    },
-    {
       "id": "recent-156179",
       "status": "recent",
       "statusLabel": "Past",
@@ -17316,69 +17316,38 @@
   ],
   "live": [
     {
-      "id": "live-170951",
+      "id": "live-155617",
       "status": "live",
       "statusLabel": "Live",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India Women vs Bangladesh Women, 2nd Semi Final",
-      "series": "Women's Asian Games 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": "101/2 (10.6 Ov)"
-        },
-        {
-          "name": "Bangladesh Women",
-          "shortName": "BANW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "20 Sept 2026, 10:30 am",
-      "time": "",
-      "place": "Korogi Sports Park, Nisshin",
-      "overview": "India Women opt to bat",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170951",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-20T05:00:00.000Z",
-      "rawId": 170951
-    }
-  ],
-  "upcoming": [
-    {
-      "id": "upcoming-155617",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "women",
-      "levelLabel": "Women",
       "sourceType": "",
       "sourceScope": "india-a-women",
-      "title": "India A Women vs Australia A Women, 1st unofficial ODI",
+      "title": "Australia A Women vs India A Women, 1st unofficial ODI",
       "series": "Australia A Women tour of India 2026",
       "teams": [
         {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": ""
-        },
-        {
           "name": "Australia A Women",
           "shortName": "AUSWA",
+          "score": "75 (15 Ov)"
+        },
+        {
+          "name": "India A Women",
+          "shortName": "INDWA",
           "score": ""
         }
       ],
       "dateLabel": "20 Sept 2026, 02:00 pm",
       "time": "",
       "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Match starts at Sep 20, 08:30 GMT",
+      "overview": "India A Women opt to bowl",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155617",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
       "startTime": "2026-09-20T08:30:00.000Z",
       "rawId": 155617
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-155477",
       "status": "upcoming",
@@ -17471,6 +17440,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
       "startTime": "2026-09-22T04:00:00.000Z",
       "rawId": 155411
+    },
+    {
+      "id": "upcoming-170963",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women",
+      "title": "India Women vs Sri Lanka Women, Final",
+      "series": "Women's Asian Games 2026",
+      "teams": [
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": ""
+        },
+        {
+          "name": "Sri Lanka Women",
+          "shortName": "SLW",
+          "score": ""
+        }
+      ],
+      "dateLabel": "22 Sept 2026, 10:30 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "Match starts at Sep 22, 05:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170963",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+      "startTime": "2026-09-22T05:00:00.000Z",
+      "rawId": 170963
     },
     {
       "id": "upcoming-155628",
@@ -32603,6 +32603,38 @@
   ],
   "recent": [
     {
+      "id": "recent-170951",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "India Women vs Bangladesh Women, 2nd Semi Final",
+      "series": "Women's Asian Games 2026",
+      "teams": [
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": "195/4 (19.6 Ov)"
+        },
+        {
+          "name": "Bangladesh Women",
+          "shortName": "BANW",
+          "score": "81/10 (15.4 Ov)"
+        }
+      ],
+      "dateLabel": "20 Sept 2026, 10:30 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "India Women won by 114 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170951",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-20T05:00:00.000Z",
+      "rawId": 170951,
+      "starPerformers": []
+    },
+    {
       "id": "recent-170933",
       "status": "recent",
       "statusLabel": "Past",
@@ -33936,38 +33968,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-121923",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "India Women vs South Africa Women, 18th Match, Group A",
-      "series": "ICC Women's T20 World Cup 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": "158/7 (20 Ov)"
-        },
-        {
-          "name": "South Africa Women",
-          "shortName": "RSAW",
-          "score": "161/4 (19 Ov)"
-        }
-      ],
-      "dateLabel": "21 Jun 2026, 07:00 pm",
-      "time": "",
-      "place": "Emirates Old Trafford, Manchester",
-      "overview": "South Africa Women won by 6 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/121923",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
-      "startTime": "2026-06-21T13:30:00.000Z",
-      "rawId": 121923,
-      "starPerformers": []
-    },
-    {
       "id": "recent-156179",
       "status": "recent",
       "statusLabel": "Past",
@@ -34625,38 +34625,6 @@
     }
   ],
   "importantMatches": [
-    {
-      "id": "live-170951",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India Women vs Bangladesh Women, 2nd Semi Final",
-      "series": "Women's Asian Games 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": "101/2 (10.6 Ov)"
-        },
-        {
-          "name": "Bangladesh Women",
-          "shortName": "BANW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "20 Sept 2026, 10:30 am",
-      "time": "",
-      "place": "Korogi Sports Park, Nisshin",
-      "overview": "India Women opt to bat",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170951",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-20T05:00:00.000Z",
-      "rawId": 170951,
-      "importance": "Knockout stage"
-    },
     {
       "id": "upcoming-163147",
       "status": "upcoming",
@@ -36543,6 +36511,71 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030,
+      "importance": "Knockout stage"
+    },
+    {
+      "id": "upcoming-170963",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women",
+      "title": "India Women vs Sri Lanka Women, Final",
+      "series": "Women's Asian Games 2026",
+      "teams": [
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": ""
+        },
+        {
+          "name": "Sri Lanka Women",
+          "shortName": "SLW",
+          "score": ""
+        }
+      ],
+      "dateLabel": "22 Sept 2026, 10:30 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "Match starts at Sep 22, 05:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170963",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+      "startTime": "2026-09-22T05:00:00.000Z",
+      "rawId": 170963,
+      "importance": "Knockout stage"
+    },
+    {
+      "id": "recent-170951",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "India Women vs Bangladesh Women, 2nd Semi Final",
+      "series": "Women's Asian Games 2026",
+      "teams": [
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": "195/4 (19.6 Ov)"
+        },
+        {
+          "name": "Bangladesh Women",
+          "shortName": "BANW",
+          "score": "81/10 (15.4 Ov)"
+        }
+      ],
+      "dateLabel": "20 Sept 2026, 10:30 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "India Women won by 114 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170951",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-20T05:00:00.000Z",
+      "rawId": 170951,
+      "starPerformers": [],
       "importance": "Knockout stage"
     },
     {
@@ -38715,12 +38748,12 @@
       "series": "Women's Asian Games 2026",
       "level": "women",
       "levelLabel": "Women",
-      "total": 2,
-      "live": 1,
-      "upcoming": 0,
-      "recent": 1,
+      "total": 3,
+      "live": 0,
+      "upcoming": 1,
+      "recent": 2,
       "startTime": "2026-09-18T05:00:00.000Z",
-      "endTime": "2026-09-20T05:00:00.000Z",
+      "endTime": "2026-09-22T05:00:00.000Z",
       "matches": [
         {
           "id": "recent-170933",
@@ -38756,9 +38789,9 @@
           "importance": "Knockout stage"
         },
         {
-          "id": "live-170951",
-          "status": "live",
-          "statusLabel": "Live",
+          "id": "recent-170951",
+          "status": "recent",
+          "statusLabel": "Past",
           "level": "women",
           "levelLabel": "Women",
           "sourceType": "International",
@@ -38769,22 +38802,55 @@
             {
               "name": "India Women",
               "shortName": "INDW",
-              "score": "101/2 (10.6 Ov)"
+              "score": "195/4 (19.6 Ov)"
             },
             {
               "name": "Bangladesh Women",
               "shortName": "BANW",
-              "score": ""
+              "score": "81/10 (15.4 Ov)"
             }
           ],
           "dateLabel": "20 Sept 2026, 10:30 am",
           "time": "",
           "place": "Korogi Sports Park, Nisshin",
-          "overview": "India Women opt to bat",
+          "overview": "India Women won by 114 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170951",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-09-20T05:00:00.000Z",
           "rawId": 170951,
+          "starPerformers": [],
+          "importance": "Knockout stage"
+        },
+        {
+          "id": "upcoming-170963",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "women",
+          "levelLabel": "Women",
+          "sourceType": "",
+          "sourceScope": "india-women",
+          "title": "India Women vs Sri Lanka Women, Final",
+          "series": "Women's Asian Games 2026",
+          "teams": [
+            {
+              "name": "India Women",
+              "shortName": "INDW",
+              "score": ""
+            },
+            {
+              "name": "Sri Lanka Women",
+              "shortName": "SLW",
+              "score": ""
+            }
+          ],
+          "dateLabel": "22 Sept 2026, 10:30 am",
+          "time": "",
+          "place": "Korogi Sports Park, Nisshin",
+          "overview": "Match starts at Sep 22, 05:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170963",
+          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+          "startTime": "2026-09-22T05:00:00.000Z",
+          "rawId": 170963,
           "importance": "Knockout stage"
         }
       ]
@@ -38995,6 +39061,39 @@
       "month": "2026-09",
       "label": "September 2026",
       "matches": [
+        {
+          "id": "recent-170951",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "women",
+          "levelLabel": "Women",
+          "sourceType": "International",
+          "sourceScope": "global",
+          "title": "India Women vs Bangladesh Women, 2nd Semi Final",
+          "series": "Women's Asian Games 2026",
+          "teams": [
+            {
+              "name": "India Women",
+              "shortName": "INDW",
+              "score": "195/4 (19.6 Ov)"
+            },
+            {
+              "name": "Bangladesh Women",
+              "shortName": "BANW",
+              "score": "81/10 (15.4 Ov)"
+            }
+          ],
+          "dateLabel": "20 Sept 2026, 10:30 am",
+          "time": "",
+          "place": "Korogi Sports Park, Nisshin",
+          "overview": "India Women won by 114 runs",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170951",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "startTime": "2026-09-20T05:00:00.000Z",
+          "rawId": 170951,
+          "starPerformers": [],
+          "importance": "Knockout stage"
+        },
         {
           "id": "recent-170933",
           "status": "recent",
