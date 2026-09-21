@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-21T01:34:43.739Z",
-  "lastCheckedAt": "2026-09-21T01:34:43.739Z",
-  "lastSuccessfulSyncAt": "2026-09-21T01:34:43.739Z",
+  "syncedAt": "2026-09-21T07:03:11.192Z",
+  "lastCheckedAt": "2026-09-21T07:03:11.192Z",
+  "lastSuccessfulSyncAt": "2026-09-21T07:03:11.192Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,27 +41,27 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 0,
+    "live": 1,
     "recent": 60,
-    "upcoming": 492,
+    "upcoming": 491,
     "total": 552
   },
   "all": [
     {
-      "id": "upcoming-155477",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-u19",
+      "id": "live-155477",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "India U19 vs Australia U19, 2nd unofficial ODI",
       "series": "Australia U19 tour of India 2026",
       "teams": [
         {
           "name": "India U19",
           "shortName": "INDU19",
-          "score": ""
+          "score": "317/3 (46.4 Ov)"
         },
         {
           "name": "Australia U19",
@@ -72,9 +72,9 @@
       "dateLabel": "21 Sept 2026, 09:00 am",
       "time": "",
       "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
-      "overview": "Match starts at Sep 21, 03:30 GMT",
+      "overview": "India U19 opt to bat",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155477",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-21T03:30:00.000Z",
       "rawId": 155477
     },
@@ -84,8 +84,8 @@
       "statusLabel": "Future",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "Japan vs India, One-off T20I",
       "series": "India tour of Japan, 2026",
       "teams": [
@@ -105,7 +105,7 @@
       "place": "Sano International Cricket Ground, Sano, Kanto",
       "overview": "Match starts at Sep 22, 04:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171477",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-22T04:00:00.000Z",
       "rawId": 171477
     },
@@ -146,8 +146,8 @@
       "statusLabel": "Future",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "India Women vs Sri Lanka Women, Final",
       "series": "Women's Asian Games 2026",
       "teams": [
@@ -167,7 +167,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "Match starts at Sep 22, 05:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170963",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-22T05:00:00.000Z",
       "rawId": 170963
     },
@@ -15337,15 +15337,15 @@
       "statusLabel": "Past",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-women",
       "title": "India Women vs Bangladesh Women, 2nd Semi Final",
       "series": "Women's Asian Games 2026",
       "teams": [
         {
           "name": "India Women",
           "shortName": "INDW",
-          "score": "195/4 (19.6 Ov)"
+          "score": "195/4 (20 Ov)"
         },
         {
           "name": "Bangladesh Women",
@@ -15358,7 +15358,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "India Women won by 114 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170951",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-09-20T05:00:00.000Z",
       "rawId": 170951,
       "starPerformers": []
@@ -17283,23 +17283,22 @@
       ]
     }
   ],
-  "live": [],
-  "upcoming": [
+  "live": [
     {
-      "id": "upcoming-155477",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-u19",
+      "id": "live-155477",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "India U19 vs Australia U19, 2nd unofficial ODI",
       "series": "Australia U19 tour of India 2026",
       "teams": [
         {
           "name": "India U19",
           "shortName": "INDU19",
-          "score": ""
+          "score": "317/3 (46.4 Ov)"
         },
         {
           "name": "Australia U19",
@@ -17310,20 +17309,22 @@
       "dateLabel": "21 Sept 2026, 09:00 am",
       "time": "",
       "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
-      "overview": "Match starts at Sep 21, 03:30 GMT",
+      "overview": "India U19 opt to bat",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155477",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-21T03:30:00.000Z",
       "rawId": 155477
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-171477",
       "status": "upcoming",
       "statusLabel": "Future",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "Japan vs India, One-off T20I",
       "series": "India tour of Japan, 2026",
       "teams": [
@@ -17343,7 +17344,7 @@
       "place": "Sano International Cricket Ground, Sano, Kanto",
       "overview": "Match starts at Sep 22, 04:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171477",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-22T04:00:00.000Z",
       "rawId": 171477
     },
@@ -17384,8 +17385,8 @@
       "statusLabel": "Future",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "India Women vs Sri Lanka Women, Final",
       "series": "Women's Asian Games 2026",
       "teams": [
@@ -17405,7 +17406,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "Match starts at Sep 22, 05:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170963",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-22T05:00:00.000Z",
       "rawId": 170963
     },
@@ -32577,15 +32578,15 @@
       "statusLabel": "Past",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-women",
       "title": "India Women vs Bangladesh Women, 2nd Semi Final",
       "series": "Women's Asian Games 2026",
       "teams": [
         {
           "name": "India Women",
           "shortName": "INDW",
-          "score": "195/4 (19.6 Ov)"
+          "score": "195/4 (20 Ov)"
         },
         {
           "name": "Bangladesh Women",
@@ -32598,7 +32599,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "India Women won by 114 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170951",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-09-20T05:00:00.000Z",
       "rawId": 170951,
       "starPerformers": []
@@ -34530,8 +34531,8 @@
       "order": 1,
       "live": 0,
       "recent": 30,
-      "upcoming": 50,
-      "total": 80
+      "upcoming": 49,
+      "total": 79
     },
     {
       "id": "league",
@@ -34555,10 +34556,10 @@
       "id": "domestic",
       "label": "Domestic / State",
       "order": 4,
-      "live": 0,
+      "live": 1,
       "recent": 0,
       "upcoming": 413,
-      "total": 413
+      "total": 414
     }
   ],
   "importantMatches": [
@@ -36456,8 +36457,8 @@
       "statusLabel": "Future",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "India Women vs Sri Lanka Women, Final",
       "series": "Women's Asian Games 2026",
       "teams": [
@@ -36477,7 +36478,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "Match starts at Sep 22, 05:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170963",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-22T05:00:00.000Z",
       "rawId": 170963,
       "importance": "Knockout stage"
@@ -36488,15 +36489,15 @@
       "statusLabel": "Past",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-women",
       "title": "India Women vs Bangladesh Women, 2nd Semi Final",
       "series": "Women's Asian Games 2026",
       "teams": [
         {
           "name": "India Women",
           "shortName": "INDW",
-          "score": "195/4 (19.6 Ov)"
+          "score": "195/4 (20 Ov)"
         },
         {
           "name": "Bangladesh Women",
@@ -36509,7 +36510,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "India Women won by 114 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170951",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-09-20T05:00:00.000Z",
       "rawId": 170951,
       "starPerformers": [],
@@ -38731,15 +38732,15 @@
           "statusLabel": "Past",
           "level": "women",
           "levelLabel": "Women",
-          "sourceType": "International",
-          "sourceScope": "global",
+          "sourceType": "",
+          "sourceScope": "india-women",
           "title": "India Women vs Bangladesh Women, 2nd Semi Final",
           "series": "Women's Asian Games 2026",
           "teams": [
             {
               "name": "India Women",
               "shortName": "INDW",
-              "score": "195/4 (19.6 Ov)"
+              "score": "195/4 (20 Ov)"
             },
             {
               "name": "Bangladesh Women",
@@ -38752,7 +38753,7 @@
           "place": "Korogi Sports Park, Nisshin",
           "overview": "India Women won by 114 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170951",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
           "startTime": "2026-09-20T05:00:00.000Z",
           "rawId": 170951,
           "starPerformers": [],
@@ -38764,8 +38765,8 @@
           "statusLabel": "Future",
           "level": "women",
           "levelLabel": "Women",
-          "sourceType": "",
-          "sourceScope": "india-women",
+          "sourceType": "International",
+          "sourceScope": "global",
           "title": "India Women vs Sri Lanka Women, Final",
           "series": "Women's Asian Games 2026",
           "teams": [
@@ -38785,7 +38786,7 @@
           "place": "Korogi Sports Park, Nisshin",
           "overview": "Match starts at Sep 22, 05:00 GMT",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170963",
-          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-09-22T05:00:00.000Z",
           "rawId": 170963,
           "importance": "Knockout stage"
@@ -39004,15 +39005,15 @@
           "statusLabel": "Past",
           "level": "women",
           "levelLabel": "Women",
-          "sourceType": "International",
-          "sourceScope": "global",
+          "sourceType": "",
+          "sourceScope": "india-women",
           "title": "India Women vs Bangladesh Women, 2nd Semi Final",
           "series": "Women's Asian Games 2026",
           "teams": [
             {
               "name": "India Women",
               "shortName": "INDW",
-              "score": "195/4 (19.6 Ov)"
+              "score": "195/4 (20 Ov)"
             },
             {
               "name": "Bangladesh Women",
@@ -39025,7 +39026,7 @@
           "place": "Korogi Sports Park, Nisshin",
           "overview": "India Women won by 114 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170951",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
           "startTime": "2026-09-20T05:00:00.000Z",
           "rawId": 170951,
           "starPerformers": [],
