@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
-  "sourceStatus": "partial",
-  "syncedAt": "2026-09-21T19:01:09.900Z",
-  "lastCheckedAt": "2026-09-21T19:01:09.900Z",
-  "lastSuccessfulSyncAt": "2026-09-21T19:01:09.900Z",
+  "sourceStatus": "fresh",
+  "syncedAt": "2026-09-21T22:32:41.493Z",
+  "lastCheckedAt": "2026-09-21T22:32:41.493Z",
+  "lastSuccessfulSyncAt": "2026-09-21T22:32:41.493Z",
   "coverage": {
     "pathways": [
       "India",
@@ -82,10 +82,10 @@
       "id": "upcoming-155411",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
+      "level": "international",
+      "levelLabel": "International",
       "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceScope": "india-a",
       "title": "India A vs Australia A, 1st unofficial Test",
       "series": "Australia A tour of India 2026",
       "teams": [
@@ -105,7 +105,7 @@
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
       "overview": "Match starts at Sep 22, 04:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155411",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12184/australia-a-tour-of-india-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
       "startTime": "2026-09-22T04:00:00.000Z",
       "rawId": 155411
     },
@@ -327,6 +327,37 @@
       "rawId": 171030
     },
     {
+      "id": "upcoming-155422",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-a",
+      "title": "India A vs Australia A, 2nd unofficial Test",
+      "series": "Australia A tour of India 2026",
+      "teams": [
+        {
+          "name": "India A",
+          "shortName": "INDA",
+          "score": ""
+        },
+        {
+          "name": "Australia A",
+          "shortName": "AUSA",
+          "score": ""
+        }
+      ],
+      "dateLabel": "29 Sept 2026, 09:30 am",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "Match starts at Sep 29, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155422",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
+      "startTime": "2026-09-29T04:00:00.000Z",
+      "rawId": 155422
+    },
+    {
       "id": "upcoming-155650",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -356,37 +387,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
       "startTime": "2026-09-29T04:00:00.000Z",
       "rawId": 155650
-    },
-    {
-      "id": "upcoming-155422",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "India A vs Australia A, 2nd unofficial Test",
-      "series": "Australia A tour of India 2026",
-      "teams": [
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": ""
-        },
-        {
-          "name": "Australia A",
-          "shortName": "AUSA",
-          "score": ""
-        }
-      ],
-      "dateLabel": "29 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Match starts at Sep 29, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155422",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12184/australia-a-tour-of-india-2026/matches",
-      "startTime": "2026-09-29T04:00:00.000Z",
-      "rawId": 155422
     },
     {
       "id": "upcoming-151543",
@@ -516,10 +516,10 @@
       "id": "upcoming-155433",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
+      "level": "international",
+      "levelLabel": "International",
       "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceScope": "india-a",
       "title": "India A vs Australia A, 1st unofficial ODI",
       "series": "Australia A tour of India 2026",
       "teams": [
@@ -539,7 +539,7 @@
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
       "overview": "Match starts at Oct 06, 04:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155433",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12184/australia-a-tour-of-india-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
       "startTime": "2026-10-06T04:00:00.000Z",
       "rawId": 155433
     },
@@ -578,10 +578,10 @@
       "id": "upcoming-155444",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
+      "level": "international",
+      "levelLabel": "International",
       "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceScope": "india-a",
       "title": "India A vs Australia A, 2nd unofficial ODI",
       "series": "Australia A tour of India 2026",
       "teams": [
@@ -601,7 +601,7 @@
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
       "overview": "Match starts at Oct 09, 04:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155444",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12184/australia-a-tour-of-india-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
       "startTime": "2026-10-09T04:00:00.000Z",
       "rawId": 155444
     },
@@ -640,10 +640,10 @@
       "id": "upcoming-155455",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
+      "level": "international",
+      "levelLabel": "International",
       "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceScope": "india-a",
       "title": "India A vs Australia A, 3rd unofficial ODI",
       "series": "Australia A tour of India 2026",
       "teams": [
@@ -663,7 +663,7 @@
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
       "overview": "Match starts at Oct 11, 04:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155455",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12184/australia-a-tour-of-india-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 155455
     },
@@ -2097,10 +2097,10 @@
       "id": "upcoming-171291",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
+      "level": "international",
+      "levelLabel": "International",
       "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceScope": "india-a",
       "title": "New Zealand A vs India A, 1st Unofficial Test",
       "series": "India A tour of New Zealand, 2026",
       "teams": [
@@ -2120,7 +2120,7 @@
       "place": "Bert Sutcliffe Oval, Lincoln",
       "overview": "Match starts at Oct 24, 21:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171291",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/13091/india-a-tour-of-new-zealand-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
       "startTime": "2026-10-23T21:30:00.000Z",
       "rawId": 171291
     },
@@ -3554,10 +3554,10 @@
       "id": "upcoming-171307",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
+      "level": "international",
+      "levelLabel": "International",
       "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceScope": "india-a",
       "title": "New Zealand A vs India A, 3rd Unofficial Test",
       "series": "India A tour of New Zealand, 2026",
       "teams": [
@@ -3577,7 +3577,7 @@
       "place": "Bert Sutcliffe Oval, Lincoln",
       "overview": "Match starts at Nov 07, 21:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171307",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/13091/india-a-tour-of-new-zealand-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
       "startTime": "2026-11-06T21:30:00.000Z",
       "rawId": 171307
     },
@@ -8421,10 +8421,10 @@
       "id": "upcoming-169721",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
+      "level": "international",
+      "levelLabel": "International",
       "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceScope": "india-a",
       "title": "Nepal vs India A, 1st Unofficial T20I",
       "series": "India A tour of Nepal, 2026",
       "teams": [
@@ -8444,7 +8444,7 @@
       "place": "Tribhuvan University International Cricket Ground, Kirtipur",
       "overview": "Match starts at Dec 09, 04:15 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169721",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12923/india-a-tour-of-nepal-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
       "startTime": "2026-12-09T04:15:00.000Z",
       "rawId": 169721
     },
@@ -8483,10 +8483,10 @@
       "id": "upcoming-169731",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
+      "level": "international",
+      "levelLabel": "International",
       "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceScope": "india-a",
       "title": "Nepal vs India A, 2nd Unofficial T20I",
       "series": "India A tour of Nepal, 2026",
       "teams": [
@@ -8506,7 +8506,7 @@
       "place": "Tribhuvan University International Cricket Ground, Kirtipur",
       "overview": "Match starts at Dec 11, 00:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169731",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12923/india-a-tour-of-nepal-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
       "startTime": "2026-12-11T04:15:00.000Z",
       "rawId": 169731
     },
@@ -8545,10 +8545,10 @@
       "id": "upcoming-169740",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
+      "level": "international",
+      "levelLabel": "International",
       "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceScope": "india-a",
       "title": "Nepal vs India A, 3rd Unofficial T20I",
       "series": "India A tour of Nepal, 2026",
       "teams": [
@@ -8568,7 +8568,7 @@
       "place": "Tribhuvan University International Cricket Ground, Kirtipur",
       "overview": "Match starts at Dec 13, 04:15 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169740",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12923/india-a-tour-of-nepal-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
       "startTime": "2026-12-13T04:15:00.000Z",
       "rawId": 169740
     },
@@ -17289,10 +17289,10 @@
       "id": "upcoming-155411",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
+      "level": "international",
+      "levelLabel": "International",
       "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceScope": "india-a",
       "title": "India A vs Australia A, 1st unofficial Test",
       "series": "Australia A tour of India 2026",
       "teams": [
@@ -17312,7 +17312,7 @@
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
       "overview": "Match starts at Sep 22, 04:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155411",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12184/australia-a-tour-of-india-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
       "startTime": "2026-09-22T04:00:00.000Z",
       "rawId": 155411
     },
@@ -17534,6 +17534,37 @@
       "rawId": 171030
     },
     {
+      "id": "upcoming-155422",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-a",
+      "title": "India A vs Australia A, 2nd unofficial Test",
+      "series": "Australia A tour of India 2026",
+      "teams": [
+        {
+          "name": "India A",
+          "shortName": "INDA",
+          "score": ""
+        },
+        {
+          "name": "Australia A",
+          "shortName": "AUSA",
+          "score": ""
+        }
+      ],
+      "dateLabel": "29 Sept 2026, 09:30 am",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "Match starts at Sep 29, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155422",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
+      "startTime": "2026-09-29T04:00:00.000Z",
+      "rawId": 155422
+    },
+    {
       "id": "upcoming-155650",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -17563,37 +17594,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
       "startTime": "2026-09-29T04:00:00.000Z",
       "rawId": 155650
-    },
-    {
-      "id": "upcoming-155422",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "India A vs Australia A, 2nd unofficial Test",
-      "series": "Australia A tour of India 2026",
-      "teams": [
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": ""
-        },
-        {
-          "name": "Australia A",
-          "shortName": "AUSA",
-          "score": ""
-        }
-      ],
-      "dateLabel": "29 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Match starts at Sep 29, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155422",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12184/australia-a-tour-of-india-2026/matches",
-      "startTime": "2026-09-29T04:00:00.000Z",
-      "rawId": 155422
     },
     {
       "id": "upcoming-151543",
@@ -17723,10 +17723,10 @@
       "id": "upcoming-155433",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
+      "level": "international",
+      "levelLabel": "International",
       "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceScope": "india-a",
       "title": "India A vs Australia A, 1st unofficial ODI",
       "series": "Australia A tour of India 2026",
       "teams": [
@@ -17746,7 +17746,7 @@
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
       "overview": "Match starts at Oct 06, 04:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155433",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12184/australia-a-tour-of-india-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
       "startTime": "2026-10-06T04:00:00.000Z",
       "rawId": 155433
     },
@@ -17785,10 +17785,10 @@
       "id": "upcoming-155444",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
+      "level": "international",
+      "levelLabel": "International",
       "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceScope": "india-a",
       "title": "India A vs Australia A, 2nd unofficial ODI",
       "series": "Australia A tour of India 2026",
       "teams": [
@@ -17808,7 +17808,7 @@
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
       "overview": "Match starts at Oct 09, 04:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155444",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12184/australia-a-tour-of-india-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
       "startTime": "2026-10-09T04:00:00.000Z",
       "rawId": 155444
     },
@@ -17847,10 +17847,10 @@
       "id": "upcoming-155455",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
+      "level": "international",
+      "levelLabel": "International",
       "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceScope": "india-a",
       "title": "India A vs Australia A, 3rd unofficial ODI",
       "series": "Australia A tour of India 2026",
       "teams": [
@@ -17870,7 +17870,7 @@
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
       "overview": "Match starts at Oct 11, 04:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155455",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12184/australia-a-tour-of-india-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 155455
     },
@@ -19304,10 +19304,10 @@
       "id": "upcoming-171291",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
+      "level": "international",
+      "levelLabel": "International",
       "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceScope": "india-a",
       "title": "New Zealand A vs India A, 1st Unofficial Test",
       "series": "India A tour of New Zealand, 2026",
       "teams": [
@@ -19327,7 +19327,7 @@
       "place": "Bert Sutcliffe Oval, Lincoln",
       "overview": "Match starts at Oct 24, 21:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171291",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/13091/india-a-tour-of-new-zealand-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
       "startTime": "2026-10-23T21:30:00.000Z",
       "rawId": 171291
     },
@@ -20761,10 +20761,10 @@
       "id": "upcoming-171307",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
+      "level": "international",
+      "levelLabel": "International",
       "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceScope": "india-a",
       "title": "New Zealand A vs India A, 3rd Unofficial Test",
       "series": "India A tour of New Zealand, 2026",
       "teams": [
@@ -20784,7 +20784,7 @@
       "place": "Bert Sutcliffe Oval, Lincoln",
       "overview": "Match starts at Nov 07, 21:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171307",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/13091/india-a-tour-of-new-zealand-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
       "startTime": "2026-11-06T21:30:00.000Z",
       "rawId": 171307
     },
@@ -25628,10 +25628,10 @@
       "id": "upcoming-169721",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
+      "level": "international",
+      "levelLabel": "International",
       "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceScope": "india-a",
       "title": "Nepal vs India A, 1st Unofficial T20I",
       "series": "India A tour of Nepal, 2026",
       "teams": [
@@ -25651,7 +25651,7 @@
       "place": "Tribhuvan University International Cricket Ground, Kirtipur",
       "overview": "Match starts at Dec 09, 04:15 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169721",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12923/india-a-tour-of-nepal-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
       "startTime": "2026-12-09T04:15:00.000Z",
       "rawId": 169721
     },
@@ -25690,10 +25690,10 @@
       "id": "upcoming-169731",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
+      "level": "international",
+      "levelLabel": "International",
       "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceScope": "india-a",
       "title": "Nepal vs India A, 2nd Unofficial T20I",
       "series": "India A tour of Nepal, 2026",
       "teams": [
@@ -25713,7 +25713,7 @@
       "place": "Tribhuvan University International Cricket Ground, Kirtipur",
       "overview": "Match starts at Dec 11, 00:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169731",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12923/india-a-tour-of-nepal-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
       "startTime": "2026-12-11T04:15:00.000Z",
       "rawId": 169731
     },
@@ -25752,10 +25752,10 @@
       "id": "upcoming-169740",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
+      "level": "international",
+      "levelLabel": "International",
       "sourceType": "",
-      "sourceScope": "domestic-series",
+      "sourceScope": "india-a",
       "title": "Nepal vs India A, 3rd Unofficial T20I",
       "series": "India A tour of Nepal, 2026",
       "teams": [
@@ -25775,7 +25775,7 @@
       "place": "Tribhuvan University International Cricket Ground, Kirtipur",
       "overview": "Match starts at Dec 13, 04:15 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169740",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12923/india-a-tour-of-nepal-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
       "startTime": "2026-12-13T04:15:00.000Z",
       "rawId": 169740
     },
@@ -34468,8 +34468,8 @@
       "order": 1,
       "live": 0,
       "recent": 29,
-      "upcoming": 39,
-      "total": 68
+      "upcoming": 49,
+      "total": 78
     },
     {
       "id": "league",
@@ -34495,8 +34495,8 @@
       "order": 4,
       "live": 0,
       "recent": 1,
-      "upcoming": 423,
-      "total": 424
+      "upcoming": 413,
+      "total": 414
     }
   ],
   "importantMatches": [
@@ -39197,7 +39197,5 @@
       ]
     }
   ],
-  "errors": [
-    "fetch failed"
-  ]
+  "errors": []
 }
