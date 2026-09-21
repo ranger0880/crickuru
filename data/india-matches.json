@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-21T07:03:11.192Z",
-  "lastCheckedAt": "2026-09-21T07:03:11.192Z",
-  "lastSuccessfulSyncAt": "2026-09-21T07:03:11.192Z",
+  "syncedAt": "2026-09-21T13:56:13.421Z",
+  "lastCheckedAt": "2026-09-21T13:56:13.421Z",
+  "lastSuccessfulSyncAt": "2026-09-21T13:56:13.421Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,43 +41,12 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 1,
+    "live": 0,
     "recent": 60,
     "upcoming": 491,
-    "total": 552
+    "total": 551
   },
   "all": [
-    {
-      "id": "live-155477",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "India U19 vs Australia U19, 2nd unofficial ODI",
-      "series": "Australia U19 tour of India 2026",
-      "teams": [
-        {
-          "name": "India U19",
-          "shortName": "INDU19",
-          "score": "317/3 (46.4 Ov)"
-        },
-        {
-          "name": "Australia U19",
-          "shortName": "AUSU19",
-          "score": ""
-        }
-      ],
-      "dateLabel": "21 Sept 2026, 09:00 am",
-      "time": "",
-      "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
-      "overview": "India U19 opt to bat",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155477",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-21T03:30:00.000Z",
-      "rawId": 155477
-    },
     {
       "id": "upcoming-171477",
       "status": "upcoming",
@@ -15300,6 +15269,38 @@
       "rawId": 164501
     },
     {
+      "id": "recent-155477",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "India U19 vs Australia U19, 2nd unofficial ODI",
+      "series": "Australia U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "India U19",
+          "shortName": "INDU19",
+          "score": "341/7 (49.6 Ov)"
+        },
+        {
+          "name": "Australia U19",
+          "shortName": "AUSU19",
+          "score": "238/10 (41.1 Ov)"
+        }
+      ],
+      "dateLabel": "21 Sept 2026, 09:00 am",
+      "time": "",
+      "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
+      "overview": "India U19 won by 103 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155477",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-21T03:30:00.000Z",
+      "rawId": 155477,
+      "starPerformers": []
+    },
+    {
       "id": "recent-155617",
       "status": "recent",
       "statusLabel": "Past",
@@ -17070,38 +17071,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-138589",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-u19",
-      "title": "India U19 vs Zimbabwe U19, 6th Match, Super Six Group 2 (B,C)",
-      "series": "ICC Under 19 World Cup 2026",
-      "teams": [
-        {
-          "name": "India U19",
-          "shortName": "INDU19",
-          "score": "352/8 (50 Ov)"
-        },
-        {
-          "name": "Zimbabwe U19",
-          "shortName": "ZIMU19",
-          "score": "148/10 (37 Ov)"
-        }
-      ],
-      "dateLabel": "27 Jan 2026, 01:00 pm",
-      "time": "",
-      "place": "Queens Sports Club, Bulawayo",
-      "overview": "India U19 won by 204 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138589",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
-      "startTime": "2026-01-27T07:30:00.000Z",
-      "rawId": 138589,
-      "starPerformers": []
-    },
-    {
       "id": "recent-137454",
       "status": "recent",
       "statusLabel": "Past",
@@ -17283,39 +17252,7 @@
       ]
     }
   ],
-  "live": [
-    {
-      "id": "live-155477",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "India U19 vs Australia U19, 2nd unofficial ODI",
-      "series": "Australia U19 tour of India 2026",
-      "teams": [
-        {
-          "name": "India U19",
-          "shortName": "INDU19",
-          "score": "317/3 (46.4 Ov)"
-        },
-        {
-          "name": "Australia U19",
-          "shortName": "AUSU19",
-          "score": ""
-        }
-      ],
-      "dateLabel": "21 Sept 2026, 09:00 am",
-      "time": "",
-      "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
-      "overview": "India U19 opt to bat",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155477",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-21T03:30:00.000Z",
-      "rawId": 155477
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "upcoming-171477",
@@ -32541,6 +32478,38 @@
   ],
   "recent": [
     {
+      "id": "recent-155477",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "India U19 vs Australia U19, 2nd unofficial ODI",
+      "series": "Australia U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "India U19",
+          "shortName": "INDU19",
+          "score": "341/7 (49.6 Ov)"
+        },
+        {
+          "name": "Australia U19",
+          "shortName": "AUSU19",
+          "score": "238/10 (41.1 Ov)"
+        }
+      ],
+      "dateLabel": "21 Sept 2026, 09:00 am",
+      "time": "",
+      "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
+      "overview": "India U19 won by 103 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155477",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-21T03:30:00.000Z",
+      "rawId": 155477,
+      "starPerformers": []
+    },
+    {
       "id": "recent-155617",
       "status": "recent",
       "statusLabel": "Past",
@@ -34311,38 +34280,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-138589",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-u19",
-      "title": "India U19 vs Zimbabwe U19, 6th Match, Super Six Group 2 (B,C)",
-      "series": "ICC Under 19 World Cup 2026",
-      "teams": [
-        {
-          "name": "India U19",
-          "shortName": "INDU19",
-          "score": "352/8 (50 Ov)"
-        },
-        {
-          "name": "Zimbabwe U19",
-          "shortName": "ZIMU19",
-          "score": "148/10 (37 Ov)"
-        }
-      ],
-      "dateLabel": "27 Jan 2026, 01:00 pm",
-      "time": "",
-      "place": "Queens Sports Club, Bulawayo",
-      "overview": "India U19 won by 204 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138589",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
-      "startTime": "2026-01-27T07:30:00.000Z",
-      "rawId": 138589,
-      "starPerformers": []
-    },
-    {
       "id": "recent-137454",
       "status": "recent",
       "statusLabel": "Past",
@@ -34530,9 +34467,9 @@
       "label": "International",
       "order": 1,
       "live": 0,
-      "recent": 30,
+      "recent": 29,
       "upcoming": 49,
-      "total": 79
+      "total": 78
     },
     {
       "id": "league",
@@ -34556,8 +34493,8 @@
       "id": "domestic",
       "label": "Domestic / State",
       "order": 4,
-      "live": 1,
-      "recent": 0,
+      "live": 0,
+      "recent": 1,
       "upcoming": 413,
       "total": 414
     }
