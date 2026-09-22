@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-22T06:05:06.131Z",
-  "lastCheckedAt": "2026-09-22T06:05:06.131Z",
-  "lastSuccessfulSyncAt": "2026-09-22T06:05:06.131Z",
+  "syncedAt": "2026-09-22T11:27:45.113Z",
+  "lastCheckedAt": "2026-09-22T11:27:45.113Z",
+  "lastSuccessfulSyncAt": "2026-09-22T11:27:45.113Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,43 +41,12 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 3,
+    "live": 1,
     "recent": 60,
     "upcoming": 488,
-    "total": 551
+    "total": 549
   },
   "all": [
-    {
-      "id": "live-171477",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "Japan vs India, One-off T20I",
-      "series": "India tour of Japan, 2026",
-      "teams": [
-        {
-          "name": "Japan",
-          "shortName": "JPN",
-          "score": ""
-        },
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": ""
-        }
-      ],
-      "dateLabel": "22 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "Sano International Cricket Ground, Sano, Kanto",
-      "overview": "Toss delayed due to wet outfield",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171477",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-22T04:00:00.000Z",
-      "rawId": 171477
-    },
     {
       "id": "live-155411",
       "status": "live",
@@ -92,7 +61,7 @@
         {
           "name": "India A",
           "shortName": "INDA",
-          "score": "78/3 (26.4 Ov)"
+          "score": "257/5 (87.4 Ov)"
         },
         {
           "name": "Australia A",
@@ -103,42 +72,11 @@
       "dateLabel": "22 Sept 2026, 09:30 am",
       "time": "",
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Day 1: Lunch Break",
+      "overview": "Day 1: 3rd Session",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155411",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-22T04:00:00.000Z",
       "rawId": 155411
-    },
-    {
-      "id": "live-170963",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India Women vs Sri Lanka Women, Final",
-      "series": "Women's Asian Games 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": "142/2 (14.6 Ov)"
-        },
-        {
-          "name": "Sri Lanka Women",
-          "shortName": "SLW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "22 Sept 2026, 10:30 am",
-      "time": "",
-      "place": "Korogi Sports Park, Nisshin",
-      "overview": "India Women opt to bat",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170963",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-22T05:00:00.000Z",
-      "rawId": 170963
     },
     {
       "id": "upcoming-155628",
@@ -15269,6 +15207,70 @@
       "rawId": 164501
     },
     {
+      "id": "recent-170963",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "India Women vs Sri Lanka Women, Final",
+      "series": "Women's Asian Games 2026",
+      "teams": [
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": "216/3 (19.6 Ov)"
+        },
+        {
+          "name": "Sri Lanka Women",
+          "shortName": "SLW",
+          "score": "69/10 (15.4 Ov)"
+        }
+      ],
+      "dateLabel": "22 Sept 2026, 10:30 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "India Women won by 147 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170963",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-22T05:00:00.000Z",
+      "rawId": 170963,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-171477",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "India vs Japan, One-off T20I",
+      "series": "India tour of Japan, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "32/4 (4.6 Ov)"
+        },
+        {
+          "name": "Japan",
+          "shortName": "JPN",
+          "score": "30/3 (4.6 Ov)"
+        }
+      ],
+      "dateLabel": "22 Sept 2026, 09:30 am",
+      "time": "",
+      "place": "Sano International Cricket Ground, Sano, Kanto",
+      "overview": "India won by 2 runs - 5 over game due to wet outfield",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171477",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-22T04:00:00.000Z",
+      "rawId": 171477,
+      "starPerformers": []
+    },
+    {
       "id": "recent-155477",
       "status": "recent",
       "statusLabel": "Past",
@@ -16026,38 +16028,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-129480",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
-      "title": "England vs India, 3rd ODI",
-      "series": "India tour of England, 2026",
-      "teams": [
-        {
-          "name": "England",
-          "shortName": "ENG",
-          "score": "387/3 (50 Ov)"
-        },
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": "360/7 (50 Ov)"
-        }
-      ],
-      "dateLabel": "19 Jul 2026, 03:30 pm",
-      "time": "",
-      "place": "Lord's, London",
-      "overview": "England won by 27 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129480",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
-      "startTime": "2026-07-19T10:00:00.000Z",
-      "rawId": 129480,
-      "starPerformers": []
-    },
-    {
       "id": "recent-157226",
       "status": "recent",
       "statusLabel": "Past",
@@ -16535,38 +16505,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-06-25T17:30:00.000Z",
       "rawId": 155133,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-121961",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "Bangladesh Women vs India Women, 23rd Match, Group A",
-      "series": "ICC Women's T20 World Cup 2026",
-      "teams": [
-        {
-          "name": "Bangladesh Women",
-          "shortName": "BANW",
-          "score": "136/8 (20 Ov)"
-        },
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": "139/5 (16 Ov)"
-        }
-      ],
-      "dateLabel": "25 Jun 2026, 07:00 pm",
-      "time": "",
-      "place": "Emirates Old Trafford, Manchester",
-      "overview": "India Women won by 5 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/121961",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
-      "startTime": "2026-06-25T13:30:00.000Z",
-      "rawId": 121961,
       "starPerformers": []
     },
     {
@@ -17254,37 +17192,6 @@
   ],
   "live": [
     {
-      "id": "live-171477",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "Japan vs India, One-off T20I",
-      "series": "India tour of Japan, 2026",
-      "teams": [
-        {
-          "name": "Japan",
-          "shortName": "JPN",
-          "score": ""
-        },
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": ""
-        }
-      ],
-      "dateLabel": "22 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "Sano International Cricket Ground, Sano, Kanto",
-      "overview": "Toss delayed due to wet outfield",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171477",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-22T04:00:00.000Z",
-      "rawId": 171477
-    },
-    {
       "id": "live-155411",
       "status": "live",
       "statusLabel": "Live",
@@ -17298,7 +17205,7 @@
         {
           "name": "India A",
           "shortName": "INDA",
-          "score": "78/3 (26.4 Ov)"
+          "score": "257/5 (87.4 Ov)"
         },
         {
           "name": "Australia A",
@@ -17309,42 +17216,11 @@
       "dateLabel": "22 Sept 2026, 09:30 am",
       "time": "",
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Day 1: Lunch Break",
+      "overview": "Day 1: 3rd Session",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155411",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-22T04:00:00.000Z",
       "rawId": 155411
-    },
-    {
-      "id": "live-170963",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India Women vs Sri Lanka Women, Final",
-      "series": "Women's Asian Games 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": "142/2 (14.6 Ov)"
-        },
-        {
-          "name": "Sri Lanka Women",
-          "shortName": "SLW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "22 Sept 2026, 10:30 am",
-      "time": "",
-      "place": "Korogi Sports Park, Nisshin",
-      "overview": "India Women opt to bat",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170963",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-22T05:00:00.000Z",
-      "rawId": 170963
     }
   ],
   "upcoming": [
@@ -32479,6 +32355,70 @@
   ],
   "recent": [
     {
+      "id": "recent-170963",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "India Women vs Sri Lanka Women, Final",
+      "series": "Women's Asian Games 2026",
+      "teams": [
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": "216/3 (19.6 Ov)"
+        },
+        {
+          "name": "Sri Lanka Women",
+          "shortName": "SLW",
+          "score": "69/10 (15.4 Ov)"
+        }
+      ],
+      "dateLabel": "22 Sept 2026, 10:30 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "India Women won by 147 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170963",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-22T05:00:00.000Z",
+      "rawId": 170963,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-171477",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "India vs Japan, One-off T20I",
+      "series": "India tour of Japan, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "32/4 (4.6 Ov)"
+        },
+        {
+          "name": "Japan",
+          "shortName": "JPN",
+          "score": "30/3 (4.6 Ov)"
+        }
+      ],
+      "dateLabel": "22 Sept 2026, 09:30 am",
+      "time": "",
+      "place": "Sano International Cricket Ground, Sano, Kanto",
+      "overview": "India won by 2 runs - 5 over game due to wet outfield",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171477",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-22T04:00:00.000Z",
+      "rawId": 171477,
+      "starPerformers": []
+    },
+    {
       "id": "recent-155477",
       "status": "recent",
       "statusLabel": "Past",
@@ -33236,38 +33176,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-129480",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
-      "title": "England vs India, 3rd ODI",
-      "series": "India tour of England, 2026",
-      "teams": [
-        {
-          "name": "England",
-          "shortName": "ENG",
-          "score": "387/3 (50 Ov)"
-        },
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": "360/7 (50 Ov)"
-        }
-      ],
-      "dateLabel": "19 Jul 2026, 03:30 pm",
-      "time": "",
-      "place": "Lord's, London",
-      "overview": "England won by 27 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/129480",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
-      "startTime": "2026-07-19T10:00:00.000Z",
-      "rawId": 129480,
-      "starPerformers": []
-    },
-    {
       "id": "recent-157226",
       "status": "recent",
       "statusLabel": "Past",
@@ -33745,38 +33653,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-06-25T17:30:00.000Z",
       "rawId": 155133,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-121961",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
-      "title": "Bangladesh Women vs India Women, 23rd Match, Group A",
-      "series": "ICC Women's T20 World Cup 2026",
-      "teams": [
-        {
-          "name": "Bangladesh Women",
-          "shortName": "BANW",
-          "score": "136/8 (20 Ov)"
-        },
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": "139/5 (16 Ov)"
-        }
-      ],
-      "dateLabel": "25 Jun 2026, 07:00 pm",
-      "time": "",
-      "place": "Emirates Old Trafford, Manchester",
-      "overview": "India Women won by 5 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/121961",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
-      "startTime": "2026-06-25T13:30:00.000Z",
-      "rawId": 121961,
       "starPerformers": []
     },
     {
@@ -34467,10 +34343,10 @@
       "id": "international",
       "label": "International",
       "order": 1,
-      "live": 1,
+      "live": 0,
       "recent": 30,
       "upcoming": 47,
-      "total": 78
+      "total": 77
     },
     {
       "id": "league",
@@ -34485,10 +34361,10 @@
       "id": "women",
       "label": "Women",
       "order": 3,
-      "live": 1,
+      "live": 0,
       "recent": 30,
       "upcoming": 28,
-      "total": 59
+      "total": 58
     },
     {
       "id": "domestic",
@@ -34501,38 +34377,6 @@
     }
   ],
   "importantMatches": [
-    {
-      "id": "live-170963",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India Women vs Sri Lanka Women, Final",
-      "series": "Women's Asian Games 2026",
-      "teams": [
-        {
-          "name": "India Women",
-          "shortName": "INDW",
-          "score": "142/2 (14.6 Ov)"
-        },
-        {
-          "name": "Sri Lanka Women",
-          "shortName": "SLW",
-          "score": ""
-        }
-      ],
-      "dateLabel": "22 Sept 2026, 10:30 am",
-      "time": "",
-      "place": "Korogi Sports Park, Nisshin",
-      "overview": "India Women opt to bat",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170963",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-22T05:00:00.000Z",
-      "rawId": 170963,
-      "importance": "Knockout stage"
-    },
     {
       "id": "upcoming-163147",
       "status": "upcoming",
@@ -36419,6 +36263,39 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030,
+      "importance": "Knockout stage"
+    },
+    {
+      "id": "recent-170963",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "India Women vs Sri Lanka Women, Final",
+      "series": "Women's Asian Games 2026",
+      "teams": [
+        {
+          "name": "India Women",
+          "shortName": "INDW",
+          "score": "216/3 (19.6 Ov)"
+        },
+        {
+          "name": "Sri Lanka Women",
+          "shortName": "SLW",
+          "score": "69/10 (15.4 Ov)"
+        }
+      ],
+      "dateLabel": "22 Sept 2026, 10:30 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "India Women won by 147 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170963",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-22T05:00:00.000Z",
+      "rawId": 170963,
+      "starPerformers": [],
       "importance": "Knockout stage"
     },
     {
@@ -38625,9 +38502,9 @@
       "level": "women",
       "levelLabel": "Women",
       "total": 3,
-      "live": 1,
+      "live": 0,
       "upcoming": 0,
-      "recent": 2,
+      "recent": 3,
       "startTime": "2026-09-18T05:00:00.000Z",
       "endTime": "2026-09-22T05:00:00.000Z",
       "matches": [
@@ -38698,9 +38575,9 @@
           "importance": "Knockout stage"
         },
         {
-          "id": "live-170963",
-          "status": "live",
-          "statusLabel": "Live",
+          "id": "recent-170963",
+          "status": "recent",
+          "statusLabel": "Past",
           "level": "women",
           "levelLabel": "Women",
           "sourceType": "International",
@@ -38711,22 +38588,23 @@
             {
               "name": "India Women",
               "shortName": "INDW",
-              "score": "142/2 (14.6 Ov)"
+              "score": "216/3 (19.6 Ov)"
             },
             {
               "name": "Sri Lanka Women",
               "shortName": "SLW",
-              "score": ""
+              "score": "69/10 (15.4 Ov)"
             }
           ],
           "dateLabel": "22 Sept 2026, 10:30 am",
           "time": "",
           "place": "Korogi Sports Park, Nisshin",
-          "overview": "India Women opt to bat",
+          "overview": "India Women won by 147 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170963",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-09-22T05:00:00.000Z",
           "rawId": 170963,
+          "starPerformers": [],
           "importance": "Knockout stage"
         }
       ]
@@ -38937,6 +38815,39 @@
       "month": "2026-09",
       "label": "September 2026",
       "matches": [
+        {
+          "id": "recent-170963",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "women",
+          "levelLabel": "Women",
+          "sourceType": "International",
+          "sourceScope": "global",
+          "title": "India Women vs Sri Lanka Women, Final",
+          "series": "Women's Asian Games 2026",
+          "teams": [
+            {
+              "name": "India Women",
+              "shortName": "INDW",
+              "score": "216/3 (19.6 Ov)"
+            },
+            {
+              "name": "Sri Lanka Women",
+              "shortName": "SLW",
+              "score": "69/10 (15.4 Ov)"
+            }
+          ],
+          "dateLabel": "22 Sept 2026, 10:30 am",
+          "time": "",
+          "place": "Korogi Sports Park, Nisshin",
+          "overview": "India Women won by 147 runs",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170963",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "startTime": "2026-09-22T05:00:00.000Z",
+          "rawId": 170963,
+          "starPerformers": [],
+          "importance": "Knockout stage"
+        },
         {
           "id": "recent-170951",
           "status": "recent",
