@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-23T09:34:48.033Z",
-  "lastCheckedAt": "2026-09-23T09:34:48.033Z",
-  "lastSuccessfulSyncAt": "2026-09-23T09:34:48.033Z",
+  "syncedAt": "2026-09-23T14:23:27.953Z",
+  "lastCheckedAt": "2026-09-23T14:23:27.953Z",
+  "lastSuccessfulSyncAt": "2026-09-23T14:23:27.953Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,10 +41,10 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 3,
+    "live": 1,
     "recent": 60,
     "upcoming": 486,
-    "total": 549
+    "total": 547
   },
   "all": [
     {
@@ -66,79 +66,17 @@
         {
           "name": "Australia A",
           "shortName": "AUSA",
-          "score": "79/4 (28.6 Ov)"
+          "score": "171/10 (55.3 Ov)"
         }
       ],
       "dateLabel": "22 Sept 2026, 09:30 am",
       "time": "",
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Day 2: 3rd Session - Australia A trail by 255 runs",
+      "overview": "Day 2: Stumps - Australia A trail by 163 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155411",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-22T04:00:00.000Z",
       "rawId": 155411
-    },
-    {
-      "id": "live-155628",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "India A Women vs Australia A Women, 2nd unofficial ODI",
-      "series": "Australia A Women tour of India 2026",
-      "teams": [
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "338/6 (49.6 Ov)"
-        },
-        {
-          "name": "Australia A Women",
-          "shortName": "AUSWA",
-          "score": "221/5 (31.3 Ov)"
-        }
-      ],
-      "dateLabel": "23 Sept 2026, 09:00 am",
-      "time": "",
-      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Australia A Women need 118 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155628",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-23T03:30:00.000Z",
-      "rawId": 155628
-    },
-    {
-      "id": "live-155488",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "Australia U19 vs India U19, 3rd unofficial ODI",
-      "series": "Australia U19 tour of India 2026",
-      "teams": [
-        {
-          "name": "Australia U19",
-          "shortName": "AUSU19",
-          "score": "254/10 (49.3 Ov)"
-        },
-        {
-          "name": "India U19",
-          "shortName": "INDU19",
-          "score": "160/2 (28.2 Ov)"
-        }
-      ],
-      "dateLabel": "23 Sept 2026, 09:00 am",
-      "time": "",
-      "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
-      "overview": "India U19 need 95 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155488",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-23T03:30:00.000Z",
-      "rawId": 155488
     },
     {
       "id": "upcoming-155639",
@@ -15207,20 +15145,84 @@
       "rawId": 164501
     },
     {
+      "id": "recent-155628",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "India A Women vs Australia A Women, 2nd unofficial ODI",
+      "series": "Australia A Women tour of India 2026",
+      "teams": [
+        {
+          "name": "India A Women",
+          "shortName": "INDWA",
+          "score": "338/6 (49.6 Ov)"
+        },
+        {
+          "name": "Australia A Women",
+          "shortName": "AUSWA",
+          "score": "341/8 (49.3 Ov)"
+        }
+      ],
+      "dateLabel": "23 Sept 2026, 09:00 am",
+      "time": "",
+      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "overview": "Australia A Women won by 2 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155628",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-23T03:30:00.000Z",
+      "rawId": 155628,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-155488",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "Australia U19 vs India U19, 3rd unofficial ODI",
+      "series": "Australia U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "Australia U19",
+          "shortName": "AUSU19",
+          "score": "254/10 (49.3 Ov)"
+        },
+        {
+          "name": "India U19",
+          "shortName": "INDU19",
+          "score": "255/4 (41.2 Ov)"
+        }
+      ],
+      "dateLabel": "23 Sept 2026, 09:00 am",
+      "time": "",
+      "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
+      "overview": "India U19 won by 6 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155488",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-23T03:30:00.000Z",
+      "rawId": 155488,
+      "starPerformers": []
+    },
+    {
       "id": "recent-170963",
       "status": "recent",
       "statusLabel": "Past",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-women",
       "title": "India Women vs Sri Lanka Women, Final",
       "series": "Women's Asian Games 2026",
       "teams": [
         {
           "name": "India Women",
           "shortName": "INDW",
-          "score": "216/3 (19.6 Ov)"
+          "score": "216/3 (20 Ov)"
         },
         {
           "name": "Sri Lanka Women",
@@ -15233,7 +15235,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "India Women won by 147 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170963",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-09-22T05:00:00.000Z",
       "rawId": 170963,
       "starPerformers": []
@@ -15244,20 +15246,20 @@
       "statusLabel": "Past",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-men",
       "title": "India vs Japan, One-off T20I",
       "series": "India tour of Japan, 2026",
       "teams": [
         {
           "name": "India",
           "shortName": "IND",
-          "score": "32/4 (4.6 Ov)"
+          "score": "32/4 (5 Ov)"
         },
         {
           "name": "Japan",
           "shortName": "JPN",
-          "score": "30/3 (4.6 Ov)"
+          "score": "30/3 (5 Ov)"
         }
       ],
       "dateLabel": "22 Sept 2026, 09:30 am",
@@ -15265,7 +15267,7 @@
       "place": "Sano International Cricket Ground, Sano, Kanto",
       "overview": "India won by 2 runs - 5 over game due to wet outfield",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171477",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-22T04:00:00.000Z",
       "rawId": 171477,
       "starPerformers": []
@@ -16675,38 +16677,6 @@
       ]
     },
     {
-      "id": "recent-155111",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "England A Women vs India A Women, Unofficial 1st T20",
-      "series": "India A Women tour of England 2026",
-      "teams": [
-        {
-          "name": "England A Women",
-          "shortName": "ENGAW",
-          "score": "126/7 (20 Ov)"
-        },
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "127/5 (18.1 Ov)"
-        }
-      ],
-      "dateLabel": "20 Jun 2026, 11:00 pm",
-      "time": "",
-      "place": "County Ground, Northampton",
-      "overview": "India A Women won by 5 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155111",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-06-20T17:30:00.000Z",
-      "rawId": 155111,
-      "starPerformers": []
-    },
-    {
       "id": "recent-156157",
       "status": "recent",
       "statusLabel": "Past",
@@ -16977,38 +16947,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-138653",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-u19",
-      "title": "India U19 vs Pakistan U19, 12th Match, Super Six Group 2 (B,C)",
-      "series": "ICC Under 19 World Cup 2026",
-      "teams": [
-        {
-          "name": "India U19",
-          "shortName": "INDU19",
-          "score": "252/10 (49 Ov)"
-        },
-        {
-          "name": "Pakistan U19",
-          "shortName": "PAKU19",
-          "score": "194/10 (46.2 Ov)"
-        }
-      ],
-      "dateLabel": "01 Feb 2026, 01:00 pm",
-      "time": "",
-      "place": "Queens Sports Club, Bulawayo",
-      "overview": "India U19 won by 58 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138653",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
-      "startTime": "2026-02-01T07:30:00.000Z",
-      "rawId": 138653,
-      "starPerformers": []
-    },
-    {
       "id": "recent-137454",
       "status": "recent",
       "statusLabel": "Past",
@@ -17210,79 +17148,17 @@
         {
           "name": "Australia A",
           "shortName": "AUSA",
-          "score": "79/4 (28.6 Ov)"
+          "score": "171/10 (55.3 Ov)"
         }
       ],
       "dateLabel": "22 Sept 2026, 09:30 am",
       "time": "",
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Day 2: 3rd Session - Australia A trail by 255 runs",
+      "overview": "Day 2: Stumps - Australia A trail by 163 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155411",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-22T04:00:00.000Z",
       "rawId": 155411
-    },
-    {
-      "id": "live-155628",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "India A Women vs Australia A Women, 2nd unofficial ODI",
-      "series": "Australia A Women tour of India 2026",
-      "teams": [
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "338/6 (49.6 Ov)"
-        },
-        {
-          "name": "Australia A Women",
-          "shortName": "AUSWA",
-          "score": "221/5 (31.3 Ov)"
-        }
-      ],
-      "dateLabel": "23 Sept 2026, 09:00 am",
-      "time": "",
-      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Australia A Women need 118 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155628",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-23T03:30:00.000Z",
-      "rawId": 155628
-    },
-    {
-      "id": "live-155488",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "Australia U19 vs India U19, 3rd unofficial ODI",
-      "series": "Australia U19 tour of India 2026",
-      "teams": [
-        {
-          "name": "Australia U19",
-          "shortName": "AUSU19",
-          "score": "254/10 (49.3 Ov)"
-        },
-        {
-          "name": "India U19",
-          "shortName": "INDU19",
-          "score": "160/2 (28.2 Ov)"
-        }
-      ],
-      "dateLabel": "23 Sept 2026, 09:00 am",
-      "time": "",
-      "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
-      "overview": "India U19 need 95 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155488",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-23T03:30:00.000Z",
-      "rawId": 155488
     }
   ],
   "upcoming": [
@@ -32355,20 +32231,84 @@
   ],
   "recent": [
     {
+      "id": "recent-155628",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "India A Women vs Australia A Women, 2nd unofficial ODI",
+      "series": "Australia A Women tour of India 2026",
+      "teams": [
+        {
+          "name": "India A Women",
+          "shortName": "INDWA",
+          "score": "338/6 (49.6 Ov)"
+        },
+        {
+          "name": "Australia A Women",
+          "shortName": "AUSWA",
+          "score": "341/8 (49.3 Ov)"
+        }
+      ],
+      "dateLabel": "23 Sept 2026, 09:00 am",
+      "time": "",
+      "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "overview": "Australia A Women won by 2 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155628",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-23T03:30:00.000Z",
+      "rawId": 155628,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-155488",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "Australia U19 vs India U19, 3rd unofficial ODI",
+      "series": "Australia U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "Australia U19",
+          "shortName": "AUSU19",
+          "score": "254/10 (49.3 Ov)"
+        },
+        {
+          "name": "India U19",
+          "shortName": "INDU19",
+          "score": "255/4 (41.2 Ov)"
+        }
+      ],
+      "dateLabel": "23 Sept 2026, 09:00 am",
+      "time": "",
+      "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
+      "overview": "India U19 won by 6 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155488",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-23T03:30:00.000Z",
+      "rawId": 155488,
+      "starPerformers": []
+    },
+    {
       "id": "recent-170963",
       "status": "recent",
       "statusLabel": "Past",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-women",
       "title": "India Women vs Sri Lanka Women, Final",
       "series": "Women's Asian Games 2026",
       "teams": [
         {
           "name": "India Women",
           "shortName": "INDW",
-          "score": "216/3 (19.6 Ov)"
+          "score": "216/3 (20 Ov)"
         },
         {
           "name": "Sri Lanka Women",
@@ -32381,7 +32321,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "India Women won by 147 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170963",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-09-22T05:00:00.000Z",
       "rawId": 170963,
       "starPerformers": []
@@ -32392,20 +32332,20 @@
       "statusLabel": "Past",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-men",
       "title": "India vs Japan, One-off T20I",
       "series": "India tour of Japan, 2026",
       "teams": [
         {
           "name": "India",
           "shortName": "IND",
-          "score": "32/4 (4.6 Ov)"
+          "score": "32/4 (5 Ov)"
         },
         {
           "name": "Japan",
           "shortName": "JPN",
-          "score": "30/3 (4.6 Ov)"
+          "score": "30/3 (5 Ov)"
         }
       ],
       "dateLabel": "22 Sept 2026, 09:30 am",
@@ -32413,7 +32353,7 @@
       "place": "Sano International Cricket Ground, Sano, Kanto",
       "overview": "India won by 2 runs - 5 over game due to wet outfield",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171477",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-22T04:00:00.000Z",
       "rawId": 171477,
       "starPerformers": []
@@ -33823,38 +33763,6 @@
       ]
     },
     {
-      "id": "recent-155111",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "England A Women vs India A Women, Unofficial 1st T20",
-      "series": "India A Women tour of England 2026",
-      "teams": [
-        {
-          "name": "England A Women",
-          "shortName": "ENGAW",
-          "score": "126/7 (20 Ov)"
-        },
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "127/5 (18.1 Ov)"
-        }
-      ],
-      "dateLabel": "20 Jun 2026, 11:00 pm",
-      "time": "",
-      "place": "County Ground, Northampton",
-      "overview": "India A Women won by 5 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155111",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-06-20T17:30:00.000Z",
-      "rawId": 155111,
-      "starPerformers": []
-    },
-    {
       "id": "recent-156157",
       "status": "recent",
       "statusLabel": "Past",
@@ -34125,38 +34033,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-138653",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-u19",
-      "title": "India U19 vs Pakistan U19, 12th Match, Super Six Group 2 (B,C)",
-      "series": "ICC Under 19 World Cup 2026",
-      "teams": [
-        {
-          "name": "India U19",
-          "shortName": "INDU19",
-          "score": "252/10 (49 Ov)"
-        },
-        {
-          "name": "Pakistan U19",
-          "shortName": "PAKU19",
-          "score": "194/10 (46.2 Ov)"
-        }
-      ],
-      "dateLabel": "01 Feb 2026, 01:00 pm",
-      "time": "",
-      "place": "Queens Sports Club, Bulawayo",
-      "overview": "India U19 won by 58 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138653",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
-      "startTime": "2026-02-01T07:30:00.000Z",
-      "rawId": 138653,
-      "starPerformers": []
-    },
-    {
       "id": "recent-137454",
       "status": "recent",
       "statusLabel": "Past",
@@ -34344,9 +34220,9 @@
       "label": "International",
       "order": 1,
       "live": 0,
-      "recent": 30,
+      "recent": 29,
       "upcoming": 46,
-      "total": 76
+      "total": 75
     },
     {
       "id": "league",
@@ -34361,17 +34237,17 @@
       "id": "women",
       "label": "Women",
       "order": 3,
-      "live": 1,
+      "live": 0,
       "recent": 30,
       "upcoming": 27,
-      "total": 58
+      "total": 57
     },
     {
       "id": "domestic",
       "label": "Domestic / State",
       "order": 4,
-      "live": 2,
-      "recent": 0,
+      "live": 1,
+      "recent": 1,
       "upcoming": 413,
       "total": 415
     }
@@ -36271,15 +36147,15 @@
       "statusLabel": "Past",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-women",
       "title": "India Women vs Sri Lanka Women, Final",
       "series": "Women's Asian Games 2026",
       "teams": [
         {
           "name": "India Women",
           "shortName": "INDW",
-          "score": "216/3 (19.6 Ov)"
+          "score": "216/3 (20 Ov)"
         },
         {
           "name": "Sri Lanka Women",
@@ -36292,7 +36168,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "India Women won by 147 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170963",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-09-22T05:00:00.000Z",
       "rawId": 170963,
       "starPerformers": [],
@@ -38580,15 +38456,15 @@
           "statusLabel": "Past",
           "level": "women",
           "levelLabel": "Women",
-          "sourceType": "International",
-          "sourceScope": "global",
+          "sourceType": "",
+          "sourceScope": "india-women",
           "title": "India Women vs Sri Lanka Women, Final",
           "series": "Women's Asian Games 2026",
           "teams": [
             {
               "name": "India Women",
               "shortName": "INDW",
-              "score": "216/3 (19.6 Ov)"
+              "score": "216/3 (20 Ov)"
             },
             {
               "name": "Sri Lanka Women",
@@ -38601,7 +38477,7 @@
           "place": "Korogi Sports Park, Nisshin",
           "overview": "India Women won by 147 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170963",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
           "startTime": "2026-09-22T05:00:00.000Z",
           "rawId": 170963,
           "starPerformers": [],
@@ -38821,15 +38697,15 @@
           "statusLabel": "Past",
           "level": "women",
           "levelLabel": "Women",
-          "sourceType": "International",
-          "sourceScope": "global",
+          "sourceType": "",
+          "sourceScope": "india-women",
           "title": "India Women vs Sri Lanka Women, Final",
           "series": "Women's Asian Games 2026",
           "teams": [
             {
               "name": "India Women",
               "shortName": "INDW",
-              "score": "216/3 (19.6 Ov)"
+              "score": "216/3 (20 Ov)"
             },
             {
               "name": "Sri Lanka Women",
@@ -38842,7 +38718,7 @@
           "place": "Korogi Sports Park, Nisshin",
           "overview": "India Women won by 147 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170963",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
           "startTime": "2026-09-22T05:00:00.000Z",
           "rawId": 170963,
           "starPerformers": [],
