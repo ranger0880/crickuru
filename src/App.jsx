@@ -1,5 +1,6 @@
 import React, { useCallback, useContext, useEffect, useMemo, useReducer, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
+import { createPortal } from "react-dom";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { applyRouteMetadata } from "./metadata.js";
 import QuizPage from "./QuizPage.jsx";
@@ -3053,9 +3054,9 @@ const RouterContext = React.createContext(null);
           };
         }, [onClose]);
 
-        return (
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }} className="fixed inset-0 z-[90] flex items-start justify-center overflow-y-auto overscroll-contain bg-night/85 p-0 backdrop-blur-md sm:items-center sm:p-4 lg:p-6" role="presentation" onPointerDown={(event) => { if (event.target === event.currentTarget) onClose(); }}>
-            <motion.section initial={{ opacity: 0, scale: 0.94, y: 22 }} animate={{ opacity: 1, scale: 1, y: 0 }} transition={{ type: "spring", stiffness: 280, damping: 25 }} style={{ borderColor: neon.color, boxShadow: `0 0 0 1px ${neon.color}, 0 0 24px ${neon.glow}, 0 25px 100px rgba(0,0,0,0.7)`, "--player-neon-color": neon.color, "--player-neon-glow": neon.glow }} className="player-neon-shell flex h-[100dvh] max-h-[100dvh] w-full max-w-5xl min-h-0 flex-col overflow-hidden rounded-none border bg-[#090d14] sm:h-[calc(100dvh-2rem)] sm:max-h-[calc(100dvh-2rem)] sm:rounded-[10px] lg:h-[calc(100dvh-3rem)] lg:max-h-[calc(100dvh-3rem)]" role="dialog" aria-modal="true" aria-label={`${player.name} full player profile`}>
+        return createPortal(
+          <div className="player-profile-overlay fixed inset-0 z-[100] flex items-start justify-center overflow-y-auto overscroll-contain bg-black/80 p-0 sm:items-center sm:p-4 lg:p-6" role="presentation" onPointerDown={(event) => { if (event.target === event.currentTarget) onClose(); }}>
+            <section style={{ borderColor: neon.color, boxShadow: `0 0 0 1px ${neon.color}, 0 0 24px ${neon.glow}, 0 25px 100px rgba(0,0,0,0.7)`, "--player-neon-color": neon.color, "--player-neon-glow": neon.glow }} className="player-profile-panel player-neon-shell flex h-[100dvh] max-h-[100dvh] w-full max-w-5xl min-h-0 flex-col overflow-hidden rounded-none border bg-[#090d14] text-white sm:h-[calc(100dvh-2rem)] sm:max-h-[calc(100dvh-2rem)] sm:rounded-[10px] lg:h-[calc(100dvh-3rem)] lg:max-h-[calc(100dvh-3rem)]" role="dialog" aria-modal="true" aria-label={`${player.name} full player profile`}>
               <header className="relative min-h-48 shrink-0 overflow-hidden bg-cover bg-center sm:min-h-56" style={{ backgroundImage: `url(${assetUrl("/assets/stadium-vip-warriors.png")})`, boxShadow: `inset 0 -3px 0 ${neon.color}, inset 0 -12px 28px ${neon.soft}` }}>
                 <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(5,7,11,0.96),rgba(5,7,11,0.58),rgba(5,7,11,0.8))]" />
                 <button type="button" onPointerDown={(event) => event.stopPropagation()} onClick={(event) => { event.preventDefault(); event.stopPropagation(); onClose(); }} aria-label="Close player profile" title="Close player profile" className="absolute right-3 top-3 z-20 grid h-11 w-11 touch-manipulation place-items-center rounded-full border border-white/20 bg-night/70 text-white transition hover:border-gold hover:text-gold sm:right-4 sm:top-4"><Icon.X size={20} /></button>
@@ -3126,8 +3127,9 @@ const RouterContext = React.createContext(null);
                 </div>
                 </div>
               </div>
-            </motion.section>
-          </motion.div>
+            </section>
+          </div>,
+          document.body,
         );
       }
 
