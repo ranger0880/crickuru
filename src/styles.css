@@ -260,6 +260,18 @@
         -webkit-tap-highlight-color: transparent;
       }
 
+      button,
+      a {
+        transition-property: color, background-color, border-color, box-shadow, transform, opacity;
+        transition-duration: 220ms;
+        transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+      }
+
+      button:active,
+      a:active {
+        transform: scale(0.985);
+      }
+
       a:focus-visible,
       button:focus-visible {
         outline: 2px solid var(--gold);
@@ -545,6 +557,98 @@
         backdrop-filter: blur(18px);
       }
 
+      .interactive-card {
+        position: relative;
+        isolation: isolate;
+        overflow: hidden;
+        transform: translateZ(0);
+        transition:
+          transform 360ms cubic-bezier(0.22, 1, 0.36, 1),
+          border-color 260ms ease,
+          box-shadow 360ms ease,
+          background-color 260ms ease;
+      }
+
+      .interactive-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+        opacity: 0;
+        background: linear-gradient(118deg, transparent 18%, rgba(255, 255, 255, 0.12) 46%, transparent 70%);
+        transform: translateX(-120%);
+        transition: opacity 240ms ease;
+      }
+
+      .interactive-card > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .nav-link {
+        position: relative;
+      }
+
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        left: 1rem;
+        right: 1rem;
+        bottom: 0.3rem;
+        height: 2px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, var(--gold), var(--cyan));
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1);
+      }
+
+      .nav-link[aria-current="page"]::after,
+      .nav-link:hover::after,
+      .nav-link:focus-visible::after {
+        transform: scaleX(1);
+      }
+
+      .live-beacon {
+        position: relative;
+      }
+
+      .live-beacon::before {
+        content: "";
+        position: absolute;
+        inset: -5px;
+        border: 1px solid currentColor;
+        border-radius: inherit;
+        opacity: 0.4;
+        animation: liveBeacon 2.2s ease-out infinite;
+        pointer-events: none;
+      }
+
+      .route-enter {
+        animation: routeEnter 620ms cubic-bezier(0.22, 1, 0.36, 1) both;
+      }
+
+      .stadium-page-bg,
+      .route-bg {
+        animation: routeEnter 620ms cubic-bezier(0.22, 1, 0.36, 1) both;
+      }
+
+      @media (hover: hover) and (pointer: fine) {
+        .interactive-card:hover,
+        .interactive-card:focus-within {
+          transform: translateY(-5px) rotateX(0.45deg);
+          border-color: color-mix(in srgb, var(--gold) 55%, rgba(255, 255, 255, 0.18));
+          box-shadow: 0 22px 60px rgba(0, 0, 0, 0.34), 0 0 28px rgba(244, 185, 66, 0.1);
+        }
+
+        .interactive-card:hover::before,
+        .interactive-card:focus-within::before {
+          opacity: 1;
+          animation: cardGlint 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
+        }
+      }
+
       .funk-tab {
         background:
           radial-gradient(circle at 20% 10%, rgba(244, 185, 66, 0.19), transparent 24%),
@@ -718,6 +822,38 @@
         }
       }
 
+      @keyframes cardGlint {
+        from {
+          transform: translateX(-120%);
+        }
+        to {
+          transform: translateX(120%);
+        }
+      }
+
+      @keyframes liveBeacon {
+        0% {
+          opacity: 0.5;
+          transform: scale(0.94);
+        }
+        70%,
+        100% {
+          opacity: 0;
+          transform: scale(1.12);
+        }
+      }
+
+      @keyframes routeEnter {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
       @media (max-width: 900px) {
         body,
         .route-bg {
@@ -776,5 +912,10 @@
           animation-iteration-count: 1 !important;
           scroll-behavior: auto !important;
           transition-duration: 0.001ms !important;
+        }
+
+        .interactive-card:hover,
+        .interactive-card:focus-within {
+          transform: none;
         }
       }

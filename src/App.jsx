@@ -779,7 +779,7 @@ const RouterContext = React.createContext(null);
                       key={item.path}
                       to={item.path}
                       className={({ isActive }) =>
-                        `rounded-full px-4 py-2 text-sm font-semibold uppercase tracking-[0.16em] transition ${
+                        `nav-link rounded-full px-4 py-2 text-sm font-semibold uppercase tracking-[0.16em] transition ${
                           isActive
                             ? "bg-white/10 text-gold"
                             : "text-white/72 hover:bg-white/8 hover:text-white"
@@ -1158,7 +1158,7 @@ const RouterContext = React.createContext(null);
 
         return (
           <motion.aside
-            className="glass relative mx-auto mt-6 w-full max-w-sm rounded-[8px] p-5 lg:ml-auto lg:mt-48"
+            className="interactive-card glass relative mx-auto mt-6 w-full max-w-sm rounded-[8px] p-5 lg:ml-auto lg:mt-48"
             initial={{ opacity: 0, y: 36, filter: "blur(10px)" }}
             animate={{ opacity: 1, y: [0, -10, 0], filter: "blur(0px)" }}
             transition={{ opacity: { duration: 0.8, delay: 1.2 }, y: { duration: 7, repeat: Infinity, ease: "easeInOut" } }}
@@ -1168,7 +1168,7 @@ const RouterContext = React.createContext(null);
               <p className="text-[0.68rem] font-black uppercase tracking-[0.24em] text-gold">
                 Top Live Dashboard
               </p>
-              <span className="flex items-center gap-2 rounded-full border border-gold/45 bg-gold/12 px-3 py-1 text-[0.62rem] font-black uppercase tracking-[0.16em] text-gold">
+              <span className="live-beacon flex items-center gap-2 rounded-full border border-gold/45 bg-gold/12 px-3 py-1 text-[0.62rem] font-black uppercase tracking-[0.16em] text-gold">
                 <span className="h-2 w-2 rounded-full bg-gold shadow-[0_0_12px_rgba(244,185,66,0.9)]" />
                 {loading ? "Syncing" : "CricHeroes"}
               </span>
@@ -1227,7 +1227,7 @@ const RouterContext = React.createContext(null);
 
       function HeroLiveTile({ label, title, detail }) {
         return (
-          <div className="rounded-[8px] border border-white/10 bg-night/55 p-3">
+          <div className="interactive-card rounded-[8px] border border-white/10 bg-night/55 p-3">
             <p className="text-[0.62rem] font-black uppercase tracking-[0.18em] text-cyan">{label}</p>
             <p className="mt-1 font-display text-2xl font-black uppercase leading-none text-white">{title}</p>
             <p className="mt-2 text-xs font-semibold leading-5 text-white/55">{detail}</p>
@@ -1374,7 +1374,7 @@ const RouterContext = React.createContext(null);
             <div className="grid gap-5 lg:grid-cols-[1.05fr_0.95fr]">
               <div className="grid gap-5 md:grid-cols-3 lg:grid-cols-1">
                 {matches.map((match) => (
-                  <article key={match.title} className="score-tile rounded-[8px] border border-white/12 p-5">
+                  <article key={match.title} className="interactive-card score-tile rounded-[8px] border border-white/12 p-5">
                     <div className="mb-4 flex items-center justify-between gap-3">
                       <span className="rounded-full bg-gold/12 px-3 py-1 text-[0.65rem] font-black uppercase tracking-[0.18em] text-gold">
                         {match.tag}
@@ -2012,7 +2012,7 @@ const RouterContext = React.createContext(null);
         const resultTone = match.result === "win" ? "text-gold" : match.result === "loss" ? "text-crimson" : "text-cyan";
 
         return (
-          <article className="rounded-[8px] border border-white/12 bg-white/[0.045] p-5">
+          <article className="interactive-card rounded-[8px] border border-white/12 bg-white/[0.045] p-5">
             <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
               <div>
                 <p className="text-xs font-black uppercase tracking-[0.2em] text-white/42">{formatFeedDate(match.date)} - {match.venue || match.city || "CricHeroes"}</p>
@@ -2096,7 +2096,7 @@ const RouterContext = React.createContext(null);
         const stats = player.warriorsStats || player.stats || {};
         return (
           <article
-            className="cursor-pointer rounded-[8px] border border-white/12 bg-white/[0.045] p-4 transition hover:-translate-y-1 hover:border-gold/45 hover:bg-gold/[0.05] focus:outline-none focus:ring-2 focus:ring-gold/60"
+            className="interactive-card cursor-pointer rounded-[8px] border border-white/12 bg-white/[0.045] p-4 transition hover:bg-gold/[0.05] focus:outline-none focus:ring-2 focus:ring-gold/60"
             onClick={onSelect}
             onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); onSelect?.(); } }}
             role="button"
@@ -2592,7 +2592,7 @@ const RouterContext = React.createContext(null);
 
         return (
           <article
-            className="relative cursor-pointer overflow-hidden rounded-[8px] border border-white/12 bg-[radial-gradient(circle_at_85%_8%,rgba(244,185,66,0.14),transparent_28%),rgba(255,255,255,0.045)] p-5 transition hover:-translate-y-1 hover:border-gold/45 focus:outline-none focus:ring-2 focus:ring-gold/60"
+            className="interactive-card relative cursor-pointer overflow-hidden rounded-[8px] border border-white/12 bg-[radial-gradient(circle_at_85%_8%,rgba(244,185,66,0.14),transparent_28%),rgba(255,255,255,0.045)] p-5 focus:outline-none focus:ring-2 focus:ring-gold/60"
             onClick={(event) => { if (!event.target.closest("a")) onSelect?.(); }}
             onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); onSelect?.(); } }}
             role="button"
