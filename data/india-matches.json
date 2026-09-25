@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-25T07:10:50.194Z",
-  "lastCheckedAt": "2026-09-25T07:10:50.194Z",
-  "lastSuccessfulSyncAt": "2026-09-25T07:10:50.194Z",
+  "syncedAt": "2026-09-25T12:44:57.340Z",
+  "lastCheckedAt": "2026-09-25T12:44:57.340Z",
+  "lastSuccessfulSyncAt": "2026-09-25T12:44:57.340Z",
   "coverage": {
     "pathways": [
       "India",
@@ -43,69 +43,38 @@
   "summary": {
     "live": 1,
     "recent": 60,
-    "upcoming": 486,
-    "total": 547
+    "upcoming": 485,
+    "total": 546
   },
   "all": [
     {
-      "id": "live-155411",
+      "id": "live-155639",
       "status": "live",
       "statusLabel": "Live",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-a",
-      "title": "India A vs Australia A, 1st unofficial Test",
-      "series": "Australia A tour of India 2026",
-      "teams": [
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": "334/10 (117.3 Ov) & 199/10 (57.4 Ov)"
-        },
-        {
-          "name": "Australia A",
-          "shortName": "AUSA",
-          "score": "171/10 (55.3 Ov) & 193/8 (52.4 Ov)"
-        }
-      ],
-      "dateLabel": "22 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Day 4: 2nd Session - Australia A need 170 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155411",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
-      "startTime": "2026-09-22T04:00:00.000Z",
-      "rawId": 155411
-    },
-    {
-      "id": "upcoming-155639",
-      "status": "upcoming",
-      "statusLabel": "Future",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "India A Women vs Australia A Women, 3rd unofficial ODI",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "Australia A Women vs India A Women, 3rd unofficial ODI",
       "series": "Australia A Women tour of India 2026",
       "teams": [
         {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": ""
-        },
-        {
           "name": "Australia A Women",
           "shortName": "AUSWA",
-          "score": ""
+          "score": "362/9 (49.6 Ov)"
+        },
+        {
+          "name": "India A Women",
+          "shortName": "INDWA",
+          "score": "19 (4.6 Ov)"
         }
       ],
       "dateLabel": "25 Sept 2026, 02:00 pm",
       "time": "",
       "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Match starts at Sep 25, 08:30 GMT",
+      "overview": "India A Women need 344 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155639",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-25T08:30:00.000Z",
       "rawId": 155639
     },
@@ -15273,6 +15242,38 @@
       "starPerformers": []
     },
     {
+      "id": "recent-155411",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "India A vs Australia A, 1st unofficial Test",
+      "series": "Australia A tour of India 2026",
+      "teams": [
+        {
+          "name": "India A",
+          "shortName": "INDA",
+          "score": "334/10 (117.3 Ov) & 199/10 (57.4 Ov)"
+        },
+        {
+          "name": "Australia A",
+          "shortName": "AUSA",
+          "score": "171/10 (55.3 Ov) & 200/10 (55.1 Ov)"
+        }
+      ],
+      "dateLabel": "22 Sept 2026, 09:30 am",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "India A won by 162 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155411",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-22T04:00:00.000Z",
+      "rawId": 155411,
+      "starPerformers": []
+    },
+    {
       "id": "recent-155477",
       "status": "recent",
       "statusLabel": "Past",
@@ -16947,45 +16948,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-137454",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-a",
-      "title": "Bangladesh A vs India A, 1st Semi-Final (A1 v B2)",
-      "series": "ACC Mens Asia Cup Rising Stars 2025",
-      "teams": [
-        {
-          "name": "Bangladesh A",
-          "shortName": "BANA",
-          "score": "194/6 (20 Ov)"
-        },
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": "194/6 (20 Ov)"
-        }
-      ],
-      "dateLabel": "21 Nov 2025, 03:00 pm",
-      "time": "",
-      "place": "West End Park International Cricket Stadium, Doha",
-      "overview": "Match tied (Bangladesh A won the super over)",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/137454",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
-      "startTime": "2025-11-21T09:30:00.000Z",
-      "rawId": 137454,
-      "starPerformers": [
-        {
-          "name": "Ripon Mondol",
-          "performance": "1-35",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/137454"
-        }
-      ]
-    },
-    {
       "id": "recent-105540",
       "status": "recent",
       "statusLabel": "Past",
@@ -17130,69 +17092,38 @@
   ],
   "live": [
     {
-      "id": "live-155411",
+      "id": "live-155639",
       "status": "live",
       "statusLabel": "Live",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-a",
-      "title": "India A vs Australia A, 1st unofficial Test",
-      "series": "Australia A tour of India 2026",
-      "teams": [
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": "334/10 (117.3 Ov) & 199/10 (57.4 Ov)"
-        },
-        {
-          "name": "Australia A",
-          "shortName": "AUSA",
-          "score": "171/10 (55.3 Ov) & 193/8 (52.4 Ov)"
-        }
-      ],
-      "dateLabel": "22 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Day 4: 2nd Session - Australia A need 170 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155411",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
-      "startTime": "2026-09-22T04:00:00.000Z",
-      "rawId": 155411
-    }
-  ],
-  "upcoming": [
-    {
-      "id": "upcoming-155639",
-      "status": "upcoming",
-      "statusLabel": "Future",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "India A Women vs Australia A Women, 3rd unofficial ODI",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "Australia A Women vs India A Women, 3rd unofficial ODI",
       "series": "Australia A Women tour of India 2026",
       "teams": [
         {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": ""
-        },
-        {
           "name": "Australia A Women",
           "shortName": "AUSWA",
-          "score": ""
+          "score": "362/9 (49.6 Ov)"
+        },
+        {
+          "name": "India A Women",
+          "shortName": "INDWA",
+          "score": "19 (4.6 Ov)"
         }
       ],
       "dateLabel": "25 Sept 2026, 02:00 pm",
       "time": "",
       "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
-      "overview": "Match starts at Sep 25, 08:30 GMT",
+      "overview": "India A Women need 344 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155639",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-25T08:30:00.000Z",
       "rawId": 155639
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-155499",
       "status": "upcoming",
@@ -32359,6 +32290,38 @@
       "starPerformers": []
     },
     {
+      "id": "recent-155411",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "India A vs Australia A, 1st unofficial Test",
+      "series": "Australia A tour of India 2026",
+      "teams": [
+        {
+          "name": "India A",
+          "shortName": "INDA",
+          "score": "334/10 (117.3 Ov) & 199/10 (57.4 Ov)"
+        },
+        {
+          "name": "Australia A",
+          "shortName": "AUSA",
+          "score": "171/10 (55.3 Ov) & 200/10 (55.1 Ov)"
+        }
+      ],
+      "dateLabel": "22 Sept 2026, 09:30 am",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "India A won by 162 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155411",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-22T04:00:00.000Z",
+      "rawId": 155411,
+      "starPerformers": []
+    },
+    {
       "id": "recent-155477",
       "status": "recent",
       "statusLabel": "Past",
@@ -34033,45 +33996,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-137454",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-a",
-      "title": "Bangladesh A vs India A, 1st Semi-Final (A1 v B2)",
-      "series": "ACC Mens Asia Cup Rising Stars 2025",
-      "teams": [
-        {
-          "name": "Bangladesh A",
-          "shortName": "BANA",
-          "score": "194/6 (20 Ov)"
-        },
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": "194/6 (20 Ov)"
-        }
-      ],
-      "dateLabel": "21 Nov 2025, 03:00 pm",
-      "time": "",
-      "place": "West End Park International Cricket Stadium, Doha",
-      "overview": "Match tied (Bangladesh A won the super over)",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/137454",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
-      "startTime": "2025-11-21T09:30:00.000Z",
-      "rawId": 137454,
-      "starPerformers": [
-        {
-          "name": "Ripon Mondol",
-          "performance": "1-35",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/137454"
-        }
-      ]
-    },
-    {
       "id": "recent-105540",
       "status": "recent",
       "statusLabel": "Past",
@@ -34219,10 +34143,10 @@
       "id": "international",
       "label": "International",
       "order": 1,
-      "live": 1,
-      "recent": 30,
+      "live": 0,
+      "recent": 29,
       "upcoming": 46,
-      "total": 77
+      "total": 75
     },
     {
       "id": "league",
@@ -34237,9 +34161,9 @@
       "id": "women",
       "label": "Women",
       "order": 3,
-      "live": 0,
+      "live": 1,
       "recent": 30,
-      "upcoming": 27,
+      "upcoming": 26,
       "total": 57
     },
     {
@@ -34247,9 +34171,9 @@
       "label": "Domestic / State",
       "order": 4,
       "live": 0,
-      "recent": 0,
+      "recent": 1,
       "upcoming": 413,
-      "total": 413
+      "total": 414
     }
   ],
   "importantMatches": [
