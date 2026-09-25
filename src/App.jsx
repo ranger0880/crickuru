@@ -2134,7 +2134,7 @@ const RouterContext = React.createContext(null);
               {player.associationTag && <BadgePill label={player.associationTag} />}
             </div>
             <button type="button" className="mt-4 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-[7px] border border-gold/35 bg-gold/10 px-4 text-xs font-black uppercase tracking-[0.16em] text-gold transition hover:border-gold hover:bg-gold/15 focus:outline-none focus:ring-2 focus:ring-gold/60" onClick={(event) => { event.stopPropagation(); onSelect?.(); }}>
-              <Icon.CircleUserRound size={16} /> Open player profile
+              <Icon.Sparkles size={16} /> Open AI coach + profile
             </button>
           </article>
         );
@@ -2697,7 +2697,7 @@ const RouterContext = React.createContext(null);
               )}
             </div>
             <button type="button" className="relative mt-5 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-[7px] border border-gold/35 bg-gold/10 px-4 text-xs font-black uppercase tracking-[0.16em] text-gold transition hover:border-gold hover:bg-gold/15 focus:outline-none focus:ring-2 focus:ring-gold/60" onClick={(event) => { event.stopPropagation(); onSelect?.(); }}>
-              <Icon.CircleUserRound size={16} /> Open player profile
+              <Icon.Sparkles size={16} /> Open AI coach + profile
             </button>
           </article>
         );
@@ -3065,6 +3065,9 @@ const RouterContext = React.createContext(null);
                     <p className="text-[0.62rem] font-black uppercase tracking-[0.18em]" style={{ color: neon.color }}>Full player profile • {neon.label}</p>
                     <h2 className="mt-2 break-words pr-10 font-display text-3xl font-black uppercase leading-none text-white sm:truncate sm:pr-0 sm:text-6xl">{player.name}</h2>
                     <p className="mt-2 text-xs font-bold uppercase tracking-[0.12em] text-white/60 sm:text-sm sm:tracking-[0.14em]">{player.role || playerRoleLabel(player)} • {player.impact || 0}/100 performance charge</p>
+                    <button type="button" className="mt-3 inline-flex min-h-9 items-center gap-2 rounded-full border border-cyan/35 bg-cyan/10 px-3 text-[0.58rem] font-black uppercase tracking-[0.14em] text-cyan transition hover:border-cyan hover:bg-cyan/15" onClick={() => document.getElementById("player-ai-coach")?.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                      <Icon.Sparkles size={13} /> Jump to AI coach
+                    </button>
                   </div>
                 </div>
               </header>
@@ -3078,7 +3081,7 @@ const RouterContext = React.createContext(null);
                   <LiveStat label="Performance" value={`${player.impact || 0}/100`} />
                 </div>
 
-                <PlayerImprovementPanel player={player} stats={stats} />
+                <div id="player-ai-coach" className="scroll-mt-4"><PlayerImprovementPanel player={player} stats={stats} /></div>
 
                 {Object.keys(stats).length ? <PlayerStatsMatrix stats={stats} sourceLabel={statsSource} /> : <DataEmpty title="Career totals syncing" description="Overall CricHeroes statistics will appear after the next successful public profile refresh." />}
 
