@@ -145,28 +145,6 @@ const matchDefinitions = [
       { teamId: TEAM_ID, teamName: TEAM_NAME, playerId: 13683210, playerName: "Pranay", overs: "4.0", balls: 24, maidens: 0, dotBalls: 14, runs: 25, wickets: 2, economyRate: "6.25" },
     ],
   },
-  {
-    id: 27234795,
-    date: "2026-09-23T00:40:00.000Z",
-    venue: "NRCC Friendly Matches",
-    city: "Greater Noida",
-    overs: 20,
-    opponent: "TFS Champions",
-    opponentId: 14164235,
-    ourScore: "-",
-    opponentScore: "-",
-    ourOvers: "",
-    opponentOvers: "",
-    result: "upcoming",
-    resultText: "Schedule listed on CricHeroes",
-    winner: "",
-    toss: "",
-    teamsSlug: "tfs-champions-vs-kurukshetra-warriors",
-    playerOfMatch: null,
-    warriors: [],
-    bestBatting: [],
-    bestBowling: [],
-  },
 ];
 
 function scorecardRows(definition) {
@@ -314,8 +292,9 @@ function matchForPlayer(definition, player, performance) {
 }
 
 const feed = JSON.parse(fs.readFileSync(feedPath, "utf8"));
-const matchesById = new Map((feed.matches || []).map((match) => [Number(match.id), match]));
-const refreshedMatches = [...(feed.matches || [])];
+const ignoredMatchIds = new Set([27234795]);
+const matchesById = new Map((feed.matches || []).filter((match) => !ignoredMatchIds.has(Number(match.id))).map((match) => [Number(match.id), match]));
+const refreshedMatches = (feed.matches || []).filter((match) => !ignoredMatchIds.has(Number(match.id)));
 for (const definition of matchDefinitions) {
   const nextMatch = makeMatch(definition);
   const existingIndex = refreshedMatches.findIndex((match) => Number(match.id) === definition.id);
@@ -326,7 +305,9 @@ for (const definition of matchDefinitions) {
 feed.matches = refreshedMatches;
 feed.liveMatches = refreshedMatches.filter((match) => match.status === "live");
 feed.upcomingMatches = refreshedMatches.filter((match) => match.status === "upcoming");
-feed.recentMatches = refreshedMatches.filter((match) => match.status !== "live" && match.status !== "upcoming");
+feed.recentMatches = refreshedMatches
+  .filter((match) => match.status !== "live" && match.status !== "upcoming")
+  .sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
 feed.summary = {
   ...(feed.summary || {}),
   matches: refreshedMatches.length,
