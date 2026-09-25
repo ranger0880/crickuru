@@ -709,6 +709,74 @@
         isolation: isolate;
       }
 
+      .player-level-card {
+        border-color: color-mix(in srgb, var(--player-neon-color) 28%, rgba(255, 255, 255, 0.12)) !important;
+        box-shadow: 0 0 22px color-mix(in srgb, var(--player-neon-glow) 28%, transparent), inset 0 0 28px color-mix(in srgb, var(--player-neon-color) 5%, transparent);
+      }
+
+      .player-level-badge {
+        display: inline-flex;
+        max-width: 100%;
+        align-items: center;
+        gap: 0.45rem;
+        border: 1px solid color-mix(in srgb, var(--player-neon-color) 68%, rgba(255, 255, 255, 0.14));
+        border-radius: 999px;
+        background: color-mix(in srgb, var(--player-neon-color) 11%, rgba(5, 7, 11, 0.84));
+        box-shadow: 0 0 16px color-mix(in srgb, var(--player-neon-glow) 48%, transparent), inset 0 0 12px color-mix(in srgb, var(--player-neon-color) 10%, transparent);
+        color: var(--player-neon-color);
+        padding: 0.38rem 0.65rem;
+        font-size: 0.62rem;
+        font-weight: 900;
+        letter-spacing: 0.14em;
+        line-height: 1;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+
+      .player-level-badge-compact {
+        margin-top: 0.55rem;
+        padding: 0.28rem 0.5rem;
+        font-size: 0.52rem;
+      }
+
+      .player-level-badge-dot {
+        width: 0.42rem;
+        height: 0.42rem;
+        border-radius: 999px;
+        background: var(--player-neon-color);
+        box-shadow: 0 0 9px var(--player-neon-glow);
+      }
+
+      .player-level-badge-score {
+        border-left: 1px solid color-mix(in srgb, var(--player-neon-color) 32%, transparent);
+        padding-left: 0.45rem;
+        color: rgba(255, 255, 255, 0.55);
+        letter-spacing: 0.08em;
+      }
+
+      .player-level-infographic {
+        position: relative;
+        margin-top: 1rem;
+        overflow: hidden;
+        border: 1px solid color-mix(in srgb, var(--player-neon-color) 24%, rgba(255, 255, 255, 0.1));
+        border-radius: 0.5rem;
+        background: linear-gradient(135deg, color-mix(in srgb, var(--player-neon-soft) 74%, transparent), rgba(5, 7, 11, 0.5));
+        padding: 0.75rem;
+      }
+
+      .player-level-infographic::after {
+        position: absolute;
+        top: -2rem;
+        right: -1.5rem;
+        width: 6rem;
+        height: 6rem;
+        border: 1px solid color-mix(in srgb, var(--player-neon-color) 28%, transparent);
+        border-radius: 999px;
+        box-shadow: 0 0 24px color-mix(in srgb, var(--player-neon-glow) 40%, transparent);
+        content: "";
+        pointer-events: none;
+      }
+
       .player-profile-overlay {
         position: fixed !important;
         inset: 0 !important;

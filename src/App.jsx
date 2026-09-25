@@ -2074,17 +2074,23 @@ const RouterContext = React.createContext(null);
         }
 
         const displayPlayers = players
-          .map((player) => ({ ...player, impact: playerImpactScore(player), role: playerRoleLabel(player) }))
+          .map((player) => ({ ...player, impact: playerImpactScore(player), role: playerRoleLabel(player), level: playerLevel(player) }))
           .sort((a, b) => Number(b.isCaptain) - Number(a.isCaptain) || b.impact - a.impact || a.name.localeCompare(b.name));
+        const levelCounts = displayPlayers.reduce((counts, player) => {
+          counts[player.level.key] = (counts[player.level.key] || 0) + 1;
+          return counts;
+        }, {});
 
         return (
           <div className="grid gap-5">
-            <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
+            <div className="grid grid-cols-2 gap-3 md:grid-cols-5">
               <LiveStat label="Total" value={memberSummary?.total || players.length} />
+              <LiveStat label="Pro" value={levelCounts.pro || 0} />
+              <LiveStat label="Semi-Pro" value={levelCounts.semiPro || 0} />
+              <LiveStat label="Amateur" value={levelCounts.amateur || 0} />
               <LiveStat label="Verified" value={memberSummary?.verified || 0} />
-              <LiveStat label="Pro" value={memberSummary?.pro || 0} />
-              <LiveStat label="Admins" value={memberSummary?.admins || 0} />
             </div>
+            <p className="max-w-3xl text-sm leading-6 text-white/55">CricKuru levels measure public cricket experience and repeat performance, not employment status. Every level is match-ready, and every amateur player has a visible growth path.</p>
             {rosterChanges.length > 0 && <RosterChangePanel changes={rosterChanges} />}
             <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
               {displayPlayers.map((player, index) => <WarriorsRosterDataCard key={player.id || player.name} player={player} rank={index + 1} onSelect={() => onSelectPlayer?.(player)} />)}
@@ -2095,9 +2101,12 @@ const RouterContext = React.createContext(null);
 
       function WarriorsRosterDataCard({ player, rank, onSelect }) {
         const stats = player.warriorsStats || player.stats || {};
+        const level = player.level || playerLevel(player);
+        const neon = playerNeonTheme(player.impact || 0, level);
         return (
           <article
-            className="interactive-card cursor-pointer rounded-[8px] border border-white/12 bg-white/[0.045] p-4 transition hover:bg-gold/[0.05] focus:outline-none focus:ring-2 focus:ring-gold/60"
+            className="player-level-card interactive-card cursor-pointer rounded-[8px] border border-white/12 bg-white/[0.045] p-4 transition hover:bg-gold/[0.05] focus:outline-none focus:ring-2 focus:ring-gold/60"
+            style={{ "--player-neon-color": neon.color, "--player-neon-glow": neon.glow }}
             onClick={onSelect}
             onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); onSelect?.(); } }}
             role="button"
@@ -2111,10 +2120,12 @@ const RouterContext = React.createContext(null);
                   <p className="text-[0.62rem] font-black uppercase tracking-[0.18em] text-gold">Roster #{rank}</p>
                   <h2 className="truncate font-display text-3xl font-black uppercase text-white">{player.name}</h2>
                   <p className="mt-1 text-xs font-bold uppercase tracking-[0.14em] text-white/44">{player.role}</p>
+                  <PlayerLevelBadge level={level} compact />
                 </div>
               </div>
               <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full border border-white/10 bg-night/60 font-display text-xl font-black text-white">{player.impact}</span>
             </div>
+            <PlayerLevelInfographic level={level} />
             <div className="mt-4 grid grid-cols-2 gap-2 text-center sm:grid-cols-4">
               <LiveTinyStat label="Runs" value={stats.runs || 0} />
               <LiveTinyStat label="Wkts" value={stats.wickets || 0} />
@@ -2336,7 +2347,7 @@ const RouterContext = React.createContext(null);
         const rosterChanges = asArray(data.rosterChangeLog);
         const players = useMemo(() => {
           return asArray(data.players)
-            .map((player) => ({ ...player, impact: playerImpactScore(player), role: playerRoleLabel(player) }))
+            .map((player) => ({ ...player, impact: playerImpactScore(player), role: playerRoleLabel(player), level: playerLevel(player) }))
             .sort((a, b) => b.impact - a.impact || (b.performance?.awards || 0) - (a.performance?.awards || 0) || a.name.localeCompare(b.name));
         }, [data.players]);
         const captain = useMemo(() => {
@@ -2589,11 +2600,14 @@ const RouterContext = React.createContext(null);
         const stats = playerOverallStats(player);
         const hasStats = hasPlayerStats(stats);
         const impact = player.impact || 0;
+        const level = player.level || playerLevel(player);
+        const neon = playerNeonTheme(impact, level);
         const improvementReport = createImprovementReport(player, stats);
 
         return (
           <article
-            className="interactive-card relative cursor-pointer overflow-hidden rounded-[8px] border border-white/12 bg-[radial-gradient(circle_at_85%_8%,rgba(244,185,66,0.14),transparent_28%),rgba(255,255,255,0.045)] p-5 focus:outline-none focus:ring-2 focus:ring-gold/60"
+            className="player-level-card interactive-card relative cursor-pointer overflow-hidden rounded-[8px] border border-white/12 bg-[radial-gradient(circle_at_85%_8%,rgba(244,185,66,0.14),transparent_28%),rgba(255,255,255,0.045)] p-5 focus:outline-none focus:ring-2 focus:ring-gold/60"
+            style={{ "--player-neon-color": neon.color, "--player-neon-glow": neon.glow }}
             onClick={(event) => { if (!event.target.closest("a")) onSelect?.(); }}
             onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); onSelect?.(); } }}
             role="button"
@@ -2608,6 +2622,7 @@ const RouterContext = React.createContext(null);
                   <p className="text-[0.62rem] font-black uppercase tracking-[0.18em] text-gold">Rank {rank}</p>
                   <h2 className="truncate font-display text-3xl font-black uppercase leading-none text-white">{player.name}</h2>
                   <p className="mt-1 text-xs font-bold uppercase tracking-[0.14em] text-white/44">{player.role}</p>
+                  <PlayerLevelBadge level={level} compact />
                 </div>
               </div>
               <div
@@ -2618,6 +2633,8 @@ const RouterContext = React.createContext(null);
                 <span className="grid h-12 w-12 place-items-center rounded-full bg-night font-display text-2xl font-black text-white">{impact}</span>
               </div>
             </div>
+
+            <PlayerLevelInfographic level={level} />
 
             <div className="relative mt-5 rounded-[7px] border border-cyan/20 bg-cyan/[0.06] p-4">
               <div className="flex items-center gap-2 text-[0.62rem] font-black uppercase tracking-[0.16em] text-cyan"><Icon.Sparkles size={14} /> Areas of improvement</div>
@@ -2725,6 +2742,97 @@ const RouterContext = React.createContext(null);
           (player.isVerified ? 4 : 0) +
           asArray(player.badges).length;
         return Math.min(100, Math.max(1, Math.round(raw)));
+      }
+
+      const PLAYER_LEVELS = {
+        pro: {
+          label: "PRO",
+          descriptor: "Elite community form",
+          encouragement: "Setting the pace for the squad",
+          color: "#ff315a",
+          glow: "rgba(255,49,90,0.72)",
+          soft: "rgba(255,49,90,0.14)",
+        },
+        semiPro: {
+          label: "SEMI-PRO",
+          descriptor: "Competitive community form",
+          encouragement: "Turning consistency into impact",
+          color: "#F4B942",
+          glow: "rgba(244,185,66,0.72)",
+          soft: "rgba(244,185,66,0.14)",
+        },
+        amateur: {
+          label: "AMATEUR",
+          descriptor: "Building cricket momentum",
+          encouragement: "Every innings is progress",
+          color: "#23d5e8",
+          glow: "rgba(35,213,232,0.68)",
+          soft: "rgba(35,213,232,0.14)",
+        },
+      };
+
+      function playerLevel(player) {
+        const stats = playerOverallStats(player);
+        const performance = player.performance || {};
+        const matches = playerDetailNumber(stats.matches);
+        const runs = playerDetailNumber(stats.runs);
+        const wickets = playerDetailNumber(stats.wickets);
+        const fifties = playerDetailNumber(stats.fifties);
+        const hundreds = playerDetailNumber(stats.hundreds);
+        const fiveWicketHauls = playerDetailNumber(stats.fiveWicketHauls);
+        const hatTricks = playerDetailNumber(stats.hatTricks);
+        const awards = playerDetailNumber(performance.awards) + playerDetailNumber(performance.playerOfMatch);
+        const levelScore = Math.min(100, Math.round(
+          Math.min(32, matches / 12)
+          + Math.min(24, runs / 700)
+          + Math.min(24, wickets / 110)
+          + Math.min(8, fifties / 5)
+          + Math.min(8, hundreds * 2)
+          + Math.min(8, fiveWicketHauls * 2 + hatTricks * 4)
+          + Math.min(6, awards)
+        ));
+        const isPro = matches >= 400
+          || runs >= 9000
+          || wickets >= 300
+          || hundreds >= 12
+          || (matches >= 250 && (runs >= 6000 || wickets >= 250))
+          || (fiveWicketHauls >= 3 && wickets >= 150);
+        const isSemiPro = matches >= 75
+          || runs >= 1000
+          || wickets >= 75
+          || fifties >= 5
+          || hundreds >= 1
+          || fiveWicketHauls >= 1
+          || levelScore >= 24;
+        const key = isPro ? "pro" : isSemiPro ? "semiPro" : "amateur";
+        return { key, score: levelScore, ...PLAYER_LEVELS[key] };
+      }
+
+      function PlayerLevelBadge({ level, compact = false }) {
+        const current = level || PLAYER_LEVELS.amateur;
+        return (
+          <span className={`player-level-badge ${compact ? "player-level-badge-compact" : ""}`} style={{ "--player-neon-color": current.color, "--player-neon-glow": current.glow }} title={`${current.label}: ${current.descriptor}`}>
+            <span className="player-level-badge-dot" aria-hidden="true" />
+            <span>{current.label}</span>
+            {!compact && <span className="player-level-badge-score">{current.score}/100 level index</span>}
+          </span>
+        );
+      }
+
+      function PlayerLevelInfographic({ level }) {
+        const current = level || PLAYER_LEVELS.amateur;
+        return (
+          <div className="player-level-infographic" style={{ "--player-neon-color": current.color, "--player-neon-glow": current.glow, "--player-neon-soft": current.soft }}>
+            <div className="flex min-w-0 items-center gap-3">
+              <PlayerLevelBadge level={current} />
+              <p className="min-w-0 text-xs font-bold leading-5 text-white/58">{current.encouragement}</p>
+            </div>
+            <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-white/10" aria-label={`${current.label} level index ${current.score} out of 100`}>
+              <span className="block h-full rounded-full" style={{ width: `${Math.max(6, current.score)}%`, background: current.color, boxShadow: `0 0 14px ${current.glow}` }} />
+            </div>
+            <div className="mt-2 flex justify-between text-[0.55rem] font-black uppercase tracking-[0.12em] text-white/35"><span>Community level</span><span>{current.score}/100 signal</span></div>
+          </div>
+        );
       }
 
       function playerDetailNumber(value) {
@@ -2854,7 +2962,8 @@ const RouterContext = React.createContext(null);
 
       function PlayerImprovementPanel({ player, stats }) {
         const report = createImprovementReport(player, stats);
-        const neon = playerNeonTheme(player.impact || 0);
+        const level = player.level || playerLevel(player);
+        const neon = playerNeonTheme(player.impact || 0, level);
         return (
           <article className="player-neon-card rounded-[8px] border bg-[linear-gradient(135deg,rgba(35,213,232,0.09),rgba(255,255,255,0.025))] p-4 sm:p-5" style={{ "--player-neon-color": neon.color, "--player-neon-glow": neon.glow }}>
             <div className="flex flex-wrap items-start justify-between gap-3">
@@ -3028,11 +3137,8 @@ const RouterContext = React.createContext(null);
         );
       }
 
-      function playerNeonTheme(impact = 0) {
-        if (impact >= 85) return { label: "Elite form", color: "#ff315a", glow: "rgba(255,49,90,0.72)", soft: "rgba(255,49,90,0.16)" };
-        if (impact >= 70) return { label: "Match ready", color: "#F4B942", glow: "rgba(244,185,66,0.72)", soft: "rgba(244,185,66,0.16)" };
-        if (impact >= 50) return { label: "Building form", color: "#23d5e8", glow: "rgba(35,213,232,0.68)", soft: "rgba(35,213,232,0.14)" };
-        return { label: "Rising form", color: "#6f8cff", glow: "rgba(111,140,255,0.62)", soft: "rgba(111,140,255,0.14)" };
+      function playerNeonTheme(impact = 0, level = PLAYER_LEVELS.amateur) {
+        return { ...level, impact };
       }
 
       function PlayerDetailModal({ player, onClose }) {
@@ -3041,7 +3147,8 @@ const RouterContext = React.createContext(null);
         const warriorsStats = player.warriorsStats || {};
         const recentMatches = playerRecentForm(player, 5);
         const matchHistory = asArray(player.matchHistory).length ? asArray(player.matchHistory) : recentMatches;
-        const neon = playerNeonTheme(player.impact || 0);
+        const level = player.level || playerLevel(player);
+        const neon = playerNeonTheme(player.impact || 0, level);
 
         useEffect(() => {
           const onKeyDown = (event) => { if (event.key === "Escape") onClose(); };
@@ -3063,9 +3170,10 @@ const RouterContext = React.createContext(null);
                 <div className="relative flex min-h-48 items-end gap-3 p-4 sm:min-h-56 sm:gap-4 sm:p-8">
                   <span className="rounded-full p-1" style={{ boxShadow: `0 0 0 2px ${neon.color}, 0 0 22px ${neon.glow}` }}><LiveAvatar src={player.photo} name={player.name} /></span>
                   <div className="min-w-0 flex-1">
-                    <p className="text-[0.62rem] font-black uppercase tracking-[0.18em]" style={{ color: neon.color }}>Full player profile • {neon.label}</p>
+                    <p className="text-[0.62rem] font-black uppercase tracking-[0.18em]" style={{ color: neon.color }}>Full player profile • {level.label} • {level.descriptor}</p>
                     <h2 className="mt-2 break-words pr-10 font-display text-3xl font-black uppercase leading-none text-white sm:truncate sm:pr-0 sm:text-6xl">{player.name}</h2>
                     <p className="mt-2 text-xs font-bold uppercase tracking-[0.12em] text-white/60 sm:text-sm sm:tracking-[0.14em]">{player.role || playerRoleLabel(player)} • {player.impact || 0}/100 performance charge</p>
+                    <PlayerLevelBadge level={level} />
                     <button type="button" className="mt-3 inline-flex min-h-9 items-center gap-2 rounded-full border border-cyan/35 bg-cyan/10 px-3 text-[0.58rem] font-black uppercase tracking-[0.14em] text-cyan transition hover:border-cyan hover:bg-cyan/15" onClick={() => document.getElementById("player-ai-coach")?.scrollIntoView({ behavior: "smooth", block: "start" })}>
                       <Icon.Sparkles size={13} /> Jump to AI coach
                     </button>
