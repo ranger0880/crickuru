@@ -8,7 +8,11 @@ export default defineConfig({
     manifest: false,
     rollupOptions: {
       output: {
-        manualChunks: undefined,
+        manualChunks(id) {
+          if (id.includes("node_modules/react") || id.includes("node_modules/scheduler")) return "react-vendor";
+          if (id.includes("node_modules/framer-motion")) return "motion-vendor";
+          return undefined;
+        },
       },
     },
   },

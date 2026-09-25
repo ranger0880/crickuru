@@ -8,7 +8,7 @@ const distDir = path.join(root, "dist");
 const templatePath = path.join(distDir, "index.html");
 const template = fs
   .readFileSync(templatePath, "utf8")
-  .replace(/<script type="module" crossorigin src="([^"]+)"><\/script>/g, '<script defer src="$1"></script>');
+  .replace(/<script type="module" crossorigin src="([^"]+)"><\/script>/g, '<script type="module" defer src="$1"></script>');
 const marker = "<!--CRICKURU_ROUTE_META-->";
 
 if (!template.includes(marker)) {

@@ -1788,8 +1788,10 @@ const RouterContext = React.createContext(null);
         const [selectedPlayer, setSelectedPlayer] = useState(null);
         const team = data.team || liveFeedFallback.team;
         const inventory = data.dataInventory || liveFeedFallback.dataInventory;
-        const matches = asArray(data.matches);
-        const recentMatches = asArray(data.recentMatches).length ? asArray(data.recentMatches) : matches;
+        const matches = [...asArray(data.matches)].sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
+        const recentMatches = asArray(data.recentMatches).length
+          ? [...asArray(data.recentMatches)].sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0))
+          : matches;
         const players = asArray(data.players);
         const opponents = asArray(data.opponents);
         const awards = asArray(data.awardLedger);
