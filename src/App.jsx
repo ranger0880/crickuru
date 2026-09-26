@@ -2536,9 +2536,12 @@ const RouterContext = React.createContext(null);
         const stats = playerOverallStats(player);
         const captainMatches = playerDetailNumber(stats.captainMatches);
         const captainWinRate = stats.captainWinPercentage || "-";
+        const level = player.level || playerLevel(player);
+        const neon = playerNeonTheme(player.impact || 0, level);
         return (
           <article
-            className="relative mt-8 cursor-pointer overflow-hidden rounded-[8px] border border-gold/35 bg-[radial-gradient(circle_at_92%_12%,rgba(244,185,66,0.2),transparent_30%),linear-gradient(135deg,rgba(183,25,50,0.16),rgba(255,255,255,0.045))] p-5 shadow-[0_0_36px_rgba(244,185,66,0.1)] transition hover:-translate-y-1 hover:border-gold focus:outline-none focus:ring-2 focus:ring-gold/60 sm:p-6"
+            className="player-level-card relative mt-8 cursor-pointer overflow-hidden rounded-[8px] border border-gold/35 bg-[radial-gradient(circle_at_92%_12%,rgba(244,185,66,0.2),transparent_30%),linear-gradient(135deg,rgba(183,25,50,0.16),rgba(255,255,255,0.045))] p-5 shadow-[0_0_36px_rgba(244,185,66,0.1)] transition hover:-translate-y-1 hover:border-gold focus:outline-none focus:ring-2 focus:ring-gold/60 sm:p-6"
+            style={{ "--player-neon-color": neon.color, "--player-neon-glow": neon.glow, "--player-neon-soft": neon.soft }}
             onClick={(event) => { if (!event.target.closest("a")) onSelect?.(); }}
             onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); onSelect?.(); } }}
             role="button"
@@ -2552,9 +2555,12 @@ const RouterContext = React.createContext(null);
                   <LiveAvatar src={player.photo} name={player.name} />
                 </span>
                 <div className="min-w-0">
-                  <p className="text-[0.64rem] font-black uppercase tracking-[0.22em] text-gold">Team captain</p>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <p className="text-[0.64rem] font-black uppercase tracking-[0.22em] text-gold">Team captain</p>
+                    <PlayerLevelBadge level={level} compact />
+                  </div>
                   <h2 className="mt-2 truncate font-display text-3xl font-black uppercase leading-none text-white sm:text-4xl">{player.name}</h2>
-                  <p className="mt-2 text-xs font-bold uppercase tracking-[0.14em] text-white/58">{player.role || "Kurukshetra Warriors captain"} • {player.impact || 0}/100 performance charge</p>
+                  <p className="mt-2 text-xs font-bold uppercase tracking-[0.14em] text-white/58">{player.role || "Kurukshetra Warriors captain"} • {level.descriptor}</p>
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4">
