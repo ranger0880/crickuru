@@ -3,7 +3,7 @@
   "source": "CricHeroes public team and player pages (verified browser refresh)",
   "sourceStatus": "stale",
   "syncedAt": "2026-09-25T20:56:08.650Z",
-  "lastCheckedAt": "2026-09-26T12:11:56.422Z",
+  "lastCheckedAt": "2026-09-26T16:20:37.324Z",
   "lastSuccessfulSyncAt": "2026-09-25T20:56:08.650Z",
   "playerStatsUpdatedAt": "2026-09-06T04:42:24.450Z",
   "playerSyncCursor": 28,
@@ -37487,54 +37487,222 @@
         "updatedAt": "2026-09-26T00:00:00.000Z",
         "sections": {
           "batting": [
-            { "title": "Matches", "value": 143, "isUserProperty": true },
-            { "title": "Innings", "value": 92, "isUserProperty": false },
-            { "title": "Not out", "value": 28, "isUserProperty": false },
-            { "title": "Runs", "value": 848, "isUserProperty": true },
-            { "title": "Highest Runs", "value": "43", "isUserProperty": false },
-            { "title": "Avg", "value": "13.25", "isUserProperty": false },
-            { "title": "SR", "value": "120.45", "isUserProperty": false },
-            { "title": "30s", "value": 6, "isUserProperty": false },
-            { "title": "50s", "value": 0, "isUserProperty": false },
-            { "title": "100s", "value": 0, "isUserProperty": false },
-            { "title": "4s", "value": 89, "isUserProperty": false },
-            { "title": "6s", "value": 20, "isUserProperty": false },
-            { "title": "Ducks", "value": 13, "isUserProperty": false },
-            { "title": "Won", "value": 58, "isUserProperty": false },
-            { "title": "Loss", "value": 81, "isUserProperty": false }
+            {
+              "title": "Matches",
+              "value": 143,
+              "isUserProperty": true
+            },
+            {
+              "title": "Innings",
+              "value": 92,
+              "isUserProperty": false
+            },
+            {
+              "title": "Not out",
+              "value": 28,
+              "isUserProperty": false
+            },
+            {
+              "title": "Runs",
+              "value": 848,
+              "isUserProperty": true
+            },
+            {
+              "title": "Highest Runs",
+              "value": "43",
+              "isUserProperty": false
+            },
+            {
+              "title": "Avg",
+              "value": "13.25",
+              "isUserProperty": false
+            },
+            {
+              "title": "SR",
+              "value": "120.45",
+              "isUserProperty": false
+            },
+            {
+              "title": "30s",
+              "value": 6,
+              "isUserProperty": false
+            },
+            {
+              "title": "50s",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "100s",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "4s",
+              "value": 89,
+              "isUserProperty": false
+            },
+            {
+              "title": "6s",
+              "value": 20,
+              "isUserProperty": false
+            },
+            {
+              "title": "Ducks",
+              "value": 13,
+              "isUserProperty": false
+            },
+            {
+              "title": "Won",
+              "value": 58,
+              "isUserProperty": false
+            },
+            {
+              "title": "Loss",
+              "value": 81,
+              "isUserProperty": false
+            }
           ],
           "bowling": [
-            { "title": "Matches", "value": 143, "isUserProperty": true },
-            { "title": "Innings", "value": 64, "isUserProperty": false },
-            { "title": "Overs", "value": "107.3", "isUserProperty": false },
-            { "title": "Maidens", "value": 1, "isUserProperty": false },
-            { "title": "Wickets", "value": 38, "isUserProperty": true },
-            { "title": "Runs", "value": 1347, "isUserProperty": false },
-            { "title": "Best Bowling", "value": "3/19", "isUserProperty": false },
-            { "title": "3 Wickets", "value": 2, "isUserProperty": false },
-            { "title": "5 Wickets", "value": 0, "isUserProperty": false },
-            { "title": "Economy", "value": "12.53", "isUserProperty": false },
-            { "title": "SR", "value": "16.97", "isUserProperty": false },
-            { "title": "Avg", "value": "35.45", "isUserProperty": false },
-            { "title": "Wides", "value": 30, "isUserProperty": false },
-            { "title": "NoBalls", "value": 22, "isUserProperty": false },
-            { "title": "Dot Balls", "value": 207, "isUserProperty": false },
-            { "title": "4s", "value": 113, "isUserProperty": false },
-            { "title": "6s", "value": 91, "isUserProperty": false }
+            {
+              "title": "Matches",
+              "value": 143,
+              "isUserProperty": true
+            },
+            {
+              "title": "Innings",
+              "value": 64,
+              "isUserProperty": false
+            },
+            {
+              "title": "Overs",
+              "value": "107.3",
+              "isUserProperty": false
+            },
+            {
+              "title": "Maidens",
+              "value": 1,
+              "isUserProperty": false
+            },
+            {
+              "title": "Wickets",
+              "value": 38,
+              "isUserProperty": true
+            },
+            {
+              "title": "Runs",
+              "value": 1347,
+              "isUserProperty": false
+            },
+            {
+              "title": "Best Bowling",
+              "value": "3/19",
+              "isUserProperty": false
+            },
+            {
+              "title": "3 Wickets",
+              "value": 2,
+              "isUserProperty": false
+            },
+            {
+              "title": "5 Wickets",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Economy",
+              "value": "12.53",
+              "isUserProperty": false
+            },
+            {
+              "title": "SR",
+              "value": "16.97",
+              "isUserProperty": false
+            },
+            {
+              "title": "Avg",
+              "value": "35.45",
+              "isUserProperty": false
+            },
+            {
+              "title": "Wides",
+              "value": 30,
+              "isUserProperty": false
+            },
+            {
+              "title": "NoBalls",
+              "value": 22,
+              "isUserProperty": false
+            },
+            {
+              "title": "Dot Balls",
+              "value": 207,
+              "isUserProperty": false
+            },
+            {
+              "title": "4s",
+              "value": 113,
+              "isUserProperty": false
+            },
+            {
+              "title": "6s",
+              "value": 91,
+              "isUserProperty": false
+            }
           ],
           "fielding": [
-            { "title": "Matches", "value": 143, "isUserProperty": false },
-            { "title": "Catches", "value": 9, "isUserProperty": false },
-            { "title": "Caught behind", "value": 0, "isUserProperty": false },
-            { "title": "Run outs", "value": 2, "isUserProperty": false },
-            { "title": "Stumpings", "value": 0, "isUserProperty": false },
-            { "title": "Assisted Run Outs", "value": 1, "isUserProperty": false }
+            {
+              "title": "Matches",
+              "value": 143,
+              "isUserProperty": false
+            },
+            {
+              "title": "Catches",
+              "value": 9,
+              "isUserProperty": false
+            },
+            {
+              "title": "Caught behind",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Run outs",
+              "value": 2,
+              "isUserProperty": false
+            },
+            {
+              "title": "Stumpings",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Assisted Run Outs",
+              "value": 1,
+              "isUserProperty": false
+            }
           ],
           "captain": [
-            { "title": "Matches", "value": 24, "isUserProperty": false },
-            { "title": "Toss Won", "value": 10, "isUserProperty": false },
-            { "title": "Win Per", "value": "29.17%", "isUserProperty": false },
-            { "title": "Loss Per", "value": "70.83%", "isUserProperty": false }
+            {
+              "title": "Matches",
+              "value": 24,
+              "isUserProperty": false
+            },
+            {
+              "title": "Toss Won",
+              "value": 10,
+              "isUserProperty": false
+            },
+            {
+              "title": "Win Per",
+              "value": "29.17%",
+              "isUserProperty": false
+            },
+            {
+              "title": "Loss Per",
+              "value": "70.83%",
+              "isUserProperty": false
+            }
           ]
         },
         "publicFieldCount": 42,
@@ -96137,6 +96305,7 @@
     }
   ],
   "errors": [
+    "CricHeroes returned 403 for https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
     "CricHeroes returned 403 for https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
     "CricHeroes returned 403 for https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
     "CricHeroes returned 403 for https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
