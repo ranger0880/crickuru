@@ -525,7 +525,7 @@ const RouterContext = React.createContext(null);
       }
 
       function playerOverallStats(player) {
-        const candidates = [player?.overallStats, player?.stats, player?.warriorsStats];
+        const candidates = [player?.liveCricHeroesStats, player?.overallStats, player?.stats, player?.warriorsStats];
         const overall = candidates.find((stats) => stats?.source === CRICHEROES_STATS_SOURCE);
         return normalizePlayerStats(overall || candidates.find(hasPlayerStats));
       }
