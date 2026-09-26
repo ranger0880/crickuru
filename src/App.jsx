@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { createPortal } from "react-dom";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { applyRouteMetadata } from "./metadata.js";
+import { AMAZON_COLLECTIONS, amazonAffiliateConfigured, amazonProductUrl } from "./amazonProducts.js";
 import QuizPage from "./QuizPage.jsx";
 import "./styles.css";
 
@@ -19,6 +20,7 @@ const RouterContext = React.createContext(null);
         "/kurukshetra-coin": "kurukshetra-coin/index.html",
         "/india-matches": "india-matches/index.html",
         "/gt-gaming": "gt-gaming/index.html",
+        "/shop": "shop/index.html",
       };
 
       function isLocalFilePreview() {
@@ -27,7 +29,7 @@ const RouterContext = React.createContext(null);
 
       function localPreviewPrefix() {
         const path = decodeURIComponent(window.location.pathname).replace(/\\/g, "/");
-        return /\/(arena|coin|kurukshetra-coin|india-matches|meme|memes|players|quiz|warriors|gt-gaming)\/index\.html$/i.test(path) ? "../" : "";
+        return /\/(arena|coin|kurukshetra-coin|india-matches|meme|memes|players|quiz|warriors|gt-gaming|shop)\/index\.html$/i.test(path) ? "../" : "";
       }
 
       function normalizePath(pathname, basename = "/") {
@@ -45,7 +47,7 @@ const RouterContext = React.createContext(null);
       function currentRoutePath(basename = "/") {
         if (!isLocalFilePreview()) return normalizePath(window.location.pathname, basename);
         const path = decodeURIComponent(window.location.pathname).replace(/\\/g, "/").toLowerCase();
-        const routeMatch = path.match(/\/(arena|coin|kurukshetra-coin|india-matches|meme|memes|players|quiz|warriors|gt-gaming)\/index\.html$/);
+        const routeMatch = path.match(/\/(arena|coin|kurukshetra-coin|india-matches|meme|memes|players|quiz|warriors|gt-gaming|shop)\/index\.html$/);
         return routeMatch ? `/${routeMatch[1]}` : "/";
       }
 
@@ -584,6 +586,7 @@ const RouterContext = React.createContext(null);
         Play: (props) => <SvgIcon {...props}><polygon points="6 3 20 12 6 21 6 3" /></SvgIcon>,
         Radio: (props) => <SvgIcon {...props}><path d="M4.9 19.1a10 10 0 0 1 0-14.2" /><path d="M7.8 16.2a6 6 0 0 1 0-8.5" /><circle cx="12" cy="12" r="2" /><path d="M16.2 7.8a6 6 0 0 1 0 8.5" /><path d="M19.1 4.9a10 10 0 0 1 0 14.2" /></SvgIcon>,
         Search: (props) => <SvgIcon {...props}><circle cx="11" cy="11" r="7" /><path d="m20 20-4-4" /></SvgIcon>,
+        ShoppingBag: (props) => <SvgIcon {...props}><path d="M6 8h12l1 13H5L6 8Z" /><path d="M9 8a3 3 0 0 1 6 0" /></SvgIcon>,
         Shield: (props) => <SvgIcon {...props}><path d="M20 13c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V5l8-3 8 3v8Z" /></SvgIcon>,
         Send: (props) => <SvgIcon {...props}><path d="m22 2-7 20-4-9-9-4Z" /><path d="M22 2 11 13" /></SvgIcon>,
         Sparkles: (props) => <SvgIcon {...props}><path d="m12 3-1.9 5.8L4 11l6.1 2.2L12 19l1.9-5.8L20 11l-6.1-2.2L12 3Z" /><path d="M5 3v4" /><path d="M3 5h4" /><path d="M19 17v4" /><path d="M17 19h4" /></SvgIcon>,
@@ -626,6 +629,7 @@ const RouterContext = React.createContext(null);
         { label: "Memes", path: "/memes" },
         { label: "Kuru Coin", path: "/coin" },
         { label: "GT Chairs", path: "/gt-gaming" },
+        { label: "Gear Shop", path: "/shop" },
       ];
 
       const ease = [0.22, 1, 0.36, 1];
@@ -6246,6 +6250,94 @@ const RouterContext = React.createContext(null);
         );
       }
 
+      function CricketGearShopPage() {
+        return (
+          <main className="route-bg page-grain min-h-screen overflow-hidden px-5 pb-16 pt-36 sm:px-8">
+            <section className="mx-auto max-w-7xl">
+              <motion.div
+                className="grid items-end gap-8 border-b border-white/10 pb-12 lg:grid-cols-[1.15fr_0.85fr]"
+                initial={{ opacity: 0, y: 24 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.75, ease }}
+              >
+                <div>
+                  <p className="text-xs font-black uppercase tracking-[0.32em] text-cyan">CricKuru gear desk</p>
+                  <h1 className="mt-5 max-w-5xl font-display text-6xl font-black uppercase leading-[0.88] text-white sm:text-8xl">Play the right ball.</h1>
+                  <p className="mt-6 max-w-2xl text-lg leading-8 text-white/68">
+                    Curated Amazon India picks for society cricket, tennis-ball throwdowns, academy nets and leather-ball match prep. Open a card to check the current listing, price and availability on Amazon.
+                  </p>
+                </div>
+                <div className="glass rounded-[8px] border border-gold/20 p-5 sm:p-6">
+                  <div className="flex items-start gap-4">
+                    <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-gold/35 bg-gold/10 text-gold"><Icon.ShoppingBag size={20} /></span>
+                    <div>
+                      <p className="text-xs font-black uppercase tracking-[0.2em] text-gold">Buying note</p>
+                      <p className="mt-2 text-sm leading-7 text-white/62">Prices, sizes, stock and delivery can change on Amazon. Always confirm the live product page before buying.</p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+
+              <div className="mt-12 space-y-16">
+                {AMAZON_COLLECTIONS.map((collection) => {
+                  const cyan = collection.accent === "cyan";
+                  return (
+                    <section key={collection.id} aria-labelledby={`${collection.id}-heading`}>
+                      <div className="flex flex-col gap-4 border-b border-white/10 pb-6 sm:flex-row sm:items-end sm:justify-between">
+                        <div>
+                          <p className={`text-xs font-black uppercase tracking-[0.28em] ${cyan ? "text-cyan" : "text-gold"}`}>{collection.eyebrow}</p>
+                          <h2 id={`${collection.id}-heading`} className="mt-3 font-display text-4xl font-black uppercase text-white sm:text-5xl">{collection.title}</h2>
+                          <p className="mt-3 max-w-2xl text-sm leading-7 text-white/58">{collection.description}</p>
+                        </div>
+                        <a
+                          href={`https://www.amazon.in/s?k=${encodeURIComponent(collection.label)}`}
+                          target="_blank"
+                          rel="sponsored nofollow noopener noreferrer"
+                          className={`inline-flex min-h-11 shrink-0 items-center justify-center gap-2 rounded-full border px-5 text-xs font-black uppercase tracking-[0.14em] transition ${cyan ? "border-cyan/35 text-cyan hover:border-cyan hover:bg-cyan/10" : "border-gold/35 text-gold hover:border-gold hover:bg-gold/10"}`}
+                        >
+                          Browse all on Amazon <Icon.ExternalLink size={15} />
+                        </a>
+                      </div>
+                      <div className="mt-8 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+                        {collection.products.map((product, index) => (
+                          <article key={product.asin} className="interactive-card flex h-full flex-col overflow-hidden rounded-[8px] border border-white/12 bg-white/[0.045]">
+                            <a href={amazonProductUrl(product.asin)} target="_blank" rel="sponsored nofollow noopener noreferrer" className="group block">
+                              <div className="relative grid aspect-[4/3] place-items-center overflow-hidden bg-white p-5">
+                                <img src={product.image} alt={product.title} loading={index < 3 ? "eager" : "lazy"} referrerPolicy="no-referrer" className="h-full w-full object-contain transition duration-500 group-hover:scale-105" />
+                                <span className={`absolute left-4 top-4 rounded-full px-3 py-1 text-[0.58rem] font-black uppercase tracking-[0.16em] ${cyan ? "bg-cyan/90 text-night" : "bg-gold text-night"}`}>{collection.label}</span>
+                              </div>
+                            </a>
+                            <div className="flex flex-1 flex-col p-5">
+                              <p className="text-[0.62rem] font-black uppercase tracking-[0.18em] text-white/38">Amazon India listing</p>
+                              <h3 className="mt-3 text-lg font-black leading-6 text-white">{product.title}</h3>
+                              <p className="mt-3 flex-1 text-sm leading-6 text-white/58">{product.fit}</p>
+                              <a href={amazonProductUrl(product.asin)} target="_blank" rel="sponsored nofollow noopener noreferrer" className={`mt-5 inline-flex min-h-11 items-center justify-center gap-2 rounded-full border text-xs font-black uppercase tracking-[0.14em] transition ${cyan ? "border-cyan/30 text-cyan hover:border-cyan hover:bg-cyan/10" : "border-gold/30 text-gold hover:border-gold hover:bg-gold/10"}`}>
+                                Check current listing <Icon.ExternalLink size={14} />
+                              </a>
+                            </div>
+                          </article>
+                        ))}
+                      </div>
+                    </section>
+                  );
+                })}
+              </div>
+
+              <section className="mt-16 grid gap-5 border-t border-white/10 pt-8 md:grid-cols-2" aria-label="Affiliate disclosure">
+                <div className="rounded-[8px] border border-white/10 bg-white/[0.035] p-5">
+                  <p className="text-xs font-black uppercase tracking-[0.22em] text-gold">Affiliate disclosure</p>
+                  <p className="mt-3 text-sm leading-7 text-white/58">Some links on this page may earn CricKuru a commission at no extra cost to you. Product details, prices and availability are controlled by Amazon.</p>
+                </div>
+                <div className="rounded-[8px] border border-white/10 bg-white/[0.035] p-5">
+                  <p className="text-xs font-black uppercase tracking-[0.22em] text-cyan">Tracking status</p>
+                  <p className="mt-3 text-sm leading-7 text-white/58">{amazonAffiliateConfigured ? "Affiliate tracking is enabled for this build." : "Affiliate tracking is ready but your Amazon Associates tag has not been added yet."}</p>
+                </div>
+              </section>
+            </section>
+          </main>
+        );
+      }
+
       function PlaceholderPage({ title, kicker, description, icon: PageIcon }) {
         return (
           <main className="route-bg page-grain px-5 pb-16 pt-36 sm:px-8">
@@ -6332,6 +6424,12 @@ const RouterContext = React.createContext(null);
                   className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/12 px-4 text-sm font-bold text-white/70 transition hover:border-gold/50 hover:text-gold"
                 >
                   Chair guide <Icon.ArrowRight size={15} />
+                </Link>
+                <Link
+                  to="/shop"
+                  className="inline-flex min-h-11 items-center gap-2 rounded-full border border-cyan/25 px-4 text-sm font-bold text-cyan transition hover:border-cyan hover:bg-cyan/10"
+                >
+                  Cricket gear <Icon.ArrowRight size={15} />
                 </Link>
               </div>
               <p className="text-sm text-white/45">&copy; 2026 CricKuru. Built for crickuru.com.</p>
@@ -6601,6 +6699,10 @@ const RouterContext = React.createContext(null);
                   <Route
                     path="/gt-gaming"
                     element={<GTGamingPage />}
+                  />
+                  <Route
+                    path="/shop"
+                    element={<CricketGearShopPage />}
                   />
                   <Route
                     path="*"

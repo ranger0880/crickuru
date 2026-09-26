@@ -139,6 +139,18 @@ export const ROUTE_METADATA = [
     jsonLdType: "gtGaming",
   },
   {
+    path: "/shop",
+    canonicalPath: "/shop",
+    title: "Cricket Gear on Amazon - Tennis Ball and Leather Ball Collections | CricKuru",
+    description:
+      "Shop curated Amazon India cricket gear collections for tennis-ball society cricket and leather-ball club cricket, with current product links, real listing images and practical buying notes.",
+    ogType: "website",
+    themeColor: "#05070B",
+    changefreq: "weekly",
+    priority: "0.8",
+    jsonLdType: "shop",
+  },
+  {
     path: "/kurukshetra-coin",
     canonicalPath: "/coin",
     title: "Kuru Coin - CricKuru Community Launch Watch",
@@ -474,6 +486,28 @@ function jsonLdForRoute(metadata) {
     ];
   }
 
+  if (metadata.jsonLdType === "shop") {
+    return [
+      basePage,
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        name: "CricKuru Cricket Gear Collections",
+        description: metadata.description,
+        url: canonicalUrl,
+        about: {
+          "@type": "Thing",
+          name: "Cricket equipment buying guide",
+        },
+        isPartOf: {
+          "@type": "WebSite",
+          name: SITE_NAME,
+          url: SITE_ORIGIN,
+        },
+      },
+    ];
+  }
+
   if (metadata.jsonLdType === "coin") {
     return [
       basePage,
@@ -600,6 +634,12 @@ export function renderRouteSeoContent(pathname = "/") {
           heading: "GT Gaming chairs for cricket and gaming",
           body: "Learn about GT Gaming chairs featured by CricKuru, including the GT Throne setup for long cricket score-watching, gaming sessions and match-day comfort.",
           links: [["https://gtgaming.shop/", "Visit GT Gaming"], ["/arena", "Play CricKuru Arena"], ["/warriors", "Follow the Warriors"]],
+        },
+        shop: {
+          eyebrow: "CricKuru gear desk",
+          heading: "Cricket gear for every surface",
+          body: "Browse curated Amazon India collections for tennis-ball society cricket and leather-ball club cricket, with real product images, direct listings and practical fit notes.",
+          links: [["/warriors", "Kurukshetra Warriors"], ["/players", "Player profiles"], ["/gt-gaming", "GT Gaming sponsor"]],
         },
       }[metadata.jsonLdType] || {
         eyebrow: "CricKuru cricket hub",
