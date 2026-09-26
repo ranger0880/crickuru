@@ -1,4 +1,4 @@
-const AMAZON_ASSOCIATE_TAG = (import.meta.env.VITE_AMAZON_ASSOCIATE_TAG || "").trim();
+const AMAZON_ASSOCIATE_TAG = (import.meta.env.VITE_AMAZON_ASSOCIATE_TAG || "deluluromance-21").trim();
 
 export function amazonProductUrl(asin) {
   const url = new URL(`https://www.amazon.in/dp/${asin}`);
