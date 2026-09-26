@@ -157,6 +157,7 @@ export const NOT_FOUND_METADATA = {
   canonicalPath: "/",
   title: "Page Not Found - CricKuru",
   description: "This CricKuru route is not available yet. Return to the Kurukshetra Warriors cricket hub.",
+  robots: "noindex,follow",
   ogType: "website",
   themeColor: "#05070B",
   jsonLdType: "home",
@@ -186,6 +187,7 @@ export function renderRouteMeta(pathname = "/") {
   return [
     `<title>${escapeHtml(metadata.title)}</title>`,
     `<meta name="description" content="${escapeHtml(metadata.description)}" data-route-meta="managed" />`,
+    `<meta name="robots" content="${escapeHtml(metadata.robots || "index,follow")}" data-route-meta="managed" />`,
     `<meta name="theme-color" content="${escapeHtml(metadata.themeColor)}" data-route-meta="managed" />`,
     `<meta name="author" content="${SITE_NAME}" data-route-meta="managed" />`,
     `<link rel="canonical" href="${escapeHtml(canonicalUrl)}" data-route-meta="managed" />`,
@@ -214,6 +216,7 @@ export function applyRouteMetadata(pathname = "/") {
 
   document.title = metadata.title;
   setMeta("name", "description", metadata.description);
+  setMeta("name", "robots", metadata.robots || "index,follow");
   setMeta("name", "theme-color", metadata.themeColor);
   setMeta("name", "author", SITE_NAME);
   setLink("canonical", canonicalUrl);
@@ -250,6 +253,8 @@ function jsonLdForRoute(metadata) {
     description: metadata.description,
     url: canonicalUrl,
     image: imageUrl,
+    inLanguage: "en-IN",
+    breadcrumb: breadcrumbForPath(metadata.canonicalPath),
     isPartOf: {
       "@type": "WebSite",
       name: SITE_NAME,
@@ -523,6 +528,121 @@ function jsonLdForRoute(metadata) {
     },
     basePage,
   ];
+}
+
+export function renderRouteSeoContent(pathname = "/") {
+  const metadata = routeMetadataForPath(pathname);
+  const isNotFound = normalizePath(pathname) === "/404";
+  const content = isNotFound
+    ? {
+        eyebrow: "CricKuru cricket hub",
+        heading: "Page not found",
+        body: "That CricKuru route is unavailable. Return to the cricket hub for Kurukshetra Warriors match updates, player profiles, the India match feed, quizzes and the Arena.",
+        links: [["/", "Return to CricKuru"], ["/warriors", "Open Kurukshetra Warriors"]],
+      }
+    : {
+        home: {
+          eyebrow: "The global cricket community",
+          heading: "Cricket is more than a game",
+          body: "CricKuru is the cricket hub for Kurukshetra Warriors, captain Ankit Kulshreshtha, public CricHeroes team links, India match updates, a playable cricket Arena, quizzes and fan-made memes.",
+          links: [["/warriors", "Kurukshetra Warriors"], ["/india-matches", "India match updates"], ["/quiz", "Cricket quiz"]],
+        },
+        warriorsData: {
+          eyebrow: "Kurukshetra Warriors cricket",
+          heading: "Kurukshetra Warriors match centre",
+          body: "Follow the Greater Noida society cricket team through public CricHeroes match results, scorecards, members, player form, team records and captain Ankit Kulshreshtha.",
+          links: [["/captain/ankit-kulshreshtha", "Captain Ankit Kulshreshtha"], ["/players", "Warriors player profiles"], ["/india-matches", "India cricket matches"]],
+        },
+        captainProfile: {
+          eyebrow: "Kurukshetra Warriors captain",
+          heading: "Ankit Kulshreshtha cricket profile",
+          body: "Explore the public cricket profile of Ankit Kulshreshtha, captain of Kurukshetra Warriors in Greater Noida, with his CricHeroes connection, captaincy snapshot and recent match context.",
+          links: [["/warriors", "Kurukshetra Warriors team"], ["/players", "Player command room"], ["https://cricheroes.com/player-profile/29139731/ankit-kulshreshtha/stats", "Official CricHeroes stats"]],
+        },
+        arena: {
+          eyebrow: "Browser cricket game",
+          heading: "Play CricKuru Arena",
+          body: "Play a quick cricket game in your browser with toss choices, batting and bowling controls, scorecards and a mobile-friendly Arena built for cricket fans.",
+          links: [["/quiz", "Test your cricket knowledge"], ["/memes", "Make a cricket meme"], ["/warriors", "Follow the Warriors"]],
+        },
+        indiaMatches: {
+          eyebrow: "India cricket match updates",
+          heading: "India live scores and fixtures",
+          body: "Browse India-linked cricket fixtures and results across international, women's, youth, domestic and state-level cricket, with tournament filters and important-match tracking.",
+          links: [["/warriors", "Kurukshetra Warriors results"], ["/players", "Player performance"], ["/quiz", "Cricket quiz"]],
+        },
+        players: {
+          eyebrow: "Kurukshetra Warriors players",
+          heading: "Player stats and cricket profiles",
+          body: "Search Warriors player profiles, recent form, role badges, performance charges, batting, bowling, fielding and captaincy signals sourced from the public CricHeroes feed.",
+          links: [["/captain/ankit-kulshreshtha", "Captain profile"], ["/warriors", "Team match centre"], ["/india-matches", "India match feed"]],
+        },
+        quiz: {
+          eyebrow: "Cricket quiz and lobby",
+          heading: "Challenge your cricket knowledge",
+          body: "Play a cricket quiz with general knowledge, tricky rules, score maths, powerups, profiles, leaderboards and friendly duels for Kurukshetra Warriors fans.",
+          links: [["/arena", "Play Arena"], ["/memes", "Cricket meme generator"], ["/warriors", "Warriors match updates"]],
+        },
+        memes: {
+          eyebrow: "Cricket meme generator",
+          heading: "Make a cricket meme",
+          body: "Create shareable cricket meme text and artwork ideas for match moments, rivalries, dressing-room jokes and Kurukshetra Warriors fan hype.",
+          links: [["/warriors", "Find Warriors match moments"], ["/quiz", "Play the cricket quiz"], ["/arena", "Play CricKuru Arena"]],
+        },
+        coin: {
+          eyebrow: "CricKuru community project",
+          heading: "Kuru Coin launch watch",
+          body: "Follow the Kurukshetra Warriors community coin concept and launch preparation with clear, risk-aware information and no promises of profit or returns.",
+          links: [["/warriors", "Kurukshetra Warriors"], ["/memes", "Community meme forge"], ["/", "CricKuru home"]],
+        },
+        gtGaming: {
+          eyebrow: "Official team sponsor",
+          heading: "GT Gaming chairs for cricket and gaming",
+          body: "Learn about GT Gaming chairs featured by CricKuru, including the GT Throne setup for long cricket score-watching, gaming sessions and match-day comfort.",
+          links: [["https://gtgaming.shop/", "Visit GT Gaming"], ["/arena", "Play CricKuru Arena"], ["/warriors", "Follow the Warriors"]],
+        },
+      }[metadata.jsonLdType] || {
+        eyebrow: "CricKuru cricket hub",
+        heading: metadata.title,
+        body: metadata.description,
+        links: [["/", "Return to CricKuru"]],
+      };
+
+  const links = content.links
+    .map(([href, label]) => `<a href="${escapeHtml(href)}" class="text-gold underline decoration-gold/40 underline-offset-4">${escapeHtml(label)}</a>`)
+    .join(" <span aria-hidden=\"true\">-</span> ");
+
+  return `<section id="static-seo-content" class="mx-auto max-w-4xl" aria-labelledby="static-seo-title">
+          <p class="mb-5 text-xs font-extrabold uppercase tracking-[0.32em] text-cyan">${escapeHtml(content.eyebrow)}</p>
+          <h1 id="static-seo-title" class="font-display text-[clamp(3.25rem,9vw,7.4rem)] font-black uppercase leading-[0.86]">${escapeHtml(content.heading)}</h1>
+          <p class="mx-auto mt-7 max-w-3xl text-lg leading-8 text-white/76">${escapeHtml(content.body)}</p>
+          <nav class="mt-7 flex flex-wrap justify-center gap-x-3 gap-y-2 text-sm font-bold" aria-label="CricKuru discovery links">${links}</nav>
+        </section>`;
+}
+
+function breadcrumbForPath(pathname) {
+  const normalized = normalizePath(pathname);
+  const items = [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "CricKuru",
+      item: SITE_ORIGIN,
+    },
+  ];
+  if (normalized !== "/") {
+    const route = ROUTE_METADATA.find((item) => item.path === normalized) || NOT_FOUND_METADATA;
+    items.push({
+      "@type": "ListItem",
+      position: 2,
+      name: route.title.replace(/\s+\|\s+CricKuru$/, ""),
+      item: absoluteUrl(route.canonicalPath),
+    });
+  }
+  return {
+    "@type": "BreadcrumbList",
+    itemListElement: items,
+  };
 }
 
 function setMeta(attribute, key, content) {

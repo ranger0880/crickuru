@@ -31,7 +31,7 @@ function renderRobots() {
 
 function renderSitemap() {
   const today = new Date().toISOString().slice(0, 10);
-  const urls = ROUTE_METADATA.map((route) => {
+  const urls = ROUTE_METADATA.filter((route) => route.path === route.canonicalPath).map((route) => {
     return [
       "  <url>",
       `    <loc>${absoluteUrl(route.path)}</loc>`,

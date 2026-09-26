@@ -1,7 +1,7 @@
 import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
-import { NOT_FOUND_METADATA, ROUTE_METADATA, renderRouteMeta, stringifyJsonLd } from "../src/metadata.js";
+import { NOT_FOUND_METADATA, ROUTE_METADATA, renderRouteMeta, renderRouteSeoContent, stringifyJsonLd } from "../src/metadata.js";
 
 const root = process.cwd();
 const distDir = path.join(root, "dist");
@@ -10,21 +10,25 @@ const template = fs
   .readFileSync(templatePath, "utf8")
   .replace(/<script type="module" crossorigin src="([^"]+)"><\/script>/g, '<script type="module" defer src="$1"></script>');
 const marker = "<!--CRICKURU_ROUTE_META-->";
+const seoContentMarker = "<!--CRICKURU_ROUTE_SEO_CONTENT-->";
 
 if (!template.includes(marker)) {
   throw new Error("Built index.html is missing the route metadata marker.");
 }
-
-for (const route of ROUTE_METADATA) {
-  writeRoute(route.path, renderRouteMeta(route.path));
+if (!template.includes(seoContentMarker)) {
+  throw new Error("Built index.html is missing the route SEO content marker.");
 }
 
-writeRoute("/404", renderRouteMeta(NOT_FOUND_METADATA.path), "404.html");
+for (const route of ROUTE_METADATA) {
+  writeRoute(route.path, renderRouteMeta(route.path), renderRouteSeoContent(route.path));
+}
+
+writeRoute("/404", renderRouteMeta(NOT_FOUND_METADATA.path), renderRouteSeoContent(NOT_FOUND_METADATA.path), "404.html");
 writeText(path.join(distDir, ".htaccess"), renderHtaccess());
 writeLegacyAssetAliases();
 
-function writeRoute(routePath, metaHtml, forcedFileName) {
-  const html = template.replace(marker, metaHtml);
+function writeRoute(routePath, metaHtml, seoContent, forcedFileName) {
+  const html = template.replace(marker, metaHtml).replace(seoContentMarker, seoContent);
   const outputPath = forcedFileName
     ? path.join(distDir, forcedFileName)
     : routePath === "/"
