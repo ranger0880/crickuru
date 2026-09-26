@@ -141,9 +141,9 @@ export const ROUTE_METADATA = [
   {
     path: "/shop",
     canonicalPath: "/shop",
-    title: "Cricket Gear on Amazon - Tennis Ball and Leather Ball Collections | CricKuru",
+    title: "Cricket Gear on Amazon - Bats, Balls, Protection and Training | CricKuru",
     description:
-      "Shop curated Amazon India cricket gear collections for tennis-ball society cricket and leather-ball club cricket, with current product links, real listing images and practical buying notes.",
+      "Shop curated Amazon India cricket gear for tennis-ball and leather-ball cricket: bats, balls, gloves, pads, helmets, kit bags, stumps and training equipment, with current product links and practical buying notes.",
     ogType: "website",
     themeColor: "#05070B",
     changefreq: "weekly",
@@ -492,7 +492,7 @@ function jsonLdForRoute(metadata) {
       {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
-        name: "CricKuru Cricket Gear Collections",
+        name: "CricKuru Cricket Gear Shop",
         description: metadata.description,
         url: canonicalUrl,
         about: {
@@ -638,7 +638,7 @@ export function renderRouteSeoContent(pathname = "/") {
         shop: {
           eyebrow: "CricKuru gear desk",
           heading: "Cricket gear for every surface",
-          body: "Browse curated Amazon India collections for tennis-ball society cricket and leather-ball club cricket, with real product images, direct listings and practical fit notes.",
+          body: "Browse curated Amazon India collections for tennis-ball and leather-ball cricket, including bats, balls, protection, kit bags, stumps and training equipment with real product images and practical fit notes.",
           links: [["/warriors", "Kurukshetra Warriors"], ["/players", "Player profiles"], ["/gt-gaming", "GT Gaming sponsor"]],
         },
       }[metadata.jsonLdType] || {
