@@ -6262,9 +6262,9 @@ const RouterContext = React.createContext(null);
               >
                 <div>
                   <p className="text-xs font-black uppercase tracking-[0.32em] text-cyan">CricKuru gear desk</p>
-                  <h1 className="mt-5 max-w-5xl font-display text-6xl font-black uppercase leading-[0.88] text-white sm:text-8xl">Play the right ball.</h1>
+                  <h1 className="mt-5 max-w-5xl font-display text-6xl font-black uppercase leading-[0.88] text-white sm:text-8xl">Build your match kit.</h1>
                   <p className="mt-6 max-w-2xl text-lg leading-8 text-white/68">
-                    Curated Amazon India picks for society cricket, tennis-ball throwdowns, academy nets and leather-ball match prep. Open a card to check the current listing, price and availability on Amazon.
+                    Curated Amazon India picks for every CricKuru session: bats, balls, protection, bags, wickets and training tools for society cricket, academy nets and match prep. Open a card to check the current listing, price and availability on Amazon.
                   </p>
                 </div>
                 <div className="glass rounded-[8px] border border-gold/20 p-5 sm:p-6">
@@ -6290,7 +6290,7 @@ const RouterContext = React.createContext(null);
                           <p className="mt-3 max-w-2xl text-sm leading-7 text-white/58">{collection.description}</p>
                         </div>
                         <a
-                          href={`https://www.amazon.in/s?k=${encodeURIComponent(collection.label)}`}
+                          href={`https://www.amazon.in/s?k=${encodeURIComponent(collection.search || collection.label)}`}
                           target="_blank"
                           rel="sponsored nofollow noopener noreferrer"
                           className={`inline-flex min-h-11 shrink-0 items-center justify-center gap-2 rounded-full border px-5 text-xs font-black uppercase tracking-[0.14em] transition ${cyan ? "border-cyan/35 text-cyan hover:border-cyan hover:bg-cyan/10" : "border-gold/35 text-gold hover:border-gold hover:bg-gold/10"}`}
@@ -6300,7 +6300,7 @@ const RouterContext = React.createContext(null);
                       </div>
                       <div className="mt-8 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
                         {collection.products.map((product, index) => (
-                          <article key={product.asin} className="interactive-card flex h-full flex-col overflow-hidden rounded-[8px] border border-white/12 bg-white/[0.045]">
+                          <article key={product.asin} className={`interactive-card shop-neon-card flex h-full flex-col overflow-hidden rounded-[8px] border border-white/12 bg-white/[0.045] ${cyan ? "" : "shop-neon-gold"}`}>
                             <a href={amazonProductUrl(product.asin)} target="_blank" rel="sponsored nofollow noopener noreferrer" className="group block">
                               <div className="relative grid aspect-[4/3] place-items-center overflow-hidden bg-white p-5">
                                 <img src={product.image} alt={product.title} loading={index < 3 ? "eager" : "lazy"} referrerPolicy="no-referrer" className="h-full w-full object-contain transition duration-500 group-hover:scale-105" />
