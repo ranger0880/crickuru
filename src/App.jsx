@@ -530,6 +530,10 @@ const RouterContext = React.createContext(null);
         return normalizePlayerStats(overall || candidates.find(hasPlayerStats));
       }
 
+      function visiblePlayerOverallStats(player) {
+        return player?.publicStatsLocked ? {} : playerOverallStats(player);
+      }
+
       function playerStatsSource(player, stats = playerOverallStats(player)) {
         if (stats?.source === CRICHEROES_STATS_SOURCE) return "Overall CricHeroes career";
         if (hasPlayerStats(stats)) return "Kurukshetra Warriors tracked";
@@ -2533,7 +2537,7 @@ const RouterContext = React.createContext(null);
       }
 
       function CaptainSpotlightCard({ player, onSelect }) {
-        const stats = playerOverallStats(player);
+        const stats = visiblePlayerOverallStats(player);
         const captainMatches = playerDetailNumber(stats.captainMatches);
         const captainWinRate = stats.captainWinPercentage || "-";
         const level = player.level || playerLevel(player);
@@ -5769,7 +5773,7 @@ const RouterContext = React.createContext(null);
         const { loading, data } = useLiveCricketFeed();
         const team = data.team || liveFeedFallback.team;
         const player = asArray(data.players).find((item) => Number(item.id) === 29139731 || item.name?.toLowerCase() === "ankit kulshreshtha");
-        const stats = playerOverallStats(player);
+        const stats = visiblePlayerOverallStats(player);
         const level = playerLevel(player);
         const formatStats = playerBallTypeStats(player);
         const profileUrl = player?.profileUrl || "https://cricheroes.com/player-profile/29139731/ankit-kulshreshtha/profile";
@@ -5805,7 +5809,9 @@ const RouterContext = React.createContext(null);
                   {formatStats.map((format) => <CaptainBallFormatCard key={format.key} format={format} />)}
                 </div>
                 <p className="mt-4 rounded-[6px] border border-white/10 bg-night/55 p-3 text-xs leading-5 text-white/48">
-                  Overall career totals above come from the public CricHeroes profile snapshot. Format cards below use ball-type tags and player lines from the public match history; CricHeroes currently locks its detailed filtered stat tables behind its PRO view.
+                  {player?.publicStatsLocked
+                    ? "CricHeroes currently displays Ankit's career totals as unavailable on the public stats page and gates detailed tables behind PRO. CricKuru leaves those headline fields blank and shows only independently verified public match-history data below."
+                    : "Overall career totals above come from the public CricHeroes profile snapshot. Format cards below use ball-type tags and player lines from the public match history."}
                 </p>
               </div>
               <div className="mt-5 grid gap-5 lg:grid-cols-2">

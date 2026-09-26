@@ -37459,6 +37459,8 @@
     {
       "id": 29139731,
       "name": "Ankit Kulshreshtha",
+      "publicStatsLocked": true,
+      "publicStatsStatus": "CricHeroes currently shows career totals as unavailable until PRO access is enabled",
       "photo": "https://media.cricheroes.in/user_profile/1740294522665_Df5f30t9RYkX.jpeg",
       "skill": "ALL",
       "isVerified": true,
