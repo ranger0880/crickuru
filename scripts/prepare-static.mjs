@@ -14,6 +14,7 @@ writeText("sitemap.xml", renderSitemap());
 writeText("sitemap_index.xml", renderSitemapIndex());
 writeText("manifest.json", renderManifest());
 writeText("ads.txt", "google.com, pub-9189221679544057, DIRECT, f08c47fec0942fa0\n");
+writeText("googled3fa2473cc683b88.html", "google-site-verification: googled3fa2473cc683b88.html\n");
 writeText(".nojekyll", "");
 writeText("CNAME", "crickuru.com\n");
 writeFavicon(path.join(publicDir, "favicon.ico"));
