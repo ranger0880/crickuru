@@ -2778,8 +2778,9 @@ const RouterContext = React.createContext(null);
       };
 
       function playerLevel(player) {
-        const stats = playerOverallStats(player);
-        const performance = player.performance || {};
+        const currentPlayer = player || {};
+        const stats = playerOverallStats(currentPlayer);
+        const performance = currentPlayer.performance || {};
         const matches = playerDetailNumber(stats.matches);
         const runs = playerDetailNumber(stats.runs);
         const wickets = playerDetailNumber(stats.wickets);
@@ -2871,6 +2872,44 @@ const RouterContext = React.createContext(null);
             return (Number.isFinite(bTime) ? bTime : 0) - (Number.isFinite(aTime) ? aTime : 0);
           })
           .slice(0, limit);
+      }
+
+      function playerBallTypeStats(player) {
+        const formats = [
+          { key: "TENNIS", label: "Tennis ball", color: "cyan", description: "Public tennis-ball match history" },
+          { key: "LEATHER", label: "Leather ball", color: "gold", description: "Public leather-ball match history" },
+        ];
+        const buckets = Object.fromEntries(formats.map((format) => [format.key, {
+          matches: 0,
+          scorecardsWithPlayerLine: 0,
+          runs: 0,
+          wickets: 0,
+          latestDate: "",
+        }]));
+        const matches = [...asArray(player?.matchHistory), ...asArray(player?.recentMatches)];
+        const seen = new Set();
+        for (const match of matches) {
+          const key = String(match?.id || match?.scorecardUrl || `${match?.date || ""}-${match?.ballType || ""}`);
+          if (seen.has(key)) continue;
+          seen.add(key);
+          const ballType = String(match?.ballType || "").toUpperCase();
+          const bucket = buckets[ballType];
+          if (!bucket) continue;
+          bucket.matches += 1;
+          if (match.performance) {
+            bucket.scorecardsWithPlayerLine += 1;
+            bucket.runs += playerDetailNumber(match.performance.runs);
+            bucket.wickets += playerDetailNumber(match.performance.wickets);
+          }
+          if (!bucket.latestDate || new Date(match.date || 0).getTime() > new Date(bucket.latestDate).getTime()) {
+            bucket.latestDate = match.date || bucket.latestDate;
+          }
+        }
+        return formats.map((format) => ({
+          ...format,
+          ...buckets[format.key],
+          latestDate: buckets[format.key].latestDate ? formatFeedDate(buckets[format.key].latestDate) : "No dated match in snapshot",
+        }));
       }
 
       function playerMatchForm(player) {
@@ -5701,13 +5740,41 @@ const RouterContext = React.createContext(null);
           .sort((a, b) => a.order - b.order);
       }
 
+      function CaptainBallFormatCard({ format }) {
+        const accent = format.key === "LEATHER" ? "#F4B942" : "#23d5e8";
+        const glow = format.key === "LEATHER" ? "rgba(244,185,66,0.42)" : "rgba(35,213,232,0.42)";
+        const hasPlayerLines = format.scorecardsWithPlayerLine > 0;
+        return (
+          <article className="rounded-[8px] border border-white/12 bg-white/[0.045] p-5" style={{ borderColor: `${accent}55`, boxShadow: `0 0 24px ${glow}` }}>
+            <div className="flex flex-wrap items-start justify-between gap-3">
+              <div>
+                <p className="text-xs font-black uppercase tracking-[0.22em]" style={{ color: accent }}>{format.label}</p>
+                <h2 className="mt-2 font-display text-3xl font-black uppercase text-white">Format snapshot</h2>
+              </div>
+              <span className="rounded-full border px-3 py-1 text-[0.62rem] font-black uppercase tracking-[0.14em]" style={{ borderColor: `${accent}66`, color: accent }}>{format.matches} tracked</span>
+            </div>
+            <div className="mt-5 grid grid-cols-2 gap-2 sm:grid-cols-4">
+              <LiveStat label="Matches" value={format.matches || "-"} />
+              <LiveStat label="Player lines" value={format.scorecardsWithPlayerLine || "-"} />
+              <LiveStat label="Recent runs" value={hasPlayerLines ? format.runs : "-"} />
+              <LiveStat label="Recent wkts" value={hasPlayerLines ? format.wickets : "-"} />
+            </div>
+            <p className="mt-4 text-xs leading-5 text-white/52">{hasPlayerLines ? "Runs and wickets are summed from the public scorecards currently available to CricKuru." : "The public match record identifies the format, but no player line is available in the saved scorecard snapshot yet."}</p>
+            <p className="mt-2 text-[0.62rem] font-black uppercase tracking-[0.12em] text-white/35">Latest record: {format.latestDate}</p>
+          </article>
+        );
+      }
+
       function CaptainProfilePage() {
         const { loading, data } = useLiveCricketFeed();
         const team = data.team || liveFeedFallback.team;
         const player = asArray(data.players).find((item) => Number(item.id) === 29139731 || item.name?.toLowerCase() === "ankit kulshreshtha");
         const stats = playerOverallStats(player);
+        const level = playerLevel(player);
+        const formatStats = playerBallTypeStats(player);
         const profileUrl = player?.profileUrl || "https://cricheroes.com/player-profile/29139731/ankit-kulshreshtha/profile";
         const statsUrl = player?.statsUrl || "https://cricheroes.com/player-profile/29139731/ankit-kulshreshtha/stats";
+        const updatedAt = data.lastSuccessfulSyncAt || data.playerStatsUpdatedAt || data.syncedAt;
 
         return (
           <main className="route-bg page-grain min-h-screen px-5 pb-16 pt-36 sm:px-8">
@@ -5720,8 +5787,9 @@ const RouterContext = React.createContext(null);
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3 text-xs font-black uppercase tracking-[0.15em]">
                   <span className="rounded-full border border-gold/35 bg-gold/10 px-4 py-2 text-gold">Captain</span>
+                  <PlayerLevelBadge level={level} compact />
                   <span className="rounded-full border border-cyan/35 bg-cyan/10 px-4 py-2 text-cyan">Kurukshetra Warriors</span>
-                  <span className="rounded-full border border-white/12 bg-white/7 px-4 py-2 text-white/55">{loading ? "Syncing CricHeroes" : `Updated ${formatFeedDate(data.syncedAt)}`}</span>
+                  <span className="rounded-full border border-white/12 bg-white/7 px-4 py-2 text-white/55">{loading ? "Syncing CricHeroes" : `Updated ${formatFeedDate(updatedAt)}`}</span>
                 </div>
                 <div className="mt-8 grid gap-3 sm:grid-cols-4">
                   <LiveStat label="Career matches" value={stats.matches || "-"} />
@@ -5733,6 +5801,12 @@ const RouterContext = React.createContext(null);
                   <a href={profileUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-gold px-6 text-sm font-black uppercase tracking-[0.16em] text-night">Official CricHeroes profile <Icon.ExternalLink size={15} /></a>
                   <a href={statsUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/15 bg-white/7 px-6 text-sm font-black uppercase tracking-[0.16em] text-white hover:border-cyan hover:text-cyan">View career stats <Icon.ExternalLink size={15} /></a>
                 </div>
+                <div className="mt-8 grid gap-4 lg:grid-cols-2">
+                  {formatStats.map((format) => <CaptainBallFormatCard key={format.key} format={format} />)}
+                </div>
+                <p className="mt-4 rounded-[6px] border border-white/10 bg-night/55 p-3 text-xs leading-5 text-white/48">
+                  Overall career totals above come from the public CricHeroes profile snapshot. Format cards below use ball-type tags and player lines from the public match history; CricHeroes currently locks its detailed filtered stat tables behind its PRO view.
+                </p>
               </div>
               <div className="mt-5 grid gap-5 lg:grid-cols-2">
                 <div className="rounded-[8px] border border-white/12 bg-white/[0.045] p-6">
@@ -6483,7 +6557,7 @@ const RouterContext = React.createContext(null);
                     element={<WarriorsDataPage />}
                   />
                   <Route
-                    path="/captain/ankit-kulshreshtha"
+                    path="/captain"
                     element={<CaptainProfilePage />}
                   />
                   <Route
