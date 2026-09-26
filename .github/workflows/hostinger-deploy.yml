@@ -52,8 +52,8 @@ jobs:
 
       - name: Check Hostinger secrets
         env:
-          FTP_SERVER: ${{ secrets.HOSTINGER_FTP_SERVER }}
-          FTP_USERNAME: ${{ secrets.HOSTINGER_FTP_USERNAME }}
+          FTP_SERVER: 93.127.208.60
+          FTP_USERNAME: u100370327
           FTP_PASSWORD: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
         run: |
           test -n "$FTP_SERVER" || (echo "Missing HOSTINGER_FTP_SERVER" && exit 1)
@@ -63,7 +63,7 @@ jobs:
       - name: Normalize FTP server address
         id: ftp-server
         env:
-          FTP_SERVER: ${{ secrets.HOSTINGER_FTP_SERVER }}
+          FTP_SERVER: 93.127.208.60
         run: |
           server="$FTP_SERVER"
           server="${server#ftp://}"
@@ -74,7 +74,7 @@ jobs:
       - name: Upload built files to Hostinger web root
         env:
           FTP_SERVER: ${{ steps.ftp-server.outputs.server }}
-          FTP_USERNAME: ${{ secrets.HOSTINGER_FTP_USERNAME }}
+          FTP_USERNAME: u100370327
           FTP_PASSWORD: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
         shell: bash
         run: |
