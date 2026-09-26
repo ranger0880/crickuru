@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-26T06:51:30.704Z",
-  "lastCheckedAt": "2026-09-26T06:51:30.704Z",
-  "lastSuccessfulSyncAt": "2026-09-26T06:51:30.704Z",
+  "syncedAt": "2026-09-26T11:52:12.189Z",
+  "lastCheckedAt": "2026-09-26T11:52:12.189Z",
+  "lastSuccessfulSyncAt": "2026-09-26T11:52:12.189Z",
   "coverage": {
     "pathways": [
       "India",
@@ -51,10 +51,10 @@
       "id": "upcoming-155499",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-u19",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "India U19 vs Australia U19, 1st unofficial Test",
       "series": "Australia U19 tour of India 2026",
       "teams": [
@@ -74,7 +74,7 @@
       "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
       "overview": "Match starts at Sep 27, 04:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155499",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-27T04:00:00.000Z",
       "rawId": 155499
     },
@@ -84,8 +84,8 @@
       "statusLabel": "Future",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "India vs West Indies, 1st ODI",
       "series": "West Indies tour of India, 2026",
       "teams": [
@@ -105,7 +105,7 @@
       "place": "Greenfield International Stadium, Thiruvananthapuram",
       "overview": "Match starts at Sep 27, 08:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151532",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-27T08:30:00.000Z",
       "rawId": 151532
     },
@@ -15088,20 +15088,20 @@
       "statusLabel": "Past",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "domestic",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-a-women",
       "title": "Australia A Women vs India A Women, 3rd unofficial ODI",
       "series": "Australia A Women tour of India 2026",
       "teams": [
         {
           "name": "Australia A Women",
           "shortName": "AUSWA",
-          "score": "362/9 (49.6 Ov)"
+          "score": "362/9 (50 Ov)"
         },
         {
           "name": "India A Women",
           "shortName": "INDWA",
-          "score": "364/6 (48.2 Ov)"
+          "score": "364/6 (48 Ov)"
         }
       ],
       "dateLabel": "25 Sept 2026, 02:00 pm",
@@ -15109,7 +15109,7 @@
       "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
       "overview": "India A Women won by 4 wkts",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155639",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-09-25T08:30:00.000Z",
       "rawId": 155639,
       "starPerformers": []
@@ -15211,6 +15211,38 @@
       "starPerformers": []
     },
     {
+      "id": "recent-155411",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-a",
+      "title": "India A vs Australia A, 1st unofficial Test",
+      "series": "Australia A tour of India 2026",
+      "teams": [
+        {
+          "name": "India A",
+          "shortName": "INDA",
+          "score": "334/10 (117.3 Ov) & 199/10 (57.4 Ov)"
+        },
+        {
+          "name": "Australia A",
+          "shortName": "AUSA",
+          "score": "171/10 (55.3 Ov) & 200/10 (55.1 Ov)"
+        }
+      ],
+      "dateLabel": "22 Sept 2026, 09:30 am",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "India A won by 162 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155411",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
+      "startTime": "2026-09-22T04:00:00.000Z",
+      "rawId": 155411,
+      "starPerformers": []
+    },
+    {
       "id": "recent-171477",
       "status": "recent",
       "statusLabel": "Past",
@@ -15240,38 +15272,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-22T04:00:00.000Z",
       "rawId": 171477,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-155411",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "India A vs Australia A, 1st unofficial Test",
-      "series": "Australia A tour of India 2026",
-      "teams": [
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": "334/10 (117.3 Ov) & 199/10 (57.4 Ov)"
-        },
-        {
-          "name": "Australia A",
-          "shortName": "AUSA",
-          "score": "171/10 (55.3 Ov) & 200/10 (55.1 Ov)"
-        }
-      ],
-      "dateLabel": "22 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "India A won by 162 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155411",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-22T04:00:00.000Z",
-      "rawId": 155411,
       "starPerformers": []
     },
     {
@@ -17065,10 +17065,10 @@
       "id": "upcoming-155499",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-u19",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "India U19 vs Australia U19, 1st unofficial Test",
       "series": "Australia U19 tour of India 2026",
       "teams": [
@@ -17088,7 +17088,7 @@
       "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
       "overview": "Match starts at Sep 27, 04:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155499",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-27T04:00:00.000Z",
       "rawId": 155499
     },
@@ -17098,8 +17098,8 @@
       "statusLabel": "Future",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "India vs West Indies, 1st ODI",
       "series": "West Indies tour of India, 2026",
       "teams": [
@@ -17119,7 +17119,7 @@
       "place": "Greenfield International Stadium, Thiruvananthapuram",
       "overview": "Match starts at Sep 27, 08:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151532",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-27T08:30:00.000Z",
       "rawId": 151532
     },
@@ -32104,20 +32104,20 @@
       "statusLabel": "Past",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "domestic",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-a-women",
       "title": "Australia A Women vs India A Women, 3rd unofficial ODI",
       "series": "Australia A Women tour of India 2026",
       "teams": [
         {
           "name": "Australia A Women",
           "shortName": "AUSWA",
-          "score": "362/9 (49.6 Ov)"
+          "score": "362/9 (50 Ov)"
         },
         {
           "name": "India A Women",
           "shortName": "INDWA",
-          "score": "364/6 (48.2 Ov)"
+          "score": "364/6 (48 Ov)"
         }
       ],
       "dateLabel": "25 Sept 2026, 02:00 pm",
@@ -32125,7 +32125,7 @@
       "place": "Punjab Cricket Association IS Bindra Stadium, Mohali",
       "overview": "India A Women won by 4 wkts",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155639",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-09-25T08:30:00.000Z",
       "rawId": 155639,
       "starPerformers": []
@@ -32227,6 +32227,38 @@
       "starPerformers": []
     },
     {
+      "id": "recent-155411",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-a",
+      "title": "India A vs Australia A, 1st unofficial Test",
+      "series": "Australia A tour of India 2026",
+      "teams": [
+        {
+          "name": "India A",
+          "shortName": "INDA",
+          "score": "334/10 (117.3 Ov) & 199/10 (57.4 Ov)"
+        },
+        {
+          "name": "Australia A",
+          "shortName": "AUSA",
+          "score": "171/10 (55.3 Ov) & 200/10 (55.1 Ov)"
+        }
+      ],
+      "dateLabel": "22 Sept 2026, 09:30 am",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "India A won by 162 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155411",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
+      "startTime": "2026-09-22T04:00:00.000Z",
+      "rawId": 155411,
+      "starPerformers": []
+    },
+    {
       "id": "recent-171477",
       "status": "recent",
       "statusLabel": "Past",
@@ -32256,38 +32288,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-22T04:00:00.000Z",
       "rawId": 171477,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-155411",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "India A vs Australia A, 1st unofficial Test",
-      "series": "Australia A tour of India 2026",
-      "teams": [
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": "334/10 (117.3 Ov) & 199/10 (57.4 Ov)"
-        },
-        {
-          "name": "Australia A",
-          "shortName": "AUSA",
-          "score": "171/10 (55.3 Ov) & 200/10 (55.1 Ov)"
-        }
-      ],
-      "dateLabel": "22 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "India A won by 162 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155411",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-22T04:00:00.000Z",
-      "rawId": 155411,
       "starPerformers": []
     },
     {
@@ -34081,8 +34081,8 @@
       "label": "International",
       "order": 1,
       "live": 0,
-      "recent": 29,
-      "upcoming": 46,
+      "recent": 30,
+      "upcoming": 45,
       "total": 75
     },
     {
@@ -34108,8 +34108,8 @@
       "label": "Domestic / State",
       "order": 4,
       "live": 0,
-      "recent": 1,
-      "upcoming": 413,
+      "recent": 0,
+      "upcoming": 414,
       "total": 414
     }
   ],
