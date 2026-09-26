@@ -6264,7 +6264,7 @@ const RouterContext = React.createContext(null);
                   <p className="text-xs font-black uppercase tracking-[0.32em] text-cyan">CricKuru gear desk</p>
                   <h1 className="mt-5 max-w-5xl font-display text-6xl font-black uppercase leading-[0.88] text-white sm:text-8xl">Build your match kit.</h1>
                   <p className="mt-6 max-w-2xl text-lg leading-8 text-white/68">
-                    Curated Amazon India picks for every CricKuru session: bats, balls, protection, bags, wickets and training tools for society cricket, academy nets and match prep. Open a card to check the current listing, price and availability on Amazon.
+                    Curated Amazon India picks for every CricKuru session: bats, balls, protection, bags, wickets and training tools for society cricket, academy nets and match prep. Compare the checked snapshot price, then open the live Amazon listing for current availability.
                   </p>
                 </div>
                 <div className="glass rounded-[8px] border border-gold/20 p-5 sm:p-6">
@@ -6272,7 +6272,7 @@ const RouterContext = React.createContext(null);
                     <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-gold/35 bg-gold/10 text-gold"><Icon.ShoppingBag size={20} /></span>
                     <div>
                       <p className="text-xs font-black uppercase tracking-[0.2em] text-gold">Buying note</p>
-                      <p className="mt-2 text-sm leading-7 text-white/62">Prices, sizes, stock and delivery can change on Amazon. Always confirm the live product page before buying.</p>
+                      <p className="mt-2 text-sm leading-7 text-white/62">Snapshot prices checked on 27 Sep 2026. Amazon prices, sizes, stock and delivery can change, so confirm the live product page before buying.</p>
                     </div>
                   </div>
                 </div>
@@ -6311,9 +6311,15 @@ const RouterContext = React.createContext(null);
                               <p className="text-[0.62rem] font-black uppercase tracking-[0.18em] text-white/38">Amazon India listing</p>
                               <h3 className="mt-3 text-lg font-black leading-6 text-white">{product.title}</h3>
                               <p className="mt-3 flex-1 text-sm leading-6 text-white/58">{product.fit}</p>
-                              <a href={amazonProductUrl(product.asin)} target="_blank" rel="sponsored nofollow noopener noreferrer" className={`mt-5 inline-flex min-h-11 items-center justify-center gap-2 rounded-full border text-xs font-black uppercase tracking-[0.14em] transition ${cyan ? "border-cyan/30 text-cyan hover:border-cyan hover:bg-cyan/10" : "border-gold/30 text-gold hover:border-gold hover:bg-gold/10"}`}>
-                                Check current listing <Icon.ExternalLink size={14} />
-                              </a>
+                              <div className="mt-5 flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-between">
+                                <p className={`text-2xl font-black tracking-tight ${cyan ? "text-cyan" : "text-gold"}`}>
+                                  {product.price}
+                                  <span className="ml-2 align-middle text-[0.58rem] font-bold uppercase tracking-[0.14em] text-white/35">snapshot</span>
+                                </p>
+                                <a href={amazonProductUrl(product.asin)} target="_blank" rel="sponsored nofollow noopener noreferrer" className={`inline-flex min-h-11 items-center justify-center gap-2 rounded-full border px-4 text-xs font-black uppercase tracking-[0.12em] transition ${cyan ? "border-cyan/30 text-cyan hover:border-cyan hover:bg-cyan/10" : "border-gold/30 text-gold hover:border-gold hover:bg-gold/10"}`}>
+                                  View on Amazon <Icon.ExternalLink size={14} />
+                                </a>
+                              </div>
                             </div>
                           </article>
                         ))}
