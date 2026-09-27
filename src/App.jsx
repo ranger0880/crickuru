@@ -6303,7 +6303,7 @@ const RouterContext = React.createContext(null);
                           <article key={product.asin} className={`interactive-card shop-neon-card flex h-full flex-col overflow-hidden rounded-[8px] border border-white/12 bg-white/[0.045] ${cyan ? "" : "shop-neon-gold"}`}>
                             <a href={amazonProductUrl(product.asin)} target="_blank" rel="sponsored nofollow noopener noreferrer" className="group block">
                               <div className="relative grid aspect-[4/3] place-items-center overflow-hidden bg-white p-5">
-                                <img src={product.image} alt={product.title} loading={index < 3 ? "eager" : "lazy"} referrerPolicy="no-referrer" className="h-full w-full object-contain transition duration-500 group-hover:scale-105" />
+                                <ShopProductImage product={product} eager={index < 3} />
                                 <span className={`absolute left-4 top-4 rounded-full px-3 py-1 text-[0.58rem] font-black uppercase tracking-[0.16em] ${cyan ? "bg-cyan/90 text-night" : "bg-gold text-night"}`}>{collection.label}</span>
                               </div>
                             </a>
@@ -6341,6 +6341,31 @@ const RouterContext = React.createContext(null);
               </section>
             </section>
           </main>
+        );
+      }
+
+      function ShopProductImage({ product, eager = false }) {
+        const fallback = "/assets/cricket-gear-fallback.svg";
+        const [src, setSrc] = useState(product.image);
+
+        useEffect(() => {
+          setSrc(product.image);
+          const timeout = window.setTimeout(() => {
+            setSrc((current) => current === product.image ? fallback : current);
+          }, 4500);
+          return () => window.clearTimeout(timeout);
+        }, [product.image]);
+
+        return (
+          <img
+            src={src}
+            alt={product.title}
+            loading={eager ? "eager" : "lazy"}
+            decoding="async"
+            referrerPolicy="no-referrer"
+            onError={() => setSrc(fallback)}
+            className="h-full w-full object-contain transition duration-500 group-hover:scale-105"
+          />
         );
       }
 

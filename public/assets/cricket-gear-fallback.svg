@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">CricKuru cricket gear preview</title>
+  <desc id="desc">A cricket bat, ball and stumps on a dark stadium backdrop.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07131d"/>
+      <stop offset="1" stop-color="#16202e"/>
+    </linearGradient>
+    <linearGradient id="bat" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4b942"/>
+      <stop offset="1" stop-color="#a76412"/>
+    </linearGradient>
+    <radialGradient id="ball" cx="35%" cy="25%">
+      <stop offset="0" stop-color="#ef6676"/>
+      <stop offset="0.55" stop-color="#b71932"/>
+      <stop offset="1" stop-color="#5e0d1c"/>
+    </radialGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <path d="M0 470 Q400 320 800 470 V600 H0Z" fill="#0a111b"/>
+  <path d="M0 475 Q400 350 800 475" fill="none" stroke="#22d3ee" stroke-opacity=".2" stroke-width="4"/>
+  <g filter="url(#glow)" opacity=".95">
+    <circle cx="570" cy="190" r="76" fill="url(#ball)"/>
+    <path d="M525 145 Q570 190 615 235 M540 125 Q585 170 630 215" fill="none" stroke="#f5f7fa" stroke-opacity=".72" stroke-width="7"/>
+  </g>
+  <g transform="rotate(-17 300 365)">
+    <rect x="265" y="115" width="74" height="390" rx="32" fill="url(#bat)"/>
+    <rect x="282" y="55" width="40" height="100" rx="18" fill="#8a5420"/>
+    <path d="M282 155 H322 M282 183 H322 M282 211 H322 M282 239 H322" stroke="#fff1b5" stroke-opacity=".5" stroke-width="4"/>
+  </g>
+  <g fill="none" stroke="#22d3ee" stroke-width="12" stroke-linecap="round">
+    <path d="M130 455 V285"/>
+    <path d="M180 455 V285"/>
+    <path d="M230 455 V285"/>
+    <path d="M120 285 H240"/>
+  </g>
+  <text x="40" y="72" fill="#f4b942" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="6">CRICKURU GEAR</text>
+</svg>
