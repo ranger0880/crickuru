@@ -208,6 +208,9 @@
 
       html {
         scroll-behavior: smooth;
+        scroll-padding-top: 7rem;
+        text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
       }
 
       body {
@@ -220,7 +223,38 @@
         color: var(--stadium);
         cursor: var(--cricket-ball-cursor), auto;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        overflow-x: hidden;
+        overflow-x: clip;
+        overscroll-behavior-x: none;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      #root {
+        min-height: 100vh;
+      }
+
+      [class*="overflow-x-auto"],
+      [class*="overflow-y-auto"] {
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain;
+        scrollbar-width: thin;
+      }
+
+      [role="tablist"][class*="overflow-x-auto"] {
+        scroll-snap-type: x proximity;
+        scroll-padding-inline: 0.25rem;
+      }
+
+      [role="tablist"][class*="overflow-x-auto"] > * {
+        scroll-snap-align: start;
+      }
+
+      .route-bg .grid > *,
+      .player-level-card a {
+        min-width: 0;
+      }
+
+      .route-bg .grid > * {
+        max-width: 100%;
       }
 
       a,
@@ -1038,6 +1072,31 @@
       }
 
       @media (max-width: 640px) {
+        html {
+          scroll-padding-top: 6rem;
+        }
+
+        body {
+          min-width: 0;
+        }
+
+        .india-ticker-track {
+          will-change: transform;
+        }
+
+        .mobile-menu {
+          padding-top: max(1.5rem, env(safe-area-inset-top));
+          padding-right: max(1.5rem, env(safe-area-inset-right));
+          padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
+          padding-left: max(1.5rem, env(safe-area-inset-left));
+          overflow-y: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+
+        .player-profile-overlay {
+          padding-bottom: env(safe-area-inset-bottom) !important;
+        }
+
         .cricket-ball {
           width: 54px;
         }
@@ -1076,5 +1135,23 @@
         .interactive-card:hover,
         .interactive-card:focus-within {
           transform: none;
+        }
+      }
+
+      @supports (padding: max(0px)) {
+        @media (max-width: 640px) {
+          [aria-label="India live cricket score panel"] {
+            height: calc(2.25rem + env(safe-area-inset-top));
+            padding-top: env(safe-area-inset-top);
+          }
+
+          header.fixed {
+            top: calc(2.25rem + env(safe-area-inset-top)) !important;
+          }
+
+          [aria-label="Warrior player chat"],
+          [aria-label="CricKuru assistant"] {
+            margin-bottom: env(safe-area-inset-bottom);
+          }
         }
       }
