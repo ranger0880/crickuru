@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-27T01:51:57.565Z",
-  "lastCheckedAt": "2026-09-27T01:51:57.565Z",
-  "lastSuccessfulSyncAt": "2026-09-27T01:51:57.565Z",
+  "syncedAt": "2026-09-27T07:11:48.961Z",
+  "lastCheckedAt": "2026-09-27T07:11:48.961Z",
+  "lastSuccessfulSyncAt": "2026-09-27T07:11:48.961Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,38 +41,38 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 0,
+    "live": 1,
     "recent": 60,
-    "upcoming": 485,
+    "upcoming": 484,
     "total": 545
   },
   "all": [
     {
-      "id": "upcoming-155499",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-155499",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "domestic",
       "sourceScope": "global",
-      "title": "India U19 vs Australia U19, 1st unofficial Test",
+      "title": "Australia U19 vs India U19, 1st unofficial Test",
       "series": "Australia U19 tour of India 2026",
       "teams": [
         {
-          "name": "India U19",
-          "shortName": "INDU19",
-          "score": ""
-        },
-        {
           "name": "Australia U19",
           "shortName": "AUSU19",
+          "score": "62/3 (27 Ov)"
+        },
+        {
+          "name": "India U19",
+          "shortName": "INDU19",
           "score": ""
         }
       ],
       "dateLabel": "27 Sept 2026, 09:30 am",
       "time": "",
       "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
-      "overview": "Match starts at Sep 27, 04:00 GMT",
+      "overview": "Day 1: Lunch Break",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155499",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-27T04:00:00.000Z",
@@ -115,8 +115,8 @@
       "statusLabel": "Future",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "India vs Afghanistan, 2nd Quarter-Final",
       "series": "Asian Games 2026",
       "teams": [
@@ -136,7 +136,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "Match starts at Sep 28, 04:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171030",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
     },
@@ -17059,39 +17059,40 @@
       ]
     }
   ],
-  "live": [],
-  "upcoming": [
+  "live": [
     {
-      "id": "upcoming-155499",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-155499",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "domestic",
       "sourceScope": "global",
-      "title": "India U19 vs Australia U19, 1st unofficial Test",
+      "title": "Australia U19 vs India U19, 1st unofficial Test",
       "series": "Australia U19 tour of India 2026",
       "teams": [
         {
-          "name": "India U19",
-          "shortName": "INDU19",
-          "score": ""
-        },
-        {
           "name": "Australia U19",
           "shortName": "AUSU19",
+          "score": "62/3 (27 Ov)"
+        },
+        {
+          "name": "India U19",
+          "shortName": "INDU19",
           "score": ""
         }
       ],
       "dateLabel": "27 Sept 2026, 09:30 am",
       "time": "",
       "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
-      "overview": "Match starts at Sep 27, 04:00 GMT",
+      "overview": "Day 1: Lunch Break",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155499",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-27T04:00:00.000Z",
       "rawId": 155499
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-151532",
       "status": "upcoming",
@@ -17129,8 +17130,8 @@
       "statusLabel": "Future",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "India vs Afghanistan, 2nd Quarter-Final",
       "series": "Asian Games 2026",
       "teams": [
@@ -17150,7 +17151,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "Match starts at Sep 28, 04:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171030",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
     },
@@ -34107,9 +34108,9 @@
       "id": "domestic",
       "label": "Domestic / State",
       "order": 4,
-      "live": 0,
+      "live": 1,
       "recent": 0,
-      "upcoming": 414,
+      "upcoming": 413,
       "total": 414
     }
   ],
@@ -35976,8 +35977,8 @@
       "statusLabel": "Future",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "India vs Afghanistan, 2nd Quarter-Final",
       "series": "Asian Games 2026",
       "teams": [
@@ -35997,7 +35998,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "Match starts at Sep 28, 04:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171030",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030,
       "importance": "Knockout stage"
@@ -38205,8 +38206,8 @@
           "statusLabel": "Future",
           "level": "international",
           "levelLabel": "International",
-          "sourceType": "",
-          "sourceScope": "india-men",
+          "sourceType": "International",
+          "sourceScope": "global",
           "title": "India vs Afghanistan, 2nd Quarter-Final",
           "series": "Asian Games 2026",
           "teams": [
@@ -38226,7 +38227,7 @@
           "place": "Korogi Sports Park, Nisshin",
           "overview": "Match starts at Sep 28, 04:30 GMT",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171030",
-          "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-09-28T04:30:00.000Z",
           "rawId": 171030,
           "importance": "Knockout stage"
