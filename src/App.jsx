@@ -6385,26 +6385,27 @@ const RouterContext = React.createContext(null);
 
       function ShopProductImage({ product, eager = false }) {
         const fallback = "/assets/cricket-gear-fallback.svg";
-        const [src, setSrc] = useState(product.image);
+        const [failed, setFailed] = useState(false);
 
         useEffect(() => {
-          setSrc(product.image);
-          const timeout = window.setTimeout(() => {
-            setSrc((current) => current === product.image ? fallback : current);
-          }, 4500);
-          return () => window.clearTimeout(timeout);
+          setFailed(false);
         }, [product.image]);
 
         return (
-          <img
-            src={src}
-            alt={product.title}
-            loading={eager ? "eager" : "lazy"}
-            decoding="async"
-            referrerPolicy="no-referrer"
-            onError={() => setSrc(fallback)}
-            className="h-full w-full object-contain transition duration-500 group-hover:scale-105"
-          />
+          <div className="relative h-full w-full">
+            <img src={fallback} alt="" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover" />
+            {!failed && (
+              <img
+                src={product.image}
+                alt={product.title}
+                loading={eager ? "eager" : "lazy"}
+                decoding="async"
+                referrerPolicy="no-referrer"
+                onError={() => setFailed(true)}
+                className="relative h-full w-full object-contain transition duration-500 group-hover:scale-105"
+              />
+            )}
+          </div>
         );
       }
 
