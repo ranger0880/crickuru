@@ -6251,6 +6251,11 @@ const RouterContext = React.createContext(null);
       }
 
       function CricketGearShopPage() {
+        const [selectedCategory, setSelectedCategory] = useState(AMAZON_COLLECTIONS[0]?.id || "all");
+        const visibleCollections = selectedCategory === "all"
+          ? AMAZON_COLLECTIONS
+          : AMAZON_COLLECTIONS.filter((collection) => collection.id === selectedCategory);
+
         return (
           <main className="route-bg page-grain min-h-screen overflow-hidden px-5 pb-16 pt-36 sm:px-8">
             <section className="mx-auto max-w-7xl">
@@ -6278,16 +6283,50 @@ const RouterContext = React.createContext(null);
                 </div>
               </motion.div>
 
-              <div className="mt-12 space-y-16">
-                {AMAZON_COLLECTIONS.map((collection) => {
+              <div className="mt-8 border-y border-white/10 py-4" aria-label="Shop categories">
+                <div className="flex items-center gap-3">
+                  <p className="shrink-0 text-[0.62rem] font-black uppercase tracking-[0.2em] text-white/42">Shop by category</p>
+                  <div className="h-px flex-1 bg-white/10" />
+                </div>
+                <div className="mt-3 flex gap-2 overflow-x-auto pb-1" role="tablist" aria-label="Amazon cricket gear categories">
+                  <button
+                    type="button"
+                    role="tab"
+                    aria-selected={selectedCategory === "all"}
+                    onClick={() => setSelectedCategory("all")}
+                    className={`shrink-0 rounded-full border px-3 py-2 text-[0.62rem] font-black uppercase tracking-[0.1em] transition ${selectedCategory === "all" ? "border-gold/60 bg-gold/12 text-gold" : "border-white/12 bg-white/[0.045] text-white/58 hover:border-white/25 hover:text-white"}`}
+                  >
+                    All products
+                  </button>
+                  {AMAZON_COLLECTIONS.map((collection) => {
+                    const active = selectedCategory === collection.id;
+                    const cyan = collection.accent === "cyan";
+                    return (
+                      <button
+                        key={collection.id}
+                        type="button"
+                        role="tab"
+                        aria-selected={active}
+                        onClick={() => setSelectedCategory(collection.id)}
+                        className={`shrink-0 rounded-full border px-3 py-2 text-[0.62rem] font-black uppercase tracking-[0.1em] transition ${active ? (cyan ? "border-cyan/60 bg-cyan/12 text-cyan" : "border-gold/60 bg-gold/12 text-gold") : "border-white/12 bg-white/[0.045] text-white/58 hover:border-white/25 hover:text-white"}`}
+                      >
+                        {collection.label}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <div className="mt-8 space-y-12">
+                {visibleCollections.map((collection) => {
                   const cyan = collection.accent === "cyan";
                   return (
                     <section key={collection.id} aria-labelledby={`${collection.id}-heading`}>
-                      <div className="flex flex-col gap-4 border-b border-white/10 pb-6 sm:flex-row sm:items-end sm:justify-between">
+                      <div className="flex flex-col gap-3 border-b border-white/10 pb-4 sm:flex-row sm:items-end sm:justify-between">
                         <div>
                           <p className={`text-xs font-black uppercase tracking-[0.28em] ${cyan ? "text-cyan" : "text-gold"}`}>{collection.eyebrow}</p>
-                          <h2 id={`${collection.id}-heading`} className="mt-3 font-display text-4xl font-black uppercase text-white sm:text-5xl">{collection.title}</h2>
-                          <p className="mt-3 max-w-2xl text-sm leading-7 text-white/58">{collection.description}</p>
+                          <h2 id={`${collection.id}-heading`} className="mt-2 font-display text-3xl font-black uppercase text-white sm:text-5xl">{collection.title}</h2>
+                          <p className="mt-2 max-w-2xl text-xs leading-6 text-white/58 sm:text-sm">{collection.description}</p>
                         </div>
                         <a
                           href={`https://www.amazon.in/s?k=${encodeURIComponent(collection.search || collection.label)}`}
@@ -6298,26 +6337,26 @@ const RouterContext = React.createContext(null);
                           Browse all on Amazon <Icon.ExternalLink size={15} />
                         </a>
                       </div>
-                      <div className="mt-8 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+                      <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-2 sm:gap-5 xl:grid-cols-3">
                         {collection.products.map((product, index) => (
-                          <article key={product.asin} className={`interactive-card shop-neon-card flex h-full flex-col overflow-hidden rounded-[8px] border border-white/12 bg-white/[0.045] ${cyan ? "" : "shop-neon-gold"}`}>
+                          <article key={product.asin} className={`interactive-card shop-neon-card flex min-w-0 flex-col overflow-hidden rounded-[8px] border border-white/12 bg-white/[0.045] ${cyan ? "" : "shop-neon-gold"}`}>
                             <a href={amazonProductUrl(product.asin)} target="_blank" rel="sponsored nofollow noopener noreferrer" className="group block">
-                              <div className="relative grid aspect-[4/3] place-items-center overflow-hidden bg-white p-5">
+                              <div className="relative grid aspect-square place-items-center overflow-hidden bg-white p-2 sm:p-5">
                                 <ShopProductImage product={product} eager={index < 3} />
-                                <span className={`absolute left-4 top-4 rounded-full px-3 py-1 text-[0.58rem] font-black uppercase tracking-[0.16em] ${cyan ? "bg-cyan/90 text-night" : "bg-gold text-night"}`}>{collection.label}</span>
+                                <span className={`absolute left-2 top-2 max-w-[calc(100%-1rem)] truncate rounded-full px-2 py-1 text-[0.46rem] font-black uppercase tracking-[0.1em] ${cyan ? "bg-cyan/90 text-night" : "bg-gold text-night"}`}>{collection.label}</span>
                               </div>
                             </a>
-                            <div className="flex flex-1 flex-col p-5">
-                              <p className="text-[0.62rem] font-black uppercase tracking-[0.18em] text-white/38">Amazon India listing</p>
-                              <h3 className="mt-3 text-lg font-black leading-6 text-white">{product.title}</h3>
-                              <p className="mt-3 flex-1 text-sm leading-6 text-white/58">{product.fit}</p>
-                              <div className="mt-5 flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-between">
-                                <p className={`text-2xl font-black tracking-tight ${cyan ? "text-cyan" : "text-gold"}`}>
+                            <div className="flex flex-1 flex-col p-3 sm:p-5">
+                              <p className="text-[0.5rem] font-black uppercase tracking-[0.12em] text-white/38 sm:text-[0.62rem] sm:tracking-[0.18em]">Amazon India listing</p>
+                              <h3 className="mt-2 line-clamp-2 text-sm font-black leading-5 text-white sm:mt-3 sm:text-lg sm:leading-6">{product.title}</h3>
+                              <p className="mt-2 line-clamp-2 flex-1 text-[0.68rem] leading-5 text-white/58 sm:mt-3 sm:text-sm sm:leading-6">{product.fit}</p>
+                              <div className="mt-3 flex flex-col items-start gap-2 sm:mt-5 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
+                                <p className={`text-lg font-black tracking-tight sm:text-2xl ${cyan ? "text-cyan" : "text-gold"}`}>
                                   {product.price}
-                                  <span className="ml-2 align-middle text-[0.58rem] font-bold uppercase tracking-[0.14em] text-white/35">snapshot</span>
+                                  <span className="ml-1 align-middle text-[0.46rem] font-bold uppercase tracking-[0.1em] text-white/35 sm:ml-2 sm:text-[0.58rem] sm:tracking-[0.14em]">snapshot</span>
                                 </p>
-                                <a href={amazonProductUrl(product.asin)} target="_blank" rel="sponsored nofollow noopener noreferrer" className={`inline-flex min-h-11 items-center justify-center gap-2 rounded-full border px-4 text-xs font-black uppercase tracking-[0.12em] transition ${cyan ? "border-cyan/30 text-cyan hover:border-cyan hover:bg-cyan/10" : "border-gold/30 text-gold hover:border-gold hover:bg-gold/10"}`}>
-                                  View on Amazon <Icon.ExternalLink size={14} />
+                                <a href={amazonProductUrl(product.asin)} target="_blank" rel="sponsored nofollow noopener noreferrer" title={`View ${product.title} on Amazon`} className={`inline-flex min-h-9 w-full items-center justify-center gap-1 rounded-full border px-2 text-[0.58rem] font-black uppercase tracking-[0.08em] transition sm:min-h-11 sm:w-auto sm:gap-2 sm:px-4 sm:text-xs sm:tracking-[0.12em] ${cyan ? "border-cyan/30 text-cyan hover:border-cyan hover:bg-cyan/10" : "border-gold/30 text-gold hover:border-gold hover:bg-gold/10"}`}>
+                                  View <span className="hidden sm:inline">on Amazon</span> <Icon.ExternalLink size={12} />
                                 </a>
                               </div>
                             </div>
