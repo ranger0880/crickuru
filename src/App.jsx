@@ -930,7 +930,6 @@ const RouterContext = React.createContext(null);
         return (
           <main className="stadium-page-bg page-grain min-h-screen">
             <HeroSection />
-            <LiveMatchIntelSection />
             <CricHeroesSection />
             <Footer />
           </main>
@@ -1057,18 +1056,6 @@ const RouterContext = React.createContext(null);
 
       function HeroContent() {
         const navigate = useNavigate();
-        const location = useLocation();
-
-        const scrollToLiveIntel = () => {
-          const scroll = () =>
-            document.getElementById("live-intel")?.scrollIntoView({ behavior: "smooth", block: "start" });
-          if (location.pathname !== "/") {
-            navigate("/");
-            window.setTimeout(scroll, 120);
-          } else {
-            scroll();
-          }
-        };
 
         return (
           <motion.div
@@ -1125,9 +1112,9 @@ const RouterContext = React.createContext(null);
                 </button>
                 <button
                   type="button"
-                  onClick={scrollToLiveIntel}
+                  onClick={() => navigate("/warriors")}
                   className="inline-flex min-h-14 items-center justify-center gap-3 rounded-full border border-gold/35 bg-white/8 px-7 text-sm font-black uppercase tracking-[0.18em] text-white backdrop-blur-xl transition hover:border-gold hover:bg-gold/10 hover:text-gold"
-                  aria-label="View live Kurukshetra Warriors match updates"
+                  aria-label="Open Kurukshetra Warriors match updates"
                 >
                   Live Updates <Icon.ChevronDown size={19} />
                 </button>
