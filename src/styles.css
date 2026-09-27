@@ -1084,6 +1084,19 @@
           will-change: transform;
         }
 
+        .shop-neon-card {
+          content-visibility: auto;
+          contain-intrinsic-size: 390px;
+          animation: none;
+          box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+        }
+
+        .shop-neon-card::after {
+          animation: none;
+          filter: blur(16px);
+          opacity: 0.08;
+        }
+
         .mobile-menu {
           padding-top: max(1.5rem, env(safe-area-inset-top));
           padding-right: max(1.5rem, env(safe-area-inset-right));
