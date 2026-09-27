@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-27T07:11:48.961Z",
-  "lastCheckedAt": "2026-09-27T07:11:48.961Z",
-  "lastSuccessfulSyncAt": "2026-09-27T07:11:48.961Z",
+  "syncedAt": "2026-09-27T13:00:59.588Z",
+  "lastCheckedAt": "2026-09-27T13:00:59.588Z",
+  "lastSuccessfulSyncAt": "2026-09-27T13:00:59.588Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,9 +41,9 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 1,
+    "live": 2,
     "recent": 60,
-    "upcoming": 484,
+    "upcoming": 483,
     "total": 545
   },
   "all": [
@@ -51,59 +51,59 @@
       "id": "live-155499",
       "status": "live",
       "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-u19",
       "title": "Australia U19 vs India U19, 1st unofficial Test",
       "series": "Australia U19 tour of India 2026",
       "teams": [
         {
           "name": "Australia U19",
           "shortName": "AUSU19",
-          "score": "62/3 (27 Ov)"
+          "score": "217/10 (86.5 Ov)"
         },
         {
           "name": "India U19",
           "shortName": "INDU19",
-          "score": ""
+          "score": "8 (1 Ov)"
         }
       ],
       "dateLabel": "27 Sept 2026, 09:30 am",
       "time": "",
       "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
-      "overview": "Day 1: Lunch Break",
+      "overview": "Day 1: Stumps - India U19 trail by 209 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155499",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
       "startTime": "2026-09-27T04:00:00.000Z",
       "rawId": 155499
     },
     {
-      "id": "upcoming-151532",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-151532",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "international",
       "levelLabel": "International",
       "sourceType": "International",
       "sourceScope": "global",
-      "title": "India vs West Indies, 1st ODI",
+      "title": "West Indies vs India, 1st ODI",
       "series": "West Indies tour of India, 2026",
       "teams": [
         {
-          "name": "India",
-          "shortName": "IND",
-          "score": ""
-        },
-        {
           "name": "West Indies",
           "shortName": "WI",
-          "score": ""
+          "score": "295/7 (49.6 Ov)"
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "6 (1.4 Ov)"
         }
       ],
       "dateLabel": "27 Sept 2026, 02:00 pm",
       "time": "",
       "place": "Greenfield International Stadium, Thiruvananthapuram",
-      "overview": "Match starts at Sep 27, 08:30 GMT",
+      "overview": "India need 290 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151532",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-27T08:30:00.000Z",
@@ -131,13 +131,13 @@
           "score": ""
         }
       ],
-      "dateLabel": "28 Sept 2026, 10:00 am",
+      "dateLabel": "28 Sept 2026, 10:30 am",
       "time": "",
       "place": "Korogi Sports Park, Nisshin",
-      "overview": "Match starts at Sep 28, 04:30 GMT",
+      "overview": "Match starts at Sep 28, 05:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171030",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-28T04:30:00.000Z",
+      "startTime": "2026-09-28T05:00:00.000Z",
       "rawId": 171030
     },
     {
@@ -17064,66 +17064,66 @@
       "id": "live-155499",
       "status": "live",
       "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-u19",
       "title": "Australia U19 vs India U19, 1st unofficial Test",
       "series": "Australia U19 tour of India 2026",
       "teams": [
         {
           "name": "Australia U19",
           "shortName": "AUSU19",
-          "score": "62/3 (27 Ov)"
+          "score": "217/10 (86.5 Ov)"
         },
         {
           "name": "India U19",
           "shortName": "INDU19",
-          "score": ""
+          "score": "8 (1 Ov)"
         }
       ],
       "dateLabel": "27 Sept 2026, 09:30 am",
       "time": "",
       "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
-      "overview": "Day 1: Lunch Break",
+      "overview": "Day 1: Stumps - India U19 trail by 209 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155499",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
       "startTime": "2026-09-27T04:00:00.000Z",
       "rawId": 155499
-    }
-  ],
-  "upcoming": [
+    },
     {
-      "id": "upcoming-151532",
-      "status": "upcoming",
-      "statusLabel": "Future",
+      "id": "live-151532",
+      "status": "live",
+      "statusLabel": "Live",
       "level": "international",
       "levelLabel": "International",
       "sourceType": "International",
       "sourceScope": "global",
-      "title": "India vs West Indies, 1st ODI",
+      "title": "West Indies vs India, 1st ODI",
       "series": "West Indies tour of India, 2026",
       "teams": [
         {
-          "name": "India",
-          "shortName": "IND",
-          "score": ""
-        },
-        {
           "name": "West Indies",
           "shortName": "WI",
-          "score": ""
+          "score": "295/7 (49.6 Ov)"
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "6 (1.4 Ov)"
         }
       ],
       "dateLabel": "27 Sept 2026, 02:00 pm",
       "time": "",
       "place": "Greenfield International Stadium, Thiruvananthapuram",
-      "overview": "Match starts at Sep 27, 08:30 GMT",
+      "overview": "India need 290 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151532",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-27T08:30:00.000Z",
       "rawId": 151532
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "upcoming-171030",
       "status": "upcoming",
@@ -17146,13 +17146,13 @@
           "score": ""
         }
       ],
-      "dateLabel": "28 Sept 2026, 10:00 am",
+      "dateLabel": "28 Sept 2026, 10:30 am",
       "time": "",
       "place": "Korogi Sports Park, Nisshin",
-      "overview": "Match starts at Sep 28, 04:30 GMT",
+      "overview": "Match starts at Sep 28, 05:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171030",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-28T04:30:00.000Z",
+      "startTime": "2026-09-28T05:00:00.000Z",
       "rawId": 171030
     },
     {
@@ -34081,10 +34081,10 @@
       "id": "international",
       "label": "International",
       "order": 1,
-      "live": 0,
+      "live": 2,
       "recent": 30,
-      "upcoming": 45,
-      "total": 75
+      "upcoming": 44,
+      "total": 76
     },
     {
       "id": "league",
@@ -34108,10 +34108,10 @@
       "id": "domestic",
       "label": "Domestic / State",
       "order": 4,
-      "live": 1,
+      "live": 0,
       "recent": 0,
       "upcoming": 413,
-      "total": 414
+      "total": 413
     }
   ],
   "importantMatches": [
@@ -35993,13 +35993,13 @@
           "score": ""
         }
       ],
-      "dateLabel": "28 Sept 2026, 10:00 am",
+      "dateLabel": "28 Sept 2026, 10:30 am",
       "time": "",
       "place": "Korogi Sports Park, Nisshin",
-      "overview": "Match starts at Sep 28, 04:30 GMT",
+      "overview": "Match starts at Sep 28, 05:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171030",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-28T04:30:00.000Z",
+      "startTime": "2026-09-28T05:00:00.000Z",
       "rawId": 171030,
       "importance": "Knockout stage"
     },
@@ -38197,8 +38197,8 @@
       "live": 0,
       "upcoming": 1,
       "recent": 0,
-      "startTime": "2026-09-28T04:30:00.000Z",
-      "endTime": "2026-09-28T04:30:00.000Z",
+      "startTime": "2026-09-28T05:00:00.000Z",
+      "endTime": "2026-09-28T05:00:00.000Z",
       "matches": [
         {
           "id": "upcoming-171030",
@@ -38222,13 +38222,13 @@
               "score": ""
             }
           ],
-          "dateLabel": "28 Sept 2026, 10:00 am",
+          "dateLabel": "28 Sept 2026, 10:30 am",
           "time": "",
           "place": "Korogi Sports Park, Nisshin",
-          "overview": "Match starts at Sep 28, 04:30 GMT",
+          "overview": "Match starts at Sep 28, 05:00 GMT",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171030",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-          "startTime": "2026-09-28T04:30:00.000Z",
+          "startTime": "2026-09-28T05:00:00.000Z",
           "rawId": 171030,
           "importance": "Knockout stage"
         }
