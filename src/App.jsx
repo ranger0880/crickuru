@@ -1162,6 +1162,7 @@ const RouterContext = React.createContext(null);
         const nextMatch = data.upcomingMatches?.[0];
         const latestMatch = data.recentMatches?.[0] || data.matches?.[0];
         const displayMatch = liveMatch || nextMatch || latestMatch;
+        const latestHighlight = latestMatchPlayerHighlight(latestMatch, data.players || []);
         const topPlayer = data.players?.find((player) => player.performance?.awards > 0) || data.players?.[0];
         const topRival = data.opponents?.[0];
 
@@ -1212,6 +1213,11 @@ const RouterContext = React.createContext(null);
                 detail={displayMatch ? `${formatFeedDate(displayMatch.date)} - ${displayMatch.venue || displayMatch.city || "CricHeroes"}` : "Sync data/crickuru-live.json"}
               />
               <HeroLiveTile
+                label="Latest game standout"
+                title={latestHighlight?.name || "Scorecard highlight"}
+                detail={latestHighlight?.detail || "Player moments appear after the latest scorecard sync"}
+              />
+              <HeroLiveTile
                 label="Player Tracker"
                 title={topPlayer?.name || "Warriors roster"}
                 detail={topPlayer?.badges?.slice(0, 3).join(" / ") || "Badges update from synced performance"}
@@ -1232,6 +1238,50 @@ const RouterContext = React.createContext(null);
             </a>
           </motion.aside>
         );
+      }
+
+      function latestMatchPlayerHighlight(match, players = []) {
+        if (!match) return null;
+        const scorecard = match.scorecard || {};
+        const lines = [
+          ...asArray(scorecard.batting),
+          ...asArray(scorecard.bowling),
+          ...asArray(scorecard.fielding),
+        ].filter((line) => line?.playerName || line?.player_name || line?.name);
+        const award = scorecard.playerOfTheMatch || {};
+        const awardId = String(award.player_id || match.awards?.playerOfMatch || "");
+        const hasAward = Boolean(awardId && awardId !== "0");
+        const awardName = cleanMatchText(award.player_name || award.playerName);
+        const player = players.find((candidate) => {
+          const candidateId = String(candidate?.id || candidate?.playerId || "");
+          return hasAward && candidateId === awardId;
+        }) || (awardName ? players.find((candidate) => cleanMatchText(candidate?.name).toLocaleLowerCase() === awardName.toLocaleLowerCase()) : null);
+        const playerName = cleanMatchText(player?.name || awardName);
+        const matchingLines = lines.filter((line) => {
+          const lineId = String(line?.playerId || line?.player_id || "");
+          const lineName = cleanMatchText(line?.playerName || line?.player_name || line?.name).toLocaleLowerCase();
+          return (hasAward && lineId === awardId) || (playerName && lineName === playerName.toLocaleLowerCase());
+        });
+        const batting = matchingLines.find((line) => line?.runs !== undefined);
+        const bowling = matchingLines.find((line) => line?.wickets !== undefined);
+        const fielding = matchingLines.find((line) => line?.catches !== undefined || line?.stumpings !== undefined || line?.runOuts !== undefined);
+        const performance = [];
+        if (batting && Number.isFinite(Number(batting.runs))) {
+          performance.push(`${batting.runs} runs${batting.balls ? ` off ${batting.balls}` : ""}`);
+        }
+        if (bowling && Number(bowling.wickets) > 0) {
+          performance.push(`${bowling.wickets} wicket${Number(bowling.wickets) === 1 ? "" : "s"}`);
+        }
+        if (fielding) {
+          const catches = Number(fielding.catches) || 0;
+          const stumpings = Number(fielding.stumpings) || 0;
+          if (catches) performance.push(`${catches} catch${catches === 1 ? "" : "es"}`);
+          if (stumpings) performance.push(`${stumpings} stumping${stumpings === 1 ? "" : "s"}`);
+        }
+        if (!playerName && !matchingLines.length) return null;
+        const label = awardName || hasAward ? "Player of the Match" : "Latest scorecard impact";
+        const detail = `${label}${performance.length ? ` · ${performance.join(" · ")}` : " · Impact recorded in latest scorecard"}`;
+        return { name: playerName || cleanMatchText(matchingLines[0]?.playerName || matchingLines[0]?.player_name || matchingLines[0]?.name), detail };
       }
 
       function HeroLiveTile({ label, title, detail }) {
