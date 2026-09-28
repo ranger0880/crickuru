@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-28T01:38:03.308Z",
-  "lastCheckedAt": "2026-09-28T01:38:03.308Z",
-  "lastSuccessfulSyncAt": "2026-09-28T01:38:03.308Z",
+  "syncedAt": "2026-09-28T07:35:51.735Z",
+  "lastCheckedAt": "2026-09-28T07:35:51.735Z",
+  "lastSuccessfulSyncAt": "2026-09-28T07:35:51.735Z",
   "coverage": {
     "pathways": [
       "India",
@@ -42,8 +42,8 @@
   },
   "summary": {
     "live": 1,
-    "recent": 60,
-    "upcoming": 483,
+    "recent": 59,
+    "upcoming": 484,
     "total": 544
   },
   "all": [
@@ -66,13 +66,13 @@
         {
           "name": "India U19",
           "shortName": "INDU19",
-          "score": "8 (0.6 Ov)"
+          "score": "174/5 (43.6 Ov)"
         }
       ],
       "dateLabel": "27 Sept 2026, 09:30 am",
       "time": "",
       "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
-      "overview": "Day 1: Stumps - India U19 trail by 209 runs",
+      "overview": "Day 2: 2nd Session - India U19 trail by 43 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155499",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-27T04:00:00.000Z",
@@ -100,13 +100,13 @@
           "score": ""
         }
       ],
-      "dateLabel": "28 Sept 2026, 10:30 am",
+      "dateLabel": "28 Sept 2026, 10:00 am",
       "time": "",
       "place": "Korogi Sports Park, Nisshin",
-      "overview": "Match starts at Sep 28, 05:00 GMT",
+      "overview": "Match abandoned without toss",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171030",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-28T05:00:00.000Z",
+      "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
     },
     {
@@ -232,6 +232,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12387/irani-cup-2026/matches",
       "startTime": "2026-10-01T04:00:00.000Z",
       "rawId": 163077
+    },
+    {
+      "id": "upcoming-171060",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-men",
+      "title": "India vs TBC, 2nd Semi-Final",
+      "series": "Asian Games 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "TBC",
+          "shortName": "TBC",
+          "score": ""
+        }
+      ],
+      "dateLabel": "01 Oct 2026, 10:00 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "Match starts at Oct 01, 04:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171060",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-01T04:30:00.000Z",
+      "rawId": 171060
     },
     {
       "id": "upcoming-151554",
@@ -15937,38 +15968,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-152709",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
-      "title": "India vs Zimbabwe, 2nd T20I",
-      "series": "India tour of Zimbabwe 2026",
-      "teams": [
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": "219/5 (20 Ov)"
-        },
-        {
-          "name": "Zimbabwe",
-          "shortName": "ZIM",
-          "score": "129/10 (17 Ov)"
-        }
-      ],
-      "dateLabel": "25 Jul 2026, 04:30 pm",
-      "time": "",
-      "place": "Harare Sports Club, Harare",
-      "overview": "India won by 90 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/152709",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
-      "startTime": "2026-07-25T11:00:00.000Z",
-      "rawId": 152709,
-      "starPerformers": []
-    },
-    {
       "id": "recent-157230",
       "status": "recent",
       "statusLabel": "Past",
@@ -17048,13 +17047,13 @@
         {
           "name": "India U19",
           "shortName": "INDU19",
-          "score": "8 (0.6 Ov)"
+          "score": "174/5 (43.6 Ov)"
         }
       ],
       "dateLabel": "27 Sept 2026, 09:30 am",
       "time": "",
       "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
-      "overview": "Day 1: Stumps - India U19 trail by 209 runs",
+      "overview": "Day 2: 2nd Session - India U19 trail by 43 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155499",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-27T04:00:00.000Z",
@@ -17084,13 +17083,13 @@
           "score": ""
         }
       ],
-      "dateLabel": "28 Sept 2026, 10:30 am",
+      "dateLabel": "28 Sept 2026, 10:00 am",
       "time": "",
       "place": "Korogi Sports Park, Nisshin",
-      "overview": "Match starts at Sep 28, 05:00 GMT",
+      "overview": "Match abandoned without toss",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171030",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-28T05:00:00.000Z",
+      "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
     },
     {
@@ -17216,6 +17215,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12387/irani-cup-2026/matches",
       "startTime": "2026-10-01T04:00:00.000Z",
       "rawId": 163077
+    },
+    {
+      "id": "upcoming-171060",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-men",
+      "title": "India vs TBC, 2nd Semi-Final",
+      "series": "Asian Games 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "TBC",
+          "shortName": "TBC",
+          "score": ""
+        }
+      ],
+      "dateLabel": "01 Oct 2026, 10:00 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "Match starts at Oct 01, 04:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171060",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-01T04:30:00.000Z",
+      "rawId": 171060
     },
     {
       "id": "upcoming-151554",
@@ -32923,38 +32953,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-152709",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
-      "title": "India vs Zimbabwe, 2nd T20I",
-      "series": "India tour of Zimbabwe 2026",
-      "teams": [
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": "219/5 (20 Ov)"
-        },
-        {
-          "name": "Zimbabwe",
-          "shortName": "ZIM",
-          "score": "129/10 (17 Ov)"
-        }
-      ],
-      "dateLabel": "25 Jul 2026, 04:30 pm",
-      "time": "",
-      "place": "Harare Sports Club, Harare",
-      "overview": "India won by 90 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/152709",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
-      "startTime": "2026-07-25T11:00:00.000Z",
-      "rawId": 152709,
-      "starPerformers": []
-    },
-    {
       "id": "recent-157230",
       "status": "recent",
       "statusLabel": "Past",
@@ -34020,8 +34018,8 @@
       "label": "International",
       "order": 1,
       "live": 0,
-      "recent": 30,
-      "upcoming": 44,
+      "recent": 29,
+      "upcoming": 45,
       "total": 74
     },
     {
@@ -35878,6 +35876,38 @@
       "importance": "Major tournament"
     },
     {
+      "id": "upcoming-171060",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-men",
+      "title": "India vs TBC, 2nd Semi-Final",
+      "series": "Asian Games 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "TBC",
+          "shortName": "TBC",
+          "score": ""
+        }
+      ],
+      "dateLabel": "01 Oct 2026, 10:00 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "Match starts at Oct 01, 04:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171060",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-01T04:30:00.000Z",
+      "rawId": 171060,
+      "importance": "Knockout stage"
+    },
+    {
       "id": "upcoming-163077",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -35931,13 +35961,13 @@
           "score": ""
         }
       ],
-      "dateLabel": "28 Sept 2026, 10:30 am",
+      "dateLabel": "28 Sept 2026, 10:00 am",
       "time": "",
       "place": "Korogi Sports Park, Nisshin",
-      "overview": "Match starts at Sep 28, 05:00 GMT",
+      "overview": "Match abandoned without toss",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171030",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-28T05:00:00.000Z",
+      "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030,
       "importance": "Knockout stage"
     },
@@ -38081,6 +38111,84 @@
       ]
     },
     {
+      "id": "asian-games-2026",
+      "series": "Asian Games 2026",
+      "level": "international",
+      "levelLabel": "International",
+      "total": 2,
+      "live": 0,
+      "upcoming": 2,
+      "recent": 0,
+      "startTime": "2026-09-28T04:30:00.000Z",
+      "endTime": "2026-10-01T04:30:00.000Z",
+      "matches": [
+        {
+          "id": "upcoming-171030",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "international",
+          "levelLabel": "International",
+          "sourceType": "International",
+          "sourceScope": "global",
+          "title": "India vs Afghanistan, 2nd Quarter-Final",
+          "series": "Asian Games 2026",
+          "teams": [
+            {
+              "name": "India",
+              "shortName": "IND",
+              "score": ""
+            },
+            {
+              "name": "Afghanistan",
+              "shortName": "AFG",
+              "score": ""
+            }
+          ],
+          "dateLabel": "28 Sept 2026, 10:00 am",
+          "time": "",
+          "place": "Korogi Sports Park, Nisshin",
+          "overview": "Match abandoned without toss",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171030",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "startTime": "2026-09-28T04:30:00.000Z",
+          "rawId": 171030,
+          "importance": "Knockout stage"
+        },
+        {
+          "id": "upcoming-171060",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "international",
+          "levelLabel": "International",
+          "sourceType": "",
+          "sourceScope": "india-men",
+          "title": "India vs TBC, 2nd Semi-Final",
+          "series": "Asian Games 2026",
+          "teams": [
+            {
+              "name": "India",
+              "shortName": "IND",
+              "score": ""
+            },
+            {
+              "name": "TBC",
+              "shortName": "TBC",
+              "score": ""
+            }
+          ],
+          "dateLabel": "01 Oct 2026, 10:00 am",
+          "time": "",
+          "place": "Korogi Sports Park, Nisshin",
+          "overview": "Match starts at Oct 01, 04:30 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171060",
+          "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+          "startTime": "2026-10-01T04:30:00.000Z",
+          "rawId": 171060,
+          "importance": "Knockout stage"
+        }
+      ]
+    },
+    {
       "id": "irani-cup-2026",
       "series": "Irani Cup 2026",
       "level": "domestic",
@@ -38123,52 +38231,6 @@
           "startTime": "2026-10-01T04:00:00.000Z",
           "rawId": 163077,
           "importance": "Major tournament"
-        }
-      ]
-    },
-    {
-      "id": "asian-games-2026",
-      "series": "Asian Games 2026",
-      "level": "international",
-      "levelLabel": "International",
-      "total": 1,
-      "live": 0,
-      "upcoming": 1,
-      "recent": 0,
-      "startTime": "2026-09-28T05:00:00.000Z",
-      "endTime": "2026-09-28T05:00:00.000Z",
-      "matches": [
-        {
-          "id": "upcoming-171030",
-          "status": "upcoming",
-          "statusLabel": "Future",
-          "level": "international",
-          "levelLabel": "International",
-          "sourceType": "International",
-          "sourceScope": "global",
-          "title": "India vs Afghanistan, 2nd Quarter-Final",
-          "series": "Asian Games 2026",
-          "teams": [
-            {
-              "name": "India",
-              "shortName": "IND",
-              "score": ""
-            },
-            {
-              "name": "Afghanistan",
-              "shortName": "AFG",
-              "score": ""
-            }
-          ],
-          "dateLabel": "28 Sept 2026, 10:30 am",
-          "time": "",
-          "place": "Korogi Sports Park, Nisshin",
-          "overview": "Match starts at Sep 28, 05:00 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171030",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-          "startTime": "2026-09-28T05:00:00.000Z",
-          "rawId": 171030,
-          "importance": "Knockout stage"
         }
       ]
     },
