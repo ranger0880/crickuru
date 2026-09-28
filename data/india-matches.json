@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-28T07:35:51.735Z",
-  "lastCheckedAt": "2026-09-28T07:35:51.735Z",
-  "lastSuccessfulSyncAt": "2026-09-28T07:35:51.735Z",
+  "syncedAt": "2026-09-28T15:53:59.843Z",
+  "lastCheckedAt": "2026-09-28T15:53:59.843Z",
+  "lastSuccessfulSyncAt": "2026-09-28T15:53:59.843Z",
   "coverage": {
     "pathways": [
       "India",
@@ -66,13 +66,13 @@
         {
           "name": "India U19",
           "shortName": "INDU19",
-          "score": "174/5 (43.6 Ov)"
+          "score": "430/8 (91.6 Ov)"
         }
       ],
       "dateLabel": "27 Sept 2026, 09:30 am",
       "time": "",
       "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
-      "overview": "Day 2: 2nd Session - India U19 trail by 43 runs",
+      "overview": "Day 2: Stumps - India U19 lead by 213 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155499",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-27T04:00:00.000Z",
@@ -17047,13 +17047,13 @@
         {
           "name": "India U19",
           "shortName": "INDU19",
-          "score": "174/5 (43.6 Ov)"
+          "score": "430/8 (91.6 Ov)"
         }
       ],
       "dateLabel": "27 Sept 2026, 09:30 am",
       "time": "",
       "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
-      "overview": "Day 2: 2nd Session - India U19 trail by 43 runs",
+      "overview": "Day 2: Stumps - India U19 lead by 213 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155499",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-27T04:00:00.000Z",
