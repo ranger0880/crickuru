@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-27T23:09:33.709Z",
-  "lastCheckedAt": "2026-09-27T23:09:33.709Z",
-  "lastSuccessfulSyncAt": "2026-09-27T23:09:33.709Z",
+  "syncedAt": "2026-09-28T01:38:03.308Z",
+  "lastCheckedAt": "2026-09-28T01:38:03.308Z",
+  "lastSuccessfulSyncAt": "2026-09-28T01:38:03.308Z",
   "coverage": {
     "pathways": [
       "India",
@@ -51,10 +51,10 @@
       "id": "live-155499",
       "status": "live",
       "statusLabel": "Live",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-u19",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "Australia U19 vs India U19, 1st unofficial Test",
       "series": "Australia U19 tour of India 2026",
       "teams": [
@@ -66,7 +66,7 @@
         {
           "name": "India U19",
           "shortName": "INDU19",
-          "score": "8 (1 Ov)"
+          "score": "8 (0.6 Ov)"
         }
       ],
       "dateLabel": "27 Sept 2026, 09:30 am",
@@ -74,7 +74,7 @@
       "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
       "overview": "Day 1: Stumps - India U19 trail by 209 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155499",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-27T04:00:00.000Z",
       "rawId": 155499
     },
@@ -17033,10 +17033,10 @@
       "id": "live-155499",
       "status": "live",
       "statusLabel": "Live",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-u19",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "Australia U19 vs India U19, 1st unofficial Test",
       "series": "Australia U19 tour of India 2026",
       "teams": [
@@ -17048,7 +17048,7 @@
         {
           "name": "India U19",
           "shortName": "INDU19",
-          "score": "8 (1 Ov)"
+          "score": "8 (0.6 Ov)"
         }
       ],
       "dateLabel": "27 Sept 2026, 09:30 am",
@@ -17056,7 +17056,7 @@
       "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
       "overview": "Day 1: Stumps - India U19 trail by 209 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155499",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-27T04:00:00.000Z",
       "rawId": 155499
     }
@@ -34019,10 +34019,10 @@
       "id": "international",
       "label": "International",
       "order": 1,
-      "live": 1,
+      "live": 0,
       "recent": 30,
       "upcoming": 44,
-      "total": 75
+      "total": 74
     },
     {
       "id": "league",
@@ -34046,10 +34046,10 @@
       "id": "domestic",
       "label": "Domestic / State",
       "order": 4,
-      "live": 0,
+      "live": 1,
       "recent": 0,
       "upcoming": 413,
-      "total": 413
+      "total": 414
     }
   ],
   "importantMatches": [
