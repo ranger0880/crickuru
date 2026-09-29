@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-28T21:27:25.745Z",
-  "lastCheckedAt": "2026-09-28T21:27:25.745Z",
-  "lastSuccessfulSyncAt": "2026-09-28T21:27:25.745Z",
+  "syncedAt": "2026-09-29T01:08:35.750Z",
+  "lastCheckedAt": "2026-09-29T01:08:35.750Z",
+  "lastSuccessfulSyncAt": "2026-09-29T01:08:35.750Z",
   "coverage": {
     "pathways": [
       "India",
@@ -84,8 +84,8 @@
       "statusLabel": "Future",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-men",
       "title": "India vs Afghanistan, 2nd Quarter-Final",
       "series": "Asian Games 2026",
       "teams": [
@@ -105,7 +105,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "Match abandoned without toss",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171030",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
     },
@@ -113,10 +113,10 @@
       "id": "upcoming-155422",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-a",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "India A vs Australia A, 2nd unofficial Test",
       "series": "Australia A tour of India 2026",
       "teams": [
@@ -136,7 +136,7 @@
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
       "overview": "Match starts at Sep 29, 04:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155422",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-29T04:00:00.000Z",
       "rawId": 155422
     },
@@ -146,8 +146,8 @@
       "statusLabel": "Future",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "India A Women vs Australia A Women, Only unofficial Test",
       "series": "Australia A Women tour of India 2026",
       "teams": [
@@ -167,7 +167,7 @@
       "place": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
       "overview": "Match starts at Sep 29, 04:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155650",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-29T04:00:00.000Z",
       "rawId": 155650
     },
@@ -241,7 +241,7 @@
       "levelLabel": "International",
       "sourceType": "",
       "sourceScope": "india-men",
-      "title": "India vs TBC, 2nd Semi-Final",
+      "title": "India vs Sri Lanka, 2nd Semi-Final",
       "series": "Asian Games 2026",
       "teams": [
         {
@@ -250,8 +250,8 @@
           "score": ""
         },
         {
-          "name": "TBC",
-          "shortName": "TBC",
+          "name": "Sri Lanka",
+          "shortName": "SL",
           "score": ""
         }
       ],
@@ -17067,8 +17067,8 @@
       "statusLabel": "Future",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-men",
       "title": "India vs Afghanistan, 2nd Quarter-Final",
       "series": "Asian Games 2026",
       "teams": [
@@ -17088,7 +17088,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "Match abandoned without toss",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171030",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
     },
@@ -17096,10 +17096,10 @@
       "id": "upcoming-155422",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-a",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "India A vs Australia A, 2nd unofficial Test",
       "series": "Australia A tour of India 2026",
       "teams": [
@@ -17119,7 +17119,7 @@
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
       "overview": "Match starts at Sep 29, 04:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155422",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-29T04:00:00.000Z",
       "rawId": 155422
     },
@@ -17129,8 +17129,8 @@
       "statusLabel": "Future",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "India A Women vs Australia A Women, Only unofficial Test",
       "series": "Australia A Women tour of India 2026",
       "teams": [
@@ -17150,7 +17150,7 @@
       "place": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
       "overview": "Match starts at Sep 29, 04:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155650",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-29T04:00:00.000Z",
       "rawId": 155650
     },
@@ -17224,7 +17224,7 @@
       "levelLabel": "International",
       "sourceType": "",
       "sourceScope": "india-men",
-      "title": "India vs TBC, 2nd Semi-Final",
+      "title": "India vs Sri Lanka, 2nd Semi-Final",
       "series": "Asian Games 2026",
       "teams": [
         {
@@ -17233,8 +17233,8 @@
           "score": ""
         },
         {
-          "name": "TBC",
-          "shortName": "TBC",
+          "name": "Sri Lanka",
+          "shortName": "SL",
           "score": ""
         }
       ],
@@ -34019,8 +34019,8 @@
       "order": 1,
       "live": 0,
       "recent": 29,
-      "upcoming": 45,
-      "total": 74
+      "upcoming": 44,
+      "total": 73
     },
     {
       "id": "league",
@@ -34046,8 +34046,8 @@
       "order": 4,
       "live": 1,
       "recent": 0,
-      "upcoming": 413,
-      "total": 414
+      "upcoming": 414,
+      "total": 415
     }
   ],
   "importantMatches": [
@@ -35883,7 +35883,7 @@
       "levelLabel": "International",
       "sourceType": "",
       "sourceScope": "india-men",
-      "title": "India vs TBC, 2nd Semi-Final",
+      "title": "India vs Sri Lanka, 2nd Semi-Final",
       "series": "Asian Games 2026",
       "teams": [
         {
@@ -35892,8 +35892,8 @@
           "score": ""
         },
         {
-          "name": "TBC",
-          "shortName": "TBC",
+          "name": "Sri Lanka",
+          "shortName": "SL",
           "score": ""
         }
       ],
@@ -35945,8 +35945,8 @@
       "statusLabel": "Future",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-men",
       "title": "India vs Afghanistan, 2nd Quarter-Final",
       "series": "Asian Games 2026",
       "teams": [
@@ -35966,7 +35966,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "Match abandoned without toss",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171030",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030,
       "importance": "Knockout stage"
@@ -38128,8 +38128,8 @@
           "statusLabel": "Future",
           "level": "international",
           "levelLabel": "International",
-          "sourceType": "International",
-          "sourceScope": "global",
+          "sourceType": "",
+          "sourceScope": "india-men",
           "title": "India vs Afghanistan, 2nd Quarter-Final",
           "series": "Asian Games 2026",
           "teams": [
@@ -38149,7 +38149,7 @@
           "place": "Korogi Sports Park, Nisshin",
           "overview": "Match abandoned without toss",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171030",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
           "startTime": "2026-09-28T04:30:00.000Z",
           "rawId": 171030,
           "importance": "Knockout stage"
@@ -38162,7 +38162,7 @@
           "levelLabel": "International",
           "sourceType": "",
           "sourceScope": "india-men",
-          "title": "India vs TBC, 2nd Semi-Final",
+          "title": "India vs Sri Lanka, 2nd Semi-Final",
           "series": "Asian Games 2026",
           "teams": [
             {
@@ -38171,8 +38171,8 @@
               "score": ""
             },
             {
-              "name": "TBC",
-              "shortName": "TBC",
+              "name": "Sri Lanka",
+              "shortName": "SL",
               "score": ""
             }
           ],
