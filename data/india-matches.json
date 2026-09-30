@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-30T01:33:40.868Z",
-  "lastCheckedAt": "2026-09-30T01:33:40.868Z",
-  "lastSuccessfulSyncAt": "2026-09-30T01:33:40.868Z",
+  "syncedAt": "2026-09-30T07:18:59.220Z",
+  "lastCheckedAt": "2026-09-30T07:18:59.220Z",
+  "lastSuccessfulSyncAt": "2026-09-30T07:18:59.220Z",
   "coverage": {
     "pathways": [
       "India",
@@ -61,18 +61,18 @@
         {
           "name": "Australia A",
           "shortName": "AUSA",
-          "score": "282/7 (86.6 Ov)"
+          "score": "358/10 (116.3 Ov)"
         },
         {
           "name": "India A",
           "shortName": "INDA",
-          "score": ""
+          "score": "4/1 (0.5 Ov)"
         }
       ],
       "dateLabel": "29 Sept 2026, 09:30 am",
       "time": "",
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Day 1: Stumps",
+      "overview": "Day 2: 2nd Session - India A trail by 354 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155422",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-29T04:00:00.000Z",
@@ -92,18 +92,18 @@
         {
           "name": "India A Women",
           "shortName": "INDWA",
-          "score": "351/9 (99.6 Ov)"
+          "score": "364/10 (103.3 Ov)"
         },
         {
           "name": "Australia A Women",
           "shortName": "AUSWA",
-          "score": ""
+          "score": "115/3 (35.6 Ov)"
         }
       ],
       "dateLabel": "29 Sept 2026, 09:30 am",
       "time": "",
       "place": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-      "overview": "Day 1: Stumps",
+      "overview": "Day 2: 2nd Session - Australia A Women trail by 249 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155650",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-29T04:00:00.000Z",
@@ -208,8 +208,8 @@
       "statusLabel": "Future",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "India vs Sri Lanka, 2nd Semi-Final",
       "series": "Asian Games 2026",
       "teams": [
@@ -229,7 +229,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "Match starts at Oct 01, 04:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171060",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-01T04:30:00.000Z",
       "rawId": 171060
     },
@@ -15087,10 +15087,10 @@
       "id": "recent-155499",
       "status": "recent",
       "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-u19",
       "title": "Australia U19 vs India U19, 1st unofficial Test",
       "series": "Australia U19 tour of India 2026",
       "teams": [
@@ -15110,7 +15110,7 @@
       "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
       "overview": "India U19 won by an innings and 48 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155499",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
       "startTime": "2026-09-27T04:00:00.000Z",
       "rawId": 155499,
       "starPerformers": []
@@ -17004,18 +17004,18 @@
         {
           "name": "Australia A",
           "shortName": "AUSA",
-          "score": "282/7 (86.6 Ov)"
+          "score": "358/10 (116.3 Ov)"
         },
         {
           "name": "India A",
           "shortName": "INDA",
-          "score": ""
+          "score": "4/1 (0.5 Ov)"
         }
       ],
       "dateLabel": "29 Sept 2026, 09:30 am",
       "time": "",
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Day 1: Stumps",
+      "overview": "Day 2: 2nd Session - India A trail by 354 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155422",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-29T04:00:00.000Z",
@@ -17035,18 +17035,18 @@
         {
           "name": "India A Women",
           "shortName": "INDWA",
-          "score": "351/9 (99.6 Ov)"
+          "score": "364/10 (103.3 Ov)"
         },
         {
           "name": "Australia A Women",
           "shortName": "AUSWA",
-          "score": ""
+          "score": "115/3 (35.6 Ov)"
         }
       ],
       "dateLabel": "29 Sept 2026, 09:30 am",
       "time": "",
       "place": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-      "overview": "Day 1: Stumps",
+      "overview": "Day 2: 2nd Session - Australia A Women trail by 249 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155650",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-29T04:00:00.000Z",
@@ -17153,8 +17153,8 @@
       "statusLabel": "Future",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "India vs Sri Lanka, 2nd Semi-Final",
       "series": "Asian Games 2026",
       "teams": [
@@ -17174,7 +17174,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "Match starts at Oct 01, 04:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171060",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-01T04:30:00.000Z",
       "rawId": 171060
     },
@@ -32034,10 +32034,10 @@
       "id": "recent-155499",
       "status": "recent",
       "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-u19",
       "title": "Australia U19 vs India U19, 1st unofficial Test",
       "series": "Australia U19 tour of India 2026",
       "teams": [
@@ -32057,7 +32057,7 @@
       "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
       "overview": "India U19 won by an innings and 48 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155499",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
       "startTime": "2026-09-27T04:00:00.000Z",
       "rawId": 155499,
       "starPerformers": []
@@ -33942,9 +33942,9 @@
       "label": "International",
       "order": 1,
       "live": 0,
-      "recent": 28,
+      "recent": 29,
       "upcoming": 44,
-      "total": 72
+      "total": 73
     },
     {
       "id": "league",
@@ -33969,9 +33969,9 @@
       "label": "Domestic / State",
       "order": 4,
       "live": 1,
-      "recent": 1,
+      "recent": 0,
       "upcoming": 413,
-      "total": 415
+      "total": 414
     }
   ],
   "importantMatches": [
@@ -35805,8 +35805,8 @@
       "statusLabel": "Future",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "India vs Sri Lanka, 2nd Semi-Final",
       "series": "Asian Games 2026",
       "teams": [
@@ -35826,7 +35826,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "Match starts at Oct 01, 04:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171060",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-01T04:30:00.000Z",
       "rawId": 171060,
       "importance": "Knockout stage"
@@ -38084,8 +38084,8 @@
           "statusLabel": "Future",
           "level": "international",
           "levelLabel": "International",
-          "sourceType": "",
-          "sourceScope": "india-men",
+          "sourceType": "International",
+          "sourceScope": "global",
           "title": "India vs Sri Lanka, 2nd Semi-Final",
           "series": "Asian Games 2026",
           "teams": [
@@ -38105,7 +38105,7 @@
           "place": "Korogi Sports Park, Nisshin",
           "overview": "Match starts at Oct 01, 04:30 GMT",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171060",
-          "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-10-01T04:30:00.000Z",
           "rawId": 171060,
           "importance": "Knockout stage"
