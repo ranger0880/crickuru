@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-09-30T07:18:59.220Z",
-  "lastCheckedAt": "2026-09-30T07:18:59.220Z",
-  "lastSuccessfulSyncAt": "2026-09-30T07:18:59.220Z",
+  "syncedAt": "2026-09-30T13:53:09.800Z",
+  "lastCheckedAt": "2026-09-30T13:53:09.800Z",
+  "lastSuccessfulSyncAt": "2026-09-30T13:53:09.800Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,9 +41,9 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 2,
+    "live": 3,
     "recent": 59,
-    "upcoming": 482,
+    "upcoming": 481,
     "total": 543
   },
   "all": [
@@ -66,13 +66,13 @@
         {
           "name": "India A",
           "shortName": "INDA",
-          "score": "4/1 (0.5 Ov)"
+          "score": "122/5 (50.6 Ov)"
         }
       ],
       "dateLabel": "29 Sept 2026, 09:30 am",
       "time": "",
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Day 2: 2nd Session - India A trail by 354 runs",
+      "overview": "Day 2: Stumps - India A trail by 236 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155422",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-29T04:00:00.000Z",
@@ -84,30 +84,61 @@
       "statusLabel": "Live",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "domestic",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-a-women",
       "title": "India A Women vs Australia A Women, Only unofficial Test",
       "series": "Australia A Women tour of India 2026",
       "teams": [
         {
           "name": "India A Women",
           "shortName": "INDWA",
-          "score": "364/10 (103.3 Ov)"
+          "score": "364/10 (103.3 Ov) & 134/2 (27.5 Ov)"
         },
         {
           "name": "Australia A Women",
           "shortName": "AUSWA",
-          "score": "115/3 (35.6 Ov)"
+          "score": "176/10 (63.4 Ov)"
         }
       ],
       "dateLabel": "29 Sept 2026, 09:30 am",
       "time": "",
       "place": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-      "overview": "Day 2: 2nd Session - Australia A Women trail by 249 runs",
+      "overview": "Day 2: Stumps - India A Women lead by 322 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155650",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
       "startTime": "2026-09-29T04:00:00.000Z",
       "rawId": 155650
+    },
+    {
+      "id": "live-151543",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "West Indies vs India, 2nd ODI",
+      "series": "West Indies tour of India, 2026",
+      "teams": [
+        {
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": "405/7 (49.6 Ov)"
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "92 (9.5 Ov)"
+        }
+      ],
+      "dateLabel": "30 Sept 2026, 02:00 pm",
+      "time": "",
+      "place": "Barsapara Cricket Stadium, Guwahati",
+      "overview": "India need 314 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151543",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-30T08:30:00.000Z",
+      "rawId": 151543
     },
     {
       "id": "upcoming-171030",
@@ -139,37 +170,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
-    },
-    {
-      "id": "upcoming-151543",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India vs West Indies, 2nd ODI",
-      "series": "West Indies tour of India, 2026",
-      "teams": [
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": ""
-        },
-        {
-          "name": "West Indies",
-          "shortName": "WI",
-          "score": ""
-        }
-      ],
-      "dateLabel": "30 Sept 2026, 02:00 pm",
-      "time": "",
-      "place": "Barsapara Cricket Stadium, Guwahati",
-      "overview": "Match starts at Sep 30, 08:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151543",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-30T08:30:00.000Z",
-      "rawId": 151543
     },
     {
       "id": "upcoming-163077",
@@ -17009,13 +17009,13 @@
         {
           "name": "India A",
           "shortName": "INDA",
-          "score": "4/1 (0.5 Ov)"
+          "score": "122/5 (50.6 Ov)"
         }
       ],
       "dateLabel": "29 Sept 2026, 09:30 am",
       "time": "",
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Day 2: 2nd Session - India A trail by 354 runs",
+      "overview": "Day 2: Stumps - India A trail by 236 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155422",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-29T04:00:00.000Z",
@@ -17027,30 +17027,61 @@
       "statusLabel": "Live",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "domestic",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-a-women",
       "title": "India A Women vs Australia A Women, Only unofficial Test",
       "series": "Australia A Women tour of India 2026",
       "teams": [
         {
           "name": "India A Women",
           "shortName": "INDWA",
-          "score": "364/10 (103.3 Ov)"
+          "score": "364/10 (103.3 Ov) & 134/2 (27.5 Ov)"
         },
         {
           "name": "Australia A Women",
           "shortName": "AUSWA",
-          "score": "115/3 (35.6 Ov)"
+          "score": "176/10 (63.4 Ov)"
         }
       ],
       "dateLabel": "29 Sept 2026, 09:30 am",
       "time": "",
       "place": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-      "overview": "Day 2: 2nd Session - Australia A Women trail by 249 runs",
+      "overview": "Day 2: Stumps - India A Women lead by 322 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155650",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
       "startTime": "2026-09-29T04:00:00.000Z",
       "rawId": 155650
+    },
+    {
+      "id": "live-151543",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "West Indies vs India, 2nd ODI",
+      "series": "West Indies tour of India, 2026",
+      "teams": [
+        {
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": "405/7 (49.6 Ov)"
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "92 (9.5 Ov)"
+        }
+      ],
+      "dateLabel": "30 Sept 2026, 02:00 pm",
+      "time": "",
+      "place": "Barsapara Cricket Stadium, Guwahati",
+      "overview": "India need 314 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151543",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-30T08:30:00.000Z",
+      "rawId": 151543
     }
   ],
   "upcoming": [
@@ -17084,37 +17115,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
-    },
-    {
-      "id": "upcoming-151543",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India vs West Indies, 2nd ODI",
-      "series": "West Indies tour of India, 2026",
-      "teams": [
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": ""
-        },
-        {
-          "name": "West Indies",
-          "shortName": "WI",
-          "score": ""
-        }
-      ],
-      "dateLabel": "30 Sept 2026, 02:00 pm",
-      "time": "",
-      "place": "Barsapara Cricket Stadium, Guwahati",
-      "overview": "Match starts at Sep 30, 08:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151543",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-30T08:30:00.000Z",
-      "rawId": 151543
     },
     {
       "id": "upcoming-163077",
@@ -33941,9 +33941,9 @@
       "id": "international",
       "label": "International",
       "order": 1,
-      "live": 0,
+      "live": 1,
       "recent": 29,
-      "upcoming": 44,
+      "upcoming": 43,
       "total": 73
     },
     {
