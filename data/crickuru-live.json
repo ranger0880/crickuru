@@ -1,12 +1,12 @@
 {
   "schemaVersion": 3,
   "source": "CricHeroes public team and player pages",
-  "sourceStatus": "fresh",
+  "sourceStatus": "partial",
   "syncedAt": "2026-10-01T06:52:40.391Z",
-  "lastCheckedAt": "2026-10-01T06:52:40.391Z",
+  "lastCheckedAt": "2026-10-01T07:01:53.436Z",
   "lastSuccessfulSyncAt": "2026-10-01T06:52:40.391Z",
-  "playerStatsUpdatedAt": "2026-10-01T06:52:40.391Z",
-  "playerRecentMatchesUpdatedAt": "2026-10-01T06:52:40.391Z",
+  "playerStatsUpdatedAt": "2026-10-01T07:01:53.436Z",
+  "playerRecentMatchesUpdatedAt": "2026-10-01T07:01:53.436Z",
   "playerSyncCursor": 40,
   "coverage": {
     "refreshCadence": "15 minutes",
@@ -20,14 +20,14 @@
     "liveMatches": 0,
     "upcomingMatches": 1,
     "recentMatches": 42,
-    "players": 80,
+    "players": 82,
     "opponents": 30,
     "awards": 126,
     "records": 2,
-    "rosterChanges": 1,
-    "playerProfiles": 80,
-    "playerRecentMatches": 436,
-    "playerHistoryMatches": 749,
+    "rosterChanges": 4,
+    "playerProfiles": 82,
+    "playerRecentMatches": 448,
+    "playerHistoryMatches": 769,
     "playerHistoryComplete": 16,
     "sourcePages": [
       "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors",
@@ -49,7 +49,7 @@
     "isAssociationTeam": false,
     "captainId": 29139731,
     "captainName": "Ankit Kulshreshtha",
-    "totalPlayers": 80,
+    "totalPlayers": 82,
     "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors",
     "matchesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
     "membersUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/members",
@@ -72,7 +72,7 @@
     "nextMatchVenue": "M2 Cricket Ground By Daksh (Greater Noida)"
   },
   "memberSummary": {
-    "total": 80,
+    "total": 82,
     "verified": 76,
     "pro": 38,
     "captains": 1,
@@ -49389,23 +49389,7 @@
           "teamAScore": "95/8",
           "teamBScore": "99/4",
           "scorecardUrl": "https://cricheroes.com/scorecard/27291157/individual/tfs-champions-vs-kurukshetra-warriors/summary",
-          "playerId": 20571603,
-          "performance": {
-            "teamId": 8626734,
-            "teamName": "Kurukshetra Warriors",
-            "opponent": "TFS Champions",
-            "runs": 27,
-            "balls": 12,
-            "fours": 2,
-            "sixes": 2,
-            "wickets": 0,
-            "ballsBowled": 0,
-            "runsConceded": 0,
-            "catches": 0,
-            "stumpings": 0,
-            "highlight": "27 runs",
-            "scorecardUrl": "https://cricheroes.com/scorecard/27291157/tfs-champions-vs-kurukshetra-warriors/summary"
-          }
+          "playerId": 20571603
         },
         {
           "id": 27270773,
@@ -49425,23 +49409,7 @@
           "teamAScore": "74/10",
           "teamBScore": "77/6",
           "scorecardUrl": "https://cricheroes.com/scorecard/27270773/individual/tfs-champions-vs-kurukshetra-warriors/summary",
-          "playerId": 20571603,
-          "performance": {
-            "teamId": 0,
-            "teamName": "",
-            "opponent": "",
-            "runs": 0,
-            "balls": 0,
-            "fours": 0,
-            "sixes": 0,
-            "wickets": 0,
-            "ballsBowled": 0,
-            "runsConceded": 0,
-            "catches": 0,
-            "stumpings": 0,
-            "highlight": "",
-            "scorecardUrl": "https://cricheroes.com/scorecard/27270773/individual/tfs-champions-vs-kurukshetra-warriors/summary"
-          }
+          "playerId": 20571603
         },
         {
           "id": 27265806,
@@ -49461,23 +49429,7 @@
           "teamAScore": "145/8",
           "teamBScore": "146/6",
           "scorecardUrl": "https://cricheroes.com/scorecard/27265806/individual/kurukshetra-warriors-vs-tfs-champions/summary",
-          "playerId": 20571603,
-          "performance": {
-            "teamId": 0,
-            "teamName": "",
-            "opponent": "",
-            "runs": 0,
-            "balls": 0,
-            "fours": 0,
-            "sixes": 0,
-            "wickets": 0,
-            "ballsBowled": 0,
-            "runsConceded": 0,
-            "catches": 0,
-            "stumpings": 0,
-            "highlight": "150 catches",
-            "scorecardUrl": "https://cricheroes.com/scorecard/27265806/individual/kurukshetra-warriors-vs-tfs-champions/summary"
-          }
+          "playerId": 20571603
         },
         {
           "id": 27237365,
@@ -49497,23 +49449,7 @@
           "teamAScore": "131/10",
           "teamBScore": "135/5",
           "scorecardUrl": "https://cricheroes.com/scorecard/27237365/individual/cric-giant-vs-defenders-xi/summary",
-          "playerId": 20571603,
-          "performance": {
-            "teamId": 0,
-            "teamName": "",
-            "opponent": "",
-            "runs": 0,
-            "balls": 0,
-            "fours": 0,
-            "sixes": 0,
-            "wickets": 0,
-            "ballsBowled": 0,
-            "runsConceded": 0,
-            "catches": 0,
-            "stumpings": 0,
-            "highlight": "",
-            "scorecardUrl": "https://cricheroes.com/scorecard/27237365/individual/cric-giant-vs-defenders-xi/summary"
-          }
+          "playerId": 20571603
         },
         {
           "id": 27133968,
@@ -49533,23 +49469,7 @@
           "teamAScore": "235/5",
           "teamBScore": "233/10",
           "scorecardUrl": "https://cricheroes.com/scorecard/27133968/individual/deccan-chargers-vs-dadri-spartans/summary",
-          "playerId": 20571603,
-          "performance": {
-            "teamId": 0,
-            "teamName": "",
-            "opponent": "",
-            "runs": 0,
-            "balls": 0,
-            "fours": 0,
-            "sixes": 0,
-            "wickets": 0,
-            "ballsBowled": 0,
-            "runsConceded": 0,
-            "catches": 0,
-            "stumpings": 0,
-            "highlight": "",
-            "scorecardUrl": "https://cricheroes.com/scorecard/27133968/individual/deccan-chargers-vs-dadri-spartans/summary"
-          }
+          "playerId": 20571603
         },
         {
           "id": 27033347,
@@ -49569,23 +49489,7 @@
           "teamAScore": "212/8",
           "teamBScore": "112/8",
           "scorecardUrl": "https://cricheroes.com/scorecard/27033347/individual/all-stars-xi-vs-deccan-chargers/summary",
-          "playerId": 20571603,
-          "performance": {
-            "teamId": 7389538,
-            "teamName": "Deccan Chargers",
-            "opponent": "All Stars XI",
-            "runs": 24,
-            "balls": 15,
-            "fours": 0,
-            "sixes": 2,
-            "wickets": 0,
-            "ballsBowled": 0,
-            "runsConceded": 0,
-            "catches": 0,
-            "stumpings": 0,
-            "highlight": "",
-            "scorecardUrl": "https://cricheroes.com/scorecard/27033347/individual/all-stars-xi-vs-deccan-chargers/summary"
-          }
+          "playerId": 20571603
         }
       ],
       "recentHighlights": [
@@ -49683,7 +49587,9 @@
         "stumpings": 0,
         "lastMatchDate": "2026-09-25T02:28:08.000Z",
         "updatedAt": "2026-10-01T06:53:05.155Z"
-      }
+      },
+      "lastProfileSeenAt": "2026-10-01T07:01:53.436Z",
+      "profileSyncStatus": "Fresh public CricHeroes profile and matches refresh"
     },
     {
       "id": 32339035,
@@ -95252,6 +95158,1750 @@
         "lastMatchDate": "2026-09-25T02:28:08.000Z",
         "updatedAt": "2026-10-01T06:53:05.155Z"
       }
+    },
+    {
+      "id": 9888779,
+      "name": "Akash Tyagi",
+      "photo": "",
+      "skill": "",
+      "isVerified": false,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "associationTag": "",
+      "batterCategory": "",
+      "batterCategoryInfo": "",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [],
+      "profileUrl": "https://cricheroes.com/player-profile/9888779/akash-tyagi/profile",
+      "statsUrl": "https://cricheroes.com/player-profile/9888779/akash-tyagi/stats",
+      "matchesUrl": "https://cricheroes.com/player-profile/9888779/akash-tyagi/matches",
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      },
+      "overallStats": {
+        "source": "CricHeroes public player stats",
+        "sections": {
+          "batting": [
+            {
+              "title": "Matches",
+              "value": 247,
+              "isUserProperty": true
+            },
+            {
+              "title": "Innings",
+              "value": 233,
+              "isUserProperty": false
+            },
+            {
+              "title": "Not out",
+              "value": 16,
+              "isUserProperty": false
+            },
+            {
+              "title": "Runs",
+              "value": 4662,
+              "isUserProperty": true
+            },
+            {
+              "title": "Highest Runs",
+              "value": "110*",
+              "isUserProperty": false
+            },
+            {
+              "title": "Avg",
+              "value": "21.48",
+              "isUserProperty": false
+            },
+            {
+              "title": "SR",
+              "value": "131.40",
+              "isUserProperty": false
+            },
+            {
+              "title": "30s",
+              "value": 29,
+              "isUserProperty": false
+            },
+            {
+              "title": "50s",
+              "value": 23,
+              "isUserProperty": false
+            },
+            {
+              "title": "100s",
+              "value": 2,
+              "isUserProperty": false
+            },
+            {
+              "title": "4s",
+              "value": 574,
+              "isUserProperty": false
+            },
+            {
+              "title": "6s",
+              "value": 141,
+              "isUserProperty": false
+            },
+            {
+              "title": "Ducks",
+              "value": 19,
+              "isUserProperty": false
+            },
+            {
+              "title": "Won",
+              "value": 115,
+              "isUserProperty": false
+            },
+            {
+              "title": "Loss",
+              "value": 129,
+              "isUserProperty": false
+            }
+          ],
+          "bowling": [
+            {
+              "title": "Matches",
+              "value": 247,
+              "isUserProperty": true
+            },
+            {
+              "title": "Innings",
+              "value": 72,
+              "isUserProperty": false
+            },
+            {
+              "title": "Overs",
+              "value": "158.1",
+              "isUserProperty": false
+            },
+            {
+              "title": "Maidens",
+              "value": 1,
+              "isUserProperty": false
+            },
+            {
+              "title": "Wickets",
+              "value": 65,
+              "isUserProperty": true
+            },
+            {
+              "title": "Runs",
+              "value": 1420,
+              "isUserProperty": false
+            },
+            {
+              "title": "Best Bowling",
+              "value": "3/12",
+              "isUserProperty": false
+            },
+            {
+              "title": "3 Wickets",
+              "value": 4,
+              "isUserProperty": false
+            },
+            {
+              "title": "5 Wickets",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Economy",
+              "value": "8.98",
+              "isUserProperty": false
+            },
+            {
+              "title": "SR",
+              "value": "14.60",
+              "isUserProperty": false
+            },
+            {
+              "title": "Avg",
+              "value": "21.85",
+              "isUserProperty": false
+            },
+            {
+              "title": "Wides",
+              "value": 63,
+              "isUserProperty": false
+            },
+            {
+              "title": "NoBalls",
+              "value": 2,
+              "isUserProperty": false
+            },
+            {
+              "title": "Dot Balls",
+              "value": 368,
+              "isUserProperty": false
+            },
+            {
+              "title": "4s",
+              "value": 145,
+              "isUserProperty": false
+            },
+            {
+              "title": "6s",
+              "value": 55,
+              "isUserProperty": false
+            }
+          ],
+          "fielding": [
+            {
+              "title": "Matches",
+              "value": 247,
+              "isUserProperty": false
+            },
+            {
+              "title": "Catches",
+              "value": 40,
+              "isUserProperty": false
+            },
+            {
+              "title": "Caught behind",
+              "value": 33,
+              "isUserProperty": false
+            },
+            {
+              "title": "Run outs",
+              "value": 7,
+              "isUserProperty": false
+            },
+            {
+              "title": "Stumpings",
+              "value": 35,
+              "isUserProperty": false
+            },
+            {
+              "title": "Assisted Run Outs",
+              "value": 18,
+              "isUserProperty": false
+            },
+            {
+              "title": "Bye Runs (WK)",
+              "value": 52,
+              "isUserProperty": false
+            }
+          ],
+          "captain": [
+            {
+              "title": "Matches",
+              "value": 14,
+              "isUserProperty": false
+            },
+            {
+              "title": "Toss Won",
+              "value": 10,
+              "isUserProperty": false
+            },
+            {
+              "title": "Win Per",
+              "value": "50.00%",
+              "isUserProperty": false
+            },
+            {
+              "title": "Loss Per",
+              "value": "50.00%",
+              "isUserProperty": false
+            }
+          ]
+        },
+        "publicFieldCount": 43,
+        "matches": 247,
+        "battingInnings": 233,
+        "notOut": 16,
+        "runs": 4662,
+        "bestScore": 110,
+        "average": "21.48",
+        "strikeRate": "131.40",
+        "thirties": 29,
+        "fifties": 23,
+        "hundreds": 2,
+        "fours": 574,
+        "sixes": 141,
+        "ducks": 19,
+        "wins": 115,
+        "losses": 129,
+        "bowlingInnings": 72,
+        "overs": "158.1",
+        "maidens": 1,
+        "wickets": 65,
+        "runsConceded": 1420,
+        "bestWickets": 3,
+        "hatTricks": 0,
+        "bestBowling": "3/12",
+        "threeWicketHauls": 4,
+        "fiveWicketHauls": 0,
+        "economy": "8.98",
+        "bowlingStrikeRate": "14.60",
+        "bowlingAverage": "21.85",
+        "wides": 63,
+        "noBalls": 2,
+        "dotBalls": 368,
+        "fieldingMatches": 247,
+        "catches": 40,
+        "caughtBehind": 33,
+        "runOuts": 7,
+        "stumpings": 35,
+        "assistedRunOuts": 18,
+        "byeRunsWicketkeeper": 52,
+        "captainMatches": 14,
+        "tossesWon": 10,
+        "captainWinPercentage": "50.00%"
+      },
+      "stats": {
+        "source": "CricHeroes public player stats",
+        "sections": {
+          "batting": [
+            {
+              "title": "Matches",
+              "value": 247,
+              "isUserProperty": true
+            },
+            {
+              "title": "Innings",
+              "value": 233,
+              "isUserProperty": false
+            },
+            {
+              "title": "Not out",
+              "value": 16,
+              "isUserProperty": false
+            },
+            {
+              "title": "Runs",
+              "value": 4662,
+              "isUserProperty": true
+            },
+            {
+              "title": "Highest Runs",
+              "value": "110*",
+              "isUserProperty": false
+            },
+            {
+              "title": "Avg",
+              "value": "21.48",
+              "isUserProperty": false
+            },
+            {
+              "title": "SR",
+              "value": "131.40",
+              "isUserProperty": false
+            },
+            {
+              "title": "30s",
+              "value": 29,
+              "isUserProperty": false
+            },
+            {
+              "title": "50s",
+              "value": 23,
+              "isUserProperty": false
+            },
+            {
+              "title": "100s",
+              "value": 2,
+              "isUserProperty": false
+            },
+            {
+              "title": "4s",
+              "value": 574,
+              "isUserProperty": false
+            },
+            {
+              "title": "6s",
+              "value": 141,
+              "isUserProperty": false
+            },
+            {
+              "title": "Ducks",
+              "value": 19,
+              "isUserProperty": false
+            },
+            {
+              "title": "Won",
+              "value": 115,
+              "isUserProperty": false
+            },
+            {
+              "title": "Loss",
+              "value": 129,
+              "isUserProperty": false
+            }
+          ],
+          "bowling": [
+            {
+              "title": "Matches",
+              "value": 247,
+              "isUserProperty": true
+            },
+            {
+              "title": "Innings",
+              "value": 72,
+              "isUserProperty": false
+            },
+            {
+              "title": "Overs",
+              "value": "158.1",
+              "isUserProperty": false
+            },
+            {
+              "title": "Maidens",
+              "value": 1,
+              "isUserProperty": false
+            },
+            {
+              "title": "Wickets",
+              "value": 65,
+              "isUserProperty": true
+            },
+            {
+              "title": "Runs",
+              "value": 1420,
+              "isUserProperty": false
+            },
+            {
+              "title": "Best Bowling",
+              "value": "3/12",
+              "isUserProperty": false
+            },
+            {
+              "title": "3 Wickets",
+              "value": 4,
+              "isUserProperty": false
+            },
+            {
+              "title": "5 Wickets",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Economy",
+              "value": "8.98",
+              "isUserProperty": false
+            },
+            {
+              "title": "SR",
+              "value": "14.60",
+              "isUserProperty": false
+            },
+            {
+              "title": "Avg",
+              "value": "21.85",
+              "isUserProperty": false
+            },
+            {
+              "title": "Wides",
+              "value": 63,
+              "isUserProperty": false
+            },
+            {
+              "title": "NoBalls",
+              "value": 2,
+              "isUserProperty": false
+            },
+            {
+              "title": "Dot Balls",
+              "value": 368,
+              "isUserProperty": false
+            },
+            {
+              "title": "4s",
+              "value": 145,
+              "isUserProperty": false
+            },
+            {
+              "title": "6s",
+              "value": 55,
+              "isUserProperty": false
+            }
+          ],
+          "fielding": [
+            {
+              "title": "Matches",
+              "value": 247,
+              "isUserProperty": false
+            },
+            {
+              "title": "Catches",
+              "value": 40,
+              "isUserProperty": false
+            },
+            {
+              "title": "Caught behind",
+              "value": 33,
+              "isUserProperty": false
+            },
+            {
+              "title": "Run outs",
+              "value": 7,
+              "isUserProperty": false
+            },
+            {
+              "title": "Stumpings",
+              "value": 35,
+              "isUserProperty": false
+            },
+            {
+              "title": "Assisted Run Outs",
+              "value": 18,
+              "isUserProperty": false
+            },
+            {
+              "title": "Bye Runs (WK)",
+              "value": 52,
+              "isUserProperty": false
+            }
+          ],
+          "captain": [
+            {
+              "title": "Matches",
+              "value": 14,
+              "isUserProperty": false
+            },
+            {
+              "title": "Toss Won",
+              "value": 10,
+              "isUserProperty": false
+            },
+            {
+              "title": "Win Per",
+              "value": "50.00%",
+              "isUserProperty": false
+            },
+            {
+              "title": "Loss Per",
+              "value": "50.00%",
+              "isUserProperty": false
+            }
+          ]
+        },
+        "publicFieldCount": 43,
+        "matches": 247,
+        "battingInnings": 233,
+        "notOut": 16,
+        "runs": 4662,
+        "bestScore": 110,
+        "average": "21.48",
+        "strikeRate": "131.40",
+        "thirties": 29,
+        "fifties": 23,
+        "hundreds": 2,
+        "fours": 574,
+        "sixes": 141,
+        "ducks": 19,
+        "wins": 115,
+        "losses": 129,
+        "bowlingInnings": 72,
+        "overs": "158.1",
+        "maidens": 1,
+        "wickets": 65,
+        "runsConceded": 1420,
+        "bestWickets": 3,
+        "hatTricks": 0,
+        "bestBowling": "3/12",
+        "threeWicketHauls": 4,
+        "fiveWicketHauls": 0,
+        "economy": "8.98",
+        "bowlingStrikeRate": "14.60",
+        "bowlingAverage": "21.85",
+        "wides": 63,
+        "noBalls": 2,
+        "dotBalls": 368,
+        "fieldingMatches": 247,
+        "catches": 40,
+        "caughtBehind": 33,
+        "runOuts": 7,
+        "stumpings": 35,
+        "assistedRunOuts": 18,
+        "byeRunsWicketkeeper": 52,
+        "captainMatches": 14,
+        "tossesWon": 10,
+        "captainWinPercentage": "50.00%"
+      },
+      "matchHistory": [
+        {
+          "id": 27237469,
+          "date": "2026-09-27T11:51:10.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "UCG(Ultimate Cricket Ground)",
+          "city": "Greater Noida",
+          "teamAId": 8628220,
+          "teamA": "Crusaders",
+          "teamBId": 14035086,
+          "teamB": "The Invincibles",
+          "winningTeamId": 8628220,
+          "winningTeam": "Crusaders",
+          "resultText": "Crusaders won by 34 runs",
+          "teamAScore": "130/10",
+          "teamBScore": "96/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27237469/individual/crusaders-vs-the-invincibles/summary",
+          "playerId": 9888779
+        },
+        {
+          "id": 27033908,
+          "date": "2026-09-26T04:59:00.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "Noida Rising Cricketers Club (NRCC)",
+          "city": "Noida",
+          "teamAId": 8628220,
+          "teamA": "Crusaders",
+          "teamBId": 4912666,
+          "teamB": "Panthers",
+          "winningTeamId": 8628220,
+          "winningTeam": "Crusaders",
+          "resultText": "Crusaders won by 54 runs",
+          "teamAScore": "144/8",
+          "teamBScore": "90/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27033908/individual/crusaders-vs-panthers/summary",
+          "playerId": 9888779
+        },
+        {
+          "id": 27144572,
+          "date": "2026-09-19T14:59:39.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "UCG(Ultimate Cricket Ground)",
+          "city": "Greater Noida",
+          "teamAId": 4026549,
+          "teamA": "Divino Dragons",
+          "teamBId": 8628220,
+          "teamB": "Crusaders",
+          "winningTeamId": 8628220,
+          "winningTeam": "Crusaders",
+          "resultText": "Crusaders won by 8 wickets",
+          "teamAScore": "171/9",
+          "teamBScore": "174/2",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27144572/individual/divino-dragons-vs-crusaders/summary",
+          "playerId": 9888779
+        },
+        {
+          "id": 27144561,
+          "date": "2026-09-18T14:47:07.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "UCG(Ultimate Cricket Ground)",
+          "city": "Greater Noida",
+          "teamAId": 8173262,
+          "teamA": "Divino Lions",
+          "teamBId": 8628220,
+          "teamB": "Crusaders",
+          "winningTeamId": 8173262,
+          "winningTeam": "Divino Lions",
+          "resultText": "Divino Lions won by 24 runs",
+          "teamAScore": "229/5",
+          "teamBScore": "205/7",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27144561/individual/divino-lions-vs-crusaders/summary",
+          "playerId": 9888779
+        },
+        {
+          "id": 27094776,
+          "date": "2026-09-12T15:13:56.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "UCG(Ultimate Cricket Ground)",
+          "city": "Greater Noida",
+          "teamAId": 8628220,
+          "teamA": "Crusaders",
+          "teamBId": 14516382,
+          "teamB": "Divino Supergiants",
+          "winningTeamId": 14516382,
+          "winningTeam": "Divino Supergiants",
+          "resultText": "Divino Supergiants won by 7 wickets",
+          "teamAScore": "115/10",
+          "teamBScore": "117/3",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27094776/individual/crusaders-vs-divino-supergiants/summary",
+          "playerId": 9888779
+        },
+        {
+          "id": 27013481,
+          "date": "2026-09-06T12:10:27.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "UCG(Ultimate Cricket Ground)",
+          "city": "Greater Noida",
+          "teamAId": 5105691,
+          "teamA": "DIVINO STARZ",
+          "teamBId": 8628220,
+          "teamB": "Crusaders",
+          "winningTeamId": 5105691,
+          "winningTeam": "DIVINO STARZ",
+          "resultText": "DIVINO STARZ won by 58 runs",
+          "teamAScore": "153/7",
+          "teamBScore": "95/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27013481/individual/divino-starz-vs-crusaders/summary",
+          "playerId": 9888779
+        },
+        {
+          "id": 26799021,
+          "date": "2026-08-30T11:44:12.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "UCG(Ultimate Cricket Ground)",
+          "city": "Greater Noida",
+          "teamAId": 9362550,
+          "teamA": "OFF DUTY CHAMPS",
+          "teamBId": 14035086,
+          "teamB": "The Invincibles",
+          "winningTeamId": 9362550,
+          "winningTeam": "OFF DUTY CHAMPS",
+          "resultText": "OFF DUTY CHAMPS won by 22 runs",
+          "teamAScore": "161/8",
+          "teamBScore": "139/9",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26799021/individual/off-duty-champs-vs-the-invincibles/summary",
+          "playerId": 9888779
+        },
+        {
+          "id": 26853727,
+          "date": "2026-08-29T11:32:00.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "PIONEER CRICKET GROUND SEC 127 NOIDA",
+          "city": "Noida",
+          "teamAId": 9983985,
+          "teamA": "Fiery Force",
+          "teamBId": 1092455,
+          "teamB": "Mavericks-CT",
+          "winningTeamId": 1092455,
+          "winningTeam": "Mavericks-CT",
+          "resultText": "Mavericks-CT won by 7 wickets",
+          "teamAScore": "166/8",
+          "teamBScore": "170/3",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26853727/individual/fiery-force-vs-mavericks-ct/summary",
+          "playerId": 9888779
+        },
+        {
+          "id": 26824828,
+          "date": "2026-08-29T01:10:00.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "Achievers Sports Center Cricket Ground.(Greater Noida)",
+          "city": "Greater Noida",
+          "teamAId": 564058,
+          "teamA": "Cleo Spartans",
+          "teamBId": 569540,
+          "teamB": "Cleo Gladiators",
+          "winningTeamId": 564058,
+          "winningTeam": "Cleo Spartans",
+          "resultText": "Cleo Spartans won by 54 runs",
+          "teamAScore": "167/6",
+          "teamBScore": "113/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26824828/individual/cleo-spartans-vs-cleo-gladiators/summary",
+          "playerId": 9888779
+        },
+        {
+          "id": 26598535,
+          "date": "2026-08-22T11:30:20.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "UCG(Ultimate Cricket Ground)",
+          "city": "Greater Noida",
+          "teamAId": 1092455,
+          "teamA": "Mavericks-CT",
+          "teamBId": 9155041,
+          "teamB": "Vintage Warriors",
+          "winningTeamId": 1092455,
+          "winningTeam": "Mavericks-CT",
+          "resultText": "Mavericks-CT won by 2 runs",
+          "teamAScore": "103/10",
+          "teamBScore": "101/8",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26598535/individual/mavericks-ct-vs-vintage-warriors/summary",
+          "playerId": 9888779
+        }
+      ],
+      "recentMatches": [
+        {
+          "id": 27237469,
+          "date": "2026-09-27T11:51:10.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "UCG(Ultimate Cricket Ground)",
+          "city": "Greater Noida",
+          "teamAId": 8628220,
+          "teamA": "Crusaders",
+          "teamBId": 14035086,
+          "teamB": "The Invincibles",
+          "winningTeamId": 8628220,
+          "winningTeam": "Crusaders",
+          "resultText": "Crusaders won by 34 runs",
+          "teamAScore": "130/10",
+          "teamBScore": "96/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27237469/individual/crusaders-vs-the-invincibles/summary",
+          "playerId": 9888779
+        },
+        {
+          "id": 27033908,
+          "date": "2026-09-26T04:59:00.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "Noida Rising Cricketers Club (NRCC)",
+          "city": "Noida",
+          "teamAId": 8628220,
+          "teamA": "Crusaders",
+          "teamBId": 4912666,
+          "teamB": "Panthers",
+          "winningTeamId": 8628220,
+          "winningTeam": "Crusaders",
+          "resultText": "Crusaders won by 54 runs",
+          "teamAScore": "144/8",
+          "teamBScore": "90/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27033908/individual/crusaders-vs-panthers/summary",
+          "playerId": 9888779
+        },
+        {
+          "id": 27144572,
+          "date": "2026-09-19T14:59:39.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "UCG(Ultimate Cricket Ground)",
+          "city": "Greater Noida",
+          "teamAId": 4026549,
+          "teamA": "Divino Dragons",
+          "teamBId": 8628220,
+          "teamB": "Crusaders",
+          "winningTeamId": 8628220,
+          "winningTeam": "Crusaders",
+          "resultText": "Crusaders won by 8 wickets",
+          "teamAScore": "171/9",
+          "teamBScore": "174/2",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27144572/individual/divino-dragons-vs-crusaders/summary",
+          "playerId": 9888779
+        },
+        {
+          "id": 27144561,
+          "date": "2026-09-18T14:47:07.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "UCG(Ultimate Cricket Ground)",
+          "city": "Greater Noida",
+          "teamAId": 8173262,
+          "teamA": "Divino Lions",
+          "teamBId": 8628220,
+          "teamB": "Crusaders",
+          "winningTeamId": 8173262,
+          "winningTeam": "Divino Lions",
+          "resultText": "Divino Lions won by 24 runs",
+          "teamAScore": "229/5",
+          "teamBScore": "205/7",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27144561/individual/divino-lions-vs-crusaders/summary",
+          "playerId": 9888779
+        },
+        {
+          "id": 27094776,
+          "date": "2026-09-12T15:13:56.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "UCG(Ultimate Cricket Ground)",
+          "city": "Greater Noida",
+          "teamAId": 8628220,
+          "teamA": "Crusaders",
+          "teamBId": 14516382,
+          "teamB": "Divino Supergiants",
+          "winningTeamId": 14516382,
+          "winningTeam": "Divino Supergiants",
+          "resultText": "Divino Supergiants won by 7 wickets",
+          "teamAScore": "115/10",
+          "teamBScore": "117/3",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27094776/individual/crusaders-vs-divino-supergiants/summary",
+          "playerId": 9888779
+        },
+        {
+          "id": 27013481,
+          "date": "2026-09-06T12:10:27.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "UCG(Ultimate Cricket Ground)",
+          "city": "Greater Noida",
+          "teamAId": 5105691,
+          "teamA": "DIVINO STARZ",
+          "teamBId": 8628220,
+          "teamB": "Crusaders",
+          "winningTeamId": 5105691,
+          "winningTeam": "DIVINO STARZ",
+          "resultText": "DIVINO STARZ won by 58 runs",
+          "teamAScore": "153/7",
+          "teamBScore": "95/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27013481/individual/divino-starz-vs-crusaders/summary",
+          "playerId": 9888779
+        }
+      ],
+      "recentHighlights": [],
+      "historyNext": "/player/get-player-match/9888779?pageno=2&datetime=1790838114772",
+      "historyPageCount": 0,
+      "historySyncInitialized": true,
+      "historyComplete": false,
+      "profileSyncStatus": "Fresh public CricHeroes profile and matches refresh",
+      "lastProfileSeenAt": "2026-10-01T07:01:53.436Z"
+    },
+    {
+      "id": 12688117,
+      "name": "Vaibhav",
+      "photo": "",
+      "skill": "",
+      "isVerified": false,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "associationTag": "",
+      "batterCategory": "",
+      "batterCategoryInfo": "",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [],
+      "profileUrl": "https://cricheroes.com/player-profile/12688117/vaibhav/profile",
+      "statsUrl": "https://cricheroes.com/player-profile/12688117/vaibhav/stats",
+      "matchesUrl": "https://cricheroes.com/player-profile/12688117/vaibhav/matches",
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      },
+      "overallStats": {
+        "source": "CricHeroes public player stats",
+        "sections": {
+          "batting": [
+            {
+              "title": "Matches",
+              "value": 49,
+              "isUserProperty": true
+            },
+            {
+              "title": "Innings",
+              "value": 30,
+              "isUserProperty": false
+            },
+            {
+              "title": "Not out",
+              "value": 6,
+              "isUserProperty": false
+            },
+            {
+              "title": "Runs",
+              "value": 157,
+              "isUserProperty": true
+            },
+            {
+              "title": "Highest Runs",
+              "value": "33",
+              "isUserProperty": false
+            },
+            {
+              "title": "Avg",
+              "value": "6.54",
+              "isUserProperty": false
+            },
+            {
+              "title": "SR",
+              "value": "89.71",
+              "isUserProperty": false
+            },
+            {
+              "title": "30s",
+              "value": 1,
+              "isUserProperty": false
+            },
+            {
+              "title": "50s",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "100s",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "4s",
+              "value": 13,
+              "isUserProperty": false
+            },
+            {
+              "title": "6s",
+              "value": 6,
+              "isUserProperty": false
+            },
+            {
+              "title": "Ducks",
+              "value": 9,
+              "isUserProperty": false
+            },
+            {
+              "title": "Won",
+              "value": 24,
+              "isUserProperty": false
+            },
+            {
+              "title": "Loss",
+              "value": 25,
+              "isUserProperty": false
+            }
+          ],
+          "bowling": [
+            {
+              "title": "Matches",
+              "value": 49,
+              "isUserProperty": true
+            },
+            {
+              "title": "Innings",
+              "value": 45,
+              "isUserProperty": false
+            },
+            {
+              "title": "Overs",
+              "value": "134.1",
+              "isUserProperty": false
+            },
+            {
+              "title": "Maidens",
+              "value": 1,
+              "isUserProperty": false
+            },
+            {
+              "title": "Wickets",
+              "value": 51,
+              "isUserProperty": true
+            },
+            {
+              "title": "Runs",
+              "value": 1037,
+              "isUserProperty": false
+            },
+            {
+              "title": "Best Bowling",
+              "value": "5/17",
+              "isUserProperty": false
+            },
+            {
+              "title": "3 Wickets",
+              "value": 4,
+              "isUserProperty": false
+            },
+            {
+              "title": "5 Wickets",
+              "value": 2,
+              "isUserProperty": false
+            },
+            {
+              "title": "Economy",
+              "value": "7.73",
+              "isUserProperty": false
+            },
+            {
+              "title": "SR",
+              "value": "15.78",
+              "isUserProperty": false
+            },
+            {
+              "title": "Avg",
+              "value": "20.33",
+              "isUserProperty": false
+            },
+            {
+              "title": "Wides",
+              "value": 109,
+              "isUserProperty": false
+            },
+            {
+              "title": "NoBalls",
+              "value": 8,
+              "isUserProperty": false
+            },
+            {
+              "title": "Dot Balls",
+              "value": 419,
+              "isUserProperty": false
+            },
+            {
+              "title": "4s",
+              "value": 123,
+              "isUserProperty": false
+            },
+            {
+              "title": "6s",
+              "value": 17,
+              "isUserProperty": false
+            }
+          ],
+          "fielding": [
+            {
+              "title": "Matches",
+              "value": 49,
+              "isUserProperty": false
+            },
+            {
+              "title": "Catches",
+              "value": 15,
+              "isUserProperty": false
+            },
+            {
+              "title": "Caught behind",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Run outs",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Stumpings",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Assisted Run Outs",
+              "value": 3,
+              "isUserProperty": false
+            }
+          ],
+          "captain": []
+        },
+        "publicFieldCount": 38,
+        "matches": 49,
+        "battingInnings": 30,
+        "notOut": 6,
+        "runs": 157,
+        "bestScore": 33,
+        "average": "6.54",
+        "strikeRate": "89.71",
+        "thirties": 1,
+        "fifties": 0,
+        "hundreds": 0,
+        "fours": 13,
+        "sixes": 6,
+        "ducks": 9,
+        "wins": 24,
+        "losses": 25,
+        "bowlingInnings": 45,
+        "overs": "134.1",
+        "maidens": 1,
+        "wickets": 51,
+        "runsConceded": 1037,
+        "bestWickets": 5,
+        "hatTricks": 0,
+        "bestBowling": "5/17",
+        "threeWicketHauls": 4,
+        "fiveWicketHauls": 2,
+        "economy": "7.73",
+        "bowlingStrikeRate": "15.78",
+        "bowlingAverage": "20.33",
+        "wides": 109,
+        "noBalls": 8,
+        "dotBalls": 419,
+        "fieldingMatches": 49,
+        "catches": 15,
+        "caughtBehind": 0,
+        "runOuts": 0,
+        "stumpings": 0,
+        "assistedRunOuts": 3,
+        "byeRunsWicketkeeper": 0,
+        "captainMatches": 0,
+        "tossesWon": 0,
+        "captainWinPercentage": ""
+      },
+      "stats": {
+        "source": "CricHeroes public player stats",
+        "sections": {
+          "batting": [
+            {
+              "title": "Matches",
+              "value": 49,
+              "isUserProperty": true
+            },
+            {
+              "title": "Innings",
+              "value": 30,
+              "isUserProperty": false
+            },
+            {
+              "title": "Not out",
+              "value": 6,
+              "isUserProperty": false
+            },
+            {
+              "title": "Runs",
+              "value": 157,
+              "isUserProperty": true
+            },
+            {
+              "title": "Highest Runs",
+              "value": "33",
+              "isUserProperty": false
+            },
+            {
+              "title": "Avg",
+              "value": "6.54",
+              "isUserProperty": false
+            },
+            {
+              "title": "SR",
+              "value": "89.71",
+              "isUserProperty": false
+            },
+            {
+              "title": "30s",
+              "value": 1,
+              "isUserProperty": false
+            },
+            {
+              "title": "50s",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "100s",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "4s",
+              "value": 13,
+              "isUserProperty": false
+            },
+            {
+              "title": "6s",
+              "value": 6,
+              "isUserProperty": false
+            },
+            {
+              "title": "Ducks",
+              "value": 9,
+              "isUserProperty": false
+            },
+            {
+              "title": "Won",
+              "value": 24,
+              "isUserProperty": false
+            },
+            {
+              "title": "Loss",
+              "value": 25,
+              "isUserProperty": false
+            }
+          ],
+          "bowling": [
+            {
+              "title": "Matches",
+              "value": 49,
+              "isUserProperty": true
+            },
+            {
+              "title": "Innings",
+              "value": 45,
+              "isUserProperty": false
+            },
+            {
+              "title": "Overs",
+              "value": "134.1",
+              "isUserProperty": false
+            },
+            {
+              "title": "Maidens",
+              "value": 1,
+              "isUserProperty": false
+            },
+            {
+              "title": "Wickets",
+              "value": 51,
+              "isUserProperty": true
+            },
+            {
+              "title": "Runs",
+              "value": 1037,
+              "isUserProperty": false
+            },
+            {
+              "title": "Best Bowling",
+              "value": "5/17",
+              "isUserProperty": false
+            },
+            {
+              "title": "3 Wickets",
+              "value": 4,
+              "isUserProperty": false
+            },
+            {
+              "title": "5 Wickets",
+              "value": 2,
+              "isUserProperty": false
+            },
+            {
+              "title": "Economy",
+              "value": "7.73",
+              "isUserProperty": false
+            },
+            {
+              "title": "SR",
+              "value": "15.78",
+              "isUserProperty": false
+            },
+            {
+              "title": "Avg",
+              "value": "20.33",
+              "isUserProperty": false
+            },
+            {
+              "title": "Wides",
+              "value": 109,
+              "isUserProperty": false
+            },
+            {
+              "title": "NoBalls",
+              "value": 8,
+              "isUserProperty": false
+            },
+            {
+              "title": "Dot Balls",
+              "value": 419,
+              "isUserProperty": false
+            },
+            {
+              "title": "4s",
+              "value": 123,
+              "isUserProperty": false
+            },
+            {
+              "title": "6s",
+              "value": 17,
+              "isUserProperty": false
+            }
+          ],
+          "fielding": [
+            {
+              "title": "Matches",
+              "value": 49,
+              "isUserProperty": false
+            },
+            {
+              "title": "Catches",
+              "value": 15,
+              "isUserProperty": false
+            },
+            {
+              "title": "Caught behind",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Run outs",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Stumpings",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Assisted Run Outs",
+              "value": 3,
+              "isUserProperty": false
+            }
+          ],
+          "captain": []
+        },
+        "publicFieldCount": 38,
+        "matches": 49,
+        "battingInnings": 30,
+        "notOut": 6,
+        "runs": 157,
+        "bestScore": 33,
+        "average": "6.54",
+        "strikeRate": "89.71",
+        "thirties": 1,
+        "fifties": 0,
+        "hundreds": 0,
+        "fours": 13,
+        "sixes": 6,
+        "ducks": 9,
+        "wins": 24,
+        "losses": 25,
+        "bowlingInnings": 45,
+        "overs": "134.1",
+        "maidens": 1,
+        "wickets": 51,
+        "runsConceded": 1037,
+        "bestWickets": 5,
+        "hatTricks": 0,
+        "bestBowling": "5/17",
+        "threeWicketHauls": 4,
+        "fiveWicketHauls": 2,
+        "economy": "7.73",
+        "bowlingStrikeRate": "15.78",
+        "bowlingAverage": "20.33",
+        "wides": 109,
+        "noBalls": 8,
+        "dotBalls": 419,
+        "fieldingMatches": 49,
+        "catches": 15,
+        "caughtBehind": 0,
+        "runOuts": 0,
+        "stumpings": 0,
+        "assistedRunOuts": 3,
+        "byeRunsWicketkeeper": 0,
+        "captainMatches": 0,
+        "tossesWon": 0,
+        "captainWinPercentage": ""
+      },
+      "matchHistory": [
+        {
+          "id": 27237469,
+          "date": "2026-09-27T11:51:10.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "UCG(Ultimate Cricket Ground)",
+          "city": "Greater Noida",
+          "teamAId": 8628220,
+          "teamA": "Crusaders",
+          "teamBId": 14035086,
+          "teamB": "The Invincibles",
+          "winningTeamId": 8628220,
+          "winningTeam": "Crusaders",
+          "resultText": "Crusaders won by 34 runs",
+          "teamAScore": "130/10",
+          "teamBScore": "96/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27237469/individual/crusaders-vs-the-invincibles/summary",
+          "playerId": 12688117
+        },
+        {
+          "id": 27144572,
+          "date": "2026-09-19T14:59:39.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "UCG(Ultimate Cricket Ground)",
+          "city": "Greater Noida",
+          "teamAId": 4026549,
+          "teamA": "Divino Dragons",
+          "teamBId": 8628220,
+          "teamB": "Crusaders",
+          "winningTeamId": 8628220,
+          "winningTeam": "Crusaders",
+          "resultText": "Crusaders won by 8 wickets",
+          "teamAScore": "171/9",
+          "teamBScore": "174/2",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27144572/individual/divino-dragons-vs-crusaders/summary",
+          "playerId": 12688117
+        },
+        {
+          "id": 27094776,
+          "date": "2026-09-12T15:13:56.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "UCG(Ultimate Cricket Ground)",
+          "city": "Greater Noida",
+          "teamAId": 8628220,
+          "teamA": "Crusaders",
+          "teamBId": 14516382,
+          "teamB": "Divino Supergiants",
+          "winningTeamId": 14516382,
+          "winningTeam": "Divino Supergiants",
+          "resultText": "Divino Supergiants won by 7 wickets",
+          "teamAScore": "115/10",
+          "teamBScore": "117/3",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27094776/individual/crusaders-vs-divino-supergiants/summary",
+          "playerId": 12688117
+        },
+        {
+          "id": 26853727,
+          "date": "2026-08-29T11:32:00.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "PIONEER CRICKET GROUND SEC 127 NOIDA",
+          "city": "Noida",
+          "teamAId": 9983985,
+          "teamA": "Fiery Force",
+          "teamBId": 1092455,
+          "teamB": "Mavericks-CT",
+          "winningTeamId": 1092455,
+          "winningTeam": "Mavericks-CT",
+          "resultText": "Mavericks-CT won by 7 wickets",
+          "teamAScore": "166/8",
+          "teamBScore": "170/3",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26853727/individual/fiery-force-vs-mavericks-ct/summary",
+          "playerId": 12688117
+        },
+        {
+          "id": 26598535,
+          "date": "2026-08-22T11:30:20.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "UCG(Ultimate Cricket Ground)",
+          "city": "Greater Noida",
+          "teamAId": 1092455,
+          "teamA": "Mavericks-CT",
+          "teamBId": 9155041,
+          "teamB": "Vintage Warriors",
+          "winningTeamId": 1092455,
+          "winningTeam": "Mavericks-CT",
+          "resultText": "Mavericks-CT won by 2 runs",
+          "teamAScore": "103/10",
+          "teamBScore": "101/8",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26598535/individual/mavericks-ct-vs-vintage-warriors/summary",
+          "playerId": 12688117
+        },
+        {
+          "id": 26598744,
+          "date": "2026-08-15T01:51:33.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "UCG(Ultimate Cricket Ground)",
+          "city": "Greater Noida",
+          "teamAId": 8628220,
+          "teamA": "Crusaders",
+          "teamBId": 14035086,
+          "teamB": "The Invincibles",
+          "winningTeamId": 8628220,
+          "winningTeam": "Crusaders",
+          "resultText": "Crusaders won by 16 runs",
+          "teamAScore": "158/9",
+          "teamBScore": "142/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26598744/individual/crusaders-vs-the-invincibles/summary",
+          "playerId": 12688117
+        },
+        {
+          "id": 26280386,
+          "date": "2026-08-01T11:30:02.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "UCG(Ultimate Cricket Ground)",
+          "city": "Greater Noida",
+          "teamAId": 267777,
+          "teamA": "Cherry Spartans",
+          "teamBId": 1092455,
+          "teamB": "Mavericks-CT",
+          "winningTeamId": 267777,
+          "winningTeam": "Cherry Spartans",
+          "resultText": "Cherry Spartans won by 20 runs",
+          "teamAScore": "216/5",
+          "teamBScore": "196/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26280386/individual/cherry-spartans-vs-mavericks-ct/summary",
+          "playerId": 12688117
+        },
+        {
+          "id": 25875988,
+          "date": "2026-07-04T11:28:50.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "UCG(Ultimate Cricket Ground)",
+          "city": "Greater Noida",
+          "teamAId": 5190210,
+          "teamA": "Village Vortex",
+          "teamBId": 1092455,
+          "teamB": "Mavericks-CT",
+          "winningTeamId": 1092455,
+          "winningTeam": "Mavericks-CT",
+          "resultText": "Mavericks-CT won by 5 wickets",
+          "teamAScore": "159/10",
+          "teamBScore": "163/5",
+          "scorecardUrl": "https://cricheroes.com/scorecard/25875988/individual/village-vortex-vs-mavericks-ct/summary",
+          "playerId": 12688117
+        },
+        {
+          "id": 25581419,
+          "date": "2026-06-20T11:29:29.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "UCG(Ultimate Cricket Ground)",
+          "city": "Greater Noida",
+          "teamAId": 1092455,
+          "teamA": "Mavericks-CT",
+          "teamBId": 4919881,
+          "teamB": "Royal Rhinos",
+          "winningTeamId": 1092455,
+          "winningTeam": "Mavericks-CT",
+          "resultText": "Mavericks-CT won by 97 runs",
+          "teamAScore": "195/10",
+          "teamBScore": "98/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/25581419/individual/mavericks-ct-vs-royal-rhinos/summary",
+          "playerId": 12688117
+        },
+        {
+          "id": 25295389,
+          "date": "2026-06-05T15:54:59.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "New cricage 2.0",
+          "city": "Ghaziabad",
+          "teamAId": 7049976,
+          "teamA": "RCV 11",
+          "teamBId": 2386903,
+          "teamB": "Dark Horses XI",
+          "winningTeamId": 2386903,
+          "winningTeam": "Dark Horses XI",
+          "resultText": "Dark Horses XI won by 9 wickets",
+          "teamAScore": "165/8",
+          "teamBScore": "166/1",
+          "scorecardUrl": "https://cricheroes.com/scorecard/25295389/individual/rcv-11-vs-dark-horses-xi/summary",
+          "playerId": 12688117
+        }
+      ],
+      "recentMatches": [
+        {
+          "id": 27237469,
+          "date": "2026-09-27T11:51:10.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "UCG(Ultimate Cricket Ground)",
+          "city": "Greater Noida",
+          "teamAId": 8628220,
+          "teamA": "Crusaders",
+          "teamBId": 14035086,
+          "teamB": "The Invincibles",
+          "winningTeamId": 8628220,
+          "winningTeam": "Crusaders",
+          "resultText": "Crusaders won by 34 runs",
+          "teamAScore": "130/10",
+          "teamBScore": "96/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27237469/individual/crusaders-vs-the-invincibles/summary",
+          "playerId": 12688117
+        },
+        {
+          "id": 27144572,
+          "date": "2026-09-19T14:59:39.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "UCG(Ultimate Cricket Ground)",
+          "city": "Greater Noida",
+          "teamAId": 4026549,
+          "teamA": "Divino Dragons",
+          "teamBId": 8628220,
+          "teamB": "Crusaders",
+          "winningTeamId": 8628220,
+          "winningTeam": "Crusaders",
+          "resultText": "Crusaders won by 8 wickets",
+          "teamAScore": "171/9",
+          "teamBScore": "174/2",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27144572/individual/divino-dragons-vs-crusaders/summary",
+          "playerId": 12688117
+        },
+        {
+          "id": 27094776,
+          "date": "2026-09-12T15:13:56.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "UCG(Ultimate Cricket Ground)",
+          "city": "Greater Noida",
+          "teamAId": 8628220,
+          "teamA": "Crusaders",
+          "teamBId": 14516382,
+          "teamB": "Divino Supergiants",
+          "winningTeamId": 14516382,
+          "winningTeam": "Divino Supergiants",
+          "resultText": "Divino Supergiants won by 7 wickets",
+          "teamAScore": "115/10",
+          "teamBScore": "117/3",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27094776/individual/crusaders-vs-divino-supergiants/summary",
+          "playerId": 12688117
+        },
+        {
+          "id": 26853727,
+          "date": "2026-08-29T11:32:00.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "PIONEER CRICKET GROUND SEC 127 NOIDA",
+          "city": "Noida",
+          "teamAId": 9983985,
+          "teamA": "Fiery Force",
+          "teamBId": 1092455,
+          "teamB": "Mavericks-CT",
+          "winningTeamId": 1092455,
+          "winningTeam": "Mavericks-CT",
+          "resultText": "Mavericks-CT won by 7 wickets",
+          "teamAScore": "166/8",
+          "teamBScore": "170/3",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26853727/individual/fiery-force-vs-mavericks-ct/summary",
+          "playerId": 12688117
+        },
+        {
+          "id": 26598535,
+          "date": "2026-08-22T11:30:20.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "UCG(Ultimate Cricket Ground)",
+          "city": "Greater Noida",
+          "teamAId": 1092455,
+          "teamA": "Mavericks-CT",
+          "teamBId": 9155041,
+          "teamB": "Vintage Warriors",
+          "winningTeamId": 1092455,
+          "winningTeam": "Mavericks-CT",
+          "resultText": "Mavericks-CT won by 2 runs",
+          "teamAScore": "103/10",
+          "teamBScore": "101/8",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26598535/individual/mavericks-ct-vs-vintage-warriors/summary",
+          "playerId": 12688117
+        },
+        {
+          "id": 26598744,
+          "date": "2026-08-15T01:51:33.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "LEATHER",
+          "venue": "UCG(Ultimate Cricket Ground)",
+          "city": "Greater Noida",
+          "teamAId": 8628220,
+          "teamA": "Crusaders",
+          "teamBId": 14035086,
+          "teamB": "The Invincibles",
+          "winningTeamId": 8628220,
+          "winningTeam": "Crusaders",
+          "resultText": "Crusaders won by 16 runs",
+          "teamAScore": "158/9",
+          "teamBScore": "142/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26598744/individual/crusaders-vs-the-invincibles/summary",
+          "playerId": 12688117
+        }
+      ],
+      "recentHighlights": [],
+      "historyNext": "/player/get-player-match/12688117?pageno=2&datetime=1790838115685",
+      "historyPageCount": 0,
+      "historySyncInitialized": true,
+      "historyComplete": false,
+      "profileSyncStatus": "Fresh public CricHeroes profile and matches refresh",
+      "lastProfileSeenAt": "2026-10-01T07:01:53.436Z"
     }
   ],
   "opponents": [
@@ -98353,6 +100003,33 @@
     {
       "type": "added",
       "label": "Joined roster",
+      "playerId": 12688117,
+      "playerName": "Vaibhav",
+      "playerPhoto": "",
+      "profileUrl": "https://cricheroes.com/player-profile/12688117/vaibhav/profile",
+      "detectedAt": "2026-10-01T07:01:53.436Z"
+    },
+    {
+      "type": "added",
+      "label": "Joined roster",
+      "playerId": 9888779,
+      "playerName": "Akash Tyagi",
+      "playerPhoto": "",
+      "profileUrl": "https://cricheroes.com/player-profile/9888779/akash-tyagi/profile",
+      "detectedAt": "2026-10-01T07:01:53.436Z"
+    },
+    {
+      "type": "added",
+      "label": "Joined roster",
+      "playerId": 20571603,
+      "playerName": "Aman Gupta",
+      "playerPhoto": "https://media.cricheroes.in/user_profile/1742154712461_EhygI8syADBu.jpeg",
+      "profileUrl": "https://cricheroes.com/player-profile/20571603/aman-gupta/profile",
+      "detectedAt": "2026-10-01T07:01:53.436Z"
+    },
+    {
+      "type": "added",
+      "label": "Joined roster",
       "playerId": 24510976,
       "playerName": "Tanmay Sukhija",
       "playerPhoto": "https://media.cricheroes.in/user_profile/1776098380238_9uwbNhmnoQTz.jpeg",
@@ -98360,5 +100037,7 @@
       "detectedAt": "2026-08-18T10:46:52.610Z"
     }
   ],
-  "errors": []
+  "errors": [],
+  "manualRefreshAt": "2026-10-01T07:01:53.436Z",
+  "manualRefreshSource": "Supplied CricHeroes player profile links"
 }

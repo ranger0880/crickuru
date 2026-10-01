@@ -488,7 +488,7 @@ async function fetchPlayerHistoryPage(player, nextPath) {
   };
 }
 
-async function fetchPlayerProfileData(player, previousPlayer = null) {
+export async function fetchPlayerProfileData(player, previousPlayer = null) {
   let overallStats = null;
   let matchHistory = [];
   let historyNext = "";
@@ -1394,7 +1394,9 @@ async function main() {
   console.log(`Synced ${matches.length} matches, ${liveMatches.length} live, ${players.length} players, ${opponents.length} opponents.`);
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exit(1);
-});
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  main().catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
+}
