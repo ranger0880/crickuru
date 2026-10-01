@@ -4,6 +4,7 @@ import { createPortal } from "react-dom";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { applyRouteMetadata } from "./metadata.js";
 import { AMAZON_COLLECTIONS, amazonAffiliateConfigured, amazonProductUrl } from "./amazonProducts.js";
+import { trackAmazonClick, trackEvent, trackSponsorClick } from "./analytics.js";
 import QuizPage from "./QuizPage.jsx";
 import "./styles.css";
 
@@ -3472,6 +3473,14 @@ const RouterContext = React.createContext(null);
         const closeButtonRef = useRef(null);
 
         useEffect(() => {
+          trackEvent("player_profile_view", {
+            player_id: player?.id,
+            player_level: level.label,
+            player_role: player?.role || "unknown",
+          });
+        }, [player?.id, level.label, player?.role]);
+
+        useEffect(() => {
           const onKeyDown = (event) => { if (event.key === "Escape") onClose(); };
           document.addEventListener("keydown", onKeyDown);
           const previousOverflow = document.body.style.overflow;
@@ -4336,7 +4345,7 @@ const RouterContext = React.createContext(null);
                     GT Gaming makes premium gaming chairs for players, streamers, creators and anyone who spends serious time at a desk. The GT Throne combines adjustability, cushioning and a durable build in a black-and-gold finish.
                   </p>
                   <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                    <a href="https://www.gtgaming.shop/" target="_blank" rel="sponsored noopener noreferrer" className="shine-button inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-gold px-6 text-sm font-black uppercase tracking-[0.16em] text-night">
+                    <a href="https://www.gtgaming.shop/" target="_blank" rel="sponsored noopener noreferrer" onClick={() => trackSponsorClick("gt_gaming_page_primary")} className="shine-button inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-gold px-6 text-sm font-black uppercase tracking-[0.16em] text-night">
                       Visit GT Gaming <Icon.ExternalLink size={16} />
                     </a>
                     <Link to="/warriors" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/15 bg-white/7 px-6 text-sm font-black uppercase tracking-[0.16em] text-white/78 transition hover:border-gold/55 hover:text-gold">
@@ -4408,7 +4417,7 @@ const RouterContext = React.createContext(null);
 
               <div className="mt-16 flex flex-col items-start justify-between gap-5 border-t border-gold/20 pt-7 sm:flex-row sm:items-center">
                 <p className="max-w-xl text-sm leading-7 text-white/55">For current availability, dimensions, pricing and delivery details, use the official GT Gaming store.</p>
-                <a href="https://www.gtgaming.shop/" target="_blank" rel="sponsored noopener noreferrer" className="inline-flex min-h-11 items-center gap-2 rounded-full border border-gold/35 px-5 text-sm font-black uppercase tracking-[0.14em] text-gold transition hover:border-gold hover:bg-gold/10">Explore the range <Icon.ExternalLink size={15} /></a>
+                <a href="https://www.gtgaming.shop/" target="_blank" rel="sponsored noopener noreferrer" onClick={() => trackSponsorClick("gt_gaming_page_footer")} className="inline-flex min-h-11 items-center gap-2 rounded-full border border-gold/35 px-5 text-sm font-black uppercase tracking-[0.14em] text-gold transition hover:border-gold hover:bg-gold/10">Explore the range <Icon.ExternalLink size={15} /></a>
               </div>
             </section>
           </main>
@@ -4442,7 +4451,7 @@ const RouterContext = React.createContext(null);
                     <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-gold/35 bg-gold/10 text-gold"><Icon.ShoppingBag size={20} /></span>
                     <div>
                       <p className="text-xs font-black uppercase tracking-[0.2em] text-gold">Buying note</p>
-                      <p className="mt-2 text-sm leading-7 text-white/62">Snapshot prices checked on 27 Sep 2026. Amazon prices, sizes, stock and delivery can change, so confirm the live product page before buying.</p>
+                      <p className="mt-2 text-sm leading-7 text-white/62">Prices, sizes, stock and delivery are shown on the live Amazon listing. Check the product page before buying.</p>
                     </div>
                   </div>
                 </div>
@@ -4497,6 +4506,7 @@ const RouterContext = React.createContext(null);
                           href={`https://www.amazon.in/s?k=${encodeURIComponent(collection.search || collection.label)}`}
                           target="_blank"
                           rel="sponsored nofollow noopener noreferrer"
+                          onClick={() => trackAmazonClick({ category: collection.id, placement: "shop_category", linkType: "category" })}
                           className={`inline-flex min-h-11 shrink-0 items-center justify-center gap-2 rounded-full border px-5 text-xs font-black uppercase tracking-[0.14em] transition ${cyan ? "border-cyan/35 text-cyan hover:border-cyan hover:bg-cyan/10" : "border-gold/35 text-gold hover:border-gold hover:bg-gold/10"}`}
                         >
                           Browse all on Amazon <Icon.ExternalLink size={15} />
@@ -4505,7 +4515,7 @@ const RouterContext = React.createContext(null);
                       <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-2 sm:gap-5 xl:grid-cols-3">
                         {collection.products.map((product, index) => (
                           <article key={product.asin} className={`interactive-card shop-neon-card flex min-w-0 flex-col overflow-hidden rounded-[8px] border border-white/12 bg-white/[0.045] ${cyan ? "" : "shop-neon-gold"}`}>
-                            <a href={amazonProductUrl(product.asin)} target="_blank" rel="sponsored nofollow noopener noreferrer" className="group block">
+                            <a href={amazonProductUrl(product.asin)} target="_blank" rel="sponsored nofollow noopener noreferrer" onClick={() => trackAmazonClick({ asin: product.asin, category: collection.id, placement: "shop_product_image" })} className="group block">
                               <div className="relative grid aspect-square place-items-center overflow-hidden bg-white p-2 sm:p-5">
                                 <ShopProductImage product={product} eager={index < 3} />
                                 <span className={`absolute left-2 top-2 max-w-[calc(100%-1rem)] truncate rounded-full px-2 py-1 text-[0.46rem] font-black uppercase tracking-[0.1em] ${cyan ? "bg-cyan/90 text-night" : "bg-gold text-night"}`}>{collection.label}</span>
@@ -4516,11 +4526,11 @@ const RouterContext = React.createContext(null);
                               <h3 className="mt-2 line-clamp-2 text-sm font-black leading-5 text-white sm:mt-3 sm:text-lg sm:leading-6">{product.title}</h3>
                               <p className="mt-2 line-clamp-2 flex-1 text-[0.68rem] leading-5 text-white/58 sm:mt-3 sm:text-sm sm:leading-6">{product.fit}</p>
                               <div className="mt-3 flex flex-col items-start gap-2 sm:mt-5 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
-                                <p className={`text-lg font-black tracking-tight sm:text-2xl ${cyan ? "text-cyan" : "text-gold"}`}>
-                                  {product.price}
-                                  <span className="ml-1 align-middle text-[0.46rem] font-bold uppercase tracking-[0.1em] text-white/35 sm:ml-2 sm:text-[0.58rem] sm:tracking-[0.14em]">snapshot</span>
+                                <p className={`text-sm font-black uppercase tracking-[0.08em] sm:text-base ${cyan ? "text-cyan" : "text-gold"}`}>
+                                  Check live price
+                                  <span className="ml-1 align-middle text-[0.46rem] font-bold tracking-[0.1em] text-white/35 sm:ml-2 sm:text-[0.58rem]">on Amazon</span>
                                 </p>
-                                <a href={amazonProductUrl(product.asin)} target="_blank" rel="sponsored nofollow noopener noreferrer" title={`View ${product.title} on Amazon`} className={`inline-flex min-h-9 w-full items-center justify-center gap-1 rounded-full border px-2 text-[0.58rem] font-black uppercase tracking-[0.08em] transition sm:min-h-11 sm:w-auto sm:gap-2 sm:px-4 sm:text-xs sm:tracking-[0.12em] ${cyan ? "border-cyan/30 text-cyan hover:border-cyan hover:bg-cyan/10" : "border-gold/30 text-gold hover:border-gold hover:bg-gold/10"}`}>
+                                <a href={amazonProductUrl(product.asin)} target="_blank" rel="sponsored nofollow noopener noreferrer" onClick={() => trackAmazonClick({ asin: product.asin, category: collection.id, placement: "shop_product_button" })} title={`View ${product.title} on Amazon`} className={`inline-flex min-h-9 w-full items-center justify-center gap-1 rounded-full border px-2 text-[0.58rem] font-black uppercase tracking-[0.08em] transition sm:min-h-11 sm:w-auto sm:gap-2 sm:px-4 sm:text-xs sm:tracking-[0.12em] ${cyan ? "border-cyan/30 text-cyan hover:border-cyan hover:bg-cyan/10" : "border-gold/30 text-gold hover:border-gold hover:bg-gold/10"}`}>
                                   View <span className="hidden sm:inline">on Amazon</span> <Icon.ExternalLink size={12} />
                                 </a>
                               </div>
@@ -4536,7 +4546,7 @@ const RouterContext = React.createContext(null);
               <section className="mt-16 grid gap-5 border-t border-white/10 pt-8 md:grid-cols-2" aria-label="Affiliate disclosure">
                 <div className="rounded-[8px] border border-white/10 bg-white/[0.035] p-5">
                   <p className="text-xs font-black uppercase tracking-[0.22em] text-gold">Affiliate disclosure</p>
-                  <p className="mt-3 text-sm leading-7 text-white/58">Some links on this page may earn CricKuru a commission at no extra cost to you. Product details, prices and availability are controlled by Amazon.</p>
+                  <p className="mt-3 text-sm leading-7 text-white/58">As an Amazon Associate, CricKuru earns from qualifying purchases. Product details, prices, sizes, stock and delivery are controlled by Amazon and may change on the live listing.</p>
                 </div>
                 <div className="rounded-[8px] border border-white/10 bg-white/[0.035] p-5">
                   <p className="text-xs font-black uppercase tracking-[0.22em] text-cyan">Tracking status</p>
@@ -4651,6 +4661,7 @@ const RouterContext = React.createContext(null);
                   href="https://www.gtgaming.shop/"
                   target="_blank"
                   rel="sponsored noopener noreferrer"
+                  onClick={() => trackSponsorClick("site_footer_sponsor")}
                   className="inline-flex min-h-11 items-center gap-2 rounded-full border border-gold/30 bg-gold/8 px-4 text-sm font-bold text-gold transition hover:border-gold hover:bg-gold/15"
                 >
                   GT Gaming sponsor <Icon.ExternalLink size={15} />
@@ -4819,7 +4830,7 @@ const RouterContext = React.createContext(null);
         return (
           <section className="relative z-[80] mt-[8.5rem] border-b border-gold/15 bg-[#11100d] px-4 py-3 text-white shadow-[0_10px_32px_rgba(0,0,0,0.22)] sm:px-6" aria-label="CricKuru sponsor">
             <div className="mx-auto flex max-w-7xl items-center justify-between gap-3">
-              <a href="https://www.gtgaming.shop/" target="_blank" rel="sponsored noopener noreferrer" className="flex min-w-0 items-center gap-3 transition hover:opacity-85">
+              <a href="https://www.gtgaming.shop/" target="_blank" rel="sponsored noopener noreferrer" onClick={() => trackSponsorClick("site_sponsor_banner")} className="flex min-w-0 items-center gap-3 transition hover:opacity-85">
                 <span className="grid h-9 w-14 shrink-0 place-items-center overflow-hidden rounded-[6px] border border-gold/25 bg-white/5">
                   <img src={GT_GAMING_CHAIR_IMAGE} alt="GT Throne gaming chair" loading="lazy" referrerPolicy="no-referrer" className="h-full w-full object-contain" />
                 </span>
@@ -4828,7 +4839,7 @@ const RouterContext = React.createContext(null);
                   <span className="block truncate text-xs font-bold text-white/75 sm:text-sm">GT Gaming • The GT Throne</span>
                 </span>
               </a>
-              <a href="https://www.gtgaming.shop/" target="_blank" rel="sponsored noopener noreferrer" className="shrink-0 rounded-full border border-gold/30 px-3 py-1.5 text-[0.58rem] font-black uppercase tracking-[0.14em] text-gold transition hover:border-gold hover:bg-gold/10" title="Visit GT Gaming">View sponsor</a>
+              <a href="https://www.gtgaming.shop/" target="_blank" rel="sponsored noopener noreferrer" onClick={() => trackSponsorClick("site_sponsor_banner_button")} className="shrink-0 rounded-full border border-gold/30 px-3 py-1.5 text-[0.58rem] font-black uppercase tracking-[0.14em] text-gold transition hover:border-gold hover:bg-gold/10" title="Visit GT Gaming">View sponsor</a>
             </div>
           </section>
         );

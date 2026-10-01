@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { trackEvent } from "./analytics.js";
 
 const PROFILE_KEY = "crickuru-quiz-profile-v1";
 const PROFILE_LOCK_KEY = "crickuru-quiz-profile-lock-v1";
@@ -148,6 +149,7 @@ function QuizPage() {
       setAuthState({ status: "error", message: "Use an international WhatsApp number, for example +919876543210." });
       return;
     }
+    trackEvent("whatsapp_click", { placement: "quiz_connect", action: "request_otp" });
     setAuthState({ status: "loading", message: "Requesting a WhatsApp verification code..." });
     try {
       const payload = await authRequest("/auth/whatsapp/start", {
@@ -166,6 +168,7 @@ function QuizPage() {
   async function verifyWhatsAppLogin(event) {
     event.preventDefault();
     if (!/^\d{6}$/.test(whatsappOtp) || !whatsappChallenge) return;
+    trackEvent("whatsapp_click", { placement: "quiz_connect", action: "verify_otp" });
     setAuthState({ status: "loading", message: "Confirming WhatsApp verification..." });
     try {
       const payload = await authRequest("/auth/whatsapp/verify", {
