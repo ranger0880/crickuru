@@ -56,6 +56,19 @@ The optional assistant API lives in `bot/`. It reads the scheduled `data/crickur
 
 Deploy it on Render with the included `render.yaml`, or use root directory `bot` and start command `node server.js`. Set `CORS_ORIGINS` to the production site origins, then set `VITE_BOT_API_URL` in the site build environment and rebuild. WhatsApp group automation is intentionally not bundled: use an approved WhatsApp Business provider and keep its credentials/session outside GitHub; Render's default filesystem is ephemeral.
 
+## Verified player chat
+
+The player chat widget uses the same bot service as a small social API. Google sign-in is mandatory before a player can send messages, add friends, or create groups. The service verifies Google ID tokens server-side, assigns each account a stable `KW-XXXXXXXX` friend code, stores accepted friend relationships, and refreshes conversations every few seconds. Categories currently include General, Team, Matchday and Training.
+
+Set these Render environment variables on the bot service:
+
+- `GOOGLE_CLIENT_ID`: the same Google web client ID used by `VITE_GOOGLE_CLIENT_ID`.
+- `SESSION_SECRET`: a long random value used to sign secure HTTP-only sessions.
+- `CORS_ORIGINS`: `https://crickuru.com,https://www.crickuru.com`.
+- `SOCIAL_STORE_FILE`: the storage path for the social JSON store. Render's default filesystem is ephemeral, so use a persistent disk or move this store to a managed database before scaling beyond a small team community.
+
+Set `VITE_BOT_API_URL` (or `VITE_SOCIAL_API_URL`) in GitHub Actions to the Render service URL. Add the production domain and local development origins to the Google OAuth client's authorised JavaScript origins.
+
 ## Files
 
 - `src/` - React app source

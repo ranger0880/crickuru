@@ -8,3 +8,9 @@ services:
     envVars:
       - key: CORS_ORIGINS
         value: https://crickuru.com,https://www.crickuru.com
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: SESSION_SECRET
+        sync: false
+      - key: SOCIAL_STORE_FILE
+        value: /tmp/crickuru-social.json

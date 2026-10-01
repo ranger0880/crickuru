@@ -507,7 +507,22 @@ const RouterContext = React.createContext(null);
 
       const CRICHEROES_STATS_SOURCE = "CricHeroes public player stats";
       const BOT_API_URL = String(import.meta.env.VITE_BOT_API_URL || "").replace(/\/+$/, "");
+      const SOCIAL_API_URL = String(import.meta.env.VITE_SOCIAL_API_URL || import.meta.env.VITE_BOT_API_URL || "").replace(/\/+$/, "");
+      const GOOGLE_CLIENT_ID = String(import.meta.env.VITE_GOOGLE_CLIENT_ID || "");
       const GT_GAMING_CHAIR_IMAGE = "https://gtgaming.shop/wp-content/uploads/2026/07/Adobe-Express-file.png";
+
+      async function socialRequest(path, options = {}) {
+        if (!SOCIAL_API_URL) throw new Error("Player chat is not connected yet. Set VITE_BOT_API_URL and rebuild the site.");
+        const response = await fetch(`${SOCIAL_API_URL}${path}`, {
+          credentials: "include",
+          headers: { Accept: "application/json", ...(options.body ? { "Content-Type": "application/json" } : {}) },
+          ...options,
+        });
+        let payload = null;
+        try { payload = await response.json(); } catch { payload = null; }
+        if (!response.ok) throw new Error(payload?.error || "Player chat request failed.");
+        return payload;
+      }
 
       function hasPlayerStats(stats) {
         if (!stats || typeof stats !== "object") return false;
@@ -4911,6 +4926,191 @@ const RouterContext = React.createContext(null);
         );
       }
 
+      function VerifiedPlayerChat() {
+        const [open, setOpen] = useState(false);
+        const [user, setUser] = useState(null);
+        const [authState, setAuthState] = useState({ status: "idle", message: "" });
+        const [summary, setSummary] = useState({ friends: [], incomingRequests: [], conversations: [] });
+        const [selectedId, setSelectedId] = useState("");
+        const [messages, setMessages] = useState([]);
+        const [section, setSection] = useState("chats");
+        const [category, setCategory] = useState("all");
+        const [draft, setDraft] = useState("");
+        const [friendCode, setFriendCode] = useState("");
+        const [notice, setNotice] = useState("");
+        const [groupOpen, setGroupOpen] = useState(false);
+        const [groupName, setGroupName] = useState("");
+        const [groupCategory, setGroupCategory] = useState("team");
+        const [groupMembers, setGroupMembers] = useState([]);
+        const messagesRef = useRef(null);
+
+        const loadSummary = useCallback(async () => {
+          const payload = await socialRequest("/api/social/summary");
+          setSummary(payload);
+          if (payload.user) setUser(payload.user);
+          setSelectedId((current) => current || payload.conversations?.[0]?.id || "");
+        }, []);
+
+        useEffect(() => {
+          if (!open || !SOCIAL_API_URL) return undefined;
+          let active = true;
+          setAuthState({ status: "loading", message: "Checking Google sign-in..." });
+          socialRequest("/api/auth/session").then((payload) => {
+            if (!active) return;
+            if (payload.user) {
+              setUser(payload.user);
+              setAuthState({ status: "connected", message: "Google account connected." });
+            } else setAuthState({ status: "signed-out", message: "Sign in with Google to enter player chat." });
+          }).catch((error) => active && setAuthState({ status: "error", message: error.message }));
+          return () => { active = false; };
+        }, [open]);
+
+        useEffect(() => {
+          if (!user) return undefined;
+          let active = true;
+          const refresh = () => loadSummary().catch((error) => active && setNotice(error.message));
+          refresh();
+          const interval = window.setInterval(refresh, 12_000);
+          return () => { active = false; window.clearInterval(interval); };
+        }, [user?.id, loadSummary]);
+
+        useEffect(() => {
+          if (!user || !selectedId) {
+            setMessages([]);
+            return undefined;
+          }
+          let active = true;
+          const refreshMessages = async () => {
+            try {
+              const payload = await socialRequest(`/api/social/conversations/${selectedId}/messages`);
+              if (active) setMessages(payload.messages || []);
+            } catch (error) { if (active) setNotice(error.message); }
+          };
+          refreshMessages();
+          const interval = window.setInterval(refreshMessages, 3500);
+          return () => { active = false; window.clearInterval(interval); };
+        }, [user?.id, selectedId]);
+
+        useEffect(() => {
+          if (open && messagesRef.current) messagesRef.current.scrollTop = messagesRef.current.scrollHeight;
+        }, [open, messages]);
+
+        async function handleGoogleCredential(credentialResponse) {
+          setAuthState({ status: "loading", message: "Verifying Google account..." });
+          try {
+            const payload = await socialRequest("/api/auth/google", { method: "POST", body: JSON.stringify({ credential: credentialResponse.credential }) });
+            setUser(payload.user);
+            setAuthState({ status: "connected", message: "Google account connected." });
+          } catch (error) { setAuthState({ status: "error", message: error.message }); }
+        }
+
+        async function sendMessage(event) {
+          event.preventDefault();
+          const text = draft.replace(/[\u0000-\u001F\u007F]/g, " ").replace(/\s+/g, " ").trim().slice(0, 1000);
+          if (!text || !selectedId) return;
+          try {
+            const payload = await socialRequest(`/api/social/conversations/${selectedId}/messages`, { method: "POST", body: JSON.stringify({ text }) });
+            setMessages((current) => [...current, payload.message]);
+            setDraft("");
+          } catch (error) { setNotice(error.message); }
+        }
+
+        async function addFriend(event) {
+          event.preventDefault();
+          if (!friendCode.trim()) return;
+          try {
+            await socialRequest("/api/social/friends/request", { method: "POST", body: JSON.stringify({ friendCode }) });
+            setFriendCode("");
+            setNotice("Friend request sent.");
+          } catch (error) { setNotice(error.message); }
+        }
+
+        async function respondToFriend(requestId, action) {
+          try {
+            await socialRequest("/api/social/friends/respond", { method: "POST", body: JSON.stringify({ requestId, action }) });
+            await loadSummary();
+            setNotice(action === "accept" ? "Friend added." : "Request declined.");
+          } catch (error) { setNotice(error.message); }
+        }
+
+        async function openDirect(friend) {
+          try {
+            const payload = await socialRequest("/api/social/conversations", { method: "POST", body: JSON.stringify({ type: "direct", friendId: friend.id, category: "general" }) });
+            setSelectedId(payload.conversation.id);
+            await loadSummary();
+            setSection("chats");
+          } catch (error) { setNotice(error.message); }
+        }
+
+        async function createGroup(event) {
+          event.preventDefault();
+          if (!groupName.trim() || !groupMembers.length) return;
+          try {
+            const payload = await socialRequest("/api/social/conversations", { method: "POST", body: JSON.stringify({ type: "group", name: groupName, category: groupCategory, memberIds: groupMembers }) });
+            setSelectedId(payload.conversation.id);
+            setGroupOpen(false);
+            setGroupName("");
+            setGroupMembers([]);
+            await loadSummary();
+            setSection("chats");
+          } catch (error) { setNotice(error.message); }
+        }
+
+        return (
+          <aside className={`fixed bottom-24 right-4 z-[65] w-[min(25rem,calc(100vw-2rem))] sm:right-6 ${open ? "" : "w-auto"}`} aria-label="Verified Warriors player chat">
+            {open ? (
+              <div className="overflow-hidden rounded-[10px] border border-cyan/30 bg-night/95 shadow-[0_18px_70px_rgba(0,0,0,0.42)] backdrop-blur-xl">
+                <div className="flex items-center justify-between gap-3 border-b border-white/10 px-4 py-3">
+                  <div className="flex items-center gap-2"><span className="grid h-9 w-9 place-items-center rounded-full border border-cyan/35 bg-cyan/10 text-cyan"><Icon.MessageCircle size={17} /></span><div><p className="text-[0.62rem] font-black uppercase tracking-[0.2em] text-cyan">Warrior chat</p><p className="text-xs font-bold text-white/48">Google-verified players</p></div></div>
+                  <button type="button" onClick={() => setOpen(false)} title="Close chat" aria-label="Close chat" className="grid h-9 w-9 place-items-center rounded-full border border-white/12 text-white/60 transition hover:border-cyan/50 hover:text-cyan"><Icon.X size={16} /></button>
+                </div>
+                {!user ? (
+                  <div className="space-y-4 p-4"><div className="rounded-[8px] border border-cyan/20 bg-cyan/[0.06] p-4"><p className="text-sm font-black text-white">Sign in to join player chat</p><p className="mt-2 text-xs leading-5 text-white/55">Google sign-in is required so every message, friend request and group member has a verified identity.</p></div><ChatGoogleSignInButton clientId={GOOGLE_CLIENT_ID} disabled={!SOCIAL_API_URL || !GOOGLE_CLIENT_ID} onCredential={handleGoogleCredential} /><p className={`text-xs font-bold ${authState.status === "error" ? "text-crimson" : "text-white/45"}`}>{authState.message || (!SOCIAL_API_URL ? "Chat service is not connected yet." : !GOOGLE_CLIENT_ID ? "Google sign-in setup is required." : "Choose Google to continue.")}</p></div>
+                ) : (
+                  <>
+                    <div className="border-b border-white/10 px-3 py-2"><div className="flex items-center justify-between gap-2"><div className="flex min-w-0 items-center gap-2"><LiveAvatar src={user.avatar} name={user.name} /><div className="min-w-0"><p className="truncate text-xs font-black text-white">{user.name}</p><p className="truncate text-[0.58rem] font-bold uppercase tracking-[0.1em] text-cyan">Code: {user.friendCode}</p></div></div><button type="button" onClick={() => navigator.clipboard?.writeText(user.friendCode)} className="shrink-0 rounded-full border border-white/12 px-2 py-1 text-[0.55rem] font-black uppercase tracking-[0.1em] text-white/55 hover:border-cyan/50 hover:text-cyan">Copy</button></div><div className="mt-3 grid grid-cols-3 gap-1 rounded-[7px] bg-white/[0.04] p-1" role="tablist" aria-label="Player chat sections">{[["chats", "Chats"], ["friends", "Friends"], ["requests", "Requests"]].map(([key, label]) => <button key={key} type="button" onClick={() => setSection(key)} className={`rounded-[5px] px-2 py-1.5 text-[0.58rem] font-black uppercase tracking-[0.1em] ${section === key ? "bg-cyan text-night" : "text-white/48 hover:text-white"}`}>{label}{key === "requests" && summary.incomingRequests?.length ? ` ${summary.incomingRequests.length}` : ""}</button>)}</div></div>
+                    {notice && <button type="button" onClick={() => setNotice("")} className="w-full border-b border-gold/20 bg-gold/10 px-3 py-2 text-left text-xs font-bold text-gold">{notice}</button>}
+                    {section === "chats" && <><div className="flex items-center gap-1 overflow-x-auto border-b border-white/10 px-3 py-2">{[["all", "All"], ["general", "General"], ["team", "Team"], ["matchday", "Matchday"], ["training", "Training"]].map(([key, label]) => <button key={key} type="button" onClick={() => setCategory(key)} className={`shrink-0 rounded-full border px-2 py-1 text-[0.55rem] font-black uppercase tracking-[0.08em] ${category === key ? "border-gold/60 bg-gold/10 text-gold" : "border-white/10 text-white/45"}`}>{label}</button>)}<button type="button" onClick={() => setGroupOpen((current) => !current)} className="ml-auto shrink-0 rounded-full border border-cyan/35 px-2 py-1 text-[0.55rem] font-black uppercase tracking-[0.08em] text-cyan">+ Group</button></div>{groupOpen && <form onSubmit={createGroup} className="space-y-2 border-b border-white/10 bg-white/[0.03] p-3"><input value={groupName} onChange={(event) => setGroupName(event.target.value)} placeholder="Group name" maxLength={60} className="min-h-9 w-full rounded-[6px] border border-white/12 bg-white/[0.06] px-3 text-xs text-white outline-none focus:border-cyan/60" /><select value={groupCategory} onChange={(event) => setGroupCategory(event.target.value)} className="min-h-9 w-full rounded-[6px] border border-white/12 bg-night px-3 text-xs text-white"><option value="team">Team</option><option value="matchday">Matchday</option><option value="training">Training</option><option value="general">General</option></select><div className="max-h-24 space-y-1 overflow-y-auto">{summary.friends?.map((friend) => <label key={friend.id} className="flex items-center gap-2 text-xs text-white/70"><input type="checkbox" checked={groupMembers.includes(friend.id)} onChange={() => setGroupMembers((current) => current.includes(friend.id) ? current.filter((id) => id !== friend.id) : [...current, friend.id])} />{friend.name}</label>)}</div><button type="submit" disabled={!groupName.trim() || !groupMembers.length} className="min-h-9 w-full rounded-[6px] bg-cyan text-xs font-black uppercase tracking-[0.1em] text-night disabled:opacity-40">Create group</button></form>}<div className="grid max-h-44 gap-1 overflow-y-auto p-3">{summary.conversations?.filter((conversation) => category === "all" || conversation.category === category).map((conversation) => <button key={conversation.id} type="button" onClick={() => setSelectedId(conversation.id)} className={`flex items-center justify-between gap-2 rounded-[7px] border px-3 py-2 text-left ${selectedId === conversation.id ? "border-cyan/50 bg-cyan/10" : "border-white/8 bg-white/[0.03]"}`}><span className="min-w-0"><span className="block truncate text-xs font-black text-white">{conversation.name}</span><span className="block truncate text-[0.58rem] text-white/42">{conversation.lastMessage?.text || `${conversation.members?.length || 0} members`}</span></span><span className="shrink-0 text-[0.52rem] font-black uppercase text-gold">{conversation.category}</span></button>)}{!summary.conversations?.length && <p className="py-4 text-center text-xs font-bold text-white/42">Add a friend to start a chat.</p>}</div></>}
+                    {section === "friends" && <div className="max-h-64 space-y-2 overflow-y-auto p-3"><form onSubmit={addFriend} className="flex gap-2"><input value={friendCode} onChange={(event) => setFriendCode(event.target.value)} placeholder="Friend code KW-..." className="min-h-10 min-w-0 flex-1 rounded-[6px] border border-white/12 bg-white/[0.06] px-3 text-xs text-white outline-none focus:border-cyan/60" /><button type="submit" className="rounded-[6px] bg-cyan px-3 text-[0.58rem] font-black uppercase text-night">Add</button></form>{summary.friends?.map((friend) => <div key={friend.id} className="flex items-center gap-2 rounded-[7px] border border-white/8 bg-white/[0.03] p-2"><LiveAvatar src={friend.avatar} name={friend.name} /><span className="min-w-0 flex-1 truncate text-xs font-black text-white">{friend.name}</span><button type="button" onClick={() => openDirect(friend)} className="rounded-full border border-cyan/30 px-2 py-1 text-[0.55rem] font-black uppercase text-cyan">Chat</button></div>)}</div>}
+                    {section === "requests" && <div className="max-h-64 space-y-2 overflow-y-auto p-3">{summary.incomingRequests?.map((request) => <div key={request.id} className="rounded-[7px] border border-white/8 bg-white/[0.03] p-3"><p className="text-xs font-black text-white">{request.from?.name || "Player"}</p><div className="mt-2 flex gap-2"><button type="button" onClick={() => respondToFriend(request.id, "accept")} className="rounded-full bg-cyan px-3 py-1 text-[0.55rem] font-black uppercase text-night">Accept</button><button type="button" onClick={() => respondToFriend(request.id, "decline")} className="rounded-full border border-white/12 px-3 py-1 text-[0.55rem] font-black uppercase text-white/55">Decline</button></div></div>)}{!summary.incomingRequests?.length && <p className="py-4 text-center text-xs font-bold text-white/42">No new friend requests.</p>}</div>}
+                    {section === "chats" && selectedId && <><div ref={messagesRef} className="max-h-[min(18rem,35vh)] min-h-28 space-y-3 overflow-y-auto border-t border-white/10 p-3" aria-live="polite">{messages.length ? messages.map((message) => <article key={message.id} className={`flex items-start gap-2 ${message.senderId === user.id ? "flex-row-reverse" : ""}`}><LiveAvatar src={message.senderAvatar} name={message.senderName} /><div className={`min-w-0 rounded-[8px] border px-3 py-2 ${message.senderId === user.id ? "border-cyan/25 bg-cyan/10" : "border-white/10 bg-white/[0.05]"}`}><p className="text-[0.58rem] font-black text-white/55">{message.senderName}</p><p className="mt-1 break-words text-sm leading-5 text-white/78">{message.text}</p></div></article>) : <p className="py-8 text-center text-xs font-bold uppercase tracking-[0.12em] text-white/42">Start the conversation</p>}</div><form onSubmit={sendMessage} className="flex items-center gap-2 border-t border-white/10 p-3"><input value={draft} onChange={(event) => setDraft(event.target.value)} maxLength={1000} aria-label="Chat message" placeholder="Message verified players" className="min-h-11 min-w-0 flex-1 rounded-full border border-white/12 bg-white/[0.06] px-4 text-sm text-white outline-none placeholder:text-white/35 focus:border-cyan/60" /><button type="submit" disabled={!selectedId} title="Send message" aria-label="Send message" className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-cyan text-night transition hover:bg-white disabled:opacity-40"><Icon.Send size={17} /></button></form></>}
+                  </>
+                )}
+              </div>
+            ) : <button type="button" onClick={() => setOpen(true)} title="Open verified player chat" aria-label="Open verified player chat" className="relative grid h-14 w-14 place-items-center rounded-full border border-cyan/45 bg-night/95 text-cyan shadow-[0_8px_36px_rgba(0,0,0,0.35),0_0_24px_rgba(34,211,238,0.2)] transition hover:scale-105 hover:border-cyan hover:text-white"><Icon.MessageCircle size={23} /><span className="absolute right-1 top-1 h-2.5 w-2.5 rounded-full bg-cyan shadow-[0_0_14px_rgba(34,211,238,0.85)]" /></button>}
+          </aside>
+        );
+      }
+
+      function ChatGoogleSignInButton({ clientId, disabled, onCredential }) {
+        const buttonRef = useRef(null);
+        const [ready, setReady] = useState(false);
+        useEffect(() => {
+          if (disabled || !clientId) return undefined;
+          const renderButton = () => {
+            if (!window.google?.accounts?.id || !buttonRef.current) return;
+            buttonRef.current.innerHTML = "";
+            window.google.accounts.id.initialize({ client_id: clientId, callback: onCredential, ux_mode: "popup" });
+            window.google.accounts.id.renderButton(buttonRef.current, { theme: "outline", size: "large", shape: "rectangular", width: 320 });
+            setReady(true);
+          };
+          if (window.google?.accounts?.id) renderButton();
+          else {
+            const existing = document.querySelector('script[src="https://accounts.google.com/gsi/client"]');
+            const script = existing || document.createElement("script");
+            script.src = "https://accounts.google.com/gsi/client";
+            script.async = true;
+            script.defer = true;
+            script.onload = renderButton;
+            if (!existing) document.head.appendChild(script);
+            return () => { script.onload = null; };
+          }
+          return undefined;
+        }, [clientId, disabled, onCredential]);
+        if (disabled || !clientId) return <button type="button" disabled className="min-h-11 w-full rounded-[8px] border border-white/12 bg-white/[0.045] px-4 text-xs font-black uppercase tracking-[0.12em] text-white/35">Google sign-in setup required</button>;
+        return <div ref={buttonRef} className={`min-h-11 overflow-hidden rounded-[8px] ${ready ? "bg-white" : "border border-white/12 bg-white/[0.045]"}`} aria-label="Continue with Google" />;
+      }
+
       function SponsorBanner() {
         return (
           <section className="relative z-[80] mt-[8.5rem] border-b border-gold/15 bg-[#11100d] px-4 py-3 text-white shadow-[0_10px_32px_rgba(0,0,0,0.22)] sm:px-6" aria-label="CricKuru sponsor">
@@ -5013,7 +5213,7 @@ const RouterContext = React.createContext(null);
                 <IndiaLiveStrip />
                 <Navbar />
                 <SponsorBanner />
-                <PlayerChat />
+                <VerifiedPlayerChat />
                 <CricKuruBot />
                 <Routes>
                   <Route path="/" element={<LandingPage />} />
