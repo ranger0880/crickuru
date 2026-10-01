@@ -1484,3 +1484,55 @@
           animation: none;
         }
       }
+
+      @media (min-width: 1280px) {
+        .cyber-player-grid {
+          align-items: start;
+        }
+
+        .cyber-player-card {
+          aspect-ratio: 1 / 1;
+          min-height: 0;
+          overflow: visible;
+          transition: z-index 0s linear 0.2s, box-shadow 220ms ease, transform 220ms ease;
+        }
+
+        .cyber-player-card:hover,
+        .cyber-player-card:focus-within {
+          z-index: 40;
+          transition-delay: 0s;
+        }
+
+        .cyber-player-card::before {
+          border-radius: 8px;
+        }
+
+        .player-card-detail-stack {
+          display: none;
+        }
+
+        .player-hover-dossier {
+          pointer-events: none;
+        }
+      }
+
+      .ai-coach-cta {
+        animation: aiCoachPulse 2.8s ease-in-out infinite;
+        box-shadow: 0 0 18px rgba(34, 211, 238, 0.18), inset 0 0 14px rgba(34, 211, 238, 0.08);
+      }
+
+      .ai-coach-cta:hover,
+      .ai-coach-cta:focus-visible {
+        animation-play-state: paused;
+        box-shadow: 0 0 28px rgba(34, 211, 238, 0.42), inset 0 0 18px rgba(34, 211, 238, 0.12);
+      }
+
+      @keyframes aiCoachPulse {
+        0%,
+        100% {
+          box-shadow: 0 0 16px rgba(34, 211, 238, 0.14), inset 0 0 12px rgba(34, 211, 238, 0.06);
+        }
+        50% {
+          box-shadow: 0 0 26px rgba(34, 211, 238, 0.34), inset 0 0 16px rgba(34, 211, 238, 0.1);
+        }
+      }

@@ -2585,7 +2585,7 @@ const RouterContext = React.createContext(null);
               </div>
 
               {filteredPlayers.length ? (
-                <div className="cyber-player-grid mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                <div className="cyber-player-grid mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
                   {filteredPlayers.map((player) => <PlayerProfileCard key={player.id || player.name} player={player} rank={player.rank} onSelect={() => setSelectedPlayer(player)} />)}
                 </div>
               ) : (
@@ -2743,7 +2743,7 @@ const RouterContext = React.createContext(null);
 
         return (
           <article
-            className="cyber-player-card player-level-card interactive-card relative cursor-pointer overflow-hidden rounded-[8px] border border-white/12 bg-[radial-gradient(circle_at_85%_8%,rgba(244,185,66,0.14),transparent_28%),rgba(255,255,255,0.045)] p-5 focus:outline-none focus:ring-2 focus:ring-gold/60"
+            className="cyber-player-card player-level-card interactive-card group relative cursor-pointer overflow-hidden rounded-[8px] border border-white/12 bg-[radial-gradient(circle_at_85%_8%,rgba(244,185,66,0.14),transparent_28%),rgba(255,255,255,0.045)] p-5 focus:outline-none focus:ring-2 focus:ring-gold/60"
             style={{ "--player-neon-color": neon.color, "--player-neon-glow": neon.glow }}
             onClick={(event) => { if (!event.target.closest("a")) onSelect?.(); }}
             onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); onSelect?.(); } }}
@@ -2774,6 +2774,7 @@ const RouterContext = React.createContext(null);
             <PlayerLevelInfographic level={level} />
             <PlayerRankingInfographic player={player} compact />
 
+            <div className="player-card-detail-stack">
             <div className="relative mt-5 rounded-[7px] border border-cyan/20 bg-cyan/[0.06] p-4">
               <div className="flex items-center gap-2 text-[0.62rem] font-black uppercase tracking-[0.16em] text-cyan"><Icon.Sparkles size={14} /> Areas of improvement</div>
               {improvementReport.focus.length ? (
@@ -2852,7 +2853,30 @@ const RouterContext = React.createContext(null);
                 <p className="mt-3 text-sm leading-6 text-white/52">Waiting for the next CricHeroes award entry.</p>
               )}
             </div>
-            <button type="button" className="relative mt-5 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-[7px] border border-gold/35 bg-gold/10 px-4 text-xs font-black uppercase tracking-[0.16em] text-gold transition hover:border-gold hover:bg-gold/15 focus:outline-none focus:ring-2 focus:ring-gold/60" onClick={(event) => { event.stopPropagation(); onSelect?.(); }}>
+            </div>
+
+            <div className="player-hover-dossier absolute left-2 right-2 top-[calc(100%-1rem)] z-30 rounded-[8px] border border-cyan/45 bg-[#08121b]/[0.98] p-4 text-white shadow-[0_20px_60px_rgba(0,0,0,0.55),0_0_28px_var(--player-neon-glow)] opacity-0 invisible transition duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+              <div className="flex items-center justify-between gap-3 border-b border-white/10 pb-3">
+                <div>
+                  <p className="text-[0.58rem] font-black uppercase tracking-[0.18em] text-cyan">Player dossier</p>
+                  <p className="mt-1 text-sm font-black uppercase text-white">{player.name}</p>
+                </div>
+                <span className="font-display text-2xl font-black text-gold">{impact}/100</span>
+              </div>
+              <div className="mt-3 grid grid-cols-4 gap-2 text-center">
+                <LiveTinyStat label="Runs" value={hasStats ? stats.runs || 0 : "-"} />
+                <LiveTinyStat label="Wkts" value={hasStats ? stats.wickets || 0 : "-"} />
+                <LiveTinyStat label="Best" value={hasStats ? stats.bestScore || 0 : "-"} />
+                <LiveTinyStat label="Field" value={hasStats ? (stats.catches || 0) + (stats.stumpings || 0) : "-"} />
+              </div>
+              <div className="mt-3 rounded-[6px] border border-cyan/20 bg-cyan/8 p-3">
+                <p className="text-[0.58rem] font-black uppercase tracking-[0.16em] text-cyan">AI coach focus</p>
+                <p className="mt-1 text-xs leading-5 text-white/72">{improvementReport.focus[0]?.title || "Maintain current strengths while more public data is tracked."}</p>
+              </div>
+              <p className="mt-3 text-[0.58rem] font-black uppercase tracking-[0.14em] text-white/42">Hover summary • click for full profile</p>
+            </div>
+
+            <button type="button" className="ai-coach-cta relative mt-5 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-[7px] border border-cyan/60 bg-cyan/12 px-4 text-xs font-black uppercase tracking-[0.16em] text-cyan transition hover:border-cyan hover:bg-cyan/20 focus:outline-none focus:ring-2 focus:ring-cyan/70" onClick={(event) => { event.stopPropagation(); onSelect?.(); }}>
               <Icon.Sparkles size={16} /> Open AI coach + profile
             </button>
           </article>
