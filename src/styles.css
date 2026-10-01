@@ -1485,7 +1485,7 @@
         }
       }
 
-      @media (min-width: 1280px) {
+      @media (min-width: 1024px) {
         .cyber-player-grid {
           align-items: start;
         }
@@ -1493,8 +1493,12 @@
         .cyber-player-card {
           aspect-ratio: 1 / 1;
           min-height: 0;
-          overflow: visible;
+          overflow: visible !important;
           transition: z-index 0s linear 0.2s, box-shadow 220ms ease, transform 220ms ease;
+        }
+
+        .cyber-player-card > .absolute {
+          position: absolute !important;
         }
 
         .cyber-player-card:hover,
@@ -1511,7 +1515,8 @@
           display: none;
         }
 
-        .player-hover-dossier {
+        .cyber-player-card > .player-hover-dossier {
+          position: absolute !important;
           pointer-events: none;
         }
       }

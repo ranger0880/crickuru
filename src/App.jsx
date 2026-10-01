@@ -2612,7 +2612,7 @@ const RouterContext = React.createContext(null);
               </div>
 
               {filteredPlayers.length ? (
-                <div className="cyber-player-grid mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+                <div className="cyber-player-grid mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
                   {filteredPlayers.map((player) => <PlayerProfileCard key={player.id || player.name} player={player} rank={player.rank} onSelect={() => setSelectedPlayer(player)} />)}
                 </div>
               ) : (
@@ -2805,7 +2805,7 @@ const RouterContext = React.createContext(null);
 
         return (
           <article
-            className="cyber-player-card player-level-card interactive-card group relative cursor-pointer overflow-hidden rounded-[8px] border border-white/12 bg-[radial-gradient(circle_at_85%_8%,rgba(244,185,66,0.14),transparent_28%),rgba(255,255,255,0.045)] p-5 focus:outline-none focus:ring-2 focus:ring-gold/60"
+            className="cyber-player-card player-level-card interactive-card group relative cursor-pointer overflow-hidden rounded-[8px] border border-white/12 bg-[radial-gradient(circle_at_85%_8%,rgba(244,185,66,0.14),transparent_28%),rgba(255,255,255,0.045)] p-5 focus:outline-none focus:ring-2 focus:ring-gold/60 lg:aspect-square lg:overflow-visible lg:p-3"
             style={{ "--player-neon-color": neon.color, "--player-neon-glow": neon.glow }}
             onClick={(event) => { if (!event.target.closest("a")) onSelect?.(); }}
             onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); onSelect?.(); } }}
@@ -2814,13 +2814,13 @@ const RouterContext = React.createContext(null);
             aria-label={`Open full profile for ${player.name}`}
           >
             <div className="absolute right-[-56px] top-[-56px] h-40 w-40 rounded-full bg-cyan/8 blur-3xl" aria-hidden="true" />
-            <div className="relative flex items-start justify-between gap-4">
-              <div className="flex min-w-0 items-center gap-3">
-                <LiveAvatar src={player.photo} name={player.name} />
+            <div className="relative flex items-start justify-between gap-4 lg:gap-2">
+              <div className="flex min-w-0 items-center gap-3 lg:gap-2">
+                <LiveAvatar src={player.photo} name={player.name} className="lg:h-9 lg:w-9 lg:text-sm" />
                 <div className="min-w-0">
-                  <p className="text-[0.62rem] font-black uppercase tracking-[0.18em] text-gold">Rank {rank}</p>
-                  <h2 className="truncate font-display text-3xl font-black uppercase leading-none text-white">{player.name}</h2>
-                  <p className="mt-1 text-xs font-bold uppercase tracking-[0.14em] text-white/44">{player.role}</p>
+                  <p className="text-[0.62rem] font-black uppercase tracking-[0.18em] text-gold lg:text-[0.52rem]">Rank {rank}</p>
+                  <h2 className="truncate font-display text-3xl font-black uppercase leading-none text-white lg:text-lg">{player.name}</h2>
+                  <p className="mt-1 text-xs font-bold uppercase tracking-[0.14em] text-white/44 lg:hidden">{player.role}</p>
                   <PlayerLevelBadge level={level} compact />
                 </div>
               </div>
@@ -2833,10 +2833,10 @@ const RouterContext = React.createContext(null);
               </div>
             </div>
 
-            <PlayerLevelInfographic level={level} />
+            <PlayerLevelInfographic level={level} compact className="lg:hidden" />
             <PlayerRankingInfographic player={player} compact />
 
-            <div className="player-card-detail-stack">
+            <div className="player-card-detail-stack lg:hidden">
             <div className="relative mt-5 rounded-[7px] border border-cyan/20 bg-cyan/[0.06] p-4">
               <div className="flex items-center gap-2 text-[0.62rem] font-black uppercase tracking-[0.16em] text-cyan"><Icon.Sparkles size={14} /> Areas of improvement</div>
               {improvementReport.focus.length ? (
@@ -2917,7 +2917,7 @@ const RouterContext = React.createContext(null);
             </div>
             </div>
 
-            <div className="player-hover-dossier absolute left-2 right-2 top-[calc(100%-1rem)] z-30 rounded-[8px] border border-cyan/45 bg-[#08121b]/[0.98] p-4 text-white shadow-[0_20px_60px_rgba(0,0,0,0.55),0_0_28px_var(--player-neon-glow)] opacity-0 invisible transition duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+            <div className="player-hover-dossier absolute left-2 right-2 top-[calc(100%-1rem)] z-30 rounded-[8px] border border-cyan/45 bg-[#08121b]/[0.98] p-4 text-white shadow-[0_20px_60px_rgba(0,0,0,0.55),0_0_28px_var(--player-neon-glow)] opacity-0 invisible transition duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 lg:left-0 lg:right-0 lg:top-[calc(100%-0.5rem)]">
               <div className="flex items-center justify-between gap-3 border-b border-white/10 pb-3">
                 <div>
                   <p className="text-[0.58rem] font-black uppercase tracking-[0.18em] text-cyan">Player dossier</p>
@@ -2938,7 +2938,7 @@ const RouterContext = React.createContext(null);
               <p className="mt-3 text-[0.58rem] font-black uppercase tracking-[0.14em] text-white/42">Hover summary • click for full profile</p>
             </div>
 
-            <button type="button" className="ai-coach-cta relative mt-5 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-[7px] border border-cyan/60 bg-cyan/12 px-4 text-xs font-black uppercase tracking-[0.16em] text-cyan transition hover:border-cyan hover:bg-cyan/20 focus:outline-none focus:ring-2 focus:ring-cyan/70" onClick={(event) => { event.stopPropagation(); onSelect?.(); }}>
+            <button type="button" className="ai-coach-cta relative mt-5 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-[7px] border border-cyan/60 bg-cyan/12 px-4 text-xs font-black uppercase tracking-[0.16em] text-cyan transition hover:border-cyan hover:bg-cyan/20 focus:outline-none focus:ring-2 focus:ring-cyan/70 lg:mt-2 lg:min-h-9 lg:px-2 lg:text-[0.55rem] lg:tracking-[0.1em]" onClick={(event) => { event.stopPropagation(); onSelect?.(); }}>
               <Icon.Sparkles size={16} /> Open AI coach + profile
             </button>
           </article>
@@ -3106,18 +3106,18 @@ const RouterContext = React.createContext(null);
         );
       }
 
-      function PlayerLevelInfographic({ level }) {
+      function PlayerLevelInfographic({ level, compact = false, className = "" }) {
         const current = level || PLAYER_LEVELS.amateur;
         return (
-          <div className="player-level-infographic" style={{ "--player-neon-color": current.color, "--player-neon-glow": current.glow, "--player-neon-soft": current.soft }}>
+          <div className={`player-level-infographic lg:mt-2 lg:p-2 ${compact ? "player-level-infographic-compact" : ""} ${className}`} style={{ "--player-neon-color": current.color, "--player-neon-glow": current.glow, "--player-neon-soft": current.soft }}>
             <div className="flex min-w-0 items-center gap-3">
-              <PlayerLevelBadge level={current} />
-              <p className="min-w-0 text-xs font-bold leading-5 text-white/58">{current.encouragement}</p>
+              <PlayerLevelBadge level={current} compact={compact} />
+              <p className="min-w-0 text-xs font-bold leading-5 text-white/58 lg:hidden">{current.encouragement}</p>
             </div>
-            <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-white/10" aria-label={`${current.label} level index ${current.score} out of 100`}>
+            <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-white/10 lg:mt-2" aria-label={`${current.label} level index ${current.score} out of 100`}>
               <span className="block h-full rounded-full" style={{ width: `${Math.max(6, current.score)}%`, background: current.color, boxShadow: `0 0 14px ${current.glow}` }} />
             </div>
-            <div className="mt-2 flex justify-between text-[0.55rem] font-black uppercase tracking-[0.12em] text-white/35"><span>Community level</span><span>{current.score}/100 signal</span></div>
+            <div className="mt-2 flex justify-between text-[0.55rem] font-black uppercase tracking-[0.12em] text-white/35 lg:mt-1"><span>Community level</span><span>{current.score}/100 signal</span></div>
           </div>
         );
       }
@@ -3131,18 +3131,18 @@ const RouterContext = React.createContext(null);
           ["Lead", ranking.captaincy, "#ff315a"],
         ];
         return (
-          <div className={`mt-4 rounded-[7px] border border-white/10 bg-night/55 ${compact ? "p-3" : "p-4"}`}>
+          <div className={`mt-4 rounded-[7px] border border-white/10 bg-night/55 lg:mt-2 lg:p-2 ${compact ? "p-3" : "p-4"}`}>
             <div className="flex flex-wrap items-center justify-between gap-2">
               <div>
                 <p className="text-[0.58rem] font-black uppercase tracking-[0.18em] text-cyan">Overall CricHeroes rank</p>
-                <p className="mt-1 text-xs font-bold text-white/48">{ranking.source} • {ranking.label}</p>
+                <p className="mt-1 text-xs font-bold text-white/48 lg:hidden">{ranking.source} • {ranking.label}</p>
               </div>
               <div className="text-right">
                 <span className="font-display text-2xl font-black text-white">{player?.rank ? `#${player.rank}` : "-"}</span>
                 <span className="ml-2 text-xs font-black text-gold">{ranking.score}/100</span>
               </div>
             </div>
-            <div className="mt-3 grid grid-cols-4 gap-2" aria-label="Ranking dimensions">
+            <div className="mt-3 grid grid-cols-4 gap-2 lg:mt-2 lg:gap-1" aria-label="Ranking dimensions">
               {dimensions.map(([label, score, color]) => (
                 <div key={label} className="min-w-0">
                   <div className="flex items-center justify-between gap-1 text-[0.52rem] font-black uppercase tracking-[0.08em] text-white/40"><span>{label}</span><span>{score}</span></div>
@@ -3661,13 +3661,13 @@ const RouterContext = React.createContext(null);
         return true;
       }
 
-      function LiveAvatar({ src, name }) {
+      function LiveAvatar({ src, name, className = "" }) {
         const [failed, setFailed] = useState(false);
         const safeSrc = safeImageUrl(src);
         const showImage = safeSrc && !failed && !safeSrc.includes("default/user_profile.png");
 
         return (
-          <span className="grid h-12 w-12 shrink-0 place-items-center overflow-hidden rounded-full border border-gold/30 bg-gold/10 font-display text-xl font-black text-gold">
+          <span className={`grid h-12 w-12 shrink-0 place-items-center overflow-hidden rounded-full border border-gold/30 bg-gold/10 font-display text-xl font-black text-gold ${className}`}>
             {showImage ? (
               <img src={safeSrc} alt="" className="h-full w-full object-cover" loading="lazy" referrerPolicy="no-referrer" onError={() => setFailed(true)} />
             ) : (
