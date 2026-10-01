@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
   "source": "CricHeroes public team and player pages",
-  "sourceStatus": "partial",
+  "sourceStatus": "stale",
   "syncedAt": "2026-10-01T06:52:40.391Z",
-  "lastCheckedAt": "2026-10-01T07:01:53.436Z",
+  "lastCheckedAt": "2026-10-01T07:02:55.982Z",
   "lastSuccessfulSyncAt": "2026-10-01T06:52:40.391Z",
   "playerStatsUpdatedAt": "2026-10-01T07:01:53.436Z",
   "playerRecentMatchesUpdatedAt": "2026-10-01T07:01:53.436Z",
@@ -100037,7 +100037,9 @@
       "detectedAt": "2026-08-18T10:46:52.610Z"
     }
   ],
-  "errors": [],
+  "errors": [
+    "CricHeroes returned 403 for https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches"
+  ],
   "manualRefreshAt": "2026-10-01T07:01:53.436Z",
   "manualRefreshSource": "Supplied CricHeroes player profile links"
 }
