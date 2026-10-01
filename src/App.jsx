@@ -1330,6 +1330,45 @@ const RouterContext = React.createContext(null);
         return { name: playerName || cleanMatchText(matchingLines[0]?.playerName || matchingLines[0]?.player_name || matchingLines[0]?.name), detail };
       }
 
+      function matchTopPerformers(match) {
+        const scorecard = match?.scorecard || {};
+        const performerMap = new Map();
+        const isWarriorsLine = (line) => {
+          const teamId = Number(line?.teamId || line?.team_id || 0);
+          const teamName = cleanMatchText(line?.teamName || line?.team_name).toLocaleLowerCase();
+          return teamId === 8626734 || teamName.includes("kurukshetra warriors");
+        };
+        const add = (line, label, value, weight = 1) => {
+          const name = cleanMatchText(line?.playerName || line?.player_name || line?.name);
+          if (!name || !Number.isFinite(Number(value)) || Number(value) <= 0) return;
+          const key = String(line?.playerId || line?.player_id || name).toLocaleLowerCase();
+          const current = performerMap.get(key) || { name, score: 0, details: [] };
+          current.score += Number(value) * weight;
+          current.details.push(`${value} ${label}`);
+          performerMap.set(key, current);
+        };
+
+        asArray(scorecard.batting).filter(isWarriorsLine).forEach((line) => {
+          add(line, `run${Number(line.runs) === 1 ? "" : "s"}${line.balls ? ` off ${line.balls}` : ""}`, line.runs, 1);
+        });
+        asArray(scorecard.bowling).filter(isWarriorsLine).forEach((line) => {
+          add(line, `wicket${Number(line.wickets) === 1 ? "" : "s"}`, line.wickets, 25);
+        });
+        asArray(scorecard.fielding).filter(isWarriorsLine).forEach((line) => {
+          const catches = Number(line.catches) || 0;
+          const stumpings = Number(line.stumpings) || 0;
+          const runOuts = Number(line.runOuts || line.runouts) || 0;
+          if (catches) add(line, `catch${catches === 1 ? "" : "es"}`, catches, 10);
+          if (stumpings) add(line, `stumping${stumpings === 1 ? "" : "s"}`, stumpings, 12);
+          if (runOuts) add(line, `run-out${runOuts === 1 ? "" : "s"}`, runOuts, 10);
+        });
+
+        return [...performerMap.values()]
+          .map((performer) => ({ ...performer, details: [...new Set(performer.details)].slice(0, 2) }))
+          .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name))
+          .slice(0, 3);
+      }
+
       function HeroLiveTile({ label, title, detail }) {
         return (
           <div className="interactive-card rounded-[8px] border border-white/10 bg-night/55 p-3">
@@ -1382,11 +1421,15 @@ const RouterContext = React.createContext(null);
       }
 
       function CricHeroesSection() {
+        const { loading, data } = useLiveCricketFeed();
         const [tab, setTab] = useState("matches");
         const tabs = [
           { id: "matches", label: "Matches", icon: Icon.CalendarDays },
           { id: "members", label: "Members", icon: Icon.Users },
         ];
+        const lastThreeMatches = [...asArray(data.recentMatches).filter((match) => match?.status === "past" || match?.state === "past" || match?.result)]
+          .sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0))
+          .slice(0, 3);
 
         return (
           <section id="team-hub" className="relative overflow-hidden bg-night/82 px-5 py-24 sm:px-8" aria-labelledby="cricheroes-title">
@@ -1427,7 +1470,7 @@ const RouterContext = React.createContext(null);
 
               <div className="mt-10">
                 <AnimatePresence mode="wait">
-                  {tab === "matches" && <MatchesPanel key="matches" />}
+                  {tab === "matches" && <MatchesPanel key="matches" matches={lastThreeMatches} players={asArray(data.players)} loading={loading} syncedAt={data.syncedAt} />}
                   {tab === "members" && <MembersPanel key="members" />}
                 </AnimatePresence>
               </div>
@@ -1449,34 +1492,18 @@ const RouterContext = React.createContext(null);
         );
       }
 
-      function MatchesPanel() {
-        const matches = [
-          {
-            tag: "Featured",
-            title: "Kurukshetra Warriors vs Divino Strikers",
-            score: "233/7 - 221/9",
-            result: "Warriors won by 12 runs",
-            tone: "Gold finish",
-          },
-        ];
-
+      function MatchesPanel({ matches = [], players = [], loading = false, syncedAt = "" }) {
         return (
           <PanelShell>
             <div className="grid gap-5 lg:grid-cols-[1.05fr_0.95fr]">
               <div className="grid gap-5 md:grid-cols-3 lg:grid-cols-1">
-                {matches.map((match) => (
-                  <article key={match.title} className="interactive-card score-tile rounded-[8px] border border-white/12 p-5">
-                    <div className="mb-4 flex items-center justify-between gap-3">
-                      <span className="rounded-full bg-gold/12 px-3 py-1 text-[0.65rem] font-black uppercase tracking-[0.18em] text-gold">
-                        {match.tag}
-                      </span>
-                      <span className="text-[0.65rem] font-bold uppercase tracking-[0.18em] text-white/42">{match.tone}</span>
-                    </div>
-                    <h3 className="font-display text-3xl font-black uppercase leading-none text-white">{match.title}</h3>
-                    <p className="mt-4 font-display text-4xl font-black text-gold">{match.score}</p>
-                    <p className="mt-2 text-sm font-semibold text-white/68">{match.result}</p>
+                {matches.length ? matches.map((match) => <HomeRecentMatchCard key={match.id} match={match} players={players} />) : (
+                  <article className="rounded-[8px] border border-white/12 bg-night/55 p-5 md:col-span-3 lg:col-span-1">
+                    <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan">{loading ? "Syncing CricHeroes" : "Recent Warriors matches"}</p>
+                    <h3 className="mt-3 font-display text-3xl font-black uppercase text-white">{loading ? "Loading latest results" : "No completed matches yet"}</h3>
+                    <p className="mt-2 text-sm leading-6 text-white/55">{loading ? "The latest scorecards will appear here automatically." : `Feed checked ${formatFeedDate(syncedAt)}`}</p>
                   </article>
-                ))}
+                )}
               </div>
               <div className="glass rounded-[8px] p-6">
                 <div className="flex items-center gap-3">
@@ -2679,6 +2706,41 @@ const RouterContext = React.createContext(null);
             ) : (
               <p className="mt-4 font-display text-2xl font-black uppercase text-white">Roster syncing</p>
             )}
+          </article>
+        );
+      }
+
+      function HomeRecentMatchCard({ match, players }) {
+        const performers = matchTopPerformers(match);
+        const resultTone = match.result === "win" ? "text-cyan" : match.result === "loss" ? "text-crimson" : "text-gold";
+        return (
+          <article className="interactive-card score-tile rounded-[8px] border border-white/12 bg-night/55 p-5">
+            <div className="mb-4 flex items-center justify-between gap-3">
+              <span className="rounded-full bg-gold/12 px-3 py-1 text-[0.65rem] font-black uppercase tracking-[0.18em] text-gold">Last match</span>
+              <span className="text-right text-[0.62rem] font-bold uppercase tracking-[0.12em] text-white/42">{formatFeedDate(match.date)}</span>
+            </div>
+            <p className="text-xs font-semibold uppercase tracking-[0.12em] text-white/45">{match.ballType || "Cricket"} · {match.overs ? `${match.overs} overs` : "Scorecard"}</p>
+            <h3 className="mt-2 font-display text-2xl font-black uppercase leading-none text-white">Warriors vs {match.opponent || "Opponent"}</h3>
+            <div className="mt-4 grid grid-cols-2 gap-3 border-y border-white/10 py-3">
+              <div>
+                <p className="text-[0.58rem] font-black uppercase tracking-[0.14em] text-white/40">Kurukshetra Warriors</p>
+                <p className="mt-1 font-display text-3xl font-black text-white">{match.ourScore || "-"}</p>
+              </div>
+              <div className="text-right">
+                <p className="text-[0.58rem] font-black uppercase tracking-[0.14em] text-white/40">{match.opponent || "Opponent"}</p>
+                <p className="mt-1 font-display text-3xl font-black text-white">{match.opponentScore || "-"}</p>
+              </div>
+            </div>
+            <p className={`mt-3 text-sm font-black uppercase tracking-[0.08em] ${resultTone}`}>{match.resultText || "Result updating"}</p>
+            <div className="mt-4 border-t border-white/10 pt-3">
+              <p className="text-[0.58rem] font-black uppercase tracking-[0.16em] text-cyan">Top Warriors performers</p>
+              {performers.length ? (
+                <div className="mt-2 grid gap-1.5">
+                  {performers.map((performer) => <p key={performer.name} className="flex items-center justify-between gap-3 text-xs"><span className="truncate font-bold text-white/78">{performer.name}</span><span className="shrink-0 text-white/48">{performer.details.join(" · ")}</span></p>)}
+                </div>
+              ) : <p className="mt-2 text-xs text-white/45">Top-player lines will appear after the scorecard sync.</p>}
+            </div>
+            {match.scorecardUrl && <a href={match.scorecardUrl} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.14em] text-gold hover:text-white">Open scorecard <Icon.ExternalLink size={13} /></a>}
           </article>
         );
       }
