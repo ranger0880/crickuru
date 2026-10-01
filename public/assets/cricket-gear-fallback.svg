@@ -1,42 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
-  <title id="title">CricKuru cricket gear preview</title>
-  <desc id="desc">A cricket bat, ball and stumps on a dark stadium backdrop.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="title desc">
+  <title id="title">Cricket gear image unavailable</title>
+  <desc id="desc">A cricket ball and bat on a dark field.</desc>
   <defs>
-    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#07131d"/>
-      <stop offset="1" stop-color="#16202e"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1724"/>
+      <stop offset="1" stop-color="#1a0b12"/>
     </linearGradient>
     <linearGradient id="bat" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#f4b942"/>
-      <stop offset="1" stop-color="#a76412"/>
+      <stop offset="1" stop-color="#9e5b13"/>
     </linearGradient>
-    <radialGradient id="ball" cx="35%" cy="25%">
-      <stop offset="0" stop-color="#ef6676"/>
-      <stop offset="0.55" stop-color="#b71932"/>
-      <stop offset="1" stop-color="#5e0d1c"/>
+    <radialGradient id="ball" cx="32%" cy="28%">
+      <stop offset="0" stop-color="#ff7a7a"/>
+      <stop offset="0.5" stop-color="#b71932"/>
+      <stop offset="1" stop-color="#4c0715"/>
     </radialGradient>
-    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="12" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
   </defs>
-  <rect width="800" height="600" fill="url(#sky)"/>
-  <path d="M0 470 Q400 320 800 470 V600 H0Z" fill="#0a111b"/>
-  <path d="M0 475 Q400 350 800 475" fill="none" stroke="#22d3ee" stroke-opacity=".2" stroke-width="4"/>
-  <g filter="url(#glow)" opacity=".95">
-    <circle cx="570" cy="190" r="76" fill="url(#ball)"/>
-    <path d="M525 145 Q570 190 615 235 M540 125 Q585 170 630 215" fill="none" stroke="#f5f7fa" stroke-opacity=".72" stroke-width="7"/>
-  </g>
-  <g transform="rotate(-17 300 365)">
-    <rect x="265" y="115" width="74" height="390" rx="32" fill="url(#bat)"/>
-    <rect x="282" y="55" width="40" height="100" rx="18" fill="#8a5420"/>
-    <path d="M282 155 H322 M282 183 H322 M282 211 H322 M282 239 H322" stroke="#fff1b5" stroke-opacity=".5" stroke-width="4"/>
-  </g>
-  <g fill="none" stroke="#22d3ee" stroke-width="12" stroke-linecap="round">
-    <path d="M130 455 V285"/>
-    <path d="M180 455 V285"/>
-    <path d="M230 455 V285"/>
-    <path d="M120 285 H240"/>
-  </g>
-  <text x="40" y="72" fill="#f4b942" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="6">CRICKURU GEAR</text>
+  <rect width="640" height="640" rx="32" fill="url(#bg)"/>
+  <path d="M395 114c19-12 44-5 55 14l34 60-29 17-35-59-25 15-19-31z" fill="#111827" stroke="#22d3ee" stroke-width="5"/>
+  <path d="M430 193 295 498c-8 18-28 26-46 18l-34-15c-16-8-23-27-15-44l135-304z" fill="url(#bat)" stroke="#f4b942" stroke-width="7"/>
+  <path d="m315 267 82 37" stroke="#fff3c4" stroke-width="8" stroke-linecap="round" opacity=".72"/>
+  <circle cx="205" cy="218" r="92" fill="url(#ball)" stroke="#ffb3b3" stroke-width="5"/>
+  <path d="M149 152c50 36 74 96 73 154M183 135c51 38 76 99 72 155" fill="none" stroke="#ffe8e8" stroke-width="6" stroke-dasharray="11 11" opacity=".9"/>
+  <text x="320" y="566" fill="#e8eef5" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle" letter-spacing="4">CRICKET GEAR</text>
 </svg>

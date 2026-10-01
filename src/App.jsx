@@ -3239,24 +3239,30 @@ const RouterContext = React.createContext(null);
         const matchHistory = asArray(player.matchHistory).length ? asArray(player.matchHistory) : recentMatches;
         const level = player.level || playerLevel(player);
         const neon = playerNeonTheme(player.impact || 0, level);
+        const closeButtonRef = useRef(null);
 
         useEffect(() => {
           const onKeyDown = (event) => { if (event.key === "Escape") onClose(); };
           document.addEventListener("keydown", onKeyDown);
           const previousOverflow = document.body.style.overflow;
+          const previousActiveElement = document.activeElement;
           document.body.style.overflow = "hidden";
+          document.body.classList.add("modal-open");
+          closeButtonRef.current?.focus({ preventScroll: true });
           return () => {
             document.removeEventListener("keydown", onKeyDown);
             document.body.style.overflow = previousOverflow;
+            document.body.classList.remove("modal-open");
+            if (previousActiveElement instanceof HTMLElement) previousActiveElement.focus({ preventScroll: true });
           };
         }, [onClose]);
 
         return createPortal(
-          <div className="player-profile-overlay fixed inset-0 z-[100] flex items-start justify-center overflow-y-auto overscroll-contain bg-black/80 p-0 sm:items-center sm:p-4 lg:p-6" role="presentation" onPointerDown={(event) => { if (event.target === event.currentTarget) onClose(); }}>
+          <div className="player-profile-overlay fixed inset-0 z-[100] flex items-start justify-center overflow-y-auto overscroll-contain bg-black/80 p-0 sm:items-center sm:p-4 lg:p-6" role="presentation" onClick={(event) => { if (event.target === event.currentTarget) onClose(); }}>
             <section style={{ borderColor: neon.color, boxShadow: `0 0 0 1px ${neon.color}, 0 0 24px ${neon.glow}, 0 25px 100px rgba(0,0,0,0.7)`, "--player-neon-color": neon.color, "--player-neon-glow": neon.glow }} className="player-profile-panel player-neon-shell flex h-[100dvh] max-h-[100dvh] w-full max-w-5xl min-h-0 flex-col overflow-hidden rounded-none border bg-[#090d14] text-white sm:h-[calc(100dvh-2rem)] sm:max-h-[calc(100dvh-2rem)] sm:rounded-[10px] lg:h-[calc(100dvh-3rem)] lg:max-h-[calc(100dvh-3rem)]" role="dialog" aria-modal="true" aria-label={`${player.name} full player profile`}>
               <header className="relative min-h-48 shrink-0 overflow-hidden bg-cover bg-center sm:min-h-56" style={{ backgroundImage: `url(${assetUrl("/assets/stadium-vip-warriors.png")})`, boxShadow: `inset 0 -3px 0 ${neon.color}, inset 0 -12px 28px ${neon.soft}` }}>
                 <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(5,7,11,0.96),rgba(5,7,11,0.58),rgba(5,7,11,0.8))]" />
-                <button type="button" onPointerDown={(event) => event.stopPropagation()} onClick={(event) => { event.preventDefault(); event.stopPropagation(); onClose(); }} aria-label="Close player profile" title="Close player profile" className="absolute right-3 top-3 z-20 grid h-11 w-11 touch-manipulation place-items-center rounded-full border border-white/20 bg-night/70 text-white transition hover:border-gold hover:text-gold sm:right-4 sm:top-4"><Icon.X size={20} /></button>
+                <button ref={closeButtonRef} type="button" onClick={(event) => { event.preventDefault(); event.stopPropagation(); onClose(); }} aria-label="Close player profile" title="Close player profile" className="absolute right-3 top-3 z-20 grid h-11 w-11 touch-manipulation place-items-center rounded-full border border-white/20 bg-night/70 text-white transition hover:border-gold hover:text-gold sm:right-4 sm:top-4"><Icon.X size={20} /></button>
                 <div className="relative flex min-h-48 items-end gap-3 p-4 sm:min-h-56 sm:gap-4 sm:p-8">
                   <span className="rounded-full p-1" style={{ boxShadow: `0 0 0 2px ${neon.color}, 0 0 22px ${neon.glow}` }}><LiveAvatar src={player.photo} name={player.name} /></span>
                   <div className="min-w-0 flex-1">
@@ -6421,7 +6427,7 @@ const RouterContext = React.createContext(null);
       }
 
       function ShopProductImage({ product, eager = false }) {
-        const fallback = "/assets/cricket-gear-fallback.svg";
+        const fallback = assetUrl("/assets/cricket-gear-fallback.svg");
         const [failed, setFailed] = useState(false);
 
         useEffect(() => {
@@ -6544,6 +6550,35 @@ const RouterContext = React.createContext(null);
             </div>
           </footer>
         );
+      }
+
+      class AppErrorBoundary extends React.Component {
+        state = { error: null };
+
+        static getDerivedStateFromError(error) {
+          return { error };
+        }
+
+        componentDidCatch(error) {
+          console.error("CricKuru UI error", error);
+        }
+
+        render() {
+          if (!this.state.error) return this.props.children;
+          return (
+            <main className="route-bg grid min-h-screen place-items-center px-5 py-20 text-center text-white sm:px-8">
+              <section className="glass w-full max-w-xl rounded-[10px] p-6 sm:p-10">
+                <p className="text-xs font-black uppercase tracking-[0.28em] text-crimson">CricKuru recovery mode</p>
+                <h1 className="mt-4 font-display text-5xl font-black uppercase leading-none">This panel hit a snag</h1>
+                <p className="mx-auto mt-4 max-w-md text-sm leading-6 text-white/65">Your site is still available. Reload this view or return home to continue browsing the Warriors hub.</p>
+                <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:justify-center">
+                  <button type="button" onClick={() => window.location.reload()} className="min-h-12 rounded-full bg-gold px-6 text-sm font-black uppercase tracking-[0.14em] text-night">Reload page</button>
+                  <a href="/" className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/15 px-6 text-sm font-black uppercase tracking-[0.14em] text-white/75">Go home</a>
+                </div>
+              </section>
+            </main>
+          );
+        }
       }
 
       function OnlinePlayersBar() {
@@ -6830,4 +6865,8 @@ const RouterContext = React.createContext(null);
           </ThemeProvider>
         );
       }
-createRoot(document.getElementById("root")).render(<App />);
+createRoot(document.getElementById("root")).render(
+  <AppErrorBoundary>
+    <App />
+  </AppErrorBoundary>,
+);

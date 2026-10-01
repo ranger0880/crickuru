@@ -228,6 +228,15 @@
         -webkit-overflow-scrolling: touch;
       }
 
+      body.modal-open {
+        overscroll-behavior: none;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
       #root {
         min-height: 100vh;
       }
@@ -299,6 +308,7 @@
         transition-property: color, background-color, border-color, box-shadow, transform, opacity;
         transition-duration: 220ms;
         transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+        touch-action: manipulation;
       }
 
       button:active,
@@ -1080,6 +1090,26 @@
           min-width: 0;
         }
 
+        .route-bg h1,
+        .stadium-page-bg h1 {
+          max-width: 100%;
+          font-size: 3rem !important;
+          line-height: 0.94 !important;
+          overflow-wrap: anywhere;
+          text-wrap: balance;
+        }
+
+        .route-bg h2,
+        .stadium-page-bg h2 {
+          overflow-wrap: anywhere;
+          text-wrap: balance;
+        }
+
+        .route-bg p,
+        .stadium-page-bg p {
+          overflow-wrap: anywhere;
+        }
+
         .india-ticker-track {
           will-change: transform;
         }
@@ -1107,6 +1137,46 @@
 
         .player-profile-overlay {
           padding-bottom: env(safe-area-inset-bottom) !important;
+          overscroll-behavior: none;
+          touch-action: pan-y;
+        }
+
+        .player-profile-panel {
+          min-height: 100svh !important;
+          height: 100svh !important;
+          max-height: 100svh !important;
+        }
+
+        .player-profile-panel > header {
+          min-height: 13.5rem !important;
+        }
+
+        .player-profile-panel > header > div.relative {
+          min-height: 13.5rem !important;
+          padding: 3.75rem 1rem 1rem !important;
+        }
+
+        .player-profile-panel > div.min-h-0 {
+          padding: 1rem !important;
+          overscroll-behavior: contain;
+        }
+
+        .player-profile-panel .grid.grid-cols-2 {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .shop-neon-card {
+          content-visibility: auto;
+          contain-intrinsic-size: 360px;
+        }
+
+        .shop-neon-card h3 {
+          overflow-wrap: anywhere;
+        }
+
+        .mobile-menu a,
+        .mobile-menu button {
+          touch-action: manipulation;
         }
 
         .cricket-ball {
