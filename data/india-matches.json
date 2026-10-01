@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-01T01:31:26.090Z",
-  "lastCheckedAt": "2026-10-01T01:31:26.090Z",
-  "lastSuccessfulSyncAt": "2026-10-01T01:31:26.090Z",
+  "syncedAt": "2026-10-01T07:40:48.686Z",
+  "lastCheckedAt": "2026-10-01T07:40:48.686Z",
+  "lastSuccessfulSyncAt": "2026-10-01T07:40:48.686Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,9 +41,9 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 2,
+    "live": 3,
     "recent": 59,
-    "upcoming": 481,
+    "upcoming": 480,
     "total": 542
   },
   "all": [
@@ -61,18 +61,18 @@
         {
           "name": "Australia A",
           "shortName": "AUSA",
-          "score": "358/10 (116.3 Ov)"
+          "score": "358/10 (116.3 Ov) & 59/1 (15.2 Ov)"
         },
         {
           "name": "India A",
           "shortName": "INDA",
-          "score": "122/5 (50.6 Ov)"
+          "score": "167/10 (67.6 Ov)"
         }
       ],
       "dateLabel": "29 Sept 2026, 09:30 am",
       "time": "",
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Day 2: Stumps - India A trail by 236 runs",
+      "overview": "Day 3: 2nd Session - Australia A lead by 250 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155422",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-29T04:00:00.000Z",
@@ -84,30 +84,61 @@
       "statusLabel": "Live",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "India A Women vs Australia A Women, Only unofficial Test",
       "series": "Australia A Women tour of India 2026",
       "teams": [
         {
           "name": "India A Women",
           "shortName": "INDWA",
-          "score": "364/10 (103.3 Ov) & 134/2 (27.5 Ov)"
+          "score": "364/10 (103.3 Ov) & 257/10 (64.2 Ov)"
         },
         {
           "name": "Australia A Women",
           "shortName": "AUSWA",
-          "score": "176/10 (63.4 Ov)"
+          "score": "176/10 (63.4 Ov) & 31 (9.6 Ov)"
         }
       ],
       "dateLabel": "29 Sept 2026, 09:30 am",
       "time": "",
       "place": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-      "overview": "Day 2: Stumps - India A Women lead by 322 runs",
+      "overview": "Day 3: 2nd Session - Australia A Women need 415 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155650",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-29T04:00:00.000Z",
       "rawId": 155650
+    },
+    {
+      "id": "live-163077",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "Rest of India vs Jammu and Kashmir, Irani Cup",
+      "series": "Irani Cup 2026",
+      "teams": [
+        {
+          "name": "Rest of India",
+          "shortName": "ROI",
+          "score": "112/3 (35.3 Ov)"
+        },
+        {
+          "name": "Jammu and Kashmir",
+          "shortName": "JK",
+          "score": ""
+        }
+      ],
+      "dateLabel": "01 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Sher-i-Kashmir Stadium, Srinagar",
+      "overview": "Day 1: 2nd Session",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-01T04:00:00.000Z",
+      "rawId": 163077
     },
     {
       "id": "upcoming-171030",
@@ -141,66 +172,35 @@
       "rawId": 171030
     },
     {
-      "id": "upcoming-163077",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "Jammu and Kashmir vs Rest of India, Irani Cup",
-      "series": "Irani Cup 2026",
-      "teams": [
-        {
-          "name": "Jammu and Kashmir",
-          "shortName": "JK",
-          "score": ""
-        },
-        {
-          "name": "Rest of India",
-          "shortName": "ROI",
-          "score": ""
-        }
-      ],
-      "dateLabel": "01 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Sher-i-Kashmir Stadium, Srinagar",
-      "overview": "Match starts at Oct 01, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-01T04:00:00.000Z",
-      "rawId": 163077
-    },
-    {
-      "id": "upcoming-171060",
+      "id": "upcoming-171070",
       "status": "upcoming",
       "statusLabel": "Future",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India vs Sri Lanka, 2nd Semi-Final",
+      "sourceType": "",
+      "sourceScope": "india-men",
+      "title": "Pakistan vs India, Gold Medal Match",
       "series": "Asian Games 2026",
       "teams": [
+        {
+          "name": "Pakistan",
+          "shortName": "PAK",
+          "score": ""
+        },
         {
           "name": "India",
           "shortName": "IND",
           "score": ""
-        },
-        {
-          "name": "Sri Lanka",
-          "shortName": "SL",
-          "score": ""
         }
       ],
-      "dateLabel": "01 Oct 2026, 10:00 am",
+      "dateLabel": "03 Oct 2026, 10:00 am",
       "time": "",
       "place": "Korogi Sports Park, Nisshin",
-      "overview": "Match starts at Oct 01, 04:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171060",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-01T04:30:00.000Z",
-      "rawId": 171060
+      "overview": "Match starts at Oct 03, 04:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171070",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-03T04:30:00.000Z",
+      "rawId": 171070
     },
     {
       "id": "upcoming-151554",
@@ -15021,6 +15021,38 @@
       "rawId": 164501
     },
     {
+      "id": "recent-171060",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "India vs Sri Lanka, 2nd Semi-Final",
+      "series": "Asian Games 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "169/7 (19.6 Ov)"
+        },
+        {
+          "name": "Sri Lanka",
+          "shortName": "SL",
+          "score": "45/10 (9.5 Ov)"
+        }
+      ],
+      "dateLabel": "01 Oct 2026, 10:00 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "India won by 124 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171060",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-01T04:30:00.000Z",
+      "rawId": 171060,
+      "starPerformers": []
+    },
+    {
       "id": "recent-151543",
       "status": "recent",
       "statusLabel": "Past",
@@ -15903,38 +15935,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-08-15T04:30:00.000Z",
       "rawId": 163013,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-169497",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
-      "title": "Sri Lanka Cricket XI vs India, 3-Day Warm-up Match",
-      "series": "India tour of Sri Lanka 2026",
-      "teams": [
-        {
-          "name": "Sri Lanka Cricket XI",
-          "shortName": "SLCXI",
-          "score": "363/8 (90 Ov) & 200/6 (45 Ov)"
-        },
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": "357/6 (90 Ov) & 214/4 (45 Ov)"
-        }
-      ],
-      "dateLabel": "07 Aug 2026, 10:00 am",
-      "time": "",
-      "place": "Nondescripts Cricket Club Ground, Colombo",
-      "overview": "India won by 6 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169497",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
-      "startTime": "2026-08-07T04:30:00.000Z",
-      "rawId": 169497,
       "starPerformers": []
     },
     {
@@ -16973,18 +16973,18 @@
         {
           "name": "Australia A",
           "shortName": "AUSA",
-          "score": "358/10 (116.3 Ov)"
+          "score": "358/10 (116.3 Ov) & 59/1 (15.2 Ov)"
         },
         {
           "name": "India A",
           "shortName": "INDA",
-          "score": "122/5 (50.6 Ov)"
+          "score": "167/10 (67.6 Ov)"
         }
       ],
       "dateLabel": "29 Sept 2026, 09:30 am",
       "time": "",
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Day 2: Stumps - India A trail by 236 runs",
+      "overview": "Day 3: 2nd Session - Australia A lead by 250 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155422",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-29T04:00:00.000Z",
@@ -16996,30 +16996,61 @@
       "statusLabel": "Live",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "India A Women vs Australia A Women, Only unofficial Test",
       "series": "Australia A Women tour of India 2026",
       "teams": [
         {
           "name": "India A Women",
           "shortName": "INDWA",
-          "score": "364/10 (103.3 Ov) & 134/2 (27.5 Ov)"
+          "score": "364/10 (103.3 Ov) & 257/10 (64.2 Ov)"
         },
         {
           "name": "Australia A Women",
           "shortName": "AUSWA",
-          "score": "176/10 (63.4 Ov)"
+          "score": "176/10 (63.4 Ov) & 31 (9.6 Ov)"
         }
       ],
       "dateLabel": "29 Sept 2026, 09:30 am",
       "time": "",
       "place": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-      "overview": "Day 2: Stumps - India A Women lead by 322 runs",
+      "overview": "Day 3: 2nd Session - Australia A Women need 415 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155650",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-09-29T04:00:00.000Z",
       "rawId": 155650
+    },
+    {
+      "id": "live-163077",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "Rest of India vs Jammu and Kashmir, Irani Cup",
+      "series": "Irani Cup 2026",
+      "teams": [
+        {
+          "name": "Rest of India",
+          "shortName": "ROI",
+          "score": "112/3 (35.3 Ov)"
+        },
+        {
+          "name": "Jammu and Kashmir",
+          "shortName": "JK",
+          "score": ""
+        }
+      ],
+      "dateLabel": "01 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Sher-i-Kashmir Stadium, Srinagar",
+      "overview": "Day 1: 2nd Session",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-01T04:00:00.000Z",
+      "rawId": 163077
     }
   ],
   "upcoming": [
@@ -17055,66 +17086,35 @@
       "rawId": 171030
     },
     {
-      "id": "upcoming-163077",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "Jammu and Kashmir vs Rest of India, Irani Cup",
-      "series": "Irani Cup 2026",
-      "teams": [
-        {
-          "name": "Jammu and Kashmir",
-          "shortName": "JK",
-          "score": ""
-        },
-        {
-          "name": "Rest of India",
-          "shortName": "ROI",
-          "score": ""
-        }
-      ],
-      "dateLabel": "01 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Sher-i-Kashmir Stadium, Srinagar",
-      "overview": "Match starts at Oct 01, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-01T04:00:00.000Z",
-      "rawId": 163077
-    },
-    {
-      "id": "upcoming-171060",
+      "id": "upcoming-171070",
       "status": "upcoming",
       "statusLabel": "Future",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India vs Sri Lanka, 2nd Semi-Final",
+      "sourceType": "",
+      "sourceScope": "india-men",
+      "title": "Pakistan vs India, Gold Medal Match",
       "series": "Asian Games 2026",
       "teams": [
+        {
+          "name": "Pakistan",
+          "shortName": "PAK",
+          "score": ""
+        },
         {
           "name": "India",
           "shortName": "IND",
           "score": ""
-        },
-        {
-          "name": "Sri Lanka",
-          "shortName": "SL",
-          "score": ""
         }
       ],
-      "dateLabel": "01 Oct 2026, 10:00 am",
+      "dateLabel": "03 Oct 2026, 10:00 am",
       "time": "",
       "place": "Korogi Sports Park, Nisshin",
-      "overview": "Match starts at Oct 01, 04:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171060",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-01T04:30:00.000Z",
-      "rawId": 171060
+      "overview": "Match starts at Oct 03, 04:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171070",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-03T04:30:00.000Z",
+      "rawId": 171070
     },
     {
       "id": "upcoming-151554",
@@ -31937,6 +31937,38 @@
   ],
   "recent": [
     {
+      "id": "recent-171060",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "India vs Sri Lanka, 2nd Semi-Final",
+      "series": "Asian Games 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "169/7 (19.6 Ov)"
+        },
+        {
+          "name": "Sri Lanka",
+          "shortName": "SL",
+          "score": "45/10 (9.5 Ov)"
+        }
+      ],
+      "dateLabel": "01 Oct 2026, 10:00 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "India won by 124 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171060",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-01T04:30:00.000Z",
+      "rawId": 171060,
+      "starPerformers": []
+    },
+    {
       "id": "recent-151543",
       "status": "recent",
       "statusLabel": "Past",
@@ -32819,38 +32851,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-08-15T04:30:00.000Z",
       "rawId": 163013,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-169497",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
-      "title": "Sri Lanka Cricket XI vs India, 3-Day Warm-up Match",
-      "series": "India tour of Sri Lanka 2026",
-      "teams": [
-        {
-          "name": "Sri Lanka Cricket XI",
-          "shortName": "SLCXI",
-          "score": "363/8 (90 Ov) & 200/6 (45 Ov)"
-        },
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": "357/6 (90 Ov) & 214/4 (45 Ov)"
-        }
-      ],
-      "dateLabel": "07 Aug 2026, 10:00 am",
-      "time": "",
-      "place": "Nondescripts Cricket Club Ground, Colombo",
-      "overview": "India won by 6 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/169497",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
-      "startTime": "2026-08-07T04:30:00.000Z",
-      "rawId": 169497,
       "starPerformers": []
     },
     {
@@ -33906,13 +33906,45 @@
       "id": "domestic",
       "label": "Domestic / State",
       "order": 4,
-      "live": 1,
+      "live": 2,
       "recent": 0,
-      "upcoming": 413,
+      "upcoming": 412,
       "total": 414
     }
   ],
   "importantMatches": [
+    {
+      "id": "live-163077",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "Rest of India vs Jammu and Kashmir, Irani Cup",
+      "series": "Irani Cup 2026",
+      "teams": [
+        {
+          "name": "Rest of India",
+          "shortName": "ROI",
+          "score": "112/3 (35.3 Ov)"
+        },
+        {
+          "name": "Jammu and Kashmir",
+          "shortName": "JK",
+          "score": ""
+        }
+      ],
+      "dateLabel": "01 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Sher-i-Kashmir Stadium, Srinagar",
+      "overview": "Day 1: 2nd Session",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-01T04:00:00.000Z",
+      "rawId": 163077,
+      "importance": "Major tournament"
+    },
     {
       "id": "upcoming-165363",
       "status": "upcoming",
@@ -40570,70 +40602,6 @@
       "importance": "Major tournament"
     },
     {
-      "id": "upcoming-171060",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India vs Sri Lanka, 2nd Semi-Final",
-      "series": "Asian Games 2026",
-      "teams": [
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": ""
-        },
-        {
-          "name": "Sri Lanka",
-          "shortName": "SL",
-          "score": ""
-        }
-      ],
-      "dateLabel": "01 Oct 2026, 10:00 am",
-      "time": "",
-      "place": "Korogi Sports Park, Nisshin",
-      "overview": "Match starts at Oct 01, 04:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171060",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-01T04:30:00.000Z",
-      "rawId": 171060,
-      "importance": "Knockout stage"
-    },
-    {
-      "id": "upcoming-163077",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "Jammu and Kashmir vs Rest of India, Irani Cup",
-      "series": "Irani Cup 2026",
-      "teams": [
-        {
-          "name": "Jammu and Kashmir",
-          "shortName": "JK",
-          "score": ""
-        },
-        {
-          "name": "Rest of India",
-          "shortName": "ROI",
-          "score": ""
-        }
-      ],
-      "dateLabel": "01 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Sher-i-Kashmir Stadium, Srinagar",
-      "overview": "Match starts at Oct 01, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-01T04:00:00.000Z",
-      "rawId": 163077,
-      "importance": "Major tournament"
-    },
-    {
       "id": "upcoming-171030",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -40663,6 +40631,39 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030,
+      "importance": "Knockout stage"
+    },
+    {
+      "id": "recent-171060",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "India vs Sri Lanka, 2nd Semi-Final",
+      "series": "Asian Games 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "169/7 (19.6 Ov)"
+        },
+        {
+          "name": "Sri Lanka",
+          "shortName": "SL",
+          "score": "45/10 (9.5 Ov)"
+        }
+      ],
+      "dateLabel": "01 Oct 2026, 10:00 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "India won by 124 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171060",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-01T04:30:00.000Z",
+      "rawId": 171060,
+      "starPerformers": [],
       "importance": "Knockout stage"
     },
     {
@@ -47631,8 +47632,8 @@
       "levelLabel": "International",
       "total": 2,
       "live": 0,
-      "upcoming": 2,
-      "recent": 0,
+      "upcoming": 1,
+      "recent": 1,
       "startTime": "2026-09-28T04:30:00.000Z",
       "endTime": "2026-10-01T04:30:00.000Z",
       "matches": [
@@ -47669,9 +47670,9 @@
           "importance": "Knockout stage"
         },
         {
-          "id": "upcoming-171060",
-          "status": "upcoming",
-          "statusLabel": "Future",
+          "id": "recent-171060",
+          "status": "recent",
+          "statusLabel": "Past",
           "level": "international",
           "levelLabel": "International",
           "sourceType": "International",
@@ -47682,22 +47683,23 @@
             {
               "name": "India",
               "shortName": "IND",
-              "score": ""
+              "score": "169/7 (19.6 Ov)"
             },
             {
               "name": "Sri Lanka",
               "shortName": "SL",
-              "score": ""
+              "score": "45/10 (9.5 Ov)"
             }
           ],
           "dateLabel": "01 Oct 2026, 10:00 am",
           "time": "",
           "place": "Korogi Sports Park, Nisshin",
-          "overview": "Match starts at Oct 01, 04:30 GMT",
+          "overview": "India won by 124 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171060",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-10-01T04:30:00.000Z",
           "rawId": 171060,
+          "starPerformers": [],
           "importance": "Knockout stage"
         }
       ]
@@ -47708,38 +47710,38 @@
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "total": 1,
-      "live": 0,
-      "upcoming": 1,
+      "live": 1,
+      "upcoming": 0,
       "recent": 0,
       "startTime": "2026-10-01T04:00:00.000Z",
       "endTime": "2026-10-01T04:00:00.000Z",
       "matches": [
         {
-          "id": "upcoming-163077",
-          "status": "upcoming",
-          "statusLabel": "Future",
+          "id": "live-163077",
+          "status": "live",
+          "statusLabel": "Live",
           "level": "domestic",
           "levelLabel": "Domestic / State",
           "sourceType": "domestic",
           "sourceScope": "global",
-          "title": "Jammu and Kashmir vs Rest of India, Irani Cup",
+          "title": "Rest of India vs Jammu and Kashmir, Irani Cup",
           "series": "Irani Cup 2026",
           "teams": [
             {
-              "name": "Jammu and Kashmir",
-              "shortName": "JK",
-              "score": ""
-            },
-            {
               "name": "Rest of India",
               "shortName": "ROI",
+              "score": "112/3 (35.3 Ov)"
+            },
+            {
+              "name": "Jammu and Kashmir",
+              "shortName": "JK",
               "score": ""
             }
           ],
           "dateLabel": "01 Oct 2026, 09:30 am",
           "time": "",
           "place": "Sher-i-Kashmir Stadium, Srinagar",
-          "overview": "Match starts at Oct 01, 04:00 GMT",
+          "overview": "Day 1: 2nd Session",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-10-01T04:00:00.000Z",
@@ -48023,6 +48025,45 @@
     }
   ],
   "importantResultsByMonth": [
+    {
+      "month": "2026-10",
+      "label": "October 2026",
+      "matches": [
+        {
+          "id": "recent-171060",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "international",
+          "levelLabel": "International",
+          "sourceType": "International",
+          "sourceScope": "global",
+          "title": "India vs Sri Lanka, 2nd Semi-Final",
+          "series": "Asian Games 2026",
+          "teams": [
+            {
+              "name": "India",
+              "shortName": "IND",
+              "score": "169/7 (19.6 Ov)"
+            },
+            {
+              "name": "Sri Lanka",
+              "shortName": "SL",
+              "score": "45/10 (9.5 Ov)"
+            }
+          ],
+          "dateLabel": "01 Oct 2026, 10:00 am",
+          "time": "",
+          "place": "Korogi Sports Park, Nisshin",
+          "overview": "India won by 124 runs",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171060",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "startTime": "2026-10-01T04:30:00.000Z",
+          "rawId": 171060,
+          "starPerformers": [],
+          "importance": "Knockout stage"
+        }
+      ]
+    },
     {
       "month": "2026-09",
       "label": "September 2026",
