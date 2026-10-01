@@ -2554,6 +2554,8 @@ const RouterContext = React.createContext(null);
                 <PlayerLeaderCard label="Field Watch" player={leaders.fielding} metric={`${(playerOverallStats(leaders.fielding).catches || 0) + (playerOverallStats(leaders.fielding).stumpings || 0)} FIELD`} />
               </div>
 
+              <TopTenFormPanel players={players.slice(0, 10)} />
+
               {rosterChanges.length > 0 && <RosterChangePanel changes={rosterChanges} />}
 
               <div className="mt-10 grid gap-3 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center">
@@ -2702,6 +2704,53 @@ const RouterContext = React.createContext(null);
               <p className="mt-4 font-display text-2xl font-black uppercase text-white">Roster syncing</p>
             )}
           </article>
+        );
+      }
+
+      function TopTenFormPanel({ players }) {
+        return (
+          <section className="mt-8 rounded-[8px] border border-cyan/20 bg-cyan/[0.045] p-4 sm:p-5" aria-labelledby="top-ten-form-title">
+            <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="text-[0.65rem] font-black uppercase tracking-[0.2em] text-cyan">Ranked form board</p>
+                <h2 id="top-ten-form-title" className="mt-1 font-display text-3xl font-black uppercase text-white">Top 10 + recent matches</h2>
+              </div>
+              <p className="max-w-xl text-xs leading-5 text-white/48">Career totals come from the public CricHeroes snapshot. Recent form is pulled from each player’s cross-team match history and links directly to the scorecard.</p>
+            </div>
+            <div className="mt-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-5">
+              {players.map((player) => {
+                const stats = playerOverallStats(player);
+                const recentMatches = playerRecentForm(player, 2);
+                return (
+                  <article key={`top-ten-${player.id || player.name}`} className="min-w-0 rounded-[7px] border border-white/10 bg-night/55 p-3">
+                    <div className="flex items-start justify-between gap-2">
+                      <div className="min-w-0">
+                        <p className="text-[0.56rem] font-black uppercase tracking-[0.16em] text-gold">Rank {player.rank}</p>
+                        <h3 className="mt-1 truncate text-sm font-black uppercase text-white" title={player.name}>{player.name}</h3>
+                      </div>
+                      <span className="shrink-0 font-display text-xl font-black text-cyan">{player.impact}</span>
+                    </div>
+                    <p className="mt-2 truncate text-[0.58rem] font-black uppercase tracking-[0.1em] text-white/42">{stats.matches || "-"} matches • {stats.runs || "-"} runs • {stats.wickets || "-"} wkts</p>
+                    <div className="mt-3 border-t border-white/8 pt-2">
+                      <p className="text-[0.56rem] font-black uppercase tracking-[0.14em] text-white/35">Latest form</p>
+                      {recentMatches.length ? (
+                        <div className="mt-2 grid gap-1.5">
+                          {recentMatches.map((match) => (
+                            <a key={`top-form-${player.id}-${match.id || match.scorecardUrl}`} href={match.performance?.scorecardUrl || match.scorecardUrl} target="_blank" rel="noopener noreferrer" className="block min-w-0 rounded-[5px] border border-white/8 px-2 py-1.5 text-[0.64rem] leading-4 text-white/68 transition hover:border-gold/35 hover:text-white">
+                              <span className="block truncate font-semibold">{match.performance?.highlight || `${match.teamA || "Match"} vs ${match.teamB || "opponent"}`}</span>
+                              <span className="block truncate text-[0.55rem] text-white/35">{match.performance?.teamName || "Cross-team"} • {formatFeedDate(match.date)}</span>
+                            </a>
+                          ))}
+                        </div>
+                      ) : (
+                        <p className="mt-2 text-[0.64rem] leading-4 text-white/38">No public recent match line yet.</p>
+                      )}
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          </section>
         );
       }
 

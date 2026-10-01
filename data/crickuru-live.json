@@ -3,7 +3,7 @@
   "source": "CricHeroes public team and player pages",
   "sourceStatus": "stale",
   "syncedAt": "2026-10-01T06:52:40.391Z",
-  "lastCheckedAt": "2026-10-01T09:11:54.097Z",
+  "lastCheckedAt": "2026-10-01T09:25:11.740Z",
   "lastSuccessfulSyncAt": "2026-10-01T06:52:40.391Z",
   "playerStatsUpdatedAt": "2026-10-01T08:37:50.405Z",
   "playerRecentMatchesUpdatedAt": "2026-10-01T07:01:53.436Z",
@@ -20291,7 +20291,16 @@
         "stumpings": 0,
         "lastMatchDate": "2025-03-02T04:39:00.000Z",
         "updatedAt": "2026-10-01T06:53:05.155Z"
-      }
+      },
+      "cricheroesProfile": {
+        "location": "Greater Noida",
+        "views": 741,
+        "playingRole": "Wicket-keeper batter",
+        "battingStyle": "RHB",
+        "bowlingStyle": "Right-arm medium"
+      },
+      "profileSyncStatus": "public_metadata_refreshed",
+      "lastProfileSeenAt": "2026-10-01T09:25:11.740Z"
     },
     {
       "id": 28790413,
@@ -23451,7 +23460,16 @@
         "stumpings": 0,
         "lastMatchDate": "2026-07-15T00:56:42.000Z",
         "updatedAt": "2026-10-01T06:53:05.155Z"
-      }
+      },
+      "cricheroesProfile": {
+        "location": "Greater Noida",
+        "views": 1839,
+        "playingRole": "All-Rounder",
+        "battingStyle": "RHB",
+        "bowlingStyle": "Right-arm medium"
+      },
+      "profileSyncStatus": "public_metadata_refreshed",
+      "lastProfileSeenAt": "2026-10-01T09:25:11.740Z"
     },
     {
       "id": 25455261,
@@ -43114,7 +43132,16 @@
         "stumpings": 0,
         "lastMatchDate": "2026-06-02T01:03:10.000Z",
         "updatedAt": "2026-10-01T06:53:05.154Z"
-      }
+      },
+      "cricheroesProfile": {
+        "location": "Greater Noida",
+        "views": 706,
+        "playingRole": "None",
+        "battingStyle": "RHB",
+        "bowlingStyle": "Right-arm fast"
+      },
+      "profileSyncStatus": "public_metadata_refreshed",
+      "lastProfileSeenAt": "2026-10-01T09:25:11.740Z"
     },
     {
       "id": 14456617,
@@ -51264,7 +51291,16 @@
         "stumpings": 0,
         "lastMatchDate": "2026-02-21T02:12:20.000Z",
         "updatedAt": "2026-10-01T06:53:05.155Z"
-      }
+      },
+      "cricheroesProfile": {
+        "location": "Noida",
+        "views": 526,
+        "playingRole": "All-Rounder",
+        "battingStyle": "RHB",
+        "bowlingStyle": "Right-arm fast"
+      },
+      "profileSyncStatus": "public_metadata_refreshed",
+      "lastProfileSeenAt": "2026-10-01T09:25:11.740Z"
     },
     {
       "id": 16794809,
@@ -93045,7 +93081,16 @@
         "stumpings": 0,
         "lastMatchDate": "2026-06-02T01:03:10.000Z",
         "updatedAt": "2026-10-01T06:53:05.155Z"
-      }
+      },
+      "cricheroesProfile": {
+        "location": "Greater Noida",
+        "views": 1653,
+        "playingRole": "Middle-order batter",
+        "battingStyle": "RHB",
+        "bowlingStyle": "Right-arm medium"
+      },
+      "profileSyncStatus": "public_metadata_refreshed",
+      "lastProfileSeenAt": "2026-10-01T09:25:11.740Z"
     },
     {
       "id": 4353555,
@@ -100104,6 +100149,6 @@
   "errors": [
     "CricHeroes returned 403 for https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches"
   ],
-  "manualRefreshAt": "2026-10-01T09:11:54.097Z",
-  "manualRefreshSource": "Supplied CricHeroes profile link for Shahid Sarwar"
+  "manualRefreshAt": "2026-10-01T09:25:11.740Z",
+  "manualRefreshSource": "Verified public metadata refresh for top-ranked player profiles"
 }
