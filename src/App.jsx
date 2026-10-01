@@ -1458,20 +1458,6 @@ const RouterContext = React.createContext(null);
             result: "Warriors won by 12 runs",
             tone: "Gold finish",
           },
-          {
-            tag: "CricHeroes",
-            title: "Official Match Feed",
-            score: "All scorecards",
-            result: "View complete match history on CricHeroes",
-            tone: "Verified source",
-          },
-          {
-            tag: "Community",
-            title: "Community Rivalries",
-            score: "Tabs ready",
-            result: "Use this panel for upcoming, recent and tournament match groups",
-            tone: "Funky tabs",
-          },
         ];
 
         return (
