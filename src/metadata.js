@@ -79,6 +79,76 @@ export const ROUTE_METADATA = [
     jsonLdType: "players",
   },
   {
+    path: "/uttar-pradesh-cricket",
+    canonicalPath: "/uttar-pradesh-cricket",
+    title: "Uttar Pradesh Local Cricket Teams, Matches and Tournaments | CricKuru",
+    description:
+      "Discover grassroots cricket in Uttar Pradesh: local teams, Greater Noida match hubs, district tournaments, player profiles and community cricket pathways on CricKuru.",
+    ogType: "website",
+    themeColor: "#05070B",
+    changefreq: "weekly",
+    priority: "0.88",
+    jsonLdType: "localNetwork",
+    seoKey: "uttarPradesh",
+    areaServed: "Uttar Pradesh, India",
+  },
+  {
+    path: "/delhi-cricket",
+    canonicalPath: "/delhi-cricket",
+    title: "Delhi Local Cricket Teams, Matches and Tournaments | CricKuru",
+    description:
+      "Find Delhi grassroots cricket coverage, local teams, match pathways, player stories and nearby district tournament signals through the CricKuru community network.",
+    ogType: "website",
+    themeColor: "#05070B",
+    changefreq: "weekly",
+    priority: "0.82",
+    jsonLdType: "localNetwork",
+    seoKey: "delhi",
+    areaServed: "Delhi, India",
+  },
+  {
+    path: "/greater-noida-cricket",
+    canonicalPath: "/greater-noida-cricket",
+    title: "Greater Noida Cricket Teams, Players and Local Matches | CricKuru",
+    description:
+      "Explore Greater Noida cricket teams, society matches, player profiles, scorecards and local tournament pathways, anchored by Kurukshetra Warriors on CricKuru.",
+    ogType: "website",
+    themeColor: "#05070B",
+    changefreq: "daily",
+    priority: "0.92",
+    jsonLdType: "localNetwork",
+    seoKey: "greaterNoida",
+    areaServed: "Greater Noida, Uttar Pradesh, India",
+  },
+  {
+    path: "/district-tournaments",
+    canonicalPath: "/district-tournaments",
+    title: "District Cricket Tournaments in India | CricKuru",
+    description:
+      "Track district-level cricket tournaments, state pathways, local finals, match centres and grassroots competition signals across India with CricKuru.",
+    ogType: "website",
+    themeColor: "#05070B",
+    changefreq: "daily",
+    priority: "0.86",
+    jsonLdType: "localNetwork",
+    seoKey: "districtTournaments",
+    areaServed: "India",
+  },
+  {
+    path: "/local-cricket-teams",
+    canonicalPath: "/local-cricket-teams",
+    title: "Local Cricket Teams and Player Networks in India | CricKuru",
+    description:
+      "Browse local cricket teams, community squads, player networks, match records and team discovery signals from Greater Noida and across India on CricKuru.",
+    ogType: "website",
+    themeColor: "#05070B",
+    changefreq: "daily",
+    priority: "0.88",
+    jsonLdType: "localNetwork",
+    seoKey: "localTeams",
+    areaServed: "India",
+  },
+  {
     path: "/quiz",
     canonicalPath: "/quiz",
     title: "CricKuru Cricket Quiz, Lobby and Leaderboard",
@@ -459,6 +529,48 @@ function jsonLdForRoute(metadata) {
     ];
   }
 
+  if (metadata.jsonLdType === "localNetwork") {
+    return [
+      basePage,
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        name: metadata.title,
+        description: metadata.description,
+        url: canonicalUrl,
+        keywords: ["local cricket", "grassroots cricket", "district cricket", "cricket teams", metadata.areaServed],
+        about: {
+          "@type": "SportsActivityLocation",
+          name: `${metadata.areaServed} grassroots cricket network`,
+          sport: "Cricket",
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: metadata.areaServed,
+            addressCountry: "IN",
+          },
+        },
+        isPartOf: {
+          "@type": "WebSite",
+          name: SITE_NAME,
+          url: SITE_ORIGIN,
+        },
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SportsOrganization",
+        name: "CricKuru grassroots cricket network",
+        sport: "Cricket",
+        url: canonicalUrl,
+        areaServed: metadata.areaServed,
+        parentOrganization: {
+          "@type": "Organization",
+          name: SITE_NAME,
+          url: SITE_ORIGIN,
+        },
+      },
+    ];
+  }
+
   if (metadata.jsonLdType === "quiz") {
     return [
       basePage,
@@ -611,6 +723,36 @@ export function renderRouteSeoContent(pathname = "/") {
           body: "Search Warriors player profiles, recent form, role badges, performance charges, batting, bowling, fielding and captaincy signals sourced from the public CricHeroes feed.",
           links: [["/captain/ankit-kulshreshtha", "Captain profile"], ["/warriors", "Team match centre"], ["/india-matches", "India match feed"]],
         },
+        uttarPradesh: {
+          eyebrow: "Uttar Pradesh grassroots cricket",
+          heading: "Find local cricket in Uttar Pradesh",
+          body: "CricKuru is building a practical discovery layer for Uttar Pradesh cricket: local teams, Greater Noida match centres, district tournaments, player profiles and pathways from society cricket to state-level competition.",
+          links: [["/greater-noida-cricket", "Greater Noida cricket"], ["/district-tournaments", "District tournaments"], ["/local-cricket-teams", "Local cricket teams"], ["/warriors", "Kurukshetra Warriors"]],
+        },
+        delhi: {
+          eyebrow: "Delhi grassroots cricket",
+          heading: "Delhi cricket teams and match pathways",
+          body: "Explore the Delhi grassroots cricket scene through team discovery, community match signals, player stories and tournament pathways that connect local cricket with the wider North India network.",
+          links: [["/uttar-pradesh-cricket", "Uttar Pradesh cricket"], ["/district-tournaments", "District tournaments"], ["/local-cricket-teams", "Local cricket teams"]],
+        },
+        greaterNoida: {
+          eyebrow: "Greater Noida cricket hub",
+          heading: "Greater Noida local cricket",
+          body: "Follow Greater Noida society cricket with Kurukshetra Warriors match coverage, player command-room profiles, local opponents, scorecards and a growing directory for nearby teams and tournaments.",
+          links: [["/warriors", "Warriors match centre"], ["/players", "Player command room"], ["/district-tournaments", "Tournament tracker"], ["/local-cricket-teams", "Team directory"]],
+        },
+        districtTournaments: {
+          eyebrow: "Grassroots competition tracker",
+          heading: "District cricket tournaments",
+          body: "Track the local competition layer: weekend leagues, district cups, state pathways, finals, semi-finals and match centres that give community cricket a searchable home.",
+          links: [["/india-matches", "India match radar"], ["/greater-noida-cricket", "Greater Noida hub"], ["/local-cricket-teams", "Find teams"], ["/warriors", "Recent Warriors matches"]],
+        },
+        localTeams: {
+          eyebrow: "Community cricket directory",
+          heading: "Local cricket teams in India",
+          body: "Browse community squads and local cricket networks, starting with Kurukshetra Warriors in Greater Noida and expanding through match opponents, player links, scorecards and grassroots tournament signals.",
+          links: [["/warriors", "Kurukshetra Warriors"], ["/greater-noida-cricket", "Greater Noida cricket"], ["/uttar-pradesh-cricket", "Uttar Pradesh cricket"], ["/district-tournaments", "District tournaments"]],
+        },
         quiz: {
           eyebrow: "Cricket quiz and lobby",
           heading: "Challenge your cricket knowledge",
@@ -641,7 +783,7 @@ export function renderRouteSeoContent(pathname = "/") {
           body: "Browse curated Amazon India collections for tennis-ball and leather-ball cricket, including bats, balls, protection, kit bags, stumps and training equipment with real product images and practical fit notes.",
           links: [["/warriors", "Kurukshetra Warriors"], ["/players", "Player profiles"], ["/gt-gaming", "GT Gaming sponsor"]],
         },
-      }[metadata.jsonLdType] || {
+      }[metadata.seoKey || metadata.jsonLdType] || {
         eyebrow: "CricKuru cricket hub",
         heading: metadata.title,
         body: metadata.description,

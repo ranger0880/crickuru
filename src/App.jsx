@@ -13,6 +13,11 @@ const RouterContext = React.createContext(null);
         "/warriors": "warriors/index.html",
         "/arena": "arena/index.html",
         "/players": "players/index.html",
+        "/uttar-pradesh-cricket": "uttar-pradesh-cricket/index.html",
+        "/delhi-cricket": "delhi-cricket/index.html",
+        "/greater-noida-cricket": "greater-noida-cricket/index.html",
+        "/district-tournaments": "district-tournaments/index.html",
+        "/local-cricket-teams": "local-cricket-teams/index.html",
         "/quiz": "quiz/index.html",
         "/memes": "memes/index.html",
         "/meme": "meme/index.html",
@@ -29,7 +34,7 @@ const RouterContext = React.createContext(null);
 
       function localPreviewPrefix() {
         const path = decodeURIComponent(window.location.pathname).replace(/\\/g, "/");
-        return /\/(arena|coin|kurukshetra-coin|india-matches|meme|memes|players|quiz|warriors|gt-gaming|shop)\/index\.html$/i.test(path) ? "../" : "";
+        return /\/(arena|coin|kurukshetra-coin|india-matches|meme|memes|players|uttar-pradesh-cricket|delhi-cricket|greater-noida-cricket|district-tournaments|local-cricket-teams|quiz|warriors|gt-gaming|shop)\/index\.html$/i.test(path) ? "../" : "";
       }
 
       function normalizePath(pathname, basename = "/") {
@@ -47,7 +52,7 @@ const RouterContext = React.createContext(null);
       function currentRoutePath(basename = "/") {
         if (!isLocalFilePreview()) return normalizePath(window.location.pathname, basename);
         const path = decodeURIComponent(window.location.pathname).replace(/\\/g, "/").toLowerCase();
-        const routeMatch = path.match(/\/(arena|coin|kurukshetra-coin|india-matches|meme|memes|players|quiz|warriors|gt-gaming|shop)\/index\.html$/);
+        const routeMatch = path.match(/\/(arena|coin|kurukshetra-coin|india-matches|meme|memes|players|uttar-pradesh-cricket|delhi-cricket|greater-noida-cricket|district-tournaments|local-cricket-teams|quiz|warriors|gt-gaming|shop)\/index\.html$/);
         return routeMatch ? `/${routeMatch[1]}` : "/";
       }
 
@@ -687,6 +692,7 @@ const RouterContext = React.createContext(null);
         { label: "Warriors", path: "/warriors" },
         { label: "India", path: "/india-matches" },
         { label: "Players", path: "/players" },
+        { label: "Local", path: "/local-cricket-teams" },
         { label: "Quiz", path: "/quiz" },
         { label: "Arena", path: "/arena" },
         { label: "Memes", path: "/memes" },
@@ -7009,6 +7015,220 @@ const RouterContext = React.createContext(null);
         );
       }
 
+      const GRASSROOTS_HUBS = [
+        { label: "Uttar Pradesh", path: "/uttar-pradesh-cricket", short: "UP" },
+        { label: "Delhi", path: "/delhi-cricket", short: "DL" },
+        { label: "Greater Noida", path: "/greater-noida-cricket", short: "GN" },
+        { label: "District tournaments", path: "/district-tournaments", short: "DT" },
+        { label: "Local teams", path: "/local-cricket-teams", short: "LT" },
+      ];
+
+      const GRASSROOTS_PAGE_CONFIG = {
+        uttarPradesh: {
+          area: "Uttar Pradesh",
+          eyebrow: "State cricket network",
+          heading: "Uttar Pradesh plays everywhere.",
+          accent: "Every pitch counts.",
+          description: "A practical discovery layer for society cricket, local teams, district tournaments and the players building their next level across Uttar Pradesh.",
+          statLabels: ["Local hubs", "District pathway", "Founding team"],
+          statValues: ["75+", "Active", "Kurukshetra"],
+          pathways: [
+            ["Greater Noida", "/greater-noida-cricket", "Society matches, team stories and player form."],
+            ["District tournaments", "/district-tournaments", "Find the competitions where local cricket gets noticed."],
+            ["Local teams", "/local-cricket-teams", "Browse squads, opponents and community pathways."],
+          ],
+        },
+        delhi: {
+          area: "Delhi",
+          eyebrow: "Capital-region grassroots cricket",
+          heading: "Delhi cricket has a pulse.",
+          accent: "Find your next fixture.",
+          description: "Follow local cricket pathways around Delhi and the NCR: community teams, player networks, match signals and tournament discovery in one place.",
+          statLabels: ["Region", "Format", "Network"],
+          statValues: ["Delhi NCR", "Community", "Growing"],
+          pathways: [
+            ["Uttar Pradesh", "/uttar-pradesh-cricket", "Cross the NCR boundary into the wider UP cricket network."],
+            ["Greater Noida", "/greater-noida-cricket", "Start with the closest live Warriors hub."],
+            ["District tournaments", "/district-tournaments", "See how local competitions connect."],
+          ],
+        },
+        greaterNoida: {
+          area: "Greater Noida",
+          eyebrow: "CricKuru founding cricket hub",
+          heading: "Greater Noida is on the board.",
+          accent: "Kurukshetra Warriors lead the charge.",
+          description: "Explore the local cricket scene through Kurukshetra Warriors scorecards, player command-room profiles, nearby rivals and the tournaments shaping matchday.",
+          statLabels: ["Warriors players", "Matches tracked", "Source"],
+          statValues: ["Live roster", "CricHeroes", "Public feed"],
+          pathways: [
+            ["Warriors match centre", "/warriors", "Open scorecards, records, roster and trophy-room moments."],
+            ["Player command room", "/players", "Search form, career totals and coach insights."],
+            ["Team directory", "/local-cricket-teams", "See the local network around the Warriors."],
+          ],
+        },
+        districtTournaments: {
+          area: "India grassroots cricket",
+          eyebrow: "Competition radar",
+          heading: "The tournament layer matters.",
+          accent: "From district games to state dreams.",
+          description: "Use this tracker to understand the competition ladder: local weekend leagues, district cups, state pathways and the important matches that move a community forward.",
+          statLabels: ["Competition levels", "Match window", "Live source"],
+          statValues: ["4", "Now / next", "India radar"],
+          pathways: [
+            ["India match radar", "/india-matches", "Switch between international, women’s, domestic and state cricket."],
+            ["Greater Noida hub", "/greater-noida-cricket", "Follow a real local match centre."],
+            ["Local teams", "/local-cricket-teams", "Connect tournaments to the squads playing them."],
+          ],
+        },
+        localTeams: {
+          area: "India local teams",
+          eyebrow: "Community squad directory",
+          heading: "Every local team deserves a scoreboard.",
+          accent: "Start with one squad. Build the network.",
+          description: "Discover community cricket teams through match history, player profiles, rival form and tournament signals, starting with Kurukshetra Warriors in Greater Noida.",
+          statLabels: ["Directory", "Player layer", "Team anchor"],
+          statValues: ["Open", "CricHeroes", "Warriors"],
+          pathways: [
+            ["Kurukshetra Warriors", "/warriors", "The founding team’s public match centre and roster."],
+            ["Uttar Pradesh", "/uttar-pradesh-cricket", "State-wide grassroots discovery."],
+            ["District tournaments", "/district-tournaments", "Find the competitions teams enter."],
+          ],
+        },
+      };
+
+      const DISTRICT_TOURNAMENT_LEVELS = [
+        { id: "All", label: "All levels", color: "gold", detail: "The full grassroots ladder" },
+        { id: "District", label: "District", color: "cyan", detail: "Local leagues and district cups" },
+        { id: "State", label: "State", color: "green", detail: "State selection pathways" },
+        { id: "Community", label: "Community", color: "crimson", detail: "Society and weekend cricket" },
+      ];
+
+      function GrassrootsPage({ page }) {
+        const config = GRASSROOTS_PAGE_CONFIG[page];
+        const { loading, data } = useLiveCricketFeed();
+        const [level, setLevel] = useState("All");
+        const [query, setQuery] = useState("");
+        const recentMatches = asArray(data.recentMatches).slice(0, 4);
+        const opponents = asArray(data.opponents).slice(0, 8);
+        const players = asArray(data.players);
+        const tournamentRows = [
+          { name: "Greater Noida Weekend League", level: "Community", place: "Greater Noida", status: "Match centre ready", href: "/greater-noida-cricket" },
+          { name: "Uttar Pradesh District Pathway", level: "District", place: "Uttar Pradesh", status: "Explore local teams", href: "/uttar-pradesh-cricket" },
+          { name: "NCR State Selection Watch", level: "State", place: "Delhi NCR", status: "Player form matters", href: "/players" },
+          { name: "India Domestic and State Radar", level: "State", place: "India", status: "Open live match radar", href: "/india-matches" },
+          { name: "Kurukshetra Warriors Match Series", level: "Community", place: "Greater Noida", status: "43 matches tracked", href: "/warriors" },
+        ];
+        const filteredTournaments = tournamentRows.filter((tournament) => {
+          const matchesLevel = page !== "districtTournaments" || level === "All" || tournament.level === level;
+          const haystack = `${tournament.name} ${tournament.level} ${tournament.place}`.toLowerCase();
+          return matchesLevel && (!query.trim() || haystack.includes(query.toLowerCase().trim()));
+        });
+        const displayedTeams = opponents.filter((opponent) => !query.trim() || String(opponent.name || "").toLowerCase().includes(query.toLowerCase().trim()));
+        const displayedMatches = recentMatches.filter((match) => {
+          if (!query.trim()) return true;
+          const haystack = `${match.opponent || ""} ${match.venue || ""} ${match.city || ""} ${match.resultText || ""}`.toLowerCase();
+          return haystack.includes(query.toLowerCase().trim());
+        });
+
+        return (
+          <main className="route-bg grassroots-page page-grain min-h-screen px-5 pb-20 pt-36 sm:px-8">
+            <section className="grassroots-hero mx-auto max-w-7xl overflow-hidden rounded-[8px] border border-gold/25 px-5 py-8 sm:px-10 sm:py-12 lg:grid lg:grid-cols-[1.2fr_0.8fr] lg:gap-10 lg:py-16">
+              <div className="relative z-10">
+                <p className="text-xs font-black uppercase tracking-[0.3em] text-cyan">{config.eyebrow}</p>
+                <h1 className="mt-5 max-w-4xl font-display text-[clamp(3rem,8vw,7.2rem)] font-black uppercase leading-[0.86] text-white">{config.heading}</h1>
+                <p className="mt-4 font-display text-2xl font-black uppercase text-gold sm:text-3xl">{config.accent}</p>
+                <p className="mt-6 max-w-2xl text-base leading-8 text-white/70 sm:text-lg">{config.description}</p>
+                <div className="mt-8 flex flex-wrap gap-3">
+                  <Link to="/local-cricket-teams" className="shine-button inline-flex min-h-12 items-center gap-2 rounded-full bg-gold px-5 text-sm font-black uppercase tracking-[0.14em] text-night"><Icon.Users size={17} /> Explore teams</Link>
+                  <Link to="/district-tournaments" className="inline-flex min-h-12 items-center gap-2 rounded-full border border-cyan/35 bg-white/[0.05] px-5 text-sm font-black uppercase tracking-[0.14em] text-white transition hover:border-cyan hover:text-cyan"><Icon.Trophy size={17} /> Find tournaments</Link>
+                </div>
+              </div>
+              <div className="grassroots-orbit relative mt-10 grid min-h-[18rem] content-center gap-3 sm:grid-cols-3 lg:mt-0 lg:grid-cols-1">
+                {config.statLabels.map((label, index) => (
+                  <div key={label} className="grassroots-stat relative rounded-[8px] border border-white/12 bg-night/70 p-4 backdrop-blur-xl">
+                    <p className="text-[0.62rem] font-black uppercase tracking-[0.2em] text-white/48">{label}</p>
+                    <p className="mt-2 font-display text-3xl font-black uppercase text-gold">{config.statValues[index]}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <nav className="mx-auto mt-6 flex max-w-7xl gap-2 overflow-x-auto pb-2" aria-label="Grassroots cricket hubs">
+              {GRASSROOTS_HUBS.map((hub) => (
+                <Link key={hub.path} to={hub.path} className={`inline-flex min-h-11 shrink-0 items-center gap-2 rounded-full border px-4 text-xs font-black uppercase tracking-[0.12em] transition ${hub.path.includes(page === "uttarPradesh" ? "uttar-pradesh" : page === "delhi" ? "delhi-cricket" : page === "greaterNoida" ? "greater-noida" : page === "districtTournaments" ? "district" : "local-cricket") ? "border-gold/60 bg-gold/10 text-gold" : "border-white/12 bg-white/[0.04] text-white/65 hover:border-cyan/50 hover:text-cyan"}`}>
+                  <span className="grid h-6 w-6 place-items-center rounded-full border border-current text-[0.55rem]">{hub.short}</span>{hub.label}
+                </Link>
+              ))}
+            </nav>
+
+            <section className="mx-auto mt-14 max-w-7xl" aria-labelledby="grassroots-pathways-title">
+              <div className="flex flex-col justify-between gap-4 border-b border-white/12 pb-5 sm:flex-row sm:items-end">
+                <div>
+                  <p className="text-xs font-black uppercase tracking-[0.28em] text-cyan">Build your cricket map</p>
+                  <h2 id="grassroots-pathways-title" className="mt-2 font-display text-4xl font-black uppercase text-white sm:text-5xl">Choose a pathway</h2>
+                </div>
+                <p className="max-w-md text-sm leading-6 text-white/55">State, city, tournament and team pages are connected so players can move from watching a match to finding their next one.</p>
+              </div>
+              <div className="mt-6 grid gap-4 md:grid-cols-3">
+                {config.pathways.map(([title, href, detail], index) => (
+                  <Link key={href} to={href} className="grassroots-pathway group relative overflow-hidden rounded-[8px] border border-white/12 bg-white/[0.04] p-5 transition hover:-translate-y-1 hover:border-gold/55">
+                    <span className="font-display text-5xl font-black text-white/10">0{index + 1}</span>
+                    <h3 className="mt-5 font-display text-2xl font-black uppercase text-white group-hover:text-gold">{title}</h3>
+                    <p className="mt-3 text-sm leading-6 text-white/58">{detail}</p>
+                    <span className="mt-6 inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.14em] text-cyan">Open hub <Icon.ArrowRight size={15} /></span>
+                  </Link>
+                ))}
+              </div>
+            </section>
+
+            <section className="mx-auto mt-16 max-w-7xl" aria-labelledby="grassroots-directory-title">
+              <div className="flex flex-col gap-5 border-b border-white/12 pb-5 lg:flex-row lg:items-end lg:justify-between">
+                <div>
+                  <p className="text-xs font-black uppercase tracking-[0.28em] text-gold">{page === "districtTournaments" ? "Tournament directory" : page === "localTeams" ? "Team discovery" : "Local signals"}</p>
+                  <h2 id="grassroots-directory-title" className="mt-2 font-display text-4xl font-black uppercase text-white sm:text-5xl">{page === "districtTournaments" ? "Competition radar" : page === "localTeams" ? "Teams on the map" : "What is moving now"}</h2>
+                </div>
+                <div className="flex w-full flex-col gap-3 sm:flex-row lg:w-auto">
+                  <label className="relative min-w-0 flex-1 sm:min-w-[16rem]">
+                    <span className="sr-only">Search this grassroots hub</span>
+                    <Icon.Search className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-cyan" size={17} />
+                    <input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder={page === "localTeams" ? "Search teams" : "Search this hub"} className="min-h-11 w-full rounded-full border border-white/12 bg-white/[0.05] pl-10 pr-4 text-sm font-semibold text-white outline-none placeholder:text-white/35 focus:border-cyan/60" />
+                  </label>
+                  {page === "districtTournaments" && (
+                    <div className="flex gap-2 overflow-x-auto pb-1">
+                      {DISTRICT_TOURNAMENT_LEVELS.map((item) => <button key={item.id} type="button" onClick={() => setLevel(item.id)} className={`min-h-11 shrink-0 rounded-full border px-4 text-xs font-black uppercase tracking-[0.1em] transition ${level === item.id ? "border-gold/60 bg-gold/10 text-gold" : "border-white/12 text-white/55 hover:border-cyan/50 hover:text-cyan"}`}>{item.label}</button>)}
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {page === "districtTournaments" ? (
+                <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                  {filteredTournaments.map((tournament) => <Link key={tournament.name} to={tournament.href} className="grassroots-directory-row group rounded-[8px] border border-white/12 bg-white/[0.04] p-5 transition hover:border-gold/55"><div className="flex items-center justify-between gap-3"><span className="rounded-full border border-cyan/35 px-3 py-1 text-[0.6rem] font-black uppercase tracking-[0.16em] text-cyan">{tournament.level}</span><span className="text-[0.62rem] font-bold uppercase tracking-[0.12em] text-white/40">{tournament.place}</span></div><h3 className="mt-5 font-display text-2xl font-black uppercase text-white group-hover:text-gold">{tournament.name}</h3><p className="mt-3 text-sm font-semibold text-white/58">{tournament.status}</p><span className="mt-6 inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.14em] text-cyan">Open match path <Icon.ArrowRight size={15} /></span></Link>)}
+                </div>
+              ) : page === "localTeams" ? (
+                <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  <Link to="/warriors" className="grassroots-directory-row group rounded-[8px] border border-gold/35 bg-gold/[0.07] p-5 transition hover:border-gold"><p className="text-[0.62rem] font-black uppercase tracking-[0.2em] text-gold">Founding team</p><h3 className="mt-4 font-display text-2xl font-black uppercase text-white group-hover:text-gold">Kurukshetra Warriors</h3><p className="mt-2 text-sm text-white/60">Greater Noida • {data.summary?.matches || 0} matches tracked</p><span className="mt-6 inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.14em] text-cyan">Open team centre <Icon.ArrowRight size={15} /></span></Link>
+                  {displayedTeams.slice(0, 8).map((opponent) => <Link key={opponent.name} to="/warriors" className="grassroots-directory-row group rounded-[8px] border border-white/12 bg-white/[0.04] p-5 transition hover:border-cyan/55"><div className="flex items-center justify-between gap-3"><span className="grid h-10 w-10 place-items-center rounded-full border border-cyan/35 bg-cyan/10 font-display font-black text-cyan">{initialsFromName(opponent.name)}</span><span className="text-[0.62rem] font-bold uppercase tracking-[0.12em] text-white/40">{opponent.matches || 0} matches</span></div><h3 className="mt-5 font-display text-xl font-black uppercase text-white group-hover:text-cyan">{opponent.name}</h3><p className="mt-2 text-sm text-white/58">{opponent.winsAgainstUs || 0} wins against Warriors • community opponent</p><span className="mt-5 inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.14em] text-cyan">View match history <Icon.ArrowRight size={15} /></span></Link>)}
+                </div>
+              ) : (
+                <div className="mt-6 grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    {displayedMatches.map((match) => <Link key={match.id} to="/warriors" className="grassroots-directory-row group rounded-[8px] border border-white/12 bg-white/[0.04] p-5 transition hover:border-gold/55"><p className="text-[0.62rem] font-black uppercase tracking-[0.16em] text-cyan">{match.result === "win" ? "Warriors win" : "Recent match"}</p><h3 className="mt-4 font-display text-xl font-black uppercase text-white group-hover:text-gold">{match.opponent || "Local fixture"}</h3><p className="mt-2 text-sm text-white/58">{formatFeedDate(match.date)} • {match.venue || match.city || "Greater Noida"}</p><p className="mt-5 font-display text-2xl font-black text-gold">{match.ourScore || "Score pending"}</p></Link>)}
+                    {!displayedMatches.length && <p className="rounded-[8px] border border-dashed border-white/15 p-6 text-sm font-semibold text-white/55">No local match signal matches that search yet.</p>}
+                  </div>
+                  <div className="rounded-[8px] border border-cyan/25 bg-cyan/[0.06] p-6"><p className="text-xs font-black uppercase tracking-[0.2em] text-cyan">Live network snapshot</p><div className="mt-6 grid grid-cols-2 gap-4"><div><p className="text-[0.62rem] font-black uppercase tracking-[0.16em] text-white/45">Players tracked</p><p className="mt-1 font-display text-4xl font-black text-white">{players.length || "-"}</p></div><div><p className="text-[0.62rem] font-black uppercase tracking-[0.16em] text-white/45">Opponents</p><p className="mt-1 font-display text-4xl font-black text-white">{opponents.length || "-"}</p></div><div><p className="text-[0.62rem] font-black uppercase tracking-[0.16em] text-white/45">Matches</p><p className="mt-1 font-display text-4xl font-black text-white">{data.summary?.matches || "-"}</p></div><div><p className="text-[0.62rem] font-black uppercase tracking-[0.16em] text-white/45">Sync</p><p className="mt-1 font-display text-xl font-black uppercase text-gold">{loading ? "Updating" : "Ready"}</p></div></div><Link to="/players" className="mt-8 inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.14em] text-gold">Open player command room <Icon.ArrowRight size={15} /></Link></div>
+                </div>
+              )}
+            </section>
+
+            <section className="mx-auto mt-16 max-w-7xl border-t border-white/12 pt-10" aria-labelledby="grassroots-next-title">
+              <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between"><div><p className="text-xs font-black uppercase tracking-[0.28em] text-gold">Next signal</p><h2 id="grassroots-next-title" className="mt-2 font-display text-3xl font-black uppercase text-white">Put your team on the map.</h2></div><Link to="/warriors" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-gold/35 px-5 text-sm font-black uppercase tracking-[0.12em] text-gold transition hover:bg-gold/10">See the live Warriors model <Icon.ArrowRight size={17} /></Link></div>
+              <p className="mt-4 max-w-3xl text-sm leading-7 text-white/55">CricKuru is designed to grow from a single verified local team into a searchable grassroots cricket network. Public CricHeroes links keep the match trail verifiable while the directory makes discovery easier for players, captains and tournament organisers.</p>
+            </section>
+          </main>
+        );
+      }
+
       function App() {
         const routerBasename = window.location.hostname.endsWith("github.io") ? "/crickuru" : "/";
 
@@ -7041,6 +7261,11 @@ const RouterContext = React.createContext(null);
                     path="/players"
                     element={<PlayersPage />}
                   />
+                  <Route path="/uttar-pradesh-cricket" element={<GrassrootsPage page="uttarPradesh" />} />
+                  <Route path="/delhi-cricket" element={<GrassrootsPage page="delhi" />} />
+                  <Route path="/greater-noida-cricket" element={<GrassrootsPage page="greaterNoida" />} />
+                  <Route path="/district-tournaments" element={<GrassrootsPage page="districtTournaments" />} />
+                  <Route path="/local-cricket-teams" element={<GrassrootsPage page="localTeams" />} />
                   <Route
                     path="/quiz"
                     element={<QuizPage />}
