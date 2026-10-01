@@ -38,7 +38,7 @@ GitHub Actions runs the CricHeroes feed every 15 minutes, refreshes 12 player pr
 
 ## Analytics
 
-The site includes the Google Analytics Google tag for measurement ID `G-6WZ5CTVLPG`. The build script also allows the required Google Analytics endpoints in the generated Hostinger CSP.
+The site includes the Google Analytics Google tag for measurement ID `G-KZ8ZPCDSH2`. The build script also allows the required Google Analytics endpoints in the generated Hostinger CSP.
 
 ## Warriors Data
 
