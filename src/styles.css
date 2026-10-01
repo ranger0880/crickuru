@@ -1393,6 +1393,12 @@
           radial-gradient(circle at 90% 0%, rgba(34, 211, 238, 0.1), transparent 28%);
       }
 
+      /* Decorative glow and hover details must never add height to a card. */
+      .cyber-player-card > .absolute,
+      .cyber-player-card > .player-hover-dossier {
+        position: absolute !important;
+      }
+
       .cyber-player-card .player-level-infographic,
       .cyber-player-card .player-ranking-infographic {
         background-image: repeating-linear-gradient(90deg, transparent 0 18px, rgba(34, 211, 238, 0.045) 19px, transparent 20px);
@@ -1518,6 +1524,13 @@
         .cyber-player-card > .player-hover-dossier {
           position: absolute !important;
           pointer-events: none;
+        }
+      }
+
+      @media (max-width: 1023px) {
+        /* Touch devices open the full profile on tap; hover summaries are desktop-only. */
+        .cyber-player-card > .player-hover-dossier {
+          display: none;
         }
       }
 
