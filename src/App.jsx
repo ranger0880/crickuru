@@ -3154,10 +3154,19 @@ const RouterContext = React.createContext(null);
           const bucket = buckets[ballType];
           if (!bucket) continue;
           bucket.matches += 1;
-          if (match.performance) {
+          const performance = match.performance || {};
+          const hasVerifiedPlayerLine = Boolean(
+            performance.teamId ||
+            performance.teamName ||
+            performance.opponent ||
+            performance.highlight ||
+            ["runs", "balls", "fours", "sixes", "wickets", "ballsBowled", "runsConceded", "catches", "stumpings"]
+              .some((key) => Number(performance[key]) > 0),
+          );
+          if (hasVerifiedPlayerLine) {
             bucket.scorecardsWithPlayerLine += 1;
-            bucket.runs += playerDetailNumber(match.performance.runs);
-            bucket.wickets += playerDetailNumber(match.performance.wickets);
+            bucket.runs += playerDetailNumber(performance.runs);
+            bucket.wickets += playerDetailNumber(performance.wickets);
           }
           if (!bucket.latestDate || new Date(match.date || 0).getTime() > new Date(bucket.latestDate).getTime()) {
             bucket.latestDate = match.date || bucket.latestDate;
@@ -6042,7 +6051,7 @@ const RouterContext = React.createContext(null);
               <LiveStat label="Recent runs" value={hasPlayerLines ? format.runs : "-"} />
               <LiveStat label="Recent wkts" value={hasPlayerLines ? format.wickets : "-"} />
             </div>
-            <p className="mt-4 text-xs leading-5 text-white/52">{hasPlayerLines ? "Runs and wickets are summed from the public scorecards currently available to CricKuru." : "The public match record identifies the format, but no player line is available in the saved scorecard snapshot yet."}</p>
+            <p className="mt-4 text-xs leading-5 text-white/52">{hasPlayerLines ? "Runs and wickets are summed from verified public scorecard player lines currently available to CricKuru." : "The public match record identifies the format, but no verified player line is available in the saved scorecard snapshot yet. Overall career totals above remain sourced from CricHeroes."}</p>
             <p className="mt-2 text-[0.62rem] font-black uppercase tracking-[0.12em] text-white/35">Latest record: {format.latestDate}</p>
           </article>
         );

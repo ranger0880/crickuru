@@ -383,9 +383,10 @@ function bestRunsFromText(value) {
   return match ? Number(match[0]) : 0;
 }
 
-function normalizeOverallStats(initialStats) {
+function normalizeOverallStats(initialStats, playerInfo = null) {
   if (!initialStats?.statistics) return null;
   const statistics = initialStats?.statistics || {};
+  const profile = playerInfo?.data || playerInfo || {};
   const batting = statistics.batting || [];
   const bowling = statistics.bowling || [];
   const fielding = statistics.fielding || [];
@@ -404,12 +405,15 @@ function normalizeOverallStats(initialStats) {
   );
   return {
     source: "CricHeroes public player stats",
+    profileMatches: Number(profile.total_matches || 0),
+    profileRuns: Number(profile.total_runs || 0),
+    profileWickets: Number(profile.total_wickets || 0),
     sections,
     publicFieldCount: Object.values(sections).reduce((sum, items) => sum + items.length, 0),
-    matches: numericStat(batting, "Matches"),
+    matches: Number(profile.total_matches || 0) || numericStat(batting, "Matches"),
     battingInnings: numericStat(batting, "Innings"),
     notOut: numericStat(batting, "Not out"),
-    runs: numericStat(batting, "Runs"),
+    runs: Number(profile.total_runs || 0) || numericStat(batting, "Runs"),
     bestScore: bestRunsFromText(statValue(batting, "Highest Runs")),
     average: String(statValue(batting, "Avg") || ""),
     strikeRate: String(statValue(batting, "SR") || ""),
@@ -424,7 +428,7 @@ function normalizeOverallStats(initialStats) {
     bowlingInnings: numericStat(bowling, "Innings"),
     overs: String(statValue(bowling, "Overs") || ""),
     maidens: numericStat(bowling, "Maidens"),
-    wickets: numericStat(bowling, "Wickets"),
+    wickets: Number(profile.total_wickets || 0) || numericStat(bowling, "Wickets"),
     runsConceded: numericStat(bowling, "Runs"),
     bestWickets: bestWicketsFromText(statValue(bowling, "Best Bowling")),
     hatTricks: 0,
@@ -502,7 +506,10 @@ export async function fetchPlayerProfileData(player, previousPlayer = null) {
   let historyFetched = false;
   try {
     const statsText = await fetchFlightText(player.statsUrl);
-    overallStats = normalizeOverallStats(extractJsonValue(statsText, "initialStats"));
+    overallStats = normalizeOverallStats(
+      extractJsonValue(statsText, "initialStats"),
+      extractJsonValue(statsText, "playerInfo"),
+    );
   } catch (error) {
     console.warn(`Player stats unavailable for ${player.name}: ${error.message}`);
   }

@@ -1,11 +1,11 @@
 {
   "schemaVersion": 3,
   "source": "CricHeroes public team and player pages",
-  "sourceStatus": "stale",
+  "sourceStatus": "fresh",
   "syncedAt": "2026-10-01T11:56:19.232Z",
-  "lastCheckedAt": "2026-10-01T11:58:31.266Z",
-  "lastSuccessfulSyncAt": "2026-10-01T11:56:19.232Z",
-  "playerStatsUpdatedAt": "2026-10-01T11:56:19.232Z",
+  "lastCheckedAt": "2026-10-01T12:21:54.733Z",
+  "lastSuccessfulSyncAt": "2026-10-01T12:21:54.733Z",
+  "playerStatsUpdatedAt": "2026-10-01T12:21:54.733Z",
   "playerRecentMatchesUpdatedAt": "2026-10-01T11:56:19.232Z",
   "playerSyncCursor": 17,
   "coverage": {
@@ -36886,6 +36886,9 @@
       },
       "overallStats": {
         "source": "CricHeroes public player stats",
+        "profileMatches": 147,
+        "profileRuns": 876,
+        "profileWickets": 38,
         "sections": {
           "batting": [
             {
@@ -37107,7 +37110,7 @@
           ]
         },
         "publicFieldCount": 42,
-        "matches": 146,
+        "matches": 147,
         "battingInnings": 95,
         "notOut": 28,
         "runs": 876,
@@ -37151,6 +37154,9 @@
       },
       "stats": {
         "source": "CricHeroes public player stats",
+        "profileMatches": 147,
+        "profileRuns": 876,
+        "profileWickets": 38,
         "sections": {
           "batting": [
             {
@@ -37372,7 +37378,7 @@
           ]
         },
         "publicFieldCount": 42,
-        "matches": 146,
+        "matches": 147,
         "battingInnings": 95,
         "notOut": 28,
         "runs": 876,
