@@ -81,10 +81,11 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          # The verified Hostinger document root is public_html. Upload once
-          # there so every deploy is deterministic and avoids duplicate FTP
-          # sessions against inactive account roots.
-          roots=("public_html")
+          # Hostinger may serve the connected domain from the account
+          # public_html root or the domain-specific public_html root. Refresh
+          # both known CricKuru roots so the active document root gets the
+          # same build.
+          roots=("public_html" "domains/crickuru.com/public_html")
           for root in "${roots[@]}"; do
             echo "Refreshing FTP root: /${root}"
             while IFS= read -r -d '' file; do
