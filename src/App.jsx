@@ -516,13 +516,76 @@ const RouterContext = React.createContext(null);
         return Object.entries(stats).some(([key, value]) => key !== "source" && key !== "updatedAt" && value !== null && value !== undefined && value !== "");
       }
 
+      function numericStatValue(value) {
+        if (typeof value === "number") return Number.isFinite(value) ? value : 0;
+        const parsed = Number.parseFloat(String(value ?? "").replace(/,/g, "").replace(/%/g, ""));
+        return Number.isFinite(parsed) ? parsed : 0;
+      }
+
+      function extractLeadingNumber(value) {
+        const match = String(value ?? "").replace(/,/g, "").match(/-?\d+(?:\.\d+)?/);
+        return match ? numericStatValue(match[0]) : 0;
+      }
+
       function normalizePlayerStats(stats) {
         if (!hasPlayerStats(stats)) return {};
+        const sections = stats.sections && typeof stats.sections === "object" ? stats.sections : {};
+        const sectionValue = (sectionName, aliases) => {
+          const wanted = new Set(aliases.map((alias) => String(alias).toLowerCase().replace(/[^a-z0-9]/g, "")));
+          const row = asArray(sections[sectionName]).find((item) => wanted.has(String(item?.title || "").toLowerCase().replace(/[^a-z0-9]/g, "")));
+          return row?.value;
+        };
+        const choose = (field, sectionName, aliases) => stats[field] ?? sectionValue(sectionName, aliases);
+        const battingMatches = choose("matches", "batting", ["matches"]);
+        const battingInnings = choose("battingInnings", "batting", ["innings"]);
+        const bowlingInnings = choose("bowlingInnings", "bowling", ["innings"]);
+        const fieldingMatches = choose("fieldingMatches", "fielding", ["matches"]);
+        const captainMatches = choose("captainMatches", "captain", ["matches"]);
+        const bestScore = stats.bestScore ?? extractLeadingNumber(sectionValue("batting", ["highest runs", "highestruns"]));
+        const bestBowling = stats.bestBowling ?? sectionValue("bowling", ["best bowling", "bestbowling"]);
         return {
           ...stats,
-          matches: stats.matches ?? stats.matchesTracked,
-          fieldingMatches: stats.fieldingMatches ?? stats.matchesTracked,
-          bestBowling: stats.bestBowling ?? (stats.bestWickets ? `${stats.bestWickets} wickets` : undefined),
+          matches: battingMatches ?? stats.matchesTracked,
+          battingInnings,
+          bowlingInnings,
+          fieldingMatches: fieldingMatches ?? stats.matchesTracked,
+          captainMatches,
+          bestScore,
+          bestWickets: stats.bestWickets ?? extractLeadingNumber(bestBowling),
+          bestBowling: bestBowling ?? (stats.bestWickets ? `${stats.bestWickets} wickets` : undefined),
+          notOut: choose("notOut", "batting", ["not out", "notout"]),
+          runs: choose("runs", "batting", ["runs"]),
+          average: choose("average", "batting", ["avg", "average"]),
+          strikeRate: choose("strikeRate", "batting", ["sr", "strikerate", "strikerate"]),
+          thirties: choose("thirties", "batting", ["30s", "30"]),
+          fifties: choose("fifties", "batting", ["50s", "50"]),
+          hundreds: choose("hundreds", "batting", ["100s", "100"]),
+          fours: choose("fours", "batting", ["4s", "4"]),
+          sixes: choose("sixes", "batting", ["6s", "6"]),
+          ducks: choose("ducks", "batting", ["ducks"]),
+          wins: choose("wins", "batting", ["won", "wins"]),
+          losses: choose("losses", "batting", ["loss", "losses"]),
+          overs: choose("overs", "bowling", ["overs"]),
+          maidens: choose("maidens", "bowling", ["maidens"]),
+          wickets: choose("wickets", "bowling", ["wickets"]),
+          runsConceded: choose("runsConceded", "bowling", ["runs", "runsconceded"]),
+          threeWicketHauls: choose("threeWicketHauls", "bowling", ["3 wickets", "3wickets"]),
+          fiveWicketHauls: choose("fiveWicketHauls", "bowling", ["5 wickets", "5wickets"]),
+          economy: choose("economy", "bowling", ["economy", "eco"]),
+          bowlingStrikeRate: choose("bowlingStrikeRate", "bowling", ["sr", "strikerate"]),
+          bowlingAverage: choose("bowlingAverage", "bowling", ["avg", "average"]),
+          wides: choose("wides", "bowling", ["wides", "wd"]),
+          noBalls: choose("noBalls", "bowling", ["noballs", "no balls"]),
+          dotBalls: choose("dotBalls", "bowling", ["dot balls", "dotballs"]),
+          catches: choose("catches", "fielding", ["catches"]),
+          caughtBehind: choose("caughtBehind", "fielding", ["caught behind", "caughtbehind"]),
+          runOuts: choose("runOuts", "fielding", ["run outs", "runouts"]),
+          stumpings: choose("stumpings", "fielding", ["stumpings"]),
+          assistedRunOuts: choose("assistedRunOuts", "fielding", ["assisted run outs", "assistedrunouts"]),
+          byeRunsWicketkeeper: choose("byeRunsWicketkeeper", "fielding", ["bye runs (wk)", "byerunswk"]),
+          tossesWon: choose("tossesWon", "captain", ["toss won", "tosses won", "tosswon"]),
+          captainWinPercentage: choose("captainWinPercentage", "captain", ["win per", "win percentage", "winper"]),
+          publicFieldCount: stats.publicFieldCount || Object.values(sections).reduce((count, rows) => count + asArray(rows).length, 0),
         };
       }
 
@@ -2118,9 +2181,8 @@ const RouterContext = React.createContext(null);
           return <DataEmpty title="No players in the feed" description="The CricHeroes member list will appear here after the next successful sync." />;
         }
 
-        const displayPlayers = players
-          .map((player) => ({ ...player, impact: playerImpactScore(player), role: playerRoleLabel(player), level: playerLevel(player) }))
-          .sort((a, b) => Number(b.isCaptain) - Number(a.isCaptain) || b.impact - a.impact || a.name.localeCompare(b.name));
+        const displayPlayers = rankPlayers(players)
+          .sort((a, b) => Number(b.isCaptain) - Number(a.isCaptain) || a.rank - b.rank);
         const levelCounts = displayPlayers.reduce((counts, player) => {
           counts[player.level.key] = (counts[player.level.key] || 0) + 1;
           return counts;
@@ -2138,7 +2200,7 @@ const RouterContext = React.createContext(null);
             <p className="max-w-3xl text-sm leading-6 text-white/55">CricKuru levels measure public cricket experience and repeat performance, not employment status. Every level is match-ready, and every amateur player has a visible growth path.</p>
             {rosterChanges.length > 0 && <RosterChangePanel changes={rosterChanges} />}
             <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-              {displayPlayers.map((player, index) => <WarriorsRosterDataCard key={player.id || player.name} player={player} rank={index + 1} onSelect={() => onSelectPlayer?.(player)} />)}
+              {displayPlayers.map((player) => <WarriorsRosterDataCard key={player.id || player.name} player={player} rank={player.rank} onSelect={() => onSelectPlayer?.(player)} />)}
             </div>
           </div>
         );
@@ -2171,6 +2233,7 @@ const RouterContext = React.createContext(null);
               <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full border border-white/10 bg-night/60 font-display text-xl font-black text-white">{player.impact}</span>
             </div>
             <PlayerLevelInfographic level={level} />
+            <PlayerRankingInfographic player={player} compact />
             <div className="mt-4 grid grid-cols-2 gap-2 text-center sm:grid-cols-4">
               <LiveTinyStat label="Runs" value={stats.runs || 0} />
               <LiveTinyStat label="Wkts" value={stats.wickets || 0} />
@@ -2391,9 +2454,7 @@ const RouterContext = React.createContext(null);
         const [selectedPlayer, setSelectedPlayer] = useState(null);
         const rosterChanges = asArray(data.rosterChangeLog);
         const players = useMemo(() => {
-          return asArray(data.players)
-            .map((player) => ({ ...player, impact: playerImpactScore(player), role: playerRoleLabel(player), level: playerLevel(player) }))
-            .sort((a, b) => b.impact - a.impact || (b.performance?.awards || 0) - (a.performance?.awards || 0) || a.name.localeCompare(b.name));
+          return rankPlayers(data.players);
         }, [data.players]);
         const captain = useMemo(() => {
           const captainId = Number(data.team?.captainId || 0);
@@ -2547,7 +2608,7 @@ const RouterContext = React.createContext(null);
 
               {filteredPlayers.length ? (
                 <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-                  {filteredPlayers.map((player, index) => <PlayerProfileCard key={player.id || player.name} player={player} rank={index + 1} onSelect={() => setSelectedPlayer(player)} />)}
+                  {filteredPlayers.map((player) => <PlayerProfileCard key={player.id || player.name} player={player} rank={player.rank} onSelect={() => setSelectedPlayer(player)} />)}
                 </div>
               ) : (
                 <div className="mt-8 rounded-[8px] border border-white/12 bg-white/[0.045] p-8 text-center">
@@ -2560,7 +2621,7 @@ const RouterContext = React.createContext(null);
 
               <div className="mt-10 flex flex-col gap-4 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:justify-between">
                 <p className="max-w-2xl text-sm leading-7 text-white/54">
-                  Performance charge is a 1-100 display score built from overall CricHeroes totals, cross-team recent highlights, rare records, Warriors awards, role signals and recent form. Public data refreshes on a near-live schedule.
+                  Performance charge is a 1-100 role-aware score built from the public CricHeroes batting, bowling, fielding and captaincy sections. Recent form helps the coach, while ranking confidence stays separate from performance so small samples are not overstated.
                 </p>
                 <a
                   href={data.team?.membersUrl || CricLinks.members}
@@ -2686,6 +2747,7 @@ const RouterContext = React.createContext(null);
             </div>
 
             <PlayerLevelInfographic level={level} />
+            <PlayerRankingInfographic player={player} compact />
 
             <div className="relative mt-5 rounded-[7px] border border-cyan/20 bg-cyan/[0.06] p-4">
               <div className="flex items-center gap-2 text-[0.62rem] font-black uppercase tracking-[0.16em] text-cyan"><Icon.Sparkles size={14} /> Areas of improvement</div>
@@ -2773,26 +2835,114 @@ const RouterContext = React.createContext(null);
       }
 
       function playerImpactScore(player) {
-        const performance = player.performance || {};
+        return playerRankingSnapshot(player).score;
+      }
+
+      function boundedScore(value, minimum = 0, maximum = 100) {
+        return Math.min(100, Math.max(0, Math.round(((value - minimum) / (maximum - minimum || 1)) * 100)));
+      }
+
+      function inverseScore(value, best, worst) {
+        if (!Number.isFinite(value) || value <= 0) return 0;
+        return Math.min(100, Math.max(0, Math.round(((worst - value) / (worst - best || 1)) * 100)));
+      }
+
+      function weightedDimension(items) {
+        const usable = items.filter((item) => item.active && Number.isFinite(item.score));
+        const weight = usable.reduce((sum, item) => sum + item.weight, 0);
+        if (!weight) return { score: 0, weight: 0 };
+        return { score: Math.round(usable.reduce((sum, item) => sum + item.score * item.weight, 0) / weight), weight };
+      }
+
+      function playerRankingSnapshot(player) {
         const stats = playerOverallStats(player);
-        const raw =
-          Math.min(25, (stats.runs || 0) / 4) +
-          Math.min(20, (stats.wickets || 0) * 5) +
-          Math.min(12, (stats.bestScore || 0) / 8) +
-          Math.min(10, (stats.fifties || 0) * 3) +
-          Math.min(12, (stats.hundreds || 0) * 6) +
-          Math.min(12, (stats.hatTricks || 0) * 12) +
-          Math.min(10, ((stats.catches || 0) + (stats.stumpings || 0)) * 2) +
-          (performance.awards || 0) * 5 +
-          (performance.playerOfMatch || 0) * 6 +
-          (performance.bestBatter || 0) * 4 +
-          (performance.bestBowler || 0) * 4 +
-          (performance.fielderOfMatch || 0) * 3 +
-          (player.isCaptain ? 10 : 0) +
-          (player.isPro ? 6 : 0) +
-          (player.isVerified ? 4 : 0) +
-          asArray(player.badges).length;
-        return Math.min(100, Math.max(1, Math.round(raw)));
+        const roleText = `${player?.role || ""} ${player?.skill || ""} ${player?.batterCategory || ""} ${player?.bowlerCategory || ""}`.toLowerCase();
+        const matches = numericStatValue(stats.matches);
+        const battingInnings = numericStatValue(stats.battingInnings);
+        const bowlingInnings = numericStatValue(stats.bowlingInnings);
+        const fieldingMatches = numericStatValue(stats.fieldingMatches || matches);
+        const runs = numericStatValue(stats.runs);
+        const wickets = numericStatValue(stats.wickets);
+        const average = numericStatValue(stats.average);
+        const strikeRate = numericStatValue(stats.strikeRate);
+        const bowlingAverage = numericStatValue(stats.bowlingAverage);
+        const bowlingStrikeRate = numericStatValue(stats.bowlingStrikeRate);
+        const economy = numericStatValue(stats.economy);
+        const overs = numericStatValue(stats.overs);
+        const dotBalls = numericStatValue(stats.dotBalls);
+        const catches = numericStatValue(stats.catches);
+        const stumpings = numericStatValue(stats.stumpings);
+        const runOuts = numericStatValue(stats.runOuts);
+        const assistedRunOuts = numericStatValue(stats.assistedRunOuts);
+        const directFielding = catches + stumpings + runOuts + assistedRunOuts;
+        const battingRate = battingInnings ? runs / battingInnings : 0;
+        const wicketsRate = bowlingInnings ? wickets / bowlingInnings : 0;
+        const fieldingRate = fieldingMatches ? directFielding / fieldingMatches : 0;
+        const captainWinRate = numericStatValue(stats.captainWinPercentage);
+        const batting = weightedDimension([
+          { score: boundedScore(battingRate, 0, 55), weight: 0.28, active: battingInnings > 0 || runs > 0 },
+          { score: boundedScore(average, 0, 50), weight: 0.24, active: average > 0 },
+          { score: boundedScore(strikeRate, 70, 220), weight: 0.22, active: strikeRate > 0 },
+          { score: boundedScore((numericStatValue(stats.fifties) + numericStatValue(stats.hundreds) * 2) / Math.max(1, battingInnings), 0, 0.35), weight: 0.14, active: battingInnings > 0 },
+          { score: boundedScore((numericStatValue(stats.fours) + numericStatValue(stats.sixes)) / Math.max(1, runs), 0, 0.5), weight: 0.12, active: runs > 0 },
+        ]);
+        const bowling = weightedDimension([
+          { score: boundedScore(wicketsRate, 0, 1.4), weight: 0.32, active: bowlingInnings > 0 || wickets > 0 },
+          { score: inverseScore(economy, 6, 14), weight: 0.22, active: economy > 0 },
+          { score: inverseScore(bowlingAverage, 15, 45), weight: 0.18, active: bowlingAverage > 0 && wickets > 0 },
+          { score: inverseScore(bowlingStrikeRate, 10, 40), weight: 0.16, active: bowlingStrikeRate > 0 && wickets > 0 },
+          { score: boundedScore(overs ? dotBalls / (overs * 6) : 0, 0, 0.45), weight: 0.12, active: overs > 0 && dotBalls >= 0 },
+        ]);
+        const fielding = weightedDimension([
+          { score: boundedScore(fieldingRate, 0, 0.7), weight: 0.6, active: fieldingMatches > 0 || directFielding > 0 },
+          { score: boundedScore(fieldingMatches ? catches / fieldingMatches : 0, 0, 0.45), weight: 0.25, active: fieldingMatches > 0 },
+          { score: boundedScore(fieldingMatches ? (stumpings + runOuts + assistedRunOuts) / fieldingMatches : 0, 0, 0.25), weight: 0.15, active: fieldingMatches > 0 },
+        ]);
+        const captaincy = weightedDimension([
+          { score: boundedScore(captainWinRate, 0, 100), weight: 0.75, active: numericStatValue(stats.captainMatches) > 0 && captainWinRate > 0 },
+          { score: boundedScore(numericStatValue(stats.tossesWon) / Math.max(1, numericStatValue(stats.captainMatches)), 0, 1), weight: 0.25, active: numericStatValue(stats.captainMatches) > 0 },
+        ]);
+        const roleWeights = {
+          batting: roleText.includes("bowler") && !roleText.includes("batter") ? 0.3 : 0.43,
+          bowling: roleText.includes("batter") && !roleText.includes("bowler") ? 0.22 : 0.35,
+          fielding: 0.14,
+          captaincy: player?.isCaptain || numericStatValue(stats.captainMatches) > 0 ? 0.08 : 0,
+        };
+        const overall = weightedDimension([
+          { score: batting.score, weight: roleWeights.batting, active: batting.weight > 0 },
+          { score: bowling.score, weight: roleWeights.bowling, active: bowling.weight > 0 },
+          { score: fielding.score, weight: roleWeights.fielding, active: fielding.weight > 0 },
+          { score: captaincy.score, weight: roleWeights.captaincy, active: captaincy.weight > 0 && roleWeights.captaincy > 0 },
+        ]);
+        const publicFields = numericStatValue(stats.publicFieldCount);
+        const confidence = Math.min(100, Math.round(Math.min(70, publicFields / 43 * 70) + Math.min(30, matches / 30 * 30)));
+        const evidence = Math.max(battingInnings, bowlingInnings, fieldingMatches, matches);
+        const sampleFactor = evidence ? Math.min(1, Math.sqrt(evidence / 80)) : 0;
+        const reliability = Math.min(1, (confidence / 100) * 0.75 + sampleFactor * 0.25);
+        const adjustedScore = evidence ? Math.round(35 + (overall.score - 35) * reliability) : 1;
+        return {
+          score: Math.max(1, Math.min(100, adjustedScore)),
+          confidence,
+          evidence,
+          rawScore: Math.max(1, Math.min(100, overall.score)),
+          batting: batting.score,
+          bowling: bowling.score,
+          fielding: fielding.score,
+          captaincy: captaincy.score,
+          dimensions: { batting: batting.score, bowling: bowling.score, fielding: fielding.score, captaincy: captaincy.score },
+          label: confidence >= 75 ? "High confidence" : confidence >= 45 ? "Growing sample" : "Early sample",
+          source: stats.source === CRICHEROES_STATS_SOURCE ? "CricHeroes public player stats" : "Available public feed",
+        };
+      }
+
+      function rankPlayers(players) {
+        return asArray(players)
+          .map((player) => {
+            const ranking = playerRankingSnapshot(player);
+            return { ...player, ranking, impact: ranking.score, role: playerRoleLabel(player), level: playerLevel({ ...player, ranking }) };
+          })
+          .sort((a, b) => b.impact - a.impact || b.ranking.evidence - a.ranking.evidence || a.name.localeCompare(b.name))
+          .map((player, index) => ({ ...player, rank: index + 1 }));
       }
 
       const PLAYER_LEVELS = {
@@ -2825,39 +2975,13 @@ const RouterContext = React.createContext(null);
       function playerLevel(player) {
         const currentPlayer = player || {};
         const stats = playerOverallStats(currentPlayer);
-        const performance = currentPlayer.performance || {};
-        const matches = playerDetailNumber(stats.matches);
-        const runs = playerDetailNumber(stats.runs);
-        const wickets = playerDetailNumber(stats.wickets);
-        const fifties = playerDetailNumber(stats.fifties);
-        const hundreds = playerDetailNumber(stats.hundreds);
-        const fiveWicketHauls = playerDetailNumber(stats.fiveWicketHauls);
-        const hatTricks = playerDetailNumber(stats.hatTricks);
-        const awards = playerDetailNumber(performance.awards) + playerDetailNumber(performance.playerOfMatch);
-        const levelScore = Math.min(100, Math.round(
-          Math.min(32, matches / 12)
-          + Math.min(24, runs / 700)
-          + Math.min(24, wickets / 110)
-          + Math.min(8, fifties / 5)
-          + Math.min(8, hundreds * 2)
-          + Math.min(8, fiveWicketHauls * 2 + hatTricks * 4)
-          + Math.min(6, awards)
-        ));
-        const isPro = matches >= 400
-          || runs >= 9000
-          || wickets >= 300
-          || hundreds >= 12
-          || (matches >= 250 && (runs >= 6000 || wickets >= 250))
-          || (fiveWicketHauls >= 3 && wickets >= 150);
-        const isSemiPro = matches >= 75
-          || runs >= 1000
-          || wickets >= 75
-          || fifties >= 5
-          || hundreds >= 1
-          || fiveWicketHauls >= 1
-          || levelScore >= 24;
+        const ranking = currentPlayer.ranking || playerRankingSnapshot(currentPlayer);
+        const matches = numericStatValue(stats.matches);
+        const levelScore = ranking.score;
+        const isPro = levelScore >= 78 && ranking.confidence >= 55 && matches >= 40;
+        const isSemiPro = levelScore >= 48 && ranking.confidence >= 25 && matches >= 10;
         const key = isPro ? "pro" : isSemiPro ? "semiPro" : "amateur";
-        return { key, score: levelScore, ...PLAYER_LEVELS[key] };
+        return { key, score: levelScore, confidence: ranking.confidence, ...PLAYER_LEVELS[key] };
       }
 
       function PlayerLevelBadge({ level, compact = false }) {
@@ -2883,6 +3007,39 @@ const RouterContext = React.createContext(null);
               <span className="block h-full rounded-full" style={{ width: `${Math.max(6, current.score)}%`, background: current.color, boxShadow: `0 0 14px ${current.glow}` }} />
             </div>
             <div className="mt-2 flex justify-between text-[0.55rem] font-black uppercase tracking-[0.12em] text-white/35"><span>Community level</span><span>{current.score}/100 signal</span></div>
+          </div>
+        );
+      }
+
+      function PlayerRankingInfographic({ player, compact = false }) {
+        const ranking = player?.ranking || playerRankingSnapshot(player);
+        const dimensions = [
+          ["Bat", ranking.batting, "#F4B942"],
+          ["Bowl", ranking.bowling, "#23d5e8"],
+          ["Field", ranking.fielding, "#86efac"],
+          ["Lead", ranking.captaincy, "#ff315a"],
+        ];
+        return (
+          <div className={`mt-4 rounded-[7px] border border-white/10 bg-night/55 ${compact ? "p-3" : "p-4"}`}>
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <p className="text-[0.58rem] font-black uppercase tracking-[0.18em] text-cyan">Overall CricHeroes rank</p>
+                <p className="mt-1 text-xs font-bold text-white/48">{ranking.source} • {ranking.label}</p>
+              </div>
+              <div className="text-right">
+                <span className="font-display text-2xl font-black text-white">{player?.rank ? `#${player.rank}` : "-"}</span>
+                <span className="ml-2 text-xs font-black text-gold">{ranking.score}/100</span>
+              </div>
+            </div>
+            <div className="mt-3 grid grid-cols-4 gap-2" aria-label="Ranking dimensions">
+              {dimensions.map(([label, score, color]) => (
+                <div key={label} className="min-w-0">
+                  <div className="flex items-center justify-between gap-1 text-[0.52rem] font-black uppercase tracking-[0.08em] text-white/40"><span>{label}</span><span>{score}</span></div>
+                  <div className="mt-1 h-1.5 overflow-hidden rounded-full bg-white/10"><span className="block h-full rounded-full" style={{ width: `${score}%`, background: color, boxShadow: `0 0 10px ${color}` }} /></div>
+                </div>
+              ))}
+            </div>
+            {!compact && <p className="mt-3 text-xs leading-5 text-white/44">The rank blends batting output, bowling threat, fielding contributions and captaincy only when that data is present. Confidence is reported separately from performance.</p>}
           </div>
         );
       }
@@ -3054,6 +3211,15 @@ const RouterContext = React.createContext(null);
         const report = createImprovementReport(player, stats);
         const level = player.level || playerLevel(player);
         const neon = playerNeonTheme(player.impact || 0, level);
+        const ranking = player.ranking || playerRankingSnapshot(player);
+        const [coachView, setCoachView] = useState("overview");
+        const coachTabs = [
+          ["overview", "Overview"],
+          ["Batting", "Batting"],
+          ["Bowling", "Bowling"],
+          ["Fielding", "Fielding / keeping"],
+        ];
+        const visibleFocus = coachView === "overview" ? report.focus : report.focus.filter((item) => item.area.toLowerCase().startsWith(coachView.toLowerCase()));
         return (
           <article className="player-neon-card rounded-[8px] border bg-[linear-gradient(135deg,rgba(35,213,232,0.09),rgba(255,255,255,0.025))] p-4 sm:p-5" style={{ "--player-neon-color": neon.color, "--player-neon-glow": neon.glow }}>
             <div className="flex flex-wrap items-start justify-between gap-3">
@@ -3065,6 +3231,16 @@ const RouterContext = React.createContext(null);
               <span className="rounded-full border border-cyan/25 bg-cyan/10 px-3 py-2 text-[0.62rem] font-black uppercase tracking-[0.12em] text-cyan">Daily stat lens</span>
             </div>
 
+            <PlayerRankingInfographic player={{ ...player, ranking }} />
+
+            <div className="mt-5 flex gap-2 overflow-x-auto pb-1" role="tablist" aria-label="AI coach focus">
+              {coachTabs.map(([key, label]) => (
+                <button key={key} type="button" role="tab" aria-selected={coachView === key} onClick={() => setCoachView(key)} className={`min-h-10 shrink-0 rounded-full border px-3 text-[0.6rem] font-black uppercase tracking-[0.1em] transition ${coachView === key ? "border-cyan/60 bg-cyan/15 text-cyan" : "border-white/12 bg-white/[0.04] text-white/55 hover:border-white/25 hover:text-white"}`}>
+                  {label}
+                </button>
+              ))}
+            </div>
+
             {report.strengths.length > 0 && (
               <div className="mt-5 flex flex-wrap gap-2">
                 {report.strengths.map((strength) => <span key={`${strength.area}-${strength.title}`} className="rounded-full border border-gold/25 bg-gold/10 px-3 py-2 text-xs font-bold text-gold">{strength.title}: {strength.value}</span>)}
@@ -3072,7 +3248,7 @@ const RouterContext = React.createContext(null);
             )}
 
             <div className="mt-5 grid gap-3">
-              {report.focus.map((item, index) => (
+              {visibleFocus.length ? visibleFocus.map((item, index) => (
                 <div key={`${item.area}-${item.title}`} className="rounded-[7px] border border-white/10 bg-night/55 p-4">
                   <div className="flex flex-wrap items-start justify-between gap-3">
                     <div className="flex min-w-0 gap-3">
@@ -3091,7 +3267,7 @@ const RouterContext = React.createContext(null);
                   </div>
                   <p className="mt-3 border-t border-white/8 pt-3 text-sm leading-6 text-cyan/80"><span className="font-black uppercase tracking-[0.1em]">Practice cue: </span>{item.action}</p>
                 </div>
-              ))}
+              )) : <div className="rounded-[7px] border border-emerald-300/20 bg-emerald-300/[0.06] p-4 text-sm leading-6 text-emerald-100">No high-priority {coachView.toLowerCase()} issue is visible in the current public CricHeroes sample. Keep the strength, log the next match and let the coach update after sync.</div>}
             </div>
           </article>
         );
