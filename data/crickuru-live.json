@@ -3,10 +3,10 @@
   "source": "CricHeroes public team and player pages",
   "sourceStatus": "fresh",
   "syncedAt": "2026-10-01T11:21:19.137Z",
-  "lastCheckedAt": "2026-10-01T11:21:19.137Z",
-  "lastSuccessfulSyncAt": "2026-10-01T11:21:19.137Z",
-  "playerStatsUpdatedAt": "2026-10-01T11:21:19.137Z",
-  "playerRecentMatchesUpdatedAt": "2026-10-01T11:21:19.137Z",
+  "lastCheckedAt": "2026-10-01T11:32:50.111Z",
+  "lastSuccessfulSyncAt": "2026-10-01T11:32:50.111Z",
+  "playerStatsUpdatedAt": "2026-10-01T11:32:50.111Z",
+  "playerRecentMatchesUpdatedAt": "2026-10-01T11:32:50.111Z",
   "playerSyncCursor": 52,
   "coverage": {
     "refreshCadence": "15 minutes",
@@ -26,9 +26,9 @@
     "records": 2,
     "rosterChanges": 8,
     "playerProfiles": 80,
-    "playerRecentMatches": 436,
-    "playerHistoryMatches": 1061,
-    "playerHistoryComplete": 16,
+    "playerRecentMatches": 438,
+    "playerHistoryMatches": 1067,
+    "playerHistoryComplete": 15,
     "sourcePages": [
       "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors",
       "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
@@ -30170,27 +30170,26 @@
       }
     },
     {
-      "id": 35922777,
-      "name": "Vivek",
-      "photo": "https://media.cricheroes.in/default/user_profile.png",
-      "skill": "",
+      "id": 22784838,
+      "name": "Vivek Sarna",
+      "photo": "https://media.cricheroes.in/user_profile/1788964554116_84lnmdw7rYqj.jpeg",
+      "skill": "Top-order batter • RHB • Right-arm fast",
       "isVerified": false,
       "isCaptain": false,
       "isAdmin": false,
       "isPro": false,
       "associationTag": "",
-      "batterCategory": "",
+      "batterCategory": "Destroyer",
       "batterCategoryInfo": "",
-      "bowlerCategory": "",
+      "bowlerCategory": "Aspirant",
       "bowlerCategoryInfo": "",
       "badges": [
-        "Strike Bowler",
-        "Form Batter",
-        "Match Winner"
+        "Destroyer",
+        "Aspirant"
       ],
-      "profileUrl": "https://cricheroes.com/player-profile/35922777/vivek/profile",
-      "statsUrl": "https://cricheroes.com/player-profile/35922777/vivek/stats",
-      "matchesUrl": "https://cricheroes.com/player-profile/35922777/vivek/matches",
+      "profileUrl": "https://cricheroes.com/player-profile/22784838/vivek-sarna/profile",
+      "statsUrl": "https://cricheroes.com/player-profile/22784838/vivek-sarna/stats",
+      "matchesUrl": "https://cricheroes.com/player-profile/22784838/vivek-sarna/matches",
       "performance": {
         "playerOfMatch": 1,
         "fielderOfMatch": 0,
@@ -30224,234 +30223,227 @@
           "batting": [
             {
               "title": "Matches",
-              "value": 4,
-              "isUserProperty": true
+              "value": 34,
+              "is_user_property": 1
             },
             {
               "title": "Innings",
-              "value": 4,
-              "isUserProperty": false
+              "value": 25,
+              "is_user_property": 0
             },
             {
               "title": "Not out",
-              "value": 1,
-              "isUserProperty": false
+              "value": 2,
+              "is_user_property": 0
             },
             {
               "title": "Runs",
-              "value": 101,
-              "isUserProperty": true
+              "value": 557,
+              "is_user_property": 1
             },
             {
               "title": "Highest Runs",
-              "value": "52*",
-              "isUserProperty": false
+              "value": "128",
+              "is_user_property": 0
             },
             {
               "title": "Avg",
-              "value": "33.67",
-              "isUserProperty": false
+              "value": "24.22",
+              "is_user_property": 0
             },
             {
               "title": "SR",
-              "value": "214.89",
-              "isUserProperty": false
+              "value": "160.06",
+              "is_user_property": 0
             },
             {
               "title": "30s",
               "value": 1,
-              "isUserProperty": false
+              "is_user_property": 0
             },
             {
               "title": "50s",
-              "value": 1,
-              "isUserProperty": false
+              "value": 4,
+              "is_user_property": 0
             },
             {
               "title": "100s",
-              "value": 0,
-              "isUserProperty": false
+              "value": 1,
+              "is_user_property": 0
             },
             {
               "title": "4s",
-              "value": 5,
-              "isUserProperty": false
+              "value": 46,
+              "is_user_property": 0
             },
             {
               "title": "6s",
-              "value": 11,
-              "isUserProperty": false
+              "value": 38,
+              "is_user_property": 0
             },
             {
               "title": "Ducks",
-              "value": 1,
-              "isUserProperty": false
+              "value": 6,
+              "is_user_property": 0
             },
             {
               "title": "Won",
-              "value": 1,
-              "isUserProperty": false
+              "value": 14,
+              "is_user_property": 0
             },
             {
               "title": "Loss",
-              "value": 3,
-              "isUserProperty": false
+              "value": 20,
+              "is_user_property": 0
             }
           ],
           "bowling": [
             {
               "title": "Matches",
-              "value": 4,
-              "isUserProperty": true
+              "value": 34,
+              "is_user_property": 1
             },
             {
               "title": "Innings",
-              "value": 2,
-              "isUserProperty": false
+              "value": 11,
+              "is_user_property": 0
             },
             {
               "title": "Overs",
-              "value": "5.0",
-              "isUserProperty": false
+              "value": "33.1",
+              "is_user_property": 0
             },
             {
               "title": "Maidens",
               "value": 0,
-              "isUserProperty": false
+              "is_user_property": 0
             },
             {
               "title": "Wickets",
-              "value": 2,
-              "isUserProperty": true
+              "value": 20,
+              "is_user_property": 1
             },
             {
               "title": "Runs",
-              "value": 29,
-              "isUserProperty": false
+              "value": 336,
+              "is_user_property": 0
             },
             {
               "title": "Best Bowling",
-              "value": "2/7",
-              "isUserProperty": false
+              "value": "4/28"
             },
             {
               "title": "3 Wickets",
-              "value": 0,
-              "isUserProperty": false
+              "value": 3,
+              "is_user_property": 0
             },
             {
               "title": "5 Wickets",
               "value": 0,
-              "isUserProperty": false
+              "is_user_property": 0
             },
             {
               "title": "Economy",
-              "value": "5.80",
-              "isUserProperty": false
+              "value": "10.13",
+              "is_user_property": 0
             },
             {
               "title": "SR",
-              "value": "15.00",
-              "isUserProperty": false
+              "value": "9.95",
+              "is_user_property": 0
             },
             {
               "title": "Avg",
-              "value": "14.50",
-              "isUserProperty": false
+              "value": "16.80",
+              "is_user_property": 0
             },
             {
               "title": "Wides",
-              "value": 0,
-              "isUserProperty": false
+              "value": 16,
+              "is_user_property": 0
             },
             {
               "title": "NoBalls",
-              "value": 1,
-              "isUserProperty": false
+              "value": 4,
+              "is_user_property": 0
             },
             {
               "title": "Dot Balls",
-              "value": 14,
-              "isUserProperty": false
+              "value": 71,
+              "is_user_property": 0
             },
             {
               "title": "4s",
-              "value": 3,
-              "isUserProperty": false
+              "value": 20,
+              "is_user_property": 0
             },
             {
               "title": "6s",
-              "value": 0,
-              "isUserProperty": false
+              "value": 22,
+              "is_user_property": 0
             }
           ],
           "fielding": [
             {
               "title": "Matches",
-              "value": 4,
-              "isUserProperty": false
+              "value": 34
             },
             {
               "title": "Catches",
-              "value": 3,
-              "isUserProperty": false
+              "value": 3
             },
             {
               "title": "Caught behind",
-              "value": 0,
-              "isUserProperty": false
+              "value": 0
             },
             {
               "title": "Run outs",
-              "value": 0,
-              "isUserProperty": false
+              "value": 0
             },
             {
               "title": "Stumpings",
-              "value": 0,
-              "isUserProperty": false
+              "value": 0
             },
             {
               "title": "Assisted Run Outs",
-              "value": 0,
-              "isUserProperty": false
+              "value": 0
             }
           ],
           "captain": []
         },
         "publicFieldCount": 38,
-        "matches": 4,
-        "battingInnings": 4,
-        "notOut": 1,
-        "runs": 101,
-        "bestScore": 52,
-        "average": "33.67",
-        "strikeRate": "214.89",
+        "matches": 34,
+        "battingInnings": 25,
+        "notOut": 2,
+        "runs": 557,
+        "bestScore": 128,
+        "average": "24.22",
+        "strikeRate": "160.06",
         "thirties": 1,
-        "fifties": 1,
-        "hundreds": 0,
-        "fours": 5,
-        "sixes": 11,
-        "ducks": 1,
-        "wins": 1,
-        "losses": 3,
-        "bowlingInnings": 2,
-        "overs": "5.0",
+        "fifties": 4,
+        "hundreds": 1,
+        "fours": 46,
+        "sixes": 38,
+        "ducks": 6,
+        "wins": 14,
+        "losses": 20,
+        "bowlingInnings": 11,
+        "overs": "33.1",
         "maidens": 0,
-        "wickets": 2,
-        "runsConceded": 29,
-        "bestWickets": 2,
+        "wickets": 20,
+        "runsConceded": 336,
+        "bestWickets": 4,
         "hatTricks": 0,
-        "bestBowling": "2/7",
-        "threeWicketHauls": 0,
+        "bestBowling": "4/28",
+        "threeWicketHauls": 3,
         "fiveWicketHauls": 0,
-        "economy": "5.80",
-        "bowlingStrikeRate": "15.00",
-        "bowlingAverage": "14.50",
-        "wides": 0,
-        "noBalls": 1,
-        "dotBalls": 14,
-        "fieldingMatches": 4,
+        "economy": "10.13",
+        "bowlingStrikeRate": "9.95",
+        "bowlingAverage": "16.80",
+        "wides": 16,
+        "noBalls": 4,
+        "dotBalls": 71,
+        "fieldingMatches": 34,
         "catches": 3,
         "caughtBehind": 0,
         "runOuts": 0,
@@ -30460,7 +30452,8 @@
         "byeRunsWicketkeeper": 0,
         "captainMatches": 0,
         "tossesWon": 0,
-        "captainWinPercentage": ""
+        "captainWinPercentage": "",
+        "lastVerifiedAt": "2026-10-01T11:32:50.111Z"
       },
       "stats": {
         "source": "CricHeroes public player stats",
@@ -30468,234 +30461,227 @@
           "batting": [
             {
               "title": "Matches",
-              "value": 4,
-              "isUserProperty": true
+              "value": 34,
+              "is_user_property": 1
             },
             {
               "title": "Innings",
-              "value": 4,
-              "isUserProperty": false
+              "value": 25,
+              "is_user_property": 0
             },
             {
               "title": "Not out",
-              "value": 1,
-              "isUserProperty": false
+              "value": 2,
+              "is_user_property": 0
             },
             {
               "title": "Runs",
-              "value": 101,
-              "isUserProperty": true
+              "value": 557,
+              "is_user_property": 1
             },
             {
               "title": "Highest Runs",
-              "value": "52*",
-              "isUserProperty": false
+              "value": "128",
+              "is_user_property": 0
             },
             {
               "title": "Avg",
-              "value": "33.67",
-              "isUserProperty": false
+              "value": "24.22",
+              "is_user_property": 0
             },
             {
               "title": "SR",
-              "value": "214.89",
-              "isUserProperty": false
+              "value": "160.06",
+              "is_user_property": 0
             },
             {
               "title": "30s",
               "value": 1,
-              "isUserProperty": false
+              "is_user_property": 0
             },
             {
               "title": "50s",
-              "value": 1,
-              "isUserProperty": false
+              "value": 4,
+              "is_user_property": 0
             },
             {
               "title": "100s",
-              "value": 0,
-              "isUserProperty": false
+              "value": 1,
+              "is_user_property": 0
             },
             {
               "title": "4s",
-              "value": 5,
-              "isUserProperty": false
+              "value": 46,
+              "is_user_property": 0
             },
             {
               "title": "6s",
-              "value": 11,
-              "isUserProperty": false
+              "value": 38,
+              "is_user_property": 0
             },
             {
               "title": "Ducks",
-              "value": 1,
-              "isUserProperty": false
+              "value": 6,
+              "is_user_property": 0
             },
             {
               "title": "Won",
-              "value": 1,
-              "isUserProperty": false
+              "value": 14,
+              "is_user_property": 0
             },
             {
               "title": "Loss",
-              "value": 3,
-              "isUserProperty": false
+              "value": 20,
+              "is_user_property": 0
             }
           ],
           "bowling": [
             {
               "title": "Matches",
-              "value": 4,
-              "isUserProperty": true
+              "value": 34,
+              "is_user_property": 1
             },
             {
               "title": "Innings",
-              "value": 2,
-              "isUserProperty": false
+              "value": 11,
+              "is_user_property": 0
             },
             {
               "title": "Overs",
-              "value": "5.0",
-              "isUserProperty": false
+              "value": "33.1",
+              "is_user_property": 0
             },
             {
               "title": "Maidens",
               "value": 0,
-              "isUserProperty": false
+              "is_user_property": 0
             },
             {
               "title": "Wickets",
-              "value": 2,
-              "isUserProperty": true
+              "value": 20,
+              "is_user_property": 1
             },
             {
               "title": "Runs",
-              "value": 29,
-              "isUserProperty": false
+              "value": 336,
+              "is_user_property": 0
             },
             {
               "title": "Best Bowling",
-              "value": "2/7",
-              "isUserProperty": false
+              "value": "4/28"
             },
             {
               "title": "3 Wickets",
-              "value": 0,
-              "isUserProperty": false
+              "value": 3,
+              "is_user_property": 0
             },
             {
               "title": "5 Wickets",
               "value": 0,
-              "isUserProperty": false
+              "is_user_property": 0
             },
             {
               "title": "Economy",
-              "value": "5.80",
-              "isUserProperty": false
+              "value": "10.13",
+              "is_user_property": 0
             },
             {
               "title": "SR",
-              "value": "15.00",
-              "isUserProperty": false
+              "value": "9.95",
+              "is_user_property": 0
             },
             {
               "title": "Avg",
-              "value": "14.50",
-              "isUserProperty": false
+              "value": "16.80",
+              "is_user_property": 0
             },
             {
               "title": "Wides",
-              "value": 0,
-              "isUserProperty": false
+              "value": 16,
+              "is_user_property": 0
             },
             {
               "title": "NoBalls",
-              "value": 1,
-              "isUserProperty": false
+              "value": 4,
+              "is_user_property": 0
             },
             {
               "title": "Dot Balls",
-              "value": 14,
-              "isUserProperty": false
+              "value": 71,
+              "is_user_property": 0
             },
             {
               "title": "4s",
-              "value": 3,
-              "isUserProperty": false
+              "value": 20,
+              "is_user_property": 0
             },
             {
               "title": "6s",
-              "value": 0,
-              "isUserProperty": false
+              "value": 22,
+              "is_user_property": 0
             }
           ],
           "fielding": [
             {
               "title": "Matches",
-              "value": 4,
-              "isUserProperty": false
+              "value": 34
             },
             {
               "title": "Catches",
-              "value": 3,
-              "isUserProperty": false
+              "value": 3
             },
             {
               "title": "Caught behind",
-              "value": 0,
-              "isUserProperty": false
+              "value": 0
             },
             {
               "title": "Run outs",
-              "value": 0,
-              "isUserProperty": false
+              "value": 0
             },
             {
               "title": "Stumpings",
-              "value": 0,
-              "isUserProperty": false
+              "value": 0
             },
             {
               "title": "Assisted Run Outs",
-              "value": 0,
-              "isUserProperty": false
+              "value": 0
             }
           ],
           "captain": []
         },
         "publicFieldCount": 38,
-        "matches": 4,
-        "battingInnings": 4,
-        "notOut": 1,
-        "runs": 101,
-        "bestScore": 52,
-        "average": "33.67",
-        "strikeRate": "214.89",
+        "matches": 34,
+        "battingInnings": 25,
+        "notOut": 2,
+        "runs": 557,
+        "bestScore": 128,
+        "average": "24.22",
+        "strikeRate": "160.06",
         "thirties": 1,
-        "fifties": 1,
-        "hundreds": 0,
-        "fours": 5,
-        "sixes": 11,
-        "ducks": 1,
-        "wins": 1,
-        "losses": 3,
-        "bowlingInnings": 2,
-        "overs": "5.0",
+        "fifties": 4,
+        "hundreds": 1,
+        "fours": 46,
+        "sixes": 38,
+        "ducks": 6,
+        "wins": 14,
+        "losses": 20,
+        "bowlingInnings": 11,
+        "overs": "33.1",
         "maidens": 0,
-        "wickets": 2,
-        "runsConceded": 29,
-        "bestWickets": 2,
+        "wickets": 20,
+        "runsConceded": 336,
+        "bestWickets": 4,
         "hatTricks": 0,
-        "bestBowling": "2/7",
-        "threeWicketHauls": 0,
+        "bestBowling": "4/28",
+        "threeWicketHauls": 3,
         "fiveWicketHauls": 0,
-        "economy": "5.80",
-        "bowlingStrikeRate": "15.00",
-        "bowlingAverage": "14.50",
-        "wides": 0,
-        "noBalls": 1,
-        "dotBalls": 14,
-        "fieldingMatches": 4,
+        "economy": "10.13",
+        "bowlingStrikeRate": "9.95",
+        "bowlingAverage": "16.80",
+        "wides": 16,
+        "noBalls": 4,
+        "dotBalls": 71,
+        "fieldingMatches": 34,
         "catches": 3,
         "caughtBehind": 0,
         "runOuts": 0,
@@ -30704,100 +30690,29 @@
         "byeRunsWicketkeeper": 0,
         "captainMatches": 0,
         "tossesWon": 0,
-        "captainWinPercentage": ""
+        "captainWinPercentage": "",
+        "lastVerifiedAt": "2026-10-01T11:32:50.111Z"
       },
       "matchHistory": [
         {
-          "id": 23084704,
-          "date": "2026-03-14T01:50:46.000Z",
+          "id": 27299534,
+          "date": "2026-09-30T01:03:51.000Z",
           "status": "past",
           "matchType": "Limited Overs",
           "ballType": "TENNIS",
-          "venue": "Legend Cricket Ground 1 (Greater Noida)",
-          "city": "Greater Noida",
-          "teamAId": 8626734,
-          "teamA": "Kurukshetra Warriors",
-          "teamBId": 12604411,
-          "teamB": "Strikers 11",
-          "winningTeamId": 12604411,
-          "winningTeam": "Strikers 11",
-          "resultText": "Strikers 11 won by 3 wickets",
-          "teamAScore": "181/7",
-          "teamBScore": "185/7",
-          "scorecardUrl": "https://cricheroes.com/scorecard/23084704/individual/kurukshetra-warriors-vs-strikers-11/summary",
-          "playerId": 35922777,
-          "performance": {
-            "teamId": 0,
-            "teamName": "",
-            "opponent": "",
-            "runs": 0,
-            "balls": 0,
-            "fours": 0,
-            "sixes": 0,
-            "wickets": 0,
-            "ballsBowled": 0,
-            "runsConceded": 0,
-            "catches": 0,
-            "stumpings": 0,
-            "highlight": "",
-            "scorecardUrl": "https://cricheroes.com/scorecard/23084704/individual/kurukshetra-warriors-vs-strikers-11/summary"
-          }
-        },
-        {
-          "id": 14908774,
-          "date": "2025-01-26T04:36:35.000Z",
-          "status": "past",
-          "matchType": "Limited Overs",
-          "ballType": "TENNIS",
-          "venue": "Srt2",
-          "city": "Greater Noida",
-          "teamAId": 5412629,
-          "teamA": "Divino Champions",
-          "teamBId": 8626734,
-          "teamB": "Kurukshetra Warriors",
-          "winningTeamId": 8626734,
-          "winningTeam": "Kurukshetra Warriors",
-          "resultText": "Kurukshetra Warriors won by 7 wickets",
-          "teamAScore": "67/4",
-          "teamBScore": "68/3",
-          "scorecardUrl": "https://cricheroes.com/scorecard/14908774/individual/divino-champions-vs-kurukshetra-warriors/summary",
-          "playerId": 35922777,
-          "performance": {
-            "teamId": 0,
-            "teamName": "",
-            "opponent": "",
-            "runs": 0,
-            "balls": 0,
-            "fours": 0,
-            "sixes": 0,
-            "wickets": 0,
-            "ballsBowled": 0,
-            "runsConceded": 0,
-            "catches": 0,
-            "stumpings": 0,
-            "highlight": "",
-            "scorecardUrl": "https://cricheroes.com/scorecard/14908774/individual/divino-champions-vs-kurukshetra-warriors/summary"
-          }
-        },
-        {
-          "id": 14763263,
-          "date": "2025-01-26T02:23:41.000Z",
-          "status": "past",
-          "matchType": "Limited Overs",
-          "ballType": "TENNIS",
-          "venue": "NCC Ground",
+          "venue": "Silly Point",
           "city": "Noida",
-          "teamAId": 8626734,
-          "teamA": "Kurukshetra Warriors",
-          "teamBId": 5412629,
-          "teamB": "Divino Champions",
-          "winningTeamId": 5412629,
-          "winningTeam": "Divino Champions",
-          "resultText": "Divino Champions won by 7 wickets",
-          "teamAScore": "116/9",
-          "teamBScore": "117/3",
-          "scorecardUrl": "https://cricheroes.com/scorecard/14763263/individual/kurukshetra-warriors-vs-divino-champions/summary",
-          "playerId": 35922777,
+          "teamAId": 14382875,
+          "teamA": "Vidharbha Vahini",
+          "teamBId": 9639322,
+          "teamB": "Divino Alpha XI",
+          "winningTeamId": 14382875,
+          "winningTeam": "Vidharbha Vahini",
+          "resultText": "Vidharbha Vahini won by 13 runs",
+          "teamAScore": "190/8",
+          "teamBScore": "177/6",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27299534/individual/vidharbha-vahini-vs-divino-alpha-xi/summary",
+          "playerId": 22784838,
           "performance": {
             "teamId": 0,
             "teamName": "",
@@ -30812,28 +30727,28 @@
             "catches": 0,
             "stumpings": 0,
             "highlight": "",
-            "scorecardUrl": "https://cricheroes.com/scorecard/14763263/individual/kurukshetra-warriors-vs-divino-champions/summary"
+            "scorecardUrl": "https://cricheroes.com/scorecard/27299534/individual/vidharbha-vahini-vs-divino-alpha-xi/summary"
           }
         },
         {
-          "id": 14515199,
-          "date": "2025-01-18T02:34:54.000Z",
+          "id": 27153723,
+          "date": "2026-09-25T00:52:44.000Z",
           "status": "past",
           "matchType": "Limited Overs",
           "ballType": "TENNIS",
-          "venue": "Hari Cricket Ground",
-          "city": "Greater Noida",
-          "teamAId": 898531,
-          "teamA": "Rising Stars (GNW)",
-          "teamBId": 8626734,
-          "teamB": "Kurukshetra Warriors",
-          "winningTeamId": 898531,
-          "winningTeam": "Rising Stars (GNW)",
-          "resultText": "Rising Stars (GNW) won by 102 runs",
-          "teamAScore": "269/8",
-          "teamBScore": "167/10",
-          "scorecardUrl": "https://cricheroes.com/scorecard/14515199/individual/rising-stars-gnw-vs-kurukshetra-warriors/summary",
-          "playerId": 35922777,
+          "venue": "Silly Point",
+          "city": "Noida",
+          "teamAId": 13339251,
+          "teamA": "Weekdays Cricket Club (WCC)",
+          "teamBId": 9639322,
+          "teamB": "Divino Alpha XI",
+          "winningTeamId": 13339251,
+          "winningTeam": "Weekdays Cricket Club (WCC)",
+          "resultText": "Weekdays Cricket Club (WCC) won by 5 runs",
+          "teamAScore": "137/9",
+          "teamBScore": "132/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27153723/individual/weekdays-cricket-club-wcc-vs-divino-alpha-xi/summary",
+          "playerId": 22784838,
           "performance": {
             "teamId": 0,
             "teamName": "",
@@ -30848,106 +30763,322 @@
             "catches": 0,
             "stumpings": 0,
             "highlight": "",
-            "scorecardUrl": "https://cricheroes.com/scorecard/14515199/individual/rising-stars-gnw-vs-kurukshetra-warriors/summary"
+            "scorecardUrl": "https://cricheroes.com/scorecard/27153723/individual/weekdays-cricket-club-wcc-vs-divino-alpha-xi/summary"
+          }
+        },
+        {
+          "id": 26832744,
+          "date": "2026-09-15T00:48:45.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "Silly Point",
+          "city": "Noida",
+          "teamAId": 9639322,
+          "teamA": "Divino Alpha XI",
+          "teamBId": 7474431,
+          "teamB": "Super Strikers",
+          "winningTeamId": 7474431,
+          "winningTeam": "Super Strikers",
+          "resultText": "Super Strikers won by 5 wickets",
+          "teamAScore": "155/9",
+          "teamBScore": "158/5",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26832744/individual/divino-alpha-xi-vs-super-strikers/summary",
+          "playerId": 22784838,
+          "performance": {
+            "teamId": 0,
+            "teamName": "",
+            "opponent": "",
+            "runs": 0,
+            "balls": 0,
+            "fours": 0,
+            "sixes": 0,
+            "wickets": 0,
+            "ballsBowled": 0,
+            "runsConceded": 0,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "",
+            "scorecardUrl": "https://cricheroes.com/scorecard/26832744/individual/divino-alpha-xi-vs-super-strikers/summary"
+          }
+        },
+        {
+          "id": 26779502,
+          "date": "2026-09-10T00:56:32.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "CricVilla by Saurabh",
+          "city": "Noida",
+          "teamAId": 13851616,
+          "teamA": "Awesome Heroes NSPL Weeks Days",
+          "teamBId": 13870771,
+          "teamB": "Divino Revengers NSPL",
+          "winningTeamId": 13851616,
+          "winningTeam": "Awesome Heroes NSPL Weeks Days",
+          "resultText": "Awesome Heroes NSPL Weeks Days won by 100 runs",
+          "teamAScore": "223/10",
+          "teamBScore": "123/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26779502/individual/awesome-heroes-nspl-weeks-days-vs-divino-revengers-nspl/summary",
+          "playerId": 22784838,
+          "performance": {
+            "teamId": 0,
+            "teamName": "",
+            "opponent": "",
+            "runs": 0,
+            "balls": 0,
+            "fours": 0,
+            "sixes": 0,
+            "wickets": 0,
+            "ballsBowled": 0,
+            "runsConceded": 0,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "",
+            "scorecardUrl": "https://cricheroes.com/scorecard/26779502/individual/awesome-heroes-nspl-weeks-days-vs-divino-revengers-nspl/summary"
+          }
+        },
+        {
+          "id": 27024216,
+          "date": "2026-09-08T00:48:41.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "M2 Cricket Ground By Daksh (Greater Noida)",
+          "city": "Greater Noida",
+          "teamAId": 11466367,
+          "teamA": "Fabulous XI",
+          "teamBId": 9863076,
+          "teamB": "Super XI",
+          "winningTeamId": 9863076,
+          "winningTeam": "Super XI",
+          "resultText": "Super XI won by 2 wickets",
+          "teamAScore": "146/10",
+          "teamBScore": "149/8",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27024216/individual/fabulous-xi-vs-super-xi/summary",
+          "playerId": 22784838,
+          "performance": {
+            "teamId": 0,
+            "teamName": "",
+            "opponent": "",
+            "runs": 0,
+            "balls": 0,
+            "fours": 0,
+            "sixes": 0,
+            "wickets": 0,
+            "ballsBowled": 0,
+            "runsConceded": 0,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "",
+            "scorecardUrl": "https://cricheroes.com/scorecard/27024216/individual/fabulous-xi-vs-super-xi/summary"
+          }
+        },
+        {
+          "id": 27000454,
+          "date": "2026-09-07T01:03:12.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "Mid On Cricket Ground ",
+          "city": "Greater Noida",
+          "teamAId": 2998613,
+          "teamA": "All Stars XI",
+          "teamBId": 11466367,
+          "teamB": "Fabulous XI",
+          "winningTeamId": 2998613,
+          "winningTeam": "All Stars XI",
+          "resultText": "All Stars XI won by 93 runs",
+          "teamAScore": "197/6",
+          "teamBScore": "104/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27000454/individual/all-stars-xi-vs-fabulous-xi/summary",
+          "playerId": 22784838,
+          "performance": {
+            "teamId": 0,
+            "teamName": "",
+            "opponent": "",
+            "runs": 0,
+            "balls": 0,
+            "fours": 0,
+            "sixes": 0,
+            "wickets": 0,
+            "ballsBowled": 0,
+            "runsConceded": 0,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "",
+            "scorecardUrl": "https://cricheroes.com/scorecard/27000454/individual/all-stars-xi-vs-fabulous-xi/summary"
+          }
+        },
+        {
+          "id": 26706825,
+          "date": "2026-08-19T01:10:58.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "County-cricket-Complex(CQ)",
+          "city": "Noida",
+          "teamAId": 8068116,
+          "teamA": "Divino Hustlers",
+          "teamBId": 11301190,
+          "teamB": "Rising cricket club",
+          "winningTeamId": 11301190,
+          "winningTeam": "Rising cricket club",
+          "resultText": "Rising cricket club won by 6 wickets",
+          "teamAScore": "123/10",
+          "teamBScore": "124/5",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26706825/individual/divino-hustlers-vs-rising-cricket-club/summary",
+          "playerId": 22784838,
+          "performance": {
+            "teamId": 0,
+            "teamName": "",
+            "opponent": "",
+            "runs": 0,
+            "balls": 0,
+            "fours": 0,
+            "sixes": 0,
+            "wickets": 0,
+            "ballsBowled": 0,
+            "runsConceded": 0,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "",
+            "scorecardUrl": "https://cricheroes.com/scorecard/26706825/individual/divino-hustlers-vs-rising-cricket-club/summary"
+          }
+        },
+        {
+          "id": 26606848,
+          "date": "2026-08-14T00:55:00.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "Midon",
+          "city": "Greater Noida",
+          "teamAId": 8068116,
+          "teamA": "Divino Hustlers",
+          "teamBId": 9356977,
+          "teamB": "UNITED POWER 16",
+          "winningTeamId": 8068116,
+          "winningTeam": "Divino Hustlers",
+          "resultText": "Divino Hustlers won by 86 runs",
+          "teamAScore": "230/5",
+          "teamBScore": "144/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26606848/individual/divino-hustlers-vs-united-power-16/summary",
+          "playerId": 22784838,
+          "performance": {
+            "teamId": 0,
+            "teamName": "",
+            "opponent": "",
+            "runs": 0,
+            "balls": 0,
+            "fours": 0,
+            "sixes": 0,
+            "wickets": 0,
+            "ballsBowled": 0,
+            "runsConceded": 0,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "",
+            "scorecardUrl": "https://cricheroes.com/scorecard/26606848/individual/divino-hustlers-vs-united-power-16/summary"
+          }
+        },
+        {
+          "id": 26378343,
+          "date": "2026-07-31T00:49:52.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "M2 Cricket Ground By Daksh (Greater Noida)",
+          "city": "Greater Noida",
+          "teamAId": 11466367,
+          "teamA": "Fabulous XI",
+          "teamBId": 2998613,
+          "teamB": "All Stars XI",
+          "winningTeamId": 2998613,
+          "winningTeam": "All Stars XI",
+          "resultText": "All Stars XI won by 2 wickets",
+          "teamAScore": "215/10",
+          "teamBScore": "217/8",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26378343/individual/fabulous-xi-vs-all-stars-xi/summary",
+          "playerId": 22784838,
+          "performance": {
+            "teamId": 0,
+            "teamName": "",
+            "opponent": "",
+            "runs": 0,
+            "balls": 0,
+            "fours": 0,
+            "sixes": 0,
+            "wickets": 0,
+            "ballsBowled": 0,
+            "runsConceded": 0,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "",
+            "scorecardUrl": "https://cricheroes.com/scorecard/26378343/individual/fabulous-xi-vs-all-stars-xi/summary"
+          }
+        },
+        {
+          "id": 26366936,
+          "date": "2026-07-30T00:40:43.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "M2 Cricket Ground By Daksh (Greater Noida)",
+          "city": "Greater Noida",
+          "teamAId": 2998613,
+          "teamA": "All Stars XI",
+          "teamBId": 11466367,
+          "teamB": "Fabulous XI",
+          "winningTeamId": 2998613,
+          "winningTeam": "All Stars XI",
+          "resultText": "All Stars XI won by 129 runs",
+          "teamAScore": "286/8",
+          "teamBScore": "157/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26366936/individual/all-stars-xi-vs-fabulous-xi/summary",
+          "playerId": 22784838,
+          "performance": {
+            "teamId": 0,
+            "teamName": "",
+            "opponent": "",
+            "runs": 0,
+            "balls": 0,
+            "fours": 0,
+            "sixes": 0,
+            "wickets": 0,
+            "ballsBowled": 0,
+            "runsConceded": 0,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "",
+            "scorecardUrl": "https://cricheroes.com/scorecard/26366936/individual/all-stars-xi-vs-fabulous-xi/summary"
           }
         }
       ],
-      "historyNext": "",
+      "historyNext": "/player/get-player-match/22784838?pageno=2&datetime=1790854370699",
       "historyPageCount": 1,
       "historySyncInitialized": true,
-      "historyComplete": true,
+      "historyComplete": false,
       "recentMatches": [
         {
-          "id": 23084704,
-          "date": "2026-03-14T01:50:46.000Z",
+          "id": 27299534,
+          "date": "2026-09-30T01:03:51.000Z",
           "status": "past",
           "matchType": "Limited Overs",
           "ballType": "TENNIS",
-          "venue": "Legend Cricket Ground 1 (Greater Noida)",
-          "city": "Greater Noida",
-          "teamAId": 8626734,
-          "teamA": "Kurukshetra Warriors",
-          "teamBId": 12604411,
-          "teamB": "Strikers 11",
-          "winningTeamId": 12604411,
-          "winningTeam": "Strikers 11",
-          "resultText": "Strikers 11 won by 3 wickets",
-          "teamAScore": "181/7",
-          "teamBScore": "185/7",
-          "scorecardUrl": "https://cricheroes.com/scorecard/23084704/individual/kurukshetra-warriors-vs-strikers-11/summary",
-          "playerId": 35922777,
-          "performance": {
-            "teamId": 0,
-            "teamName": "",
-            "opponent": "",
-            "runs": 0,
-            "balls": 0,
-            "fours": 0,
-            "sixes": 0,
-            "wickets": 0,
-            "ballsBowled": 0,
-            "runsConceded": 0,
-            "catches": 0,
-            "stumpings": 0,
-            "highlight": "",
-            "scorecardUrl": "https://cricheroes.com/scorecard/23084704/individual/kurukshetra-warriors-vs-strikers-11/summary"
-          }
-        },
-        {
-          "id": 14908774,
-          "date": "2025-01-26T04:36:35.000Z",
-          "status": "past",
-          "matchType": "Limited Overs",
-          "ballType": "TENNIS",
-          "venue": "Srt2",
-          "city": "Greater Noida",
-          "teamAId": 5412629,
-          "teamA": "Divino Champions",
-          "teamBId": 8626734,
-          "teamB": "Kurukshetra Warriors",
-          "winningTeamId": 8626734,
-          "winningTeam": "Kurukshetra Warriors",
-          "resultText": "Kurukshetra Warriors won by 7 wickets",
-          "teamAScore": "67/4",
-          "teamBScore": "68/3",
-          "scorecardUrl": "https://cricheroes.com/scorecard/14908774/individual/divino-champions-vs-kurukshetra-warriors/summary",
-          "playerId": 35922777,
-          "performance": {
-            "teamId": 0,
-            "teamName": "",
-            "opponent": "",
-            "runs": 0,
-            "balls": 0,
-            "fours": 0,
-            "sixes": 0,
-            "wickets": 0,
-            "ballsBowled": 0,
-            "runsConceded": 0,
-            "catches": 0,
-            "stumpings": 0,
-            "highlight": "",
-            "scorecardUrl": "https://cricheroes.com/scorecard/14908774/individual/divino-champions-vs-kurukshetra-warriors/summary"
-          }
-        },
-        {
-          "id": 14763263,
-          "date": "2025-01-26T02:23:41.000Z",
-          "status": "past",
-          "matchType": "Limited Overs",
-          "ballType": "TENNIS",
-          "venue": "NCC Ground",
+          "venue": "Silly Point",
           "city": "Noida",
-          "teamAId": 8626734,
-          "teamA": "Kurukshetra Warriors",
-          "teamBId": 5412629,
-          "teamB": "Divino Champions",
-          "winningTeamId": 5412629,
-          "winningTeam": "Divino Champions",
-          "resultText": "Divino Champions won by 7 wickets",
-          "teamAScore": "116/9",
-          "teamBScore": "117/3",
-          "scorecardUrl": "https://cricheroes.com/scorecard/14763263/individual/kurukshetra-warriors-vs-divino-champions/summary",
-          "playerId": 35922777,
+          "teamAId": 14382875,
+          "teamA": "Vidharbha Vahini",
+          "teamBId": 9639322,
+          "teamB": "Divino Alpha XI",
+          "winningTeamId": 14382875,
+          "winningTeam": "Vidharbha Vahini",
+          "resultText": "Vidharbha Vahini won by 13 runs",
+          "teamAScore": "190/8",
+          "teamBScore": "177/6",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27299534/individual/vidharbha-vahini-vs-divino-alpha-xi/summary",
+          "playerId": 22784838,
           "performance": {
             "teamId": 0,
             "teamName": "",
@@ -30962,28 +31093,28 @@
             "catches": 0,
             "stumpings": 0,
             "highlight": "",
-            "scorecardUrl": "https://cricheroes.com/scorecard/14763263/individual/kurukshetra-warriors-vs-divino-champions/summary"
+            "scorecardUrl": "https://cricheroes.com/scorecard/27299534/individual/vidharbha-vahini-vs-divino-alpha-xi/summary"
           }
         },
         {
-          "id": 14515199,
-          "date": "2025-01-18T02:34:54.000Z",
+          "id": 27153723,
+          "date": "2026-09-25T00:52:44.000Z",
           "status": "past",
           "matchType": "Limited Overs",
           "ballType": "TENNIS",
-          "venue": "Hari Cricket Ground",
-          "city": "Greater Noida",
-          "teamAId": 898531,
-          "teamA": "Rising Stars (GNW)",
-          "teamBId": 8626734,
-          "teamB": "Kurukshetra Warriors",
-          "winningTeamId": 898531,
-          "winningTeam": "Rising Stars (GNW)",
-          "resultText": "Rising Stars (GNW) won by 102 runs",
-          "teamAScore": "269/8",
-          "teamBScore": "167/10",
-          "scorecardUrl": "https://cricheroes.com/scorecard/14515199/individual/rising-stars-gnw-vs-kurukshetra-warriors/summary",
-          "playerId": 35922777,
+          "venue": "Silly Point",
+          "city": "Noida",
+          "teamAId": 13339251,
+          "teamA": "Weekdays Cricket Club (WCC)",
+          "teamBId": 9639322,
+          "teamB": "Divino Alpha XI",
+          "winningTeamId": 13339251,
+          "winningTeam": "Weekdays Cricket Club (WCC)",
+          "resultText": "Weekdays Cricket Club (WCC) won by 5 runs",
+          "teamAScore": "137/9",
+          "teamBScore": "132/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27153723/individual/weekdays-cricket-club-wcc-vs-divino-alpha-xi/summary",
+          "playerId": 22784838,
           "performance": {
             "teamId": 0,
             "teamName": "",
@@ -30998,7 +31129,151 @@
             "catches": 0,
             "stumpings": 0,
             "highlight": "",
-            "scorecardUrl": "https://cricheroes.com/scorecard/14515199/individual/rising-stars-gnw-vs-kurukshetra-warriors/summary"
+            "scorecardUrl": "https://cricheroes.com/scorecard/27153723/individual/weekdays-cricket-club-wcc-vs-divino-alpha-xi/summary"
+          }
+        },
+        {
+          "id": 26832744,
+          "date": "2026-09-15T00:48:45.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "Silly Point",
+          "city": "Noida",
+          "teamAId": 9639322,
+          "teamA": "Divino Alpha XI",
+          "teamBId": 7474431,
+          "teamB": "Super Strikers",
+          "winningTeamId": 7474431,
+          "winningTeam": "Super Strikers",
+          "resultText": "Super Strikers won by 5 wickets",
+          "teamAScore": "155/9",
+          "teamBScore": "158/5",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26832744/individual/divino-alpha-xi-vs-super-strikers/summary",
+          "playerId": 22784838,
+          "performance": {
+            "teamId": 0,
+            "teamName": "",
+            "opponent": "",
+            "runs": 0,
+            "balls": 0,
+            "fours": 0,
+            "sixes": 0,
+            "wickets": 0,
+            "ballsBowled": 0,
+            "runsConceded": 0,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "",
+            "scorecardUrl": "https://cricheroes.com/scorecard/26832744/individual/divino-alpha-xi-vs-super-strikers/summary"
+          }
+        },
+        {
+          "id": 26779502,
+          "date": "2026-09-10T00:56:32.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "CricVilla by Saurabh",
+          "city": "Noida",
+          "teamAId": 13851616,
+          "teamA": "Awesome Heroes NSPL Weeks Days",
+          "teamBId": 13870771,
+          "teamB": "Divino Revengers NSPL",
+          "winningTeamId": 13851616,
+          "winningTeam": "Awesome Heroes NSPL Weeks Days",
+          "resultText": "Awesome Heroes NSPL Weeks Days won by 100 runs",
+          "teamAScore": "223/10",
+          "teamBScore": "123/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26779502/individual/awesome-heroes-nspl-weeks-days-vs-divino-revengers-nspl/summary",
+          "playerId": 22784838,
+          "performance": {
+            "teamId": 0,
+            "teamName": "",
+            "opponent": "",
+            "runs": 0,
+            "balls": 0,
+            "fours": 0,
+            "sixes": 0,
+            "wickets": 0,
+            "ballsBowled": 0,
+            "runsConceded": 0,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "",
+            "scorecardUrl": "https://cricheroes.com/scorecard/26779502/individual/awesome-heroes-nspl-weeks-days-vs-divino-revengers-nspl/summary"
+          }
+        },
+        {
+          "id": 27024216,
+          "date": "2026-09-08T00:48:41.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "M2 Cricket Ground By Daksh (Greater Noida)",
+          "city": "Greater Noida",
+          "teamAId": 11466367,
+          "teamA": "Fabulous XI",
+          "teamBId": 9863076,
+          "teamB": "Super XI",
+          "winningTeamId": 9863076,
+          "winningTeam": "Super XI",
+          "resultText": "Super XI won by 2 wickets",
+          "teamAScore": "146/10",
+          "teamBScore": "149/8",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27024216/individual/fabulous-xi-vs-super-xi/summary",
+          "playerId": 22784838,
+          "performance": {
+            "teamId": 0,
+            "teamName": "",
+            "opponent": "",
+            "runs": 0,
+            "balls": 0,
+            "fours": 0,
+            "sixes": 0,
+            "wickets": 0,
+            "ballsBowled": 0,
+            "runsConceded": 0,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "",
+            "scorecardUrl": "https://cricheroes.com/scorecard/27024216/individual/fabulous-xi-vs-super-xi/summary"
+          }
+        },
+        {
+          "id": 27000454,
+          "date": "2026-09-07T01:03:12.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "Mid On Cricket Ground ",
+          "city": "Greater Noida",
+          "teamAId": 2998613,
+          "teamA": "All Stars XI",
+          "teamBId": 11466367,
+          "teamB": "Fabulous XI",
+          "winningTeamId": 2998613,
+          "winningTeam": "All Stars XI",
+          "resultText": "All Stars XI won by 93 runs",
+          "teamAScore": "197/6",
+          "teamBScore": "104/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27000454/individual/all-stars-xi-vs-fabulous-xi/summary",
+          "playerId": 22784838,
+          "performance": {
+            "teamId": 0,
+            "teamName": "",
+            "opponent": "",
+            "runs": 0,
+            "balls": 0,
+            "fours": 0,
+            "sixes": 0,
+            "wickets": 0,
+            "ballsBowled": 0,
+            "runsConceded": 0,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "",
+            "scorecardUrl": "https://cricheroes.com/scorecard/27000454/individual/all-stars-xi-vs-fabulous-xi/summary"
           }
         }
       ],
@@ -109942,5 +110217,12 @@
       "detectedAt": "2026-08-18T10:46:52.610Z"
     }
   ],
-  "errors": []
+  "errors": [],
+  "manualProfileRefreshes": {
+    "22784838": {
+      "name": "Vivek Sarna",
+      "refreshedAt": "2026-10-01T11:32:50.111Z",
+      "source": "https://cricheroes.com/player-profile/22784838/vivek-sarna/stats"
+    }
+  }
 }
