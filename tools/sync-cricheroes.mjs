@@ -13,6 +13,7 @@ const MANUALLY_CONFIRMED_PLAYERS = [
   { id: 9888779, name: "Akash Tyagi", slug: "akash-tyagi" },
   { id: 12688117, name: "Vaibhav", slug: "vaibhav" },
   { id: 4646519, name: "Shahid Sarwar", slug: "shahid-sarwar" },
+  { id: 22784838, name: "Vivek Sarna", slug: "vivek-sarna" },
 ];
 
 const HEADERS = {

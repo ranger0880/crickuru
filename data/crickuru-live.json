@@ -2,12 +2,12 @@
   "schemaVersion": 3,
   "source": "CricHeroes public team and player pages",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-01T11:40:59.399Z",
-  "lastCheckedAt": "2026-10-01T11:40:59.399Z",
-  "lastSuccessfulSyncAt": "2026-10-01T11:40:59.399Z",
-  "playerStatsUpdatedAt": "2026-10-01T11:40:59.399Z",
-  "playerRecentMatchesUpdatedAt": "2026-10-01T11:40:59.399Z",
-  "playerSyncCursor": 64,
+  "syncedAt": "2026-10-01T11:47:44.373Z",
+  "lastCheckedAt": "2026-10-01T11:47:44.373Z",
+  "lastSuccessfulSyncAt": "2026-10-01T11:47:44.373Z",
+  "playerStatsUpdatedAt": "2026-10-01T11:47:44.373Z",
+  "playerRecentMatchesUpdatedAt": "2026-10-01T11:47:44.373Z",
+  "playerSyncCursor": 76,
   "coverage": {
     "refreshCadence": "15 minutes",
     "playerProfileBatch": 12,
@@ -20,14 +20,14 @@
     "liveMatches": 0,
     "upcomingMatches": 1,
     "recentMatches": 42,
-    "players": 83,
+    "players": 84,
     "opponents": 30,
     "awards": 126,
     "records": 2,
-    "rosterChanges": 4,
-    "playerProfiles": 83,
-    "playerRecentMatches": 454,
-    "playerHistoryMatches": 1091,
+    "rosterChanges": 3,
+    "playerProfiles": 84,
+    "playerRecentMatches": 460,
+    "playerHistoryMatches": 1101,
     "playerHistoryComplete": 16,
     "sourcePages": [
       "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors",
@@ -72,7 +72,7 @@
     "nextMatchVenue": "M2 Cricket Ground By Daksh (Greater Noida)"
   },
   "memberSummary": {
-    "total": 83,
+    "total": 84,
     "verified": 76,
     "pro": 38,
     "captains": 1,
@@ -80,7 +80,7 @@
     "skills": [
       {
         "name": "Unlisted",
-        "count": 72
+        "count": 73
       },
       {
         "name": "BAT",
@@ -189,12 +189,12 @@
         "count": 5
       },
       {
-        "name": "Steady Batter",
+        "name": "Manually confirmed",
         "count": 4
       },
       {
-        "name": "Manually confirmed",
-        "count": 3
+        "name": "Steady Batter",
+        "count": 4
       },
       {
         "name": "Captain",
@@ -646,7 +646,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1740294522665_Df5f30t9RYkX.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.752Z"
+        "fetchedAt": "2026-10-01T11:47:46.225Z"
       }
     },
     {
@@ -856,7 +856,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1760441026186_0usugnyiZL1l.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.751Z"
+        "fetchedAt": "2026-10-01T11:47:46.157Z"
       }
     },
     {
@@ -1070,7 +1070,7 @@
           "team_name": "TFS Champions",
           "profile_photo": "https://media.cricheroes.in/user_profile/1776147325636_eGxdmt33omI9.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.789Z"
+        "fetchedAt": "2026-10-01T11:47:47.385Z"
       }
     },
     {
@@ -1296,7 +1296,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1779329221637_sAQlz8HY2Dv7.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.750Z"
+        "fetchedAt": "2026-10-01T11:47:46.403Z"
       }
     },
     {
@@ -1518,7 +1518,7 @@
           "team_name": "Divino Dominators",
           "profile_photo": "https://media.cricheroes.in/user_profile/1687784949654_szSgkw6bSMyS.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.980Z"
+        "fetchedAt": "2026-10-01T11:47:46.381Z"
       }
     },
     {
@@ -1733,7 +1733,7 @@
           "team_name": "The Core XI",
           "profile_photo": "https://media.cricheroes.in/user_profile/1790087254948_NdJ3p3sfsjqj.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.767Z"
+        "fetchedAt": "2026-10-01T11:47:46.405Z"
       }
     },
     {
@@ -1947,7 +1947,7 @@
           "team_name": "Elite warriors 11",
           "profile_photo": "https://media.cricheroes.in/user_profile/1773544035326_v9xB0L1bH0xj.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.805Z"
+        "fetchedAt": "2026-10-01T11:47:46.352Z"
       }
     },
     {
@@ -2168,7 +2168,7 @@
           "team_name": "Star Sport Cricket Club",
           "profile_photo": "https://media.cricheroes.in/user_profile/1739941237181_CzO1wbdb0sD8.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.645Z"
+        "fetchedAt": "2026-10-01T11:47:46.406Z"
       }
     },
     {
@@ -2386,7 +2386,7 @@
           "team_name": "Ace Power XI",
           "profile_photo": "https://media.cricheroes.in/user_profile/1766474912441_pNhO2hnwETz2.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.827Z"
+        "fetchedAt": "2026-10-01T11:47:46.304Z"
       }
     },
     {
@@ -2623,7 +2623,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1780864997429_9o5IzA0i3jGm.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.804Z"
+        "fetchedAt": "2026-10-01T11:47:46.315Z"
       }
     },
     {
@@ -2840,7 +2840,7 @@
           "team_name": "Strikers 11",
           "profile_photo": "https://media.cricheroes.in/user_profile/1787372727009_qTZKHoV0BVzD.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.787Z"
+        "fetchedAt": "2026-10-01T11:47:46.415Z"
       }
     },
     {
@@ -3071,7 +3071,7 @@
           "team_name": "Techie Cricket Club",
           "profile_photo": "https://media.cricheroes.in/user_profile/1760877797272_m81RhgfV9piB.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.806Z"
+        "fetchedAt": "2026-10-01T11:47:47.388Z"
       }
     },
     {
@@ -3283,7 +3283,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1768059656318_FcDWz8vhJEUM.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.806Z"
+        "fetchedAt": "2026-10-01T11:47:46.383Z"
       }
     },
     {
@@ -3493,7 +3493,7 @@
           "team_name": "MIGHTY HEROES",
           "profile_photo": "https://media.cricheroes.in/user_profile/1743222088091_VKsmdssOFmio.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.835Z"
+        "fetchedAt": "2026-10-01T11:47:46.407Z"
       }
     },
     {
@@ -3706,7 +3706,7 @@
           "team_name": "Ace Panthers",
           "profile_photo": "https://media.cricheroes.in/user_profile/1762881554104_Ad5W087MFNUa.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.788Z"
+        "fetchedAt": "2026-10-01T11:47:46.351Z"
       }
     },
     {
@@ -3932,7 +3932,7 @@
           "team_name": "Divino Dominators",
           "profile_photo": "https://media.cricheroes.in/user_profile/1649006656456_R9taTt5Q8etp.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.716Z"
+        "fetchedAt": "2026-10-01T11:47:46.352Z"
       }
     },
     {
@@ -4159,7 +4159,7 @@
           "team_name": "Power Rangers",
           "profile_photo": "https://media.cricheroes.in/user_profile/1749052271503_kWVeL2Ne19GO.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.828Z"
+        "fetchedAt": "2026-10-01T11:47:47.385Z"
       }
     },
     {
@@ -4371,7 +4371,7 @@
           "team_name": "Divino Dominators",
           "profile_photo": "https://media.cricheroes.in/user_profile/1769450892074_lW3zrXmmAtAL.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.829Z"
+        "fetchedAt": "2026-10-01T11:47:46.408Z"
       }
     },
     {
@@ -4582,7 +4582,7 @@
           "team_name": "Divino Dragons DCPL",
           "profile_photo": "https://media.cricheroes.in/user_profile/1750647894024_1SYaJrdU2hQe.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.836Z"
+        "fetchedAt": "2026-10-01T11:47:47.384Z"
       }
     },
     {
@@ -4795,7 +4795,7 @@
           "team_name": "Maverick Masters",
           "profile_photo": "https://media.cricheroes.in/user_profile/1738844234316_vGL0pYg8SE2K.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.823Z"
+        "fetchedAt": "2026-10-01T11:47:47.384Z"
       }
     },
     {
@@ -5003,7 +5003,7 @@
           "team_name": "DIVINO STARZ DCPL3",
           "profile_photo": "https://media.cricheroes.in/user_profile/1759217577159_vlKUBI1T9eCT.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.827Z"
+        "fetchedAt": "2026-10-01T11:47:46.408Z"
       }
     },
     {
@@ -5215,7 +5215,7 @@
           "team_name": "Divino Royals",
           "profile_photo": "https://media.cricheroes.in/user_profile/1740397679772_urlfRclTtO4z.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.806Z"
+        "fetchedAt": "2026-10-01T11:47:46.406Z"
       }
     },
     {
@@ -5435,7 +5435,7 @@
           "team_name": "Dharma Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1769406507625_xj7GkiCZWIE0.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.717Z"
+        "fetchedAt": "2026-10-01T11:47:47.385Z"
       }
     },
     {
@@ -5643,7 +5643,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1768059656318_FcDWz8vhJEUM.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.825Z"
+        "fetchedAt": "2026-10-01T11:47:46.416Z"
       }
     },
     {
@@ -5851,7 +5851,7 @@
           "team_name": "Divino Hustlers - DCPL 2.0",
           "profile_photo": "https://media.cricheroes.in/user_profile/1790775762674_gTMItUPBnpnk.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.830Z"
+        "fetchedAt": "2026-10-01T11:47:46.416Z"
       }
     },
     {
@@ -6063,7 +6063,7 @@
           "team_name": "SNX 11",
           "profile_photo": "https://media.cricheroes.in/user_profile/1786212187690_hrU5SkagCsDB.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.835Z"
+        "fetchedAt": "2026-10-01T11:47:46.409Z"
       }
     },
     {
@@ -6345,7 +6345,7 @@
           "team_name": "Divino Dragons - DCPL2",
           "profile_photo": "https://media.cricheroes.in/user_profile/1762236484006_gh7vxjTz0CzH.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.904Z"
+        "fetchedAt": "2026-10-01T11:47:46.413Z"
       }
     },
     {
@@ -6557,7 +6557,7 @@
           "team_name": "Divino Champains DCPL-2",
           "profile_photo": "https://media.cricheroes.in/user_profile/1738844234316_vGL0pYg8SE2K.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.869Z"
+        "fetchedAt": "2026-10-01T11:47:46.409Z"
       }
     },
     {
@@ -6765,7 +6765,7 @@
           "team_name": "Divino Stars- Soft Ball",
           "profile_photo": "https://media.cricheroes.in/user_profile/1724909418920_VlIU0dKIKpbt.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.826Z"
+        "fetchedAt": "2026-10-01T11:47:46.381Z"
       }
     },
     {
@@ -6980,7 +6980,7 @@
           "team_name": "Maverick Masters",
           "profile_photo": "https://media.cricheroes.in/user_profile/1724909418920_VlIU0dKIKpbt.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.751Z"
+        "fetchedAt": "2026-10-01T11:47:46.624Z"
       }
     },
     {
@@ -7198,7 +7198,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1774670641951_DB3xaM3qqmnv.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.801Z"
+        "fetchedAt": "2026-10-01T11:47:46.500Z"
       }
     },
     {
@@ -7496,7 +7496,7 @@
           "team_name": "Divino Panthers",
           "profile_photo": "https://media.cricheroes.in/user_profile/1790682005041_7aq3SUFhzCmM.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.824Z"
+        "fetchedAt": "2026-10-01T11:47:46.481Z"
       }
     },
     {
@@ -7766,7 +7766,7 @@
           "team_name": "Divino Hustlers",
           "profile_photo": "https://media.cricheroes.in/user_profile/1741592931245_KBgY8JljGQ0C.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.767Z"
+        "fetchedAt": "2026-10-01T11:47:46.380Z"
       }
     },
     {
@@ -7982,7 +7982,7 @@
           "team_name": "Divino Champions",
           "profile_photo": "https://media.cricheroes.in/default/user_profile.png"
         },
-        "fetchedAt": "2026-10-01T11:41:01.829Z"
+        "fetchedAt": "2026-10-01T11:47:46.410Z"
       }
     },
     {
@@ -8190,7 +8190,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1745742748259_pEWQ7NtWRtOG.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.767Z"
+        "fetchedAt": "2026-10-01T11:47:46.378Z"
       }
     },
     {
@@ -8400,7 +8400,7 @@
           "team_name": "2nd Inning Riders united",
           "profile_photo": "https://media.cricheroes.in/user_profile/1702172442684_qLvu5HzdoyZb.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.766Z"
+        "fetchedAt": "2026-10-01T11:47:46.407Z"
       }
     },
     {
@@ -8609,7 +8609,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1745742748259_pEWQ7NtWRtOG.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.807Z"
+        "fetchedAt": "2026-10-01T11:47:46.408Z"
       }
     },
     {
@@ -8817,7 +8817,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/default/user_profile.png"
         },
-        "fetchedAt": "2026-10-01T11:41:01.828Z"
+        "fetchedAt": "2026-10-01T11:47:46.632Z"
       }
     },
     {
@@ -9026,7 +9026,7 @@
           "team_name": "Divino Champions",
           "profile_photo": "https://media.cricheroes.in/user_profile/1725539653514_wXi8Jzf7zORo.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.807Z"
+        "fetchedAt": "2026-10-01T11:47:46.443Z"
       }
     },
     {
@@ -9244,7 +9244,7 @@
           "team_name": "Rising Stars (GNW)",
           "profile_photo": "https://media.cricheroes.in/user_profile/1770101655492_fXtG89PBcvcR.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.752Z"
+        "fetchedAt": "2026-10-01T11:47:46.409Z"
       }
     }
   ],
@@ -9526,7 +9526,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1740294522665_Df5f30t9RYkX.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.752Z"
+        "fetchedAt": "2026-10-01T11:47:46.225Z"
       }
     },
     {
@@ -9736,7 +9736,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1760441026186_0usugnyiZL1l.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.751Z"
+        "fetchedAt": "2026-10-01T11:47:46.157Z"
       }
     },
     {
@@ -9950,7 +9950,7 @@
           "team_name": "TFS Champions",
           "profile_photo": "https://media.cricheroes.in/user_profile/1776147325636_eGxdmt33omI9.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.789Z"
+        "fetchedAt": "2026-10-01T11:47:47.385Z"
       }
     },
     {
@@ -10176,7 +10176,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1779329221637_sAQlz8HY2Dv7.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.750Z"
+        "fetchedAt": "2026-10-01T11:47:46.403Z"
       }
     },
     {
@@ -10398,7 +10398,7 @@
           "team_name": "Divino Dominators",
           "profile_photo": "https://media.cricheroes.in/user_profile/1687784949654_szSgkw6bSMyS.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.980Z"
+        "fetchedAt": "2026-10-01T11:47:46.381Z"
       }
     },
     {
@@ -10613,7 +10613,7 @@
           "team_name": "The Core XI",
           "profile_photo": "https://media.cricheroes.in/user_profile/1790087254948_NdJ3p3sfsjqj.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.767Z"
+        "fetchedAt": "2026-10-01T11:47:46.405Z"
       }
     },
     {
@@ -10827,7 +10827,7 @@
           "team_name": "Elite warriors 11",
           "profile_photo": "https://media.cricheroes.in/user_profile/1773544035326_v9xB0L1bH0xj.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.805Z"
+        "fetchedAt": "2026-10-01T11:47:46.352Z"
       }
     },
     {
@@ -11048,7 +11048,7 @@
           "team_name": "Star Sport Cricket Club",
           "profile_photo": "https://media.cricheroes.in/user_profile/1739941237181_CzO1wbdb0sD8.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.645Z"
+        "fetchedAt": "2026-10-01T11:47:46.406Z"
       }
     },
     {
@@ -11266,7 +11266,7 @@
           "team_name": "Ace Power XI",
           "profile_photo": "https://media.cricheroes.in/user_profile/1766474912441_pNhO2hnwETz2.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.827Z"
+        "fetchedAt": "2026-10-01T11:47:46.304Z"
       }
     },
     {
@@ -11503,7 +11503,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1780864997429_9o5IzA0i3jGm.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.804Z"
+        "fetchedAt": "2026-10-01T11:47:46.315Z"
       }
     },
     {
@@ -11720,7 +11720,7 @@
           "team_name": "Strikers 11",
           "profile_photo": "https://media.cricheroes.in/user_profile/1787372727009_qTZKHoV0BVzD.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.787Z"
+        "fetchedAt": "2026-10-01T11:47:46.415Z"
       }
     },
     {
@@ -11951,7 +11951,7 @@
           "team_name": "Techie Cricket Club",
           "profile_photo": "https://media.cricheroes.in/user_profile/1760877797272_m81RhgfV9piB.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.806Z"
+        "fetchedAt": "2026-10-01T11:47:47.388Z"
       }
     },
     {
@@ -12163,7 +12163,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1768059656318_FcDWz8vhJEUM.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.806Z"
+        "fetchedAt": "2026-10-01T11:47:46.383Z"
       }
     },
     {
@@ -12373,7 +12373,7 @@
           "team_name": "MIGHTY HEROES",
           "profile_photo": "https://media.cricheroes.in/user_profile/1743222088091_VKsmdssOFmio.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.835Z"
+        "fetchedAt": "2026-10-01T11:47:46.407Z"
       }
     },
     {
@@ -12586,7 +12586,7 @@
           "team_name": "Ace Panthers",
           "profile_photo": "https://media.cricheroes.in/user_profile/1762881554104_Ad5W087MFNUa.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.788Z"
+        "fetchedAt": "2026-10-01T11:47:46.351Z"
       }
     },
     {
@@ -12812,7 +12812,7 @@
           "team_name": "Divino Dominators",
           "profile_photo": "https://media.cricheroes.in/user_profile/1649006656456_R9taTt5Q8etp.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.716Z"
+        "fetchedAt": "2026-10-01T11:47:46.352Z"
       }
     },
     {
@@ -13039,7 +13039,7 @@
           "team_name": "Power Rangers",
           "profile_photo": "https://media.cricheroes.in/user_profile/1749052271503_kWVeL2Ne19GO.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.828Z"
+        "fetchedAt": "2026-10-01T11:47:47.385Z"
       }
     },
     {
@@ -13251,7 +13251,7 @@
           "team_name": "Divino Dominators",
           "profile_photo": "https://media.cricheroes.in/user_profile/1769450892074_lW3zrXmmAtAL.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.829Z"
+        "fetchedAt": "2026-10-01T11:47:46.408Z"
       }
     },
     {
@@ -13462,7 +13462,7 @@
           "team_name": "Divino Dragons DCPL",
           "profile_photo": "https://media.cricheroes.in/user_profile/1750647894024_1SYaJrdU2hQe.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.836Z"
+        "fetchedAt": "2026-10-01T11:47:47.384Z"
       }
     },
     {
@@ -13675,7 +13675,7 @@
           "team_name": "Maverick Masters",
           "profile_photo": "https://media.cricheroes.in/user_profile/1738844234316_vGL0pYg8SE2K.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.823Z"
+        "fetchedAt": "2026-10-01T11:47:47.384Z"
       }
     },
     {
@@ -13883,7 +13883,7 @@
           "team_name": "DIVINO STARZ DCPL3",
           "profile_photo": "https://media.cricheroes.in/user_profile/1759217577159_vlKUBI1T9eCT.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.827Z"
+        "fetchedAt": "2026-10-01T11:47:46.408Z"
       }
     },
     {
@@ -14095,7 +14095,7 @@
           "team_name": "Divino Royals",
           "profile_photo": "https://media.cricheroes.in/user_profile/1740397679772_urlfRclTtO4z.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.806Z"
+        "fetchedAt": "2026-10-01T11:47:46.406Z"
       }
     },
     {
@@ -14315,7 +14315,7 @@
           "team_name": "Dharma Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1769406507625_xj7GkiCZWIE0.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.717Z"
+        "fetchedAt": "2026-10-01T11:47:47.385Z"
       }
     },
     {
@@ -14523,7 +14523,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1768059656318_FcDWz8vhJEUM.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.825Z"
+        "fetchedAt": "2026-10-01T11:47:46.416Z"
       }
     },
     {
@@ -14731,7 +14731,7 @@
           "team_name": "Divino Hustlers - DCPL 2.0",
           "profile_photo": "https://media.cricheroes.in/user_profile/1790775762674_gTMItUPBnpnk.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.830Z"
+        "fetchedAt": "2026-10-01T11:47:46.416Z"
       }
     },
     {
@@ -14943,7 +14943,7 @@
           "team_name": "SNX 11",
           "profile_photo": "https://media.cricheroes.in/user_profile/1786212187690_hrU5SkagCsDB.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.835Z"
+        "fetchedAt": "2026-10-01T11:47:46.409Z"
       }
     },
     {
@@ -15225,7 +15225,7 @@
           "team_name": "Divino Dragons - DCPL2",
           "profile_photo": "https://media.cricheroes.in/user_profile/1762236484006_gh7vxjTz0CzH.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.904Z"
+        "fetchedAt": "2026-10-01T11:47:46.413Z"
       }
     },
     {
@@ -15437,7 +15437,7 @@
           "team_name": "Divino Champains DCPL-2",
           "profile_photo": "https://media.cricheroes.in/user_profile/1738844234316_vGL0pYg8SE2K.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.869Z"
+        "fetchedAt": "2026-10-01T11:47:46.409Z"
       }
     },
     {
@@ -15645,7 +15645,7 @@
           "team_name": "Divino Stars- Soft Ball",
           "profile_photo": "https://media.cricheroes.in/user_profile/1724909418920_VlIU0dKIKpbt.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.826Z"
+        "fetchedAt": "2026-10-01T11:47:46.381Z"
       }
     },
     {
@@ -15860,7 +15860,7 @@
           "team_name": "Maverick Masters",
           "profile_photo": "https://media.cricheroes.in/user_profile/1724909418920_VlIU0dKIKpbt.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.751Z"
+        "fetchedAt": "2026-10-01T11:47:46.624Z"
       }
     },
     {
@@ -16078,7 +16078,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1774670641951_DB3xaM3qqmnv.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.801Z"
+        "fetchedAt": "2026-10-01T11:47:46.500Z"
       }
     },
     {
@@ -16376,7 +16376,7 @@
           "team_name": "Divino Panthers",
           "profile_photo": "https://media.cricheroes.in/user_profile/1790682005041_7aq3SUFhzCmM.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.824Z"
+        "fetchedAt": "2026-10-01T11:47:46.481Z"
       }
     },
     {
@@ -16646,7 +16646,7 @@
           "team_name": "Divino Hustlers",
           "profile_photo": "https://media.cricheroes.in/user_profile/1741592931245_KBgY8JljGQ0C.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.767Z"
+        "fetchedAt": "2026-10-01T11:47:46.380Z"
       }
     },
     {
@@ -16862,7 +16862,7 @@
           "team_name": "Divino Champions",
           "profile_photo": "https://media.cricheroes.in/default/user_profile.png"
         },
-        "fetchedAt": "2026-10-01T11:41:01.829Z"
+        "fetchedAt": "2026-10-01T11:47:46.410Z"
       }
     },
     {
@@ -17070,7 +17070,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1745742748259_pEWQ7NtWRtOG.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.767Z"
+        "fetchedAt": "2026-10-01T11:47:46.378Z"
       }
     },
     {
@@ -17280,7 +17280,7 @@
           "team_name": "2nd Inning Riders united",
           "profile_photo": "https://media.cricheroes.in/user_profile/1702172442684_qLvu5HzdoyZb.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.766Z"
+        "fetchedAt": "2026-10-01T11:47:46.407Z"
       }
     },
     {
@@ -17489,7 +17489,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/user_profile/1745742748259_pEWQ7NtWRtOG.jpeg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.807Z"
+        "fetchedAt": "2026-10-01T11:47:46.408Z"
       }
     },
     {
@@ -17697,7 +17697,7 @@
           "team_name": "Kurukshetra Warriors",
           "profile_photo": "https://media.cricheroes.in/default/user_profile.png"
         },
-        "fetchedAt": "2026-10-01T11:41:01.828Z"
+        "fetchedAt": "2026-10-01T11:47:46.632Z"
       }
     },
     {
@@ -17906,7 +17906,7 @@
           "team_name": "Divino Champions",
           "profile_photo": "https://media.cricheroes.in/user_profile/1725539653514_wXi8Jzf7zORo.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.807Z"
+        "fetchedAt": "2026-10-01T11:47:46.443Z"
       }
     },
     {
@@ -18124,7 +18124,7 @@
           "team_name": "Rising Stars (GNW)",
           "profile_photo": "https://media.cricheroes.in/user_profile/1770101655492_fXtG89PBcvcR.jpg"
         },
-        "fetchedAt": "2026-10-01T11:41:01.752Z"
+        "fetchedAt": "2026-10-01T11:47:46.409Z"
       }
     }
   ],
@@ -19364,7 +19364,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-03-18T01:29:13.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -20573,7 +20573,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-03-02T04:39:00.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -21952,7 +21952,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-04-01T01:46:12.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -23195,7 +23195,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-11-16T01:49:48.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -24558,7 +24558,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-07-15T00:56:42.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -26167,7 +26167,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-09-25T02:28:08.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -27446,7 +27446,7 @@
             "runsConceded": 0,
             "catches": 0,
             "stumpings": 0,
-            "highlight": "",
+            "highlight": "1000 catches",
             "scorecardUrl": "https://cricheroes.com/scorecard/26832744/ultimate-cricket-league-season-4-/divino-alpha-xi-vs-super-strikers/summary"
           }
         }
@@ -27487,6 +27487,42 @@
             "highlight": "1000 catches",
             "scorecardUrl": "https://cricheroes.com/scorecard/27153723/ultimate-cricket-league-season-4-/weekdays-cricket-club-wcc-vs-divino-alpha-xi/summary"
           }
+        },
+        {
+          "id": 26832744,
+          "date": "2026-09-15T00:00:00.000Z",
+          "status": "past",
+          "matchType": "League Match",
+          "ballType": "",
+          "venue": "",
+          "city": "",
+          "teamAId": 0,
+          "teamA": "Divino Alpha Xi",
+          "teamBId": 0,
+          "teamB": "Super Strikers",
+          "winningTeamId": 0,
+          "winningTeam": "League Matches Past Divino Alpha XI (18.4) Super Strikers (14.5) Super Strikers",
+          "resultText": "League Matches Past Divino Alpha XI (18.4) Super Strikers (14.5) Super Strikers won by 5 wickets",
+          "teamAScore": "",
+          "teamBScore": "",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26832744/ultimate-cricket-league-season-4-/divino-alpha-xi-vs-super-strikers/summary",
+          "playerId": 6818401,
+          "performance": {
+            "teamId": 0,
+            "teamName": "Divino Alpha Xi",
+            "opponent": "Super Strikers",
+            "runs": 0,
+            "balls": 0,
+            "fours": 0,
+            "sixes": 0,
+            "wickets": 0,
+            "ballsBowled": 0,
+            "runsConceded": 0,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "1000 catches",
+            "scorecardUrl": "https://cricheroes.com/scorecard/26832744/ultimate-cricket-league-season-4-/divino-alpha-xi-vs-super-strikers/summary"
+          }
         }
       ],
       "warriorsStats": {
@@ -27509,7 +27545,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-06-02T01:03:10.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -28882,7 +28918,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-05-22T15:13:00.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -30207,7 +30243,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-09-25T02:28:08.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -31037,7 +31073,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-02-18T01:55:31.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -32466,7 +32502,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-02-19T15:12:00.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -33736,7 +33772,7 @@
             "runsConceded": 0,
             "catches": 0,
             "stumpings": 0,
-            "highlight": "",
+            "highlight": "1000 catches",
             "scorecardUrl": "https://cricheroes.com/scorecard/26832744/ultimate-cricket-league-season-4-/divino-alpha-xi-vs-super-strikers/summary"
           }
         },
@@ -33813,6 +33849,42 @@
             "highlight": "1000 catches",
             "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary"
           }
+        },
+        {
+          "id": 26832744,
+          "date": "2026-09-15T00:00:00.000Z",
+          "status": "past",
+          "matchType": "League Match",
+          "ballType": "",
+          "venue": "",
+          "city": "",
+          "teamAId": 0,
+          "teamA": "Divino Alpha Xi",
+          "teamBId": 0,
+          "teamB": "Super Strikers",
+          "winningTeamId": 0,
+          "winningTeam": "League Matches Past Divino Alpha XI (18.4) Super Strikers (14.5) Super Strikers",
+          "resultText": "League Matches Past Divino Alpha XI (18.4) Super Strikers (14.5) Super Strikers won by 5 wickets",
+          "teamAScore": "",
+          "teamBScore": "",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26832744/ultimate-cricket-league-season-4-/divino-alpha-xi-vs-super-strikers/summary",
+          "playerId": 13677587,
+          "performance": {
+            "teamId": 0,
+            "teamName": "Divino Alpha Xi",
+            "opponent": "Super Strikers",
+            "runs": 0,
+            "balls": 0,
+            "fours": 0,
+            "sixes": 0,
+            "wickets": 0,
+            "ballsBowled": 0,
+            "runsConceded": 0,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "1000 catches",
+            "scorecardUrl": "https://cricheroes.com/scorecard/26832744/ultimate-cricket-league-season-4-/divino-alpha-xi-vs-super-strikers/summary"
+          }
         }
       ],
       "warriorsStats": {
@@ -33835,7 +33907,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -34974,7 +35046,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-09-23T01:10:45.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -36212,7 +36284,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-04-10T01:43:22.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -37481,7 +37553,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-02-23T01:50:00.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -38807,7 +38879,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-09-25T02:28:08.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -39916,7 +39988,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-07-15T00:56:42.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -41229,7 +41301,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-07-15T00:56:42.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -42531,7 +42603,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-11-08T15:54:13.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -43896,7 +43968,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-09-25T01:10:13.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -45246,7 +45318,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-09-25T01:10:13.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -46351,7 +46423,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-04-10T01:43:22.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -47655,7 +47727,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-06-02T01:03:10.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -49019,7 +49091,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -49940,7 +50012,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-02-21T02:12:20.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -51215,7 +51287,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-02-21T02:12:20.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -52529,7 +52601,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-02-23T16:47:44.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -53774,7 +53846,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -54222,7 +54294,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-01-18T02:34:54.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -55278,7 +55350,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-09-25T02:28:08.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -55954,7 +56026,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -57188,7 +57260,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-02-21T02:12:20.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -58293,7 +58365,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -59514,7 +59586,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-02-21T02:12:20.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -60574,7 +60646,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-03-08T16:21:25.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -60734,7 +60806,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -61414,7 +61486,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -62594,7 +62666,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -63574,7 +63646,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -64636,7 +64708,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-03-02T04:39:00.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -65698,7 +65770,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -66820,7 +66892,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-02-02T02:20:41.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -66978,7 +67050,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -68180,7 +68252,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-06-02T01:03:10.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -69278,7 +69350,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-01-26T02:23:41.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -70381,7 +70453,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -71681,7 +71753,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-09-23T01:10:45.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -72203,7 +72275,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -73355,7 +73427,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-03-11T01:43:51.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -74416,7 +74488,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-10-31T15:23:58.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -75555,7 +75627,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-09-23T01:10:45.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -76631,7 +76703,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-09-25T01:10:13.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -77461,7 +77533,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -77983,7 +78055,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-11-16T01:49:48.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -79058,7 +79130,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-03-14T01:50:46.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -80133,7 +80205,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-03-07T03:07:52.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -81256,7 +81328,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-11-15T09:42:06.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -82221,7 +82293,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -83422,7 +83494,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-11-16T01:49:48.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -84810,7 +84882,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -86017,7 +86089,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -87320,7 +87392,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-04-01T01:46:12.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -88627,7 +88699,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-07-15T00:56:42.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -89391,7 +89463,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-02-28T01:41:56.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -90532,7 +90604,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-02-18T14:57:00.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -91854,7 +91926,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -92916,7 +92988,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -93664,7 +93736,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-01-18T02:34:54.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -94735,7 +94807,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-02-23T01:50:00.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -95339,7 +95411,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-02-09T02:21:33.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -96487,7 +96559,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -97169,7 +97241,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -98293,7 +98365,7 @@
             "runsConceded": 0,
             "catches": 0,
             "stumpings": 0,
-            "highlight": "",
+            "highlight": "1000 catches",
             "scorecardUrl": "https://cricheroes.com/scorecard/26832744/ultimate-cricket-league-season-4-/divino-alpha-xi-vs-super-strikers/summary"
           }
         },
@@ -98442,7 +98514,44 @@
           }
         }
       ],
-      "recentHighlights": [],
+      "recentHighlights": [
+        {
+          "id": 26832744,
+          "date": "2026-09-15T00:00:00.000Z",
+          "status": "past",
+          "matchType": "League Match",
+          "ballType": "",
+          "venue": "",
+          "city": "",
+          "teamAId": 0,
+          "teamA": "Divino Alpha Xi",
+          "teamBId": 0,
+          "teamB": "Super Strikers",
+          "winningTeamId": 0,
+          "winningTeam": "League Matches Past Divino Alpha XI (18.4) Super Strikers (14.5) Super Strikers",
+          "resultText": "League Matches Past Divino Alpha XI (18.4) Super Strikers (14.5) Super Strikers won by 5 wickets",
+          "teamAScore": "",
+          "teamBScore": "",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26832744/ultimate-cricket-league-season-4-/divino-alpha-xi-vs-super-strikers/summary",
+          "playerId": 32421879,
+          "performance": {
+            "teamId": 0,
+            "teamName": "Divino Alpha Xi",
+            "opponent": "Super Strikers",
+            "runs": 0,
+            "balls": 0,
+            "fours": 0,
+            "sixes": 0,
+            "wickets": 0,
+            "ballsBowled": 0,
+            "runsConceded": 0,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "1000 catches",
+            "scorecardUrl": "https://cricheroes.com/scorecard/26832744/ultimate-cricket-league-season-4-/divino-alpha-xi-vs-super-strikers/summary"
+          }
+        }
+      ],
       "warriorsStats": {
         "matchesTracked": 0,
         "battingInnings": 0,
@@ -98463,7 +98572,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -99780,7 +99889,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-03-25T01:26:01.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -100878,7 +100987,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -101878,7 +101987,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -102996,7 +103105,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-01-18T09:09:43.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -104416,7 +104525,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-06-02T01:03:10.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -105514,7 +105623,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -106819,7 +106928,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2026-09-25T02:28:08.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -107874,7 +107983,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -108877,7 +108986,7 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     },
     {
@@ -109885,7 +109994,1010 @@
         "catches": 0,
         "stumpings": 0,
         "lastMatchDate": "2025-03-08T16:21:25.000Z",
-        "updatedAt": "2026-10-01T11:41:37.163Z"
+        "updatedAt": "2026-10-01T11:48:01.234Z"
+      }
+    },
+    {
+      "id": 22784838,
+      "name": "Vivek Sarna",
+      "photo": "https://media.cricheroes.in/user_profile/1788964554116_84lnmdw7rYqj.jpeg",
+      "skill": "",
+      "isVerified": false,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": false,
+      "associationTag": "",
+      "batterCategory": "",
+      "batterCategoryInfo": "",
+      "bowlerCategory": "",
+      "bowlerCategoryInfo": "",
+      "badges": [
+        "Manually confirmed"
+      ],
+      "profileUrl": "https://cricheroes.com/player-profile/22784838/vivek-sarna/profile",
+      "statsUrl": "https://cricheroes.com/player-profile/22784838/vivek-sarna/stats",
+      "matchesUrl": "https://cricheroes.com/player-profile/22784838/vivek-sarna/matches",
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      },
+      "manualRosterStatus": "confirmed",
+      "manualRosterLabel": "Manually confirmed Warriors player",
+      "overallStats": {
+        "source": "CricHeroes public player stats",
+        "sections": {
+          "batting": [
+            {
+              "title": "Matches",
+              "value": 34,
+              "isUserProperty": true
+            },
+            {
+              "title": "Innings",
+              "value": 25,
+              "isUserProperty": false
+            },
+            {
+              "title": "Not out",
+              "value": 2,
+              "isUserProperty": false
+            },
+            {
+              "title": "Runs",
+              "value": 557,
+              "isUserProperty": true
+            },
+            {
+              "title": "Highest Runs",
+              "value": "128",
+              "isUserProperty": false
+            },
+            {
+              "title": "Avg",
+              "value": "24.22",
+              "isUserProperty": false
+            },
+            {
+              "title": "SR",
+              "value": "160.06",
+              "isUserProperty": false
+            },
+            {
+              "title": "30s",
+              "value": 1,
+              "isUserProperty": false
+            },
+            {
+              "title": "50s",
+              "value": 4,
+              "isUserProperty": false
+            },
+            {
+              "title": "100s",
+              "value": 1,
+              "isUserProperty": false
+            },
+            {
+              "title": "4s",
+              "value": 46,
+              "isUserProperty": false
+            },
+            {
+              "title": "6s",
+              "value": 38,
+              "isUserProperty": false
+            },
+            {
+              "title": "Ducks",
+              "value": 6,
+              "isUserProperty": false
+            },
+            {
+              "title": "Won",
+              "value": 14,
+              "isUserProperty": false
+            },
+            {
+              "title": "Loss",
+              "value": 20,
+              "isUserProperty": false
+            }
+          ],
+          "bowling": [
+            {
+              "title": "Matches",
+              "value": 34,
+              "isUserProperty": true
+            },
+            {
+              "title": "Innings",
+              "value": 11,
+              "isUserProperty": false
+            },
+            {
+              "title": "Overs",
+              "value": "33.1",
+              "isUserProperty": false
+            },
+            {
+              "title": "Maidens",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Wickets",
+              "value": 20,
+              "isUserProperty": true
+            },
+            {
+              "title": "Runs",
+              "value": 336,
+              "isUserProperty": false
+            },
+            {
+              "title": "Best Bowling",
+              "value": "4/28",
+              "isUserProperty": false
+            },
+            {
+              "title": "3 Wickets",
+              "value": 3,
+              "isUserProperty": false
+            },
+            {
+              "title": "5 Wickets",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Economy",
+              "value": "10.13",
+              "isUserProperty": false
+            },
+            {
+              "title": "SR",
+              "value": "9.95",
+              "isUserProperty": false
+            },
+            {
+              "title": "Avg",
+              "value": "16.80",
+              "isUserProperty": false
+            },
+            {
+              "title": "Wides",
+              "value": 16,
+              "isUserProperty": false
+            },
+            {
+              "title": "NoBalls",
+              "value": 4,
+              "isUserProperty": false
+            },
+            {
+              "title": "Dot Balls",
+              "value": 71,
+              "isUserProperty": false
+            },
+            {
+              "title": "4s",
+              "value": 20,
+              "isUserProperty": false
+            },
+            {
+              "title": "6s",
+              "value": 22,
+              "isUserProperty": false
+            }
+          ],
+          "fielding": [
+            {
+              "title": "Matches",
+              "value": 34,
+              "isUserProperty": false
+            },
+            {
+              "title": "Catches",
+              "value": 3,
+              "isUserProperty": false
+            },
+            {
+              "title": "Caught behind",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Run outs",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Stumpings",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Assisted Run Outs",
+              "value": 0,
+              "isUserProperty": false
+            }
+          ],
+          "captain": []
+        },
+        "publicFieldCount": 38,
+        "matches": 34,
+        "battingInnings": 25,
+        "notOut": 2,
+        "runs": 557,
+        "bestScore": 128,
+        "average": "24.22",
+        "strikeRate": "160.06",
+        "thirties": 1,
+        "fifties": 4,
+        "hundreds": 1,
+        "fours": 46,
+        "sixes": 38,
+        "ducks": 6,
+        "wins": 14,
+        "losses": 20,
+        "bowlingInnings": 11,
+        "overs": "33.1",
+        "maidens": 0,
+        "wickets": 20,
+        "runsConceded": 336,
+        "bestWickets": 4,
+        "hatTricks": 0,
+        "bestBowling": "4/28",
+        "threeWicketHauls": 3,
+        "fiveWicketHauls": 0,
+        "economy": "10.13",
+        "bowlingStrikeRate": "9.95",
+        "bowlingAverage": "16.80",
+        "wides": 16,
+        "noBalls": 4,
+        "dotBalls": 71,
+        "fieldingMatches": 34,
+        "catches": 3,
+        "caughtBehind": 0,
+        "runOuts": 0,
+        "stumpings": 0,
+        "assistedRunOuts": 0,
+        "byeRunsWicketkeeper": 0,
+        "captainMatches": 0,
+        "tossesWon": 0,
+        "captainWinPercentage": ""
+      },
+      "stats": {
+        "source": "CricHeroes public player stats",
+        "sections": {
+          "batting": [
+            {
+              "title": "Matches",
+              "value": 34,
+              "isUserProperty": true
+            },
+            {
+              "title": "Innings",
+              "value": 25,
+              "isUserProperty": false
+            },
+            {
+              "title": "Not out",
+              "value": 2,
+              "isUserProperty": false
+            },
+            {
+              "title": "Runs",
+              "value": 557,
+              "isUserProperty": true
+            },
+            {
+              "title": "Highest Runs",
+              "value": "128",
+              "isUserProperty": false
+            },
+            {
+              "title": "Avg",
+              "value": "24.22",
+              "isUserProperty": false
+            },
+            {
+              "title": "SR",
+              "value": "160.06",
+              "isUserProperty": false
+            },
+            {
+              "title": "30s",
+              "value": 1,
+              "isUserProperty": false
+            },
+            {
+              "title": "50s",
+              "value": 4,
+              "isUserProperty": false
+            },
+            {
+              "title": "100s",
+              "value": 1,
+              "isUserProperty": false
+            },
+            {
+              "title": "4s",
+              "value": 46,
+              "isUserProperty": false
+            },
+            {
+              "title": "6s",
+              "value": 38,
+              "isUserProperty": false
+            },
+            {
+              "title": "Ducks",
+              "value": 6,
+              "isUserProperty": false
+            },
+            {
+              "title": "Won",
+              "value": 14,
+              "isUserProperty": false
+            },
+            {
+              "title": "Loss",
+              "value": 20,
+              "isUserProperty": false
+            }
+          ],
+          "bowling": [
+            {
+              "title": "Matches",
+              "value": 34,
+              "isUserProperty": true
+            },
+            {
+              "title": "Innings",
+              "value": 11,
+              "isUserProperty": false
+            },
+            {
+              "title": "Overs",
+              "value": "33.1",
+              "isUserProperty": false
+            },
+            {
+              "title": "Maidens",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Wickets",
+              "value": 20,
+              "isUserProperty": true
+            },
+            {
+              "title": "Runs",
+              "value": 336,
+              "isUserProperty": false
+            },
+            {
+              "title": "Best Bowling",
+              "value": "4/28",
+              "isUserProperty": false
+            },
+            {
+              "title": "3 Wickets",
+              "value": 3,
+              "isUserProperty": false
+            },
+            {
+              "title": "5 Wickets",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Economy",
+              "value": "10.13",
+              "isUserProperty": false
+            },
+            {
+              "title": "SR",
+              "value": "9.95",
+              "isUserProperty": false
+            },
+            {
+              "title": "Avg",
+              "value": "16.80",
+              "isUserProperty": false
+            },
+            {
+              "title": "Wides",
+              "value": 16,
+              "isUserProperty": false
+            },
+            {
+              "title": "NoBalls",
+              "value": 4,
+              "isUserProperty": false
+            },
+            {
+              "title": "Dot Balls",
+              "value": 71,
+              "isUserProperty": false
+            },
+            {
+              "title": "4s",
+              "value": 20,
+              "isUserProperty": false
+            },
+            {
+              "title": "6s",
+              "value": 22,
+              "isUserProperty": false
+            }
+          ],
+          "fielding": [
+            {
+              "title": "Matches",
+              "value": 34,
+              "isUserProperty": false
+            },
+            {
+              "title": "Catches",
+              "value": 3,
+              "isUserProperty": false
+            },
+            {
+              "title": "Caught behind",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Run outs",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Stumpings",
+              "value": 0,
+              "isUserProperty": false
+            },
+            {
+              "title": "Assisted Run Outs",
+              "value": 0,
+              "isUserProperty": false
+            }
+          ],
+          "captain": []
+        },
+        "publicFieldCount": 38,
+        "matches": 34,
+        "battingInnings": 25,
+        "notOut": 2,
+        "runs": 557,
+        "bestScore": 128,
+        "average": "24.22",
+        "strikeRate": "160.06",
+        "thirties": 1,
+        "fifties": 4,
+        "hundreds": 1,
+        "fours": 46,
+        "sixes": 38,
+        "ducks": 6,
+        "wins": 14,
+        "losses": 20,
+        "bowlingInnings": 11,
+        "overs": "33.1",
+        "maidens": 0,
+        "wickets": 20,
+        "runsConceded": 336,
+        "bestWickets": 4,
+        "hatTricks": 0,
+        "bestBowling": "4/28",
+        "threeWicketHauls": 3,
+        "fiveWicketHauls": 0,
+        "economy": "10.13",
+        "bowlingStrikeRate": "9.95",
+        "bowlingAverage": "16.80",
+        "wides": 16,
+        "noBalls": 4,
+        "dotBalls": 71,
+        "fieldingMatches": 34,
+        "catches": 3,
+        "caughtBehind": 0,
+        "runOuts": 0,
+        "stumpings": 0,
+        "assistedRunOuts": 0,
+        "byeRunsWicketkeeper": 0,
+        "captainMatches": 0,
+        "tossesWon": 0,
+        "captainWinPercentage": ""
+      },
+      "matchHistory": [
+        {
+          "id": 27299534,
+          "date": "2026-09-30T01:03:51.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "Silly Point",
+          "city": "Noida",
+          "teamAId": 14382875,
+          "teamA": "Vidharbha Vahini",
+          "teamBId": 9639322,
+          "teamB": "Divino Alpha XI",
+          "winningTeamId": 14382875,
+          "winningTeam": "Vidharbha Vahini",
+          "resultText": "Vidharbha Vahini won by 13 runs",
+          "teamAScore": "190/8",
+          "teamBScore": "177/6",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27299534/individual/vidharbha-vahini-vs-divino-alpha-xi/summary",
+          "playerId": 22784838
+        },
+        {
+          "id": 27153723,
+          "date": "2026-09-25T00:52:44.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "Silly Point",
+          "city": "Noida",
+          "teamAId": 13339251,
+          "teamA": "Weekdays Cricket Club (WCC)",
+          "teamBId": 9639322,
+          "teamB": "Divino Alpha XI",
+          "winningTeamId": 13339251,
+          "winningTeam": "Weekdays Cricket Club (WCC)",
+          "resultText": "Weekdays Cricket Club (WCC) won by 5 runs",
+          "teamAScore": "137/9",
+          "teamBScore": "132/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27153723/individual/weekdays-cricket-club-wcc-vs-divino-alpha-xi/summary",
+          "playerId": 22784838
+        },
+        {
+          "id": 26832744,
+          "date": "2026-09-15T00:48:45.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "Silly Point",
+          "city": "Noida",
+          "teamAId": 9639322,
+          "teamA": "Divino Alpha XI",
+          "teamBId": 7474431,
+          "teamB": "Super Strikers",
+          "winningTeamId": 7474431,
+          "winningTeam": "Super Strikers",
+          "resultText": "Super Strikers won by 5 wickets",
+          "teamAScore": "155/9",
+          "teamBScore": "158/5",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26832744/individual/divino-alpha-xi-vs-super-strikers/summary",
+          "playerId": 22784838
+        },
+        {
+          "id": 26779502,
+          "date": "2026-09-10T00:56:32.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "CricVilla by Saurabh",
+          "city": "Noida",
+          "teamAId": 13851616,
+          "teamA": "Awesome Heroes NSPL Weeks Days",
+          "teamBId": 13870771,
+          "teamB": "Divino Revengers NSPL",
+          "winningTeamId": 13851616,
+          "winningTeam": "Awesome Heroes NSPL Weeks Days",
+          "resultText": "Awesome Heroes NSPL Weeks Days won by 100 runs",
+          "teamAScore": "223/10",
+          "teamBScore": "123/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26779502/individual/awesome-heroes-nspl-weeks-days-vs-divino-revengers-nspl/summary",
+          "playerId": 22784838
+        },
+        {
+          "id": 27024216,
+          "date": "2026-09-08T00:48:41.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "M2 Cricket Ground By Daksh (Greater Noida)",
+          "city": "Greater Noida",
+          "teamAId": 11466367,
+          "teamA": "Fabulous XI",
+          "teamBId": 9863076,
+          "teamB": "Super XI",
+          "winningTeamId": 9863076,
+          "winningTeam": "Super XI",
+          "resultText": "Super XI won by 2 wickets",
+          "teamAScore": "146/10",
+          "teamBScore": "149/8",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27024216/individual/fabulous-xi-vs-super-xi/summary",
+          "playerId": 22784838
+        },
+        {
+          "id": 27000454,
+          "date": "2026-09-07T01:03:12.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "Mid On Cricket Ground",
+          "city": "Greater Noida",
+          "teamAId": 2998613,
+          "teamA": "All Stars XI",
+          "teamBId": 11466367,
+          "teamB": "Fabulous XI",
+          "winningTeamId": 2998613,
+          "winningTeam": "All Stars XI",
+          "resultText": "All Stars XI won by 93 runs",
+          "teamAScore": "197/6",
+          "teamBScore": "104/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27000454/individual/all-stars-xi-vs-fabulous-xi/summary",
+          "playerId": 22784838
+        },
+        {
+          "id": 26706825,
+          "date": "2026-08-19T01:10:58.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "County-cricket-Complex(CQ)",
+          "city": "Noida",
+          "teamAId": 8068116,
+          "teamA": "Divino Hustlers",
+          "teamBId": 11301190,
+          "teamB": "Rising cricket club",
+          "winningTeamId": 11301190,
+          "winningTeam": "Rising cricket club",
+          "resultText": "Rising cricket club won by 6 wickets",
+          "teamAScore": "123/10",
+          "teamBScore": "124/5",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26706825/individual/divino-hustlers-vs-rising-cricket-club/summary",
+          "playerId": 22784838
+        },
+        {
+          "id": 26606848,
+          "date": "2026-08-14T00:55:00.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "Midon",
+          "city": "Greater Noida",
+          "teamAId": 8068116,
+          "teamA": "Divino Hustlers",
+          "teamBId": 9356977,
+          "teamB": "UNITED POWER 16",
+          "winningTeamId": 8068116,
+          "winningTeam": "Divino Hustlers",
+          "resultText": "Divino Hustlers won by 86 runs",
+          "teamAScore": "230/5",
+          "teamBScore": "144/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26606848/individual/divino-hustlers-vs-united-power-16/summary",
+          "playerId": 22784838
+        },
+        {
+          "id": 26378343,
+          "date": "2026-07-31T00:49:52.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "M2 Cricket Ground By Daksh (Greater Noida)",
+          "city": "Greater Noida",
+          "teamAId": 11466367,
+          "teamA": "Fabulous XI",
+          "teamBId": 2998613,
+          "teamB": "All Stars XI",
+          "winningTeamId": 2998613,
+          "winningTeam": "All Stars XI",
+          "resultText": "All Stars XI won by 2 wickets",
+          "teamAScore": "215/10",
+          "teamBScore": "217/8",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26378343/individual/fabulous-xi-vs-all-stars-xi/summary",
+          "playerId": 22784838
+        },
+        {
+          "id": 26366936,
+          "date": "2026-07-30T00:40:43.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "M2 Cricket Ground By Daksh (Greater Noida)",
+          "city": "Greater Noida",
+          "teamAId": 2998613,
+          "teamA": "All Stars XI",
+          "teamBId": 11466367,
+          "teamB": "Fabulous XI",
+          "winningTeamId": 2998613,
+          "winningTeam": "All Stars XI",
+          "resultText": "All Stars XI won by 129 runs",
+          "teamAScore": "286/8",
+          "teamBScore": "157/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26366936/individual/all-stars-xi-vs-fabulous-xi/summary",
+          "playerId": 22784838
+        }
+      ],
+      "historyNext": "/player/get-player-match/22784838?pageno=2&datetime=1790855268476",
+      "historyPageCount": 1,
+      "historySyncInitialized": true,
+      "historyComplete": false,
+      "recentMatches": [
+        {
+          "id": 27299534,
+          "date": "2026-09-30T01:03:51.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "Silly Point",
+          "city": "Noida",
+          "teamAId": 14382875,
+          "teamA": "Vidharbha Vahini",
+          "teamBId": 9639322,
+          "teamB": "Divino Alpha XI",
+          "winningTeamId": 14382875,
+          "winningTeam": "Vidharbha Vahini",
+          "resultText": "Vidharbha Vahini won by 13 runs",
+          "teamAScore": "190/8",
+          "teamBScore": "177/6",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27299534/individual/vidharbha-vahini-vs-divino-alpha-xi/summary",
+          "playerId": 22784838,
+          "performance": {
+            "teamId": 0,
+            "teamName": "",
+            "opponent": "",
+            "runs": 0,
+            "balls": 0,
+            "fours": 0,
+            "sixes": 0,
+            "wickets": 0,
+            "ballsBowled": 0,
+            "runsConceded": 0,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "",
+            "scorecardUrl": "https://cricheroes.com/scorecard/27299534/individual/vidharbha-vahini-vs-divino-alpha-xi/summary"
+          }
+        },
+        {
+          "id": 27153723,
+          "date": "2026-09-25T00:52:44.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "Silly Point",
+          "city": "Noida",
+          "teamAId": 13339251,
+          "teamA": "Weekdays Cricket Club (WCC)",
+          "teamBId": 9639322,
+          "teamB": "Divino Alpha XI",
+          "winningTeamId": 13339251,
+          "winningTeam": "Weekdays Cricket Club (WCC)",
+          "resultText": "Weekdays Cricket Club (WCC) won by 5 runs",
+          "teamAScore": "137/9",
+          "teamBScore": "132/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27153723/individual/weekdays-cricket-club-wcc-vs-divino-alpha-xi/summary",
+          "playerId": 22784838,
+          "performance": {
+            "teamId": 9639322,
+            "teamName": "Divino Alpha XI",
+            "opponent": "Weekdays Cricket Club (WCC)",
+            "runs": 52,
+            "balls": 29,
+            "fours": 4,
+            "sixes": 4,
+            "wickets": 0,
+            "ballsBowled": 0,
+            "runsConceded": 0,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "52 runs • 1000 catches",
+            "scorecardUrl": "https://cricheroes.com/scorecard/27153723/individual/weekdays-cricket-club-wcc-vs-divino-alpha-xi/summary"
+          }
+        },
+        {
+          "id": 26832744,
+          "date": "2026-09-15T00:48:45.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "Silly Point",
+          "city": "Noida",
+          "teamAId": 9639322,
+          "teamA": "Divino Alpha XI",
+          "teamBId": 7474431,
+          "teamB": "Super Strikers",
+          "winningTeamId": 7474431,
+          "winningTeam": "Super Strikers",
+          "resultText": "Super Strikers won by 5 wickets",
+          "teamAScore": "155/9",
+          "teamBScore": "158/5",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26832744/individual/divino-alpha-xi-vs-super-strikers/summary",
+          "playerId": 22784838,
+          "performance": {
+            "teamId": 0,
+            "teamName": "",
+            "opponent": "",
+            "runs": 0,
+            "balls": 0,
+            "fours": 0,
+            "sixes": 0,
+            "wickets": 0,
+            "ballsBowled": 0,
+            "runsConceded": 0,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "",
+            "scorecardUrl": "https://cricheroes.com/scorecard/26832744/individual/divino-alpha-xi-vs-super-strikers/summary"
+          }
+        },
+        {
+          "id": 26779502,
+          "date": "2026-09-10T00:56:32.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "CricVilla by Saurabh",
+          "city": "Noida",
+          "teamAId": 13851616,
+          "teamA": "Awesome Heroes NSPL Weeks Days",
+          "teamBId": 13870771,
+          "teamB": "Divino Revengers NSPL",
+          "winningTeamId": 13851616,
+          "winningTeam": "Awesome Heroes NSPL Weeks Days",
+          "resultText": "Awesome Heroes NSPL Weeks Days won by 100 runs",
+          "teamAScore": "223/10",
+          "teamBScore": "123/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/26779502/individual/awesome-heroes-nspl-weeks-days-vs-divino-revengers-nspl/summary",
+          "playerId": 22784838,
+          "performance": {
+            "teamId": 0,
+            "teamName": "",
+            "opponent": "",
+            "runs": 0,
+            "balls": 0,
+            "fours": 0,
+            "sixes": 0,
+            "wickets": 0,
+            "ballsBowled": 0,
+            "runsConceded": 0,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "",
+            "scorecardUrl": "https://cricheroes.com/scorecard/26779502/individual/awesome-heroes-nspl-weeks-days-vs-divino-revengers-nspl/summary"
+          }
+        },
+        {
+          "id": 27024216,
+          "date": "2026-09-08T00:48:41.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "M2 Cricket Ground By Daksh (Greater Noida)",
+          "city": "Greater Noida",
+          "teamAId": 11466367,
+          "teamA": "Fabulous XI",
+          "teamBId": 9863076,
+          "teamB": "Super XI",
+          "winningTeamId": 9863076,
+          "winningTeam": "Super XI",
+          "resultText": "Super XI won by 2 wickets",
+          "teamAScore": "146/10",
+          "teamBScore": "149/8",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27024216/individual/fabulous-xi-vs-super-xi/summary",
+          "playerId": 22784838,
+          "performance": {
+            "teamId": 0,
+            "teamName": "",
+            "opponent": "",
+            "runs": 0,
+            "balls": 0,
+            "fours": 0,
+            "sixes": 0,
+            "wickets": 0,
+            "ballsBowled": 0,
+            "runsConceded": 0,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "",
+            "scorecardUrl": "https://cricheroes.com/scorecard/27024216/individual/fabulous-xi-vs-super-xi/summary"
+          }
+        },
+        {
+          "id": 27000454,
+          "date": "2026-09-07T01:03:12.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "Mid On Cricket Ground",
+          "city": "Greater Noida",
+          "teamAId": 2998613,
+          "teamA": "All Stars XI",
+          "teamBId": 11466367,
+          "teamB": "Fabulous XI",
+          "winningTeamId": 2998613,
+          "winningTeam": "All Stars XI",
+          "resultText": "All Stars XI won by 93 runs",
+          "teamAScore": "197/6",
+          "teamBScore": "104/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27000454/individual/all-stars-xi-vs-fabulous-xi/summary",
+          "playerId": 22784838,
+          "performance": {
+            "teamId": 0,
+            "teamName": "",
+            "opponent": "",
+            "runs": 0,
+            "balls": 0,
+            "fours": 0,
+            "sixes": 0,
+            "wickets": 0,
+            "ballsBowled": 0,
+            "runsConceded": 0,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "",
+            "scorecardUrl": "https://cricheroes.com/scorecard/27000454/individual/all-stars-xi-vs-fabulous-xi/summary"
+          }
+        }
+      ],
+      "recentHighlights": [
+        {
+          "id": 27153723,
+          "date": "2026-09-25T00:52:44.000Z",
+          "status": "past",
+          "matchType": "Limited Overs",
+          "ballType": "TENNIS",
+          "venue": "Silly Point",
+          "city": "Noida",
+          "teamAId": 13339251,
+          "teamA": "Weekdays Cricket Club (WCC)",
+          "teamBId": 9639322,
+          "teamB": "Divino Alpha XI",
+          "winningTeamId": 13339251,
+          "winningTeam": "Weekdays Cricket Club (WCC)",
+          "resultText": "Weekdays Cricket Club (WCC) won by 5 runs",
+          "teamAScore": "137/9",
+          "teamBScore": "132/10",
+          "scorecardUrl": "https://cricheroes.com/scorecard/27153723/individual/weekdays-cricket-club-wcc-vs-divino-alpha-xi/summary",
+          "playerId": 22784838,
+          "performance": {
+            "teamId": 9639322,
+            "teamName": "Divino Alpha XI",
+            "opponent": "Weekdays Cricket Club (WCC)",
+            "runs": 52,
+            "balls": 29,
+            "fours": 4,
+            "sixes": 4,
+            "wickets": 0,
+            "ballsBowled": 0,
+            "runsConceded": 0,
+            "catches": 0,
+            "stumpings": 0,
+            "highlight": "52 runs • 1000 catches",
+            "scorecardUrl": "https://cricheroes.com/scorecard/27153723/individual/weekdays-cricket-club-wcc-vs-divino-alpha-xi/summary"
+          }
+        }
+      ],
+      "warriorsStats": {
+        "matchesTracked": 0,
+        "battingInnings": 0,
+        "runs": 0,
+        "balls": 0,
+        "fours": 0,
+        "sixes": 0,
+        "bestScore": 0,
+        "fifties": 0,
+        "hundreds": 0,
+        "bowlingInnings": 0,
+        "wickets": 0,
+        "ballsBowled": 0,
+        "runsConceded": 0,
+        "bestWickets": 0,
+        "maidens": 0,
+        "hatTricks": 0,
+        "catches": 0,
+        "stumpings": 0,
+        "lastMatchDate": "",
+        "updatedAt": "2026-10-01T11:48:01.234Z"
       }
     }
   ],
@@ -112992,15 +114104,6 @@
       "playerName": "Vivek",
       "playerPhoto": "https://media.cricheroes.in/default/user_profile.png",
       "profileUrl": "https://cricheroes.com/player-profile/35922777/vivek/profile",
-      "detectedAt": "2026-10-01T11:41:37.164Z"
-    },
-    {
-      "type": "removed",
-      "label": "Left roster",
-      "playerId": 22784838,
-      "playerName": "Vivek Sarna",
-      "playerPhoto": "https://media.cricheroes.in/user_profile/1788964554116_84lnmdw7rYqj.jpeg",
-      "profileUrl": "https://cricheroes.com/player-profile/22784838/vivek-sarna/profile",
       "detectedAt": "2026-10-01T11:41:37.164Z"
     },
     {
