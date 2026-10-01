@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { createPortal } from "react-dom";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { applyRouteMetadata } from "./metadata.js";
-import { AMAZON_COLLECTIONS, amazonAffiliateConfigured, amazonProductUrl } from "./amazonProducts.js";
+import { AMAZON_COLLECTIONS, amazonProductUrl } from "./amazonProducts.js";
 import { trackAmazonClick, trackEvent, trackSponsorClick } from "./analytics.js";
 import QuizPage from "./QuizPage.jsx";
 import "./styles.css";
@@ -4452,6 +4452,7 @@ const RouterContext = React.createContext(null);
                     <div>
                       <p className="text-xs font-black uppercase tracking-[0.2em] text-gold">Buying note</p>
                       <p className="mt-2 text-sm leading-7 text-white/62">Prices, sizes, stock and delivery are shown on the live Amazon listing. Check the product page before buying.</p>
+                      <p className="mt-2 text-xs leading-5 text-white/42">As an Amazon Associate, CricKuru earns from qualifying purchases.</p>
                     </div>
                   </div>
                 </div>
@@ -4543,16 +4544,6 @@ const RouterContext = React.createContext(null);
                 })}
               </div>
 
-              <section className="mt-16 grid gap-5 border-t border-white/10 pt-8 md:grid-cols-2" aria-label="Affiliate disclosure">
-                <div className="rounded-[8px] border border-white/10 bg-white/[0.035] p-5">
-                  <p className="text-xs font-black uppercase tracking-[0.22em] text-gold">Affiliate disclosure</p>
-                  <p className="mt-3 text-sm leading-7 text-white/58">As an Amazon Associate, CricKuru earns from qualifying purchases. Product details, prices, sizes, stock and delivery are controlled by Amazon and may change on the live listing.</p>
-                </div>
-                <div className="rounded-[8px] border border-white/10 bg-white/[0.035] p-5">
-                  <p className="text-xs font-black uppercase tracking-[0.22em] text-cyan">Tracking status</p>
-                  <p className="mt-3 text-sm leading-7 text-white/58">{amazonAffiliateConfigured ? "Affiliate tracking is enabled for this build." : "Affiliate tracking is ready but your Amazon Associates tag has not been added yet."}</p>
-                </div>
-              </section>
             </section>
           </main>
         );
