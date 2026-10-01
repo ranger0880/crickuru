@@ -26,7 +26,7 @@ DirectoryIndex index.html index.php
 
 ## Why `.htaccess` Is Included
 
-The site uses routes like `/arena`, `/memes`, `/meme`, `/coin`, and `/kurukshetra-coin`. The `.htaccess` file keeps those app routes working on refresh while letting real files such as `robots.txt`, `sitemap.xml`, `manifest.json`, and `favicon.ico` serve with the right MIME types.
+The site uses routes like `/warriors`, `/players`, `/quiz`, `/coin`, and `/kurukshetra-coin`. The `.htaccess` file keeps those app routes working on refresh while letting real files such as `robots.txt`, `sitemap.xml`, `manifest.json`, and `favicon.ico` serve with the right MIME types.
 
 ## CricHeroes Links Used
 

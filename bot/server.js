@@ -149,19 +149,15 @@ function siteLinkAnswer(query) {
     players: `${SITE_URL}/players/`,
     matches: `${SITE_URL}/india-matches/`,
     quiz: `${SITE_URL}/quiz/`,
-    arena: `${SITE_URL}/arena/`,
-    memes: `${SITE_URL}/memes/`,
     coin: `${SITE_URL}/coin/`,
     sponsor: `${SITE_URL}/gt-gaming/`,
     cricHeroes: TEAM_URL,
   };
   if (/sponsor|gt gaming|gaming chair|gt throne|chair/.test(query)) return `GT Gaming sponsor page: ${links.sponsor}\nOfficial store: https://www.gtgaming.shop/`;
   if (/quiz|leaderboard|duel/.test(query)) return `CricKuru Quiz: ${links.quiz}`;
-  if (/arena|game|toss|batting|bowling/.test(query)) return `CricKuru Arena: ${links.arena}`;
-  if (/meme/.test(query)) return `CricKuru Meme Forge: ${links.memes}`;
   if (/coin|kuru/.test(query)) return `Kuru Coin launch watch: ${links.coin}`;
   if (/india|international|domestic|state|live match|fixtures/.test(query)) return `India and domestic match centre: ${links.matches}`;
-  if (/site|website|link|page|help|what can you do/.test(query)) return `I can help with Warriors players, career totals, recent form, synced matches, site pages and the GT Gaming sponsor.\nPlayers: ${links.players}\nMatches: ${links.matches}\nQuiz: ${links.quiz}\nArena: ${links.arena}`;
+  if (/site|website|link|page|help|what can you do/.test(query)) return `I can help with Warriors players, career totals, recent form, synced matches, site pages and the GT Gaming sponsor.\nPlayers: ${links.players}\nMatches: ${links.matches}\nQuiz: ${links.quiz}`;
   return "";
 }
 
@@ -187,7 +183,7 @@ function aiContext(feed) {
     players,
     recentMatches: matches,
     sitePages: {
-      warriors: `${SITE_URL}/warriors/`, players: `${SITE_URL}/players/`, matches: `${SITE_URL}/india-matches/`, quiz: `${SITE_URL}/quiz/`, arena: `${SITE_URL}/arena/`, memes: `${SITE_URL}/memes/`, coin: `${SITE_URL}/coin/`, sponsor: `${SITE_URL}/gt-gaming/`,
+      warriors: `${SITE_URL}/warriors/`, players: `${SITE_URL}/players/`, matches: `${SITE_URL}/india-matches/`, quiz: `${SITE_URL}/quiz/`, coin: `${SITE_URL}/coin/`, sponsor: `${SITE_URL}/gt-gaming/`,
     },
   });
 }
@@ -231,7 +227,7 @@ async function answerChat(feed, message) {
   const siteAnswer = siteLinkAnswer(query);
   if (siteAnswer) return siteAnswer;
   const aiAnswer = await askOpenAI(feed, message);
-  return aiAnswer || "I can answer from CricKuru's synchronized CricHeroes data. Ask about a Warriors player, career totals, recent cross-team form, latest team matches, quiz, arena, memes or site links.";
+  return aiAnswer || "I can answer from CricKuru's synchronized CricHeroes data. Ask about a Warriors player, career totals, recent cross-team form, latest team matches, quiz or site links.";
 }
 
 function readBody(request) {

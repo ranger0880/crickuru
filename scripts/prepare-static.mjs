@@ -71,7 +71,7 @@ function renderManifest() {
     {
       name: "CricKuru - Kurukshetra Warriors Cricket Hub",
       short_name: "CricKuru",
-      description: "Kurukshetra Warriors cricket hub, playable arena, meme forge, and CricHeroes links.",
+      description: "Kurukshetra Warriors cricket hub, player profiles, match updates, and CricHeroes links.",
       start_url: "/",
       scope: "/",
       display: "standalone",

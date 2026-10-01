@@ -11,7 +11,7 @@ export const ROUTE_METADATA = [
     canonicalPath: "/",
     title: "CricKuru - Kurukshetra Warriors & Captain Ankit Kulshreshtha",
     description:
-      "CricKuru is the home of Kurukshetra Warriors and captain Ankit Kulshreshtha, with CricHeroes links, live team intelligence, cricket stories, a playable arena and meme forge.",
+      "CricKuru is the home of Kurukshetra Warriors and captain Ankit Kulshreshtha, with CricHeroes links, live team intelligence and cricket stories.",
     ogType: "website",
     themeColor: "#05070B",
     changefreq: "weekly",
@@ -43,18 +43,6 @@ export const ROUTE_METADATA = [
     jsonLdType: "captainProfile",
   },
   {
-    path: "/arena",
-    canonicalPath: "/arena",
-    title: "CricKuru Arena - Play the Kurukshetra Cricket Game",
-    description:
-      "Play CricKuru Arena, a fast browser cricket duel with toss choices, batting controls, bowling tactics, scorecards, achievements, and guest progress.",
-    ogType: "website",
-    themeColor: "#05070B",
-    changefreq: "weekly",
-    priority: "0.9",
-    jsonLdType: "arena",
-  },
-  {
     path: "/india-matches",
     canonicalPath: "/india-matches",
     title: "India Live Cricket Scores, Fixtures and Results - CricKuru",
@@ -79,76 +67,6 @@ export const ROUTE_METADATA = [
     jsonLdType: "players",
   },
   {
-    path: "/uttar-pradesh-cricket",
-    canonicalPath: "/uttar-pradesh-cricket",
-    title: "Uttar Pradesh Local Cricket Teams, Matches and Tournaments | CricKuru",
-    description:
-      "Discover grassroots cricket in Uttar Pradesh: local teams, Greater Noida match hubs, district tournaments, player profiles and community cricket pathways on CricKuru.",
-    ogType: "website",
-    themeColor: "#05070B",
-    changefreq: "weekly",
-    priority: "0.88",
-    jsonLdType: "localNetwork",
-    seoKey: "uttarPradesh",
-    areaServed: "Uttar Pradesh, India",
-  },
-  {
-    path: "/delhi-cricket",
-    canonicalPath: "/delhi-cricket",
-    title: "Delhi Local Cricket Teams, Matches and Tournaments | CricKuru",
-    description:
-      "Find Delhi grassroots cricket coverage, local teams, match pathways, player stories and nearby district tournament signals through the CricKuru community network.",
-    ogType: "website",
-    themeColor: "#05070B",
-    changefreq: "weekly",
-    priority: "0.82",
-    jsonLdType: "localNetwork",
-    seoKey: "delhi",
-    areaServed: "Delhi, India",
-  },
-  {
-    path: "/greater-noida-cricket",
-    canonicalPath: "/greater-noida-cricket",
-    title: "Greater Noida Cricket Teams, Players and Local Matches | CricKuru",
-    description:
-      "Explore Greater Noida cricket teams, society matches, player profiles, scorecards and local tournament pathways, anchored by Kurukshetra Warriors on CricKuru.",
-    ogType: "website",
-    themeColor: "#05070B",
-    changefreq: "daily",
-    priority: "0.92",
-    jsonLdType: "localNetwork",
-    seoKey: "greaterNoida",
-    areaServed: "Greater Noida, Uttar Pradesh, India",
-  },
-  {
-    path: "/district-tournaments",
-    canonicalPath: "/district-tournaments",
-    title: "District Cricket Tournaments in India | CricKuru",
-    description:
-      "Track district-level cricket tournaments, state pathways, local finals, match centres and grassroots competition signals across India with CricKuru.",
-    ogType: "website",
-    themeColor: "#05070B",
-    changefreq: "daily",
-    priority: "0.86",
-    jsonLdType: "localNetwork",
-    seoKey: "districtTournaments",
-    areaServed: "India",
-  },
-  {
-    path: "/local-cricket-teams",
-    canonicalPath: "/local-cricket-teams",
-    title: "Local Cricket Teams and Player Networks in India | CricKuru",
-    description:
-      "Browse local cricket teams, community squads, player networks, match records and team discovery signals from Greater Noida and across India on CricKuru.",
-    ogType: "website",
-    themeColor: "#05070B",
-    changefreq: "daily",
-    priority: "0.88",
-    jsonLdType: "localNetwork",
-    seoKey: "localTeams",
-    areaServed: "India",
-  },
-  {
     path: "/quiz",
     canonicalPath: "/quiz",
     title: "CricKuru Cricket Quiz, Lobby and Leaderboard",
@@ -159,30 +77,6 @@ export const ROUTE_METADATA = [
     changefreq: "daily",
     priority: "0.88",
     jsonLdType: "quiz",
-  },
-  {
-    path: "/memes",
-    canonicalPath: "/memes",
-    title: "CricKuru Meme Forge - Cricket Meme Generator",
-    description:
-      "Generate, edit, and download Kurukshetra Warriors cricket meme text and artwork ideas for match moments, rivalries, dressing-room jokes, and fan hype.",
-    ogType: "website",
-    themeColor: "#05070B",
-    changefreq: "weekly",
-    priority: "0.8",
-    jsonLdType: "memes",
-  },
-  {
-    path: "/meme",
-    canonicalPath: "/memes",
-    title: "CricKuru Meme Forge - Cricket Meme Generator",
-    description:
-      "Generate, edit, and download Kurukshetra Warriors cricket meme text and artwork ideas for match moments, rivalries, dressing-room jokes, and fan hype.",
-    ogType: "website",
-    themeColor: "#05070B",
-    changefreq: "weekly",
-    priority: "0.6",
-    jsonLdType: "memes",
   },
   {
     path: "/coin",
@@ -344,233 +238,6 @@ function jsonLdForRoute(metadata) {
     },
   };
 
-  if (metadata.jsonLdType === "arena") {
-    return [
-      basePage,
-      {
-        "@context": "https://schema.org",
-        "@type": "VideoGame",
-        name: "CricKuru Arena",
-        applicationCategory: "Game",
-        operatingSystem: "Web browser",
-        url: canonicalUrl,
-        genre: "Cricket simulation",
-        publisher: {
-          "@type": "Organization",
-          name: SITE_NAME,
-          url: SITE_ORIGIN,
-        },
-      },
-    ];
-  }
-
-  if (metadata.jsonLdType === "memes") {
-    return [
-      basePage,
-      {
-        "@context": "https://schema.org",
-        "@type": "WebApplication",
-        name: "CricKuru Meme Forge",
-        applicationCategory: "DesignApplication",
-        operatingSystem: "Web browser",
-        url: canonicalUrl,
-        offers: {
-          "@type": "Offer",
-          price: "0",
-          priceCurrency: "USD",
-        },
-      },
-    ];
-  }
-
-  if (metadata.jsonLdType === "indiaMatches") {
-    return [
-      basePage,
-      {
-        "@context": "https://schema.org",
-        "@type": "SportsEvent",
-        name: "India Cricket Match Updates",
-        sport: "Cricket",
-        url: canonicalUrl,
-        organizer: {
-          "@type": "Organization",
-          name: SITE_NAME,
-          url: SITE_ORIGIN,
-        },
-        eventStatus: "https://schema.org/EventScheduled",
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "Dataset",
-        name: "CricKuru India Cricket Match Feed",
-        description: metadata.description,
-        url: canonicalUrl,
-        keywords: ["India cricket", "live scores", "fixtures", "domestic cricket", "state cricket"],
-        creator: {
-          "@type": "Organization",
-          name: SITE_NAME,
-        },
-      },
-    ];
-  }
-
-  if (metadata.jsonLdType === "warriorsData") {
-    return [
-      basePage,
-      {
-        "@context": "https://schema.org",
-        "@type": "SportsTeam",
-        name: "Kurukshetra Warriors",
-        sport: "Cricket",
-        url: canonicalUrl,
-        sameAs: [
-          "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors",
-          "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
-          "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/members",
-        ],
-        location: {
-          "@type": "Place",
-          name: "Greater Noida",
-        },
-        member: {
-          "@type": "Person",
-          name: CAPTAIN_NAME,
-          jobTitle: "Captain",
-          url: absoluteUrl(CAPTAIN_PATH),
-          sameAs: [CAPTAIN_PROFILE_URL],
-        },
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "Dataset",
-        name: "Kurukshetra Warriors Public CricHeroes Feed",
-        description: metadata.description,
-        url: canonicalUrl,
-        keywords: ["Kurukshetra Warriors", "CricHeroes", "cricket team data", "match scorecards", "player roster"],
-        creator: {
-          "@type": "Organization",
-          name: SITE_NAME,
-          url: SITE_ORIGIN,
-        },
-      },
-    ];
-  }
-
-  if (metadata.jsonLdType === "captainProfile") {
-    return [
-      {
-        "@context": "https://schema.org",
-        "@type": "ProfilePage",
-        name: metadata.title,
-        description: metadata.description,
-        url: canonicalUrl,
-        mainEntity: {
-          "@type": "Person",
-          name: CAPTAIN_NAME,
-          jobTitle: "Captain of Kurukshetra Warriors",
-          url: canonicalUrl,
-          sameAs: [CAPTAIN_PROFILE_URL],
-          memberOf: {
-            "@type": "SportsTeam",
-            name: "Kurukshetra Warriors",
-            sport: "Cricket",
-            url: absoluteUrl("/warriors"),
-          },
-        },
-        isPartOf: {
-          "@type": "WebSite",
-          name: SITE_NAME,
-          url: SITE_ORIGIN,
-        },
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "SportsTeam",
-        name: "Kurukshetra Warriors",
-        sport: "Cricket",
-        url: absoluteUrl("/warriors"),
-        member: {
-          "@type": "Person",
-          name: CAPTAIN_NAME,
-          jobTitle: "Captain",
-          url: canonicalUrl,
-          sameAs: [CAPTAIN_PROFILE_URL],
-        },
-      },
-    ];
-  }
-
-  if (metadata.jsonLdType === "players") {
-    return [
-      basePage,
-      {
-        "@context": "https://schema.org",
-        "@type": "CollectionPage",
-        name: "Kurukshetra Warriors Player Command Room",
-        description: metadata.description,
-        url: canonicalUrl,
-        isPartOf: {
-          "@type": "WebSite",
-          name: SITE_NAME,
-          url: SITE_ORIGIN,
-        },
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "SportsTeam",
-        name: "Kurukshetra Warriors",
-        sport: "Cricket",
-        url: canonicalUrl,
-        location: {
-          "@type": "Place",
-          name: "Greater Noida",
-        },
-      },
-    ];
-  }
-
-  if (metadata.jsonLdType === "localNetwork") {
-    return [
-      basePage,
-      {
-        "@context": "https://schema.org",
-        "@type": "CollectionPage",
-        name: metadata.title,
-        description: metadata.description,
-        url: canonicalUrl,
-        keywords: ["local cricket", "grassroots cricket", "district cricket", "cricket teams", metadata.areaServed],
-        about: {
-          "@type": "SportsActivityLocation",
-          name: `${metadata.areaServed} grassroots cricket network`,
-          sport: "Cricket",
-          address: {
-            "@type": "PostalAddress",
-            addressRegion: metadata.areaServed,
-            addressCountry: "IN",
-          },
-        },
-        isPartOf: {
-          "@type": "WebSite",
-          name: SITE_NAME,
-          url: SITE_ORIGIN,
-        },
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "SportsOrganization",
-        name: "CricKuru grassroots cricket network",
-        sport: "Cricket",
-        url: canonicalUrl,
-        areaServed: metadata.areaServed,
-        parentOrganization: {
-          "@type": "Organization",
-          name: SITE_NAME,
-          url: SITE_ORIGIN,
-        },
-      },
-    ];
-  }
-
   if (metadata.jsonLdType === "quiz") {
     return [
       basePage,
@@ -683,14 +350,14 @@ export function renderRouteSeoContent(pathname = "/") {
     ? {
         eyebrow: "CricKuru cricket hub",
         heading: "Page not found",
-        body: "That CricKuru route is unavailable. Return to the cricket hub for Kurukshetra Warriors match updates, player profiles, the India match feed, quizzes and the Arena.",
+        body: "That CricKuru route is unavailable. Return to the cricket hub for Kurukshetra Warriors match updates, player profiles, the India match feed and quizzes.",
         links: [["/", "Return to CricKuru"], ["/warriors", "Open Kurukshetra Warriors"]],
       }
     : {
         home: {
           eyebrow: "The global cricket community",
           heading: "Cricket is more than a game",
-          body: "CricKuru is the cricket hub for Kurukshetra Warriors, captain Ankit Kulshreshtha, public CricHeroes team links, India match updates, a playable cricket Arena, quizzes and fan-made memes.",
+          body: "CricKuru is the cricket hub for Kurukshetra Warriors, captain Ankit Kulshreshtha, public CricHeroes team links, India match updates, quizzes and player profiles.",
           links: [["/warriors", "Kurukshetra Warriors"], ["/india-matches", "India match updates"], ["/quiz", "Cricket quiz"]],
         },
         warriorsData: {
@@ -705,12 +372,6 @@ export function renderRouteSeoContent(pathname = "/") {
           body: "Explore the public cricket profile of Ankit Kulshreshtha, captain of Kurukshetra Warriors in Greater Noida, with his CricHeroes connection, captaincy snapshot and recent match context.",
           links: [["/warriors", "Kurukshetra Warriors team"], ["/players", "Player command room"], ["https://cricheroes.com/player-profile/29139731/ankit-kulshreshtha/stats", "Official CricHeroes stats"]],
         },
-        arena: {
-          eyebrow: "Browser cricket game",
-          heading: "Play CricKuru Arena",
-          body: "Play a quick cricket game in your browser with toss choices, batting and bowling controls, scorecards and a mobile-friendly Arena built for cricket fans.",
-          links: [["/quiz", "Test your cricket knowledge"], ["/memes", "Make a cricket meme"], ["/warriors", "Follow the Warriors"]],
-        },
         indiaMatches: {
           eyebrow: "India cricket match updates",
           heading: "India live scores and fixtures",
@@ -723,59 +384,23 @@ export function renderRouteSeoContent(pathname = "/") {
           body: "Search Warriors player profiles, recent form, role badges, performance charges, batting, bowling, fielding and captaincy signals sourced from the public CricHeroes feed.",
           links: [["/captain/ankit-kulshreshtha", "Captain profile"], ["/warriors", "Team match centre"], ["/india-matches", "India match feed"]],
         },
-        uttarPradesh: {
-          eyebrow: "Uttar Pradesh grassroots cricket",
-          heading: "Find local cricket in Uttar Pradesh",
-          body: "CricKuru is building a practical discovery layer for Uttar Pradesh cricket: local teams, Greater Noida match centres, district tournaments, player profiles and pathways from society cricket to state-level competition.",
-          links: [["/greater-noida-cricket", "Greater Noida cricket"], ["/district-tournaments", "District tournaments"], ["/local-cricket-teams", "Local cricket teams"], ["/warriors", "Kurukshetra Warriors"]],
-        },
-        delhi: {
-          eyebrow: "Delhi grassroots cricket",
-          heading: "Delhi cricket teams and match pathways",
-          body: "Explore the Delhi grassroots cricket scene through team discovery, community match signals, player stories and tournament pathways that connect local cricket with the wider North India network.",
-          links: [["/uttar-pradesh-cricket", "Uttar Pradesh cricket"], ["/district-tournaments", "District tournaments"], ["/local-cricket-teams", "Local cricket teams"]],
-        },
-        greaterNoida: {
-          eyebrow: "Greater Noida cricket hub",
-          heading: "Greater Noida local cricket",
-          body: "Follow Greater Noida society cricket with Kurukshetra Warriors match coverage, player command-room profiles, local opponents, scorecards and a growing directory for nearby teams and tournaments.",
-          links: [["/warriors", "Warriors match centre"], ["/players", "Player command room"], ["/district-tournaments", "Tournament tracker"], ["/local-cricket-teams", "Team directory"]],
-        },
-        districtTournaments: {
-          eyebrow: "Grassroots competition tracker",
-          heading: "District cricket tournaments",
-          body: "Track the local competition layer: weekend leagues, district cups, state pathways, finals, semi-finals and match centres that give community cricket a searchable home.",
-          links: [["/india-matches", "India match radar"], ["/greater-noida-cricket", "Greater Noida hub"], ["/local-cricket-teams", "Find teams"], ["/warriors", "Recent Warriors matches"]],
-        },
-        localTeams: {
-          eyebrow: "Community cricket directory",
-          heading: "Local cricket teams in India",
-          body: "Browse community squads and local cricket networks, starting with Kurukshetra Warriors in Greater Noida and expanding through match opponents, player links, scorecards and grassroots tournament signals.",
-          links: [["/warriors", "Kurukshetra Warriors"], ["/greater-noida-cricket", "Greater Noida cricket"], ["/uttar-pradesh-cricket", "Uttar Pradesh cricket"], ["/district-tournaments", "District tournaments"]],
-        },
         quiz: {
           eyebrow: "Cricket quiz and lobby",
           heading: "Challenge your cricket knowledge",
           body: "Play a cricket quiz with general knowledge, tricky rules, score maths, powerups, profiles, leaderboards and friendly duels for Kurukshetra Warriors fans.",
-          links: [["/arena", "Play Arena"], ["/memes", "Cricket meme generator"], ["/warriors", "Warriors match updates"]],
-        },
-        memes: {
-          eyebrow: "Cricket meme generator",
-          heading: "Make a cricket meme",
-          body: "Create shareable cricket meme text and artwork ideas for match moments, rivalries, dressing-room jokes and Kurukshetra Warriors fan hype.",
-          links: [["/warriors", "Find Warriors match moments"], ["/quiz", "Play the cricket quiz"], ["/arena", "Play CricKuru Arena"]],
+          links: [["/warriors", "Warriors match updates"], ["/players", "Player profiles"]],
         },
         coin: {
           eyebrow: "CricKuru community project",
           heading: "Kuru Coin launch watch",
           body: "Follow the Kurukshetra Warriors community coin concept and launch preparation with clear, risk-aware information and no promises of profit or returns.",
-          links: [["/warriors", "Kurukshetra Warriors"], ["/memes", "Community meme forge"], ["/", "CricKuru home"]],
+          links: [["/warriors", "Kurukshetra Warriors"], ["/", "CricKuru home"]],
         },
         gtGaming: {
           eyebrow: "Official team sponsor",
           heading: "GT Gaming chairs for cricket and gaming",
           body: "Learn about GT Gaming chairs featured by CricKuru, including the GT Throne setup for long cricket score-watching, gaming sessions and match-day comfort.",
-          links: [["https://gtgaming.shop/", "Visit GT Gaming"], ["/arena", "Play CricKuru Arena"], ["/warriors", "Follow the Warriors"]],
+          links: [["https://gtgaming.shop/", "Visit GT Gaming"], ["/warriors", "Follow the Warriors"]],
         },
         shop: {
           eyebrow: "CricKuru gear desk",
