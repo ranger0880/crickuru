@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-01T14:46:06.120Z",
-  "lastCheckedAt": "2026-10-01T14:46:06.120Z",
-  "lastSuccessfulSyncAt": "2026-10-01T14:46:06.120Z",
+  "syncedAt": "2026-10-01T19:52:39.310Z",
+  "lastCheckedAt": "2026-10-01T19:52:39.310Z",
+  "lastSuccessfulSyncAt": "2026-10-01T19:52:39.310Z",
   "coverage": {
     "pathways": [
       "India",
@@ -43,8 +43,8 @@
   "summary": {
     "live": 2,
     "recent": 60,
-    "upcoming": 480,
-    "total": 542
+    "upcoming": 485,
+    "total": 547
   },
   "all": [
     {
@@ -14988,6 +14988,161 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2027-02-27T04:00:00.000Z",
       "rawId": 164501
+    },
+    {
+      "id": "upcoming-174481",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-men",
+      "title": "India vs Australia, 1st Match, Group A",
+      "series": "ICC Men's Cricket World Cup 2027",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Australia",
+          "shortName": "AUS",
+          "score": ""
+        }
+      ],
+      "dateLabel": "07 Oct 2027, 01:30 pm",
+      "time": "",
+      "place": "Newlands, Cape Town",
+      "overview": "Match starts at Oct 07, 08:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174481",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2027-10-07T08:00:00.000Z",
+      "rawId": 174481
+    },
+    {
+      "id": "upcoming-174511",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-men",
+      "title": "India vs Pakistan, 6th Match, Group A",
+      "series": "ICC Men's Cricket World Cup 2027",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Pakistan",
+          "shortName": "PAK",
+          "score": ""
+        }
+      ],
+      "dateLabel": "10 Oct 2027, 01:30 pm",
+      "time": "",
+      "place": "The Wanderers Stadium, Johannesburg",
+      "overview": "Match starts at Oct 10, 08:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174511",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2027-10-10T08:00:00.000Z",
+      "rawId": 174511
+    },
+    {
+      "id": "upcoming-174561",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-men",
+      "title": "India vs Afghanistan, 13th Match, Group A",
+      "series": "ICC Men's Cricket World Cup 2027",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Afghanistan",
+          "shortName": "AFG",
+          "score": ""
+        }
+      ],
+      "dateLabel": "14 Oct 2027, 01:30 pm",
+      "time": "",
+      "place": "SuperSport Park, Centurion",
+      "overview": "Match starts at Oct 14, 08:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174561",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2027-10-14T08:00:00.000Z",
+      "rawId": 174561
+    },
+    {
+      "id": "upcoming-174603",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-men",
+      "title": "India vs TBC (Qualifier A), 18th Match, Group A",
+      "series": "ICC Men's Cricket World Cup 2027",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "TBC (Qualifier A)",
+          "shortName": "TBC(Qualifier A)",
+          "score": ""
+        }
+      ],
+      "dateLabel": "17 Oct 2027, 01:30 pm",
+      "time": "",
+      "place": "Mangaung Oval, Bloemfontein",
+      "overview": "Match starts at Oct 17, 08:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174603",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2027-10-17T08:00:00.000Z",
+      "rawId": 174603
+    },
+    {
+      "id": "upcoming-174701",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-men",
+      "title": "Zimbabwe vs India, 30th Match, Group A",
+      "series": "ICC Men's Cricket World Cup 2027",
+      "teams": [
+        {
+          "name": "Zimbabwe",
+          "shortName": "ZIM",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "24 Oct 2027, 01:30 pm",
+      "time": "",
+      "place": "Mosi-oa-Tunya International Cricket Stadium, Victoria Falls",
+      "overview": "Match starts at Oct 24, 08:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174701",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2027-10-24T08:00:00.000Z",
+      "rawId": 174701
     },
     {
       "id": "recent-171060",
@@ -31903,6 +32058,161 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2027-02-27T04:00:00.000Z",
       "rawId": 164501
+    },
+    {
+      "id": "upcoming-174481",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-men",
+      "title": "India vs Australia, 1st Match, Group A",
+      "series": "ICC Men's Cricket World Cup 2027",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Australia",
+          "shortName": "AUS",
+          "score": ""
+        }
+      ],
+      "dateLabel": "07 Oct 2027, 01:30 pm",
+      "time": "",
+      "place": "Newlands, Cape Town",
+      "overview": "Match starts at Oct 07, 08:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174481",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2027-10-07T08:00:00.000Z",
+      "rawId": 174481
+    },
+    {
+      "id": "upcoming-174511",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-men",
+      "title": "India vs Pakistan, 6th Match, Group A",
+      "series": "ICC Men's Cricket World Cup 2027",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Pakistan",
+          "shortName": "PAK",
+          "score": ""
+        }
+      ],
+      "dateLabel": "10 Oct 2027, 01:30 pm",
+      "time": "",
+      "place": "The Wanderers Stadium, Johannesburg",
+      "overview": "Match starts at Oct 10, 08:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174511",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2027-10-10T08:00:00.000Z",
+      "rawId": 174511
+    },
+    {
+      "id": "upcoming-174561",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-men",
+      "title": "India vs Afghanistan, 13th Match, Group A",
+      "series": "ICC Men's Cricket World Cup 2027",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Afghanistan",
+          "shortName": "AFG",
+          "score": ""
+        }
+      ],
+      "dateLabel": "14 Oct 2027, 01:30 pm",
+      "time": "",
+      "place": "SuperSport Park, Centurion",
+      "overview": "Match starts at Oct 14, 08:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174561",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2027-10-14T08:00:00.000Z",
+      "rawId": 174561
+    },
+    {
+      "id": "upcoming-174603",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-men",
+      "title": "India vs TBC (Qualifier A), 18th Match, Group A",
+      "series": "ICC Men's Cricket World Cup 2027",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "TBC (Qualifier A)",
+          "shortName": "TBC(Qualifier A)",
+          "score": ""
+        }
+      ],
+      "dateLabel": "17 Oct 2027, 01:30 pm",
+      "time": "",
+      "place": "Mangaung Oval, Bloemfontein",
+      "overview": "Match starts at Oct 17, 08:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174603",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2027-10-17T08:00:00.000Z",
+      "rawId": 174603
+    },
+    {
+      "id": "upcoming-174701",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-men",
+      "title": "Zimbabwe vs India, 30th Match, Group A",
+      "series": "ICC Men's Cricket World Cup 2027",
+      "teams": [
+        {
+          "name": "Zimbabwe",
+          "shortName": "ZIM",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "24 Oct 2027, 01:30 pm",
+      "time": "",
+      "place": "Mosi-oa-Tunya International Cricket Stadium, Victoria Falls",
+      "overview": "Match starts at Oct 24, 08:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174701",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2027-10-24T08:00:00.000Z",
+      "rawId": 174701
     }
   ],
   "recent": [
@@ -33883,8 +34193,8 @@
       "order": 1,
       "live": 0,
       "recent": 29,
-      "upcoming": 43,
-      "total": 72
+      "upcoming": 48,
+      "total": 77
     },
     {
       "id": "league",
