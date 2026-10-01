@@ -114125,5 +114125,7 @@
       "detectedAt": "2026-08-18T10:46:52.610Z"
     }
   ],
-  "errors": []
+  "errors": [
+    "CricHeroes returned 403 for https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches"
+  ]
 }
