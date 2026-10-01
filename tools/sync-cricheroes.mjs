@@ -15,6 +15,7 @@ const MANUALLY_CONFIRMED_PLAYERS = [
   { id: 4646519, name: "Shahid Sarwar", slug: "shahid-sarwar" },
   { id: 22784838, name: "Vivek Sarna", slug: "vivek-sarna" },
 ];
+const REPLACED_PLAYER_IDS = new Set([35922777]);
 
 const HEADERS = {
   "user-agent":
@@ -1379,7 +1380,10 @@ async function main() {
   const scorecardsByMatch = new Map(enrichedRecentMatches.map((match) => [Number(match.id), match.scorecard]));
   const matches = baseMatches.map((match) => ({ ...match, scorecard: scorecardsByMatch.get(Number(match.id)) || null }));
   const { liveMatches, upcomingMatches, recentMatches } = splitMatches(matches);
-  const players = retainManuallyConfirmedPlayers(normalizeMembers(rawMembers), previousFeed);
+  const players = retainManuallyConfirmedPlayers(
+    normalizeMembers(rawMembers).filter((player) => !REPLACED_PLAYER_IDS.has(Number(player.id))),
+    previousFeed,
+  );
   const refreshCursor = players.length ? Number(previousFeed?.playerSyncCursor || 0) % players.length : 0;
   await hydratePlayerProfiles(players, previousFeed?.players || [], refreshCursor);
   const team = normalizeTeam(teamDetails, rawMembers, players);
