@@ -3,7 +3,7 @@
   "source": "CricHeroes public team and player pages",
   "sourceStatus": "stale",
   "syncedAt": "2026-10-01T06:52:40.391Z",
-  "lastCheckedAt": "2026-10-01T07:02:55.982Z",
+  "lastCheckedAt": "2026-10-01T09:11:54.097Z",
   "lastSuccessfulSyncAt": "2026-10-01T06:52:40.391Z",
   "playerStatsUpdatedAt": "2026-10-01T08:37:50.405Z",
   "playerRecentMatchesUpdatedAt": "2026-10-01T07:01:53.436Z",
@@ -20,12 +20,12 @@
     "liveMatches": 0,
     "upcomingMatches": 1,
     "recentMatches": 42,
-    "players": 82,
+    "players": 83,
     "opponents": 30,
     "awards": 126,
     "records": 2,
-    "rosterChanges": 4,
-    "playerProfiles": 82,
+    "rosterChanges": 5,
+    "playerProfiles": 83,
     "playerRecentMatches": 448,
     "playerHistoryMatches": 769,
     "playerHistoryComplete": 16,
@@ -49,7 +49,7 @@
     "isAssociationTeam": false,
     "captainId": 29139731,
     "captainName": "Ankit Kulshreshtha",
-    "totalPlayers": 82,
+    "totalPlayers": 83,
     "cricHeroesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors",
     "matchesUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches",
     "membersUrl": "https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/members",
@@ -72,9 +72,9 @@
     "nextMatchVenue": "M2 Cricket Ground By Daksh (Greater Noida)"
   },
   "memberSummary": {
-    "total": 82,
+    "total": 83,
     "verified": 76,
-    "pro": 38,
+    "pro": 39,
     "captains": 1,
     "admins": 2,
     "skills": [
@@ -88,7 +88,7 @@
       },
       {
         "name": "ALL",
-        "count": 3
+        "count": 4
       },
       {
         "name": "BOWL",
@@ -102,7 +102,7 @@
     "batterCategories": [
       {
         "name": "Accumulator",
-        "count": 16
+        "count": 17
       },
       {
         "name": "Classicist",
@@ -128,7 +128,7 @@
       },
       {
         "name": "Wildcard",
-        "count": 16
+        "count": 17
       },
       {
         "name": "Economist",
@@ -146,7 +146,7 @@
       },
       {
         "name": "Pro",
-        "count": 38
+        "count": 39
       },
       {
         "name": "Aspirant",
@@ -154,11 +154,11 @@
       },
       {
         "name": "Accumulator",
-        "count": 16
+        "count": 17
       },
       {
         "name": "Wildcard",
-        "count": 16
+        "count": 17
       },
       {
         "name": "Classicist",
@@ -96910,6 +96910,53 @@
       "historyComplete": false,
       "profileSyncStatus": "Fresh public CricHeroes profile and matches refresh",
       "lastProfileSeenAt": "2026-10-01T07:01:53.436Z"
+    },
+    {
+      "id": 4646519,
+      "name": "Shahid Sarwar",
+      "photo": "",
+      "skill": "ALL",
+      "isVerified": false,
+      "isCaptain": false,
+      "isAdmin": false,
+      "isPro": true,
+      "associationTag": "",
+      "batterCategory": "Accumulator",
+      "batterCategoryInfo": "One who can change pace of the innings as required. Tap here to know more.",
+      "bowlerCategory": "Wildcard",
+      "bowlerCategoryInfo": "A versatile bowler with an unpredictable range of options.",
+      "badges": [
+        "Pro",
+        "Accumulator",
+        "Wildcard"
+      ],
+      "profileUrl": "https://cricheroes.com/player-profile/4646519/shahid-sarwar/profile",
+      "statsUrl": "https://cricheroes.com/player-profile/4646519/shahid-sarwar/stats",
+      "matchesUrl": "https://cricheroes.com/player-profile/4646519/shahid-sarwar/matches",
+      "performance": {
+        "playerOfMatch": 0,
+        "fielderOfMatch": 0,
+        "bestBatter": 0,
+        "bestBowler": 0,
+        "recentAwards": [],
+        "awards": 0
+      },
+      "matchHistory": [],
+      "recentMatches": [],
+      "recentHighlights": [],
+      "historyNext": null,
+      "historyPageCount": 0,
+      "historySyncInitialized": false,
+      "historyComplete": false,
+      "profileSyncStatus": "pending_public_stats",
+      "lastProfileSeenAt": "2026-10-01T09:11:54.097Z",
+      "cricheroesProfile": {
+        "location": "Noida",
+        "views": 349,
+        "playingRole": "All-Rounder",
+        "battingStyle": "RHB",
+        "bowlingStyle": "Right-arm medium"
+      }
     }
   ],
   "opponents": [
@@ -100011,6 +100058,15 @@
     {
       "type": "added",
       "label": "Joined roster",
+      "playerId": 4646519,
+      "playerName": "Shahid Sarwar",
+      "playerPhoto": "",
+      "profileUrl": "https://cricheroes.com/player-profile/4646519/shahid-sarwar/profile",
+      "detectedAt": "2026-10-01T09:11:54.097Z"
+    },
+    {
+      "type": "added",
+      "label": "Joined roster",
       "playerId": 12688117,
       "playerName": "Vaibhav",
       "playerPhoto": "",
@@ -100048,6 +100104,6 @@
   "errors": [
     "CricHeroes returned 403 for https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches"
   ],
-  "manualRefreshAt": "2026-10-01T08:37:50.405Z",
-  "manualRefreshSource": "Verified CricHeroes public profile metadata and supplied current stats panels"
+  "manualRefreshAt": "2026-10-01T09:11:54.097Z",
+  "manualRefreshSource": "Supplied CricHeroes profile link for Shahid Sarwar"
 }
