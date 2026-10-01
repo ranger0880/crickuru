@@ -2469,8 +2469,6 @@ const RouterContext = React.createContext(null);
         const totalAwards = players.reduce((sum, player) => sum + (player.performance?.awards || 0), 0);
         const verifiedCount = players.filter((player) => player.isVerified).length;
         const refreshedStatsCount = players.filter((player) => hasPlayerStats(playerOverallStats(player))).length;
-        const publicCareerCount = players.filter((player) => playerOverallStats(player)?.source === CRICHEROES_STATS_SOURCE).length;
-        const publicCareerPendingCount = Math.max(0, players.length - publicCareerCount);
         const feedCheckedAt = data.lastCheckedAt || data.syncedAt;
         const feedChangedAt = data.sourceStatus === "partial"
           ? data.playerRecentMatchesUpdatedAt || data.playerStatsUpdatedAt || data.lastSuccessfulSyncAt || data.syncedAt
@@ -2521,11 +2519,6 @@ const RouterContext = React.createContext(null);
                   <LiveStat label="Verified" value={verifiedCount || "-"} />
                   <LiveStat label="Data ready" value={`${refreshedStatsCount}/${players.length || 0}`} />
                 </div>
-              </div>
-
-              <div className="mt-5 rounded-[8px] border border-cyan/20 bg-cyan/5 px-4 py-3 text-sm leading-6 text-white/65">
-                <span className="font-black uppercase tracking-[0.14em] text-cyan">Overall CricHeroes career tracking:</span>{" "}
-                {refreshedStatsCount} of {players.length} current profiles have refreshed score data through the latest sync. {publicCareerPendingCount} profile{publicCareerPendingCount === 1 ? " has" : "s have"} restricted or unavailable public career aggregates, so the latest Warriors-tracked totals remain visible instead of being hidden. Last automatic check: {formatFeedDate(feedCheckedAt)}.
               </div>
 
               {captain && <CaptainSpotlightCard player={captain} onSelect={() => setSelectedPlayer(captain)} />}
