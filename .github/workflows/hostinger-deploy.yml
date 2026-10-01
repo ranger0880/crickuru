@@ -43,12 +43,14 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          js="$(find dist/assets -maxdepth 1 -type f -name 'index-*.js' | head -n 1)"
-          css="$(find dist/assets -maxdepth 1 -type f -name 'index-*.css' | head -n 1)"
-          test -n "$js" && test -n "$css"
-          cp "$js" dist/assets/index-_XkMW-m6.js
-          cp "$css" dist/assets/index-8uKMYpLS.css
-          cp dist/data/crickuru-live.json dist/data/crickuru-live-v3.json
+          # The production build already creates legacy asset aliases. Keep
+          # this step safe if an alias is present, and only add the data alias
+          # when it is missing.
+          test -f dist/assets/index-_XkMW-m6.js
+          test -f dist/assets/index-8uKMYpLS.css
+          if [ ! -f dist/data/crickuru-live-v3.json ]; then
+            cp dist/data/crickuru-live.json dist/data/crickuru-live-v3.json
+          fi
 
       - name: Check Hostinger secrets
         env:
