@@ -34613,22 +34613,22 @@
           "captain": [
             {
               "title": "Matches",
-              "value": 21,
+              "value": 24,
               "isUserProperty": false
             },
             {
               "title": "Toss Won",
-              "value": 9,
+              "value": 10,
               "isUserProperty": false
             },
             {
               "title": "Win Per",
-              "value": "23.81%",
+              "value": "29.17%",
               "isUserProperty": false
             },
             {
               "title": "Loss Per",
-              "value": "76.19%",
+              "value": "70.83%",
               "isUserProperty": false
             }
           ]
@@ -34672,9 +34672,9 @@
         "stumpings": 0,
         "assistedRunOuts": 1,
         "byeRunsWicketkeeper": 0,
-        "captainMatches": 21,
-        "tossesWon": 9,
-        "captainWinPercentage": "23.81%"
+        "captainMatches": 24,
+        "tossesWon": 10,
+        "captainWinPercentage": "29.17%"
       },
       "stats": {
         "source": "CricHeroes public player stats",
@@ -34878,22 +34878,22 @@
           "captain": [
             {
               "title": "Matches",
-              "value": 21,
+              "value": 24,
               "isUserProperty": false
             },
             {
               "title": "Toss Won",
-              "value": 9,
+              "value": 10,
               "isUserProperty": false
             },
             {
               "title": "Win Per",
-              "value": "23.81%",
+              "value": "29.17%",
               "isUserProperty": false
             },
             {
               "title": "Loss Per",
-              "value": "76.19%",
+              "value": "70.83%",
               "isUserProperty": false
             }
           ]
@@ -34937,9 +34937,9 @@
         "stumpings": 0,
         "assistedRunOuts": 1,
         "byeRunsWicketkeeper": 0,
-        "captainMatches": 21,
-        "tossesWon": 9,
-        "captainWinPercentage": "23.81%"
+        "captainMatches": 24,
+        "tossesWon": 10,
+        "captainWinPercentage": "29.17%"
       },
       "matchHistory": [
         {
