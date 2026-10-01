@@ -2612,7 +2612,7 @@ const RouterContext = React.createContext(null);
               </div>
 
               {filteredPlayers.length ? (
-                <div className="cyber-player-grid mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+                <div className="cyber-player-grid mt-6 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-2 lg:grid-cols-4">
                   {filteredPlayers.map((player) => <PlayerProfileCard key={player.id || player.name} player={player} rank={player.rank} onSelect={() => setSelectedPlayer(player)} />)}
                 </div>
               ) : (
@@ -2805,7 +2805,7 @@ const RouterContext = React.createContext(null);
 
         return (
           <article
-            className="cyber-player-card player-level-card interactive-card group relative cursor-pointer overflow-hidden rounded-[8px] border border-white/12 bg-[radial-gradient(circle_at_85%_8%,rgba(244,185,66,0.14),transparent_28%),rgba(255,255,255,0.045)] p-5 focus:outline-none focus:ring-2 focus:ring-gold/60 lg:aspect-square lg:overflow-visible lg:p-3"
+            className="cyber-player-card player-level-card interactive-card group relative cursor-pointer overflow-hidden rounded-[8px] border border-white/12 bg-[radial-gradient(circle_at_85%_8%,rgba(244,185,66,0.14),transparent_28%),rgba(255,255,255,0.045)] p-2 focus:outline-none focus:ring-2 focus:ring-gold/60 sm:p-5 lg:aspect-square lg:overflow-visible lg:p-3"
             style={{ "--player-neon-color": neon.color, "--player-neon-glow": neon.glow }}
             onClick={(event) => { if (!event.target.closest("a")) onSelect?.(); }}
             onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); onSelect?.(); } }}
@@ -2814,18 +2814,18 @@ const RouterContext = React.createContext(null);
             aria-label={`Open full profile for ${player.name}`}
           >
             <div className="absolute right-[-56px] top-[-56px] h-40 w-40 rounded-full bg-cyan/8 blur-3xl" aria-hidden="true" />
-            <div className="relative flex items-start justify-between gap-4 lg:gap-2">
-              <div className="flex min-w-0 items-center gap-3 lg:gap-2">
-                <LiveAvatar src={player.photo} name={player.name} className="lg:h-9 lg:w-9 lg:text-sm" />
+            <div className="relative flex items-start justify-between gap-1.5 sm:gap-3 lg:gap-2">
+              <div className="flex min-w-0 items-center gap-1.5 sm:gap-3 lg:gap-2">
+                <LiveAvatar src={player.photo} name={player.name} className="h-8 w-8 text-sm sm:h-12 sm:w-12 sm:text-xl lg:h-9 lg:w-9 lg:text-sm" />
                 <div className="min-w-0">
-                  <p className="text-[0.62rem] font-black uppercase tracking-[0.18em] text-gold lg:text-[0.52rem]">Rank {rank}</p>
-                  <h2 className="truncate font-display text-3xl font-black uppercase leading-none text-white lg:text-lg">{player.name}</h2>
+                  <p className="text-[0.5rem] font-black uppercase tracking-[0.12em] text-gold sm:text-[0.62rem] lg:text-[0.52rem]">Rank {rank}</p>
+                  <h2 className="truncate font-display text-sm font-black uppercase leading-none text-white sm:text-3xl lg:text-lg">{player.name}</h2>
                   <p className="mt-1 text-xs font-bold uppercase tracking-[0.14em] text-white/44 lg:hidden">{player.role}</p>
                   <PlayerLevelBadge level={level} compact />
                 </div>
               </div>
               <div
-                className="grid h-16 w-16 shrink-0 place-items-center rounded-full border border-white/12 text-center"
+                className="player-impact-ring grid h-12 w-12 shrink-0 place-items-center rounded-full border border-white/12 text-center sm:h-16 sm:w-16"
                 style={{ background: `conic-gradient(#F4B942 ${impact * 3.6}deg, rgba(255,255,255,0.08) 0deg)` }}
                 aria-label={`Impact score ${impact} out of 100`}
               >
@@ -2938,7 +2938,7 @@ const RouterContext = React.createContext(null);
               <p className="mt-3 text-[0.58rem] font-black uppercase tracking-[0.14em] text-white/42">Hover summary • click for full profile</p>
             </div>
 
-            <button type="button" className="ai-coach-cta relative mt-5 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-[7px] border border-cyan/60 bg-cyan/12 px-4 text-xs font-black uppercase tracking-[0.16em] text-cyan transition hover:border-cyan hover:bg-cyan/20 focus:outline-none focus:ring-2 focus:ring-cyan/70 lg:mt-2 lg:min-h-9 lg:px-2 lg:text-[0.55rem] lg:tracking-[0.1em]" onClick={(event) => { event.stopPropagation(); onSelect?.(); }}>
+            <button type="button" className="ai-coach-cta relative mt-2 inline-flex min-h-9 w-full items-center justify-center gap-2 rounded-[7px] border border-cyan/60 bg-cyan/12 px-2 text-[0.5rem] font-black uppercase tracking-[0.1em] text-cyan transition hover:border-cyan hover:bg-cyan/20 focus:outline-none focus:ring-2 focus:ring-cyan/70 sm:mt-5 sm:min-h-12 sm:px-4 sm:text-xs sm:tracking-[0.16em] lg:mt-2 lg:min-h-9 lg:px-2 lg:text-[0.55rem] lg:tracking-[0.1em]" onClick={(event) => { event.stopPropagation(); onSelect?.(); }}>
               <Icon.Sparkles size={16} /> Open AI coach + profile
             </button>
           </article>
@@ -3131,11 +3131,11 @@ const RouterContext = React.createContext(null);
           ["Lead", ranking.captaincy, "#ff315a"],
         ];
         return (
-          <div className={`mt-4 rounded-[7px] border border-white/10 bg-night/55 lg:mt-2 lg:p-2 ${compact ? "p-3" : "p-4"}`}>
+          <div className={`player-ranking-infographic mt-4 rounded-[7px] border border-white/10 bg-night/55 lg:mt-2 lg:p-2 ${compact ? "p-3" : "p-4"}`}>
             <div className="flex flex-wrap items-center justify-between gap-2">
               <div>
                 <p className="text-[0.58rem] font-black uppercase tracking-[0.18em] text-cyan">Overall CricHeroes rank</p>
-                <p className="mt-1 text-xs font-bold text-white/48 lg:hidden">{ranking.source} • {ranking.label}</p>
+                <p className="player-ranking-source mt-1 text-xs font-bold text-white/48 lg:hidden">{ranking.source} • {ranking.label}</p>
               </div>
               <div className="text-right">
                 <span className="font-display text-2xl font-black text-white">{player?.rank ? `#${player.rank}` : "-"}</span>
