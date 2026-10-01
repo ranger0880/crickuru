@@ -85,7 +85,7 @@ jobs:
           # public_html root or the domain-specific public_html root. Refresh
           # both known CricKuru roots so the active document root gets the
           # same build.
-          roots=("public_html" "domains/crickuru.com/public_html")
+          roots=("domains/crickuru.com/public_html")
           for root in "${roots[@]}"; do
             echo "Refreshing FTP root: /${root}"
             while IFS= read -r -d '' file; do
