@@ -3,9 +3,9 @@
   "source": "CricHeroes public team and player pages",
   "sourceStatus": "partial",
   "syncedAt": "2026-10-01T06:52:40.391Z",
-  "lastCheckedAt": "2026-10-01T10:40:15.715Z",
-  "lastSuccessfulSyncAt": "2026-10-01T10:40:15.715Z",
-  "playerStatsUpdatedAt": "2026-10-01T08:37:50.405Z",
+  "lastCheckedAt": "2026-10-01T11:01:13.175Z",
+  "lastSuccessfulSyncAt": "2026-10-01T11:01:13.175Z",
+  "playerStatsUpdatedAt": "2026-10-01T11:01:13.175Z",
   "playerRecentMatchesUpdatedAt": "2026-10-01T10:40:15.715Z",
   "playerSyncCursor": 40,
   "coverage": {
@@ -70,7 +70,8 @@
     "nextOpponent": "Vintage Vikings",
     "nextMatchDate": "2026-10-02T00:30:31.000Z",
     "nextMatchVenue": "M2 Cricket Ground By Daksh (Greater Noida)",
-    "playerRecentMatchesUpdatedAt": "2026-10-01T10:40:15.715Z"
+    "playerRecentMatchesUpdatedAt": "2026-10-01T10:40:15.715Z",
+    "playerStatsUpdatedAt": "2026-10-01T11:01:13.175Z"
   },
   "memberSummary": {
     "total": 83,
@@ -27730,17 +27731,17 @@
         "awards": 3
       },
       "overallStats": {
-        "source": "CricHeroes public player stats",
+        "source": "CricHeroes public player stats + verified public scorecard supplement",
         "sections": {
           "batting": [
             {
               "title": "Matches",
-              "value": 436,
+              "value": 437,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 331,
+              "value": 332,
               "isUserProperty": false
             },
             {
@@ -27750,7 +27751,7 @@
             },
             {
               "title": "Runs",
-              "value": 4445,
+              "value": 4447,
               "isUserProperty": true
             },
             {
@@ -27760,7 +27761,7 @@
             },
             {
               "title": "Avg",
-              "value": "17.03",
+              "value": "16.97",
               "isUserProperty": false
             },
             {
@@ -27812,12 +27813,12 @@
           "bowling": [
             {
               "title": "Matches",
-              "value": 436,
+              "value": 437,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 259,
+              "value": 260,
               "isUserProperty": false
             },
             {
@@ -27832,7 +27833,7 @@
             },
             {
               "title": "Wickets",
-              "value": 257,
+              "value": 259,
               "isUserProperty": true
             },
             {
@@ -27899,12 +27900,12 @@
           "fielding": [
             {
               "title": "Matches",
-              "value": 436,
+              "value": 437,
               "isUserProperty": false
             },
             {
               "title": "Catches",
-              "value": 114,
+              "value": 115,
               "isUserProperty": false
             },
             {
@@ -27957,12 +27958,12 @@
           ]
         },
         "publicFieldCount": 43,
-        "matches": 436,
-        "battingInnings": 331,
+        "matches": 437,
+        "battingInnings": 332,
         "notOut": 70,
-        "runs": 4445,
+        "runs": 4447,
         "bestScore": 103,
-        "average": "17.03",
+        "average": "16.97",
         "strikeRate": "138.73",
         "thirties": 28,
         "fifties": 12,
@@ -27972,10 +27973,10 @@
         "ducks": 28,
         "wins": 193,
         "losses": 229,
-        "bowlingInnings": 259,
+        "bowlingInnings": 260,
         "overs": "652.2",
         "maidens": 3,
-        "wickets": 257,
+        "wickets": 259,
         "runsConceded": 6957,
         "bestWickets": 5,
         "hatTricks": 0,
@@ -27988,8 +27989,8 @@
         "wides": 279,
         "noBalls": 59,
         "dotBalls": 1401,
-        "fieldingMatches": 436,
-        "catches": 114,
+        "fieldingMatches": 437,
+        "catches": 115,
         "caughtBehind": 198,
         "runOuts": 24,
         "stumpings": 11,
@@ -27997,20 +27998,21 @@
         "byeRunsWicketkeeper": 24,
         "captainMatches": 59,
         "tossesWon": 32,
-        "captainWinPercentage": "45.61%"
+        "captainWinPercentage": "45.61%",
+        "lastVerifiedAt": "2026-10-01T11:01:13.175Z"
       },
       "stats": {
-        "source": "CricHeroes public player stats",
+        "source": "CricHeroes public player stats + verified public scorecard supplement",
         "sections": {
           "batting": [
             {
               "title": "Matches",
-              "value": 436,
+              "value": 437,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 331,
+              "value": 332,
               "isUserProperty": false
             },
             {
@@ -28020,7 +28022,7 @@
             },
             {
               "title": "Runs",
-              "value": 4445,
+              "value": 4447,
               "isUserProperty": true
             },
             {
@@ -28030,7 +28032,7 @@
             },
             {
               "title": "Avg",
-              "value": "17.03",
+              "value": "16.97",
               "isUserProperty": false
             },
             {
@@ -28082,12 +28084,12 @@
           "bowling": [
             {
               "title": "Matches",
-              "value": 436,
+              "value": 437,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 259,
+              "value": 260,
               "isUserProperty": false
             },
             {
@@ -28102,7 +28104,7 @@
             },
             {
               "title": "Wickets",
-              "value": 257,
+              "value": 259,
               "isUserProperty": true
             },
             {
@@ -28169,12 +28171,12 @@
           "fielding": [
             {
               "title": "Matches",
-              "value": 436,
+              "value": 437,
               "isUserProperty": false
             },
             {
               "title": "Catches",
-              "value": 114,
+              "value": 115,
               "isUserProperty": false
             },
             {
@@ -28227,12 +28229,12 @@
           ]
         },
         "publicFieldCount": 43,
-        "matches": 436,
-        "battingInnings": 331,
+        "matches": 437,
+        "battingInnings": 332,
         "notOut": 70,
-        "runs": 4445,
+        "runs": 4447,
         "bestScore": 103,
-        "average": "17.03",
+        "average": "16.97",
         "strikeRate": "138.73",
         "thirties": 28,
         "fifties": 12,
@@ -28242,10 +28244,10 @@
         "ducks": 28,
         "wins": 193,
         "losses": 229,
-        "bowlingInnings": 259,
+        "bowlingInnings": 260,
         "overs": "652.2",
         "maidens": 3,
-        "wickets": 257,
+        "wickets": 259,
         "runsConceded": 6957,
         "bestWickets": 5,
         "hatTricks": 0,
@@ -28258,8 +28260,8 @@
         "wides": 279,
         "noBalls": 59,
         "dotBalls": 1401,
-        "fieldingMatches": 436,
-        "catches": 114,
+        "fieldingMatches": 437,
+        "catches": 115,
         "caughtBehind": 198,
         "runOuts": 24,
         "stumpings": 11,
@@ -28267,7 +28269,8 @@
         "byeRunsWicketkeeper": 24,
         "captainMatches": 59,
         "tossesWon": 32,
-        "captainWinPercentage": "45.61%"
+        "captainWinPercentage": "45.61%",
+        "lastVerifiedAt": "2026-10-01T11:01:13.175Z"
       },
       "matchHistory": [
         {
@@ -28288,7 +28291,17 @@
           "teamAScore": "",
           "teamBScore": "",
           "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary",
-          "playerId": 5584447
+          "playerId": 5584447,
+          "performance": {
+            "teamName": "Divino Hustlers",
+            "opponent": "Tower D Daredevils",
+            "runs": 2,
+            "wickets": 2,
+            "catches": 1,
+            "caughtBehind": 0,
+            "stumpings": 0,
+            "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary"
+          }
         },
         {
           "id": 27360085,
@@ -28790,7 +28803,17 @@
           "teamAScore": "",
           "teamBScore": "",
           "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary",
-          "playerId": 5584447
+          "playerId": 5584447,
+          "performance": {
+            "teamName": "Divino Hustlers",
+            "opponent": "Tower D Daredevils",
+            "runs": 2,
+            "wickets": 2,
+            "catches": 1,
+            "caughtBehind": 0,
+            "stumpings": 0,
+            "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary"
+          }
         },
         {
           "id": 27360085,
@@ -29069,7 +29092,8 @@
         "lastMatchDate": "2026-05-22T15:13:00.000Z",
         "updatedAt": "2026-10-01T06:53:05.155Z"
       },
-      "recentMatchesUpdatedAt": "2026-10-01T10:40:15.701Z"
+      "recentMatchesUpdatedAt": "2026-10-01T10:40:15.701Z",
+      "statsRefreshNote": "Runs, wickets and fielding refreshed from CricHeroes scorecard 27271770 on 2026-10-01T11:01:13.175Z."
     },
     {
       "id": 7367912,
@@ -32797,17 +32821,17 @@
         "awards": 2
       },
       "overallStats": {
-        "source": "CricHeroes public player stats",
+        "source": "CricHeroes public player stats + verified public scorecard supplement",
         "sections": {
           "batting": [
             {
               "title": "Matches",
-              "value": 182,
+              "value": 183,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 115,
+              "value": 116,
               "isUserProperty": false
             },
             {
@@ -32817,17 +32841,17 @@
             },
             {
               "title": "Runs",
-              "value": 1257,
+              "value": 1265,
               "isUserProperty": true
             },
             {
               "title": "Highest Runs",
-              "value": "87*",
+              "value": "8",
               "isUserProperty": false
             },
             {
               "title": "Avg",
-              "value": "15.33",
+              "value": "15.24",
               "isUserProperty": false
             },
             {
@@ -32879,7 +32903,7 @@
           "bowling": [
             {
               "title": "Matches",
-              "value": 182,
+              "value": 183,
               "isUserProperty": true
             },
             {
@@ -32966,7 +32990,7 @@
           "fielding": [
             {
               "title": "Matches",
-              "value": 182,
+              "value": 183,
               "isUserProperty": false
             },
             {
@@ -33019,12 +33043,12 @@
           ]
         },
         "publicFieldCount": 42,
-        "matches": 182,
-        "battingInnings": 115,
+        "matches": 183,
+        "battingInnings": 116,
         "notOut": 33,
-        "runs": 1257,
-        "bestScore": 0,
-        "average": "15.33",
+        "runs": 1265,
+        "bestScore": 8,
+        "average": "15.24",
         "strikeRate": "119.37",
         "thirties": 6,
         "fifties": 3,
@@ -33050,7 +33074,7 @@
         "wides": 206,
         "noBalls": 28,
         "dotBalls": 811,
-        "fieldingMatches": 182,
+        "fieldingMatches": 183,
         "catches": 57,
         "caughtBehind": 2,
         "runOuts": 6,
@@ -33059,20 +33083,21 @@
         "byeRunsWicketkeeper": 0,
         "captainMatches": 23,
         "tossesWon": 9,
-        "captainWinPercentage": "26.32%"
+        "captainWinPercentage": "26.32%",
+        "lastVerifiedAt": "2026-10-01T11:01:13.175Z"
       },
       "stats": {
-        "source": "CricHeroes public player stats",
+        "source": "CricHeroes public player stats + verified public scorecard supplement",
         "sections": {
           "batting": [
             {
               "title": "Matches",
-              "value": 182,
+              "value": 183,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 115,
+              "value": 116,
               "isUserProperty": false
             },
             {
@@ -33082,17 +33107,17 @@
             },
             {
               "title": "Runs",
-              "value": 1257,
+              "value": 1265,
               "isUserProperty": true
             },
             {
               "title": "Highest Runs",
-              "value": "87*",
+              "value": "8",
               "isUserProperty": false
             },
             {
               "title": "Avg",
-              "value": "15.33",
+              "value": "15.24",
               "isUserProperty": false
             },
             {
@@ -33144,7 +33169,7 @@
           "bowling": [
             {
               "title": "Matches",
-              "value": 182,
+              "value": 183,
               "isUserProperty": true
             },
             {
@@ -33231,7 +33256,7 @@
           "fielding": [
             {
               "title": "Matches",
-              "value": 182,
+              "value": 183,
               "isUserProperty": false
             },
             {
@@ -33284,12 +33309,12 @@
           ]
         },
         "publicFieldCount": 42,
-        "matches": 182,
-        "battingInnings": 115,
+        "matches": 183,
+        "battingInnings": 116,
         "notOut": 33,
-        "runs": 1257,
-        "bestScore": 0,
-        "average": "15.33",
+        "runs": 1265,
+        "bestScore": 8,
+        "average": "15.24",
         "strikeRate": "119.37",
         "thirties": 6,
         "fifties": 3,
@@ -33315,7 +33340,7 @@
         "wides": 206,
         "noBalls": 28,
         "dotBalls": 811,
-        "fieldingMatches": 182,
+        "fieldingMatches": 183,
         "catches": 57,
         "caughtBehind": 2,
         "runOuts": 6,
@@ -33324,7 +33349,8 @@
         "byeRunsWicketkeeper": 0,
         "captainMatches": 23,
         "tossesWon": 9,
-        "captainWinPercentage": "26.32%"
+        "captainWinPercentage": "26.32%",
+        "lastVerifiedAt": "2026-10-01T11:01:13.175Z"
       },
       "matchHistory": [
         {
@@ -33345,7 +33371,17 @@
           "teamAScore": "",
           "teamBScore": "",
           "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary",
-          "playerId": 13677587
+          "playerId": 13677587,
+          "performance": {
+            "teamName": "Divino Hustlers",
+            "opponent": "Tower D Daredevils",
+            "runs": 8,
+            "wickets": 0,
+            "catches": 0,
+            "caughtBehind": 0,
+            "stumpings": 0,
+            "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary"
+          }
         },
         {
           "id": 27360085,
@@ -33847,7 +33883,17 @@
           "teamAScore": "",
           "teamBScore": "",
           "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary",
-          "playerId": 13677587
+          "playerId": 13677587,
+          "performance": {
+            "teamName": "Divino Hustlers",
+            "opponent": "Tower D Daredevils",
+            "runs": 8,
+            "wickets": 0,
+            "catches": 0,
+            "caughtBehind": 0,
+            "stumpings": 0,
+            "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary"
+          }
         },
         {
           "id": 27360085,
@@ -34090,7 +34136,8 @@
         "lastMatchDate": "",
         "updatedAt": "2026-10-01T06:53:05.155Z"
       },
-      "recentMatchesUpdatedAt": "2026-10-01T10:40:15.702Z"
+      "recentMatchesUpdatedAt": "2026-10-01T10:40:15.702Z",
+      "statsRefreshNote": "Runs, wickets and fielding refreshed from CricHeroes scorecard 27271770 on 2026-10-01T11:01:13.175Z."
     },
     {
       "id": 13683210,
@@ -38074,17 +38121,17 @@
         "awards": 1
       },
       "overallStats": {
-        "source": "CricHeroes public player stats",
+        "source": "CricHeroes public player stats + verified public scorecard supplement",
         "sections": {
           "batting": [
             {
               "title": "Matches",
-              "value": 143,
+              "value": 144,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 92,
+              "value": 93,
               "isUserProperty": false
             },
             {
@@ -38094,7 +38141,7 @@
             },
             {
               "title": "Runs",
-              "value": 848,
+              "value": 859,
               "isUserProperty": true
             },
             {
@@ -38104,7 +38151,7 @@
             },
             {
               "title": "Avg",
-              "value": "13.25",
+              "value": "13.22",
               "isUserProperty": false
             },
             {
@@ -38156,12 +38203,12 @@
           "bowling": [
             {
               "title": "Matches",
-              "value": 143,
+              "value": 144,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 64,
+              "value": 65,
               "isUserProperty": false
             },
             {
@@ -38243,7 +38290,7 @@
           "fielding": [
             {
               "title": "Matches",
-              "value": 143,
+              "value": 144,
               "isUserProperty": false
             },
             {
@@ -38296,12 +38343,12 @@
           ]
         },
         "publicFieldCount": 42,
-        "matches": 143,
-        "battingInnings": 92,
+        "matches": 144,
+        "battingInnings": 93,
         "notOut": 28,
-        "runs": 848,
+        "runs": 859,
         "bestScore": 43,
-        "average": "13.25",
+        "average": "13.22",
         "strikeRate": "120.45",
         "thirties": 6,
         "fifties": 0,
@@ -38311,7 +38358,7 @@
         "ducks": 13,
         "wins": 58,
         "losses": 81,
-        "bowlingInnings": 64,
+        "bowlingInnings": 65,
         "overs": "107.3",
         "maidens": 1,
         "wickets": 38,
@@ -38327,7 +38374,7 @@
         "wides": 30,
         "noBalls": 22,
         "dotBalls": 207,
-        "fieldingMatches": 143,
+        "fieldingMatches": 144,
         "catches": 9,
         "caughtBehind": 0,
         "runOuts": 2,
@@ -38336,20 +38383,21 @@
         "byeRunsWicketkeeper": 0,
         "captainMatches": 24,
         "tossesWon": 10,
-        "captainWinPercentage": "29.17%"
+        "captainWinPercentage": "29.17%",
+        "lastVerifiedAt": "2026-10-01T11:01:13.175Z"
       },
       "stats": {
-        "source": "CricHeroes public player stats",
+        "source": "CricHeroes public player stats + verified public scorecard supplement",
         "sections": {
           "batting": [
             {
               "title": "Matches",
-              "value": 143,
+              "value": 144,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 92,
+              "value": 93,
               "isUserProperty": false
             },
             {
@@ -38359,7 +38407,7 @@
             },
             {
               "title": "Runs",
-              "value": 848,
+              "value": 859,
               "isUserProperty": true
             },
             {
@@ -38369,7 +38417,7 @@
             },
             {
               "title": "Avg",
-              "value": "13.25",
+              "value": "13.22",
               "isUserProperty": false
             },
             {
@@ -38421,12 +38469,12 @@
           "bowling": [
             {
               "title": "Matches",
-              "value": 143,
+              "value": 144,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 64,
+              "value": 65,
               "isUserProperty": false
             },
             {
@@ -38508,7 +38556,7 @@
           "fielding": [
             {
               "title": "Matches",
-              "value": 143,
+              "value": 144,
               "isUserProperty": false
             },
             {
@@ -38561,12 +38609,12 @@
           ]
         },
         "publicFieldCount": 42,
-        "matches": 143,
-        "battingInnings": 92,
+        "matches": 144,
+        "battingInnings": 93,
         "notOut": 28,
-        "runs": 848,
+        "runs": 859,
         "bestScore": 43,
-        "average": "13.25",
+        "average": "13.22",
         "strikeRate": "120.45",
         "thirties": 6,
         "fifties": 0,
@@ -38576,7 +38624,7 @@
         "ducks": 13,
         "wins": 58,
         "losses": 81,
-        "bowlingInnings": 64,
+        "bowlingInnings": 65,
         "overs": "107.3",
         "maidens": 1,
         "wickets": 38,
@@ -38592,7 +38640,7 @@
         "wides": 30,
         "noBalls": 22,
         "dotBalls": 207,
-        "fieldingMatches": 143,
+        "fieldingMatches": 144,
         "catches": 9,
         "caughtBehind": 0,
         "runOuts": 2,
@@ -38601,7 +38649,8 @@
         "byeRunsWicketkeeper": 0,
         "captainMatches": 24,
         "tossesWon": 10,
-        "captainWinPercentage": "29.17%"
+        "captainWinPercentage": "29.17%",
+        "lastVerifiedAt": "2026-10-01T11:01:13.175Z"
       },
       "matchHistory": [
         {
@@ -38622,7 +38671,17 @@
           "teamAScore": "",
           "teamBScore": "",
           "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary",
-          "playerId": 29139731
+          "playerId": 29139731,
+          "performance": {
+            "teamName": "Divino Hustlers",
+            "opponent": "Tower D Daredevils",
+            "runs": 11,
+            "wickets": 0,
+            "catches": 0,
+            "caughtBehind": 0,
+            "stumpings": 0,
+            "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary"
+          }
         },
         {
           "id": 27360085,
@@ -39124,7 +39183,17 @@
           "teamAScore": "",
           "teamBScore": "",
           "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary",
-          "playerId": 29139731
+          "playerId": 29139731,
+          "performance": {
+            "teamName": "Divino Hustlers",
+            "opponent": "Tower D Daredevils",
+            "runs": 11,
+            "wickets": 0,
+            "catches": 0,
+            "caughtBehind": 0,
+            "stumpings": 0,
+            "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary"
+          }
         },
         {
           "id": 27360085,
@@ -39423,7 +39492,8 @@
         "batterCategory": "Accumulator",
         "bowlerCategory": "Aspirant"
       },
-      "recentMatchesUpdatedAt": "2026-10-01T10:40:15.703Z"
+      "recentMatchesUpdatedAt": "2026-10-01T10:40:15.703Z",
+      "statsRefreshNote": "Runs, wickets and fielding refreshed from CricHeroes scorecard 27271770 on 2026-10-01T11:01:13.175Z."
     },
     {
       "id": 45765702,
@@ -43395,12 +43465,12 @@
         "awards": 1
       },
       "overallStats": {
-        "source": "CricHeroes public player stats",
+        "source": "CricHeroes public player stats + verified public scorecard supplement",
         "sections": {
           "batting": [
             {
               "title": "Matches",
-              "value": 119,
+              "value": 120,
               "isUserProperty": true
             },
             {
@@ -43477,12 +43547,12 @@
           "bowling": [
             {
               "title": "Matches",
-              "value": 119,
+              "value": 120,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 42,
+              "value": 43,
               "isUserProperty": false
             },
             {
@@ -43497,7 +43567,7 @@
             },
             {
               "title": "Wickets",
-              "value": 18,
+              "value": 19,
               "isUserProperty": true
             },
             {
@@ -43564,7 +43634,7 @@
           "fielding": [
             {
               "title": "Matches",
-              "value": 119,
+              "value": 120,
               "isUserProperty": false
             },
             {
@@ -43617,7 +43687,7 @@
           ]
         },
         "publicFieldCount": 42,
-        "matches": 119,
+        "matches": 120,
         "battingInnings": 100,
         "notOut": 28,
         "runs": 1883,
@@ -43632,10 +43702,10 @@
         "ducks": 6,
         "wins": 45,
         "losses": 71,
-        "bowlingInnings": 42,
+        "bowlingInnings": 43,
         "overs": "83.2",
         "maidens": 0,
-        "wickets": 18,
+        "wickets": 19,
         "runsConceded": 1145,
         "bestWickets": 2,
         "hatTricks": 0,
@@ -43648,7 +43718,7 @@
         "wides": 89,
         "noBalls": 23,
         "dotBalls": 142,
-        "fieldingMatches": 119,
+        "fieldingMatches": 120,
         "catches": 23,
         "caughtBehind": 0,
         "runOuts": 4,
@@ -43657,15 +43727,16 @@
         "byeRunsWicketkeeper": 0,
         "captainMatches": 23,
         "tossesWon": 9,
-        "captainWinPercentage": "19.05%"
+        "captainWinPercentage": "19.05%",
+        "lastVerifiedAt": "2026-10-01T11:01:13.175Z"
       },
       "stats": {
-        "source": "CricHeroes public player stats",
+        "source": "CricHeroes public player stats + verified public scorecard supplement",
         "sections": {
           "batting": [
             {
               "title": "Matches",
-              "value": 119,
+              "value": 120,
               "isUserProperty": true
             },
             {
@@ -43742,12 +43813,12 @@
           "bowling": [
             {
               "title": "Matches",
-              "value": 119,
+              "value": 120,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 42,
+              "value": 43,
               "isUserProperty": false
             },
             {
@@ -43762,7 +43833,7 @@
             },
             {
               "title": "Wickets",
-              "value": 18,
+              "value": 19,
               "isUserProperty": true
             },
             {
@@ -43829,7 +43900,7 @@
           "fielding": [
             {
               "title": "Matches",
-              "value": 119,
+              "value": 120,
               "isUserProperty": false
             },
             {
@@ -43882,7 +43953,7 @@
           ]
         },
         "publicFieldCount": 42,
-        "matches": 119,
+        "matches": 120,
         "battingInnings": 100,
         "notOut": 28,
         "runs": 1883,
@@ -43897,10 +43968,10 @@
         "ducks": 6,
         "wins": 45,
         "losses": 71,
-        "bowlingInnings": 42,
+        "bowlingInnings": 43,
         "overs": "83.2",
         "maidens": 0,
-        "wickets": 18,
+        "wickets": 19,
         "runsConceded": 1145,
         "bestWickets": 2,
         "hatTricks": 0,
@@ -43913,7 +43984,7 @@
         "wides": 89,
         "noBalls": 23,
         "dotBalls": 142,
-        "fieldingMatches": 119,
+        "fieldingMatches": 120,
         "catches": 23,
         "caughtBehind": 0,
         "runOuts": 4,
@@ -43922,7 +43993,8 @@
         "byeRunsWicketkeeper": 0,
         "captainMatches": 23,
         "tossesWon": 9,
-        "captainWinPercentage": "19.05%"
+        "captainWinPercentage": "19.05%",
+        "lastVerifiedAt": "2026-10-01T11:01:13.175Z"
       },
       "matchHistory": [
         {
@@ -43943,7 +44015,17 @@
           "teamAScore": "",
           "teamBScore": "",
           "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary",
-          "playerId": 42768139
+          "playerId": 42768139,
+          "performance": {
+            "teamName": "Divino Hustlers",
+            "opponent": "Tower D Daredevils",
+            "runs": 0,
+            "wickets": 1,
+            "catches": 0,
+            "caughtBehind": 0,
+            "stumpings": 0,
+            "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary"
+          }
         },
         {
           "id": 27237469,
@@ -44485,7 +44567,17 @@
           "teamAScore": "",
           "teamBScore": "",
           "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary",
-          "playerId": 42768139
+          "playerId": 42768139,
+          "performance": {
+            "teamName": "Divino Hustlers",
+            "opponent": "Tower D Daredevils",
+            "runs": 0,
+            "wickets": 1,
+            "catches": 0,
+            "caughtBehind": 0,
+            "stumpings": 0,
+            "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary"
+          }
         },
         {
           "id": 27237469,
@@ -44720,7 +44812,8 @@
         "lastMatchDate": "2026-09-25T01:10:13.000Z",
         "updatedAt": "2026-10-01T06:53:05.155Z"
       },
-      "recentMatchesUpdatedAt": "2026-10-01T10:40:15.704Z"
+      "recentMatchesUpdatedAt": "2026-10-01T10:40:15.704Z",
+      "statsRefreshNote": "Runs, wickets and fielding refreshed from CricHeroes scorecard 27271770 on 2026-10-01T11:01:13.175Z."
     },
     {
       "id": 1205294,
@@ -44762,17 +44855,17 @@
         "awards": 1
       },
       "overallStats": {
-        "source": "CricHeroes public player stats",
+        "source": "CricHeroes public player stats + verified public scorecard supplement",
         "sections": {
           "batting": [
             {
               "title": "Matches",
-              "value": 103,
+              "value": 104,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 68,
+              "value": 69,
               "isUserProperty": false
             },
             {
@@ -44782,7 +44875,7 @@
             },
             {
               "title": "Runs",
-              "value": 540,
+              "value": 558,
               "isUserProperty": true
             },
             {
@@ -44792,7 +44885,7 @@
             },
             {
               "title": "Avg",
-              "value": "12.00",
+              "value": "12.13",
               "isUserProperty": false
             },
             {
@@ -44844,7 +44937,7 @@
           "bowling": [
             {
               "title": "Matches",
-              "value": 103,
+              "value": 104,
               "isUserProperty": true
             },
             {
@@ -44931,12 +45024,12 @@
           "fielding": [
             {
               "title": "Matches",
-              "value": 103,
+              "value": 104,
               "isUserProperty": false
             },
             {
               "title": "Catches",
-              "value": 16,
+              "value": 17,
               "isUserProperty": false
             },
             {
@@ -44963,12 +45056,12 @@
           "captain": []
         },
         "publicFieldCount": 38,
-        "matches": 103,
-        "battingInnings": 68,
+        "matches": 104,
+        "battingInnings": 69,
         "notOut": 23,
-        "runs": 540,
+        "runs": 558,
         "bestScore": 38,
-        "average": "12.00",
+        "average": "12.13",
         "strikeRate": "90.76",
         "thirties": 3,
         "fifties": 0,
@@ -44994,8 +45087,8 @@
         "wides": 133,
         "noBalls": 21,
         "dotBalls": 366,
-        "fieldingMatches": 103,
-        "catches": 16,
+        "fieldingMatches": 104,
+        "catches": 17,
         "caughtBehind": 0,
         "runOuts": 4,
         "stumpings": 0,
@@ -45003,20 +45096,21 @@
         "byeRunsWicketkeeper": 0,
         "captainMatches": 0,
         "tossesWon": 0,
-        "captainWinPercentage": ""
+        "captainWinPercentage": "",
+        "lastVerifiedAt": "2026-10-01T11:01:13.175Z"
       },
       "stats": {
-        "source": "CricHeroes public player stats",
+        "source": "CricHeroes public player stats + verified public scorecard supplement",
         "sections": {
           "batting": [
             {
               "title": "Matches",
-              "value": 103,
+              "value": 104,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 68,
+              "value": 69,
               "isUserProperty": false
             },
             {
@@ -45026,7 +45120,7 @@
             },
             {
               "title": "Runs",
-              "value": 540,
+              "value": 558,
               "isUserProperty": true
             },
             {
@@ -45036,7 +45130,7 @@
             },
             {
               "title": "Avg",
-              "value": "12.00",
+              "value": "12.13",
               "isUserProperty": false
             },
             {
@@ -45088,7 +45182,7 @@
           "bowling": [
             {
               "title": "Matches",
-              "value": 103,
+              "value": 104,
               "isUserProperty": true
             },
             {
@@ -45175,12 +45269,12 @@
           "fielding": [
             {
               "title": "Matches",
-              "value": 103,
+              "value": 104,
               "isUserProperty": false
             },
             {
               "title": "Catches",
-              "value": 16,
+              "value": 17,
               "isUserProperty": false
             },
             {
@@ -45207,12 +45301,12 @@
           "captain": []
         },
         "publicFieldCount": 38,
-        "matches": 103,
-        "battingInnings": 68,
+        "matches": 104,
+        "battingInnings": 69,
         "notOut": 23,
-        "runs": 540,
+        "runs": 558,
         "bestScore": 38,
-        "average": "12.00",
+        "average": "12.13",
         "strikeRate": "90.76",
         "thirties": 3,
         "fifties": 0,
@@ -45238,8 +45332,8 @@
         "wides": 133,
         "noBalls": 21,
         "dotBalls": 366,
-        "fieldingMatches": 103,
-        "catches": 16,
+        "fieldingMatches": 104,
+        "catches": 17,
         "caughtBehind": 0,
         "runOuts": 4,
         "stumpings": 0,
@@ -45247,7 +45341,8 @@
         "byeRunsWicketkeeper": 0,
         "captainMatches": 0,
         "tossesWon": 0,
-        "captainWinPercentage": ""
+        "captainWinPercentage": "",
+        "lastVerifiedAt": "2026-10-01T11:01:13.175Z"
       },
       "matchHistory": [
         {
@@ -46065,7 +46160,8 @@
         "lastMatchDate": "2026-09-25T01:10:13.000Z",
         "updatedAt": "2026-10-01T06:53:05.155Z"
       },
-      "recentMatchesUpdatedAt": "2026-10-01T10:40:15.704Z"
+      "recentMatchesUpdatedAt": "2026-10-01T10:40:15.704Z",
+      "statsRefreshNote": "Runs, wickets and fielding refreshed from CricHeroes scorecard 27271770 on 2026-10-01T11:01:13.175Z."
     },
     {
       "id": 42908623,
@@ -48621,27 +48717,27 @@
         "awards": 0
       },
       "overallStats": {
-        "source": "CricHeroes public player stats",
+        "source": "CricHeroes public player stats + verified public scorecard supplement",
         "sections": {
           "batting": [
             {
               "title": "Matches",
-              "value": 655,
+              "value": 656,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 566,
+              "value": 567,
               "isUserProperty": false
             },
             {
               "title": "Not out",
-              "value": 144,
+              "value": 145,
               "isUserProperty": false
             },
             {
               "title": "Runs",
-              "value": 13092,
+              "value": 13137,
               "isUserProperty": true
             },
             {
@@ -48651,7 +48747,7 @@
             },
             {
               "title": "Avg",
-              "value": "31.02",
+              "value": "31.13",
               "isUserProperty": false
             },
             {
@@ -48703,7 +48799,7 @@
           "bowling": [
             {
               "title": "Matches",
-              "value": 655,
+              "value": 656,
               "isUserProperty": true
             },
             {
@@ -48790,7 +48886,7 @@
           "fielding": [
             {
               "title": "Matches",
-              "value": 655,
+              "value": 656,
               "isUserProperty": false
             },
             {
@@ -48800,7 +48896,7 @@
             },
             {
               "title": "Caught behind",
-              "value": 1067,
+              "value": 1070,
               "isUserProperty": false
             },
             {
@@ -48848,12 +48944,12 @@
           ]
         },
         "publicFieldCount": 43,
-        "matches": 655,
-        "battingInnings": 566,
-        "notOut": 144,
-        "runs": 13092,
+        "matches": 656,
+        "battingInnings": 567,
+        "notOut": 145,
+        "runs": 13137,
         "bestScore": 146,
-        "average": "31.02",
+        "average": "31.13",
         "strikeRate": "143.85",
         "thirties": 105,
         "fifties": 75,
@@ -48879,39 +48975,40 @@
         "wides": 297,
         "noBalls": 59,
         "dotBalls": 473,
-        "fieldingMatches": 655,
+        "fieldingMatches": 656,
         "catches": 193,
-        "caughtBehind": 1067,
+        "caughtBehind": 1070,
         "runOuts": 52,
         "stumpings": 61,
         "assistedRunOuts": 69,
         "byeRunsWicketkeeper": 230,
         "captainMatches": 77,
         "tossesWon": 51,
-        "captainWinPercentage": "76.32%"
+        "captainWinPercentage": "76.32%",
+        "lastVerifiedAt": "2026-10-01T11:01:13.175Z"
       },
       "stats": {
-        "source": "CricHeroes public player stats",
+        "source": "CricHeroes public player stats + verified public scorecard supplement",
         "sections": {
           "batting": [
             {
               "title": "Matches",
-              "value": 655,
+              "value": 656,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 566,
+              "value": 567,
               "isUserProperty": false
             },
             {
               "title": "Not out",
-              "value": 144,
+              "value": 145,
               "isUserProperty": false
             },
             {
               "title": "Runs",
-              "value": 13092,
+              "value": 13137,
               "isUserProperty": true
             },
             {
@@ -48921,7 +49018,7 @@
             },
             {
               "title": "Avg",
-              "value": "31.02",
+              "value": "31.13",
               "isUserProperty": false
             },
             {
@@ -48973,7 +49070,7 @@
           "bowling": [
             {
               "title": "Matches",
-              "value": 655,
+              "value": 656,
               "isUserProperty": true
             },
             {
@@ -49060,7 +49157,7 @@
           "fielding": [
             {
               "title": "Matches",
-              "value": 655,
+              "value": 656,
               "isUserProperty": false
             },
             {
@@ -49070,7 +49167,7 @@
             },
             {
               "title": "Caught behind",
-              "value": 1067,
+              "value": 1070,
               "isUserProperty": false
             },
             {
@@ -49118,12 +49215,12 @@
           ]
         },
         "publicFieldCount": 43,
-        "matches": 655,
-        "battingInnings": 566,
-        "notOut": 144,
-        "runs": 13092,
+        "matches": 656,
+        "battingInnings": 567,
+        "notOut": 145,
+        "runs": 13137,
         "bestScore": 146,
-        "average": "31.02",
+        "average": "31.13",
         "strikeRate": "143.85",
         "thirties": 105,
         "fifties": 75,
@@ -49149,16 +49246,17 @@
         "wides": 297,
         "noBalls": 59,
         "dotBalls": 473,
-        "fieldingMatches": 655,
+        "fieldingMatches": 656,
         "catches": 193,
-        "caughtBehind": 1067,
+        "caughtBehind": 1070,
         "runOuts": 52,
         "stumpings": 61,
         "assistedRunOuts": 69,
         "byeRunsWicketkeeper": 230,
         "captainMatches": 77,
         "tossesWon": 51,
-        "captainWinPercentage": "76.32%"
+        "captainWinPercentage": "76.32%",
+        "lastVerifiedAt": "2026-10-01T11:01:13.175Z"
       },
       "matchHistory": [
         {
@@ -49179,7 +49277,17 @@
           "teamAScore": "",
           "teamBScore": "",
           "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary",
-          "playerId": 14456617
+          "playerId": 14456617,
+          "performance": {
+            "teamName": "Divino Hustlers",
+            "opponent": "Tower D Daredevils",
+            "runs": 45,
+            "wickets": 0,
+            "catches": 0,
+            "caughtBehind": 3,
+            "stumpings": 0,
+            "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary"
+          }
         },
         {
           "id": 27299534,
@@ -49681,7 +49789,17 @@
           "teamAScore": "",
           "teamBScore": "",
           "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary",
-          "playerId": 14456617
+          "playerId": 14456617,
+          "performance": {
+            "teamName": "Divino Hustlers",
+            "opponent": "Tower D Daredevils",
+            "runs": 45,
+            "wickets": 0,
+            "catches": 0,
+            "caughtBehind": 3,
+            "stumpings": 0,
+            "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary"
+          }
         },
         {
           "id": 27299534,
@@ -49996,7 +50114,8 @@
         "lastMatchDate": "",
         "updatedAt": "2026-10-01T06:53:05.154Z"
       },
-      "recentMatchesUpdatedAt": "2026-10-01T10:40:15.704Z"
+      "recentMatchesUpdatedAt": "2026-10-01T10:40:15.704Z",
+      "statsRefreshNote": "Runs, wickets and fielding refreshed from CricHeroes scorecard 27271770 on 2026-10-01T11:01:13.175Z."
     },
     {
       "id": 660901,
@@ -90479,17 +90598,17 @@
         "awards": 0
       },
       "overallStats": {
-        "source": "CricHeroes public player stats",
+        "source": "CricHeroes public player stats + verified public scorecard supplement",
         "sections": {
           "batting": [
             {
               "title": "Matches",
-              "value": 333,
+              "value": 334,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 266,
+              "value": 267,
               "isUserProperty": false
             },
             {
@@ -90499,7 +90618,7 @@
             },
             {
               "title": "Runs",
-              "value": 6888,
+              "value": 6891,
               "isUserProperty": true
             },
             {
@@ -90509,7 +90628,7 @@
             },
             {
               "title": "Avg",
-              "value": "32.80",
+              "value": "32.66",
               "isUserProperty": false
             },
             {
@@ -90561,12 +90680,12 @@
           "bowling": [
             {
               "title": "Matches",
-              "value": 333,
+              "value": 334,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 150,
+              "value": 151,
               "isUserProperty": false
             },
             {
@@ -90648,7 +90767,7 @@
           "fielding": [
             {
               "title": "Matches",
-              "value": 333,
+              "value": 334,
               "isUserProperty": false
             },
             {
@@ -90706,12 +90825,12 @@
           ]
         },
         "publicFieldCount": 43,
-        "matches": 333,
-        "battingInnings": 266,
+        "matches": 334,
+        "battingInnings": 267,
         "notOut": 56,
-        "runs": 6888,
+        "runs": 6891,
         "bestScore": 128,
-        "average": "32.80",
+        "average": "32.66",
         "strikeRate": "166.22",
         "thirties": 37,
         "fifties": 40,
@@ -90721,7 +90840,7 @@
         "ducks": 10,
         "wins": 164,
         "losses": 153,
-        "bowlingInnings": 150,
+        "bowlingInnings": 151,
         "overs": "343.0",
         "maidens": 5,
         "wickets": 163,
@@ -90737,7 +90856,7 @@
         "wides": 103,
         "noBalls": 20,
         "dotBalls": 745,
-        "fieldingMatches": 333,
+        "fieldingMatches": 334,
         "catches": 114,
         "caughtBehind": 5,
         "runOuts": 14,
@@ -90746,20 +90865,21 @@
         "byeRunsWicketkeeper": 4,
         "captainMatches": 97,
         "tossesWon": 38,
-        "captainWinPercentage": "48.31%"
+        "captainWinPercentage": "48.31%",
+        "lastVerifiedAt": "2026-10-01T11:01:13.175Z"
       },
       "stats": {
-        "source": "CricHeroes public player stats",
+        "source": "CricHeroes public player stats + verified public scorecard supplement",
         "sections": {
           "batting": [
             {
               "title": "Matches",
-              "value": 333,
+              "value": 334,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 266,
+              "value": 267,
               "isUserProperty": false
             },
             {
@@ -90769,7 +90889,7 @@
             },
             {
               "title": "Runs",
-              "value": 6888,
+              "value": 6891,
               "isUserProperty": true
             },
             {
@@ -90779,7 +90899,7 @@
             },
             {
               "title": "Avg",
-              "value": "32.80",
+              "value": "32.66",
               "isUserProperty": false
             },
             {
@@ -90831,12 +90951,12 @@
           "bowling": [
             {
               "title": "Matches",
-              "value": 333,
+              "value": 334,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 150,
+              "value": 151,
               "isUserProperty": false
             },
             {
@@ -90918,7 +91038,7 @@
           "fielding": [
             {
               "title": "Matches",
-              "value": 333,
+              "value": 334,
               "isUserProperty": false
             },
             {
@@ -90976,12 +91096,12 @@
           ]
         },
         "publicFieldCount": 43,
-        "matches": 333,
-        "battingInnings": 266,
+        "matches": 334,
+        "battingInnings": 267,
         "notOut": 56,
-        "runs": 6888,
+        "runs": 6891,
         "bestScore": 128,
-        "average": "32.80",
+        "average": "32.66",
         "strikeRate": "166.22",
         "thirties": 37,
         "fifties": 40,
@@ -90991,7 +91111,7 @@
         "ducks": 10,
         "wins": 164,
         "losses": 153,
-        "bowlingInnings": 150,
+        "bowlingInnings": 151,
         "overs": "343.0",
         "maidens": 5,
         "wickets": 163,
@@ -91007,7 +91127,7 @@
         "wides": 103,
         "noBalls": 20,
         "dotBalls": 745,
-        "fieldingMatches": 333,
+        "fieldingMatches": 334,
         "catches": 114,
         "caughtBehind": 5,
         "runOuts": 14,
@@ -91016,7 +91136,8 @@
         "byeRunsWicketkeeper": 4,
         "captainMatches": 97,
         "tossesWon": 38,
-        "captainWinPercentage": "48.31%"
+        "captainWinPercentage": "48.31%",
+        "lastVerifiedAt": "2026-10-01T11:01:13.175Z"
       },
       "matchHistory": [
         {
@@ -91037,7 +91158,17 @@
           "teamAScore": "",
           "teamBScore": "",
           "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary",
-          "playerId": 22785662
+          "playerId": 22785662,
+          "performance": {
+            "teamName": "Divino Hustlers",
+            "opponent": "Tower D Daredevils",
+            "runs": 3,
+            "wickets": 0,
+            "catches": 0,
+            "caughtBehind": 0,
+            "stumpings": 0,
+            "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary"
+          }
         },
         {
           "id": 27299534,
@@ -91519,7 +91650,17 @@
           "teamAScore": "",
           "teamBScore": "",
           "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary",
-          "playerId": 22785662
+          "playerId": 22785662,
+          "performance": {
+            "teamName": "Divino Hustlers",
+            "opponent": "Tower D Daredevils",
+            "runs": 3,
+            "wickets": 0,
+            "catches": 0,
+            "caughtBehind": 0,
+            "stumpings": 0,
+            "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary"
+          }
         },
         {
           "id": 27299534,
@@ -91779,7 +91920,8 @@
         "updatedAt": "2026-10-01T06:53:05.155Z"
       },
       "recentMatchesSource": "Live public CricHeroes matches page checked 01 Oct 2026",
-      "recentMatchesUpdatedAt": "2026-10-01T10:40:15.712Z"
+      "recentMatchesUpdatedAt": "2026-10-01T10:40:15.712Z",
+      "statsRefreshNote": "Runs, wickets and fielding refreshed from CricHeroes scorecard 27271770 on 2026-10-01T11:01:13.175Z."
     },
     {
       "id": 43868532,
@@ -93800,27 +93942,27 @@
         "awards": 0
       },
       "overallStats": {
-        "source": "CricHeroes public player stats",
+        "source": "CricHeroes public player stats + verified public scorecard supplement",
         "sections": {
           "batting": [
             {
               "title": "Matches",
-              "value": 76,
+              "value": 77,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 62,
+              "value": 63,
               "isUserProperty": false
             },
             {
               "title": "Not out",
-              "value": 14,
+              "value": 15,
               "isUserProperty": false
             },
             {
               "title": "Runs",
-              "value": 695,
+              "value": 708,
               "isUserProperty": true
             },
             {
@@ -93830,7 +93972,7 @@
             },
             {
               "title": "Avg",
-              "value": "14.48",
+              "value": "14.75",
               "isUserProperty": false
             },
             {
@@ -93882,12 +94024,12 @@
           "bowling": [
             {
               "title": "Matches",
-              "value": 76,
+              "value": 77,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 45,
+              "value": 46,
               "isUserProperty": false
             },
             {
@@ -93902,7 +94044,7 @@
             },
             {
               "title": "Wickets",
-              "value": 29,
+              "value": 31,
               "isUserProperty": true
             },
             {
@@ -93969,7 +94111,7 @@
           "fielding": [
             {
               "title": "Matches",
-              "value": 76,
+              "value": 77,
               "isUserProperty": false
             },
             {
@@ -94006,12 +94148,12 @@
           "captain": []
         },
         "publicFieldCount": 39,
-        "matches": 76,
-        "battingInnings": 62,
-        "notOut": 14,
-        "runs": 695,
+        "matches": 77,
+        "battingInnings": 63,
+        "notOut": 15,
+        "runs": 708,
         "bestScore": 72,
-        "average": "14.48",
+        "average": "14.75",
         "strikeRate": "109.79",
         "thirties": 5,
         "fifties": 2,
@@ -94021,10 +94163,10 @@
         "ducks": 10,
         "wins": 35,
         "losses": 39,
-        "bowlingInnings": 45,
+        "bowlingInnings": 46,
         "overs": "99.0",
         "maidens": 1,
-        "wickets": 29,
+        "wickets": 31,
         "runsConceded": 1238,
         "bestWickets": 3,
         "hatTricks": 0,
@@ -94037,7 +94179,7 @@
         "wides": 57,
         "noBalls": 18,
         "dotBalls": 201,
-        "fieldingMatches": 76,
+        "fieldingMatches": 77,
         "catches": 13,
         "caughtBehind": 2,
         "runOuts": 5,
@@ -94046,30 +94188,31 @@
         "byeRunsWicketkeeper": 4,
         "captainMatches": 0,
         "tossesWon": 0,
-        "captainWinPercentage": ""
+        "captainWinPercentage": "",
+        "lastVerifiedAt": "2026-10-01T11:01:13.175Z"
       },
       "stats": {
-        "source": "CricHeroes public player stats",
+        "source": "CricHeroes public player stats + verified public scorecard supplement",
         "sections": {
           "batting": [
             {
               "title": "Matches",
-              "value": 76,
+              "value": 77,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 62,
+              "value": 63,
               "isUserProperty": false
             },
             {
               "title": "Not out",
-              "value": 14,
+              "value": 15,
               "isUserProperty": false
             },
             {
               "title": "Runs",
-              "value": 695,
+              "value": 708,
               "isUserProperty": true
             },
             {
@@ -94079,7 +94222,7 @@
             },
             {
               "title": "Avg",
-              "value": "14.48",
+              "value": "14.75",
               "isUserProperty": false
             },
             {
@@ -94131,12 +94274,12 @@
           "bowling": [
             {
               "title": "Matches",
-              "value": 76,
+              "value": 77,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 45,
+              "value": 46,
               "isUserProperty": false
             },
             {
@@ -94151,7 +94294,7 @@
             },
             {
               "title": "Wickets",
-              "value": 29,
+              "value": 31,
               "isUserProperty": true
             },
             {
@@ -94218,7 +94361,7 @@
           "fielding": [
             {
               "title": "Matches",
-              "value": 76,
+              "value": 77,
               "isUserProperty": false
             },
             {
@@ -94255,12 +94398,12 @@
           "captain": []
         },
         "publicFieldCount": 39,
-        "matches": 76,
-        "battingInnings": 62,
-        "notOut": 14,
-        "runs": 695,
+        "matches": 77,
+        "battingInnings": 63,
+        "notOut": 15,
+        "runs": 708,
         "bestScore": 72,
-        "average": "14.48",
+        "average": "14.75",
         "strikeRate": "109.79",
         "thirties": 5,
         "fifties": 2,
@@ -94270,10 +94413,10 @@
         "ducks": 10,
         "wins": 35,
         "losses": 39,
-        "bowlingInnings": 45,
+        "bowlingInnings": 46,
         "overs": "99.0",
         "maidens": 1,
-        "wickets": 29,
+        "wickets": 31,
         "runsConceded": 1238,
         "bestWickets": 3,
         "hatTricks": 0,
@@ -94286,7 +94429,7 @@
         "wides": 57,
         "noBalls": 18,
         "dotBalls": 201,
-        "fieldingMatches": 76,
+        "fieldingMatches": 77,
         "catches": 13,
         "caughtBehind": 2,
         "runOuts": 5,
@@ -94295,7 +94438,8 @@
         "byeRunsWicketkeeper": 4,
         "captainMatches": 0,
         "tossesWon": 0,
-        "captainWinPercentage": ""
+        "captainWinPercentage": "",
+        "lastVerifiedAt": "2026-10-01T11:01:13.175Z"
       },
       "matchHistory": [
         {
@@ -94316,7 +94460,17 @@
           "teamAScore": "",
           "teamBScore": "",
           "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary",
-          "playerId": 16796807
+          "playerId": 16796807,
+          "performance": {
+            "teamName": "Divino Hustlers",
+            "opponent": "Tower D Daredevils",
+            "runs": 13,
+            "wickets": 2,
+            "catches": 0,
+            "caughtBehind": 0,
+            "stumpings": 0,
+            "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary"
+          }
         },
         {
           "id": 27360085,
@@ -94818,7 +94972,17 @@
           "teamAScore": "",
           "teamBScore": "",
           "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary",
-          "playerId": 16796807
+          "playerId": 16796807,
+          "performance": {
+            "teamName": "Divino Hustlers",
+            "opponent": "Tower D Daredevils",
+            "runs": 13,
+            "wickets": 2,
+            "catches": 0,
+            "caughtBehind": 0,
+            "stumpings": 0,
+            "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary"
+          }
         },
         {
           "id": 27360085,
@@ -95093,7 +95257,8 @@
         "lastMatchDate": "",
         "updatedAt": "2026-10-01T06:53:05.155Z"
       },
-      "recentMatchesUpdatedAt": "2026-10-01T10:40:15.712Z"
+      "recentMatchesUpdatedAt": "2026-10-01T10:40:15.712Z",
+      "statsRefreshNote": "Runs, wickets and fielding refreshed from CricHeroes scorecard 27271770 on 2026-10-01T11:01:13.175Z."
     },
     {
       "id": 4756235,
@@ -101983,17 +102148,17 @@
         "awards": 0
       },
       "overallStats": {
-        "source": "CricHeroes public player stats",
+        "source": "CricHeroes public player stats + verified public scorecard supplement",
         "sections": {
           "batting": [
             {
               "title": "Matches",
-              "value": 301,
+              "value": 302,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 255,
+              "value": 256,
               "isUserProperty": false
             },
             {
@@ -102003,7 +102168,7 @@
             },
             {
               "title": "Runs",
-              "value": 4876,
+              "value": 4880,
               "isUserProperty": true
             },
             {
@@ -102013,7 +102178,7 @@
             },
             {
               "title": "Avg",
-              "value": "21.96",
+              "value": "21.88",
               "isUserProperty": false
             },
             {
@@ -102065,12 +102230,12 @@
           "bowling": [
             {
               "title": "Matches",
-              "value": 301,
+              "value": 302,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 143,
+              "value": 144,
               "isUserProperty": false
             },
             {
@@ -102152,12 +102317,12 @@
           "fielding": [
             {
               "title": "Matches",
-              "value": 301,
+              "value": 302,
               "isUserProperty": false
             },
             {
               "title": "Catches",
-              "value": 102,
+              "value": 103,
               "isUserProperty": false
             },
             {
@@ -102205,12 +102370,12 @@
           ]
         },
         "publicFieldCount": 42,
-        "matches": 301,
-        "battingInnings": 255,
+        "matches": 302,
+        "battingInnings": 256,
         "notOut": 33,
-        "runs": 4876,
+        "runs": 4880,
         "bestScore": 115,
-        "average": "21.96",
+        "average": "21.88",
         "strikeRate": "173.15",
         "thirties": 33,
         "fifties": 24,
@@ -102220,7 +102385,7 @@
         "ducks": 24,
         "wins": 146,
         "losses": 142,
-        "bowlingInnings": 143,
+        "bowlingInnings": 144,
         "overs": "312.0",
         "maidens": 1,
         "wickets": 112,
@@ -102236,8 +102401,8 @@
         "wides": 127,
         "noBalls": 24,
         "dotBalls": 641,
-        "fieldingMatches": 301,
-        "catches": 102,
+        "fieldingMatches": 302,
+        "catches": 103,
         "caughtBehind": 1,
         "runOuts": 14,
         "stumpings": 0,
@@ -102245,20 +102410,21 @@
         "byeRunsWicketkeeper": 0,
         "captainMatches": 6,
         "tossesWon": 4,
-        "captainWinPercentage": "33.33%"
+        "captainWinPercentage": "33.33%",
+        "lastVerifiedAt": "2026-10-01T11:01:13.175Z"
       },
       "stats": {
-        "source": "CricHeroes public player stats",
+        "source": "CricHeroes public player stats + verified public scorecard supplement",
         "sections": {
           "batting": [
             {
               "title": "Matches",
-              "value": 301,
+              "value": 302,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 255,
+              "value": 256,
               "isUserProperty": false
             },
             {
@@ -102268,7 +102434,7 @@
             },
             {
               "title": "Runs",
-              "value": 4876,
+              "value": 4880,
               "isUserProperty": true
             },
             {
@@ -102278,7 +102444,7 @@
             },
             {
               "title": "Avg",
-              "value": "21.96",
+              "value": "21.88",
               "isUserProperty": false
             },
             {
@@ -102330,12 +102496,12 @@
           "bowling": [
             {
               "title": "Matches",
-              "value": 301,
+              "value": 302,
               "isUserProperty": true
             },
             {
               "title": "Innings",
-              "value": 143,
+              "value": 144,
               "isUserProperty": false
             },
             {
@@ -102417,12 +102583,12 @@
           "fielding": [
             {
               "title": "Matches",
-              "value": 301,
+              "value": 302,
               "isUserProperty": false
             },
             {
               "title": "Catches",
-              "value": 102,
+              "value": 103,
               "isUserProperty": false
             },
             {
@@ -102470,12 +102636,12 @@
           ]
         },
         "publicFieldCount": 42,
-        "matches": 301,
-        "battingInnings": 255,
+        "matches": 302,
+        "battingInnings": 256,
         "notOut": 33,
-        "runs": 4876,
+        "runs": 4880,
         "bestScore": 115,
-        "average": "21.96",
+        "average": "21.88",
         "strikeRate": "173.15",
         "thirties": 33,
         "fifties": 24,
@@ -102485,7 +102651,7 @@
         "ducks": 24,
         "wins": 146,
         "losses": 142,
-        "bowlingInnings": 143,
+        "bowlingInnings": 144,
         "overs": "312.0",
         "maidens": 1,
         "wickets": 112,
@@ -102501,8 +102667,8 @@
         "wides": 127,
         "noBalls": 24,
         "dotBalls": 641,
-        "fieldingMatches": 301,
-        "catches": 102,
+        "fieldingMatches": 302,
+        "catches": 103,
         "caughtBehind": 1,
         "runOuts": 14,
         "stumpings": 0,
@@ -102510,7 +102676,8 @@
         "byeRunsWicketkeeper": 0,
         "captainMatches": 6,
         "tossesWon": 4,
-        "captainWinPercentage": "33.33%"
+        "captainWinPercentage": "33.33%",
+        "lastVerifiedAt": "2026-10-01T11:01:13.175Z"
       },
       "matchHistory": [
         {
@@ -102531,7 +102698,17 @@
           "teamAScore": "",
           "teamBScore": "",
           "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary",
-          "playerId": 1319201
+          "playerId": 1319201,
+          "performance": {
+            "teamName": "Divino Hustlers",
+            "opponent": "Tower D Daredevils",
+            "runs": 4,
+            "wickets": 0,
+            "catches": 1,
+            "caughtBehind": 0,
+            "stumpings": 0,
+            "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary"
+          }
         },
         {
           "id": 27299534,
@@ -103033,7 +103210,17 @@
           "teamAScore": "",
           "teamBScore": "",
           "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary",
-          "playerId": 1319201
+          "playerId": 1319201,
+          "performance": {
+            "teamName": "Divino Hustlers",
+            "opponent": "Tower D Daredevils",
+            "runs": 4,
+            "wickets": 0,
+            "catches": 1,
+            "caughtBehind": 0,
+            "stumpings": 0,
+            "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/summary"
+          }
         },
         {
           "id": 27299534,
@@ -103276,7 +103463,8 @@
         "lastMatchDate": "2026-03-25T01:26:01.000Z",
         "updatedAt": "2026-10-01T06:53:05.155Z"
       },
-      "recentMatchesUpdatedAt": "2026-10-01T10:40:15.713Z"
+      "recentMatchesUpdatedAt": "2026-10-01T10:40:15.713Z",
+      "statsRefreshNote": "Runs, wickets and fielding refreshed from CricHeroes scorecard 27271770 on 2026-10-01T11:01:13.175Z."
     },
     {
       "id": 32373767,
@@ -115994,6 +116182,14 @@
   "errors": [
     "CricHeroes returned 403 for https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/matches"
   ],
-  "manualRefreshAt": "2026-10-01T10:40:15.715Z",
-  "manualRefreshSource": "Live public CricHeroes matches refresh for full 83-player roster"
+  "manualRefreshAt": "2026-10-01T11:01:13.175Z",
+  "manualRefreshSource": "CricHeroes public scorecard 27271770",
+  "scorecardStatRefreshes": {
+    "27271770": {
+      "refreshedAt": "2026-10-01T11:01:13.175Z",
+      "scorecardUrl": "https://cricheroes.com/scorecard/27271770/individual/divino-hustlers-vs-tower-d-daredevils/scorecard",
+      "playersUpdated": 9,
+      "note": "Verified public scorecard supplement; CricHeroes aggregate stats remain PRO-gated publicly."
+    }
+  }
 }
