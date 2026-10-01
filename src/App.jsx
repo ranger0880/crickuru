@@ -834,7 +834,7 @@ const RouterContext = React.createContext(null);
         return (
           <>
             <header
-              className={`fixed left-0 right-0 top-9 z-50 transition-all duration-500 ${
+              className={`cyber-navbar fixed left-0 right-0 top-9 z-50 transition-all duration-500 ${
                 scrolled
                   ? "border-b border-gold/25 bg-night/78 shadow-2xl shadow-black/35 backdrop-blur-xl"
                   : "border-b border-transparent bg-transparent"
@@ -943,7 +943,7 @@ const RouterContext = React.createContext(null);
         const statusLabel = liveMatches.length ? `${liveMatches.length} LIVE NOW` : "";
 
         return (
-          <aside className="fixed left-0 right-0 top-0 z-[70] h-9 border-b border-gold/20 bg-night/95 text-white shadow-xl shadow-black/30 backdrop-blur-xl" aria-label="India live cricket score panel">
+          <aside className="cyber-score-strip fixed left-0 right-0 top-0 z-[70] h-9 border-b border-gold/20 bg-night/95 text-white shadow-xl shadow-black/30 backdrop-blur-xl" aria-label="India live cricket score panel">
             <div className="mx-auto flex h-full max-w-7xl items-center gap-3 px-3 sm:px-8">
               <Link
                 to="/india-matches"
@@ -1218,7 +1218,7 @@ const RouterContext = React.createContext(null);
 
         return (
           <motion.aside
-            className="interactive-card glass relative mx-auto mt-6 w-full max-w-sm rounded-[8px] p-5 lg:ml-auto lg:mt-48"
+            className="cyber-live-console interactive-card glass relative mx-auto mt-6 w-full max-w-sm rounded-[8px] p-5 lg:ml-auto lg:mt-48"
             initial={{ opacity: 0, y: 36, filter: "blur(10px)" }}
             animate={{ opacity: 1, y: [0, -10, 0], filter: "blur(0px)" }}
             transition={{ opacity: { duration: 0.8, delay: 1.2 }, y: { duration: 7, repeat: Infinity, ease: "easeInOut" } }}
@@ -1911,9 +1911,9 @@ const RouterContext = React.createContext(null);
         const syncText = loading ? "Syncing CricHeroes" : `Updated ${formatFeedDate(data.syncedAt)}`;
 
         return (
-          <main className="route-bg page-grain min-h-screen px-5 pb-16 pt-36 sm:px-8">
+          <main className="route-bg cyber-command-page page-grain min-h-screen px-5 pb-16 pt-36 sm:px-8">
             <section className="mx-auto max-w-7xl">
-              <div className="grid gap-8 lg:grid-cols-[0.92fr_1.08fr] lg:items-end">
+              <div className="cyber-command-hero grid gap-8 lg:grid-cols-[0.92fr_1.08fr] lg:items-end">
                 <motion.div className="min-w-0" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease }}>
                   <p className="text-xs font-black uppercase tracking-[0.32em] text-cyan">CricHeroes Team Feed</p>
                   <h1 className="mt-4 max-w-full font-display text-5xl font-black uppercase leading-none text-white sm:text-7xl lg:text-8xl">
@@ -2402,7 +2402,7 @@ const RouterContext = React.createContext(null);
       function CountList({ title, items }) {
         const rows = asArray(items).slice(0, 6);
         return (
-          <article className="rounded-[8px] border border-white/12 bg-white/[0.045] p-4">
+          <article className="cyber-panel interactive-card rounded-[8px] border border-white/12 bg-white/[0.045] p-4">
             <p className="text-xs font-black uppercase tracking-[0.18em] text-gold">{title}</p>
             {rows.length ? (
               <div className="mt-4 grid gap-2">
@@ -2486,8 +2486,9 @@ const RouterContext = React.createContext(null);
         };
         const totalAwards = players.reduce((sum, player) => sum + (player.performance?.awards || 0), 0);
         const verifiedCount = players.filter((player) => player.isVerified).length;
-        const careerTrackedCount = players.filter((player) => playerOverallStats(player)?.source === CRICHEROES_STATS_SOURCE).length;
-        const careerPendingCount = Math.max(0, players.length - careerTrackedCount);
+        const refreshedStatsCount = players.filter((player) => hasPlayerStats(playerOverallStats(player))).length;
+        const publicCareerCount = players.filter((player) => playerOverallStats(player)?.source === CRICHEROES_STATS_SOURCE).length;
+        const publicCareerPendingCount = Math.max(0, players.length - publicCareerCount);
         const feedCheckedAt = data.lastCheckedAt || data.syncedAt;
         const feedChangedAt = data.sourceStatus === "partial"
           ? data.playerRecentMatchesUpdatedAt || data.playerStatsUpdatedAt || data.lastSuccessfulSyncAt || data.syncedAt
@@ -2504,7 +2505,7 @@ const RouterContext = React.createContext(null);
             : "border-emerald-300/25 bg-emerald-300/10 text-emerald-200";
 
         return (
-          <main className="route-bg page-grain min-h-screen px-5 pb-16 pt-36 sm:px-8">
+          <main className="route-bg cyber-command-page page-grain min-h-screen px-5 pb-16 pt-36 sm:px-8">
             <section className="mx-auto max-w-7xl">
               <div className="grid gap-8 lg:grid-cols-[0.92fr_1.08fr] lg:items-end">
                 <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease }}>
@@ -2532,22 +2533,22 @@ const RouterContext = React.createContext(null);
                   </div>
                 </motion.div>
 
-                <div className="grid gap-3 sm:grid-cols-4">
+                <div className="cyber-stats-grid grid gap-3 sm:grid-cols-4">
                   <LiveStat label="Players" value={players.length || "-"} />
                   <LiveStat label="Awards" value={totalAwards || "-"} />
                   <LiveStat label="Verified" value={verifiedCount || "-"} />
-                  <LiveStat label="Career tracked" value={`${careerTrackedCount}/${players.length || 0}`} />
+                  <LiveStat label="Data ready" value={`${refreshedStatsCount}/${players.length || 0}`} />
                 </div>
               </div>
 
               <div className="mt-5 rounded-[8px] border border-cyan/20 bg-cyan/5 px-4 py-3 text-sm leading-6 text-white/65">
                 <span className="font-black uppercase tracking-[0.14em] text-cyan">Overall CricHeroes career tracking:</span>{" "}
-                {careerTrackedCount} of {players.length} profiles currently have public career totals. {careerPendingCount} profile{careerPendingCount === 1 ? " is" : "s are"} queued for the next rate-limit-safe refresh; Warriors match totals remain shown separately until then. Last automatic check: {formatFeedDate(feedCheckedAt)}.
+                {refreshedStatsCount} of {players.length} current profiles have refreshed score data through the latest sync. {publicCareerPendingCount} profile{publicCareerPendingCount === 1 ? " has" : "s have"} restricted or unavailable public career aggregates, so the latest Warriors-tracked totals remain visible instead of being hidden. Last automatic check: {formatFeedDate(feedCheckedAt)}.
               </div>
 
               {captain && <CaptainSpotlightCard player={captain} onSelect={() => setSelectedPlayer(captain)} />}
 
-              <div className="mt-10 grid gap-5 lg:grid-cols-4">
+              <div className="cyber-leader-grid mt-10 grid gap-5 lg:grid-cols-4">
                 <PlayerLeaderCard label="Impact Leader" player={leaders.impact} metric={`${leaders.impact?.impact || 0}/100`} />
                 <PlayerLeaderCard label="Batting Edge" player={leaders.batting} metric={`${playerOverallStats(leaders.batting).runs || 0} RUNS`} />
                 <PlayerLeaderCard label="Strike Bowler" player={leaders.bowling} metric={`${playerOverallStats(leaders.bowling).wickets || 0} WKTS`} />
@@ -2609,7 +2610,7 @@ const RouterContext = React.createContext(null);
               </div>
 
               {filteredPlayers.length ? (
-                <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                <div className="cyber-player-grid mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
                   {filteredPlayers.map((player) => <PlayerProfileCard key={player.id || player.name} player={player} rank={player.rank} onSelect={() => setSelectedPlayer(player)} />)}
                 </div>
               ) : (
@@ -2709,7 +2710,7 @@ const RouterContext = React.createContext(null);
 
       function TopTenFormPanel({ players }) {
         return (
-          <section className="mt-8 rounded-[8px] border border-cyan/20 bg-cyan/[0.045] p-4 sm:p-5" aria-labelledby="top-ten-form-title">
+          <section className="cyber-rank-board mt-8 rounded-[8px] border border-cyan/20 bg-cyan/[0.045] p-4 sm:p-5" aria-labelledby="top-ten-form-title">
             <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <p className="text-[0.65rem] font-black uppercase tracking-[0.2em] text-cyan">Ranked form board</p>
@@ -2722,7 +2723,7 @@ const RouterContext = React.createContext(null);
                 const stats = playerOverallStats(player);
                 const recentMatches = playerRecentForm(player, 2);
                 return (
-                  <article key={`top-ten-${player.id || player.name}`} className="min-w-0 rounded-[7px] border border-white/10 bg-night/55 p-3">
+                  <article key={`top-ten-${player.id || player.name}`} className="cyber-mini-card min-w-0 rounded-[7px] border border-white/10 bg-night/55 p-3">
                     <div className="flex items-start justify-between gap-2">
                       <div className="min-w-0">
                         <p className="text-[0.56rem] font-black uppercase tracking-[0.16em] text-gold">Rank {player.rank}</p>
@@ -2767,7 +2768,7 @@ const RouterContext = React.createContext(null);
 
         return (
           <article
-            className="player-level-card interactive-card relative cursor-pointer overflow-hidden rounded-[8px] border border-white/12 bg-[radial-gradient(circle_at_85%_8%,rgba(244,185,66,0.14),transparent_28%),rgba(255,255,255,0.045)] p-5 focus:outline-none focus:ring-2 focus:ring-gold/60"
+            className="cyber-player-card player-level-card interactive-card relative cursor-pointer overflow-hidden rounded-[8px] border border-white/12 bg-[radial-gradient(circle_at_85%_8%,rgba(244,185,66,0.14),transparent_28%),rgba(255,255,255,0.045)] p-5 focus:outline-none focus:ring-2 focus:ring-gold/60"
             style={{ "--player-neon-color": neon.color, "--player-neon-glow": neon.glow }}
             onClick={(event) => { if (!event.target.closest("a")) onSelect?.(); }}
             onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); onSelect?.(); } }}
@@ -2823,7 +2824,7 @@ const RouterContext = React.createContext(null);
                 <LiveTinyStat label="Field" value={hasStats ? (stats.catches || 0) + (stats.stumpings || 0) : "-"} />
               </div>
               <p className="mt-3 text-center text-[0.62rem] font-black uppercase tracking-[0.12em] text-white/38">{hasStats ? `${stats.matches || 0} matches | Avg ${stats.average || "-"} | SR ${stats.strikeRate || "-"}` : "Profile totals will appear after the next public sync"}</p>
-              {stats.source !== CRICHEROES_STATS_SOURCE && <p className="mt-2 text-center text-[0.58rem] font-black uppercase tracking-[0.12em] text-gold/70">Overall career profile queued</p>}
+              {stats.source !== CRICHEROES_STATS_SOURCE && <p className="mt-2 text-center text-[0.58rem] font-black uppercase tracking-[0.12em] text-gold/70">Warriors totals refreshed • public career aggregate restricted</p>}
             </div>
 
             <div className="relative mt-4 flex flex-wrap gap-2">
