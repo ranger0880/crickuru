@@ -3031,6 +3031,31 @@ const RouterContext = React.createContext(null);
         const sampleFactor = evidence ? Math.min(1, Math.sqrt(evidence / 80)) : 0;
         const reliability = Math.min(1, (confidence / 100) * 0.75 + sampleFactor * 0.25);
         const adjustedScore = evidence ? Math.round(35 + (overall.score - 35) * reliability) : 1;
+        const specialtyCandidates = [
+          {
+            key: "batting",
+            label: "Batting specialist",
+            score: batting.score,
+            evidence: battingInnings + Math.min(30, Math.round(runs / 20)),
+            minimumEvidence: 15,
+          },
+          {
+            key: "bowling",
+            label: "Bowling specialist",
+            score: bowling.score,
+            evidence: bowlingInnings + Math.min(30, Math.round(wickets * 1.5)),
+            minimumEvidence: 15,
+          },
+          {
+            key: "fielding",
+            label: "Fielding specialist",
+            score: fielding.score,
+            evidence: fieldingMatches + Math.min(20, directFielding * 2),
+            minimumEvidence: 12,
+          },
+        ].filter((candidate) => candidate.evidence >= candidate.minimumEvidence && candidate.score > 0)
+          .sort((a, b) => b.score - a.score || b.evidence - a.evidence);
+        const specialty = specialtyCandidates[0] || null;
         return {
           score: Math.max(1, Math.min(100, adjustedScore)),
           confidence,
@@ -3041,6 +3066,7 @@ const RouterContext = React.createContext(null);
           fielding: fielding.score,
           captaincy: captaincy.score,
           dimensions: { batting: batting.score, bowling: bowling.score, fielding: fielding.score, captaincy: captaincy.score },
+          specialty,
           label: confidence >= 75 ? "High confidence" : confidence >= 45 ? "Growing sample" : "Early sample",
           source: stats.source === CRICHEROES_STATS_SOURCE ? "CricHeroes public player stats" : "Available public feed",
         };
@@ -3089,10 +3115,13 @@ const RouterContext = React.createContext(null);
         const ranking = currentPlayer.ranking || playerRankingSnapshot(currentPlayer);
         const matches = numericStatValue(stats.matches);
         const levelScore = ranking.score;
-        const isPro = levelScore >= 78 && ranking.confidence >= 55 && matches >= 40;
-        const isSemiPro = levelScore >= 48 && ranking.confidence >= 25 && matches >= 10;
+        const specialty = ranking.specialty;
+        const hasReliableSpecialty = specialty && specialty.score >= 76 && ranking.confidence >= 38 && matches >= 12;
+        const isPro = (levelScore >= 74 && ranking.confidence >= 45 && matches >= 25) || hasReliableSpecialty;
+        const isSemiPro = levelScore >= 45 && ranking.confidence >= 22 && matches >= 6;
         const key = isPro ? "pro" : isSemiPro ? "semiPro" : "amateur";
-        return { key, score: levelScore, confidence: ranking.confidence, ...PLAYER_LEVELS[key] };
+        const descriptor = isPro && specialty ? `${specialty.label} form` : PLAYER_LEVELS[key].descriptor;
+        return { key, score: levelScore, confidence: ranking.confidence, specialty, ...PLAYER_LEVELS[key], descriptor };
       }
 
       function PlayerLevelBadge({ level, compact = false }) {
