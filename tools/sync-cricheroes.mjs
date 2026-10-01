@@ -9,6 +9,11 @@ const BASE_URL = `https://cricheroes.com/team-profile/${TEAM_ID}/${TEAM_SLUG}`;
 const OUTPUT_FILE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../data/crickuru-live.json");
 const PLAYER_REFRESH_BATCH = 12;
 const RATE_LIMIT_RETRIES = 2;
+const MANUALLY_CONFIRMED_PLAYERS = [
+  { id: 9888779, name: "Akash Tyagi", slug: "akash-tyagi" },
+  { id: 12688117, name: "Vaibhav", slug: "vaibhav" },
+  { id: 4646519, name: "Shahid Sarwar", slug: "shahid-sarwar" },
+];
 
 const HEADERS = {
   "user-agent":
@@ -923,6 +928,7 @@ function buildRecordLedger(candidates, players) {
 }
 
 function buildRosterChangeLog(previousPlayers, players, previousChanges = []) {
+  const manuallyConfirmedIds = new Set(MANUALLY_CONFIRMED_PLAYERS.map((player) => Number(player.id)));
   const previousById = new Map((previousPlayers || []).map((player) => [Number(player.id), player]));
   const currentById = new Map(players.map((player) => [Number(player.id), player]));
   if (!previousById.size || !currentById.size) return previousChanges;
@@ -950,7 +956,9 @@ function buildRosterChangeLog(previousPlayers, players, previousChanges = []) {
       profileUrl: player.profileUrl,
       detectedAt,
     }));
-  return [...added, ...removed, ...(previousChanges || [])].slice(0, 60);
+  return [...added, ...removed, ...(previousChanges || [])]
+    .filter((change) => !manuallyConfirmedIds.has(Number(change.playerId)))
+    .slice(0, 60);
 }
 
 function normalizeMatchState(value) {
@@ -1029,6 +1037,64 @@ function normalizeMembers(rawMembers) {
       recentAwards: [],
     },
   }));
+}
+
+function createManuallyConfirmedPlayer(seed, previousPlayer, previousChanges = []) {
+  const rosterEntry = (previousChanges || []).find((change) => Number(change.playerId) === Number(seed.id));
+  if (previousPlayer) {
+    return {
+      ...previousPlayer,
+      manualRosterStatus: "confirmed",
+      manualRosterLabel: "Manually confirmed Warriors player",
+    };
+  }
+
+  return {
+    id: seed.id,
+    name: seed.name,
+    photo: rosterEntry?.playerPhoto || "",
+    skill: "",
+    isVerified: false,
+    isCaptain: false,
+    isAdmin: false,
+    isPro: false,
+    associationTag: "",
+    batterCategory: "",
+    batterCategoryInfo: "",
+    bowlerCategory: "",
+    bowlerCategoryInfo: "",
+    badges: ["Manually confirmed"],
+    profileUrl: playerProfileUrl(seed.id, seed.slug, "profile"),
+    statsUrl: playerProfileUrl(seed.id, seed.slug, "stats"),
+    matchesUrl: playerProfileUrl(seed.id, seed.slug, "matches"),
+    performance: {
+      playerOfMatch: 0,
+      fielderOfMatch: 0,
+      bestBatter: 0,
+      bestBowler: 0,
+      recentAwards: [],
+    },
+    manualRosterStatus: "confirmed",
+    manualRosterLabel: "Manually confirmed Warriors player",
+  };
+}
+
+function retainManuallyConfirmedPlayers(players, previousFeed) {
+  const previousById = new Map((previousFeed?.players || []).map((player) => [Number(player.id), player]));
+  const currentById = new Map(players.map((player) => [Number(player.id), player]));
+  const retained = [...players];
+
+  for (const seed of MANUALLY_CONFIRMED_PLAYERS) {
+    const currentPlayer = currentById.get(Number(seed.id));
+    if (currentPlayer) {
+      currentPlayer.manualRosterStatus = "confirmed";
+      currentPlayer.manualRosterLabel = "Manually confirmed Warriors player";
+      continue;
+    }
+    retained.push(createManuallyConfirmedPlayer(seed, previousById.get(Number(seed.id)), previousFeed?.rosterChangeLog));
+  }
+
+  return retained;
 }
 
 function normalizeTeam(rawTeamDetails, rawMembers, players) {
@@ -1312,7 +1378,7 @@ async function main() {
   const scorecardsByMatch = new Map(enrichedRecentMatches.map((match) => [Number(match.id), match.scorecard]));
   const matches = baseMatches.map((match) => ({ ...match, scorecard: scorecardsByMatch.get(Number(match.id)) || null }));
   const { liveMatches, upcomingMatches, recentMatches } = splitMatches(matches);
-  const players = normalizeMembers(rawMembers);
+  const players = retainManuallyConfirmedPlayers(normalizeMembers(rawMembers), previousFeed);
   const refreshCursor = players.length ? Number(previousFeed?.playerSyncCursor || 0) % players.length : 0;
   await hydratePlayerProfiles(players, previousFeed?.players || [], refreshCursor);
   const team = normalizeTeam(teamDetails, rawMembers, players);
