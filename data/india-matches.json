@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-02T08:51:35.401Z",
-  "lastCheckedAt": "2026-10-02T08:51:35.401Z",
-  "lastSuccessfulSyncAt": "2026-10-02T08:51:35.401Z",
+  "syncedAt": "2026-10-02T15:06:00.625Z",
+  "lastCheckedAt": "2026-10-02T15:06:00.625Z",
+  "lastSuccessfulSyncAt": "2026-10-02T15:06:00.625Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,43 +41,12 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 2,
+    "live": 1,
     "recent": 59,
     "upcoming": 485,
-    "total": 546
+    "total": 545
   },
   "all": [
-    {
-      "id": "live-155422",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "Australia A vs India A, 2nd unofficial Test",
-      "series": "Australia A tour of India 2026",
-      "teams": [
-        {
-          "name": "Australia A",
-          "shortName": "AUSA",
-          "score": "358/10 (116.3 Ov) & 173/4 (48.6 Ov)"
-        },
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": "167/10 (67.6 Ov) & 205/7 (64.6 Ov)"
-        }
-      ],
-      "dateLabel": "29 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Day 4: Tea Break - India A need 160 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155422",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-29T04:00:00.000Z",
-      "rawId": 155422
-    },
     {
       "id": "live-163077",
       "status": "live",
@@ -92,18 +61,18 @@
         {
           "name": "Rest of India",
           "shortName": "ROI",
-          "score": "237/10 (68.1 Ov)"
+          "score": "237/10 (68.1 Ov) & 24/1 (14.6 Ov)"
         },
         {
           "name": "Jammu and Kashmir",
           "shortName": "JK",
-          "score": "199/8 (54.3 Ov)"
+          "score": "278/10 (64.2 Ov)"
         }
       ],
       "dateLabel": "01 Oct 2026, 09:30 am",
       "time": "",
       "place": "Sher-i-Kashmir Stadium, Srinagar",
-      "overview": "Day 2: 2nd Session - Jammu and Kashmir trail by 38 runs",
+      "overview": "Day 2: Stumps - Rest of India trail by 17 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-01T04:00:00.000Z",
@@ -15241,6 +15210,38 @@
       "starPerformers": []
     },
     {
+      "id": "recent-155422",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "Australia A vs India A, 2nd unofficial Test",
+      "series": "Australia A tour of India 2026",
+      "teams": [
+        {
+          "name": "Australia A",
+          "shortName": "AUSA",
+          "score": "358/10 (116.3 Ov) & 173/4 (48.6 Ov)"
+        },
+        {
+          "name": "India A",
+          "shortName": "INDA",
+          "score": "167/10 (67.6 Ov) & 310/9 (102.6 Ov)"
+        }
+      ],
+      "dateLabel": "29 Sept 2026, 09:30 am",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "Match drawn",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155422",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-29T04:00:00.000Z",
+      "rawId": 155422,
+      "starPerformers": []
+    },
+    {
       "id": "recent-151532",
       "status": "recent",
       "statusLabel": "Past",
@@ -16908,38 +16909,6 @@
       ]
     },
     {
-      "id": "recent-145396",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-a",
-      "title": "India A vs United States of America, 2nd Match",
-      "series": "ICC Men's T20 World Cup Warm up Matches 2026",
-      "teams": [
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": "238/3 (20 Ov)"
-        },
-        {
-          "name": "United States of America",
-          "shortName": "USA",
-          "score": "200/10 (19.4 Ov)"
-        }
-      ],
-      "dateLabel": "02 Feb 2026, 05:00 pm",
-      "time": "",
-      "place": "Dr DY Patil Sports Academy, Navi Mumbai",
-      "overview": "India A won by 38 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/145396",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
-      "startTime": "2026-02-02T11:30:00.000Z",
-      "rawId": 145396,
-      "starPerformers": []
-    },
-    {
       "id": "recent-105540",
       "status": "recent",
       "statusLabel": "Past",
@@ -17084,37 +17053,6 @@
   ],
   "live": [
     {
-      "id": "live-155422",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "Australia A vs India A, 2nd unofficial Test",
-      "series": "Australia A tour of India 2026",
-      "teams": [
-        {
-          "name": "Australia A",
-          "shortName": "AUSA",
-          "score": "358/10 (116.3 Ov) & 173/4 (48.6 Ov)"
-        },
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": "167/10 (67.6 Ov) & 205/7 (64.6 Ov)"
-        }
-      ],
-      "dateLabel": "29 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Day 4: Tea Break - India A need 160 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155422",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-29T04:00:00.000Z",
-      "rawId": 155422
-    },
-    {
       "id": "live-163077",
       "status": "live",
       "statusLabel": "Live",
@@ -17128,18 +17066,18 @@
         {
           "name": "Rest of India",
           "shortName": "ROI",
-          "score": "237/10 (68.1 Ov)"
+          "score": "237/10 (68.1 Ov) & 24/1 (14.6 Ov)"
         },
         {
           "name": "Jammu and Kashmir",
           "shortName": "JK",
-          "score": "199/8 (54.3 Ov)"
+          "score": "278/10 (64.2 Ov)"
         }
       ],
       "dateLabel": "01 Oct 2026, 09:30 am",
       "time": "",
       "place": "Sher-i-Kashmir Stadium, Srinagar",
-      "overview": "Day 2: 2nd Session - Jammu and Kashmir trail by 38 runs",
+      "overview": "Day 2: Stumps - Rest of India trail by 17 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-01T04:00:00.000Z",
@@ -32281,6 +32219,38 @@
       "starPerformers": []
     },
     {
+      "id": "recent-155422",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "Australia A vs India A, 2nd unofficial Test",
+      "series": "Australia A tour of India 2026",
+      "teams": [
+        {
+          "name": "Australia A",
+          "shortName": "AUSA",
+          "score": "358/10 (116.3 Ov) & 173/4 (48.6 Ov)"
+        },
+        {
+          "name": "India A",
+          "shortName": "INDA",
+          "score": "167/10 (67.6 Ov) & 310/9 (102.6 Ov)"
+        }
+      ],
+      "dateLabel": "29 Sept 2026, 09:30 am",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "Match drawn",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155422",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-09-29T04:00:00.000Z",
+      "rawId": 155422,
+      "starPerformers": []
+    },
+    {
       "id": "recent-151532",
       "status": "recent",
       "statusLabel": "Past",
@@ -33948,38 +33918,6 @@
       ]
     },
     {
-      "id": "recent-145396",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-a",
-      "title": "India A vs United States of America, 2nd Match",
-      "series": "ICC Men's T20 World Cup Warm up Matches 2026",
-      "teams": [
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": "238/3 (20 Ov)"
-        },
-        {
-          "name": "United States of America",
-          "shortName": "USA",
-          "score": "200/10 (19.4 Ov)"
-        }
-      ],
-      "dateLabel": "02 Feb 2026, 05:00 pm",
-      "time": "",
-      "place": "Dr DY Patil Sports Academy, Navi Mumbai",
-      "overview": "India A won by 38 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/145396",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
-      "startTime": "2026-02-02T11:30:00.000Z",
-      "rawId": 145396,
-      "starPerformers": []
-    },
-    {
       "id": "recent-105540",
       "status": "recent",
       "statusLabel": "Past",
@@ -34128,9 +34066,9 @@
       "label": "International",
       "order": 1,
       "live": 0,
-      "recent": 29,
+      "recent": 28,
       "upcoming": 48,
-      "total": 77
+      "total": 76
     },
     {
       "id": "league",
@@ -34154,8 +34092,8 @@
       "id": "domestic",
       "label": "Domestic / State",
       "order": 4,
-      "live": 2,
-      "recent": 0,
+      "live": 1,
+      "recent": 1,
       "upcoming": 412,
       "total": 414
     }
@@ -34175,18 +34113,18 @@
         {
           "name": "Rest of India",
           "shortName": "ROI",
-          "score": "237/10 (68.1 Ov)"
+          "score": "237/10 (68.1 Ov) & 24/1 (14.6 Ov)"
         },
         {
           "name": "Jammu and Kashmir",
           "shortName": "JK",
-          "score": "199/8 (54.3 Ov)"
+          "score": "278/10 (64.2 Ov)"
         }
       ],
       "dateLabel": "01 Oct 2026, 09:30 am",
       "time": "",
       "place": "Sher-i-Kashmir Stadium, Srinagar",
-      "overview": "Day 2: 2nd Session - Jammu and Kashmir trail by 38 runs",
+      "overview": "Day 2: Stumps - Rest of India trail by 17 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-01T04:00:00.000Z",
@@ -47978,18 +47916,18 @@
             {
               "name": "Rest of India",
               "shortName": "ROI",
-              "score": "237/10 (68.1 Ov)"
+              "score": "237/10 (68.1 Ov) & 24/1 (14.6 Ov)"
             },
             {
               "name": "Jammu and Kashmir",
               "shortName": "JK",
-              "score": "199/8 (54.3 Ov)"
+              "score": "278/10 (64.2 Ov)"
             }
           ],
           "dateLabel": "01 Oct 2026, 09:30 am",
           "time": "",
           "place": "Sher-i-Kashmir Stadium, Srinagar",
-          "overview": "Day 2: 2nd Session - Jammu and Kashmir trail by 38 runs",
+          "overview": "Day 2: Stumps - Rest of India trail by 17 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-10-01T04:00:00.000Z",
