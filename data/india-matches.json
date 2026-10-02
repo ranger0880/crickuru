@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-01T23:29:22.803Z",
-  "lastCheckedAt": "2026-10-01T23:29:22.803Z",
-  "lastSuccessfulSyncAt": "2026-10-01T23:29:22.803Z",
+  "syncedAt": "2026-10-02T02:29:19.394Z",
+  "lastCheckedAt": "2026-10-02T02:29:19.394Z",
+  "lastSuccessfulSyncAt": "2026-10-02T02:29:19.394Z",
   "coverage": {
     "pathways": [
       "India",
@@ -42,9 +42,9 @@
   },
   "summary": {
     "live": 2,
-    "recent": 60,
+    "recent": 59,
     "upcoming": 485,
-    "total": 547
+    "total": 546
   },
   "all": [
     {
@@ -16571,38 +16571,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/results",
       "startTime": "2026-06-27T07:30:00.000Z",
       "rawId": 155749,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-155133",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "India A Women vs England A Women, Unofficial 3rd T20",
-      "series": "India A Women tour of England 2026",
-      "teams": [
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "111/10 (19.5 Ov)"
-        },
-        {
-          "name": "England A Women",
-          "shortName": "ENGAW",
-          "score": "112/4 (16 Ov)"
-        }
-      ],
-      "dateLabel": "25 Jun 2026, 11:00 pm",
-      "time": "",
-      "place": "County Ground, Chelmsford",
-      "overview": "England A Women won by 6 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155133",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-06-25T17:30:00.000Z",
-      "rawId": 155133,
       "starPerformers": []
     },
     {
@@ -33646,38 +33614,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-155133",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "India A Women vs England A Women, Unofficial 3rd T20",
-      "series": "India A Women tour of England 2026",
-      "teams": [
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "111/10 (19.5 Ov)"
-        },
-        {
-          "name": "England A Women",
-          "shortName": "ENGAW",
-          "score": "112/4 (16 Ov)"
-        }
-      ],
-      "dateLabel": "25 Jun 2026, 11:00 pm",
-      "time": "",
-      "place": "County Ground, Chelmsford",
-      "overview": "England A Women won by 6 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155133",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-06-25T17:30:00.000Z",
-      "rawId": 155133,
-      "starPerformers": []
-    },
-    {
       "id": "recent-156680",
       "status": "recent",
       "statusLabel": "Past",
@@ -34210,9 +34146,9 @@
       "label": "Women",
       "order": 3,
       "live": 0,
-      "recent": 31,
+      "recent": 30,
       "upcoming": 25,
-      "total": 56
+      "total": 55
     },
     {
       "id": "domestic",
