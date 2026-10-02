@@ -246,6 +246,10 @@ function buildMatches(rawMatches) {
       venueId: Number(match.ground_id || 0),
       city: match.city_name || "",
       cityId: Number(match.city_id || 0),
+      teamAId: Number(match.team_a_id || 0),
+      teamA: match.team_a || "",
+      teamBId: Number(match.team_b_id || 0),
+      teamB: match.team_b || "",
       opponentId: opponent.teamId,
       opponent: opponent.team,
       opponentLogo: opponent.logo,
@@ -299,9 +303,13 @@ function buildMatches(rawMatches) {
 
 async function fetchScorecardSummary(match) {
   try {
-    const text = await fetchFlightText(match.scorecardUrl);
+    const fullScorecardUrl = match.scorecardUrl.replace(/\/summary\/?$/, "/scorecard");
+    const text = await fetchFlightText(fullScorecardUrl);
     const summary = extractJsonValue(text, "summaryData");
-    return summary?.data || null;
+    const fullScorecard = extractJsonValue(text, "scoreCardData");
+    return summary?.data
+      ? { ...summary.data, scoreCardData: Array.isArray(fullScorecard) ? fullScorecard : [] }
+      : null;
   } catch (error) {
     console.warn(`Scorecard unavailable for ${match.id}: ${error.message}`);
     return null;
@@ -324,27 +332,42 @@ async function mapWithConcurrency(items, limit, callback) {
 
 function normalizeBestPerformances(summaryData) {
   const best = summaryData?.best_performances || {};
+  const scoreCardData = Array.isArray(summaryData?.scoreCardData) ? summaryData.scoreCardData : [];
+  const fullRows = (key) => scoreCardData.flatMap((team) => {
+    const bowlingTeam = key === "bowling"
+      ? scoreCardData.find((candidate) => Number(candidate.team_id) !== Number(team.team_id))
+      : null;
+    const rowTeam = bowlingTeam || team;
+    return Array.isArray(team[key])
+      ? team[key].map((row) => ({
+          ...row,
+          team_id: row.team_id || rowTeam?.team_id,
+          team_name: row.team_name || rowTeam?.teamName,
+        }))
+      : [];
+  });
+  const battingRows = fullRows("batting");
+  const bowlingRows = fullRows("bowling");
+  const batting = battingRows.length ? battingRows : Array.isArray(best.batting) ? best.batting : [];
+  const bowling = bowlingRows.length ? bowlingRows : Array.isArray(best.bowling) ? best.bowling : [];
   return {
-    batting: Array.isArray(best.batting)
-      ? best.batting.map((row) => ({
+    batting: batting.map((row) => ({
           teamId: Number(row.team_id || 0),
           teamName: row.team_name || "",
           playerId: Number(row.player_id || 0),
-          playerName: row.player_name || "",
+          playerName: row.player_name || row.name || "",
           runs: Number(row.runs || 0),
           balls: Number(row.balls || 0),
           fours: Number(row["4s"] || 0),
           sixes: Number(row["6s"] || 0),
-          strikeRate: row.strike_rate || "",
+          strikeRate: row.strike_rate || row.SR || "",
           isOut: Boolean(row.is_out),
-        }))
-      : [],
-    bowling: Array.isArray(best.bowling)
-      ? best.bowling.map((row) => ({
+        })),
+    bowling: bowling.map((row) => ({
           teamId: Number(row.team_id || 0),
           teamName: row.team_name || "",
           playerId: Number(row.player_id || 0),
-          playerName: row.player_name || "",
+          playerName: row.player_name || row.name || "",
           overs: row.overs || "",
           balls: Number(row.balls || 0),
           maidens: Number(row.maidens || 0),
@@ -352,8 +375,7 @@ function normalizeBestPerformances(summaryData) {
           runs: Number(row.runs || 0),
           wickets: Number(row.wickets || 0),
           economyRate: row.economy_rate || "",
-        }))
-      : [],
+        })),
     notes: [
       ...(Array.isArray(summaryData?.match_notes) ? summaryData.match_notes : []),
       ...(Array.isArray(summaryData?.scorer_notes) ? summaryData.scorer_notes : []),
@@ -584,6 +606,50 @@ function playerPerformanceFromScorecard(player, match, scorecard) {
     highlight: highlights.join(" • "),
     scorecardUrl: match.scorecardUrl,
   };
+}
+
+function attachLatestTeamScorecard(players, recentMatches) {
+  const latest = recentMatches.find((match) => (
+    match.scorecard?.batting?.length || match.scorecard?.bowling?.length
+  ));
+  if (!latest) return;
+
+  for (const player of players) {
+    const performance = playerPerformanceFromScorecard(player, latest, latest.scorecard);
+    if (Number(performance.teamId) !== TEAM_ID) {
+      player.recentMatches = (player.recentMatches || []).filter((match) => Number(match.id) !== Number(latest.id));
+      player.matchHistory = (player.matchHistory || []).filter((match) => Number(match.id) !== Number(latest.id));
+      player.recentHighlights = player.recentMatches.filter((match) => match.performance?.highlight).slice(0, 3);
+      continue;
+    }
+
+    const latestMatch = {
+      id: latest.id,
+      date: latest.date,
+      status: latest.status,
+      matchType: latest.matchType,
+      ballType: latest.ballType,
+      venue: latest.venue,
+      city: latest.city,
+      teamAId: latest.teamAId,
+      teamA: latest.teamA,
+      teamBId: latest.teamBId,
+      teamB: latest.teamB,
+      winningTeamId: latest.winner === latest.teamA ? latest.teamAId : latest.winner === latest.teamB ? latest.teamBId : 0,
+      winningTeam: latest.winner,
+      resultText: latest.resultText,
+      teamAScore: latest.teamAId === TEAM_ID ? latest.ourScore : latest.opponentScore,
+      teamBScore: latest.teamBId === TEAM_ID ? latest.ourScore : latest.opponentScore,
+      scorecardUrl: latest.scorecardUrl,
+      playerId: Number(player.id),
+      performance,
+    };
+    const existing = (player.recentMatches || []).filter((match) => Number(match.id) !== Number(latest.id));
+    player.recentMatches = [latestMatch, ...existing].slice(0, 6);
+    const history = (player.matchHistory || []).filter((match) => Number(match.id) !== Number(latest.id));
+    player.matchHistory = [latestMatch, ...history];
+    player.recentHighlights = player.recentMatches.filter((match) => match.performance?.highlight).slice(0, 3);
+  }
 }
 
 async function hydratePlayerProfiles(players, previousPlayers = [], refreshCursor = 0) {
@@ -1206,11 +1272,13 @@ function buildAwardsLedger(players, matches) {
         const playerId = Number(match.awards?.[label.key] || 0);
         if (!playerId) return null;
         const player = byId.get(playerId);
+        const scorecardPlayer = [...(match.scorecard?.batting || []), ...(match.scorecard?.bowling || [])]
+          .find((row) => Number(row.playerId) === playerId);
         return {
           id: `${match.id}-${label.key}`,
           label: label.text,
           playerId,
-          playerName: player?.name || "Opponent player",
+          playerName: player?.name || scorecardPlayer?.playerName || "Opponent player",
           playerPhoto: player?.photo || "",
           side: player ? "Kurukshetra Warriors" : match.opponent,
           matchId: match.id,
@@ -1393,6 +1461,7 @@ async function main() {
   );
   const refreshCursor = players.length ? Number(previousFeed?.playerSyncCursor || 0) % players.length : 0;
   await hydratePlayerProfiles(players, previousFeed?.players || [], refreshCursor);
+  attachLatestTeamScorecard(players, recentMatches);
   const team = normalizeTeam(teamDetails, rawMembers, players);
   const teamRecordCandidates = aggregatePlayerStats(players, recentMatches);
   const overallRecordCandidates = extractPlayerRecentRecordCandidates(players);
