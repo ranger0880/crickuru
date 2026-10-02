@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-02T15:06:00.625Z",
-  "lastCheckedAt": "2026-10-02T15:06:00.625Z",
-  "lastSuccessfulSyncAt": "2026-10-02T15:06:00.625Z",
+  "syncedAt": "2026-10-02T19:54:36.487Z",
+  "lastCheckedAt": "2026-10-02T19:54:36.487Z",
+  "lastSuccessfulSyncAt": "2026-10-02T19:54:36.487Z",
   "coverage": {
     "pathways": [
       "India",
@@ -43,8 +43,8 @@
   "summary": {
     "live": 1,
     "recent": 59,
-    "upcoming": 485,
-    "total": 545
+    "upcoming": 486,
+    "total": 546
   },
   "all": [
     {
@@ -170,6 +170,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-03T08:30:00.000Z",
       "rawId": 151554
+    },
+    {
+      "id": "upcoming-174313",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "India Champions vs Australia Champions, 1st Match",
+      "series": "World Championship of Legends 2026",
+      "teams": [
+        {
+          "name": "India Champions",
+          "shortName": "INDCH",
+          "score": ""
+        },
+        {
+          "name": "Australia Champions",
+          "shortName": "AUSCH",
+          "score": ""
+        }
+      ],
+      "dateLabel": "03 Oct 2026, 05:00 pm",
+      "time": "",
+      "place": "Sharjah Cricket Stadium, Sharjah",
+      "overview": "Match starts at Oct 03, 11:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174313",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-03T11:30:00.000Z",
+      "rawId": 174313
     },
     {
       "id": "upcoming-155510",
@@ -15119,15 +15150,15 @@
       "statusLabel": "Past",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-men",
       "title": "India vs Sri Lanka, 2nd Semi-Final",
       "series": "Asian Games 2026",
       "teams": [
         {
           "name": "India",
           "shortName": "IND",
-          "score": "169/7 (19.6 Ov)"
+          "score": "169/7 (20 Ov)"
         },
         {
           "name": "Sri Lanka",
@@ -15140,7 +15171,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "India won by 124 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171060",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-10-01T04:30:00.000Z",
       "rawId": 171060,
       "starPerformers": []
@@ -17177,6 +17208,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-03T08:30:00.000Z",
       "rawId": 151554
+    },
+    {
+      "id": "upcoming-174313",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "India Champions vs Australia Champions, 1st Match",
+      "series": "World Championship of Legends 2026",
+      "teams": [
+        {
+          "name": "India Champions",
+          "shortName": "INDCH",
+          "score": ""
+        },
+        {
+          "name": "Australia Champions",
+          "shortName": "AUSCH",
+          "score": ""
+        }
+      ],
+      "dateLabel": "03 Oct 2026, 05:00 pm",
+      "time": "",
+      "place": "Sharjah Cricket Stadium, Sharjah",
+      "overview": "Match starts at Oct 03, 11:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174313",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-03T11:30:00.000Z",
+      "rawId": 174313
     },
     {
       "id": "upcoming-155510",
@@ -32128,15 +32190,15 @@
       "statusLabel": "Past",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-men",
       "title": "India vs Sri Lanka, 2nd Semi-Final",
       "series": "Asian Games 2026",
       "teams": [
         {
           "name": "India",
           "shortName": "IND",
-          "score": "169/7 (19.6 Ov)"
+          "score": "169/7 (20 Ov)"
         },
         {
           "name": "Sri Lanka",
@@ -32149,7 +32211,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "India won by 124 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171060",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-10-01T04:30:00.000Z",
       "rawId": 171060,
       "starPerformers": []
@@ -34076,8 +34138,8 @@
       "order": 2,
       "live": 0,
       "recent": 0,
-      "upcoming": 0,
-      "total": 0
+      "upcoming": 1,
+      "total": 1
     },
     {
       "id": "women",
@@ -40825,15 +40887,15 @@
       "statusLabel": "Past",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-men",
       "title": "India vs Sri Lanka, 2nd Semi-Final",
       "series": "Asian Games 2026",
       "teams": [
         {
           "name": "India",
           "shortName": "IND",
-          "score": "169/7 (19.6 Ov)"
+          "score": "169/7 (20 Ov)"
         },
         {
           "name": "Sri Lanka",
@@ -40846,7 +40908,7 @@
       "place": "Korogi Sports Park, Nisshin",
       "overview": "India won by 124 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171060",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-10-01T04:30:00.000Z",
       "rawId": 171060,
       "starPerformers": [],
@@ -47861,15 +47923,15 @@
           "statusLabel": "Past",
           "level": "international",
           "levelLabel": "International",
-          "sourceType": "International",
-          "sourceScope": "global",
+          "sourceType": "",
+          "sourceScope": "india-men",
           "title": "India vs Sri Lanka, 2nd Semi-Final",
           "series": "Asian Games 2026",
           "teams": [
             {
               "name": "India",
               "shortName": "IND",
-              "score": "169/7 (19.6 Ov)"
+              "score": "169/7 (20 Ov)"
             },
             {
               "name": "Sri Lanka",
@@ -47882,7 +47944,7 @@
           "place": "Korogi Sports Park, Nisshin",
           "overview": "India won by 124 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171060",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
           "startTime": "2026-10-01T04:30:00.000Z",
           "rawId": 171060,
           "starPerformers": [],
@@ -48221,15 +48283,15 @@
           "statusLabel": "Past",
           "level": "international",
           "levelLabel": "International",
-          "sourceType": "International",
-          "sourceScope": "global",
+          "sourceType": "",
+          "sourceScope": "india-men",
           "title": "India vs Sri Lanka, 2nd Semi-Final",
           "series": "Asian Games 2026",
           "teams": [
             {
               "name": "India",
               "shortName": "IND",
-              "score": "169/7 (19.6 Ov)"
+              "score": "169/7 (20 Ov)"
             },
             {
               "name": "Sri Lanka",
@@ -48242,7 +48304,7 @@
           "place": "Korogi Sports Park, Nisshin",
           "overview": "India won by 124 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171060",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
           "startTime": "2026-10-01T04:30:00.000Z",
           "rawId": 171060,
           "starPerformers": [],
