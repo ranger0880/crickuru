@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-03T13:17:39.770Z",
-  "lastCheckedAt": "2026-10-03T13:17:39.770Z",
-  "lastSuccessfulSyncAt": "2026-10-03T13:17:39.770Z",
+  "syncedAt": "2026-10-03T17:24:56.661Z",
+  "lastCheckedAt": "2026-10-03T17:24:56.661Z",
+  "lastSuccessfulSyncAt": "2026-10-03T17:24:56.661Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,8 +41,8 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 3,
-    "recent": 59,
+    "live": 2,
+    "recent": 60,
     "upcoming": 483,
     "total": 545
   },
@@ -97,48 +97,17 @@
         {
           "name": "West Indies",
           "shortName": "WI",
-          "score": "5 (0.3 Ov)"
+          "score": "330/5 (47.2 Ov)"
         }
       ],
       "dateLabel": "03 Oct 2026, 02:00 pm",
       "time": "",
       "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
-      "overview": "West Indies need 347 runs",
+      "overview": "West Indies need 22 runs in 16 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151554",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-03T08:30:00.000Z",
       "rawId": 151554
-    },
-    {
-      "id": "live-174313",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "India Champions vs Australia Champions, 1st Match",
-      "series": "World Championship of Legends 2026",
-      "teams": [
-        {
-          "name": "India Champions",
-          "shortName": "INDCH",
-          "score": "196/7 (19.6 Ov)"
-        },
-        {
-          "name": "Australia Champions",
-          "shortName": "AUSCH",
-          "score": "6 (0.1 Ov)"
-        }
-      ],
-      "dateLabel": "03 Oct 2026, 05:00 pm",
-      "time": "",
-      "place": "Sharjah Cricket Stadium, Sharjah",
-      "overview": "Australia Champions need 191 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174313",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-03T11:30:00.000Z",
-      "rawId": 174313
     },
     {
       "id": "upcoming-171030",
@@ -15114,6 +15083,38 @@
       "rawId": 174701
     },
     {
+      "id": "recent-174313",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "India Champions vs Australia Champions, 1st Match",
+      "series": "World Championship of Legends 2026",
+      "teams": [
+        {
+          "name": "India Champions",
+          "shortName": "INDCH",
+          "score": "196/7 (19.6 Ov)"
+        },
+        {
+          "name": "Australia Champions",
+          "shortName": "AUSCH",
+          "score": "150/10 (16.2 Ov)"
+        }
+      ],
+      "dateLabel": "03 Oct 2026, 05:00 pm",
+      "time": "",
+      "place": "Sharjah Cricket Stadium, Sharjah",
+      "overview": "India Champions won by 46 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174313",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-03T11:30:00.000Z",
+      "rawId": 174313,
+      "starPerformers": []
+    },
+    {
       "id": "recent-171070",
       "status": "recent",
       "statusLabel": "Past",
@@ -17102,48 +17103,17 @@
         {
           "name": "West Indies",
           "shortName": "WI",
-          "score": "5 (0.3 Ov)"
+          "score": "330/5 (47.2 Ov)"
         }
       ],
       "dateLabel": "03 Oct 2026, 02:00 pm",
       "time": "",
       "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
-      "overview": "West Indies need 347 runs",
+      "overview": "West Indies need 22 runs in 16 balls",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151554",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-03T08:30:00.000Z",
       "rawId": 151554
-    },
-    {
-      "id": "live-174313",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "India Champions vs Australia Champions, 1st Match",
-      "series": "World Championship of Legends 2026",
-      "teams": [
-        {
-          "name": "India Champions",
-          "shortName": "INDCH",
-          "score": "196/7 (19.6 Ov)"
-        },
-        {
-          "name": "Australia Champions",
-          "shortName": "AUSCH",
-          "score": "6 (0.1 Ov)"
-        }
-      ],
-      "dateLabel": "03 Oct 2026, 05:00 pm",
-      "time": "",
-      "place": "Sharjah Cricket Stadium, Sharjah",
-      "overview": "Australia Champions need 191 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174313",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-03T11:30:00.000Z",
-      "rawId": 174313
     }
   ],
   "upcoming": [
@@ -32123,6 +32093,38 @@
   ],
   "recent": [
     {
+      "id": "recent-174313",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "India Champions vs Australia Champions, 1st Match",
+      "series": "World Championship of Legends 2026",
+      "teams": [
+        {
+          "name": "India Champions",
+          "shortName": "INDCH",
+          "score": "196/7 (19.6 Ov)"
+        },
+        {
+          "name": "Australia Champions",
+          "shortName": "AUSCH",
+          "score": "150/10 (16.2 Ov)"
+        }
+      ],
+      "dateLabel": "03 Oct 2026, 05:00 pm",
+      "time": "",
+      "place": "Sharjah Cricket Stadium, Sharjah",
+      "overview": "India Champions won by 46 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174313",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-03T11:30:00.000Z",
+      "rawId": 174313,
+      "starPerformers": []
+    },
+    {
       "id": "recent-171070",
       "status": "recent",
       "statusLabel": "Past",
@@ -34074,8 +34076,8 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 1,
-      "recent": 0,
+      "live": 0,
+      "recent": 1,
       "upcoming": 0,
       "total": 1
     },
