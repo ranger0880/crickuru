@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-03T08:03:26.014Z",
-  "lastCheckedAt": "2026-10-03T08:03:26.014Z",
-  "lastSuccessfulSyncAt": "2026-10-03T08:03:26.014Z",
+  "syncedAt": "2026-10-03T13:17:39.770Z",
+  "lastCheckedAt": "2026-10-03T13:17:39.770Z",
+  "lastSuccessfulSyncAt": "2026-10-03T13:17:39.770Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,74 +41,12 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 4,
-    "recent": 57,
-    "upcoming": 485,
-    "total": 546
+    "live": 3,
+    "recent": 59,
+    "upcoming": 483,
+    "total": 545
   },
   "all": [
-    {
-      "id": "live-155422",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-a",
-      "title": "Australia A vs India A, 2nd unofficial Test",
-      "series": "Australia A tour of India 2026",
-      "teams": [
-        {
-          "name": "Australia A",
-          "shortName": "AUSA",
-          "score": "358/10 (116.3 Ov) & 173/4 (49 Ov)"
-        },
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": "167/10 (68 Ov) & 200/7 (61.4 Ov)"
-        }
-      ],
-      "dateLabel": "29 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Day 4: 2nd Session - India A need 165 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155422",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
-      "startTime": "2026-09-29T04:00:00.000Z",
-      "rawId": 155422
-    },
-    {
-      "id": "live-155650",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "India A Women vs Australia A Women, Only unofficial Test",
-      "series": "Australia A Women tour of India 2026",
-      "teams": [
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "351/9 (100 Ov)"
-        },
-        {
-          "name": "Australia A Women",
-          "shortName": "AUSWA",
-          "score": ""
-        }
-      ],
-      "dateLabel": "29 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-      "overview": "Day 1: Stumps",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155650",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
-      "startTime": "2026-09-29T04:00:00.000Z",
-      "rawId": 155650
-    },
     {
       "id": "live-163077",
       "status": "live",
@@ -123,7 +61,7 @@
         {
           "name": "Rest of India",
           "shortName": "ROI",
-          "score": "237/10 (68.1 Ov) & 131/5 (53.6 Ov)"
+          "score": "237/10 (68.1 Ov) & 306/8 (93.6 Ov)"
         },
         {
           "name": "Jammu and Kashmir",
@@ -134,42 +72,73 @@
       "dateLabel": "01 Oct 2026, 09:30 am",
       "time": "",
       "place": "Sher-i-Kashmir Stadium, Srinagar",
-      "overview": "Day 3: 2nd Session - Rest of India lead by 90 runs",
+      "overview": "Day 3: Stumps - Rest of India lead by 265 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-01T04:00:00.000Z",
       "rawId": 163077
     },
     {
-      "id": "live-171070",
+      "id": "live-151554",
       "status": "live",
       "statusLabel": "Live",
       "level": "international",
       "levelLabel": "International",
       "sourceType": "International",
       "sourceScope": "global",
-      "title": "India vs Pakistan, Gold Medal Match",
-      "series": "Asian Games 2026",
+      "title": "India vs West Indies, 3rd ODI",
+      "series": "West Indies tour of India, 2026",
       "teams": [
         {
           "name": "India",
           "shortName": "IND",
-          "score": "211/6 (19.6 Ov)"
+          "score": "351/7 (49.6 Ov)"
         },
         {
-          "name": "Pakistan",
-          "shortName": "PAK",
-          "score": "161/4 (17.1 Ov)"
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": "5 (0.3 Ov)"
         }
       ],
-      "dateLabel": "03 Oct 2026, 10:00 am",
+      "dateLabel": "03 Oct 2026, 02:00 pm",
       "time": "",
-      "place": "Korogi Sports Park, Nisshin",
-      "overview": "Pakistan need 51 runs in 17 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171070",
+      "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+      "overview": "West Indies need 347 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151554",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-03T04:30:00.000Z",
-      "rawId": 171070
+      "startTime": "2026-10-03T08:30:00.000Z",
+      "rawId": 151554
+    },
+    {
+      "id": "live-174313",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "India Champions vs Australia Champions, 1st Match",
+      "series": "World Championship of Legends 2026",
+      "teams": [
+        {
+          "name": "India Champions",
+          "shortName": "INDCH",
+          "score": "196/7 (19.6 Ov)"
+        },
+        {
+          "name": "Australia Champions",
+          "shortName": "AUSCH",
+          "score": "6 (0.1 Ov)"
+        }
+      ],
+      "dateLabel": "03 Oct 2026, 05:00 pm",
+      "time": "",
+      "place": "Sharjah Cricket Stadium, Sharjah",
+      "overview": "Australia Champions need 191 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174313",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-03T11:30:00.000Z",
+      "rawId": 174313
     },
     {
       "id": "upcoming-171030",
@@ -201,68 +170,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
-    },
-    {
-      "id": "upcoming-151554",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India vs West Indies, 3rd ODI",
-      "series": "West Indies tour of India, 2026",
-      "teams": [
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": ""
-        },
-        {
-          "name": "West Indies",
-          "shortName": "WI",
-          "score": ""
-        }
-      ],
-      "dateLabel": "03 Oct 2026, 02:00 pm",
-      "time": "",
-      "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
-      "overview": "Match starts at Oct 03, 08:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151554",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-03T08:30:00.000Z",
-      "rawId": 151554
-    },
-    {
-      "id": "upcoming-174313",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "India Champions vs Australia Champions, 1st Match",
-      "series": "World Championship of Legends 2026",
-      "teams": [
-        {
-          "name": "India Champions",
-          "shortName": "INDCH",
-          "score": ""
-        },
-        {
-          "name": "Australia Champions",
-          "shortName": "AUSCH",
-          "score": ""
-        }
-      ],
-      "dateLabel": "03 Oct 2026, 05:00 pm",
-      "time": "",
-      "place": "Sharjah Cricket Stadium, Sharjah",
-      "overview": "Match starts at Oct 03, 11:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174313",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-03T11:30:00.000Z",
-      "rawId": 174313
     },
     {
       "id": "upcoming-155510",
@@ -15207,6 +15114,38 @@
       "rawId": 174701
     },
     {
+      "id": "recent-171070",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "India vs Pakistan, Gold Medal Match",
+      "series": "Asian Games 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "211/6 (19.6 Ov)"
+        },
+        {
+          "name": "Pakistan",
+          "shortName": "PAK",
+          "score": "192/6 (19.6 Ov)"
+        }
+      ],
+      "dateLabel": "03 Oct 2026, 10:00 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "India won by 19 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171070",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-03T04:30:00.000Z",
+      "rawId": 171070,
+      "starPerformers": []
+    },
+    {
       "id": "recent-171060",
       "status": "recent",
       "statusLabel": "Past",
@@ -15268,6 +15207,70 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-30T08:30:00.000Z",
       "rawId": 151543,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-155650",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-a-women",
+      "title": "India A Women vs Australia A Women, Only unofficial Test",
+      "series": "Australia A Women tour of India 2026",
+      "teams": [
+        {
+          "name": "India A Women",
+          "shortName": "INDWA",
+          "score": "364/10 (103.3 Ov) & 257/10 (64.2 Ov)"
+        },
+        {
+          "name": "Australia A Women",
+          "shortName": "AUSWA",
+          "score": "176/10 (63.4 Ov) & 164/10 (76 Ov)"
+        }
+      ],
+      "dateLabel": "29 Sept 2026, 09:30 am",
+      "time": "",
+      "place": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
+      "overview": "India A Women won by 281 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155650",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
+      "startTime": "2026-09-29T04:00:00.000Z",
+      "rawId": 155650,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-155422",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-a",
+      "title": "Australia A vs India A, 2nd unofficial Test",
+      "series": "Australia A tour of India 2026",
+      "teams": [
+        {
+          "name": "Australia A",
+          "shortName": "AUSA",
+          "score": "358/10 (116.3 Ov) & 173/4 (49 Ov)"
+        },
+        {
+          "name": "India A",
+          "shortName": "INDA",
+          "score": "167/10 (68 Ov) & 310/9 (103 Ov)"
+        }
+      ],
+      "dateLabel": "29 Sept 2026, 09:30 am",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "Match drawn",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155422",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
+      "startTime": "2026-09-29T04:00:00.000Z",
+      "rawId": 155422,
       "starPerformers": []
     },
     {
@@ -16089,38 +16092,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-08-23T04:30:00.000Z",
       "rawId": 163017,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-163013",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
-      "title": "India vs Sri Lanka, 1st Test",
-      "series": "India tour of Sri Lanka 2026",
-      "teams": [
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": "462/10 (116.4 Ov) & 193/10 (48.5 Ov)"
-        },
-        {
-          "name": "Sri Lanka",
-          "shortName": "SL",
-          "score": "284/10 (79.4 Ov) & 206/10 (77.4 Ov)"
-        }
-      ],
-      "dateLabel": "15 Aug 2026, 10:00 am",
-      "time": "",
-      "place": "Galle International Stadium, Galle",
-      "overview": "India won by 165 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163013",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
-      "startTime": "2026-08-15T04:30:00.000Z",
-      "rawId": 163013,
       "starPerformers": []
     },
     {
@@ -17082,68 +17053,6 @@
   ],
   "live": [
     {
-      "id": "live-155422",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-a",
-      "title": "Australia A vs India A, 2nd unofficial Test",
-      "series": "Australia A tour of India 2026",
-      "teams": [
-        {
-          "name": "Australia A",
-          "shortName": "AUSA",
-          "score": "358/10 (116.3 Ov) & 173/4 (49 Ov)"
-        },
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": "167/10 (68 Ov) & 200/7 (61.4 Ov)"
-        }
-      ],
-      "dateLabel": "29 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Day 4: 2nd Session - India A need 165 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155422",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
-      "startTime": "2026-09-29T04:00:00.000Z",
-      "rawId": 155422
-    },
-    {
-      "id": "live-155650",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "India A Women vs Australia A Women, Only unofficial Test",
-      "series": "Australia A Women tour of India 2026",
-      "teams": [
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "351/9 (100 Ov)"
-        },
-        {
-          "name": "Australia A Women",
-          "shortName": "AUSWA",
-          "score": ""
-        }
-      ],
-      "dateLabel": "29 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-      "overview": "Day 1: Stumps",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155650",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
-      "startTime": "2026-09-29T04:00:00.000Z",
-      "rawId": 155650
-    },
-    {
       "id": "live-163077",
       "status": "live",
       "statusLabel": "Live",
@@ -17157,7 +17066,7 @@
         {
           "name": "Rest of India",
           "shortName": "ROI",
-          "score": "237/10 (68.1 Ov) & 131/5 (53.6 Ov)"
+          "score": "237/10 (68.1 Ov) & 306/8 (93.6 Ov)"
         },
         {
           "name": "Jammu and Kashmir",
@@ -17168,42 +17077,73 @@
       "dateLabel": "01 Oct 2026, 09:30 am",
       "time": "",
       "place": "Sher-i-Kashmir Stadium, Srinagar",
-      "overview": "Day 3: 2nd Session - Rest of India lead by 90 runs",
+      "overview": "Day 3: Stumps - Rest of India lead by 265 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-01T04:00:00.000Z",
       "rawId": 163077
     },
     {
-      "id": "live-171070",
+      "id": "live-151554",
       "status": "live",
       "statusLabel": "Live",
       "level": "international",
       "levelLabel": "International",
       "sourceType": "International",
       "sourceScope": "global",
-      "title": "India vs Pakistan, Gold Medal Match",
-      "series": "Asian Games 2026",
+      "title": "India vs West Indies, 3rd ODI",
+      "series": "West Indies tour of India, 2026",
       "teams": [
         {
           "name": "India",
           "shortName": "IND",
-          "score": "211/6 (19.6 Ov)"
+          "score": "351/7 (49.6 Ov)"
         },
         {
-          "name": "Pakistan",
-          "shortName": "PAK",
-          "score": "161/4 (17.1 Ov)"
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": "5 (0.3 Ov)"
         }
       ],
-      "dateLabel": "03 Oct 2026, 10:00 am",
+      "dateLabel": "03 Oct 2026, 02:00 pm",
       "time": "",
-      "place": "Korogi Sports Park, Nisshin",
-      "overview": "Pakistan need 51 runs in 17 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171070",
+      "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+      "overview": "West Indies need 347 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151554",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-03T04:30:00.000Z",
-      "rawId": 171070
+      "startTime": "2026-10-03T08:30:00.000Z",
+      "rawId": 151554
+    },
+    {
+      "id": "live-174313",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "India Champions vs Australia Champions, 1st Match",
+      "series": "World Championship of Legends 2026",
+      "teams": [
+        {
+          "name": "India Champions",
+          "shortName": "INDCH",
+          "score": "196/7 (19.6 Ov)"
+        },
+        {
+          "name": "Australia Champions",
+          "shortName": "AUSCH",
+          "score": "6 (0.1 Ov)"
+        }
+      ],
+      "dateLabel": "03 Oct 2026, 05:00 pm",
+      "time": "",
+      "place": "Sharjah Cricket Stadium, Sharjah",
+      "overview": "Australia Champions need 191 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174313",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-03T11:30:00.000Z",
+      "rawId": 174313
     }
   ],
   "upcoming": [
@@ -17237,68 +17177,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
-    },
-    {
-      "id": "upcoming-151554",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India vs West Indies, 3rd ODI",
-      "series": "West Indies tour of India, 2026",
-      "teams": [
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": ""
-        },
-        {
-          "name": "West Indies",
-          "shortName": "WI",
-          "score": ""
-        }
-      ],
-      "dateLabel": "03 Oct 2026, 02:00 pm",
-      "time": "",
-      "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
-      "overview": "Match starts at Oct 03, 08:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151554",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-03T08:30:00.000Z",
-      "rawId": 151554
-    },
-    {
-      "id": "upcoming-174313",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "India Champions vs Australia Champions, 1st Match",
-      "series": "World Championship of Legends 2026",
-      "teams": [
-        {
-          "name": "India Champions",
-          "shortName": "INDCH",
-          "score": ""
-        },
-        {
-          "name": "Australia Champions",
-          "shortName": "AUSCH",
-          "score": ""
-        }
-      ],
-      "dateLabel": "03 Oct 2026, 05:00 pm",
-      "time": "",
-      "place": "Sharjah Cricket Stadium, Sharjah",
-      "overview": "Match starts at Oct 03, 11:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174313",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-03T11:30:00.000Z",
-      "rawId": 174313
     },
     {
       "id": "upcoming-155510",
@@ -32245,6 +32123,38 @@
   ],
   "recent": [
     {
+      "id": "recent-171070",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "India vs Pakistan, Gold Medal Match",
+      "series": "Asian Games 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "211/6 (19.6 Ov)"
+        },
+        {
+          "name": "Pakistan",
+          "shortName": "PAK",
+          "score": "192/6 (19.6 Ov)"
+        }
+      ],
+      "dateLabel": "03 Oct 2026, 10:00 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "India won by 19 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171070",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-03T04:30:00.000Z",
+      "rawId": 171070,
+      "starPerformers": []
+    },
+    {
       "id": "recent-171060",
       "status": "recent",
       "statusLabel": "Past",
@@ -32306,6 +32216,70 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-30T08:30:00.000Z",
       "rawId": 151543,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-155650",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-a-women",
+      "title": "India A Women vs Australia A Women, Only unofficial Test",
+      "series": "Australia A Women tour of India 2026",
+      "teams": [
+        {
+          "name": "India A Women",
+          "shortName": "INDWA",
+          "score": "364/10 (103.3 Ov) & 257/10 (64.2 Ov)"
+        },
+        {
+          "name": "Australia A Women",
+          "shortName": "AUSWA",
+          "score": "176/10 (63.4 Ov) & 164/10 (76 Ov)"
+        }
+      ],
+      "dateLabel": "29 Sept 2026, 09:30 am",
+      "time": "",
+      "place": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
+      "overview": "India A Women won by 281 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155650",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
+      "startTime": "2026-09-29T04:00:00.000Z",
+      "rawId": 155650,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-155422",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-a",
+      "title": "Australia A vs India A, 2nd unofficial Test",
+      "series": "Australia A tour of India 2026",
+      "teams": [
+        {
+          "name": "Australia A",
+          "shortName": "AUSA",
+          "score": "358/10 (116.3 Ov) & 173/4 (49 Ov)"
+        },
+        {
+          "name": "India A",
+          "shortName": "INDA",
+          "score": "167/10 (68 Ov) & 310/9 (103 Ov)"
+        }
+      ],
+      "dateLabel": "29 Sept 2026, 09:30 am",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "Match drawn",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155422",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
+      "startTime": "2026-09-29T04:00:00.000Z",
+      "rawId": 155422,
       "starPerformers": []
     },
     {
@@ -33127,38 +33101,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-08-23T04:30:00.000Z",
       "rawId": 163017,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-163013",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
-      "title": "India vs Sri Lanka, 1st Test",
-      "series": "India tour of Sri Lanka 2026",
-      "teams": [
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": "462/10 (116.4 Ov) & 193/10 (48.5 Ov)"
-        },
-        {
-          "name": "Sri Lanka",
-          "shortName": "SL",
-          "score": "284/10 (79.4 Ov) & 206/10 (77.4 Ov)"
-        }
-      ],
-      "dateLabel": "15 Aug 2026, 10:00 am",
-      "time": "",
-      "place": "Galle International Stadium, Galle",
-      "overview": "India won by 165 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163013",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
-      "startTime": "2026-08-15T04:30:00.000Z",
-      "rawId": 163013,
       "starPerformers": []
     },
     {
@@ -34123,26 +34065,26 @@
       "id": "international",
       "label": "International",
       "order": 1,
-      "live": 2,
-      "recent": 28,
-      "upcoming": 47,
-      "total": 77
+      "live": 1,
+      "recent": 29,
+      "upcoming": 46,
+      "total": 76
     },
     {
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 0,
+      "live": 1,
       "recent": 0,
-      "upcoming": 1,
+      "upcoming": 0,
       "total": 1
     },
     {
       "id": "women",
       "label": "Women",
       "order": 3,
-      "live": 1,
-      "recent": 29,
+      "live": 0,
+      "recent": 30,
       "upcoming": 25,
       "total": 55
     },
@@ -34171,7 +34113,7 @@
         {
           "name": "Rest of India",
           "shortName": "ROI",
-          "score": "237/10 (68.1 Ov) & 131/5 (53.6 Ov)"
+          "score": "237/10 (68.1 Ov) & 306/8 (93.6 Ov)"
         },
         {
           "name": "Jammu and Kashmir",
@@ -34182,7 +34124,7 @@
       "dateLabel": "01 Oct 2026, 09:30 am",
       "time": "",
       "place": "Sher-i-Kashmir Stadium, Srinagar",
-      "overview": "Day 3: 2nd Session - Rest of India lead by 90 runs",
+      "overview": "Day 3: Stumps - Rest of India lead by 265 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-01T04:00:00.000Z",
@@ -47974,7 +47916,7 @@
             {
               "name": "Rest of India",
               "shortName": "ROI",
-              "score": "237/10 (68.1 Ov) & 131/5 (53.6 Ov)"
+              "score": "237/10 (68.1 Ov) & 306/8 (93.6 Ov)"
             },
             {
               "name": "Jammu and Kashmir",
@@ -47985,7 +47927,7 @@
           "dateLabel": "01 Oct 2026, 09:30 am",
           "time": "",
           "place": "Sher-i-Kashmir Stadium, Srinagar",
-          "overview": "Day 3: 2nd Session - Rest of India lead by 90 runs",
+          "overview": "Day 3: Stumps - Rest of India lead by 265 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-10-01T04:00:00.000Z",
