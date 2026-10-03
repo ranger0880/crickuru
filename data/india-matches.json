@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-03T02:10:10.093Z",
-  "lastCheckedAt": "2026-10-03T02:10:10.093Z",
-  "lastSuccessfulSyncAt": "2026-10-03T02:10:10.093Z",
+  "syncedAt": "2026-10-03T08:03:26.014Z",
+  "lastCheckedAt": "2026-10-03T08:03:26.014Z",
+  "lastSuccessfulSyncAt": "2026-10-03T08:03:26.014Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,12 +41,74 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 1,
-    "recent": 59,
-    "upcoming": 486,
+    "live": 4,
+    "recent": 57,
+    "upcoming": 485,
     "total": 546
   },
   "all": [
+    {
+      "id": "live-155422",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-a",
+      "title": "Australia A vs India A, 2nd unofficial Test",
+      "series": "Australia A tour of India 2026",
+      "teams": [
+        {
+          "name": "Australia A",
+          "shortName": "AUSA",
+          "score": "358/10 (116.3 Ov) & 173/4 (49 Ov)"
+        },
+        {
+          "name": "India A",
+          "shortName": "INDA",
+          "score": "167/10 (68 Ov) & 200/7 (61.4 Ov)"
+        }
+      ],
+      "dateLabel": "29 Sept 2026, 09:30 am",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "Day 4: 2nd Session - India A need 165 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155422",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
+      "startTime": "2026-09-29T04:00:00.000Z",
+      "rawId": 155422
+    },
+    {
+      "id": "live-155650",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-a-women",
+      "title": "India A Women vs Australia A Women, Only unofficial Test",
+      "series": "Australia A Women tour of India 2026",
+      "teams": [
+        {
+          "name": "India A Women",
+          "shortName": "INDWA",
+          "score": "351/9 (100 Ov)"
+        },
+        {
+          "name": "Australia A Women",
+          "shortName": "AUSWA",
+          "score": ""
+        }
+      ],
+      "dateLabel": "29 Sept 2026, 09:30 am",
+      "time": "",
+      "place": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
+      "overview": "Day 1: Stumps",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155650",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
+      "startTime": "2026-09-29T04:00:00.000Z",
+      "rawId": 155650
+    },
     {
       "id": "live-163077",
       "status": "live",
@@ -61,7 +123,7 @@
         {
           "name": "Rest of India",
           "shortName": "ROI",
-          "score": "237/10 (68.1 Ov) & 24/1 (14.6 Ov)"
+          "score": "237/10 (68.1 Ov) & 131/5 (53.6 Ov)"
         },
         {
           "name": "Jammu and Kashmir",
@@ -72,11 +134,42 @@
       "dateLabel": "01 Oct 2026, 09:30 am",
       "time": "",
       "place": "Sher-i-Kashmir Stadium, Srinagar",
-      "overview": "Day 2: Stumps - Rest of India trail by 17 runs",
+      "overview": "Day 3: 2nd Session - Rest of India lead by 90 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-01T04:00:00.000Z",
       "rawId": 163077
+    },
+    {
+      "id": "live-171070",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "India vs Pakistan, Gold Medal Match",
+      "series": "Asian Games 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "211/6 (19.6 Ov)"
+        },
+        {
+          "name": "Pakistan",
+          "shortName": "PAK",
+          "score": "161/4 (17.1 Ov)"
+        }
+      ],
+      "dateLabel": "03 Oct 2026, 10:00 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "Pakistan need 51 runs in 17 balls",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171070",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-03T04:30:00.000Z",
+      "rawId": 171070
     },
     {
       "id": "upcoming-171030",
@@ -108,37 +201,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
-    },
-    {
-      "id": "upcoming-171070",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "Pakistan vs India, Gold Medal Match",
-      "series": "Asian Games 2026",
-      "teams": [
-        {
-          "name": "Pakistan",
-          "shortName": "PAK",
-          "score": ""
-        },
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": ""
-        }
-      ],
-      "dateLabel": "03 Oct 2026, 10:00 am",
-      "time": "",
-      "place": "Korogi Sports Park, Nisshin",
-      "overview": "Match starts at Oct 03, 04:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171070",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-03T04:30:00.000Z",
-      "rawId": 171070
     },
     {
       "id": "upcoming-151554",
@@ -15209,70 +15271,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-155650",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "India A Women vs Australia A Women, Only unofficial Test",
-      "series": "Australia A Women tour of India 2026",
-      "teams": [
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "364/10 (103.3 Ov) & 257/10 (64.2 Ov)"
-        },
-        {
-          "name": "Australia A Women",
-          "shortName": "AUSWA",
-          "score": "176/10 (63.4 Ov) & 164/10 (76 Ov)"
-        }
-      ],
-      "dateLabel": "29 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-      "overview": "India A Women won by 281 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155650",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-09-29T04:00:00.000Z",
-      "rawId": 155650,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-155422",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "Australia A vs India A, 2nd unofficial Test",
-      "series": "Australia A tour of India 2026",
-      "teams": [
-        {
-          "name": "Australia A",
-          "shortName": "AUSA",
-          "score": "358/10 (116.3 Ov) & 173/4 (48.6 Ov)"
-        },
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": "167/10 (67.6 Ov) & 310/9 (102.6 Ov)"
-        }
-      ],
-      "dateLabel": "29 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Match drawn",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155422",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-29T04:00:00.000Z",
-      "rawId": 155422,
-      "starPerformers": []
-    },
-    {
       "id": "recent-151532",
       "status": "recent",
       "statusLabel": "Past",
@@ -17084,6 +17082,68 @@
   ],
   "live": [
     {
+      "id": "live-155422",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-a",
+      "title": "Australia A vs India A, 2nd unofficial Test",
+      "series": "Australia A tour of India 2026",
+      "teams": [
+        {
+          "name": "Australia A",
+          "shortName": "AUSA",
+          "score": "358/10 (116.3 Ov) & 173/4 (49 Ov)"
+        },
+        {
+          "name": "India A",
+          "shortName": "INDA",
+          "score": "167/10 (68 Ov) & 200/7 (61.4 Ov)"
+        }
+      ],
+      "dateLabel": "29 Sept 2026, 09:30 am",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "Day 4: 2nd Session - India A need 165 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155422",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
+      "startTime": "2026-09-29T04:00:00.000Z",
+      "rawId": 155422
+    },
+    {
+      "id": "live-155650",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-a-women",
+      "title": "India A Women vs Australia A Women, Only unofficial Test",
+      "series": "Australia A Women tour of India 2026",
+      "teams": [
+        {
+          "name": "India A Women",
+          "shortName": "INDWA",
+          "score": "351/9 (100 Ov)"
+        },
+        {
+          "name": "Australia A Women",
+          "shortName": "AUSWA",
+          "score": ""
+        }
+      ],
+      "dateLabel": "29 Sept 2026, 09:30 am",
+      "time": "",
+      "place": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
+      "overview": "Day 1: Stumps",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155650",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
+      "startTime": "2026-09-29T04:00:00.000Z",
+      "rawId": 155650
+    },
+    {
       "id": "live-163077",
       "status": "live",
       "statusLabel": "Live",
@@ -17097,7 +17157,7 @@
         {
           "name": "Rest of India",
           "shortName": "ROI",
-          "score": "237/10 (68.1 Ov) & 24/1 (14.6 Ov)"
+          "score": "237/10 (68.1 Ov) & 131/5 (53.6 Ov)"
         },
         {
           "name": "Jammu and Kashmir",
@@ -17108,11 +17168,42 @@
       "dateLabel": "01 Oct 2026, 09:30 am",
       "time": "",
       "place": "Sher-i-Kashmir Stadium, Srinagar",
-      "overview": "Day 2: Stumps - Rest of India trail by 17 runs",
+      "overview": "Day 3: 2nd Session - Rest of India lead by 90 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-01T04:00:00.000Z",
       "rawId": 163077
+    },
+    {
+      "id": "live-171070",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "India vs Pakistan, Gold Medal Match",
+      "series": "Asian Games 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "211/6 (19.6 Ov)"
+        },
+        {
+          "name": "Pakistan",
+          "shortName": "PAK",
+          "score": "161/4 (17.1 Ov)"
+        }
+      ],
+      "dateLabel": "03 Oct 2026, 10:00 am",
+      "time": "",
+      "place": "Korogi Sports Park, Nisshin",
+      "overview": "Pakistan need 51 runs in 17 balls",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171070",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-03T04:30:00.000Z",
+      "rawId": 171070
     }
   ],
   "upcoming": [
@@ -17146,37 +17237,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
-    },
-    {
-      "id": "upcoming-171070",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "Pakistan vs India, Gold Medal Match",
-      "series": "Asian Games 2026",
-      "teams": [
-        {
-          "name": "Pakistan",
-          "shortName": "PAK",
-          "score": ""
-        },
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": ""
-        }
-      ],
-      "dateLabel": "03 Oct 2026, 10:00 am",
-      "time": "",
-      "place": "Korogi Sports Park, Nisshin",
-      "overview": "Match starts at Oct 03, 04:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171070",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-03T04:30:00.000Z",
-      "rawId": 171070
     },
     {
       "id": "upcoming-151554",
@@ -32249,70 +32309,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-155650",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "women",
-      "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-a-women",
-      "title": "India A Women vs Australia A Women, Only unofficial Test",
-      "series": "Australia A Women tour of India 2026",
-      "teams": [
-        {
-          "name": "India A Women",
-          "shortName": "INDWA",
-          "score": "364/10 (103.3 Ov) & 257/10 (64.2 Ov)"
-        },
-        {
-          "name": "Australia A Women",
-          "shortName": "AUSWA",
-          "score": "176/10 (63.4 Ov) & 164/10 (76 Ov)"
-        }
-      ],
-      "dateLabel": "29 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-      "overview": "India A Women won by 281 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155650",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
-      "startTime": "2026-09-29T04:00:00.000Z",
-      "rawId": 155650,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-155422",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "Australia A vs India A, 2nd unofficial Test",
-      "series": "Australia A tour of India 2026",
-      "teams": [
-        {
-          "name": "Australia A",
-          "shortName": "AUSA",
-          "score": "358/10 (116.3 Ov) & 173/4 (48.6 Ov)"
-        },
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": "167/10 (67.6 Ov) & 310/9 (102.6 Ov)"
-        }
-      ],
-      "dateLabel": "29 Sept 2026, 09:30 am",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Match drawn",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155422",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-09-29T04:00:00.000Z",
-      "rawId": 155422,
-      "starPerformers": []
-    },
-    {
       "id": "recent-151532",
       "status": "recent",
       "statusLabel": "Past",
@@ -34127,10 +34123,10 @@
       "id": "international",
       "label": "International",
       "order": 1,
-      "live": 0,
+      "live": 2,
       "recent": 28,
-      "upcoming": 48,
-      "total": 76
+      "upcoming": 47,
+      "total": 77
     },
     {
       "id": "league",
@@ -34145,8 +34141,8 @@
       "id": "women",
       "label": "Women",
       "order": 3,
-      "live": 0,
-      "recent": 30,
+      "live": 1,
+      "recent": 29,
       "upcoming": 25,
       "total": 55
     },
@@ -34155,9 +34151,9 @@
       "label": "Domestic / State",
       "order": 4,
       "live": 1,
-      "recent": 1,
+      "recent": 0,
       "upcoming": 412,
-      "total": 414
+      "total": 413
     }
   ],
   "importantMatches": [
@@ -34175,7 +34171,7 @@
         {
           "name": "Rest of India",
           "shortName": "ROI",
-          "score": "237/10 (68.1 Ov) & 24/1 (14.6 Ov)"
+          "score": "237/10 (68.1 Ov) & 131/5 (53.6 Ov)"
         },
         {
           "name": "Jammu and Kashmir",
@@ -34186,7 +34182,7 @@
       "dateLabel": "01 Oct 2026, 09:30 am",
       "time": "",
       "place": "Sher-i-Kashmir Stadium, Srinagar",
-      "overview": "Day 2: Stumps - Rest of India trail by 17 runs",
+      "overview": "Day 3: 2nd Session - Rest of India lead by 90 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-01T04:00:00.000Z",
@@ -47978,7 +47974,7 @@
             {
               "name": "Rest of India",
               "shortName": "ROI",
-              "score": "237/10 (68.1 Ov) & 24/1 (14.6 Ov)"
+              "score": "237/10 (68.1 Ov) & 131/5 (53.6 Ov)"
             },
             {
               "name": "Jammu and Kashmir",
@@ -47989,7 +47985,7 @@
           "dateLabel": "01 Oct 2026, 09:30 am",
           "time": "",
           "place": "Sher-i-Kashmir Stadium, Srinagar",
-          "overview": "Day 2: Stumps - Rest of India trail by 17 runs",
+          "overview": "Day 3: 2nd Session - Rest of India lead by 90 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-10-01T04:00:00.000Z",
