@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-04T14:08:03.749Z",
-  "lastCheckedAt": "2026-10-04T14:08:03.749Z",
-  "lastSuccessfulSyncAt": "2026-10-04T14:08:03.749Z",
+  "syncedAt": "2026-10-04T18:07:23.873Z",
+  "lastCheckedAt": "2026-10-04T18:07:23.873Z",
+  "lastSuccessfulSyncAt": "2026-10-04T18:07:23.873Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,12 +41,43 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 0,
+    "live": 1,
     "recent": 60,
-    "upcoming": 484,
+    "upcoming": 483,
     "total": 544
   },
   "all": [
+    {
+      "id": "live-174340",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "England Champions vs India Champions, 4th Match",
+      "series": "World Championship of Legends 2026",
+      "teams": [
+        {
+          "name": "England Champions",
+          "shortName": "ENGCH",
+          "score": "192/4 (19.6 Ov)"
+        },
+        {
+          "name": "India Champions",
+          "shortName": "INDCH",
+          "score": "11 (1.1 Ov)"
+        }
+      ],
+      "dateLabel": "04 Oct 2026, 09:00 pm",
+      "time": "",
+      "place": "Sharjah Cricket Stadium, Sharjah",
+      "overview": "India Champions need 182 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174340",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-04T15:30:00.000Z",
+      "rawId": 174340
+    },
     {
       "id": "upcoming-171030",
       "status": "upcoming",
@@ -77,37 +108,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
-    },
-    {
-      "id": "upcoming-174340",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "India Champions vs England Champions, 4th Match",
-      "series": "World Championship of Legends 2026",
-      "teams": [
-        {
-          "name": "India Champions",
-          "shortName": "INDCH",
-          "score": ""
-        },
-        {
-          "name": "England Champions",
-          "shortName": "ENGCH",
-          "score": ""
-        }
-      ],
-      "dateLabel": "04 Oct 2026, 09:00 pm",
-      "time": "",
-      "place": "Sharjah Cricket Stadium, Sharjah",
-      "overview": "Match starts at Oct 04, 15:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174340",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-04T15:30:00.000Z",
-      "rawId": 174340
     },
     {
       "id": "upcoming-155510",
@@ -699,128 +699,35 @@
       "rawId": 163560
     },
     {
-      "id": "upcoming-163551",
+      "id": "upcoming-163521",
       "status": "upcoming",
       "statusLabel": "Future",
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "",
       "sourceScope": "domestic-series",
-      "title": "Punjab vs Assam, Elite Group B",
+      "title": "Bihar vs Uttar Pradesh, Elite Group A",
       "series": "Ranji Trophy Elite 2026-27",
       "teams": [
         {
-          "name": "Punjab",
-          "shortName": "PUN",
+          "name": "Bihar",
+          "shortName": "BIH",
           "score": ""
         },
         {
-          "name": "Assam",
-          "shortName": "ASM",
+          "name": "Uttar Pradesh",
+          "shortName": "UP",
           "score": ""
         }
       ],
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
-      "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+      "place": "Rajgir International Cricket Stadium, Rajgir",
       "overview": "Match starts at Oct 11, 03:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163551",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163521",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163551
-    },
-    {
-      "id": "upcoming-163550",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Andhra vs Karnataka, Elite Group B",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Andhra",
-          "shortName": "AP",
-          "score": ""
-        },
-        {
-          "name": "Karnataka",
-          "shortName": "KAR",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
-      "overview": "Match starts at Oct 11, 03:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163550
-    },
-    {
-      "id": "upcoming-163540",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Hyderabad vs Tripura, Elite Group B",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Hyderabad",
-          "shortName": "HYD",
-          "score": ""
-        },
-        {
-          "name": "Tripura",
-          "shortName": "TRI",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Gymkhana Ground, Hyderabad",
-      "overview": "Match starts at Oct 11, 03:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163540",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163540
-    },
-    {
-      "id": "upcoming-163531",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Vidarbha vs Puducherry, Elite Group A",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Vidarbha",
-          "shortName": "VID",
-          "score": ""
-        },
-        {
-          "name": "Puducherry",
-          "shortName": "PDC",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Vidarbha Cricket Association Stadium, Nagpur",
-      "overview": "Match starts at Oct 11, 03:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163531",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163531
+      "rawId": 163521
     },
     {
       "id": "upcoming-163530",
@@ -854,35 +761,128 @@
       "rawId": 163530
     },
     {
-      "id": "upcoming-163521",
+      "id": "upcoming-163531",
       "status": "upcoming",
       "statusLabel": "Future",
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "",
       "sourceScope": "domestic-series",
-      "title": "Bihar vs Uttar Pradesh, Elite Group A",
+      "title": "Vidarbha vs Puducherry, Elite Group A",
       "series": "Ranji Trophy Elite 2026-27",
       "teams": [
         {
-          "name": "Bihar",
-          "shortName": "BIH",
+          "name": "Vidarbha",
+          "shortName": "VID",
           "score": ""
         },
         {
-          "name": "Uttar Pradesh",
-          "shortName": "UP",
+          "name": "Puducherry",
+          "shortName": "PDC",
           "score": ""
         }
       ],
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
-      "place": "Rajgir International Cricket Stadium, Rajgir",
+      "place": "Vidarbha Cricket Association Stadium, Nagpur",
       "overview": "Match starts at Oct 11, 03:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163521",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163531",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163521
+      "rawId": 163531
+    },
+    {
+      "id": "upcoming-163540",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Hyderabad vs Tripura, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Hyderabad",
+          "shortName": "HYD",
+          "score": ""
+        },
+        {
+          "name": "Tripura",
+          "shortName": "TRI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Gymkhana Ground, Hyderabad",
+      "overview": "Match starts at Oct 11, 03:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163540",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163540
+    },
+    {
+      "id": "upcoming-163550",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Andhra vs Karnataka, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Andhra",
+          "shortName": "AP",
+          "score": ""
+        },
+        {
+          "name": "Karnataka",
+          "shortName": "KAR",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
+      "overview": "Match starts at Oct 11, 03:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163550
+    },
+    {
+      "id": "upcoming-163551",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Punjab vs Assam, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Punjab",
+          "shortName": "PUN",
+          "score": ""
+        },
+        {
+          "name": "Assam",
+          "shortName": "ASM",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+      "overview": "Match starts at Oct 11, 03:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163551",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163551
     },
     {
       "id": "upcoming-151587",
@@ -1009,37 +1009,6 @@
       "rawId": 151602
     },
     {
-      "id": "upcoming-163691",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Assam vs Tripura, Elite Group B",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Assam",
-          "shortName": "ASM",
-          "score": ""
-        },
-        {
-          "name": "Tripura",
-          "shortName": "TRI",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Oct 2026, 05:30 am",
-      "time": "",
-      "place": "Barsapara Cricket Stadium, Guwahati",
-      "overview": "Match starts at Oct 18, 00:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163691",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-18T00:00:00.000Z",
-      "rawId": 163691
-    },
-    {
       "id": "upcoming-163111",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -1133,128 +1102,35 @@
       "rawId": 163121
     },
     {
-      "id": "upcoming-163761",
+      "id": "upcoming-163713",
       "status": "upcoming",
       "statusLabel": "Future",
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "",
       "sourceScope": "domestic-series",
-      "title": "Tamil Nadu vs Uttarakhand, Elite Group D",
+      "title": "Delhi vs Gujarat, Elite Group C",
       "series": "Ranji Trophy Elite 2026-27",
       "teams": [
         {
-          "name": "Tamil Nadu",
-          "shortName": "TN",
+          "name": "Delhi",
+          "shortName": "DEL",
           "score": ""
         },
         {
-          "name": "Uttarakhand",
-          "shortName": "UTK",
+          "name": "Gujarat",
+          "shortName": "GUJ",
           "score": ""
         }
       ],
       "dateLabel": "18 Oct 2026, 09:30 am",
       "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
+      "place": "Palam B Stadium, Delhi",
       "overview": "Match starts at Oct 18, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163761",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163713",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-18T04:00:00.000Z",
-      "rawId": 163761
-    },
-    {
-      "id": "upcoming-163751",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Himachal Pradesh vs Mumbai, Elite Group D",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Himachal Pradesh",
-          "shortName": "HP",
-          "score": ""
-        },
-        {
-          "name": "Mumbai",
-          "shortName": "MUM",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-      "overview": "Match starts at Oct 18, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163751",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-18T04:00:00.000Z",
-      "rawId": 163751
-    },
-    {
-      "id": "upcoming-163741",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Haryana vs Chandigarh, Elite Group D",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Haryana",
-          "shortName": "HAR",
-          "score": ""
-        },
-        {
-          "name": "Chandigarh",
-          "shortName": "CDG",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Ch Bansi Lal Cricket Stadium, Rohtak",
-      "overview": "Match starts at Oct 18, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163741",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-18T04:00:00.000Z",
-      "rawId": 163741
-    },
-    {
-      "id": "upcoming-163731",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Kerala vs Odisha, Elite Group C",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Kerala",
-          "shortName": "KER",
-          "score": ""
-        },
-        {
-          "name": "Odisha",
-          "shortName": "ODSA",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Greenfield International Stadium, Thiruvananthapuram",
-      "overview": "Match starts at Oct 18, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163731",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-18T04:00:00.000Z",
-      "rawId": 163731
+      "rawId": 163713
     },
     {
       "id": "upcoming-163721",
@@ -1288,35 +1164,128 @@
       "rawId": 163721
     },
     {
-      "id": "upcoming-163713",
+      "id": "upcoming-163731",
       "status": "upcoming",
       "statusLabel": "Future",
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "",
       "sourceScope": "domestic-series",
-      "title": "Delhi vs Gujarat, Elite Group C",
+      "title": "Kerala vs Odisha, Elite Group C",
       "series": "Ranji Trophy Elite 2026-27",
       "teams": [
         {
-          "name": "Delhi",
-          "shortName": "DEL",
+          "name": "Kerala",
+          "shortName": "KER",
           "score": ""
         },
         {
-          "name": "Gujarat",
-          "shortName": "GUJ",
+          "name": "Odisha",
+          "shortName": "ODSA",
           "score": ""
         }
       ],
       "dateLabel": "18 Oct 2026, 09:30 am",
       "time": "",
-      "place": "Palam B Stadium, Delhi",
+      "place": "Greenfield International Stadium, Thiruvananthapuram",
       "overview": "Match starts at Oct 18, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163713",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163731",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-18T04:00:00.000Z",
-      "rawId": 163713
+      "rawId": 163731
+    },
+    {
+      "id": "upcoming-163741",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Haryana vs Chandigarh, Elite Group D",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Haryana",
+          "shortName": "HAR",
+          "score": ""
+        },
+        {
+          "name": "Chandigarh",
+          "shortName": "CDG",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Ch Bansi Lal Cricket Stadium, Rohtak",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163741",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163741
+    },
+    {
+      "id": "upcoming-163751",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Himachal Pradesh vs Mumbai, Elite Group D",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Himachal Pradesh",
+          "shortName": "HP",
+          "score": ""
+        },
+        {
+          "name": "Mumbai",
+          "shortName": "MUM",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163751",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163751
+    },
+    {
+      "id": "upcoming-163761",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Tamil Nadu vs Uttarakhand, Elite Group D",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Tamil Nadu",
+          "shortName": "TN",
+          "score": ""
+        },
+        {
+          "name": "Uttarakhand",
+          "shortName": "UTK",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163761",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163761
     },
     {
       "id": "upcoming-163763",
@@ -1381,35 +1350,35 @@
       "rawId": 163701
     },
     {
-      "id": "upcoming-163681",
+      "id": "upcoming-163691",
       "status": "upcoming",
       "statusLabel": "Future",
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "",
       "sourceScope": "domestic-series",
-      "title": "Punjab vs Chhattisgarh, Elite Group B",
+      "title": "Assam vs Tripura, Elite Group B",
       "series": "Ranji Trophy Elite 2026-27",
       "teams": [
         {
-          "name": "Punjab",
-          "shortName": "PUN",
+          "name": "Assam",
+          "shortName": "ASM",
           "score": ""
         },
         {
-          "name": "Chhattisgarh",
-          "shortName": "CG",
+          "name": "Tripura",
+          "shortName": "TRI",
           "score": ""
         }
       ],
       "dateLabel": "18 Oct 2026, 09:30 am",
       "time": "",
-      "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+      "place": "Barsapara Cricket Stadium, Guwahati",
       "overview": "Match starts at Oct 18, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163681",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163691",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-18T04:00:00.000Z",
-      "rawId": 163681
+      "rawId": 163691
     },
     {
       "id": "upcoming-163631",
@@ -1596,6 +1565,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-18T04:00:00.000Z",
       "rawId": 163671
+    },
+    {
+      "id": "upcoming-163681",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Punjab vs Chhattisgarh, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Punjab",
+          "shortName": "PUN",
+          "score": ""
+        },
+        {
+          "name": "Chhattisgarh",
+          "shortName": "CG",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163681",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163681
     },
     {
       "id": "upcoming-155530",
@@ -17021,7 +17021,39 @@
       ]
     }
   ],
-  "live": [],
+  "live": [
+    {
+      "id": "live-174340",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "England Champions vs India Champions, 4th Match",
+      "series": "World Championship of Legends 2026",
+      "teams": [
+        {
+          "name": "England Champions",
+          "shortName": "ENGCH",
+          "score": "192/4 (19.6 Ov)"
+        },
+        {
+          "name": "India Champions",
+          "shortName": "INDCH",
+          "score": "11 (1.1 Ov)"
+        }
+      ],
+      "dateLabel": "04 Oct 2026, 09:00 pm",
+      "time": "",
+      "place": "Sharjah Cricket Stadium, Sharjah",
+      "overview": "India Champions need 182 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174340",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-04T15:30:00.000Z",
+      "rawId": 174340
+    }
+  ],
   "upcoming": [
     {
       "id": "upcoming-171030",
@@ -17053,37 +17085,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
-    },
-    {
-      "id": "upcoming-174340",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "India Champions vs England Champions, 4th Match",
-      "series": "World Championship of Legends 2026",
-      "teams": [
-        {
-          "name": "India Champions",
-          "shortName": "INDCH",
-          "score": ""
-        },
-        {
-          "name": "England Champions",
-          "shortName": "ENGCH",
-          "score": ""
-        }
-      ],
-      "dateLabel": "04 Oct 2026, 09:00 pm",
-      "time": "",
-      "place": "Sharjah Cricket Stadium, Sharjah",
-      "overview": "Match starts at Oct 04, 15:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174340",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-04T15:30:00.000Z",
-      "rawId": 174340
     },
     {
       "id": "upcoming-155510",
@@ -17675,128 +17676,35 @@
       "rawId": 163560
     },
     {
-      "id": "upcoming-163551",
+      "id": "upcoming-163521",
       "status": "upcoming",
       "statusLabel": "Future",
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "",
       "sourceScope": "domestic-series",
-      "title": "Punjab vs Assam, Elite Group B",
+      "title": "Bihar vs Uttar Pradesh, Elite Group A",
       "series": "Ranji Trophy Elite 2026-27",
       "teams": [
         {
-          "name": "Punjab",
-          "shortName": "PUN",
+          "name": "Bihar",
+          "shortName": "BIH",
           "score": ""
         },
         {
-          "name": "Assam",
-          "shortName": "ASM",
+          "name": "Uttar Pradesh",
+          "shortName": "UP",
           "score": ""
         }
       ],
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
-      "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+      "place": "Rajgir International Cricket Stadium, Rajgir",
       "overview": "Match starts at Oct 11, 03:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163551",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163521",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163551
-    },
-    {
-      "id": "upcoming-163550",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Andhra vs Karnataka, Elite Group B",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Andhra",
-          "shortName": "AP",
-          "score": ""
-        },
-        {
-          "name": "Karnataka",
-          "shortName": "KAR",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
-      "overview": "Match starts at Oct 11, 03:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163550
-    },
-    {
-      "id": "upcoming-163540",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Hyderabad vs Tripura, Elite Group B",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Hyderabad",
-          "shortName": "HYD",
-          "score": ""
-        },
-        {
-          "name": "Tripura",
-          "shortName": "TRI",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Gymkhana Ground, Hyderabad",
-      "overview": "Match starts at Oct 11, 03:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163540",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163540
-    },
-    {
-      "id": "upcoming-163531",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Vidarbha vs Puducherry, Elite Group A",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Vidarbha",
-          "shortName": "VID",
-          "score": ""
-        },
-        {
-          "name": "Puducherry",
-          "shortName": "PDC",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Vidarbha Cricket Association Stadium, Nagpur",
-      "overview": "Match starts at Oct 11, 03:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163531",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163531
+      "rawId": 163521
     },
     {
       "id": "upcoming-163530",
@@ -17830,35 +17738,128 @@
       "rawId": 163530
     },
     {
-      "id": "upcoming-163521",
+      "id": "upcoming-163531",
       "status": "upcoming",
       "statusLabel": "Future",
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "",
       "sourceScope": "domestic-series",
-      "title": "Bihar vs Uttar Pradesh, Elite Group A",
+      "title": "Vidarbha vs Puducherry, Elite Group A",
       "series": "Ranji Trophy Elite 2026-27",
       "teams": [
         {
-          "name": "Bihar",
-          "shortName": "BIH",
+          "name": "Vidarbha",
+          "shortName": "VID",
           "score": ""
         },
         {
-          "name": "Uttar Pradesh",
-          "shortName": "UP",
+          "name": "Puducherry",
+          "shortName": "PDC",
           "score": ""
         }
       ],
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
-      "place": "Rajgir International Cricket Stadium, Rajgir",
+      "place": "Vidarbha Cricket Association Stadium, Nagpur",
       "overview": "Match starts at Oct 11, 03:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163521",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163531",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163521
+      "rawId": 163531
+    },
+    {
+      "id": "upcoming-163540",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Hyderabad vs Tripura, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Hyderabad",
+          "shortName": "HYD",
+          "score": ""
+        },
+        {
+          "name": "Tripura",
+          "shortName": "TRI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Gymkhana Ground, Hyderabad",
+      "overview": "Match starts at Oct 11, 03:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163540",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163540
+    },
+    {
+      "id": "upcoming-163550",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Andhra vs Karnataka, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Andhra",
+          "shortName": "AP",
+          "score": ""
+        },
+        {
+          "name": "Karnataka",
+          "shortName": "KAR",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
+      "overview": "Match starts at Oct 11, 03:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163550
+    },
+    {
+      "id": "upcoming-163551",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Punjab vs Assam, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Punjab",
+          "shortName": "PUN",
+          "score": ""
+        },
+        {
+          "name": "Assam",
+          "shortName": "ASM",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+      "overview": "Match starts at Oct 11, 03:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163551",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163551
     },
     {
       "id": "upcoming-151587",
@@ -17985,37 +17986,6 @@
       "rawId": 151602
     },
     {
-      "id": "upcoming-163691",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Assam vs Tripura, Elite Group B",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Assam",
-          "shortName": "ASM",
-          "score": ""
-        },
-        {
-          "name": "Tripura",
-          "shortName": "TRI",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Oct 2026, 05:30 am",
-      "time": "",
-      "place": "Barsapara Cricket Stadium, Guwahati",
-      "overview": "Match starts at Oct 18, 00:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163691",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-18T00:00:00.000Z",
-      "rawId": 163691
-    },
-    {
       "id": "upcoming-163111",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -18109,128 +18079,35 @@
       "rawId": 163121
     },
     {
-      "id": "upcoming-163761",
+      "id": "upcoming-163713",
       "status": "upcoming",
       "statusLabel": "Future",
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "",
       "sourceScope": "domestic-series",
-      "title": "Tamil Nadu vs Uttarakhand, Elite Group D",
+      "title": "Delhi vs Gujarat, Elite Group C",
       "series": "Ranji Trophy Elite 2026-27",
       "teams": [
         {
-          "name": "Tamil Nadu",
-          "shortName": "TN",
+          "name": "Delhi",
+          "shortName": "DEL",
           "score": ""
         },
         {
-          "name": "Uttarakhand",
-          "shortName": "UTK",
+          "name": "Gujarat",
+          "shortName": "GUJ",
           "score": ""
         }
       ],
       "dateLabel": "18 Oct 2026, 09:30 am",
       "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
+      "place": "Palam B Stadium, Delhi",
       "overview": "Match starts at Oct 18, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163761",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163713",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-18T04:00:00.000Z",
-      "rawId": 163761
-    },
-    {
-      "id": "upcoming-163751",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Himachal Pradesh vs Mumbai, Elite Group D",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Himachal Pradesh",
-          "shortName": "HP",
-          "score": ""
-        },
-        {
-          "name": "Mumbai",
-          "shortName": "MUM",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-      "overview": "Match starts at Oct 18, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163751",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-18T04:00:00.000Z",
-      "rawId": 163751
-    },
-    {
-      "id": "upcoming-163741",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Haryana vs Chandigarh, Elite Group D",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Haryana",
-          "shortName": "HAR",
-          "score": ""
-        },
-        {
-          "name": "Chandigarh",
-          "shortName": "CDG",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Ch Bansi Lal Cricket Stadium, Rohtak",
-      "overview": "Match starts at Oct 18, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163741",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-18T04:00:00.000Z",
-      "rawId": 163741
-    },
-    {
-      "id": "upcoming-163731",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Kerala vs Odisha, Elite Group C",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Kerala",
-          "shortName": "KER",
-          "score": ""
-        },
-        {
-          "name": "Odisha",
-          "shortName": "ODSA",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Greenfield International Stadium, Thiruvananthapuram",
-      "overview": "Match starts at Oct 18, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163731",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-18T04:00:00.000Z",
-      "rawId": 163731
+      "rawId": 163713
     },
     {
       "id": "upcoming-163721",
@@ -18264,35 +18141,128 @@
       "rawId": 163721
     },
     {
-      "id": "upcoming-163713",
+      "id": "upcoming-163731",
       "status": "upcoming",
       "statusLabel": "Future",
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "",
       "sourceScope": "domestic-series",
-      "title": "Delhi vs Gujarat, Elite Group C",
+      "title": "Kerala vs Odisha, Elite Group C",
       "series": "Ranji Trophy Elite 2026-27",
       "teams": [
         {
-          "name": "Delhi",
-          "shortName": "DEL",
+          "name": "Kerala",
+          "shortName": "KER",
           "score": ""
         },
         {
-          "name": "Gujarat",
-          "shortName": "GUJ",
+          "name": "Odisha",
+          "shortName": "ODSA",
           "score": ""
         }
       ],
       "dateLabel": "18 Oct 2026, 09:30 am",
       "time": "",
-      "place": "Palam B Stadium, Delhi",
+      "place": "Greenfield International Stadium, Thiruvananthapuram",
       "overview": "Match starts at Oct 18, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163713",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163731",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-18T04:00:00.000Z",
-      "rawId": 163713
+      "rawId": 163731
+    },
+    {
+      "id": "upcoming-163741",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Haryana vs Chandigarh, Elite Group D",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Haryana",
+          "shortName": "HAR",
+          "score": ""
+        },
+        {
+          "name": "Chandigarh",
+          "shortName": "CDG",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Ch Bansi Lal Cricket Stadium, Rohtak",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163741",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163741
+    },
+    {
+      "id": "upcoming-163751",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Himachal Pradesh vs Mumbai, Elite Group D",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Himachal Pradesh",
+          "shortName": "HP",
+          "score": ""
+        },
+        {
+          "name": "Mumbai",
+          "shortName": "MUM",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163751",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163751
+    },
+    {
+      "id": "upcoming-163761",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Tamil Nadu vs Uttarakhand, Elite Group D",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Tamil Nadu",
+          "shortName": "TN",
+          "score": ""
+        },
+        {
+          "name": "Uttarakhand",
+          "shortName": "UTK",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163761",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163761
     },
     {
       "id": "upcoming-163763",
@@ -18357,35 +18327,35 @@
       "rawId": 163701
     },
     {
-      "id": "upcoming-163681",
+      "id": "upcoming-163691",
       "status": "upcoming",
       "statusLabel": "Future",
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "",
       "sourceScope": "domestic-series",
-      "title": "Punjab vs Chhattisgarh, Elite Group B",
+      "title": "Assam vs Tripura, Elite Group B",
       "series": "Ranji Trophy Elite 2026-27",
       "teams": [
         {
-          "name": "Punjab",
-          "shortName": "PUN",
+          "name": "Assam",
+          "shortName": "ASM",
           "score": ""
         },
         {
-          "name": "Chhattisgarh",
-          "shortName": "CG",
+          "name": "Tripura",
+          "shortName": "TRI",
           "score": ""
         }
       ],
       "dateLabel": "18 Oct 2026, 09:30 am",
       "time": "",
-      "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+      "place": "Barsapara Cricket Stadium, Guwahati",
       "overview": "Match starts at Oct 18, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163681",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163691",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-18T04:00:00.000Z",
-      "rawId": 163681
+      "rawId": 163691
     },
     {
       "id": "upcoming-163631",
@@ -18572,6 +18542,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-18T04:00:00.000Z",
       "rawId": 163671
+    },
+    {
+      "id": "upcoming-163681",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Punjab vs Chhattisgarh, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Punjab",
+          "shortName": "PUN",
+          "score": ""
+        },
+        {
+          "name": "Chhattisgarh",
+          "shortName": "CG",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163681",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163681
     },
     {
       "id": "upcoming-155530",
@@ -34013,9 +34014,9 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 0,
+      "live": 1,
       "recent": 0,
-      "upcoming": 1,
+      "upcoming": 0,
       "total": 1
     },
     {
@@ -39575,131 +39576,35 @@
       "importance": "Major tournament"
     },
     {
-      "id": "upcoming-163761",
+      "id": "upcoming-163713",
       "status": "upcoming",
       "statusLabel": "Future",
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "",
       "sourceScope": "domestic-series",
-      "title": "Tamil Nadu vs Uttarakhand, Elite Group D",
+      "title": "Delhi vs Gujarat, Elite Group C",
       "series": "Ranji Trophy Elite 2026-27",
       "teams": [
         {
-          "name": "Tamil Nadu",
-          "shortName": "TN",
+          "name": "Delhi",
+          "shortName": "DEL",
           "score": ""
         },
         {
-          "name": "Uttarakhand",
-          "shortName": "UTK",
+          "name": "Gujarat",
+          "shortName": "GUJ",
           "score": ""
         }
       ],
       "dateLabel": "18 Oct 2026, 09:30 am",
       "time": "",
-      "place": "MA Chidambaram Stadium, Chennai",
+      "place": "Palam B Stadium, Delhi",
       "overview": "Match starts at Oct 18, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163761",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163713",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-18T04:00:00.000Z",
-      "rawId": 163761,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163751",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Himachal Pradesh vs Mumbai, Elite Group D",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Himachal Pradesh",
-          "shortName": "HP",
-          "score": ""
-        },
-        {
-          "name": "Mumbai",
-          "shortName": "MUM",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-      "overview": "Match starts at Oct 18, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163751",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-18T04:00:00.000Z",
-      "rawId": 163751,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163741",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Haryana vs Chandigarh, Elite Group D",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Haryana",
-          "shortName": "HAR",
-          "score": ""
-        },
-        {
-          "name": "Chandigarh",
-          "shortName": "CDG",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Ch Bansi Lal Cricket Stadium, Rohtak",
-      "overview": "Match starts at Oct 18, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163741",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-18T04:00:00.000Z",
-      "rawId": 163741,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163731",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Kerala vs Odisha, Elite Group C",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Kerala",
-          "shortName": "KER",
-          "score": ""
-        },
-        {
-          "name": "Odisha",
-          "shortName": "ODSA",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Greenfield International Stadium, Thiruvananthapuram",
-      "overview": "Match starts at Oct 18, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163731",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-18T04:00:00.000Z",
-      "rawId": 163731,
+      "rawId": 163713,
       "importance": "Major tournament"
     },
     {
@@ -39735,35 +39640,131 @@
       "importance": "Major tournament"
     },
     {
-      "id": "upcoming-163713",
+      "id": "upcoming-163731",
       "status": "upcoming",
       "statusLabel": "Future",
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "",
       "sourceScope": "domestic-series",
-      "title": "Delhi vs Gujarat, Elite Group C",
+      "title": "Kerala vs Odisha, Elite Group C",
       "series": "Ranji Trophy Elite 2026-27",
       "teams": [
         {
-          "name": "Delhi",
-          "shortName": "DEL",
+          "name": "Kerala",
+          "shortName": "KER",
           "score": ""
         },
         {
-          "name": "Gujarat",
-          "shortName": "GUJ",
+          "name": "Odisha",
+          "shortName": "ODSA",
           "score": ""
         }
       ],
       "dateLabel": "18 Oct 2026, 09:30 am",
       "time": "",
-      "place": "Palam B Stadium, Delhi",
+      "place": "Greenfield International Stadium, Thiruvananthapuram",
       "overview": "Match starts at Oct 18, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163713",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163731",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-18T04:00:00.000Z",
-      "rawId": 163713,
+      "rawId": 163731,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163741",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Haryana vs Chandigarh, Elite Group D",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Haryana",
+          "shortName": "HAR",
+          "score": ""
+        },
+        {
+          "name": "Chandigarh",
+          "shortName": "CDG",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Ch Bansi Lal Cricket Stadium, Rohtak",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163741",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163741,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163751",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Himachal Pradesh vs Mumbai, Elite Group D",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Himachal Pradesh",
+          "shortName": "HP",
+          "score": ""
+        },
+        {
+          "name": "Mumbai",
+          "shortName": "MUM",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163751",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163751,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163761",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Tamil Nadu vs Uttarakhand, Elite Group D",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Tamil Nadu",
+          "shortName": "TN",
+          "score": ""
+        },
+        {
+          "name": "Uttarakhand",
+          "shortName": "UTK",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "MA Chidambaram Stadium, Chennai",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163761",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163761,
       "importance": "Major tournament"
     },
     {
@@ -39831,35 +39832,35 @@
       "importance": "Major tournament"
     },
     {
-      "id": "upcoming-163681",
+      "id": "upcoming-163691",
       "status": "upcoming",
       "statusLabel": "Future",
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "",
       "sourceScope": "domestic-series",
-      "title": "Punjab vs Chhattisgarh, Elite Group B",
+      "title": "Assam vs Tripura, Elite Group B",
       "series": "Ranji Trophy Elite 2026-27",
       "teams": [
         {
-          "name": "Punjab",
-          "shortName": "PUN",
+          "name": "Assam",
+          "shortName": "ASM",
           "score": ""
         },
         {
-          "name": "Chhattisgarh",
-          "shortName": "CG",
+          "name": "Tripura",
+          "shortName": "TRI",
           "score": ""
         }
       ],
       "dateLabel": "18 Oct 2026, 09:30 am",
       "time": "",
-      "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+      "place": "Barsapara Cricket Stadium, Guwahati",
       "overview": "Match starts at Oct 18, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163681",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163691",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-18T04:00:00.000Z",
-      "rawId": 163681,
+      "rawId": 163691,
       "importance": "Major tournament"
     },
     {
@@ -40055,35 +40056,35 @@
       "importance": "Major tournament"
     },
     {
-      "id": "upcoming-163691",
+      "id": "upcoming-163681",
       "status": "upcoming",
       "statusLabel": "Future",
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "",
       "sourceScope": "domestic-series",
-      "title": "Assam vs Tripura, Elite Group B",
+      "title": "Punjab vs Chhattisgarh, Elite Group B",
       "series": "Ranji Trophy Elite 2026-27",
       "teams": [
         {
-          "name": "Assam",
-          "shortName": "ASM",
+          "name": "Punjab",
+          "shortName": "PUN",
           "score": ""
         },
         {
-          "name": "Tripura",
-          "shortName": "TRI",
+          "name": "Chhattisgarh",
+          "shortName": "CG",
           "score": ""
         }
       ],
-      "dateLabel": "18 Oct 2026, 05:30 am",
+      "dateLabel": "18 Oct 2026, 09:30 am",
       "time": "",
-      "place": "Barsapara Cricket Stadium, Guwahati",
-      "overview": "Match starts at Oct 18, 00:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163691",
+      "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+      "overview": "Match starts at Oct 18, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163681",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-18T00:00:00.000Z",
-      "rawId": 163691,
+      "startTime": "2026-10-18T04:00:00.000Z",
+      "rawId": 163681,
       "importance": "Major tournament"
     },
     {
@@ -40503,131 +40504,35 @@
       "importance": "Major tournament"
     },
     {
-      "id": "upcoming-163551",
+      "id": "upcoming-163521",
       "status": "upcoming",
       "statusLabel": "Future",
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "",
       "sourceScope": "domestic-series",
-      "title": "Punjab vs Assam, Elite Group B",
+      "title": "Bihar vs Uttar Pradesh, Elite Group A",
       "series": "Ranji Trophy Elite 2026-27",
       "teams": [
         {
-          "name": "Punjab",
-          "shortName": "PUN",
+          "name": "Bihar",
+          "shortName": "BIH",
           "score": ""
         },
         {
-          "name": "Assam",
-          "shortName": "ASM",
+          "name": "Uttar Pradesh",
+          "shortName": "UP",
           "score": ""
         }
       ],
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
-      "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+      "place": "Rajgir International Cricket Stadium, Rajgir",
       "overview": "Match starts at Oct 11, 03:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163551",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163521",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163551,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163550",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Andhra vs Karnataka, Elite Group B",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Andhra",
-          "shortName": "AP",
-          "score": ""
-        },
-        {
-          "name": "Karnataka",
-          "shortName": "KAR",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
-      "overview": "Match starts at Oct 11, 03:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163550,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163540",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Hyderabad vs Tripura, Elite Group B",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Hyderabad",
-          "shortName": "HYD",
-          "score": ""
-        },
-        {
-          "name": "Tripura",
-          "shortName": "TRI",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Gymkhana Ground, Hyderabad",
-      "overview": "Match starts at Oct 11, 03:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163540",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163540,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163531",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Vidarbha vs Puducherry, Elite Group A",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Vidarbha",
-          "shortName": "VID",
-          "score": ""
-        },
-        {
-          "name": "Puducherry",
-          "shortName": "PDC",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Vidarbha Cricket Association Stadium, Nagpur",
-      "overview": "Match starts at Oct 11, 03:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163531",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163531,
+      "rawId": 163521,
       "importance": "Major tournament"
     },
     {
@@ -40663,35 +40568,131 @@
       "importance": "Major tournament"
     },
     {
-      "id": "upcoming-163521",
+      "id": "upcoming-163531",
       "status": "upcoming",
       "statusLabel": "Future",
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "",
       "sourceScope": "domestic-series",
-      "title": "Bihar vs Uttar Pradesh, Elite Group A",
+      "title": "Vidarbha vs Puducherry, Elite Group A",
       "series": "Ranji Trophy Elite 2026-27",
       "teams": [
         {
-          "name": "Bihar",
-          "shortName": "BIH",
+          "name": "Vidarbha",
+          "shortName": "VID",
           "score": ""
         },
         {
-          "name": "Uttar Pradesh",
-          "shortName": "UP",
+          "name": "Puducherry",
+          "shortName": "PDC",
           "score": ""
         }
       ],
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
-      "place": "Rajgir International Cricket Stadium, Rajgir",
+      "place": "Vidarbha Cricket Association Stadium, Nagpur",
       "overview": "Match starts at Oct 11, 03:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163521",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163531",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163521,
+      "rawId": 163531,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163540",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Hyderabad vs Tripura, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Hyderabad",
+          "shortName": "HYD",
+          "score": ""
+        },
+        {
+          "name": "Tripura",
+          "shortName": "TRI",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Gymkhana Ground, Hyderabad",
+      "overview": "Match starts at Oct 11, 03:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163540",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163540,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163550",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Andhra vs Karnataka, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Andhra",
+          "shortName": "AP",
+          "score": ""
+        },
+        {
+          "name": "Karnataka",
+          "shortName": "KAR",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
+      "overview": "Match starts at Oct 11, 03:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163550,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163551",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Punjab vs Assam, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Punjab",
+          "shortName": "PUN",
+          "score": ""
+        },
+        {
+          "name": "Assam",
+          "shortName": "ASM",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+      "overview": "Match starts at Oct 11, 03:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163551",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163551,
       "importance": "Major tournament"
     },
     {
@@ -46022,131 +46023,35 @@
           "importance": "Major tournament"
         },
         {
-          "id": "upcoming-163551",
+          "id": "upcoming-163521",
           "status": "upcoming",
           "statusLabel": "Future",
           "level": "domestic",
           "levelLabel": "Domestic / State",
           "sourceType": "",
           "sourceScope": "domestic-series",
-          "title": "Punjab vs Assam, Elite Group B",
+          "title": "Bihar vs Uttar Pradesh, Elite Group A",
           "series": "Ranji Trophy Elite 2026-27",
           "teams": [
             {
-              "name": "Punjab",
-              "shortName": "PUN",
+              "name": "Bihar",
+              "shortName": "BIH",
               "score": ""
             },
             {
-              "name": "Assam",
-              "shortName": "ASM",
+              "name": "Uttar Pradesh",
+              "shortName": "UP",
               "score": ""
             }
           ],
           "dateLabel": "11 Oct 2026, 09:30 am",
           "time": "",
-          "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+          "place": "Rajgir International Cricket Stadium, Rajgir",
           "overview": "Match starts at Oct 11, 03:30 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163551",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163521",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
-          "rawId": 163551,
-          "importance": "Major tournament"
-        },
-        {
-          "id": "upcoming-163550",
-          "status": "upcoming",
-          "statusLabel": "Future",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "Andhra vs Karnataka, Elite Group B",
-          "series": "Ranji Trophy Elite 2026-27",
-          "teams": [
-            {
-              "name": "Andhra",
-              "shortName": "AP",
-              "score": ""
-            },
-            {
-              "name": "Karnataka",
-              "shortName": "KAR",
-              "score": ""
-            }
-          ],
-          "dateLabel": "11 Oct 2026, 09:30 am",
-          "time": "",
-          "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
-          "overview": "Match starts at Oct 11, 03:30 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-          "startTime": "2026-10-11T04:00:00.000Z",
-          "rawId": 163550,
-          "importance": "Major tournament"
-        },
-        {
-          "id": "upcoming-163540",
-          "status": "upcoming",
-          "statusLabel": "Future",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "Hyderabad vs Tripura, Elite Group B",
-          "series": "Ranji Trophy Elite 2026-27",
-          "teams": [
-            {
-              "name": "Hyderabad",
-              "shortName": "HYD",
-              "score": ""
-            },
-            {
-              "name": "Tripura",
-              "shortName": "TRI",
-              "score": ""
-            }
-          ],
-          "dateLabel": "11 Oct 2026, 09:30 am",
-          "time": "",
-          "place": "Gymkhana Ground, Hyderabad",
-          "overview": "Match starts at Oct 11, 03:30 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163540",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-          "startTime": "2026-10-11T04:00:00.000Z",
-          "rawId": 163540,
-          "importance": "Major tournament"
-        },
-        {
-          "id": "upcoming-163531",
-          "status": "upcoming",
-          "statusLabel": "Future",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "Vidarbha vs Puducherry, Elite Group A",
-          "series": "Ranji Trophy Elite 2026-27",
-          "teams": [
-            {
-              "name": "Vidarbha",
-              "shortName": "VID",
-              "score": ""
-            },
-            {
-              "name": "Puducherry",
-              "shortName": "PDC",
-              "score": ""
-            }
-          ],
-          "dateLabel": "11 Oct 2026, 09:30 am",
-          "time": "",
-          "place": "Vidarbha Cricket Association Stadium, Nagpur",
-          "overview": "Match starts at Oct 11, 03:30 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163531",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-          "startTime": "2026-10-11T04:00:00.000Z",
-          "rawId": 163531,
+          "rawId": 163521,
           "importance": "Major tournament"
         },
         {
@@ -46182,51 +46087,51 @@
           "importance": "Major tournament"
         },
         {
-          "id": "upcoming-163521",
+          "id": "upcoming-163531",
           "status": "upcoming",
           "statusLabel": "Future",
           "level": "domestic",
           "levelLabel": "Domestic / State",
           "sourceType": "",
           "sourceScope": "domestic-series",
-          "title": "Bihar vs Uttar Pradesh, Elite Group A",
+          "title": "Vidarbha vs Puducherry, Elite Group A",
           "series": "Ranji Trophy Elite 2026-27",
           "teams": [
             {
-              "name": "Bihar",
-              "shortName": "BIH",
+              "name": "Vidarbha",
+              "shortName": "VID",
               "score": ""
             },
             {
-              "name": "Uttar Pradesh",
-              "shortName": "UP",
+              "name": "Puducherry",
+              "shortName": "PDC",
               "score": ""
             }
           ],
           "dateLabel": "11 Oct 2026, 09:30 am",
           "time": "",
-          "place": "Rajgir International Cricket Stadium, Rajgir",
+          "place": "Vidarbha Cricket Association Stadium, Nagpur",
           "overview": "Match starts at Oct 11, 03:30 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163521",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163531",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
-          "rawId": 163521,
+          "rawId": 163531,
           "importance": "Major tournament"
         },
         {
-          "id": "upcoming-163691",
+          "id": "upcoming-163540",
           "status": "upcoming",
           "statusLabel": "Future",
           "level": "domestic",
           "levelLabel": "Domestic / State",
           "sourceType": "",
           "sourceScope": "domestic-series",
-          "title": "Assam vs Tripura, Elite Group B",
+          "title": "Hyderabad vs Tripura, Elite Group B",
           "series": "Ranji Trophy Elite 2026-27",
           "teams": [
             {
-              "name": "Assam",
-              "shortName": "ASM",
+              "name": "Hyderabad",
+              "shortName": "HYD",
               "score": ""
             },
             {
@@ -46235,142 +46140,110 @@
               "score": ""
             }
           ],
-          "dateLabel": "18 Oct 2026, 05:30 am",
+          "dateLabel": "11 Oct 2026, 09:30 am",
           "time": "",
-          "place": "Barsapara Cricket Stadium, Guwahati",
-          "overview": "Match starts at Oct 18, 00:00 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163691",
+          "place": "Gymkhana Ground, Hyderabad",
+          "overview": "Match starts at Oct 11, 03:30 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163540",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-          "startTime": "2026-10-18T00:00:00.000Z",
-          "rawId": 163691,
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163540,
           "importance": "Major tournament"
         },
         {
-          "id": "upcoming-163761",
+          "id": "upcoming-163550",
           "status": "upcoming",
           "statusLabel": "Future",
           "level": "domestic",
           "levelLabel": "Domestic / State",
           "sourceType": "",
           "sourceScope": "domestic-series",
-          "title": "Tamil Nadu vs Uttarakhand, Elite Group D",
+          "title": "Andhra vs Karnataka, Elite Group B",
           "series": "Ranji Trophy Elite 2026-27",
           "teams": [
             {
-              "name": "Tamil Nadu",
-              "shortName": "TN",
+              "name": "Andhra",
+              "shortName": "AP",
               "score": ""
             },
             {
-              "name": "Uttarakhand",
-              "shortName": "UTK",
+              "name": "Karnataka",
+              "shortName": "KAR",
               "score": ""
             }
           ],
-          "dateLabel": "18 Oct 2026, 09:30 am",
+          "dateLabel": "11 Oct 2026, 09:30 am",
           "time": "",
-          "place": "MA Chidambaram Stadium, Chennai",
-          "overview": "Match starts at Oct 18, 04:00 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163761",
+          "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
+          "overview": "Match starts at Oct 11, 03:30 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-          "startTime": "2026-10-18T04:00:00.000Z",
-          "rawId": 163761,
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163550,
           "importance": "Major tournament"
         },
         {
-          "id": "upcoming-163751",
+          "id": "upcoming-163551",
           "status": "upcoming",
           "statusLabel": "Future",
           "level": "domestic",
           "levelLabel": "Domestic / State",
           "sourceType": "",
           "sourceScope": "domestic-series",
-          "title": "Himachal Pradesh vs Mumbai, Elite Group D",
+          "title": "Punjab vs Assam, Elite Group B",
           "series": "Ranji Trophy Elite 2026-27",
           "teams": [
             {
-              "name": "Himachal Pradesh",
-              "shortName": "HP",
+              "name": "Punjab",
+              "shortName": "PUN",
               "score": ""
             },
             {
-              "name": "Mumbai",
-              "shortName": "MUM",
+              "name": "Assam",
+              "shortName": "ASM",
               "score": ""
             }
           ],
-          "dateLabel": "18 Oct 2026, 09:30 am",
+          "dateLabel": "11 Oct 2026, 09:30 am",
           "time": "",
-          "place": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-          "overview": "Match starts at Oct 18, 04:00 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163751",
+          "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+          "overview": "Match starts at Oct 11, 03:30 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163551",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-          "startTime": "2026-10-18T04:00:00.000Z",
-          "rawId": 163751,
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163551,
           "importance": "Major tournament"
         },
         {
-          "id": "upcoming-163741",
+          "id": "upcoming-163713",
           "status": "upcoming",
           "statusLabel": "Future",
           "level": "domestic",
           "levelLabel": "Domestic / State",
           "sourceType": "",
           "sourceScope": "domestic-series",
-          "title": "Haryana vs Chandigarh, Elite Group D",
+          "title": "Delhi vs Gujarat, Elite Group C",
           "series": "Ranji Trophy Elite 2026-27",
           "teams": [
             {
-              "name": "Haryana",
-              "shortName": "HAR",
+              "name": "Delhi",
+              "shortName": "DEL",
               "score": ""
             },
             {
-              "name": "Chandigarh",
-              "shortName": "CDG",
+              "name": "Gujarat",
+              "shortName": "GUJ",
               "score": ""
             }
           ],
           "dateLabel": "18 Oct 2026, 09:30 am",
           "time": "",
-          "place": "Ch Bansi Lal Cricket Stadium, Rohtak",
+          "place": "Palam B Stadium, Delhi",
           "overview": "Match starts at Oct 18, 04:00 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163741",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163713",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-18T04:00:00.000Z",
-          "rawId": 163741,
-          "importance": "Major tournament"
-        },
-        {
-          "id": "upcoming-163731",
-          "status": "upcoming",
-          "statusLabel": "Future",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "Kerala vs Odisha, Elite Group C",
-          "series": "Ranji Trophy Elite 2026-27",
-          "teams": [
-            {
-              "name": "Kerala",
-              "shortName": "KER",
-              "score": ""
-            },
-            {
-              "name": "Odisha",
-              "shortName": "ODSA",
-              "score": ""
-            }
-          ],
-          "dateLabel": "18 Oct 2026, 09:30 am",
-          "time": "",
-          "place": "Greenfield International Stadium, Thiruvananthapuram",
-          "overview": "Match starts at Oct 18, 04:00 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163731",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-          "startTime": "2026-10-18T04:00:00.000Z",
-          "rawId": 163731,
+          "rawId": 163713,
           "importance": "Major tournament"
         },
         {
@@ -46406,35 +46279,131 @@
           "importance": "Major tournament"
         },
         {
-          "id": "upcoming-163713",
+          "id": "upcoming-163731",
           "status": "upcoming",
           "statusLabel": "Future",
           "level": "domestic",
           "levelLabel": "Domestic / State",
           "sourceType": "",
           "sourceScope": "domestic-series",
-          "title": "Delhi vs Gujarat, Elite Group C",
+          "title": "Kerala vs Odisha, Elite Group C",
           "series": "Ranji Trophy Elite 2026-27",
           "teams": [
             {
-              "name": "Delhi",
-              "shortName": "DEL",
+              "name": "Kerala",
+              "shortName": "KER",
               "score": ""
             },
             {
-              "name": "Gujarat",
-              "shortName": "GUJ",
+              "name": "Odisha",
+              "shortName": "ODSA",
               "score": ""
             }
           ],
           "dateLabel": "18 Oct 2026, 09:30 am",
           "time": "",
-          "place": "Palam B Stadium, Delhi",
+          "place": "Greenfield International Stadium, Thiruvananthapuram",
           "overview": "Match starts at Oct 18, 04:00 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163713",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163731",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-18T04:00:00.000Z",
-          "rawId": 163713,
+          "rawId": 163731,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163741",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Haryana vs Chandigarh, Elite Group D",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Haryana",
+              "shortName": "HAR",
+              "score": ""
+            },
+            {
+              "name": "Chandigarh",
+              "shortName": "CDG",
+              "score": ""
+            }
+          ],
+          "dateLabel": "18 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "Ch Bansi Lal Cricket Stadium, Rohtak",
+          "overview": "Match starts at Oct 18, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163741",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-18T04:00:00.000Z",
+          "rawId": 163741,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163751",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Himachal Pradesh vs Mumbai, Elite Group D",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Himachal Pradesh",
+              "shortName": "HP",
+              "score": ""
+            },
+            {
+              "name": "Mumbai",
+              "shortName": "MUM",
+              "score": ""
+            }
+          ],
+          "dateLabel": "18 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
+          "overview": "Match starts at Oct 18, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163751",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-18T04:00:00.000Z",
+          "rawId": 163751,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163761",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Tamil Nadu vs Uttarakhand, Elite Group D",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Tamil Nadu",
+              "shortName": "TN",
+              "score": ""
+            },
+            {
+              "name": "Uttarakhand",
+              "shortName": "UTK",
+              "score": ""
+            }
+          ],
+          "dateLabel": "18 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "MA Chidambaram Stadium, Chennai",
+          "overview": "Match starts at Oct 18, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163761",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-18T04:00:00.000Z",
+          "rawId": 163761,
           "importance": "Major tournament"
         },
         {
@@ -46502,35 +46471,35 @@
           "importance": "Major tournament"
         },
         {
-          "id": "upcoming-163681",
+          "id": "upcoming-163691",
           "status": "upcoming",
           "statusLabel": "Future",
           "level": "domestic",
           "levelLabel": "Domestic / State",
           "sourceType": "",
           "sourceScope": "domestic-series",
-          "title": "Punjab vs Chhattisgarh, Elite Group B",
+          "title": "Assam vs Tripura, Elite Group B",
           "series": "Ranji Trophy Elite 2026-27",
           "teams": [
             {
-              "name": "Punjab",
-              "shortName": "PUN",
+              "name": "Assam",
+              "shortName": "ASM",
               "score": ""
             },
             {
-              "name": "Chhattisgarh",
-              "shortName": "CG",
+              "name": "Tripura",
+              "shortName": "TRI",
               "score": ""
             }
           ],
           "dateLabel": "18 Oct 2026, 09:30 am",
           "time": "",
-          "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+          "place": "Barsapara Cricket Stadium, Guwahati",
           "overview": "Match starts at Oct 18, 04:00 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163681",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163691",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-18T04:00:00.000Z",
-          "rawId": 163681,
+          "rawId": 163691,
           "importance": "Major tournament"
         },
         {
@@ -46723,6 +46692,38 @@
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-18T04:00:00.000Z",
           "rawId": 163671,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163681",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Punjab vs Chhattisgarh, Elite Group B",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Punjab",
+              "shortName": "PUN",
+              "score": ""
+            },
+            {
+              "name": "Chhattisgarh",
+              "shortName": "CG",
+              "score": ""
+            }
+          ],
+          "dateLabel": "18 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+          "overview": "Match starts at Oct 18, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163681",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-18T04:00:00.000Z",
+          "rawId": 163681,
           "importance": "Major tournament"
         },
         {
