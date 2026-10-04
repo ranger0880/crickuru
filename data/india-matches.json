@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-04T08:18:11.303Z",
-  "lastCheckedAt": "2026-10-04T08:18:11.303Z",
-  "lastSuccessfulSyncAt": "2026-10-04T08:18:11.303Z",
+  "syncedAt": "2026-10-04T14:08:03.749Z",
+  "lastCheckedAt": "2026-10-04T14:08:03.749Z",
+  "lastSuccessfulSyncAt": "2026-10-04T14:08:03.749Z",
   "coverage": {
     "pathways": [
       "India",
@@ -131,13 +131,13 @@
           "score": ""
         }
       ],
-      "dateLabel": "05 Oct 2026, 09:00 am",
+      "dateLabel": "05 Oct 2026, 09:30 am",
       "time": "",
       "place": "Narendra Modi Stadium B Ground, Ahmedabad",
-      "overview": "Match starts at Oct 05, 03:30 GMT",
+      "overview": "Match starts at Oct 05, 04:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155510",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
-      "startTime": "2026-10-05T03:30:00.000Z",
+      "startTime": "2026-10-05T04:00:00.000Z",
       "rawId": 155510
     },
     {
@@ -162,13 +162,13 @@
           "score": ""
         }
       ],
-      "dateLabel": "06 Oct 2026, 09:30 am",
+      "dateLabel": "06 Oct 2026, 02:00 pm",
       "time": "",
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Match starts at Oct 06, 04:00 GMT",
+      "overview": "Match starts at Oct 06, 08:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155433",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
-      "startTime": "2026-10-06T04:00:00.000Z",
+      "startTime": "2026-10-06T08:30:00.000Z",
       "rawId": 155433
     },
     {
@@ -224,13 +224,13 @@
           "score": ""
         }
       ],
-      "dateLabel": "09 Oct 2026, 09:30 am",
+      "dateLabel": "09 Oct 2026, 09:00 am",
       "time": "",
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Match starts at Oct 09, 04:00 GMT",
+      "overview": "Match starts at Oct 09, 03:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155444",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
-      "startTime": "2026-10-09T04:00:00.000Z",
+      "startTime": "2026-10-09T03:30:00.000Z",
       "rawId": 155444
     },
     {
@@ -286,13 +286,13 @@
           "score": ""
         }
       ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
+      "dateLabel": "11 Oct 2026, 09:00 am",
       "time": "",
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "overview": "Match starts at Oct 11, 03:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155455",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
-      "startTime": "2026-10-11T04:00:00.000Z",
+      "startTime": "2026-10-11T03:30:00.000Z",
       "rawId": 155455
     },
     {
@@ -17107,13 +17107,13 @@
           "score": ""
         }
       ],
-      "dateLabel": "05 Oct 2026, 09:00 am",
+      "dateLabel": "05 Oct 2026, 09:30 am",
       "time": "",
       "place": "Narendra Modi Stadium B Ground, Ahmedabad",
-      "overview": "Match starts at Oct 05, 03:30 GMT",
+      "overview": "Match starts at Oct 05, 04:00 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155510",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
-      "startTime": "2026-10-05T03:30:00.000Z",
+      "startTime": "2026-10-05T04:00:00.000Z",
       "rawId": 155510
     },
     {
@@ -17138,13 +17138,13 @@
           "score": ""
         }
       ],
-      "dateLabel": "06 Oct 2026, 09:30 am",
+      "dateLabel": "06 Oct 2026, 02:00 pm",
       "time": "",
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Match starts at Oct 06, 04:00 GMT",
+      "overview": "Match starts at Oct 06, 08:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155433",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
-      "startTime": "2026-10-06T04:00:00.000Z",
+      "startTime": "2026-10-06T08:30:00.000Z",
       "rawId": 155433
     },
     {
@@ -17200,13 +17200,13 @@
           "score": ""
         }
       ],
-      "dateLabel": "09 Oct 2026, 09:30 am",
+      "dateLabel": "09 Oct 2026, 09:00 am",
       "time": "",
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Match starts at Oct 09, 04:00 GMT",
+      "overview": "Match starts at Oct 09, 03:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155444",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
-      "startTime": "2026-10-09T04:00:00.000Z",
+      "startTime": "2026-10-09T03:30:00.000Z",
       "rawId": 155444
     },
     {
@@ -17262,13 +17262,13 @@
           "score": ""
         }
       ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
+      "dateLabel": "11 Oct 2026, 09:00 am",
       "time": "",
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "overview": "Match starts at Oct 11, 03:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155455",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
-      "startTime": "2026-10-11T04:00:00.000Z",
+      "startTime": "2026-10-11T03:30:00.000Z",
       "rawId": 155455
     },
     {
