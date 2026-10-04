@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-04T18:07:23.873Z",
-  "lastCheckedAt": "2026-10-04T18:07:23.873Z",
-  "lastSuccessfulSyncAt": "2026-10-04T18:07:23.873Z",
+  "syncedAt": "2026-10-04T21:17:41.536Z",
+  "lastCheckedAt": "2026-10-04T21:17:41.536Z",
+  "lastSuccessfulSyncAt": "2026-10-04T21:17:41.536Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,43 +41,12 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 1,
+    "live": 0,
     "recent": 60,
-    "upcoming": 483,
+    "upcoming": 484,
     "total": 544
   },
   "all": [
-    {
-      "id": "live-174340",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "England Champions vs India Champions, 4th Match",
-      "series": "World Championship of Legends 2026",
-      "teams": [
-        {
-          "name": "England Champions",
-          "shortName": "ENGCH",
-          "score": "192/4 (19.6 Ov)"
-        },
-        {
-          "name": "India Champions",
-          "shortName": "INDCH",
-          "score": "11 (1.1 Ov)"
-        }
-      ],
-      "dateLabel": "04 Oct 2026, 09:00 pm",
-      "time": "",
-      "place": "Sharjah Cricket Stadium, Sharjah",
-      "overview": "India Champions need 182 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174340",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-04T15:30:00.000Z",
-      "rawId": 174340
-    },
     {
       "id": "upcoming-171030",
       "status": "upcoming",
@@ -110,6 +79,37 @@
       "rawId": 171030
     },
     {
+      "id": "upcoming-174340",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "league",
+      "sourceScope": "domestic-global",
+      "title": "India Champions vs England Champions, 4th Match",
+      "series": "World Championship of Legends 2026",
+      "teams": [
+        {
+          "name": "India Champions",
+          "shortName": "INDCH",
+          "score": ""
+        },
+        {
+          "name": "England Champions",
+          "shortName": "ENGCH",
+          "score": ""
+        }
+      ],
+      "dateLabel": "04 Oct 2026, 09:00 pm",
+      "time": "",
+      "place": "Sharjah Cricket Stadium, Sharjah",
+      "overview": "Match starts at Oct 04, 15:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174340",
+      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic/liveStream",
+      "startTime": "2026-10-04T15:30:00.000Z",
+      "rawId": 174340
+    },
+    {
       "id": "upcoming-155510",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -131,13 +131,13 @@
           "score": ""
         }
       ],
-      "dateLabel": "05 Oct 2026, 09:30 am",
+      "dateLabel": "05 Oct 2026, 09:00 am",
       "time": "",
       "place": "Narendra Modi Stadium B Ground, Ahmedabad",
-      "overview": "Match starts at Oct 05, 04:00 GMT",
+      "overview": "Match starts at Oct 05, 03:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155510",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
-      "startTime": "2026-10-05T04:00:00.000Z",
+      "startTime": "2026-10-05T03:30:00.000Z",
       "rawId": 155510
     },
     {
@@ -17021,39 +17021,7 @@
       ]
     }
   ],
-  "live": [
-    {
-      "id": "live-174340",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "England Champions vs India Champions, 4th Match",
-      "series": "World Championship of Legends 2026",
-      "teams": [
-        {
-          "name": "England Champions",
-          "shortName": "ENGCH",
-          "score": "192/4 (19.6 Ov)"
-        },
-        {
-          "name": "India Champions",
-          "shortName": "INDCH",
-          "score": "11 (1.1 Ov)"
-        }
-      ],
-      "dateLabel": "04 Oct 2026, 09:00 pm",
-      "time": "",
-      "place": "Sharjah Cricket Stadium, Sharjah",
-      "overview": "India Champions need 182 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174340",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-04T15:30:00.000Z",
-      "rawId": 174340
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "upcoming-171030",
@@ -17087,6 +17055,37 @@
       "rawId": 171030
     },
     {
+      "id": "upcoming-174340",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "league",
+      "sourceScope": "domestic-global",
+      "title": "India Champions vs England Champions, 4th Match",
+      "series": "World Championship of Legends 2026",
+      "teams": [
+        {
+          "name": "India Champions",
+          "shortName": "INDCH",
+          "score": ""
+        },
+        {
+          "name": "England Champions",
+          "shortName": "ENGCH",
+          "score": ""
+        }
+      ],
+      "dateLabel": "04 Oct 2026, 09:00 pm",
+      "time": "",
+      "place": "Sharjah Cricket Stadium, Sharjah",
+      "overview": "Match starts at Oct 04, 15:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174340",
+      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic/liveStream",
+      "startTime": "2026-10-04T15:30:00.000Z",
+      "rawId": 174340
+    },
+    {
       "id": "upcoming-155510",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -17108,13 +17107,13 @@
           "score": ""
         }
       ],
-      "dateLabel": "05 Oct 2026, 09:30 am",
+      "dateLabel": "05 Oct 2026, 09:00 am",
       "time": "",
       "place": "Narendra Modi Stadium B Ground, Ahmedabad",
-      "overview": "Match starts at Oct 05, 04:00 GMT",
+      "overview": "Match starts at Oct 05, 03:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155510",
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
-      "startTime": "2026-10-05T04:00:00.000Z",
+      "startTime": "2026-10-05T03:30:00.000Z",
       "rawId": 155510
     },
     {
@@ -34014,10 +34013,10 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 1,
+      "live": 0,
       "recent": 0,
       "upcoming": 0,
-      "total": 1
+      "total": 0
     },
     {
       "id": "women",
@@ -34034,8 +34033,8 @@
       "order": 4,
       "live": 0,
       "recent": 1,
-      "upcoming": 412,
-      "total": 413
+      "upcoming": 413,
+      "total": 414
     }
   ],
   "importantMatches": [
