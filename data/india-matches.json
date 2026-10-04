@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-04T02:01:07.096Z",
-  "lastCheckedAt": "2026-10-04T02:01:07.096Z",
-  "lastSuccessfulSyncAt": "2026-10-04T02:01:07.096Z",
+  "syncedAt": "2026-10-04T08:18:11.303Z",
+  "lastCheckedAt": "2026-10-04T08:18:11.303Z",
+  "lastSuccessfulSyncAt": "2026-10-04T08:18:11.303Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,43 +41,12 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 1,
+    "live": 0,
     "recent": 60,
-    "upcoming": 483,
+    "upcoming": 484,
     "total": 544
   },
   "all": [
-    {
-      "id": "live-163077",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "Rest of India vs Jammu and Kashmir, Irani Cup",
-      "series": "Irani Cup 2026",
-      "teams": [
-        {
-          "name": "Rest of India",
-          "shortName": "ROI",
-          "score": "237/10 (68.1 Ov) & 306/8 (93.6 Ov)"
-        },
-        {
-          "name": "Jammu and Kashmir",
-          "shortName": "JK",
-          "score": "278/10 (64.2 Ov)"
-        }
-      ],
-      "dateLabel": "01 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Sher-i-Kashmir Stadium, Srinagar",
-      "overview": "Day 3: Stumps - Rest of India lead by 265 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-01T04:00:00.000Z",
-      "rawId": 163077
-    },
     {
       "id": "upcoming-171030",
       "status": "upcoming",
@@ -108,6 +77,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
+    },
+    {
+      "id": "upcoming-174340",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "India Champions vs England Champions, 4th Match",
+      "series": "World Championship of Legends 2026",
+      "teams": [
+        {
+          "name": "India Champions",
+          "shortName": "INDCH",
+          "score": ""
+        },
+        {
+          "name": "England Champions",
+          "shortName": "ENGCH",
+          "score": ""
+        }
+      ],
+      "dateLabel": "04 Oct 2026, 09:00 pm",
+      "time": "",
+      "place": "Sharjah Cricket Stadium, Sharjah",
+      "overview": "Match starts at Oct 04, 15:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174340",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-04T15:30:00.000Z",
+      "rawId": 174340
     },
     {
       "id": "upcoming-155510",
@@ -15052,38 +15052,6 @@
       "rawId": 174701
     },
     {
-      "id": "recent-174313",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "India Champions vs Australia Champions, 1st Match",
-      "series": "World Championship of Legends 2026",
-      "teams": [
-        {
-          "name": "India Champions",
-          "shortName": "INDCH",
-          "score": "196/7 (19.6 Ov)"
-        },
-        {
-          "name": "Australia Champions",
-          "shortName": "AUSCH",
-          "score": "150/10 (16.2 Ov)"
-        }
-      ],
-      "dateLabel": "03 Oct 2026, 05:00 pm",
-      "time": "",
-      "place": "Sharjah Cricket Stadium, Sharjah",
-      "overview": "India Champions won by 46 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174313",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-03T11:30:00.000Z",
-      "rawId": 174313,
-      "starPerformers": []
-    },
-    {
       "id": "recent-151554",
       "status": "recent",
       "statusLabel": "Past",
@@ -15177,6 +15145,38 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-10-01T04:30:00.000Z",
       "rawId": 171060,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-163077",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "Rest of India vs Jammu and Kashmir, Irani Cup",
+      "series": "Irani Cup 2026",
+      "teams": [
+        {
+          "name": "Rest of India",
+          "shortName": "ROI",
+          "score": "237/10 (68.1 Ov) & 319/10 (99.5 Ov)"
+        },
+        {
+          "name": "Jammu and Kashmir",
+          "shortName": "JK",
+          "score": "278/10 (64.2 Ov) & 111/10 (28.4 Ov)"
+        }
+      ],
+      "dateLabel": "01 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Sher-i-Kashmir Stadium, Srinagar",
+      "overview": "Rest of India won by 167 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-01T04:00:00.000Z",
+      "rawId": 163077,
       "starPerformers": []
     },
     {
@@ -17021,39 +17021,7 @@
       ]
     }
   ],
-  "live": [
-    {
-      "id": "live-163077",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "Rest of India vs Jammu and Kashmir, Irani Cup",
-      "series": "Irani Cup 2026",
-      "teams": [
-        {
-          "name": "Rest of India",
-          "shortName": "ROI",
-          "score": "237/10 (68.1 Ov) & 306/8 (93.6 Ov)"
-        },
-        {
-          "name": "Jammu and Kashmir",
-          "shortName": "JK",
-          "score": "278/10 (64.2 Ov)"
-        }
-      ],
-      "dateLabel": "01 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Sher-i-Kashmir Stadium, Srinagar",
-      "overview": "Day 3: Stumps - Rest of India lead by 265 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-01T04:00:00.000Z",
-      "rawId": 163077
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "upcoming-171030",
@@ -17085,6 +17053,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
+    },
+    {
+      "id": "upcoming-174340",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "India Champions vs England Champions, 4th Match",
+      "series": "World Championship of Legends 2026",
+      "teams": [
+        {
+          "name": "India Champions",
+          "shortName": "INDCH",
+          "score": ""
+        },
+        {
+          "name": "England Champions",
+          "shortName": "ENGCH",
+          "score": ""
+        }
+      ],
+      "dateLabel": "04 Oct 2026, 09:00 pm",
+      "time": "",
+      "place": "Sharjah Cricket Stadium, Sharjah",
+      "overview": "Match starts at Oct 04, 15:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174340",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-04T15:30:00.000Z",
+      "rawId": 174340
     },
     {
       "id": "upcoming-155510",
@@ -32031,38 +32030,6 @@
   ],
   "recent": [
     {
-      "id": "recent-174313",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "India Champions vs Australia Champions, 1st Match",
-      "series": "World Championship of Legends 2026",
-      "teams": [
-        {
-          "name": "India Champions",
-          "shortName": "INDCH",
-          "score": "196/7 (19.6 Ov)"
-        },
-        {
-          "name": "Australia Champions",
-          "shortName": "AUSCH",
-          "score": "150/10 (16.2 Ov)"
-        }
-      ],
-      "dateLabel": "03 Oct 2026, 05:00 pm",
-      "time": "",
-      "place": "Sharjah Cricket Stadium, Sharjah",
-      "overview": "India Champions won by 46 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174313",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-03T11:30:00.000Z",
-      "rawId": 174313,
-      "starPerformers": []
-    },
-    {
       "id": "recent-151554",
       "status": "recent",
       "statusLabel": "Past",
@@ -32156,6 +32123,38 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-10-01T04:30:00.000Z",
       "rawId": 171060,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-163077",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "Rest of India vs Jammu and Kashmir, Irani Cup",
+      "series": "Irani Cup 2026",
+      "teams": [
+        {
+          "name": "Rest of India",
+          "shortName": "ROI",
+          "score": "237/10 (68.1 Ov) & 319/10 (99.5 Ov)"
+        },
+        {
+          "name": "Jammu and Kashmir",
+          "shortName": "JK",
+          "score": "278/10 (64.2 Ov) & 111/10 (28.4 Ov)"
+        }
+      ],
+      "dateLabel": "01 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Sher-i-Kashmir Stadium, Srinagar",
+      "overview": "Rest of India won by 167 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-01T04:00:00.000Z",
+      "rawId": 163077,
       "starPerformers": []
     },
     {
@@ -34015,8 +34014,8 @@
       "label": "League / IPL",
       "order": 2,
       "live": 0,
-      "recent": 1,
-      "upcoming": 0,
+      "recent": 0,
+      "upcoming": 1,
       "total": 1
     },
     {
@@ -34032,45 +34031,13 @@
       "id": "domestic",
       "label": "Domestic / State",
       "order": 4,
-      "live": 1,
-      "recent": 0,
+      "live": 0,
+      "recent": 1,
       "upcoming": 412,
       "total": 413
     }
   ],
   "importantMatches": [
-    {
-      "id": "live-163077",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "Rest of India vs Jammu and Kashmir, Irani Cup",
-      "series": "Irani Cup 2026",
-      "teams": [
-        {
-          "name": "Rest of India",
-          "shortName": "ROI",
-          "score": "237/10 (68.1 Ov) & 306/8 (93.6 Ov)"
-        },
-        {
-          "name": "Jammu and Kashmir",
-          "shortName": "JK",
-          "score": "278/10 (64.2 Ov)"
-        }
-      ],
-      "dateLabel": "01 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Sher-i-Kashmir Stadium, Srinagar",
-      "overview": "Day 3: Stumps - Rest of India lead by 265 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-01T04:00:00.000Z",
-      "rawId": 163077,
-      "importance": "Major tournament"
-    },
     {
       "id": "upcoming-165363",
       "status": "upcoming",
@@ -40791,6 +40758,39 @@
       "rawId": 171060,
       "starPerformers": [],
       "importance": "Knockout stage"
+    },
+    {
+      "id": "recent-163077",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "Rest of India vs Jammu and Kashmir, Irani Cup",
+      "series": "Irani Cup 2026",
+      "teams": [
+        {
+          "name": "Rest of India",
+          "shortName": "ROI",
+          "score": "237/10 (68.1 Ov) & 319/10 (99.5 Ov)"
+        },
+        {
+          "name": "Jammu and Kashmir",
+          "shortName": "JK",
+          "score": "278/10 (64.2 Ov) & 111/10 (28.4 Ov)"
+        }
+      ],
+      "dateLabel": "01 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Sher-i-Kashmir Stadium, Srinagar",
+      "overview": "Rest of India won by 167 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-01T04:00:00.000Z",
+      "rawId": 163077,
+      "starPerformers": [],
+      "importance": "Major tournament"
     },
     {
       "id": "recent-170963",
@@ -47836,16 +47836,16 @@
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "total": 1,
-      "live": 1,
+      "live": 0,
       "upcoming": 0,
-      "recent": 0,
+      "recent": 1,
       "startTime": "2026-10-01T04:00:00.000Z",
       "endTime": "2026-10-01T04:00:00.000Z",
       "matches": [
         {
-          "id": "live-163077",
-          "status": "live",
-          "statusLabel": "Live",
+          "id": "recent-163077",
+          "status": "recent",
+          "statusLabel": "Past",
           "level": "domestic",
           "levelLabel": "Domestic / State",
           "sourceType": "domestic",
@@ -47856,22 +47856,23 @@
             {
               "name": "Rest of India",
               "shortName": "ROI",
-              "score": "237/10 (68.1 Ov) & 306/8 (93.6 Ov)"
+              "score": "237/10 (68.1 Ov) & 319/10 (99.5 Ov)"
             },
             {
               "name": "Jammu and Kashmir",
               "shortName": "JK",
-              "score": "278/10 (64.2 Ov)"
+              "score": "278/10 (64.2 Ov) & 111/10 (28.4 Ov)"
             }
           ],
           "dateLabel": "01 Oct 2026, 09:30 am",
           "time": "",
           "place": "Sher-i-Kashmir Stadium, Srinagar",
-          "overview": "Day 3: Stumps - Rest of India lead by 265 runs",
+          "overview": "Rest of India won by 167 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
           "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-10-01T04:00:00.000Z",
           "rawId": 163077,
+          "starPerformers": [],
           "importance": "Major tournament"
         }
       ]
@@ -48187,6 +48188,39 @@
           "rawId": 171060,
           "starPerformers": [],
           "importance": "Knockout stage"
+        },
+        {
+          "id": "recent-163077",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "domestic",
+          "sourceScope": "global",
+          "title": "Rest of India vs Jammu and Kashmir, Irani Cup",
+          "series": "Irani Cup 2026",
+          "teams": [
+            {
+              "name": "Rest of India",
+              "shortName": "ROI",
+              "score": "237/10 (68.1 Ov) & 319/10 (99.5 Ov)"
+            },
+            {
+              "name": "Jammu and Kashmir",
+              "shortName": "JK",
+              "score": "278/10 (64.2 Ov) & 111/10 (28.4 Ov)"
+            }
+          ],
+          "dateLabel": "01 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "Sher-i-Kashmir Stadium, Srinagar",
+          "overview": "Rest of India won by 167 runs",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "startTime": "2026-10-01T04:00:00.000Z",
+          "rawId": 163077,
+          "starPerformers": [],
+          "importance": "Major tournament"
         }
       ]
     },
