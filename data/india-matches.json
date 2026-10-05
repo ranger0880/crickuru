@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-05T11:51:51.874Z",
-  "lastCheckedAt": "2026-10-05T11:51:51.874Z",
-  "lastSuccessfulSyncAt": "2026-10-05T11:51:51.874Z",
+  "syncedAt": "2026-10-05T19:51:13.894Z",
+  "lastCheckedAt": "2026-10-05T19:51:13.894Z",
+  "lastSuccessfulSyncAt": "2026-10-05T19:51:13.894Z",
   "coverage": {
     "pathways": [
       "India",
@@ -146,8 +146,8 @@
       "statusLabel": "Future",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "India vs West Indies, 1st T20I",
       "series": "West Indies tour of India, 2026",
       "teams": [
@@ -167,7 +167,7 @@
       "place": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
       "overview": "Match starts at Oct 06, 13:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151565",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-06T13:30:00.000Z",
       "rawId": 151565
     },
@@ -15026,15 +15026,15 @@
       "statusLabel": "Past",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-men",
       "title": "India vs West Indies, 3rd ODI",
       "series": "West Indies tour of India, 2026",
       "teams": [
         {
           "name": "India",
           "shortName": "IND",
-          "score": "351/7 (49.6 Ov)"
+          "score": "351/7 (50 Ov)"
         },
         {
           "name": "West Indies",
@@ -15047,7 +15047,7 @@
       "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
       "overview": "West Indies won by 5 wkts",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151554",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-10-03T08:30:00.000Z",
       "rawId": 151554,
       "starPerformers": []
@@ -17092,8 +17092,8 @@
       "statusLabel": "Future",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "India vs West Indies, 1st T20I",
       "series": "West Indies tour of India, 2026",
       "teams": [
@@ -17113,7 +17113,7 @@
       "place": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
       "overview": "Match starts at Oct 06, 13:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151565",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-06T13:30:00.000Z",
       "rawId": 151565
     },
@@ -31974,15 +31974,15 @@
       "statusLabel": "Past",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-men",
       "title": "India vs West Indies, 3rd ODI",
       "series": "West Indies tour of India, 2026",
       "teams": [
         {
           "name": "India",
           "shortName": "IND",
-          "score": "351/7 (49.6 Ov)"
+          "score": "351/7 (50 Ov)"
         },
         {
           "name": "West Indies",
@@ -31995,7 +31995,7 @@
       "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
       "overview": "West Indies won by 5 wkts",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151554",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-10-03T08:30:00.000Z",
       "rawId": 151554,
       "starPerformers": []
