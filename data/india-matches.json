@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-04T23:59:06.788Z",
-  "lastCheckedAt": "2026-10-04T23:59:06.788Z",
-  "lastSuccessfulSyncAt": "2026-10-04T23:59:06.788Z",
+  "syncedAt": "2026-10-05T04:45:40.297Z",
+  "lastCheckedAt": "2026-10-05T04:45:40.297Z",
+  "lastSuccessfulSyncAt": "2026-10-05T04:45:40.297Z",
   "coverage": {
     "pathways": [
       "India",
@@ -42,41 +42,41 @@
   },
   "summary": {
     "live": 1,
-    "recent": 60,
-    "upcoming": 483,
+    "recent": 61,
+    "upcoming": 482,
     "total": 544
   },
   "all": [
     {
-      "id": "live-174340",
+      "id": "live-155510",
       "status": "live",
       "statusLabel": "Live",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "league",
-      "sourceScope": "domestic-global",
-      "title": "England Champions vs India Champions, 4th Match",
-      "series": "World Championship of Legends 2026",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "Australia U19 vs India U19, 2nd unofficial Test",
+      "series": "Australia U19 tour of India 2026",
       "teams": [
         {
-          "name": "England Champions",
-          "shortName": "ENGCH",
-          "score": "192/4 (19.6 Ov)"
+          "name": "Australia U19",
+          "shortName": "AUSU19",
+          "score": "30/2 (8.4 Ov)"
         },
         {
-          "name": "India Champions",
-          "shortName": "INDCH",
-          "score": "11 (1.1 Ov)"
+          "name": "India U19",
+          "shortName": "INDU19",
+          "score": ""
         }
       ],
-      "dateLabel": "04 Oct 2026, 09:00 pm",
+      "dateLabel": "05 Oct 2026, 09:30 am",
       "time": "",
-      "place": "Sharjah Cricket Stadium, Sharjah",
-      "overview": "India Champions need 182 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174340",
-      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic/liveStream",
-      "startTime": "2026-10-04T15:30:00.000Z",
-      "rawId": 174340
+      "place": "Narendra Modi Stadium B Ground, Ahmedabad",
+      "overview": "Day 1: 1st Session",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155510",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-05T04:00:00.000Z",
+      "rawId": 155510
     },
     {
       "id": "upcoming-171030",
@@ -108,37 +108,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
-    },
-    {
-      "id": "upcoming-155510",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-u19",
-      "title": "India U19 vs Australia U19, 2nd unofficial Test",
-      "series": "Australia U19 tour of India 2026",
-      "teams": [
-        {
-          "name": "India U19",
-          "shortName": "INDU19",
-          "score": ""
-        },
-        {
-          "name": "Australia U19",
-          "shortName": "AUSU19",
-          "score": ""
-        }
-      ],
-      "dateLabel": "05 Oct 2026, 09:00 am",
-      "time": "",
-      "place": "Narendra Modi Stadium B Ground, Ahmedabad",
-      "overview": "Match starts at Oct 05, 03:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155510",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
-      "startTime": "2026-10-05T03:30:00.000Z",
-      "rawId": 155510
     },
     {
       "id": "upcoming-155433",
@@ -15052,6 +15021,38 @@
       "rawId": 174701
     },
     {
+      "id": "recent-174340",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "England Champions vs India Champions, 4th Match",
+      "series": "World Championship of Legends 2026",
+      "teams": [
+        {
+          "name": "England Champions",
+          "shortName": "ENGCH",
+          "score": "192/4 (19.6 Ov)"
+        },
+        {
+          "name": "India Champions",
+          "shortName": "INDCH",
+          "score": "171/8 (19.6 Ov)"
+        }
+      ],
+      "dateLabel": "04 Oct 2026, 09:00 pm",
+      "time": "",
+      "place": "Sharjah Cricket Stadium, Sharjah",
+      "overview": "England Champions won by 21 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174340",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-04T15:30:00.000Z",
+      "rawId": 174340,
+      "starPerformers": []
+    },
+    {
       "id": "recent-151554",
       "status": "recent",
       "statusLabel": "Past",
@@ -17023,35 +17024,35 @@
   ],
   "live": [
     {
-      "id": "live-174340",
+      "id": "live-155510",
       "status": "live",
       "statusLabel": "Live",
       "level": "domestic",
       "levelLabel": "Domestic / State",
-      "sourceType": "league",
-      "sourceScope": "domestic-global",
-      "title": "England Champions vs India Champions, 4th Match",
-      "series": "World Championship of Legends 2026",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "Australia U19 vs India U19, 2nd unofficial Test",
+      "series": "Australia U19 tour of India 2026",
       "teams": [
         {
-          "name": "England Champions",
-          "shortName": "ENGCH",
-          "score": "192/4 (19.6 Ov)"
+          "name": "Australia U19",
+          "shortName": "AUSU19",
+          "score": "30/2 (8.4 Ov)"
         },
         {
-          "name": "India Champions",
-          "shortName": "INDCH",
-          "score": "11 (1.1 Ov)"
+          "name": "India U19",
+          "shortName": "INDU19",
+          "score": ""
         }
       ],
-      "dateLabel": "04 Oct 2026, 09:00 pm",
+      "dateLabel": "05 Oct 2026, 09:30 am",
       "time": "",
-      "place": "Sharjah Cricket Stadium, Sharjah",
-      "overview": "India Champions need 182 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174340",
-      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic/liveStream",
-      "startTime": "2026-10-04T15:30:00.000Z",
-      "rawId": 174340
+      "place": "Narendra Modi Stadium B Ground, Ahmedabad",
+      "overview": "Day 1: 1st Session",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155510",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-05T04:00:00.000Z",
+      "rawId": 155510
     }
   ],
   "upcoming": [
@@ -17085,37 +17086,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
-    },
-    {
-      "id": "upcoming-155510",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-u19",
-      "title": "India U19 vs Australia U19, 2nd unofficial Test",
-      "series": "Australia U19 tour of India 2026",
-      "teams": [
-        {
-          "name": "India U19",
-          "shortName": "INDU19",
-          "score": ""
-        },
-        {
-          "name": "Australia U19",
-          "shortName": "AUSU19",
-          "score": ""
-        }
-      ],
-      "dateLabel": "05 Oct 2026, 09:00 am",
-      "time": "",
-      "place": "Narendra Modi Stadium B Ground, Ahmedabad",
-      "overview": "Match starts at Oct 05, 03:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155510",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
-      "startTime": "2026-10-05T03:30:00.000Z",
-      "rawId": 155510
     },
     {
       "id": "upcoming-155433",
@@ -32031,6 +32001,38 @@
   ],
   "recent": [
     {
+      "id": "recent-174340",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "England Champions vs India Champions, 4th Match",
+      "series": "World Championship of Legends 2026",
+      "teams": [
+        {
+          "name": "England Champions",
+          "shortName": "ENGCH",
+          "score": "192/4 (19.6 Ov)"
+        },
+        {
+          "name": "India Champions",
+          "shortName": "INDCH",
+          "score": "171/8 (19.6 Ov)"
+        }
+      ],
+      "dateLabel": "04 Oct 2026, 09:00 pm",
+      "time": "",
+      "place": "Sharjah Cricket Stadium, Sharjah",
+      "overview": "England Champions won by 21 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/174340",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-04T15:30:00.000Z",
+      "rawId": 174340,
+      "starPerformers": []
+    },
+    {
       "id": "recent-151554",
       "status": "recent",
       "statusLabel": "Past",
@@ -34007,17 +34009,17 @@
       "order": 1,
       "live": 0,
       "recent": 29,
-      "upcoming": 46,
-      "total": 75
+      "upcoming": 45,
+      "total": 74
     },
     {
       "id": "league",
       "label": "League / IPL",
       "order": 2,
       "live": 0,
-      "recent": 0,
+      "recent": 1,
       "upcoming": 0,
-      "total": 0
+      "total": 1
     },
     {
       "id": "women",
