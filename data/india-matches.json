@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-06T14:15:18.416Z",
-  "lastCheckedAt": "2026-10-06T14:15:18.416Z",
-  "lastSuccessfulSyncAt": "2026-10-06T14:15:18.416Z",
+  "syncedAt": "2026-10-06T19:33:54.014Z",
+  "lastCheckedAt": "2026-10-06T19:33:54.014Z",
+  "lastSuccessfulSyncAt": "2026-10-06T19:33:54.014Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,10 +41,10 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 3,
+    "live": 1,
     "recent": 60,
     "upcoming": 482,
-    "total": 545
+    "total": 543
   },
   "all": [
     {
@@ -77,68 +77,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-05T04:00:00.000Z",
       "rawId": 155510
-    },
-    {
-      "id": "live-155433",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "Australia A vs India A, 1st unofficial ODI",
-      "series": "Australia A tour of India 2026",
-      "teams": [
-        {
-          "name": "Australia A",
-          "shortName": "AUSA",
-          "score": "274/10 (48.2 Ov)"
-        },
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": "83/4 (18.5 Ov)"
-        }
-      ],
-      "dateLabel": "06 Oct 2026, 02:00 pm",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "India A need 192 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155433",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-06T08:30:00.000Z",
-      "rawId": 155433
-    },
-    {
-      "id": "live-151565",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "West Indies vs India, 1st T20I",
-      "series": "West Indies tour of India, 2026",
-      "teams": [
-        {
-          "name": "West Indies",
-          "shortName": "WI",
-          "score": "61/3 (7.6 Ov)"
-        },
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": ""
-        }
-      ],
-      "dateLabel": "06 Oct 2026, 07:00 pm",
-      "time": "",
-      "place": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
-      "overview": "India opt to bowl",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151565",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-06T13:30:00.000Z",
-      "rawId": 151565
     },
     {
       "id": "upcoming-171030",
@@ -15083,6 +15021,70 @@
       "rawId": 174701
     },
     {
+      "id": "recent-151565",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "West Indies vs India, 1st T20I",
+      "series": "West Indies tour of India, 2026",
+      "teams": [
+        {
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": "171/10 (19.1 Ov)"
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "172/2 (14.4 Ov)"
+        }
+      ],
+      "dateLabel": "06 Oct 2026, 07:00 pm",
+      "time": "",
+      "place": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "overview": "India won by 8 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151565",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-06T13:30:00.000Z",
+      "rawId": 151565,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-155433",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "Australia A vs India A, 1st unofficial ODI",
+      "series": "Australia A tour of India 2026",
+      "teams": [
+        {
+          "name": "Australia A",
+          "shortName": "AUSA",
+          "score": "274/10 (48.2 Ov)"
+        },
+        {
+          "name": "India A",
+          "shortName": "INDA",
+          "score": "149/10 (31.4 Ov)"
+        }
+      ],
+      "dateLabel": "06 Oct 2026, 02:00 pm",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "Australia A won by 125 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155433",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-06T08:30:00.000Z",
+      "rawId": 155433,
+      "starPerformers": []
+    },
+    {
       "id": "recent-151554",
       "status": "recent",
       "statusLabel": "Past",
@@ -15880,38 +15882,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-09-13T14:30:00.000Z",
       "rawId": 169891,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-170103",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
-      "title": "Afghanistan vs India, 1st T20I",
-      "series": "Afghanistan vs India in India 2026",
-      "teams": [
-        {
-          "name": "Afghanistan",
-          "shortName": "AFG",
-          "score": "156/8 (20 Ov)"
-        },
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": "157/3 (13.4 Ov)"
-        }
-      ],
-      "dateLabel": "13 Sept 2026, 07:30 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "India won by 7 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170103",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
-      "startTime": "2026-09-13T14:00:00.000Z",
-      "rawId": 170103,
       "starPerformers": []
     },
     {
@@ -16839,38 +16809,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-145541",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-a",
-      "title": "India A vs Namibia, 16th Match",
-      "series": "ICC Men's T20 World Cup Warm up Matches 2026",
-      "teams": [
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": "197/8 (20 Ov)"
-        },
-        {
-          "name": "Namibia",
-          "shortName": "NAM",
-          "score": "67/10 (12.1 Ov)"
-        }
-      ],
-      "dateLabel": "06 Feb 2026, 05:00 pm",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "India A won by 130 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/145541",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
-      "startTime": "2026-02-06T11:30:00.000Z",
-      "rawId": 145541,
-      "starPerformers": []
-    },
-    {
       "id": "recent-138680",
       "status": "recent",
       "statusLabel": "Past",
@@ -17083,68 +17021,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-05T04:00:00.000Z",
       "rawId": 155510
-    },
-    {
-      "id": "live-155433",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "Australia A vs India A, 1st unofficial ODI",
-      "series": "Australia A tour of India 2026",
-      "teams": [
-        {
-          "name": "Australia A",
-          "shortName": "AUSA",
-          "score": "274/10 (48.2 Ov)"
-        },
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": "83/4 (18.5 Ov)"
-        }
-      ],
-      "dateLabel": "06 Oct 2026, 02:00 pm",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "India A need 192 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155433",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-06T08:30:00.000Z",
-      "rawId": 155433
-    },
-    {
-      "id": "live-151565",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "West Indies vs India, 1st T20I",
-      "series": "West Indies tour of India, 2026",
-      "teams": [
-        {
-          "name": "West Indies",
-          "shortName": "WI",
-          "score": "61/3 (7.6 Ov)"
-        },
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": ""
-        }
-      ],
-      "dateLabel": "06 Oct 2026, 07:00 pm",
-      "time": "",
-      "place": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
-      "overview": "India opt to bowl",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151565",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-06T13:30:00.000Z",
-      "rawId": 151565
     }
   ],
   "upcoming": [
@@ -32093,6 +31969,70 @@
   ],
   "recent": [
     {
+      "id": "recent-151565",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "West Indies vs India, 1st T20I",
+      "series": "West Indies tour of India, 2026",
+      "teams": [
+        {
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": "171/10 (19.1 Ov)"
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "172/2 (14.4 Ov)"
+        }
+      ],
+      "dateLabel": "06 Oct 2026, 07:00 pm",
+      "time": "",
+      "place": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "overview": "India won by 8 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151565",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-06T13:30:00.000Z",
+      "rawId": 151565,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-155433",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "Australia A vs India A, 1st unofficial ODI",
+      "series": "Australia A tour of India 2026",
+      "teams": [
+        {
+          "name": "Australia A",
+          "shortName": "AUSA",
+          "score": "274/10 (48.2 Ov)"
+        },
+        {
+          "name": "India A",
+          "shortName": "INDA",
+          "score": "149/10 (31.4 Ov)"
+        }
+      ],
+      "dateLabel": "06 Oct 2026, 02:00 pm",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "Australia A won by 125 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155433",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-06T08:30:00.000Z",
+      "rawId": 155433,
+      "starPerformers": []
+    },
+    {
       "id": "recent-151554",
       "status": "recent",
       "statusLabel": "Past",
@@ -32890,38 +32830,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/results",
       "startTime": "2026-09-13T14:30:00.000Z",
       "rawId": 169891,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-170103",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
-      "title": "Afghanistan vs India, 1st T20I",
-      "series": "Afghanistan vs India in India 2026",
-      "teams": [
-        {
-          "name": "Afghanistan",
-          "shortName": "AFG",
-          "score": "156/8 (20 Ov)"
-        },
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": "157/3 (13.4 Ov)"
-        }
-      ],
-      "dateLabel": "13 Sept 2026, 07:30 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "India won by 7 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170103",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
-      "startTime": "2026-09-13T14:00:00.000Z",
-      "rawId": 170103,
       "starPerformers": []
     },
     {
@@ -33849,38 +33757,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-145541",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-a",
-      "title": "India A vs Namibia, 16th Match",
-      "series": "ICC Men's T20 World Cup Warm up Matches 2026",
-      "teams": [
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": "197/8 (20 Ov)"
-        },
-        {
-          "name": "Namibia",
-          "shortName": "NAM",
-          "score": "67/10 (12.1 Ov)"
-        }
-      ],
-      "dateLabel": "06 Feb 2026, 05:00 pm",
-      "time": "",
-      "place": "BCCI Centre of Excellence Ground 1, Bengaluru",
-      "overview": "India A won by 130 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/145541",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
-      "startTime": "2026-02-06T11:30:00.000Z",
-      "rawId": 145541,
-      "starPerformers": []
-    },
-    {
       "id": "recent-138680",
       "status": "recent",
       "statusLabel": "Past",
@@ -34067,10 +33943,10 @@
       "id": "international",
       "label": "International",
       "order": 1,
-      "live": 1,
-      "recent": 29,
+      "live": 0,
+      "recent": 28,
       "upcoming": 45,
-      "total": 75
+      "total": 73
     },
     {
       "id": "league",
@@ -34094,8 +33970,8 @@
       "id": "domestic",
       "label": "Domestic / State",
       "order": 4,
-      "live": 2,
-      "recent": 1,
+      "live": 1,
+      "recent": 2,
       "upcoming": 412,
       "total": 415
     }
