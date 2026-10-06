@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-06T00:58:42.242Z",
-  "lastCheckedAt": "2026-10-06T00:58:42.242Z",
-  "lastSuccessfulSyncAt": "2026-10-06T00:58:42.242Z",
+  "syncedAt": "2026-10-06T07:16:59.596Z",
+  "lastCheckedAt": "2026-10-06T07:16:59.596Z",
+  "lastSuccessfulSyncAt": "2026-10-06T07:16:59.596Z",
   "coverage": {
     "pathways": [
       "India",
@@ -43,8 +43,8 @@
   "summary": {
     "live": 1,
     "recent": 60,
-    "upcoming": 477,
-    "total": 538
+    "upcoming": 482,
+    "total": 543
   },
   "all": [
     {
@@ -66,13 +66,13 @@
         {
           "name": "India U19",
           "shortName": "INDU19",
-          "score": "38/2 (14.6 Ov)"
+          "score": "184/8 (53.3 Ov)"
         }
       ],
       "dateLabel": "05 Oct 2026, 09:30 am",
       "time": "",
       "place": "Narendra Modi Stadium B Ground, Ahmedabad",
-      "overview": "Day 1: Stumps - India U19 trail by 136 runs",
+      "overview": "Day 2: 2nd Session - India U19 lead by 10 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155510",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-05T04:00:00.000Z",
@@ -7302,6 +7302,37 @@
       "rawId": 165311
     },
     {
+      "id": "upcoming-155793",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "India Women U19 vs England Women U19, 1st unofficial T20",
+      "series": "England Women U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": ""
+        },
+        {
+          "name": "England Women U19",
+          "shortName": "ENGWU19",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Nov 2026, 06:00 pm",
+      "time": "",
+      "place": "BCA Stadium, Kotambi, Vadodara",
+      "overview": "Match starts at Nov 26, 12:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155793",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/schedule",
+      "startTime": "2026-11-26T12:30:00.000Z",
+      "rawId": 155793
+    },
+    {
       "id": "upcoming-161296",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -7331,6 +7362,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
       "startTime": "2026-11-26T22:00:00.000Z",
       "rawId": 161296
+    },
+    {
+      "id": "upcoming-155804",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "India Women U19 vs England Women U19, 2nd unofficial T20",
+      "series": "England Women U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": ""
+        },
+        {
+          "name": "England Women U19",
+          "shortName": "ENGWU19",
+          "score": ""
+        }
+      ],
+      "dateLabel": "28 Nov 2026, 01:00 pm",
+      "time": "",
+      "place": "BCA Stadium, Kotambi, Vadodara",
+      "overview": "Match starts at Nov 28, 07:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155804",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/schedule",
+      "startTime": "2026-11-28T07:30:00.000Z",
+      "rawId": 155804
     },
     {
       "id": "upcoming-165350",
@@ -7488,6 +7550,37 @@
       "rawId": 165363
     },
     {
+      "id": "upcoming-155815",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "India Women U19 vs England Women U19, 3rd unofficial T20",
+      "series": "England Women U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": ""
+        },
+        {
+          "name": "England Women U19",
+          "shortName": "ENGWU19",
+          "score": ""
+        }
+      ],
+      "dateLabel": "01 Dec 2026, 06:00 pm",
+      "time": "",
+      "place": "CB Patel International Cricket Stadium, Surat",
+      "overview": "Match starts at Dec 01, 12:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155815",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/schedule",
+      "startTime": "2026-12-01T12:30:00.000Z",
+      "rawId": 155815
+    },
+    {
       "id": "upcoming-165381",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -7643,6 +7736,37 @@
       "rawId": 155662
     },
     {
+      "id": "upcoming-155826",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "India Women U19 vs England Women U19, 4th unofficial T20",
+      "series": "England Women U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": ""
+        },
+        {
+          "name": "England Women U19",
+          "shortName": "ENGWU19",
+          "score": ""
+        }
+      ],
+      "dateLabel": "03 Dec 2026, 06:00 pm",
+      "time": "",
+      "place": "CB Patel International Cricket Stadium, Surat",
+      "overview": "Match starts at Dec 03, 12:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155826",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/schedule",
+      "startTime": "2026-12-03T12:30:00.000Z",
+      "rawId": 155826
+    },
+    {
       "id": "upcoming-165401",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -7796,6 +7920,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
       "startTime": "2026-12-05T12:30:00.000Z",
       "rawId": 155673
+    },
+    {
+      "id": "upcoming-155837",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "India Women U19 vs England Women U19, 5th unofficial T20",
+      "series": "England Women U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": ""
+        },
+        {
+          "name": "England Women U19",
+          "shortName": "ENGWU19",
+          "score": ""
+        }
+      ],
+      "dateLabel": "06 Dec 2026, 01:00 pm",
+      "time": "",
+      "place": "CB Patel International Cricket Stadium, Surat",
+      "overview": "Match starts at Dec 06, 07:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155837",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/schedule",
+      "startTime": "2026-12-06T07:30:00.000Z",
+      "rawId": 155837
     },
     {
       "id": "upcoming-165433",
@@ -16855,13 +17010,13 @@
         {
           "name": "India U19",
           "shortName": "INDU19",
-          "score": "38/2 (14.6 Ov)"
+          "score": "184/8 (53.3 Ov)"
         }
       ],
       "dateLabel": "05 Oct 2026, 09:30 am",
       "time": "",
       "place": "Narendra Modi Stadium B Ground, Ahmedabad",
-      "overview": "Day 1: Stumps - India U19 trail by 136 runs",
+      "overview": "Day 2: 2nd Session - India U19 lead by 10 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155510",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-05T04:00:00.000Z",
@@ -24093,6 +24248,37 @@
       "rawId": 165311
     },
     {
+      "id": "upcoming-155793",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "India Women U19 vs England Women U19, 1st unofficial T20",
+      "series": "England Women U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": ""
+        },
+        {
+          "name": "England Women U19",
+          "shortName": "ENGWU19",
+          "score": ""
+        }
+      ],
+      "dateLabel": "26 Nov 2026, 06:00 pm",
+      "time": "",
+      "place": "BCA Stadium, Kotambi, Vadodara",
+      "overview": "Match starts at Nov 26, 12:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155793",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/schedule",
+      "startTime": "2026-11-26T12:30:00.000Z",
+      "rawId": 155793
+    },
+    {
       "id": "upcoming-161296",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -24122,6 +24308,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
       "startTime": "2026-11-26T22:00:00.000Z",
       "rawId": 161296
+    },
+    {
+      "id": "upcoming-155804",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "India Women U19 vs England Women U19, 2nd unofficial T20",
+      "series": "England Women U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": ""
+        },
+        {
+          "name": "England Women U19",
+          "shortName": "ENGWU19",
+          "score": ""
+        }
+      ],
+      "dateLabel": "28 Nov 2026, 01:00 pm",
+      "time": "",
+      "place": "BCA Stadium, Kotambi, Vadodara",
+      "overview": "Match starts at Nov 28, 07:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155804",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/schedule",
+      "startTime": "2026-11-28T07:30:00.000Z",
+      "rawId": 155804
     },
     {
       "id": "upcoming-165350",
@@ -24279,6 +24496,37 @@
       "rawId": 165363
     },
     {
+      "id": "upcoming-155815",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "India Women U19 vs England Women U19, 3rd unofficial T20",
+      "series": "England Women U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": ""
+        },
+        {
+          "name": "England Women U19",
+          "shortName": "ENGWU19",
+          "score": ""
+        }
+      ],
+      "dateLabel": "01 Dec 2026, 06:00 pm",
+      "time": "",
+      "place": "CB Patel International Cricket Stadium, Surat",
+      "overview": "Match starts at Dec 01, 12:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155815",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/schedule",
+      "startTime": "2026-12-01T12:30:00.000Z",
+      "rawId": 155815
+    },
+    {
       "id": "upcoming-165381",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -24434,6 +24682,37 @@
       "rawId": 155662
     },
     {
+      "id": "upcoming-155826",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "India Women U19 vs England Women U19, 4th unofficial T20",
+      "series": "England Women U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": ""
+        },
+        {
+          "name": "England Women U19",
+          "shortName": "ENGWU19",
+          "score": ""
+        }
+      ],
+      "dateLabel": "03 Dec 2026, 06:00 pm",
+      "time": "",
+      "place": "CB Patel International Cricket Stadium, Surat",
+      "overview": "Match starts at Dec 03, 12:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155826",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/schedule",
+      "startTime": "2026-12-03T12:30:00.000Z",
+      "rawId": 155826
+    },
+    {
       "id": "upcoming-165401",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -24587,6 +24866,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/schedule",
       "startTime": "2026-12-05T12:30:00.000Z",
       "rawId": 155673
+    },
+    {
+      "id": "upcoming-155837",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "women",
+      "levelLabel": "Women",
+      "sourceType": "",
+      "sourceScope": "india-women-u19",
+      "title": "India Women U19 vs England Women U19, 5th unofficial T20",
+      "series": "England Women U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "India Women U19",
+          "shortName": "INDWU19",
+          "score": ""
+        },
+        {
+          "name": "England Women U19",
+          "shortName": "ENGWU19",
+          "score": ""
+        }
+      ],
+      "dateLabel": "06 Dec 2026, 01:00 pm",
+      "time": "",
+      "place": "CB Patel International Cricket Stadium, Surat",
+      "overview": "Match starts at Dec 06, 07:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155837",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women-u19/1356/schedule",
+      "startTime": "2026-12-06T07:30:00.000Z",
+      "rawId": 155837
     },
     {
       "id": "upcoming-165433",
@@ -33653,8 +33963,8 @@
       "order": 3,
       "live": 0,
       "recent": 30,
-      "upcoming": 20,
-      "total": 50
+      "upcoming": 25,
+      "total": 55
     },
     {
       "id": "domestic",
