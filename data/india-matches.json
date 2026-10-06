@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-06T07:16:59.596Z",
-  "lastCheckedAt": "2026-10-06T07:16:59.596Z",
-  "lastSuccessfulSyncAt": "2026-10-06T07:16:59.596Z",
+  "syncedAt": "2026-10-06T14:15:18.416Z",
+  "lastCheckedAt": "2026-10-06T14:15:18.416Z",
+  "lastSuccessfulSyncAt": "2026-10-06T14:15:18.416Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,10 +41,10 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 1,
+    "live": 3,
     "recent": 60,
     "upcoming": 482,
-    "total": 543
+    "total": 545
   },
   "all": [
     {
@@ -61,22 +61,84 @@
         {
           "name": "Australia U19",
           "shortName": "AUSU19",
-          "score": "174/10 (72.6 Ov)"
+          "score": "174/10 (72.6 Ov) & 86/4 (25.6 Ov)"
         },
         {
           "name": "India U19",
           "shortName": "INDU19",
-          "score": "184/8 (53.3 Ov)"
+          "score": "315/10 (78.4 Ov)"
         }
       ],
       "dateLabel": "05 Oct 2026, 09:30 am",
       "time": "",
       "place": "Narendra Modi Stadium B Ground, Ahmedabad",
-      "overview": "Day 2: 2nd Session - India U19 lead by 10 runs",
+      "overview": "Day 2: Stumps - Australia U19 trail by 55 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155510",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-05T04:00:00.000Z",
       "rawId": 155510
+    },
+    {
+      "id": "live-155433",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "Australia A vs India A, 1st unofficial ODI",
+      "series": "Australia A tour of India 2026",
+      "teams": [
+        {
+          "name": "Australia A",
+          "shortName": "AUSA",
+          "score": "274/10 (48.2 Ov)"
+        },
+        {
+          "name": "India A",
+          "shortName": "INDA",
+          "score": "83/4 (18.5 Ov)"
+        }
+      ],
+      "dateLabel": "06 Oct 2026, 02:00 pm",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "India A need 192 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155433",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-06T08:30:00.000Z",
+      "rawId": 155433
+    },
+    {
+      "id": "live-151565",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "West Indies vs India, 1st T20I",
+      "series": "West Indies tour of India, 2026",
+      "teams": [
+        {
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": "61/3 (7.6 Ov)"
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "06 Oct 2026, 07:00 pm",
+      "time": "",
+      "place": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "overview": "India opt to bowl",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151565",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-06T13:30:00.000Z",
+      "rawId": 151565
     },
     {
       "id": "upcoming-171030",
@@ -108,68 +170,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
-    },
-    {
-      "id": "upcoming-155433",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "India A vs Australia A, 1st unofficial ODI",
-      "series": "Australia A tour of India 2026",
-      "teams": [
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": ""
-        },
-        {
-          "name": "Australia A",
-          "shortName": "AUSA",
-          "score": ""
-        }
-      ],
-      "dateLabel": "06 Oct 2026, 02:00 pm",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Match starts at Oct 06, 08:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155433",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-06T08:30:00.000Z",
-      "rawId": 155433
-    },
-    {
-      "id": "upcoming-151565",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India vs West Indies, 1st T20I",
-      "series": "West Indies tour of India, 2026",
-      "teams": [
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": ""
-        },
-        {
-          "name": "West Indies",
-          "shortName": "WI",
-          "score": ""
-        }
-      ],
-      "dateLabel": "06 Oct 2026, 07:00 pm",
-      "time": "",
-      "place": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
-      "overview": "Match starts at Oct 06, 13:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151565",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-06T13:30:00.000Z",
-      "rawId": 151565
     },
     {
       "id": "upcoming-155444",
@@ -2435,6 +2435,37 @@
       "rawId": 155573
     },
     {
+      "id": "upcoming-175120",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-men",
+      "title": "India vs Pakistan, Group C",
+      "series": "Hong Kong Sixes 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Pakistan",
+          "shortName": "PAK",
+          "score": ""
+        }
+      ],
+      "dateLabel": "30 Oct 2026, 11:45 am",
+      "time": "",
+      "place": "Mission Road Ground, Mong Kok",
+      "overview": "Match starts at Oct 30, 06:15 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/175120",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-30T06:15:00.000Z",
+      "rawId": 175120
+    },
+    {
       "id": "upcoming-161223",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -2495,6 +2526,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/13091/india-a-tour-of-new-zealand-2026/matches",
       "startTime": "2026-10-30T21:30:00.000Z",
       "rawId": 171297
+    },
+    {
+      "id": "upcoming-175153",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-men",
+      "title": "United Arab Emirates vs India, Group C",
+      "series": "Hong Kong Sixes 2026",
+      "teams": [
+        {
+          "name": "United Arab Emirates",
+          "shortName": "UAE",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "31 Oct 2026, 08:05 am",
+      "time": "",
+      "place": "Mission Road Ground, Mong Kok",
+      "overview": "Match starts at Oct 31, 02:35 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/175153",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-31T02:35:00.000Z",
+      "rawId": 175153
     },
     {
       "id": "upcoming-161234",
@@ -17005,22 +17067,84 @@
         {
           "name": "Australia U19",
           "shortName": "AUSU19",
-          "score": "174/10 (72.6 Ov)"
+          "score": "174/10 (72.6 Ov) & 86/4 (25.6 Ov)"
         },
         {
           "name": "India U19",
           "shortName": "INDU19",
-          "score": "184/8 (53.3 Ov)"
+          "score": "315/10 (78.4 Ov)"
         }
       ],
       "dateLabel": "05 Oct 2026, 09:30 am",
       "time": "",
       "place": "Narendra Modi Stadium B Ground, Ahmedabad",
-      "overview": "Day 2: 2nd Session - India U19 lead by 10 runs",
+      "overview": "Day 2: Stumps - Australia U19 trail by 55 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155510",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-05T04:00:00.000Z",
       "rawId": 155510
+    },
+    {
+      "id": "live-155433",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "Australia A vs India A, 1st unofficial ODI",
+      "series": "Australia A tour of India 2026",
+      "teams": [
+        {
+          "name": "Australia A",
+          "shortName": "AUSA",
+          "score": "274/10 (48.2 Ov)"
+        },
+        {
+          "name": "India A",
+          "shortName": "INDA",
+          "score": "83/4 (18.5 Ov)"
+        }
+      ],
+      "dateLabel": "06 Oct 2026, 02:00 pm",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "India A need 192 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155433",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-06T08:30:00.000Z",
+      "rawId": 155433
+    },
+    {
+      "id": "live-151565",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "West Indies vs India, 1st T20I",
+      "series": "West Indies tour of India, 2026",
+      "teams": [
+        {
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": "61/3 (7.6 Ov)"
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "06 Oct 2026, 07:00 pm",
+      "time": "",
+      "place": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "overview": "India opt to bowl",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151565",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-06T13:30:00.000Z",
+      "rawId": 151565
     }
   ],
   "upcoming": [
@@ -17054,68 +17178,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
-    },
-    {
-      "id": "upcoming-155433",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "India A vs Australia A, 1st unofficial ODI",
-      "series": "Australia A tour of India 2026",
-      "teams": [
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": ""
-        },
-        {
-          "name": "Australia A",
-          "shortName": "AUSA",
-          "score": ""
-        }
-      ],
-      "dateLabel": "06 Oct 2026, 02:00 pm",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Match starts at Oct 06, 08:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155433",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-06T08:30:00.000Z",
-      "rawId": 155433
-    },
-    {
-      "id": "upcoming-151565",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India vs West Indies, 1st T20I",
-      "series": "West Indies tour of India, 2026",
-      "teams": [
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": ""
-        },
-        {
-          "name": "West Indies",
-          "shortName": "WI",
-          "score": ""
-        }
-      ],
-      "dateLabel": "06 Oct 2026, 07:00 pm",
-      "time": "",
-      "place": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
-      "overview": "Match starts at Oct 06, 13:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151565",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-06T13:30:00.000Z",
-      "rawId": 151565
     },
     {
       "id": "upcoming-155444",
@@ -19381,6 +19443,37 @@
       "rawId": 155573
     },
     {
+      "id": "upcoming-175120",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-men",
+      "title": "India vs Pakistan, Group C",
+      "series": "Hong Kong Sixes 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        },
+        {
+          "name": "Pakistan",
+          "shortName": "PAK",
+          "score": ""
+        }
+      ],
+      "dateLabel": "30 Oct 2026, 11:45 am",
+      "time": "",
+      "place": "Mission Road Ground, Mong Kok",
+      "overview": "Match starts at Oct 30, 06:15 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/175120",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-30T06:15:00.000Z",
+      "rawId": 175120
+    },
+    {
       "id": "upcoming-161223",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -19441,6 +19534,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/13091/india-a-tour-of-new-zealand-2026/matches",
       "startTime": "2026-10-30T21:30:00.000Z",
       "rawId": 171297
+    },
+    {
+      "id": "upcoming-175153",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-men",
+      "title": "United Arab Emirates vs India, Group C",
+      "series": "Hong Kong Sixes 2026",
+      "teams": [
+        {
+          "name": "United Arab Emirates",
+          "shortName": "UAE",
+          "score": ""
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "31 Oct 2026, 08:05 am",
+      "time": "",
+      "place": "Mission Road Ground, Mong Kok",
+      "overview": "Match starts at Oct 31, 02:35 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/175153",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "startTime": "2026-10-31T02:35:00.000Z",
+      "rawId": 175153
     },
     {
       "id": "upcoming-161234",
@@ -33943,10 +34067,10 @@
       "id": "international",
       "label": "International",
       "order": 1,
-      "live": 0,
+      "live": 1,
       "recent": 29,
-      "upcoming": 44,
-      "total": 73
+      "upcoming": 45,
+      "total": 75
     },
     {
       "id": "league",
@@ -33970,9 +34094,9 @@
       "id": "domestic",
       "label": "Domestic / State",
       "order": 4,
-      "live": 1,
+      "live": 2,
       "recent": 1,
-      "upcoming": 413,
+      "upcoming": 412,
       "total": 415
     }
   ],
