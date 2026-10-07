@@ -143,6 +143,12 @@ export function absoluteUrl(path = "/") {
   return new URL(path, SITE_ORIGIN).toString();
 }
 
+export function routeUrl(path = "/") {
+  const normalized = String(path || "/");
+  const slashPath = normalized === "/" ? "/" : `${normalized.replace(/\/+$/, "")}/`;
+  return absoluteUrl(slashPath);
+}
+
 export function routeMetadataForPath(pathname = "/") {
   const normalized = normalizePath(pathname);
   return ROUTE_METADATA.find((route) => route.path === normalized) || NOT_FOUND_METADATA;
@@ -155,8 +161,8 @@ export function stringifyJsonLd(pathname = "/") {
 
 export function renderRouteMeta(pathname = "/") {
   const metadata = routeMetadataForPath(pathname);
-  const canonicalUrl = absoluteUrl(metadata.canonicalPath);
-  const pageUrl = absoluteUrl(metadata.path);
+  const canonicalUrl = routeUrl(metadata.canonicalPath);
+  const pageUrl = routeUrl(metadata.path);
   const imageUrl = absoluteUrl(DEFAULT_IMAGE_PATH);
   const jsonLd = stringifyJsonLd(pathname);
 
@@ -186,8 +192,8 @@ export function applyRouteMetadata(pathname = "/") {
   if (typeof document === "undefined") return;
 
   const metadata = routeMetadataForPath(pathname);
-  const canonicalUrl = absoluteUrl(metadata.canonicalPath);
-  const pageUrl = absoluteUrl(metadata.path);
+  const canonicalUrl = routeUrl(metadata.canonicalPath);
+  const pageUrl = routeUrl(metadata.path);
   const imageUrl = absoluteUrl(DEFAULT_IMAGE_PATH);
 
   document.title = metadata.title;
@@ -220,7 +226,7 @@ export function applyRouteMetadata(pathname = "/") {
 }
 
 function jsonLdForRoute(metadata) {
-  const canonicalUrl = absoluteUrl(metadata.canonicalPath);
+  const canonicalUrl = routeUrl(metadata.canonicalPath);
   const imageUrl = absoluteUrl(DEFAULT_IMAGE_PATH);
   const basePage = {
     "@context": "https://schema.org",
@@ -335,7 +341,7 @@ function jsonLdForRoute(metadata) {
         "@type": "Person",
         name: CAPTAIN_NAME,
         jobTitle: "Captain",
-        url: absoluteUrl(CAPTAIN_PATH),
+        url: routeUrl(CAPTAIN_PATH),
         sameAs: [CAPTAIN_PROFILE_URL],
       },
     },
@@ -443,7 +449,7 @@ function breadcrumbForPath(pathname) {
       "@type": "ListItem",
       position: 2,
       name: route.title.replace(/\s+\|\s+CricKuru$/, ""),
-      item: absoluteUrl(route.canonicalPath),
+      item: routeUrl(route.canonicalPath),
     });
   }
   return {

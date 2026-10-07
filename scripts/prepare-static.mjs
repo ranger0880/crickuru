@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { ROUTE_METADATA, absoluteUrl } from "../src/metadata.js";
+import { ROUTE_METADATA, absoluteUrl, routeUrl } from "../src/metadata.js";
 
 const root = process.cwd();
 const publicDir = path.join(root, "public");
@@ -35,7 +35,7 @@ function renderSitemap() {
   const urls = ROUTE_METADATA.filter((route) => route.path === route.canonicalPath).map((route) => {
     return [
       "  <url>",
-      `    <loc>${absoluteUrl(route.path)}</loc>`,
+      `    <loc>${routeUrl(route.path)}</loc>`,
       `    <lastmod>${today}</lastmod>`,
       `    <changefreq>${route.changefreq}</changefreq>`,
       `    <priority>${route.priority}</priority>`,
