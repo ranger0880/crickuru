@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-07T08:56:13.464Z",
-  "lastCheckedAt": "2026-10-07T08:56:13.464Z",
-  "lastSuccessfulSyncAt": "2026-10-07T08:56:13.464Z",
+  "syncedAt": "2026-10-07T16:02:32.402Z",
+  "lastCheckedAt": "2026-10-07T16:02:32.402Z",
+  "lastSuccessfulSyncAt": "2026-10-07T16:02:32.402Z",
   "coverage": {
     "pathways": [
       "India",
@@ -2407,11 +2407,11 @@
       "id": "upcoming-171297",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
+      "level": "international",
+      "levelLabel": "International",
       "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "New Zealand A vs New Zealand A, 2nd Unofficial Test",
+      "sourceScope": "india-a",
+      "title": "New Zealand A vs India A, 2nd Unofficial Test",
       "series": "India A tour of New Zealand, 2026",
       "teams": [
         {
@@ -2420,8 +2420,8 @@
           "score": ""
         },
         {
-          "name": "New Zealand A",
-          "shortName": "NZA",
+          "name": "India A",
+          "shortName": "INDA",
           "score": ""
         }
       ],
@@ -2430,7 +2430,7 @@
       "place": "Hagley Oval, Christchurch",
       "overview": "Match starts at Oct 31, 21:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171297",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/13091/india-a-tour-of-new-zealand-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
       "startTime": "2026-10-30T21:30:00.000Z",
       "rawId": 171297
     },
@@ -15025,10 +15025,10 @@
       "id": "recent-155433",
       "status": "recent",
       "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-a",
       "title": "Australia A vs India A, 1st unofficial ODI",
       "series": "Australia A tour of India 2026",
       "teams": [
@@ -15040,7 +15040,7 @@
         {
           "name": "India A",
           "shortName": "INDA",
-          "score": "149/10 (31.4 Ov)"
+          "score": "149/10 (31 Ov)"
         }
       ],
       "dateLabel": "06 Oct 2026, 02:00 pm",
@@ -15048,7 +15048,7 @@
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
       "overview": "Australia A won by 125 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155433",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2026-10-06T08:30:00.000Z",
       "rawId": 155433,
       "starPerformers": []
@@ -19353,11 +19353,11 @@
       "id": "upcoming-171297",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
+      "level": "international",
+      "levelLabel": "International",
       "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "New Zealand A vs New Zealand A, 2nd Unofficial Test",
+      "sourceScope": "india-a",
+      "title": "New Zealand A vs India A, 2nd Unofficial Test",
       "series": "India A tour of New Zealand, 2026",
       "teams": [
         {
@@ -19366,8 +19366,8 @@
           "score": ""
         },
         {
-          "name": "New Zealand A",
-          "shortName": "NZA",
+          "name": "India A",
+          "shortName": "INDA",
           "score": ""
         }
       ],
@@ -19376,7 +19376,7 @@
       "place": "Hagley Oval, Christchurch",
       "overview": "Match starts at Oct 31, 21:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/171297",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/13091/india-a-tour-of-new-zealand-2026/matches",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
       "startTime": "2026-10-30T21:30:00.000Z",
       "rawId": 171297
     },
@@ -31973,10 +31973,10 @@
       "id": "recent-155433",
       "status": "recent",
       "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-a",
       "title": "Australia A vs India A, 1st unofficial ODI",
       "series": "Australia A tour of India 2026",
       "teams": [
@@ -31988,7 +31988,7 @@
         {
           "name": "India A",
           "shortName": "INDA",
-          "score": "149/10 (31.4 Ov)"
+          "score": "149/10 (31 Ov)"
         }
       ],
       "dateLabel": "06 Oct 2026, 02:00 pm",
@@ -31996,7 +31996,7 @@
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
       "overview": "Australia A won by 125 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155433",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2026-10-06T08:30:00.000Z",
       "rawId": 155433,
       "starPerformers": []
@@ -33945,9 +33945,9 @@
       "label": "International",
       "order": 1,
       "live": 0,
-      "recent": 28,
-      "upcoming": 45,
-      "total": 73
+      "recent": 29,
+      "upcoming": 46,
+      "total": 75
     },
     {
       "id": "league",
@@ -33972,9 +33972,9 @@
       "label": "Domestic / State",
       "order": 4,
       "live": 0,
-      "recent": 3,
-      "upcoming": 412,
-      "total": 415
+      "recent": 2,
+      "upcoming": 411,
+      "total": 413
     }
   ],
   "importantMatches": [
