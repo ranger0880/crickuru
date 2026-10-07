@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-07T02:23:10.861Z",
-  "lastCheckedAt": "2026-10-07T02:23:10.861Z",
-  "lastSuccessfulSyncAt": "2026-10-07T02:23:10.861Z",
+  "syncedAt": "2026-10-07T08:56:13.464Z",
+  "lastCheckedAt": "2026-10-07T08:56:13.464Z",
+  "lastSuccessfulSyncAt": "2026-10-07T08:56:13.464Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,43 +41,12 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 1,
-    "recent": 60,
+    "live": 0,
+    "recent": 61,
     "upcoming": 482,
     "total": 543
   },
   "all": [
-    {
-      "id": "live-155510",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "Australia U19 vs India U19, 2nd unofficial Test",
-      "series": "Australia U19 tour of India 2026",
-      "teams": [
-        {
-          "name": "Australia U19",
-          "shortName": "AUSU19",
-          "score": "174/10 (72.6 Ov) & 86/4 (25.6 Ov)"
-        },
-        {
-          "name": "India U19",
-          "shortName": "INDU19",
-          "score": "315/10 (78.4 Ov)"
-        }
-      ],
-      "dateLabel": "05 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Narendra Modi Stadium B Ground, Ahmedabad",
-      "overview": "Day 2: Stumps - Australia U19 trail by 55 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155510",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-05T04:00:00.000Z",
-      "rawId": 155510
-    },
     {
       "id": "upcoming-171030",
       "status": "upcoming",
@@ -15085,6 +15054,38 @@
       "starPerformers": []
     },
     {
+      "id": "recent-155510",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "Australia U19 vs India U19, 2nd unofficial Test",
+      "series": "Australia U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "Australia U19",
+          "shortName": "AUSU19",
+          "score": "174/10 (72.6 Ov) & 151/10 (43.5 Ov)"
+        },
+        {
+          "name": "India U19",
+          "shortName": "INDU19",
+          "score": "315/10 (78.4 Ov) & 11 (0.5 Ov)"
+        }
+      ],
+      "dateLabel": "05 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Narendra Modi Stadium B Ground, Ahmedabad",
+      "overview": "India U19 won by 10 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155510",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-05T04:00:00.000Z",
+      "rawId": 155510,
+      "starPerformers": []
+    },
+    {
       "id": "recent-151554",
       "status": "recent",
       "statusLabel": "Past",
@@ -16990,39 +16991,7 @@
       ]
     }
   ],
-  "live": [
-    {
-      "id": "live-155510",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "Australia U19 vs India U19, 2nd unofficial Test",
-      "series": "Australia U19 tour of India 2026",
-      "teams": [
-        {
-          "name": "Australia U19",
-          "shortName": "AUSU19",
-          "score": "174/10 (72.6 Ov) & 86/4 (25.6 Ov)"
-        },
-        {
-          "name": "India U19",
-          "shortName": "INDU19",
-          "score": "315/10 (78.4 Ov)"
-        }
-      ],
-      "dateLabel": "05 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Narendra Modi Stadium B Ground, Ahmedabad",
-      "overview": "Day 2: Stumps - Australia U19 trail by 55 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155510",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-05T04:00:00.000Z",
-      "rawId": 155510
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "upcoming-171030",
@@ -32033,6 +32002,38 @@
       "starPerformers": []
     },
     {
+      "id": "recent-155510",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "Australia U19 vs India U19, 2nd unofficial Test",
+      "series": "Australia U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "Australia U19",
+          "shortName": "AUSU19",
+          "score": "174/10 (72.6 Ov) & 151/10 (43.5 Ov)"
+        },
+        {
+          "name": "India U19",
+          "shortName": "INDU19",
+          "score": "315/10 (78.4 Ov) & 11 (0.5 Ov)"
+        }
+      ],
+      "dateLabel": "05 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Narendra Modi Stadium B Ground, Ahmedabad",
+      "overview": "India U19 won by 10 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155510",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-05T04:00:00.000Z",
+      "rawId": 155510,
+      "starPerformers": []
+    },
+    {
       "id": "recent-151554",
       "status": "recent",
       "statusLabel": "Past",
@@ -33970,8 +33971,8 @@
       "id": "domestic",
       "label": "Domestic / State",
       "order": 4,
-      "live": 1,
-      "recent": 2,
+      "live": 0,
+      "recent": 3,
       "upcoming": 412,
       "total": 415
     }
