@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-07T21:12:29.123Z",
-  "lastCheckedAt": "2026-10-07T21:12:29.123Z",
-  "lastSuccessfulSyncAt": "2026-10-07T21:12:29.123Z",
+  "syncedAt": "2026-10-08T00:59:59.737Z",
+  "lastCheckedAt": "2026-10-08T00:59:59.737Z",
+  "lastSuccessfulSyncAt": "2026-10-08T00:59:59.737Z",
   "coverage": {
     "pathways": [
       "India",
@@ -42,9 +42,9 @@
   },
   "summary": {
     "live": 0,
-    "recent": 61,
+    "recent": 60,
     "upcoming": 482,
-    "total": 543
+    "total": 542
   },
   "all": [
     {
@@ -16808,45 +16808,6 @@
       "startTime": "2026-06-09T04:30:00.000Z",
       "rawId": 156113,
       "starPerformers": []
-    },
-    {
-      "id": "recent-138680",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-u19",
-      "title": "India U19 vs England U19, Final",
-      "series": "ICC Under 19 World Cup 2026",
-      "teams": [
-        {
-          "name": "India U19",
-          "shortName": "INDU19",
-          "score": "411/9 (50 Ov)"
-        },
-        {
-          "name": "England U19",
-          "shortName": "ENGU19",
-          "score": "311/10 (40 Ov)"
-        }
-      ],
-      "dateLabel": "06 Feb 2026, 01:00 pm",
-      "time": "",
-      "place": "Harare Sports Club, Harare",
-      "overview": "India U19 won by 100 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138680",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
-      "startTime": "2026-02-06T07:30:00.000Z",
-      "rawId": 138680,
-      "starPerformers": [
-        {
-          "name": "Vaibhav Sooryavanshi",
-          "performance": "175(80)",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138680"
-        }
-      ]
     },
     {
       "id": "recent-105540",
@@ -33758,45 +33719,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-138680",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-u19",
-      "title": "India U19 vs England U19, Final",
-      "series": "ICC Under 19 World Cup 2026",
-      "teams": [
-        {
-          "name": "India U19",
-          "shortName": "INDU19",
-          "score": "411/9 (50 Ov)"
-        },
-        {
-          "name": "England U19",
-          "shortName": "ENGU19",
-          "score": "311/10 (40 Ov)"
-        }
-      ],
-      "dateLabel": "06 Feb 2026, 01:00 pm",
-      "time": "",
-      "place": "Harare Sports Club, Harare",
-      "overview": "India U19 won by 100 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138680",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
-      "startTime": "2026-02-06T07:30:00.000Z",
-      "rawId": 138680,
-      "starPerformers": [
-        {
-          "name": "Vaibhav Sooryavanshi",
-          "performance": "175(80)",
-          "label": "Player of the Match",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/138680"
-        }
-      ]
-    },
-    {
       "id": "recent-105540",
       "status": "recent",
       "statusLabel": "Past",
@@ -33945,9 +33867,9 @@
       "label": "International",
       "order": 1,
       "live": 0,
-      "recent": 29,
+      "recent": 28,
       "upcoming": 46,
-      "total": 75
+      "total": 74
     },
     {
       "id": "league",
