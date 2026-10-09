@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-09T06:15:19.819Z",
-  "lastCheckedAt": "2026-10-09T06:15:19.819Z",
-  "lastSuccessfulSyncAt": "2026-10-09T06:15:19.819Z",
+  "syncedAt": "2026-10-09T13:21:57.285Z",
+  "lastCheckedAt": "2026-10-09T13:21:57.285Z",
+  "lastSuccessfulSyncAt": "2026-10-09T13:21:57.285Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,43 +41,12 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 1,
+    "live": 0,
     "recent": 59,
     "upcoming": 484,
-    "total": 544
+    "total": 543
   },
   "all": [
-    {
-      "id": "live-155444",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "Australia A vs India A, 2nd unofficial ODI",
-      "series": "Australia A tour of India 2026",
-      "teams": [
-        {
-          "name": "Australia A",
-          "shortName": "AUSA",
-          "score": "207/4 (36.6 Ov)"
-        },
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": ""
-        }
-      ],
-      "dateLabel": "09 Oct 2026, 09:00 am",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Australia A opt to bat",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155444",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-09T03:30:00.000Z",
-      "rawId": 155444
-    },
     {
       "id": "upcoming-171030",
       "status": "upcoming",
@@ -134,11 +103,42 @@
       "dateLabel": "09 Oct 2026, 07:00 pm",
       "time": "",
       "place": "JSCA International Stadium Complex, Ranchi",
-      "overview": "Match starts at Oct 09, 13:30 GMT",
+      "overview": "West Indies opt to bowl",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151576",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-09T13:30:00.000Z",
       "rawId": 151576
+    },
+    {
+      "id": "upcoming-163097",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Sikkim vs Meghalaya, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        },
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 08:15 am",
+      "time": "",
+      "place": "SICA ground, Rangpo",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163097",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-11T02:45:00.000Z",
+      "rawId": 163097
     },
     {
       "id": "upcoming-155455",
@@ -697,37 +697,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 163087
-    },
-    {
-      "id": "upcoming-163097",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Sikkim vs Meghalaya, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        },
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "SICA ground, Rangpo",
-      "overview": "Match starts at Oct 11, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163097",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163097
     },
     {
       "id": "upcoming-163103",
@@ -15083,6 +15052,38 @@
       "rawId": 174701
     },
     {
+      "id": "recent-155444",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "Australia A vs India A, 2nd unofficial ODI",
+      "series": "Australia A tour of India 2026",
+      "teams": [
+        {
+          "name": "Australia A",
+          "shortName": "AUSA",
+          "score": "275/10 (49.5 Ov)"
+        },
+        {
+          "name": "India A",
+          "shortName": "INDA",
+          "score": "206/10 (45.2 Ov)"
+        }
+      ],
+      "dateLabel": "09 Oct 2026, 09:00 am",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "Australia A won by 69 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155444",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-09T03:30:00.000Z",
+      "rawId": 155444,
+      "starPerformers": []
+    },
+    {
       "id": "recent-151565",
       "status": "recent",
       "statusLabel": "Past",
@@ -16839,38 +16840,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-156113",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-a",
-      "title": "India A vs Sri Lanka A, 1st Match",
-      "series": "Tri Nation A Series in Sri Lanka 2026",
-      "teams": [
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": "277/6 (50 Ov)"
-        },
-        {
-          "name": "Sri Lanka A",
-          "shortName": "SLA",
-          "score": "269/10 (48 Ov)"
-        }
-      ],
-      "dateLabel": "09 Jun 2026, 10:00 am",
-      "time": "",
-      "place": "Rangiri Dambulla International Stadium, Dambulla",
-      "overview": "India A won by 8 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156113",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
-      "startTime": "2026-06-09T04:30:00.000Z",
-      "rawId": 156113,
-      "starPerformers": []
-    },
-    {
       "id": "recent-105540",
       "status": "recent",
       "statusLabel": "Past",
@@ -17013,39 +16982,7 @@
       ]
     }
   ],
-  "live": [
-    {
-      "id": "live-155444",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "Australia A vs India A, 2nd unofficial ODI",
-      "series": "Australia A tour of India 2026",
-      "teams": [
-        {
-          "name": "Australia A",
-          "shortName": "AUSA",
-          "score": "207/4 (36.6 Ov)"
-        },
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": ""
-        }
-      ],
-      "dateLabel": "09 Oct 2026, 09:00 am",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Australia A opt to bat",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155444",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-09T03:30:00.000Z",
-      "rawId": 155444
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "upcoming-171030",
@@ -17103,11 +17040,42 @@
       "dateLabel": "09 Oct 2026, 07:00 pm",
       "time": "",
       "place": "JSCA International Stadium Complex, Ranchi",
-      "overview": "Match starts at Oct 09, 13:30 GMT",
+      "overview": "West Indies opt to bowl",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151576",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-09T13:30:00.000Z",
       "rawId": 151576
+    },
+    {
+      "id": "upcoming-163097",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Sikkim vs Meghalaya, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        },
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 08:15 am",
+      "time": "",
+      "place": "SICA ground, Rangpo",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163097",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-11T02:45:00.000Z",
+      "rawId": 163097
     },
     {
       "id": "upcoming-155455",
@@ -17666,37 +17634,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 163087
-    },
-    {
-      "id": "upcoming-163097",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Sikkim vs Meghalaya, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        },
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "SICA ground, Rangpo",
-      "overview": "Match starts at Oct 11, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163097",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163097
     },
     {
       "id": "upcoming-163103",
@@ -32054,6 +31991,38 @@
   ],
   "recent": [
     {
+      "id": "recent-155444",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "Australia A vs India A, 2nd unofficial ODI",
+      "series": "Australia A tour of India 2026",
+      "teams": [
+        {
+          "name": "Australia A",
+          "shortName": "AUSA",
+          "score": "275/10 (49.5 Ov)"
+        },
+        {
+          "name": "India A",
+          "shortName": "INDA",
+          "score": "206/10 (45.2 Ov)"
+        }
+      ],
+      "dateLabel": "09 Oct 2026, 09:00 am",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "Australia A won by 69 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155444",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-09T03:30:00.000Z",
+      "rawId": 155444,
+      "starPerformers": []
+    },
+    {
       "id": "recent-151565",
       "status": "recent",
       "statusLabel": "Past",
@@ -33810,38 +33779,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-156113",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-a",
-      "title": "India A vs Sri Lanka A, 1st Match",
-      "series": "Tri Nation A Series in Sri Lanka 2026",
-      "teams": [
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": "277/6 (50 Ov)"
-        },
-        {
-          "name": "Sri Lanka A",
-          "shortName": "SLA",
-          "score": "269/10 (48 Ov)"
-        }
-      ],
-      "dateLabel": "09 Jun 2026, 10:00 am",
-      "time": "",
-      "place": "Rangiri Dambulla International Stadium, Dambulla",
-      "overview": "India A won by 8 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156113",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
-      "startTime": "2026-06-09T04:30:00.000Z",
-      "rawId": 156113,
-      "starPerformers": []
-    },
-    {
       "id": "recent-105540",
       "status": "recent",
       "statusLabel": "Past",
@@ -33990,9 +33927,9 @@
       "label": "International",
       "order": 1,
       "live": 0,
-      "recent": 29,
+      "recent": 28,
       "upcoming": 48,
-      "total": 77
+      "total": 76
     },
     {
       "id": "league",
@@ -34016,8 +33953,8 @@
       "id": "domestic",
       "label": "Domestic / State",
       "order": 4,
-      "live": 1,
-      "recent": 0,
+      "live": 0,
+      "recent": 1,
       "upcoming": 411,
       "total": 412
     }
@@ -40712,38 +40649,6 @@
       "importance": "Major tournament"
     },
     {
-      "id": "upcoming-163097",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Sikkim vs Meghalaya, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
-      "teams": [
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        },
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "SICA ground, Rangpo",
-      "overview": "Match starts at Oct 11, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163097",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163097,
-      "importance": "Major tournament"
-    },
-    {
       "id": "upcoming-163103",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -40773,6 +40678,38 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 163103,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163097",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Sikkim vs Meghalaya, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        },
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 08:15 am",
+      "time": "",
+      "place": "SICA ground, Rangpo",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163097",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-11T02:45:00.000Z",
+      "rawId": 163097,
       "importance": "Major tournament"
     },
     {
@@ -47520,9 +47457,41 @@
       "live": 0,
       "upcoming": 12,
       "recent": 0,
-      "startTime": "2026-10-11T04:00:00.000Z",
+      "startTime": "2026-10-11T02:45:00.000Z",
       "endTime": "2026-11-02T04:00:00.000Z",
       "matches": [
+        {
+          "id": "upcoming-163097",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Sikkim vs Meghalaya, Plate",
+          "series": "Ranji Trophy Plate 2026-27",
+          "teams": [
+            {
+              "name": "Sikkim",
+              "shortName": "SKM",
+              "score": ""
+            },
+            {
+              "name": "Meghalaya",
+              "shortName": "MGLY",
+              "score": ""
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 08:15 am",
+          "time": "",
+          "place": "SICA ground, Rangpo",
+          "overview": "Match starts at Oct 11, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163097",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+          "startTime": "2026-10-11T02:45:00.000Z",
+          "rawId": 163097,
+          "importance": "Major tournament"
+        },
         {
           "id": "upcoming-163087",
           "status": "upcoming",
@@ -47553,38 +47522,6 @@
           "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
           "rawId": 163087,
-          "importance": "Major tournament"
-        },
-        {
-          "id": "upcoming-163097",
-          "status": "upcoming",
-          "statusLabel": "Future",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "Sikkim vs Meghalaya, Plate",
-          "series": "Ranji Trophy Plate 2026-27",
-          "teams": [
-            {
-              "name": "Sikkim",
-              "shortName": "SKM",
-              "score": ""
-            },
-            {
-              "name": "Meghalaya",
-              "shortName": "MGLY",
-              "score": ""
-            }
-          ],
-          "dateLabel": "11 Oct 2026, 09:30 am",
-          "time": "",
-          "place": "SICA ground, Rangpo",
-          "overview": "Match starts at Oct 11, 04:00 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163097",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
-          "startTime": "2026-10-11T04:00:00.000Z",
-          "rawId": 163097,
           "importance": "Major tournament"
         },
         {
