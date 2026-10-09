@@ -217,6 +217,14 @@ function normalizeInnings(innings = []) {
   }));
 }
 
+function oversToBalls(value) {
+  const [overs, balls] = String(value ?? "").split(".");
+  const completedOvers = Number(overs);
+  const extraBalls = Number(balls || 0);
+  if (!Number.isFinite(completedOvers)) return 0;
+  return Math.max(0, completedOvers * 6 + (Number.isFinite(extraBalls) ? Math.min(extraBalls, 5) : 0));
+}
+
 function buildMatches(rawMatches) {
   return rawMatches.map((match) => {
     const ourSide = Number(match.team_a_id) === TEAM_ID ? "a" : "b";
@@ -369,7 +377,7 @@ function normalizeBestPerformances(summaryData) {
           playerId: Number(row.player_id || 0),
           playerName: row.player_name || row.name || "",
           overs: row.overs || "",
-          balls: Number(row.balls || 0),
+          balls: Number(row.balls || oversToBalls(row.overs)),
           maidens: Number(row.maidens || 0),
           dotBalls: Number(row["0s"] || 0),
           runs: Number(row.runs || 0),
