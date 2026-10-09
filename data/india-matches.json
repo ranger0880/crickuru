@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-08T20:04:21.142Z",
-  "lastCheckedAt": "2026-10-08T20:04:21.142Z",
-  "lastSuccessfulSyncAt": "2026-10-08T20:04:21.142Z",
+  "syncedAt": "2026-10-09T00:16:12.092Z",
+  "lastCheckedAt": "2026-10-09T00:16:12.092Z",
+  "lastSuccessfulSyncAt": "2026-10-09T00:16:12.092Z",
   "coverage": {
     "pathways": [
       "India",
@@ -42,9 +42,9 @@
   },
   "summary": {
     "live": 0,
-    "recent": 60,
+    "recent": 59,
     "upcoming": 485,
-    "total": 545
+    "total": 544
   },
   "all": [
     {
@@ -3458,6 +3458,68 @@
       "rawId": 164401
     },
     {
+      "id": "upcoming-163311",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Nagaland vs Meghalaya, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        },
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        }
+      ],
+      "dateLabel": "14 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 14, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163311",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-14T05:30:00.000Z",
+      "rawId": 163311
+    },
+    {
+      "id": "upcoming-163313",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Arunachal Pradesh vs Manipur, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "14 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 14, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163313",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-14T05:30:00.000Z",
+      "rawId": 163313
+    },
+    {
       "id": "upcoming-164481",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -3580,68 +3642,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-14T05:30:00.000Z",
       "rawId": 164431
-    },
-    {
-      "id": "upcoming-163311",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Nagaland vs Meghalaya, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        },
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        }
-      ],
-      "dateLabel": "14 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 14, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163311",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-14T05:30:00.000Z",
-      "rawId": 163311
-    },
-    {
-      "id": "upcoming-163313",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Arunachal Pradesh vs Manipur, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        },
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "14 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 14, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163313",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-14T05:30:00.000Z",
-      "rawId": 163313
     },
     {
       "id": "upcoming-164513",
@@ -3768,6 +3768,37 @@
       "rawId": 164540
     },
     {
+      "id": "upcoming-163317",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Services vs Sikkim, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Services",
+          "shortName": "SER",
+          "score": ""
+        },
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        }
+      ],
+      "dateLabel": "14 Nov 2026, 04:30 pm",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 14, 11:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163317",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-14T11:00:00.000Z",
+      "rawId": 163317
+    },
+    {
       "id": "upcoming-164570",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -3890,37 +3921,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-14T11:00:00.000Z",
       "rawId": 164541
-    },
-    {
-      "id": "upcoming-163317",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Services vs Sikkim, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Services",
-          "shortName": "SER",
-          "score": ""
-        },
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        }
-      ],
-      "dateLabel": "14 Nov 2026, 04:30 pm",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 14, 11:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163317",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-14T11:00:00.000Z",
-      "rawId": 163317
     },
     {
       "id": "upcoming-161282",
@@ -4078,6 +4078,68 @@
       "rawId": 164600
     },
     {
+      "id": "upcoming-163323",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Sikkim vs Arunachal Pradesh, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        },
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "16 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 16, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163323",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-16T05:30:00.000Z",
+      "rawId": 163323
+    },
+    {
+      "id": "upcoming-163327",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Nagaland vs Manipur, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "16 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 16, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163327",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-16T05:30:00.000Z",
+      "rawId": 163327
+    },
+    {
       "id": "upcoming-164621",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -4200,68 +4262,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-16T05:30:00.000Z",
       "rawId": 164601
-    },
-    {
-      "id": "upcoming-163323",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Sikkim vs Arunachal Pradesh, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        },
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "16 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 16, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163323",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-16T05:30:00.000Z",
-      "rawId": 163323
-    },
-    {
-      "id": "upcoming-163327",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Nagaland vs Manipur, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        },
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "16 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 16, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163327",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-16T05:30:00.000Z",
-      "rawId": 163327
     },
     {
       "id": "upcoming-164631",
@@ -4388,6 +4388,37 @@
       "rawId": 164661
     },
     {
+      "id": "upcoming-163331",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Services vs Meghalaya, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Services",
+          "shortName": "SER",
+          "score": ""
+        },
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        }
+      ],
+      "dateLabel": "16 Nov 2026, 04:30 pm",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 16, 11:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163331",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-16T11:00:00.000Z",
+      "rawId": 163331
+    },
+    {
       "id": "upcoming-164693",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -4510,37 +4541,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-16T11:00:00.000Z",
       "rawId": 164671
-    },
-    {
-      "id": "upcoming-163331",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Services vs Meghalaya, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Services",
-          "shortName": "SER",
-          "score": ""
-        },
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        }
-      ],
-      "dateLabel": "16 Nov 2026, 04:30 pm",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 16, 11:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163331",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-16T11:00:00.000Z",
-      "rawId": 163331
     },
     {
       "id": "upcoming-164701",
@@ -4667,6 +4667,68 @@
       "rawId": 164721
     },
     {
+      "id": "upcoming-163341",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Sikkim vs Nagaland, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        },
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 18, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163341",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-18T05:30:00.000Z",
+      "rawId": 163341
+    },
+    {
+      "id": "upcoming-163343",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Services vs Arunachal Pradesh, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Services",
+          "shortName": "SER",
+          "score": ""
+        },
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 18, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163343",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-18T05:30:00.000Z",
+      "rawId": 163343
+    },
+    {
       "id": "upcoming-164751",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -4789,68 +4851,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-18T05:30:00.000Z",
       "rawId": 164731
-    },
-    {
-      "id": "upcoming-163341",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Sikkim vs Nagaland, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        },
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 18, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163341",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-18T05:30:00.000Z",
-      "rawId": 163341
-    },
-    {
-      "id": "upcoming-163343",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Services vs Arunachal Pradesh, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Services",
-          "shortName": "SER",
-          "score": ""
-        },
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 18, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163343",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-18T05:30:00.000Z",
-      "rawId": 163343
     },
     {
       "id": "upcoming-164761",
@@ -4977,6 +4977,37 @@
       "rawId": 164791
     },
     {
+      "id": "upcoming-163347",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Meghalaya vs Manipur, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Nov 2026, 04:30 pm",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 18, 11:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163347",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-18T11:00:00.000Z",
+      "rawId": 163347
+    },
+    {
       "id": "upcoming-164831",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -5099,37 +5130,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-18T11:00:00.000Z",
       "rawId": 164801
-    },
-    {
-      "id": "upcoming-163347",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Meghalaya vs Manipur, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        },
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Nov 2026, 04:30 pm",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 18, 11:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163347",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-18T11:00:00.000Z",
-      "rawId": 163347
     },
     {
       "id": "upcoming-161285",
@@ -5287,6 +5287,68 @@
       "rawId": 164853
     },
     {
+      "id": "upcoming-163351",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Arunachal Pradesh vs Meghalaya, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        },
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        }
+      ],
+      "dateLabel": "20 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 20, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163351",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-20T05:30:00.000Z",
+      "rawId": 163351
+    },
+    {
+      "id": "upcoming-163357",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Services vs Nagaland, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Services",
+          "shortName": "SER",
+          "score": ""
+        },
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "20 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 20, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163357",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-20T05:30:00.000Z",
+      "rawId": 163357
+    },
+    {
       "id": "upcoming-164891",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -5409,68 +5471,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-20T05:30:00.000Z",
       "rawId": 164863
-    },
-    {
-      "id": "upcoming-163351",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Arunachal Pradesh vs Meghalaya, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        },
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        }
-      ],
-      "dateLabel": "20 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 20, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163351",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-20T05:30:00.000Z",
-      "rawId": 163351
-    },
-    {
-      "id": "upcoming-163357",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Services vs Nagaland, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Services",
-          "shortName": "SER",
-          "score": ""
-        },
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        }
-      ],
-      "dateLabel": "20 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 20, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163357",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-20T05:30:00.000Z",
-      "rawId": 163357
     },
     {
       "id": "upcoming-164901",
@@ -5597,6 +5597,37 @@
       "rawId": 164931
     },
     {
+      "id": "upcoming-163361",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Sikkim vs Manipur, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "20 Nov 2026, 04:30 pm",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 20, 11:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163361",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-20T11:00:00.000Z",
+      "rawId": 163361
+    },
+    {
       "id": "upcoming-164970",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -5719,37 +5750,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-20T11:00:00.000Z",
       "rawId": 164941
-    },
-    {
-      "id": "upcoming-163361",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Sikkim vs Manipur, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        },
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "20 Nov 2026, 04:30 pm",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 20, 11:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163361",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-20T11:00:00.000Z",
-      "rawId": 163361
     },
     {
       "id": "upcoming-164973",
@@ -5876,6 +5876,68 @@
       "rawId": 164991
     },
     {
+      "id": "upcoming-163367",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Services vs Manipur, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Services",
+          "shortName": "SER",
+          "score": ""
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "22 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 22, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163367",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-22T05:30:00.000Z",
+      "rawId": 163367
+    },
+    {
+      "id": "upcoming-163371",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Sikkim vs Meghalaya, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        },
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        }
+      ],
+      "dateLabel": "22 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 22, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163371",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-22T05:30:00.000Z",
+      "rawId": 163371
+    },
+    {
       "id": "upcoming-165013",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -5998,68 +6060,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-22T05:30:00.000Z",
       "rawId": 165000
-    },
-    {
-      "id": "upcoming-163367",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Services vs Manipur, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Services",
-          "shortName": "SER",
-          "score": ""
-        },
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "22 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 22, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163367",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-22T05:30:00.000Z",
-      "rawId": 163367
-    },
-    {
-      "id": "upcoming-163371",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Sikkim vs Meghalaya, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        },
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        }
-      ],
-      "dateLabel": "22 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 22, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163371",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-22T05:30:00.000Z",
-      "rawId": 163371
     },
     {
       "id": "upcoming-165021",
@@ -6186,6 +6186,37 @@
       "rawId": 165051
     },
     {
+      "id": "upcoming-163381",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Arunachal Pradesh vs Nagaland, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        },
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "22 Nov 2026, 04:30 pm",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 22, 11:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163381",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-22T11:00:00.000Z",
+      "rawId": 163381
+    },
+    {
       "id": "upcoming-165080",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -6308,37 +6339,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-22T11:00:00.000Z",
       "rawId": 165061
-    },
-    {
-      "id": "upcoming-163381",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Arunachal Pradesh vs Nagaland, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        },
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        }
-      ],
-      "dateLabel": "22 Nov 2026, 04:30 pm",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 22, 11:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163381",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-22T11:00:00.000Z",
-      "rawId": 163381
     },
     {
       "id": "upcoming-165083",
@@ -6713,6 +6713,37 @@
       "rawId": 165150
     },
     {
+      "id": "upcoming-163391",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "TBC vs TBC, Final",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "TBC",
+          "shortName": "TBC",
+          "score": ""
+        },
+        {
+          "name": "TBC",
+          "shortName": "TBC",
+          "score": ""
+        }
+      ],
+      "dateLabel": "24 Nov 2026, 04:30 pm",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 24, 11:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163391",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-24T11:00:00.000Z",
+      "rawId": 163391
+    },
+    {
       "id": "upcoming-165181",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -6835,37 +6866,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-24T11:00:00.000Z",
       "rawId": 165160
-    },
-    {
-      "id": "upcoming-163391",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "TBC vs TBC, Final",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "TBC",
-          "shortName": "TBC",
-          "score": ""
-        },
-        {
-          "name": "TBC",
-          "shortName": "TBC",
-          "score": ""
-        }
-      ],
-      "dateLabel": "24 Nov 2026, 04:30 pm",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 24, 11:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163391",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-24T11:00:00.000Z",
-      "rawId": 163391
     },
     {
       "id": "upcoming-165191",
@@ -15275,38 +15275,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-163077",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Rest of India vs Jammu and Kashmir, Irani Cup",
-      "series": "Irani Cup 2026",
-      "teams": [
-        {
-          "name": "Rest of India",
-          "shortName": "ROI",
-          "score": "237/10 (68.1 Ov) & 319/10 (99.5 Ov)"
-        },
-        {
-          "name": "Jammu and Kashmir",
-          "shortName": "JK",
-          "score": "278/10 (64.2 Ov) & 111/10 (28.4 Ov)"
-        }
-      ],
-      "dateLabel": "01 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Sher-i-Kashmir Stadium, Srinagar",
-      "overview": "Rest of India won by 167 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12387/irani-cup-2026/matches",
-      "startTime": "2026-10-01T04:00:00.000Z",
-      "rawId": 163077,
-      "starPerformers": []
-    },
-    {
       "id": "recent-151543",
       "status": "recent",
       "statusLabel": "Past",
@@ -20458,6 +20426,68 @@
       "rawId": 164401
     },
     {
+      "id": "upcoming-163311",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Nagaland vs Meghalaya, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        },
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        }
+      ],
+      "dateLabel": "14 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 14, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163311",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-14T05:30:00.000Z",
+      "rawId": 163311
+    },
+    {
+      "id": "upcoming-163313",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Arunachal Pradesh vs Manipur, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "14 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 14, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163313",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-14T05:30:00.000Z",
+      "rawId": 163313
+    },
+    {
       "id": "upcoming-164481",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -20580,68 +20610,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-14T05:30:00.000Z",
       "rawId": 164431
-    },
-    {
-      "id": "upcoming-163311",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Nagaland vs Meghalaya, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        },
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        }
-      ],
-      "dateLabel": "14 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 14, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163311",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-14T05:30:00.000Z",
-      "rawId": 163311
-    },
-    {
-      "id": "upcoming-163313",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Arunachal Pradesh vs Manipur, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        },
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "14 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 14, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163313",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-14T05:30:00.000Z",
-      "rawId": 163313
     },
     {
       "id": "upcoming-164513",
@@ -20768,6 +20736,37 @@
       "rawId": 164540
     },
     {
+      "id": "upcoming-163317",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Services vs Sikkim, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Services",
+          "shortName": "SER",
+          "score": ""
+        },
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        }
+      ],
+      "dateLabel": "14 Nov 2026, 04:30 pm",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 14, 11:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163317",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-14T11:00:00.000Z",
+      "rawId": 163317
+    },
+    {
       "id": "upcoming-164570",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -20890,37 +20889,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-14T11:00:00.000Z",
       "rawId": 164541
-    },
-    {
-      "id": "upcoming-163317",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Services vs Sikkim, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Services",
-          "shortName": "SER",
-          "score": ""
-        },
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        }
-      ],
-      "dateLabel": "14 Nov 2026, 04:30 pm",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 14, 11:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163317",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-14T11:00:00.000Z",
-      "rawId": 163317
     },
     {
       "id": "upcoming-161282",
@@ -21078,6 +21046,68 @@
       "rawId": 164600
     },
     {
+      "id": "upcoming-163323",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Sikkim vs Arunachal Pradesh, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        },
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "16 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 16, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163323",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-16T05:30:00.000Z",
+      "rawId": 163323
+    },
+    {
+      "id": "upcoming-163327",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Nagaland vs Manipur, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "16 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 16, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163327",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-16T05:30:00.000Z",
+      "rawId": 163327
+    },
+    {
       "id": "upcoming-164621",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -21200,68 +21230,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-16T05:30:00.000Z",
       "rawId": 164601
-    },
-    {
-      "id": "upcoming-163323",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Sikkim vs Arunachal Pradesh, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        },
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "16 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 16, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163323",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-16T05:30:00.000Z",
-      "rawId": 163323
-    },
-    {
-      "id": "upcoming-163327",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Nagaland vs Manipur, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        },
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "16 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 16, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163327",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-16T05:30:00.000Z",
-      "rawId": 163327
     },
     {
       "id": "upcoming-164631",
@@ -21388,6 +21356,37 @@
       "rawId": 164661
     },
     {
+      "id": "upcoming-163331",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Services vs Meghalaya, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Services",
+          "shortName": "SER",
+          "score": ""
+        },
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        }
+      ],
+      "dateLabel": "16 Nov 2026, 04:30 pm",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 16, 11:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163331",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-16T11:00:00.000Z",
+      "rawId": 163331
+    },
+    {
       "id": "upcoming-164693",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -21510,37 +21509,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-16T11:00:00.000Z",
       "rawId": 164671
-    },
-    {
-      "id": "upcoming-163331",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Services vs Meghalaya, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Services",
-          "shortName": "SER",
-          "score": ""
-        },
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        }
-      ],
-      "dateLabel": "16 Nov 2026, 04:30 pm",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 16, 11:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163331",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-16T11:00:00.000Z",
-      "rawId": 163331
     },
     {
       "id": "upcoming-164701",
@@ -21667,6 +21635,68 @@
       "rawId": 164721
     },
     {
+      "id": "upcoming-163341",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Sikkim vs Nagaland, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        },
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 18, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163341",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-18T05:30:00.000Z",
+      "rawId": 163341
+    },
+    {
+      "id": "upcoming-163343",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Services vs Arunachal Pradesh, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Services",
+          "shortName": "SER",
+          "score": ""
+        },
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 18, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163343",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-18T05:30:00.000Z",
+      "rawId": 163343
+    },
+    {
       "id": "upcoming-164751",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -21789,68 +21819,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-18T05:30:00.000Z",
       "rawId": 164731
-    },
-    {
-      "id": "upcoming-163341",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Sikkim vs Nagaland, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        },
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 18, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163341",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-18T05:30:00.000Z",
-      "rawId": 163341
-    },
-    {
-      "id": "upcoming-163343",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Services vs Arunachal Pradesh, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Services",
-          "shortName": "SER",
-          "score": ""
-        },
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 18, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163343",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-18T05:30:00.000Z",
-      "rawId": 163343
     },
     {
       "id": "upcoming-164761",
@@ -21977,6 +21945,37 @@
       "rawId": 164791
     },
     {
+      "id": "upcoming-163347",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Meghalaya vs Manipur, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Nov 2026, 04:30 pm",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 18, 11:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163347",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-18T11:00:00.000Z",
+      "rawId": 163347
+    },
+    {
       "id": "upcoming-164831",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -22099,37 +22098,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-18T11:00:00.000Z",
       "rawId": 164801
-    },
-    {
-      "id": "upcoming-163347",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Meghalaya vs Manipur, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        },
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Nov 2026, 04:30 pm",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 18, 11:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163347",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-18T11:00:00.000Z",
-      "rawId": 163347
     },
     {
       "id": "upcoming-161285",
@@ -22287,6 +22255,68 @@
       "rawId": 164853
     },
     {
+      "id": "upcoming-163351",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Arunachal Pradesh vs Meghalaya, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        },
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        }
+      ],
+      "dateLabel": "20 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 20, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163351",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-20T05:30:00.000Z",
+      "rawId": 163351
+    },
+    {
+      "id": "upcoming-163357",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Services vs Nagaland, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Services",
+          "shortName": "SER",
+          "score": ""
+        },
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "20 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 20, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163357",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-20T05:30:00.000Z",
+      "rawId": 163357
+    },
+    {
       "id": "upcoming-164891",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -22409,68 +22439,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-20T05:30:00.000Z",
       "rawId": 164863
-    },
-    {
-      "id": "upcoming-163351",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Arunachal Pradesh vs Meghalaya, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        },
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        }
-      ],
-      "dateLabel": "20 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 20, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163351",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-20T05:30:00.000Z",
-      "rawId": 163351
-    },
-    {
-      "id": "upcoming-163357",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Services vs Nagaland, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Services",
-          "shortName": "SER",
-          "score": ""
-        },
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        }
-      ],
-      "dateLabel": "20 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 20, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163357",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-20T05:30:00.000Z",
-      "rawId": 163357
     },
     {
       "id": "upcoming-164901",
@@ -22597,6 +22565,37 @@
       "rawId": 164931
     },
     {
+      "id": "upcoming-163361",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Sikkim vs Manipur, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "20 Nov 2026, 04:30 pm",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 20, 11:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163361",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-20T11:00:00.000Z",
+      "rawId": 163361
+    },
+    {
       "id": "upcoming-164970",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -22719,37 +22718,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-20T11:00:00.000Z",
       "rawId": 164941
-    },
-    {
-      "id": "upcoming-163361",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Sikkim vs Manipur, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        },
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "20 Nov 2026, 04:30 pm",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 20, 11:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163361",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-20T11:00:00.000Z",
-      "rawId": 163361
     },
     {
       "id": "upcoming-164973",
@@ -22876,6 +22844,68 @@
       "rawId": 164991
     },
     {
+      "id": "upcoming-163367",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Services vs Manipur, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Services",
+          "shortName": "SER",
+          "score": ""
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "22 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 22, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163367",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-22T05:30:00.000Z",
+      "rawId": 163367
+    },
+    {
+      "id": "upcoming-163371",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Sikkim vs Meghalaya, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        },
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        }
+      ],
+      "dateLabel": "22 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 22, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163371",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-22T05:30:00.000Z",
+      "rawId": 163371
+    },
+    {
       "id": "upcoming-165013",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -22998,68 +23028,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-22T05:30:00.000Z",
       "rawId": 165000
-    },
-    {
-      "id": "upcoming-163367",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Services vs Manipur, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Services",
-          "shortName": "SER",
-          "score": ""
-        },
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "22 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 22, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163367",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-22T05:30:00.000Z",
-      "rawId": 163367
-    },
-    {
-      "id": "upcoming-163371",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Sikkim vs Meghalaya, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        },
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        }
-      ],
-      "dateLabel": "22 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 22, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163371",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-22T05:30:00.000Z",
-      "rawId": 163371
     },
     {
       "id": "upcoming-165021",
@@ -23186,6 +23154,37 @@
       "rawId": 165051
     },
     {
+      "id": "upcoming-163381",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Arunachal Pradesh vs Nagaland, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        },
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "22 Nov 2026, 04:30 pm",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 22, 11:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163381",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-22T11:00:00.000Z",
+      "rawId": 163381
+    },
+    {
       "id": "upcoming-165080",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -23308,37 +23307,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-22T11:00:00.000Z",
       "rawId": 165061
-    },
-    {
-      "id": "upcoming-163381",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Arunachal Pradesh vs Nagaland, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        },
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        }
-      ],
-      "dateLabel": "22 Nov 2026, 04:30 pm",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 22, 11:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163381",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-22T11:00:00.000Z",
-      "rawId": 163381
     },
     {
       "id": "upcoming-165083",
@@ -23713,6 +23681,37 @@
       "rawId": 165150
     },
     {
+      "id": "upcoming-163391",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "TBC vs TBC, Final",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "TBC",
+          "shortName": "TBC",
+          "score": ""
+        },
+        {
+          "name": "TBC",
+          "shortName": "TBC",
+          "score": ""
+        }
+      ],
+      "dateLabel": "24 Nov 2026, 04:30 pm",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 24, 11:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163391",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-24T11:00:00.000Z",
+      "rawId": 163391
+    },
+    {
       "id": "upcoming-165181",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -23835,37 +23834,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-24T11:00:00.000Z",
       "rawId": 165160
-    },
-    {
-      "id": "upcoming-163391",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "TBC vs TBC, Final",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "TBC",
-          "shortName": "TBC",
-          "score": ""
-        },
-        {
-          "name": "TBC",
-          "shortName": "TBC",
-          "score": ""
-        }
-      ],
-      "dateLabel": "24 Nov 2026, 04:30 pm",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 24, 11:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163391",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-24T11:00:00.000Z",
-      "rawId": 163391
     },
     {
       "id": "upcoming-165191",
@@ -32277,38 +32245,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-163077",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Rest of India vs Jammu and Kashmir, Irani Cup",
-      "series": "Irani Cup 2026",
-      "teams": [
-        {
-          "name": "Rest of India",
-          "shortName": "ROI",
-          "score": "237/10 (68.1 Ov) & 319/10 (99.5 Ov)"
-        },
-        {
-          "name": "Jammu and Kashmir",
-          "shortName": "JK",
-          "score": "278/10 (64.2 Ov) & 111/10 (28.4 Ov)"
-        }
-      ],
-      "dateLabel": "01 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Sher-i-Kashmir Stadium, Srinagar",
-      "overview": "Rest of India won by 167 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12387/irani-cup-2026/matches",
-      "startTime": "2026-10-01T04:00:00.000Z",
-      "rawId": 163077,
-      "starPerformers": []
-    },
-    {
       "id": "recent-151543",
       "status": "recent",
       "statusLabel": "Past",
@@ -34080,9 +34016,9 @@
       "label": "Domestic / State",
       "order": 4,
       "live": 0,
-      "recent": 1,
+      "recent": 0,
       "upcoming": 412,
-      "total": 413
+      "total": 412
     }
   ],
   "importantMatches": [
@@ -34727,6 +34663,38 @@
       "importance": "Major tournament"
     },
     {
+      "id": "upcoming-163391",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "TBC vs TBC, Final",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "TBC",
+          "shortName": "TBC",
+          "score": ""
+        },
+        {
+          "name": "TBC",
+          "shortName": "TBC",
+          "score": ""
+        }
+      ],
+      "dateLabel": "24 Nov 2026, 04:30 pm",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 24, 11:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163391",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-24T11:00:00.000Z",
+      "rawId": 163391,
+      "importance": "Knockout stage"
+    },
+    {
       "id": "upcoming-165181",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -34853,38 +34821,6 @@
       "startTime": "2026-11-24T11:00:00.000Z",
       "rawId": 165160,
       "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163391",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "TBC vs TBC, Final",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "TBC",
-          "shortName": "TBC",
-          "score": ""
-        },
-        {
-          "name": "TBC",
-          "shortName": "TBC",
-          "score": ""
-        }
-      ],
-      "dateLabel": "24 Nov 2026, 04:30 pm",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 24, 11:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163391",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-24T11:00:00.000Z",
-      "rawId": 163391,
-      "importance": "Knockout stage"
     },
     {
       "id": "upcoming-165123",
@@ -35271,6 +35207,38 @@
       "importance": "Major tournament"
     },
     {
+      "id": "upcoming-163381",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Arunachal Pradesh vs Nagaland, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        },
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "22 Nov 2026, 04:30 pm",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 22, 11:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163381",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-22T11:00:00.000Z",
+      "rawId": 163381,
+      "importance": "Major tournament"
+    },
+    {
       "id": "upcoming-165080",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -35396,38 +35364,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-22T11:00:00.000Z",
       "rawId": 165061,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163381",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Arunachal Pradesh vs Nagaland, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        },
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        }
-      ],
-      "dateLabel": "22 Nov 2026, 04:30 pm",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 22, 11:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163381",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-22T11:00:00.000Z",
-      "rawId": 163381,
       "importance": "Major tournament"
     },
     {
@@ -35559,6 +35495,70 @@
       "importance": "Major tournament"
     },
     {
+      "id": "upcoming-163367",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Services vs Manipur, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Services",
+          "shortName": "SER",
+          "score": ""
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "22 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 22, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163367",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-22T05:30:00.000Z",
+      "rawId": 163367,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163371",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Sikkim vs Meghalaya, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        },
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        }
+      ],
+      "dateLabel": "22 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 22, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163371",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-22T05:30:00.000Z",
+      "rawId": 163371,
+      "importance": "Major tournament"
+    },
+    {
       "id": "upcoming-165013",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -35684,70 +35684,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-22T05:30:00.000Z",
       "rawId": 165000,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163367",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Services vs Manipur, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Services",
-          "shortName": "SER",
-          "score": ""
-        },
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "22 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 22, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163367",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-22T05:30:00.000Z",
-      "rawId": 163367,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163371",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Sikkim vs Meghalaya, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        },
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        }
-      ],
-      "dateLabel": "22 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 22, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163371",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-22T05:30:00.000Z",
-      "rawId": 163371,
       "importance": "Major tournament"
     },
     {
@@ -35879,6 +35815,38 @@
       "importance": "Major tournament"
     },
     {
+      "id": "upcoming-163361",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Sikkim vs Manipur, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "20 Nov 2026, 04:30 pm",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 20, 11:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163361",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-20T11:00:00.000Z",
+      "rawId": 163361,
+      "importance": "Major tournament"
+    },
+    {
       "id": "upcoming-164970",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -36004,38 +35972,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-20T11:00:00.000Z",
       "rawId": 164941,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163361",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Sikkim vs Manipur, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        },
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "20 Nov 2026, 04:30 pm",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 20, 11:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163361",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-20T11:00:00.000Z",
-      "rawId": 163361,
       "importance": "Major tournament"
     },
     {
@@ -36167,6 +36103,70 @@
       "importance": "Major tournament"
     },
     {
+      "id": "upcoming-163351",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Arunachal Pradesh vs Meghalaya, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        },
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        }
+      ],
+      "dateLabel": "20 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 20, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163351",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-20T05:30:00.000Z",
+      "rawId": 163351,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163357",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Services vs Nagaland, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Services",
+          "shortName": "SER",
+          "score": ""
+        },
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "20 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 20, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163357",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-20T05:30:00.000Z",
+      "rawId": 163357,
+      "importance": "Major tournament"
+    },
+    {
       "id": "upcoming-164891",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -36292,70 +36292,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-20T05:30:00.000Z",
       "rawId": 164863,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163351",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Arunachal Pradesh vs Meghalaya, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        },
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        }
-      ],
-      "dateLabel": "20 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 20, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163351",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-20T05:30:00.000Z",
-      "rawId": 163351,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163357",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Services vs Nagaland, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Services",
-          "shortName": "SER",
-          "score": ""
-        },
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        }
-      ],
-      "dateLabel": "20 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 20, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163357",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-20T05:30:00.000Z",
-      "rawId": 163357,
       "importance": "Major tournament"
     },
     {
@@ -36487,6 +36423,38 @@
       "importance": "Major tournament"
     },
     {
+      "id": "upcoming-163347",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Meghalaya vs Manipur, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Nov 2026, 04:30 pm",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 18, 11:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163347",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-18T11:00:00.000Z",
+      "rawId": 163347,
+      "importance": "Major tournament"
+    },
+    {
       "id": "upcoming-164831",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -36612,38 +36580,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-18T11:00:00.000Z",
       "rawId": 164801,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163347",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Meghalaya vs Manipur, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        },
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Nov 2026, 04:30 pm",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 18, 11:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163347",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-18T11:00:00.000Z",
-      "rawId": 163347,
       "importance": "Major tournament"
     },
     {
@@ -36775,6 +36711,70 @@
       "importance": "Major tournament"
     },
     {
+      "id": "upcoming-163341",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Sikkim vs Nagaland, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        },
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 18, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163341",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-18T05:30:00.000Z",
+      "rawId": 163341,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163343",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Services vs Arunachal Pradesh, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Services",
+          "shortName": "SER",
+          "score": ""
+        },
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "18 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 18, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163343",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-18T05:30:00.000Z",
+      "rawId": 163343,
+      "importance": "Major tournament"
+    },
+    {
       "id": "upcoming-164751",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -36900,70 +36900,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-18T05:30:00.000Z",
       "rawId": 164731,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163341",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Sikkim vs Nagaland, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        },
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 18, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163341",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-18T05:30:00.000Z",
-      "rawId": 163341,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163343",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Services vs Arunachal Pradesh, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Services",
-          "shortName": "SER",
-          "score": ""
-        },
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "18 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 18, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163343",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-18T05:30:00.000Z",
-      "rawId": 163343,
       "importance": "Major tournament"
     },
     {
@@ -37095,6 +37031,38 @@
       "importance": "Major tournament"
     },
     {
+      "id": "upcoming-163331",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Services vs Meghalaya, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Services",
+          "shortName": "SER",
+          "score": ""
+        },
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        }
+      ],
+      "dateLabel": "16 Nov 2026, 04:30 pm",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 16, 11:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163331",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-16T11:00:00.000Z",
+      "rawId": 163331,
+      "importance": "Major tournament"
+    },
+    {
       "id": "upcoming-164693",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -37220,38 +37188,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-16T11:00:00.000Z",
       "rawId": 164671,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163331",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Services vs Meghalaya, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Services",
-          "shortName": "SER",
-          "score": ""
-        },
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        }
-      ],
-      "dateLabel": "16 Nov 2026, 04:30 pm",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 16, 11:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163331",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-16T11:00:00.000Z",
-      "rawId": 163331,
       "importance": "Major tournament"
     },
     {
@@ -37383,6 +37319,70 @@
       "importance": "Major tournament"
     },
     {
+      "id": "upcoming-163323",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Sikkim vs Arunachal Pradesh, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        },
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "16 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 16, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163323",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-16T05:30:00.000Z",
+      "rawId": 163323,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163327",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Nagaland vs Manipur, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "16 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 16, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163327",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-16T05:30:00.000Z",
+      "rawId": 163327,
+      "importance": "Major tournament"
+    },
+    {
       "id": "upcoming-164621",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -37508,70 +37508,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-16T05:30:00.000Z",
       "rawId": 164601,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163323",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Sikkim vs Arunachal Pradesh, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        },
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "16 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 16, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163323",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-16T05:30:00.000Z",
-      "rawId": 163323,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163327",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Nagaland vs Manipur, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        },
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "16 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 16, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163327",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-16T05:30:00.000Z",
-      "rawId": 163327,
       "importance": "Major tournament"
     },
     {
@@ -37703,6 +37639,38 @@
       "importance": "Major tournament"
     },
     {
+      "id": "upcoming-163317",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Services vs Sikkim, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Services",
+          "shortName": "SER",
+          "score": ""
+        },
+        {
+          "name": "Sikkim",
+          "shortName": "SKM",
+          "score": ""
+        }
+      ],
+      "dateLabel": "14 Nov 2026, 04:30 pm",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 14, 11:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163317",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-14T11:00:00.000Z",
+      "rawId": 163317,
+      "importance": "Major tournament"
+    },
+    {
       "id": "upcoming-164570",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -37828,38 +37796,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-14T11:00:00.000Z",
       "rawId": 164541,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163317",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Services vs Sikkim, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Services",
-          "shortName": "SER",
-          "score": ""
-        },
-        {
-          "name": "Sikkim",
-          "shortName": "SKM",
-          "score": ""
-        }
-      ],
-      "dateLabel": "14 Nov 2026, 04:30 pm",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 14, 11:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163317",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-14T11:00:00.000Z",
-      "rawId": 163317,
       "importance": "Major tournament"
     },
     {
@@ -37991,6 +37927,70 @@
       "importance": "Major tournament"
     },
     {
+      "id": "upcoming-163311",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Nagaland vs Meghalaya, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Nagaland",
+          "shortName": "NGL",
+          "score": ""
+        },
+        {
+          "name": "Meghalaya",
+          "shortName": "MGLY",
+          "score": ""
+        }
+      ],
+      "dateLabel": "14 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 14, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163311",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-14T05:30:00.000Z",
+      "rawId": 163311,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163313",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Arunachal Pradesh vs Manipur, Plate",
+      "series": "Syed Mushtaq Ali Trophy Plate 2026",
+      "teams": [
+        {
+          "name": "Arunachal Pradesh",
+          "shortName": "ARNP",
+          "score": ""
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": ""
+        }
+      ],
+      "dateLabel": "14 Nov 2026, 11:00 am",
+      "time": "",
+      "place": "TBC, TBC",
+      "overview": "Match starts at Nov 14, 05:30 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163313",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
+      "startTime": "2026-11-14T05:30:00.000Z",
+      "rawId": 163313,
+      "importance": "Major tournament"
+    },
+    {
       "id": "upcoming-164481",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -38116,70 +38116,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12420/syed-mushtaq-ali-trophy-elite-2026/matches",
       "startTime": "2026-11-14T05:30:00.000Z",
       "rawId": 164431,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163311",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Nagaland vs Meghalaya, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Nagaland",
-          "shortName": "NGL",
-          "score": ""
-        },
-        {
-          "name": "Meghalaya",
-          "shortName": "MGLY",
-          "score": ""
-        }
-      ],
-      "dateLabel": "14 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 14, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163311",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-14T05:30:00.000Z",
-      "rawId": 163311,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "upcoming-163313",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Arunachal Pradesh vs Manipur, Plate",
-      "series": "Syed Mushtaq Ali Trophy Plate 2026",
-      "teams": [
-        {
-          "name": "Arunachal Pradesh",
-          "shortName": "ARNP",
-          "score": ""
-        },
-        {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": ""
-        }
-      ],
-      "dateLabel": "14 Nov 2026, 11:00 am",
-      "time": "",
-      "place": "TBC, TBC",
-      "overview": "Match starts at Nov 14, 05:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163313",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12431/syed-mushtaq-ali-trophy-plate-2026/matches",
-      "startTime": "2026-11-14T05:30:00.000Z",
-      "rawId": 163313,
       "importance": "Major tournament"
     },
     {
@@ -40902,39 +40838,6 @@
       "rawId": 171060,
       "starPerformers": [],
       "importance": "Knockout stage"
-    },
-    {
-      "id": "recent-163077",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Rest of India vs Jammu and Kashmir, Irani Cup",
-      "series": "Irani Cup 2026",
-      "teams": [
-        {
-          "name": "Rest of India",
-          "shortName": "ROI",
-          "score": "237/10 (68.1 Ov) & 319/10 (99.5 Ov)"
-        },
-        {
-          "name": "Jammu and Kashmir",
-          "shortName": "JK",
-          "score": "278/10 (64.2 Ov) & 111/10 (28.4 Ov)"
-        }
-      ],
-      "dateLabel": "01 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Sher-i-Kashmir Stadium, Srinagar",
-      "overview": "Rest of India won by 167 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12387/irani-cup-2026/matches",
-      "startTime": "2026-10-01T04:00:00.000Z",
-      "rawId": 163077,
-      "starPerformers": [],
-      "importance": "Major tournament"
     },
     {
       "id": "recent-170963",
@@ -48085,53 +47988,6 @@
       ]
     },
     {
-      "id": "irani-cup-2026",
-      "series": "Irani Cup 2026",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "total": 1,
-      "live": 0,
-      "upcoming": 0,
-      "recent": 1,
-      "startTime": "2026-10-01T04:00:00.000Z",
-      "endTime": "2026-10-01T04:00:00.000Z",
-      "matches": [
-        {
-          "id": "recent-163077",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "Rest of India vs Jammu and Kashmir, Irani Cup",
-          "series": "Irani Cup 2026",
-          "teams": [
-            {
-              "name": "Rest of India",
-              "shortName": "ROI",
-              "score": "237/10 (68.1 Ov) & 319/10 (99.5 Ov)"
-            },
-            {
-              "name": "Jammu and Kashmir",
-              "shortName": "JK",
-              "score": "278/10 (64.2 Ov) & 111/10 (28.4 Ov)"
-            }
-          ],
-          "dateLabel": "01 Oct 2026, 09:30 am",
-          "time": "",
-          "place": "Sher-i-Kashmir Stadium, Srinagar",
-          "overview": "Rest of India won by 167 runs",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12387/irani-cup-2026/matches",
-          "startTime": "2026-10-01T04:00:00.000Z",
-          "rawId": 163077,
-          "starPerformers": [],
-          "importance": "Major tournament"
-        }
-      ]
-    },
-    {
       "id": "women-s-asian-games-2026",
       "series": "Women's Asian Games 2026",
       "level": "women",
@@ -48442,39 +48298,6 @@
           "rawId": 171060,
           "starPerformers": [],
           "importance": "Knockout stage"
-        },
-        {
-          "id": "recent-163077",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "Rest of India vs Jammu and Kashmir, Irani Cup",
-          "series": "Irani Cup 2026",
-          "teams": [
-            {
-              "name": "Rest of India",
-              "shortName": "ROI",
-              "score": "237/10 (68.1 Ov) & 319/10 (99.5 Ov)"
-            },
-            {
-              "name": "Jammu and Kashmir",
-              "shortName": "JK",
-              "score": "278/10 (64.2 Ov) & 111/10 (28.4 Ov)"
-            }
-          ],
-          "dateLabel": "01 Oct 2026, 09:30 am",
-          "time": "",
-          "place": "Sher-i-Kashmir Stadium, Srinagar",
-          "overview": "Rest of India won by 167 runs",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163077",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12387/irani-cup-2026/matches",
-          "startTime": "2026-10-01T04:00:00.000Z",
-          "rawId": 163077,
-          "starPerformers": [],
-          "importance": "Major tournament"
         }
       ]
     },
