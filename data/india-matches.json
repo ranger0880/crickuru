@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-09T00:16:12.092Z",
-  "lastCheckedAt": "2026-10-09T00:16:12.092Z",
-  "lastSuccessfulSyncAt": "2026-10-09T00:16:12.092Z",
+  "syncedAt": "2026-10-09T06:15:19.819Z",
+  "lastCheckedAt": "2026-10-09T06:15:19.819Z",
+  "lastSuccessfulSyncAt": "2026-10-09T06:15:19.819Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,12 +41,43 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 0,
+    "live": 1,
     "recent": 59,
-    "upcoming": 485,
+    "upcoming": 484,
     "total": 544
   },
   "all": [
+    {
+      "id": "live-155444",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "Australia A vs India A, 2nd unofficial ODI",
+      "series": "Australia A tour of India 2026",
+      "teams": [
+        {
+          "name": "Australia A",
+          "shortName": "AUSA",
+          "score": "207/4 (36.6 Ov)"
+        },
+        {
+          "name": "India A",
+          "shortName": "INDA",
+          "score": ""
+        }
+      ],
+      "dateLabel": "09 Oct 2026, 09:00 am",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "Australia A opt to bat",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155444",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-09T03:30:00.000Z",
+      "rawId": 155444
+    },
     {
       "id": "upcoming-171030",
       "status": "upcoming",
@@ -77,37 +108,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
-    },
-    {
-      "id": "upcoming-155444",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "India A vs Australia A, 2nd unofficial ODI",
-      "series": "Australia A tour of India 2026",
-      "teams": [
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": ""
-        },
-        {
-          "name": "Australia A",
-          "shortName": "AUSA",
-          "score": ""
-        }
-      ],
-      "dateLabel": "09 Oct 2026, 09:00 am",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Match starts at Oct 09, 03:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155444",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-09T03:30:00.000Z",
-      "rawId": 155444
     },
     {
       "id": "upcoming-151576",
@@ -15173,7 +15173,7 @@
       "place": "Narendra Modi Stadium B Ground, Ahmedabad",
       "overview": "India U19 won by 10 wkts",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155510",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-10-05T04:00:00.000Z",
       "rawId": 155510,
       "starPerformers": []
@@ -17013,7 +17013,39 @@
       ]
     }
   ],
-  "live": [],
+  "live": [
+    {
+      "id": "live-155444",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "Australia A vs India A, 2nd unofficial ODI",
+      "series": "Australia A tour of India 2026",
+      "teams": [
+        {
+          "name": "Australia A",
+          "shortName": "AUSA",
+          "score": "207/4 (36.6 Ov)"
+        },
+        {
+          "name": "India A",
+          "shortName": "INDA",
+          "score": ""
+        }
+      ],
+      "dateLabel": "09 Oct 2026, 09:00 am",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "Australia A opt to bat",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155444",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-09T03:30:00.000Z",
+      "rawId": 155444
+    }
+  ],
   "upcoming": [
     {
       "id": "upcoming-171030",
@@ -17045,37 +17077,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
-    },
-    {
-      "id": "upcoming-155444",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "India A vs Australia A, 2nd unofficial ODI",
-      "series": "Australia A tour of India 2026",
-      "teams": [
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": ""
-        },
-        {
-          "name": "Australia A",
-          "shortName": "AUSA",
-          "score": ""
-        }
-      ],
-      "dateLabel": "09 Oct 2026, 09:00 am",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Match starts at Oct 09, 03:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155444",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-09T03:30:00.000Z",
-      "rawId": 155444
     },
     {
       "id": "upcoming-151576",
@@ -32143,7 +32144,7 @@
       "place": "Narendra Modi Stadium B Ground, Ahmedabad",
       "overview": "India U19 won by 10 wkts",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155510",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
       "startTime": "2026-10-05T04:00:00.000Z",
       "rawId": 155510,
       "starPerformers": []
@@ -34015,9 +34016,9 @@
       "id": "domestic",
       "label": "Domestic / State",
       "order": 4,
-      "live": 0,
+      "live": 1,
       "recent": 0,
-      "upcoming": 412,
+      "upcoming": 411,
       "total": 412
     }
   ],
