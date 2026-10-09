@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-09T13:21:57.285Z",
-  "lastCheckedAt": "2026-10-09T13:21:57.285Z",
-  "lastSuccessfulSyncAt": "2026-10-09T13:21:57.285Z",
+  "syncedAt": "2026-10-09T18:52:28.359Z",
+  "lastCheckedAt": "2026-10-09T18:52:28.359Z",
+  "lastSuccessfulSyncAt": "2026-10-09T18:52:28.359Z",
   "coverage": {
     "pathways": [
       "India",
@@ -43,8 +43,8 @@
   "summary": {
     "live": 0,
     "recent": 59,
-    "upcoming": 484,
-    "total": 543
+    "upcoming": 483,
+    "total": 542
   },
   "all": [
     {
@@ -77,37 +77,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
-    },
-    {
-      "id": "upcoming-151576",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India vs West Indies, 2nd T20I",
-      "series": "West Indies tour of India, 2026",
-      "teams": [
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": ""
-        },
-        {
-          "name": "West Indies",
-          "shortName": "WI",
-          "score": ""
-        }
-      ],
-      "dateLabel": "09 Oct 2026, 07:00 pm",
-      "time": "",
-      "place": "JSCA International Stadium Complex, Ranchi",
-      "overview": "West Indies opt to bowl",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151576",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-09T13:30:00.000Z",
-      "rawId": 151576
     },
     {
       "id": "upcoming-163097",
@@ -15052,6 +15021,38 @@
       "rawId": 174701
     },
     {
+      "id": "recent-151576",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "India vs West Indies, 2nd T20I",
+      "series": "West Indies tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "249/5 (19.6 Ov)"
+        },
+        {
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": "252/4 (18.3 Ov)"
+        }
+      ],
+      "dateLabel": "09 Oct 2026, 07:00 pm",
+      "time": "",
+      "place": "JSCA International Stadium Complex, Ranchi",
+      "overview": "West Indies won by 6 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151576",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-09T13:30:00.000Z",
+      "rawId": 151576,
+      "starPerformers": []
+    },
+    {
       "id": "recent-155444",
       "status": "recent",
       "statusLabel": "Past",
@@ -15849,38 +15850,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-09-17T12:30:00.000Z",
       "rawId": 155606,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-170110",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
-      "title": "Afghanistan vs India, 2nd T20I",
-      "series": "Afghanistan vs India in India 2026",
-      "teams": [
-        {
-          "name": "Afghanistan",
-          "shortName": "AFG",
-          "score": "159/8 (20 Ov)"
-        },
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": "163/3 (14.5 Ov)"
-        }
-      ],
-      "dateLabel": "15 Sept 2026, 07:30 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "India won by 7 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170110",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
-      "startTime": "2026-09-15T14:00:00.000Z",
-      "rawId": 170110,
       "starPerformers": []
     },
     {
@@ -17014,37 +16983,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
-    },
-    {
-      "id": "upcoming-151576",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India vs West Indies, 2nd T20I",
-      "series": "West Indies tour of India, 2026",
-      "teams": [
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": ""
-        },
-        {
-          "name": "West Indies",
-          "shortName": "WI",
-          "score": ""
-        }
-      ],
-      "dateLabel": "09 Oct 2026, 07:00 pm",
-      "time": "",
-      "place": "JSCA International Stadium Complex, Ranchi",
-      "overview": "West Indies opt to bowl",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151576",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-09T13:30:00.000Z",
-      "rawId": 151576
     },
     {
       "id": "upcoming-163097",
@@ -31991,6 +31929,38 @@
   ],
   "recent": [
     {
+      "id": "recent-151576",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "India vs West Indies, 2nd T20I",
+      "series": "West Indies tour of India, 2026",
+      "teams": [
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": "249/5 (19.6 Ov)"
+        },
+        {
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": "252/4 (18.3 Ov)"
+        }
+      ],
+      "dateLabel": "09 Oct 2026, 07:00 pm",
+      "time": "",
+      "place": "JSCA International Stadium Complex, Ranchi",
+      "overview": "West Indies won by 6 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151576",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-09T13:30:00.000Z",
+      "rawId": 151576,
+      "starPerformers": []
+    },
+    {
       "id": "recent-155444",
       "status": "recent",
       "statusLabel": "Past",
@@ -32788,38 +32758,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A%20Women/440/results",
       "startTime": "2026-09-17T12:30:00.000Z",
       "rawId": 155606,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-170110",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
-      "title": "Afghanistan vs India, 2nd T20I",
-      "series": "Afghanistan vs India in India 2026",
-      "teams": [
-        {
-          "name": "Afghanistan",
-          "shortName": "AFG",
-          "score": "159/8 (20 Ov)"
-        },
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": "163/3 (14.5 Ov)"
-        }
-      ],
-      "dateLabel": "15 Sept 2026, 07:30 pm",
-      "time": "",
-      "place": "Arun Jaitley Stadium, Delhi",
-      "overview": "India won by 7 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/170110",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
-      "startTime": "2026-09-15T14:00:00.000Z",
-      "rawId": 170110,
       "starPerformers": []
     },
     {
@@ -33928,8 +33866,8 @@
       "order": 1,
       "live": 0,
       "recent": 28,
-      "upcoming": 48,
-      "total": 76
+      "upcoming": 47,
+      "total": 75
     },
     {
       "id": "league",
