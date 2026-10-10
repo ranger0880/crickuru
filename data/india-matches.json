@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-10T18:47:45.301Z",
-  "lastCheckedAt": "2026-10-10T18:47:45.301Z",
-  "lastSuccessfulSyncAt": "2026-10-10T18:47:45.301Z",
+  "syncedAt": "2026-10-10T22:01:08.826Z",
+  "lastCheckedAt": "2026-10-10T22:01:08.826Z",
+  "lastSuccessfulSyncAt": "2026-10-10T22:01:08.826Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,43 +41,12 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 1,
-    "recent": 59,
+    "live": 0,
+    "recent": 60,
     "upcoming": 483,
     "total": 543
   },
   "all": [
-    {
-      "id": "live-175010",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "India Champions vs South Africa Champions, 11th Match",
-      "series": "World Championship of Legends 2026",
-      "teams": [
-        {
-          "name": "India Champions",
-          "shortName": "INDCH",
-          "score": "196/8 (19.6 Ov)"
-        },
-        {
-          "name": "South Africa Champions",
-          "shortName": "SACH",
-          "score": "151/4 (14.1 Ov)"
-        }
-      ],
-      "dateLabel": "10 Oct 2026, 09:00 pm",
-      "time": "",
-      "place": "Sharjah Cricket Stadium, Sharjah",
-      "overview": "South Africa Champions need 46 runs in 35 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/175010",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-10T15:30:00.000Z",
-      "rawId": 175010
-    },
     {
       "id": "upcoming-171030",
       "status": "upcoming",
@@ -15052,6 +15021,38 @@
       "rawId": 174701
     },
     {
+      "id": "recent-175010",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "India Champions vs South Africa Champions, 11th Match",
+      "series": "World Championship of Legends 2026",
+      "teams": [
+        {
+          "name": "India Champions",
+          "shortName": "INDCH",
+          "score": "196/8 (19.6 Ov)"
+        },
+        {
+          "name": "South Africa Champions",
+          "shortName": "SACH",
+          "score": "198/6 (18.5 Ov)"
+        }
+      ],
+      "dateLabel": "10 Oct 2026, 09:00 pm",
+      "time": "",
+      "place": "Sharjah Cricket Stadium, Sharjah",
+      "overview": "South Africa Champions won by 4 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/175010",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-10T15:30:00.000Z",
+      "rawId": 175010,
+      "starPerformers": []
+    },
+    {
       "id": "recent-151576",
       "status": "recent",
       "statusLabel": "Past",
@@ -16982,39 +16983,7 @@
       ]
     }
   ],
-  "live": [
-    {
-      "id": "live-175010",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "India Champions vs South Africa Champions, 11th Match",
-      "series": "World Championship of Legends 2026",
-      "teams": [
-        {
-          "name": "India Champions",
-          "shortName": "INDCH",
-          "score": "196/8 (19.6 Ov)"
-        },
-        {
-          "name": "South Africa Champions",
-          "shortName": "SACH",
-          "score": "151/4 (14.1 Ov)"
-        }
-      ],
-      "dateLabel": "10 Oct 2026, 09:00 pm",
-      "time": "",
-      "place": "Sharjah Cricket Stadium, Sharjah",
-      "overview": "South Africa Champions need 46 runs in 35 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/175010",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-10T15:30:00.000Z",
-      "rawId": 175010
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "upcoming-171030",
@@ -31992,6 +31961,38 @@
   ],
   "recent": [
     {
+      "id": "recent-175010",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "India Champions vs South Africa Champions, 11th Match",
+      "series": "World Championship of Legends 2026",
+      "teams": [
+        {
+          "name": "India Champions",
+          "shortName": "INDCH",
+          "score": "196/8 (19.6 Ov)"
+        },
+        {
+          "name": "South Africa Champions",
+          "shortName": "SACH",
+          "score": "198/6 (18.5 Ov)"
+        }
+      ],
+      "dateLabel": "10 Oct 2026, 09:00 pm",
+      "time": "",
+      "place": "Sharjah Cricket Stadium, Sharjah",
+      "overview": "South Africa Champions won by 4 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/175010",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-10T15:30:00.000Z",
+      "rawId": 175010,
+      "starPerformers": []
+    },
+    {
       "id": "recent-151576",
       "status": "recent",
       "statusLabel": "Past",
@@ -33936,8 +33937,8 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 1,
-      "recent": 0,
+      "live": 0,
+      "recent": 1,
       "upcoming": 0,
       "total": 1
     },
