@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-10T08:23:05.441Z",
-  "lastCheckedAt": "2026-10-10T08:23:05.441Z",
-  "lastSuccessfulSyncAt": "2026-10-10T08:23:05.441Z",
+  "syncedAt": "2026-10-10T14:32:24.130Z",
+  "lastCheckedAt": "2026-10-10T14:32:24.130Z",
+  "lastSuccessfulSyncAt": "2026-10-10T14:32:24.130Z",
   "coverage": {
     "pathways": [
       "India",
@@ -134,7 +134,7 @@
       "dateLabel": "11 Oct 2026, 08:15 am",
       "time": "",
       "place": "SICA ground, Rangpo",
-      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "overview": "Match starts at Oct 11, 02:45 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163097",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
       "startTime": "2026-10-11T02:45:00.000Z",
@@ -144,10 +144,10 @@
       "id": "upcoming-155455",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-a",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "India A vs Australia A, 3rd unofficial ODI",
       "series": "Australia A tour of India 2026",
       "teams": [
@@ -167,7 +167,7 @@
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
       "overview": "Match starts at Oct 11, 03:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155455",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-11T03:30:00.000Z",
       "rawId": 155455
     },
@@ -263,6 +263,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T03:30:00.000Z",
       "rawId": 163561
+    },
+    {
+      "id": "upcoming-163550",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "Andhra vs Karnataka, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Andhra",
+          "shortName": "AP",
+          "score": ""
+        },
+        {
+          "name": "Karnataka",
+          "shortName": "KAR",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163550
     },
     {
       "id": "upcoming-163520",
@@ -542,37 +573,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 163551
-    },
-    {
-      "id": "upcoming-163550",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Andhra vs Karnataka, Elite Group B",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Andhra",
-          "shortName": "AP",
-          "score": ""
-        },
-        {
-          "name": "Karnataka",
-          "shortName": "KAR",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
-      "overview": "Match starts at Oct 11, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163550
     },
     {
       "id": "upcoming-163540",
@@ -15087,10 +15087,10 @@
       "id": "recent-155444",
       "status": "recent",
       "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-a",
       "title": "Australia A vs India A, 2nd unofficial ODI",
       "series": "Australia A tour of India 2026",
       "teams": [
@@ -15102,7 +15102,7 @@
         {
           "name": "India A",
           "shortName": "INDA",
-          "score": "206/10 (45.2 Ov)"
+          "score": "206/10 (45 Ov)"
         }
       ],
       "dateLabel": "09 Oct 2026, 09:00 am",
@@ -15110,7 +15110,7 @@
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
       "overview": "Australia A won by 69 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155444",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2026-10-09T03:30:00.000Z",
       "rawId": 155444,
       "starPerformers": []
@@ -17071,7 +17071,7 @@
       "dateLabel": "11 Oct 2026, 08:15 am",
       "time": "",
       "place": "SICA ground, Rangpo",
-      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "overview": "Match starts at Oct 11, 02:45 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163097",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
       "startTime": "2026-10-11T02:45:00.000Z",
@@ -17081,10 +17081,10 @@
       "id": "upcoming-155455",
       "status": "upcoming",
       "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-a",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
       "title": "India A vs Australia A, 3rd unofficial ODI",
       "series": "Australia A tour of India 2026",
       "teams": [
@@ -17104,7 +17104,7 @@
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
       "overview": "Match starts at Oct 11, 03:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155455",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-11T03:30:00.000Z",
       "rawId": 155455
     },
@@ -17200,6 +17200,37 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T03:30:00.000Z",
       "rawId": 163561
+    },
+    {
+      "id": "upcoming-163550",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "Andhra vs Karnataka, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Andhra",
+          "shortName": "AP",
+          "score": ""
+        },
+        {
+          "name": "Karnataka",
+          "shortName": "KAR",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163550
     },
     {
       "id": "upcoming-163520",
@@ -17479,37 +17510,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 163551
-    },
-    {
-      "id": "upcoming-163550",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Andhra vs Karnataka, Elite Group B",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Andhra",
-          "shortName": "AP",
-          "score": ""
-        },
-        {
-          "name": "Karnataka",
-          "shortName": "KAR",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
-      "overview": "Match starts at Oct 11, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163550
     },
     {
       "id": "upcoming-163540",
@@ -32026,10 +32026,10 @@
       "id": "recent-155444",
       "status": "recent",
       "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "",
+      "sourceScope": "india-a",
       "title": "Australia A vs India A, 2nd unofficial ODI",
       "series": "Australia A tour of India 2026",
       "teams": [
@@ -32041,7 +32041,7 @@
         {
           "name": "India A",
           "shortName": "INDA",
-          "score": "206/10 (45.2 Ov)"
+          "score": "206/10 (45 Ov)"
         }
       ],
       "dateLabel": "09 Oct 2026, 09:00 am",
@@ -32049,7 +32049,7 @@
       "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
       "overview": "Australia A won by 69 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155444",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2026-10-09T03:30:00.000Z",
       "rawId": 155444,
       "starPerformers": []
@@ -33927,8 +33927,8 @@
       "label": "International",
       "order": 1,
       "live": 0,
-      "recent": 28,
-      "upcoming": 47,
+      "recent": 29,
+      "upcoming": 46,
       "total": 75
     },
     {
@@ -33954,8 +33954,8 @@
       "label": "Domestic / State",
       "order": 4,
       "live": 0,
-      "recent": 1,
-      "upcoming": 411,
+      "recent": 0,
+      "upcoming": 412,
       "total": 412
     }
   ],
@@ -40105,6 +40105,38 @@
       "importance": "Major tournament"
     },
     {
+      "id": "upcoming-163550",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "Andhra vs Karnataka, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Andhra",
+          "shortName": "AP",
+          "score": ""
+        },
+        {
+          "name": "Karnataka",
+          "shortName": "KAR",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163550,
+      "importance": "Major tournament"
+    },
+    {
       "id": "upcoming-163520",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -40393,38 +40425,6 @@
       "importance": "Major tournament"
     },
     {
-      "id": "upcoming-163550",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Andhra vs Karnataka, Elite Group B",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Andhra",
-          "shortName": "AP",
-          "score": ""
-        },
-        {
-          "name": "Karnataka",
-          "shortName": "KAR",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
-      "overview": "Match starts at Oct 11, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163550,
-      "importance": "Major tournament"
-    },
-    {
       "id": "upcoming-163540",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -40705,7 +40705,7 @@
       "dateLabel": "11 Oct 2026, 08:15 am",
       "time": "",
       "place": "SICA ground, Rangpo",
-      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "overview": "Match starts at Oct 11, 02:45 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163097",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
       "startTime": "2026-10-11T02:45:00.000Z",
@@ -45495,6 +45495,38 @@
           "importance": "Major tournament"
         },
         {
+          "id": "upcoming-163550",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "domestic",
+          "sourceScope": "global",
+          "title": "Andhra vs Karnataka, Elite Group B",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Andhra",
+              "shortName": "AP",
+              "score": ""
+            },
+            {
+              "name": "Karnataka",
+              "shortName": "KAR",
+              "score": ""
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
+          "overview": "Match starts at Oct 11, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163550,
+          "importance": "Major tournament"
+        },
+        {
           "id": "upcoming-163520",
           "status": "upcoming",
           "statusLabel": "Future",
@@ -45780,38 +45812,6 @@
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
           "rawId": 163551,
-          "importance": "Major tournament"
-        },
-        {
-          "id": "upcoming-163550",
-          "status": "upcoming",
-          "statusLabel": "Future",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "Andhra vs Karnataka, Elite Group B",
-          "series": "Ranji Trophy Elite 2026-27",
-          "teams": [
-            {
-              "name": "Andhra",
-              "shortName": "AP",
-              "score": ""
-            },
-            {
-              "name": "Karnataka",
-              "shortName": "KAR",
-              "score": ""
-            }
-          ],
-          "dateLabel": "11 Oct 2026, 09:30 am",
-          "time": "",
-          "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
-          "overview": "Match starts at Oct 11, 04:00 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-          "startTime": "2026-10-11T04:00:00.000Z",
-          "rawId": 163550,
           "importance": "Major tournament"
         },
         {
@@ -47485,7 +47485,7 @@
           "dateLabel": "11 Oct 2026, 08:15 am",
           "time": "",
           "place": "SICA ground, Rangpo",
-          "overview": "Match starts at Oct 11, 04:00 GMT",
+          "overview": "Match starts at Oct 11, 02:45 GMT",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163097",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
           "startTime": "2026-10-11T02:45:00.000Z",
