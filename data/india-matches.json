@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-10T14:32:24.130Z",
-  "lastCheckedAt": "2026-10-10T14:32:24.130Z",
-  "lastSuccessfulSyncAt": "2026-10-10T14:32:24.130Z",
+  "syncedAt": "2026-10-10T18:47:45.301Z",
+  "lastCheckedAt": "2026-10-10T18:47:45.301Z",
+  "lastSuccessfulSyncAt": "2026-10-10T18:47:45.301Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,12 +41,43 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 0,
+    "live": 1,
     "recent": 59,
-    "upcoming": 484,
+    "upcoming": 483,
     "total": 543
   },
   "all": [
+    {
+      "id": "live-175010",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "India Champions vs South Africa Champions, 11th Match",
+      "series": "World Championship of Legends 2026",
+      "teams": [
+        {
+          "name": "India Champions",
+          "shortName": "INDCH",
+          "score": "196/8 (19.6 Ov)"
+        },
+        {
+          "name": "South Africa Champions",
+          "shortName": "SACH",
+          "score": "151/4 (14.1 Ov)"
+        }
+      ],
+      "dateLabel": "10 Oct 2026, 09:00 pm",
+      "time": "",
+      "place": "Sharjah Cricket Stadium, Sharjah",
+      "overview": "South Africa Champions need 46 runs in 35 balls",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/175010",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-10T15:30:00.000Z",
+      "rawId": 175010
+    },
     {
       "id": "upcoming-171030",
       "status": "upcoming",
@@ -77,37 +108,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
-    },
-    {
-      "id": "upcoming-175010",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "India Champions vs South Africa Champions, 11th Match",
-      "series": "World Championship of Legends 2026",
-      "teams": [
-        {
-          "name": "India Champions",
-          "shortName": "INDCH",
-          "score": ""
-        },
-        {
-          "name": "South Africa Champions",
-          "shortName": "SACH",
-          "score": ""
-        }
-      ],
-      "dateLabel": "10 Oct 2026, 09:00 pm",
-      "time": "",
-      "place": "Sharjah Cricket Stadium, Sharjah",
-      "overview": "Match starts at Oct 10, 15:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/175010",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-10T15:30:00.000Z",
-      "rawId": 175010
     },
     {
       "id": "upcoming-163097",
@@ -263,37 +263,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T03:30:00.000Z",
       "rawId": 163561
-    },
-    {
-      "id": "upcoming-163550",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "Andhra vs Karnataka, Elite Group B",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Andhra",
-          "shortName": "AP",
-          "score": ""
-        },
-        {
-          "name": "Karnataka",
-          "shortName": "KAR",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
-      "overview": "Match starts at Oct 11, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163550
     },
     {
       "id": "upcoming-163520",
@@ -575,6 +544,37 @@
       "rawId": 163551
     },
     {
+      "id": "upcoming-163550",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Andhra vs Karnataka, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Andhra",
+          "shortName": "AP",
+          "score": ""
+        },
+        {
+          "name": "Karnataka",
+          "shortName": "KAR",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163550
+    },
+    {
       "id": "upcoming-163540",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -735,8 +735,8 @@
       "statusLabel": "Future",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "India vs West Indies, 3rd T20I",
       "series": "West Indies tour of India, 2026",
       "teams": [
@@ -756,7 +756,7 @@
       "place": "Holkar Stadium, Indore",
       "overview": "Match starts at Oct 11, 13:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151587",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-11T13:30:00.000Z",
       "rawId": 151587
     },
@@ -15057,15 +15057,15 @@
       "statusLabel": "Past",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-men",
       "title": "India vs West Indies, 2nd T20I",
       "series": "West Indies tour of India, 2026",
       "teams": [
         {
           "name": "India",
           "shortName": "IND",
-          "score": "249/5 (19.6 Ov)"
+          "score": "249/5 (20 Ov)"
         },
         {
           "name": "West Indies",
@@ -15078,7 +15078,7 @@
       "place": "JSCA International Stadium Complex, Ranchi",
       "overview": "West Indies won by 6 wkts",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151576",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-10-09T13:30:00.000Z",
       "rawId": 151576,
       "starPerformers": []
@@ -16982,7 +16982,39 @@
       ]
     }
   ],
-  "live": [],
+  "live": [
+    {
+      "id": "live-175010",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "India Champions vs South Africa Champions, 11th Match",
+      "series": "World Championship of Legends 2026",
+      "teams": [
+        {
+          "name": "India Champions",
+          "shortName": "INDCH",
+          "score": "196/8 (19.6 Ov)"
+        },
+        {
+          "name": "South Africa Champions",
+          "shortName": "SACH",
+          "score": "151/4 (14.1 Ov)"
+        }
+      ],
+      "dateLabel": "10 Oct 2026, 09:00 pm",
+      "time": "",
+      "place": "Sharjah Cricket Stadium, Sharjah",
+      "overview": "South Africa Champions need 46 runs in 35 balls",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/175010",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-10T15:30:00.000Z",
+      "rawId": 175010
+    }
+  ],
   "upcoming": [
     {
       "id": "upcoming-171030",
@@ -17014,37 +17046,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
-    },
-    {
-      "id": "upcoming-175010",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "India Champions vs South Africa Champions, 11th Match",
-      "series": "World Championship of Legends 2026",
-      "teams": [
-        {
-          "name": "India Champions",
-          "shortName": "INDCH",
-          "score": ""
-        },
-        {
-          "name": "South Africa Champions",
-          "shortName": "SACH",
-          "score": ""
-        }
-      ],
-      "dateLabel": "10 Oct 2026, 09:00 pm",
-      "time": "",
-      "place": "Sharjah Cricket Stadium, Sharjah",
-      "overview": "Match starts at Oct 10, 15:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/175010",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-10T15:30:00.000Z",
-      "rawId": 175010
     },
     {
       "id": "upcoming-163097",
@@ -17200,37 +17201,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T03:30:00.000Z",
       "rawId": 163561
-    },
-    {
-      "id": "upcoming-163550",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "Andhra vs Karnataka, Elite Group B",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Andhra",
-          "shortName": "AP",
-          "score": ""
-        },
-        {
-          "name": "Karnataka",
-          "shortName": "KAR",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
-      "overview": "Match starts at Oct 11, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163550
     },
     {
       "id": "upcoming-163520",
@@ -17512,6 +17482,37 @@
       "rawId": 163551
     },
     {
+      "id": "upcoming-163550",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Andhra vs Karnataka, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Andhra",
+          "shortName": "AP",
+          "score": ""
+        },
+        {
+          "name": "Karnataka",
+          "shortName": "KAR",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163550
+    },
+    {
       "id": "upcoming-163540",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -17672,8 +17673,8 @@
       "statusLabel": "Future",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "India vs West Indies, 3rd T20I",
       "series": "West Indies tour of India, 2026",
       "teams": [
@@ -17693,7 +17694,7 @@
       "place": "Holkar Stadium, Indore",
       "overview": "Match starts at Oct 11, 13:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151587",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-11T13:30:00.000Z",
       "rawId": 151587
     },
@@ -31996,15 +31997,15 @@
       "statusLabel": "Past",
       "level": "international",
       "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
+      "sourceType": "",
+      "sourceScope": "india-men",
       "title": "India vs West Indies, 2nd T20I",
       "series": "West Indies tour of India, 2026",
       "teams": [
         {
           "name": "India",
           "shortName": "IND",
-          "score": "249/5 (19.6 Ov)"
+          "score": "249/5 (20 Ov)"
         },
         {
           "name": "West Indies",
@@ -32017,7 +32018,7 @@
       "place": "JSCA International Stadium Complex, Ranchi",
       "overview": "West Indies won by 6 wkts",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151576",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-10-09T13:30:00.000Z",
       "rawId": 151576,
       "starPerformers": []
@@ -33935,9 +33936,9 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 0,
+      "live": 1,
       "recent": 0,
-      "upcoming": 1,
+      "upcoming": 0,
       "total": 1
     },
     {
@@ -40105,38 +40106,6 @@
       "importance": "Major tournament"
     },
     {
-      "id": "upcoming-163550",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "Andhra vs Karnataka, Elite Group B",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Andhra",
-          "shortName": "AP",
-          "score": ""
-        },
-        {
-          "name": "Karnataka",
-          "shortName": "KAR",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
-      "overview": "Match starts at Oct 11, 04:00 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163550,
-      "importance": "Major tournament"
-    },
-    {
       "id": "upcoming-163520",
       "status": "upcoming",
       "statusLabel": "Future",
@@ -40422,6 +40391,38 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 163551,
+      "importance": "Major tournament"
+    },
+    {
+      "id": "upcoming-163550",
+      "status": "upcoming",
+      "statusLabel": "Future",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Andhra vs Karnataka, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Andhra",
+          "shortName": "AP",
+          "score": ""
+        },
+        {
+          "name": "Karnataka",
+          "shortName": "KAR",
+          "score": ""
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
+      "overview": "Match starts at Oct 11, 04:00 GMT",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163550,
       "importance": "Major tournament"
     },
     {
@@ -45495,38 +45496,6 @@
           "importance": "Major tournament"
         },
         {
-          "id": "upcoming-163550",
-          "status": "upcoming",
-          "statusLabel": "Future",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "domestic",
-          "sourceScope": "global",
-          "title": "Andhra vs Karnataka, Elite Group B",
-          "series": "Ranji Trophy Elite 2026-27",
-          "teams": [
-            {
-              "name": "Andhra",
-              "shortName": "AP",
-              "score": ""
-            },
-            {
-              "name": "Karnataka",
-              "shortName": "KAR",
-              "score": ""
-            }
-          ],
-          "dateLabel": "11 Oct 2026, 09:30 am",
-          "time": "",
-          "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
-          "overview": "Match starts at Oct 11, 04:00 GMT",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-          "startTime": "2026-10-11T04:00:00.000Z",
-          "rawId": 163550,
-          "importance": "Major tournament"
-        },
-        {
           "id": "upcoming-163520",
           "status": "upcoming",
           "statusLabel": "Future",
@@ -45812,6 +45781,38 @@
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
           "rawId": 163551,
+          "importance": "Major tournament"
+        },
+        {
+          "id": "upcoming-163550",
+          "status": "upcoming",
+          "statusLabel": "Future",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Andhra vs Karnataka, Elite Group B",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Andhra",
+              "shortName": "AP",
+              "score": ""
+            },
+            {
+              "name": "Karnataka",
+              "shortName": "KAR",
+              "score": ""
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
+          "overview": "Match starts at Oct 11, 04:00 GMT",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163550,
           "importance": "Major tournament"
         },
         {
