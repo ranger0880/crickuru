@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-11T18:11:41.422Z",
-  "lastCheckedAt": "2026-10-11T18:11:41.422Z",
-  "lastSuccessfulSyncAt": "2026-10-11T18:11:41.422Z",
+  "syncedAt": "2026-10-11T21:56:51.264Z",
+  "lastCheckedAt": "2026-10-11T21:56:51.264Z",
+  "lastSuccessfulSyncAt": "2026-10-11T21:56:51.264Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,8 +41,8 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 19,
-    "recent": 60,
+    "live": 18,
+    "recent": 61,
     "upcoming": 462,
     "total": 541
   },
@@ -604,37 +604,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 163087
-    },
-    {
-      "id": "live-175030",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Bangladesh Champions vs India Champions, 13th Match",
-      "series": "World Championship of Legends 2026",
-      "teams": [
-        {
-          "name": "Bangladesh Champions",
-          "shortName": "BANCH",
-          "score": "141/9 (19.6 Ov)"
-        },
-        {
-          "name": "India Champions",
-          "shortName": "INDCH",
-          "score": "42/3 (6.1 Ov)"
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:00 pm",
-      "time": "",
-      "place": "Sharjah Cricket Stadium, Sharjah",
-      "overview": "India Champions need 100 runs in 83 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/175030",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-11T15:30:00.000Z",
-      "rawId": 175030
     },
     {
       "id": "upcoming-171030",
@@ -14959,6 +14928,38 @@
       "rawId": 174701
     },
     {
+      "id": "recent-175030",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Bangladesh Champions vs India Champions, 13th Match",
+      "series": "World Championship of Legends 2026",
+      "teams": [
+        {
+          "name": "Bangladesh Champions",
+          "shortName": "BANCH",
+          "score": "141/9 (19.6 Ov)"
+        },
+        {
+          "name": "India Champions",
+          "shortName": "INDCH",
+          "score": "138/8 (19.6 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:00 pm",
+      "time": "",
+      "place": "Sharjah Cricket Stadium, Sharjah",
+      "overview": "Bangladesh Champions won by 3 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/175030",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-11T15:30:00.000Z",
+      "rawId": 175030,
+      "starPerformers": []
+    },
+    {
       "id": "recent-151587",
       "status": "recent",
       "statusLabel": "Past",
@@ -17479,37 +17480,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 163087
-    },
-    {
-      "id": "live-175030",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "league",
-      "levelLabel": "League / IPL",
-      "sourceType": "league",
-      "sourceScope": "global",
-      "title": "Bangladesh Champions vs India Champions, 13th Match",
-      "series": "World Championship of Legends 2026",
-      "teams": [
-        {
-          "name": "Bangladesh Champions",
-          "shortName": "BANCH",
-          "score": "141/9 (19.6 Ov)"
-        },
-        {
-          "name": "India Champions",
-          "shortName": "INDCH",
-          "score": "42/3 (6.1 Ov)"
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:00 pm",
-      "time": "",
-      "place": "Sharjah Cricket Stadium, Sharjah",
-      "overview": "India Champions need 100 runs in 83 balls",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/175030",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-11T15:30:00.000Z",
-      "rawId": 175030
     }
   ],
   "upcoming": [
@@ -31838,6 +31808,38 @@
   ],
   "recent": [
     {
+      "id": "recent-175030",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "league",
+      "levelLabel": "League / IPL",
+      "sourceType": "league",
+      "sourceScope": "global",
+      "title": "Bangladesh Champions vs India Champions, 13th Match",
+      "series": "World Championship of Legends 2026",
+      "teams": [
+        {
+          "name": "Bangladesh Champions",
+          "shortName": "BANCH",
+          "score": "141/9 (19.6 Ov)"
+        },
+        {
+          "name": "India Champions",
+          "shortName": "INDCH",
+          "score": "138/8 (19.6 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:00 pm",
+      "time": "",
+      "place": "Sharjah Cricket Stadium, Sharjah",
+      "overview": "Bangladesh Champions won by 3 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/175030",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-11T15:30:00.000Z",
+      "rawId": 175030,
+      "starPerformers": []
+    },
+    {
       "id": "recent-151587",
       "status": "recent",
       "statusLabel": "Past",
@@ -33814,8 +33816,8 @@
       "id": "league",
       "label": "League / IPL",
       "order": 2,
-      "live": 1,
-      "recent": 0,
+      "live": 0,
+      "recent": 1,
       "upcoming": 0,
       "total": 1
     },
