@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-11T06:31:40.798Z",
-  "lastCheckedAt": "2026-10-11T06:31:40.798Z",
-  "lastSuccessfulSyncAt": "2026-10-11T06:31:40.798Z",
+  "syncedAt": "2026-10-11T13:23:22.129Z",
+  "lastCheckedAt": "2026-10-11T13:23:22.129Z",
+  "lastSuccessfulSyncAt": "2026-10-11T13:23:22.129Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,12 +41,105 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 19,
-    "recent": 60,
+    "live": 21,
+    "recent": 57,
     "upcoming": 463,
-    "total": 542
+    "total": 541
   },
   "all": [
+    {
+      "id": "live-155510",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "domestic-global",
+      "title": "Australia U19 vs India U19, 2nd unofficial Test",
+      "series": "Australia U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "Australia U19",
+          "shortName": "AUSU19",
+          "score": "174/10 (72.6 Ov) & 86/4 (25.6 Ov)"
+        },
+        {
+          "name": "India U19",
+          "shortName": "INDU19",
+          "score": "315/10 (78.4 Ov)"
+        }
+      ],
+      "dateLabel": "05 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Narendra Modi Stadium B Ground, Ahmedabad",
+      "overview": "Day 2: Stumps - Australia U19 trail by 55 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155510",
+      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic/liveStream",
+      "startTime": "2026-10-05T04:00:00.000Z",
+      "rawId": 155510
+    },
+    {
+      "id": "live-155433",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "domestic-global",
+      "title": "Australia A vs India A, 1st unofficial ODI",
+      "series": "Australia A tour of India 2026",
+      "teams": [
+        {
+          "name": "Australia A",
+          "shortName": "AUSA",
+          "score": "274/10 (48.2 Ov)"
+        },
+        {
+          "name": "India A",
+          "shortName": "INDA",
+          "score": "84/4 (18.6 Ov)"
+        }
+      ],
+      "dateLabel": "06 Oct 2026, 02:00 pm",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "India A need 191 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155433",
+      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic/liveStream",
+      "startTime": "2026-10-06T08:30:00.000Z",
+      "rawId": 155433
+    },
+    {
+      "id": "live-151565",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "International",
+      "sourceScope": "domestic-global",
+      "title": "West Indies vs India, 1st T20I",
+      "series": "West Indies tour of India, 2026",
+      "teams": [
+        {
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": "61/3 (7.6 Ov)"
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "06 Oct 2026, 07:00 pm",
+      "time": "",
+      "place": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "overview": "India opt to bowl",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151565",
+      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic/liveStream",
+      "startTime": "2026-10-06T13:30:00.000Z",
+      "rawId": 151565
+    },
     {
       "id": "live-163097",
       "status": "live",
@@ -61,53 +154,22 @@
         {
           "name": "Sikkim",
           "shortName": "SKM",
-          "score": "133/6 (40 Ov)"
+          "score": "245/10 (80.5 Ov)"
         },
         {
           "name": "Meghalaya",
           "shortName": "MGLY",
-          "score": ""
+          "score": "2 (1 Ov)"
         }
       ],
       "dateLabel": "11 Oct 2026, 08:15 am",
       "time": "",
       "place": "SICA ground, Rangpo",
-      "overview": "Day 1: 2nd Session",
+      "overview": "Day 1: Stumps - Meghalaya trail by 243 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163097",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
       "startTime": "2026-10-11T02:45:00.000Z",
       "rawId": 163097
-    },
-    {
-      "id": "live-155455",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "India A vs Australia A, 3rd unofficial ODI",
-      "series": "Australia A tour of India 2026",
-      "teams": [
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": "226/6 (39.6 Ov)"
-        },
-        {
-          "name": "Australia A",
-          "shortName": "AUSA",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:00 am",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Australia A opt to bowl",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155455",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-11T03:30:00.000Z",
-      "rawId": 155455
     },
     {
       "id": "live-163521",
@@ -123,7 +185,7 @@
         {
           "name": "Uttar Pradesh",
           "shortName": "UP",
-          "score": "64/2 (23 Ov)"
+          "score": "287/3 (84 Ov)"
         },
         {
           "name": "Bihar",
@@ -134,7 +196,7 @@
       "dateLabel": "11 Oct 2026, 09:00 am",
       "time": "",
       "place": "Rajgir International Cricket Stadium, Rajgir",
-      "overview": "Day 1: Lunch Break",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163521",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T03:30:00.000Z",
@@ -154,7 +216,7 @@
         {
           "name": "Delhi",
           "shortName": "DEL",
-          "score": "89/3 (31 Ov)"
+          "score": "240/10 (77.3 Ov)"
         },
         {
           "name": "Bengal",
@@ -165,7 +227,7 @@
       "dateLabel": "11 Oct 2026, 09:00 am",
       "time": "",
       "place": "Bengal Cricket Academy Ground, Kalyani",
-      "overview": "Day 1: Lunch Break",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163571",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T03:30:00.000Z",
@@ -185,7 +247,7 @@
         {
           "name": "Jharkhand",
           "shortName": "JHKD",
-          "score": "113/1 (34 Ov)"
+          "score": "289/5 (90 Ov)"
         },
         {
           "name": "Kerala",
@@ -196,7 +258,7 @@
       "dateLabel": "11 Oct 2026, 09:00 am",
       "time": "",
       "place": "Keenan Stadium, Jamshedpur",
-      "overview": "Day 1: Lunch Break",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163561",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T03:30:00.000Z",
@@ -216,7 +278,7 @@
         {
           "name": "Baroda",
           "shortName": "BRD",
-          "score": "58 (29 Ov)"
+          "score": "204/3 (85 Ov)"
         },
         {
           "name": "Goa",
@@ -227,7 +289,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Bhausaheb Bandodkar Ground, Goa",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163520",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -247,7 +309,7 @@
         {
           "name": "Mumbai",
           "shortName": "MUM",
-          "score": "70/1 (25 Ov)"
+          "score": "249/5 (84 Ov)"
         },
         {
           "name": "Chandigarh",
@@ -258,7 +320,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Wankhede Stadium, Mumbai",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163621",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -278,7 +340,7 @@
         {
           "name": "Rajasthan",
           "shortName": "RAJ",
-          "score": "78/1 (27 Ov)"
+          "score": "286/4 (85 Ov)"
         },
         {
           "name": "Tamil Nadu",
@@ -289,7 +351,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Sawai Mansingh Stadium, Jaipur",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163611",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -309,7 +371,7 @@
         {
           "name": "Railways",
           "shortName": "RLYS",
-          "score": "78/2 (27 Ov)"
+          "score": "278/10 (87.5 Ov)"
         },
         {
           "name": "Uttarakhand",
@@ -320,7 +382,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Brabourne Stadium, Mumbai",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163601",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -340,7 +402,7 @@
         {
           "name": "Himachal Pradesh",
           "shortName": "HP",
-          "score": "44/2 (26 Ov)"
+          "score": "153/7 (77 Ov)"
         },
         {
           "name": "Haryana",
@@ -351,7 +413,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Ch Bansi Lal Cricket Stadium, Rohtak",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163591",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -371,7 +433,7 @@
         {
           "name": "Maharashtra",
           "shortName": "MAH",
-          "score": "116/3 (30 Ov)"
+          "score": "287/5 (90 Ov)"
         },
         {
           "name": "Services",
@@ -382,7 +444,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Palam A Stadium, Delhi",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163581",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -402,7 +464,7 @@
         {
           "name": "Odisha",
           "shortName": "ODSA",
-          "score": "89/1 (27.2 Ov)"
+          "score": "272/3 (90 Ov)"
         },
         {
           "name": "Gujarat",
@@ -413,7 +475,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Narendra Modi Stadium B Ground, Ahmedabad",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163563",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -433,7 +495,7 @@
         {
           "name": "Saurashtra",
           "shortName": "SAUR",
-          "score": "103/1 (32.2 Ov)"
+          "score": "308/4 (90 Ov)"
         },
         {
           "name": "Chhattisgarh",
@@ -444,7 +506,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163560",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -475,7 +537,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163551",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -495,18 +557,18 @@
         {
           "name": "Karnataka",
           "shortName": "KAR",
-          "score": "113/4 (28 Ov)"
+          "score": "274/10 (82.2 Ov)"
         },
         {
           "name": "Andhra",
           "shortName": "AP",
-          "score": ""
+          "score": "16/2 (5 Ov)"
         }
       ],
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps - Andhra trail by 258 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -526,18 +588,18 @@
         {
           "name": "Tripura",
           "shortName": "TRI",
-          "score": "90/3 (28 Ov)"
+          "score": "134/10 (44 Ov)"
         },
         {
           "name": "Hyderabad",
           "shortName": "HYD",
-          "score": ""
+          "score": "121/4 (41 Ov)"
         }
       ],
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Gymkhana Ground, Hyderabad",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps - Hyderabad trail by 13 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163540",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -557,7 +619,7 @@
         {
           "name": "Vidarbha",
           "shortName": "VID",
-          "score": "80/5 (27 Ov)"
+          "score": "300/5 (85 Ov)"
         },
         {
           "name": "Puducherry",
@@ -568,7 +630,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Vidarbha Cricket Association Stadium, Nagpur",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163531",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -588,18 +650,18 @@
         {
           "name": "Madhya Pradesh",
           "shortName": "MP",
-          "score": "48/3 (25 Ov)"
+          "score": "196/10 (74.2 Ov)"
         },
         {
           "name": "Jammu and Kashmir",
           "shortName": "JK",
-          "score": ""
+          "score": "3/1 (3 Ov)"
         }
       ],
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Sher-i-Kashmir Stadium, Srinagar",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps - Jammu and Kashmir trail by 193 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163530",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -619,18 +681,18 @@
         {
           "name": "Mizoram",
           "shortName": "MIZ",
-          "score": "92/2 (35 Ov)"
+          "score": "183/10 (62.3 Ov)"
         },
         {
           "name": "Manipur",
           "shortName": "MNP",
-          "score": ""
+          "score": "39/4 (26 Ov)"
         }
       ],
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Gokulbhai Somabhai Patel Stadium, Nadiad",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps - Manipur trail by 144 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163087",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -692,7 +754,7 @@
       "dateLabel": "11 Oct 2026, 07:00 pm",
       "time": "",
       "place": "Holkar Stadium, Indore",
-      "overview": "Match starts at Oct 11, 13:30 GMT",
+      "overview": "West Indies opt to bowl",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151587",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-11T13:30:00.000Z",
@@ -15022,6 +15084,38 @@
       "starPerformers": []
     },
     {
+      "id": "recent-155455",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "India A vs Australia A, 3rd unofficial ODI",
+      "series": "Australia A tour of India 2026",
+      "teams": [
+        {
+          "name": "India A",
+          "shortName": "INDA",
+          "score": "275/10 (47.3 Ov)"
+        },
+        {
+          "name": "Australia A",
+          "shortName": "AUSA",
+          "score": "226/10 (46.2 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:00 am",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "India A won by 49 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155455",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-11T03:30:00.000Z",
+      "rawId": 155455,
+      "starPerformers": []
+    },
+    {
       "id": "recent-151576",
       "status": "recent",
       "statusLabel": "Past",
@@ -15083,102 +15177,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2026-10-09T03:30:00.000Z",
       "rawId": 155444,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-151565",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
-      "title": "West Indies vs India, 1st T20I",
-      "series": "West Indies tour of India, 2026",
-      "teams": [
-        {
-          "name": "West Indies",
-          "shortName": "WI",
-          "score": "171/10 (19.1 Ov)"
-        },
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": "172/2 (14 Ov)"
-        }
-      ],
-      "dateLabel": "06 Oct 2026, 07:00 pm",
-      "time": "",
-      "place": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
-      "overview": "India won by 8 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151565",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
-      "startTime": "2026-10-06T13:30:00.000Z",
-      "rawId": 151565,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-155433",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-a",
-      "title": "Australia A vs India A, 1st unofficial ODI",
-      "series": "Australia A tour of India 2026",
-      "teams": [
-        {
-          "name": "Australia A",
-          "shortName": "AUSA",
-          "score": "274/10 (48.2 Ov)"
-        },
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": "149/10 (31 Ov)"
-        }
-      ],
-      "dateLabel": "06 Oct 2026, 02:00 pm",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Australia A won by 125 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155433",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
-      "startTime": "2026-10-06T08:30:00.000Z",
-      "rawId": 155433,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-155510",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-u19",
-      "title": "Australia U19 vs India U19, 2nd unofficial Test",
-      "series": "Australia U19 tour of India 2026",
-      "teams": [
-        {
-          "name": "Australia U19",
-          "shortName": "AUSU19",
-          "score": "174/10 (73 Ov) & 151/10 (43.5 Ov)"
-        },
-        {
-          "name": "India U19",
-          "shortName": "INDU19",
-          "score": "315/10 (78.4 Ov) & 11 (0.5 Ov)"
-        }
-      ],
-      "dateLabel": "05 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Narendra Modi Stadium B Ground, Ahmedabad",
-      "overview": "India U19 won by 10 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155510",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
-      "startTime": "2026-10-05T04:00:00.000Z",
-      "rawId": 155510,
       "starPerformers": []
     },
     {
@@ -16778,38 +16776,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-156124",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-a",
-      "title": "India A vs Afghanistan A, 2nd Match",
-      "series": "Tri Nation A Series in Sri Lanka 2026",
-      "teams": [
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": "349/9 (49 Ov)"
-        },
-        {
-          "name": "Afghanistan A",
-          "shortName": "AFGA",
-          "score": "177/2 (25.5 Ov)"
-        }
-      ],
-      "dateLabel": "11 Jun 2026, 10:00 am",
-      "time": "",
-      "place": "Rangiri Dambulla International Stadium, Dambulla",
-      "overview": "Afghanistan A won by 4 runs (DLS method)",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156124",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
-      "startTime": "2026-06-11T04:30:00.000Z",
-      "rawId": 156124,
-      "starPerformers": []
-    },
-    {
       "id": "recent-105540",
       "status": "recent",
       "statusLabel": "Past",
@@ -16954,6 +16920,99 @@
   ],
   "live": [
     {
+      "id": "live-155510",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "domestic-global",
+      "title": "Australia U19 vs India U19, 2nd unofficial Test",
+      "series": "Australia U19 tour of India 2026",
+      "teams": [
+        {
+          "name": "Australia U19",
+          "shortName": "AUSU19",
+          "score": "174/10 (72.6 Ov) & 86/4 (25.6 Ov)"
+        },
+        {
+          "name": "India U19",
+          "shortName": "INDU19",
+          "score": "315/10 (78.4 Ov)"
+        }
+      ],
+      "dateLabel": "05 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Narendra Modi Stadium B Ground, Ahmedabad",
+      "overview": "Day 2: Stumps - Australia U19 trail by 55 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155510",
+      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic/liveStream",
+      "startTime": "2026-10-05T04:00:00.000Z",
+      "rawId": 155510
+    },
+    {
+      "id": "live-155433",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "domestic-global",
+      "title": "Australia A vs India A, 1st unofficial ODI",
+      "series": "Australia A tour of India 2026",
+      "teams": [
+        {
+          "name": "Australia A",
+          "shortName": "AUSA",
+          "score": "274/10 (48.2 Ov)"
+        },
+        {
+          "name": "India A",
+          "shortName": "INDA",
+          "score": "84/4 (18.6 Ov)"
+        }
+      ],
+      "dateLabel": "06 Oct 2026, 02:00 pm",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "India A need 191 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155433",
+      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic/liveStream",
+      "startTime": "2026-10-06T08:30:00.000Z",
+      "rawId": 155433
+    },
+    {
+      "id": "live-151565",
+      "status": "live",
+      "statusLabel": "Live",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "International",
+      "sourceScope": "domestic-global",
+      "title": "West Indies vs India, 1st T20I",
+      "series": "West Indies tour of India, 2026",
+      "teams": [
+        {
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": "61/3 (7.6 Ov)"
+        },
+        {
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
+        }
+      ],
+      "dateLabel": "06 Oct 2026, 07:00 pm",
+      "time": "",
+      "place": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "overview": "India opt to bowl",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151565",
+      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic/liveStream",
+      "startTime": "2026-10-06T13:30:00.000Z",
+      "rawId": 151565
+    },
+    {
       "id": "live-163097",
       "status": "live",
       "statusLabel": "Live",
@@ -16967,53 +17026,22 @@
         {
           "name": "Sikkim",
           "shortName": "SKM",
-          "score": "133/6 (40 Ov)"
+          "score": "245/10 (80.5 Ov)"
         },
         {
           "name": "Meghalaya",
           "shortName": "MGLY",
-          "score": ""
+          "score": "2 (1 Ov)"
         }
       ],
       "dateLabel": "11 Oct 2026, 08:15 am",
       "time": "",
       "place": "SICA ground, Rangpo",
-      "overview": "Day 1: 2nd Session",
+      "overview": "Day 1: Stumps - Meghalaya trail by 243 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163097",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
       "startTime": "2026-10-11T02:45:00.000Z",
       "rawId": 163097
-    },
-    {
-      "id": "live-155455",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "India A vs Australia A, 3rd unofficial ODI",
-      "series": "Australia A tour of India 2026",
-      "teams": [
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": "226/6 (39.6 Ov)"
-        },
-        {
-          "name": "Australia A",
-          "shortName": "AUSA",
-          "score": ""
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:00 am",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Australia A opt to bowl",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155455",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-11T03:30:00.000Z",
-      "rawId": 155455
     },
     {
       "id": "live-163521",
@@ -17029,7 +17057,7 @@
         {
           "name": "Uttar Pradesh",
           "shortName": "UP",
-          "score": "64/2 (23 Ov)"
+          "score": "287/3 (84 Ov)"
         },
         {
           "name": "Bihar",
@@ -17040,7 +17068,7 @@
       "dateLabel": "11 Oct 2026, 09:00 am",
       "time": "",
       "place": "Rajgir International Cricket Stadium, Rajgir",
-      "overview": "Day 1: Lunch Break",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163521",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T03:30:00.000Z",
@@ -17060,7 +17088,7 @@
         {
           "name": "Delhi",
           "shortName": "DEL",
-          "score": "89/3 (31 Ov)"
+          "score": "240/10 (77.3 Ov)"
         },
         {
           "name": "Bengal",
@@ -17071,7 +17099,7 @@
       "dateLabel": "11 Oct 2026, 09:00 am",
       "time": "",
       "place": "Bengal Cricket Academy Ground, Kalyani",
-      "overview": "Day 1: Lunch Break",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163571",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T03:30:00.000Z",
@@ -17091,7 +17119,7 @@
         {
           "name": "Jharkhand",
           "shortName": "JHKD",
-          "score": "113/1 (34 Ov)"
+          "score": "289/5 (90 Ov)"
         },
         {
           "name": "Kerala",
@@ -17102,7 +17130,7 @@
       "dateLabel": "11 Oct 2026, 09:00 am",
       "time": "",
       "place": "Keenan Stadium, Jamshedpur",
-      "overview": "Day 1: Lunch Break",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163561",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T03:30:00.000Z",
@@ -17122,7 +17150,7 @@
         {
           "name": "Baroda",
           "shortName": "BRD",
-          "score": "58 (29 Ov)"
+          "score": "204/3 (85 Ov)"
         },
         {
           "name": "Goa",
@@ -17133,7 +17161,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Bhausaheb Bandodkar Ground, Goa",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163520",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -17153,7 +17181,7 @@
         {
           "name": "Mumbai",
           "shortName": "MUM",
-          "score": "70/1 (25 Ov)"
+          "score": "249/5 (84 Ov)"
         },
         {
           "name": "Chandigarh",
@@ -17164,7 +17192,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Wankhede Stadium, Mumbai",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163621",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -17184,7 +17212,7 @@
         {
           "name": "Rajasthan",
           "shortName": "RAJ",
-          "score": "78/1 (27 Ov)"
+          "score": "286/4 (85 Ov)"
         },
         {
           "name": "Tamil Nadu",
@@ -17195,7 +17223,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Sawai Mansingh Stadium, Jaipur",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163611",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -17215,7 +17243,7 @@
         {
           "name": "Railways",
           "shortName": "RLYS",
-          "score": "78/2 (27 Ov)"
+          "score": "278/10 (87.5 Ov)"
         },
         {
           "name": "Uttarakhand",
@@ -17226,7 +17254,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Brabourne Stadium, Mumbai",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163601",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -17246,7 +17274,7 @@
         {
           "name": "Himachal Pradesh",
           "shortName": "HP",
-          "score": "44/2 (26 Ov)"
+          "score": "153/7 (77 Ov)"
         },
         {
           "name": "Haryana",
@@ -17257,7 +17285,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Ch Bansi Lal Cricket Stadium, Rohtak",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163591",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -17277,7 +17305,7 @@
         {
           "name": "Maharashtra",
           "shortName": "MAH",
-          "score": "116/3 (30 Ov)"
+          "score": "287/5 (90 Ov)"
         },
         {
           "name": "Services",
@@ -17288,7 +17316,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Palam A Stadium, Delhi",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163581",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -17308,7 +17336,7 @@
         {
           "name": "Odisha",
           "shortName": "ODSA",
-          "score": "89/1 (27.2 Ov)"
+          "score": "272/3 (90 Ov)"
         },
         {
           "name": "Gujarat",
@@ -17319,7 +17347,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Narendra Modi Stadium B Ground, Ahmedabad",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163563",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -17339,7 +17367,7 @@
         {
           "name": "Saurashtra",
           "shortName": "SAUR",
-          "score": "103/1 (32.2 Ov)"
+          "score": "308/4 (90 Ov)"
         },
         {
           "name": "Chhattisgarh",
@@ -17350,7 +17378,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163560",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -17381,7 +17409,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163551",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -17401,18 +17429,18 @@
         {
           "name": "Karnataka",
           "shortName": "KAR",
-          "score": "113/4 (28 Ov)"
+          "score": "274/10 (82.2 Ov)"
         },
         {
           "name": "Andhra",
           "shortName": "AP",
-          "score": ""
+          "score": "16/2 (5 Ov)"
         }
       ],
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps - Andhra trail by 258 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -17432,18 +17460,18 @@
         {
           "name": "Tripura",
           "shortName": "TRI",
-          "score": "90/3 (28 Ov)"
+          "score": "134/10 (44 Ov)"
         },
         {
           "name": "Hyderabad",
           "shortName": "HYD",
-          "score": ""
+          "score": "121/4 (41 Ov)"
         }
       ],
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Gymkhana Ground, Hyderabad",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps - Hyderabad trail by 13 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163540",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -17463,7 +17491,7 @@
         {
           "name": "Vidarbha",
           "shortName": "VID",
-          "score": "80/5 (27 Ov)"
+          "score": "300/5 (85 Ov)"
         },
         {
           "name": "Puducherry",
@@ -17474,7 +17502,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Vidarbha Cricket Association Stadium, Nagpur",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163531",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -17494,18 +17522,18 @@
         {
           "name": "Madhya Pradesh",
           "shortName": "MP",
-          "score": "48/3 (25 Ov)"
+          "score": "196/10 (74.2 Ov)"
         },
         {
           "name": "Jammu and Kashmir",
           "shortName": "JK",
-          "score": ""
+          "score": "3/1 (3 Ov)"
         }
       ],
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Sher-i-Kashmir Stadium, Srinagar",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps - Jammu and Kashmir trail by 193 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163530",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -17525,18 +17553,18 @@
         {
           "name": "Mizoram",
           "shortName": "MIZ",
-          "score": "92/2 (35 Ov)"
+          "score": "183/10 (62.3 Ov)"
         },
         {
           "name": "Manipur",
           "shortName": "MNP",
-          "score": ""
+          "score": "39/4 (26 Ov)"
         }
       ],
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Gokulbhai Somabhai Patel Stadium, Nadiad",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps - Manipur trail by 144 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163087",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -17600,7 +17628,7 @@
       "dateLabel": "11 Oct 2026, 07:00 pm",
       "time": "",
       "place": "Holkar Stadium, Indore",
-      "overview": "Match starts at Oct 11, 13:30 GMT",
+      "overview": "West Indies opt to bowl",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151587",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-11T13:30:00.000Z",
@@ -31932,6 +31960,38 @@
       "starPerformers": []
     },
     {
+      "id": "recent-155455",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "domestic",
+      "sourceScope": "global",
+      "title": "India A vs Australia A, 3rd unofficial ODI",
+      "series": "Australia A tour of India 2026",
+      "teams": [
+        {
+          "name": "India A",
+          "shortName": "INDA",
+          "score": "275/10 (47.3 Ov)"
+        },
+        {
+          "name": "Australia A",
+          "shortName": "AUSA",
+          "score": "226/10 (46.2 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:00 am",
+      "time": "",
+      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
+      "overview": "India A won by 49 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155455",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-11T03:30:00.000Z",
+      "rawId": 155455,
+      "starPerformers": []
+    },
+    {
       "id": "recent-151576",
       "status": "recent",
       "statusLabel": "Past",
@@ -31993,102 +32053,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
       "startTime": "2026-10-09T03:30:00.000Z",
       "rawId": 155444,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-151565",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-men",
-      "title": "West Indies vs India, 1st T20I",
-      "series": "West Indies tour of India, 2026",
-      "teams": [
-        {
-          "name": "West Indies",
-          "shortName": "WI",
-          "score": "171/10 (19.1 Ov)"
-        },
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": "172/2 (14 Ov)"
-        }
-      ],
-      "dateLabel": "06 Oct 2026, 07:00 pm",
-      "time": "",
-      "place": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
-      "overview": "India won by 8 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151565",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
-      "startTime": "2026-10-06T13:30:00.000Z",
-      "rawId": 151565,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-155433",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-a",
-      "title": "Australia A vs India A, 1st unofficial ODI",
-      "series": "Australia A tour of India 2026",
-      "teams": [
-        {
-          "name": "Australia A",
-          "shortName": "AUSA",
-          "score": "274/10 (48.2 Ov)"
-        },
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": "149/10 (31 Ov)"
-        }
-      ],
-      "dateLabel": "06 Oct 2026, 02:00 pm",
-      "time": "",
-      "place": "Cricket Association Puducherry Siechem Ground, Puducherry",
-      "overview": "Australia A won by 125 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155433",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
-      "startTime": "2026-10-06T08:30:00.000Z",
-      "rawId": 155433,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-155510",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-u19",
-      "title": "Australia U19 vs India U19, 2nd unofficial Test",
-      "series": "Australia U19 tour of India 2026",
-      "teams": [
-        {
-          "name": "Australia U19",
-          "shortName": "AUSU19",
-          "score": "174/10 (73 Ov) & 151/10 (43.5 Ov)"
-        },
-        {
-          "name": "India U19",
-          "shortName": "INDU19",
-          "score": "315/10 (78.4 Ov) & 11 (0.5 Ov)"
-        }
-      ],
-      "dateLabel": "05 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Narendra Modi Stadium B Ground, Ahmedabad",
-      "overview": "India U19 won by 10 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155510",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20U19/54/results",
-      "startTime": "2026-10-05T04:00:00.000Z",
-      "rawId": 155510,
       "starPerformers": []
     },
     {
@@ -33688,38 +33652,6 @@
       "starPerformers": []
     },
     {
-      "id": "recent-156124",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "",
-      "sourceScope": "india-a",
-      "title": "India A vs Afghanistan A, 2nd Match",
-      "series": "Tri Nation A Series in Sri Lanka 2026",
-      "teams": [
-        {
-          "name": "India A",
-          "shortName": "INDA",
-          "score": "349/9 (49 Ov)"
-        },
-        {
-          "name": "Afghanistan A",
-          "shortName": "AFGA",
-          "score": "177/2 (25.5 Ov)"
-        }
-      ],
-      "dateLabel": "11 Jun 2026, 10:00 am",
-      "time": "",
-      "place": "Rangiri Dambulla International Stadium, Dambulla",
-      "overview": "Afghanistan A won by 4 runs (DLS method)",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/156124",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/India%20A/78/results",
-      "startTime": "2026-06-11T04:30:00.000Z",
-      "rawId": 156124,
-      "starPerformers": []
-    },
-    {
       "id": "recent-105540",
       "status": "recent",
       "statusLabel": "Past",
@@ -33868,9 +33800,9 @@
       "label": "International",
       "order": 1,
       "live": 0,
-      "recent": 29,
+      "recent": 25,
       "upcoming": 46,
-      "total": 75
+      "total": 71
     },
     {
       "id": "league",
@@ -33894,10 +33826,10 @@
       "id": "domestic",
       "label": "Domestic / State",
       "order": 4,
-      "live": 19,
-      "recent": 1,
+      "live": 21,
+      "recent": 2,
       "upcoming": 392,
-      "total": 412
+      "total": 415
     }
   ],
   "importantMatches": [
@@ -33915,7 +33847,7 @@
         {
           "name": "Baroda",
           "shortName": "BRD",
-          "score": "58 (29 Ov)"
+          "score": "204/3 (85 Ov)"
         },
         {
           "name": "Goa",
@@ -33926,7 +33858,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Bhausaheb Bandodkar Ground, Goa",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163520",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -33947,7 +33879,7 @@
         {
           "name": "Mumbai",
           "shortName": "MUM",
-          "score": "70/1 (25 Ov)"
+          "score": "249/5 (84 Ov)"
         },
         {
           "name": "Chandigarh",
@@ -33958,7 +33890,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Wankhede Stadium, Mumbai",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163621",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -33979,7 +33911,7 @@
         {
           "name": "Rajasthan",
           "shortName": "RAJ",
-          "score": "78/1 (27 Ov)"
+          "score": "286/4 (85 Ov)"
         },
         {
           "name": "Tamil Nadu",
@@ -33990,7 +33922,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Sawai Mansingh Stadium, Jaipur",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163611",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -34011,7 +33943,7 @@
         {
           "name": "Railways",
           "shortName": "RLYS",
-          "score": "78/2 (27 Ov)"
+          "score": "278/10 (87.5 Ov)"
         },
         {
           "name": "Uttarakhand",
@@ -34022,7 +33954,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Brabourne Stadium, Mumbai",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163601",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -34043,7 +33975,7 @@
         {
           "name": "Himachal Pradesh",
           "shortName": "HP",
-          "score": "44/2 (26 Ov)"
+          "score": "153/7 (77 Ov)"
         },
         {
           "name": "Haryana",
@@ -34054,7 +33986,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Ch Bansi Lal Cricket Stadium, Rohtak",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163591",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -34075,7 +34007,7 @@
         {
           "name": "Maharashtra",
           "shortName": "MAH",
-          "score": "116/3 (30 Ov)"
+          "score": "287/5 (90 Ov)"
         },
         {
           "name": "Services",
@@ -34086,7 +34018,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Palam A Stadium, Delhi",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163581",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -34107,7 +34039,7 @@
         {
           "name": "Odisha",
           "shortName": "ODSA",
-          "score": "89/1 (27.2 Ov)"
+          "score": "272/3 (90 Ov)"
         },
         {
           "name": "Gujarat",
@@ -34118,7 +34050,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Narendra Modi Stadium B Ground, Ahmedabad",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163563",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -34139,7 +34071,7 @@
         {
           "name": "Saurashtra",
           "shortName": "SAUR",
-          "score": "103/1 (32.2 Ov)"
+          "score": "308/4 (90 Ov)"
         },
         {
           "name": "Chhattisgarh",
@@ -34150,7 +34082,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163560",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -34182,7 +34114,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163551",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -34203,18 +34135,18 @@
         {
           "name": "Karnataka",
           "shortName": "KAR",
-          "score": "113/4 (28 Ov)"
+          "score": "274/10 (82.2 Ov)"
         },
         {
           "name": "Andhra",
           "shortName": "AP",
-          "score": ""
+          "score": "16/2 (5 Ov)"
         }
       ],
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps - Andhra trail by 258 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -34235,18 +34167,18 @@
         {
           "name": "Tripura",
           "shortName": "TRI",
-          "score": "90/3 (28 Ov)"
+          "score": "134/10 (44 Ov)"
         },
         {
           "name": "Hyderabad",
           "shortName": "HYD",
-          "score": ""
+          "score": "121/4 (41 Ov)"
         }
       ],
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Gymkhana Ground, Hyderabad",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps - Hyderabad trail by 13 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163540",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -34267,7 +34199,7 @@
         {
           "name": "Vidarbha",
           "shortName": "VID",
-          "score": "80/5 (27 Ov)"
+          "score": "300/5 (85 Ov)"
         },
         {
           "name": "Puducherry",
@@ -34278,7 +34210,7 @@
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Vidarbha Cricket Association Stadium, Nagpur",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163531",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -34299,18 +34231,18 @@
         {
           "name": "Madhya Pradesh",
           "shortName": "MP",
-          "score": "48/3 (25 Ov)"
+          "score": "196/10 (74.2 Ov)"
         },
         {
           "name": "Jammu and Kashmir",
           "shortName": "JK",
-          "score": ""
+          "score": "3/1 (3 Ov)"
         }
       ],
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Sher-i-Kashmir Stadium, Srinagar",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps - Jammu and Kashmir trail by 193 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163530",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -34331,18 +34263,18 @@
         {
           "name": "Mizoram",
           "shortName": "MIZ",
-          "score": "92/2 (35 Ov)"
+          "score": "183/10 (62.3 Ov)"
         },
         {
           "name": "Manipur",
           "shortName": "MNP",
-          "score": ""
+          "score": "39/4 (26 Ov)"
         }
       ],
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
       "place": "Gokulbhai Somabhai Patel Stadium, Nadiad",
-      "overview": "Day 1: 1st Session",
+      "overview": "Day 1: Stumps - Manipur trail by 144 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163087",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
@@ -34363,7 +34295,7 @@
         {
           "name": "Uttar Pradesh",
           "shortName": "UP",
-          "score": "64/2 (23 Ov)"
+          "score": "287/3 (84 Ov)"
         },
         {
           "name": "Bihar",
@@ -34374,7 +34306,7 @@
       "dateLabel": "11 Oct 2026, 09:00 am",
       "time": "",
       "place": "Rajgir International Cricket Stadium, Rajgir",
-      "overview": "Day 1: Lunch Break",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163521",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T03:30:00.000Z",
@@ -34395,7 +34327,7 @@
         {
           "name": "Delhi",
           "shortName": "DEL",
-          "score": "89/3 (31 Ov)"
+          "score": "240/10 (77.3 Ov)"
         },
         {
           "name": "Bengal",
@@ -34406,7 +34338,7 @@
       "dateLabel": "11 Oct 2026, 09:00 am",
       "time": "",
       "place": "Bengal Cricket Academy Ground, Kalyani",
-      "overview": "Day 1: Lunch Break",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163571",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T03:30:00.000Z",
@@ -34427,7 +34359,7 @@
         {
           "name": "Jharkhand",
           "shortName": "JHKD",
-          "score": "113/1 (34 Ov)"
+          "score": "289/5 (90 Ov)"
         },
         {
           "name": "Kerala",
@@ -34438,7 +34370,7 @@
       "dateLabel": "11 Oct 2026, 09:00 am",
       "time": "",
       "place": "Keenan Stadium, Jamshedpur",
-      "overview": "Day 1: Lunch Break",
+      "overview": "Day 1: Stumps",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163561",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T03:30:00.000Z",
@@ -34459,18 +34391,18 @@
         {
           "name": "Sikkim",
           "shortName": "SKM",
-          "score": "133/6 (40 Ov)"
+          "score": "245/10 (80.5 Ov)"
         },
         {
           "name": "Meghalaya",
           "shortName": "MGLY",
-          "score": ""
+          "score": "2 (1 Ov)"
         }
       ],
       "dateLabel": "11 Oct 2026, 08:15 am",
       "time": "",
       "place": "SICA ground, Rangpo",
-      "overview": "Day 1: 2nd Session",
+      "overview": "Day 1: Stumps - Meghalaya trail by 243 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163097",
       "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
       "startTime": "2026-10-11T02:45:00.000Z",
@@ -45354,7 +45286,7 @@
             {
               "name": "Uttar Pradesh",
               "shortName": "UP",
-              "score": "64/2 (23 Ov)"
+              "score": "287/3 (84 Ov)"
             },
             {
               "name": "Bihar",
@@ -45365,7 +45297,7 @@
           "dateLabel": "11 Oct 2026, 09:00 am",
           "time": "",
           "place": "Rajgir International Cricket Stadium, Rajgir",
-          "overview": "Day 1: Lunch Break",
+          "overview": "Day 1: Stumps",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163521",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T03:30:00.000Z",
@@ -45386,7 +45318,7 @@
             {
               "name": "Delhi",
               "shortName": "DEL",
-              "score": "89/3 (31 Ov)"
+              "score": "240/10 (77.3 Ov)"
             },
             {
               "name": "Bengal",
@@ -45397,7 +45329,7 @@
           "dateLabel": "11 Oct 2026, 09:00 am",
           "time": "",
           "place": "Bengal Cricket Academy Ground, Kalyani",
-          "overview": "Day 1: Lunch Break",
+          "overview": "Day 1: Stumps",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163571",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T03:30:00.000Z",
@@ -45418,7 +45350,7 @@
             {
               "name": "Jharkhand",
               "shortName": "JHKD",
-              "score": "113/1 (34 Ov)"
+              "score": "289/5 (90 Ov)"
             },
             {
               "name": "Kerala",
@@ -45429,7 +45361,7 @@
           "dateLabel": "11 Oct 2026, 09:00 am",
           "time": "",
           "place": "Keenan Stadium, Jamshedpur",
-          "overview": "Day 1: Lunch Break",
+          "overview": "Day 1: Stumps",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163561",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T03:30:00.000Z",
@@ -45450,7 +45382,7 @@
             {
               "name": "Baroda",
               "shortName": "BRD",
-              "score": "58 (29 Ov)"
+              "score": "204/3 (85 Ov)"
             },
             {
               "name": "Goa",
@@ -45461,7 +45393,7 @@
           "dateLabel": "11 Oct 2026, 09:30 am",
           "time": "",
           "place": "Bhausaheb Bandodkar Ground, Goa",
-          "overview": "Day 1: 1st Session",
+          "overview": "Day 1: Stumps",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163520",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
@@ -45482,7 +45414,7 @@
             {
               "name": "Mumbai",
               "shortName": "MUM",
-              "score": "70/1 (25 Ov)"
+              "score": "249/5 (84 Ov)"
             },
             {
               "name": "Chandigarh",
@@ -45493,7 +45425,7 @@
           "dateLabel": "11 Oct 2026, 09:30 am",
           "time": "",
           "place": "Wankhede Stadium, Mumbai",
-          "overview": "Day 1: 1st Session",
+          "overview": "Day 1: Stumps",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163621",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
@@ -45514,7 +45446,7 @@
             {
               "name": "Rajasthan",
               "shortName": "RAJ",
-              "score": "78/1 (27 Ov)"
+              "score": "286/4 (85 Ov)"
             },
             {
               "name": "Tamil Nadu",
@@ -45525,7 +45457,7 @@
           "dateLabel": "11 Oct 2026, 09:30 am",
           "time": "",
           "place": "Sawai Mansingh Stadium, Jaipur",
-          "overview": "Day 1: 1st Session",
+          "overview": "Day 1: Stumps",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163611",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
@@ -45546,7 +45478,7 @@
             {
               "name": "Railways",
               "shortName": "RLYS",
-              "score": "78/2 (27 Ov)"
+              "score": "278/10 (87.5 Ov)"
             },
             {
               "name": "Uttarakhand",
@@ -45557,7 +45489,7 @@
           "dateLabel": "11 Oct 2026, 09:30 am",
           "time": "",
           "place": "Brabourne Stadium, Mumbai",
-          "overview": "Day 1: 1st Session",
+          "overview": "Day 1: Stumps",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163601",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
@@ -45578,7 +45510,7 @@
             {
               "name": "Himachal Pradesh",
               "shortName": "HP",
-              "score": "44/2 (26 Ov)"
+              "score": "153/7 (77 Ov)"
             },
             {
               "name": "Haryana",
@@ -45589,7 +45521,7 @@
           "dateLabel": "11 Oct 2026, 09:30 am",
           "time": "",
           "place": "Ch Bansi Lal Cricket Stadium, Rohtak",
-          "overview": "Day 1: 1st Session",
+          "overview": "Day 1: Stumps",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163591",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
@@ -45610,7 +45542,7 @@
             {
               "name": "Maharashtra",
               "shortName": "MAH",
-              "score": "116/3 (30 Ov)"
+              "score": "287/5 (90 Ov)"
             },
             {
               "name": "Services",
@@ -45621,7 +45553,7 @@
           "dateLabel": "11 Oct 2026, 09:30 am",
           "time": "",
           "place": "Palam A Stadium, Delhi",
-          "overview": "Day 1: 1st Session",
+          "overview": "Day 1: Stumps",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163581",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
@@ -45642,7 +45574,7 @@
             {
               "name": "Odisha",
               "shortName": "ODSA",
-              "score": "89/1 (27.2 Ov)"
+              "score": "272/3 (90 Ov)"
             },
             {
               "name": "Gujarat",
@@ -45653,7 +45585,7 @@
           "dateLabel": "11 Oct 2026, 09:30 am",
           "time": "",
           "place": "Narendra Modi Stadium B Ground, Ahmedabad",
-          "overview": "Day 1: 1st Session",
+          "overview": "Day 1: Stumps",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163563",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
@@ -45674,7 +45606,7 @@
             {
               "name": "Saurashtra",
               "shortName": "SAUR",
-              "score": "103/1 (32.2 Ov)"
+              "score": "308/4 (90 Ov)"
             },
             {
               "name": "Chhattisgarh",
@@ -45685,7 +45617,7 @@
           "dateLabel": "11 Oct 2026, 09:30 am",
           "time": "",
           "place": "Niranjan Shah Stadium, Khandheri, Rajkot",
-          "overview": "Day 1: 1st Session",
+          "overview": "Day 1: Stumps",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163560",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
@@ -45717,7 +45649,7 @@
           "dateLabel": "11 Oct 2026, 09:30 am",
           "time": "",
           "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
-          "overview": "Day 1: 1st Session",
+          "overview": "Day 1: Stumps",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163551",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
@@ -45738,18 +45670,18 @@
             {
               "name": "Karnataka",
               "shortName": "KAR",
-              "score": "113/4 (28 Ov)"
+              "score": "274/10 (82.2 Ov)"
             },
             {
               "name": "Andhra",
               "shortName": "AP",
-              "score": ""
+              "score": "16/2 (5 Ov)"
             }
           ],
           "dateLabel": "11 Oct 2026, 09:30 am",
           "time": "",
           "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
-          "overview": "Day 1: 1st Session",
+          "overview": "Day 1: Stumps - Andhra trail by 258 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
@@ -45770,18 +45702,18 @@
             {
               "name": "Tripura",
               "shortName": "TRI",
-              "score": "90/3 (28 Ov)"
+              "score": "134/10 (44 Ov)"
             },
             {
               "name": "Hyderabad",
               "shortName": "HYD",
-              "score": ""
+              "score": "121/4 (41 Ov)"
             }
           ],
           "dateLabel": "11 Oct 2026, 09:30 am",
           "time": "",
           "place": "Gymkhana Ground, Hyderabad",
-          "overview": "Day 1: 1st Session",
+          "overview": "Day 1: Stumps - Hyderabad trail by 13 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163540",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
@@ -45802,7 +45734,7 @@
             {
               "name": "Vidarbha",
               "shortName": "VID",
-              "score": "80/5 (27 Ov)"
+              "score": "300/5 (85 Ov)"
             },
             {
               "name": "Puducherry",
@@ -45813,7 +45745,7 @@
           "dateLabel": "11 Oct 2026, 09:30 am",
           "time": "",
           "place": "Vidarbha Cricket Association Stadium, Nagpur",
-          "overview": "Day 1: 1st Session",
+          "overview": "Day 1: Stumps",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163531",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
@@ -45834,18 +45766,18 @@
             {
               "name": "Madhya Pradesh",
               "shortName": "MP",
-              "score": "48/3 (25 Ov)"
+              "score": "196/10 (74.2 Ov)"
             },
             {
               "name": "Jammu and Kashmir",
               "shortName": "JK",
-              "score": ""
+              "score": "3/1 (3 Ov)"
             }
           ],
           "dateLabel": "11 Oct 2026, 09:30 am",
           "time": "",
           "place": "Sher-i-Kashmir Stadium, Srinagar",
-          "overview": "Day 1: 1st Session",
+          "overview": "Day 1: Stumps - Jammu and Kashmir trail by 193 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163530",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
@@ -47416,18 +47348,18 @@
             {
               "name": "Sikkim",
               "shortName": "SKM",
-              "score": "133/6 (40 Ov)"
+              "score": "245/10 (80.5 Ov)"
             },
             {
               "name": "Meghalaya",
               "shortName": "MGLY",
-              "score": ""
+              "score": "2 (1 Ov)"
             }
           ],
           "dateLabel": "11 Oct 2026, 08:15 am",
           "time": "",
           "place": "SICA ground, Rangpo",
-          "overview": "Day 1: 2nd Session",
+          "overview": "Day 1: Stumps - Meghalaya trail by 243 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163097",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
           "startTime": "2026-10-11T02:45:00.000Z",
@@ -47448,18 +47380,18 @@
             {
               "name": "Mizoram",
               "shortName": "MIZ",
-              "score": "92/2 (35 Ov)"
+              "score": "183/10 (62.3 Ov)"
             },
             {
               "name": "Manipur",
               "shortName": "MNP",
-              "score": ""
+              "score": "39/4 (26 Ov)"
             }
           ],
           "dateLabel": "11 Oct 2026, 09:30 am",
           "time": "",
           "place": "Gokulbhai Somabhai Patel Stadium, Nadiad",
-          "overview": "Day 1: 1st Session",
+          "overview": "Day 1: Stumps - Manipur trail by 144 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163087",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
