@@ -19,6 +19,11 @@ const RouterContext = React.createContext(null);
         "/india-matches": "india-matches/index.html",
         "/gt-gaming": "gt-gaming/index.html",
         "/shop": "shop/index.html",
+        "/about": "about/index.html",
+        "/contact": "contact/index.html",
+        "/privacy": "privacy/index.html",
+        "/terms": "terms/index.html",
+        "/affiliate-disclosure": "affiliate-disclosure/index.html",
       };
 
       function isLocalFilePreview() {
@@ -27,7 +32,7 @@ const RouterContext = React.createContext(null);
 
       function localPreviewPrefix() {
         const path = decodeURIComponent(window.location.pathname).replace(/\\/g, "/");
-        return /\/(coin|kurukshetra-coin|india-matches|players|quiz|warriors|gt-gaming|shop)\/index\.html$/i.test(path) ? "../" : "";
+        return /\/(coin|kurukshetra-coin|india-matches|players|quiz|warriors|gt-gaming|shop|about|contact|privacy|terms|affiliate-disclosure)\/index\.html$/i.test(path) ? "../" : "";
       }
 
       function normalizePath(pathname, basename = "/") {
@@ -45,7 +50,7 @@ const RouterContext = React.createContext(null);
       function currentRoutePath(basename = "/") {
         if (!isLocalFilePreview()) return normalizePath(window.location.pathname, basename);
         const path = decodeURIComponent(window.location.pathname).replace(/\\/g, "/").toLowerCase();
-        const routeMatch = path.match(/\/(coin|kurukshetra-coin|india-matches|players|quiz|warriors|gt-gaming|shop)\/index\.html$/);
+        const routeMatch = path.match(/\/(coin|kurukshetra-coin|india-matches|players|quiz|warriors|gt-gaming|shop|about|contact|privacy|terms|affiliate-disclosure)\/index\.html$/);
         return routeMatch ? `/${routeMatch[1]}` : "/";
       }
 
@@ -1005,7 +1010,6 @@ const RouterContext = React.createContext(null);
           <main className="stadium-page-bg page-grain min-h-screen">
             <HeroSection />
             <CricHeroesSection />
-            <Footer />
           </main>
         );
       }
@@ -4684,6 +4688,110 @@ const RouterContext = React.createContext(null);
         );
       }
 
+      const TRUST_PAGE_CONTENT = {
+        about: {
+          kicker: "About CricKuru",
+          title: "Grassroots cricket, made easier to follow",
+          intro: "CricKuru is an independent cricket community hub built around Kurukshetra Warriors, local player performance, public CricHeroes records and India match discovery.",
+          sections: [
+            ["What we cover", "We bring together team results, public scorecards, player roles, recent form, awards, captaincy context and selected India-linked match updates in one readable place."],
+            ["How the data works", "Public CricHeroes team and player pages are used as source records. CricKuru normalizes those records into match summaries and labels the source so visitors can open the original scorecard when they need the full official view."],
+            ["What we add", "The site adds local context, plain-language performance notes, player development prompts, tournament discovery and community-friendly presentation for society cricket."],
+            ["Independence", "CricKuru is not an official CricHeroes property. Names, logos and scorecard links remain with their respective owners, and external links open the source or sponsor site directly."],
+          ],
+          links: [["/warriors", "Warriors match centre"], ["/players", "Player profiles"], ["/contact", "Contact CricKuru"]],
+        },
+        contact: {
+          kicker: "Contact and corrections",
+          title: "Help keep the score honest",
+          intro: "CricKuru is a community project. For a score, player, award or team correction, send the exact public source and a short explanation so the change can be checked before the next refresh.",
+          sections: [
+            ["Score and player corrections", "Open the public Kurukshetra Warriors CricHeroes team page and share the relevant match or player URL with the team administrator. Include the match date and the field that needs correction."],
+            ["Team and partnership enquiries", "For team, sponsorship or GT Gaming partnership context, use the linked public pages below. Please identify the page, brand or match you are asking about."],
+            ["What to include", "A useful correction includes the source URL, player name or match ID, the current value shown on CricKuru, and the value you believe should appear."],
+            ["Response expectations", "CricKuru is maintained as a grassroots project. Public score and roster changes are checked during scheduled refreshes; urgent changes may still wait for the source page to update."],
+          ],
+          links: [
+            ["https://cricheroes.com/team-profile/8626734/kurukshetra-warriors/members", "Open public team page", true],
+            ["/about", "About CricKuru"],
+            ["/privacy", "Privacy policy"],
+          ],
+        },
+        privacy: {
+          kicker: "Your data",
+          title: "Privacy at CricKuru",
+          intro: "This policy explains the information CricKuru may process when you browse the site, use analytics, open external cricket links or choose community sign-in features.",
+          sections: [
+            ["Information we use", "Public team, match and player information is sourced from public CricHeroes pages. If you use optional player sign-in or chat features, the service may process the account details and messages needed to provide those features."],
+            ["Analytics and storage", "CricKuru uses Google Analytics to understand page visits and interactions. Your browser may also store preferences such as theme choice, quiz progress or interface state through local storage or cookies."],
+            ["Advertising and external services", "Google AdSense, Google Analytics, CricHeroes, Amazon and GT Gaming may receive information when their links, scripts or pages are used. Each service has its own privacy policy and controls."],
+            ["Your choices", "You can block cookies or local storage in your browser, avoid optional sign-in features, and use the original CricHeroes or retailer pages directly. Blocking some storage may affect preferences or interactive features."],
+            ["Updates and questions", "This policy may change as CricKuru adds features or integrations. For a privacy question or correction request, use the public contact route on the Contact page."],
+          ],
+          links: [["/contact", "Contact"], ["/terms", "Terms of use"], ["/affiliate-disclosure", "Affiliate disclosure"]],
+        },
+        terms: {
+          kicker: "Site rules",
+          title: "Terms of use",
+          intro: "By using CricKuru, you agree to use this community cricket site responsibly and understand that public score data, links and availability can change.",
+          sections: [
+            ["Informational service", "CricKuru provides cricket information, public scorecard summaries, player context and community tools. It is not a replacement for the official CricHeroes scorecard, a coach, a medical professional or financial advice."],
+            ["Accuracy and availability", "We work to refresh public data and identify its source, but scores, player identities, awards, prices and match status may be delayed, incomplete or corrected by the source platform."],
+            ["Respectful use", "Do not use the site to harass players, impersonate people, submit misleading corrections, generate artificial traffic, or interfere with the site, its APIs, external services or community features."],
+            ["External links", "CricKuru links to CricHeroes, Amazon, GT Gaming, Google and other services. Those destinations have separate terms, policies and availability. CricKuru is not responsible for their content or transactions."],
+            ["Changes", "Features, sources, routes and these terms may change as the site develops. Continued use after an update means you accept the revised version."],
+          ],
+          links: [["/privacy", "Privacy policy"], ["/contact", "Contact"], ["/", "Return home"]],
+        },
+        affiliate: {
+          kicker: "Commercial transparency",
+          title: "Affiliate disclosure",
+          intro: "CricKuru may earn from qualifying purchases made through selected Amazon links and may feature sponsor links from GT Gaming. These relationships do not change the public match data.",
+          sections: [
+            ["Amazon Associates", "As an Amazon Associate, CricKuru may earn from qualifying purchases. Product prices, availability, sizing, delivery, reviews and returns are controlled by Amazon and may change on the live listing."],
+            ["Editorial approach", "The shop is a curated convenience layer for tennis-ball and leather-ball cricket. Product notes are written for society-cricket use, but visitors should confirm fit, safety information and current specifications before buying."],
+            ["Sponsor visibility", "GT Gaming may appear as an identified team sponsor. Sponsor placement is commercial visibility and should not be read as a claim that every product suits every player or use case."],
+            ["No extra cost from CricKuru", "Using a qualifying product link does not add a separate CricKuru fee. The retailer controls the checkout, payment, delivery, returns and final price."],
+          ],
+          links: [["/shop", "Open cricket gear shop"], ["/gt-gaming", "GT Gaming sponsor"], ["/privacy", "Privacy policy"]],
+        },
+      };
+
+      function TrustPage({ kind }) {
+        const page = TRUST_PAGE_CONTENT[kind] || TRUST_PAGE_CONTENT.about;
+        return (
+          <main className="route-bg page-grain min-h-[70vh] px-5 pb-20 pt-36 sm:px-8">
+            <section className="mx-auto max-w-5xl">
+              <motion.div initial={{ opacity: 0, y: 22 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.65, ease }}>
+                <p className="text-xs font-black uppercase tracking-[0.32em] text-gold">{page.kicker}</p>
+                <h1 className="mt-5 max-w-4xl font-display text-5xl font-black uppercase leading-[0.92] text-white sm:text-7xl">{page.title}</h1>
+                <div className="gold-divider my-7" />
+                <p className="max-w-3xl text-lg leading-8 text-white/72">{page.intro}</p>
+              </motion.div>
+              <div className="mt-12 grid gap-8 border-y border-white/10 py-10 md:grid-cols-2">
+                {page.sections.map(([heading, body]) => (
+                  <article key={heading} className="border-l-2 border-cyan/45 pl-5">
+                    <h2 className="font-display text-2xl font-black uppercase text-white">{heading}</h2>
+                    <p className="mt-3 text-base leading-7 text-white/65">{body}</p>
+                  </article>
+                ))}
+              </div>
+              <nav className="mt-10 flex flex-wrap gap-3" aria-label={`${page.title} related links`}>
+                {page.links.map(([href, label, external]) => external ? (
+                  <a key={href} href={href} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center gap-2 rounded-full border border-gold/35 px-4 text-sm font-bold text-gold transition hover:border-gold hover:bg-gold/10">
+                    {label} <Icon.ExternalLink size={15} />
+                  </a>
+                ) : (
+                  <Link key={href} to={href} className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/15 px-4 text-sm font-bold text-white/75 transition hover:border-cyan/55 hover:text-cyan">
+                    {label} <Icon.ArrowRight size={15} />
+                  </Link>
+                ))}
+              </nav>
+            </section>
+          </main>
+        );
+      }
+
       function PlaceholderPage({ title, kicker, description, icon: PageIcon }) {
         return (
           <main className="route-bg page-grain px-5 pb-16 pt-36 sm:px-8">
@@ -4777,6 +4885,36 @@ const RouterContext = React.createContext(null);
                   className="inline-flex min-h-11 items-center gap-2 rounded-full border border-cyan/25 px-4 text-sm font-bold text-cyan transition hover:border-cyan hover:bg-cyan/10"
                 >
                   Cricket gear <Icon.ArrowRight size={15} />
+                </Link>
+                <Link
+                  to="/about"
+                  className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/12 px-4 text-sm font-bold text-white/70 transition hover:border-cyan/50 hover:text-cyan"
+                >
+                  About <Icon.ArrowRight size={15} />
+                </Link>
+                <Link
+                  to="/contact"
+                  className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/12 px-4 text-sm font-bold text-white/70 transition hover:border-cyan/50 hover:text-cyan"
+                >
+                  Contact <Icon.ArrowRight size={15} />
+                </Link>
+                <Link
+                  to="/privacy"
+                  className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/12 px-4 text-sm font-bold text-white/70 transition hover:border-cyan/50 hover:text-cyan"
+                >
+                  Privacy <Icon.ArrowRight size={15} />
+                </Link>
+                <Link
+                  to="/terms"
+                  className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/12 px-4 text-sm font-bold text-white/70 transition hover:border-cyan/50 hover:text-cyan"
+                >
+                  Terms <Icon.ArrowRight size={15} />
+                </Link>
+                <Link
+                  to="/affiliate-disclosure"
+                  className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/12 px-4 text-sm font-bold text-white/70 transition hover:border-cyan/50 hover:text-cyan"
+                >
+                  Disclosure <Icon.ArrowRight size={15} />
                 </Link>
               </div>
               <p className="text-sm text-white/45">&copy; 2026 CricKuru. Built for crickuru.com.</p>
@@ -5253,6 +5391,11 @@ const RouterContext = React.createContext(null);
                     path="/shop"
                     element={<CricketGearShopPage />}
                   />
+                  <Route path="/about" element={<TrustPage kind="about" />} />
+                  <Route path="/contact" element={<TrustPage kind="contact" />} />
+                  <Route path="/privacy" element={<TrustPage kind="privacy" />} />
+                  <Route path="/terms" element={<TrustPage kind="terms" />} />
+                  <Route path="/affiliate-disclosure" element={<TrustPage kind="affiliate" />} />
                   <Route
                     path="*"
                     element={
@@ -5265,6 +5408,7 @@ const RouterContext = React.createContext(null);
                     }
                   />
                 </Routes>
+                <Footer />
                 <OnlinePlayersBar />
               </IndiaMatchesProvider>
             </BrowserRouter>
