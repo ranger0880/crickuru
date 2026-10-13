@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-12T22:57:33.995Z",
-  "lastCheckedAt": "2026-10-12T22:57:33.995Z",
-  "lastSuccessfulSyncAt": "2026-10-12T22:57:33.995Z",
+  "syncedAt": "2026-10-13T03:21:25.917Z",
+  "lastCheckedAt": "2026-10-13T03:21:25.917Z",
+  "lastSuccessfulSyncAt": "2026-10-13T03:21:25.917Z",
   "coverage": {
     "pathways": [
       "India",
@@ -209,7 +209,7 @@
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "domestic",
-      "sourceScope": "global",
+      "sourceScope": "domestic-global",
       "title": "Mumbai vs Chandigarh, Elite Group D",
       "series": "Ranji Trophy Elite 2026-27",
       "teams": [
@@ -229,7 +229,7 @@
       "place": "Wankhede Stadium, Mumbai",
       "overview": "Day 2: Stumps - Chandigarh trail by 351 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163621",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic",
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 163621
     },
@@ -17053,7 +17053,7 @@
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "domestic",
-      "sourceScope": "global",
+      "sourceScope": "domestic-global",
       "title": "Mumbai vs Chandigarh, Elite Group D",
       "series": "Ranji Trophy Elite 2026-27",
       "teams": [
@@ -17073,7 +17073,7 @@
       "place": "Wankhede Stadium, Mumbai",
       "overview": "Day 2: Stumps - Chandigarh trail by 351 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163621",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic",
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 163621
     },
@@ -33816,7 +33816,7 @@
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "domestic",
-      "sourceScope": "global",
+      "sourceScope": "domestic-global",
       "title": "Mumbai vs Chandigarh, Elite Group D",
       "series": "Ranji Trophy Elite 2026-27",
       "teams": [
@@ -33836,7 +33836,7 @@
       "place": "Wankhede Stadium, Mumbai",
       "overview": "Day 2: Stumps - Chandigarh trail by 351 runs",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163621",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic",
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 163621,
       "importance": "Major tournament"
@@ -45351,7 +45351,7 @@
           "level": "domestic",
           "levelLabel": "Domestic / State",
           "sourceType": "domestic",
-          "sourceScope": "global",
+          "sourceScope": "domestic-global",
           "title": "Mumbai vs Chandigarh, Elite Group D",
           "series": "Ranji Trophy Elite 2026-27",
           "teams": [
@@ -45371,7 +45371,7 @@
           "place": "Wankhede Stadium, Mumbai",
           "overview": "Day 2: Stumps - Chandigarh trail by 351 runs",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163621",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic",
           "startTime": "2026-10-11T04:00:00.000Z",
           "rawId": 163621,
           "importance": "Major tournament"
