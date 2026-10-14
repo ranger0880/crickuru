@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-14T19:33:56.251Z",
-  "lastCheckedAt": "2026-10-14T19:33:56.251Z",
-  "lastSuccessfulSyncAt": "2026-10-14T19:33:56.251Z",
+  "syncedAt": "2026-10-14T22:34:02.746Z",
+  "lastCheckedAt": "2026-10-14T22:34:02.746Z",
+  "lastSuccessfulSyncAt": "2026-10-14T22:34:02.746Z",
   "coverage": {
     "pathways": [
       "India",
@@ -43,8 +43,8 @@
   "summary": {
     "live": 0,
     "recent": 78,
-    "upcoming": 462,
-    "total": 540
+    "upcoming": 461,
+    "total": 539
   },
   "all": [
     {
@@ -77,37 +77,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
-    },
-    {
-      "id": "upcoming-151598",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "International",
-      "sourceScope": "domestic-global",
-      "title": "India vs West Indies, 4th T20I",
-      "series": "West Indies tour of India, 2026",
-      "teams": [
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": ""
-        },
-        {
-          "name": "West Indies",
-          "shortName": "WI",
-          "score": ""
-        }
-      ],
-      "dateLabel": "14 Oct 2026, 07:00 pm",
-      "time": "",
-      "place": "Rajiv Gandhi International Stadium, Hyderabad",
-      "overview": "Match starts at Oct 14, 13:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151598",
-      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic/liveStream",
-      "startTime": "2026-10-14T13:30:00.000Z",
-      "rawId": 151598
     },
     {
       "id": "upcoming-155519",
@@ -14370,35 +14339,35 @@
       "rawId": 174701
     },
     {
-      "id": "recent-175040",
+      "id": "recent-151598",
       "status": "recent",
       "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "league",
-      "sourceScope": "domestic-global",
-      "title": "India Champions vs West Indies Champions, 15th Match",
-      "series": "World Championship of Legends 2026",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "West Indies vs India, 4th T20I",
+      "series": "West Indies tour of India, 2026",
       "teams": [
         {
-          "name": "India Champions",
-          "shortName": "INDCH",
-          "score": "110/8 (19.6 Ov)"
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": "247/3 (19.6 Ov)"
         },
         {
-          "name": "West Indies Champions",
-          "shortName": "WICH",
-          "score": "111/4 (14.5 Ov)"
+          "name": "India",
+          "shortName": "IND",
+          "score": "223/10 (19.3 Ov)"
         }
       ],
-      "dateLabel": "13 Oct 2026, 09:00 pm",
+      "dateLabel": "14 Oct 2026, 07:00 pm",
       "time": "",
-      "place": "Sharjah Cricket Stadium, Sharjah",
-      "overview": "West Indies Champions won by 6 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/175040",
-      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic/liveStream",
-      "startTime": "2026-10-13T15:30:00.000Z",
-      "rawId": 175040,
+      "place": "Rajiv Gandhi International Stadium, Hyderabad",
+      "overview": "West Indies won by 24 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151598",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-14T13:30:00.000Z",
+      "rawId": 151598,
       "starPerformers": []
     },
     {
@@ -14733,7 +14702,14 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 163581,
-      "starPerformers": []
+      "starPerformers": [
+        {
+          "name": "Ankit Bawne",
+          "performance": "118 & 48",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163581"
+        }
+      ]
     },
     {
       "id": "recent-163591",
@@ -14797,7 +14773,14 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 163601,
-      "starPerformers": []
+      "starPerformers": [
+        {
+          "name": "Saurabh Rawat",
+          "performance": "107",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163601"
+        }
+      ]
     },
     {
       "id": "recent-163611",
@@ -16961,37 +16944,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
-    },
-    {
-      "id": "upcoming-151598",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "International",
-      "sourceScope": "domestic-global",
-      "title": "India vs West Indies, 4th T20I",
-      "series": "West Indies tour of India, 2026",
-      "teams": [
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": ""
-        },
-        {
-          "name": "West Indies",
-          "shortName": "WI",
-          "score": ""
-        }
-      ],
-      "dateLabel": "14 Oct 2026, 07:00 pm",
-      "time": "",
-      "place": "Rajiv Gandhi International Stadium, Hyderabad",
-      "overview": "Match starts at Oct 14, 13:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151598",
-      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic/liveStream",
-      "startTime": "2026-10-14T13:30:00.000Z",
-      "rawId": 151598
     },
     {
       "id": "upcoming-155519",
@@ -31256,35 +31208,35 @@
   ],
   "recent": [
     {
-      "id": "recent-175040",
+      "id": "recent-151598",
       "status": "recent",
       "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "league",
-      "sourceScope": "domestic-global",
-      "title": "India Champions vs West Indies Champions, 15th Match",
-      "series": "World Championship of Legends 2026",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
+      "sourceScope": "global",
+      "title": "West Indies vs India, 4th T20I",
+      "series": "West Indies tour of India, 2026",
       "teams": [
         {
-          "name": "India Champions",
-          "shortName": "INDCH",
-          "score": "110/8 (19.6 Ov)"
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": "247/3 (19.6 Ov)"
         },
         {
-          "name": "West Indies Champions",
-          "shortName": "WICH",
-          "score": "111/4 (14.5 Ov)"
+          "name": "India",
+          "shortName": "IND",
+          "score": "223/10 (19.3 Ov)"
         }
       ],
-      "dateLabel": "13 Oct 2026, 09:00 pm",
+      "dateLabel": "14 Oct 2026, 07:00 pm",
       "time": "",
-      "place": "Sharjah Cricket Stadium, Sharjah",
-      "overview": "West Indies Champions won by 6 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/175040",
-      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic/liveStream",
-      "startTime": "2026-10-13T15:30:00.000Z",
-      "rawId": 175040,
+      "place": "Rajiv Gandhi International Stadium, Hyderabad",
+      "overview": "West Indies won by 24 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151598",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "startTime": "2026-10-14T13:30:00.000Z",
+      "rawId": 151598,
       "starPerformers": []
     },
     {
@@ -31619,7 +31571,14 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 163581,
-      "starPerformers": []
+      "starPerformers": [
+        {
+          "name": "Ankit Bawne",
+          "performance": "118 & 48",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163581"
+        }
+      ]
     },
     {
       "id": "recent-163591",
@@ -31683,7 +31642,14 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 163601,
-      "starPerformers": []
+      "starPerformers": [
+        {
+          "name": "Saurabh Rawat",
+          "performance": "107",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163601"
+        }
+      ]
     },
     {
       "id": "recent-163611",
@@ -33821,9 +33787,9 @@
       "label": "International",
       "order": 1,
       "live": 0,
-      "recent": 28,
+      "recent": 29,
       "upcoming": 44,
-      "total": 72
+      "total": 73
     },
     {
       "id": "league",
@@ -33848,9 +33814,9 @@
       "label": "Domestic / State",
       "order": 4,
       "live": 0,
-      "recent": 20,
-      "upcoming": 393,
-      "total": 413
+      "recent": 19,
+      "upcoming": 392,
+      "total": 411
     }
   ],
   "importantMatches": [
@@ -40338,7 +40304,14 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 163581,
-      "starPerformers": [],
+      "starPerformers": [
+        {
+          "name": "Ankit Bawne",
+          "performance": "118 & 48",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163581"
+        }
+      ],
       "importance": "Major tournament"
     },
     {
@@ -40404,7 +40377,14 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 163601,
-      "starPerformers": [],
+      "starPerformers": [
+        {
+          "name": "Saurabh Rawat",
+          "performance": "107",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163601"
+        }
+      ],
       "importance": "Major tournament"
     },
     {
@@ -45680,7 +45660,14 @@
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
           "rawId": 163581,
-          "starPerformers": [],
+          "starPerformers": [
+            {
+              "name": "Ankit Bawne",
+              "performance": "118 & 48",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163581"
+            }
+          ],
           "importance": "Major tournament"
         },
         {
@@ -45746,7 +45733,14 @@
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
           "rawId": 163601,
-          "starPerformers": [],
+          "starPerformers": [
+            {
+              "name": "Saurabh Rawat",
+              "performance": "107",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163601"
+            }
+          ],
           "importance": "Major tournament"
         },
         {
@@ -48486,7 +48480,14 @@
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
           "rawId": 163581,
-          "starPerformers": [],
+          "starPerformers": [
+            {
+              "name": "Ankit Bawne",
+              "performance": "118 & 48",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163581"
+            }
+          ],
           "importance": "Major tournament"
         },
         {
@@ -48552,7 +48553,14 @@
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
           "rawId": 163601,
-          "starPerformers": [],
+          "starPerformers": [
+            {
+              "name": "Saurabh Rawat",
+              "performance": "107",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163601"
+            }
+          ],
           "importance": "Major tournament"
         },
         {
