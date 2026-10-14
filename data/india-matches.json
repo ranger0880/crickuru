@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-14T10:37:39.589Z",
-  "lastCheckedAt": "2026-10-14T10:37:39.589Z",
-  "lastSuccessfulSyncAt": "2026-10-14T10:37:39.589Z",
+  "syncedAt": "2026-10-14T15:26:45.465Z",
+  "lastCheckedAt": "2026-10-14T15:26:45.465Z",
+  "lastSuccessfulSyncAt": "2026-10-14T15:26:45.465Z",
   "coverage": {
     "pathways": [
       "India",
@@ -41,228 +41,42 @@
     "refreshCadence": "5 minutes"
   },
   "summary": {
-    "live": 7,
-    "recent": 71,
-    "upcoming": 462,
+    "live": 1,
+    "recent": 78,
+    "upcoming": 461,
     "total": 540
   },
   "all": [
     {
-      "id": "live-163571",
+      "id": "live-151598",
       "status": "live",
       "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Delhi vs Bengal, Elite Group C",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Delhi",
-          "shortName": "DEL",
-          "score": "240/10 (77.3 Ov) & 277/10 (106.2 Ov)"
-        },
-        {
-          "name": "Bengal",
-          "shortName": "BEN",
-          "score": "425/10 (112 Ov) & 76/1 (13 Ov)"
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:00 am",
-      "time": "",
-      "place": "Bengal Cricket Academy Ground, Kalyani",
-      "overview": "Day 4: 3rd Session - Bengal need 13 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163571",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T03:30:00.000Z",
-      "rawId": 163571
-    },
-    {
-      "id": "live-163550",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
       "sourceScope": "global",
-      "title": "Karnataka vs Andhra, Elite Group B",
-      "series": "Ranji Trophy Elite 2026-27",
+      "title": "West Indies vs India, 4th T20I",
+      "series": "West Indies tour of India, 2026",
       "teams": [
         {
-          "name": "Karnataka",
-          "shortName": "KAR",
-          "score": "274/10 (82.2 Ov) & 337/9 (102.6 Ov)"
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": "247/3 (19.6 Ov)"
         },
         {
-          "name": "Andhra",
-          "shortName": "AP",
-          "score": "418/10 (121.5 Ov) & 59/4 (32.6 Ov)"
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
         }
       ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
+      "dateLabel": "14 Oct 2026, 07:00 pm",
       "time": "",
-      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
-      "overview": "Day 4: 3rd Session - Andhra need 135 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
+      "place": "Rajiv Gandhi International Stadium, Hyderabad",
+      "overview": "Innings Break",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151598",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163550
-    },
-    {
-      "id": "live-163601",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Railways vs Uttarakhand, Elite Group D",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Railways",
-          "shortName": "RLYS",
-          "score": "278/10 (87.5 Ov) & 272/4 (86 Ov)"
-        },
-        {
-          "name": "Uttarakhand",
-          "shortName": "UTK",
-          "score": "470/10 (156.5 Ov)"
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Brabourne Stadium, Mumbai",
-      "overview": "Day 4: 3rd Session - Railways lead by 80 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163601",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163601
-    },
-    {
-      "id": "live-163581",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Maharashtra vs Services, Elite Group C",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Maharashtra",
-          "shortName": "MAH",
-          "score": "333/10 (110.1 Ov) & 141/10 (56 Ov)"
-        },
-        {
-          "name": "Services",
-          "shortName": "SER",
-          "score": "227/10 (93.2 Ov) & 115/6 (48 Ov)"
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Palam A Stadium, Delhi",
-      "overview": "Day 4: 3rd Session - Services need 133 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163581",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163581
-    },
-    {
-      "id": "live-163551",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Assam vs Punjab, Elite Group B",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Assam",
-          "shortName": "ASM",
-          "score": "373/10 (117 Ov) & 108/5 (41.2 Ov)"
-        },
-        {
-          "name": "Punjab",
-          "shortName": "PUN",
-          "score": "478/6 (127 Ov)"
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
-      "overview": "Day 4: 3rd Session - Assam lead by 3 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163551",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163551
-    },
-    {
-      "id": "live-163531",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Vidarbha vs Puducherry, Elite Group A",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Vidarbha",
-          "shortName": "VID",
-          "score": "428/10 (129.4 Ov) & 175/3 (36 Ov)"
-        },
-        {
-          "name": "Puducherry",
-          "shortName": "PDC",
-          "score": "313/10 (114.5 Ov) & 130/10 (41.1 Ov)"
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Vidarbha Cricket Association Stadium, Nagpur",
-      "overview": "Vidarbha won by 160 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163531",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163531
-    },
-    {
-      "id": "live-163530",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Madhya Pradesh vs Jammu and Kashmir, Elite Group A",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Madhya Pradesh",
-          "shortName": "MP",
-          "score": "196/10 (74.2 Ov) & 249/6 (80 Ov)"
-        },
-        {
-          "name": "Jammu and Kashmir",
-          "shortName": "JK",
-          "score": "120/10 (46.3 Ov) & 61/6 (28 Ov)"
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Sher-i-Kashmir Stadium, Srinagar",
-      "overview": "Day 4: Bad light stops play - Jammu and Kashmir need 265 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163530",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163530
+      "startTime": "2026-10-14T13:30:00.000Z",
+      "rawId": 151598
     },
     {
       "id": "upcoming-171030",
@@ -294,37 +108,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
-    },
-    {
-      "id": "upcoming-151598",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India vs West Indies, 4th T20I",
-      "series": "West Indies tour of India, 2026",
-      "teams": [
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": ""
-        },
-        {
-          "name": "West Indies",
-          "shortName": "WI",
-          "score": ""
-        }
-      ],
-      "dateLabel": "14 Oct 2026, 07:00 pm",
-      "time": "",
-      "place": "Rajiv Gandhi International Stadium, Hyderabad",
-      "overview": "Match starts at Oct 14, 13:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151598",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-14T13:30:00.000Z",
-      "rawId": 151598
     },
     {
       "id": "upcoming-155519",
@@ -14651,6 +14434,109 @@
       "starPerformers": []
     },
     {
+      "id": "recent-163087",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Mizoram vs Manipur, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Mizoram",
+          "shortName": "MIZ",
+          "score": "183/10 (62.3 Ov) & 295/10 (107.4 Ov)"
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": "251/10 (91 Ov) & 228/7 (71.2 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Gokulbhai Somabhai Patel Stadium, Nadiad",
+      "overview": "Manipur won by 3 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163087",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163087,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-163530",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Madhya Pradesh vs Jammu and Kashmir, Elite Group A",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Madhya Pradesh",
+          "shortName": "MP",
+          "score": "196/10 (74.2 Ov) & 249/6 (80 Ov)"
+        },
+        {
+          "name": "Jammu and Kashmir",
+          "shortName": "JK",
+          "score": "120/10 (46.3 Ov) & 88/7 (34 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Sher-i-Kashmir Stadium, Srinagar",
+      "overview": "Match drawn",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163530",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163530,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-163531",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Vidarbha vs Puducherry, Elite Group A",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Vidarbha",
+          "shortName": "VID",
+          "score": "428/10 (129.4 Ov) & 175/3 (36 Ov)"
+        },
+        {
+          "name": "Puducherry",
+          "shortName": "PDC",
+          "score": "313/10 (114.5 Ov) & 130/10 (41.1 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Vidarbha Cricket Association Stadium, Nagpur",
+      "overview": "Vidarbha won by 160 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163531",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163531,
+      "starPerformers": [
+        {
+          "name": "Akshay Wadkar",
+          "performance": "198",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163531"
+        }
+      ]
+    },
+    {
       "id": "recent-163540",
       "status": "recent",
       "statusLabel": "Past",
@@ -14680,6 +14566,38 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 163540,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-163551",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Assam vs Punjab, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Assam",
+          "shortName": "ASM",
+          "score": "373/10 (117 Ov) & 157/6 (61 Ov)"
+        },
+        {
+          "name": "Punjab",
+          "shortName": "PUN",
+          "score": "478/6 (127 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+      "overview": "Match drawn",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163551",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163551,
       "starPerformers": []
     },
     {
@@ -14754,6 +14672,45 @@
       ]
     },
     {
+      "id": "recent-163581",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Maharashtra vs Services, Elite Group C",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Maharashtra",
+          "shortName": "MAH",
+          "score": "333/10 (110.1 Ov) & 141/10 (56 Ov)"
+        },
+        {
+          "name": "Services",
+          "shortName": "SER",
+          "score": "227/10 (93.2 Ov) & 120/10 (63.3 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Palam A Stadium, Delhi",
+      "overview": "Maharashtra won by 127 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163581",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163581,
+      "starPerformers": [
+        {
+          "name": "Ankit Bawne",
+          "performance": "118 & 48",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163581"
+        }
+      ]
+    },
+    {
       "id": "recent-163591",
       "status": "recent",
       "statusLabel": "Past",
@@ -14784,6 +14741,45 @@
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 163591,
       "starPerformers": []
+    },
+    {
+      "id": "recent-163601",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Railways vs Uttarakhand, Elite Group D",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Railways",
+          "shortName": "RLYS",
+          "score": "278/10 (87.5 Ov) & 272/4 (86 Ov)"
+        },
+        {
+          "name": "Uttarakhand",
+          "shortName": "UTK",
+          "score": "470/10 (156.5 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Brabourne Stadium, Mumbai",
+      "overview": "Match drawn",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163601",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163601,
+      "starPerformers": [
+        {
+          "name": "Saurabh Rawat",
+          "performance": "107",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163601"
+        }
+      ]
     },
     {
       "id": "recent-163611",
@@ -14882,35 +14878,35 @@
       "starPerformers": []
     },
     {
-      "id": "recent-163087",
+      "id": "recent-163550",
       "status": "recent",
       "statusLabel": "Past",
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "domestic",
-      "sourceScope": "domestic-global",
-      "title": "Mizoram vs Manipur, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
+      "sourceScope": "global",
+      "title": "Karnataka vs Andhra, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
       "teams": [
         {
-          "name": "Mizoram",
-          "shortName": "MIZ",
-          "score": "183/10 (62.3 Ov) & 295/10 (107.4 Ov)"
+          "name": "Karnataka",
+          "shortName": "KAR",
+          "score": "274/10 (82.2 Ov) & 337/9 (102.6 Ov)"
         },
         {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": "251/10 (90.6 Ov) & 228/7 (71.2 Ov)"
+          "name": "Andhra",
+          "shortName": "AP",
+          "score": "418/10 (121.5 Ov) & 104/4 (43.6 Ov)"
         }
       ],
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
-      "place": "Gokulbhai Somabhai Patel Stadium, Nadiad",
-      "overview": "Manipur won by 3 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163087",
-      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic",
+      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
+      "overview": "Match drawn",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163087,
+      "rawId": 163550,
       "starPerformers": []
     },
     {
@@ -14944,6 +14940,45 @@
       "startTime": "2026-10-11T03:30:00.000Z",
       "rawId": 163561,
       "starPerformers": []
+    },
+    {
+      "id": "recent-163571",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Delhi vs Bengal, Elite Group C",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Delhi",
+          "shortName": "DEL",
+          "score": "240/10 (77.3 Ov) & 277/10 (106.2 Ov)"
+        },
+        {
+          "name": "Bengal",
+          "shortName": "BEN",
+          "score": "425/10 (112 Ov) & 89/1 (15.3 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:00 am",
+      "time": "",
+      "place": "Bengal Cricket Academy Ground, Kalyani",
+      "overview": "Bengal won by 9 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163571",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T03:30:00.000Z",
+      "rawId": 163571,
+      "starPerformers": [
+        {
+          "name": "Abishek Porel",
+          "performance": "149",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163571"
+        }
+      ]
     },
     {
       "id": "recent-163521",
@@ -16910,221 +16945,35 @@
   ],
   "live": [
     {
-      "id": "live-163571",
+      "id": "live-151598",
       "status": "live",
       "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Delhi vs Bengal, Elite Group C",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Delhi",
-          "shortName": "DEL",
-          "score": "240/10 (77.3 Ov) & 277/10 (106.2 Ov)"
-        },
-        {
-          "name": "Bengal",
-          "shortName": "BEN",
-          "score": "425/10 (112 Ov) & 76/1 (13 Ov)"
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:00 am",
-      "time": "",
-      "place": "Bengal Cricket Academy Ground, Kalyani",
-      "overview": "Day 4: 3rd Session - Bengal need 13 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163571",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T03:30:00.000Z",
-      "rawId": 163571
-    },
-    {
-      "id": "live-163550",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
+      "level": "international",
+      "levelLabel": "International",
+      "sourceType": "International",
       "sourceScope": "global",
-      "title": "Karnataka vs Andhra, Elite Group B",
-      "series": "Ranji Trophy Elite 2026-27",
+      "title": "West Indies vs India, 4th T20I",
+      "series": "West Indies tour of India, 2026",
       "teams": [
         {
-          "name": "Karnataka",
-          "shortName": "KAR",
-          "score": "274/10 (82.2 Ov) & 337/9 (102.6 Ov)"
+          "name": "West Indies",
+          "shortName": "WI",
+          "score": "247/3 (19.6 Ov)"
         },
         {
-          "name": "Andhra",
-          "shortName": "AP",
-          "score": "418/10 (121.5 Ov) & 59/4 (32.6 Ov)"
+          "name": "India",
+          "shortName": "IND",
+          "score": ""
         }
       ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
+      "dateLabel": "14 Oct 2026, 07:00 pm",
       "time": "",
-      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
-      "overview": "Day 4: 3rd Session - Andhra need 135 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
+      "place": "Rajiv Gandhi International Stadium, Hyderabad",
+      "overview": "Innings Break",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151598",
       "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163550
-    },
-    {
-      "id": "live-163601",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Railways vs Uttarakhand, Elite Group D",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Railways",
-          "shortName": "RLYS",
-          "score": "278/10 (87.5 Ov) & 272/4 (86 Ov)"
-        },
-        {
-          "name": "Uttarakhand",
-          "shortName": "UTK",
-          "score": "470/10 (156.5 Ov)"
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Brabourne Stadium, Mumbai",
-      "overview": "Day 4: 3rd Session - Railways lead by 80 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163601",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163601
-    },
-    {
-      "id": "live-163581",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Maharashtra vs Services, Elite Group C",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Maharashtra",
-          "shortName": "MAH",
-          "score": "333/10 (110.1 Ov) & 141/10 (56 Ov)"
-        },
-        {
-          "name": "Services",
-          "shortName": "SER",
-          "score": "227/10 (93.2 Ov) & 115/6 (48 Ov)"
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Palam A Stadium, Delhi",
-      "overview": "Day 4: 3rd Session - Services need 133 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163581",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163581
-    },
-    {
-      "id": "live-163551",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Assam vs Punjab, Elite Group B",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Assam",
-          "shortName": "ASM",
-          "score": "373/10 (117 Ov) & 108/5 (41.2 Ov)"
-        },
-        {
-          "name": "Punjab",
-          "shortName": "PUN",
-          "score": "478/6 (127 Ov)"
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
-      "overview": "Day 4: 3rd Session - Assam lead by 3 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163551",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163551
-    },
-    {
-      "id": "live-163531",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Vidarbha vs Puducherry, Elite Group A",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Vidarbha",
-          "shortName": "VID",
-          "score": "428/10 (129.4 Ov) & 175/3 (36 Ov)"
-        },
-        {
-          "name": "Puducherry",
-          "shortName": "PDC",
-          "score": "313/10 (114.5 Ov) & 130/10 (41.1 Ov)"
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Vidarbha Cricket Association Stadium, Nagpur",
-      "overview": "Vidarbha won by 160 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163531",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163531
-    },
-    {
-      "id": "live-163530",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Madhya Pradesh vs Jammu and Kashmir, Elite Group A",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Madhya Pradesh",
-          "shortName": "MP",
-          "score": "196/10 (74.2 Ov) & 249/6 (80 Ov)"
-        },
-        {
-          "name": "Jammu and Kashmir",
-          "shortName": "JK",
-          "score": "120/10 (46.3 Ov) & 61/6 (28 Ov)"
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Sher-i-Kashmir Stadium, Srinagar",
-      "overview": "Day 4: Bad light stops play - Jammu and Kashmir need 265 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163530",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163530
+      "startTime": "2026-10-14T13:30:00.000Z",
+      "rawId": 151598
     }
   ],
   "upcoming": [
@@ -17158,37 +17007,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-team/india/2/results",
       "startTime": "2026-09-28T04:30:00.000Z",
       "rawId": 171030
-    },
-    {
-      "id": "upcoming-151598",
-      "status": "upcoming",
-      "statusLabel": "Future",
-      "level": "international",
-      "levelLabel": "International",
-      "sourceType": "International",
-      "sourceScope": "global",
-      "title": "India vs West Indies, 4th T20I",
-      "series": "West Indies tour of India, 2026",
-      "teams": [
-        {
-          "name": "India",
-          "shortName": "IND",
-          "score": ""
-        },
-        {
-          "name": "West Indies",
-          "shortName": "WI",
-          "score": ""
-        }
-      ],
-      "dateLabel": "14 Oct 2026, 07:00 pm",
-      "time": "",
-      "place": "Rajiv Gandhi International Stadium, Hyderabad",
-      "overview": "Match starts at Oct 14, 13:30 GMT",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/151598",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-14T13:30:00.000Z",
-      "rawId": 151598
     },
     {
       "id": "upcoming-155519",
@@ -31517,6 +31335,109 @@
       "starPerformers": []
     },
     {
+      "id": "recent-163087",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Mizoram vs Manipur, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Mizoram",
+          "shortName": "MIZ",
+          "score": "183/10 (62.3 Ov) & 295/10 (107.4 Ov)"
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": "251/10 (91 Ov) & 228/7 (71.2 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Gokulbhai Somabhai Patel Stadium, Nadiad",
+      "overview": "Manipur won by 3 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163087",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163087,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-163530",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Madhya Pradesh vs Jammu and Kashmir, Elite Group A",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Madhya Pradesh",
+          "shortName": "MP",
+          "score": "196/10 (74.2 Ov) & 249/6 (80 Ov)"
+        },
+        {
+          "name": "Jammu and Kashmir",
+          "shortName": "JK",
+          "score": "120/10 (46.3 Ov) & 88/7 (34 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Sher-i-Kashmir Stadium, Srinagar",
+      "overview": "Match drawn",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163530",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163530,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-163531",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Vidarbha vs Puducherry, Elite Group A",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Vidarbha",
+          "shortName": "VID",
+          "score": "428/10 (129.4 Ov) & 175/3 (36 Ov)"
+        },
+        {
+          "name": "Puducherry",
+          "shortName": "PDC",
+          "score": "313/10 (114.5 Ov) & 130/10 (41.1 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Vidarbha Cricket Association Stadium, Nagpur",
+      "overview": "Vidarbha won by 160 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163531",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163531,
+      "starPerformers": [
+        {
+          "name": "Akshay Wadkar",
+          "performance": "198",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163531"
+        }
+      ]
+    },
+    {
       "id": "recent-163540",
       "status": "recent",
       "statusLabel": "Past",
@@ -31546,6 +31467,38 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 163540,
+      "starPerformers": []
+    },
+    {
+      "id": "recent-163551",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Assam vs Punjab, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Assam",
+          "shortName": "ASM",
+          "score": "373/10 (117 Ov) & 157/6 (61 Ov)"
+        },
+        {
+          "name": "Punjab",
+          "shortName": "PUN",
+          "score": "478/6 (127 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+      "overview": "Match drawn",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163551",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163551,
       "starPerformers": []
     },
     {
@@ -31620,6 +31573,45 @@
       ]
     },
     {
+      "id": "recent-163581",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Maharashtra vs Services, Elite Group C",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Maharashtra",
+          "shortName": "MAH",
+          "score": "333/10 (110.1 Ov) & 141/10 (56 Ov)"
+        },
+        {
+          "name": "Services",
+          "shortName": "SER",
+          "score": "227/10 (93.2 Ov) & 120/10 (63.3 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Palam A Stadium, Delhi",
+      "overview": "Maharashtra won by 127 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163581",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163581,
+      "starPerformers": [
+        {
+          "name": "Ankit Bawne",
+          "performance": "118 & 48",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163581"
+        }
+      ]
+    },
+    {
       "id": "recent-163591",
       "status": "recent",
       "statusLabel": "Past",
@@ -31650,6 +31642,45 @@
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 163591,
       "starPerformers": []
+    },
+    {
+      "id": "recent-163601",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Railways vs Uttarakhand, Elite Group D",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Railways",
+          "shortName": "RLYS",
+          "score": "278/10 (87.5 Ov) & 272/4 (86 Ov)"
+        },
+        {
+          "name": "Uttarakhand",
+          "shortName": "UTK",
+          "score": "470/10 (156.5 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Brabourne Stadium, Mumbai",
+      "overview": "Match drawn",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163601",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163601,
+      "starPerformers": [
+        {
+          "name": "Saurabh Rawat",
+          "performance": "107",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163601"
+        }
+      ]
     },
     {
       "id": "recent-163611",
@@ -31748,35 +31779,35 @@
       "starPerformers": []
     },
     {
-      "id": "recent-163087",
+      "id": "recent-163550",
       "status": "recent",
       "statusLabel": "Past",
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "domestic",
-      "sourceScope": "domestic-global",
-      "title": "Mizoram vs Manipur, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
+      "sourceScope": "global",
+      "title": "Karnataka vs Andhra, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
       "teams": [
         {
-          "name": "Mizoram",
-          "shortName": "MIZ",
-          "score": "183/10 (62.3 Ov) & 295/10 (107.4 Ov)"
+          "name": "Karnataka",
+          "shortName": "KAR",
+          "score": "274/10 (82.2 Ov) & 337/9 (102.6 Ov)"
         },
         {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": "251/10 (90.6 Ov) & 228/7 (71.2 Ov)"
+          "name": "Andhra",
+          "shortName": "AP",
+          "score": "418/10 (121.5 Ov) & 104/4 (43.6 Ov)"
         }
       ],
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
-      "place": "Gokulbhai Somabhai Patel Stadium, Nadiad",
-      "overview": "Manipur won by 3 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163087",
-      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic",
+      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
+      "overview": "Match drawn",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163087,
+      "rawId": 163550,
       "starPerformers": []
     },
     {
@@ -31810,6 +31841,45 @@
       "startTime": "2026-10-11T03:30:00.000Z",
       "rawId": 163561,
       "starPerformers": []
+    },
+    {
+      "id": "recent-163571",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Delhi vs Bengal, Elite Group C",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Delhi",
+          "shortName": "DEL",
+          "score": "240/10 (77.3 Ov) & 277/10 (106.2 Ov)"
+        },
+        {
+          "name": "Bengal",
+          "shortName": "BEN",
+          "score": "425/10 (112 Ov) & 89/1 (15.3 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:00 am",
+      "time": "",
+      "place": "Bengal Cricket Academy Ground, Kalyani",
+      "overview": "Bengal won by 9 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163571",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T03:30:00.000Z",
+      "rawId": 163571,
+      "starPerformers": [
+        {
+          "name": "Abishek Porel",
+          "performance": "149",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163571"
+        }
+      ]
     },
     {
       "id": "recent-163521",
@@ -33779,9 +33849,9 @@
       "id": "international",
       "label": "International",
       "order": 1,
-      "live": 0,
+      "live": 1,
       "recent": 29,
-      "upcoming": 45,
+      "upcoming": 44,
       "total": 74
     },
     {
@@ -33806,237 +33876,13 @@
       "id": "domestic",
       "label": "Domestic / State",
       "order": 4,
-      "live": 7,
-      "recent": 12,
+      "live": 0,
+      "recent": 19,
       "upcoming": 392,
       "total": 411
     }
   ],
   "importantMatches": [
-    {
-      "id": "live-163550",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "Karnataka vs Andhra, Elite Group B",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Karnataka",
-          "shortName": "KAR",
-          "score": "274/10 (82.2 Ov) & 337/9 (102.6 Ov)"
-        },
-        {
-          "name": "Andhra",
-          "shortName": "AP",
-          "score": "418/10 (121.5 Ov) & 59/4 (32.6 Ov)"
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
-      "overview": "Day 4: 3rd Session - Andhra need 135 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163550,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "live-163601",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Railways vs Uttarakhand, Elite Group D",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Railways",
-          "shortName": "RLYS",
-          "score": "278/10 (87.5 Ov) & 272/4 (86 Ov)"
-        },
-        {
-          "name": "Uttarakhand",
-          "shortName": "UTK",
-          "score": "470/10 (156.5 Ov)"
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Brabourne Stadium, Mumbai",
-      "overview": "Day 4: 3rd Session - Railways lead by 80 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163601",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163601,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "live-163581",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Maharashtra vs Services, Elite Group C",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Maharashtra",
-          "shortName": "MAH",
-          "score": "333/10 (110.1 Ov) & 141/10 (56 Ov)"
-        },
-        {
-          "name": "Services",
-          "shortName": "SER",
-          "score": "227/10 (93.2 Ov) & 115/6 (48 Ov)"
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Palam A Stadium, Delhi",
-      "overview": "Day 4: 3rd Session - Services need 133 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163581",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163581,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "live-163551",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Assam vs Punjab, Elite Group B",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Assam",
-          "shortName": "ASM",
-          "score": "373/10 (117 Ov) & 108/5 (41.2 Ov)"
-        },
-        {
-          "name": "Punjab",
-          "shortName": "PUN",
-          "score": "478/6 (127 Ov)"
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
-      "overview": "Day 4: 3rd Session - Assam lead by 3 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163551",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163551,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "live-163531",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Vidarbha vs Puducherry, Elite Group A",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Vidarbha",
-          "shortName": "VID",
-          "score": "428/10 (129.4 Ov) & 175/3 (36 Ov)"
-        },
-        {
-          "name": "Puducherry",
-          "shortName": "PDC",
-          "score": "313/10 (114.5 Ov) & 130/10 (41.1 Ov)"
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Vidarbha Cricket Association Stadium, Nagpur",
-      "overview": "Vidarbha won by 160 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163531",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163531,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "live-163530",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Madhya Pradesh vs Jammu and Kashmir, Elite Group A",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Madhya Pradesh",
-          "shortName": "MP",
-          "score": "196/10 (74.2 Ov) & 249/6 (80 Ov)"
-        },
-        {
-          "name": "Jammu and Kashmir",
-          "shortName": "JK",
-          "score": "120/10 (46.3 Ov) & 61/6 (28 Ov)"
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Sher-i-Kashmir Stadium, Srinagar",
-      "overview": "Day 4: Bad light stops play - Jammu and Kashmir need 265 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163530",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163530,
-      "importance": "Major tournament"
-    },
-    {
-      "id": "live-163571",
-      "status": "live",
-      "statusLabel": "Live",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "",
-      "sourceScope": "domestic-series",
-      "title": "Delhi vs Bengal, Elite Group C",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Delhi",
-          "shortName": "DEL",
-          "score": "240/10 (77.3 Ov) & 277/10 (106.2 Ov)"
-        },
-        {
-          "name": "Bengal",
-          "shortName": "BEN",
-          "score": "425/10 (112 Ov) & 76/1 (13 Ov)"
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:00 am",
-      "time": "",
-      "place": "Bengal Cricket Academy Ground, Kalyani",
-      "overview": "Day 4: 3rd Session - Bengal need 13 runs",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163571",
-      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-      "startTime": "2026-10-11T03:30:00.000Z",
-      "rawId": 163571,
-      "importance": "Major tournament"
-    },
     {
       "id": "upcoming-165363",
       "status": "upcoming",
@@ -40247,6 +40093,112 @@
       "importance": "Major tournament"
     },
     {
+      "id": "recent-163087",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Mizoram vs Manipur, Plate",
+      "series": "Ranji Trophy Plate 2026-27",
+      "teams": [
+        {
+          "name": "Mizoram",
+          "shortName": "MIZ",
+          "score": "183/10 (62.3 Ov) & 295/10 (107.4 Ov)"
+        },
+        {
+          "name": "Manipur",
+          "shortName": "MNP",
+          "score": "251/10 (91 Ov) & 228/7 (71.2 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Gokulbhai Somabhai Patel Stadium, Nadiad",
+      "overview": "Manipur won by 3 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163087",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163087,
+      "starPerformers": [],
+      "importance": "Major tournament"
+    },
+    {
+      "id": "recent-163530",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Madhya Pradesh vs Jammu and Kashmir, Elite Group A",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Madhya Pradesh",
+          "shortName": "MP",
+          "score": "196/10 (74.2 Ov) & 249/6 (80 Ov)"
+        },
+        {
+          "name": "Jammu and Kashmir",
+          "shortName": "JK",
+          "score": "120/10 (46.3 Ov) & 88/7 (34 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Sher-i-Kashmir Stadium, Srinagar",
+      "overview": "Match drawn",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163530",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163530,
+      "starPerformers": [],
+      "importance": "Major tournament"
+    },
+    {
+      "id": "recent-163531",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Vidarbha vs Puducherry, Elite Group A",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Vidarbha",
+          "shortName": "VID",
+          "score": "428/10 (129.4 Ov) & 175/3 (36 Ov)"
+        },
+        {
+          "name": "Puducherry",
+          "shortName": "PDC",
+          "score": "313/10 (114.5 Ov) & 130/10 (41.1 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Vidarbha Cricket Association Stadium, Nagpur",
+      "overview": "Vidarbha won by 160 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163531",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163531,
+      "starPerformers": [
+        {
+          "name": "Akshay Wadkar",
+          "performance": "198",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163531"
+        }
+      ],
+      "importance": "Major tournament"
+    },
+    {
       "id": "recent-163540",
       "status": "recent",
       "statusLabel": "Past",
@@ -40276,6 +40228,39 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 163540,
+      "starPerformers": [],
+      "importance": "Major tournament"
+    },
+    {
+      "id": "recent-163551",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Assam vs Punjab, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Assam",
+          "shortName": "ASM",
+          "score": "373/10 (117 Ov) & 157/6 (61 Ov)"
+        },
+        {
+          "name": "Punjab",
+          "shortName": "PUN",
+          "score": "478/6 (127 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+      "overview": "Match drawn",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163551",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163551,
       "starPerformers": [],
       "importance": "Major tournament"
     },
@@ -40353,6 +40338,46 @@
       "importance": "Major tournament"
     },
     {
+      "id": "recent-163581",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Maharashtra vs Services, Elite Group C",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Maharashtra",
+          "shortName": "MAH",
+          "score": "333/10 (110.1 Ov) & 141/10 (56 Ov)"
+        },
+        {
+          "name": "Services",
+          "shortName": "SER",
+          "score": "227/10 (93.2 Ov) & 120/10 (63.3 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Palam A Stadium, Delhi",
+      "overview": "Maharashtra won by 127 runs",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163581",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163581,
+      "starPerformers": [
+        {
+          "name": "Ankit Bawne",
+          "performance": "118 & 48",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163581"
+        }
+      ],
+      "importance": "Major tournament"
+    },
+    {
       "id": "recent-163591",
       "status": "recent",
       "statusLabel": "Past",
@@ -40383,6 +40408,46 @@
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 163591,
       "starPerformers": [],
+      "importance": "Major tournament"
+    },
+    {
+      "id": "recent-163601",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Railways vs Uttarakhand, Elite Group D",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Railways",
+          "shortName": "RLYS",
+          "score": "278/10 (87.5 Ov) & 272/4 (86 Ov)"
+        },
+        {
+          "name": "Uttarakhand",
+          "shortName": "UTK",
+          "score": "470/10 (156.5 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Brabourne Stadium, Mumbai",
+      "overview": "Match drawn",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163601",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163601,
+      "starPerformers": [
+        {
+          "name": "Saurabh Rawat",
+          "performance": "107",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163601"
+        }
+      ],
       "importance": "Major tournament"
     },
     {
@@ -40485,35 +40550,35 @@
       "importance": "Major tournament"
     },
     {
-      "id": "recent-163087",
+      "id": "recent-163550",
       "status": "recent",
       "statusLabel": "Past",
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "sourceType": "domestic",
-      "sourceScope": "domestic-global",
-      "title": "Mizoram vs Manipur, Plate",
-      "series": "Ranji Trophy Plate 2026-27",
+      "sourceScope": "global",
+      "title": "Karnataka vs Andhra, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
       "teams": [
         {
-          "name": "Mizoram",
-          "shortName": "MIZ",
-          "score": "183/10 (62.3 Ov) & 295/10 (107.4 Ov)"
+          "name": "Karnataka",
+          "shortName": "KAR",
+          "score": "274/10 (82.2 Ov) & 337/9 (102.6 Ov)"
         },
         {
-          "name": "Manipur",
-          "shortName": "MNP",
-          "score": "251/10 (90.6 Ov) & 228/7 (71.2 Ov)"
+          "name": "Andhra",
+          "shortName": "AP",
+          "score": "418/10 (121.5 Ov) & 104/4 (43.6 Ov)"
         }
       ],
       "dateLabel": "11 Oct 2026, 09:30 am",
       "time": "",
-      "place": "Gokulbhai Somabhai Patel Stadium, Nadiad",
-      "overview": "Manipur won by 3 wkts",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163087",
-      "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic",
+      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
+      "overview": "Match drawn",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163087,
+      "rawId": 163550,
       "starPerformers": [],
       "importance": "Major tournament"
     },
@@ -40548,6 +40613,46 @@
       "startTime": "2026-10-11T03:30:00.000Z",
       "rawId": 163561,
       "starPerformers": [],
+      "importance": "Major tournament"
+    },
+    {
+      "id": "recent-163571",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Delhi vs Bengal, Elite Group C",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Delhi",
+          "shortName": "DEL",
+          "score": "240/10 (77.3 Ov) & 277/10 (106.2 Ov)"
+        },
+        {
+          "name": "Bengal",
+          "shortName": "BEN",
+          "score": "425/10 (112 Ov) & 89/1 (15.3 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:00 am",
+      "time": "",
+      "place": "Bengal Cricket Academy Ground, Kalyani",
+      "overview": "Bengal won by 9 wkts",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163571",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T03:30:00.000Z",
+      "rawId": 163571,
+      "starPerformers": [
+        {
+          "name": "Abishek Porel",
+          "performance": "149",
+          "label": "Player of the Match",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163571"
+        }
+      ],
       "importance": "Major tournament"
     },
     {
@@ -45264,44 +45369,12 @@
       "level": "domestic",
       "levelLabel": "Domestic / State",
       "total": 64,
-      "live": 7,
+      "live": 0,
       "upcoming": 48,
-      "recent": 9,
+      "recent": 16,
       "startTime": "2026-10-11T03:30:00.000Z",
       "endTime": "2026-11-02T04:00:00.000Z",
       "matches": [
-        {
-          "id": "live-163571",
-          "status": "live",
-          "statusLabel": "Live",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "Delhi vs Bengal, Elite Group C",
-          "series": "Ranji Trophy Elite 2026-27",
-          "teams": [
-            {
-              "name": "Delhi",
-              "shortName": "DEL",
-              "score": "240/10 (77.3 Ov) & 277/10 (106.2 Ov)"
-            },
-            {
-              "name": "Bengal",
-              "shortName": "BEN",
-              "score": "425/10 (112 Ov) & 76/1 (13 Ov)"
-            }
-          ],
-          "dateLabel": "11 Oct 2026, 09:00 am",
-          "time": "",
-          "place": "Bengal Cricket Academy Ground, Kalyani",
-          "overview": "Day 4: 3rd Session - Bengal need 13 runs",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163571",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-          "startTime": "2026-10-11T03:30:00.000Z",
-          "rawId": 163571,
-          "importance": "Major tournament"
-        },
         {
           "id": "recent-163561",
           "status": "recent",
@@ -45333,6 +45406,46 @@
           "startTime": "2026-10-11T03:30:00.000Z",
           "rawId": 163561,
           "starPerformers": [],
+          "importance": "Major tournament"
+        },
+        {
+          "id": "recent-163571",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Delhi vs Bengal, Elite Group C",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Delhi",
+              "shortName": "DEL",
+              "score": "240/10 (77.3 Ov) & 277/10 (106.2 Ov)"
+            },
+            {
+              "name": "Bengal",
+              "shortName": "BEN",
+              "score": "425/10 (112 Ov) & 89/1 (15.3 Ov)"
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:00 am",
+          "time": "",
+          "place": "Bengal Cricket Academy Ground, Kalyani",
+          "overview": "Bengal won by 9 wkts",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163571",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T03:30:00.000Z",
+          "rawId": 163571,
+          "starPerformers": [
+            {
+              "name": "Abishek Porel",
+              "performance": "149",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163571"
+            }
+          ],
           "importance": "Major tournament"
         },
         {
@@ -45369,137 +45482,42 @@
           "importance": "Major tournament"
         },
         {
-          "id": "live-163550",
-          "status": "live",
-          "statusLabel": "Live",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "domestic",
-          "sourceScope": "global",
-          "title": "Karnataka vs Andhra, Elite Group B",
-          "series": "Ranji Trophy Elite 2026-27",
-          "teams": [
-            {
-              "name": "Karnataka",
-              "shortName": "KAR",
-              "score": "274/10 (82.2 Ov) & 337/9 (102.6 Ov)"
-            },
-            {
-              "name": "Andhra",
-              "shortName": "AP",
-              "score": "418/10 (121.5 Ov) & 59/4 (32.6 Ov)"
-            }
-          ],
-          "dateLabel": "11 Oct 2026, 09:30 am",
-          "time": "",
-          "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
-          "overview": "Day 4: 3rd Session - Andhra need 135 runs",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-          "startTime": "2026-10-11T04:00:00.000Z",
-          "rawId": 163550,
-          "importance": "Major tournament"
-        },
-        {
-          "id": "live-163601",
-          "status": "live",
-          "statusLabel": "Live",
+          "id": "recent-163530",
+          "status": "recent",
+          "statusLabel": "Past",
           "level": "domestic",
           "levelLabel": "Domestic / State",
           "sourceType": "",
           "sourceScope": "domestic-series",
-          "title": "Railways vs Uttarakhand, Elite Group D",
+          "title": "Madhya Pradesh vs Jammu and Kashmir, Elite Group A",
           "series": "Ranji Trophy Elite 2026-27",
           "teams": [
             {
-              "name": "Railways",
-              "shortName": "RLYS",
-              "score": "278/10 (87.5 Ov) & 272/4 (86 Ov)"
+              "name": "Madhya Pradesh",
+              "shortName": "MP",
+              "score": "196/10 (74.2 Ov) & 249/6 (80 Ov)"
             },
             {
-              "name": "Uttarakhand",
-              "shortName": "UTK",
-              "score": "470/10 (156.5 Ov)"
+              "name": "Jammu and Kashmir",
+              "shortName": "JK",
+              "score": "120/10 (46.3 Ov) & 88/7 (34 Ov)"
             }
           ],
           "dateLabel": "11 Oct 2026, 09:30 am",
           "time": "",
-          "place": "Brabourne Stadium, Mumbai",
-          "overview": "Day 4: 3rd Session - Railways lead by 80 runs",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163601",
+          "place": "Sher-i-Kashmir Stadium, Srinagar",
+          "overview": "Match drawn",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163530",
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
-          "rawId": 163601,
+          "rawId": 163530,
+          "starPerformers": [],
           "importance": "Major tournament"
         },
         {
-          "id": "live-163581",
-          "status": "live",
-          "statusLabel": "Live",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "Maharashtra vs Services, Elite Group C",
-          "series": "Ranji Trophy Elite 2026-27",
-          "teams": [
-            {
-              "name": "Maharashtra",
-              "shortName": "MAH",
-              "score": "333/10 (110.1 Ov) & 141/10 (56 Ov)"
-            },
-            {
-              "name": "Services",
-              "shortName": "SER",
-              "score": "227/10 (93.2 Ov) & 115/6 (48 Ov)"
-            }
-          ],
-          "dateLabel": "11 Oct 2026, 09:30 am",
-          "time": "",
-          "place": "Palam A Stadium, Delhi",
-          "overview": "Day 4: 3rd Session - Services need 133 runs",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163581",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-          "startTime": "2026-10-11T04:00:00.000Z",
-          "rawId": 163581,
-          "importance": "Major tournament"
-        },
-        {
-          "id": "live-163551",
-          "status": "live",
-          "statusLabel": "Live",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "Assam vs Punjab, Elite Group B",
-          "series": "Ranji Trophy Elite 2026-27",
-          "teams": [
-            {
-              "name": "Assam",
-              "shortName": "ASM",
-              "score": "373/10 (117 Ov) & 108/5 (41.2 Ov)"
-            },
-            {
-              "name": "Punjab",
-              "shortName": "PUN",
-              "score": "478/6 (127 Ov)"
-            }
-          ],
-          "dateLabel": "11 Oct 2026, 09:30 am",
-          "time": "",
-          "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
-          "overview": "Day 4: 3rd Session - Assam lead by 3 runs",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163551",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-          "startTime": "2026-10-11T04:00:00.000Z",
-          "rawId": 163551,
-          "importance": "Major tournament"
-        },
-        {
-          "id": "live-163531",
-          "status": "live",
-          "statusLabel": "Live",
+          "id": "recent-163531",
+          "status": "recent",
+          "statusLabel": "Past",
           "level": "domestic",
           "levelLabel": "Domestic / State",
           "sourceType": "",
@@ -45526,38 +45544,14 @@
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
           "rawId": 163531,
-          "importance": "Major tournament"
-        },
-        {
-          "id": "live-163530",
-          "status": "live",
-          "statusLabel": "Live",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "",
-          "sourceScope": "domestic-series",
-          "title": "Madhya Pradesh vs Jammu and Kashmir, Elite Group A",
-          "series": "Ranji Trophy Elite 2026-27",
-          "teams": [
+          "starPerformers": [
             {
-              "name": "Madhya Pradesh",
-              "shortName": "MP",
-              "score": "196/10 (74.2 Ov) & 249/6 (80 Ov)"
-            },
-            {
-              "name": "Jammu and Kashmir",
-              "shortName": "JK",
-              "score": "120/10 (46.3 Ov) & 61/6 (28 Ov)"
+              "name": "Akshay Wadkar",
+              "performance": "198",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163531"
             }
           ],
-          "dateLabel": "11 Oct 2026, 09:30 am",
-          "time": "",
-          "place": "Sher-i-Kashmir Stadium, Srinagar",
-          "overview": "Day 4: Bad light stops play - Jammu and Kashmir need 265 runs",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163530",
-          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
-          "startTime": "2026-10-11T04:00:00.000Z",
-          "rawId": 163530,
           "importance": "Major tournament"
         },
         {
@@ -45590,6 +45584,39 @@
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
           "rawId": 163540,
+          "starPerformers": [],
+          "importance": "Major tournament"
+        },
+        {
+          "id": "recent-163551",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Assam vs Punjab, Elite Group B",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Assam",
+              "shortName": "ASM",
+              "score": "373/10 (117 Ov) & 157/6 (61 Ov)"
+            },
+            {
+              "name": "Punjab",
+              "shortName": "PUN",
+              "score": "478/6 (127 Ov)"
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+          "overview": "Match drawn",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163551",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163551,
           "starPerformers": [],
           "importance": "Major tournament"
         },
@@ -45667,6 +45694,46 @@
           "importance": "Major tournament"
         },
         {
+          "id": "recent-163581",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Maharashtra vs Services, Elite Group C",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Maharashtra",
+              "shortName": "MAH",
+              "score": "333/10 (110.1 Ov) & 141/10 (56 Ov)"
+            },
+            {
+              "name": "Services",
+              "shortName": "SER",
+              "score": "227/10 (93.2 Ov) & 120/10 (63.3 Ov)"
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "Palam A Stadium, Delhi",
+          "overview": "Maharashtra won by 127 runs",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163581",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163581,
+          "starPerformers": [
+            {
+              "name": "Ankit Bawne",
+              "performance": "118 & 48",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163581"
+            }
+          ],
+          "importance": "Major tournament"
+        },
+        {
           "id": "recent-163591",
           "status": "recent",
           "statusLabel": "Past",
@@ -45697,6 +45764,46 @@
           "startTime": "2026-10-11T04:00:00.000Z",
           "rawId": 163591,
           "starPerformers": [],
+          "importance": "Major tournament"
+        },
+        {
+          "id": "recent-163601",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Railways vs Uttarakhand, Elite Group D",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Railways",
+              "shortName": "RLYS",
+              "score": "278/10 (87.5 Ov) & 272/4 (86 Ov)"
+            },
+            {
+              "name": "Uttarakhand",
+              "shortName": "UTK",
+              "score": "470/10 (156.5 Ov)"
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "Brabourne Stadium, Mumbai",
+          "overview": "Match drawn",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163601",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163601,
+          "starPerformers": [
+            {
+              "name": "Saurabh Rawat",
+              "performance": "107",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163601"
+            }
+          ],
           "importance": "Major tournament"
         },
         {
@@ -45795,6 +45902,39 @@
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
           "rawId": 163520,
+          "starPerformers": [],
+          "importance": "Major tournament"
+        },
+        {
+          "id": "recent-163550",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "domestic",
+          "sourceScope": "global",
+          "title": "Karnataka vs Andhra, Elite Group B",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Karnataka",
+              "shortName": "KAR",
+              "score": "274/10 (82.2 Ov) & 337/9 (102.6 Ov)"
+            },
+            {
+              "name": "Andhra",
+              "shortName": "AP",
+              "score": "418/10 (121.5 Ov) & 104/4 (43.6 Ov)"
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
+          "overview": "Match drawn",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163550,
           "starPerformers": [],
           "importance": "Major tournament"
         },
@@ -47420,8 +47560,8 @@
           "statusLabel": "Past",
           "level": "domestic",
           "levelLabel": "Domestic / State",
-          "sourceType": "domestic",
-          "sourceScope": "domestic-global",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
           "title": "Mizoram vs Manipur, Plate",
           "series": "Ranji Trophy Plate 2026-27",
           "teams": [
@@ -47433,7 +47573,7 @@
             {
               "name": "Manipur",
               "shortName": "MNP",
-              "score": "251/10 (90.6 Ov) & 228/7 (71.2 Ov)"
+              "score": "251/10 (91 Ov) & 228/7 (71.2 Ov)"
             }
           ],
           "dateLabel": "11 Oct 2026, 09:30 am",
@@ -47441,7 +47581,7 @@
           "place": "Gokulbhai Somabhai Patel Stadium, Nadiad",
           "overview": "Manipur won by 3 wkts",
           "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163087",
-          "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
           "rawId": 163087,
           "starPerformers": [],
@@ -48129,6 +48269,112 @@
           "importance": "Major tournament"
         },
         {
+          "id": "recent-163087",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Mizoram vs Manipur, Plate",
+          "series": "Ranji Trophy Plate 2026-27",
+          "teams": [
+            {
+              "name": "Mizoram",
+              "shortName": "MIZ",
+              "score": "183/10 (62.3 Ov) & 295/10 (107.4 Ov)"
+            },
+            {
+              "name": "Manipur",
+              "shortName": "MNP",
+              "score": "251/10 (91 Ov) & 228/7 (71.2 Ov)"
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "Gokulbhai Somabhai Patel Stadium, Nadiad",
+          "overview": "Manipur won by 3 wkts",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163087",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12409/ranji-trophy-plate-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163087,
+          "starPerformers": [],
+          "importance": "Major tournament"
+        },
+        {
+          "id": "recent-163530",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Madhya Pradesh vs Jammu and Kashmir, Elite Group A",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Madhya Pradesh",
+              "shortName": "MP",
+              "score": "196/10 (74.2 Ov) & 249/6 (80 Ov)"
+            },
+            {
+              "name": "Jammu and Kashmir",
+              "shortName": "JK",
+              "score": "120/10 (46.3 Ov) & 88/7 (34 Ov)"
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "Sher-i-Kashmir Stadium, Srinagar",
+          "overview": "Match drawn",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163530",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163530,
+          "starPerformers": [],
+          "importance": "Major tournament"
+        },
+        {
+          "id": "recent-163531",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Vidarbha vs Puducherry, Elite Group A",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Vidarbha",
+              "shortName": "VID",
+              "score": "428/10 (129.4 Ov) & 175/3 (36 Ov)"
+            },
+            {
+              "name": "Puducherry",
+              "shortName": "PDC",
+              "score": "313/10 (114.5 Ov) & 130/10 (41.1 Ov)"
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "Vidarbha Cricket Association Stadium, Nagpur",
+          "overview": "Vidarbha won by 160 runs",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163531",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163531,
+          "starPerformers": [
+            {
+              "name": "Akshay Wadkar",
+              "performance": "198",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163531"
+            }
+          ],
+          "importance": "Major tournament"
+        },
+        {
           "id": "recent-163540",
           "status": "recent",
           "statusLabel": "Past",
@@ -48158,6 +48404,39 @@
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
           "rawId": 163540,
+          "starPerformers": [],
+          "importance": "Major tournament"
+        },
+        {
+          "id": "recent-163551",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Assam vs Punjab, Elite Group B",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Assam",
+              "shortName": "ASM",
+              "score": "373/10 (117 Ov) & 157/6 (61 Ov)"
+            },
+            {
+              "name": "Punjab",
+              "shortName": "PUN",
+              "score": "478/6 (127 Ov)"
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+          "overview": "Match drawn",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163551",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163551,
           "starPerformers": [],
           "importance": "Major tournament"
         },
@@ -48235,6 +48514,46 @@
           "importance": "Major tournament"
         },
         {
+          "id": "recent-163581",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Maharashtra vs Services, Elite Group C",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Maharashtra",
+              "shortName": "MAH",
+              "score": "333/10 (110.1 Ov) & 141/10 (56 Ov)"
+            },
+            {
+              "name": "Services",
+              "shortName": "SER",
+              "score": "227/10 (93.2 Ov) & 120/10 (63.3 Ov)"
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "Palam A Stadium, Delhi",
+          "overview": "Maharashtra won by 127 runs",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163581",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163581,
+          "starPerformers": [
+            {
+              "name": "Ankit Bawne",
+              "performance": "118 & 48",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163581"
+            }
+          ],
+          "importance": "Major tournament"
+        },
+        {
           "id": "recent-163591",
           "status": "recent",
           "statusLabel": "Past",
@@ -48265,6 +48584,46 @@
           "startTime": "2026-10-11T04:00:00.000Z",
           "rawId": 163591,
           "starPerformers": [],
+          "importance": "Major tournament"
+        },
+        {
+          "id": "recent-163601",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Railways vs Uttarakhand, Elite Group D",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Railways",
+              "shortName": "RLYS",
+              "score": "278/10 (87.5 Ov) & 272/4 (86 Ov)"
+            },
+            {
+              "name": "Uttarakhand",
+              "shortName": "UTK",
+              "score": "470/10 (156.5 Ov)"
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "Brabourne Stadium, Mumbai",
+          "overview": "Match drawn",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163601",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163601,
+          "starPerformers": [
+            {
+              "name": "Saurabh Rawat",
+              "performance": "107",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163601"
+            }
+          ],
           "importance": "Major tournament"
         },
         {
@@ -48367,35 +48726,35 @@
           "importance": "Major tournament"
         },
         {
-          "id": "recent-163087",
+          "id": "recent-163550",
           "status": "recent",
           "statusLabel": "Past",
           "level": "domestic",
           "levelLabel": "Domestic / State",
           "sourceType": "domestic",
-          "sourceScope": "domestic-global",
-          "title": "Mizoram vs Manipur, Plate",
-          "series": "Ranji Trophy Plate 2026-27",
+          "sourceScope": "global",
+          "title": "Karnataka vs Andhra, Elite Group B",
+          "series": "Ranji Trophy Elite 2026-27",
           "teams": [
             {
-              "name": "Mizoram",
-              "shortName": "MIZ",
-              "score": "183/10 (62.3 Ov) & 295/10 (107.4 Ov)"
+              "name": "Karnataka",
+              "shortName": "KAR",
+              "score": "274/10 (82.2 Ov) & 337/9 (102.6 Ov)"
             },
             {
-              "name": "Manipur",
-              "shortName": "MNP",
-              "score": "251/10 (90.6 Ov) & 228/7 (71.2 Ov)"
+              "name": "Andhra",
+              "shortName": "AP",
+              "score": "418/10 (121.5 Ov) & 104/4 (43.6 Ov)"
             }
           ],
           "dateLabel": "11 Oct 2026, 09:30 am",
           "time": "",
-          "place": "Gokulbhai Somabhai Patel Stadium, Nadiad",
-          "overview": "Manipur won by 3 wkts",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163087",
-          "listUrl": "https://www.cricbuzz.com/cricket-schedule/series/domestic",
+          "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
+          "overview": "Match drawn",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
+          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
           "startTime": "2026-10-11T04:00:00.000Z",
-          "rawId": 163087,
+          "rawId": 163550,
           "starPerformers": [],
           "importance": "Major tournament"
         },
@@ -48430,6 +48789,46 @@
           "startTime": "2026-10-11T03:30:00.000Z",
           "rawId": 163561,
           "starPerformers": [],
+          "importance": "Major tournament"
+        },
+        {
+          "id": "recent-163571",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Delhi vs Bengal, Elite Group C",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Delhi",
+              "shortName": "DEL",
+              "score": "240/10 (77.3 Ov) & 277/10 (106.2 Ov)"
+            },
+            {
+              "name": "Bengal",
+              "shortName": "BEN",
+              "score": "425/10 (112 Ov) & 89/1 (15.3 Ov)"
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:00 am",
+          "time": "",
+          "place": "Bengal Cricket Academy Ground, Kalyani",
+          "overview": "Bengal won by 9 wkts",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163571",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T03:30:00.000Z",
+          "rawId": 163571,
+          "starPerformers": [
+            {
+              "name": "Abishek Porel",
+              "performance": "149",
+              "label": "Player of the Match",
+              "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163571"
+            }
+          ],
           "importance": "Major tournament"
         },
         {
