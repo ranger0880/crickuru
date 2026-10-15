@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": "Cricbuzz public match pages and India pathway schedules/results",
   "sourceStatus": "fresh",
-  "syncedAt": "2026-10-15T10:03:07.012Z",
-  "lastCheckedAt": "2026-10-15T10:03:07.012Z",
-  "lastSuccessfulSyncAt": "2026-10-15T10:03:07.012Z",
+  "syncedAt": "2026-10-15T14:52:27.251Z",
+  "lastCheckedAt": "2026-10-15T14:52:27.251Z",
+  "lastSuccessfulSyncAt": "2026-10-15T14:52:27.251Z",
   "coverage": {
     "pathways": [
       "India",
@@ -84,8 +84,8 @@
       "statusLabel": "Future",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "India Women vs Zimbabwe Women, 1st T20I",
       "series": "Zimbabwe Women tour of India, 2026",
       "teams": [
@@ -105,7 +105,7 @@
       "place": "Shaheed Veer Narayan Singh International Stadium, Raipur",
       "overview": "Match starts at Oct 16, 13:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155519",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-16T13:30:00.000Z",
       "rawId": 155519
     },
@@ -14570,6 +14570,38 @@
       "starPerformers": []
     },
     {
+      "id": "recent-163550",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Karnataka vs Andhra, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Karnataka",
+          "shortName": "KAR",
+          "score": "274/10 (82.2 Ov) & 337/9 (103 Ov)"
+        },
+        {
+          "name": "Andhra",
+          "shortName": "AP",
+          "score": "418/10 (121.5 Ov) & 104/4 (44 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
+      "overview": "Match drawn",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163550,
+      "starPerformers": []
+    },
+    {
       "id": "recent-163551",
       "status": "recent",
       "statusLabel": "Past",
@@ -14876,38 +14908,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 163520,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-163550",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "Karnataka vs Andhra, Elite Group B",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Karnataka",
-          "shortName": "KAR",
-          "score": "274/10 (82.2 Ov) & 337/9 (102.6 Ov)"
-        },
-        {
-          "name": "Andhra",
-          "shortName": "AP",
-          "score": "418/10 (121.5 Ov) & 104/4 (43.6 Ov)"
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
-      "overview": "Match drawn",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163550,
       "starPerformers": []
     },
     {
@@ -16951,8 +16951,8 @@
       "statusLabel": "Future",
       "level": "women",
       "levelLabel": "Women",
-      "sourceType": "",
-      "sourceScope": "india-women",
+      "sourceType": "International",
+      "sourceScope": "global",
       "title": "India Women vs Zimbabwe Women, 1st T20I",
       "series": "Zimbabwe Women tour of India, 2026",
       "teams": [
@@ -16972,7 +16972,7 @@
       "place": "Shaheed Veer Narayan Singh International Stadium, Raipur",
       "overview": "Match starts at Oct 16, 13:30 GMT",
       "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/155519",
-      "listUrl": "https://www.cricbuzz.com/cricket-team/india-women/97/schedule",
+      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
       "startTime": "2026-10-16T13:30:00.000Z",
       "rawId": 155519
     },
@@ -31439,6 +31439,38 @@
       "starPerformers": []
     },
     {
+      "id": "recent-163550",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Karnataka vs Andhra, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Karnataka",
+          "shortName": "KAR",
+          "score": "274/10 (82.2 Ov) & 337/9 (103 Ov)"
+        },
+        {
+          "name": "Andhra",
+          "shortName": "AP",
+          "score": "418/10 (121.5 Ov) & 104/4 (44 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
+      "overview": "Match drawn",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163550,
+      "starPerformers": []
+    },
+    {
       "id": "recent-163551",
       "status": "recent",
       "statusLabel": "Past",
@@ -31745,38 +31777,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 163520,
-      "starPerformers": []
-    },
-    {
-      "id": "recent-163550",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "Karnataka vs Andhra, Elite Group B",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Karnataka",
-          "shortName": "KAR",
-          "score": "274/10 (82.2 Ov) & 337/9 (102.6 Ov)"
-        },
-        {
-          "name": "Andhra",
-          "shortName": "AP",
-          "score": "418/10 (121.5 Ov) & 104/4 (43.6 Ov)"
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
-      "overview": "Match drawn",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163550,
       "starPerformers": []
     },
     {
@@ -40169,6 +40169,39 @@
       "importance": "Major tournament"
     },
     {
+      "id": "recent-163550",
+      "status": "recent",
+      "statusLabel": "Past",
+      "level": "domestic",
+      "levelLabel": "Domestic / State",
+      "sourceType": "",
+      "sourceScope": "domestic-series",
+      "title": "Karnataka vs Andhra, Elite Group B",
+      "series": "Ranji Trophy Elite 2026-27",
+      "teams": [
+        {
+          "name": "Karnataka",
+          "shortName": "KAR",
+          "score": "274/10 (82.2 Ov) & 337/9 (103 Ov)"
+        },
+        {
+          "name": "Andhra",
+          "shortName": "AP",
+          "score": "418/10 (121.5 Ov) & 104/4 (44 Ov)"
+        }
+      ],
+      "dateLabel": "11 Oct 2026, 09:30 am",
+      "time": "",
+      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
+      "overview": "Match drawn",
+      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
+      "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+      "startTime": "2026-10-11T04:00:00.000Z",
+      "rawId": 163550,
+      "starPerformers": [],
+      "importance": "Major tournament"
+    },
+    {
       "id": "recent-163551",
       "status": "recent",
       "statusLabel": "Past",
@@ -40483,39 +40516,6 @@
       "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
       "startTime": "2026-10-11T04:00:00.000Z",
       "rawId": 163520,
-      "starPerformers": [],
-      "importance": "Major tournament"
-    },
-    {
-      "id": "recent-163550",
-      "status": "recent",
-      "statusLabel": "Past",
-      "level": "domestic",
-      "levelLabel": "Domestic / State",
-      "sourceType": "domestic",
-      "sourceScope": "global",
-      "title": "Karnataka vs Andhra, Elite Group B",
-      "series": "Ranji Trophy Elite 2026-27",
-      "teams": [
-        {
-          "name": "Karnataka",
-          "shortName": "KAR",
-          "score": "274/10 (82.2 Ov) & 337/9 (102.6 Ov)"
-        },
-        {
-          "name": "Andhra",
-          "shortName": "AP",
-          "score": "418/10 (121.5 Ov) & 104/4 (43.6 Ov)"
-        }
-      ],
-      "dateLabel": "11 Oct 2026, 09:30 am",
-      "time": "",
-      "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
-      "overview": "Match drawn",
-      "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
-      "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-      "startTime": "2026-10-11T04:00:00.000Z",
-      "rawId": 163550,
       "starPerformers": [],
       "importance": "Major tournament"
     },
@@ -45525,6 +45525,39 @@
           "importance": "Major tournament"
         },
         {
+          "id": "recent-163550",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Karnataka vs Andhra, Elite Group B",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Karnataka",
+              "shortName": "KAR",
+              "score": "274/10 (82.2 Ov) & 337/9 (103 Ov)"
+            },
+            {
+              "name": "Andhra",
+              "shortName": "AP",
+              "score": "418/10 (121.5 Ov) & 104/4 (44 Ov)"
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
+          "overview": "Match drawn",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163550,
+          "starPerformers": [],
+          "importance": "Major tournament"
+        },
+        {
           "id": "recent-163551",
           "status": "recent",
           "statusLabel": "Past",
@@ -45839,39 +45872,6 @@
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
           "rawId": 163520,
-          "starPerformers": [],
-          "importance": "Major tournament"
-        },
-        {
-          "id": "recent-163550",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "domestic",
-          "sourceScope": "global",
-          "title": "Karnataka vs Andhra, Elite Group B",
-          "series": "Ranji Trophy Elite 2026-27",
-          "teams": [
-            {
-              "name": "Karnataka",
-              "shortName": "KAR",
-              "score": "274/10 (82.2 Ov) & 337/9 (102.6 Ov)"
-            },
-            {
-              "name": "Andhra",
-              "shortName": "AP",
-              "score": "418/10 (121.5 Ov) & 104/4 (43.6 Ov)"
-            }
-          ],
-          "dateLabel": "11 Oct 2026, 09:30 am",
-          "time": "",
-          "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
-          "overview": "Match drawn",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-          "startTime": "2026-10-11T04:00:00.000Z",
-          "rawId": 163550,
           "starPerformers": [],
           "importance": "Major tournament"
         },
@@ -48345,6 +48345,39 @@
           "importance": "Major tournament"
         },
         {
+          "id": "recent-163550",
+          "status": "recent",
+          "statusLabel": "Past",
+          "level": "domestic",
+          "levelLabel": "Domestic / State",
+          "sourceType": "",
+          "sourceScope": "domestic-series",
+          "title": "Karnataka vs Andhra, Elite Group B",
+          "series": "Ranji Trophy Elite 2026-27",
+          "teams": [
+            {
+              "name": "Karnataka",
+              "shortName": "KAR",
+              "score": "274/10 (82.2 Ov) & 337/9 (103 Ov)"
+            },
+            {
+              "name": "Andhra",
+              "shortName": "AP",
+              "score": "418/10 (121.5 Ov) & 104/4 (44 Ov)"
+            }
+          ],
+          "dateLabel": "11 Oct 2026, 09:30 am",
+          "time": "",
+          "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
+          "overview": "Match drawn",
+          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
+          "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "rawId": 163550,
+          "starPerformers": [],
+          "importance": "Major tournament"
+        },
+        {
           "id": "recent-163551",
           "status": "recent",
           "statusLabel": "Past",
@@ -48659,39 +48692,6 @@
           "listUrl": "https://www.cricbuzz.com/cricket-series/12398/ranji-trophy-elite-2026-27/matches",
           "startTime": "2026-10-11T04:00:00.000Z",
           "rawId": 163520,
-          "starPerformers": [],
-          "importance": "Major tournament"
-        },
-        {
-          "id": "recent-163550",
-          "status": "recent",
-          "statusLabel": "Past",
-          "level": "domestic",
-          "levelLabel": "Domestic / State",
-          "sourceType": "domestic",
-          "sourceScope": "global",
-          "title": "Karnataka vs Andhra, Elite Group B",
-          "series": "Ranji Trophy Elite 2026-27",
-          "teams": [
-            {
-              "name": "Karnataka",
-              "shortName": "KAR",
-              "score": "274/10 (82.2 Ov) & 337/9 (102.6 Ov)"
-            },
-            {
-              "name": "Andhra",
-              "shortName": "AP",
-              "score": "418/10 (121.5 Ov) & 104/4 (43.6 Ov)"
-            }
-          ],
-          "dateLabel": "11 Oct 2026, 09:30 am",
-          "time": "",
-          "place": "Dr. Gokaraju Liala Gangaaraju ACA Cricket Ground, Vijayawada",
-          "overview": "Match drawn",
-          "sourceUrl": "https://www.cricbuzz.com/live-cricket-scores/163550",
-          "listUrl": "https://www.cricbuzz.com/cricket-match/live-scores",
-          "startTime": "2026-10-11T04:00:00.000Z",
-          "rawId": 163550,
           "starPerformers": [],
           "importance": "Major tournament"
         },
